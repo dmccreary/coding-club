@@ -1,0 +1,16 @@
+{
+  "default": {
+    "colors": {
+      "green": "#2ECC71",
+      "blue": "#4A90D9",
+      "black": "#1A1A1A"
+    },
+    "track_to_color": {
+      "beginner": "green",
+      "intermediate": "blue",
+      "advanced": "black"
+    },
+    "back_rotation_deg": 180,
+    "font_family": "'Helvetica Neue', Arial, sans-serif"
+  }
+}

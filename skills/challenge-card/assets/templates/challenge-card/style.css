@@ -1,0 +1,181 @@
+/* Challenge Card shared styles. Physical units (in) so the layout is
+   correct both on screen (via CSS px-per-inch approximation for preview)
+   and at print time (via @page + Playwright page.pdf()). */
+
+:root {
+  --panel-width: 5.5in;
+  --panel-height: 8.5in;
+  --border-width: 0.25in;
+  --panel-padding: 0.3in;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #e8e8e8;
+  font-family: var(--card-font, 'Helvetica Neue', Arial, sans-serif);
+  color: #1a1a1a;
+}
+
+/* A single portrait panel -- used standalone for front.html/back.html
+   previews, and nested inside .sheet for the combined print layout. */
+.panel {
+  width: var(--panel-width);
+  height: var(--panel-height);
+  background: #ffffff;
+  border: var(--border-width) solid var(--difficulty-color, #4A90D9);
+  padding: var(--panel-padding);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.panel__title {
+  font-size: 28pt;
+  font-weight: 700;
+  text-align: center;
+  margin: 0 0 0.15in 0;
+  line-height: 1.15;
+}
+
+.panel__icon {
+  align-self: center;
+  width: 1.1in;
+  height: 1.1in;
+  margin-bottom: 0.15in;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 48pt;
+}
+
+.panel__description {
+  font-size: 13pt;
+  line-height: 1.35;
+  margin: 0 0 0.2in 0;
+  text-align: center;
+}
+
+.panel__section-label {
+  font-size: 11pt;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: #555;
+  margin: 0.12in 0 0.06in 0;
+}
+
+.panel__steps {
+  font-size: 12.5pt;
+  line-height: 1.4;
+  margin: 0 0 0.1in 0;
+  padding-left: 0.28in;
+}
+
+.panel__steps li { margin-bottom: 0.08in; }
+
+.panel__hints {
+  font-size: 12pt;
+  line-height: 1.35;
+  font-style: italic;
+  color: #444;
+  margin: 0 0 0.15in 0;
+  padding-left: 0.28in;
+}
+
+.panel__stretch {
+  margin-top: auto;
+  padding-top: 0.15in;
+  border-top: 1px dashed #999;
+  font-size: 11pt;
+  font-style: italic;
+}
+
+.panel__stretch-label {
+  font-weight: 700;
+  font-style: normal;
+  text-transform: uppercase;
+  font-size: 9.5pt;
+  letter-spacing: 0.03em;
+  color: var(--difficulty-color, #4A90D9);
+  display: block;
+  margin-bottom: 0.04in;
+}
+
+.panel__code {
+  background: #f4f4f4;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 0.12in;
+  font-family: 'SF Mono', Menlo, Consolas, monospace;
+  font-size: 9pt;
+  line-height: 1.35;
+  white-space: pre-wrap;
+  overflow: hidden;
+  margin: 0 0 0.12in 0;
+}
+
+.panel__meta-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 8.5pt;
+  color: #777;
+  margin-top: auto;
+  padding-top: 0.1in;
+  border-top: 1px solid #ddd;
+}
+
+.panel__concept-tag {
+  background: var(--difficulty-color, #4A90D9);
+  color: #fff;
+  border-radius: 3px;
+  padding: 0.02in 0.08in;
+  font-weight: 700;
+}
+
+.panel__see-also {
+  font-size: 9pt;
+  color: #666;
+  margin-top: 0.08in;
+}
+
+/* Standalone preview page centering (front.html / back.html only) */
+body.preview {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+/* The combined landscape print sheet: two 5.5in portrait panels
+   side by side on one 11in x 8.5in page. */
+.sheet {
+  width: 11in;
+  height: 8.5in;
+  display: flex;
+  background: #ffffff;
+}
+
+.sheet .panel--back {
+  transform: rotate(var(--back-rotation-deg, 180deg));
+  transform-origin: center;
+}
+
+@media screen {
+  body.sheet-preview {
+    background: #999;
+    padding: 0.25in;
+  }
+  .sheet {
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.35);
+  }
+}
+
+@media print {
+  @page { size: 11in 8.5in landscape; margin: 0; }
+  body { margin: 0; padding: 0; background: white; }
+  .sheet { box-shadow: none; }
+  .no-print { display: none !important; }
+}

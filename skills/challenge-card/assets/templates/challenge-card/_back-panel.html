@@ -1,0 +1,24 @@
+<div class="panel panel--back">
+  <div class="panel__title">Solution</div>
+  <div class="panel__section-label">Hints</div>
+  <ul class="panel__hints">
+    {% for hint in back.hints %}
+    <li>{{ hint }}</li>
+    {% endfor %}
+  </ul>
+  <div class="panel__section-label">Steps</div>
+  <ol class="panel__steps" start="{{ back.hints | length + 1 }}">
+    {% for step in back.solution_steps %}
+    <li>{{ step }}</li>
+    {% endfor %}
+  </ol>
+  {% if back.solution_type == "code" %}
+  <div class="panel__code">{{ back.solution_code }}</div>
+  {% elif back.solution_type == "circuit" %}
+  <div class="panel__section-label">Circuit</div>
+  <div class="panel__description" style="text-align:left;">{{ back.solution_circuit_description }}</div>
+  {% endif %}
+  {% if back.see_also %}
+  <div class="panel__see-also">See also: {{ back.see_also }}</div>
+  {% endif %}
+</div>

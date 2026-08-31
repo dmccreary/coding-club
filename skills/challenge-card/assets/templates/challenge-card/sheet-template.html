@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>{{ title }} - Print Sheet</title>
+<link rel="stylesheet" href="{{ style_href }}">
+<style>
+  :root {
+    --difficulty-color: {{ difficulty_hex }};
+    --card-font: {{ font_family }};
+    --back-rotation-deg: {{ back_rotation_deg }}deg;
+  }
+</style>
+</head>
+<body class="sheet-preview">
+  <div class="sheet">
+    {% include "_front-panel.html" %}
+    {% include "_back-panel.html" %}
+  </div>
+</body>
+</html>

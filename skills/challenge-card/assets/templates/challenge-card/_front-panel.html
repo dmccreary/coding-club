@@ -1,0 +1,21 @@
+<div class="panel panel--front">
+  <div class="panel__title">{{ title }}</div>
+  <div class="panel__icon">{{ icon_glyph }}</div>
+  <div class="panel__description">{{ front.description }}</div>
+  <div class="panel__section-label">Steps</div>
+  <ol class="panel__steps">
+    {% for step in front.steps %}
+    <li>{{ step }}</li>
+    {% endfor %}
+  </ol>
+  {% if front.stretch_goal %}
+  <div class="panel__stretch">
+    <span class="panel__stretch-label">Stretch Goal</span>
+    {{ front.stretch_goal }}
+  </div>
+  {% endif %}
+  <div class="panel__meta-row">
+    <span>{{ track | capitalize }} Card</span>
+    {% if concept_tag %}<span class="panel__concept-tag">{{ concept_tag }}</span>{% endif %}
+  </div>
+</div>
