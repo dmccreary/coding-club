@@ -1,0 +1,7317 @@
+{
+  "metadata": {
+    "title": "Coding Clubs: How to Create, Organize, Promote and Manage a Sustainable Coding Club",
+    "description": "A learning graph for an intelligent textbook that teaches educators, librarians, and volunteers how to launch and sustain a coding club, covering governance, mentors and students, scheduling, computational thinking curriculum, physical computing and electronics, project kits, device management, funding, diversity and inclusion, and the use of AI agents to manage club operations.",
+    "creator": "Dan McCreary",
+    "date": "2026-08-31",
+    "version": "1.0",
+    "format": "Learning Graph JSON v1.0",
+    "schema": "https://raw.githubusercontent.com/dmccreary/learning-graphs/refs/heads/main/src/schema/learning-graph-schema.json",
+    "license": "CC BY-NC-SA 4.0 DEED"
+  },
+  "groups": {
+    "FOUND": {
+      "classifierName": "Coding Club Foundations",
+      "color": "SteelBlue",
+      "font": {
+        "color": "white"
+      }
+    },
+    "GOV": {
+      "classifierName": "Governance And Charter",
+      "color": "DarkSlateBlue",
+      "font": {
+        "color": "white"
+      }
+    },
+    "LAUNCH": {
+      "classifierName": "Launching And Session Design",
+      "color": "DarkGreen",
+      "font": {
+        "color": "white"
+      }
+    },
+    "PEOPLE": {
+      "classifierName": "Mentors Students And Ratios",
+      "color": "LimeGreen",
+      "font": {
+        "color": "black"
+      }
+    },
+    "SCHED": {
+      "classifierName": "Scheduling Registration And Events",
+      "color": "Gold",
+      "font": {
+        "color": "black"
+      }
+    },
+    "CT": {
+      "classifierName": "Computational Thinking And Curriculum",
+      "color": "DarkGoldenrod",
+      "font": {
+        "color": "white"
+      }
+    },
+    "PHYS": {
+      "classifierName": "Physical Computing And Electronics",
+      "color": "Khaki",
+      "font": {
+        "color": "black"
+      }
+    },
+    "KITS": {
+      "classifierName": "Project Kits And Hardware",
+      "color": "Teal",
+      "font": {
+        "color": "white"
+      }
+    },
+    "TECH": {
+      "classifierName": "Devices And IT Management",
+      "color": "DodgerBlue",
+      "font": {
+        "color": "white"
+      }
+    },
+    "DATA": {
+      "classifierName": "Data Tracking And Communication",
+      "color": "LightSkyBlue",
+      "font": {
+        "color": "black"
+      }
+    },
+    "MOTIV": {
+      "classifierName": "Motivation And Recognition",
+      "color": "Crimson",
+      "font": {
+        "color": "white"
+      }
+    },
+    "DEI": {
+      "classifierName": "Diversity Equity And Access",
+      "color": "DarkRed",
+      "font": {
+        "color": "white"
+      }
+    },
+    "FUND": {
+      "classifierName": "Budget Funding And Partnerships",
+      "color": "MediumPurple",
+      "font": {
+        "color": "white"
+      }
+    },
+    "AI": {
+      "classifierName": "AI Agents For Club Management",
+      "color": "Indigo",
+      "font": {
+        "color": "white"
+      }
+    },
+    "BOARD": {
+      "classifierName": "Oversight And Sustainability",
+      "color": "SaddleBrown",
+      "font": {
+        "color": "white"
+      }
+    }
+  },
+  "nodes": [
+    {
+      "id": 1,
+      "label": "Coding Club",
+      "group": "FOUND",
+      "shape": "box",
+      "cis": 8883
+    },
+    {
+      "id": 2,
+      "label": "Maker Space",
+      "group": "FOUND",
+      "cis": 85
+    },
+    {
+      "id": 3,
+      "label": "STEM Education",
+      "group": "FOUND",
+      "cis": 84
+    },
+    {
+      "id": 4,
+      "label": "Computer Science Education",
+      "group": "FOUND",
+      "cis": 83
+    },
+    {
+      "id": 5,
+      "label": "Digital Literacy",
+      "group": "FOUND",
+      "cis": 82
+    },
+    {
+      "id": 6,
+      "label": "After School Program",
+      "group": "FOUND",
+      "cis": 81
+    },
+    {
+      "id": 7,
+      "label": "Extracurricular Learning",
+      "group": "FOUND",
+      "cis": 80
+    },
+    {
+      "id": 8,
+      "label": "Informal Learning",
+      "group": "FOUND",
+      "cis": 79
+    },
+    {
+      "id": 9,
+      "label": "Peer Learning",
+      "group": "FOUND",
+      "cis": 78
+    },
+    {
+      "id": 10,
+      "label": "Hands On Learning",
+      "group": "FOUND",
+      "cis": 77
+    },
+    {
+      "id": 11,
+      "label": "Project Based Learning",
+      "group": "FOUND",
+      "cis": 76
+    },
+    {
+      "id": 12,
+      "label": "Club Sustainability",
+      "group": "FOUND",
+      "cis": 75
+    },
+    {
+      "id": 13,
+      "label": "Single Leader Dependency",
+      "group": "FOUND",
+      "cis": 73
+    },
+    {
+      "id": 14,
+      "label": "Leadership Succession",
+      "group": "FOUND",
+      "cis": 72
+    },
+    {
+      "id": 15,
+      "label": "Continuous Improvement",
+      "group": "FOUND",
+      "cis": 63
+    },
+    {
+      "id": 16,
+      "label": "Post Event Notes",
+      "group": "FOUND",
+      "cis": 62
+    },
+    {
+      "id": 17,
+      "label": "Lessons Learned Log",
+      "group": "FOUND",
+      "cis": 61
+    },
+    {
+      "id": 18,
+      "label": "Club Evolution",
+      "group": "FOUND",
+      "cis": 60
+    },
+    {
+      "id": 19,
+      "label": "Hybrid Club Model",
+      "group": "FOUND",
+      "cis": 59
+    },
+    {
+      "id": 20,
+      "label": "AI In Education",
+      "group": "FOUND",
+      "cis": 58
+    },
+    {
+      "id": 21,
+      "label": "Generative AI",
+      "group": "FOUND",
+      "cis": 57
+    },
+    {
+      "id": 22,
+      "label": "AI Powered Club Tools",
+      "group": "FOUND",
+      "cis": 56
+    },
+    {
+      "id": 23,
+      "label": "Intelligent Textbook",
+      "group": "FOUND",
+      "cis": 55
+    },
+    {
+      "id": 24,
+      "label": "MicroSim",
+      "group": "FOUND",
+      "cis": 54
+    },
+    {
+      "id": 25,
+      "label": "Learning Graph",
+      "group": "FOUND",
+      "cis": 53
+    },
+    {
+      "id": 26,
+      "label": "Interactive Simulation",
+      "group": "FOUND",
+      "cis": 11
+    },
+    {
+      "id": 27,
+      "label": "Club History",
+      "group": "FOUND",
+      "cis": 10
+    },
+    {
+      "id": 28,
+      "label": "Club Benefits",
+      "group": "FOUND",
+      "cis": 9
+    },
+    {
+      "id": 29,
+      "label": "Library Coding Club",
+      "group": "FOUND",
+      "cis": 8
+    },
+    {
+      "id": 30,
+      "label": "Bookstore Coding Club",
+      "group": "FOUND",
+      "cis": 7
+    },
+    {
+      "id": 31,
+      "label": "Community Center Club",
+      "group": "FOUND",
+      "cis": 6
+    },
+    {
+      "id": 32,
+      "label": "School Based Club",
+      "group": "FOUND",
+      "cis": 5
+    },
+    {
+      "id": 33,
+      "label": "Club Mission Statement",
+      "group": "FOUND",
+      "cis": 4
+    },
+    {
+      "id": 34,
+      "label": "Club Vision",
+      "group": "FOUND",
+      "cis": 3
+    },
+    {
+      "id": 35,
+      "label": "Target Audience",
+      "group": "FOUND",
+      "cis": 2
+    },
+    {
+      "id": 36,
+      "label": "Course Reading Level",
+      "group": "FOUND",
+      "cis": 1
+    },
+    {
+      "id": 37,
+      "label": "Club Charter",
+      "group": "GOV",
+      "cis": 3340
+    },
+    {
+      "id": 38,
+      "label": "Club Values",
+      "group": "GOV",
+      "cis": 255
+    },
+    {
+      "id": 39,
+      "label": "Code Of Conduct",
+      "group": "GOV",
+      "cis": 254
+    },
+    {
+      "id": 40,
+      "label": "Volunteer Background Check",
+      "group": "GOV",
+      "cis": 253
+    },
+    {
+      "id": 41,
+      "label": "Child Safety Policy",
+      "group": "GOV",
+      "cis": 252
+    },
+    {
+      "id": 42,
+      "label": "Liability Considerations",
+      "group": "GOV",
+      "cis": 251
+    },
+    {
+      "id": 43,
+      "label": "Parental Consent Form",
+      "group": "GOV",
+      "cis": 250
+    },
+    {
+      "id": 44,
+      "label": "Photo Release Form",
+      "group": "GOV",
+      "cis": 249
+    },
+    {
+      "id": 45,
+      "label": "Data Privacy Policy",
+      "group": "GOV",
+      "cis": 248
+    },
+    {
+      "id": 46,
+      "label": "Anti Harassment Policy",
+      "group": "GOV",
+      "cis": 23
+    },
+    {
+      "id": 47,
+      "label": "Conflict Resolution Process",
+      "group": "GOV",
+      "cis": 22
+    },
+    {
+      "id": 48,
+      "label": "Club Bylaws",
+      "group": "GOV",
+      "cis": 21
+    },
+    {
+      "id": 49,
+      "label": "Decision Making Process",
+      "group": "GOV",
+      "cis": 20
+    },
+    {
+      "id": 50,
+      "label": "Roles And Responsibilities",
+      "group": "GOV",
+      "cis": 19
+    },
+    {
+      "id": 51,
+      "label": "Club Leader Role",
+      "group": "GOV",
+      "cis": 18
+    },
+    {
+      "id": 52,
+      "label": "Assistant Leader Role",
+      "group": "GOV",
+      "cis": 17
+    },
+    {
+      "id": 53,
+      "label": "Mentor Role",
+      "group": "GOV",
+      "cis": 16
+    },
+    {
+      "id": 54,
+      "label": "Student Role",
+      "group": "GOV",
+      "cis": 15
+    },
+    {
+      "id": 55,
+      "label": "Parent Role",
+      "group": "GOV",
+      "cis": 14
+    },
+    {
+      "id": 56,
+      "label": "Volunteer Coordinator Role",
+      "group": "GOV",
+      "cis": 13
+    },
+    {
+      "id": 57,
+      "label": "Governance Structure",
+      "group": "GOV",
+      "cis": 12
+    },
+    {
+      "id": 58,
+      "label": "Advisory Committee",
+      "group": "GOV",
+      "cis": 11
+    },
+    {
+      "id": 59,
+      "label": "Club Policies Handbook",
+      "group": "GOV",
+      "cis": 10
+    },
+    {
+      "id": 60,
+      "label": "Incident Reporting Process",
+      "group": "GOV",
+      "cis": 9
+    },
+    {
+      "id": 61,
+      "label": "Emergency Contact List",
+      "group": "GOV",
+      "cis": 8
+    },
+    {
+      "id": 62,
+      "label": "Insurance Considerations",
+      "group": "GOV",
+      "cis": 7
+    },
+    {
+      "id": 63,
+      "label": "Venue Agreement",
+      "group": "GOV",
+      "cis": 6
+    },
+    {
+      "id": 64,
+      "label": "Club Registration With Venue",
+      "group": "GOV",
+      "cis": 5
+    },
+    {
+      "id": 65,
+      "label": "Legal Compliance Basics",
+      "group": "GOV",
+      "cis": 4
+    },
+    {
+      "id": 66,
+      "label": "Trademark And Branding",
+      "group": "GOV",
+      "cis": 3
+    },
+    {
+      "id": 67,
+      "label": "Club Naming Convention",
+      "group": "GOV",
+      "cis": 2
+    },
+    {
+      "id": 68,
+      "label": "Club Logo Design",
+      "group": "GOV",
+      "cis": 1
+    },
+    {
+      "id": 69,
+      "label": "Gauging Interest Survey",
+      "group": "LAUNCH",
+      "cis": 2434
+    },
+    {
+      "id": 70,
+      "label": "Interest Survey Analysis",
+      "group": "LAUNCH",
+      "cis": 120
+    },
+    {
+      "id": 71,
+      "label": "Establishing A New Club",
+      "group": "LAUNCH",
+      "cis": 119
+    },
+    {
+      "id": 72,
+      "label": "Club Feasibility Assessment",
+      "group": "LAUNCH",
+      "cis": 118
+    },
+    {
+      "id": 73,
+      "label": "Founding Team",
+      "group": "LAUNCH",
+      "cis": 117
+    },
+    {
+      "id": 74,
+      "label": "First Club Meeting",
+      "group": "LAUNCH",
+      "cis": 116
+    },
+    {
+      "id": 75,
+      "label": "Meeting Agenda Design",
+      "group": "LAUNCH",
+      "cis": 87
+    },
+    {
+      "id": 76,
+      "label": "Promoting First Meeting",
+      "group": "LAUNCH",
+      "cis": 86
+    },
+    {
+      "id": 77,
+      "label": "Flyer Design",
+      "group": "LAUNCH",
+      "cis": 85
+    },
+    {
+      "id": 78,
+      "label": "Social Media Promotion",
+      "group": "LAUNCH",
+      "cis": 84
+    },
+    {
+      "id": 79,
+      "label": "Word Of Mouth Promotion",
+      "group": "LAUNCH",
+      "cis": 71
+    },
+    {
+      "id": 80,
+      "label": "Starting Small Strategy",
+      "group": "LAUNCH",
+      "cis": 70
+    },
+    {
+      "id": 81,
+      "label": "First Three Students",
+      "group": "LAUNCH",
+      "cis": 69
+    },
+    {
+      "id": 82,
+      "label": "Pilot Cohort",
+      "group": "LAUNCH",
+      "cis": 68
+    },
+    {
+      "id": 83,
+      "label": "Walk In Experience",
+      "group": "LAUNCH",
+      "cis": 67
+    },
+    {
+      "id": 84,
+      "label": "First Impression Design",
+      "group": "LAUNCH",
+      "cis": 66
+    },
+    {
+      "id": 85,
+      "label": "Parent Perception",
+      "group": "LAUNCH",
+      "cis": 65
+    },
+    {
+      "id": 86,
+      "label": "Student Perception",
+      "group": "LAUNCH",
+      "cis": 64
+    },
+    {
+      "id": 87,
+      "label": "Elevator Pitch",
+      "group": "LAUNCH",
+      "cis": 63
+    },
+    {
+      "id": 88,
+      "label": "Value Proposition Statement",
+      "group": "LAUNCH",
+      "cis": 62
+    },
+    {
+      "id": 89,
+      "label": "Club Growth Strategy",
+      "group": "LAUNCH",
+      "cis": 61
+    },
+    {
+      "id": 90,
+      "label": "Scaling A Club",
+      "group": "LAUNCH",
+      "cis": 60
+    },
+    {
+      "id": 91,
+      "label": "Multi Site Expansion",
+      "group": "LAUNCH",
+      "cis": 59
+    },
+    {
+      "id": 92,
+      "label": "Franchise Model",
+      "group": "LAUNCH",
+      "cis": 58
+    },
+    {
+      "id": 93,
+      "label": "Club Branding",
+      "group": "LAUNCH",
+      "cis": 57
+    },
+    {
+      "id": 94,
+      "label": "Welcome Statement Design",
+      "group": "LAUNCH",
+      "cis": 56
+    },
+    {
+      "id": 95,
+      "label": "Onboarding New Students",
+      "group": "LAUNCH",
+      "cis": 55
+    },
+    {
+      "id": 96,
+      "label": "Onboarding New Mentors",
+      "group": "LAUNCH",
+      "cis": 54
+    },
+    {
+      "id": 97,
+      "label": "Word Of Mouth Referral",
+      "group": "LAUNCH",
+      "cis": 53
+    },
+    {
+      "id": 98,
+      "label": "Community Outreach",
+      "group": "LAUNCH",
+      "cis": 52
+    },
+    {
+      "id": 99,
+      "label": "School Partnership Outreach",
+      "group": "LAUNCH",
+      "cis": 51
+    },
+    {
+      "id": 100,
+      "label": "Library Partnership Outreach",
+      "group": "LAUNCH",
+      "cis": 50
+    },
+    {
+      "id": 101,
+      "label": "Local Media Coverage",
+      "group": "LAUNCH",
+      "cis": 49
+    },
+    {
+      "id": 102,
+      "label": "Press Release Writing",
+      "group": "LAUNCH",
+      "cis": 48
+    },
+    {
+      "id": 103,
+      "label": "Grand Opening Event",
+      "group": "LAUNCH",
+      "cis": 47
+    },
+    {
+      "id": 104,
+      "label": "Club Anniversary Event",
+      "group": "LAUNCH",
+      "cis": 46
+    },
+    {
+      "id": 105,
+      "label": "Club Milestone Tracking",
+      "group": "LAUNCH",
+      "cis": 45
+    },
+    {
+      "id": 106,
+      "label": "Success Story Sharing",
+      "group": "LAUNCH",
+      "cis": 44
+    },
+    {
+      "id": 107,
+      "label": "Testimonial Collection",
+      "group": "LAUNCH",
+      "cis": 43
+    },
+    {
+      "id": 108,
+      "label": "Club Newsletter",
+      "group": "LAUNCH",
+      "cis": 42
+    },
+    {
+      "id": 109,
+      "label": "Club Website",
+      "group": "LAUNCH",
+      "cis": 41
+    },
+    {
+      "id": 110,
+      "label": "Club Social Media Account",
+      "group": "LAUNCH",
+      "cis": 29
+    },
+    {
+      "id": 111,
+      "label": "Classroom Layout",
+      "group": "LAUNCH",
+      "cis": 28
+    },
+    {
+      "id": 112,
+      "label": "Monitors Facing Inward",
+      "group": "LAUNCH",
+      "cis": 27
+    },
+    {
+      "id": 113,
+      "label": "Center Table Design",
+      "group": "LAUNCH",
+      "cis": 26
+    },
+    {
+      "id": 114,
+      "label": "Challenge Card Display",
+      "group": "LAUNCH",
+      "cis": 25
+    },
+    {
+      "id": 115,
+      "label": "Seating Arrangement",
+      "group": "LAUNCH",
+      "cis": 24
+    },
+    {
+      "id": 116,
+      "label": "Power Strip Placement",
+      "group": "LAUNCH",
+      "cis": 23
+    },
+    {
+      "id": 117,
+      "label": "Cable Management",
+      "group": "LAUNCH",
+      "cis": 22
+    },
+    {
+      "id": 118,
+      "label": "Noise Level Management",
+      "group": "LAUNCH",
+      "cis": 21
+    },
+    {
+      "id": 119,
+      "label": "Lighting Considerations",
+      "group": "LAUNCH",
+      "cis": 20
+    },
+    {
+      "id": 120,
+      "label": "Room Temperature Comfort",
+      "group": "LAUNCH",
+      "cis": 19
+    },
+    {
+      "id": 121,
+      "label": "Storage For Kits",
+      "group": "LAUNCH",
+      "cis": 18
+    },
+    {
+      "id": 122,
+      "label": "Charging Station Setup",
+      "group": "LAUNCH",
+      "cis": 17
+    },
+    {
+      "id": 123,
+      "label": "Whiteboard Usage",
+      "group": "LAUNCH",
+      "cis": 16
+    },
+    {
+      "id": 124,
+      "label": "Session Time Block",
+      "group": "LAUNCH",
+      "cis": 15
+    },
+    {
+      "id": 125,
+      "label": "Session Warm Up Activity",
+      "group": "LAUNCH",
+      "cis": 14
+    },
+    {
+      "id": 126,
+      "label": "Session Wrap Up Activity",
+      "group": "LAUNCH",
+      "cis": 13
+    },
+    {
+      "id": 127,
+      "label": "Transition Between Activities",
+      "group": "LAUNCH",
+      "cis": 12
+    },
+    {
+      "id": 128,
+      "label": "Small Group Rotation",
+      "group": "LAUNCH",
+      "cis": 11
+    },
+    {
+      "id": 129,
+      "label": "Station Based Learning",
+      "group": "LAUNCH",
+      "cis": 10
+    },
+    {
+      "id": 130,
+      "label": "Safety Zone Marking",
+      "group": "LAUNCH",
+      "cis": 9
+    },
+    {
+      "id": 131,
+      "label": "Emergency Exit Awareness",
+      "group": "LAUNCH",
+      "cis": 8
+    },
+    {
+      "id": 132,
+      "label": "First Aid Kit Location",
+      "group": "LAUNCH",
+      "cis": 7
+    },
+    {
+      "id": 133,
+      "label": "Accessibility Of Space",
+      "group": "LAUNCH",
+      "cis": 6
+    },
+    {
+      "id": 134,
+      "label": "Restroom Break Policy",
+      "group": "LAUNCH",
+      "cis": 5
+    },
+    {
+      "id": 135,
+      "label": "Snack And Water Policy",
+      "group": "LAUNCH",
+      "cis": 4
+    },
+    {
+      "id": 136,
+      "label": "Visitor Check In Process",
+      "group": "LAUNCH",
+      "cis": 3
+    },
+    {
+      "id": 137,
+      "label": "Photography During Session",
+      "group": "LAUNCH",
+      "cis": 2
+    },
+    {
+      "id": 138,
+      "label": "Session Cleanup Routine",
+      "group": "LAUNCH",
+      "cis": 1
+    },
+    {
+      "id": 139,
+      "label": "Mentor",
+      "group": "PEOPLE",
+      "cis": 2472
+    },
+    {
+      "id": 140,
+      "label": "Student",
+      "group": "PEOPLE",
+      "cis": 257
+    },
+    {
+      "id": 141,
+      "label": "Volunteer Mentor",
+      "group": "PEOPLE",
+      "cis": 133
+    },
+    {
+      "id": 142,
+      "label": "Professional Mentor",
+      "group": "PEOPLE",
+      "cis": 132
+    },
+    {
+      "id": 143,
+      "label": "Peer Mentor",
+      "group": "PEOPLE",
+      "cis": 131
+    },
+    {
+      "id": 144,
+      "label": "Student To Mentor Ratio",
+      "group": "PEOPLE",
+      "cis": 130
+    },
+    {
+      "id": 145,
+      "label": "Why Three To One Works",
+      "group": "PEOPLE",
+      "cis": 129
+    },
+    {
+      "id": 146,
+      "label": "Adding Mentors",
+      "group": "PEOPLE",
+      "cis": 128
+    },
+    {
+      "id": 147,
+      "label": "Adding Students",
+      "group": "PEOPLE",
+      "cis": 127
+    },
+    {
+      "id": 148,
+      "label": "Mentor Capacity Planning",
+      "group": "PEOPLE",
+      "cis": 126
+    },
+    {
+      "id": 149,
+      "label": "Mentor Availability Tracking",
+      "group": "PEOPLE",
+      "cis": 125
+    },
+    {
+      "id": 150,
+      "label": "Mentor Skill Matching",
+      "group": "PEOPLE",
+      "cis": 124
+    },
+    {
+      "id": 151,
+      "label": "Student Skill Level",
+      "group": "PEOPLE",
+      "cis": 88
+    },
+    {
+      "id": 152,
+      "label": "Student Age Range",
+      "group": "PEOPLE",
+      "cis": 87
+    },
+    {
+      "id": 153,
+      "label": "Student Grouping Strategy",
+      "group": "PEOPLE",
+      "cis": 86
+    },
+    {
+      "id": 154,
+      "label": "Mixed Age Grouping",
+      "group": "PEOPLE",
+      "cis": 85
+    },
+    {
+      "id": 155,
+      "label": "Sibling Pairing",
+      "group": "PEOPLE",
+      "cis": 84
+    },
+    {
+      "id": 156,
+      "label": "Returning Student",
+      "group": "PEOPLE",
+      "cis": 83
+    },
+    {
+      "id": 157,
+      "label": "New Student Placement",
+      "group": "PEOPLE",
+      "cis": 82
+    },
+    {
+      "id": 158,
+      "label": "Waiting List Management",
+      "group": "PEOPLE",
+      "cis": 81
+    },
+    {
+      "id": 159,
+      "label": "Mentor To Student Introduction",
+      "group": "PEOPLE",
+      "cis": 80
+    },
+    {
+      "id": 160,
+      "label": "Mentor Check In Routine",
+      "group": "PEOPLE",
+      "cis": 79
+    },
+    {
+      "id": 161,
+      "label": "Student Check In Routine",
+      "group": "PEOPLE",
+      "cis": 78
+    },
+    {
+      "id": 162,
+      "label": "Mentor Feedback Collection",
+      "group": "PEOPLE",
+      "cis": 77
+    },
+    {
+      "id": 163,
+      "label": "Student Feedback Collection",
+      "group": "PEOPLE",
+      "cis": 18
+    },
+    {
+      "id": 164,
+      "label": "Parent Volunteer Role",
+      "group": "PEOPLE",
+      "cis": 17
+    },
+    {
+      "id": 165,
+      "label": "Teen Mentor Program",
+      "group": "PEOPLE",
+      "cis": 16
+    },
+    {
+      "id": 166,
+      "label": "College Mentor Recruitment",
+      "group": "PEOPLE",
+      "cis": 15
+    },
+    {
+      "id": 167,
+      "label": "Retired Professional Mentor",
+      "group": "PEOPLE",
+      "cis": 14
+    },
+    {
+      "id": 168,
+      "label": "Mentor Burnout Prevention",
+      "group": "PEOPLE",
+      "cis": 13
+    },
+    {
+      "id": 169,
+      "label": "Mentor Appreciation",
+      "group": "PEOPLE",
+      "cis": 12
+    },
+    {
+      "id": 170,
+      "label": "Student Attendance Tracking",
+      "group": "PEOPLE",
+      "cis": 11
+    },
+    {
+      "id": 171,
+      "label": "Mentor Attendance Tracking",
+      "group": "PEOPLE",
+      "cis": 10
+    },
+    {
+      "id": 172,
+      "label": "No Show Policy",
+      "group": "PEOPLE",
+      "cis": 9
+    },
+    {
+      "id": 173,
+      "label": "Substitute Mentor Plan",
+      "group": "PEOPLE",
+      "cis": 8
+    },
+    {
+      "id": 174,
+      "label": "Mentor Pairing Consistency",
+      "group": "PEOPLE",
+      "cis": 7
+    },
+    {
+      "id": 175,
+      "label": "One On One Mentoring",
+      "group": "PEOPLE",
+      "cis": 6
+    },
+    {
+      "id": 176,
+      "label": "Small Group Mentoring",
+      "group": "PEOPLE",
+      "cis": 5
+    },
+    {
+      "id": 177,
+      "label": "Whole Class Instruction",
+      "group": "PEOPLE",
+      "cis": 4
+    },
+    {
+      "id": 178,
+      "label": "Mentor Student Rapport",
+      "group": "PEOPLE",
+      "cis": 3
+    },
+    {
+      "id": 179,
+      "label": "Building Trust With Students",
+      "group": "PEOPLE",
+      "cis": 2
+    },
+    {
+      "id": 180,
+      "label": "Student Confidence Building",
+      "group": "PEOPLE",
+      "cis": 1
+    },
+    {
+      "id": 181,
+      "label": "Session Scheduling",
+      "group": "SCHED",
+      "cis": 1781
+    },
+    {
+      "id": 182,
+      "label": "Selecting A Date And Time",
+      "group": "SCHED",
+      "cis": 169
+    },
+    {
+      "id": 183,
+      "label": "Alternating Saturday Model",
+      "group": "SCHED",
+      "cis": 168
+    },
+    {
+      "id": 184,
+      "label": "Weekday After School Model",
+      "group": "SCHED",
+      "cis": 167
+    },
+    {
+      "id": 185,
+      "label": "Semester Based Schedule",
+      "group": "SCHED",
+      "cis": 166
+    },
+    {
+      "id": 186,
+      "label": "Drop In Model",
+      "group": "SCHED",
+      "cis": 165
+    },
+    {
+      "id": 187,
+      "label": "Recurring Session Series",
+      "group": "SCHED",
+      "cis": 164
+    },
+    {
+      "id": 188,
+      "label": "Holiday Schedule Planning",
+      "group": "SCHED",
+      "cis": 163
+    },
+    {
+      "id": 189,
+      "label": "Working Around Holidays",
+      "group": "SCHED",
+      "cis": 162
+    },
+    {
+      "id": 190,
+      "label": "School Calendar Alignment",
+      "group": "SCHED",
+      "cis": 161
+    },
+    {
+      "id": 191,
+      "label": "Registration System",
+      "group": "SCHED",
+      "cis": 160
+    },
+    {
+      "id": 192,
+      "label": "Online Registration Form",
+      "group": "SCHED",
+      "cis": 113
+    },
+    {
+      "id": 193,
+      "label": "Eventbrite Case Study",
+      "group": "SCHED",
+      "cis": 112
+    },
+    {
+      "id": 194,
+      "label": "Registration Capacity Limit",
+      "group": "SCHED",
+      "cis": 111
+    },
+    {
+      "id": 195,
+      "label": "Registering Mentors First",
+      "group": "SCHED",
+      "cis": 110
+    },
+    {
+      "id": 196,
+      "label": "Mentor Gated Enrollment",
+      "group": "SCHED",
+      "cis": 109
+    },
+    {
+      "id": 197,
+      "label": "Limiting Students By Mentors",
+      "group": "SCHED",
+      "cis": 108
+    },
+    {
+      "id": 198,
+      "label": "Waiting List Signup",
+      "group": "SCHED",
+      "cis": 107
+    },
+    {
+      "id": 199,
+      "label": "Registration Confirmation Email",
+      "group": "SCHED",
+      "cis": 106
+    },
+    {
+      "id": 200,
+      "label": "Registration Reminder Email",
+      "group": "SCHED",
+      "cis": 105
+    },
+    {
+      "id": 201,
+      "label": "Cancellation Policy",
+      "group": "SCHED",
+      "cis": 104
+    },
+    {
+      "id": 202,
+      "label": "Refund Policy",
+      "group": "SCHED",
+      "cis": 103
+    },
+    {
+      "id": 203,
+      "label": "Session Check In System",
+      "group": "SCHED",
+      "cis": 102
+    },
+    {
+      "id": 204,
+      "label": "QR Code Check In",
+      "group": "SCHED",
+      "cis": 101
+    },
+    {
+      "id": 205,
+      "label": "Attendance Sheet",
+      "group": "SCHED",
+      "cis": 100
+    },
+    {
+      "id": 206,
+      "label": "Post Event Survey",
+      "group": "SCHED",
+      "cis": 99
+    },
+    {
+      "id": 207,
+      "label": "Survey Question Design",
+      "group": "SCHED",
+      "cis": 62
+    },
+    {
+      "id": 208,
+      "label": "Survey Response Analysis",
+      "group": "SCHED",
+      "cis": 61
+    },
+    {
+      "id": 209,
+      "label": "Event Debriefing Meeting",
+      "group": "SCHED",
+      "cis": 24
+    },
+    {
+      "id": 210,
+      "label": "Event Retrospective Checklist",
+      "group": "SCHED",
+      "cis": 23
+    },
+    {
+      "id": 211,
+      "label": "Tracking What Was Learned",
+      "group": "SCHED",
+      "cis": 22
+    },
+    {
+      "id": 212,
+      "label": "Proactive Mentor Engagement",
+      "group": "SCHED",
+      "cis": 21
+    },
+    {
+      "id": 213,
+      "label": "Session Capacity Planning",
+      "group": "SCHED",
+      "cis": 20
+    },
+    {
+      "id": 214,
+      "label": "Multi Session Series Planning",
+      "group": "SCHED",
+      "cis": 19
+    },
+    {
+      "id": 215,
+      "label": "Summer Camp Format",
+      "group": "SCHED",
+      "cis": 18
+    },
+    {
+      "id": 216,
+      "label": "Weeklong Intensive Format",
+      "group": "SCHED",
+      "cis": 17
+    },
+    {
+      "id": 217,
+      "label": "Single Session Workshop",
+      "group": "SCHED",
+      "cis": 16
+    },
+    {
+      "id": 218,
+      "label": "Field Trip Coordination",
+      "group": "SCHED",
+      "cis": 15
+    },
+    {
+      "id": 219,
+      "label": "Guest Speaker Scheduling",
+      "group": "SCHED",
+      "cis": 14
+    },
+    {
+      "id": 220,
+      "label": "Competition Event Scheduling",
+      "group": "SCHED",
+      "cis": 13
+    },
+    {
+      "id": 221,
+      "label": "Showcase Event Planning",
+      "group": "SCHED",
+      "cis": 12
+    },
+    {
+      "id": 222,
+      "label": "Family Night Event",
+      "group": "SCHED",
+      "cis": 11
+    },
+    {
+      "id": 223,
+      "label": "Open House Event",
+      "group": "SCHED",
+      "cis": 10
+    },
+    {
+      "id": 224,
+      "label": "Registration Software Comparison",
+      "group": "SCHED",
+      "cis": 9
+    },
+    {
+      "id": 225,
+      "label": "Payment Processing For Fees",
+      "group": "SCHED",
+      "cis": 8
+    },
+    {
+      "id": 226,
+      "label": "Scholarship Application Process",
+      "group": "SCHED",
+      "cis": 7
+    },
+    {
+      "id": 227,
+      "label": "Session Reminder Notification",
+      "group": "SCHED",
+      "cis": 6
+    },
+    {
+      "id": 228,
+      "label": "Calendar Sync For Families",
+      "group": "SCHED",
+      "cis": 5
+    },
+    {
+      "id": 229,
+      "label": "Time Zone Consideration",
+      "group": "SCHED",
+      "cis": 4
+    },
+    {
+      "id": 230,
+      "label": "Weather Cancellation Policy",
+      "group": "SCHED",
+      "cis": 3
+    },
+    {
+      "id": 231,
+      "label": "Makeup Session Policy",
+      "group": "SCHED",
+      "cis": 2
+    },
+    {
+      "id": 232,
+      "label": "End Of Term Celebration",
+      "group": "SCHED",
+      "cis": 1
+    },
+    {
+      "id": 233,
+      "label": "Computational Thinking Skills",
+      "group": "CT",
+      "shape": "box",
+      "cis": 1102
+    },
+    {
+      "id": 234,
+      "label": "Decomposition Skill",
+      "group": "CT",
+      "cis": 284
+    },
+    {
+      "id": 235,
+      "label": "Pattern Recognition Skill",
+      "group": "CT",
+      "cis": 283
+    },
+    {
+      "id": 236,
+      "label": "Abstraction Skill",
+      "group": "CT",
+      "cis": 282
+    },
+    {
+      "id": 237,
+      "label": "Algorithm Design Skill",
+      "group": "CT",
+      "cis": 281
+    },
+    {
+      "id": 238,
+      "label": "Debugging Skill",
+      "group": "CT",
+      "cis": 280
+    },
+    {
+      "id": 239,
+      "label": "Keyboarding Skills",
+      "group": "CT",
+      "cis": 279
+    },
+    {
+      "id": 240,
+      "label": "Typing Practice Tool",
+      "group": "CT",
+      "cis": 278
+    },
+    {
+      "id": 241,
+      "label": "Scratch Programming",
+      "group": "CT",
+      "cis": 277
+    },
+    {
+      "id": 242,
+      "label": "Scratch Sprite",
+      "group": "CT",
+      "cis": 276
+    },
+    {
+      "id": 243,
+      "label": "Scratch Block Coding",
+      "group": "CT",
+      "cis": 275
+    },
+    {
+      "id": 244,
+      "label": "Scratch Project Sharing",
+      "group": "CT",
+      "cis": 274
+    },
+    {
+      "id": 245,
+      "label": "Block Based To Text Transition",
+      "group": "CT",
+      "cis": 273
+    },
+    {
+      "id": 246,
+      "label": "Python Programming",
+      "group": "CT",
+      "cis": 272
+    },
+    {
+      "id": 247,
+      "label": "Python Syntax Basics",
+      "group": "CT",
+      "cis": 53
+    },
+    {
+      "id": 248,
+      "label": "Python Variable",
+      "group": "CT",
+      "cis": 52
+    },
+    {
+      "id": 249,
+      "label": "Python Loop",
+      "group": "CT",
+      "cis": 51
+    },
+    {
+      "id": 250,
+      "label": "Python Conditional",
+      "group": "CT",
+      "cis": 50
+    },
+    {
+      "id": 251,
+      "label": "Python Function",
+      "group": "CT",
+      "cis": 49
+    },
+    {
+      "id": 252,
+      "label": "Turtle Graphics",
+      "group": "CT",
+      "cis": 48
+    },
+    {
+      "id": 253,
+      "label": "Turtle Graphics Challenge",
+      "group": "CT",
+      "cis": 47
+    },
+    {
+      "id": 254,
+      "label": "Curriculum Design",
+      "group": "CT",
+      "cis": 46
+    },
+    {
+      "id": 255,
+      "label": "Lesson Sequencing",
+      "group": "CT",
+      "cis": 45
+    },
+    {
+      "id": 256,
+      "label": "Skill Progression Ladder",
+      "group": "CT",
+      "cis": 44
+    },
+    {
+      "id": 257,
+      "label": "Challenge Based Curriculum",
+      "group": "CT",
+      "cis": 43
+    },
+    {
+      "id": 258,
+      "label": "Project Based Curriculum",
+      "group": "CT",
+      "cis": 42
+    },
+    {
+      "id": 259,
+      "label": "Curriculum Pacing Guide",
+      "group": "CT",
+      "cis": 41
+    },
+    {
+      "id": 260,
+      "label": "Beginner Track Curriculum",
+      "group": "CT",
+      "cis": 40
+    },
+    {
+      "id": 261,
+      "label": "Intermediate Track Curriculum",
+      "group": "CT",
+      "cis": 39
+    },
+    {
+      "id": 262,
+      "label": "Advanced Track Curriculum",
+      "group": "CT",
+      "cis": 38
+    },
+    {
+      "id": 263,
+      "label": "Self Paced Learning Path",
+      "group": "CT",
+      "cis": 37
+    },
+    {
+      "id": 264,
+      "label": "Peer Code Review",
+      "group": "CT",
+      "cis": 36
+    },
+    {
+      "id": 265,
+      "label": "Pair Programming",
+      "group": "CT",
+      "cis": 29
+    },
+    {
+      "id": 266,
+      "label": "Code Along Session",
+      "group": "CT",
+      "cis": 28
+    },
+    {
+      "id": 267,
+      "label": "Live Coding Demonstration",
+      "group": "CT",
+      "cis": 27
+    },
+    {
+      "id": 268,
+      "label": "Coding Challenge Card",
+      "group": "CT",
+      "cis": 26
+    },
+    {
+      "id": 269,
+      "label": "Concept Challenge Card",
+      "group": "CT",
+      "cis": 25
+    },
+    {
+      "id": 270,
+      "label": "Designing Challenge Cards",
+      "group": "CT",
+      "cis": 24
+    },
+    {
+      "id": 271,
+      "label": "Printing Challenge Cards",
+      "group": "CT",
+      "cis": 23
+    },
+    {
+      "id": 272,
+      "label": "Learning Map",
+      "group": "CT",
+      "cis": 22
+    },
+    {
+      "id": 273,
+      "label": "Skill Badge System",
+      "group": "CT",
+      "cis": 21
+    },
+    {
+      "id": 274,
+      "label": "Badge And Sticker Reward",
+      "group": "CT",
+      "cis": 20
+    },
+    {
+      "id": 275,
+      "label": "Portfolio Of Student Work",
+      "group": "CT",
+      "cis": 19
+    },
+    {
+      "id": 276,
+      "label": "Show And Tell Session",
+      "group": "CT",
+      "cis": 7
+    },
+    {
+      "id": 277,
+      "label": "Code Sharing Platform",
+      "group": "CT",
+      "cis": 6
+    },
+    {
+      "id": 278,
+      "label": "Version Control Basics",
+      "group": "CT",
+      "cis": 5
+    },
+    {
+      "id": 279,
+      "label": "Online Coding Platform",
+      "group": "CT",
+      "cis": 4
+    },
+    {
+      "id": 280,
+      "label": "Offline Coding Environment",
+      "group": "CT",
+      "cis": 3
+    },
+    {
+      "id": 281,
+      "label": "Unplugged Coding Activity",
+      "group": "CT",
+      "cis": 2
+    },
+    {
+      "id": 282,
+      "label": "Coding Vocabulary Building",
+      "group": "CT",
+      "cis": 1
+    },
+    {
+      "id": 283,
+      "label": "Physical Computing",
+      "group": "PHYS",
+      "shape": "box",
+      "cis": 3917
+    },
+    {
+      "id": 284,
+      "label": "Electrical Safety Rules",
+      "group": "PHYS",
+      "cis": 1256
+    },
+    {
+      "id": 285,
+      "label": "Breadboard Basics",
+      "group": "PHYS",
+      "cis": 491
+    },
+    {
+      "id": 286,
+      "label": "Jumper Wire",
+      "group": "PHYS",
+      "cis": 490
+    },
+    {
+      "id": 287,
+      "label": "Resistor Basics",
+      "group": "PHYS",
+      "cis": 489
+    },
+    {
+      "id": 288,
+      "label": "LED Basics",
+      "group": "PHYS",
+      "cis": 488
+    },
+    {
+      "id": 289,
+      "label": "Blinking Light Circuit",
+      "group": "PHYS",
+      "cis": 487
+    },
+    {
+      "id": 290,
+      "label": "Push Button Switch",
+      "group": "PHYS",
+      "cis": 486
+    },
+    {
+      "id": 291,
+      "label": "Digital Input",
+      "group": "PHYS",
+      "cis": 485
+    },
+    {
+      "id": 292,
+      "label": "Digital Output",
+      "group": "PHYS",
+      "cis": 484
+    },
+    {
+      "id": 293,
+      "label": "Analog Input",
+      "group": "PHYS",
+      "cis": 483
+    },
+    {
+      "id": 294,
+      "label": "Analog Output",
+      "group": "PHYS",
+      "cis": 482
+    },
+    {
+      "id": 295,
+      "label": "Voltage Basics",
+      "group": "PHYS",
+      "cis": 481
+    },
+    {
+      "id": 296,
+      "label": "Current Basics",
+      "group": "PHYS",
+      "cis": 480
+    },
+    {
+      "id": 297,
+      "label": "Short Circuit Hazard",
+      "group": "PHYS",
+      "cis": 479
+    },
+    {
+      "id": 298,
+      "label": "Static Electricity Precaution",
+      "group": "PHYS",
+      "cis": 478
+    },
+    {
+      "id": 299,
+      "label": "Battery Safety",
+      "group": "PHYS",
+      "cis": 477
+    },
+    {
+      "id": 300,
+      "label": "Soldering Safety Basics",
+      "group": "PHYS",
+      "cis": 476
+    },
+    {
+      "id": 301,
+      "label": "Multimeter Usage",
+      "group": "PHYS",
+      "cis": 475
+    },
+    {
+      "id": 302,
+      "label": "Circuit Diagram Reading",
+      "group": "PHYS",
+      "cis": 466
+    },
+    {
+      "id": 303,
+      "label": "Sensor Basics",
+      "group": "PHYS",
+      "cis": 465
+    },
+    {
+      "id": 304,
+      "label": "Light Sensor",
+      "group": "PHYS",
+      "cis": 448
+    },
+    {
+      "id": 305,
+      "label": "Temperature Sensor",
+      "group": "PHYS",
+      "cis": 395
+    },
+    {
+      "id": 306,
+      "label": "Humidity Sensor",
+      "group": "PHYS",
+      "cis": 342
+    },
+    {
+      "id": 307,
+      "label": "Motion Sensor",
+      "group": "PHYS",
+      "cis": 289
+    },
+    {
+      "id": 308,
+      "label": "Sound Sensor",
+      "group": "PHYS",
+      "cis": 288
+    },
+    {
+      "id": 309,
+      "label": "Distance Sensor",
+      "group": "PHYS",
+      "cis": 282
+    },
+    {
+      "id": 310,
+      "label": "Display Basics",
+      "group": "PHYS",
+      "cis": 264
+    },
+    {
+      "id": 311,
+      "label": "OLED Display",
+      "group": "PHYS",
+      "cis": 263
+    },
+    {
+      "id": 312,
+      "label": "LED Matrix Display",
+      "group": "PHYS",
+      "cis": 195
+    },
+    {
+      "id": 313,
+      "label": "Seven Segment Display",
+      "group": "PHYS",
+      "cis": 194
+    },
+    {
+      "id": 314,
+      "label": "Motor Basics",
+      "group": "PHYS",
+      "cis": 193
+    },
+    {
+      "id": 315,
+      "label": "DC Motor",
+      "group": "PHYS",
+      "cis": 177
+    },
+    {
+      "id": 316,
+      "label": "Servo Motor",
+      "group": "PHYS",
+      "cis": 176
+    },
+    {
+      "id": 317,
+      "label": "Stepper Motor",
+      "group": "PHYS",
+      "cis": 175
+    },
+    {
+      "id": 318,
+      "label": "Robot Chassis",
+      "group": "PHYS",
+      "cis": 174
+    },
+    {
+      "id": 319,
+      "label": "Floor Robot",
+      "group": "PHYS",
+      "cis": 19
+    },
+    {
+      "id": 320,
+      "label": "Table Robot",
+      "group": "PHYS",
+      "cis": 18
+    },
+    {
+      "id": 321,
+      "label": "Collision Avoidance Robot",
+      "group": "PHYS",
+      "cis": 17
+    },
+    {
+      "id": 322,
+      "label": "Robot Sensor Integration",
+      "group": "PHYS",
+      "cis": 16
+    },
+    {
+      "id": 323,
+      "label": "Robot Motor Control",
+      "group": "PHYS",
+      "cis": 15
+    },
+    {
+      "id": 324,
+      "label": "USB Cable Basics",
+      "group": "PHYS",
+      "cis": 14
+    },
+    {
+      "id": 325,
+      "label": "USB A Connector",
+      "group": "PHYS",
+      "cis": 13
+    },
+    {
+      "id": 326,
+      "label": "USB C Connector",
+      "group": "PHYS",
+      "cis": 12
+    },
+    {
+      "id": 327,
+      "label": "Power Supply Selection",
+      "group": "PHYS",
+      "cis": 11
+    },
+    {
+      "id": 328,
+      "label": "Component Storage System",
+      "group": "PHYS",
+      "cis": 10
+    },
+    {
+      "id": 329,
+      "label": "Wire Stripping Technique",
+      "group": "PHYS",
+      "cis": 9
+    },
+    {
+      "id": 330,
+      "label": "Prototyping Board",
+      "group": "PHYS",
+      "cis": 8
+    },
+    {
+      "id": 331,
+      "label": "Circuit Troubleshooting",
+      "group": "PHYS",
+      "cis": 7
+    },
+    {
+      "id": 332,
+      "label": "Component Identification",
+      "group": "PHYS",
+      "cis": 6
+    },
+    {
+      "id": 333,
+      "label": "Datasheet Reading",
+      "group": "PHYS",
+      "cis": 5
+    },
+    {
+      "id": 334,
+      "label": "Electronics Vocabulary",
+      "group": "PHYS",
+      "cis": 4
+    },
+    {
+      "id": 335,
+      "label": "Safe Disposal Of Electronics",
+      "group": "PHYS",
+      "cis": 3
+    },
+    {
+      "id": 336,
+      "label": "Static Safe Handling",
+      "group": "PHYS",
+      "cis": 2
+    },
+    {
+      "id": 337,
+      "label": "Component Testing Procedure",
+      "group": "PHYS",
+      "cis": 1
+    },
+    {
+      "id": 338,
+      "label": "Raspberry Pi Pico",
+      "group": "KITS",
+      "cis": 694
+    },
+    {
+      "id": 339,
+      "label": "MicroPython Basics",
+      "group": "KITS",
+      "cis": 163
+    },
+    {
+      "id": 340,
+      "label": "MicroPython Syntax",
+      "group": "KITS",
+      "cis": 162
+    },
+    {
+      "id": 341,
+      "label": "MicroPython Loop",
+      "group": "KITS",
+      "cis": 161
+    },
+    {
+      "id": 342,
+      "label": "NeoPixel LED Strip",
+      "group": "KITS",
+      "cis": 160
+    },
+    {
+      "id": 343,
+      "label": "LED Strip Wiring",
+      "group": "KITS",
+      "cis": 159
+    },
+    {
+      "id": 344,
+      "label": "Moving Rainbow Kit",
+      "group": "KITS",
+      "cis": 158
+    },
+    {
+      "id": 345,
+      "label": "Moving Rainbow Pattern",
+      "group": "KITS",
+      "cis": 79
+    },
+    {
+      "id": 346,
+      "label": "LED Noodle Project",
+      "group": "KITS",
+      "cis": 78
+    },
+    {
+      "id": 347,
+      "label": "Halloween Costume Lighting",
+      "group": "KITS",
+      "cis": 77
+    },
+    {
+      "id": 348,
+      "label": "Holiday Light Pattern",
+      "group": "KITS",
+      "cis": 76
+    },
+    {
+      "id": 349,
+      "label": "Fourth Of July Pattern",
+      "group": "KITS",
+      "cis": 75
+    },
+    {
+      "id": 350,
+      "label": "Color Wheel Programming",
+      "group": "KITS",
+      "cis": 74
+    },
+    {
+      "id": 351,
+      "label": "Brightness Control Code",
+      "group": "KITS",
+      "cis": 73
+    },
+    {
+      "id": 352,
+      "label": "Animation Timing Code",
+      "group": "KITS",
+      "cis": 72
+    },
+    {
+      "id": 353,
+      "label": "Robot Kit",
+      "group": "KITS",
+      "cis": 71
+    },
+    {
+      "id": 354,
+      "label": "Robot Kit Assembly",
+      "group": "KITS",
+      "cis": 70
+    },
+    {
+      "id": 355,
+      "label": "Remote Control Distraction Risk",
+      "group": "KITS",
+      "cis": 69
+    },
+    {
+      "id": 356,
+      "label": "Autonomous Robot Behavior",
+      "group": "KITS",
+      "cis": 68
+    },
+    {
+      "id": 357,
+      "label": "Robot Face Kit",
+      "group": "KITS",
+      "cis": 67
+    },
+    {
+      "id": 358,
+      "label": "Robot Emotion Display",
+      "group": "KITS",
+      "cis": 66
+    },
+    {
+      "id": 359,
+      "label": "Display Kit",
+      "group": "KITS",
+      "cis": 65
+    },
+    {
+      "id": 360,
+      "label": "Sensor Kit",
+      "group": "KITS",
+      "cis": 64
+    },
+    {
+      "id": 361,
+      "label": "Gyroscope Kit",
+      "group": "KITS",
+      "cis": 63
+    },
+    {
+      "id": 362,
+      "label": "Gyroscope Orientation Data",
+      "group": "KITS",
+      "cis": 62
+    },
+    {
+      "id": 363,
+      "label": "Motion Kit",
+      "group": "KITS",
+      "cis": 61
+    },
+    {
+      "id": 364,
+      "label": "Accelerometer Data",
+      "group": "KITS",
+      "cis": 60
+    },
+    {
+      "id": 365,
+      "label": "Sound Kit",
+      "group": "KITS",
+      "cis": 59
+    },
+    {
+      "id": 366,
+      "label": "Classroom Noise Challenge",
+      "group": "KITS",
+      "cis": 58
+    },
+    {
+      "id": 367,
+      "label": "Microphone Kit",
+      "group": "KITS",
+      "cis": 57
+    },
+    {
+      "id": 368,
+      "label": "Sound Spectrum Kit",
+      "group": "KITS",
+      "cis": 56
+    },
+    {
+      "id": 369,
+      "label": "Frequency Spectrum Display",
+      "group": "KITS",
+      "cis": 55
+    },
+    {
+      "id": 370,
+      "label": "Robot Sounds Kit",
+      "group": "KITS",
+      "cis": 54
+    },
+    {
+      "id": 371,
+      "label": "Robot Display Kit",
+      "group": "KITS",
+      "cis": 53
+    },
+    {
+      "id": 372,
+      "label": "IoT Project Kit",
+      "group": "KITS",
+      "cis": 52
+    },
+    {
+      "id": 373,
+      "label": "Light Temp Humidity Monitor",
+      "group": "KITS",
+      "cis": 51
+    },
+    {
+      "id": 374,
+      "label": "NightLight Project",
+      "group": "KITS",
+      "cis": 50
+    },
+    {
+      "id": 375,
+      "label": "Kit Assembly Instructions",
+      "group": "KITS",
+      "cis": 49
+    },
+    {
+      "id": 376,
+      "label": "Kit Component Checklist",
+      "group": "KITS",
+      "cis": 48
+    },
+    {
+      "id": 377,
+      "label": "Kit Difficulty Rating",
+      "group": "KITS",
+      "cis": 47
+    },
+    {
+      "id": 378,
+      "label": "Kit Cost Comparison",
+      "group": "KITS",
+      "cis": 46
+    },
+    {
+      "id": 379,
+      "label": "Kit Reuse Strategy",
+      "group": "KITS",
+      "cis": 45
+    },
+    {
+      "id": 380,
+      "label": "Kit Storage Bin",
+      "group": "KITS",
+      "cis": 44
+    },
+    {
+      "id": 381,
+      "label": "Kit Return Process",
+      "group": "KITS",
+      "cis": 17
+    },
+    {
+      "id": 382,
+      "label": "Kit Damage Assessment",
+      "group": "KITS",
+      "cis": 16
+    },
+    {
+      "id": 383,
+      "label": "Kit Loaner Program",
+      "group": "KITS",
+      "cis": 15
+    },
+    {
+      "id": 384,
+      "label": "Kit Documentation Sheet",
+      "group": "KITS",
+      "cis": 14
+    },
+    {
+      "id": 385,
+      "label": "Kit Wiring Diagram",
+      "group": "KITS",
+      "cis": 13
+    },
+    {
+      "id": 386,
+      "label": "Kit Code Template",
+      "group": "KITS",
+      "cis": 12
+    },
+    {
+      "id": 387,
+      "label": "Kit Debugging Guide",
+      "group": "KITS",
+      "cis": 11
+    },
+    {
+      "id": 388,
+      "label": "Kit Upgrade Path",
+      "group": "KITS",
+      "cis": 10
+    },
+    {
+      "id": 389,
+      "label": "Kit Vendor Selection",
+      "group": "KITS",
+      "cis": 9
+    },
+    {
+      "id": 390,
+      "label": "Kit Bulk Purchasing",
+      "group": "KITS",
+      "cis": 8
+    },
+    {
+      "id": 391,
+      "label": "Kit Unboxing Procedure",
+      "group": "KITS",
+      "cis": 7
+    },
+    {
+      "id": 392,
+      "label": "Kit Safety Checklist",
+      "group": "KITS",
+      "cis": 6
+    },
+    {
+      "id": 393,
+      "label": "Signal Processing Basics",
+      "group": "KITS",
+      "cis": 5
+    },
+    {
+      "id": 394,
+      "label": "Real Time Audio Processing",
+      "group": "KITS",
+      "cis": 4
+    },
+    {
+      "id": 395,
+      "label": "Fast Fourier Transform Basics",
+      "group": "KITS",
+      "cis": 3
+    },
+    {
+      "id": 396,
+      "label": "Smartwatch Display Kit",
+      "group": "KITS",
+      "cis": 2
+    },
+    {
+      "id": 397,
+      "label": "Wearable Electronics Basics",
+      "group": "KITS",
+      "cis": 1
+    },
+    {
+      "id": 398,
+      "label": "Laptop Purchasing",
+      "group": "TECH",
+      "shape": "box",
+      "cis": 1241
+    },
+    {
+      "id": 399,
+      "label": "Laptop Configuration",
+      "group": "TECH",
+      "cis": 43
+    },
+    {
+      "id": 400,
+      "label": "Chromebook Management",
+      "group": "TECH",
+      "cis": 42
+    },
+    {
+      "id": 401,
+      "label": "Windows Device Management",
+      "group": "TECH",
+      "cis": 41
+    },
+    {
+      "id": 402,
+      "label": "MacOS Device Management",
+      "group": "TECH",
+      "cis": 40
+    },
+    {
+      "id": 403,
+      "label": "Student Login Account",
+      "group": "TECH",
+      "cis": 39
+    },
+    {
+      "id": 404,
+      "label": "Shared Device Account",
+      "group": "TECH",
+      "cis": 38
+    },
+    {
+      "id": 405,
+      "label": "Individual Device Account",
+      "group": "TECH",
+      "cis": 37
+    },
+    {
+      "id": 406,
+      "label": "Device Imaging Process",
+      "group": "TECH",
+      "cis": 36
+    },
+    {
+      "id": 407,
+      "label": "Device Inventory Tracking",
+      "group": "TECH",
+      "cis": 35
+    },
+    {
+      "id": 408,
+      "label": "Device Charging Cart",
+      "group": "TECH",
+      "cis": 34
+    },
+    {
+      "id": 409,
+      "label": "Device Labeling System",
+      "group": "TECH",
+      "cis": 33
+    },
+    {
+      "id": 410,
+      "label": "Device Loaner Agreement",
+      "group": "TECH",
+      "cis": 32
+    },
+    {
+      "id": 411,
+      "label": "Screen Time Management",
+      "group": "TECH",
+      "cis": 31
+    },
+    {
+      "id": 412,
+      "label": "Content Filtering Software",
+      "group": "TECH",
+      "cis": 30
+    },
+    {
+      "id": 413,
+      "label": "Parental Control Software",
+      "group": "TECH",
+      "cis": 29
+    },
+    {
+      "id": 414,
+      "label": "Device Security Policy",
+      "group": "TECH",
+      "cis": 28
+    },
+    {
+      "id": 415,
+      "label": "Password Management For Kids",
+      "group": "TECH",
+      "cis": 27
+    },
+    {
+      "id": 416,
+      "label": "Device Repair Basics",
+      "group": "TECH",
+      "cis": 26
+    },
+    {
+      "id": 417,
+      "label": "Device Cleaning Routine",
+      "group": "TECH",
+      "cis": 25
+    },
+    {
+      "id": 418,
+      "label": "Wifi Network Setup",
+      "group": "TECH",
+      "cis": 24
+    },
+    {
+      "id": 419,
+      "label": "Guest Wifi Access",
+      "group": "TECH",
+      "cis": 23
+    },
+    {
+      "id": 420,
+      "label": "Network Bandwidth Planning",
+      "group": "TECH",
+      "cis": 22
+    },
+    {
+      "id": 421,
+      "label": "Firewall Basics For Clubs",
+      "group": "TECH",
+      "cis": 21
+    },
+    {
+      "id": 422,
+      "label": "Device Software Updates",
+      "group": "TECH",
+      "cis": 20
+    },
+    {
+      "id": 423,
+      "label": "App Installation Policy",
+      "group": "TECH",
+      "cis": 19
+    },
+    {
+      "id": 424,
+      "label": "Browser Bookmark Management",
+      "group": "TECH",
+      "cis": 18
+    },
+    {
+      "id": 425,
+      "label": "Class Bookmark Folder",
+      "group": "TECH",
+      "cis": 17
+    },
+    {
+      "id": 426,
+      "label": "Student Bookmark Folder",
+      "group": "TECH",
+      "cis": 16
+    },
+    {
+      "id": 427,
+      "label": "Offline Mode Preparation",
+      "group": "TECH",
+      "cis": 15
+    },
+    {
+      "id": 428,
+      "label": "Backup Device Plan",
+      "group": "TECH",
+      "cis": 14
+    },
+    {
+      "id": 429,
+      "label": "Device Donation Program",
+      "group": "TECH",
+      "cis": 13
+    },
+    {
+      "id": 430,
+      "label": "Refurbished Device Sourcing",
+      "group": "TECH",
+      "cis": 12
+    },
+    {
+      "id": 431,
+      "label": "Device End Of Life Plan",
+      "group": "TECH",
+      "cis": 11
+    },
+    {
+      "id": 432,
+      "label": "Peripheral Device Management",
+      "group": "TECH",
+      "cis": 10
+    },
+    {
+      "id": 433,
+      "label": "Headphone Management",
+      "group": "TECH",
+      "cis": 9
+    },
+    {
+      "id": 434,
+      "label": "Mouse And Keyboard Setup",
+      "group": "TECH",
+      "cis": 8
+    },
+    {
+      "id": 435,
+      "label": "External Storage Device",
+      "group": "TECH",
+      "cis": 7
+    },
+    {
+      "id": 436,
+      "label": "Cloud Storage For Devices",
+      "group": "TECH",
+      "cis": 6
+    },
+    {
+      "id": 437,
+      "label": "Device Troubleshooting Checklist",
+      "group": "TECH",
+      "cis": 5
+    },
+    {
+      "id": 438,
+      "label": "IT Volunteer Role",
+      "group": "TECH",
+      "cis": 4
+    },
+    {
+      "id": 439,
+      "label": "Device Setup Time Budget",
+      "group": "TECH",
+      "cis": 3
+    },
+    {
+      "id": 440,
+      "label": "Device Return Checklist",
+      "group": "TECH",
+      "cis": 2
+    },
+    {
+      "id": 441,
+      "label": "Shared Drive Organization",
+      "group": "TECH",
+      "cis": 1
+    },
+    {
+      "id": 442,
+      "label": "Saving Student Data",
+      "group": "DATA",
+      "cis": 1016
+    },
+    {
+      "id": 443,
+      "label": "Student Data Privacy",
+      "group": "DATA",
+      "cis": 196
+    },
+    {
+      "id": 444,
+      "label": "Tracking Student Progress",
+      "group": "DATA",
+      "cis": 195
+    },
+    {
+      "id": 445,
+      "label": "Progress Dashboard",
+      "group": "DATA",
+      "cis": 194
+    },
+    {
+      "id": 446,
+      "label": "Simple Spreadsheet Tracking",
+      "group": "DATA",
+      "cis": 193
+    },
+    {
+      "id": 447,
+      "label": "Spreadsheet Template Design",
+      "group": "DATA",
+      "cis": 192
+    },
+    {
+      "id": 448,
+      "label": "Managing Email Communication",
+      "group": "DATA",
+      "cis": 191
+    },
+    {
+      "id": 449,
+      "label": "Email List Segmentation",
+      "group": "DATA",
+      "cis": 113
+    },
+    {
+      "id": 450,
+      "label": "Setting Up A Calendar",
+      "group": "DATA",
+      "cis": 112
+    },
+    {
+      "id": 451,
+      "label": "Shared Calendar Access",
+      "group": "DATA",
+      "cis": 111
+    },
+    {
+      "id": 452,
+      "label": "Notification System",
+      "group": "DATA",
+      "cis": 110
+    },
+    {
+      "id": 453,
+      "label": "Email And Chat Tools",
+      "group": "DATA",
+      "cis": 109
+    },
+    {
+      "id": 454,
+      "label": "Group Messaging App",
+      "group": "DATA",
+      "cis": 108
+    },
+    {
+      "id": 455,
+      "label": "Forms And Feedback Tools",
+      "group": "DATA",
+      "cis": 107
+    },
+    {
+      "id": 456,
+      "label": "Survey Tool Selection",
+      "group": "DATA",
+      "cis": 106
+    },
+    {
+      "id": 457,
+      "label": "Feedback Loop Design",
+      "group": "DATA",
+      "cis": 105
+    },
+    {
+      "id": 458,
+      "label": "Data Backup Routine",
+      "group": "DATA",
+      "cis": 104
+    },
+    {
+      "id": 459,
+      "label": "Data Retention Policy",
+      "group": "DATA",
+      "cis": 103
+    },
+    {
+      "id": 460,
+      "label": "Consent For Data Collection",
+      "group": "DATA",
+      "cis": 102
+    },
+    {
+      "id": 461,
+      "label": "Anonymized Reporting",
+      "group": "DATA",
+      "cis": 101
+    },
+    {
+      "id": 462,
+      "label": "Parent Communication Log",
+      "group": "DATA",
+      "cis": 100
+    },
+    {
+      "id": 463,
+      "label": "Mentor Communication Log",
+      "group": "DATA",
+      "cis": 65
+    },
+    {
+      "id": 464,
+      "label": "Automated Reminder System",
+      "group": "DATA",
+      "cis": 64
+    },
+    {
+      "id": 465,
+      "label": "SMS Notification",
+      "group": "DATA",
+      "cis": 19
+    },
+    {
+      "id": 466,
+      "label": "Newsletter Automation",
+      "group": "DATA",
+      "cis": 18
+    },
+    {
+      "id": 467,
+      "label": "Data Visualization Basics",
+      "group": "DATA",
+      "cis": 17
+    },
+    {
+      "id": 468,
+      "label": "Attendance Data Analysis",
+      "group": "DATA",
+      "cis": 16
+    },
+    {
+      "id": 469,
+      "label": "Retention Rate Tracking",
+      "group": "DATA",
+      "cis": 15
+    },
+    {
+      "id": 470,
+      "label": "Enrollment Trend Analysis",
+      "group": "DATA",
+      "cis": 14
+    },
+    {
+      "id": 471,
+      "label": "Student Growth Metrics",
+      "group": "DATA",
+      "cis": 13
+    },
+    {
+      "id": 472,
+      "label": "Skill Mastery Tracking",
+      "group": "DATA",
+      "cis": 12
+    },
+    {
+      "id": 473,
+      "label": "Digital Portfolio System",
+      "group": "DATA",
+      "cis": 11
+    },
+    {
+      "id": 474,
+      "label": "Parent Access Portal",
+      "group": "DATA",
+      "cis": 10
+    },
+    {
+      "id": 475,
+      "label": "Data Export Process",
+      "group": "DATA",
+      "cis": 9
+    },
+    {
+      "id": 476,
+      "label": "Spreadsheet Formula Basics",
+      "group": "DATA",
+      "cis": 8
+    },
+    {
+      "id": 477,
+      "label": "Pivot Table Basics",
+      "group": "DATA",
+      "cis": 7
+    },
+    {
+      "id": 478,
+      "label": "Data Entry Standardization",
+      "group": "DATA",
+      "cis": 6
+    },
+    {
+      "id": 479,
+      "label": "Duplicate Record Cleanup",
+      "group": "DATA",
+      "cis": 5
+    },
+    {
+      "id": 480,
+      "label": "Data Sharing Agreement",
+      "group": "DATA",
+      "cis": 4
+    },
+    {
+      "id": 481,
+      "label": "Third Party Tool Vetting",
+      "group": "DATA",
+      "cis": 3
+    },
+    {
+      "id": 482,
+      "label": "Cloud Document Sharing",
+      "group": "DATA",
+      "cis": 2
+    },
+    {
+      "id": 483,
+      "label": "File Naming Convention",
+      "group": "DATA",
+      "cis": 1
+    },
+    {
+      "id": 484,
+      "label": "Motivating Students",
+      "group": "MOTIV",
+      "cis": 90
+    },
+    {
+      "id": 485,
+      "label": "Intrinsic Motivation",
+      "group": "MOTIV",
+      "cis": 29
+    },
+    {
+      "id": 486,
+      "label": "Extrinsic Reward System",
+      "group": "MOTIV",
+      "cis": 28
+    },
+    {
+      "id": 487,
+      "label": "Challenge Card System",
+      "group": "MOTIV",
+      "cis": 27
+    },
+    {
+      "id": 488,
+      "label": "Learning Map Display",
+      "group": "MOTIV",
+      "cis": 26
+    },
+    {
+      "id": 489,
+      "label": "Badge Design",
+      "group": "MOTIV",
+      "cis": 25
+    },
+    {
+      "id": 490,
+      "label": "Sticker Reward System",
+      "group": "MOTIV",
+      "cis": 24
+    },
+    {
+      "id": 491,
+      "label": "Progress Tracker Poster",
+      "group": "MOTIV",
+      "cis": 23
+    },
+    {
+      "id": 492,
+      "label": "Leaderboard Consideration",
+      "group": "MOTIV",
+      "cis": 22
+    },
+    {
+      "id": 493,
+      "label": "Friendly Competition Design",
+      "group": "MOTIV",
+      "cis": 21
+    },
+    {
+      "id": 494,
+      "label": "Collaborative Challenge Design",
+      "group": "MOTIV",
+      "cis": 20
+    },
+    {
+      "id": 495,
+      "label": "Growth Mindset Coaching",
+      "group": "MOTIV",
+      "cis": 19
+    },
+    {
+      "id": 496,
+      "label": "Celebrating Small Wins",
+      "group": "MOTIV",
+      "cis": 18
+    },
+    {
+      "id": 497,
+      "label": "Public Recognition Event",
+      "group": "MOTIV",
+      "cis": 17
+    },
+    {
+      "id": 498,
+      "label": "Certificate Of Completion",
+      "group": "MOTIV",
+      "cis": 16
+    },
+    {
+      "id": 499,
+      "label": "Student Showcase Wall",
+      "group": "MOTIV",
+      "cis": 15
+    },
+    {
+      "id": 500,
+      "label": "Peer Recognition Activity",
+      "group": "MOTIV",
+      "cis": 14
+    },
+    {
+      "id": 501,
+      "label": "Encouragement Language",
+      "group": "MOTIV",
+      "cis": 13
+    },
+    {
+      "id": 502,
+      "label": "Handling Frustration",
+      "group": "MOTIV",
+      "cis": 12
+    },
+    {
+      "id": 503,
+      "label": "Persistence Coaching",
+      "group": "MOTIV",
+      "cis": 11
+    },
+    {
+      "id": 504,
+      "label": "Failure As Learning Tool",
+      "group": "MOTIV",
+      "cis": 10
+    },
+    {
+      "id": 505,
+      "label": "Student Goal Setting",
+      "group": "MOTIV",
+      "cis": 9
+    },
+    {
+      "id": 506,
+      "label": "Personal Project Choice",
+      "group": "MOTIV",
+      "cis": 8
+    },
+    {
+      "id": 507,
+      "label": "Student Voice And Choice",
+      "group": "MOTIV",
+      "cis": 7
+    },
+    {
+      "id": 508,
+      "label": "Gamification Elements",
+      "group": "MOTIV",
+      "cis": 6
+    },
+    {
+      "id": 509,
+      "label": "Point System Design",
+      "group": "MOTIV",
+      "cis": 5
+    },
+    {
+      "id": 510,
+      "label": "Level Up System",
+      "group": "MOTIV",
+      "cis": 4
+    },
+    {
+      "id": 511,
+      "label": "Student Interest Survey",
+      "group": "MOTIV",
+      "cis": 3
+    },
+    {
+      "id": 512,
+      "label": "Passion Project Time",
+      "group": "MOTIV",
+      "cis": 2
+    },
+    {
+      "id": 513,
+      "label": "Mentor Praise Technique",
+      "group": "MOTIV",
+      "cis": 1
+    },
+    {
+      "id": 514,
+      "label": "Recruiting Minorities",
+      "group": "DEI",
+      "cis": 80
+    },
+    {
+      "id": 515,
+      "label": "Recruiting Girls And Women",
+      "group": "DEI",
+      "cis": 35
+    },
+    {
+      "id": 516,
+      "label": "Underserved Community Outreach",
+      "group": "DEI",
+      "cis": 34
+    },
+    {
+      "id": 517,
+      "label": "Language Accessibility",
+      "group": "DEI",
+      "cis": 33
+    },
+    {
+      "id": 518,
+      "label": "Translated Materials",
+      "group": "DEI",
+      "cis": 22
+    },
+    {
+      "id": 519,
+      "label": "Low Income Family Support",
+      "group": "DEI",
+      "cis": 21
+    },
+    {
+      "id": 520,
+      "label": "No Fee Club Model",
+      "group": "DEI",
+      "cis": 20
+    },
+    {
+      "id": 521,
+      "label": "Why No Fees Matters",
+      "group": "DEI",
+      "cis": 19
+    },
+    {
+      "id": 522,
+      "label": "Scholarship Fund",
+      "group": "DEI",
+      "cis": 18
+    },
+    {
+      "id": 523,
+      "label": "Free Device Loan Program",
+      "group": "DEI",
+      "cis": 17
+    },
+    {
+      "id": 524,
+      "label": "Transportation Barrier Solution",
+      "group": "DEI",
+      "cis": 16
+    },
+    {
+      "id": 525,
+      "label": "Accessible Session Timing",
+      "group": "DEI",
+      "cis": 15
+    },
+    {
+      "id": 526,
+      "label": "Disability Accommodation",
+      "group": "DEI",
+      "cis": 14
+    },
+    {
+      "id": 527,
+      "label": "Assistive Technology Option",
+      "group": "DEI",
+      "cis": 13
+    },
+    {
+      "id": 528,
+      "label": "Culturally Responsive Teaching",
+      "group": "DEI",
+      "cis": 12
+    },
+    {
+      "id": 529,
+      "label": "Representation In Curriculum",
+      "group": "DEI",
+      "cis": 11
+    },
+    {
+      "id": 530,
+      "label": "Female Mentor Recruitment",
+      "group": "DEI",
+      "cis": 10
+    },
+    {
+      "id": 531,
+      "label": "Role Model Visibility",
+      "group": "DEI",
+      "cis": 9
+    },
+    {
+      "id": 532,
+      "label": "Community Trust Building",
+      "group": "DEI",
+      "cis": 8
+    },
+    {
+      "id": 533,
+      "label": "Faith Based Venue Partnership",
+      "group": "DEI",
+      "cis": 7
+    },
+    {
+      "id": 534,
+      "label": "Rural Community Outreach",
+      "group": "DEI",
+      "cis": 6
+    },
+    {
+      "id": 535,
+      "label": "Urban Community Outreach",
+      "group": "DEI",
+      "cis": 5
+    },
+    {
+      "id": 536,
+      "label": "Immigrant Family Outreach",
+      "group": "DEI",
+      "cis": 4
+    },
+    {
+      "id": 537,
+      "label": "Equity Audit Of Club",
+      "group": "DEI",
+      "cis": 3
+    },
+    {
+      "id": 538,
+      "label": "Inclusive Marketing Materials",
+      "group": "DEI",
+      "cis": 2
+    },
+    {
+      "id": 539,
+      "label": "Bias Awareness Training",
+      "group": "DEI",
+      "cis": 1
+    },
+    {
+      "id": 540,
+      "label": "Establishing A Budget",
+      "group": "FUND",
+      "cis": 254
+    },
+    {
+      "id": 541,
+      "label": "Budget Line Item",
+      "group": "FUND",
+      "cis": 48
+    },
+    {
+      "id": 542,
+      "label": "Recurring Cost Planning",
+      "group": "FUND",
+      "cis": 47
+    },
+    {
+      "id": 543,
+      "label": "One Time Cost Planning",
+      "group": "FUND",
+      "cis": 46
+    },
+    {
+      "id": 544,
+      "label": "Cost Per Student Estimate",
+      "group": "FUND",
+      "cis": 45
+    },
+    {
+      "id": 545,
+      "label": "Raising Funds",
+      "group": "FUND",
+      "cis": 44
+    },
+    {
+      "id": 546,
+      "label": "Grant Writing Basics",
+      "group": "FUND",
+      "cis": 43
+    },
+    {
+      "id": 547,
+      "label": "Grant Proposal Structure",
+      "group": "FUND",
+      "cis": 29
+    },
+    {
+      "id": 548,
+      "label": "Grant Application Tracking",
+      "group": "FUND",
+      "cis": 28
+    },
+    {
+      "id": 549,
+      "label": "Community Support Drive",
+      "group": "FUND",
+      "cis": 27
+    },
+    {
+      "id": 550,
+      "label": "Crowdfunding Campaign",
+      "group": "FUND",
+      "cis": 26
+    },
+    {
+      "id": 551,
+      "label": "Corporate Sponsorship",
+      "group": "FUND",
+      "cis": 25
+    },
+    {
+      "id": 552,
+      "label": "In Kind Donation",
+      "group": "FUND",
+      "cis": 24
+    },
+    {
+      "id": 553,
+      "label": "Fundraising Event Planning",
+      "group": "FUND",
+      "cis": 23
+    },
+    {
+      "id": 554,
+      "label": "Local Company Partnership",
+      "group": "FUND",
+      "cis": 22
+    },
+    {
+      "id": 555,
+      "label": "Strategic Partnership Building",
+      "group": "FUND",
+      "cis": 21
+    },
+    {
+      "id": 556,
+      "label": "Vendor Discount Negotiation",
+      "group": "FUND",
+      "cis": 20
+    },
+    {
+      "id": 557,
+      "label": "Nonprofit Fiscal Sponsorship",
+      "group": "FUND",
+      "cis": 19
+    },
+    {
+      "id": 558,
+      "label": "Budget Tracking Spreadsheet",
+      "group": "FUND",
+      "cis": 18
+    },
+    {
+      "id": 559,
+      "label": "Expense Reporting Process",
+      "group": "FUND",
+      "cis": 17
+    },
+    {
+      "id": 560,
+      "label": "Reimbursement Policy",
+      "group": "FUND",
+      "cis": 16
+    },
+    {
+      "id": 561,
+      "label": "Donation Receipt Process",
+      "group": "FUND",
+      "cis": 15
+    },
+    {
+      "id": 562,
+      "label": "Annual Budget Review",
+      "group": "FUND",
+      "cis": 14
+    },
+    {
+      "id": 563,
+      "label": "Emergency Fund Reserve",
+      "group": "FUND",
+      "cis": 13
+    },
+    {
+      "id": 564,
+      "label": "Equipment Depreciation Planning",
+      "group": "FUND",
+      "cis": 12
+    },
+    {
+      "id": 565,
+      "label": "Membership Fee Model",
+      "group": "FUND",
+      "cis": 11
+    },
+    {
+      "id": 566,
+      "label": "Sliding Scale Fee Model",
+      "group": "FUND",
+      "cis": 10
+    },
+    {
+      "id": 567,
+      "label": "Community Foundation Grant",
+      "group": "FUND",
+      "cis": 9
+    },
+    {
+      "id": 568,
+      "label": "School District Funding",
+      "group": "FUND",
+      "cis": 8
+    },
+    {
+      "id": 569,
+      "label": "PTA Partnership Funding",
+      "group": "FUND",
+      "cis": 7
+    },
+    {
+      "id": 570,
+      "label": "Library Funding Partnership",
+      "group": "FUND",
+      "cis": 6
+    },
+    {
+      "id": 571,
+      "label": "Robotics Club Overlap Funding",
+      "group": "FUND",
+      "cis": 5
+    },
+    {
+      "id": 572,
+      "label": "Shared Resource Agreement",
+      "group": "FUND",
+      "cis": 4
+    },
+    {
+      "id": 573,
+      "label": "Partnership Proposal Template",
+      "group": "FUND",
+      "cis": 3
+    },
+    {
+      "id": 574,
+      "label": "Sponsor Recognition Plan",
+      "group": "FUND",
+      "cis": 2
+    },
+    {
+      "id": 575,
+      "label": "Cost Benefit Analysis",
+      "group": "FUND",
+      "cis": 1
+    },
+    {
+      "id": 576,
+      "label": "AI Agent Basics",
+      "group": "AI",
+      "cis": 280
+    },
+    {
+      "id": 577,
+      "label": "Leveraging AI Agents",
+      "group": "AI",
+      "cis": 49
+    },
+    {
+      "id": 578,
+      "label": "Planning AI Agent",
+      "group": "AI",
+      "cis": 48
+    },
+    {
+      "id": 579,
+      "label": "Communication AI Agent",
+      "group": "AI",
+      "cis": 47
+    },
+    {
+      "id": 580,
+      "label": "Registration AI Agent",
+      "group": "AI",
+      "cis": 46
+    },
+    {
+      "id": 581,
+      "label": "Scheduling AI Agent",
+      "group": "AI",
+      "cis": 45
+    },
+    {
+      "id": 582,
+      "label": "Reminder AI Agent",
+      "group": "AI",
+      "cis": 44
+    },
+    {
+      "id": 583,
+      "label": "Mentor Coaching AI Agent",
+      "group": "AI",
+      "cis": 43
+    },
+    {
+      "id": 584,
+      "label": "Influence Graph Concept",
+      "group": "AI",
+      "cis": 42
+    },
+    {
+      "id": 585,
+      "label": "Building An Influence Graph",
+      "group": "AI",
+      "cis": 41
+    },
+    {
+      "id": 586,
+      "label": "Targeting Mentor Populations",
+      "group": "AI",
+      "cis": 40
+    },
+    {
+      "id": 587,
+      "label": "AI Managed Mailing List",
+      "group": "AI",
+      "cis": 39
+    },
+    {
+      "id": 588,
+      "label": "AI Generated Announcement",
+      "group": "AI",
+      "cis": 38
+    },
+    {
+      "id": 589,
+      "label": "AI Drafted Newsletter",
+      "group": "AI",
+      "cis": 37
+    },
+    {
+      "id": 590,
+      "label": "AI Survey Analysis",
+      "group": "AI",
+      "cis": 36
+    },
+    {
+      "id": 591,
+      "label": "AI Sentiment Analysis",
+      "group": "AI",
+      "cis": 35
+    },
+    {
+      "id": 592,
+      "label": "AI Chatbot For Parents",
+      "group": "AI",
+      "cis": 34
+    },
+    {
+      "id": 593,
+      "label": "AI Chatbot For Students",
+      "group": "AI",
+      "cis": 33
+    },
+    {
+      "id": 594,
+      "label": "Prompt Engineering Basics",
+      "group": "AI",
+      "cis": 32
+    },
+    {
+      "id": 595,
+      "label": "Reviewing AI Output",
+      "group": "AI",
+      "cis": 31
+    },
+    {
+      "id": 596,
+      "label": "AI Output Quality Check",
+      "group": "AI",
+      "cis": 30
+    },
+    {
+      "id": 597,
+      "label": "AI Agent Guardrails",
+      "group": "AI",
+      "cis": 29
+    },
+    {
+      "id": 598,
+      "label": "AI Agent Oversight",
+      "group": "AI",
+      "cis": 28
+    },
+    {
+      "id": 599,
+      "label": "Human In The Loop Review",
+      "group": "AI",
+      "cis": 27
+    },
+    {
+      "id": 600,
+      "label": "AI Ethics For Clubs",
+      "group": "AI",
+      "cis": 26
+    },
+    {
+      "id": 601,
+      "label": "AI Bias Awareness",
+      "group": "AI",
+      "cis": 25
+    },
+    {
+      "id": 602,
+      "label": "AI Data Privacy Risk",
+      "group": "AI",
+      "cis": 24
+    },
+    {
+      "id": 603,
+      "label": "AI Tool Selection Criteria",
+      "group": "AI",
+      "cis": 23
+    },
+    {
+      "id": 604,
+      "label": "AI Assisted Curriculum Design",
+      "group": "AI",
+      "cis": 22
+    },
+    {
+      "id": 605,
+      "label": "AI Generated Challenge Card",
+      "group": "AI",
+      "cis": 21
+    },
+    {
+      "id": 606,
+      "label": "AI Assisted Lesson Customization",
+      "group": "AI",
+      "cis": 20
+    },
+    {
+      "id": 607,
+      "label": "Building Student Mental Models",
+      "group": "AI",
+      "cis": 19
+    },
+    {
+      "id": 608,
+      "label": "Customizing Lessons With AI",
+      "group": "AI",
+      "cis": 18
+    },
+    {
+      "id": 609,
+      "label": "AI Assisted Mentor Matching",
+      "group": "AI",
+      "cis": 17
+    },
+    {
+      "id": 610,
+      "label": "AI Scheduling Optimization",
+      "group": "AI",
+      "cis": 16
+    },
+    {
+      "id": 611,
+      "label": "AI Agent Cost Management",
+      "group": "AI",
+      "cis": 15
+    },
+    {
+      "id": 612,
+      "label": "AI Agent Vendor Comparison",
+      "group": "AI",
+      "cis": 14
+    },
+    {
+      "id": 613,
+      "label": "AI Assisted Grant Writing",
+      "group": "AI",
+      "cis": 13
+    },
+    {
+      "id": 614,
+      "label": "AI Assisted Social Media",
+      "group": "AI",
+      "cis": 12
+    },
+    {
+      "id": 615,
+      "label": "AI Generated Website Content",
+      "group": "AI",
+      "cis": 11
+    },
+    {
+      "id": 616,
+      "label": "AI Assisted Translation",
+      "group": "AI",
+      "cis": 10
+    },
+    {
+      "id": 617,
+      "label": "AI Voice Assistant Use",
+      "group": "AI",
+      "cis": 9
+    },
+    {
+      "id": 618,
+      "label": "AI Assisted Debugging Help",
+      "group": "AI",
+      "cis": 8
+    },
+    {
+      "id": 619,
+      "label": "AI Tutor For Students",
+      "group": "AI",
+      "cis": 7
+    },
+    {
+      "id": 620,
+      "label": "AI Code Review Assistant",
+      "group": "AI",
+      "cis": 6
+    },
+    {
+      "id": 621,
+      "label": "AI Agent Workflow Design",
+      "group": "AI",
+      "cis": 5
+    },
+    {
+      "id": 622,
+      "label": "AI Agent Integration Testing",
+      "group": "AI",
+      "cis": 4
+    },
+    {
+      "id": 623,
+      "label": "AI Agent Rollout Plan",
+      "group": "AI",
+      "cis": 3
+    },
+    {
+      "id": 624,
+      "label": "AI Agent Training For Leaders",
+      "group": "AI",
+      "cis": 2
+    },
+    {
+      "id": 625,
+      "label": "Coaching Leaders With AI",
+      "group": "AI",
+      "cis": 1
+    },
+    {
+      "id": 626,
+      "label": "Oversight Board",
+      "group": "BOARD",
+      "cis": 102
+    },
+    {
+      "id": 627,
+      "label": "Board Roles And Duties",
+      "group": "BOARD",
+      "cis": 31
+    },
+    {
+      "id": 628,
+      "label": "Board Meeting Cadence",
+      "group": "BOARD",
+      "cis": 30
+    },
+    {
+      "id": 629,
+      "label": "Board Member Recruitment",
+      "group": "BOARD",
+      "cis": 29
+    },
+    {
+      "id": 630,
+      "label": "Board Term Limits",
+      "group": "BOARD",
+      "cis": 28
+    },
+    {
+      "id": 631,
+      "label": "Succession Planning",
+      "group": "BOARD",
+      "cis": 27
+    },
+    {
+      "id": 632,
+      "label": "Club Inventory System",
+      "group": "BOARD",
+      "cis": 26
+    },
+    {
+      "id": 633,
+      "label": "Inventory Sticker Printing",
+      "group": "BOARD",
+      "cis": 25
+    },
+    {
+      "id": 634,
+      "label": "QR Code On Kits",
+      "group": "BOARD",
+      "cis": 24
+    },
+    {
+      "id": 635,
+      "label": "Asset Tagging Process",
+      "group": "BOARD",
+      "cis": 23
+    },
+    {
+      "id": 636,
+      "label": "Inventory Audit Process",
+      "group": "BOARD",
+      "cis": 22
+    },
+    {
+      "id": 637,
+      "label": "Lost Item Policy",
+      "group": "BOARD",
+      "cis": 21
+    },
+    {
+      "id": 638,
+      "label": "Equipment Checkout System",
+      "group": "BOARD",
+      "cis": 20
+    },
+    {
+      "id": 639,
+      "label": "Equipment Return Tracking",
+      "group": "BOARD",
+      "cis": 19
+    },
+    {
+      "id": 640,
+      "label": "Advanced Mentor Recruiting",
+      "group": "BOARD",
+      "cis": 18
+    },
+    {
+      "id": 641,
+      "label": "Finding Qualified Mentors",
+      "group": "BOARD",
+      "cis": 17
+    },
+    {
+      "id": 642,
+      "label": "Mentor Interview Process",
+      "group": "BOARD",
+      "cis": 16
+    },
+    {
+      "id": 643,
+      "label": "Mentor Training Curriculum",
+      "group": "BOARD",
+      "cis": 15
+    },
+    {
+      "id": 644,
+      "label": "Bringing Out Mentor Strengths",
+      "group": "BOARD",
+      "cis": 14
+    },
+    {
+      "id": 645,
+      "label": "Mentor Certification Program",
+      "group": "BOARD",
+      "cis": 13
+    },
+    {
+      "id": 646,
+      "label": "Mentor Peer Support Program",
+      "group": "BOARD",
+      "cis": 12
+    },
+    {
+      "id": 647,
+      "label": "Leadership Pipeline Development",
+      "group": "BOARD",
+      "cis": 11
+    },
+    {
+      "id": 648,
+      "label": "Documenting Club Procedures",
+      "group": "BOARD",
+      "cis": 10
+    },
+    {
+      "id": 649,
+      "label": "Standard Operating Procedure",
+      "group": "BOARD",
+      "cis": 9
+    },
+    {
+      "id": 650,
+      "label": "Knowledge Transfer Process",
+      "group": "BOARD",
+      "cis": 8
+    },
+    {
+      "id": 651,
+      "label": "New Leader Onboarding",
+      "group": "BOARD",
+      "cis": 7
+    },
+    {
+      "id": 652,
+      "label": "Club Playbook Document",
+      "group": "BOARD",
+      "cis": 6
+    },
+    {
+      "id": 653,
+      "label": "Annual Strategic Plan",
+      "group": "BOARD",
+      "cis": 5
+    },
+    {
+      "id": 654,
+      "label": "Club Health Metrics",
+      "group": "BOARD",
+      "cis": 4
+    },
+    {
+      "id": 655,
+      "label": "Sustainability Checklist",
+      "group": "BOARD",
+      "cis": 3
+    },
+    {
+      "id": 656,
+      "label": "Multi Year Vision Plan",
+      "group": "BOARD",
+      "cis": 2
+    },
+    {
+      "id": 657,
+      "label": "Building Sustainable Clubs",
+      "group": "BOARD",
+      "cis": 1
+    }
+  ],
+  "edges": [
+    {
+      "from": 2,
+      "to": 1
+    },
+    {
+      "from": 3,
+      "to": 2
+    },
+    {
+      "from": 4,
+      "to": 3
+    },
+    {
+      "from": 5,
+      "to": 4
+    },
+    {
+      "from": 6,
+      "to": 5
+    },
+    {
+      "from": 7,
+      "to": 1
+    },
+    {
+      "from": 7,
+      "to": 6
+    },
+    {
+      "from": 8,
+      "to": 7
+    },
+    {
+      "from": 9,
+      "to": 8
+    },
+    {
+      "from": 10,
+      "to": 9
+    },
+    {
+      "from": 11,
+      "to": 10
+    },
+    {
+      "from": 12,
+      "to": 11
+    },
+    {
+      "from": 13,
+      "to": 1
+    },
+    {
+      "from": 13,
+      "to": 12
+    },
+    {
+      "from": 14,
+      "to": 13
+    },
+    {
+      "from": 15,
+      "to": 14
+    },
+    {
+      "from": 16,
+      "to": 15
+    },
+    {
+      "from": 17,
+      "to": 16
+    },
+    {
+      "from": 18,
+      "to": 17
+    },
+    {
+      "from": 19,
+      "to": 1
+    },
+    {
+      "from": 19,
+      "to": 18
+    },
+    {
+      "from": 20,
+      "to": 19
+    },
+    {
+      "from": 21,
+      "to": 20
+    },
+    {
+      "from": 22,
+      "to": 21
+    },
+    {
+      "from": 23,
+      "to": 22
+    },
+    {
+      "from": 24,
+      "to": 23
+    },
+    {
+      "from": 25,
+      "to": 1
+    },
+    {
+      "from": 25,
+      "to": 24
+    },
+    {
+      "from": 26,
+      "to": 25
+    },
+    {
+      "from": 27,
+      "to": 26
+    },
+    {
+      "from": 28,
+      "to": 27
+    },
+    {
+      "from": 29,
+      "to": 28
+    },
+    {
+      "from": 30,
+      "to": 29
+    },
+    {
+      "from": 31,
+      "to": 1
+    },
+    {
+      "from": 31,
+      "to": 30
+    },
+    {
+      "from": 32,
+      "to": 31
+    },
+    {
+      "from": 33,
+      "to": 32
+    },
+    {
+      "from": 34,
+      "to": 33
+    },
+    {
+      "from": 35,
+      "to": 34
+    },
+    {
+      "from": 36,
+      "to": 35
+    },
+    {
+      "from": 37,
+      "to": 1
+    },
+    {
+      "from": 38,
+      "to": 37
+    },
+    {
+      "from": 39,
+      "to": 38
+    },
+    {
+      "from": 40,
+      "to": 39
+    },
+    {
+      "from": 41,
+      "to": 40
+    },
+    {
+      "from": 42,
+      "to": 41
+    },
+    {
+      "from": 43,
+      "to": 37
+    },
+    {
+      "from": 43,
+      "to": 42
+    },
+    {
+      "from": 44,
+      "to": 43
+    },
+    {
+      "from": 45,
+      "to": 44
+    },
+    {
+      "from": 46,
+      "to": 45
+    },
+    {
+      "from": 47,
+      "to": 46
+    },
+    {
+      "from": 48,
+      "to": 47
+    },
+    {
+      "from": 49,
+      "to": 37
+    },
+    {
+      "from": 49,
+      "to": 48
+    },
+    {
+      "from": 50,
+      "to": 49
+    },
+    {
+      "from": 51,
+      "to": 50
+    },
+    {
+      "from": 52,
+      "to": 51
+    },
+    {
+      "from": 53,
+      "to": 52
+    },
+    {
+      "from": 54,
+      "to": 53
+    },
+    {
+      "from": 55,
+      "to": 37
+    },
+    {
+      "from": 55,
+      "to": 54
+    },
+    {
+      "from": 56,
+      "to": 55
+    },
+    {
+      "from": 57,
+      "to": 56
+    },
+    {
+      "from": 58,
+      "to": 57
+    },
+    {
+      "from": 59,
+      "to": 58
+    },
+    {
+      "from": 60,
+      "to": 59
+    },
+    {
+      "from": 61,
+      "to": 37
+    },
+    {
+      "from": 61,
+      "to": 60
+    },
+    {
+      "from": 62,
+      "to": 61
+    },
+    {
+      "from": 63,
+      "to": 62
+    },
+    {
+      "from": 64,
+      "to": 63
+    },
+    {
+      "from": 65,
+      "to": 64
+    },
+    {
+      "from": 66,
+      "to": 65
+    },
+    {
+      "from": 67,
+      "to": 37
+    },
+    {
+      "from": 67,
+      "to": 66
+    },
+    {
+      "from": 68,
+      "to": 67
+    },
+    {
+      "from": 69,
+      "to": 1
+    },
+    {
+      "from": 69,
+      "to": 37
+    },
+    {
+      "from": 70,
+      "to": 69
+    },
+    {
+      "from": 71,
+      "to": 70
+    },
+    {
+      "from": 72,
+      "to": 71
+    },
+    {
+      "from": 73,
+      "to": 72
+    },
+    {
+      "from": 74,
+      "to": 73
+    },
+    {
+      "from": 75,
+      "to": 69
+    },
+    {
+      "from": 75,
+      "to": 74
+    },
+    {
+      "from": 76,
+      "to": 75
+    },
+    {
+      "from": 77,
+      "to": 76
+    },
+    {
+      "from": 78,
+      "to": 77
+    },
+    {
+      "from": 79,
+      "to": 78
+    },
+    {
+      "from": 80,
+      "to": 79
+    },
+    {
+      "from": 81,
+      "to": 69
+    },
+    {
+      "from": 81,
+      "to": 80
+    },
+    {
+      "from": 82,
+      "to": 81
+    },
+    {
+      "from": 83,
+      "to": 82
+    },
+    {
+      "from": 84,
+      "to": 83
+    },
+    {
+      "from": 85,
+      "to": 84
+    },
+    {
+      "from": 86,
+      "to": 85
+    },
+    {
+      "from": 87,
+      "to": 69
+    },
+    {
+      "from": 87,
+      "to": 86
+    },
+    {
+      "from": 88,
+      "to": 87
+    },
+    {
+      "from": 89,
+      "to": 88
+    },
+    {
+      "from": 90,
+      "to": 89
+    },
+    {
+      "from": 91,
+      "to": 90
+    },
+    {
+      "from": 92,
+      "to": 91
+    },
+    {
+      "from": 93,
+      "to": 69
+    },
+    {
+      "from": 93,
+      "to": 92
+    },
+    {
+      "from": 94,
+      "to": 93
+    },
+    {
+      "from": 95,
+      "to": 94
+    },
+    {
+      "from": 96,
+      "to": 95
+    },
+    {
+      "from": 97,
+      "to": 96
+    },
+    {
+      "from": 98,
+      "to": 97
+    },
+    {
+      "from": 99,
+      "to": 69
+    },
+    {
+      "from": 99,
+      "to": 98
+    },
+    {
+      "from": 100,
+      "to": 99
+    },
+    {
+      "from": 101,
+      "to": 100
+    },
+    {
+      "from": 102,
+      "to": 101
+    },
+    {
+      "from": 103,
+      "to": 102
+    },
+    {
+      "from": 104,
+      "to": 103
+    },
+    {
+      "from": 105,
+      "to": 69
+    },
+    {
+      "from": 105,
+      "to": 104
+    },
+    {
+      "from": 106,
+      "to": 105
+    },
+    {
+      "from": 107,
+      "to": 106
+    },
+    {
+      "from": 108,
+      "to": 107
+    },
+    {
+      "from": 109,
+      "to": 108
+    },
+    {
+      "from": 110,
+      "to": 109
+    },
+    {
+      "from": 111,
+      "to": 69
+    },
+    {
+      "from": 111,
+      "to": 74
+    },
+    {
+      "from": 111,
+      "to": 110
+    },
+    {
+      "from": 112,
+      "to": 111
+    },
+    {
+      "from": 113,
+      "to": 112
+    },
+    {
+      "from": 114,
+      "to": 113
+    },
+    {
+      "from": 115,
+      "to": 114
+    },
+    {
+      "from": 116,
+      "to": 115
+    },
+    {
+      "from": 117,
+      "to": 69
+    },
+    {
+      "from": 117,
+      "to": 116
+    },
+    {
+      "from": 118,
+      "to": 117
+    },
+    {
+      "from": 119,
+      "to": 118
+    },
+    {
+      "from": 120,
+      "to": 119
+    },
+    {
+      "from": 121,
+      "to": 120
+    },
+    {
+      "from": 122,
+      "to": 121
+    },
+    {
+      "from": 123,
+      "to": 69
+    },
+    {
+      "from": 123,
+      "to": 122
+    },
+    {
+      "from": 124,
+      "to": 123
+    },
+    {
+      "from": 125,
+      "to": 124
+    },
+    {
+      "from": 126,
+      "to": 125
+    },
+    {
+      "from": 127,
+      "to": 126
+    },
+    {
+      "from": 128,
+      "to": 127
+    },
+    {
+      "from": 129,
+      "to": 69
+    },
+    {
+      "from": 129,
+      "to": 128
+    },
+    {
+      "from": 130,
+      "to": 129
+    },
+    {
+      "from": 131,
+      "to": 130
+    },
+    {
+      "from": 132,
+      "to": 131
+    },
+    {
+      "from": 133,
+      "to": 132
+    },
+    {
+      "from": 134,
+      "to": 133
+    },
+    {
+      "from": 135,
+      "to": 69
+    },
+    {
+      "from": 135,
+      "to": 134
+    },
+    {
+      "from": 136,
+      "to": 135
+    },
+    {
+      "from": 137,
+      "to": 136
+    },
+    {
+      "from": 138,
+      "to": 137
+    },
+    {
+      "from": 139,
+      "to": 1
+    },
+    {
+      "from": 140,
+      "to": 139
+    },
+    {
+      "from": 141,
+      "to": 140
+    },
+    {
+      "from": 142,
+      "to": 141
+    },
+    {
+      "from": 143,
+      "to": 142
+    },
+    {
+      "from": 144,
+      "to": 143
+    },
+    {
+      "from": 145,
+      "to": 139
+    },
+    {
+      "from": 145,
+      "to": 144
+    },
+    {
+      "from": 146,
+      "to": 145
+    },
+    {
+      "from": 147,
+      "to": 146
+    },
+    {
+      "from": 148,
+      "to": 147
+    },
+    {
+      "from": 149,
+      "to": 148
+    },
+    {
+      "from": 150,
+      "to": 149
+    },
+    {
+      "from": 151,
+      "to": 139
+    },
+    {
+      "from": 151,
+      "to": 150
+    },
+    {
+      "from": 152,
+      "to": 151
+    },
+    {
+      "from": 153,
+      "to": 152
+    },
+    {
+      "from": 154,
+      "to": 153
+    },
+    {
+      "from": 155,
+      "to": 154
+    },
+    {
+      "from": 156,
+      "to": 155
+    },
+    {
+      "from": 157,
+      "to": 139
+    },
+    {
+      "from": 157,
+      "to": 156
+    },
+    {
+      "from": 158,
+      "to": 157
+    },
+    {
+      "from": 159,
+      "to": 158
+    },
+    {
+      "from": 160,
+      "to": 159
+    },
+    {
+      "from": 161,
+      "to": 160
+    },
+    {
+      "from": 162,
+      "to": 161
+    },
+    {
+      "from": 163,
+      "to": 139
+    },
+    {
+      "from": 163,
+      "to": 162
+    },
+    {
+      "from": 164,
+      "to": 163
+    },
+    {
+      "from": 165,
+      "to": 164
+    },
+    {
+      "from": 166,
+      "to": 165
+    },
+    {
+      "from": 167,
+      "to": 166
+    },
+    {
+      "from": 168,
+      "to": 167
+    },
+    {
+      "from": 169,
+      "to": 139
+    },
+    {
+      "from": 169,
+      "to": 168
+    },
+    {
+      "from": 170,
+      "to": 169
+    },
+    {
+      "from": 171,
+      "to": 170
+    },
+    {
+      "from": 172,
+      "to": 171
+    },
+    {
+      "from": 173,
+      "to": 172
+    },
+    {
+      "from": 174,
+      "to": 173
+    },
+    {
+      "from": 175,
+      "to": 139
+    },
+    {
+      "from": 175,
+      "to": 174
+    },
+    {
+      "from": 176,
+      "to": 175
+    },
+    {
+      "from": 177,
+      "to": 176
+    },
+    {
+      "from": 178,
+      "to": 177
+    },
+    {
+      "from": 179,
+      "to": 178
+    },
+    {
+      "from": 180,
+      "to": 179
+    },
+    {
+      "from": 181,
+      "to": 69
+    },
+    {
+      "from": 181,
+      "to": 139
+    },
+    {
+      "from": 182,
+      "to": 181
+    },
+    {
+      "from": 183,
+      "to": 182
+    },
+    {
+      "from": 184,
+      "to": 183
+    },
+    {
+      "from": 185,
+      "to": 184
+    },
+    {
+      "from": 186,
+      "to": 185
+    },
+    {
+      "from": 187,
+      "to": 181
+    },
+    {
+      "from": 187,
+      "to": 186
+    },
+    {
+      "from": 188,
+      "to": 187
+    },
+    {
+      "from": 189,
+      "to": 188
+    },
+    {
+      "from": 190,
+      "to": 189
+    },
+    {
+      "from": 191,
+      "to": 190
+    },
+    {
+      "from": 192,
+      "to": 191
+    },
+    {
+      "from": 193,
+      "to": 181
+    },
+    {
+      "from": 193,
+      "to": 192
+    },
+    {
+      "from": 194,
+      "to": 193
+    },
+    {
+      "from": 195,
+      "to": 194
+    },
+    {
+      "from": 196,
+      "to": 195
+    },
+    {
+      "from": 197,
+      "to": 196
+    },
+    {
+      "from": 198,
+      "to": 197
+    },
+    {
+      "from": 199,
+      "to": 181
+    },
+    {
+      "from": 199,
+      "to": 198
+    },
+    {
+      "from": 200,
+      "to": 199
+    },
+    {
+      "from": 201,
+      "to": 200
+    },
+    {
+      "from": 202,
+      "to": 201
+    },
+    {
+      "from": 203,
+      "to": 202
+    },
+    {
+      "from": 204,
+      "to": 203
+    },
+    {
+      "from": 205,
+      "to": 181
+    },
+    {
+      "from": 205,
+      "to": 204
+    },
+    {
+      "from": 206,
+      "to": 205
+    },
+    {
+      "from": 207,
+      "to": 206
+    },
+    {
+      "from": 208,
+      "to": 207
+    },
+    {
+      "from": 209,
+      "to": 208
+    },
+    {
+      "from": 210,
+      "to": 209
+    },
+    {
+      "from": 211,
+      "to": 181
+    },
+    {
+      "from": 211,
+      "to": 210
+    },
+    {
+      "from": 212,
+      "to": 211
+    },
+    {
+      "from": 213,
+      "to": 212
+    },
+    {
+      "from": 214,
+      "to": 213
+    },
+    {
+      "from": 215,
+      "to": 214
+    },
+    {
+      "from": 216,
+      "to": 215
+    },
+    {
+      "from": 217,
+      "to": 181
+    },
+    {
+      "from": 217,
+      "to": 216
+    },
+    {
+      "from": 218,
+      "to": 217
+    },
+    {
+      "from": 219,
+      "to": 218
+    },
+    {
+      "from": 220,
+      "to": 219
+    },
+    {
+      "from": 221,
+      "to": 220
+    },
+    {
+      "from": 222,
+      "to": 221
+    },
+    {
+      "from": 223,
+      "to": 181
+    },
+    {
+      "from": 223,
+      "to": 222
+    },
+    {
+      "from": 224,
+      "to": 223
+    },
+    {
+      "from": 225,
+      "to": 224
+    },
+    {
+      "from": 226,
+      "to": 225
+    },
+    {
+      "from": 227,
+      "to": 226
+    },
+    {
+      "from": 228,
+      "to": 227
+    },
+    {
+      "from": 229,
+      "to": 181
+    },
+    {
+      "from": 229,
+      "to": 228
+    },
+    {
+      "from": 230,
+      "to": 229
+    },
+    {
+      "from": 231,
+      "to": 230
+    },
+    {
+      "from": 232,
+      "to": 231
+    },
+    {
+      "from": 234,
+      "to": 233
+    },
+    {
+      "from": 235,
+      "to": 234
+    },
+    {
+      "from": 236,
+      "to": 235
+    },
+    {
+      "from": 237,
+      "to": 236
+    },
+    {
+      "from": 238,
+      "to": 237
+    },
+    {
+      "from": 239,
+      "to": 233
+    },
+    {
+      "from": 239,
+      "to": 238
+    },
+    {
+      "from": 240,
+      "to": 239
+    },
+    {
+      "from": 241,
+      "to": 240
+    },
+    {
+      "from": 242,
+      "to": 241
+    },
+    {
+      "from": 243,
+      "to": 242
+    },
+    {
+      "from": 244,
+      "to": 243
+    },
+    {
+      "from": 245,
+      "to": 233
+    },
+    {
+      "from": 245,
+      "to": 244
+    },
+    {
+      "from": 246,
+      "to": 245
+    },
+    {
+      "from": 247,
+      "to": 246
+    },
+    {
+      "from": 248,
+      "to": 247
+    },
+    {
+      "from": 249,
+      "to": 248
+    },
+    {
+      "from": 250,
+      "to": 249
+    },
+    {
+      "from": 251,
+      "to": 233
+    },
+    {
+      "from": 251,
+      "to": 250
+    },
+    {
+      "from": 252,
+      "to": 246
+    },
+    {
+      "from": 252,
+      "to": 251
+    },
+    {
+      "from": 253,
+      "to": 252
+    },
+    {
+      "from": 254,
+      "to": 253
+    },
+    {
+      "from": 255,
+      "to": 254
+    },
+    {
+      "from": 256,
+      "to": 255
+    },
+    {
+      "from": 257,
+      "to": 233
+    },
+    {
+      "from": 257,
+      "to": 256
+    },
+    {
+      "from": 258,
+      "to": 257
+    },
+    {
+      "from": 259,
+      "to": 258
+    },
+    {
+      "from": 260,
+      "to": 259
+    },
+    {
+      "from": 261,
+      "to": 260
+    },
+    {
+      "from": 262,
+      "to": 261
+    },
+    {
+      "from": 263,
+      "to": 233
+    },
+    {
+      "from": 263,
+      "to": 262
+    },
+    {
+      "from": 264,
+      "to": 263
+    },
+    {
+      "from": 265,
+      "to": 264
+    },
+    {
+      "from": 266,
+      "to": 265
+    },
+    {
+      "from": 267,
+      "to": 266
+    },
+    {
+      "from": 268,
+      "to": 267
+    },
+    {
+      "from": 269,
+      "to": 233
+    },
+    {
+      "from": 269,
+      "to": 268
+    },
+    {
+      "from": 270,
+      "to": 269
+    },
+    {
+      "from": 271,
+      "to": 270
+    },
+    {
+      "from": 272,
+      "to": 271
+    },
+    {
+      "from": 273,
+      "to": 272
+    },
+    {
+      "from": 274,
+      "to": 273
+    },
+    {
+      "from": 275,
+      "to": 233
+    },
+    {
+      "from": 275,
+      "to": 274
+    },
+    {
+      "from": 276,
+      "to": 275
+    },
+    {
+      "from": 277,
+      "to": 276
+    },
+    {
+      "from": 278,
+      "to": 277
+    },
+    {
+      "from": 279,
+      "to": 278
+    },
+    {
+      "from": 280,
+      "to": 279
+    },
+    {
+      "from": 281,
+      "to": 233
+    },
+    {
+      "from": 281,
+      "to": 280
+    },
+    {
+      "from": 282,
+      "to": 281
+    },
+    {
+      "from": 284,
+      "to": 283
+    },
+    {
+      "from": 285,
+      "to": 284
+    },
+    {
+      "from": 286,
+      "to": 285
+    },
+    {
+      "from": 287,
+      "to": 286
+    },
+    {
+      "from": 288,
+      "to": 287
+    },
+    {
+      "from": 289,
+      "to": 283
+    },
+    {
+      "from": 289,
+      "to": 288
+    },
+    {
+      "from": 290,
+      "to": 289
+    },
+    {
+      "from": 291,
+      "to": 290
+    },
+    {
+      "from": 292,
+      "to": 291
+    },
+    {
+      "from": 293,
+      "to": 292
+    },
+    {
+      "from": 294,
+      "to": 293
+    },
+    {
+      "from": 295,
+      "to": 283
+    },
+    {
+      "from": 295,
+      "to": 294
+    },
+    {
+      "from": 296,
+      "to": 295
+    },
+    {
+      "from": 297,
+      "to": 296
+    },
+    {
+      "from": 298,
+      "to": 297
+    },
+    {
+      "from": 299,
+      "to": 298
+    },
+    {
+      "from": 300,
+      "to": 299
+    },
+    {
+      "from": 301,
+      "to": 283
+    },
+    {
+      "from": 301,
+      "to": 300
+    },
+    {
+      "from": 302,
+      "to": 301
+    },
+    {
+      "from": 303,
+      "to": 302
+    },
+    {
+      "from": 304,
+      "to": 303
+    },
+    {
+      "from": 305,
+      "to": 304
+    },
+    {
+      "from": 306,
+      "to": 305
+    },
+    {
+      "from": 307,
+      "to": 283
+    },
+    {
+      "from": 307,
+      "to": 306
+    },
+    {
+      "from": 308,
+      "to": 307
+    },
+    {
+      "from": 309,
+      "to": 308
+    },
+    {
+      "from": 310,
+      "to": 309
+    },
+    {
+      "from": 311,
+      "to": 310
+    },
+    {
+      "from": 312,
+      "to": 311
+    },
+    {
+      "from": 313,
+      "to": 283
+    },
+    {
+      "from": 313,
+      "to": 312
+    },
+    {
+      "from": 314,
+      "to": 313
+    },
+    {
+      "from": 315,
+      "to": 314
+    },
+    {
+      "from": 316,
+      "to": 315
+    },
+    {
+      "from": 317,
+      "to": 316
+    },
+    {
+      "from": 318,
+      "to": 317
+    },
+    {
+      "from": 319,
+      "to": 283
+    },
+    {
+      "from": 319,
+      "to": 318
+    },
+    {
+      "from": 320,
+      "to": 319
+    },
+    {
+      "from": 321,
+      "to": 309
+    },
+    {
+      "from": 321,
+      "to": 318
+    },
+    {
+      "from": 321,
+      "to": 320
+    },
+    {
+      "from": 322,
+      "to": 303
+    },
+    {
+      "from": 322,
+      "to": 321
+    },
+    {
+      "from": 323,
+      "to": 314
+    },
+    {
+      "from": 323,
+      "to": 322
+    },
+    {
+      "from": 324,
+      "to": 323
+    },
+    {
+      "from": 325,
+      "to": 283
+    },
+    {
+      "from": 325,
+      "to": 324
+    },
+    {
+      "from": 326,
+      "to": 325
+    },
+    {
+      "from": 327,
+      "to": 326
+    },
+    {
+      "from": 328,
+      "to": 327
+    },
+    {
+      "from": 329,
+      "to": 328
+    },
+    {
+      "from": 330,
+      "to": 329
+    },
+    {
+      "from": 331,
+      "to": 283
+    },
+    {
+      "from": 331,
+      "to": 301
+    },
+    {
+      "from": 331,
+      "to": 330
+    },
+    {
+      "from": 332,
+      "to": 331
+    },
+    {
+      "from": 333,
+      "to": 332
+    },
+    {
+      "from": 334,
+      "to": 333
+    },
+    {
+      "from": 335,
+      "to": 334
+    },
+    {
+      "from": 336,
+      "to": 335
+    },
+    {
+      "from": 337,
+      "to": 283
+    },
+    {
+      "from": 337,
+      "to": 301
+    },
+    {
+      "from": 337,
+      "to": 336
+    },
+    {
+      "from": 338,
+      "to": 283
+    },
+    {
+      "from": 338,
+      "to": 284
+    },
+    {
+      "from": 339,
+      "to": 246
+    },
+    {
+      "from": 339,
+      "to": 338
+    },
+    {
+      "from": 340,
+      "to": 339
+    },
+    {
+      "from": 341,
+      "to": 340
+    },
+    {
+      "from": 342,
+      "to": 341
+    },
+    {
+      "from": 343,
+      "to": 342
+    },
+    {
+      "from": 344,
+      "to": 338
+    },
+    {
+      "from": 344,
+      "to": 343
+    },
+    {
+      "from": 345,
+      "to": 344
+    },
+    {
+      "from": 346,
+      "to": 344
+    },
+    {
+      "from": 346,
+      "to": 345
+    },
+    {
+      "from": 347,
+      "to": 346
+    },
+    {
+      "from": 348,
+      "to": 347
+    },
+    {
+      "from": 349,
+      "to": 348
+    },
+    {
+      "from": 350,
+      "to": 338
+    },
+    {
+      "from": 350,
+      "to": 349
+    },
+    {
+      "from": 351,
+      "to": 350
+    },
+    {
+      "from": 352,
+      "to": 351
+    },
+    {
+      "from": 353,
+      "to": 352
+    },
+    {
+      "from": 354,
+      "to": 284
+    },
+    {
+      "from": 354,
+      "to": 318
+    },
+    {
+      "from": 354,
+      "to": 353
+    },
+    {
+      "from": 355,
+      "to": 354
+    },
+    {
+      "from": 356,
+      "to": 338
+    },
+    {
+      "from": 356,
+      "to": 355
+    },
+    {
+      "from": 357,
+      "to": 311
+    },
+    {
+      "from": 357,
+      "to": 318
+    },
+    {
+      "from": 357,
+      "to": 356
+    },
+    {
+      "from": 358,
+      "to": 357
+    },
+    {
+      "from": 359,
+      "to": 358
+    },
+    {
+      "from": 360,
+      "to": 359
+    },
+    {
+      "from": 361,
+      "to": 360
+    },
+    {
+      "from": 362,
+      "to": 338
+    },
+    {
+      "from": 362,
+      "to": 361
+    },
+    {
+      "from": 363,
+      "to": 362
+    },
+    {
+      "from": 364,
+      "to": 363
+    },
+    {
+      "from": 365,
+      "to": 364
+    },
+    {
+      "from": 366,
+      "to": 365
+    },
+    {
+      "from": 367,
+      "to": 366
+    },
+    {
+      "from": 368,
+      "to": 338
+    },
+    {
+      "from": 368,
+      "to": 367
+    },
+    {
+      "from": 369,
+      "to": 368
+    },
+    {
+      "from": 370,
+      "to": 369
+    },
+    {
+      "from": 371,
+      "to": 370
+    },
+    {
+      "from": 372,
+      "to": 304
+    },
+    {
+      "from": 372,
+      "to": 305
+    },
+    {
+      "from": 372,
+      "to": 306
+    },
+    {
+      "from": 372,
+      "to": 371
+    },
+    {
+      "from": 373,
+      "to": 372
+    },
+    {
+      "from": 374,
+      "to": 338
+    },
+    {
+      "from": 374,
+      "to": 373
+    },
+    {
+      "from": 375,
+      "to": 374
+    },
+    {
+      "from": 376,
+      "to": 375
+    },
+    {
+      "from": 377,
+      "to": 376
+    },
+    {
+      "from": 378,
+      "to": 377
+    },
+    {
+      "from": 379,
+      "to": 378
+    },
+    {
+      "from": 380,
+      "to": 338
+    },
+    {
+      "from": 380,
+      "to": 379
+    },
+    {
+      "from": 381,
+      "to": 380
+    },
+    {
+      "from": 382,
+      "to": 381
+    },
+    {
+      "from": 383,
+      "to": 382
+    },
+    {
+      "from": 384,
+      "to": 383
+    },
+    {
+      "from": 385,
+      "to": 384
+    },
+    {
+      "from": 386,
+      "to": 338
+    },
+    {
+      "from": 386,
+      "to": 385
+    },
+    {
+      "from": 387,
+      "to": 386
+    },
+    {
+      "from": 388,
+      "to": 387
+    },
+    {
+      "from": 389,
+      "to": 388
+    },
+    {
+      "from": 390,
+      "to": 389
+    },
+    {
+      "from": 391,
+      "to": 390
+    },
+    {
+      "from": 392,
+      "to": 338
+    },
+    {
+      "from": 392,
+      "to": 391
+    },
+    {
+      "from": 393,
+      "to": 308
+    },
+    {
+      "from": 393,
+      "to": 392
+    },
+    {
+      "from": 394,
+      "to": 393
+    },
+    {
+      "from": 395,
+      "to": 394
+    },
+    {
+      "from": 396,
+      "to": 395
+    },
+    {
+      "from": 397,
+      "to": 396
+    },
+    {
+      "from": 399,
+      "to": 398
+    },
+    {
+      "from": 400,
+      "to": 399
+    },
+    {
+      "from": 401,
+      "to": 400
+    },
+    {
+      "from": 402,
+      "to": 401
+    },
+    {
+      "from": 403,
+      "to": 402
+    },
+    {
+      "from": 404,
+      "to": 398
+    },
+    {
+      "from": 404,
+      "to": 403
+    },
+    {
+      "from": 405,
+      "to": 404
+    },
+    {
+      "from": 406,
+      "to": 405
+    },
+    {
+      "from": 407,
+      "to": 406
+    },
+    {
+      "from": 408,
+      "to": 407
+    },
+    {
+      "from": 409,
+      "to": 408
+    },
+    {
+      "from": 410,
+      "to": 398
+    },
+    {
+      "from": 410,
+      "to": 409
+    },
+    {
+      "from": 411,
+      "to": 410
+    },
+    {
+      "from": 412,
+      "to": 411
+    },
+    {
+      "from": 413,
+      "to": 412
+    },
+    {
+      "from": 414,
+      "to": 45
+    },
+    {
+      "from": 414,
+      "to": 413
+    },
+    {
+      "from": 415,
+      "to": 414
+    },
+    {
+      "from": 416,
+      "to": 398
+    },
+    {
+      "from": 416,
+      "to": 415
+    },
+    {
+      "from": 417,
+      "to": 416
+    },
+    {
+      "from": 418,
+      "to": 398
+    },
+    {
+      "from": 418,
+      "to": 417
+    },
+    {
+      "from": 419,
+      "to": 418
+    },
+    {
+      "from": 420,
+      "to": 419
+    },
+    {
+      "from": 421,
+      "to": 420
+    },
+    {
+      "from": 422,
+      "to": 398
+    },
+    {
+      "from": 422,
+      "to": 421
+    },
+    {
+      "from": 423,
+      "to": 422
+    },
+    {
+      "from": 424,
+      "to": 423
+    },
+    {
+      "from": 425,
+      "to": 424
+    },
+    {
+      "from": 426,
+      "to": 425
+    },
+    {
+      "from": 427,
+      "to": 426
+    },
+    {
+      "from": 428,
+      "to": 398
+    },
+    {
+      "from": 428,
+      "to": 427
+    },
+    {
+      "from": 429,
+      "to": 428
+    },
+    {
+      "from": 430,
+      "to": 429
+    },
+    {
+      "from": 431,
+      "to": 430
+    },
+    {
+      "from": 432,
+      "to": 431
+    },
+    {
+      "from": 433,
+      "to": 432
+    },
+    {
+      "from": 434,
+      "to": 398
+    },
+    {
+      "from": 434,
+      "to": 433
+    },
+    {
+      "from": 435,
+      "to": 434
+    },
+    {
+      "from": 436,
+      "to": 435
+    },
+    {
+      "from": 437,
+      "to": 436
+    },
+    {
+      "from": 438,
+      "to": 437
+    },
+    {
+      "from": 439,
+      "to": 438
+    },
+    {
+      "from": 440,
+      "to": 398
+    },
+    {
+      "from": 440,
+      "to": 439
+    },
+    {
+      "from": 441,
+      "to": 440
+    },
+    {
+      "from": 442,
+      "to": 181
+    },
+    {
+      "from": 442,
+      "to": 398
+    },
+    {
+      "from": 443,
+      "to": 45
+    },
+    {
+      "from": 443,
+      "to": 442
+    },
+    {
+      "from": 444,
+      "to": 443
+    },
+    {
+      "from": 445,
+      "to": 444
+    },
+    {
+      "from": 446,
+      "to": 445
+    },
+    {
+      "from": 447,
+      "to": 446
+    },
+    {
+      "from": 448,
+      "to": 442
+    },
+    {
+      "from": 448,
+      "to": 447
+    },
+    {
+      "from": 449,
+      "to": 448
+    },
+    {
+      "from": 450,
+      "to": 449
+    },
+    {
+      "from": 451,
+      "to": 450
+    },
+    {
+      "from": 452,
+      "to": 451
+    },
+    {
+      "from": 453,
+      "to": 452
+    },
+    {
+      "from": 454,
+      "to": 442
+    },
+    {
+      "from": 454,
+      "to": 453
+    },
+    {
+      "from": 455,
+      "to": 454
+    },
+    {
+      "from": 456,
+      "to": 455
+    },
+    {
+      "from": 457,
+      "to": 456
+    },
+    {
+      "from": 458,
+      "to": 457
+    },
+    {
+      "from": 459,
+      "to": 458
+    },
+    {
+      "from": 460,
+      "to": 442
+    },
+    {
+      "from": 460,
+      "to": 459
+    },
+    {
+      "from": 461,
+      "to": 460
+    },
+    {
+      "from": 462,
+      "to": 461
+    },
+    {
+      "from": 463,
+      "to": 462
+    },
+    {
+      "from": 464,
+      "to": 463
+    },
+    {
+      "from": 465,
+      "to": 464
+    },
+    {
+      "from": 466,
+      "to": 442
+    },
+    {
+      "from": 466,
+      "to": 465
+    },
+    {
+      "from": 467,
+      "to": 466
+    },
+    {
+      "from": 468,
+      "to": 467
+    },
+    {
+      "from": 469,
+      "to": 468
+    },
+    {
+      "from": 470,
+      "to": 469
+    },
+    {
+      "from": 471,
+      "to": 470
+    },
+    {
+      "from": 472,
+      "to": 442
+    },
+    {
+      "from": 472,
+      "to": 471
+    },
+    {
+      "from": 473,
+      "to": 275
+    },
+    {
+      "from": 473,
+      "to": 472
+    },
+    {
+      "from": 474,
+      "to": 473
+    },
+    {
+      "from": 475,
+      "to": 474
+    },
+    {
+      "from": 476,
+      "to": 475
+    },
+    {
+      "from": 477,
+      "to": 476
+    },
+    {
+      "from": 478,
+      "to": 442
+    },
+    {
+      "from": 478,
+      "to": 477
+    },
+    {
+      "from": 479,
+      "to": 478
+    },
+    {
+      "from": 480,
+      "to": 479
+    },
+    {
+      "from": 481,
+      "to": 480
+    },
+    {
+      "from": 482,
+      "to": 481
+    },
+    {
+      "from": 483,
+      "to": 482
+    },
+    {
+      "from": 484,
+      "to": 140
+    },
+    {
+      "from": 484,
+      "to": 233
+    },
+    {
+      "from": 485,
+      "to": 484
+    },
+    {
+      "from": 486,
+      "to": 485
+    },
+    {
+      "from": 487,
+      "to": 486
+    },
+    {
+      "from": 488,
+      "to": 487
+    },
+    {
+      "from": 489,
+      "to": 488
+    },
+    {
+      "from": 490,
+      "to": 484
+    },
+    {
+      "from": 490,
+      "to": 489
+    },
+    {
+      "from": 491,
+      "to": 490
+    },
+    {
+      "from": 492,
+      "to": 491
+    },
+    {
+      "from": 493,
+      "to": 492
+    },
+    {
+      "from": 494,
+      "to": 493
+    },
+    {
+      "from": 495,
+      "to": 494
+    },
+    {
+      "from": 496,
+      "to": 484
+    },
+    {
+      "from": 496,
+      "to": 495
+    },
+    {
+      "from": 497,
+      "to": 496
+    },
+    {
+      "from": 498,
+      "to": 497
+    },
+    {
+      "from": 499,
+      "to": 498
+    },
+    {
+      "from": 500,
+      "to": 499
+    },
+    {
+      "from": 501,
+      "to": 500
+    },
+    {
+      "from": 502,
+      "to": 484
+    },
+    {
+      "from": 502,
+      "to": 501
+    },
+    {
+      "from": 503,
+      "to": 502
+    },
+    {
+      "from": 504,
+      "to": 503
+    },
+    {
+      "from": 505,
+      "to": 504
+    },
+    {
+      "from": 506,
+      "to": 505
+    },
+    {
+      "from": 507,
+      "to": 506
+    },
+    {
+      "from": 508,
+      "to": 484
+    },
+    {
+      "from": 508,
+      "to": 507
+    },
+    {
+      "from": 509,
+      "to": 508
+    },
+    {
+      "from": 510,
+      "to": 509
+    },
+    {
+      "from": 511,
+      "to": 510
+    },
+    {
+      "from": 512,
+      "to": 511
+    },
+    {
+      "from": 513,
+      "to": 512
+    },
+    {
+      "from": 514,
+      "to": 69
+    },
+    {
+      "from": 514,
+      "to": 139
+    },
+    {
+      "from": 515,
+      "to": 514
+    },
+    {
+      "from": 516,
+      "to": 515
+    },
+    {
+      "from": 517,
+      "to": 516
+    },
+    {
+      "from": 518,
+      "to": 517
+    },
+    {
+      "from": 519,
+      "to": 518
+    },
+    {
+      "from": 520,
+      "to": 514
+    },
+    {
+      "from": 520,
+      "to": 519
+    },
+    {
+      "from": 521,
+      "to": 520
+    },
+    {
+      "from": 522,
+      "to": 521
+    },
+    {
+      "from": 523,
+      "to": 398
+    },
+    {
+      "from": 523,
+      "to": 522
+    },
+    {
+      "from": 524,
+      "to": 523
+    },
+    {
+      "from": 525,
+      "to": 524
+    },
+    {
+      "from": 526,
+      "to": 514
+    },
+    {
+      "from": 526,
+      "to": 525
+    },
+    {
+      "from": 527,
+      "to": 526
+    },
+    {
+      "from": 528,
+      "to": 527
+    },
+    {
+      "from": 529,
+      "to": 528
+    },
+    {
+      "from": 530,
+      "to": 529
+    },
+    {
+      "from": 531,
+      "to": 530
+    },
+    {
+      "from": 532,
+      "to": 514
+    },
+    {
+      "from": 532,
+      "to": 531
+    },
+    {
+      "from": 533,
+      "to": 532
+    },
+    {
+      "from": 534,
+      "to": 533
+    },
+    {
+      "from": 535,
+      "to": 534
+    },
+    {
+      "from": 536,
+      "to": 535
+    },
+    {
+      "from": 537,
+      "to": 536
+    },
+    {
+      "from": 538,
+      "to": 514
+    },
+    {
+      "from": 538,
+      "to": 537
+    },
+    {
+      "from": 539,
+      "to": 538
+    },
+    {
+      "from": 540,
+      "to": 37
+    },
+    {
+      "from": 541,
+      "to": 540
+    },
+    {
+      "from": 542,
+      "to": 541
+    },
+    {
+      "from": 543,
+      "to": 542
+    },
+    {
+      "from": 544,
+      "to": 543
+    },
+    {
+      "from": 545,
+      "to": 544
+    },
+    {
+      "from": 546,
+      "to": 540
+    },
+    {
+      "from": 546,
+      "to": 545
+    },
+    {
+      "from": 547,
+      "to": 546
+    },
+    {
+      "from": 548,
+      "to": 547
+    },
+    {
+      "from": 549,
+      "to": 548
+    },
+    {
+      "from": 550,
+      "to": 549
+    },
+    {
+      "from": 551,
+      "to": 550
+    },
+    {
+      "from": 552,
+      "to": 540
+    },
+    {
+      "from": 552,
+      "to": 551
+    },
+    {
+      "from": 553,
+      "to": 552
+    },
+    {
+      "from": 554,
+      "to": 553
+    },
+    {
+      "from": 555,
+      "to": 554
+    },
+    {
+      "from": 556,
+      "to": 555
+    },
+    {
+      "from": 557,
+      "to": 556
+    },
+    {
+      "from": 558,
+      "to": 540
+    },
+    {
+      "from": 558,
+      "to": 557
+    },
+    {
+      "from": 559,
+      "to": 558
+    },
+    {
+      "from": 560,
+      "to": 559
+    },
+    {
+      "from": 561,
+      "to": 560
+    },
+    {
+      "from": 562,
+      "to": 561
+    },
+    {
+      "from": 563,
+      "to": 562
+    },
+    {
+      "from": 564,
+      "to": 540
+    },
+    {
+      "from": 564,
+      "to": 563
+    },
+    {
+      "from": 565,
+      "to": 564
+    },
+    {
+      "from": 566,
+      "to": 565
+    },
+    {
+      "from": 567,
+      "to": 566
+    },
+    {
+      "from": 568,
+      "to": 567
+    },
+    {
+      "from": 569,
+      "to": 568
+    },
+    {
+      "from": 570,
+      "to": 540
+    },
+    {
+      "from": 570,
+      "to": 569
+    },
+    {
+      "from": 571,
+      "to": 570
+    },
+    {
+      "from": 572,
+      "to": 571
+    },
+    {
+      "from": 573,
+      "to": 572
+    },
+    {
+      "from": 574,
+      "to": 573
+    },
+    {
+      "from": 575,
+      "to": 574
+    },
+    {
+      "from": 576,
+      "to": 1
+    },
+    {
+      "from": 576,
+      "to": 442
+    },
+    {
+      "from": 577,
+      "to": 576
+    },
+    {
+      "from": 578,
+      "to": 577
+    },
+    {
+      "from": 579,
+      "to": 578
+    },
+    {
+      "from": 580,
+      "to": 191
+    },
+    {
+      "from": 580,
+      "to": 576
+    },
+    {
+      "from": 580,
+      "to": 579
+    },
+    {
+      "from": 581,
+      "to": 181
+    },
+    {
+      "from": 581,
+      "to": 580
+    },
+    {
+      "from": 582,
+      "to": 464
+    },
+    {
+      "from": 582,
+      "to": 576
+    },
+    {
+      "from": 582,
+      "to": 581
+    },
+    {
+      "from": 583,
+      "to": 162
+    },
+    {
+      "from": 583,
+      "to": 582
+    },
+    {
+      "from": 584,
+      "to": 583
+    },
+    {
+      "from": 585,
+      "to": 25
+    },
+    {
+      "from": 585,
+      "to": 584
+    },
+    {
+      "from": 586,
+      "to": 585
+    },
+    {
+      "from": 587,
+      "to": 448
+    },
+    {
+      "from": 587,
+      "to": 586
+    },
+    {
+      "from": 588,
+      "to": 448
+    },
+    {
+      "from": 588,
+      "to": 576
+    },
+    {
+      "from": 588,
+      "to": 587
+    },
+    {
+      "from": 589,
+      "to": 588
+    },
+    {
+      "from": 590,
+      "to": 206
+    },
+    {
+      "from": 590,
+      "to": 208
+    },
+    {
+      "from": 590,
+      "to": 589
+    },
+    {
+      "from": 591,
+      "to": 590
+    },
+    {
+      "from": 592,
+      "to": 462
+    },
+    {
+      "from": 592,
+      "to": 591
+    },
+    {
+      "from": 593,
+      "to": 140
+    },
+    {
+      "from": 593,
+      "to": 592
+    },
+    {
+      "from": 594,
+      "to": 576
+    },
+    {
+      "from": 594,
+      "to": 593
+    },
+    {
+      "from": 595,
+      "to": 594
+    },
+    {
+      "from": 596,
+      "to": 595
+    },
+    {
+      "from": 597,
+      "to": 596
+    },
+    {
+      "from": 598,
+      "to": 597
+    },
+    {
+      "from": 599,
+      "to": 598
+    },
+    {
+      "from": 600,
+      "to": 576
+    },
+    {
+      "from": 600,
+      "to": 599
+    },
+    {
+      "from": 601,
+      "to": 600
+    },
+    {
+      "from": 602,
+      "to": 601
+    },
+    {
+      "from": 603,
+      "to": 602
+    },
+    {
+      "from": 604,
+      "to": 603
+    },
+    {
+      "from": 605,
+      "to": 604
+    },
+    {
+      "from": 606,
+      "to": 576
+    },
+    {
+      "from": 606,
+      "to": 605
+    },
+    {
+      "from": 607,
+      "to": 606
+    },
+    {
+      "from": 608,
+      "to": 607
+    },
+    {
+      "from": 609,
+      "to": 150
+    },
+    {
+      "from": 609,
+      "to": 608
+    },
+    {
+      "from": 610,
+      "to": 181
+    },
+    {
+      "from": 610,
+      "to": 609
+    },
+    {
+      "from": 611,
+      "to": 610
+    },
+    {
+      "from": 612,
+      "to": 576
+    },
+    {
+      "from": 612,
+      "to": 611
+    },
+    {
+      "from": 613,
+      "to": 546
+    },
+    {
+      "from": 613,
+      "to": 612
+    },
+    {
+      "from": 614,
+      "to": 78
+    },
+    {
+      "from": 614,
+      "to": 613
+    },
+    {
+      "from": 615,
+      "to": 109
+    },
+    {
+      "from": 615,
+      "to": 614
+    },
+    {
+      "from": 616,
+      "to": 517
+    },
+    {
+      "from": 616,
+      "to": 615
+    },
+    {
+      "from": 617,
+      "to": 616
+    },
+    {
+      "from": 618,
+      "to": 576
+    },
+    {
+      "from": 618,
+      "to": 617
+    },
+    {
+      "from": 619,
+      "to": 246
+    },
+    {
+      "from": 619,
+      "to": 618
+    },
+    {
+      "from": 620,
+      "to": 264
+    },
+    {
+      "from": 620,
+      "to": 619
+    },
+    {
+      "from": 621,
+      "to": 620
+    },
+    {
+      "from": 622,
+      "to": 621
+    },
+    {
+      "from": 623,
+      "to": 622
+    },
+    {
+      "from": 624,
+      "to": 576
+    },
+    {
+      "from": 624,
+      "to": 623
+    },
+    {
+      "from": 625,
+      "to": 14
+    },
+    {
+      "from": 625,
+      "to": 624
+    },
+    {
+      "from": 626,
+      "to": 37
+    },
+    {
+      "from": 626,
+      "to": 442
+    },
+    {
+      "from": 626,
+      "to": 540
+    },
+    {
+      "from": 627,
+      "to": 626
+    },
+    {
+      "from": 628,
+      "to": 627
+    },
+    {
+      "from": 629,
+      "to": 628
+    },
+    {
+      "from": 630,
+      "to": 629
+    },
+    {
+      "from": 631,
+      "to": 630
+    },
+    {
+      "from": 632,
+      "to": 380
+    },
+    {
+      "from": 632,
+      "to": 626
+    },
+    {
+      "from": 632,
+      "to": 631
+    },
+    {
+      "from": 633,
+      "to": 632
+    },
+    {
+      "from": 634,
+      "to": 633
+    },
+    {
+      "from": 635,
+      "to": 634
+    },
+    {
+      "from": 636,
+      "to": 635
+    },
+    {
+      "from": 637,
+      "to": 636
+    },
+    {
+      "from": 638,
+      "to": 626
+    },
+    {
+      "from": 638,
+      "to": 637
+    },
+    {
+      "from": 639,
+      "to": 638
+    },
+    {
+      "from": 640,
+      "to": 139
+    },
+    {
+      "from": 640,
+      "to": 150
+    },
+    {
+      "from": 640,
+      "to": 639
+    },
+    {
+      "from": 641,
+      "to": 640
+    },
+    {
+      "from": 642,
+      "to": 641
+    },
+    {
+      "from": 643,
+      "to": 162
+    },
+    {
+      "from": 643,
+      "to": 642
+    },
+    {
+      "from": 644,
+      "to": 626
+    },
+    {
+      "from": 644,
+      "to": 643
+    },
+    {
+      "from": 645,
+      "to": 644
+    },
+    {
+      "from": 646,
+      "to": 645
+    },
+    {
+      "from": 647,
+      "to": 646
+    },
+    {
+      "from": 648,
+      "to": 647
+    },
+    {
+      "from": 649,
+      "to": 648
+    },
+    {
+      "from": 650,
+      "to": 626
+    },
+    {
+      "from": 650,
+      "to": 649
+    },
+    {
+      "from": 651,
+      "to": 14
+    },
+    {
+      "from": 651,
+      "to": 650
+    },
+    {
+      "from": 652,
+      "to": 651
+    },
+    {
+      "from": 653,
+      "to": 652
+    },
+    {
+      "from": 654,
+      "to": 653
+    },
+    {
+      "from": 655,
+      "to": 654
+    },
+    {
+      "from": 656,
+      "to": 626
+    },
+    {
+      "from": 656,
+      "to": 655
+    },
+    {
+      "from": 657,
+      "to": 12
+    },
+    {
+      "from": 657,
+      "to": 656
+    }
+  ]
+}

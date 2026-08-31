@@ -1,0 +1,10 @@
+{
+  "title": "Coding Clubs: How to Create, Organize, Promote and Manage a Sustainable Coding Club",
+  "description": "A learning graph for an intelligent textbook that teaches educators, librarians, and volunteers how to launch and sustain a coding club, covering governance, mentors and students, scheduling, computational thinking curriculum, physical computing and electronics, project kits, device management, funding, diversity and inclusion, and the use of AI agents to manage club operations.",
+  "creator": "Dan McCreary",
+  "date": "2026-08-31",
+  "version": "1.0",
+  "format": "Learning Graph JSON v1.0",
+  "schema": "https://raw.githubusercontent.com/dmccreary/learning-graphs/refs/heads/main/src/schema/learning-graph-schema.json",
+  "license": "CC BY-NC-SA 4.0 DEED"
+}

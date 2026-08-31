@@ -1,0 +1,658 @@
+ConceptID,ConceptLabel,Dependencies,TaxonomyID
+1,Coding Club,,FOUND
+2,Maker Space,1,FOUND
+3,STEM Education,2,FOUND
+4,Computer Science Education,3,FOUND
+5,Digital Literacy,4,FOUND
+6,After School Program,5,FOUND
+7,Extracurricular Learning,1|6,FOUND
+8,Informal Learning,7,FOUND
+9,Peer Learning,8,FOUND
+10,Hands On Learning,9,FOUND
+11,Project Based Learning,10,FOUND
+12,Club Sustainability,11,FOUND
+13,Single Leader Dependency,1|12,FOUND
+14,Leadership Succession,13,FOUND
+15,Continuous Improvement,14,FOUND
+16,Post Event Notes,15,FOUND
+17,Lessons Learned Log,16,FOUND
+18,Club Evolution,17,FOUND
+19,Hybrid Club Model,1|18,FOUND
+20,AI In Education,19,FOUND
+21,Generative AI,20,FOUND
+22,AI Powered Club Tools,21,FOUND
+23,Intelligent Textbook,22,FOUND
+24,MicroSim,23,FOUND
+25,Learning Graph,1|24,FOUND
+26,Interactive Simulation,25,FOUND
+27,Club History,26,FOUND
+28,Club Benefits,27,FOUND
+29,Library Coding Club,28,FOUND
+30,Bookstore Coding Club,29,FOUND
+31,Community Center Club,1|30,FOUND
+32,School Based Club,31,FOUND
+33,Club Mission Statement,32,FOUND
+34,Club Vision,33,FOUND
+35,Target Audience,34,FOUND
+36,Course Reading Level,35,FOUND
+37,Club Charter,1,GOV
+38,Club Values,37,GOV
+39,Code Of Conduct,38,GOV
+40,Volunteer Background Check,39,GOV
+41,Child Safety Policy,40,GOV
+42,Liability Considerations,41,GOV
+43,Parental Consent Form,37|42,GOV
+44,Photo Release Form,43,GOV
+45,Data Privacy Policy,44,GOV
+46,Anti Harassment Policy,45,GOV
+47,Conflict Resolution Process,46,GOV
+48,Club Bylaws,47,GOV
+49,Decision Making Process,37|48,GOV
+50,Roles And Responsibilities,49,GOV
+51,Club Leader Role,50,GOV
+52,Assistant Leader Role,51,GOV
+53,Mentor Role,52,GOV
+54,Student Role,53,GOV
+55,Parent Role,37|54,GOV
+56,Volunteer Coordinator Role,55,GOV
+57,Governance Structure,56,GOV
+58,Advisory Committee,57,GOV
+59,Club Policies Handbook,58,GOV
+60,Incident Reporting Process,59,GOV
+61,Emergency Contact List,37|60,GOV
+62,Insurance Considerations,61,GOV
+63,Venue Agreement,62,GOV
+64,Club Registration With Venue,63,GOV
+65,Legal Compliance Basics,64,GOV
+66,Trademark And Branding,65,GOV
+67,Club Naming Convention,37|66,GOV
+68,Club Logo Design,67,GOV
+69,Gauging Interest Survey,1|37,LAUNCH
+70,Interest Survey Analysis,69,LAUNCH
+71,Establishing A New Club,70,LAUNCH
+72,Club Feasibility Assessment,71,LAUNCH
+73,Founding Team,72,LAUNCH
+74,First Club Meeting,73,LAUNCH
+75,Meeting Agenda Design,69|74,LAUNCH
+76,Promoting First Meeting,75,LAUNCH
+77,Flyer Design,76,LAUNCH
+78,Social Media Promotion,77,LAUNCH
+79,Word Of Mouth Promotion,78,LAUNCH
+80,Starting Small Strategy,79,LAUNCH
+81,First Three Students,69|80,LAUNCH
+82,Pilot Cohort,81,LAUNCH
+83,Walk In Experience,82,LAUNCH
+84,First Impression Design,83,LAUNCH
+85,Parent Perception,84,LAUNCH
+86,Student Perception,85,LAUNCH
+87,Elevator Pitch,69|86,LAUNCH
+88,Value Proposition Statement,87,LAUNCH
+89,Club Growth Strategy,88,LAUNCH
+90,Scaling A Club,89,LAUNCH
+91,Multi Site Expansion,90,LAUNCH
+92,Franchise Model,91,LAUNCH
+93,Club Branding,69|92,LAUNCH
+94,Welcome Statement Design,93,LAUNCH
+95,Onboarding New Students,94,LAUNCH
+96,Onboarding New Mentors,95,LAUNCH
+97,Word Of Mouth Referral,96,LAUNCH
+98,Community Outreach,97,LAUNCH
+99,School Partnership Outreach,69|98,LAUNCH
+100,Library Partnership Outreach,99,LAUNCH
+101,Local Media Coverage,100,LAUNCH
+102,Press Release Writing,101,LAUNCH
+103,Grand Opening Event,102,LAUNCH
+104,Club Anniversary Event,103,LAUNCH
+105,Club Milestone Tracking,69|104,LAUNCH
+106,Success Story Sharing,105,LAUNCH
+107,Testimonial Collection,106,LAUNCH
+108,Club Newsletter,107,LAUNCH
+109,Club Website,108,LAUNCH
+110,Club Social Media Account,109,LAUNCH
+111,Classroom Layout,69|74|110,LAUNCH
+112,Monitors Facing Inward,111,LAUNCH
+113,Center Table Design,112,LAUNCH
+114,Challenge Card Display,113,LAUNCH
+115,Seating Arrangement,114,LAUNCH
+116,Power Strip Placement,115,LAUNCH
+117,Cable Management,69|116,LAUNCH
+118,Noise Level Management,117,LAUNCH
+119,Lighting Considerations,118,LAUNCH
+120,Room Temperature Comfort,119,LAUNCH
+121,Storage For Kits,120,LAUNCH
+122,Charging Station Setup,121,LAUNCH
+123,Whiteboard Usage,69|122,LAUNCH
+124,Session Time Block,123,LAUNCH
+125,Session Warm Up Activity,124,LAUNCH
+126,Session Wrap Up Activity,125,LAUNCH
+127,Transition Between Activities,126,LAUNCH
+128,Small Group Rotation,127,LAUNCH
+129,Station Based Learning,69|128,LAUNCH
+130,Safety Zone Marking,129,LAUNCH
+131,Emergency Exit Awareness,130,LAUNCH
+132,First Aid Kit Location,131,LAUNCH
+133,Accessibility Of Space,132,LAUNCH
+134,Restroom Break Policy,133,LAUNCH
+135,Snack And Water Policy,69|134,LAUNCH
+136,Visitor Check In Process,135,LAUNCH
+137,Photography During Session,136,LAUNCH
+138,Session Cleanup Routine,137,LAUNCH
+139,Mentor,1,PEOPLE
+140,Student,139,PEOPLE
+141,Volunteer Mentor,140,PEOPLE
+142,Professional Mentor,141,PEOPLE
+143,Peer Mentor,142,PEOPLE
+144,Student To Mentor Ratio,143,PEOPLE
+145,Why Three To One Works,139|144,PEOPLE
+146,Adding Mentors,145,PEOPLE
+147,Adding Students,146,PEOPLE
+148,Mentor Capacity Planning,147,PEOPLE
+149,Mentor Availability Tracking,148,PEOPLE
+150,Mentor Skill Matching,149,PEOPLE
+151,Student Skill Level,139|150,PEOPLE
+152,Student Age Range,151,PEOPLE
+153,Student Grouping Strategy,152,PEOPLE
+154,Mixed Age Grouping,153,PEOPLE
+155,Sibling Pairing,154,PEOPLE
+156,Returning Student,155,PEOPLE
+157,New Student Placement,139|156,PEOPLE
+158,Waiting List Management,157,PEOPLE
+159,Mentor To Student Introduction,158,PEOPLE
+160,Mentor Check In Routine,159,PEOPLE
+161,Student Check In Routine,160,PEOPLE
+162,Mentor Feedback Collection,161,PEOPLE
+163,Student Feedback Collection,139|162,PEOPLE
+164,Parent Volunteer Role,163,PEOPLE
+165,Teen Mentor Program,164,PEOPLE
+166,College Mentor Recruitment,165,PEOPLE
+167,Retired Professional Mentor,166,PEOPLE
+168,Mentor Burnout Prevention,167,PEOPLE
+169,Mentor Appreciation,139|168,PEOPLE
+170,Student Attendance Tracking,169,PEOPLE
+171,Mentor Attendance Tracking,170,PEOPLE
+172,No Show Policy,171,PEOPLE
+173,Substitute Mentor Plan,172,PEOPLE
+174,Mentor Pairing Consistency,173,PEOPLE
+175,One On One Mentoring,139|174,PEOPLE
+176,Small Group Mentoring,175,PEOPLE
+177,Whole Class Instruction,176,PEOPLE
+178,Mentor Student Rapport,177,PEOPLE
+179,Building Trust With Students,178,PEOPLE
+180,Student Confidence Building,179,PEOPLE
+181,Session Scheduling,69|139,SCHED
+182,Selecting A Date And Time,181,SCHED
+183,Alternating Saturday Model,182,SCHED
+184,Weekday After School Model,183,SCHED
+185,Semester Based Schedule,184,SCHED
+186,Drop In Model,185,SCHED
+187,Recurring Session Series,181|186,SCHED
+188,Holiday Schedule Planning,187,SCHED
+189,Working Around Holidays,188,SCHED
+190,School Calendar Alignment,189,SCHED
+191,Registration System,190,SCHED
+192,Online Registration Form,191,SCHED
+193,Eventbrite Case Study,181|192,SCHED
+194,Registration Capacity Limit,193,SCHED
+195,Registering Mentors First,194,SCHED
+196,Mentor Gated Enrollment,195,SCHED
+197,Limiting Students By Mentors,196,SCHED
+198,Waiting List Signup,197,SCHED
+199,Registration Confirmation Email,181|198,SCHED
+200,Registration Reminder Email,199,SCHED
+201,Cancellation Policy,200,SCHED
+202,Refund Policy,201,SCHED
+203,Session Check In System,202,SCHED
+204,QR Code Check In,203,SCHED
+205,Attendance Sheet,181|204,SCHED
+206,Post Event Survey,205,SCHED
+207,Survey Question Design,206,SCHED
+208,Survey Response Analysis,207,SCHED
+209,Event Debriefing Meeting,208,SCHED
+210,Event Retrospective Checklist,209,SCHED
+211,Tracking What Was Learned,181|210,SCHED
+212,Proactive Mentor Engagement,211,SCHED
+213,Session Capacity Planning,212,SCHED
+214,Multi Session Series Planning,213,SCHED
+215,Summer Camp Format,214,SCHED
+216,Weeklong Intensive Format,215,SCHED
+217,Single Session Workshop,181|216,SCHED
+218,Field Trip Coordination,217,SCHED
+219,Guest Speaker Scheduling,218,SCHED
+220,Competition Event Scheduling,219,SCHED
+221,Showcase Event Planning,220,SCHED
+222,Family Night Event,221,SCHED
+223,Open House Event,181|222,SCHED
+224,Registration Software Comparison,223,SCHED
+225,Payment Processing For Fees,224,SCHED
+226,Scholarship Application Process,225,SCHED
+227,Session Reminder Notification,226,SCHED
+228,Calendar Sync For Families,227,SCHED
+229,Time Zone Consideration,181|228,SCHED
+230,Weather Cancellation Policy,229,SCHED
+231,Makeup Session Policy,230,SCHED
+232,End Of Term Celebration,231,SCHED
+233,Computational Thinking Skills,,CT
+234,Decomposition Skill,233,CT
+235,Pattern Recognition Skill,234,CT
+236,Abstraction Skill,235,CT
+237,Algorithm Design Skill,236,CT
+238,Debugging Skill,237,CT
+239,Keyboarding Skills,233|238,CT
+240,Typing Practice Tool,239,CT
+241,Scratch Programming,240,CT
+242,Scratch Sprite,241,CT
+243,Scratch Block Coding,242,CT
+244,Scratch Project Sharing,243,CT
+245,Block Based To Text Transition,233|244,CT
+246,Python Programming,245,CT
+247,Python Syntax Basics,246,CT
+248,Python Variable,247,CT
+249,Python Loop,248,CT
+250,Python Conditional,249,CT
+251,Python Function,233|250,CT
+252,Turtle Graphics,246|251,CT
+253,Turtle Graphics Challenge,252,CT
+254,Curriculum Design,253,CT
+255,Lesson Sequencing,254,CT
+256,Skill Progression Ladder,255,CT
+257,Challenge Based Curriculum,233|256,CT
+258,Project Based Curriculum,257,CT
+259,Curriculum Pacing Guide,258,CT
+260,Beginner Track Curriculum,259,CT
+261,Intermediate Track Curriculum,260,CT
+262,Advanced Track Curriculum,261,CT
+263,Self Paced Learning Path,233|262,CT
+264,Peer Code Review,263,CT
+265,Pair Programming,264,CT
+266,Code Along Session,265,CT
+267,Live Coding Demonstration,266,CT
+268,Coding Challenge Card,267,CT
+269,Concept Challenge Card,233|268,CT
+270,Designing Challenge Cards,269,CT
+271,Printing Challenge Cards,270,CT
+272,Learning Map,271,CT
+273,Skill Badge System,272,CT
+274,Badge And Sticker Reward,273,CT
+275,Portfolio Of Student Work,233|274,CT
+276,Show And Tell Session,275,CT
+277,Code Sharing Platform,276,CT
+278,Version Control Basics,277,CT
+279,Online Coding Platform,278,CT
+280,Offline Coding Environment,279,CT
+281,Unplugged Coding Activity,233|280,CT
+282,Coding Vocabulary Building,281,CT
+283,Physical Computing,,PHYS
+284,Electrical Safety Rules,283,PHYS
+285,Breadboard Basics,284,PHYS
+286,Jumper Wire,285,PHYS
+287,Resistor Basics,286,PHYS
+288,LED Basics,287,PHYS
+289,Blinking Light Circuit,283|288,PHYS
+290,Push Button Switch,289,PHYS
+291,Digital Input,290,PHYS
+292,Digital Output,291,PHYS
+293,Analog Input,292,PHYS
+294,Analog Output,293,PHYS
+295,Voltage Basics,283|294,PHYS
+296,Current Basics,295,PHYS
+297,Short Circuit Hazard,296,PHYS
+298,Static Electricity Precaution,297,PHYS
+299,Battery Safety,298,PHYS
+300,Soldering Safety Basics,299,PHYS
+301,Multimeter Usage,283|300,PHYS
+302,Circuit Diagram Reading,301,PHYS
+303,Sensor Basics,302,PHYS
+304,Light Sensor,303,PHYS
+305,Temperature Sensor,304,PHYS
+306,Humidity Sensor,305,PHYS
+307,Motion Sensor,283|306,PHYS
+308,Sound Sensor,307,PHYS
+309,Distance Sensor,308,PHYS
+310,Display Basics,309,PHYS
+311,OLED Display,310,PHYS
+312,LED Matrix Display,311,PHYS
+313,Seven Segment Display,283|312,PHYS
+314,Motor Basics,313,PHYS
+315,DC Motor,314,PHYS
+316,Servo Motor,315,PHYS
+317,Stepper Motor,316,PHYS
+318,Robot Chassis,317,PHYS
+319,Floor Robot,283|318,PHYS
+320,Table Robot,319,PHYS
+321,Collision Avoidance Robot,309|318|320,PHYS
+322,Robot Sensor Integration,303|321,PHYS
+323,Robot Motor Control,314|322,PHYS
+324,USB Cable Basics,323,PHYS
+325,USB A Connector,283|324,PHYS
+326,USB C Connector,325,PHYS
+327,Power Supply Selection,326,PHYS
+328,Component Storage System,327,PHYS
+329,Wire Stripping Technique,328,PHYS
+330,Prototyping Board,329,PHYS
+331,Circuit Troubleshooting,283|301|330,PHYS
+332,Component Identification,331,PHYS
+333,Datasheet Reading,332,PHYS
+334,Electronics Vocabulary,333,PHYS
+335,Safe Disposal Of Electronics,334,PHYS
+336,Static Safe Handling,335,PHYS
+337,Component Testing Procedure,283|301|336,PHYS
+338,Raspberry Pi Pico,283|284,KITS
+339,MicroPython Basics,246|338,KITS
+340,MicroPython Syntax,339,KITS
+341,MicroPython Loop,340,KITS
+342,NeoPixel LED Strip,341,KITS
+343,LED Strip Wiring,342,KITS
+344,Moving Rainbow Kit,338|343,KITS
+345,Moving Rainbow Pattern,344,KITS
+346,LED Noodle Project,344|345,KITS
+347,Halloween Costume Lighting,346,KITS
+348,Holiday Light Pattern,347,KITS
+349,Fourth Of July Pattern,348,KITS
+350,Color Wheel Programming,338|349,KITS
+351,Brightness Control Code,350,KITS
+352,Animation Timing Code,351,KITS
+353,Robot Kit,352,KITS
+354,Robot Kit Assembly,284|318|353,KITS
+355,Remote Control Distraction Risk,354,KITS
+356,Autonomous Robot Behavior,338|355,KITS
+357,Robot Face Kit,311|318|356,KITS
+358,Robot Emotion Display,357,KITS
+359,Display Kit,358,KITS
+360,Sensor Kit,359,KITS
+361,Gyroscope Kit,360,KITS
+362,Gyroscope Orientation Data,338|361,KITS
+363,Motion Kit,362,KITS
+364,Accelerometer Data,363,KITS
+365,Sound Kit,364,KITS
+366,Classroom Noise Challenge,365,KITS
+367,Microphone Kit,366,KITS
+368,Sound Spectrum Kit,338|367,KITS
+369,Frequency Spectrum Display,368,KITS
+370,Robot Sounds Kit,369,KITS
+371,Robot Display Kit,370,KITS
+372,IoT Project Kit,304|305|306|371,KITS
+373,Light Temp Humidity Monitor,372,KITS
+374,NightLight Project,338|373,KITS
+375,Kit Assembly Instructions,374,KITS
+376,Kit Component Checklist,375,KITS
+377,Kit Difficulty Rating,376,KITS
+378,Kit Cost Comparison,377,KITS
+379,Kit Reuse Strategy,378,KITS
+380,Kit Storage Bin,338|379,KITS
+381,Kit Return Process,380,KITS
+382,Kit Damage Assessment,381,KITS
+383,Kit Loaner Program,382,KITS
+384,Kit Documentation Sheet,383,KITS
+385,Kit Wiring Diagram,384,KITS
+386,Kit Code Template,338|385,KITS
+387,Kit Debugging Guide,386,KITS
+388,Kit Upgrade Path,387,KITS
+389,Kit Vendor Selection,388,KITS
+390,Kit Bulk Purchasing,389,KITS
+391,Kit Unboxing Procedure,390,KITS
+392,Kit Safety Checklist,338|391,KITS
+393,Signal Processing Basics,308|392,KITS
+394,Real Time Audio Processing,393,KITS
+395,Fast Fourier Transform Basics,394,KITS
+396,Smartwatch Display Kit,395,KITS
+397,Wearable Electronics Basics,396,KITS
+398,Laptop Purchasing,,TECH
+399,Laptop Configuration,398,TECH
+400,Chromebook Management,399,TECH
+401,Windows Device Management,400,TECH
+402,MacOS Device Management,401,TECH
+403,Student Login Account,402,TECH
+404,Shared Device Account,398|403,TECH
+405,Individual Device Account,404,TECH
+406,Device Imaging Process,405,TECH
+407,Device Inventory Tracking,406,TECH
+408,Device Charging Cart,407,TECH
+409,Device Labeling System,408,TECH
+410,Device Loaner Agreement,398|409,TECH
+411,Screen Time Management,410,TECH
+412,Content Filtering Software,411,TECH
+413,Parental Control Software,412,TECH
+414,Device Security Policy,45|413,TECH
+415,Password Management For Kids,414,TECH
+416,Device Repair Basics,398|415,TECH
+417,Device Cleaning Routine,416,TECH
+418,Wifi Network Setup,398|417,TECH
+419,Guest Wifi Access,418,TECH
+420,Network Bandwidth Planning,419,TECH
+421,Firewall Basics For Clubs,420,TECH
+422,Device Software Updates,398|421,TECH
+423,App Installation Policy,422,TECH
+424,Browser Bookmark Management,423,TECH
+425,Class Bookmark Folder,424,TECH
+426,Student Bookmark Folder,425,TECH
+427,Offline Mode Preparation,426,TECH
+428,Backup Device Plan,398|427,TECH
+429,Device Donation Program,428,TECH
+430,Refurbished Device Sourcing,429,TECH
+431,Device End Of Life Plan,430,TECH
+432,Peripheral Device Management,431,TECH
+433,Headphone Management,432,TECH
+434,Mouse And Keyboard Setup,398|433,TECH
+435,External Storage Device,434,TECH
+436,Cloud Storage For Devices,435,TECH
+437,Device Troubleshooting Checklist,436,TECH
+438,IT Volunteer Role,437,TECH
+439,Device Setup Time Budget,438,TECH
+440,Device Return Checklist,398|439,TECH
+441,Shared Drive Organization,440,TECH
+442,Saving Student Data,181|398,DATA
+443,Student Data Privacy,45|442,DATA
+444,Tracking Student Progress,443,DATA
+445,Progress Dashboard,444,DATA
+446,Simple Spreadsheet Tracking,445,DATA
+447,Spreadsheet Template Design,446,DATA
+448,Managing Email Communication,442|447,DATA
+449,Email List Segmentation,448,DATA
+450,Setting Up A Calendar,449,DATA
+451,Shared Calendar Access,450,DATA
+452,Notification System,451,DATA
+453,Email And Chat Tools,452,DATA
+454,Group Messaging App,442|453,DATA
+455,Forms And Feedback Tools,454,DATA
+456,Survey Tool Selection,455,DATA
+457,Feedback Loop Design,456,DATA
+458,Data Backup Routine,457,DATA
+459,Data Retention Policy,458,DATA
+460,Consent For Data Collection,442|459,DATA
+461,Anonymized Reporting,460,DATA
+462,Parent Communication Log,461,DATA
+463,Mentor Communication Log,462,DATA
+464,Automated Reminder System,463,DATA
+465,SMS Notification,464,DATA
+466,Newsletter Automation,442|465,DATA
+467,Data Visualization Basics,466,DATA
+468,Attendance Data Analysis,467,DATA
+469,Retention Rate Tracking,468,DATA
+470,Enrollment Trend Analysis,469,DATA
+471,Student Growth Metrics,470,DATA
+472,Skill Mastery Tracking,442|471,DATA
+473,Digital Portfolio System,275|472,DATA
+474,Parent Access Portal,473,DATA
+475,Data Export Process,474,DATA
+476,Spreadsheet Formula Basics,475,DATA
+477,Pivot Table Basics,476,DATA
+478,Data Entry Standardization,442|477,DATA
+479,Duplicate Record Cleanup,478,DATA
+480,Data Sharing Agreement,479,DATA
+481,Third Party Tool Vetting,480,DATA
+482,Cloud Document Sharing,481,DATA
+483,File Naming Convention,482,DATA
+484,Motivating Students,140|233,MOTIV
+485,Intrinsic Motivation,484,MOTIV
+486,Extrinsic Reward System,485,MOTIV
+487,Challenge Card System,486,MOTIV
+488,Learning Map Display,487,MOTIV
+489,Badge Design,488,MOTIV
+490,Sticker Reward System,484|489,MOTIV
+491,Progress Tracker Poster,490,MOTIV
+492,Leaderboard Consideration,491,MOTIV
+493,Friendly Competition Design,492,MOTIV
+494,Collaborative Challenge Design,493,MOTIV
+495,Growth Mindset Coaching,494,MOTIV
+496,Celebrating Small Wins,484|495,MOTIV
+497,Public Recognition Event,496,MOTIV
+498,Certificate Of Completion,497,MOTIV
+499,Student Showcase Wall,498,MOTIV
+500,Peer Recognition Activity,499,MOTIV
+501,Encouragement Language,500,MOTIV
+502,Handling Frustration,484|501,MOTIV
+503,Persistence Coaching,502,MOTIV
+504,Failure As Learning Tool,503,MOTIV
+505,Student Goal Setting,504,MOTIV
+506,Personal Project Choice,505,MOTIV
+507,Student Voice And Choice,506,MOTIV
+508,Gamification Elements,484|507,MOTIV
+509,Point System Design,508,MOTIV
+510,Level Up System,509,MOTIV
+511,Student Interest Survey,510,MOTIV
+512,Passion Project Time,511,MOTIV
+513,Mentor Praise Technique,512,MOTIV
+514,Recruiting Minorities,69|139,DEI
+515,Recruiting Girls And Women,514,DEI
+516,Underserved Community Outreach,515,DEI
+517,Language Accessibility,516,DEI
+518,Translated Materials,517,DEI
+519,Low Income Family Support,518,DEI
+520,No Fee Club Model,514|519,DEI
+521,Why No Fees Matters,520,DEI
+522,Scholarship Fund,521,DEI
+523,Free Device Loan Program,398|522,DEI
+524,Transportation Barrier Solution,523,DEI
+525,Accessible Session Timing,524,DEI
+526,Disability Accommodation,514|525,DEI
+527,Assistive Technology Option,526,DEI
+528,Culturally Responsive Teaching,527,DEI
+529,Representation In Curriculum,528,DEI
+530,Female Mentor Recruitment,529,DEI
+531,Role Model Visibility,530,DEI
+532,Community Trust Building,514|531,DEI
+533,Faith Based Venue Partnership,532,DEI
+534,Rural Community Outreach,533,DEI
+535,Urban Community Outreach,534,DEI
+536,Immigrant Family Outreach,535,DEI
+537,Equity Audit Of Club,536,DEI
+538,Inclusive Marketing Materials,514|537,DEI
+539,Bias Awareness Training,538,DEI
+540,Establishing A Budget,37,FUND
+541,Budget Line Item,540,FUND
+542,Recurring Cost Planning,541,FUND
+543,One Time Cost Planning,542,FUND
+544,Cost Per Student Estimate,543,FUND
+545,Raising Funds,544,FUND
+546,Grant Writing Basics,540|545,FUND
+547,Grant Proposal Structure,546,FUND
+548,Grant Application Tracking,547,FUND
+549,Community Support Drive,548,FUND
+550,Crowdfunding Campaign,549,FUND
+551,Corporate Sponsorship,550,FUND
+552,In Kind Donation,540|551,FUND
+553,Fundraising Event Planning,552,FUND
+554,Local Company Partnership,553,FUND
+555,Strategic Partnership Building,554,FUND
+556,Vendor Discount Negotiation,555,FUND
+557,Nonprofit Fiscal Sponsorship,556,FUND
+558,Budget Tracking Spreadsheet,540|557,FUND
+559,Expense Reporting Process,558,FUND
+560,Reimbursement Policy,559,FUND
+561,Donation Receipt Process,560,FUND
+562,Annual Budget Review,561,FUND
+563,Emergency Fund Reserve,562,FUND
+564,Equipment Depreciation Planning,540|563,FUND
+565,Membership Fee Model,564,FUND
+566,Sliding Scale Fee Model,565,FUND
+567,Community Foundation Grant,566,FUND
+568,School District Funding,567,FUND
+569,PTA Partnership Funding,568,FUND
+570,Library Funding Partnership,540|569,FUND
+571,Robotics Club Overlap Funding,570,FUND
+572,Shared Resource Agreement,571,FUND
+573,Partnership Proposal Template,572,FUND
+574,Sponsor Recognition Plan,573,FUND
+575,Cost Benefit Analysis,574,FUND
+576,AI Agent Basics,1|442,AI
+577,Leveraging AI Agents,576,AI
+578,Planning AI Agent,577,AI
+579,Communication AI Agent,578,AI
+580,Registration AI Agent,191|576|579,AI
+581,Scheduling AI Agent,181|580,AI
+582,Reminder AI Agent,464|576|581,AI
+583,Mentor Coaching AI Agent,162|582,AI
+584,Influence Graph Concept,583,AI
+585,Building An Influence Graph,25|584,AI
+586,Targeting Mentor Populations,585,AI
+587,AI Managed Mailing List,448|586,AI
+588,AI Generated Announcement,448|576|587,AI
+589,AI Drafted Newsletter,588,AI
+590,AI Survey Analysis,206|208|589,AI
+591,AI Sentiment Analysis,590,AI
+592,AI Chatbot For Parents,462|591,AI
+593,AI Chatbot For Students,140|592,AI
+594,Prompt Engineering Basics,576|593,AI
+595,Reviewing AI Output,594,AI
+596,AI Output Quality Check,595,AI
+597,AI Agent Guardrails,596,AI
+598,AI Agent Oversight,597,AI
+599,Human In The Loop Review,598,AI
+600,AI Ethics For Clubs,576|599,AI
+601,AI Bias Awareness,600,AI
+602,AI Data Privacy Risk,601,AI
+603,AI Tool Selection Criteria,602,AI
+604,AI Assisted Curriculum Design,603,AI
+605,AI Generated Challenge Card,604,AI
+606,AI Assisted Lesson Customization,576|605,AI
+607,Building Student Mental Models,606,AI
+608,Customizing Lessons With AI,607,AI
+609,AI Assisted Mentor Matching,150|608,AI
+610,AI Scheduling Optimization,181|609,AI
+611,AI Agent Cost Management,610,AI
+612,AI Agent Vendor Comparison,576|611,AI
+613,AI Assisted Grant Writing,546|612,AI
+614,AI Assisted Social Media,78|613,AI
+615,AI Generated Website Content,109|614,AI
+616,AI Assisted Translation,517|615,AI
+617,AI Voice Assistant Use,616,AI
+618,AI Assisted Debugging Help,576|617,AI
+619,AI Tutor For Students,246|618,AI
+620,AI Code Review Assistant,264|619,AI
+621,AI Agent Workflow Design,620,AI
+622,AI Agent Integration Testing,621,AI
+623,AI Agent Rollout Plan,622,AI
+624,AI Agent Training For Leaders,576|623,AI
+625,Coaching Leaders With AI,14|624,AI
+626,Oversight Board,37|442|540,BOARD
+627,Board Roles And Duties,626,BOARD
+628,Board Meeting Cadence,627,BOARD
+629,Board Member Recruitment,628,BOARD
+630,Board Term Limits,629,BOARD
+631,Succession Planning,630,BOARD
+632,Club Inventory System,380|626|631,BOARD
+633,Inventory Sticker Printing,632,BOARD
+634,QR Code On Kits,633,BOARD
+635,Asset Tagging Process,634,BOARD
+636,Inventory Audit Process,635,BOARD
+637,Lost Item Policy,636,BOARD
+638,Equipment Checkout System,626|637,BOARD
+639,Equipment Return Tracking,638,BOARD
+640,Advanced Mentor Recruiting,139|150|639,BOARD
+641,Finding Qualified Mentors,640,BOARD
+642,Mentor Interview Process,641,BOARD
+643,Mentor Training Curriculum,162|642,BOARD
+644,Bringing Out Mentor Strengths,626|643,BOARD
+645,Mentor Certification Program,644,BOARD
+646,Mentor Peer Support Program,645,BOARD
+647,Leadership Pipeline Development,646,BOARD
+648,Documenting Club Procedures,647,BOARD
+649,Standard Operating Procedure,648,BOARD
+650,Knowledge Transfer Process,626|649,BOARD
+651,New Leader Onboarding,14|650,BOARD
+652,Club Playbook Document,651,BOARD
+653,Annual Strategic Plan,652,BOARD
+654,Club Health Metrics,653,BOARD
+655,Sustainability Checklist,654,BOARD
+656,Multi Year Vision Plan,626|655,BOARD
+657,Building Sustainable Clubs,12|656,BOARD
