@@ -1,0 +1,23 @@
+{
+  "title": "Gyroscope Orientation Data Explorer",
+  "description": "Given a tilted or rotated orientation of a gyroscope kit, the learner interprets which of the pitch, roll, and yaw values changes and by how much.",
+  "creator": "Coding Club",
+  "author": "Dan McCreary",
+  "date": "2026-09-01",
+  "subject": [
+    "Coding Club"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "gyroscope-orientation-data-explorer",
+  "library": "p5.js",
+  "bloomLevel": "Understand (L2)",
+  "bloomVerb": "interpret",
+  "completion_status": "scaffold",
+  "chapter_number": 20,
+  "chapter_title": "Sensor, Sound, and IoT Project Kits",
+  "chapter_dir": "20-sensor-sound-iot-kits",
+  "chapter_rel_dir": "chapters/20-sensor-sound-iot-kits"
+}

@@ -1,0 +1,3481 @@
+<!DOCTYPE html><html lang="en" class="no-js"><head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="An interactive intelligent textbook on how to create, organize, promote and run a sustainable coding club.">
+      
+      
+        <meta name="author" content="Dan McCreary">
+      
+      
+        <link rel="canonical" href="https://dmccreary.github.io/coding-club/chapters/17-sensors-displays-motors/quiz/">
+      
+      
+        <link rel="prev" href="../">
+      
+      
+        <link rel="next" href="../../18-robots-usb-electronics-workshop/">
+      
+      
+      <link rel="icon" href="../../../img/favicon.ico">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.43">
+    
+    
+      
+        <title>Quiz - Coding Club</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.0253249f.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../css/extra.css">
+    
+      <link rel="stylesheet" href="../../../css/mascot.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
+
+
+  
+  
+
+<script id="__analytics">function __md_analytics(){function e(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],e("js",new Date),e("config","G-JDH8L7VM28"),document.addEventListener("DOMContentLoaded",(function(){document.forms.search&&document.forms.search.query.addEventListener("blur",(function(){this.value&&e("event","search",{search_term:this.value})}));document$.subscribe((function(){var t=document.forms.feedback;if(void 0!==t)for(var a of t.querySelectorAll("[type=submit]"))a.addEventListener("click",(function(a){a.preventDefault();var n=document.location.pathname,d=this.getAttribute("data-md-value");e("event","feedback",{page:n,data:d}),t.firstElementChild.disabled=!0;var r=t.querySelector(".md-feedback__note [data-md-value='"+d+"']");r&&(r.hidden=!1)})),t.hidden=!1})),location$.subscribe((function(t){e("config","G-JDH8L7VM28",{page_path:t.pathname})}))}));var t=document.createElement("script");t.async=!0,t.src="https://www.googletagmanager.com/gtag/js?id=G-JDH8L7VM28",document.getElementById("__analytics").insertAdjacentElement("afterEnd",t)}</script>
+  
+    <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
+  
+
+    
+    
+      
+        <meta property="og:type" content="website">
+      
+        <meta property="og:title" content="Quiz - Coding Club">
+      
+        <meta property="og:description" content="An interactive intelligent textbook on how to create, organize, promote and run a sustainable coding club.">
+      
+        <meta property="og:image" content="https://dmccreary.github.io/coding-club/assets/images/social/chapters/17-sensors-displays-motors/quiz.png">
+      
+        <meta property="og:image:type" content="image/png">
+      
+        <meta property="og:image:width" content="1200">
+      
+        <meta property="og:image:height" content="630">
+      
+        <meta property="og:url" content="https://dmccreary.github.io/coding-club/chapters/17-sensors-displays-motors/quiz/">
+      
+        <meta name="twitter:card" content="summary_large_image">
+      
+        <meta name="twitter:title" content="Quiz - Coding Club">
+      
+        <meta name="twitter:description" content="An interactive intelligent textbook on how to create, organize, promote and run a sustainable coding club.">
+      
+        <meta name="twitter:image" content="https://dmccreary.github.io/coding-club/assets/images/social/chapters/17-sensors-displays-motors/quiz.png">
+      
+    
+    
+  <link href="../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"><script src="../../../assets/javascripts/glightbox.min.js"></script><style id="glightbox-style">
+            html.glightbox-open { overflow: initial; height: 100%; }
+            .gslide-title { margin-top: 0px; user-select: text; }
+            .gslide-desc { color: #666; user-select: text; }
+            .gslide-image img { background: white; }
+            .gscrollbar-fixer { padding-right: 15px; }
+            .gdesc-inner { font-size: 0.75rem; }
+            body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color); }
+            body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color); }
+            body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color); }
+        </style></head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="amber">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#quiz-sensors-displays-motors-and-robot-chassis" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="Coding Club" class="md-header__button md-logo" aria-label="Coding Club" data-md-component="logo">
+      
+  <img src="../../../img/mascot/welcome.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"></path></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Coding Club
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Quiz
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"></path></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/dmccreary/coding-club" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"></path></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub Repo
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Coding Club" class="md-nav__button md-logo" aria-label="Coding Club" data-md-component="logo">
+      
+  <img src="../../../img/mascot/welcome.png" alt="logo">
+
+    </a>
+    Coding Club
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/dmccreary/coding-club" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"></path></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub Repo
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../about/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    About
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../course-description/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Course Description
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Chapters
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4" id="__nav_4_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Chapters
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../01-what-is-a-coding-club/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    1. What Is a Coding Club
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../02-ai-and-intelligent-textbooks/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    2. AI, Intelligent Textbooks, and Where Coding Clubs Meet
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../03-club-charter-and-safety/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    3. Writing Your Club Charter and Safety Policies
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../04-roles-governance-branding/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    4. Club Roles, Governance Structure, and Branding
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../05-gauging-interest-first-meeting/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    5. Gauging Interest and Holding Your First Meeting
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../06-growing-and-promoting-club/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    6. Growing, Branding, and Promoting Your Club
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../07-club-story-and-classroom-design/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    7. Telling Your Club's Story and Designing the Classroom
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../08-running-a-session/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    8. Running a Session: Room Layout to Cleanup
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../09-mentors-students-ratio/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    9. Mentors, Students, and the 3:1 Ratio
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../10-mentor-student-relationships/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    10. Building Mentor-Student Relationships That Last
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../11-schedule-and-registration/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    11. Choosing a Schedule and Building Registration
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../12-events-and-retrospectives/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    12. Running Events and Learning From Retrospectives
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../13-special-events-and-payments/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    13. Special Events, Payments, and Term Wrap-Up
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../14-computational-thinking-scratch-python/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    14. Computational Thinking, Scratch, and Python Basics
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../15-curriculum-challenge-cards/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    15. Designing a Curriculum With Challenge Cards and Portfolios
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../16-physical-computing-safety/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    16. Physical Computing and Electrical Safety Basics
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_18" checked>
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    17. Sensors, Displays, Motors, and Robot Chassis
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4_18" id="__nav_4_18_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_18_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4_18">
+            <span class="md-nav__icon md-icon"></span>
+            17. Sensors, Displays, Motors, and Robot Chassis
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Quiz
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Quiz
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-what-is-a-sensor-as-the-chapter-defines-it" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. What is a sensor, as the chapter defines it?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-what-distinguishes-a-servo-motor-from-a-dc-motor" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. What distinguishes a servo motor from a DC motor?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-what-is-a-robot-chassis" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. What is a robot chassis?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-why-does-the-chapter-say-i2c-is-especially-useful-in-a-club-setting-when-a-project-combines-a-display-a-light-sensor-and-a-humidity-sensor" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Why does the chapter say I2C is especially useful in a club setting when a project combines a display, a light sensor, and a humidity sensor?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-a-mentor-writes-code-that-requests-a-new-reading-from-a-dht-series-humidity-sensor-every-100-milliseconds-and-sees-the-same-value-repeated-many-times-in-a-row-what-does-the-chapter-say-is-actually-happening" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. A mentor writes code that requests a new reading from a DHT-series humidity sensor every 100 milliseconds and sees the same value repeated many times in a row. What does the chapter say is actually happening?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-why-cant-a-microcontrollers-output-pin-safely-drive-a-dc-motor-directly-and-what-fixes-this" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. Why can't a microcontroller's output pin safely drive a DC motor directly, and what fixes this?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-a-distance-sensor-reports-an-echo-time-of-6-milliseconds-0006-seconds-using-the-chapters-formula-distance-echo-time-speed-of-sound-2-with-sound-traveling-at-roughly-343-meters-per-second-what-distance-does-this-represent" class="md-nav__link">
+    <span class="md-ellipsis">
+      7. A distance sensor reports an echo time of 6 milliseconds (0.006 seconds). Using the chapter's formula, distance = (echo time × speed of sound) / 2, with sound traveling at roughly 343 meters per second, what distance does this represent?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-a-servo-receives-a-pulse-width-of-1750-microseconds-using-the-chapters-formula-angle-pulse-width-1000-1000-180-what-angle-does-the-servo-move-to" class="md-nav__link">
+    <span class="md-ellipsis">
+      8. A servo receives a pulse width of 1,750 microseconds. Using the chapter's formula, angle = (pulse width − 1000) / 1000 × 180, what angle does the servo move to?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-a-tmp36-temperature-sensor-reads-090-volts-using-the-chapters-formula-temperature-voltage-05-100-what-temperature-does-this-represent" class="md-nav__link">
+    <span class="md-ellipsis">
+      9. A TMP36 temperature sensor reads 0.90 volts. Using the chapter's formula, temperature = (voltage − 0.5) × 100, what temperature does this represent?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10-a-two-wheel-differential-drive-robot-has-its-left-wheel-set-to-a-speed-of-50-and-its-right-wheel-set-to-a-speed-of-50-reverse-based-on-the-chapters-explanation-of-differential-drive-what-motion-results" class="md-nav__link">
+    <span class="md-ellipsis">
+      10. A two-wheel differential-drive robot has its left wheel set to a speed of 50 and its right wheel set to a speed of -50 (reverse). Based on the chapter's explanation of differential drive, what motion results?
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../18-robots-usb-electronics-workshop/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    18. Robots, USB Basics, and Electronics Workshop Skills
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../19-pico-micropython-moving-rainbow/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    19. Raspberry Pi Pico, MicroPython, and the Moving Rainbow Kit
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../20-sensor-sound-iot-kits/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    20. Sensor, Sound, and IoT Project Kits
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../21-kit-inventory-signal-processing/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    21. Managing Your Kit Inventory and Signal Processing Kits
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../22-purchasing-configuring-devices/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    22. Purchasing and Configuring Club Devices
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../23-network-peripherals-device-lifecycle/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    23. Network, Peripherals, and the Device Lifecycle
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../24-student-data-and-communication/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    24. Tracking Student Data and Managing Club Communication
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../25-analyzing-club-data-and-tools/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    25. Analyzing Club Data and Choosing the Right Tools
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../26-motivation-badges-growth-mindset/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    26. Motivation, Badges, and Growth Mindset Coaching
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../27-persistence-and-student-voice/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    27. Encouraging Persistence and Student Voice
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../28-underserved-communities-barriers/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    28. Reaching Underserved Communities and Removing Barriers
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../29-trust-and-representation/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    29. Building Trust and Representation in Your Club
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../30-budgeting-fundraising-grants/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    30. Budgeting, Fundraising, and Grant Writing
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../31-expenses-and-funding-partnerships/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    31. Tracking Expenses and Building Funding Partnerships
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../32-ai-agents-registration-scheduling/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    32. AI Agents for Registration, Scheduling, and Communication
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../33-ai-customized-curriculum-rollout/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    33. AI-Customized Curriculum and Rolling Out New Agents
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../34-oversight-board-and-inventory/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    34. Establishing an Oversight Board and Inventory System
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../35-training-mentors-and-succession/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    35. Training Mentors and Building a Club That Outlasts You
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../../learning-graph/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Learning Graph
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../../sims/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    MicroSims
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../../cards/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Challenge Cards
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../faq/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    FAQ
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../glossary/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Glossary
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../license/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    License
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../contact/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Contact
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-what-is-a-sensor-as-the-chapter-defines-it" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. What is a sensor, as the chapter defines it?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-what-distinguishes-a-servo-motor-from-a-dc-motor" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. What distinguishes a servo motor from a DC motor?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-what-is-a-robot-chassis" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. What is a robot chassis?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-why-does-the-chapter-say-i2c-is-especially-useful-in-a-club-setting-when-a-project-combines-a-display-a-light-sensor-and-a-humidity-sensor" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Why does the chapter say I2C is especially useful in a club setting when a project combines a display, a light sensor, and a humidity sensor?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-a-mentor-writes-code-that-requests-a-new-reading-from-a-dht-series-humidity-sensor-every-100-milliseconds-and-sees-the-same-value-repeated-many-times-in-a-row-what-does-the-chapter-say-is-actually-happening" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. A mentor writes code that requests a new reading from a DHT-series humidity sensor every 100 milliseconds and sees the same value repeated many times in a row. What does the chapter say is actually happening?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-why-cant-a-microcontrollers-output-pin-safely-drive-a-dc-motor-directly-and-what-fixes-this" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. Why can't a microcontroller's output pin safely drive a DC motor directly, and what fixes this?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-a-distance-sensor-reports-an-echo-time-of-6-milliseconds-0006-seconds-using-the-chapters-formula-distance-echo-time-speed-of-sound-2-with-sound-traveling-at-roughly-343-meters-per-second-what-distance-does-this-represent" class="md-nav__link">
+    <span class="md-ellipsis">
+      7. A distance sensor reports an echo time of 6 milliseconds (0.006 seconds). Using the chapter's formula, distance = (echo time × speed of sound) / 2, with sound traveling at roughly 343 meters per second, what distance does this represent?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-a-servo-receives-a-pulse-width-of-1750-microseconds-using-the-chapters-formula-angle-pulse-width-1000-1000-180-what-angle-does-the-servo-move-to" class="md-nav__link">
+    <span class="md-ellipsis">
+      8. A servo receives a pulse width of 1,750 microseconds. Using the chapter's formula, angle = (pulse width − 1000) / 1000 × 180, what angle does the servo move to?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-a-tmp36-temperature-sensor-reads-090-volts-using-the-chapters-formula-temperature-voltage-05-100-what-temperature-does-this-represent" class="md-nav__link">
+    <span class="md-ellipsis">
+      9. A TMP36 temperature sensor reads 0.90 volts. Using the chapter's formula, temperature = (voltage − 0.5) × 100, what temperature does this represent?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10-a-two-wheel-differential-drive-robot-has-its-left-wheel-set-to-a-speed-of-50-and-its-right-wheel-set-to-a-speed-of-50-reverse-based-on-the-chapters-explanation-of-differential-drive-what-motion-results" class="md-nav__link">
+    <span class="md-ellipsis">
+      10. A two-wheel differential-drive robot has its left wheel set to a speed of 50 and its right wheel set to a speed of -50 (reverse). Based on the chapter's explanation of differential drive, what motion results?
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+    <a href="https://github.com/dmccreary/coding-club/blob/main/docs/chapters/17-sensors-displays-motors/quiz.md" title="Edit this page" class="md-content__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"></path></svg>
+    </a>
+  
+  
+
+
+<h1 id="quiz-sensors-displays-motors-and-robot-chassis">Quiz: Sensors, Displays, Motors, and Robot Chassis<a class="headerlink" href="#quiz-sensors-displays-motors-and-robot-chassis" title="Permanent link">¶</a></h1>
+<p>Test your understanding of the six sensor types, three display types, and three motor types used across club kits, plus reading a circuit diagram and choosing a robot chassis with these review questions.</p>
+<hr>
+<h4 id="1-what-is-a-sensor-as-the-chapter-defines-it">1. What is a sensor, as the chapter defines it?<a class="headerlink" href="#1-what-is-a-sensor-as-the-chapter-defines-it" title="Permanent link">¶</a></h4>
+<div class="upper-alpha">
+<ol>
+<li>A driver chip that controls a display over I2C</li>
+<li>A component that converts a physical quantity, such as light or sound, into an electrical signal a microcontroller can read</li>
+<li>A type of motor that holds a fixed angle</li>
+<li>A schematic symbol used only in breadboard diagrams</li>
+</ol>
+</div>
+<details class="question">
+<summary>Show Answer</summary>
+<p>The correct answer is <strong>B</strong>. The chapter defines a sensor as a component that converts a physical quantity -- light, heat, moisture, motion, sound, or distance -- into an electrical signal a microcontroller can read as digital or analog input, acting as a translator between the physical world and voltage. Option A describes a driver chip like the MAX7219, an unrelated display component. Option C describes a servo motor, not a sensor. Option D confuses a sensor with a schematic drawing convention.</p>
+<p><strong>Concept Tested:</strong> Sensor Basics
+<strong>See:</strong> <a href="../../../glossary/#sensor-basics">Sensor Basics</a></p>
+</details>
+<hr>
+<h4 id="2-what-distinguishes-a-servo-motor-from-a-dc-motor">2. What distinguishes a servo motor from a DC motor?<a class="headerlink" href="#2-what-distinguishes-a-servo-motor-from-a-dc-motor" title="Permanent link">¶</a></h4>
+<div class="upper-alpha">
+<ol>
+<li>A servo motor spins continuously in one direction, while a DC motor holds a fixed angle</li>
+<li>A servo motor requires no wiring, while a DC motor requires an H-bridge</li>
+<li>A servo motor has built-in gearing and feedback that lets it move to and hold a specific angle, rather than spinning continuously like a DC motor</li>
+<li>A servo motor can only be used with a stepper driver chip</li>
+</ol>
+</div>
+<details class="question">
+<summary>Show Answer</summary>
+<p>The correct answer is <strong>C</strong>. The chapter defines a servo motor as having built-in gearing and a feedback mechanism that lets it hold a specific angle within a 0-to-180-degree range, unlike a DC motor's continuous spinning. Option A reverses the actual roles of the two motor types. Option B is incorrect since a servo does require its own signal wiring, just a different scheme than a DC motor's H-bridge. Option D confuses servo control with an unrelated stepper driver chip.</p>
+<p><strong>Concept Tested:</strong> Servo Motor
+<strong>See:</strong> <a href="../../../glossary/#servo-motor">Servo Motor</a></p>
+</details>
+<hr>
+<h4 id="3-what-is-a-robot-chassis">3. What is a robot chassis?<a class="headerlink" href="#3-what-is-a-robot-chassis" title="Permanent link">¶</a></h4>
+<div class="upper-alpha">
+<ol>
+<li>The physical frame or platform that holds a robot's motors, wheels, battery, and controller board together as one working unit</li>
+<li>A software library that controls motor speed</li>
+<li>A single sensor mounted on a robot's front bumper</li>
+<li>A type of display used to show a robot's battery level</li>
+</ol>
+</div>
+<details class="question">
+<summary>Show Answer</summary>
+<p>The correct answer is <strong>A</strong>. The chapter defines a robot chassis as the physical frame or platform holding a robot's motors, wheels, battery, and controller board together, with a two-wheel differential drive as the most common beginner design. Option B confuses the chassis with software, an unrelated layer. Option C describes a single sensor, not the whole physical frame. Option D confuses it with a display component, not a structural frame.</p>
+<p><strong>Concept Tested:</strong> Robot Chassis
+<strong>See:</strong> <a href="../../../glossary/#robot-chassis">Robot Chassis</a></p>
+</details>
+<hr>
+<h4 id="4-why-does-the-chapter-say-i2c-is-especially-useful-in-a-club-setting-when-a-project-combines-a-display-a-light-sensor-and-a-humidity-sensor">4. Why does the chapter say I2C is especially useful in a club setting when a project combines a display, a light sensor, and a humidity sensor?<a class="headerlink" href="#4-why-does-the-chapter-say-i2c-is-especially-useful-in-a-club-setting-when-a-project-combines-a-display-a-light-sensor-and-a-humidity-sensor" title="Permanent link">¶</a></h4>
+<div class="upper-alpha">
+<ol>
+<li>Because I2C requires a separate pair of wires for every single device on the bus</li>
+<li>Because I2C only works with displays, never with sensors</li>
+<li>Because I2C transfers data faster than any other protocol</li>
+<li>Because I2C lets several devices share the same two signal wires at once, each distinguished by its own numeric address, as long as no two devices share an address</li>
+</ol>
+</div>
+<details class="question">
+<summary>Show Answer</summary>
+<p>The correct answer is <strong>D</strong>. The chapter explains that I2C's two shared wires let multiple devices, each with its own address, connect without running a separate wire pair for each one, as long as addresses don't collide. Option A directly contradicts I2C's defining shared-wire advantage. Option B is factually wrong, since the chapter describes I2C sensors as well as displays. Option C misstates the comparison, since the chapter notes SPI transfers data faster than I2C, not the reverse.</p>
+<p><strong>Concept Tested:</strong> Display Basics
+<strong>See:</strong> <a href="../../../glossary/#display-basics">Display Basics</a></p>
+</details>
+<hr>
+<h4 id="5-a-mentor-writes-code-that-requests-a-new-reading-from-a-dht-series-humidity-sensor-every-100-milliseconds-and-sees-the-same-value-repeated-many-times-in-a-row-what-does-the-chapter-say-is-actually-happening">5. A mentor writes code that requests a new reading from a DHT-series humidity sensor every 100 milliseconds and sees the same value repeated many times in a row. What does the chapter say is actually happening?<a class="headerlink" href="#5-a-mentor-writes-code-that-requests-a-new-reading-from-a-dht-series-humidity-sensor-every-100-milliseconds-and-sees-the-same-value-repeated-many-times-in-a-row-what-does-the-chapter-say-is-actually-happening" title="Permanent link">¶</a></h4>
+<div class="upper-alpha">
+<ol>
+<li>The sensor's hardware refresh rate is close to two seconds, so requesting readings faster than that just returns a stale, unchanged value rather than indicating a failure</li>
+<li>The sensor has permanently failed and must be replaced</li>
+<li>The microcontroller's analog input pin is wired backward</li>
+<li>The sensor requires a firmware update before it can report new readings</li>
+</ol>
+</div>
+<details class="question">
+<summary>Show Answer</summary>
+<p>The correct answer is <strong>A</strong>. The chapter explains that a DHT module's request-and-response cycle takes close to two seconds, so polling every 100 milliseconds produces the same stale reading repeated many times -- the fix is to request readings no more often than the hardware's own refresh rate. Option B jumps to an incorrect failure diagnosis the chapter does not support. Option C misapplies an analog wiring issue to a digital, single-wire sensor. Option D invents a firmware requirement the chapter never mentions.</p>
+<p><strong>Concept Tested:</strong> Humidity Sensor
+<strong>See:</strong> <a href="../../../glossary/#humidity-sensor">Humidity Sensor</a></p>
+</details>
+<hr>
+<h4 id="6-why-cant-a-microcontrollers-output-pin-safely-drive-a-dc-motor-directly-and-what-fixes-this">6. Why can't a microcontroller's output pin safely drive a DC motor directly, and what fixes this?<a class="headerlink" href="#6-why-cant-a-microcontrollers-output-pin-safely-drive-a-dc-motor-directly-and-what-fixes-this" title="Permanent link">¶</a></h4>
+<div class="upper-alpha">
+<ol>
+<li>A DC motor requires an I2C connection, which output pins don't support</li>
+<li>An output pin can source only about 20 to 30 milliamps, far less than a motor draws under load; an H-bridge lets the pin control the motor's higher current and direction without routing that current through the microcontroller</li>
+<li>A DC motor only works with analog input pins, not digital output pins</li>
+<li>A DC motor requires a seven-segment display to indicate direction</li>
+</ol>
+</div>
+<details class="question">
+<summary>Show Answer</summary>
+<p>The correct answer is <strong>B</strong>. The chapter ties this directly back to Chapter 16's current limit: an output pin can only source about 20 to 30 milliamps, far below what a motor draws, so an H-bridge lets the low-current pin control the motor's higher current and direction safely. Option A invents an I2C requirement unrelated to motor control. Option C confuses input and output pin types in a way the chapter does not describe. Option D invents an unrelated display requirement for motor operation.</p>
+<p><strong>Concept Tested:</strong> DC Motor
+<strong>See:</strong> <a href="../../../glossary/#dc-motor">DC Motor</a></p>
+</details>
+<hr>
+<h4 id="7-a-distance-sensor-reports-an-echo-time-of-6-milliseconds-0006-seconds-using-the-chapters-formula-distance-echo-time-speed-of-sound-2-with-sound-traveling-at-roughly-343-meters-per-second-what-distance-does-this-represent">7. A distance sensor reports an echo time of 6 milliseconds (0.006 seconds). Using the chapter's formula, distance = (echo time × speed of sound) / 2, with sound traveling at roughly 343 meters per second, what distance does this represent?<a class="headerlink" href="#7-a-distance-sensor-reports-an-echo-time-of-6-milliseconds-0006-seconds-using-the-chapters-formula-distance-echo-time-speed-of-sound-2-with-sound-traveling-at-roughly-343-meters-per-second-what-distance-does-this-represent" title="Permanent link">¶</a></h4>
+<div class="upper-alpha">
+<ol>
+<li>About 0.17 meters</li>
+<li>About 2.06 meters</li>
+<li>About 1.03 meters</li>
+<li>About 343 meters</li>
+</ol>
+</div>
+<details class="question">
+<summary>Show Answer</summary>
+<p>The correct answer is <strong>C</strong>. The chapter's own worked example computes this exact scenario: (0.006 × 343) / 2 ≈ 1.03 meters, a typical "something is about a meter ahead" reading. Option A is the result for a 1-millisecond echo time instead, a different example in the chapter. Option B omits dividing by 2 for the round-trip travel. Option D ignores the time factor entirely and simply reports the speed of sound.</p>
+<p><strong>Concept Tested:</strong> Distance Sensor
+<strong>See:</strong> <a href="../../../glossary/#distance-sensor">Distance Sensor</a></p>
+</details>
+<hr>
+<h4 id="8-a-servo-receives-a-pulse-width-of-1750-microseconds-using-the-chapters-formula-angle-pulse-width-1000-1000-180-what-angle-does-the-servo-move-to">8. A servo receives a pulse width of 1,750 microseconds. Using the chapter's formula, angle = (pulse width − 1000) / 1000 × 180, what angle does the servo move to?<a class="headerlink" href="#8-a-servo-receives-a-pulse-width-of-1750-microseconds-using-the-chapters-formula-angle-pulse-width-1000-1000-180-what-angle-does-the-servo-move-to" title="Permanent link">¶</a></h4>
+<div class="upper-alpha">
+<ol>
+<li>90 degrees</li>
+<li>175 degrees</li>
+<li>45 degrees</li>
+<li>135 degrees</li>
+</ol>
+</div>
+<details class="question">
+<summary>Show Answer</summary>
+<p>The correct answer is <strong>D</strong>. The chapter's own worked example computes this exact pulse width: (1750 − 1000) / 1000 × 180 = 135 degrees, three-quarters of the way toward the servo's maximum. Option A is the angle for a 1,500-microsecond pulse instead, the servo's center position. Option B misreads the pulse-width number itself as the answer rather than applying the formula. Option C would result from a pulse width of 1,250 microseconds, not 1,750.</p>
+<p><strong>Concept Tested:</strong> Servo Motor
+<strong>See:</strong> <a href="../../../glossary/#servo-motor">Servo Motor</a></p>
+</details>
+<hr>
+<h4 id="9-a-tmp36-temperature-sensor-reads-090-volts-using-the-chapters-formula-temperature-voltage-05-100-what-temperature-does-this-represent">9. A TMP36 temperature sensor reads 0.90 volts. Using the chapter's formula, temperature = (voltage − 0.5) × 100, what temperature does this represent?<a class="headerlink" href="#9-a-tmp36-temperature-sensor-reads-090-volts-using-the-chapters-formula-temperature-voltage-05-100-what-temperature-does-this-represent" title="Permanent link">¶</a></h4>
+<div class="upper-alpha">
+<ol>
+<li>90 degrees Celsius</li>
+<li>25 degrees Celsius</li>
+<li>50 degrees Celsius</li>
+<li>40 degrees Celsius</li>
+</ol>
+</div>
+<details class="question">
+<summary>Show Answer</summary>
+<p>The correct answer is <strong>D</strong>. The chapter's own worked example computes this exact reading: (0.90 − 0.5) × 100 = 40°C, offered as a useful check value for what a feverish or sun-warmed reading looks like. Option A misreads the voltage value itself as the answer rather than applying the formula. Option B is the result for a 0.75-volt reading instead, a comfortable room temperature in the chapter's other example. Option C does not match applying the formula correctly to 0.90 volts.</p>
+<p><strong>Concept Tested:</strong> Temperature Sensor
+<strong>See:</strong> <a href="../../../glossary/#temperature-sensor">Temperature Sensor</a></p>
+</details>
+<hr>
+<h4 id="10-a-two-wheel-differential-drive-robot-has-its-left-wheel-set-to-a-speed-of-50-and-its-right-wheel-set-to-a-speed-of-50-reverse-based-on-the-chapters-explanation-of-differential-drive-what-motion-results">10. A two-wheel differential-drive robot has its left wheel set to a speed of 50 and its right wheel set to a speed of -50 (reverse). Based on the chapter's explanation of differential drive, what motion results?<a class="headerlink" href="#10-a-two-wheel-differential-drive-robot-has-its-left-wheel-set-to-a-speed-of-50-and-its-right-wheel-set-to-a-speed-of-50-reverse-based-on-the-chapters-explanation-of-differential-drive-what-motion-results" title="Permanent link">¶</a></h4>
+<div class="upper-alpha">
+<ol>
+<li>The robot drives straight forward</li>
+<li>The robot curves gently to one side</li>
+<li>The robot spins in place around a point roughly between the wheels</li>
+<li>The robot stops completely, since the speeds cancel out</li>
+</ol>
+</div>
+<details class="question">
+<summary>Show Answer</summary>
+<p>The correct answer is <strong>C</strong>. The chapter explains that driving the two wheels at equal speed in opposite directions spins the robot in place around a point roughly between the wheels, which is exactly this scenario with one wheel forward and one in reverse at equal magnitude. Option A describes equal speeds in the same direction, not opposite directions. Option B describes one wheel faster than the other in the same direction, a different case than opposite directions. Option D incorrectly assumes opposite speeds cancel into a stop, when they actually combine to produce rotation.</p>
+<p><strong>Concept Tested:</strong> Robot Chassis
+<strong>See:</strong> <a href="../../../glossary/#robot-chassis">Robot Chassis</a></p>
+</details>
+<hr>
+
+
+
+
+
+
+
+  
+  
+
+
+
+  
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"></path></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer">
+        
+          
+          <a href="../" class="md-footer__link md-footer__link--prev" aria-label="Previous: Content">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Content
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../../18-robots-usb-electronics-workshop/" class="md-footer__link md-footer__link--next" aria-label="Next: Content">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Content
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"></path></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright © 2026 Dan McCreary. Licensed under <a href="license/">CC BY-NC-SA 4.0</a> for non-commercial use.
+    </div>
+  
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["content.code.copy", "content.action.edit", "navigation.expand", "navigation.path", "navigation.prune", "navigation.indexes", "navigation.top", "navigation.footer", "toc.follow", "search.suggest", "search.highlight", "search.share"], "search": "../../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.83f73b43.min.js"></script>
+      
+        <script src="../../../js/extra.js"></script>
+      
+    
+  
+<script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(()=>{ lightbox.reload(); });
+</script></body></html>

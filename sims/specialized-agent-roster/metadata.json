@@ -1,0 +1,23 @@
+{
+  "title": "Meet the Specialized Agent Roster",
+  "description": "Given a club task outside day-to-day operations, the learner classifies which of the five specialized agents is the right match for it.",
+  "creator": "Coding Club",
+  "author": "Dan McCreary",
+  "date": "2026-09-01",
+  "subject": [
+    "Coding Club"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "specialized-agent-roster",
+  "library": "vis-network",
+  "bloomLevel": "Understand (L2)",
+  "bloomVerb": "classify",
+  "completion_status": "scaffold",
+  "chapter_number": 33,
+  "chapter_title": "AI-Customized Curriculum and Rolling Out New Agents",
+  "chapter_dir": "33-ai-customized-curriculum-rollout",
+  "chapter_rel_dir": "chapters/33-ai-customized-curriculum-rollout"
+}

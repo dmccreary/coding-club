@@ -1,0 +1,23 @@
+{
+  "title": "From Scattered Knowledge to a Club Playbook",
+  "description": "Given a specific piece of club know-how, the learner differentiates whether it belongs in a written SOP, requires direct knowledge transfer, or has already been captured in the club playbook.",
+  "creator": "Coding Club",
+  "author": "Dan McCreary",
+  "date": "2026-09-01",
+  "subject": [
+    "Coding Club"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "club-playbook-assembly-workflow",
+  "library": "Mermaid",
+  "bloomLevel": "Analyze (L4)",
+  "bloomVerb": "differentiate",
+  "completion_status": "scaffold",
+  "chapter_number": 35,
+  "chapter_title": "Training Mentors and Building a Club That Outlasts You",
+  "chapter_dir": "35-training-mentors-and-succession",
+  "chapter_rel_dir": "chapters/35-training-mentors-and-succession"
+}

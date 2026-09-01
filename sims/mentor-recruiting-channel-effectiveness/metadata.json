@@ -1,0 +1,23 @@
+{
+  "title": "Mentor Recruiting Channel Effectiveness",
+  "description": "Given candidate counts and qualification rates across five mentor recruiting channels, the learner compares them to select an effective mix of channels for a specific recruiting need.",
+  "creator": "Coding Club",
+  "author": "Dan McCreary",
+  "date": "2026-09-01",
+  "subject": [
+    "Coding Club"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "mentor-recruiting-channel-effectiveness",
+  "library": "Chart.js",
+  "bloomLevel": "Analyze (L4)",
+  "bloomVerb": "compare",
+  "completion_status": "scaffold",
+  "chapter_number": 34,
+  "chapter_title": "Establishing an Oversight Board and Inventory System",
+  "chapter_dir": "34-oversight-board-and-inventory",
+  "chapter_rel_dir": "chapters/34-oversight-board-and-inventory"
+}

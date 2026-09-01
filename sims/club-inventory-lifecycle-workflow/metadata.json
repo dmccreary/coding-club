@@ -1,0 +1,23 @@
+{
+  "title": "Club Inventory Lifecycle Workflow",
+  "description": "Given an item's current inventory stage and an audit outcome, the learner differentiates whether the item should return to storage, be flagged overdue, or enter the lost item policy.",
+  "creator": "Coding Club",
+  "author": "Dan McCreary",
+  "date": "2026-09-01",
+  "subject": [
+    "Coding Club"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "club-inventory-lifecycle-workflow",
+  "library": "Mermaid",
+  "bloomLevel": "Analyze (L4)",
+  "bloomVerb": "differentiate",
+  "completion_status": "scaffold",
+  "chapter_number": 34,
+  "chapter_title": "Establishing an Oversight Board and Inventory System",
+  "chapter_dir": "34-oversight-board-and-inventory",
+  "chapter_rel_dir": "chapters/34-oversight-board-and-inventory"
+}

@@ -1,0 +1,23 @@
+{
+  "title": "Should You Start This Club?",
+  "description": "Given survey results and a candidate venue and team, the learner follows the correct sequence of feasibility checks to decide whether to establish a new club.",
+  "creator": "Coding Club",
+  "author": "Dan McCreary",
+  "date": "2026-09-01",
+  "subject": [
+    "Coding Club"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "club-feasibility-decision-path",
+  "library": "Mermaid",
+  "bloomLevel": "Apply (L3)",
+  "bloomVerb": "implement",
+  "completion_status": "scaffold",
+  "chapter_number": 5,
+  "chapter_title": "Gauging Interest and Holding Your First Meeting",
+  "chapter_dir": "05-gauging-interest-first-meeting",
+  "chapter_rel_dir": "chapters/05-gauging-interest-first-meeting"
+}

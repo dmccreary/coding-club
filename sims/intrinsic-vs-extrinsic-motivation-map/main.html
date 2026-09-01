@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- microsim-scaffold-stub -->
+    <title>Intrinsic vs Extrinsic Motivation Map</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f8f9fa;
+            color: #212529;
+        }
+        #container {
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background: white;
+        }
+        h1 {
+            font-size: 22px;
+            margin-bottom: 10px;
+            color: #1a3a6c;
+        }
+        .placeholder {
+            border: 2px dashed #adb5bd;
+            border-radius: 8px;
+            padding: 40px 20px;
+            text-align: center;
+            color: #6c757d;
+            margin: 20px 0;
+            min-height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .placeholder .badge {
+            display: inline-block;
+            background: #ffc107;
+            color: #212529;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+        .placeholder h2 {
+            font-size: 18px;
+            color: #495057;
+            margin-bottom: 8px;
+        }
+        .placeholder p {
+            font-size: 14px;
+            max-width: 480px;
+        }
+        .meta {
+            margin-top: 20px;
+            font-size: 13px;
+            color: #6c757d;
+            border-top: 1px solid #dee2e6;
+            padding-top: 12px;
+        }
+        .meta strong { color: #495057; }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>Intrinsic vs Extrinsic Motivation Map</h1>
+        <div class="placeholder">
+            <span class="badge">SCAFFOLD</span>
+            <h2>MicroSim Not Yet Implemented</h2>
+            <p>This MicroSim has been scaffolded from its specification but the
+            interactive content has not been built yet. See the chapter source
+            and the <code>index.md</code> in this directory for the full spec.</p>
+        </div>
+        <div class="meta">
+            <p><strong>Sim ID:</strong> intrinsic-vs-extrinsic-motivation-map</p>
+            <p><strong>Library:</strong> Interactive Infographic Overlay (grid-diagram.js, annotation-free comparison poster + rectangular hover zones)</p>
+            <p><strong>Bloom Level:</strong> Understand (L2)</p>
+            <p><strong>Learning Objective:</strong> Given a proposed club motivator, the learner classifies it as primarily intrinsic, primarily extrinsic, or a well-designed blend of the two.</p>
+        </div>
+    </div>
+
+    <!--
+    SPECIFICATION (from chapter index.md):
+
+    Type: infographic-overlay (grid)
+    **sim-id:** intrinsic-vs-extrinsic-motivation-map<br/>
+    **Library:** Interactive Infographic Overlay (grid-diagram.js, annotation-free comparison poster + rectangular hover zones)<br/>
+    **Status:** Specified
+    
+    Purpose: Let a mentor classify a proposed motivator as intrinsic, extrinsic, or a blend of both, and see concrete club examples of each, reinforcing the overjustification-effect warning above with real cases where a badge supports rather than undercuts intrinsic drive.
+    
+    Bloom Taxonomy: Understand (L2)
+    Bloom Taxonomy Verb: classify
+    
+    Learning objective: Given a proposed club motivator, the learner classifies it as primarily intrinsic, primarily extrinsic, or a well-designed blend of the two.
+    
+    Image style: Flat comparison poster, two vertical columns plus a narrower center column, each with a bold printed column header baked into the image ("Intrinsic Motivators," "Well-Designed Blend," "Extrinsic Motivators")
+    
+    Image dimensions: 1200x800 (landscape)
+    
+    Zones (3 columns, each with id, label, color, approximate x1/y1/x2/y2 percentage boundaries, one-line summary, and 3-5 bullet facts):
+    1. `intrinsic-column` -- color #4A90D9 -- boundaries approximately x1:2,y1:10,x2:32,y2:92 -- Summary: "Driven by the activity itself." Facts: curiosity about how something works; pride in a working robot; the pleasure of finally fixing a stubborn bug; enjoyment of building alongside a friend
+    2. `blend-column` -- color #7ED6A5 -- boundaries approximately x1:35,y1:10,x2:65,y2:92 -- Summary: "External rewards tied to real, demonstrated skill." Facts: a badge named after the specific skill it proves; a certificate marking a track genuinely completed; a sticker given after a student explains what they built, not just for showing up
+    3. `extrinsic-column` -- color #F5A623 -- boundaries approximately x1:68,y1:10,x2:98,y2:92 -- Summary: "Driven by an outside reward alone." Facts: a sticker for every card attempted regardless of outcome; points awarded purely for attendance; a prize tied to finishing first rather than finishing well; risk of the overjustification effect when overused on already-loved tasks
+    
+    showLabels: false (column titles are printed in the generated image)
+    
+    Interactive features: Click or hover any column to highlight its zone and reveal its full fact list in a detail panel; a "Sort the Motivator" quiz mode presents a new example motivator and asks the learner to click the correct column before revealing the right answer
+    
+    Implementation: Interactive Infographic Overlay Guide (grid engine) -- `grid-diagram.js` + `grid-overlay.css` render the three rectangular hover zones over the generated poster image; `data.json` holds the 3 zones plus a bank of quiz-mode example motivators per the overlay-grid-data-json-schema
+    -->
+</body>
+</html>

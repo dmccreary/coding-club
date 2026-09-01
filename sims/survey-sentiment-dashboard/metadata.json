@@ -1,0 +1,23 @@
+{
+  "title": "Survey Themes and Sentiment Dashboard",
+  "description": "Given a themed, sentiment-scored summary of survey responses, the learner examines it to identify which theme most needs the club's attention.",
+  "creator": "Coding Club",
+  "author": "Dan McCreary",
+  "date": "2026-09-01",
+  "subject": [
+    "Coding Club"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "survey-sentiment-dashboard",
+  "library": "Chart.js",
+  "bloomLevel": "Analyze (L4)",
+  "bloomVerb": "examine",
+  "completion_status": "scaffold",
+  "chapter_number": 32,
+  "chapter_title": "AI Agents for Registration, Scheduling, and Communication",
+  "chapter_dir": "32-ai-agents-registration-scheduling",
+  "chapter_rel_dir": "chapters/32-ai-agents-registration-scheduling"
+}

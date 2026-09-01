@@ -1,0 +1,23 @@
+{
+  "title": "Interest Survey Results",
+  "description": "Given a set of grouped survey results, the learner interprets whether there is enough concentrated interest, in which age range, to justify starting a club.",
+  "creator": "Coding Club",
+  "author": "Dan McCreary",
+  "date": "2026-09-01",
+  "subject": [
+    "Coding Club"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "interest-survey-results",
+  "library": "Chart.js",
+  "bloomLevel": "Analyze (L4)",
+  "bloomVerb": "interpret",
+  "completion_status": "scaffold",
+  "chapter_number": 5,
+  "chapter_title": "Gauging Interest and Holding Your First Meeting",
+  "chapter_dir": "05-gauging-interest-first-meeting",
+  "chapter_rel_dir": "chapters/05-gauging-interest-first-meeting"
+}

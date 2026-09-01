@@ -1,0 +1,23 @@
+{
+  "title": "Bias Risk, Privacy Risk, or Neither?",
+  "description": "Given a short scenario describing an AI tool's behavior, the learner classifies it as an AI bias risk, an AI data privacy risk, both, or neither, and justifies the classification.",
+  "creator": "Coding Club",
+  "author": "Dan McCreary",
+  "date": "2026-09-01",
+  "subject": [
+    "Coding Club"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "bias-privacy-risk-sorter",
+  "library": "p5.js",
+  "bloomLevel": "Evaluate (L5)",
+  "bloomVerb": "classify",
+  "completion_status": "scaffold",
+  "chapter_number": 33,
+  "chapter_title": "AI-Customized Curriculum and Rolling Out New Agents",
+  "chapter_dir": "33-ai-customized-curriculum-rollout",
+  "chapter_rel_dir": "chapters/33-ai-customized-curriculum-rollout"
+}

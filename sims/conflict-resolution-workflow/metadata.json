@@ -1,0 +1,47 @@
+{
+  "title": "Handling a Conflict or Complaint",
+  "description": "Given a reported conflict or complaint, the learner correctly identifies the next step in the club's defined resolution process.",
+  "creator": "Coding Club",
+  "author": "Dan McCreary",
+  "date": "2026-09-01",
+  "subject": [
+    "Coding Club"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "conflict-resolution-workflow",
+  "library": "Mermaid",
+  "bloomLevel": "Apply (L3)",
+  "bloomVerb": "implement",
+  "completion_status": "built",
+  "chapter_number": 3,
+  "chapter_title": "Writing Your Club Charter and Safety Policies",
+  "chapter_dir": "03-club-charter-and-safety",
+  "chapter_rel_dir": "chapters/03-club-charter-and-safety",
+  "canvasHeight": 680,
+  "educational": {
+    "gradeLevel": "High School, Undergraduate, Adult",
+    "audience": "Coding club leaders and mentors",
+    "duration": "15 minutes",
+    "prerequisites": [
+      "Club Charter",
+      "Code of Conduct"
+    ],
+    "concepts": [
+      "Conflict Resolution",
+      "Safety Escalation",
+      "Mediation",
+      "Incident Documentation",
+      "Lessons Learned Log"
+    ]
+  },
+  "pedagogical": {
+    "bloomLevel": "Apply (L3)",
+    "bloomVerb": "implement",
+    "learningObjective": "Given a reported conflict or complaint, the learner correctly identifies the next step in the club's defined resolution process.",
+    "interactionPattern": "Hover-to-preview and click-to-pin flowchart with an explicit safety-escalation branch",
+    "assessment": "Present three scenarios and require the learner to name the branch and the remaining steps for each."
+  }
+}

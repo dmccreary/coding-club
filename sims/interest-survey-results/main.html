@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- microsim-scaffold-stub -->
+    <title>Interest Survey Results</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f8f9fa;
+            color: #212529;
+        }
+        #container {
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background: white;
+        }
+        h1 {
+            font-size: 22px;
+            margin-bottom: 10px;
+            color: #1a3a6c;
+        }
+        .placeholder {
+            border: 2px dashed #adb5bd;
+            border-radius: 8px;
+            padding: 40px 20px;
+            text-align: center;
+            color: #6c757d;
+            margin: 20px 0;
+            min-height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .placeholder .badge {
+            display: inline-block;
+            background: #ffc107;
+            color: #212529;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+        .placeholder h2 {
+            font-size: 18px;
+            color: #495057;
+            margin-bottom: 8px;
+        }
+        .placeholder p {
+            font-size: 14px;
+            max-width: 480px;
+        }
+        .meta {
+            margin-top: 20px;
+            font-size: 13px;
+            color: #6c757d;
+            border-top: 1px solid #dee2e6;
+            padding-top: 12px;
+        }
+        .meta strong { color: #495057; }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>Interest Survey Results</h1>
+        <div class="placeholder">
+            <span class="badge">SCAFFOLD</span>
+            <h2>MicroSim Not Yet Implemented</h2>
+            <p>This MicroSim has been scaffolded from its specification but the
+            interactive content has not been built yet. See the chapter source
+            and the <code>index.md</code> in this directory for the full spec.</p>
+        </div>
+        <div class="meta">
+            <p><strong>Sim ID:</strong> interest-survey-results</p>
+            <p><strong>Library:</strong> Chart.js</p>
+            <p><strong>Bloom Level:</strong> Analyze (L4)</p>
+            <p><strong>Learning Objective:</strong> Given a set of grouped survey results, the learner interprets whether there is enough concentrated interest, in which age range, to justify starting a club.</p>
+        </div>
+    </div>
+
+    <!--
+    SPECIFICATION (from chapter index.md):
+
+    Type: chart
+    **sim-id:** interest-survey-results<br/>
+    **Library:** Chart.js<br/>
+    **Status:** Specified
+    
+    Purpose: Show how raw survey responses get grouped by age range and interest level, turning a stack of paper forms into a decision-ready picture.
+    
+    Bloom Taxonomy: Analyze (L4)
+    Bloom Taxonomy Verb: interpret
+    
+    Learning objective: Given a set of grouped survey results, the learner interprets whether there is enough concentrated interest, in which age range, to justify starting a club.
+    
+    Chart type: Stacked bar chart
+    
+    X-axis: Age range (6-8, 9-11, 12-14, 15-18)
+    Y-axis: Number of survey responses
+    
+    Data series (stacked within each age-range bar):
+    - "Definitely would attend" (dark amber, #F5A623): 6-8: 4, 9-11: 14, 12-14: 9, 15-18: 2
+    - "Might attend" (light blue, #4A90D9): 6-8: 3, 9-11: 6, 12-14: 5, 15-18: 4
+    - "Not interested" (gray, #B0B0B0): 6-8: 2, 9-11: 3, 12-14: 4, 15-18: 3
+    
+    Interactivity requirement (satisfied): hovering any bar segment shows the exact count and percentage of that age range's total responses; clicking a legend entry toggles that series on/off across all bars
+    
+    Title: "47 Survey Responses by Age Range and Interest Level"
+    Legend: Position top-right, matches the three series colors above
+    
+    Annotations: A callout arrow pointing at the 9-11 age-range bar reading "Clearest concentration of definite interest -- 14 of 23 total 9-11 responses"
+    
+    Key insight the learner should be able to state after interacting: the 9-11 age range has both the most responses and the highest proportion of "definitely would attend," making it the strongest starting cohort even though every age range shows some interest.
+    
+    Implementation: Chart.js stacked bar chart with a custom tooltip callback showing count and percentage
+    -->
+</body>
+</html>

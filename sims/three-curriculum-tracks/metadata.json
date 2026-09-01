@@ -1,0 +1,23 @@
+{
+  "title": "Three Curriculum Tracks",
+  "description": "Given a student's current skills, the learner classifies which curriculum track best fits them.",
+  "creator": "Coding Club",
+  "author": "Dan McCreary",
+  "date": "2026-09-01",
+  "subject": [
+    "Coding Club"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "three-curriculum-tracks",
+  "library": "Interactive Infographic Overlay (grid-diagram.js, annotation-free comparison poster + rectangular hover zones)",
+  "bloomLevel": "Understand (L2)",
+  "bloomVerb": "classify",
+  "completion_status": "scaffold",
+  "chapter_number": 15,
+  "chapter_title": "Designing a Curriculum With Challenge Cards and Portfolios",
+  "chapter_dir": "15-curriculum-challenge-cards",
+  "chapter_rel_dir": "chapters/15-curriculum-challenge-cards"
+}

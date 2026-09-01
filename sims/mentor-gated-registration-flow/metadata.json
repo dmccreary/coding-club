@@ -1,0 +1,23 @@
+{
+  "title": "Mentor-Gated Registration Flow",
+  "description": "Given a mentor sign-up count, the learner correctly calculates the resulting student registration capacity and traces what happens once that capacity is reached.",
+  "creator": "Coding Club",
+  "author": "Dan McCreary",
+  "date": "2026-09-01",
+  "subject": [
+    "Coding Club"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "mentor-gated-registration-flow",
+  "library": "Mermaid",
+  "bloomLevel": "Apply (L3)",
+  "bloomVerb": "implement",
+  "completion_status": "scaffold",
+  "chapter_number": 11,
+  "chapter_title": "Choosing a Schedule and Building Registration",
+  "chapter_dir": "11-schedule-and-registration",
+  "chapter_rel_dir": "chapters/11-schedule-and-registration"
+}

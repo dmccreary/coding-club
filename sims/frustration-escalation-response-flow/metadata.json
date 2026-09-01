@@ -1,0 +1,23 @@
+{
+  "title": "Frustration Escalation Response Flow",
+  "description": "Given a description of a student's frustration moment, the learner differentiates whether it calls for in-the-moment encouragement language, persistence coaching across sessions, or a failure-as-learning-tool reframe.",
+  "creator": "Coding Club",
+  "author": "Dan McCreary",
+  "date": "2026-09-01",
+  "subject": [
+    "Coding Club"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "frustration-escalation-response-flow",
+  "library": "Mermaid",
+  "bloomLevel": "Analyze (L4)",
+  "bloomVerb": "differentiate",
+  "completion_status": "scaffold",
+  "chapter_number": 27,
+  "chapter_title": "Encouraging Persistence and Student Voice",
+  "chapter_dir": "27-persistence-and-student-voice",
+  "chapter_rel_dir": "chapters/27-persistence-and-student-voice"
+}

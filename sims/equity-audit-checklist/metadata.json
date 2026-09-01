@@ -1,0 +1,23 @@
+{
+  "title": "Coding Club Equity Audit Checklist",
+  "description": "Given the club's own current practices, the learner scores each of five equity-audit categories on a simple present/partial/absent scale and identifies the lowest-scoring category as the next priority.",
+  "creator": "Coding Club",
+  "author": "Dan McCreary",
+  "date": "2026-09-01",
+  "subject": [
+    "Coding Club"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "equity-audit-checklist",
+  "library": "p5.js",
+  "bloomLevel": "Evaluate (L5)",
+  "bloomVerb": "assess",
+  "completion_status": "scaffold",
+  "chapter_number": 29,
+  "chapter_title": "Building Trust and Representation in Your Club",
+  "chapter_dir": "29-trust-and-representation",
+  "chapter_rel_dir": "chapters/29-trust-and-representation"
+}

@@ -1,0 +1,23 @@
+{
+  "title": "Growth Mindset Coaching Response Flow",
+  "description": "Given a description of what just happened with a student, the learner differentiates whether it calls for growth-mindset coaching, celebrating a small win, or a public recognition event.",
+  "creator": "Coding Club",
+  "author": "Dan McCreary",
+  "date": "2026-09-01",
+  "subject": [
+    "Coding Club"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "growth-mindset-coaching-response-flow",
+  "library": "Mermaid",
+  "bloomLevel": "Analyze (L4)",
+  "bloomVerb": "differentiate",
+  "completion_status": "scaffold",
+  "chapter_number": 26,
+  "chapter_title": "Motivation, Badges, and Growth Mindset Coaching",
+  "chapter_dir": "26-motivation-badges-growth-mindset",
+  "chapter_rel_dir": "chapters/26-motivation-badges-growth-mindset"
+}

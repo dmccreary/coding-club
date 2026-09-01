@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- microsim-scaffold-stub -->
+    <title>Notification Lead-Time Timeline</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f8f9fa;
+            color: #212529;
+        }
+        #container {
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background: white;
+        }
+        h1 {
+            font-size: 22px;
+            margin-bottom: 10px;
+            color: #1a3a6c;
+        }
+        .placeholder {
+            border: 2px dashed #adb5bd;
+            border-radius: 8px;
+            padding: 40px 20px;
+            text-align: center;
+            color: #6c757d;
+            margin: 20px 0;
+            min-height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .placeholder .badge {
+            display: inline-block;
+            background: #ffc107;
+            color: #212529;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+        .placeholder h2 {
+            font-size: 18px;
+            color: #495057;
+            margin-bottom: 8px;
+        }
+        .placeholder p {
+            font-size: 14px;
+            max-width: 480px;
+        }
+        .meta {
+            margin-top: 20px;
+            font-size: 13px;
+            color: #6c757d;
+            border-top: 1px solid #dee2e6;
+            padding-top: 12px;
+        }
+        .meta strong { color: #495057; }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>Notification Lead-Time Timeline</h1>
+        <div class="placeholder">
+            <span class="badge">SCAFFOLD</span>
+            <h2>MicroSim Not Yet Implemented</h2>
+            <p>This MicroSim has been scaffolded from its specification but the
+            interactive content has not been built yet. See the chapter source
+            and the <code>index.md</code> in this directory for the full spec.</p>
+        </div>
+        <div class="meta">
+            <p><strong>Sim ID:</strong> notification-lead-time-timeline</p>
+            <p><strong>Library:</strong> vis-timeline</p>
+            <p><strong>Bloom Level:</strong> Apply (L3)</p>
+            <p><strong>Learning Objective:</strong> Given an event date, the learner schedules reminder notifications at appropriate lead times before it.</p>
+        </div>
+    </div>
+
+    <!--
+    SPECIFICATION (from chapter index.md):
+
+    Type: timeline
+    **sim-id:** notification-lead-time-timeline<br/>
+    **Library:** vis-timeline<br/>
+    **Status:** Specified
+    
+    Purpose: Show a recommended two-touch reminder cadence counting down to an event, so a mentor can see when each reminder should go out and why.
+    
+    Bloom Taxonomy: Apply (L3)
+    Bloom Taxonomy Verb: schedule
+    
+    Learning objective: Given an event date, the learner schedules reminder notifications at appropriate lead times before it.
+    
+    Time period: 14 days before an event through the event itself
+    
+    Orientation: Horizontal, counting down to a fixed "Event Day" marker
+    
+    Events:
+    - Day -14: "First Reminder Sent" -- gives families time to plan around the event
+    - Day -1: "Second Reminder Sent" -- a short, same-day-relevant nudge
+    - Day 0: "Event Day"
+    
+    Visual style: Horizontal countdown timeline with the event day marked distinctly at the right edge
+    
+    Color coding: Blue for the first reminder, amber for the second reminder, green for event day
+    
+    Interactive features:
+    - Click either reminder event to see a sample message and the reasoning behind its timing
+    - Hover the event-day marker to see a summary comparing this two-touch pattern's attendance outcome to a single-reminder baseline
+    
+    Implementation: vis-timeline library rendered in main.html with a `select` event handler opening a detail panel for the clicked item.
+    -->
+</body>
+</html>

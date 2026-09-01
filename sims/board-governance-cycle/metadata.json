@@ -1,0 +1,23 @@
+{
+  "title": "Board Governance Cycle",
+  "description": "Given a board's current state, the learner differentiates the routine seat-rotation cycle from the one-time succession-plan trigger that a founder's departure activates.",
+  "creator": "Coding Club",
+  "author": "Dan McCreary",
+  "date": "2026-09-01",
+  "subject": [
+    "Coding Club"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "board-governance-cycle",
+  "library": "Mermaid",
+  "bloomLevel": "Analyze (L4)",
+  "bloomVerb": "differentiate",
+  "completion_status": "scaffold",
+  "chapter_number": 34,
+  "chapter_title": "Establishing an Oversight Board and Inventory System",
+  "chapter_dir": "34-oversight-board-and-inventory",
+  "chapter_rel_dir": "chapters/34-oversight-board-and-inventory"
+}

@@ -1,0 +1,23 @@
+{
+  "title": "The Five Computational Thinking Skills",
+  "description": "Given a moment in a coding project, the learner identifies which of the five computational thinking skills is being used.",
+  "creator": "Coding Club",
+  "author": "Dan McCreary",
+  "date": "2026-09-01",
+  "subject": [
+    "Coding Club"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "five-computational-thinking-skills",
+  "library": "Interactive Infographic Overlay (grid-diagram.js, annotation-free comparison poster + rectangular hover zones)",
+  "bloomLevel": "Remember (L1)",
+  "bloomVerb": "identify",
+  "completion_status": "scaffold",
+  "chapter_number": 14,
+  "chapter_title": "\"Computational Thinking, Scratch, and Python Basics\"",
+  "chapter_dir": "14-computational-thinking-scratch-python",
+  "chapter_rel_dir": "chapters/14-computational-thinking-scratch-python"
+}

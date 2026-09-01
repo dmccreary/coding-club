@@ -1,0 +1,23 @@
+{
+  "title": "Club Health Metrics Dashboard",
+  "description": "Given three years of club health metrics, the learner assesses whether the club's overall trajectory is sustainable or shows an early warning sign.",
+  "creator": "Coding Club",
+  "author": "Dan McCreary",
+  "date": "2026-09-01",
+  "subject": [
+    "Coding Club"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "club-health-metrics-dashboard",
+  "library": "Chart.js",
+  "bloomLevel": "Evaluate (L5)",
+  "bloomVerb": "assess",
+  "completion_status": "scaffold",
+  "chapter_number": 35,
+  "chapter_title": "Training Mentors and Building a Club That Outlasts You",
+  "chapter_dir": "35-training-mentors-and-succession",
+  "chapter_rel_dir": "chapters/35-training-mentors-and-succession"
+}

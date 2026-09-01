@@ -1,0 +1,3481 @@
+<!DOCTYPE html><html lang="en" class="no-js"><head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="An interactive intelligent textbook on how to create, organize, promote and run a sustainable coding club.">
+      
+      
+        <meta name="author" content="Dan McCreary">
+      
+      
+        <link rel="canonical" href="https://dmccreary.github.io/coding-club/chapters/16-physical-computing-safety/quiz/">
+      
+      
+        <link rel="prev" href="../">
+      
+      
+        <link rel="next" href="../../17-sensors-displays-motors/">
+      
+      
+      <link rel="icon" href="../../../img/favicon.ico">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.43">
+    
+    
+      
+        <title>Quiz - Coding Club</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.0253249f.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../css/extra.css">
+    
+      <link rel="stylesheet" href="../../../css/mascot.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
+
+
+  
+  
+
+<script id="__analytics">function __md_analytics(){function e(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],e("js",new Date),e("config","G-JDH8L7VM28"),document.addEventListener("DOMContentLoaded",(function(){document.forms.search&&document.forms.search.query.addEventListener("blur",(function(){this.value&&e("event","search",{search_term:this.value})}));document$.subscribe((function(){var t=document.forms.feedback;if(void 0!==t)for(var a of t.querySelectorAll("[type=submit]"))a.addEventListener("click",(function(a){a.preventDefault();var n=document.location.pathname,d=this.getAttribute("data-md-value");e("event","feedback",{page:n,data:d}),t.firstElementChild.disabled=!0;var r=t.querySelector(".md-feedback__note [data-md-value='"+d+"']");r&&(r.hidden=!1)})),t.hidden=!1})),location$.subscribe((function(t){e("config","G-JDH8L7VM28",{page_path:t.pathname})}))}));var t=document.createElement("script");t.async=!0,t.src="https://www.googletagmanager.com/gtag/js?id=G-JDH8L7VM28",document.getElementById("__analytics").insertAdjacentElement("afterEnd",t)}</script>
+  
+    <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
+  
+
+    
+    
+      
+        <meta property="og:type" content="website">
+      
+        <meta property="og:title" content="Quiz - Coding Club">
+      
+        <meta property="og:description" content="An interactive intelligent textbook on how to create, organize, promote and run a sustainable coding club.">
+      
+        <meta property="og:image" content="https://dmccreary.github.io/coding-club/assets/images/social/chapters/16-physical-computing-safety/quiz.png">
+      
+        <meta property="og:image:type" content="image/png">
+      
+        <meta property="og:image:width" content="1200">
+      
+        <meta property="og:image:height" content="630">
+      
+        <meta property="og:url" content="https://dmccreary.github.io/coding-club/chapters/16-physical-computing-safety/quiz/">
+      
+        <meta name="twitter:card" content="summary_large_image">
+      
+        <meta name="twitter:title" content="Quiz - Coding Club">
+      
+        <meta name="twitter:description" content="An interactive intelligent textbook on how to create, organize, promote and run a sustainable coding club.">
+      
+        <meta name="twitter:image" content="https://dmccreary.github.io/coding-club/assets/images/social/chapters/16-physical-computing-safety/quiz.png">
+      
+    
+    
+  <link href="../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"><script src="../../../assets/javascripts/glightbox.min.js"></script><style id="glightbox-style">
+            html.glightbox-open { overflow: initial; height: 100%; }
+            .gslide-title { margin-top: 0px; user-select: text; }
+            .gslide-desc { color: #666; user-select: text; }
+            .gslide-image img { background: white; }
+            .gscrollbar-fixer { padding-right: 15px; }
+            .gdesc-inner { font-size: 0.75rem; }
+            body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color); }
+            body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color); }
+            body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color); }
+        </style></head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="amber">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#quiz-physical-computing-and-electrical-safety-basics" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="Coding Club" class="md-header__button md-logo" aria-label="Coding Club" data-md-component="logo">
+      
+  <img src="../../../img/mascot/welcome.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"></path></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Coding Club
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Quiz
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"></path></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/dmccreary/coding-club" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"></path></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub Repo
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Coding Club" class="md-nav__button md-logo" aria-label="Coding Club" data-md-component="logo">
+      
+  <img src="../../../img/mascot/welcome.png" alt="logo">
+
+    </a>
+    Coding Club
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/dmccreary/coding-club" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"></path></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub Repo
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../about/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    About
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../course-description/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Course Description
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Chapters
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4" id="__nav_4_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Chapters
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../01-what-is-a-coding-club/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    1. What Is a Coding Club
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../02-ai-and-intelligent-textbooks/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    2. AI, Intelligent Textbooks, and Where Coding Clubs Meet
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../03-club-charter-and-safety/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    3. Writing Your Club Charter and Safety Policies
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../04-roles-governance-branding/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    4. Club Roles, Governance Structure, and Branding
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../05-gauging-interest-first-meeting/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    5. Gauging Interest and Holding Your First Meeting
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../06-growing-and-promoting-club/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    6. Growing, Branding, and Promoting Your Club
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../07-club-story-and-classroom-design/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    7. Telling Your Club's Story and Designing the Classroom
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../08-running-a-session/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    8. Running a Session: Room Layout to Cleanup
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../09-mentors-students-ratio/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    9. Mentors, Students, and the 3:1 Ratio
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../10-mentor-student-relationships/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    10. Building Mentor-Student Relationships That Last
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../11-schedule-and-registration/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    11. Choosing a Schedule and Building Registration
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../12-events-and-retrospectives/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    12. Running Events and Learning From Retrospectives
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../13-special-events-and-payments/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    13. Special Events, Payments, and Term Wrap-Up
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../14-computational-thinking-scratch-python/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    14. Computational Thinking, Scratch, and Python Basics
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../15-curriculum-challenge-cards/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    15. Designing a Curriculum With Challenge Cards and Portfolios
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_17" checked>
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    16. Physical Computing and Electrical Safety Basics
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4_17" id="__nav_4_17_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_17_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4_17">
+            <span class="md-nav__icon md-icon"></span>
+            16. Physical Computing and Electrical Safety Basics
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Quiz
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Quiz
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-what-is-physical-computing" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. What is physical computing?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-what-causes-a-short-circuit" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. What causes a short circuit?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-what-defines-a-digital-input-signal" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. What defines a digital input signal?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-why-does-the-chapter-recommend-touching-a-grounded-metal-object-before-handling-a-microcontroller-board" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Why does the chapter recommend touching a grounded metal object before handling a microcontroller board?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-how-does-an-analog-output-using-pwm-create-the-appearance-of-a-dimmed-led" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. How does an analog output using PWM create the appearance of a dimmed LED?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-why-does-a-push-button-circuit-typically-include-a-pull-down-resistor-connected-to-ground" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. Why does a push button circuit typically include a pull-down resistor connected to ground?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-a-mentor-wants-to-safely-light-an-led-from-a-5-volt-usb-source-the-led-uses-about-2-volts-once-lit-leaving-3-volts-for-the-resistor-to-absorb-and-the-mentor-wants-current-limited-to-20-milliamps-002-amps-using-ohms-law-what-resistor-value-should-the-mentor-choose" class="md-nav__link">
+    <span class="md-ellipsis">
+      7. A mentor wants to safely light an LED from a 5-volt USB source. The LED uses about 2 volts once lit, leaving 3 volts for the resistor to absorb, and the mentor wants current limited to 20 milliamps (0.02 amps). Using Ohm's law, what resistor value should the mentor choose?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-before-handing-out-a-robot-kit-a-mentor-notices-its-battery-pack-looks-slightly-puffy-and-feels-warm-to-the-touch-what-does-the-chapter-say-the-mentor-should-do" class="md-nav__link">
+    <span class="md-ellipsis">
+      8. Before handing out a robot kit, a mentor notices its battery pack looks slightly puffy and feels warm to the touch. What does the chapter say the mentor should do?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-a-resistor-has-bands-colored-brown-black-red-then-gold-using-the-chapters-worked-example-of-resistor-color-coding-what-resistance-value-does-this-represent" class="md-nav__link">
+    <span class="md-ellipsis">
+      9. A resistor has bands colored brown, black, red, then gold. Using the chapter's worked example of resistor color coding, what resistance value does this represent?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10-a-student-wires-half-a-circuit-on-one-side-of-a-full-size-breadboards-power-rail-then-continues-wiring-on-the-far-side-of-the-same-rail-and-reports-that-nothing-works-on-that-far-side-based-on-the-chapters-explanation-of-breadboard-basics-what-is-the-most-likely-cause" class="md-nav__link">
+    <span class="md-ellipsis">
+      10. A student wires half a circuit on one side of a full-size breadboard's power rail, then continues wiring on the far side of the same rail, and reports that "nothing works" on that far side. Based on the chapter's explanation of breadboard basics, what is the most likely cause?
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../17-sensors-displays-motors/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    17. Sensors, Displays, Motors, and Robot Chassis
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../18-robots-usb-electronics-workshop/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    18. Robots, USB Basics, and Electronics Workshop Skills
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../19-pico-micropython-moving-rainbow/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    19. Raspberry Pi Pico, MicroPython, and the Moving Rainbow Kit
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../20-sensor-sound-iot-kits/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    20. Sensor, Sound, and IoT Project Kits
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../21-kit-inventory-signal-processing/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    21. Managing Your Kit Inventory and Signal Processing Kits
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../22-purchasing-configuring-devices/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    22. Purchasing and Configuring Club Devices
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../23-network-peripherals-device-lifecycle/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    23. Network, Peripherals, and the Device Lifecycle
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../24-student-data-and-communication/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    24. Tracking Student Data and Managing Club Communication
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../25-analyzing-club-data-and-tools/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    25. Analyzing Club Data and Choosing the Right Tools
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../26-motivation-badges-growth-mindset/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    26. Motivation, Badges, and Growth Mindset Coaching
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../27-persistence-and-student-voice/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    27. Encouraging Persistence and Student Voice
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../28-underserved-communities-barriers/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    28. Reaching Underserved Communities and Removing Barriers
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../29-trust-and-representation/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    29. Building Trust and Representation in Your Club
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../30-budgeting-fundraising-grants/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    30. Budgeting, Fundraising, and Grant Writing
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../31-expenses-and-funding-partnerships/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    31. Tracking Expenses and Building Funding Partnerships
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../32-ai-agents-registration-scheduling/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    32. AI Agents for Registration, Scheduling, and Communication
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../33-ai-customized-curriculum-rollout/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    33. AI-Customized Curriculum and Rolling Out New Agents
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../34-oversight-board-and-inventory/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    34. Establishing an Oversight Board and Inventory System
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../35-training-mentors-and-succession/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    35. Training Mentors and Building a Club That Outlasts You
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../../learning-graph/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Learning Graph
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../../sims/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    MicroSims
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../../cards/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Challenge Cards
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../faq/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    FAQ
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../glossary/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Glossary
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../license/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    License
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../contact/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Contact
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-what-is-physical-computing" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. What is physical computing?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-what-causes-a-short-circuit" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. What causes a short circuit?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-what-defines-a-digital-input-signal" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. What defines a digital input signal?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-why-does-the-chapter-recommend-touching-a-grounded-metal-object-before-handling-a-microcontroller-board" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Why does the chapter recommend touching a grounded metal object before handling a microcontroller board?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-how-does-an-analog-output-using-pwm-create-the-appearance-of-a-dimmed-led" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. How does an analog output using PWM create the appearance of a dimmed LED?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-why-does-a-push-button-circuit-typically-include-a-pull-down-resistor-connected-to-ground" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. Why does a push button circuit typically include a pull-down resistor connected to ground?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-a-mentor-wants-to-safely-light-an-led-from-a-5-volt-usb-source-the-led-uses-about-2-volts-once-lit-leaving-3-volts-for-the-resistor-to-absorb-and-the-mentor-wants-current-limited-to-20-milliamps-002-amps-using-ohms-law-what-resistor-value-should-the-mentor-choose" class="md-nav__link">
+    <span class="md-ellipsis">
+      7. A mentor wants to safely light an LED from a 5-volt USB source. The LED uses about 2 volts once lit, leaving 3 volts for the resistor to absorb, and the mentor wants current limited to 20 milliamps (0.02 amps). Using Ohm's law, what resistor value should the mentor choose?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-before-handing-out-a-robot-kit-a-mentor-notices-its-battery-pack-looks-slightly-puffy-and-feels-warm-to-the-touch-what-does-the-chapter-say-the-mentor-should-do" class="md-nav__link">
+    <span class="md-ellipsis">
+      8. Before handing out a robot kit, a mentor notices its battery pack looks slightly puffy and feels warm to the touch. What does the chapter say the mentor should do?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-a-resistor-has-bands-colored-brown-black-red-then-gold-using-the-chapters-worked-example-of-resistor-color-coding-what-resistance-value-does-this-represent" class="md-nav__link">
+    <span class="md-ellipsis">
+      9. A resistor has bands colored brown, black, red, then gold. Using the chapter's worked example of resistor color coding, what resistance value does this represent?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10-a-student-wires-half-a-circuit-on-one-side-of-a-full-size-breadboards-power-rail-then-continues-wiring-on-the-far-side-of-the-same-rail-and-reports-that-nothing-works-on-that-far-side-based-on-the-chapters-explanation-of-breadboard-basics-what-is-the-most-likely-cause" class="md-nav__link">
+    <span class="md-ellipsis">
+      10. A student wires half a circuit on one side of a full-size breadboard's power rail, then continues wiring on the far side of the same rail, and reports that "nothing works" on that far side. Based on the chapter's explanation of breadboard basics, what is the most likely cause?
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+    <a href="https://github.com/dmccreary/coding-club/blob/main/docs/chapters/16-physical-computing-safety/quiz.md" title="Edit this page" class="md-content__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"></path></svg>
+    </a>
+  
+  
+
+
+<h1 id="quiz-physical-computing-and-electrical-safety-basics">Quiz: Physical Computing and Electrical Safety Basics<a class="headerlink" href="#quiz-physical-computing-and-electrical-safety-basics" title="Permanent link">¶</a></h1>
+<p>Test your understanding of physical computing, electrical safety rules, and the breadboard, resistor, LED, and switch vocabulary a mentor needs with these review questions.</p>
+<hr>
+<h4 id="1-what-is-physical-computing">1. What is physical computing?<a class="headerlink" href="#1-what-is-physical-computing" title="Permanent link">¶</a></h4>
+<div class="upper-alpha">
+<ol>
+<li>Writing Python code that only displays text output on a screen</li>
+<li>Any club activity that takes place away from a computer lab</li>
+<li>The process of designing a website's user interface</li>
+<li>The practice of building systems that sense or act on the physical world through electronic hardware controlled by code</li>
+</ol>
+</div>
+<details class="question">
+<summary>Show Answer</summary>
+<p>The correct answer is <strong>D</strong>. The chapter defines physical computing as building systems that sense or act on the physical world through hardware controlled by code, contrasted with a traditional program that only takes keyboard input and prints text. Option A describes the opposite, screen-only case the chapter explicitly contrasts physical computing against. Option B invents a location-based definition unrelated to the actual concept. Option C describes web design, an unrelated discipline entirely.</p>
+<p><strong>Concept Tested:</strong> Physical Computing
+<strong>See:</strong> <a href="../../../glossary/#physical-computing">Physical Computing</a></p>
+</details>
+<hr>
+<h4 id="2-what-causes-a-short-circuit">2. What causes a short circuit?<a class="headerlink" href="#2-what-causes-a-short-circuit" title="Permanent link">¶</a></h4>
+<div class="upper-alpha">
+<ol>
+<li>A resistor with too high a resistance value</li>
+<li>Electric current finding a path of very low resistance that bypasses the intended load and flows almost unopposed between a power source's two terminals</li>
+<li>An LED connected with reversed polarity</li>
+<li>A battery that has fully discharged</li>
+</ol>
+</div>
+<details class="question">
+<summary>Show Answer</summary>
+<p>The correct answer is <strong>B</strong>. The chapter defines a short circuit as current finding a very-low-resistance path that bypasses the intended load, causing current to climb far beyond what the circuit was designed to carry, per Ohm's law. Option A describes the opposite condition, since high resistance limits current rather than causing a short. Option C describes a reversed LED, which simply stays dark rather than creating a short. Option D describes a dead battery, an unrelated condition.</p>
+<p><strong>Concept Tested:</strong> Short Circuit Hazard
+<strong>See:</strong> <a href="../../../glossary/#short-circuit-hazard">Short Circuit Hazard</a></p>
+</details>
+<hr>
+<h4 id="3-what-defines-a-digital-input-signal">3. What defines a digital input signal?<a class="headerlink" href="#3-what-defines-a-digital-input-signal" title="Permanent link">¶</a></h4>
+<div class="upper-alpha">
+<ol>
+<li>It has only two possible states, HIGH or LOW, with no in-between reading</li>
+<li>It reports a continuous range of values, such as 0 to 1023</li>
+<li>It only works with a potentiometer</li>
+<li>It requires pulse-width modulation to function</li>
+</ol>
+</div>
+<details class="question">
+<summary>Show Answer</summary>
+<p>The correct answer is <strong>A</strong>. The chapter defines digital input as a signal with only two possible states, HIGH or LOW, with no partial or fractional in-between reading, unlike an analog input's continuous range. Option B describes analog input instead, the opposite signal type. Option C confuses digital input with a potentiometer, which is actually an analog input example. Option D confuses digital input with PWM, a technique used for analog output.</p>
+<p><strong>Concept Tested:</strong> Digital Input
+<strong>See:</strong> <a href="../../../glossary/#digital-input">Digital Input</a></p>
+</details>
+<hr>
+<h4 id="4-why-does-the-chapter-recommend-touching-a-grounded-metal-object-before-handling-a-microcontroller-board">4. Why does the chapter recommend touching a grounded metal object before handling a microcontroller board?<a class="headerlink" href="#4-why-does-the-chapter-recommend-touching-a-grounded-metal-object-before-handling-a-microcontroller-board" title="Permanent link">¶</a></h4>
+<div class="upper-alpha">
+<ol>
+<li>It improves the microcontroller's wireless signal strength</li>
+<li>It is required before every multimeter measurement</li>
+<li>It drains away static charge safely before it can jump into the board and damage sensitive circuitry</li>
+<li>It resets the board to its factory settings</li>
+</ol>
+</div>
+<details class="question">
+<summary>Show Answer</summary>
+<p>The correct answer is <strong>C</strong>. The chapter explains that walking across carpet can build thousands of volts of static charge, and touching a grounded object first drains that charge away safely before it can destroy the microscopic circuitry inside a chip. Option A invents an unrelated wireless-signal effect. Option B overstates the habit, which is tied specifically to handling boards, not every multimeter use. Option D fabricates a reset function grounding does not perform.</p>
+<p><strong>Concept Tested:</strong> Static Electricity Precaution
+<strong>See:</strong> <a href="../../../glossary/#static-electricity-precaution">Static Electricity Precaution</a></p>
+</details>
+<hr>
+<h4 id="5-how-does-an-analog-output-using-pwm-create-the-appearance-of-a-dimmed-led">5. How does an analog output using PWM create the appearance of a dimmed LED?<a class="headerlink" href="#5-how-does-an-analog-output-using-pwm-create-the-appearance-of-a-dimmed-led" title="Permanent link">¶</a></h4>
+<div class="upper-alpha">
+<ol>
+<li>It lowers the supply voltage feeding the LED continuously</li>
+<li>It switches a digital output on and off extremely fast, and the human eye averages the resulting brightness over time based on the duty cycle</li>
+<li>It replaces the LED's resistor with a variable one</li>
+<li>It reduces the LED's forward voltage permanently</li>
+</ol>
+</div>
+<details class="question">
+<summary>Show Answer</summary>
+<p>The correct answer is <strong>B</strong>. The chapter explains that PWM switches a digital output on and off far faster than the eye can perceive individual flickers, and the eye averages the brightness over time based on the proportion of time spent HIGH, the duty cycle. Option A misdescribes the mechanism as a continuous voltage change rather than fast switching. Option C invents a variable-resistor swap the chapter never describes. Option D fabricates a permanent change to the LED's forward voltage, which PWM does not alter.</p>
+<p><strong>Concept Tested:</strong> Analog Output
+<strong>See:</strong> <a href="../../../glossary/#analog-output">Analog Output</a></p>
+</details>
+<hr>
+<h4 id="6-why-does-a-push-button-circuit-typically-include-a-pull-down-resistor-connected-to-ground">6. Why does a push button circuit typically include a pull-down resistor connected to ground?<a class="headerlink" href="#6-why-does-a-push-button-circuit-typically-include-a-pull-down-resistor-connected-to-ground" title="Permanent link">¶</a></h4>
+<div class="upper-alpha">
+<ol>
+<li>It increases the button's physical durability</li>
+<li>It converts the button into an analog input</li>
+<li>It reduces the voltage needed to power the microcontroller</li>
+<li>It ensures the connected input pin reads a clear, defined LOW value when the button is not pressed, instead of an unpredictable floating value</li>
+</ol>
+</div>
+<details class="question">
+<summary>Show Answer</summary>
+<p>The correct answer is <strong>D</strong>. The chapter explains that a pull-down resistor gives the input pin a clear LOW reading when the button is not pressed, preventing the unpredictable floating value that can cause a circuit to seem to trigger randomly. Option A invents a durability benefit unrelated to the resistor's electrical function. Option B is incorrect, since a push button remains a digital input regardless of the pull-down resistor. Option C misapplies the resistor's role to overall power supply, not pin-reading stability.</p>
+<p><strong>Concept Tested:</strong> Push Button Switch
+<strong>See:</strong> <a href="../../../glossary/#push-button-switch">Push Button Switch</a></p>
+</details>
+<hr>
+<h4 id="7-a-mentor-wants-to-safely-light-an-led-from-a-5-volt-usb-source-the-led-uses-about-2-volts-once-lit-leaving-3-volts-for-the-resistor-to-absorb-and-the-mentor-wants-current-limited-to-20-milliamps-002-amps-using-ohms-law-what-resistor-value-should-the-mentor-choose">7. A mentor wants to safely light an LED from a 5-volt USB source. The LED uses about 2 volts once lit, leaving 3 volts for the resistor to absorb, and the mentor wants current limited to 20 milliamps (0.02 amps). Using Ohm's law, what resistor value should the mentor choose?<a class="headerlink" href="#7-a-mentor-wants-to-safely-light-an-led-from-a-5-volt-usb-source-the-led-uses-about-2-volts-once-lit-leaving-3-volts-for-the-resistor-to-absorb-and-the-mentor-wants-current-limited-to-20-milliamps-002-amps-using-ohms-law-what-resistor-value-should-the-mentor-choose" title="Permanent link">¶</a></h4>
+<div class="upper-alpha">
+<ol>
+<li>150 ohms</li>
+<li>20 ohms</li>
+<li>60 ohms</li>
+<li>300 ohms</li>
+</ol>
+</div>
+<details class="question">
+<summary>Show Answer</summary>
+<p>The correct answer is <strong>A</strong>. The chapter's own worked example computes this exact scenario: resistance equals voltage divided by current, so 3 volts divided by 0.02 amps equals 150 ohms, the value used later in the Blinking Light Circuit example. Option B results from dividing by the wrong quantity entirely. Option C is not the result of applying Ohm's law correctly to these numbers. Option D doubles the correct value and does not match the chapter's calculation.</p>
+<p><strong>Concept Tested:</strong> Current Basics
+<strong>See:</strong> <a href="../../../glossary/#current-basics">Current Basics</a></p>
+</details>
+<hr>
+<h4 id="8-before-handing-out-a-robot-kit-a-mentor-notices-its-battery-pack-looks-slightly-puffy-and-feels-warm-to-the-touch-what-does-the-chapter-say-the-mentor-should-do">8. Before handing out a robot kit, a mentor notices its battery pack looks slightly puffy and feels warm to the touch. What does the chapter say the mentor should do?<a class="headerlink" href="#8-before-handing-out-a-robot-kit-a-mentor-notices-its-battery-pack-looks-slightly-puffy-and-feels-warm-to-the-touch-what-does-the-chapter-say-the-mentor-should-do" title="Permanent link">¶</a></h4>
+<div class="upper-alpha">
+<ol>
+<li>Use it anyway, since AA and coin-cell batteries are always low-risk</li>
+<li>Charge it fully first, then set it aside for inspection later</li>
+<li>Set the pack aside immediately and never plug it back in, since this is a stop-work situation rather than something to troubleshoot further</li>
+<li>Wrap it in an anti-static bag and continue the session as planned</li>
+</ol>
+</div>
+<details class="question">
+<summary>Show Answer</summary>
+<p>The correct answer is <strong>C</strong>. The chapter's warning is explicit: a battery pack that looks even slightly puffy or feels warm should be set aside immediately and never plugged back in, since this is one of the few situations where the right response is to simply stop. Option A misapplies a low-risk description that the chapter reserves for batteries that pass inspection, not damaged ones. Option B dangerously suggests charging a compromised pack, the opposite of the chapter's guidance. Option D confuses an unrelated static-electricity precaution with a damaged-battery response.</p>
+<p><strong>Concept Tested:</strong> Battery Safety
+<strong>See:</strong> <a href="../../../glossary/#battery-safety">Battery Safety</a></p>
+</details>
+<hr>
+<h4 id="9-a-resistor-has-bands-colored-brown-black-red-then-gold-using-the-chapters-worked-example-of-resistor-color-coding-what-resistance-value-does-this-represent">9. A resistor has bands colored brown, black, red, then gold. Using the chapter's worked example of resistor color coding, what resistance value does this represent?<a class="headerlink" href="#9-a-resistor-has-bands-colored-brown-black-red-then-gold-using-the-chapters-worked-example-of-resistor-color-coding-what-resistance-value-does-this-represent" title="Permanent link">¶</a></h4>
+<div class="upper-alpha">
+<ol>
+<li>100 ohms</li>
+<li>1,000 ohms (1 kilohm)</li>
+<li>220 ohms</li>
+<li>10,000 ohms</li>
+</ol>
+</div>
+<details class="question">
+<summary>Show Answer</summary>
+<p>The correct answer is <strong>B</strong>. The chapter's own worked example decodes brown-black-red-gold as 1,000 ohms: brown and black give the digits 1 and 0, red adds two zeros, and gold indicates a 5 percent tolerance. Option A omits one of the zeros the red band adds. Option C is a different common club resistor value, not the one these specific bands encode. Option D adds one zero too many to the correct calculation.</p>
+<p><strong>Concept Tested:</strong> Resistor Basics
+<strong>See:</strong> <a href="../../../glossary/#resistor-basics">Resistor Basics</a></p>
+</details>
+<hr>
+<h4 id="10-a-student-wires-half-a-circuit-on-one-side-of-a-full-size-breadboards-power-rail-then-continues-wiring-on-the-far-side-of-the-same-rail-and-reports-that-nothing-works-on-that-far-side-based-on-the-chapters-explanation-of-breadboard-basics-what-is-the-most-likely-cause">10. A student wires half a circuit on one side of a full-size breadboard's power rail, then continues wiring on the far side of the same rail, and reports that "nothing works" on that far side. Based on the chapter's explanation of breadboard basics, what is the most likely cause?<a class="headerlink" href="#10-a-student-wires-half-a-circuit-on-one-side-of-a-full-size-breadboards-power-rail-then-continues-wiring-on-the-far-side-of-the-same-rail-and-reports-that-nothing-works-on-that-far-side-based-on-the-chapters-explanation-of-breadboard-basics-what-is-the-most-likely-cause" title="Permanent link">¶</a></h4>
+<div class="upper-alpha">
+<ol>
+<li>The student used a female-to-female jumper wire instead of a male-to-male one</li>
+<li>The resistor's color bands were misread</li>
+<li>The LED was connected with reversed polarity</li>
+<li>The center gap on a full-size breadboard splits each side's power rail into two disconnected halves, so a wire on one half does not automatically reach the other half of that same rail</li>
+</ol>
+</div>
+<details class="question">
+<summary>Show Answer</summary>
+<p>The correct answer is <strong>D</strong>. The chapter explicitly warns that a full-size breadboard's center gap splits each power rail into two disconnected halves, and a student who forgets this often reports that "nothing works" on the far side of the board. Option A describes an unrelated connector mismatch that would not produce this specific symptom. Option B describes a resistor-reading error, unrelated to which rail half a wire reaches. Option C describes reversed LED polarity, which would leave that specific LED dark rather than affect an entire half of the board.</p>
+<p><strong>Concept Tested:</strong> Breadboard Basics
+<strong>See:</strong> <a href="../../../glossary/#breadboard-basics">Breadboard Basics</a></p>
+</details>
+<hr>
+
+
+
+
+
+
+
+  
+  
+
+
+
+  
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"></path></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer">
+        
+          
+          <a href="../" class="md-footer__link md-footer__link--prev" aria-label="Previous: Content">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Content
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../../17-sensors-displays-motors/" class="md-footer__link md-footer__link--next" aria-label="Next: Content">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Content
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"></path></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright © 2026 Dan McCreary. Licensed under <a href="license/">CC BY-NC-SA 4.0</a> for non-commercial use.
+    </div>
+  
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["content.code.copy", "content.action.edit", "navigation.expand", "navigation.path", "navigation.prune", "navigation.indexes", "navigation.top", "navigation.footer", "toc.follow", "search.suggest", "search.highlight", "search.share"], "search": "../../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.83f73b43.min.js"></script>
+      
+        <script src="../../../js/extra.js"></script>
+      
+    
+  
+<script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(()=>{ lightbox.reload(); });
+</script></body></html>

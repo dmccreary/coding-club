@@ -1,0 +1,23 @@
+{
+  "title": "Human-in-the-Loop Review Workflow",
+  "description": "Given an AI agent's draft output, the learner determines whether it is ready to send by tracing it through the club's guardrail check, quality check, and human review steps.",
+  "creator": "Coding Club",
+  "author": "Dan McCreary",
+  "date": "2026-09-01",
+  "subject": [
+    "Coding Club"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "human-in-the-loop-review-workflow",
+  "library": "Mermaid",
+  "bloomLevel": "Evaluate (L5)",
+  "bloomVerb": "determine",
+  "completion_status": "scaffold",
+  "chapter_number": 32,
+  "chapter_title": "AI Agents for Registration, Scheduling, and Communication",
+  "chapter_dir": "32-ai-agents-registration-scheduling",
+  "chapter_rel_dir": "chapters/32-ai-agents-registration-scheduling"
+}

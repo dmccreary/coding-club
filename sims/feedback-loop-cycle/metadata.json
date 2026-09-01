@@ -1,0 +1,23 @@
+{
+  "title": "Feedback Loop Cycle",
+  "description": "The learner explains what happens at each stage of a closed feedback loop, and why skipping the last stage undermines the whole cycle.",
+  "creator": "Coding Club",
+  "author": "Dan McCreary",
+  "date": "2026-09-01",
+  "subject": [
+    "Coding Club"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "feedback-loop-cycle",
+  "library": "Mermaid",
+  "bloomLevel": "Understand (L2)",
+  "bloomVerb": "explain",
+  "completion_status": "scaffold",
+  "chapter_number": 24,
+  "chapter_title": "Tracking Student Data and Managing Club Communication",
+  "chapter_dir": "24-student-data-and-communication",
+  "chapter_rel_dir": "chapters/24-student-data-and-communication"
+}

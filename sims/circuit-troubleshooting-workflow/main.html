@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- microsim-scaffold-stub -->
+    <title>Circuit Troubleshooting Decision Workflow</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f8f9fa;
+            color: #212529;
+        }
+        #container {
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background: white;
+        }
+        h1 {
+            font-size: 22px;
+            margin-bottom: 10px;
+            color: #1a3a6c;
+        }
+        .placeholder {
+            border: 2px dashed #adb5bd;
+            border-radius: 8px;
+            padding: 40px 20px;
+            text-align: center;
+            color: #6c757d;
+            margin: 20px 0;
+            min-height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .placeholder .badge {
+            display: inline-block;
+            background: #ffc107;
+            color: #212529;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+        .placeholder h2 {
+            font-size: 18px;
+            color: #495057;
+            margin-bottom: 8px;
+        }
+        .placeholder p {
+            font-size: 14px;
+            max-width: 480px;
+        }
+        .meta {
+            margin-top: 20px;
+            font-size: 13px;
+            color: #6c757d;
+            border-top: 1px solid #dee2e6;
+            padding-top: 12px;
+        }
+        .meta strong { color: #495057; }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>Circuit Troubleshooting Decision Workflow</h1>
+        <div class="placeholder">
+            <span class="badge">SCAFFOLD</span>
+            <h2>MicroSim Not Yet Implemented</h2>
+            <p>This MicroSim has been scaffolded from its specification but the
+            interactive content has not been built yet. See the chapter source
+            and the <code>index.md</code> in this directory for the full spec.</p>
+        </div>
+        <div class="meta">
+            <p><strong>Sim ID:</strong> circuit-troubleshooting-workflow</p>
+            <p><strong>Library:</strong> Mermaid</p>
+            <p><strong>Bloom Level:</strong> Analyze (L4)</p>
+            <p><strong>Learning Objective:</strong> Given a non-working LED circuit, the learner examines the four-step troubleshooting order (power, continuity, orientation, component) to isolate the most likely fault first.</p>
+        </div>
+    </div>
+
+    <!--
+    SPECIFICATION (from chapter index.md):
+
+    Type: workflow
+    **sim-id:** circuit-troubleshooting-workflow<br/>
+    **Library:** Mermaid<br/>
+    **Status:** Specified
+    
+    Purpose: Let a learner click through the four-step troubleshooting order from the worked example above and see what each check actually rules out.
+    
+    Bloom Taxonomy: Analyze (L4)
+    Bloom Taxonomy Verb: examine
+    
+    Learning objective: Given a non-working LED circuit, the learner examines the four-step troubleshooting order (power, continuity, orientation, component) to isolate the most likely fault first.
+    
+    Steps: 1. "Check Power — is voltage actually present at the rail?"; 2. "Check Continuity — is there an unbroken path wire by wire?"; 3. "Check Orientation — is every polarized part installed the right way?"; 4. "Test the Component — swap in a known-good part to confirm or rule it out"
+    
+    Interactivity requirement: Every node MUST carry a `click` directive opening an infobox with that step's full explanation and a concrete example, e.g. `click step1 call showInfo("check-power")`.
+    
+    Visual style: Vertical Mermaid flowchart, steps 1 through 4 in sequence, with a "Fault Found" end node branching off each step to represent stopping the checklist early once a cause is confirmed.
+    
+    Implementation: Mermaid flowchart rendered in a wrapper page at the sim-id path, with a JavaScript `showInfo()` callback populating an infobox beneath the diagram on any node click; each infobox reuses the worked-example wording from the chapter (power check, continuity check, orientation check, component check).
+    -->
+</body>
+</html>

@@ -1,0 +1,23 @@
+{
+  "title": "Push Button Digital Input Circuit",
+  "description": "Given a push button wired with a pull-down resistor, the learner demonstrates how pressing and releasing it changes a digital input reading between HIGH and LOW.",
+  "creator": "Coding Club",
+  "author": "Dan McCreary",
+  "date": "2026-09-01",
+  "subject": [
+    "Coding Club"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "push-button-digital-input-circuit",
+  "library": "p5.js",
+  "bloomLevel": "Apply (L3)",
+  "bloomVerb": "demonstrate",
+  "completion_status": "scaffold",
+  "chapter_number": 16,
+  "chapter_title": "Physical Computing and Electrical Safety Basics",
+  "chapter_dir": "16-physical-computing-safety",
+  "chapter_rel_dir": "chapters/16-physical-computing-safety"
+}

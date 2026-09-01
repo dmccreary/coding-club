@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- microsim-scaffold-stub -->
+    <title>The Tangible Reward Ladder</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f8f9fa;
+            color: #212529;
+        }
+        #container {
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background: white;
+        }
+        h1 {
+            font-size: 22px;
+            margin-bottom: 10px;
+            color: #1a3a6c;
+        }
+        .placeholder {
+            border: 2px dashed #adb5bd;
+            border-radius: 8px;
+            padding: 40px 20px;
+            text-align: center;
+            color: #6c757d;
+            margin: 20px 0;
+            min-height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .placeholder .badge {
+            display: inline-block;
+            background: #ffc107;
+            color: #212529;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+        .placeholder h2 {
+            font-size: 18px;
+            color: #495057;
+            margin-bottom: 8px;
+        }
+        .placeholder p {
+            font-size: 14px;
+            max-width: 480px;
+        }
+        .meta {
+            margin-top: 20px;
+            font-size: 13px;
+            color: #6c757d;
+            border-top: 1px solid #dee2e6;
+            padding-top: 12px;
+        }
+        .meta strong { color: #495057; }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>The Tangible Reward Ladder</h1>
+        <div class="placeholder">
+            <span class="badge">SCAFFOLD</span>
+            <h2>MicroSim Not Yet Implemented</h2>
+            <p>This MicroSim has been scaffolded from its specification but the
+            interactive content has not been built yet. See the chapter source
+            and the <code>index.md</code> in this directory for the full spec.</p>
+        </div>
+        <div class="meta">
+            <p><strong>Sim ID:</strong> tangible-reward-ladder</p>
+            <p><strong>Library:</strong> Interactive Infographic Overlay (diagram.js, annotation-free illustration + numbered callouts)</p>
+            <p><strong>Bloom Level:</strong> Understand (L2)</p>
+            <p><strong>Learning Objective:</strong> Given an unlabeled illustration of a six-rung ladder, the learner identifies which reward tool sits at each rung and what scale of accomplishment it marks.</p>
+        </div>
+    </div>
+
+    <!--
+    SPECIFICATION (from chapter index.md):
+
+    Type: infographic-overlay (callout)
+    **sim-id:** tangible-reward-ladder<br/>
+    **Library:** Interactive Infographic Overlay (diagram.js, annotation-free illustration + numbered callouts)<br/>
+    **Status:** Specified
+    
+    Purpose: Show a new mentor how the six tangible reward tools in this chapter fit together as an escalating ladder, from a single completed challenge card up to a full track certificate, so the choice of which reward to use for which moment becomes a checklist rather than guesswork.
+    
+    Bloom Taxonomy: Understand (L2)
+    Bloom Taxonomy Verb: summarize
+    
+    Learning objective: Given an unlabeled illustration of a six-rung ladder, the learner identifies which reward tool sits at each rung and what scale of accomplishment it marks.
+    
+    Image style: Flat illustration of a six-rung wooden ladder leaning against a wall, each rung a different color matching the reward it represents, with small icons resting on each rung (a card icon, a badge icon, a sticker sheet icon, a small map icon, a poster-square icon, and a ribboned certificate icon at the very top). No text baked into the image beyond the icons themselves; all labels are added by the overlay engine.
+    
+    Image dimensions: 900x1200 (portrait)
+    
+    Layout: side-panel (image left 65%, labels right 35%)
+    
+    Structures to label (callouts, 6 total, each with name, 1-2 sentence description, approximate position, marker color):
+    1. "Challenge Card System" -- bottom rung -- color #4A90D9 -- "Marks choosing and starting a single challenge; the entry point of the whole ladder."
+    2. "Badge Design" -- second rung -- color #F5A623 -- "Marks one specific skill demonstrated and explained, named after exactly what it proves."
+    3. "Sticker Reward System" -- third rung -- color #E67E22 -- "Marks a small, immediate moment of progress, reserved for real completions rather than every attempt."
+    4. "Learning Map Display" -- fourth rung -- color #7ED6A5 -- "Marks a student's growing personal path, visible to them without ranking them against peers."
+    5. "Progress Tracker Poster" -- fifth rung -- color #9B59B6 -- "Marks the whole club's shared momentum, one filled square at a time."
+    6. "Certificate Of Completion" -- top rung -- color #16A085 -- "Marks an entire track finished -- the largest, least frequent reward on the ladder."
+    
+    Interactive features: Explore mode (hover/click each rung to reveal its description); Quiz mode (learner is shown a short scenario, such as "a student just explained how their loop works to a mentor," and asked to click the rung it belongs on)
+    
+    Implementation: Interactive Infographic Overlay Guide (callout engine) -- `diagram.js` + `style.css` render numbered markers and leader lines over the generated ladder illustration; `data.json` holds the 6 callouts with x/y percentage positions plus a bank of quiz-mode scenarios
+    -->
+</body>
+</html>

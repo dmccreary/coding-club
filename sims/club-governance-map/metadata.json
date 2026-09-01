@@ -1,0 +1,23 @@
+{
+  "title": "Club Governance at a Glance",
+  "description": "Given a club's list of roles, the learner explains who reports to whom and who provides outside oversight.",
+  "creator": "Coding Club",
+  "author": "Dan McCreary",
+  "date": "2026-09-01",
+  "subject": [
+    "Coding Club"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "club-governance-map",
+  "library": "vis-network",
+  "bloomLevel": "Understand (L2)",
+  "bloomVerb": "explain",
+  "completion_status": "scaffold",
+  "chapter_number": 4,
+  "chapter_title": "Club Roles, Governance Structure, and Branding",
+  "chapter_dir": "04-roles-governance-branding",
+  "chapter_rel_dir": "chapters/04-roles-governance-branding"
+}

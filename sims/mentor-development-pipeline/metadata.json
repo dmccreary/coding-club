@@ -1,0 +1,23 @@
+{
+  "title": "Mentor Development Pipeline",
+  "description": "Given a mentor candidate's current stage, the learner sequences the remaining stages of development and differentiates what unlocks progress to the next one.",
+  "creator": "Coding Club",
+  "author": "Dan McCreary",
+  "date": "2026-09-01",
+  "subject": [
+    "Coding Club"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "mentor-development-pipeline",
+  "library": "Mermaid",
+  "bloomLevel": "Analyze (L4)",
+  "bloomVerb": "sequence, differentiate",
+  "completion_status": "scaffold",
+  "chapter_number": 35,
+  "chapter_title": "Training Mentors and Building a Club That Outlasts You",
+  "chapter_dir": "35-training-mentors-and-succession",
+  "chapter_rel_dir": "chapters/35-training-mentors-and-succession"
+}

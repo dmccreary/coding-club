@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- microsim-scaffold-stub -->
+    <title>Fundraising Channel Yield Comparison</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f8f9fa;
+            color: #212529;
+        }
+        #container {
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background: white;
+        }
+        h1 {
+            font-size: 22px;
+            margin-bottom: 10px;
+            color: #1a3a6c;
+        }
+        .placeholder {
+            border: 2px dashed #adb5bd;
+            border-radius: 8px;
+            padding: 40px 20px;
+            text-align: center;
+            color: #6c757d;
+            margin: 20px 0;
+            min-height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .placeholder .badge {
+            display: inline-block;
+            background: #ffc107;
+            color: #212529;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+        .placeholder h2 {
+            font-size: 18px;
+            color: #495057;
+            margin-bottom: 8px;
+        }
+        .placeholder p {
+            font-size: 14px;
+            max-width: 480px;
+        }
+        .meta {
+            margin-top: 20px;
+            font-size: 13px;
+            color: #6c757d;
+            border-top: 1px solid #dee2e6;
+            padding-top: 12px;
+        }
+        .meta strong { color: #495057; }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>Fundraising Channel Yield Comparison</h1>
+        <div class="placeholder">
+            <span class="badge">SCAFFOLD</span>
+            <h2>MicroSim Not Yet Implemented</h2>
+            <p>This MicroSim has been scaffolded from its specification but the
+            interactive content has not been built yet. See the chapter source
+            and the <code>index.md</code> in this directory for the full spec.</p>
+        </div>
+        <div class="meta">
+            <p><strong>Sim ID:</strong> fundraising-channel-yield-comparison</p>
+            <p><strong>Library:</strong> Chart.js</p>
+            <p><strong>Bloom Level:</strong> Analyze (L4)</p>
+            <p><strong>Learning Objective:</strong> Given typical yield and effort figures for five fundraising channels, the learner compares them to select an appropriate channel for a specific funding need and time budget.</p>
+        </div>
+    </div>
+
+    <!--
+    SPECIFICATION (from chapter index.md):
+
+    Type: chart
+    **sim-id:** fundraising-channel-yield-comparison<br/>
+    **Library:** Chart.js<br/>
+    **Status:** Specified
+    
+    Purpose: Let a leader compare typical net dollar yield against volunteer hours required across five fundraising channels, to help choose a channel that fits both a funding need and the time a club actually has available.
+    
+    Bloom Taxonomy: Analyze (L4)
+    Bloom Taxonomy Verb: compare
+    
+    Learning objective: Given typical yield and effort figures for five fundraising channels, the learner compares them to select an appropriate channel for a specific funding need and time budget.
+    
+    Chart type: Grouped bar chart (two series per channel)
+    
+    X-axis: Fundraising channel (Community Support Drive, Crowdfunding Campaign, Corporate Sponsorship, In-Kind Donation, Fundraising Event)
+    
+    Y-axis (left): Typical net dollar yield for a small club
+    Y-axis (right, or second bar color): Approximate volunteer hours to plan and run it
+    
+    Data series:
+    1. Net Yield (blue bars): Community Support Drive $340; Crowdfunding Campaign $128 (after fee, on a $150 goal); Corporate Sponsorship $500/year; In-Kind Donation $750 (one-time value); Fundraising Event $420
+    
+    2. Volunteer Hours (gold bars): Community Support Drive 4; Crowdfunding Campaign 6; Corporate Sponsorship 3 (mostly one relationship-building conversation); In-Kind Donation 2; Fundraising Event 15
+    
+    Title: "Typical Yield vs. Volunteer Hours by Fundraising Channel"
+    Legend: Position top-right, labeling "Net Yield ($)" and "Volunteer Hours"
+    
+    Interactive features:
+    - Hover any bar to see its exact value and a one-sentence description of that channel pulled from this chapter
+    - Toggle buttons above the chart to show/hide each series independently
+    - Click a channel's label on the x-axis to highlight both of its bars and dim the rest
+    
+    Annotations:
+    - Small callout near the Fundraising Event bars: "Highest yield, but also the highest time cost -- plan this one only once you have volunteer hours to spare."
+    - Small callout near In-Kind Donation: "Highest yield per volunteer hour, but depends on finding a willing donor, not just effort."
+    
+    Implementation: Chart.js grouped bar chart with a dataset array holding both series; hover tooltips configured via Chart.js's built-in tooltip callback to include the one-sentence channel description.
+    -->
+</body>
+</html>

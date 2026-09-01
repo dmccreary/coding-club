@@ -1,0 +1,23 @@
+{
+  "title": "Template Card vs. AI-Customized Card",
+  "description": "Given a generic and an AI-customized challenge card teaching the same concept, the learner compares them to identify what customization changed and what the required format kept constant.",
+  "creator": "Coding Club",
+  "author": "Dan McCreary",
+  "date": "2026-09-01",
+  "subject": [
+    "Coding Club"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "generic-vs-ai-challenge-card",
+  "library": "p5.js",
+  "bloomLevel": "Analyze (L4)",
+  "bloomVerb": "compare",
+  "completion_status": "scaffold",
+  "chapter_number": 33,
+  "chapter_title": "AI-Customized Curriculum and Rolling Out New Agents",
+  "chapter_dir": "33-ai-customized-curriculum-rollout",
+  "chapter_rel_dir": "chapters/33-ai-customized-curriculum-rollout"
+}

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- microsim-scaffold-stub -->
+    <title>Club Calendar Setup Workflow</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f8f9fa;
+            color: #212529;
+        }
+        #container {
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background: white;
+        }
+        h1 {
+            font-size: 22px;
+            margin-bottom: 10px;
+            color: #1a3a6c;
+        }
+        .placeholder {
+            border: 2px dashed #adb5bd;
+            border-radius: 8px;
+            padding: 40px 20px;
+            text-align: center;
+            color: #6c757d;
+            margin: 20px 0;
+            min-height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .placeholder .badge {
+            display: inline-block;
+            background: #ffc107;
+            color: #212529;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+        .placeholder h2 {
+            font-size: 18px;
+            color: #495057;
+            margin-bottom: 8px;
+        }
+        .placeholder p {
+            font-size: 14px;
+            max-width: 480px;
+        }
+        .meta {
+            margin-top: 20px;
+            font-size: 13px;
+            color: #6c757d;
+            border-top: 1px solid #dee2e6;
+            padding-top: 12px;
+        }
+        .meta strong { color: #495057; }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>Club Calendar Setup Workflow</h1>
+        <div class="placeholder">
+            <span class="badge">SCAFFOLD</span>
+            <h2>MicroSim Not Yet Implemented</h2>
+            <p>This MicroSim has been scaffolded from its specification but the
+            interactive content has not been built yet. See the chapter source
+            and the <code>index.md</code> in this directory for the full spec.</p>
+        </div>
+        <div class="meta">
+            <p><strong>Sim ID:</strong> calendar-setup-workflow</p>
+            <p><strong>Library:</strong> Mermaid</p>
+            <p><strong>Bloom Level:</strong> Apply (L3)</p>
+            <p><strong>Learning Objective:</strong> The learner sequences the steps required to set up a new shared club calendar correctly the first time.</p>
+        </div>
+    </div>
+
+    <!--
+    SPECIFICATION (from chapter index.md):
+
+    Type: workflow
+    **sim-id:** calendar-setup-workflow<br/>
+    **Library:** Mermaid<br/>
+    **Status:** Specified
+    
+    Purpose: Sequence the one-time steps of creating a club calendar, ending at the point where shared access -- covered next -- takes over.
+    
+    Bloom Taxonomy: Apply (L3)
+    Bloom Taxonomy Verb: sequence
+    
+    Learning objective: The learner sequences the steps required to set up a new shared club calendar correctly the first time.
+    
+    Steps (flowchart):
+    1. "Create New Calendar" -- click reveals "A calendar distinct from any mentor's personal calendar."
+    2. "Name It Clearly" -- click reveals "For example, 'Tuesday Coding Club 2026,' not the default 'Calendar 3.'"
+    3. "Set Default Visibility" -- click reveals "Typically view-only for anyone with the link, reserving edit access for the lead mentor."
+    4. "Add Recurring Sessions" -- click reveals "Every session date for the semester added as one recurring weekly event, not one at a time."
+    5. "Share the Link" -- click reveals "The link goes out to families and mentors, and shared calendar access rules take over from here."
+    
+    Interactivity requirement (satisfied): every node has a Mermaid `click` directive tied to an infobox showing its revealed text.
+    
+    Color coding: A single consistent color for all five steps, since this is a simple linear sequence rather than a branching decision.
+    
+    Implementation: Mermaid flowchart (`graph TD`) rendered in main.html with `click NodeId call showInfo("NodeId")` directives for every node.
+    -->
+</body>
+</html>

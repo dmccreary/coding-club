@@ -1,0 +1,23 @@
+{
+  "title": "Seasonal LED Pattern Gallery",
+  "description": "Given a running LED pattern, the learner differentiates which seasonal theme produced it and identifies the code parameter that changed to create it.",
+  "creator": "Coding Club",
+  "author": "Dan McCreary",
+  "date": "2026-09-01",
+  "subject": [
+    "Coding Club"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "seasonal-led-pattern-gallery",
+  "library": "p5.js",
+  "bloomLevel": "Analyze (L4)",
+  "bloomVerb": "differentiate",
+  "completion_status": "scaffold",
+  "chapter_number": 19,
+  "chapter_title": "Raspberry Pi Pico, MicroPython, and the Moving Rainbow Kit",
+  "chapter_dir": "19-pico-micropython-moving-rainbow",
+  "chapter_rel_dir": "chapters/19-pico-micropython-moving-rainbow"
+}

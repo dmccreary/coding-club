@@ -1,0 +1,23 @@
+{
+  "title": "Matching Mentors and Optimizing a Schedule",
+  "description": "Given a mentor-student matching graph and a set of candidate schedule slots, the learner examines the scores to identify the strongest mentor-student pairing and the schedule slot that satisfies every stated constraint.",
+  "creator": "Coding Club",
+  "author": "Dan McCreary",
+  "date": "2026-09-01",
+  "subject": [
+    "Coding Club"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "mentor-matching-schedule-optimizer",
+  "library": "vis-network",
+  "bloomLevel": "Analyze (L4)",
+  "bloomVerb": "examine",
+  "completion_status": "scaffold",
+  "chapter_number": 33,
+  "chapter_title": "AI-Customized Curriculum and Rolling Out New Agents",
+  "chapter_dir": "33-ai-customized-curriculum-rollout",
+  "chapter_rel_dir": "chapters/33-ai-customized-curriculum-rollout"
+}

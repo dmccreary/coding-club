@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- microsim-scaffold-stub -->
+    <title>Grant Writing and Tracking Workflow</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f8f9fa;
+            color: #212529;
+        }
+        #container {
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background: white;
+        }
+        h1 {
+            font-size: 22px;
+            margin-bottom: 10px;
+            color: #1a3a6c;
+        }
+        .placeholder {
+            border: 2px dashed #adb5bd;
+            border-radius: 8px;
+            padding: 40px 20px;
+            text-align: center;
+            color: #6c757d;
+            margin: 20px 0;
+            min-height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .placeholder .badge {
+            display: inline-block;
+            background: #ffc107;
+            color: #212529;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+        .placeholder h2 {
+            font-size: 18px;
+            color: #495057;
+            margin-bottom: 8px;
+        }
+        .placeholder p {
+            font-size: 14px;
+            max-width: 480px;
+        }
+        .meta {
+            margin-top: 20px;
+            font-size: 13px;
+            color: #6c757d;
+            border-top: 1px solid #dee2e6;
+            padding-top: 12px;
+        }
+        .meta strong { color: #495057; }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>Grant Writing and Tracking Workflow</h1>
+        <div class="placeholder">
+            <span class="badge">SCAFFOLD</span>
+            <h2>MicroSim Not Yet Implemented</h2>
+            <p>This MicroSim has been scaffolded from its specification but the
+            interactive content has not been built yet. See the chapter source
+            and the <code>index.md</code> in this directory for the full spec.</p>
+        </div>
+        <div class="meta">
+            <p><strong>Sim ID:</strong> grant-writing-tracking-workflow</p>
+            <p><strong>Library:</strong> Mermaid</p>
+            <p><strong>Bloom Level:</strong> Apply (L3)</p>
+            <p><strong>Learning Objective:</strong> Given a grant opportunity at any stage, the learner correctly identifies the next step in the club's grant-writing and tracking process.</p>
+        </div>
+    </div>
+
+    <!--
+    SPECIFICATION (from chapter index.md):
+
+    Type: workflow
+    **sim-id:** grant-writing-tracking-workflow<br/>
+    **Library:** Mermaid<br/>
+    **Status:** Specified
+    
+    Purpose: Show the full sequence from spotting a grant opportunity through writing, submitting, and tracking it to a final outcome, so a first-time grant writer knows exactly what step comes next.
+    
+    Bloom Taxonomy: Apply (L3)
+    Bloom Taxonomy Verb: implement
+    
+    Learning objective: Given a grant opportunity at any stage, the learner correctly identifies the next step in the club's grant-writing and tracking process.
+    
+    Steps (flowchart with a decision diamond):
+    1. Start: "Grant Opportunity Identified" -- click reveals "A foundation, company, or government program with funding priorities that plausibly match the club's mission."
+    2. Process: "Match Club Facts to Funder's Language" -- click reveals "Rewrite the club's real activities using the funder's own stated priority terms, per Grant Writing Basics."
+    3. Process: "Draft Using Standard Proposal Structure" -- click reveals "Needs statement, project description, budget, evaluation plan, organizational background."
+    4. Process: "Submit Before Deadline" -- click reveals "Log the submission immediately in the tracking spreadsheet with status 'Submitted.'"
+    5. Decision: "Funder Response?" -- click reveals "Most funders reply within 4-12 weeks; if no reply by the funder's stated window, a tracked follow-up email is due."
+    6a. Process (if awarded): "Log Award and Any Report Deadlines" -- click reveals "Update status to 'Awarded' and add every required report deadline as its own tracked row, not just the grant deadline itself."
+    6b. Process (if declined): "Log Outcome and Request Feedback" -- click reveals "Update status to 'Declined'; many funders will share brief feedback on request, useful for the next application."
+    7. End: "Update Tracking Spreadsheet" -- click reveals "Every branch above ends here -- the tracking step is what prevents a missed report or a forgotten reapplication next cycle."
+    
+    Interactivity requirement: every node has a Mermaid `click` directive wired to an infobox showing its revealed text; this is not a decorative flowchart.
+    
+    Color coding: Blue for drafting steps, yellow for the decision diamond, green for the awarded branch, orange for the declined branch
+    
+    Implementation: Mermaid flowchart syntax with `click NodeId call showInfo("...")` directives for every node, rendered with a custom infobox panel beneath the diagram.
+    -->
+</body>
+</html>

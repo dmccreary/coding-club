@@ -1,0 +1,23 @@
+{
+  "title": "Fundraising Channel Yield Comparison",
+  "description": "Given typical yield and effort figures for five fundraising channels, the learner compares them to select an appropriate channel for a specific funding need and time budget.",
+  "creator": "Coding Club",
+  "author": "Dan McCreary",
+  "date": "2026-09-01",
+  "subject": [
+    "Coding Club"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "fundraising-channel-yield-comparison",
+  "library": "Chart.js",
+  "bloomLevel": "Analyze (L4)",
+  "bloomVerb": "compare",
+  "completion_status": "scaffold",
+  "chapter_number": 30,
+  "chapter_title": "Budgeting, Fundraising, and Grant Writing",
+  "chapter_dir": "30-budgeting-fundraising-grants",
+  "chapter_rel_dir": "chapters/30-budgeting-fundraising-grants"
+}

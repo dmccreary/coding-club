@@ -1,0 +1,23 @@
+{
+  "title": "Static Electricity Precaution Checklist",
+  "description": "Given an illustrated classroom scene, the learner identifies which surfaces are safe to touch before handling a board and which increase static risk.",
+  "creator": "Coding Club",
+  "author": "Dan McCreary",
+  "date": "2026-09-01",
+  "subject": [
+    "Coding Club"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "static-electricity-precaution-checklist",
+  "library": "Interactive Infographic Overlay (checklist overlay, illustrated classroom scene + clickable hotspots)",
+  "bloomLevel": "Remember (L1)",
+  "bloomVerb": "identify",
+  "completion_status": "scaffold",
+  "chapter_number": 16,
+  "chapter_title": "Physical Computing and Electrical Safety Basics",
+  "chapter_dir": "16-physical-computing-safety",
+  "chapter_rel_dir": "chapters/16-physical-computing-safety"
+}

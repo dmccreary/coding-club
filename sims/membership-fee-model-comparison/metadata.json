@@ -1,0 +1,23 @@
+{
+  "title": "Membership Fee Model Comparison",
+  "description": "Given a number of families and a distribution of self-selected fee tiers, the learner calculates and compares total annual revenue under a flat membership fee model versus a sliding scale fee model.",
+  "creator": "Coding Club",
+  "author": "Dan McCreary",
+  "date": "2026-09-01",
+  "subject": [
+    "Coding Club"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "membership-fee-model-comparison",
+  "library": "p5.js",
+  "bloomLevel": "Apply (L3)",
+  "bloomVerb": "calculate",
+  "completion_status": "scaffold",
+  "chapter_number": 31,
+  "chapter_title": "Tracking Expenses and Building Funding Partnerships",
+  "chapter_dir": "31-expenses-and-funding-partnerships",
+  "chapter_rel_dir": "chapters/31-expenses-and-funding-partnerships"
+}

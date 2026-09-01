@@ -1,0 +1,23 @@
+{
+  "title": "Leaderboard vs Collaborative Challenge",
+  "description": "Given a description of a club's mix of skill levels and confidence, the learner recommends the safest competition format for that group.",
+  "creator": "Coding Club",
+  "author": "Dan McCreary",
+  "date": "2026-09-01",
+  "subject": [
+    "Coding Club"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "leaderboard-vs-collaborative-challenge",
+  "library": "Interactive Infographic Overlay (grid-diagram.js, annotation-free comparison poster + rectangular hover zones)",
+  "bloomLevel": "Evaluate (L5)",
+  "bloomVerb": "recommend",
+  "completion_status": "scaffold",
+  "chapter_number": 26,
+  "chapter_title": "Motivation, Badges, and Growth Mindset Coaching",
+  "chapter_dir": "26-motivation-badges-growth-mindset",
+  "chapter_rel_dir": "chapters/26-motivation-badges-growth-mindset"
+}

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- microsim-scaffold-stub -->
+    <title>Oversight Board Org Chart</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f8f9fa;
+            color: #212529;
+        }
+        #container {
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background: white;
+        }
+        h1 {
+            font-size: 22px;
+            margin-bottom: 10px;
+            color: #1a3a6c;
+        }
+        .placeholder {
+            border: 2px dashed #adb5bd;
+            border-radius: 8px;
+            padding: 40px 20px;
+            text-align: center;
+            color: #6c757d;
+            margin: 20px 0;
+            min-height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .placeholder .badge {
+            display: inline-block;
+            background: #ffc107;
+            color: #212529;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+        .placeholder h2 {
+            font-size: 18px;
+            color: #495057;
+            margin-bottom: 8px;
+        }
+        .placeholder p {
+            font-size: 14px;
+            max-width: 480px;
+        }
+        .meta {
+            margin-top: 20px;
+            font-size: 13px;
+            color: #6c757d;
+            border-top: 1px solid #dee2e6;
+            padding-top: 12px;
+        }
+        .meta strong { color: #495057; }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>Oversight Board Org Chart</h1>
+        <div class="placeholder">
+            <span class="badge">SCAFFOLD</span>
+            <h2>MicroSim Not Yet Implemented</h2>
+            <p>This MicroSim has been scaffolded from its specification but the
+            interactive content has not been built yet. See the chapter source
+            and the <code>index.md</code> in this directory for the full spec.</p>
+        </div>
+        <div class="meta">
+            <p><strong>Sim ID:</strong> oversight-board-org-chart</p>
+            <p><strong>Library:</strong> vis-network</p>
+            <p><strong>Bloom Level:</strong> Remember (L1)</p>
+            <p><strong>Learning Objective:</strong> Given the five named seats on a coding club's oversight board, the learner identifies each seat's core responsibility and how the board as a whole relates to day-to-day operations.</p>
+        </div>
+    </div>
+
+    <!--
+    SPECIFICATION (from chapter index.md):
+
+    Type: diagram
+    **sim-id:** oversight-board-org-chart<br/>
+    **Library:** vis-network<br/>
+    **Status:** Specified
+    
+    Purpose: Let a reader see, in one hierarchical chart, how a five-seat oversight board sits above day-to-day club operations without running sessions itself, and click each seat to learn its specific job before the prose spells out the details.
+    
+    Bloom Taxonomy: Remember (L1)
+    Bloom Taxonomy Verb: identify
+    
+    Learning objective: Given the five named seats on a coding club's oversight board, the learner identifies each seat's core responsibility and how the board as a whole relates to day-to-day operations.
+    
+    Node types:
+    1. Root node "Oversight Board" (top, dark blue rounded rectangle, larger size)
+    2. Five seat nodes (second tier, sky-blue circles): "Chair," "Secretary," "Treasurer," "Mentor Liaison," "At-Large Member"
+    3. Operations node (third tier, amber rounded rectangle): "Founder / Lead Mentor (Day-to-Day Sessions)"
+    4. Leaf node (bottom, gray rounded rectangle): "Mentors and Students"
+    
+    Edges (hierarchical, downward arrows):
+    - Oversight Board -> each of the five seat nodes
+    - Oversight Board -> Founder / Lead Mentor (labeled "sets policy and budget for")
+    - Mentor Liaison -> Mentors and Students (labeled "carries concerns from," drawn as a dashed upward-and-across arrow distinct from the plain hierarchy edges)
+    - Founder / Lead Mentor -> Mentors and Students (labeled "runs weekly sessions with")
+    
+    Sample click content (infobox text shown on click):
+    - Chair: "Runs board meetings, sets the agenda, represents the club publicly, and casts the tie-breaking vote."
+    - Secretary: "Records and distributes written minutes after every meeting, so decisions and their reasoning survive turnover."
+    - Treasurer: "Reviews the budget before large purchases and signs financial paperwork the founder used to sign alone."
+    - Mentor Liaison: "Attends mentor debriefs and brings mentor concerns to the board directly."
+    - At-Large Member: "Represents a parent, student, or venue host the board would otherwise never hear from directly."
+    - Oversight Board (root): "Holds formal authority over mission, budget, and major decisions; membership changes, the seats do not."
+    - Founder / Lead Mentor: "Runs weekly sessions day to day; reports to the board rather than acting with unchecked authority."
+    - Mentors and Students: "The people in the room every session -- the board exists to support this layer, not replace it."
+    
+    Layout: Hierarchical, top-down, root centered, five seats spread evenly on the second tier
+    
+    Interactive features:
+    - Click any node: open a side-panel infobox with that node's text above, and highlight its direct edges
+    - Hover any node: brief tooltip preview of its role
+    - Zoom: mouse wheel; Pan: click-and-drag background
+    - Button: "Reset View" recenters and clears any highlight
+    
+    Visual styling: dark blue root, sky-blue seat circles, amber operations box, gray leaf box; edge labels shown at all times in small text; canvas is responsive and reflows to a narrower vertical layout on small screens
+    
+    Legend: node color key (board root, board seats, operations, ground-level people) plus a note that dashed edges represent a reporting channel rather than a chain of command
+    
+    Implementation: vis-network JavaScript library with a hierarchical layout option, node/edge data defined in a small `data.json` file, and a custom infobox panel rendered beneath the canvas on click.
+    -->
+</body>
+</html>

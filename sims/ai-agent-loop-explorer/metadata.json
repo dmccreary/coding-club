@@ -1,0 +1,23 @@
+{
+  "title": "AI Agent Loop Explorer",
+  "description": "Given a scenario, the learner explains what happens at each stage of an AI agent's loop and why the human-review stage cannot be skipped.",
+  "creator": "Coding Club",
+  "author": "Dan McCreary",
+  "date": "2026-09-01",
+  "subject": [
+    "Coding Club"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "ai-agent-loop-explorer",
+  "library": "p5.js",
+  "bloomLevel": "Understand (L2)",
+  "bloomVerb": "explain",
+  "completion_status": "scaffold",
+  "chapter_number": 32,
+  "chapter_title": "AI Agents for Registration, Scheduling, and Communication",
+  "chapter_dir": "32-ai-agents-registration-scheduling",
+  "chapter_rel_dir": "chapters/32-ai-agents-registration-scheduling"
+}

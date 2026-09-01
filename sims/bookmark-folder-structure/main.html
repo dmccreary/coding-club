@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- microsim-scaffold-stub -->
+    <title>Bookmark Folder Structure</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f8f9fa;
+            color: #212529;
+        }
+        #container {
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background: white;
+        }
+        h1 {
+            font-size: 22px;
+            margin-bottom: 10px;
+            color: #1a3a6c;
+        }
+        .placeholder {
+            border: 2px dashed #adb5bd;
+            border-radius: 8px;
+            padding: 40px 20px;
+            text-align: center;
+            color: #6c757d;
+            margin: 20px 0;
+            min-height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .placeholder .badge {
+            display: inline-block;
+            background: #ffc107;
+            color: #212529;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+        .placeholder h2 {
+            font-size: 18px;
+            color: #495057;
+            margin-bottom: 8px;
+        }
+        .placeholder p {
+            font-size: 14px;
+            max-width: 480px;
+        }
+        .meta {
+            margin-top: 20px;
+            font-size: 13px;
+            color: #6c757d;
+            border-top: 1px solid #dee2e6;
+            padding-top: 12px;
+        }
+        .meta strong { color: #495057; }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>Bookmark Folder Structure</h1>
+        <div class="placeholder">
+            <span class="badge">SCAFFOLD</span>
+            <h2>MicroSim Not Yet Implemented</h2>
+            <p>This MicroSim has been scaffolded from its specification but the
+            interactive content has not been built yet. See the chapter source
+            and the <code>index.md</code> in this directory for the full spec.</p>
+        </div>
+        <div class="meta">
+            <p><strong>Sim ID:</strong> bookmark-folder-structure</p>
+            <p><strong>Library:</strong> Mermaid</p>
+            <p><strong>Bloom Level:</strong> Understand (L2)</p>
+            <p><strong>Learning Objective:</strong> Given a new bookmark a student wants to save, the learner classifies whether it belongs in the shared class folder, a personal student folder, or the browser's general bookmark bar.</p>
+        </div>
+    </div>
+
+    <!--
+    SPECIFICATION (from chapter index.md):
+
+    Type: diagram
+    **sim-id:** bookmark-folder-structure<br/>
+    **Library:** Mermaid<br/>
+    **Status:** Specified
+    
+    Purpose: Show how a club laptop's bookmark bar splits into a shared class folder and a student's own personal folder, so a mentor or student can see exactly where a new bookmark belongs.
+    
+    Bloom Taxonomy: Understand (L2)
+    Bloom Taxonomy Verb: classify
+    
+    Learning objective: Given a new bookmark a student wants to save, the learner classifies whether it belongs in the shared class folder, a personal student folder, or the browser's general bookmark bar.
+    
+    Steps (tree diagram, top to bottom):
+    1. Root: "Browser Bookmark Bar" -- click reveals the Browser Bookmark Management definition above.
+    2. Branch: "Class Bookmark Folder" -- click reveals the Class Bookmark Folder definition above.
+    3a. Leaf under Class Bookmark Folder: "Coding Platform Link" -- click reveals "A link every student needs, such as the club's coding platform, belongs in the shared class folder so a mentor's one update reaches every laptop."
+    3b. Leaf under Class Bookmark Folder: "Club Glossary Link" -- click reveals "Reference material used by the whole club, like the glossary, is shared through the class folder rather than duplicated in each student's personal space."
+    4. Branch: "Student Bookmark Folder" -- click reveals the Student Bookmark Folder definition above.
+    5a. Leaf under Student Bookmark Folder: "My In-Progress Project" -- click reveals "A link specific to one student's own work belongs in that student's personal folder, where it survives independent of what the class folder changes to."
+    
+    Interactivity requirement (satisfied): every node has a Mermaid `click` directive tied to an infobox showing its revealed text, matching the definition already given in this chapter's prose.
+    
+    Color coding: Gray for the root bookmark bar, blue for the class folder and its shared leaves, green for the student folder and its personal leaf.
+    
+    Implementation: Mermaid flowchart (`graph TD`) rendered in main.html with `click NodeId call showInfo("NodeId")` directives for every node, opening a side-panel infobox; a "Reset View" button re-centers the diagram after any zoom or pan.
+    -->
+</body>
+</html>

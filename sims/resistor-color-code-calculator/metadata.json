@@ -1,0 +1,23 @@
+{
+  "title": "Resistor Color Code Calculator",
+  "description": "Resistor Color Code Calculator",
+  "creator": "Coding Club",
+  "author": "Dan McCreary",
+  "date": "2026-09-01",
+  "subject": [
+    "Coding Club"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "resistor-color-code-calculator",
+  "library": "p5.js",
+  "bloomLevel": "TBD",
+  "bloomVerb": "TBD",
+  "completion_status": "scaffold",
+  "chapter_number": 16,
+  "chapter_title": "Physical Computing and Electrical Safety Basics",
+  "chapter_dir": "16-physical-computing-safety",
+  "chapter_rel_dir": "chapters/16-physical-computing-safety"
+}

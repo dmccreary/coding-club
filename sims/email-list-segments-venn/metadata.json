@@ -1,0 +1,23 @@
+{
+  "title": "Email List Segments",
+  "description": "Given a sample contact, the learner differentiates which segment or segments that contact belongs to.",
+  "creator": "Coding Club",
+  "author": "Dan McCreary",
+  "date": "2026-09-01",
+  "subject": [
+    "Coding Club"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "email-list-segments-venn",
+  "library": "p5.js",
+  "bloomLevel": "Analyze (L4)",
+  "bloomVerb": "differentiate",
+  "completion_status": "scaffold",
+  "chapter_number": 24,
+  "chapter_title": "Tracking Student Data and Managing Club Communication",
+  "chapter_dir": "24-student-data-and-communication",
+  "chapter_rel_dir": "chapters/24-student-data-and-communication"
+}

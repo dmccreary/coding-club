@@ -1,0 +1,23 @@
+{
+  "title": "Comparing AI Tools Against Selection Criteria",
+  "description": "Given a radar comparison of three AI tool vendors scored against four selection criteria, the learner justifies which vendor best fits a stated club priority.",
+  "creator": "Coding Club",
+  "author": "Dan McCreary",
+  "date": "2026-09-01",
+  "subject": [
+    "Coding Club"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "ai-tool-selection-radar",
+  "library": "Chart.js",
+  "bloomLevel": "Evaluate (L5)",
+  "bloomVerb": "justify",
+  "completion_status": "scaffold",
+  "chapter_number": 33,
+  "chapter_title": "AI-Customized Curriculum and Rolling Out New Agents",
+  "chapter_dir": "33-ai-customized-curriculum-rollout",
+  "chapter_rel_dir": "chapters/33-ai-customized-curriculum-rollout"
+}

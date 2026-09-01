@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- microsim-scaffold-stub -->
+    <title>Club Governance at a Glance</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f8f9fa;
+            color: #212529;
+        }
+        #container {
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background: white;
+        }
+        h1 {
+            font-size: 22px;
+            margin-bottom: 10px;
+            color: #1a3a6c;
+        }
+        .placeholder {
+            border: 2px dashed #adb5bd;
+            border-radius: 8px;
+            padding: 40px 20px;
+            text-align: center;
+            color: #6c757d;
+            margin: 20px 0;
+            min-height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .placeholder .badge {
+            display: inline-block;
+            background: #ffc107;
+            color: #212529;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+        .placeholder h2 {
+            font-size: 18px;
+            color: #495057;
+            margin-bottom: 8px;
+        }
+        .placeholder p {
+            font-size: 14px;
+            max-width: 480px;
+        }
+        .meta {
+            margin-top: 20px;
+            font-size: 13px;
+            color: #6c757d;
+            border-top: 1px solid #dee2e6;
+            padding-top: 12px;
+        }
+        .meta strong { color: #495057; }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>Club Governance at a Glance</h1>
+        <div class="placeholder">
+            <span class="badge">SCAFFOLD</span>
+            <h2>MicroSim Not Yet Implemented</h2>
+            <p>This MicroSim has been scaffolded from its specification but the
+            interactive content has not been built yet. See the chapter source
+            and the <code>index.md</code> in this directory for the full spec.</p>
+        </div>
+        <div class="meta">
+            <p><strong>Sim ID:</strong> club-governance-map</p>
+            <p><strong>Library:</strong> vis-network</p>
+            <p><strong>Bloom Level:</strong> Understand (L2)</p>
+            <p><strong>Learning Objective:</strong> Given a club's list of roles, the learner explains who reports to whom and who provides outside oversight.</p>
+        </div>
+    </div>
+
+    <!--
+    SPECIFICATION (from chapter index.md):
+
+    Type: graph-model
+    **sim-id:** club-governance-map<br/>
+    **Library:** vis-network<br/>
+    **Status:** Specified
+    
+    Purpose: Show how club roles connect through reporting and oversight lines, making the abstract term "governance structure" concrete.
+    
+    Bloom Taxonomy: Understand (L2)
+    Bloom Taxonomy Verb: explain
+    
+    Learning objective: Given a club's list of roles, the learner explains who reports to whom and who provides outside oversight.
+    
+    Node types:
+    1. Top tier -- "Advisory Committee" (gray diamond, oversight, optional -- see note below)
+    2. Second tier -- "Club Leader" and "Assistant Leader" (amber circles, #F5A623)
+    3. Third tier -- "Volunteer Coordinator Role" and "Mentor Role" (sky-blue circles, #4A90D9)
+    4. Fourth tier -- "Student Role" and "Parent Role" (light-green circles, #7ED6A5)
+    
+    Edges (hierarchical, directional):
+    - Advisory Committee -- Club Leader: "provides oversight and guidance to"
+    - Club Leader -- Assistant Leader: "delegates to and trains"
+    - Club Leader -- Volunteer Coordinator Role: "oversees"
+    - Volunteer Coordinator Role -- Mentor Role: "recruits, screens, and schedules"
+    - Mentor Role -- Student Role: "guides directly during sessions"
+    - Mentor Role -- Parent Role: "communicates session updates to"
+    
+    Interactive features:
+    - Click any node to open a side panel with a one-sentence definition and one sentence on that role's single most important responsibility
+    - Note displayed near the Advisory Committee node: "Not every club has one -- see the Governance Structure discussion for when to add this tier"
+    - Click-drag to reposition nodes; scroll wheel to zoom
+    
+    Default state: Hierarchical top-down layout, Advisory Committee at top, no node pre-selected
+    
+    Layout: Hierarchical (vis-network hierarchical layout option), fixed top-to-bottom tiers
+    
+    Legend: Fixed corner box explaining node color by tier (gray = oversight, amber = leadership, blue = volunteer/mentor, green = participants and families)
+    
+    Canvas size: Responsive width, 500px height, minimum 320px width before controls stack vertically
+    
+    Implementation: vis-network with hierarchical layout enabled; side panel is an absolutely-positioned div updated via vis-network's `selectNode` event listener
+    -->
+</body>
+</html>

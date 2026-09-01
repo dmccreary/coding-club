@@ -2,24 +2,24 @@
   "metrics": {
     "concepts": 657,
     "chapters": 35,
-    "microsims": 1,
+    "microsims": 129,
     "stories": 2,
     "labs": 0,
-    "glossaryTerms": 0,
-    "faqs": 0,
-    "quizQuestions": 0,
-    "chapterQuizzes": 0,
+    "glossaryTerms": 657,
+    "faqs": 70,
+    "quizQuestions": 350,
+    "chapterQuizzes": 35,
     "chapterReferences": 0,
     "references": 0,
-    "diagrams": 87,
-    "equations": 3,
-    "words": 115984,
-    "links": 299,
-    "appendices": 0,
+    "diagrams": 129,
+    "equations": 4,
+    "words": 307336,
+    "links": 1328,
+    "appendices": 3,
     "mascotImages": 7,
     "developmentStage": "Not specified",
-    "equivalentPages": 486
+    "equivalentPages": 1326
   },
   "metricsGeneratedBy": "Book Metrics Python Program v0.09",
-  "metricsGeneratedOn": "September 01, 2026 at 07:18 AM"
+  "metricsGeneratedOn": "September 01, 2026 at 12:55 PM"
 }

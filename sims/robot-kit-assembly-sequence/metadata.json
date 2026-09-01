@@ -1,0 +1,23 @@
+{
+  "title": "Robot Kit Assembly Sequence",
+  "description": "Given a robot kit's loose parts, the learner sequences the assembly steps in the order that avoids blocking a later step, and explains why each step precedes the next.",
+  "creator": "Coding Club",
+  "author": "Dan McCreary",
+  "date": "2026-09-01",
+  "subject": [
+    "Coding Club"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "robot-kit-assembly-sequence",
+  "library": "p5.js",
+  "bloomLevel": "Apply (L3)",
+  "bloomVerb": "sequence",
+  "completion_status": "scaffold",
+  "chapter_number": 19,
+  "chapter_title": "Raspberry Pi Pico, MicroPython, and the Moving Rainbow Kit",
+  "chapter_dir": "19-pico-micropython-moving-rainbow",
+  "chapter_rel_dir": "chapters/19-pico-micropython-moving-rainbow"
+}

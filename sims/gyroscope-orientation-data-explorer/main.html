@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- microsim-scaffold-stub -->
+    <title>Gyroscope Orientation Data Explorer</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f8f9fa;
+            color: #212529;
+        }
+        #container {
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background: white;
+        }
+        h1 {
+            font-size: 22px;
+            margin-bottom: 10px;
+            color: #1a3a6c;
+        }
+        .placeholder {
+            border: 2px dashed #adb5bd;
+            border-radius: 8px;
+            padding: 40px 20px;
+            text-align: center;
+            color: #6c757d;
+            margin: 20px 0;
+            min-height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .placeholder .badge {
+            display: inline-block;
+            background: #ffc107;
+            color: #212529;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+        .placeholder h2 {
+            font-size: 18px;
+            color: #495057;
+            margin-bottom: 8px;
+        }
+        .placeholder p {
+            font-size: 14px;
+            max-width: 480px;
+        }
+        .meta {
+            margin-top: 20px;
+            font-size: 13px;
+            color: #6c757d;
+            border-top: 1px solid #dee2e6;
+            padding-top: 12px;
+        }
+        .meta strong { color: #495057; }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>Gyroscope Orientation Data Explorer</h1>
+        <div class="placeholder">
+            <span class="badge">SCAFFOLD</span>
+            <h2>MicroSim Not Yet Implemented</h2>
+            <p>This MicroSim has been scaffolded from its specification but the
+            interactive content has not been built yet. See the chapter source
+            and the <code>index.md</code> in this directory for the full spec.</p>
+        </div>
+        <div class="meta">
+            <p><strong>Sim ID:</strong> gyroscope-orientation-data-explorer</p>
+            <p><strong>Library:</strong> p5.js</p>
+            <p><strong>Bloom Level:</strong> Understand (L2)</p>
+            <p><strong>Learning Objective:</strong> Given a tilted or rotated orientation of a gyroscope kit, the learner interprets which of the pitch, roll, and yaw values changes and by how much.</p>
+        </div>
+    </div>
+
+    <!--
+    SPECIFICATION (from chapter index.md):
+
+    Type: microsim
+    **sim-id:** gyroscope-orientation-data-explorer<br/>
+    **Library:** p5.js<br/>
+    **Status:** Specified<br/>
+    **Template:** https://github.com/dmccreary/learning-micropython/tree/main/docs/sims/accelerometer-axes
+    
+    Purpose: Let a learner drag a drawn gyroscope-kit board and see the matching pitch, roll, and yaw readout update, before wiring or reading a physical kit.
+    
+    Bloom Taxonomy: Understand (L2)
+    Bloom Taxonomy Verb: interpret
+    
+    Learning objective: Given a tilted or rotated orientation of a gyroscope kit, the learner interprets which of the pitch, roll, and yaw values changes and by how much.
+    
+    Visual elements: A simple drawn rectangular board with a marked "front" edge, three axis arrows labeled pitch, roll, and yaw, and three numeric readouts below the drawing.
+    
+    Interactive controls: Drag handles on two edges of the board to tip it forward/back and side to side; a rotate handle for yaw; a "Reset to Flat" button.
+    
+    Default parameters: Board starts flat, all three readouts at 0 degrees.
+    
+    Behavior: Dragging a handle updates the board's drawn tilt and the matching readout in real time; dragging one handle changes only its associated axis reading, reinforcing that the three axes are independent.
+    
+    Implementation notes: p5.js canvas with a 3D-look board drawn using simple perspective skewing; drag detection mapped to rotation angles converted directly into the three displayed numbers.
+    -->
+</body>
+</html>

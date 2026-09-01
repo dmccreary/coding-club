@@ -1,0 +1,23 @@
+{
+  "title": "Multimeter Usage Simulator",
+  "description": "Given a simple breadboard circuit, the learner demonstrates how to use a multimeter's continuity, voltage, and resistance modes to verify the circuit before and after powering it.",
+  "creator": "Coding Club",
+  "author": "Dan McCreary",
+  "date": "2026-09-01",
+  "subject": [
+    "Coding Club"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "multimeter-usage-simulator",
+  "library": "p5.js",
+  "bloomLevel": "Apply (L3)",
+  "bloomVerb": "demonstrate",
+  "completion_status": "scaffold",
+  "chapter_number": 16,
+  "chapter_title": "Physical Computing and Electrical Safety Basics",
+  "chapter_dir": "16-physical-computing-safety",
+  "chapter_rel_dir": "chapters/16-physical-computing-safety"
+}

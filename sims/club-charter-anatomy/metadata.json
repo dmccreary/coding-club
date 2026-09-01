@@ -1,0 +1,47 @@
+{
+  "title": "Anatomy of a Club Charter",
+  "description": "Given the term \"club charter,\" the learner identifies the five sections it typically contains and states what each one governs.",
+  "creator": "Coding Club",
+  "author": "Dan McCreary",
+  "date": "2026-09-01",
+  "subject": [
+    "Coding Club"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "club-charter-anatomy",
+  "library": "vis-network",
+  "bloomLevel": "Understand (L2)",
+  "bloomVerb": "differentiate",
+  "completion_status": "built",
+  "chapter_number": 3,
+  "chapter_title": "Writing Your Club Charter and Safety Policies",
+  "chapter_dir": "03-club-charter-and-safety",
+  "chapter_rel_dir": "chapters/03-club-charter-and-safety",
+  "canvasHeight": 700,
+  "educational": {
+    "gradeLevel": "High School, Undergraduate, Adult",
+    "audience": "Coding club leaders and student officers drafting a charter",
+    "duration": "10-15 minutes",
+    "prerequisites": [
+      "Coding Club"
+    ],
+    "concepts": [
+      "Club Charter",
+      "Club Values",
+      "Code of Conduct",
+      "Club Bylaws",
+      "Decision-Making Process",
+      "Roles and Responsibilities"
+    ]
+  },
+  "pedagogical": {
+    "bloomLevel": "Understand (L2)",
+    "bloomVerb": "differentiate",
+    "learningObjective": "Given the term \"club charter,\" the learner identifies the five sections it typically contains and states what each one governs.",
+    "interactionPattern": "Click-to-explore container-and-sections map with a definition plus a concrete example per section",
+    "assessment": "Give a sample charter line and ask which of the five sections it belongs in, and why."
+  }
+}
