@@ -1,0 +1,15 @@
+{
+  "sim_id": "differential-drive-chassis-explorer",
+  "diagram_name": "Differential Drive Chassis Explorer",
+  "chapter_number": 17,
+  "chapter_title": "Sensors, Displays, Motors, and Robot Chassis",
+  "chapter_dir": "17-sensors-displays-motors",
+  "chapter_rel_dir": "chapters/17-sensors-displays-motors",
+  "library": "p5.js",
+  "bloom_level": "Understand (L2)",
+  "bloom_verb": "explain",
+  "learning_objective": "Given independent left and right wheel speeds on a two-wheel differential-drive chassis, the learner explains how the speed difference produces straight-line motion, turning, or spinning in place.",
+  "completion_status": "specified",
+  "extracted_date": "2026-09-01",
+  "specification": "Type: microsim\n**sim-id:** differential-drive-chassis-explorer<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\nPurpose: Let a learner set independent left and right wheel speeds and watch a simulated chassis move in a straight line, curve, or spin accordingly.\n\nBloom Taxonomy: Understand (L2)\nBloom Taxonomy Verb: explain\n\nLearning objective: Given independent left and right wheel speeds on a two-wheel differential-drive chassis, the learner explains how the speed difference produces straight-line motion, turning, or spinning in place.\n\nData Visibility Requirements: Stage 1 shows both wheel speed values side by side as numbers; Stage 2 shows the resulting path type in words (\"straight,\" \"curving left,\" \"spinning in place\"); Stage 3 shows the chassis icon tracing that actual path on the canvas so the learner connects the numbers to the motion.\n\nInteractive controls: Two sliders, one for left wheel speed and one for right wheel speed (each -100 to 100, negative meaning reverse); a \"Reset Position\" button.\n\nDefault parameters: Both wheel speeds at 50 (equal), producing straight-line motion.\n\nInstructional Rationale: Showing the two numeric speed values alongside a named path type before the chassis moves suits this Understand-level objective, since a mentor needs to connect the cause (speed difference) to the effect (path shape) explicitly rather than only watching motion happen.\n\nImplementation notes: p5.js canvas with a simple differential-drive kinematics calculation (path curvature proportional to the difference between left and right speed) driving an icon's position and heading each frame."
+}

@@ -1,0 +1,15 @@
+{
+  "sim_id": "breadboard-tie-point-explorer",
+  "diagram_name": "Breadboard Tie-Point Explorer",
+  "chapter_number": 16,
+  "chapter_title": "Physical Computing and Electrical Safety Basics",
+  "chapter_dir": "16-physical-computing-safety",
+  "chapter_rel_dir": "chapters/16-physical-computing-safety",
+  "library": "p5.js",
+  "bloom_level": "Remember (L1)",
+  "bloom_verb": "identify",
+  "learning_objective": "Given a labeled breadboard diagram, the learner identifies which holes are electrically connected to a clicked hole.",
+  "completion_status": "specified",
+  "extracted_date": "2026-09-01",
+  "specification": "Type: microsim\n**sim-id:** breadboard-tie-point-explorer<br/>\n**Library:** p5.js<br/>\n**Status:** Specified<br/>\n**Template:** https://github.com/dmccreary/stem-robots/tree/main/docs/sims/breadboard-layout-explorer\n\nPurpose: Let a mentor click any hole on a drawn breadboard and instantly see every other hole it is electrically connected to.\n\nBloom Taxonomy: Remember (L1)\nBloom Taxonomy Verb: identify\n\nLearning objective: Given a labeled breadboard diagram, the learner identifies which holes are electrically connected to a clicked hole.\n\nVisual elements: A full-size breadboard drawing with two power rails (top and bottom) and the central five-hole columns, rendered at real proportions\n\nInteractive controls: Click any hole to highlight, in one color, every hole tied to it; a \"Show all rails\" toggle that highlights both power rails at once in a second color\n\nDefault parameters: No hole selected on load; clicking any hole triggers the highlight\n\nBehavior: On click, redraw the board with the clicked hole's full connected group highlighted and a text label reading either \"Power rail\" or \"Column {n}\"\n\nImplementation notes: p5.js grid rendered from a 2D array encoding each hole's connection-group id; click detection maps mouse coordinates to the nearest hole"
+}

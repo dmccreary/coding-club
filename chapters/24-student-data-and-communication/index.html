@@ -1,12 +1,9 @@
-
-<!doctype html>
-<html lang="en" class="no-js">
-  <head>
+<!DOCTYPE html><html lang="en" class="no-js"><head>
     
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="An interactive intelligent textbook on how to create, organize, promote and run a sustainable coding club.">
+        <meta name="description" content="Covers saving and protecting student data with a minimal-data-first approach, tracking student progress with spreadsheets and dashboards, and running email, calendar, chat, and feedback tools for a coding club, with an emphasis on consent, retention, and anonymized reporting.">
       
       
         <meta name="author" content="Dan McCreary">
@@ -21,12 +18,12 @@
         <link rel="next" href="../25-analyzing-club-data-and-tools/">
       
       
-      <link rel="icon" href="../../assets/images/favicon.png">
+      <link rel="icon" href="../../img/favicon.ico">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.43">
     
     
       
-        <title>24. Tracking Student Data and Managing Club Communication - Coding Club</title>
+        <title>Tracking Student Data and Managing Club Communication - Coding Club</title>
       
     
     
@@ -47,7 +44,7 @@
         
         
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback">
         <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
       
     
@@ -59,11 +56,57 @@
     <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
+  
+
+
+  
+  
+
+<script id="__analytics">function __md_analytics(){function e(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],e("js",new Date),e("config","G-JDH8L7VM28"),document.addEventListener("DOMContentLoaded",(function(){document.forms.search&&document.forms.search.query.addEventListener("blur",(function(){this.value&&e("event","search",{search_term:this.value})}));document$.subscribe((function(){var t=document.forms.feedback;if(void 0!==t)for(var a of t.querySelectorAll("[type=submit]"))a.addEventListener("click",(function(a){a.preventDefault();var n=document.location.pathname,d=this.getAttribute("data-md-value");e("event","feedback",{page:n,data:d}),t.firstElementChild.disabled=!0;var r=t.querySelector(".md-feedback__note [data-md-value='"+d+"']");r&&(r.hidden=!1)})),t.hidden=!1})),location$.subscribe((function(t){e("config","G-JDH8L7VM28",{page_path:t.pathname})}))}));var t=document.createElement("script");t.async=!0,t.src="https://www.googletagmanager.com/gtag/js?id=G-JDH8L7VM28",document.getElementById("__analytics").insertAdjacentElement("afterEnd",t)}</script>
+  
+    <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
+  
 
     
     
+      
+        <meta property="og:type" content="website">
+      
+        <meta property="og:title" content="Tracking Student Data and Managing Club Communication - Coding Club">
+      
+        <meta property="og:description" content="Covers saving and protecting student data with a minimal-data-first approach, tracking student progress with spreadsheets and dashboards, and running email, calendar, chat, and feedback tools for a coding club, with an emphasis on consent, retention, and anonymized reporting.">
+      
+        <meta property="og:image" content="https://dmccreary.github.io/coding-club/assets/images/social/chapters/24-student-data-and-communication/index.png">
+      
+        <meta property="og:image:type" content="image/png">
+      
+        <meta property="og:image:width" content="1200">
+      
+        <meta property="og:image:height" content="630">
+      
+        <meta property="og:url" content="https://dmccreary.github.io/coding-club/chapters/24-student-data-and-communication/">
+      
+        <meta name="twitter:card" content="summary_large_image">
+      
+        <meta name="twitter:title" content="Tracking Student Data and Managing Club Communication - Coding Club">
+      
+        <meta name="twitter:description" content="Covers saving and protecting student data with a minimal-data-first approach, tracking student progress with spreadsheets and dashboards, and running email, calendar, chat, and feedback tools for a coding club, with an emphasis on consent, retention, and anonymized reporting.">
+      
+        <meta name="twitter:image" content="https://dmccreary.github.io/coding-club/assets/images/social/chapters/24-student-data-and-communication/index.png">
+      
     
-  </head>
+    
+  <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"><script src="../../assets/javascripts/glightbox.min.js"></script><style id="glightbox-style">
+            html.glightbox-open { overflow: initial; height: 100%; }
+            .gslide-title { margin-top: 0px; user-select: text; }
+            .gslide-desc { color: #666; user-select: text; }
+            .gslide-image img { background: white; }
+            .gscrollbar-fixer { padding-right: 15px; }
+            .gdesc-inner { font-size: 0.75rem; }
+            body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color); }
+            body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color); }
+            body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color); }
+        </style></head>
   
   
     
@@ -98,13 +141,12 @@
   <nav class="md-header__inner md-grid" aria-label="Header">
     <a href="../.." title="Coding Club" class="md-header__button md-logo" aria-label="Coding Club" data-md-component="logo">
       
-  
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+  <img src="../../img/mascot/welcome.png" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
       
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"></path></svg>
     </label>
     <div class="md-header__title" data-md-component="header-title">
       <div class="md-header__ellipsis">
@@ -116,7 +158,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              24. Tracking Student Data and Managing Club Communication
+              Tracking Student Data and Managing Club Communication
             
           </span>
         </div>
@@ -130,7 +172,7 @@
     
       <label class="md-header__button md-icon" for="__search">
         
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
       </label>
       <div class="md-search" data-md-component="search" role="dialog">
   <label class="md-search__overlay" for="__search"></label>
@@ -139,20 +181,20 @@
       <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
       <label class="md-search__icon md-icon" for="__search">
         
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
         
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
       </label>
       <nav class="md-search__options" aria-label="Search">
         
           <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
             
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"></path></svg>
           </a>
         
         <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
           
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg>
         </button>
       </nav>
       
@@ -177,7 +219,7 @@
         <a href="https://github.com/dmccreary/coding-club" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"></path></svg>
   </div>
   <div class="md-source__repository">
     GitHub Repo
@@ -201,7 +243,7 @@
           
             
               
-              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
@@ -212,8 +254,7 @@
   <label class="md-nav__title" for="__drawer">
     <a href="../.." title="Coding Club" class="md-nav__button md-logo" aria-label="Coding Club" data-md-component="logo">
       
-  
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+  <img src="../../img/mascot/welcome.png" alt="logo">
 
     </a>
     Coding Club
@@ -223,7 +264,7 @@
       <a href="https://github.com/dmccreary/coding-club" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"></path></svg>
   </div>
   <div class="md-source__repository">
     GitHub Repo
@@ -1050,6 +1091,519 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#saving-student-data-collect-the-least-you-need" class="md-nav__link">
+    <span class="md-ellipsis">
+      Saving Student Data: Collect the Least You Need
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Saving Student Data: Collect the Least You Need">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#saving-student-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      Saving Student Data
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Saving Student Data">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-do-you-actually-need-this-data-field" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Do You Actually Need This Data Field?
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#protecting-the-data-you-do-save" class="md-nav__link">
+    <span class="md-ellipsis">
+      Protecting the Data You Do Save
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Protecting the Data You Do Save">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#student-data-privacy" class="md-nav__link">
+    <span class="md-ellipsis">
+      Student Data Privacy
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Student Data Privacy">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-student-data-privacy-principles" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Student Data Privacy Principles
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#consent-for-data-collection" class="md-nav__link">
+    <span class="md-ellipsis">
+      Consent For Data Collection
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Consent For Data Collection">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-guardian-consent-collection-workflow" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Guardian Consent Collection Workflow
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#data-retention-policy" class="md-nav__link">
+    <span class="md-ellipsis">
+      Data Retention Policy
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Data Retention Policy">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-data-retention-schedule-by-type" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Data Retention Schedule by Type
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#data-backup-routine" class="md-nav__link">
+    <span class="md-ellipsis">
+      Data Backup Routine
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Data Backup Routine">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-data-backup-routine-timeline" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Data Backup Routine Timeline
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#anonymized-reporting" class="md-nav__link">
+    <span class="md-ellipsis">
+      Anonymized Reporting
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Anonymized Reporting">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-anonymized-attendance-chart" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Anonymized Attendance Chart
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tracking-progress-without-overcollecting" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tracking Progress Without Overcollecting
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Tracking Progress Without Overcollecting">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tracking-student-progress" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tracking Student Progress
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Tracking Student Progress">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-student-progress-tracking-cycle" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Student Progress Tracking Cycle
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#progress-dashboard" class="md-nav__link">
+    <span class="md-ellipsis">
+      Progress Dashboard
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Progress Dashboard">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-progress-dashboard-explorer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Progress Dashboard Explorer
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#simple-spreadsheet-tracking" class="md-nav__link">
+    <span class="md-ellipsis">
+      Simple Spreadsheet Tracking
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#spreadsheet-template-design" class="md-nav__link">
+    <span class="md-ellipsis">
+      Spreadsheet Template Design
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Spreadsheet Template Design">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-spreadsheet-template-zones" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Spreadsheet Template Zones
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#running-club-email-and-calendars" class="md-nav__link">
+    <span class="md-ellipsis">
+      Running Club Email and Calendars
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Running Club Email and Calendars">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#managing-email-communication" class="md-nav__link">
+    <span class="md-ellipsis">
+      Managing Email Communication
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#email-list-segmentation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Email List Segmentation
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Email List Segmentation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-email-list-segments" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Email List Segments
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setting-up-a-calendar" class="md-nav__link">
+    <span class="md-ellipsis">
+      Setting Up A Calendar
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Setting Up A Calendar">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-club-calendar-setup-workflow" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Club Calendar Setup Workflow
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#shared-calendar-access" class="md-nav__link">
+    <span class="md-ellipsis">
+      Shared Calendar Access
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#notification-system" class="md-nav__link">
+    <span class="md-ellipsis">
+      Notification System
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Notification System">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-notification-lead-time-timeline" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Notification Lead-Time Timeline
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chat-and-group-messaging-tools" class="md-nav__link">
+    <span class="md-ellipsis">
+      Chat and Group Messaging Tools
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Chat and Group Messaging Tools">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#email-and-chat-tools" class="md-nav__link">
+    <span class="md-ellipsis">
+      Email And Chat Tools
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#group-messaging-app" class="md-nav__link">
+    <span class="md-ellipsis">
+      Group Messaging App
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Group Messaging App">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-message-channel-decision-tree" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Message Channel Decision Tree
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#closing-the-loop-with-feedback" class="md-nav__link">
+    <span class="md-ellipsis">
+      Closing the Loop With Feedback
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Closing the Loop With Feedback">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#forms-and-feedback-tools" class="md-nav__link">
+    <span class="md-ellipsis">
+      Forms And Feedback Tools
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Forms And Feedback Tools">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-annotated-feedback-form" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Annotated Feedback Form
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#survey-tool-selection" class="md-nav__link">
+    <span class="md-ellipsis">
+      Survey Tool Selection
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#feedback-loop-design" class="md-nav__link">
+    <span class="md-ellipsis">
+      Feedback Loop Design
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Feedback Loop Design">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-feedback-loop-cycle" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Feedback Loop Cycle
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#parent-communication-log" class="md-nav__link">
+    <span class="md-ellipsis">
+      Parent Communication Log
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chapter-summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      Chapter Summary
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1322,6 +1876,16 @@
       
         
       
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
     
     
     
@@ -1409,6 +1973,91 @@
   
   
   
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../cards/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Challenge Cards
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../faq/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    FAQ
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../glossary/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Glossary
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
     <li class="md-nav__item">
       <a href="../../license/" class="md-nav__link">
         
@@ -1451,7 +2100,7 @@
             
             
               
-              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
@@ -1496,6 +2145,519 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#saving-student-data-collect-the-least-you-need" class="md-nav__link">
+    <span class="md-ellipsis">
+      Saving Student Data: Collect the Least You Need
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Saving Student Data: Collect the Least You Need">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#saving-student-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      Saving Student Data
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Saving Student Data">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-do-you-actually-need-this-data-field" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Do You Actually Need This Data Field?
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#protecting-the-data-you-do-save" class="md-nav__link">
+    <span class="md-ellipsis">
+      Protecting the Data You Do Save
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Protecting the Data You Do Save">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#student-data-privacy" class="md-nav__link">
+    <span class="md-ellipsis">
+      Student Data Privacy
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Student Data Privacy">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-student-data-privacy-principles" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Student Data Privacy Principles
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#consent-for-data-collection" class="md-nav__link">
+    <span class="md-ellipsis">
+      Consent For Data Collection
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Consent For Data Collection">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-guardian-consent-collection-workflow" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Guardian Consent Collection Workflow
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#data-retention-policy" class="md-nav__link">
+    <span class="md-ellipsis">
+      Data Retention Policy
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Data Retention Policy">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-data-retention-schedule-by-type" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Data Retention Schedule by Type
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#data-backup-routine" class="md-nav__link">
+    <span class="md-ellipsis">
+      Data Backup Routine
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Data Backup Routine">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-data-backup-routine-timeline" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Data Backup Routine Timeline
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#anonymized-reporting" class="md-nav__link">
+    <span class="md-ellipsis">
+      Anonymized Reporting
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Anonymized Reporting">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-anonymized-attendance-chart" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Anonymized Attendance Chart
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tracking-progress-without-overcollecting" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tracking Progress Without Overcollecting
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Tracking Progress Without Overcollecting">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tracking-student-progress" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tracking Student Progress
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Tracking Student Progress">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-student-progress-tracking-cycle" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Student Progress Tracking Cycle
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#progress-dashboard" class="md-nav__link">
+    <span class="md-ellipsis">
+      Progress Dashboard
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Progress Dashboard">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-progress-dashboard-explorer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Progress Dashboard Explorer
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#simple-spreadsheet-tracking" class="md-nav__link">
+    <span class="md-ellipsis">
+      Simple Spreadsheet Tracking
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#spreadsheet-template-design" class="md-nav__link">
+    <span class="md-ellipsis">
+      Spreadsheet Template Design
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Spreadsheet Template Design">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-spreadsheet-template-zones" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Spreadsheet Template Zones
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#running-club-email-and-calendars" class="md-nav__link">
+    <span class="md-ellipsis">
+      Running Club Email and Calendars
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Running Club Email and Calendars">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#managing-email-communication" class="md-nav__link">
+    <span class="md-ellipsis">
+      Managing Email Communication
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#email-list-segmentation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Email List Segmentation
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Email List Segmentation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-email-list-segments" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Email List Segments
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setting-up-a-calendar" class="md-nav__link">
+    <span class="md-ellipsis">
+      Setting Up A Calendar
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Setting Up A Calendar">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-club-calendar-setup-workflow" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Club Calendar Setup Workflow
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#shared-calendar-access" class="md-nav__link">
+    <span class="md-ellipsis">
+      Shared Calendar Access
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#notification-system" class="md-nav__link">
+    <span class="md-ellipsis">
+      Notification System
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Notification System">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-notification-lead-time-timeline" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Notification Lead-Time Timeline
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chat-and-group-messaging-tools" class="md-nav__link">
+    <span class="md-ellipsis">
+      Chat and Group Messaging Tools
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Chat and Group Messaging Tools">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#email-and-chat-tools" class="md-nav__link">
+    <span class="md-ellipsis">
+      Email And Chat Tools
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#group-messaging-app" class="md-nav__link">
+    <span class="md-ellipsis">
+      Group Messaging App
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Group Messaging App">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-message-channel-decision-tree" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Message Channel Decision Tree
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#closing-the-loop-with-feedback" class="md-nav__link">
+    <span class="md-ellipsis">
+      Closing the Loop With Feedback
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Closing the Loop With Feedback">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#forms-and-feedback-tools" class="md-nav__link">
+    <span class="md-ellipsis">
+      Forms And Feedback Tools
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Forms And Feedback Tools">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-annotated-feedback-form" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Annotated Feedback Form
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#survey-tool-selection" class="md-nav__link">
+    <span class="md-ellipsis">
+      Survey Tool Selection
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#feedback-loop-design" class="md-nav__link">
+    <span class="md-ellipsis">
+      Feedback Loop Design
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Feedback Loop Design">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-feedback-loop-cycle" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Feedback Loop Cycle
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#parent-communication-log" class="md-nav__link">
+    <span class="md-ellipsis">
+      Parent Communication Log
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chapter-summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      Chapter Summary
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1513,16 +2675,16 @@
   
     <a href="https://github.com/dmccreary/coding-club/blob/main/docs/chapters/24-student-data-and-communication/index.md" title="Edit this page" class="md-content__button md-icon">
       
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"></path></svg>
     </a>
   
   
 
 
-<h1 id="tracking-student-data-and-managing-club-communication">Tracking Student Data and Managing Club Communication<a class="headerlink" href="#tracking-student-data-and-managing-club-communication" title="Permanent link">&para;</a></h1>
-<h2 id="summary">Summary<a class="headerlink" href="#summary" title="Permanent link">&para;</a></h2>
+<h1 id="tracking-student-data-and-managing-club-communication">Tracking Student Data and Managing Club Communication<a class="headerlink" href="#tracking-student-data-and-managing-club-communication" title="Permanent link">¶</a></h1>
+<h2 id="summary">Summary<a class="headerlink" href="#summary" title="Permanent link">¶</a></h2>
 <p>This chapter covers saving and protecting student data, then tracking student progress with a simple dashboard or spreadsheet. It introduces the communication tools a club relies on -- email, shared calendars, notifications, and feedback forms -- with an emphasis on data privacy and consent. You will be able to set up a basic student-progress tracker and a family communication channel.</p>
-<h2 id="concepts-covered">Concepts Covered<a class="headerlink" href="#concepts-covered" title="Permanent link">&para;</a></h2>
+<h2 id="concepts-covered">Concepts Covered<a class="headerlink" href="#concepts-covered" title="Permanent link">¶</a></h2>
 <p>This chapter covers the following 21 concepts from the learning graph:</p>
 <table>
 <thead>
@@ -1618,15 +2780,750 @@
 </tr>
 </tbody>
 </table>
-<h2 id="prerequisites">Prerequisites<a class="headerlink" href="#prerequisites" title="Permanent link">&para;</a></h2>
+<h2 id="prerequisites">Prerequisites<a class="headerlink" href="#prerequisites" title="Permanent link">¶</a></h2>
 <p>This chapter builds on concepts from:</p>
 <ul>
 <li><a href="../03-club-charter-and-safety/">3. Writing Your Club Charter and Safety Policies</a></li>
 <li><a href="../11-schedule-and-registration/">11. Choosing a Schedule and Building Registration</a></li>
 <li><a href="../22-purchasing-configuring-devices/">22. Purchasing and Configuring Club Devices</a></li>
 </ul>
-<hr />
-<p>TODO: Generate Chapter Content</p>
+<hr>
+<p>Chapter 23 got every laptop, printer, and access point onto a network that behaves itself session after session. The moment students start actually using those devices, a second infrastructure question appears: where does everything a student types, builds, or submits actually go, and who else can see it? This chapter answers that question in two halves. The first half covers the sensitive part -- saving, protecting, and eventually deleting student data responsibly. The second half covers the more routine part -- the email, calendar, chat, and feedback tools that keep mentors, students, and families connected between sessions. Both halves share the same guiding instinct: collect and keep the least amount of information a club actually needs, whether that information is a student's saved Python file or a parent's phone number.</p>
+<div class="admonition mascot-welcome">
+<p class="admonition-title">The data behind every session</p>
+<p><img alt="Circuit waving welcome" class="mascot-admonition-img" src="../../img/mascot/welcome.png">
+Let's build something great -- every badge a student earns, every spreadsheet row a mentor updates, and every reminder email a family opens all rest on decisions this chapter walks through: what data to save, how to track progress without overcollecting, and which tools keep everyone talking. By the end, you'll be able to set up a privacy-respecting student tracker and a family communication system your club can run for years.</p>
+</div>
+<h2 id="saving-student-data-collect-the-least-you-need">Saving Student Data: Collect the Least You Need<a class="headerlink" href="#saving-student-data-collect-the-least-you-need" title="Permanent link">¶</a></h2>
+<h3 id="saving-student-data">Saving Student Data<a class="headerlink" href="#saving-student-data" title="Permanent link">¶</a></h3>
+<p><strong>Saving student data</strong> is the ongoing decision a club leader makes about which pieces of information -- a name, an email address, a badge earned, a photo, a saved code file -- actually get written down and kept, as opposed to used once in the moment and then discarded. It is the single most consequential decision in this chapter, not because any one piece of data is dangerous by itself, but because every other concept covered below -- privacy, retention, backups, dashboards, even the calendar shared with families -- only exists because some earlier decision already said yes to saving something. Get this first decision right, and everything downstream gets simpler.</p>
+<p>Think of student data the way an experienced camp counselor thinks of a first-aid kit packed for an overnight trip. A counselor doesn't throw in everything the drugstore sells -- they pack exactly what a two-day hike is likely to need: a few bandages, sunscreen, one dose of a medication a specific camper actually requires. Anything extra is just weight to carry, one more item that could get lost, and one more thing that must be accounted for when the kit comes home. Student data works the same way: every field a club chooses to record is something it now has to protect, back up, and eventually decide what to do with. A club that collects a home address "just in case" is carrying a bandage roll it will probably never open, but that a lost backpack could still spill onto the trail for anyone to find.</p>
+<p>That instinct -- pack only what the trip needs -- is easiest to see side by side against two ways of tracking the exact same Tuesday-night session.</p>
+<table>
+<thead>
+<tr>
+<th>What's Recorded</th>
+<th>Identifiable Roster Spreadsheet</th>
+<th>Anonymized Attendance Count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Student names</td>
+<td>Every row</td>
+<td>None</td>
+</tr>
+<tr>
+<td>What it can answer</td>
+<td>"Did a specific student attend last week?"</td>
+<td>"How many students attended last week?"</td>
+</tr>
+<tr>
+<td>Data collected per session</td>
+<td>One row per student, updated weekly</td>
+<td>One number, updated weekly</td>
+</tr>
+<tr>
+<td>Privacy exposure if lost</td>
+<td>High -- a full list of which named children attend which sessions</td>
+<td>Low -- a single number with no names attached</td>
+</tr>
+<tr>
+<td>Good for</td>
+<td>Tracking an individual student's progress across weeks</td>
+<td>Reporting overall club attendance to a funder or board</td>
+</tr>
+</tbody>
+</table>
+<p>Both are legitimate. A mentor helping a returning student pick up where they left off genuinely needs the roster. A grant report showing "average weekly attendance: 14 students" needs none of that student's name at all -- the anonymized count answers the funder's question completely, at a fraction of the privacy exposure. The mistake worth avoiding is defaulting to the roster for a task the count would have handled just as well.</p>
+<p>A worked example makes the underlying decision concrete. A new mentor, eager to be thorough, drafts a sign-up form asking for each student's full name, home address, school, allergies, and a parent's employer. A more experienced co-leader reviews it before it goes out and asks one question of every field: "What does the club actually do with this?" Full name and a parent's email survive the review, because the club uses them to send session reminders and track attendance. Home address and employer don't survive -- the club has never once needed either to run a session -- and allergies get redirected to a separate, physical index card kept with the club's first-aid kit rather than a shared spreadsheet, since that information matters to whoever is supervising snacks that day, not to anyone reviewing enrollment data later. The revised form collects four fields instead of seven, and every one of the four has a specific, nameable use.</p>
+<h4 id="diagram-do-you-actually-need-this-data-field">Diagram: Do You Actually Need This Data Field?<a class="headerlink" href="#diagram-do-you-actually-need-this-data-field" title="Permanent link">¶</a></h4>
+<iframe src="../../sims/saving-student-data-decision-tool/main.html" width="100%" height="500px" scrolling="no"></iframe>
+
+<details>
+<summary>Do You Actually Need This Data Field?</summary>
+<p>Type: microsim
+<strong>sim-id:</strong> saving-student-data-decision-tool<br>
+<strong>Library:</strong> p5.js<br>
+<strong>Status:</strong> Specified
+<strong>Template:</strong> https://github.com/dmccreary/data-science-course/tree/main/docs/sims/data-selection-playground-microsim</p>
+<p>Purpose: Let a club leader test a proposed data field (such as "home address," "email," or "allergy") against a minimal-data-first decision path before deciding whether to collect it at all.</p>
+<p>Bloom Taxonomy: Evaluate (L5)
+Bloom Taxonomy Verb: justify</p>
+<p>Learning objective: Given a proposed data field, the learner justifies whether the club should collect it by walking through a minimal-data-first decision path.</p>
+<p>Instructional Rationale: An Evaluate-level objective needs the learner to weigh a real field against explicit criteria and reach a justified decision, not watch a pre-scripted animation -- a step-through decision path with the criteria visible at each stage keeps the reasoning, not the visuals, in front of the learner.</p>
+<p>Canvas layout:
+- Left (450px): the current field name plus two stacked decision questions, each answered Yes/No
+- Right (150px): a running verdict panel reading "Collect it," "Don't collect it," or "Collect a safer substitute"</p>
+<p>Data Visibility Requirements:
+  Stage 1: Show the field name, typed or chosen from a dropdown of examples (name, email, home address, allergy, birthdate, photo, parent employer)
+  Stage 2: Show Question 1 -- "Does a specific, current club task need this?" -- with Yes/No buttons
+  Stage 3: If Yes, show Question 2 -- "Is there a less identifying version that would still work?" (for example, birth year instead of a full birthdate)
+  Stage 4: If a safer substitute exists, show it as the recommended field instead of the original
+  Final: Show the verdict plus a one-line reason, such as "Don't collect -- no current club task needs a home address"</p>
+<p>Interactive controls:
+- Dropdown: choose an example field, or select "custom" to type one
+- Button pair per question: "Yes" / "No"
+- Button: "Try Another Field"</p>
+<p>Default parameters: Field = "Home Address"; walking the default through the two questions ends in "Don't collect it -- no current task needs it."</p>
+<p>Implementation notes: p5.js canvas with createSelect for the field dropdown and createButton for each Yes/No pair; store the seven example fields and their correct verdicts in a lookup table so the tool gives consistent, correct feedback regardless of the path taken; a text input allows a custom field name, in which case the tool asks both questions without a pre-loaded answer and lets the learner reason it through independently.</p>
+</details>
+<div class="admonition mascot-thinking">
+<p class="admonition-title">Every saved field is something you now have to protect</p>
+<p><img alt="Circuit thinking" class="mascot-admonition-img" src="../../img/mascot/thinking.png">
+Notice the real shift in mindset here -- the question is never whether a piece of data could be useful someday, since almost anything could be. The real question is whether a specific task today actually needs it, and a club that asks that every time ends up protecting a much smaller, much safer pile of information.</p>
+</div>
+<h2 id="protecting-the-data-you-do-save">Protecting the Data You Do Save<a class="headerlink" href="#protecting-the-data-you-do-save" title="Permanent link">¶</a></h2>
+<p>Once a club has decided which fields actually earn a place in its records, a second set of decisions takes over: how that smaller, leaner pile of data gets protected, whether guardians agreed to it being collected in the first place, how long it's kept, and how a club can still report meaningful numbers to a funder or board without exposing any of it.</p>
+<h3 id="student-data-privacy">Student Data Privacy<a class="headerlink" href="#student-data-privacy" title="Permanent link">¶</a></h3>
+<p><strong>Student data privacy</strong> is the set of practices a club follows to limit who can see, copy, or misuse the student data it has decided to save -- covering everything from who has the login to the tracking spreadsheet, to whether that spreadsheet ever gets shared with a public link by accident. Where saving student data decides what to collect, student data privacy decides what happens to it after collection, and it applies to every field a club kept, no matter how minimal that list already is.</p>
+<p>A short list of practices covers most of what a small club needs:</p>
+<ul>
+<li>Limit spreadsheet or system access to the mentors and leaders who actually need it, not the entire volunteer roster</li>
+<li>Never share a link to a student tracking sheet set to "anyone with the link can edit"</li>
+<li>Store data in the club's own accounts, not a personal email or personal cloud drive that leaves with a departing mentor</li>
+<li>Ask before posting any student's name, photo, or work publicly, even in a celebratory newsletter</li>
+</ul>
+<p>A worked example shows a near-miss caught in time: a mentor exporting a spreadsheet to share badge progress with a co-leader accidentally sets the sharing link to "anyone on the internet with this link" instead of "specific people." Because the club's data privacy habit includes a quick permissions check before sending any link, the mentor catches the setting before sending it, switches it to the two co-leaders by name, and the export never becomes publicly searchable.</p>
+<p>Because a school-affiliated coding club in the United States can fall under student-data-privacy expectations depending on its venue and exactly what it collects -- rules that vary by state, by whether the club operates on school property, and by whether it partners directly with a school -- this book does not attempt to give a definitive legal answer for every situation. If your club operates inside a school district, a library system, or any organization with its own data-privacy office, ask that office what applies to you before finalizing your data practices; this section covers practical habits, not a legal determination.</p>
+<div class="admonition mascot-encourage">
+<p class="admonition-title">This can sound like legal territory -- it mostly isn't</p>
+<p><img alt="Circuit encouraging" class="mascot-admonition-img" src="../../img/mascot/encouraging.png">
+If terms like data retention or student data privacy sound like something only a lawyer should touch, that reaction is completely normal for a volunteer-run club. Most of what this section describes is a habit, not a legal filing, and if your club sits inside a school, library, or other organization with its own privacy office, they are the right people to confirm exactly what applies to you.</p>
+</div>
+<h4 id="diagram-student-data-privacy-principles">Diagram: Student Data Privacy Principles<a class="headerlink" href="#diagram-student-data-privacy-principles" title="Permanent link">¶</a></h4>
+<iframe src="../../sims/student-data-privacy-principles/main.html" width="100%" height="500px" scrolling="no"></iframe>
+
+<details>
+<summary>Student Data Privacy Principles</summary>
+<p>Type: diagram
+<strong>sim-id:</strong> student-data-privacy-principles<br>
+<strong>Library:</strong> Mermaid<br>
+<strong>Status:</strong> Specified
+<strong>Template:</strong> https://github.com/dmccreary/information-systems/tree/main/docs/sims/privacy-regulatory-landscape</p>
+<p>Purpose: Show the four privacy practices feeding into one protected outcome, so a mentor can click any practice and see the specific risk it closes.</p>
+<p>Bloom Taxonomy: Understand (L2)
+Bloom Taxonomy Verb: explain</p>
+<p>Learning objective: Given one of the four student data privacy practices, the learner explains the specific risk that practice reduces.</p>
+<p>Steps (hub-and-spoke diagram):
+1. Center node: "Protected Student Data" -- click reveals "The smaller, already-reviewed pile of data a club decided to save, now handled so only the right people can see it."
+2. Spoke: "Limit Access" -- click reveals "Only mentors and leaders who need the data get a login, not the entire volunteer roster."
+3. Spoke: "No Public Links" -- click reveals "A sharing link set to 'anyone with the link' can spread far beyond the two or three people it was meant for."
+4. Spoke: "Use Club Accounts" -- click reveals "Data stored in a personal account leaves the club the moment that mentor does."
+5. Spoke: "Ask Before Posting" -- click reveals "A name or photo posted publicly without asking undoes every other privacy practice in one step."</p>
+<p>Interactivity requirement (satisfied): every node has a Mermaid <code>click</code> directive tied to an infobox showing its revealed text.</p>
+<p>Color coding: Blue for the central "Protected Student Data" node; four distinct accent colors for the surrounding practice nodes.</p>
+<p>Implementation: Mermaid flowchart (<code>graph TD</code> with the center node linked to each spoke) rendered in main.html with <code>click NodeId call showInfo("NodeId")</code> directives for every node, opening a side-panel infobox.</p>
+</details>
+<h3 id="consent-for-data-collection">Consent For Data Collection<a class="headerlink" href="#consent-for-data-collection" title="Permanent link">¶</a></h3>
+<p><strong>Consent for data collection</strong> is a guardian's informed, advance agreement to a club collecting and using specific pieces of their child's data, obtained before that data is collected rather than disclosed afterward as a policy buried in fine print. For minors, this is not optional politeness -- it is the practical foundation everything else in this chapter sits on, since a club that skips it has no standing to call its data handling responsible, no matter how careful its backup routine or retention policy might be.</p>
+<p>A worked example shows consent working as intended: before a club's first session, every family receives a one-page form listing exactly what the club collects (student name, one contact email, badge and progress records) and exactly what it does not (home address, photos posted without separate permission, or any data shared with a third party). A parent signs and returns the form before their child's first session, and the club keeps the signed copy on file for as long as the corresponding data is retained.</p>
+<p>Consent is also not a one-time event for a student who stays with the club across multiple years. A club that adds a new kind of tracking -- say, a photo-sharing badge gallery introduced two years into a student's membership -- needs a fresh, specific consent for that new use, since the original form never mentioned it. Re-confirming consent whenever what's collected genuinely changes keeps the agreement honest, rather than stretching an old signature to cover something a guardian never actually saw.</p>
+<div class="admonition mascot-warning">
+<p class="admonition-title">Never collect first and ask permission later</p>
+<p><img alt="Circuit warning" class="mascot-admonition-img" src="../../img/mascot/warning.png">
+Watch out for this common trap: it is tempting to start a sign-up sheet on the night of your first meeting and sort out the paperwork later. The fix is simple and non-negotiable -- always get written guardian consent before collecting anything from a minor, and delete any data you no longer have a current use for.</p>
+</div>
+<h4 id="diagram-guardian-consent-collection-workflow">Diagram: Guardian Consent Collection Workflow<a class="headerlink" href="#diagram-guardian-consent-collection-workflow" title="Permanent link">¶</a></h4>
+<iframe src="../../sims/consent-collection-workflow/main.html" width="100%" height="500px" scrolling="no"></iframe>
+
+<details>
+<summary>Guardian Consent Collection Workflow</summary>
+<p>Type: workflow
+<strong>sim-id:</strong> consent-collection-workflow<br>
+<strong>Library:</strong> Mermaid<br>
+<strong>Status:</strong> Specified
+<strong>Template:</strong> https://github.com/dmccreary/health-education/tree/main/docs/sims/consent-requirements-explorer</p>
+<p>Purpose: Trace the sequence from drafting a data-collection notice through filing a signed consent form, so a mentor can see exactly where "collection begins" sits relative to "consent obtained."</p>
+<p>Bloom Taxonomy: Analyze (L4)
+Bloom Taxonomy Verb: sequence</p>
+<p>Learning objective: Given the steps of a club's consent process, the learner sequences them correctly and identifies which step must precede any data collection.</p>
+<p>Steps (flowchart with a decision diamond):
+1. Start: "Draft Data-Collection Notice" -- click reveals "Lists exactly what will be collected and exactly what will not, in plain language."
+2. Process: "Guardian Reviews Notice" -- click reveals "Sent before the student's first session, giving the family time to ask questions."
+3. Decision: "Guardian Signs?" -- click reveals "A club may only collect data for a student whose guardian has signed; declining is always an option."
+4a. Branch "Yes" leads to "Data Collection Begins" -- click reveals "Only the fields listed in the notice are collected, starting from this point forward."
+4b. Branch "No" leads to "No Data Collected" -- click reveals "The student may still participate in sessions; the club simply keeps no data-collection-dependent records for them."
+5. Both branches converge on End: "Signed or Declined Form Filed" -- click reveals "The form itself is kept on file for as long as the data it covers is retained, per the club's retention policy."</p>
+<p>Interactivity requirement (satisfied): every node has a Mermaid <code>click</code> directive tied to an infobox showing its revealed text.</p>
+<p>Color coding: Gray for the start and process nodes, purple for the decision diamond, green for the "Yes" branch, amber for the "No" branch, gray for the converged end state.</p>
+<p>Implementation: Mermaid flowchart (<code>graph TD</code>) rendered in main.html with <code>click NodeId call showInfo("NodeId")</code> directives for every node, opening a side-panel infobox.</p>
+</details>
+<h3 id="data-retention-policy">Data Retention Policy<a class="headerlink" href="#data-retention-policy" title="Permanent link">¶</a></h3>
+<p><strong>A data retention policy</strong> is a club's written rule for how long each type of saved student data stays on file before it is deleted, stated as a specific duration -- such as "attendance records: two years after a student leaves the club" -- rather than an open-ended "we'll keep it as long as we might need it." Without a stated retention period, data has a way of accumulating forever, quietly growing the privacy exposure described above with no decision ever having been made to allow it.</p>
+<p>A worked example shows the policy doing its job at a specific moment: a family that left the club four years ago asks what happened to their child's records. Because the club's retention policy states that individual student records are deleted eighteen months after a student stops attending, the leader can answer honestly that the records were deleted on schedule, rather than searching through an old spreadsheet no one ever decided to prune.</p>
+<p>Because a retention policy only works if the mentor who eventually has to act on it can find it, a club should write the policy down in the same charter or handbook that already holds its other operating rules, rather than leaving it as something only the founding leader remembers. A policy that lives in one person's head disappears the day that person steps away from the club -- exactly the single-leader dependency this book has warned against from its opening pages.</p>
+<h4 id="diagram-data-retention-schedule-by-type">Diagram: Data Retention Schedule by Type<a class="headerlink" href="#diagram-data-retention-schedule-by-type" title="Permanent link">¶</a></h4>
+<iframe src="../../sims/data-retention-schedule/main.html" width="100%" height="600px" scrolling="no"></iframe>
+
+<details>
+<summary>Data Retention Schedule by Type</summary>
+<p>Type: infographic
+<strong>sim-id:</strong> data-retention-schedule<br>
+<strong>Library:</strong> Interactive Infographic Overlay (grid-diagram.js, annotation-free poster + rectangular hover zones)<br>
+<strong>Status:</strong> Specified</p>
+<p>Purpose: Let a mentor see how long each type of club data is kept and what triggers its deletion, so a retention question can be answered by glancing at one poster instead of hunting through a written policy document.</p>
+<p>Bloom Taxonomy: Understand (L2)
+Bloom Taxonomy Verb: classify</p>
+<p>Learning objective: Given a type of club data, the learner classifies how long it is retained and what event starts the deletion clock.</p>
+<p>Image style: Flat stacked-band poster, four full-width horizontal bands from bottom to top, each with a bold printed band label baked into the image since grid overlays hide chip labels by default</p>
+<p>Image dimensions: 1000x700 (portrait, to accommodate four stacked bands)</p>
+<p>Zones (4 horizontal bands, each with id, label, color, approximate x1/y1/x2/y2 percentage boundaries, one-line summary, and 3 bullet facts), ordered bottom to top from longest-kept to shortest-kept:</p>
+<ol>
+<li><code>consent-forms</code> -- color #4A90D9 -- boundaries approximately x1:3,y1:76,x2:97,y2:96 -- Summary: "Kept as long as the data they cover is retained." Facts: signed or declined guardian consent forms; retained alongside whatever data they authorize; deleted only when the covered data is deleted</li>
+<li><code>progress-records</code> -- color #50C878 -- boundaries approximately x1:3,y1:52,x2:97,y2:74 -- Summary: "Retained eighteen months after a student leaves." Facts: badge, attendance, and skill-tracking records; clock starts the day a student stops attending; deleted automatically once the window passes</li>
+<li><code>contact-information</code> -- color #F5A623 -- boundaries approximately x1:3,y1:28,x2:97,y2:50 -- Summary: "Retained only while a family is actively enrolled." Facts: name and one contact email; removed promptly once a family is no longer active; never kept "just in case" of future re-enrollment</li>
+<li><code>survey-responses</code> -- color #9B6BC7 -- boundaries approximately x1:3,y1:4,x2:97,y2:26 -- Summary: "Kept in anonymized form only, indefinitely." Facts: individual free-text responses are summarized and the originals discarded within 90 days; anonymized summaries may be kept for year-over-year comparison; no names are ever attached to a retained summary</li>
+</ol>
+<p>showLabels: false (band titles are printed in the generated image)</p>
+<p>Interactive features: Click or hover any band to highlight its hover zone and reveal its full fact list, including the specific event that starts its deletion clock, in a detail panel; explore mode only.</p>
+<p>Implementation: Interactive Infographic Overlay Guide (grid engine) -- <code>grid-diagram.js</code> + <code>grid-overlay.css</code> render the four rectangular hover zones over the generated poster image; <code>data.json</code> holds the 4 zones per the overlay-grid-data-json-schema.</p>
+</details>
+<h3 id="data-backup-routine">Data Backup Routine<a class="headerlink" href="#data-backup-routine" title="Permanent link">¶</a></h3>
+<p><strong>A data backup routine</strong> is a scheduled, repeated copy of a club's saved student data -- the tracking spreadsheet, signed consent forms, feedback responses -- stored somewhere separate from wherever the original lives day to day, so a single lost laptop, a deleted file, or a canceled account doesn't erase months of records in one stroke. A backup routine only protects the leaner, already-reviewed pile of data described earlier in this chapter; it is not a reason to collect more, just a way to keep what's already been decided worth keeping.</p>
+<p>A worked example shows the routine catching exactly the failure it exists to prevent: a club's laptop used for attendance tracking is accidentally left on a bus after a session. Because the tracking spreadsheet lives in a cloud-based account with automatic version history, rather than only as a local file on that one laptop, the club loses nothing but the laptop itself -- a hardware problem, not a records problem.</p>
+<div class="admonition mascot-tip">
+<p class="admonition-title">A backup you've never tested is just a hope</p>
+<p><img alt="Circuit giving a tip" class="mascot-admonition-img" src="../../img/mascot/tip.png">
+Here's a shortcut: don't just schedule backups and assume they work -- actually restore one file from the backup once a semester to confirm it is not silently broken. A backup no one has ever tested is really just an unverified hope.</p>
+</div>
+<h4 id="diagram-data-backup-routine-timeline">Diagram: Data Backup Routine Timeline<a class="headerlink" href="#diagram-data-backup-routine-timeline" title="Permanent link">¶</a></h4>
+<iframe src="../../sims/data-backup-routine-timeline/main.html" width="100%" height="500px" scrolling="no"></iframe>
+
+<details>
+<summary>Data Backup Routine Timeline</summary>
+<p>Type: timeline
+<strong>sim-id:</strong> data-backup-routine-timeline<br>
+<strong>Library:</strong> vis-timeline<br>
+<strong>Status:</strong> Specified</p>
+<p>Purpose: Show a recommended backup and restore-verification cadence across a semester, so a club leader can see when backups happen and when they should actually be tested.</p>
+<p>Bloom Taxonomy: Apply (L3)
+Bloom Taxonomy Verb: schedule</p>
+<p>Learning objective: Given a semester calendar, the learner schedules backup and restore-verification checkpoints at appropriate intervals.</p>
+<p>Time period: One 16-week semester</p>
+<p>Orientation: Horizontal</p>
+<p>Events:
+- Week 1: "Confirm Cloud Sync Is Active" -- automatic backup enabled on the tracking spreadsheet and consent-form folder
+- Week 4: "Automatic Backup Running" -- ongoing, no action needed
+- Week 8: "Mid-Semester Restore Test" -- restore one file from backup to confirm it isn't silently broken
+- Week 12: "Automatic Backup Running" -- ongoing, no action needed
+- Week 16: "End-of-Semester Restore Test and Archive" -- verify backups again and archive the semester's records per the retention policy</p>
+<p>Visual style: Horizontal timeline with alternating above/below event placement</p>
+<p>Color coding: Blue for ongoing automatic backup events, amber for the two manual restore-test checkpoints</p>
+<p>Interactive features:
+- Click any event to see what it involves and roughly how long it takes
+- Hover to preview the event title before clicking</p>
+<p>Implementation: vis-timeline library rendered in main.html with a <code>select</code> event handler opening a detail panel for the clicked item.</p>
+</details>
+<h3 id="anonymized-reporting">Anonymized Reporting<a class="headerlink" href="#anonymized-reporting" title="Permanent link">¶</a></h3>
+<p><strong>Anonymized reporting</strong> is the practice of summarizing club data as aggregate counts or trends -- total attendance, number of badges earned, average session rating -- with every individual name stripped out before the summary ever leaves the club's own records, exactly the technique the compare-and-contrast table earlier in this chapter set up when it weighed a roster against an attendance count. Most of the audiences a club reports to, such as a funder, a school administrator, or a board of directors, only ever need the aggregate number, never the underlying names.</p>
+<p>A worked example shows the substitution in practice: a club leader preparing a grant renewal needs to show consistent attendance over the past semester. Rather than exporting the full roster spreadsheet with every student's name and weekly attendance mark, the leader instead exports a single anonymized chart of total attendance per week, with no names attached, which answers the funder's actual question just as completely, without a single identifiable record ever leaving the club's system.</p>
+<h4 id="diagram-anonymized-attendance-chart">Diagram: Anonymized Attendance Chart<a class="headerlink" href="#diagram-anonymized-attendance-chart" title="Permanent link">¶</a></h4>
+<iframe src="../../sims/anonymized-attendance-chart/main.html" width="100%" height="500px" scrolling="no"></iframe>
+
+<details>
+<summary>Anonymized Attendance Chart</summary>
+<p>Type: chart
+<strong>sim-id:</strong> anonymized-attendance-chart<br>
+<strong>Library:</strong> Chart.js<br>
+<strong>Status:</strong> Specified</p>
+<p>Chart type: Bar chart</p>
+<p>Purpose: Show how weekly attendance can be reported as a fully aggregate number, with hover detail but no names anywhere in the underlying data.</p>
+<p>Bloom Taxonomy: Understand (L2)
+Bloom Taxonomy Verb: interpret</p>
+<p>Learning objective: Given an anonymized attendance chart, the learner interprets the weekly trend without any access to individually identifiable data.</p>
+<p>X-axis: Week number (1 through 16)
+Y-axis: Number of students present (count only)</p>
+<p>Data series:
+1. Current Semester (blue bars): sample values ranging 10-16 students per week across 16 weeks, with a visible dip around week 9 (a school break week) and a recovery afterward
+2. Prior Semester (light gray bars, toggle to show/hide): a comparable sample series for year-over-year comparison</p>
+<p>Title: "Weekly Attendance -- Aggregate Count Only"
+Legend: Position top-right, includes a toggle for the "Prior Semester" series</p>
+<p>Interactive features:
+- Hover any bar to see the exact count and week number in a tooltip
+- Click the legend entry to toggle the "Prior Semester" series on or off
+- No drill-down to individual students is possible from this chart, by design</p>
+<p>Annotation: A caption below the chart reading "This chart contains no student names -- only weekly totals."</p>
+<p>Implementation: Chart.js bar chart with two datasets and legend-click toggling enabled.</p>
+</details>
+<h2 id="tracking-progress-without-overcollecting">Tracking Progress Without Overcollecting<a class="headerlink" href="#tracking-progress-without-overcollecting" title="Permanent link">¶</a></h2>
+<p>Attendance and consent records answer who is here and whether the club has permission to keep their data. A club also wants to know whether a specific student is actually progressing through its curriculum, which calls for a narrower, more purpose-built kind of tracking.</p>
+<h3 id="tracking-student-progress">Tracking Student Progress<a class="headerlink" href="#tracking-student-progress" title="Permanent link">¶</a></h3>
+<p><strong>Tracking student progress</strong> is the ongoing practice of recording which skills, badges, or challenge cards a specific student has completed, updated regularly enough that a mentor picking up with a returning student can see where that student left off rather than starting the conversation from scratch. It is the minimal-data version of a much heavier idea -- a full academic transcript -- scaled down to exactly what a volunteer-run club needs: a short, current picture of what a student has already mastered.</p>
+<p>A worked example shows the payoff for a substitute mentor: a regular mentor is out sick, and a substitute steps in for a student they have never met. Glancing at that student's row in the tracking sheet -- completed: Scratch basics, blinking-light kit; in progress: LED strip patterns -- the substitute picks up exactly where the previous mentor left off, instead of guessing at the student's skill level from scratch.</p>
+<h4 id="diagram-student-progress-tracking-cycle">Diagram: Student Progress Tracking Cycle<a class="headerlink" href="#diagram-student-progress-tracking-cycle" title="Permanent link">¶</a></h4>
+<iframe src="../../sims/progress-tracking-cycle/main.html" width="100%" height="500px" scrolling="no"></iframe>
+
+<details>
+<summary>Student Progress Tracking Cycle</summary>
+<p>Type: workflow
+<strong>sim-id:</strong> progress-tracking-cycle<br>
+<strong>Library:</strong> Mermaid<br>
+<strong>Status:</strong> Specified
+<strong>Template:</strong> https://github.com/dmccreary/reading-for-kindergarten/tree/main/docs/sims/reading-progress-path</p>
+<p>Purpose: Show the repeating cycle a mentor follows to keep a student's tracked progress current, so the practice reads as an ongoing habit rather than a one-time form to fill out.</p>
+<p>Bloom Taxonomy: Understand (L2)
+Bloom Taxonomy Verb: explain</p>
+<p>Learning objective: The learner explains what happens at each stage of the ongoing progress-tracking cycle.</p>
+<p>Steps (circular flowchart):
+1. "Observe" -- click reveals "A mentor watches a student work through a challenge card or kit during a session."
+2. "Record" -- click reveals "The mentor marks the completed skill or badge in the tracking sheet before the session ends."
+3. "Review" -- click reveals "Before the next session, a mentor -- often a different one -- reviews the student's row to see what's already mastered."
+4. "Adjust" -- click reveals "The mentor picks the next appropriate challenge card based on what the record shows, then the cycle repeats at 'Observe.'"</p>
+<p>Interactivity requirement (satisfied): every node has a Mermaid <code>click</code> directive tied to an infobox showing its revealed text.</p>
+<p>Color coding: Four evenly spaced colors around the cycle, with an arrow from "Adjust" back to "Observe" to make the repeating nature visible.</p>
+<p>Implementation: Mermaid flowchart (<code>graph LR</code> arranged to suggest a loop, with an explicit arrow from the last node back to the first) rendered in main.html with <code>click NodeId call showInfo("NodeId")</code> directives for every node.</p>
+</details>
+<h3 id="progress-dashboard">Progress Dashboard<a class="headerlink" href="#progress-dashboard" title="Permanent link">¶</a></h3>
+<p><strong>A progress dashboard</strong> is a single at-a-glance view -- a small set of charts or summary numbers -- that turns a full tracking spreadsheet's rows and columns into a picture a mentor or club leader can read in seconds: how many students have completed each badge, which challenge cards are proving hardest, how attendance trends over the semester. Where the underlying spreadsheet is built for entering and looking up one student's data at a time, a dashboard is built for seeing the whole club at once.</p>
+<p>A worked example shows the difference in practice: at the end of a session, a club leader wants to know whether the LED-strip-patterns badge is turning into a bottleneck before planning next week. Scrolling through forty rows of a spreadsheet to count how many students have that badge checked off would take several minutes; a dashboard's badge-completion chart shows the same answer -- six of fourteen students -- in a single glance, because the dashboard already did that counting automatically.</p>
+<h4 id="diagram-progress-dashboard-explorer">Diagram: Progress Dashboard Explorer<a class="headerlink" href="#diagram-progress-dashboard-explorer" title="Permanent link">¶</a></h4>
+<iframe src="../../sims/progress-dashboard-explorer/main.html" width="100%" height="500px" scrolling="no"></iframe>
+
+<details>
+<summary>Progress Dashboard Explorer</summary>
+<p>Type: microsim
+<strong>sim-id:</strong> progress-dashboard-explorer<br>
+<strong>Library:</strong> Chart.js<br>
+<strong>Status:</strong> Specified
+<strong>Template:</strong> https://github.com/dmccreary/infographics/tree/main/docs/sims/dashboard-builder</p>
+<p>Purpose: Let a mentor explore a filterable dashboard summarizing badge completion across a mock cohort, using only initials rather than full names, to model both the tool and the minimal-identifiability habit from earlier in this chapter.</p>
+<p>Bloom Taxonomy: Analyze (L4)
+Bloom Taxonomy Verb: examine</p>
+<p>Learning objective: Given filter controls, the learner examines a dashboard to identify which badge is currently the biggest bottleneck for a cohort.</p>
+<p>Canvas layout:
+- Left (500px): a bar chart of badge-completion counts across the sample cohort
+- Right (150px): filter controls and a summary readout</p>
+<p>Interactive controls:
+- Dropdown: filter by cohort (Tuesday Group, Thursday Group, All)
+- Dropdown: sort bars by completion count (highest first, lowest first)
+- Button: "Reset Filters"</p>
+<p>Data Visibility Requirements:
+  Stage 1: Show the unfiltered bar chart -- one bar per badge, height equal to number of students (identified only by initials in the underlying mock data) who earned it
+  Stage 2: Show the same chart re-rendered after choosing a cohort filter, with bar heights updated to that cohort's numbers only
+  Final: Clicking a bar shows a small list of the initials that have earned that badge, modeling how a real dashboard would summarize without ever displaying a full name</p>
+<p>Default parameters: Cohort = "All"; sample data includes 6 badges across a mock cohort of 14 students, with one badge intentionally set low (6 of 14) to illustrate a visible bottleneck</p>
+<p>Implementation notes: Chart.js bar chart rebuilt on every filter change from a small in-memory mock dataset; initials only, never full names, even in sample data, to reinforce the chapter's minimal-identifiability principle.</p>
+</details>
+<h3 id="simple-spreadsheet-tracking">Simple Spreadsheet Tracking<a class="headerlink" href="#simple-spreadsheet-tracking" title="Permanent link">¶</a></h3>
+<p><strong>Simple spreadsheet tracking</strong> is the practice of keeping the raw progress data described above in an ordinary spreadsheet -- one row per student, one column per badge or skill -- rather than a purpose-built student information system, because a spreadsheet is free, familiar to any volunteer, and entirely sufficient for the record-keeping scale of a single club. A later chapter on analyzing club data revisits when a club has genuinely outgrown a spreadsheet; for the vast majority of clubs this book serves, it never does.</p>
+<p>A worked example shows a minimal, working layout in practice: a club with fourteen regular students keeps one spreadsheet tab with a row per student and columns for name, join date, and one column per badge, marked with the date each badge was earned. Updating it takes a mentor about thirty seconds per student at the end of a session -- far less overhead than any dedicated tracking software would demand for a club this size.</p>
+<p>The sample below uses initials rather than full names, the same minimal-identifiability habit introduced earlier in this chapter, even for an internal working sheet.</p>
+<table>
+<thead>
+<tr>
+<th>Student</th>
+<th>Join Date</th>
+<th>Scratch Basics</th>
+<th>Blinking Light</th>
+<th>LED Strip Patterns</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A.K.</td>
+<td>2026-01-10</td>
+<td>2026-01-24</td>
+<td>2026-02-07</td>
+<td>--</td>
+</tr>
+<tr>
+<td>J.R.</td>
+<td>2026-01-10</td>
+<td>2026-01-24</td>
+<td>2026-02-07</td>
+<td>2026-02-21</td>
+</tr>
+<tr>
+<td>M.T.</td>
+<td>2026-01-17</td>
+<td>2026-01-31</td>
+<td>--</td>
+<td>--</td>
+</tr>
+</tbody>
+</table>
+<h3 id="spreadsheet-template-design">Spreadsheet Template Design<a class="headerlink" href="#spreadsheet-template-design" title="Permanent link">¶</a></h3>
+<p><strong>Spreadsheet template design</strong> is the up-front decision about which columns a tracking spreadsheet will have and how they're organized -- a header row, one block of columns per badge category, a final notes column -- designed once before student data starts flowing in, rather than added piecemeal as a mentor thinks of something new to track mid-semester. A well-designed template keeps a spreadsheet legible even after a year of weekly updates from several different mentors; a template that grew ad hoc usually doesn't.</p>
+<p>A worked example shows a template design decision paying off months later: a club that designs its template with a fixed block of identity columns, a separate fixed block of badge columns, and a separate attendance block can hand the same spreadsheet to a new mentor in year two without a walkthrough, since the column headers alone explain the layout. A club that instead added new columns wherever there was room, in whatever order a mentor typed them, ends up with a spreadsheet only the original mentor can navigate confidently.</p>
+<h4 id="diagram-spreadsheet-template-zones">Diagram: Spreadsheet Template Zones<a class="headerlink" href="#diagram-spreadsheet-template-zones" title="Permanent link">¶</a></h4>
+<iframe src="../../sims/spreadsheet-template-zones/main.html" width="100%" height="500px" scrolling="no"></iframe>
+
+<details>
+<summary>Spreadsheet Template Zones</summary>
+<p>Type: infographic
+<strong>sim-id:</strong> spreadsheet-template-zones<br>
+<strong>Library:</strong> Interactive Infographic Overlay (grid-diagram.js, annotation-free poster + rectangular hover zones)<br>
+<strong>Status:</strong> Specified</p>
+<p>Purpose: Show the three functional zones of a well-designed tracking spreadsheet template, so a new mentor can recognize why the columns are grouped the way they are.</p>
+<p>Bloom Taxonomy: Understand (L2)
+Bloom Taxonomy Verb: classify</p>
+<p>Learning objective: Given a column from a tracking spreadsheet, the learner classifies which template zone it belongs to and why.</p>
+<p>Image style: Flat mock-spreadsheet poster showing a header row and a few sample rows, with three vertical column-block zones outlined</p>
+<p>Image dimensions: 1000x500 (landscape, to resemble an actual spreadsheet)</p>
+<p>Zones (3 vertical column blocks, each with id, label, color, approximate x1/y1/x2/y2 percentage boundaries, one-line summary, and 3 bullet facts):</p>
+<ol>
+<li><code>identity-columns</code> -- color #4A90D9 -- boundaries approximately x1:3,y1:5,x2:30,y2:95 -- Summary: "Who the row is about." Facts: name (or initials) and join date; never reordered once set; the only columns a substitute mentor needs to find a specific student</li>
+<li><code>badge-columns</code> -- color #50C878 -- boundaries approximately x1:32,y1:5,x2:75,y2:95 -- Summary: "What has been mastered, and when." Facts: one column per badge or skill, in the order they're typically earned; each cell holds a completion date, not just a checkmark; grouped together so progress is scannable left to right</li>
+<li><code>notes-column</code> -- color #F5A623 -- boundaries approximately x1:77,y1:5,x2:97,y2:95 -- Summary: "Anything that doesn't fit a fixed column." Facts: free-text field for context a mentor wants the next mentor to see; kept to short, factual notes, not a substitute for the parent communication log; always the rightmost column so it never disrupts the badge block</li>
+</ol>
+<p>showLabels: false (zone titles are printed in the generated image)</p>
+<p>Interactive features: Click or hover any zone to highlight it and reveal its full fact list in a detail panel; explore mode only.</p>
+<p>Implementation: Interactive Infographic Overlay Guide (grid engine) -- <code>grid-diagram.js</code> + <code>grid-overlay.css</code> render the three rectangular hover zones over the generated poster image; <code>data.json</code> holds the 3 zones per the overlay-grid-data-json-schema.</p>
+</details>
+<h2 id="running-club-email-and-calendars">Running Club Email and Calendars<a class="headerlink" href="#running-club-email-and-calendars" title="Permanent link">¶</a></h2>
+<p>Progress data tells a mentor where a student stands. Getting that same family to show up to the next session, or to hear about a schedule change, depends on an entirely different set of tools: the email, calendar, and notification systems covered next.</p>
+<h3 id="managing-email-communication">Managing Email Communication<a class="headerlink" href="#managing-email-communication" title="Permanent link">¶</a></h3>
+<p><strong>Managing email communication</strong> is the practice of sending and organizing the club's outgoing messages -- session reminders, schedule changes, newsletters -- from an account and process the whole club can rely on, rather than from whichever individual mentor's personal inbox happens to have everyone's address saved. A club's email approach usually falls into one of three tiers, each trading setup effort for capability.</p>
+<table>
+<thead>
+<tr>
+<th>Approach</th>
+<th>Setup Effort</th>
+<th>Capacity</th>
+<th>Best For</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Personal email, BCC list</td>
+<td>None</td>
+<td>A few dozen addresses before BCC gets unwieldy</td>
+<td>A brand-new club's first few sessions</td>
+</tr>
+<tr>
+<td>Free dedicated club email account</td>
+<td>Low -- one account, shared login</td>
+<td>Comfortable for most small clubs</td>
+<td>Most established clubs</td>
+</tr>
+<tr>
+<td>Email marketing or newsletter service</td>
+<td>Moderate -- account setup, list import</td>
+<td>Built for hundreds of recipients with delivery tracking</td>
+<td>Clubs sending regular newsletters or using segmentation</td>
+</tr>
+</tbody>
+</table>
+<p>A worked example shows the first transition point: a club starts by BCC-ing thirty families from a mentor's personal email. By the second semester, that mentor has moved on and taken the family list with them by accident, since it only ever lived in one person's personal inbox. The club's next leader sets up a dedicated club email account instead, moves the family list into it, and the list now survives any single mentor coming or going -- the same continuity principle that runs through this entire book.</p>
+<p>The BCC approach has a second, quieter failure mode worth watching for even before a club outgrows it: a family that replies "reply all" by mistake exposes every other recipient's address to everyone else on the list, since BCC only hides addresses on the way out, not on the way back. A dedicated club account sidesteps this by letting the sender reply from an address families already expect to hear from, rather than a personal inbox address families were never meant to see in the first place.</p>
+<h3 id="email-list-segmentation">Email List Segmentation<a class="headerlink" href="#email-list-segmentation" title="Permanent link">¶</a></h3>
+<p><strong>Email list segmentation</strong> is dividing a club's full contact list into smaller, purpose-specific groups -- active families, waitlisted families, mentors, alumni -- so a message only reaches the people it's actually relevant to, instead of every message going to everyone regardless of whether it applies to them. Segmentation matters because the groups genuinely overlap: a mentor might also be the parent of an active student, and an alumni family might still want event announcements even after their own student has moved on.</p>
+<p>A worked example shows the overlap in action: a club needs to announce a mentor-only training session. Sending it to the full list would confuse dozens of families with an irrelevant announcement; sending it only to the mentors segment reaches exactly the people who need it, including the one parent-mentor who belongs to both the active-families and mentors segments at once.</p>
+<h4 id="diagram-email-list-segments">Diagram: Email List Segments<a class="headerlink" href="#diagram-email-list-segments" title="Permanent link">¶</a></h4>
+<iframe src="../../sims/email-list-segments-venn/main.html" width="100%" height="500px" scrolling="no"></iframe>
+
+<details>
+<summary>Email List Segments</summary>
+<p>Type: diagram
+<strong>sim-id:</strong> email-list-segments-venn<br>
+<strong>Library:</strong> p5.js<br>
+<strong>Status:</strong> Specified</p>
+<p>Purpose: Show how a club's four common email segments overlap, so a mentor can see why one contact might belong to more than one group.</p>
+<p>Bloom Taxonomy: Analyze (L4)
+Bloom Taxonomy Verb: differentiate</p>
+<p>Learning objective: Given a sample contact, the learner differentiates which segment or segments that contact belongs to.</p>
+<p>Visual style: Four overlapping circles (a Venn-style diagram): Active Families, Mentors, Waitlist, Alumni</p>
+<p>Overlaps of interest:
+- Active Families and Mentors overlap (a parent who also mentors)
+- Waitlist does not overlap with Active Families (a contact is in exactly one of the two)
+- Alumni overlaps only slightly with Mentors (a former family member who stayed on as a mentor)</p>
+<p>Interactive controls:
+- Click any region (including an overlap region) to see which segment(s) it represents and a sample message type sent to it
+- Button: "Highlight Overlaps" -- flashes the two overlapping regions to draw attention to them</p>
+<p>Default parameters: All four circles visible at load; no region pre-selected</p>
+<p>Implementation notes: p5.js canvas drawing four semi-transparent circles positioned so the two intended overlaps are visible; a lookup table maps each region (including overlaps) to its label and example message, checked against mouse position on click.</p>
+</details>
+<h3 id="setting-up-a-calendar">Setting Up A Calendar<a class="headerlink" href="#setting-up-a-calendar" title="Permanent link">¶</a></h3>
+<p><strong>Setting up a calendar</strong> is the one-time task of creating the club's shared calendar -- naming it clearly, choosing who can see it, and adding the semester's recurring session dates -- so that "when is the next meeting" has one authoritative answer instead of living only in a mentor's memory or a single old email. An earlier chapter already covered choosing a schedule; this step is where that chosen schedule becomes a calendar object other tools and people can actually reference.</p>
+<p>A worked example shows the setup sequence: a club leader creates a new calendar with a clear name rather than leaving it as an unlabeled default, sets its default visibility to view-only for anyone with the link, and adds every session date for the semester as a single recurring weekly event in one pass, rather than adding each week's session one at a time as it approaches. Setting the calendar's time zone correctly during this same pass matters more than it might seem -- a club that skips it can send a technically correct event time that displays an hour off for any family whose device defaults to a different zone, a confusing problem that a five-second setting avoids entirely.</p>
+<h4 id="diagram-club-calendar-setup-workflow">Diagram: Club Calendar Setup Workflow<a class="headerlink" href="#diagram-club-calendar-setup-workflow" title="Permanent link">¶</a></h4>
+<iframe src="../../sims/calendar-setup-workflow/main.html" width="100%" height="500px" scrolling="no"></iframe>
+
+<details>
+<summary>Club Calendar Setup Workflow</summary>
+<p>Type: workflow
+<strong>sim-id:</strong> calendar-setup-workflow<br>
+<strong>Library:</strong> Mermaid<br>
+<strong>Status:</strong> Specified</p>
+<p>Purpose: Sequence the one-time steps of creating a club calendar, ending at the point where shared access -- covered next -- takes over.</p>
+<p>Bloom Taxonomy: Apply (L3)
+Bloom Taxonomy Verb: sequence</p>
+<p>Learning objective: The learner sequences the steps required to set up a new shared club calendar correctly the first time.</p>
+<p>Steps (flowchart):
+1. "Create New Calendar" -- click reveals "A calendar distinct from any mentor's personal calendar."
+2. "Name It Clearly" -- click reveals "For example, 'Tuesday Coding Club 2026,' not the default 'Calendar 3.'"
+3. "Set Default Visibility" -- click reveals "Typically view-only for anyone with the link, reserving edit access for the lead mentor."
+4. "Add Recurring Sessions" -- click reveals "Every session date for the semester added as one recurring weekly event, not one at a time."
+5. "Share the Link" -- click reveals "The link goes out to families and mentors, and shared calendar access rules take over from here."</p>
+<p>Interactivity requirement (satisfied): every node has a Mermaid <code>click</code> directive tied to an infobox showing its revealed text.</p>
+<p>Color coding: A single consistent color for all five steps, since this is a simple linear sequence rather than a branching decision.</p>
+<p>Implementation: Mermaid flowchart (<code>graph TD</code>) rendered in main.html with <code>click NodeId call showInfo("NodeId")</code> directives for every node.</p>
+</details>
+<h3 id="shared-calendar-access">Shared Calendar Access<a class="headerlink" href="#shared-calendar-access" title="Permanent link">¶</a></h3>
+<p><strong>Shared calendar access</strong> is the set of permission levels a club grants to different people viewing or editing that calendar -- typically view-only for parents and students, and edit access reserved for the small group of mentors who actually schedule events -- so the calendar stays accurate without becoming editable by everyone who can see it.</p>
+<p>A worked example shows a permission mismatch causing a real problem, and the fix: a club initially gives every mentor edit access, and one mentor accidentally deletes a recurring session while trying to change its time. The club switches to a model where only the lead mentor holds edit access and everyone else has view-only, and that specific kind of accidental deletion becomes impossible for the other mentors to cause.</p>
+<table>
+<thead>
+<tr>
+<th>Role</th>
+<th>Access Level</th>
+<th>Can Do</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Lead Mentor / Club Leader</td>
+<td>Edit</td>
+<td>Add, move, or cancel events</td>
+</tr>
+<tr>
+<td>Other Mentors</td>
+<td>View only (or edit, for a small trusted team)</td>
+<td>See upcoming sessions; request changes through the lead mentor</td>
+</tr>
+<tr>
+<td>Parents and Students</td>
+<td>View only</td>
+<td>See upcoming sessions; cannot change anything</td>
+</tr>
+</tbody>
+</table>
+<h3 id="notification-system">Notification System<a class="headerlink" href="#notification-system" title="Permanent link">¶</a></h3>
+<p><strong>A notification system</strong> is the scheduled sequence of reminders a club sends in the days and weeks before an event, timed so a family hears about an upcoming session with enough advance notice to plan around it, and again close enough to the date that it's still fresh in mind. A single reminder sent only the morning of a session reaches families too late to rearrange a conflicting commitment; reminders sent only weeks in advance get forgotten by the time the date arrives.</p>
+<p>A worked example shows a two-touch pattern working well: a club sends one reminder email two weeks before a special weekend event, giving families time to plan around it, and a second, shorter reminder the day before, as a same-day-relevant nudge. Attendance at that event turns out noticeably higher than at a similar event the club had only announced once, three weeks ahead, with no follow-up reminder.</p>
+<h4 id="diagram-notification-lead-time-timeline">Diagram: Notification Lead-Time Timeline<a class="headerlink" href="#diagram-notification-lead-time-timeline" title="Permanent link">¶</a></h4>
+<iframe src="../../sims/notification-lead-time-timeline/main.html" width="100%" height="500px" scrolling="no"></iframe>
+
+<details>
+<summary>Notification Lead-Time Timeline</summary>
+<p>Type: timeline
+<strong>sim-id:</strong> notification-lead-time-timeline<br>
+<strong>Library:</strong> vis-timeline<br>
+<strong>Status:</strong> Specified</p>
+<p>Purpose: Show a recommended two-touch reminder cadence counting down to an event, so a mentor can see when each reminder should go out and why.</p>
+<p>Bloom Taxonomy: Apply (L3)
+Bloom Taxonomy Verb: schedule</p>
+<p>Learning objective: Given an event date, the learner schedules reminder notifications at appropriate lead times before it.</p>
+<p>Time period: 14 days before an event through the event itself</p>
+<p>Orientation: Horizontal, counting down to a fixed "Event Day" marker</p>
+<p>Events:
+- Day -14: "First Reminder Sent" -- gives families time to plan around the event
+- Day -1: "Second Reminder Sent" -- a short, same-day-relevant nudge
+- Day 0: "Event Day"</p>
+<p>Visual style: Horizontal countdown timeline with the event day marked distinctly at the right edge</p>
+<p>Color coding: Blue for the first reminder, amber for the second reminder, green for event day</p>
+<p>Interactive features:
+- Click either reminder event to see a sample message and the reasoning behind its timing
+- Hover the event-day marker to see a summary comparing this two-touch pattern's attendance outcome to a single-reminder baseline</p>
+<p>Implementation: vis-timeline library rendered in main.html with a <code>select</code> event handler opening a detail panel for the clicked item.</p>
+</details>
+<h2 id="chat-and-group-messaging-tools">Chat and Group Messaging Tools<a class="headerlink" href="#chat-and-group-messaging-tools" title="Permanent link">¶</a></h2>
+<p>Email and calendars handle scheduled, planned communication well; they are a poor fit for the kind of quick, time-sensitive message a club sometimes needs to send, such as "session starts in ten minutes and we're running late" -- which is where chat and group messaging tools take over.</p>
+<h3 id="email-and-chat-tools">Email And Chat Tools<a class="headerlink" href="#email-and-chat-tools" title="Permanent link">¶</a></h3>
+<p><strong>Email and chat tools</strong> together make up a club's full communication toolkit, and the two channels serve genuinely different needs: email suits anything that benefits from a searchable written record and doesn't need an instant response, such as a schedule change or a consent form, while chat tools suit short, time-sensitive messages where a same-day or same-hour response actually matters.</p>
+<table>
+<thead>
+<tr>
+<th>Aspect</th>
+<th>Email</th>
+<th>Chat / Group Messaging</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Speed</td>
+<td>Hours to a day is normal</td>
+<td>Minutes</td>
+</tr>
+<tr>
+<td>Formality</td>
+<td>Higher -- suits official announcements, consent forms</td>
+<td>Lower -- suits quick logistics</td>
+</tr>
+<tr>
+<td>Written record</td>
+<td>Strong, easily searched later</td>
+<td>Weaker -- messages can scroll past unnoticed</td>
+</tr>
+<tr>
+<td>Best for</td>
+<td>Schedule changes, newsletters, consent forms</td>
+<td>"Running 10 minutes late," last-minute room changes</td>
+</tr>
+</tbody>
+</table>
+<p>A worked example shows both channels used correctly in the same week: a club sends the semester's full session schedule by email, a document families can refer back to for months, and then uses a group chat the morning of a specific session to say the room changed at the last minute because of a building conflict -- a message no one would have opened in time if it had gone out as an email instead.</p>
+<p>One boundary is worth holding firm regardless of how convenient chat feels: anything tied to the consent and privacy practices earlier in this chapter -- a signed permission form, a change to what data the club collects -- belongs in email, where it creates a searchable, dated record, never in a group chat message that could scroll past unread and leave no retrievable trace that consent was ever requested.</p>
+<h3 id="group-messaging-app">Group Messaging App<a class="headerlink" href="#group-messaging-app" title="Permanent link">¶</a></h3>
+<p><strong>A group messaging app</strong> is the specific chat tool a club chooses -- often the same one most families already use for other group coordination -- for the fast, informal messages described above, set up as a single group so a message reaches every current family in one send rather than as separate one-on-one conversations a mentor has to repeat by hand. Choosing an app most families already have installed lowers the barrier to actually using it; asking every family to install something new just for the club often means several never do.</p>
+<p>A worked example shows the channel choice actually mattering: a mentor needs to tell families that a session is moving to a different room five minutes before it starts. Posting once to the group messaging app reaches every family checking their phone on the way in; the same message sent by email might not be opened until that evening, well after the session already ended.</p>
+<h4 id="diagram-message-channel-decision-tree">Diagram: Message Channel Decision Tree<a class="headerlink" href="#diagram-message-channel-decision-tree" title="Permanent link">¶</a></h4>
+<iframe src="../../sims/message-channel-decision-tree/main.html" width="100%" height="500px" scrolling="no"></iframe>
+
+<details>
+<summary>Message Channel Decision Tree</summary>
+<p>Type: workflow
+<strong>sim-id:</strong> message-channel-decision-tree<br>
+<strong>Library:</strong> Mermaid<br>
+<strong>Status:</strong> Specified
+<strong>Template:</strong> https://github.com/dmccreary/token-efficiency/tree/main/docs/sims/conversation-message-structure</p>
+<p>Purpose: Help a mentor decide, for a specific message, whether email or the group messaging app is the right channel.</p>
+<p>Bloom Taxonomy: Evaluate (L5)
+Bloom Taxonomy Verb: determine</p>
+<p>Learning objective: Given a message's urgency and audience, the learner determines which communication channel is appropriate.</p>
+<p>Steps (decision tree):
+1. Start: "New Message to Send" -- click reveals "Any outgoing message a mentor needs to send to families or mentors."
+2. Decision: "Needs Action Within the Hour?" -- click reveals "A same-day room change or a running-late notice both count as urgent."
+3a. Branch "Yes" leads to "Send via Group Messaging App" -- click reveals "Reaches families checking their phones in real time; not meant to be a permanent record."
+3b. Branch "No" leads to Decision: "Needs a Searchable Written Record?" -- click reveals "A schedule change, a newsletter, or anything a family might need to reference weeks later."
+4a. Branch "Yes" leads to "Send via Email" -- click reveals "Easily searched later; appropriate for anything semi-official."
+4b. Branch "No" leads to "Either Channel Works" -- click reveals "For a low-stakes, non-urgent note, mentor judgment and family preference can decide."</p>
+<p>Interactivity requirement (satisfied): every node has a Mermaid <code>click</code> directive tied to an infobox showing its revealed text.</p>
+<p>Color coding: Purple for decision diamonds, green for the group-messaging-app outcome, blue for the email outcome, gray for the "either channel" outcome.</p>
+<p>Implementation: Mermaid flowchart (<code>graph TD</code>) rendered in main.html with <code>click NodeId call showInfo("NodeId")</code> directives for every node.</p>
+</details>
+<h2 id="closing-the-loop-with-feedback">Closing the Loop With Feedback<a class="headerlink" href="#closing-the-loop-with-feedback" title="Permanent link">¶</a></h2>
+<p>Every tool so far pushes information out to families. The last four concepts in this chapter cover the tools that bring information back in -- forms, surveys, and a record of what families actually said -- and close the loop by making sure that feedback leads somewhere.</p>
+<h3 id="forms-and-feedback-tools">Forms And Feedback Tools<a class="headerlink" href="#forms-and-feedback-tools" title="Permanent link">¶</a></h3>
+<p><strong>Forms and feedback tools</strong> are the online forms a club uses to collect structured input from families and mentors -- a post-event survey, a badge self-assessment, an incident report -- built from a small set of question types, such as multiple choice, short text, and a rating scale, rather than free-form email replies that are harder to compare across dozens of responses.</p>
+<p>A worked example shows why structure matters: a club that asks "How was tonight's session?" by email gets thirty different reply formats, some one word, some three paragraphs, that take real time to compare. The same question asked as a 1-5 rating scale plus one optional short-text field produces answers a leader can average and skim in minutes. Keeping the whole form short enough to finish in under two minutes matters just as much as the question types themselves -- a ten-question form left for "whenever there's time" reliably gets fewer completed responses than a three-question form a family can finish while still standing at pickup.</p>
+<h4 id="diagram-annotated-feedback-form">Diagram: Annotated Feedback Form<a class="headerlink" href="#diagram-annotated-feedback-form" title="Permanent link">¶</a></h4>
+<iframe src="../../sims/feedback-form-annotated/main.html" width="100%" height="600px" scrolling="no"></iframe>
+
+<details>
+<summary>Annotated Feedback Form</summary>
+<p>Type: infographic
+<strong>sim-id:</strong> feedback-form-annotated<br>
+<strong>Library:</strong> Interactive Infographic Overlay (grid-diagram.js, annotation-free poster + rectangular hover zones)<br>
+<strong>Status:</strong> Specified
+<strong>Template:</strong> https://github.com/dmccreary/search-microsims/tree/main/docs/sims/feedback-loop-sim</p>
+<p>Purpose: Show a sample post-event feedback form with three question types, so a mentor can see why each type was chosen and what it measures well.</p>
+<p>Bloom Taxonomy: Understand (L2)
+Bloom Taxonomy Verb: explain</p>
+<p>Learning objective: Given a question on a feedback form, the learner explains why that question type was chosen over the alternatives.</p>
+<p>Image style: Flat mock-form poster showing three stacked questions with their answer widgets</p>
+<p>Image dimensions: 1000x600 (portrait, three stacked question zones)</p>
+<p>Zones (3 horizontal bands, each with id, label, color, approximate x1/y1/x2/y2 percentage boundaries, one-line summary, and 3 bullet facts):</p>
+<ol>
+<li><code>rating-scale-question</code> -- color #4A90D9 -- boundaries approximately x1:3,y1:70,x2:97,y2:96 -- Summary: "How was tonight's session? (1-5 scale)" Facts: fastest to answer and to average across many responses; best for tracking a trend over time; loses nuance a written comment would capture</li>
+<li><code>multiple-choice-question</code> -- color #50C878 -- boundaries approximately x1:3,y1:38,x2:97,y2:68 -- Summary: "Which activity did you enjoy most? (pick one)" Facts: easy to tally into a simple count per option; best when the possible answers are already known; forces a choice even if a respondent liked two activities equally</li>
+<li><code>short-text-question</code> -- color #F5A623 -- boundaries approximately x1:3,y1:4,x2:97,y2:36 -- Summary: "Anything else you'd like us to know? (optional)" Facts: captures detail the fixed question types can't anticipate; optional, so it doesn't slow down a respondent in a hurry; harder to summarize across many responses than the scale or multiple-choice questions above</li>
+</ol>
+<p>showLabels: false (question labels are printed in the generated image)</p>
+<p>Interactive features: Click or hover any question zone to highlight it and reveal its full fact list in a detail panel; explore mode only.</p>
+<p>Implementation: Interactive Infographic Overlay Guide (grid engine) -- <code>grid-diagram.js</code> + <code>grid-overlay.css</code> render the three rectangular hover zones over the generated poster image; <code>data.json</code> holds the 3 zones per the overlay-grid-data-json-schema.</p>
+</details>
+<h3 id="survey-tool-selection">Survey Tool Selection<a class="headerlink" href="#survey-tool-selection" title="Permanent link">¶</a></h3>
+<p><strong>Survey tool selection</strong> is choosing which specific form-building service a club standardizes on -- a free online form builder, a paid survey platform, or a simple paper form for a low-tech venue -- weighing cost, ease of building a new survey, and whether responses need to stay anonymous.</p>
+<table>
+<thead>
+<tr>
+<th>Tool</th>
+<th>Cost</th>
+<th>Ease of Use</th>
+<th>Anonymous Responses?</th>
+<th>Works Without Internet</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Free online form builder</td>
+<td>Free</td>
+<td>Easy, no training needed</td>
+<td>Yes, if configured that way</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Paid survey platform</td>
+<td>Subscription</td>
+<td>Easy, more advanced question types</td>
+<td>Yes</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Paper form</td>
+<td>Free (printing only)</td>
+<td>Simple to fill out; someone must transcribe results</td>
+<td>Yes, naturally</td>
+<td>Yes</td>
+</tr>
+</tbody>
+</table>
+<p>A worked example shows the paper option earning its place: a club meets in a community center basement with unreliable Wi-Fi. Rather than fight the connection every post-event survey night, the club prints a one-page paper form, collects it at the door, and one mentor transcribes the dozen responses into the free online tool later that evening once the connection is stable -- combining paper's reliability with the online tool's easier long-term analysis.</p>
+<p>Whichever tool a club settles on, it is worth a quick look at that tool's own data-handling settings before committing to it -- confirming responses can actually be set to anonymous, and that exported data lands in the club's own account rather than a personal one, applies the same privacy habits from earlier in this chapter to the survey tool itself, not just to the tracking spreadsheet.</p>
+<h3 id="feedback-loop-design">Feedback Loop Design<a class="headerlink" href="#feedback-loop-design" title="Permanent link">¶</a></h3>
+<p><strong>Feedback loop design</strong> is making sure that feedback a club collects actually leads to a visible action and a response back to the people who gave it, closing a cycle that starts with collecting responses and ends with reporting back what changed, rather than a survey that gets sent, collected, and then never looked at again. A feedback loop with no visible closing step teaches families that their input doesn't matter, which quietly discourages them from bothering to respond to the next survey.</p>
+<p>A worked example shows the loop closing visibly: a post-event survey reveals that several families found the session's start time too early for after-school pickup schedules. The club analyzes the responses, decides to shift the start time by fifteen minutes starting the following month, and sends a short follow-up message explaining the change and crediting the survey for prompting it, so the families who responded can see their feedback actually changed something.</p>
+<h4 id="diagram-feedback-loop-cycle">Diagram: Feedback Loop Cycle<a class="headerlink" href="#diagram-feedback-loop-cycle" title="Permanent link">¶</a></h4>
+<iframe src="../../sims/feedback-loop-cycle/main.html" width="100%" height="500px" scrolling="no"></iframe>
+
+<details>
+<summary>Feedback Loop Cycle</summary>
+<p>Type: workflow
+<strong>sim-id:</strong> feedback-loop-cycle<br>
+<strong>Library:</strong> Mermaid<br>
+<strong>Status:</strong> Specified
+<strong>Template:</strong> https://github.com/dmccreary/xapi-course/tree/main/docs/sims/instructional-design-feedback-loop</p>
+<p>Purpose: Show the four-stage cycle that keeps feedback from disappearing into an unread inbox, using the start-time worked example to make each stage concrete.</p>
+<p>Bloom Taxonomy: Understand (L2)
+Bloom Taxonomy Verb: explain</p>
+<p>Learning objective: The learner explains what happens at each stage of a closed feedback loop, and why skipping the last stage undermines the whole cycle.</p>
+<p>Steps (circular flowchart):
+1. "Collect" -- click reveals "A post-event survey gathers responses, such as families noting the start time is too early."
+2. "Analyze" -- click reveals "The club reviews responses for a pattern, such as several families raising the same start-time concern."
+3. "Act" -- click reveals "The club makes a real change, such as shifting the start time by fifteen minutes."
+4. "Report Back" -- click reveals "A follow-up message tells families what changed and credits the survey, then the cycle repeats at 'Collect.'"</p>
+<p>Interactivity requirement (satisfied): every node has a Mermaid <code>click</code> directive tied to an infobox showing its revealed text.</p>
+<p>Color coding: Four evenly spaced colors around the cycle, with an arrow from "Report Back" back to "Collect" to make the repeating nature visible.</p>
+<p>Implementation: Mermaid flowchart (<code>graph LR</code> arranged to suggest a loop, with an explicit arrow from the last node back to the first) rendered in main.html with <code>click NodeId call showInfo("NodeId")</code> directives for every node.</p>
+</details>
+<h3 id="parent-communication-log">Parent Communication Log<a class="headerlink" href="#parent-communication-log" title="Permanent link">¶</a></h3>
+<p><strong>A parent communication log</strong> is a written record of individual conversations a club has with specific families -- a phone call about a scheduling conflict, an email exchange about an accommodation request, a note from pickup -- kept so that a conversation had by one mentor is still visible to whichever mentor interacts with that family next, rather than existing only in one person's memory. It differs from the progress-tracking spreadsheet covered earlier in this chapter, which records what a student has learned, by instead recording what a family and the club have discussed.</p>
+<p>A worked example shows a log preventing an awkward repeat: a parent already explained by phone, two weeks earlier, that their child has a scheduling conflict on the third Tuesday of every month. A different mentor, unaware of that earlier call, would otherwise ask the family the same question again at pickup -- but a quick glance at the communication log shows the conversation already happened, letting the mentor instead simply confirm the arrangement is still working.</p>
+<div class="admonition mascot-tip">
+<p class="admonition-title">Log it the same day, not at the end of a long night</p>
+<p><img alt="Circuit giving a tip" class="mascot-admonition-img" src="../../img/mascot/tip.png">
+Want to save yourself an awkward repeat conversation? Log a call or a tricky email exchange the same day it happens, while the details are still fresh, rather than trying to reconstruct it from memory at the end of a long session.</p>
+</div>
+<p>The sample below again uses initials rather than full names, consistent with the minimal-identifiability habit that runs through this chapter.</p>
+<table>
+<thead>
+<tr>
+<th>Date</th>
+<th>Family</th>
+<th>Topic</th>
+<th>Follow-Up</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2026-02-03</td>
+<td>R. family</td>
+<td>Third-Tuesday scheduling conflict</td>
+<td>Noted; no action needed monthly</td>
+</tr>
+<tr>
+<td>2026-02-10</td>
+<td>K. family</td>
+<td>Requested a badge-progress update</td>
+<td>Sent current progress summary by email</td>
+</tr>
+<tr>
+<td>2026-02-17</td>
+<td>T. family</td>
+<td>Asked about the loaner laptop policy</td>
+<td>Referred to the device loaner agreement from Chapter 23</td>
+</tr>
+</tbody>
+</table>
+<h2 id="chapter-summary">Chapter Summary<a class="headerlink" href="#chapter-summary" title="Permanent link">¶</a></h2>
+<p>This chapter turned two related instincts -- collect less, and communicate more reliably -- into a working system. On the data side, a minimal-data-first habit decides what gets saved at all, privacy practices and guardian consent govern what happens to it afterward, a stated retention policy and a tested backup routine keep it safe and finite, and anonymized reporting lets a club share meaningful numbers without exposing a single name. On the communication side, a simple spreadsheet and dashboard track progress without needing more than a name and a badge date, email and calendars carry planned announcements, chat tools carry same-day logistics, and a closed feedback loop makes sure family input actually changes something instead of disappearing into an unread inbox.</p>
+<div class="admonition mascot-celebration">
+<p class="admonition-title">You can now run a club's data and communication with confidence</p>
+<p><img alt="Circuit celebrating" class="mascot-admonition-img" src="../../img/mascot/celebration.png">
+You just built a complete, privacy-respecting system for saving only the student data your club truly needs, tracking progress simply, and keeping every family in the loop. That's the kind of infrastructure that protects students and keeps families engaged long after any one mentor moves on.</p>
+</div>
 
 
 
@@ -1634,7 +3531,12 @@
 
 
 
+  
+  
 
+
+
+  
 
 
 
@@ -1649,7 +3551,7 @@
         
           <button type="button" class="md-top md-icon" data-md-component="top" hidden>
   
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"></path></svg>
   Back to top
 </button>
         
@@ -1659,13 +3561,13 @@
   
     
       
-      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+      <nav class="md-footer__inner md-grid" aria-label="Footer">
         
           
           <a href="../23-network-peripherals-device-lifecycle/" class="md-footer__link md-footer__link--prev" aria-label="Previous: 23. Network, Peripherals, and the Device Lifecycle">
             <div class="md-footer__button md-icon">
               
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
             </div>
             <div class="md-footer__title">
               <span class="md-footer__direction">
@@ -1690,7 +3592,7 @@
             </div>
             <div class="md-footer__button md-icon">
               
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"></path></svg>
             </div>
           </a>
         
@@ -1702,7 +3604,7 @@
       <div class="md-copyright">
   
     <div class="md-copyright__highlight">
-      Copyright &copy; 2026 Dan McCreary. Licensed under <a href="license/">CC BY-NC-SA 4.0</a> for non-commercial use.
+      Copyright © 2026 Dan McCreary. Licensed under <a href="license/">CC BY-NC-SA 4.0</a> for non-commercial use.
     </div>
   
   
@@ -1723,6 +3625,10 @@
     
       <script src="../../assets/javascripts/bundle.83f73b43.min.js"></script>
       
+        <script src="../../js/extra.js"></script>
+      
     
-  </body>
-</html>
+  
+<script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(()=>{ lightbox.reload(); });
+</script></body></html>

@@ -1,12 +1,9 @@
-
-<!doctype html>
-<html lang="en" class="no-js">
-  <head>
+<!DOCTYPE html><html lang="en" class="no-js"><head>
     
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="An interactive intelligent textbook on how to create, organize, promote and run a sustainable coding club.">
+        <meta name="description" content="Covers using AI to customize curriculum, lessons, and challenge cards for individual students, AI-assisted mentor matching and scheduling, specialized agents for grant writing, social media, and translation, mentor-supervised coding-help agents for students, and the responsible process for selecting, testing, and rolling out a new AI agent in a club.">
       
       
         <meta name="author" content="Dan McCreary">
@@ -21,12 +18,12 @@
         <link rel="next" href="../34-oversight-board-and-inventory/">
       
       
-      <link rel="icon" href="../../assets/images/favicon.png">
+      <link rel="icon" href="../../img/favicon.ico">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.43">
     
     
       
-        <title>33. AI-Customized Curriculum and Rolling Out New Agents - Coding Club</title>
+        <title>AI-Customized Curriculum and Rolling Out New Agents - Coding Club</title>
       
     
     
@@ -47,7 +44,7 @@
         
         
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback">
         <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
       
     
@@ -59,11 +56,57 @@
     <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
+  
+
+
+  
+  
+
+<script id="__analytics">function __md_analytics(){function e(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],e("js",new Date),e("config","G-JDH8L7VM28"),document.addEventListener("DOMContentLoaded",(function(){document.forms.search&&document.forms.search.query.addEventListener("blur",(function(){this.value&&e("event","search",{search_term:this.value})}));document$.subscribe((function(){var t=document.forms.feedback;if(void 0!==t)for(var a of t.querySelectorAll("[type=submit]"))a.addEventListener("click",(function(a){a.preventDefault();var n=document.location.pathname,d=this.getAttribute("data-md-value");e("event","feedback",{page:n,data:d}),t.firstElementChild.disabled=!0;var r=t.querySelector(".md-feedback__note [data-md-value='"+d+"']");r&&(r.hidden=!1)})),t.hidden=!1})),location$.subscribe((function(t){e("config","G-JDH8L7VM28",{page_path:t.pathname})}))}));var t=document.createElement("script");t.async=!0,t.src="https://www.googletagmanager.com/gtag/js?id=G-JDH8L7VM28",document.getElementById("__analytics").insertAdjacentElement("afterEnd",t)}</script>
+  
+    <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
+  
 
     
     
+      
+        <meta property="og:type" content="website">
+      
+        <meta property="og:title" content="AI-Customized Curriculum and Rolling Out New Agents - Coding Club">
+      
+        <meta property="og:description" content="Covers using AI to customize curriculum, lessons, and challenge cards for individual students, AI-assisted mentor matching and scheduling, specialized agents for grant writing, social media, and translation, mentor-supervised coding-help agents for students, and the responsible process for selecting, testing, and rolling out a new AI agent in a club.">
+      
+        <meta property="og:image" content="https://dmccreary.github.io/coding-club/assets/images/social/chapters/33-ai-customized-curriculum-rollout/index.png">
+      
+        <meta property="og:image:type" content="image/png">
+      
+        <meta property="og:image:width" content="1200">
+      
+        <meta property="og:image:height" content="630">
+      
+        <meta property="og:url" content="https://dmccreary.github.io/coding-club/chapters/33-ai-customized-curriculum-rollout/">
+      
+        <meta name="twitter:card" content="summary_large_image">
+      
+        <meta name="twitter:title" content="AI-Customized Curriculum and Rolling Out New Agents - Coding Club">
+      
+        <meta name="twitter:description" content="Covers using AI to customize curriculum, lessons, and challenge cards for individual students, AI-assisted mentor matching and scheduling, specialized agents for grant writing, social media, and translation, mentor-supervised coding-help agents for students, and the responsible process for selecting, testing, and rolling out a new AI agent in a club.">
+      
+        <meta name="twitter:image" content="https://dmccreary.github.io/coding-club/assets/images/social/chapters/33-ai-customized-curriculum-rollout/index.png">
+      
     
-  </head>
+    
+  <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"><script src="../../assets/javascripts/glightbox.min.js"></script><style id="glightbox-style">
+            html.glightbox-open { overflow: initial; height: 100%; }
+            .gslide-title { margin-top: 0px; user-select: text; }
+            .gslide-desc { color: #666; user-select: text; }
+            .gslide-image img { background: white; }
+            .gscrollbar-fixer { padding-right: 15px; }
+            .gdesc-inner { font-size: 0.75rem; }
+            body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color); }
+            body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color); }
+            body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color); }
+        </style></head>
   
   
     
@@ -98,13 +141,12 @@
   <nav class="md-header__inner md-grid" aria-label="Header">
     <a href="../.." title="Coding Club" class="md-header__button md-logo" aria-label="Coding Club" data-md-component="logo">
       
-  
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+  <img src="../../img/mascot/welcome.png" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
       
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"></path></svg>
     </label>
     <div class="md-header__title" data-md-component="header-title">
       <div class="md-header__ellipsis">
@@ -116,7 +158,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              33. AI-Customized Curriculum and Rolling Out New Agents
+              AI-Customized Curriculum and Rolling Out New Agents
             
           </span>
         </div>
@@ -130,7 +172,7 @@
     
       <label class="md-header__button md-icon" for="__search">
         
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
       </label>
       <div class="md-search" data-md-component="search" role="dialog">
   <label class="md-search__overlay" for="__search"></label>
@@ -139,20 +181,20 @@
       <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
       <label class="md-search__icon md-icon" for="__search">
         
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
         
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
       </label>
       <nav class="md-search__options" aria-label="Search">
         
           <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
             
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"></path></svg>
           </a>
         
         <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
           
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg>
         </button>
       </nav>
       
@@ -177,7 +219,7 @@
         <a href="https://github.com/dmccreary/coding-club" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"></path></svg>
   </div>
   <div class="md-source__repository">
     GitHub Repo
@@ -201,7 +243,7 @@
           
             
               
-              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
@@ -212,8 +254,7 @@
   <label class="md-nav__title" for="__drawer">
     <a href="../.." title="Coding Club" class="md-nav__button md-logo" aria-label="Coding Club" data-md-component="logo">
       
-  
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+  <img src="../../img/mascot/welcome.png" alt="logo">
 
     </a>
     Coding Club
@@ -223,7 +264,7 @@
       <a href="https://github.com/dmccreary/coding-club" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"></path></svg>
   </div>
   <div class="md-source__repository">
     GitHub Repo
@@ -1239,6 +1280,450 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#customizing-curriculum-with-ai" class="md-nav__link">
+    <span class="md-ellipsis">
+      Customizing Curriculum With AI
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Customizing Curriculum With AI">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#building-student-mental-models" class="md-nav__link">
+    <span class="md-ellipsis">
+      Building Student Mental Models
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#customizing-lessons-with-ai" class="md-nav__link">
+    <span class="md-ellipsis">
+      Customizing Lessons With AI
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai-assisted-lesson-customization" class="md-nav__link">
+    <span class="md-ellipsis">
+      AI Assisted Lesson Customization
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="AI Assisted Lesson Customization">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-from-observation-to-customized-lesson" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: From Observation to Customized Lesson
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai-assisted-curriculum-design" class="md-nav__link">
+    <span class="md-ellipsis">
+      AI Assisted Curriculum Design
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai-generated-challenge-card" class="md-nav__link">
+    <span class="md-ellipsis">
+      AI Generated Challenge Card
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="AI Generated Challenge Card">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-template-card-vs-ai-customized-card" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Template Card vs. AI-Customized Card
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#matching-mentors-and-optimizing-schedules" class="md-nav__link">
+    <span class="md-ellipsis">
+      Matching Mentors and Optimizing Schedules
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Matching Mentors and Optimizing Schedules">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ai-assisted-mentor-matching" class="md-nav__link">
+    <span class="md-ellipsis">
+      AI Assisted Mentor Matching
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai-scheduling-optimization" class="md-nav__link">
+    <span class="md-ellipsis">
+      AI Scheduling Optimization
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="AI Scheduling Optimization">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-matching-mentors-and-optimizing-a-schedule" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Matching Mentors and Optimizing a Schedule
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#specialized-agents-beyond-club-operations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Specialized Agents Beyond Club Operations
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Specialized Agents Beyond Club Operations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ai-assisted-grant-writing" class="md-nav__link">
+    <span class="md-ellipsis">
+      AI Assisted Grant Writing
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai-assisted-social-media" class="md-nav__link">
+    <span class="md-ellipsis">
+      AI Assisted Social Media
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai-generated-website-content" class="md-nav__link">
+    <span class="md-ellipsis">
+      AI Generated Website Content
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai-assisted-translation" class="md-nav__link">
+    <span class="md-ellipsis">
+      AI Assisted Translation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai-voice-assistant-use" class="md-nav__link">
+    <span class="md-ellipsis">
+      AI Voice Assistant Use
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="AI Voice Assistant Use">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-meet-the-specialized-agent-roster" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Meet the Specialized Agent Roster
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#coding-help-agents-for-students-mentor-supervised" class="md-nav__link">
+    <span class="md-ellipsis">
+      Coding-Help Agents for Students (Mentor-Supervised)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Coding-Help Agents for Students (Mentor-Supervised)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ai-assisted-debugging-help" class="md-nav__link">
+    <span class="md-ellipsis">
+      AI Assisted Debugging Help
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai-tutor-for-students" class="md-nav__link">
+    <span class="md-ellipsis">
+      AI Tutor For Students
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai-code-review-assistant" class="md-nav__link">
+    <span class="md-ellipsis">
+      AI Code Review Assistant
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="AI Code Review Assistant">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-where-a-coding-help-request-goes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Where a Coding-Help Request Goes
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#choosing-ai-tools-responsibly" class="md-nav__link">
+    <span class="md-ellipsis">
+      Choosing AI Tools Responsibly
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Choosing AI Tools Responsibly">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ai-bias-awareness" class="md-nav__link">
+    <span class="md-ellipsis">
+      AI Bias Awareness
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai-data-privacy-risk" class="md-nav__link">
+    <span class="md-ellipsis">
+      AI Data Privacy Risk
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="AI Data Privacy Risk">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-bias-risk-privacy-risk-or-neither" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Bias Risk, Privacy Risk, or Neither?
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai-tool-selection-criteria" class="md-nav__link">
+    <span class="md-ellipsis">
+      AI Tool Selection Criteria
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai-agent-cost-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      AI Agent Cost Management
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai-agent-vendor-comparison" class="md-nav__link">
+    <span class="md-ellipsis">
+      AI Agent Vendor Comparison
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="AI Agent Vendor Comparison">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-comparing-ai-tools-against-selection-criteria" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Comparing AI Tools Against Selection Criteria
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rolling-out-a-new-ai-agent" class="md-nav__link">
+    <span class="md-ellipsis">
+      Rolling Out a New AI Agent
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Rolling Out a New AI Agent">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ai-agent-workflow-design" class="md-nav__link">
+    <span class="md-ellipsis">
+      AI Agent Workflow Design
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai-agent-integration-testing" class="md-nav__link">
+    <span class="md-ellipsis">
+      AI Agent Integration Testing
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai-agent-rollout-plan" class="md-nav__link">
+    <span class="md-ellipsis">
+      AI Agent Rollout Plan
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai-agent-training-for-leaders" class="md-nav__link">
+    <span class="md-ellipsis">
+      AI Agent Training For Leaders
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#coaching-leaders-with-ai" class="md-nav__link">
+    <span class="md-ellipsis">
+      Coaching Leaders With AI
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Coaching Leaders With AI">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-the-ai-agent-rollout-pipeline" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: The AI Agent Rollout Pipeline
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chapter-summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      Chapter Summary
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1308,6 +1793,16 @@
       
         
           
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
         
       
         
@@ -1409,6 +1904,91 @@
   
   
   
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../cards/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Challenge Cards
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../faq/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    FAQ
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../glossary/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Glossary
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
     <li class="md-nav__item">
       <a href="../../license/" class="md-nav__link">
         
@@ -1451,7 +2031,7 @@
             
             
               
-              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
@@ -1496,6 +2076,450 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#customizing-curriculum-with-ai" class="md-nav__link">
+    <span class="md-ellipsis">
+      Customizing Curriculum With AI
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Customizing Curriculum With AI">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#building-student-mental-models" class="md-nav__link">
+    <span class="md-ellipsis">
+      Building Student Mental Models
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#customizing-lessons-with-ai" class="md-nav__link">
+    <span class="md-ellipsis">
+      Customizing Lessons With AI
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai-assisted-lesson-customization" class="md-nav__link">
+    <span class="md-ellipsis">
+      AI Assisted Lesson Customization
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="AI Assisted Lesson Customization">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-from-observation-to-customized-lesson" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: From Observation to Customized Lesson
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai-assisted-curriculum-design" class="md-nav__link">
+    <span class="md-ellipsis">
+      AI Assisted Curriculum Design
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai-generated-challenge-card" class="md-nav__link">
+    <span class="md-ellipsis">
+      AI Generated Challenge Card
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="AI Generated Challenge Card">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-template-card-vs-ai-customized-card" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Template Card vs. AI-Customized Card
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#matching-mentors-and-optimizing-schedules" class="md-nav__link">
+    <span class="md-ellipsis">
+      Matching Mentors and Optimizing Schedules
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Matching Mentors and Optimizing Schedules">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ai-assisted-mentor-matching" class="md-nav__link">
+    <span class="md-ellipsis">
+      AI Assisted Mentor Matching
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai-scheduling-optimization" class="md-nav__link">
+    <span class="md-ellipsis">
+      AI Scheduling Optimization
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="AI Scheduling Optimization">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-matching-mentors-and-optimizing-a-schedule" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Matching Mentors and Optimizing a Schedule
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#specialized-agents-beyond-club-operations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Specialized Agents Beyond Club Operations
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Specialized Agents Beyond Club Operations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ai-assisted-grant-writing" class="md-nav__link">
+    <span class="md-ellipsis">
+      AI Assisted Grant Writing
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai-assisted-social-media" class="md-nav__link">
+    <span class="md-ellipsis">
+      AI Assisted Social Media
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai-generated-website-content" class="md-nav__link">
+    <span class="md-ellipsis">
+      AI Generated Website Content
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai-assisted-translation" class="md-nav__link">
+    <span class="md-ellipsis">
+      AI Assisted Translation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai-voice-assistant-use" class="md-nav__link">
+    <span class="md-ellipsis">
+      AI Voice Assistant Use
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="AI Voice Assistant Use">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-meet-the-specialized-agent-roster" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Meet the Specialized Agent Roster
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#coding-help-agents-for-students-mentor-supervised" class="md-nav__link">
+    <span class="md-ellipsis">
+      Coding-Help Agents for Students (Mentor-Supervised)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Coding-Help Agents for Students (Mentor-Supervised)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ai-assisted-debugging-help" class="md-nav__link">
+    <span class="md-ellipsis">
+      AI Assisted Debugging Help
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai-tutor-for-students" class="md-nav__link">
+    <span class="md-ellipsis">
+      AI Tutor For Students
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai-code-review-assistant" class="md-nav__link">
+    <span class="md-ellipsis">
+      AI Code Review Assistant
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="AI Code Review Assistant">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-where-a-coding-help-request-goes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Where a Coding-Help Request Goes
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#choosing-ai-tools-responsibly" class="md-nav__link">
+    <span class="md-ellipsis">
+      Choosing AI Tools Responsibly
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Choosing AI Tools Responsibly">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ai-bias-awareness" class="md-nav__link">
+    <span class="md-ellipsis">
+      AI Bias Awareness
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai-data-privacy-risk" class="md-nav__link">
+    <span class="md-ellipsis">
+      AI Data Privacy Risk
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="AI Data Privacy Risk">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-bias-risk-privacy-risk-or-neither" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Bias Risk, Privacy Risk, or Neither?
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai-tool-selection-criteria" class="md-nav__link">
+    <span class="md-ellipsis">
+      AI Tool Selection Criteria
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai-agent-cost-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      AI Agent Cost Management
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai-agent-vendor-comparison" class="md-nav__link">
+    <span class="md-ellipsis">
+      AI Agent Vendor Comparison
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="AI Agent Vendor Comparison">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-comparing-ai-tools-against-selection-criteria" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Comparing AI Tools Against Selection Criteria
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rolling-out-a-new-ai-agent" class="md-nav__link">
+    <span class="md-ellipsis">
+      Rolling Out a New AI Agent
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Rolling Out a New AI Agent">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ai-agent-workflow-design" class="md-nav__link">
+    <span class="md-ellipsis">
+      AI Agent Workflow Design
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai-agent-integration-testing" class="md-nav__link">
+    <span class="md-ellipsis">
+      AI Agent Integration Testing
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai-agent-rollout-plan" class="md-nav__link">
+    <span class="md-ellipsis">
+      AI Agent Rollout Plan
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai-agent-training-for-leaders" class="md-nav__link">
+    <span class="md-ellipsis">
+      AI Agent Training For Leaders
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#coaching-leaders-with-ai" class="md-nav__link">
+    <span class="md-ellipsis">
+      Coaching Leaders With AI
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Coaching Leaders With AI">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-the-ai-agent-rollout-pipeline" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: The AI Agent Rollout Pipeline
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chapter-summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      Chapter Summary
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1513,16 +2537,16 @@
   
     <a href="https://github.com/dmccreary/coding-club/blob/main/docs/chapters/33-ai-customized-curriculum-rollout/index.md" title="Edit this page" class="md-content__button md-icon">
       
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"></path></svg>
     </a>
   
   
 
 
-<h1 id="ai-customized-curriculum-and-rolling-out-new-agents">AI-Customized Curriculum and Rolling Out New Agents<a class="headerlink" href="#ai-customized-curriculum-and-rolling-out-new-agents" title="Permanent link">&para;</a></h1>
-<h2 id="summary">Summary<a class="headerlink" href="#summary" title="Permanent link">&para;</a></h2>
+<h1 id="ai-customized-curriculum-and-rolling-out-new-agents">AI-Customized Curriculum and Rolling Out New Agents<a class="headerlink" href="#ai-customized-curriculum-and-rolling-out-new-agents" title="Permanent link">¶</a></h1>
+<h2 id="summary">Summary<a class="headerlink" href="#summary" title="Permanent link">¶</a></h2>
 <p>This chapter covers using AI to customize curriculum and lessons to individual students, plus a set of more specialized AI agents for grant writing, social media, and translation. It closes with the practical rollout process: selecting a vendor, testing integration, and training club leaders to use new AI agents responsibly. You will be able to evaluate an AI tool against selection criteria and plan a rollout for your club.</p>
-<h2 id="concepts-covered">Concepts Covered<a class="headerlink" href="#concepts-covered" title="Permanent link">&para;</a></h2>
+<h2 id="concepts-covered">Concepts Covered<a class="headerlink" href="#concepts-covered" title="Permanent link">¶</a></h2>
 <p>This chapter covers the following 25 concepts from the learning graph:</p>
 <table>
 <thead>
@@ -1634,7 +2658,7 @@
 </tr>
 </tbody>
 </table>
-<h2 id="prerequisites">Prerequisites<a class="headerlink" href="#prerequisites" title="Permanent link">&para;</a></h2>
+<h2 id="prerequisites">Prerequisites<a class="headerlink" href="#prerequisites" title="Permanent link">¶</a></h2>
 <p>This chapter builds on concepts from:</p>
 <ul>
 <li><a href="../01-what-is-a-coding-club/">1. What Is a Coding Club</a></li>
@@ -1648,8 +2672,394 @@
 <li><a href="../30-budgeting-fundraising-grants/">30. Budgeting, Fundraising, and Grant Writing</a></li>
 <li><a href="../32-ai-agents-registration-scheduling/">32. AI Agents for Registration, Scheduling, and Communication</a></li>
 </ul>
-<hr />
-<p>TODO: Generate Chapter Content</p>
+<hr>
+<p>Chapter 32 introduced the AI agent as a new kind of volunteer for a club's operational load -- drafting reminders, mapping influence graphs, answering routine questions -- always with a person confirming the final send. This chapter turns that same volunteer toward the curriculum itself. The challenge cards and learning maps chapter 15 taught you to design by hand can now get an AI-assisted first draft tailored to one specific student a mentor has been watching all semester. The skill-matching chapter 9 already asked mentors to do by eye, and the scheduling puzzle chapter 11 worked through with sticky notes, can both get an AI agent's help finding a better fit faster. A handful of specialized agents beyond the operational roster -- drafting a grant paragraph, a social post, a translated flyer -- round out what a club can realistically hand to AI. And because a mentor cannot personally test-drive every new tool that promises to help, this chapter closes with a repeatable process for choosing one responsibly, testing it before students ever see it, and training the next leader to keep using it well.</p>
+<div class="admonition mascot-welcome">
+<p class="admonition-title">Let's put AI to work on the curriculum itself</p>
+<p><img alt="Circuit waving welcome" class="mascot-admonition-img" src="../../img/mascot/welcome.png">
+Let's build something great -- this time by pointing your newest volunteer at the lessons themselves. You'll see how an AI agent can help customize a challenge card for one student, match mentors to students, and even draft a grant paragraph, all while a mentor keeps the final say. By the end, you'll know how to pick a tool responsibly and roll it out without losing your club's trust along the way.</p>
+</div>
+<h2 id="customizing-curriculum-with-ai">Customizing Curriculum With AI<a class="headerlink" href="#customizing-curriculum-with-ai" title="Permanent link">¶</a></h2>
+<p>Chapter 15 showed you how to design a curriculum by hand: three tracks, a pacing guide, and challenge cards color-coded by difficulty. Everything in this section still produces those same artifacts -- a lesson, a challenge card, a curriculum sequence. What changes is that an AI agent now drafts the first pass, shaped to one specific student a mentor already knows from watching them work in the room.</p>
+<h3 id="building-student-mental-models">Building Student Mental Models<a class="headerlink" href="#building-student-mental-models" title="Permanent link">¶</a></h3>
+<p><strong>Building student mental models</strong> means forming a working picture of what a specific student already understands, what they get stuck on, and what genuinely interests them -- based entirely on what a mentor observes during real sessions, not on a stored profile that follows the student between clubs or years. This is ordinary teaching judgment, the same instinct a good classroom teacher builds for every student they see week after week; an AI agent's role is only to help a mentor notice a pattern faster, never to replace the mentor's own read of the room.</p>
+<p>A worked example shows the practice at its simplest: over three Saturday sessions, a mentor notices that one student lights up whenever a challenge card mentions music or sound, but visibly disengages from anything framed around sports statistics. That is the entire mental model -- not a data file, just something the mentor has learned about one kid by paying attention. When the mentor later asks an AI agent to draft a customized challenge card for that student, the mental model is what the mentor types into the request, from memory, session by session -- not something pulled automatically from any system.</p>
+<h3 id="customizing-lessons-with-ai">Customizing Lessons With AI<a class="headerlink" href="#customizing-lessons-with-ai" title="Permanent link">¶</a></h3>
+<p><strong>Customizing lessons with AI</strong> is the umbrella practice this section builds toward: a mentor, drawing on the mental model they have built of a specific student, asks an AI agent to draft a lesson variant suited to that student, then reviews the draft before using it -- the same human-in-the-loop habit chapter 32 established for every other kind of AI-drafted content in this book. It is differentiated instruction, a practice good teachers have always done by hand, with an AI agent now doing the time-consuming part of drafting several versions quickly.</p>
+<p>A worked example shows the practice end to end: a mentor has two students starting the same loops-and-conditionals concept card on the same afternoon. One loves music, the other loves basketball, per the mentor's own observation. The mentor asks an agent to draft two versions of the same underlying loop exercise -- one that counts beats in a drum pattern, one that counts free-throw attempts -- and reviews both before printing either. The computational thinking content taught is identical; only the framing changed, and a person chose both framings.</p>
+<div class="admonition mascot-thinking">
+<p class="admonition-title">Customizing is about the student in front of you, not a permanent record</p>
+<p><img alt="Circuit thinking" class="mascot-admonition-img" src="../../img/mascot/thinking.png">
+Notice what makes this safe: the mental model above lives in a mentor's head, refreshed by what they see this term, not in a growing digital file that follows a student for years. Customizing today's lesson is not the same thing as building a permanent profile of a child -- keep that line clear as you read the rest of this chapter.</p>
+</div>
+<h3 id="ai-assisted-lesson-customization">AI Assisted Lesson Customization<a class="headerlink" href="#ai-assisted-lesson-customization" title="Permanent link">¶</a></h3>
+<p><strong>AI assisted lesson customization</strong> is the specific mechanics of the practice above: telling an agent which pacing, analogy, difficulty, or example to change, and getting back a revised lesson that keeps the same underlying concept intact. It is narrower than "customizing lessons with AI" in general -- this is the actual prompt-and-draft step, the same kind of specific, detail-rich request that chapter 32's prompt engineering guidance already showed produces a far more useful first draft than a vague one.</p>
+<p>A worked example shows the specificity paying off: a mentor asks an agent to "slow down the pacing of the intermediate Python loops card and add one extra worked example before the practice problem, keeping the same final challenge." The agent returns a card with an inserted worked example and one fewer practice repetition up front -- exactly the two changes requested, nothing else altered. Because the mentor specified precisely what to change, reviewing the draft took under a minute; a vague request like "make this easier" would have returned a card the mentor had to compare line by line against the original to see what actually changed.</p>
+<h4 id="diagram-from-observation-to-customized-lesson">Diagram: From Observation to Customized Lesson<a class="headerlink" href="#diagram-from-observation-to-customized-lesson" title="Permanent link">¶</a></h4>
+<iframe src="../../sims/ai-lesson-customization-workflow/main.html" width="100%" height="540px" scrolling="no"></iframe>
+
+<details>
+<summary>From Observation to Customized Lesson</summary>
+<p>Type: workflow
+<strong>sim-id:</strong> ai-lesson-customization-workflow<br>
+<strong>Library:</strong> Mermaid<br>
+<strong>Status:</strong> Specified
+<strong>Template:</strong> https://github.com/dmccreary/ai-strategy-for-education/tree/main/docs/sims/ai-concept-hierarchy</p>
+<p>Purpose: Tie building a student mental model, customizing lessons with AI, and AI assisted lesson customization into one traceable loop, so a learner sees where the mentor's own observation enters the process and where the human review step from chapter 32 still applies.</p>
+<p>Bloom Taxonomy: Understand (L2)
+Bloom Taxonomy Verb: explain</p>
+<p>Learning objective: Given a customization scenario, the learner explains which stage of the loop is mentor observation, which is the AI draft, and which is human review.</p>
+<p>Steps (flowchart, no decision diamonds needed):
+1. Start: "Mentor Observes a Student in Session" -- click reveals "The mentor's own week-to-week observation -- what a student enjoys, what they get stuck on -- never a stored profile."
+2. Process: "Mentor Forms a Mental Model" -- click reveals "A working picture in the mentor's head: 'this student responds well to music-themed examples.'"
+3. Process: "Mentor Requests a Specific Customization" -- click reveals "A detailed prompt naming exactly what should change -- pacing, analogy, difficulty -- following the specificity habit from chapter 32's prompt engineering section."
+4. Process: "AI Agent Drafts the Customized Lesson" -- click reveals "The agent produces a revised card or lesson, keeping the underlying concept the same."
+5. Process: "Mentor Reviews the Draft" -- click reveals "The same human-in-the-loop review chapter 32 required for every AI-drafted output, applied here to a lesson instead of a message."
+6. End: "Customized Lesson Used With the Student" -- click reveals "The version that actually reaches the student -- always mentor-approved, never sent straight from the agent."</p>
+<p>Interactivity requirement (satisfied): every node has a Mermaid <code>click</code> directive tied to an infobox showing its revealed text.</p>
+<p>Color coding: Blue for the two mentor-observation steps, amber for the AI-drafting step, green for the human-review and final-use steps.</p>
+<p>Implementation: Mermaid flowchart (<code>graph TD</code>) rendered in main.html with <code>click NodeId call showInfo("NodeId")</code> directives for every node, opening a side-panel infobox.</p>
+</details>
+<h3 id="ai-assisted-curriculum-design">AI Assisted Curriculum Design<a class="headerlink" href="#ai-assisted-curriculum-design" title="Permanent link">¶</a></h3>
+<p><strong>AI assisted curriculum design</strong> zooms out from a single lesson to the whole sequence chapter 15 introduced -- an agent proposing how to order challenge cards across the beginner, intermediate, and advanced tracks, or drafting a pacing guide for a shorter or longer term than the standard twelve sessions. It works the same way a planning AI agent did in chapter 32 for a semester calendar: the agent respects constraints a leader supplies, and a person decides whether the proposed sequence actually fits this club.</p>
+<p>A worked example shows the constraint-respecting draft in practice: a leader running a compressed six-week summer club asks an agent to compress chapter 15's twelve-session beginner track into six sessions without dropping the unplugged activities that build coding vocabulary early. The agent proposes combining two adjacent Scratch sessions into one and moving the stretch-goal challenge cards to optional take-home materials -- a genuinely reasonable compression a leader can approve in minutes rather than redesigning the whole pacing guide from scratch.</p>
+<h3 id="ai-generated-challenge-card">AI Generated Challenge Card<a class="headerlink" href="#ai-generated-challenge-card" title="Permanent link">¶</a></h3>
+<p><strong>An AI generated challenge card</strong> is a complete card -- title, materials list, numbered steps, stretch goal, and concept tag, in the exact format chapter 15 defined -- drafted by an AI agent from a mentor's description of what they want, rather than written by hand from a blank template. The color-coded border, the reading-level target for its track, and the required stretch goal all still apply; the agent just produces the first draft of the words that go inside them.</p>
+<p>A worked example shows the drafting and the catch that review is for: a mentor asks an agent to draft a green beginner-level card teaching the "repeat" block in Scratch, themed around a student's love of skateboarding tricks. The agent returns a card titled "Trick Combo Machine" with clear numbered steps and a stretch goal, but sets the reading level slightly above what chapter 15 recommends for a first-time beginner card. The mentor simplifies two sentences before printing -- a small fix compared to writing the card from nothing, but still a fix only a human caught.</p>
+<h4 id="diagram-template-card-vs-ai-customized-card">Diagram: Template Card vs. AI-Customized Card<a class="headerlink" href="#diagram-template-card-vs-ai-customized-card" title="Permanent link">¶</a></h4>
+<iframe src="../../sims/generic-vs-ai-challenge-card/main.html" width="100%" height="560px" scrolling="no"></iframe>
+
+<details>
+<summary>Template Card vs. AI-Customized Card</summary>
+<p>Type: microsim
+<strong>sim-id:</strong> generic-vs-ai-challenge-card<br>
+<strong>Library:</strong> p5.js<br>
+<strong>Status:</strong> Specified</p>
+<p>Purpose: Let a learner compare a generic template challenge card against an AI-customized version of the same underlying concept, to see exactly which fields changed and which stayed fixed by chapter 15's format.</p>
+<p>Bloom Taxonomy: Analyze (L4)
+Bloom Taxonomy Verb: compare</p>
+<p>Learning objective: Given a generic and an AI-customized challenge card teaching the same concept, the learner compares them to identify what customization changed and what the required format kept constant.</p>
+<p>Instructional Rationale: This is an Analyze-level compare objective, so the sim shows both full card texts side by side with the differing fields visually highlighted, rather than animating a generation process the learner cannot meaningfully inspect.</p>
+<p>Canvas layout:
+- Left (300px): Generic template card -- "Loop Practice," sports-themed example, standard stretch goal
+- Right (300px): AI-customized card -- "Trick Combo Machine," skateboarding-themed example, same underlying "repeat" block concept
+- Bottom (100px): toggle controls and a highlight-differences button</p>
+<p>Visual elements:
+- Both cards rendered in the same 5x7 layout from chapter 15's anatomy diagram: title, green border, materials list, numbered steps, stretch goal, concept tag
+- Differing text (title, example theme, stretch-goal wording) shown in the customized card with a highlighted background; identical structural fields (border color, concept tag, step count) shown with a matching outline on both cards</p>
+<p>Interactive controls:
+- Button: "Highlight What Changed" -- highlights the differing fields on both cards simultaneously
+- Button: "Highlight What Stayed Fixed" -- highlights the border, concept tag, and format that chapter 15 requires regardless of customization
+- Dropdown: switch the customization theme (Skateboarding, Music, Basketball) to regenerate the right-hand card with a different but equally valid customization</p>
+<p>Default parameters: No highlight active; theme = Skateboarding</p>
+<p>Implementation notes: p5.js canvas with createButton for the two highlight toggles and createSelect for the theme dropdown; each theme's customized card text lives in a small lookup object so switching themes updates the right card's text without altering the left template card.</p>
+</details>
+<h2 id="matching-mentors-and-optimizing-schedules">Matching Mentors and Optimizing Schedules<a class="headerlink" href="#matching-mentors-and-optimizing-schedules" title="Permanent link">¶</a></h2>
+<p>Chapter 9 taught mentors to match their own skills to a student's interests by conversation and observation, and chapter 11 taught leaders to build a session calendar by comparing mentor availability against venue hours by hand. Both are exactly the kind of cross-referencing problem an AI agent handles well: more variables than a person can hold in their head at once, but still a proposal a person has to approve.</p>
+<h3 id="ai-assisted-mentor-matching">AI Assisted Mentor Matching<a class="headerlink" href="#ai-assisted-mentor-matching" title="Permanent link">¶</a></h3>
+<p><strong>AI assisted mentor matching</strong> pairs a specific mentor with a specific student based on stated skills and interests -- a mentor who lists robotics and Python paired with a student whose challenge card history shows they gravitate toward physical computing -- going beyond the informal matching chapter 9 described by comparing every mentor against every student at once rather than one conversation at a time. The agent proposes pairings; a leader still makes the final call, since a good match also depends on things no list captures, like two personalities that simply click.</p>
+<p>A worked example shows the scale where this earns its keep: a club with nine mentors and twenty-two students would require thirty-six possible one-to-one comparisons if a leader tried to reason through every combination by hand. A mentor matching agent scores each mentor-student pair by shared interest tags and proposes the five strongest pairings first. The leader accepts four of the five outright and swaps one pairing after recalling that those two particular students already work well together in the same small group -- a piece of context no interest tag could have captured.</p>
+<h3 id="ai-scheduling-optimization">AI Scheduling Optimization<a class="headerlink" href="#ai-scheduling-optimization" title="Permanent link">¶</a></h3>
+<p><strong>AI scheduling optimization</strong> goes a step further than the scheduling AI agent chapter 32 introduced: instead of ranking a handful of candidate dates against mentor availability, it searches across many possible combinations of date, time, and room assignment at once, factoring in constraints like the venue's earliest open hour, a specific mentor who can only make evenings, and the district holiday calendar chapter 11 already tracks. It still only proposes a ranked option; a leader commits to one.</p>
+<p>A worked example shows the multi-constraint search doing real work: a leader needs a weekday schedule that satisfies three mentors' partly overlapping evening availability, avoids the district's early-release Wednesdays, and keeps every session inside the venue's 4-to-6 p.m. open window. A scheduling optimization agent checks combinations a leader would need an entire spreadsheet to compare by hand, and returns a Tuesday/Thursday 4:30 slot as the only combination that satisfies all three constraints simultaneously -- along with a note that a Monday option was close but conflicted with one mentor's evening class.</p>
+<div class="admonition mascot-tip">
+<p class="admonition-title">Let the agent rank the options, you make the call</p>
+<p><img alt="Circuit giving a tip" class="mascot-admonition-img" src="../../img/mascot/tip.png">
+Here's a shortcut: when you ask a matching or scheduling agent for help, ask for its top three ranked options instead of just one. Seeing why the runner-up options lost -- one mentor conflict, one room conflict -- often tells you more than the winning option alone.</p>
+</div>
+<h4 id="diagram-matching-mentors-and-optimizing-a-schedule">Diagram: Matching Mentors and Optimizing a Schedule<a class="headerlink" href="#diagram-matching-mentors-and-optimizing-a-schedule" title="Permanent link">¶</a></h4>
+<iframe src="../../sims/mentor-matching-schedule-optimizer/main.html" width="100%" height="520px" scrolling="no"></iframe>
+
+<details>
+<summary>Matching Mentors and Optimizing a Schedule</summary>
+<p>Type: graph-model
+<strong>sim-id:</strong> mentor-matching-schedule-optimizer<br>
+<strong>Library:</strong> vis-network<br>
+<strong>Status:</strong> Specified
+<strong>Template:</strong> https://github.com/dmccreary/organizational-analytics/tree/main/docs/sims/mentor-matching-network</p>
+<p>Purpose: Let a learner examine a bipartite mentor-student matching graph alongside a small set of schedule-slot nodes, to see how both AI assisted mentor matching and AI scheduling optimization score multiple candidates before a person picks one.</p>
+<p>Bloom Taxonomy: Analyze (L4)
+Bloom Taxonomy Verb: examine</p>
+<p>Learning objective: Given a mentor-student matching graph and a set of candidate schedule slots, the learner examines the scores to identify the strongest mentor-student pairing and the schedule slot that satisfies every stated constraint.</p>
+<p>Node types:
+1. Mentor nodes (blue circles, left column): five mentors, each labeled with one or two interest tags (e.g., "Robotics, Python")
+2. Student nodes (green circles, right column): five students, each labeled with one or two interest tags
+3. Schedule slot nodes (amber squares, bottom row): three candidate slots (Mon 5pm, Tue/Thu 4:30pm, Wed 6pm), each labeled with which constraint it violates, if any</p>
+<p>Edges:
+- Mentor-to-student edges weighted by shared-interest score (thicker edge = stronger match), click an edge to reveal the matching score and shared tags
+- Dashed lines from each schedule slot to a small "constraints" icon, click to reveal which constraint (mentor availability, venue hours, holiday calendar) that slot satisfies or fails</p>
+<p>Interactive features:
+- Click any mentor or student node to highlight its strongest-scoring match and dim all other edges
+- Click any schedule slot node to reveal its full constraint checklist in a side panel, with failed constraints marked in red and satisfied ones in green
+- Button: "Show Top-Ranked Pairing and Slot" -- highlights the single best mentor-student match and the one fully-satisfying schedule slot simultaneously
+- Zoom with the mouse wheel, pan by dragging the background</p>
+<p>Visual styling: Blue for mentors, green for students, amber for schedule slots; edge thickness maps to match strength</p>
+<p>Legend: Node color key (mentor, student, schedule slot) and edge-thickness meaning</p>
+<p>Implementation: vis-network JavaScript library, bipartite layout with mentors and students in two columns and schedule slots in a row beneath, canvas size 800x480px.</p>
+</details>
+<h2 id="specialized-agents-beyond-club-operations">Specialized Agents Beyond Club Operations<a class="headerlink" href="#specialized-agents-beyond-club-operations" title="Permanent link">¶</a></h2>
+<p>Chapter 32's roster covered a club's day-to-day operations: registration, scheduling, reminders, and coaching. The five agents below handle tasks that come up less often but still eat real hours -- writing a grant, posting to social media, updating a website, translating a flyer, or reading something aloud -- each one a job an AI agent can draft, and a person can finish.</p>
+<h3 id="ai-assisted-grant-writing">AI Assisted Grant Writing<a class="headerlink" href="#ai-assisted-grant-writing" title="Permanent link">¶</a></h3>
+<p><strong>AI assisted grant writing</strong> drafts sections of a grant proposal -- a needs statement, a program description, a budget narrative -- from bullet points a leader supplies about the club's mission and the specific funder's stated priorities, going beyond a generic form letter by pulling language that actually answers what chapter 30's grant-writing guidance said funders look for. The agent drafts persuasive prose from facts; a leader still supplies the facts and checks that every claim in the draft is true.</p>
+<p>A worked example shows the drafting narrowing a real gap: a leader has three bullet points -- "35 students served last year, no-fee model, two under-served zip codes reached" -- and a funder's stated priority of "expanding STEM access in low-income neighborhoods." A grant writing agent turns those bullets into a two-paragraph needs statement that explicitly echoes the funder's own priority language. The leader checks the draft against the club's actual attendance records before submitting, catching that the agent rounded "35" up to "nearly 40" -- a small but real overstatement corrected before it left the building.</p>
+<h3 id="ai-assisted-social-media">AI Assisted Social Media<a class="headerlink" href="#ai-assisted-social-media" title="Permanent link">¶</a></h3>
+<p><strong>AI assisted social media</strong> drafts a post -- caption, hashtags, and a suggested photo description -- for a specific platform and moment, extending the storytelling practice chapter 7 introduced with an agent that can turn a short leader note into a platform-ready draft in seconds rather than the ten minutes writing one from scratch used to take. As with every other drafting agent in this book, the post goes out only after a person reads it, particularly to catch anything that might identify a specific student without a parent's consent.</p>
+<p>A worked example shows the consent check catching something real: a leader asks an agent to draft a celebratory post about a recent robot demonstration, pasting in three photo captions from the event. The agent's draft names one student directly in the caption: "Maya's robot completed the obstacle course first try!" The leader, recalling the club's photo-consent policy, edits the caption to remove the name before posting, since not every family had signed a media-release form for that specific student.</p>
+<h3 id="ai-generated-website-content">AI Generated Website Content<a class="headerlink" href="#ai-generated-website-content" title="Permanent link">¶</a></h3>
+<p><strong>AI generated website content</strong> drafts copy for a club's public pages -- an "About Us" section, a description of what a first visit looks like, an FAQ answer -- pulling from the same walk-in-experience details chapter 5 described, so a family reads roughly the same story on the website that they will experience walking through the door. A leader supplies the real facts about the club; the agent turns them into welcoming, readable web copy.</p>
+<p>A worked example shows the draft matching a real first impression: a leader gives an agent three facts -- inward-facing monitors, a center table with challenge cards on display, and a 3:1 mentor ratio -- and asks for a short "What to Expect" paragraph for the registration page. The agent's draft describes the room accurately and warmly, but calls the ratio "one mentor for every three students" in a way a first-time reader might misread as capacity rather than support; the leader rewords that one sentence before publishing, keeping the rest of the draft as written.</p>
+<p>Three of the five specialized agents above draft outward-facing content; the last two -- translation and voice -- change how that content reaches a family rather than what it says.</p>
+<table>
+<thead>
+<tr>
+<th>Specialized Agent</th>
+<th>What It Drafts</th>
+<th>Who Reviews Before Use</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>AI Assisted Grant Writing</td>
+<td>Grant proposal sections</td>
+<td>Leader checks every factual claim</td>
+</tr>
+<tr>
+<td>AI Assisted Social Media</td>
+<td>Platform-ready posts</td>
+<td>Leader checks for un-consented student identification</td>
+</tr>
+<tr>
+<td>AI Generated Website Content</td>
+<td>Public web page copy</td>
+<td>Leader checks accuracy against the real walk-in experience</td>
+</tr>
+<tr>
+<td>AI Assisted Translation</td>
+<td>First-pass translated materials</td>
+<td>A fluent speaker confirms meaning and tone</td>
+</tr>
+<tr>
+<td>AI Voice Assistant Use</td>
+<td>Spoken read-aloud of existing text</td>
+<td>A person confirms the text being read is current</td>
+</tr>
+</tbody>
+</table>
+<h3 id="ai-assisted-translation">AI Assisted Translation<a class="headerlink" href="#ai-assisted-translation" title="Permanent link">¶</a></h3>
+<p><strong>AI assisted translation</strong> produces a first-pass translation of an existing club document -- the registration form, a flyer, the make-up policy chapter 32's parent chatbot already quotes -- into a family's home language, extending chapter 28's translated materials practice with a much faster starting draft than translating by hand from scratch. A first-pass machine translation is a draft, not a finished document: idiom, tone, and culturally specific phrasing routinely need a fluent human speaker's correction before a family ever sees it.</p>
+<p>A worked example shows exactly why that check matters: a leader asks an agent to translate the club's make-up-session policy into Spanish for a family who requested it. The draft is grammatically correct but translates "make-up session" using a phrase that, to a fluent speaker, reads as referring to cosmetics rather than a rescheduled class. A bilingual mentor catches the mistranslation before the flyer goes home, swapping in the correct idiom -- exactly the kind of error a first-pass AI translation is prone to and a fluent reviewer exists to catch.</p>
+<h3 id="ai-voice-assistant-use">AI Voice Assistant Use<a class="headerlink" href="#ai-voice-assistant-use" title="Permanent link">¶</a></h3>
+<p><strong>AI voice assistant use</strong> is having an agent read existing club text aloud or answer a simple spoken question hands-free -- reading tomorrow's mentor confirmation list out loud while a leader is packing kits with both hands full, or reading a challenge card's steps aloud for a student who reads more easily by listening than by sight. It only reads or answers from text a person already wrote and approved; it does not draft new content on its own.</p>
+<p>A worked example shows the hands-free use case plainly: while loading the car with kits for tomorrow's session, a leader asks a voice assistant to read back the confirmed mentor list for the morning. The assistant reads the exact list from the leader's own calendar, aloud, without needing hands free from carrying boxes -- a small convenience, but one that saves an actual trip back inside to check a phone screen.</p>
+<h4 id="diagram-meet-the-specialized-agent-roster">Diagram: Meet the Specialized Agent Roster<a class="headerlink" href="#diagram-meet-the-specialized-agent-roster" title="Permanent link">¶</a></h4>
+<iframe src="../../sims/specialized-agent-roster/main.html" width="100%" height="500px" scrolling="no"></iframe>
+
+<details>
+<summary>Meet the Specialized Agent Roster</summary>
+<p>Type: graph-model
+<strong>sim-id:</strong> specialized-agent-roster<br>
+<strong>Library:</strong> vis-network<br>
+<strong>Status:</strong> Specified
+<strong>Template:</strong> https://github.com/dmccreary/ai-strategy-for-education/tree/main/docs/sims/ai-concept-hierarchy</p>
+<p>Purpose: Show the five specialized agents as a network around the idea of tasks beyond club operations, so a learner can click any agent type and see the task it handles and who reviews its output.</p>
+<p>Bloom Taxonomy: Understand (L2)
+Bloom Taxonomy Verb: classify</p>
+<p>Learning objective: Given a club task outside day-to-day operations, the learner classifies which of the five specialized agents is the right match for it.</p>
+<p>Node types:
+1. Center node "Specialized Agents" (gray hexagon) -- click reveals "Tasks beyond registration, scheduling, and reminders -- less frequent, but still time-consuming without help."
+2. AI Assisted Grant Writing (blue circle) -- click reveals "Drafts grant proposal sections from bullet-point facts. Reviewed by: the leader, for factual accuracy."
+3. AI Assisted Social Media (green circle) -- click reveals "Drafts a platform-ready post and caption. Reviewed by: the leader, for un-consented student identification."
+4. AI Generated Website Content (amber circle) -- click reveals "Drafts public web page copy. Reviewed by: the leader, for accuracy against the real walk-in experience."
+5. AI Assisted Translation (purple circle) -- click reveals "Produces a first-pass translation of an existing document. Reviewed by: a fluent speaker, for meaning and tone."
+6. AI Voice Assistant Use (teal circle) -- click reveals "Reads existing, already-approved text aloud or answers a simple spoken question. Reviewed by: nobody new -- it only reads what a person already approved."</p>
+<p>Edges: One edge from the center node to each of the five agent-type nodes, unlabeled.</p>
+<p>Interactive features:
+- Hover any node to preview its one-line job description
+- Click any node to highlight it and open a side-panel infobox with its full description and reviewer
+- Zoom with the mouse wheel, pan by dragging the background</p>
+<p>Visual styling: Center node larger and gray; five spoke nodes evenly sized, each a distinct accent color; uniform edge style</p>
+<p>Legend: Node color key matching the five agent types plus the center "umbrella" node</p>
+<p>Implementation: vis-network JavaScript library, hierarchical or force-directed hub layout, canvas size 800x450px.</p>
+</details>
+<h2 id="coding-help-agents-for-students-mentor-supervised">Coding-Help Agents for Students (Mentor-Supervised)<a class="headerlink" href="#coding-help-agents-for-students-mentor-supervised" title="Permanent link">¶</a></h2>
+<p>This book teaches you how to run a club, not how to teach Scratch or Python syntax -- that stays out of scope, as the course description states, and the three agents below don't change that boundary. Each one gives a mentor a supervised assist with the coding-help work a mentor already does; none of them hands a student an unsupervised answer or takes over the teaching itself.</p>
+<h3 id="ai-assisted-debugging-help">AI Assisted Debugging Help<a class="headerlink" href="#ai-assisted-debugging-help" title="Permanent link">¶</a></h3>
+<p><strong>AI assisted debugging help</strong> suggests where a bug is likely hiding in a student's code -- a mismatched indentation, a variable used before it was set -- without fixing the code itself, preserving the debugging skill chapter 14 identified as one of the five core computational thinking abilities. Fixing the bug outright would rob the student of the exact skill the exercise is meant to build; pointing at where to look keeps the student doing the actual debugging.</p>
+<p>A worked example shows the distinction holding: a student's Scratch project isn't making a sprite move, and a mentor asks a debugging help agent what might be wrong. The agent suggests checking whether the "when green flag clicked" block is actually connected to the movement blocks below it -- a specific place to look, not a rewritten script. The mentor relays that suggestion to the student as a question ("what's connected to what, here?") rather than as an answer, and the student finds and reconnects the loose block themselves.</p>
+<h3 id="ai-tutor-for-students">AI Tutor For Students<a class="headerlink" href="#ai-tutor-for-students" title="Permanent link">¶</a></h3>
+<p><strong>An AI tutor for students</strong> walks a student through a series of guided hints toward figuring out an answer themselves, going a step further than the AI chatbot for students chapter 32 introduced, which only answers direct, policy-safe questions and hands off anything else to a mentor. Where that chatbot answers a question, a tutor asks one back -- the same Socratic approach a good mentor already uses when a student asks for the answer outright -- and a mentor stays present to make sure the hinting actually helps rather than frustrates.</p>
+<p>A worked example shows the hinting in action: a student asks why their loop only runs once instead of repeating. Rather than stating the fix, the tutor asks, "what does the block right above your loop tell the program to do before it starts?" -- nudging the student to notice the loop's condition is set to check something that's already false. The student answers their own question after the second hint, with a mentor nearby watching to step in if the hints stop working.</p>
+<div class="admonition mascot-tip">
+<p class="admonition-title">A hint that gives away the answer isn't a hint anymore</p>
+<p><img alt="Circuit giving a tip" class="mascot-admonition-img" src="../../img/mascot/tip.png">
+Here's a quick way to judge any coding-help agent's response before passing it to a student: could the student still get it wrong after reading it? If the answer is obviously no, the "hint" was really just the answer, and the student lost the chance to debug it themselves.</p>
+</div>
+<h3 id="ai-code-review-assistant">AI Code Review Assistant<a class="headerlink" href="#ai-code-review-assistant" title="Permanent link">¶</a></h3>
+<p><strong>An AI code review assistant</strong> gives a first-pass scan of a student's project -- flagging an unused variable, an oddly named function, or a repeated block that could become a loop -- before chapter 15's peer code review begins, so students spend their peer-review time on substantive discussion rather than the same small style nits an agent could catch instantly. It supplements peer code review; it does not replace the practice of one student explaining their thinking to another.</p>
+<p>A worked example shows the supplement working as intended: a student submits a finished project for the club's regular peer code review session. Before the peer pairing starts, a code review assistant flags that a variable named "x" is used for a score counter and suggests a clearer name like "score." The student renames it in thirty seconds, and the peer reviewer's actual session time goes toward discussing whether the game's difficulty curve makes sense -- a richer conversation than either student would have had time for if the review had started with naming nitpicks.</p>
+<h4 id="diagram-where-a-coding-help-request-goes">Diagram: Where a Coding-Help Request Goes<a class="headerlink" href="#diagram-where-a-coding-help-request-goes" title="Permanent link">¶</a></h4>
+<iframe src="../../sims/coding-help-agent-handoff/main.html" width="100%" height="540px" scrolling="no"></iframe>
+
+<details>
+<summary>Where a Coding-Help Request Goes</summary>
+<p>Type: workflow
+<strong>sim-id:</strong> coding-help-agent-handoff<br>
+<strong>Library:</strong> Mermaid<br>
+<strong>Status:</strong> Specified
+<strong>Template:</strong> https://github.com/dmccreary/modeling-healthcare-data/tree/main/docs/sims/explainable-ai-recommendation-workflow</p>
+<p>Purpose: Trace how a student's coding question routes to debugging help, a tutor, or a code review assistant, and show that a mentor stays present at every branch rather than any one agent working with a student unsupervised.</p>
+<p>Bloom Taxonomy: Analyze (L4)
+Bloom Taxonomy Verb: differentiate</p>
+<p>Learning objective: Given a student's coding question, the learner differentiates which of the three coding-help agents applies and identifies the mentor's role in that path.</p>
+<p>Steps (flowchart with a decision diamond):
+1. Start: "Student Has a Coding Question" -- click reveals "Something isn't working, isn't understood, or is ready for a second look."
+2. Decision: "What Kind of Help Is Needed?" -- click reveals "Routes to one of three coding-help agents based on the actual need."
+3a. Branch to "AI Assisted Debugging Help" -- click reveals "Suggests where a bug might be, never fixes the code directly."
+3b. Branch to "AI Tutor For Students" -- click reveals "Asks a guiding question back rather than stating the answer."
+3c. Branch to "AI Code Review Assistant" -- click reveals "Flags style-level issues before a peer code review session begins."
+4. All three branches converge on "Mentor Present and Available" -- click reveals "A mentor stays in the room for all three, ready to step in if the hint, suggestion, or flag isn't landing."
+5. End: "Student Does the Actual Fixing, Answering, or Revising" -- click reveals "The agent points; the student -- not the agent -- does the work that builds the skill."</p>
+<p>Interactivity requirement (satisfied): every node has a Mermaid <code>click</code> directive tied to an infobox showing its revealed text.</p>
+<p>Color coding: Gray for start/end states, purple for the decision diamond, three distinct accent colors for the three coding-help branches, green for the converged mentor-present step.</p>
+<p>Implementation: Mermaid flowchart (<code>graph TD</code>) rendered in main.html with <code>click NodeId call showInfo("NodeId")</code> directives for every node, opening a side-panel infobox.</p>
+</details>
+<h2 id="choosing-ai-tools-responsibly">Choosing AI Tools Responsibly<a class="headerlink" href="#choosing-ai-tools-responsibly" title="Permanent link">¶</a></h2>
+<p>Chapter 32 covered guardrails, oversight, and review for agents already running in a club. This section covers the step before any of that: deciding whether a specific AI tool belongs in your club at all, and watching for the two risks that matter most when the people affected are minors.</p>
+<h3 id="ai-bias-awareness">AI Bias Awareness<a class="headerlink" href="#ai-bias-awareness" title="Permanent link">¶</a></h3>
+<p><strong>AI bias awareness</strong> is understanding that an AI tool can systematically favor or disadvantage certain groups -- not because anyone intended it to, but because the tool learned patterns from data that already contained those patterns. A mentor matching agent, for instance, could learn to pair mentors and students along lines that track race, gender, or home zip code rather than the actual skills and interests it was supposed to match on, simply because its training data happened to correlate those things. Bias awareness means checking a tool's actual output for that kind of pattern, not just trusting that a well-designed tool couldn't produce one.</p>
+<p>A worked example shows exactly the pattern to watch for: a leader reviewing three months of AI-suggested mentor-student pairings notices that every pairing involving a mentor from the local engineering employer's volunteer program went to a student from the same two neighborhoods, even though nothing in the mentors' stated interests pointed that direction. Looking closer, the leader realizes the agent had learned to weight home-neighborhood proximity heavily, most likely because past pairings in its training examples happened to cluster that way -- not because proximity was ever a stated matching criterion. The leader adjusts the matching request to explicitly exclude neighborhood as a factor and re-runs the pairings, producing a noticeably more mixed result.</p>
+<h3 id="ai-data-privacy-risk">AI Data Privacy Risk<a class="headerlink" href="#ai-data-privacy-risk" title="Permanent link">¶</a></h3>
+<p><strong>AI data privacy risk</strong> is the danger that using an AI tool means sending more information about a student than the task actually requires to a system outside the club's control -- a browser extension that logs every keystroke a student types, a "smart" tool that stores a student's full name alongside their coding mistakes indefinitely, or a service whose terms of use allow it to reuse submitted data to train future versions of itself. The risk is not that AI itself is unsafe; it is that a tool can quietly collect far more than the club, or the family, ever agreed to.</p>
+<p>A worked example shows the check that catches this: before adopting a new AI code review assistant, a leader reads its terms of service and finds a clause allowing submitted code to be used for "product improvement" without an opt-out -- meaning a student's project, and any comments the student wrote in it, could be retained and reused indefinitely by the vendor. The leader chooses a different tool with a clear data-retention limit and no reuse clause instead, treating that clause as a disqualifying flag rather than fine print to skip past.</p>
+<div class="admonition mascot-warning">
+<p class="admonition-title">Read what a tool does with data before a single student uses it</p>
+<p><img alt="Circuit warning" class="mascot-admonition-img" src="../../img/mascot/warning.png">
+Watch out for this trap: a tool can be genuinely excellent at the task you want and still be the wrong choice, because of what it does with the data behind the scenes. The fix is simple but non-negotiable -- read the actual data and retention terms before any student's work or information reaches a new AI tool, not after.</p>
+</div>
+<h4 id="diagram-bias-risk-privacy-risk-or-neither">Diagram: Bias Risk, Privacy Risk, or Neither?<a class="headerlink" href="#diagram-bias-risk-privacy-risk-or-neither" title="Permanent link">¶</a></h4>
+<iframe src="../../sims/bias-privacy-risk-sorter/main.html" width="100%" height="520px" scrolling="no"></iframe>
+
+<details>
+<summary>Bias Risk, Privacy Risk, or Neither?</summary>
+<p>Type: microsim
+<strong>sim-id:</strong> bias-privacy-risk-sorter<br>
+<strong>Library:</strong> p5.js<br>
+<strong>Status:</strong> Specified</p>
+<p>Purpose: Give a learner practice classifying realistic club scenarios as a bias risk, a privacy risk, both, or neither, reinforcing the distinction between the two concepts just defined.</p>
+<p>Bloom Taxonomy: Evaluate (L5)
+Bloom Taxonomy Verb: classify</p>
+<p>Learning objective: Given a short scenario describing an AI tool's behavior, the learner classifies it as an AI bias risk, an AI data privacy risk, both, or neither, and justifies the classification.</p>
+<p>Canvas layout:
+- Left (400px): current scenario card with its full text
+- Right (200px): four drop zones labeled "Bias Risk," "Privacy Risk," "Both," "Neither"</p>
+<p>Visual elements:
+- A drag-and-drop scenario card showing one scenario at a time
+- Four labeled drop zones the card can be dragged into</p>
+<p>Scenario set (8 cards, cycling):
+1. "A matching agent pairs mentors and students along neighborhood lines nobody asked it to use." -- Bias Risk
+2. "A code review tool's terms allow it to keep and reuse submitted student code indefinitely." -- Privacy Risk
+3. "A scheduling agent proposes a Tuesday/Thursday slot after checking three mentors' availability." -- Neither
+4. "A tutoring chatbot logs and stores every question a student ever asks, tied to their full name, with no stated deletion policy." -- Privacy Risk
+5. "A challenge-card generator, when asked for 'more advanced' cards, disproportionately suggests them to students with certain last names in its own uncorrected pattern." -- Bias Risk
+6. "A translation tool sends the full text of a family's home address to an external server just to translate a one-line reminder." -- Privacy Risk
+7. "A grant-writing agent drafts a paragraph using only the bullet points a leader typed in, stored nowhere after the session ends." -- Neither
+8. "A mentor-coaching agent's suggestions consistently under-recommend advanced material to students from one specific zip code, and also stores that zip code permanently in an external log." -- Both</p>
+<p>Interactive controls:
+- Drag-and-drop scenario card into one of the four zones
+- Button: "Check Answer" -- reveals whether the placement was correct and a one-sentence justification
+- Button: "Next Scenario" -- cycles to the next card</p>
+<p>Default parameters: Scenario 1 shown first; no zone pre-selected</p>
+<p>Implementation notes: p5.js canvas with mouse-drag interaction for the scenario card and rectangular drop-zone hit-testing; each scenario's correct classification and justification text stored in a lookup array indexed by scenario number.</p>
+</details>
+<h3 id="ai-tool-selection-criteria">AI Tool Selection Criteria<a class="headerlink" href="#ai-tool-selection-criteria" title="Permanent link">¶</a></h3>
+<p><strong>AI tool selection criteria</strong> are the specific questions a club answers before adopting any new AI tool -- not just "does it work," but does it clearly state what happens to submitted data, can its output be explained well enough for a mentor to catch an error, does it support the languages a club's families actually speak, and does its cost fit the budget chapter 30 already built. Written criteria, decided once and applied to every candidate tool, keep a decision from resting on how polished a single demo looked.</p>
+<p>A worked example shows written criteria changing a real decision: a leader is choosing between two challenge-card generation tools. One has a more impressive demo but a vague, one-line privacy statement; the other's demo is plainer but its terms clearly state a thirty-day data deletion policy and no reuse for training. Measured against the club's written criteria, the plainer tool wins, even though it looked less exciting in the fifteen-minute trial both leaders sat through.</p>
+<h3 id="ai-agent-cost-management">AI Agent Cost Management<a class="headerlink" href="#ai-agent-cost-management" title="Permanent link">¶</a></h3>
+<p><strong>AI agent cost management</strong> is tracking what AI tools actually cost a club over a full year -- a subscription fee, a per-message usage charge, or a free tier that later requires payment once a club exceeds a usage limit -- and weighing that ongoing cost against the volunteer hours it saves, the same recurring-versus-one-time cost thinking chapter 30's budgeting already applied to physical kits. An AI tool that saves a leader two hours a month is worth a modest subscription; one that costs more than a club's entire kit budget usually is not, no matter how impressive its output.</p>
+<p>A worked example shows the trade-off made concrete: a club's free-tier AI drafting tool starts charging once usage crosses fifty messages a month, right around the volume a busy month of newsletters, reminders, and challenge cards actually generates. The leader compares the $15-a-month cost against the roughly three hours a month it saves drafting content by hand, decides the trade is worth it, and adds the $180 annual cost as its own line item in next year's budget rather than letting it appear as a surprise mid-year charge.</p>
+<h3 id="ai-agent-vendor-comparison">AI Agent Vendor Comparison<a class="headerlink" href="#ai-agent-vendor-comparison" title="Permanent link">¶</a></h3>
+<p><strong>AI agent vendor comparison</strong> is evaluating multiple tools against the same written selection criteria side by side, rather than adopting the first tool a leader happens to try -- the same disciplined, criteria-first comparison chapter 25 already taught for evaluating any new club software tool, applied specifically to AI agents. A side-by-side comparison also makes a switch easier later, since a club that only ever evaluated one tool has no baseline for judging whether a replacement is actually better.</p>
+<p>A worked example shows the comparison surfacing a real trade-off: comparing three grant-writing tools against the club's criteria, a leader finds one scores highest on cost, a second scores highest on data privacy, and a third scores highest on output quality. No single tool wins on every criterion; the leader picks the data-privacy leader anyway, since the club's written criteria weight that factor most heavily for anything touching family and financial information.</p>
+<h4 id="diagram-comparing-ai-tools-against-selection-criteria">Diagram: Comparing AI Tools Against Selection Criteria<a class="headerlink" href="#diagram-comparing-ai-tools-against-selection-criteria" title="Permanent link">¶</a></h4>
+<iframe src="../../sims/ai-tool-selection-radar/main.html" width="100%" height="520px" scrolling="no"></iframe>
+
+<details>
+<summary>Comparing AI Tools Against Selection Criteria</summary>
+<p>Type: chart
+<strong>sim-id:</strong> ai-tool-selection-radar<br>
+<strong>Library:</strong> Chart.js<br>
+<strong>Status:</strong> Specified
+<strong>Template:</strong> https://github.com/dmccreary/Digital-Transformation-with-AI-Spring-2026/tree/main/docs/sims/ai-strategy-assessment</p>
+<p>Purpose: Let a learner compare three candidate AI vendors across the same selection criteria at once, to practice weighing cost, privacy, output quality, and language support the way AI agent vendor comparison requires.</p>
+<p>Bloom Taxonomy: Evaluate (L5)
+Bloom Taxonomy Verb: justify</p>
+<p>Learning objective: Given a radar comparison of three AI tool vendors scored against four selection criteria, the learner justifies which vendor best fits a stated club priority.</p>
+<p>Chart type: Radar (spider) chart</p>
+<p>Axes (criteria, scored 1-5): Cost Fit, Data Privacy, Output Quality, Language Support</p>
+<p>Data series:
+1. Vendor A (blue): Cost Fit 5, Data Privacy 2, Output Quality 4, Language Support 3
+2. Vendor B (green): Cost Fit 3, Data Privacy 5, Output Quality 3, Language Support 4
+3. Vendor C (amber): Cost Fit 2, Data Privacy 3, Output Quality 5, Language Support 2</p>
+<p>Title: "Three AI Vendors, Four Selection Criteria"
+Legend: Position top-right, one entry per vendor</p>
+<p>Interactive features:
+- Hover any axis point to see the exact score and a one-sentence reason for that score
+- Toggle checkboxes to show or hide individual vendors on the chart
+- Dropdown: "Which criterion matters most to your club?" -- selecting a criterion bolds that axis and re-sorts a small ranked list below the chart showing which vendor wins if that criterion is weighted highest</p>
+<p>Annotation: A callout noting "No vendor wins on every axis -- the right choice depends on which criterion your club weighs most."</p>
+<p>Implementation: Chart.js radar chart with a custom tooltip callback for the per-axis reason text and a small JavaScript re-ranking function tied to the priority dropdown.</p>
+</details>
+<h2 id="rolling-out-a-new-ai-agent">Rolling Out a New AI Agent<a class="headerlink" href="#rolling-out-a-new-ai-agent" title="Permanent link">¶</a></h2>
+<p>Choosing a tool responsibly is only half the job; the five concepts below cover actually bringing a new AI agent into a running club without disrupting the sessions already working well.</p>
+<h3 id="ai-agent-workflow-design">AI Agent Workflow Design<a class="headerlink" href="#ai-agent-workflow-design" title="Permanent link">¶</a></h3>
+<p><strong>AI agent workflow design</strong> is mapping out, before adoption, exactly where a new agent fits into an existing club process -- which step it drafts, who reviews it, and where the human-in-the-loop checkpoint from chapter 32 sits -- rather than dropping a new tool into a session and figuring out the workflow as problems come up. For example, adding an AI code review assistant means deciding it runs before peer code review, not during or after, and writing that placement down so the next mentor who uses it knows exactly when.</p>
+<h3 id="ai-agent-integration-testing">AI Agent Integration Testing<a class="headerlink" href="#ai-agent-integration-testing" title="Permanent link">¶</a></h3>
+<p><strong>AI agent integration testing</strong> is trying a new agent out on real but low-stakes club material before any student or family ever sees its output -- running last month's already-reviewed newsletter draft back through a new drafting tool to compare results, for instance -- so a leader learns a tool's quirks on a task where a mistake costs nothing. Skipping this step means the first real test happens live, in front of a family, which is exactly the situation a club wants to avoid.</p>
+<div class="admonition mascot-encourage">
+<p class="admonition-title">Testing feels slow, but it's what makes the fast part safe</p>
+<p><img alt="Circuit encouraging" class="mascot-admonition-img" src="../../img/mascot/encouraging.png">
+If integration testing feels like a tedious extra step before you get to use your new tool, that feeling is completely normal -- most leaders want to skip straight to the exciting part. Give it one low-stakes trial run first anyway; it's usually the fastest hour you'll spend all month.</p>
+</div>
+<h3 id="ai-agent-rollout-plan">AI Agent Rollout Plan<a class="headerlink" href="#ai-agent-rollout-plan" title="Permanent link">¶</a></h3>
+<p><strong>An AI agent rollout plan</strong> is a short, written schedule for introducing a tested agent gradually -- one mentor trying it for two weeks before the whole club adopts it, for example -- rather than switching every mentor over on the same day. A gradual rollout means a problem the integration test missed surfaces with one mentor's feedback instead of the whole club's, and it stays small and fixable.</p>
+<h3 id="ai-agent-training-for-leaders">AI Agent Training For Leaders<a class="headerlink" href="#ai-agent-training-for-leaders" title="Permanent link">¶</a></h3>
+<p><strong>AI agent training for leaders</strong> is a short, hands-on session teaching every mentor who will use a new agent how to write a good prompt for it, what its guardrails are, and what its known quirks are from integration testing -- the same specificity habit chapter 32's prompt engineering section taught, now passed on deliberately instead of left for each mentor to rediscover alone through trial and error.</p>
+<h3 id="coaching-leaders-with-ai">Coaching Leaders With AI<a class="headerlink" href="#coaching-leaders-with-ai" title="Permanent link">¶</a></h3>
+<p><strong>Coaching leaders with AI</strong> closes the loop the mentor coaching AI agent from chapter 32 started: an agent can also draft suggestions for the club's own leadership -- a founder or a rotating co-leader -- based on aggregated patterns across the club's own retrospective notes chapter 12 already collects, helping a newer leader learn from a predecessor's accumulated experience even after that predecessor has moved on.</p>
+<h4 id="diagram-the-ai-agent-rollout-pipeline">Diagram: The AI Agent Rollout Pipeline<a class="headerlink" href="#diagram-the-ai-agent-rollout-pipeline" title="Permanent link">¶</a></h4>
+<iframe src="../../sims/ai-agent-rollout-pipeline/main.html" width="100%" height="540px" scrolling="no"></iframe>
+
+<details>
+<summary>The AI Agent Rollout Pipeline</summary>
+<p>Type: workflow
+<strong>sim-id:</strong> ai-agent-rollout-pipeline<br>
+<strong>Library:</strong> Mermaid<br>
+<strong>Status:</strong> Specified
+<strong>Template:</strong> https://github.com/dmccreary/ai-persona-testing/tree/main/docs/sims/multi-agent-workflow-composer</p>
+<p>Purpose: Tie workflow design, integration testing, a rollout plan, leader training, and AI-assisted leader coaching into one ordered pipeline, so a learner sees the full sequence a club follows from deciding to adopt a tool to using it club-wide.</p>
+<p>Bloom Taxonomy: Understand (L2)
+Bloom Taxonomy Verb: differentiate</p>
+<p>Learning objective: Given a stage of the rollout pipeline, the learner differentiates it from the stages before and after it and states what would go wrong if that stage were skipped.</p>
+<p>Steps (flowchart, linear with one feedback loop):
+1. Start: "Tool Selected (per Selection Criteria)" -- click reveals "The vendor comparison and selection criteria from earlier in this chapter already happened by this point."
+2. Process: "AI Agent Workflow Design" -- click reveals "Map exactly where the new agent fits into an existing club process and who reviews its output."
+3. Process: "AI Agent Integration Testing" -- click reveals "Try the agent on real but low-stakes material before any family sees its output."
+4. Process: "AI Agent Rollout Plan" -- click reveals "Introduce the tested agent gradually -- one mentor first, not the whole club at once."
+5. Process: "AI Agent Training For Leaders" -- click reveals "Teach every mentor who will use it how to prompt it well and what its guardrails and quirks are."
+6. Process: "Coaching Leaders With AI" -- click reveals "An ongoing agent-assisted coaching layer for the club's own leadership, drawing on retrospective notes over time."
+7. Feedback loop: an arrow from "Coaching Leaders With AI" back to "AI Agent Workflow Design" -- click reveals "Rollout is not one-and-done; a lesson learned during coaching can send a leader back to redesign how the agent fits the workflow."
+8. End: "Agent Fully Adopted Club-Wide" -- click reveals "The point every stage above was building toward -- reached deliberately, not by skipping steps."</p>
+<p>Interactivity requirement (satisfied): every node has a Mermaid <code>click</code> directive tied to an infobox showing its revealed text.</p>
+<p>Color coding: Gray for start/end states, blue for the five sequential process steps, amber dashed line for the feedback loop back to workflow design.</p>
+<p>Implementation: Mermaid flowchart (<code>graph TD</code>) rendered in main.html with <code>click NodeId call showInfo("NodeId")</code> directives for every node, opening a side-panel infobox; the feedback edge drawn with a dashed style and a curved path to distinguish it from the main forward sequence.</p>
+</details>
+<h2 id="chapter-summary">Chapter Summary<a class="headerlink" href="#chapter-summary" title="Permanent link">¶</a></h2>
+<p>This chapter pointed the AI agent chapter 32 introduced at the curriculum itself: a mentor's own observation of a student became the mental model behind a customized lesson or an AI-generated challenge card, mentor matching and scheduling optimization turned chapter 9 and chapter 11's by-hand cross-referencing into a ranked proposal, and five specialized agents took a real bite out of grant writing, social media, website copy, translation, and hands-free reading. Three coding-help agents showed how far AI assistance can go for a student without ever crossing into the syntax tutoring this book leaves to other textbooks -- a mentor stays present at every branch. None of it is safe to adopt casually: AI bias awareness and AI data privacy risk named two specific failure modes worth checking for in any tool, written selection criteria and cost and vendor comparison turned that checking into a repeatable decision, and a five-stage rollout pipeline -- workflow design, integration testing, a gradual rollout plan, leader training, and ongoing AI-assisted coaching -- carried a chosen tool safely from a good idea into daily use.</p>
+<div class="admonition mascot-celebration">
+<p class="admonition-title">You can now customize curriculum with AI and roll out new agents safely</p>
+<p><img alt="Circuit celebrating" class="mascot-admonition-img" src="../../img/mascot/celebration.png">
+You just built a complete picture of how AI can customize a lesson, match a mentor, draft a grant paragraph, and supervise a student's coding help -- and exactly how to choose, test, and roll out a new agent without ever losing sight of the mentor's own judgment. That's a club ready to grow its AI use thoughtfully, one tested step at a time.</p>
+</div>
 
 
 
@@ -1657,7 +3067,12 @@
 
 
 
+  
+  
 
+
+
+  
 
 
 
@@ -1672,7 +3087,7 @@
         
           <button type="button" class="md-top md-icon" data-md-component="top" hidden>
   
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"></path></svg>
   Back to top
 </button>
         
@@ -1682,13 +3097,13 @@
   
     
       
-      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+      <nav class="md-footer__inner md-grid" aria-label="Footer">
         
           
           <a href="../32-ai-agents-registration-scheduling/" class="md-footer__link md-footer__link--prev" aria-label="Previous: 32. AI Agents for Registration, Scheduling, and Communication">
             <div class="md-footer__button md-icon">
               
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
             </div>
             <div class="md-footer__title">
               <span class="md-footer__direction">
@@ -1713,7 +3128,7 @@
             </div>
             <div class="md-footer__button md-icon">
               
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"></path></svg>
             </div>
           </a>
         
@@ -1725,7 +3140,7 @@
       <div class="md-copyright">
   
     <div class="md-copyright__highlight">
-      Copyright &copy; 2026 Dan McCreary. Licensed under <a href="license/">CC BY-NC-SA 4.0</a> for non-commercial use.
+      Copyright © 2026 Dan McCreary. Licensed under <a href="license/">CC BY-NC-SA 4.0</a> for non-commercial use.
     </div>
   
   
@@ -1746,6 +3161,10 @@
     
       <script src="../../assets/javascripts/bundle.83f73b43.min.js"></script>
       
+        <script src="../../js/extra.js"></script>
+      
     
-  </body>
-</html>
+  
+<script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(()=>{ lightbox.reload(); });
+</script></body></html>

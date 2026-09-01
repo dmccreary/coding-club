@@ -1,12 +1,9 @@
-
-<!doctype html>
-<html lang="en" class="no-js">
-  <head>
+<!DOCTYPE html><html lang="en" class="no-js"><head>
     
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="An interactive intelligent textbook on how to create, organize, promote and run a sustainable coding club.">
+        <meta name="description" content="Covers gyroscope, motion, sound, and IoT project kits, including a classroom-noise-friendly sound design, plus the assembly instructions, checklists, and difficulty ratings that get any kit running in a session.">
       
       
         <meta name="author" content="Dan McCreary">
@@ -21,12 +18,12 @@
         <link rel="next" href="../21-kit-inventory-signal-processing/">
       
       
-      <link rel="icon" href="../../assets/images/favicon.png">
+      <link rel="icon" href="../../img/favicon.ico">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.43">
     
     
       
-        <title>20. Sensor, Sound, and IoT Project Kits - Coding Club</title>
+        <title>Sensor, Sound, and IoT Project Kits - Coding Club</title>
       
     
     
@@ -47,7 +44,7 @@
         
         
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback">
         <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
       
     
@@ -59,11 +56,57 @@
     <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
+  
+
+
+  
+  
+
+<script id="__analytics">function __md_analytics(){function e(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],e("js",new Date),e("config","G-JDH8L7VM28"),document.addEventListener("DOMContentLoaded",(function(){document.forms.search&&document.forms.search.query.addEventListener("blur",(function(){this.value&&e("event","search",{search_term:this.value})}));document$.subscribe((function(){var t=document.forms.feedback;if(void 0!==t)for(var a of t.querySelectorAll("[type=submit]"))a.addEventListener("click",(function(a){a.preventDefault();var n=document.location.pathname,d=this.getAttribute("data-md-value");e("event","feedback",{page:n,data:d}),t.firstElementChild.disabled=!0;var r=t.querySelector(".md-feedback__note [data-md-value='"+d+"']");r&&(r.hidden=!1)})),t.hidden=!1})),location$.subscribe((function(t){e("config","G-JDH8L7VM28",{page_path:t.pathname})}))}));var t=document.createElement("script");t.async=!0,t.src="https://www.googletagmanager.com/gtag/js?id=G-JDH8L7VM28",document.getElementById("__analytics").insertAdjacentElement("afterEnd",t)}</script>
+  
+    <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
+  
 
     
     
+      
+        <meta property="og:type" content="website">
+      
+        <meta property="og:title" content="Sensor, Sound, and IoT Project Kits - Coding Club">
+      
+        <meta property="og:description" content="Covers gyroscope, motion, sound, and IoT project kits, including a classroom-noise-friendly sound design, plus the assembly instructions, checklists, and difficulty ratings that get any kit running in a session.">
+      
+        <meta property="og:image" content="https://dmccreary.github.io/coding-club/assets/images/social/chapters/20-sensor-sound-iot-kits/index.png">
+      
+        <meta property="og:image:type" content="image/png">
+      
+        <meta property="og:image:width" content="1200">
+      
+        <meta property="og:image:height" content="630">
+      
+        <meta property="og:url" content="https://dmccreary.github.io/coding-club/chapters/20-sensor-sound-iot-kits/">
+      
+        <meta name="twitter:card" content="summary_large_image">
+      
+        <meta name="twitter:title" content="Sensor, Sound, and IoT Project Kits - Coding Club">
+      
+        <meta name="twitter:description" content="Covers gyroscope, motion, sound, and IoT project kits, including a classroom-noise-friendly sound design, plus the assembly instructions, checklists, and difficulty ratings that get any kit running in a session.">
+      
+        <meta name="twitter:image" content="https://dmccreary.github.io/coding-club/assets/images/social/chapters/20-sensor-sound-iot-kits/index.png">
+      
     
-  </head>
+    
+  <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"><script src="../../assets/javascripts/glightbox.min.js"></script><style id="glightbox-style">
+            html.glightbox-open { overflow: initial; height: 100%; }
+            .gslide-title { margin-top: 0px; user-select: text; }
+            .gslide-desc { color: #666; user-select: text; }
+            .gslide-image img { background: white; }
+            .gscrollbar-fixer { padding-right: 15px; }
+            .gdesc-inner { font-size: 0.75rem; }
+            body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color); }
+            body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color); }
+            body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color); }
+        </style></head>
   
   
     
@@ -98,13 +141,12 @@
   <nav class="md-header__inner md-grid" aria-label="Header">
     <a href="../.." title="Coding Club" class="md-header__button md-logo" aria-label="Coding Club" data-md-component="logo">
       
-  
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+  <img src="../../img/mascot/welcome.png" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
       
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"></path></svg>
     </label>
     <div class="md-header__title" data-md-component="header-title">
       <div class="md-header__ellipsis">
@@ -116,7 +158,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              20. Sensor, Sound, and IoT Project Kits
+              Sensor, Sound, and IoT Project Kits
             
           </span>
         </div>
@@ -130,7 +172,7 @@
     
       <label class="md-header__button md-icon" for="__search">
         
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
       </label>
       <div class="md-search" data-md-component="search" role="dialog">
   <label class="md-search__overlay" for="__search"></label>
@@ -139,20 +181,20 @@
       <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
       <label class="md-search__icon md-icon" for="__search">
         
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
         
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
       </label>
       <nav class="md-search__options" aria-label="Search">
         
           <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
             
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"></path></svg>
           </a>
         
         <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
           
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg>
         </button>
       </nav>
       
@@ -177,7 +219,7 @@
         <a href="https://github.com/dmccreary/coding-club" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"></path></svg>
   </div>
   <div class="md-source__repository">
     GitHub Repo
@@ -201,7 +243,7 @@
           
             
               
-              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
@@ -212,8 +254,7 @@
   <label class="md-nav__title" for="__drawer">
     <a href="../.." title="Coding Club" class="md-nav__button md-logo" aria-label="Coding Club" data-md-component="logo">
       
-  
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+  <img src="../../img/mascot/welcome.png" alt="logo">
 
     </a>
     Coding Club
@@ -223,7 +264,7 @@
       <a href="https://github.com/dmccreary/coding-club" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"></path></svg>
   </div>
   <div class="md-source__repository">
     GitHub Repo
@@ -966,6 +1007,330 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#kits-that-communicate-displays-sensors-and-emotion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Kits That Communicate: Displays, Sensors, and Emotion
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Kits That Communicate: Displays, Sensors, and Emotion">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#robot-emotion-display" class="md-nav__link">
+    <span class="md-ellipsis">
+      Robot Emotion Display
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#display-kit" class="md-nav__link">
+    <span class="md-ellipsis">
+      Display Kit
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sensor-kit" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sensor Kit
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#motion-and-orientation-kits" class="md-nav__link">
+    <span class="md-ellipsis">
+      Motion and Orientation Kits
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Motion and Orientation Kits">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#gyroscope-kit" class="md-nav__link">
+    <span class="md-ellipsis">
+      Gyroscope Kit
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gyroscope-orientation-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      Gyroscope Orientation Data
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Gyroscope Orientation Data">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-gyroscope-orientation-data-explorer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Gyroscope Orientation Data Explorer
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#motion-kit" class="md-nav__link">
+    <span class="md-ellipsis">
+      Motion Kit
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#accelerometer-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      Accelerometer Data
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sound-kits-from-raw-noise-to-a-spectrum" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sound Kits: From Raw Noise to a Spectrum
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Sound Kits: From Raw Noise to a Spectrum">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sound-kit" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sound Kit
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#classroom-noise-challenge" class="md-nav__link">
+    <span class="md-ellipsis">
+      Classroom Noise Challenge
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#microphone-kit" class="md-nav__link">
+    <span class="md-ellipsis">
+      Microphone Kit
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sound-spectrum-kit" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sound Spectrum Kit
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#frequency-spectrum-display" class="md-nav__link">
+    <span class="md-ellipsis">
+      Frequency Spectrum Display
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Frequency Spectrum Display">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-frequency-spectrum-display-explorer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Frequency Spectrum Display Explorer
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#giving-robots-a-voice-and-a-face" class="md-nav__link">
+    <span class="md-ellipsis">
+      Giving Robots a Voice and a Face
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Giving Robots a Voice and a Face">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#robot-sounds-kit" class="md-nav__link">
+    <span class="md-ellipsis">
+      Robot Sounds Kit
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#robot-display-kit" class="md-nav__link">
+    <span class="md-ellipsis">
+      Robot Display Kit
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Robot Display Kit">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-robot-emotion-display-control-panel" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Robot Emotion Display Control Panel
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#iot-kits-for-monitoring-the-world" class="md-nav__link">
+    <span class="md-ellipsis">
+      IoT Kits for Monitoring the World
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="IoT Kits for Monitoring the World">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#iot-project-kit" class="md-nav__link">
+    <span class="md-ellipsis">
+      IoT Project Kit
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#light-temp-humidity-monitor" class="md-nav__link">
+    <span class="md-ellipsis">
+      Light Temp Humidity Monitor
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nightlight-project" class="md-nav__link">
+    <span class="md-ellipsis">
+      NightLight Project
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#getting-any-kit-running" class="md-nav__link">
+    <span class="md-ellipsis">
+      Getting Any Kit Running
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Getting Any Kit Running">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#kit-assembly-instructions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Kit Assembly Instructions
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#kit-component-checklist" class="md-nav__link">
+    <span class="md-ellipsis">
+      Kit Component Checklist
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#kit-difficulty-rating" class="md-nav__link">
+    <span class="md-ellipsis">
+      Kit Difficulty Rating
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chapter-summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      Chapter Summary
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1322,6 +1687,16 @@
       
         
       
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
     
     
     
@@ -1409,6 +1784,91 @@
   
   
   
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../cards/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Challenge Cards
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../faq/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    FAQ
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../glossary/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Glossary
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
     <li class="md-nav__item">
       <a href="../../license/" class="md-nav__link">
         
@@ -1451,7 +1911,7 @@
             
             
               
-              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
@@ -1496,6 +1956,330 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#kits-that-communicate-displays-sensors-and-emotion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Kits That Communicate: Displays, Sensors, and Emotion
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Kits That Communicate: Displays, Sensors, and Emotion">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#robot-emotion-display" class="md-nav__link">
+    <span class="md-ellipsis">
+      Robot Emotion Display
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#display-kit" class="md-nav__link">
+    <span class="md-ellipsis">
+      Display Kit
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sensor-kit" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sensor Kit
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#motion-and-orientation-kits" class="md-nav__link">
+    <span class="md-ellipsis">
+      Motion and Orientation Kits
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Motion and Orientation Kits">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#gyroscope-kit" class="md-nav__link">
+    <span class="md-ellipsis">
+      Gyroscope Kit
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gyroscope-orientation-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      Gyroscope Orientation Data
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Gyroscope Orientation Data">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-gyroscope-orientation-data-explorer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Gyroscope Orientation Data Explorer
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#motion-kit" class="md-nav__link">
+    <span class="md-ellipsis">
+      Motion Kit
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#accelerometer-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      Accelerometer Data
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sound-kits-from-raw-noise-to-a-spectrum" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sound Kits: From Raw Noise to a Spectrum
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Sound Kits: From Raw Noise to a Spectrum">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sound-kit" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sound Kit
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#classroom-noise-challenge" class="md-nav__link">
+    <span class="md-ellipsis">
+      Classroom Noise Challenge
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#microphone-kit" class="md-nav__link">
+    <span class="md-ellipsis">
+      Microphone Kit
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sound-spectrum-kit" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sound Spectrum Kit
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#frequency-spectrum-display" class="md-nav__link">
+    <span class="md-ellipsis">
+      Frequency Spectrum Display
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Frequency Spectrum Display">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-frequency-spectrum-display-explorer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Frequency Spectrum Display Explorer
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#giving-robots-a-voice-and-a-face" class="md-nav__link">
+    <span class="md-ellipsis">
+      Giving Robots a Voice and a Face
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Giving Robots a Voice and a Face">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#robot-sounds-kit" class="md-nav__link">
+    <span class="md-ellipsis">
+      Robot Sounds Kit
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#robot-display-kit" class="md-nav__link">
+    <span class="md-ellipsis">
+      Robot Display Kit
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Robot Display Kit">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-robot-emotion-display-control-panel" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Robot Emotion Display Control Panel
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#iot-kits-for-monitoring-the-world" class="md-nav__link">
+    <span class="md-ellipsis">
+      IoT Kits for Monitoring the World
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="IoT Kits for Monitoring the World">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#iot-project-kit" class="md-nav__link">
+    <span class="md-ellipsis">
+      IoT Project Kit
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#light-temp-humidity-monitor" class="md-nav__link">
+    <span class="md-ellipsis">
+      Light Temp Humidity Monitor
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nightlight-project" class="md-nav__link">
+    <span class="md-ellipsis">
+      NightLight Project
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#getting-any-kit-running" class="md-nav__link">
+    <span class="md-ellipsis">
+      Getting Any Kit Running
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Getting Any Kit Running">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#kit-assembly-instructions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Kit Assembly Instructions
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#kit-component-checklist" class="md-nav__link">
+    <span class="md-ellipsis">
+      Kit Component Checklist
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#kit-difficulty-rating" class="md-nav__link">
+    <span class="md-ellipsis">
+      Kit Difficulty Rating
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chapter-summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      Chapter Summary
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1513,16 +2297,16 @@
   
     <a href="https://github.com/dmccreary/coding-club/blob/main/docs/chapters/20-sensor-sound-iot-kits/index.md" title="Edit this page" class="md-content__button md-icon">
       
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"></path></svg>
     </a>
   
   
 
 
-<h1 id="sensor-sound-and-iot-project-kits">Sensor, Sound, and IoT Project Kits<a class="headerlink" href="#sensor-sound-and-iot-project-kits" title="Permanent link">&para;</a></h1>
-<h2 id="summary">Summary<a class="headerlink" href="#summary" title="Permanent link">&para;</a></h2>
+<h1 id="sensor-sound-and-iot-project-kits">Sensor, Sound, and IoT Project Kits<a class="headerlink" href="#sensor-sound-and-iot-project-kits" title="Permanent link">¶</a></h1>
+<h2 id="summary">Summary<a class="headerlink" href="#summary" title="Permanent link">¶</a></h2>
 <p>This chapter covers a family of specialized project kits: gyroscope and motion kits for orientation data, sound and microphone kits (including a classroom-noise-friendly design), and IoT kits that monitor light, temperature, and humidity. Robot face, sound, and display kits round out the set. You will be able to select and assemble the right sensor or sound kit for a lesson.</p>
-<h2 id="concepts-covered">Concepts Covered<a class="headerlink" href="#concepts-covered" title="Permanent link">&para;</a></h2>
+<h2 id="concepts-covered">Concepts Covered<a class="headerlink" href="#concepts-covered" title="Permanent link">¶</a></h2>
 <p>This chapter covers the following 20 concepts from the learning graph:</p>
 <table>
 <thead>
@@ -1614,14 +2398,330 @@
 </tr>
 </tbody>
 </table>
-<h2 id="prerequisites">Prerequisites<a class="headerlink" href="#prerequisites" title="Permanent link">&para;</a></h2>
+<h2 id="prerequisites">Prerequisites<a class="headerlink" href="#prerequisites" title="Permanent link">¶</a></h2>
 <p>This chapter builds on concepts from:</p>
 <ul>
 <li><a href="../17-sensors-displays-motors/">17. Sensors, Displays, Motors, and Robot Chassis</a></li>
 <li><a href="../19-pico-micropython-moving-rainbow/">19. Raspberry Pi Pico, MicroPython, and the Moving Rainbow Kit</a></li>
 </ul>
-<hr />
-<p>TODO: Generate Chapter Content</p>
+<hr>
+<p>Chapter 19 closed with a robot rolling across a table under its own sensor-driven logic, and a small OLED face bolted on top of it blinking a simple expression. This chapter opens the rest of the kit bin: the gyroscope and motion kits that tell a program which way it is tilted or moving, the sound kits that turn a room's noise into something a Pico can react to or display, the IoT kits that quietly log light, temperature, and humidity over a whole session, and the paperwork — assembly steps, checklists, and difficulty ratings — that turns any one of those boxes of parts into a working station before students sit down. None of these kits teaches a new programming concept the way MicroPython loops or NeoPixel wiring did in Chapter 19; every one of them is really the same Pico, the same wiring habits, and the same sense-and-react pattern, aimed at a new kind of physical input or output.</p>
+<div class="admonition mascot-welcome">
+<p class="admonition-title">A whole bin of kits, one familiar pattern underneath</p>
+<p><img alt="Circuit waving welcome" class="mascot-admonition-img" src="../../img/mascot/welcome.png">
+Let's build something great — this chapter hands you a whole shelf of specialized kits: gyroscopes, microphones, spectrum displays, IoT monitors, and more. By the end, you'll be able to look at any one of them, know exactly what it measures or displays, and pick the right kit, difficulty level, and assembly plan for the students in front of you.</p>
+</div>
+<h2 id="kits-that-communicate-displays-sensors-and-emotion">Kits That Communicate: Displays, Sensors, and Emotion<a class="headerlink" href="#kits-that-communicate-displays-sensors-and-emotion" title="Permanent link">¶</a></h2>
+<h3 id="robot-emotion-display">Robot Emotion Display<a class="headerlink" href="#robot-emotion-display" title="Permanent link">¶</a></h3>
+<p><strong>Robot emotion display</strong> is the design pattern behind Chapter 19's Robot Face Kit, generalized to any kit in this chapter that gives a robot a visible "state": mapping something a program knows internally — an obstacle is close, a sound is loud, a timer just ended — onto a simple facial expression a bystander can read at a glance, without needing to see any code or any sensor number at all. A robot that only blinks an LED when it detects an obstacle is technically communicating, but a robot that switches from a calm, wide-eyed face to a narrow, alert one communicates the same fact in a way a five-year-old sibling in the room immediately understands.</p>
+<p>A worked example shows why this pattern earns its place at the top of this chapter's concept list, ahead of any single kit. A mentor running a session with six different project stations — one gyroscope kit, one sound spectrum kit, one IoT monitor — can teach "map an internal state to a visible expression" exactly once, as a general idea, and every subsequent kit in this chapter becomes an application of it rather than a brand-new lesson: a gyroscope kit's face tips sideways when the board tilts, a sound kit's face looks startled when the room gets loud, and an IoT kit's face looks sleepy when the room is dark. The specific kits later in this chapter — the Robot Sounds Kit and the Robot Display Kit — are simply the hardware that makes a robot emotion display physically possible, one through sound and one through a screen.</p>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Plain Status LED</th>
+<th>Robot Emotion Display</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>What it shows</td>
+<td>On/off, or one color</td>
+<td>A recognizable expression (happy, alert, confused)</td>
+</tr>
+<tr>
+<td>Reader needs to know code?</td>
+<td>Sometimes (what does blue mean?)</td>
+<td>No — a face is self-explanatory</td>
+</tr>
+<tr>
+<td>Number of distinguishable states</td>
+<td>Usually 2-3</td>
+<td>Limited mainly by screen space and imagination</td>
+</tr>
+<tr>
+<td>Typical club use</td>
+<td>Power or error indicator</td>
+<td>Robot Face Kit, Robot Display Kit, sound and IoT kit feedback</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition mascot-thinking">
+<p class="admonition-title">One state, many possible faces — the mapping is the design decision</p>
+<p><img alt="Circuit thinking" class="mascot-admonition-img" src="../../img/mascot/thinking.png">
+Notice that the sensor reading and the expression are two separate things connected by a choice a student makes: nothing about "distance less than 10 centimeters" forces a narrow-eyed face rather than a surprised one. Once a student sees that the mapping itself is the creative part, they start designing expressions on purpose instead of copying whichever face example ran first.</p>
+</div>
+<h3 id="display-kit">Display Kit<a class="headerlink" href="#display-kit" title="Permanent link">¶</a></h3>
+<p><strong>A display kit</strong> bundles a small screen — most often the same OLED module from Chapter 17's Display Basics section — with mounting hardware and a short starter program, sold as a standalone kit rather than pre-attached to any particular robot or sensor. Where a Robot Display Kit later in this chapter pairs a screen specifically with a robot chassis, a plain display kit is the screen and its wiring on their own, ready to attach to whatever project a student is already building.</p>
+<p>A worked example shows the kit doing the simplest job it can do well: a student wires the display kit's four pins — power, ground, and two data pins for the I2C connection Chapter 17 introduced — to a Pico, loads a five-line starter program, and sees the words "Hello, Club!" appear on the screen. From that starting point, swapping the fixed text for a sensor reading — a temperature value, a distance in centimeters, a running count of button presses — is usually the very next thing a mentor demonstrates, since a display kit's whole value is showing a number or word a program already knows, in a form a student doesn't have to guess at from a blinking LED.</p>
+<p>A display kit purchased on its own, without a specific sensor or robot in mind, is club shorthand for "we'll figure out what to show later" — it is the most general-purpose, reusable kit in the entire bin, which is part of why it appears second on this chapter's concept-impact ranking: nearly every other kit in this chapter eventually routes some of its output through one.</p>
+<h3 id="sensor-kit">Sensor Kit<a class="headerlink" href="#sensor-kit" title="Permanent link">¶</a></h3>
+<p><strong>A sensor kit</strong> is the umbrella term for any bundle pairing one or more sensor modules — light, distance, sound, motion, temperature — with the wiring and starter code needed to read a physical quantity from the environment into a running program. Every specific kit named later in this chapter (gyroscope, motion, microphone, sound spectrum, light/temperature/humidity) is a sensor kit; "sensor kit" itself is the category a mentor reaches for when talking about the whole family rather than any one member of it.</p>
+<p>A worked example shows why the category matters for planning, not just vocabulary: a mentor stocking a club's kit bins for the first time buys sensor kits in bulk before deciding which specific sensor goes in which box, because every sensor kit shares the same underlying purchase logic — a breakout board, a handful of jumper wires, and a data sheet — even though a gyroscope kit and a microphone kit measure completely different physical quantities. A new mentor asking "what's the difference between a sensor kit and a display kit?" gets a clean answer once the category is clear: a sensor kit reads the world into the Pico, and a display kit shows what the Pico already knows back out to the world — inputs versus outputs, the same distinction Chapter 16 introduced for a single button and a single LED, now scaled up to whole families of specialized hardware.</p>
+<p>Now that the general category is defined, the rest of this chapter walks through specific sensor kits one family at a time, starting with the ones that report orientation and movement.</p>
+<h2 id="motion-and-orientation-kits">Motion and Orientation Kits<a class="headerlink" href="#motion-and-orientation-kits" title="Permanent link">¶</a></h2>
+<h3 id="gyroscope-kit">Gyroscope Kit<a class="headerlink" href="#gyroscope-kit" title="Permanent link">¶</a></h3>
+<p><strong>A gyroscope kit</strong> pairs a small gyroscope sensor module with a Pico, wiring, and starter code, and is built specifically to answer one question a plain distance sensor cannot: which way is this board currently rotated, and how fast is that rotation changing? A gyroscope module measures angular velocity — how quickly an object is spinning around each of three axes — rather than distance or light level, which makes it the sensor kit of choice for any project where orientation itself, not just presence or absence of an object, is the interesting quantity.</p>
+<p>A worked example shows a gyroscope kit doing exactly the job it is built for: a student wires the kit's four pins (power, ground, and the same I2C data pins used by the display kit above) to a Pico, and a short starter program reads three numbers, once per loop, representing rotation speed around the X, Y, and Z axes. Holding the board flat on a table produces three numbers near zero; tipping it forward briefly produces a spike on one axis that returns to near zero once the tipping motion stops — the sensor reports the rotation itself, not the board's resting angle, which is the detail that most surprises a student expecting a simple tilt reading.</p>
+<h3 id="gyroscope-orientation-data">Gyroscope Orientation Data<a class="headerlink" href="#gyroscope-orientation-data" title="Permanent link">¶</a></h3>
+<p><strong>Gyroscope orientation data</strong> refers to the pitch, roll, and yaw values a program calculates from a gyroscope kit's raw rotation readings — pitch describing a tip forward or backward, roll describing a tip left or right, and yaw describing a spin around the vertical axis, the same three terms a pilot uses to describe an aircraft's attitude in the air. A gyroscope module itself reports how fast each axis is currently rotating; orientation data is what a program gets by continuously adding up those small rotation amounts over time to track the board's current tilt.</p>
+<p>A worked example makes the pitch/roll/yaw distinction concrete rather than abstract: propping one edge of the kit up on a pencil produces a large pitch reading and a roll and yaw reading both near zero, since only one axis is actually tilting; spinning the whole board flat on the table like a record produces a large yaw reading while pitch and roll stay near zero. A student who tilts the board and watches all three numbers on a connected display quickly learns to associate each axis with a specific hand motion, which is exactly the skill the diagram below is built to practice before a student ever wires a physical kit.</p>
+<h4 id="diagram-gyroscope-orientation-data-explorer">Diagram: Gyroscope Orientation Data Explorer<a class="headerlink" href="#diagram-gyroscope-orientation-data-explorer" title="Permanent link">¶</a></h4>
+<iframe src="../../sims/gyroscope-orientation-data-explorer/main.html" width="100%" height="500px" scrolling="no"></iframe>
+
+<p><a class="md-button" href="../../sims/gyroscope-orientation-data-explorer/main.html">Run the Gyroscope Orientation Data Explorer MicroSim fullscreen</a></p>
+<details>
+<summary>Gyroscope Orientation Data Explorer</summary>
+<p>Type: microsim
+<strong>sim-id:</strong> gyroscope-orientation-data-explorer<br>
+<strong>Library:</strong> p5.js<br>
+<strong>Status:</strong> Specified<br>
+<strong>Template:</strong> https://github.com/dmccreary/learning-micropython/tree/main/docs/sims/accelerometer-axes</p>
+<p>Purpose: Let a learner drag a drawn gyroscope-kit board and see the matching pitch, roll, and yaw readout update, before wiring or reading a physical kit.</p>
+<p>Bloom Taxonomy: Understand (L2)
+Bloom Taxonomy Verb: interpret</p>
+<p>Learning objective: Given a tilted or rotated orientation of a gyroscope kit, the learner interprets which of the pitch, roll, and yaw values changes and by how much.</p>
+<p>Visual elements: A simple drawn rectangular board with a marked "front" edge, three axis arrows labeled pitch, roll, and yaw, and three numeric readouts below the drawing.</p>
+<p>Interactive controls: Drag handles on two edges of the board to tip it forward/back and side to side; a rotate handle for yaw; a "Reset to Flat" button.</p>
+<p>Default parameters: Board starts flat, all three readouts at 0 degrees.</p>
+<p>Behavior: Dragging a handle updates the board's drawn tilt and the matching readout in real time; dragging one handle changes only its associated axis reading, reinforcing that the three axes are independent.</p>
+<p>Implementation notes: p5.js canvas with a 3D-look board drawn using simple perspective skewing; drag detection mapped to rotation angles converted directly into the three displayed numbers.</p>
+</details>
+<h3 id="motion-kit">Motion Kit<a class="headerlink" href="#motion-kit" title="Permanent link">¶</a></h3>
+<p><strong>A motion kit</strong> pairs an accelerometer sensor module with a Pico, wiring, and starter code, and answers a related but different question from a gyroscope kit: how is this board's speed currently changing, and which direction is "down" relative to the board right now? An accelerometer measures acceleration — including the constant pull of gravity — rather than rotation speed, which makes a motion kit better suited to detecting shakes, bumps, drops, and steady tilt than a gyroscope kit is.</p>
+<p>A worked example shows a motion kit answering a question a gyroscope kit cannot answer well: a student wires the kit and reads three acceleration values continuously; setting the board flat on a table produces a reading near zero on two axes and a steady reading near one full "g" of gravity on the third, telling the program which way is down even while the board sits perfectly still. A gyroscope kit reading zero on every axis at that same moment would tell a program nothing about which way is down — only that nothing is currently rotating — which is the practical reason clubs stock both kits rather than treating one as a strict upgrade of the other.</p>
+<h3 id="accelerometer-data">Accelerometer Data<a class="headerlink" href="#accelerometer-data" title="Permanent link">¶</a></h3>
+<p><strong>Accelerometer data</strong> is the set of X, Y, and Z acceleration readings a motion kit reports, each one combining any deliberate motion of the board with the constant background pull of gravity, measured in units of "g" where 1g equals the acceleration a resting object feels from gravity alone. Because gravity never turns off, an accelerometer at rest on a table already reports a nonzero reading on whichever axis currently points down — a detail that trips up nearly every student's first program until it is named explicitly.</p>
+<p>A worked example shows how a program turns raw accelerometer data into something useful for a lesson: reading the Z-axis value once a second and comparing it to a fixed 1.5g threshold lets a program detect a sharp shake or bump — the value spikes well above 1g for a fraction of a second and then settles back down — without needing to understand gravity, physics notation, or any calculus at all. A shake-detection program built this way is often a club's first "it reacted to something I did with my hands, not just a button" moment, which is why motion kits pair especially well with a Robot Emotion Display: a shaken robot can show a startled face using exactly this one threshold check.</p>
+<p>Now that both motion-sensing kits have been introduced individually, the table below compares them directly on the choice a mentor actually has to make when picking one for a lesson.</p>
+<table>
+<thead>
+<tr>
+<th>Kit</th>
+<th>Core Sensor</th>
+<th>What It Reports</th>
+<th>Best Suited For</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Gyroscope Kit</td>
+<td>Gyroscope</td>
+<td>Rotation speed → pitch, roll, yaw</td>
+<td>Orientation games, tilt-controlled projects</td>
+</tr>
+<tr>
+<td>Motion Kit</td>
+<td>Accelerometer</td>
+<td>Acceleration on X, Y, Z (includes gravity)</td>
+<td>Shake/bump detection, "which way is down"</td>
+</tr>
+</tbody>
+</table>
+<h2 id="sound-kits-from-raw-noise-to-a-spectrum">Sound Kits: From Raw Noise to a Spectrum<a class="headerlink" href="#sound-kits-from-raw-noise-to-a-spectrum" title="Permanent link">¶</a></h2>
+<h3 id="sound-kit">Sound Kit<a class="headerlink" href="#sound-kit" title="Permanent link">¶</a></h3>
+<p><strong>A sound kit</strong> is the umbrella term for any bundle that captures, processes, or produces audio using a Pico — the sound-family equivalent of the general sensor kit category defined earlier in this chapter. Every specific audio kit covered in this section (the microphone kit and the sound spectrum kit) is a sound kit; the term itself is what a mentor reaches for when discussing the whole audio-project family, including the room-management issue every one of them shares.</p>
+<p>A worked example shows why "sound kit" needs to exist as its own category, separate from the general sensor kit label: a microphone module counts as a sensor by the earlier definition, since it reads a physical quantity — air pressure changes — into the Pico, but sound behaves differently from light, distance, or motion in one specific way that changes how a mentor plans a session around it, covered in the very next section.</p>
+<h3 id="classroom-noise-challenge">Classroom Noise Challenge<a class="headerlink" href="#classroom-noise-challenge" title="Permanent link">¶</a></h3>
+<p><strong>The classroom noise challenge</strong> is the practical problem created by running several microphone-based kits in the same room at once: unlike a distance sensor, which only reacts to whatever object is directly in front of it, a microphone kit at one table picks up sound from every other table's conversation, kit, and mentor explanation happening anywhere nearby, because sound travels through open air rather than staying contained to one workstation.</p>
+<p>A worked example makes this concrete rather than theoretical. A mentor sets six sound kits running simultaneously so each group can see its own display react to sound, expecting each display to respond mainly to noises its own group makes. Within minutes, every display in the room is reacting constantly regardless of which table is actually talking, because the six microphones are all picking up the same general classroom hum, and no single group can tell whether their own sound kit is even working correctly. The fix is scheduling and spacing, not new code: running sound kits one table at a time while the rest of the room stays relatively quiet, or physically spacing microphone stations as far apart as the room allows, restores each kit's ability to demonstrate cause and effect clearly.</p>
+<div class="admonition mascot-tip">
+<p class="admonition-title">Test sound kits one table at a time, not all six at once</p>
+<p><img alt="Circuit giving a tip" class="mascot-admonition-img" src="../../img/mascot/tip.png">
+Here's a shortcut worth planning into the agenda: run sound and microphone kits as a rotating station rather than a simultaneous, room-wide activity. One table demonstrating clearly to a gathered group beats six tables all picking up each other's noise at once.</p>
+</div>
+<h3 id="microphone-kit">Microphone Kit<a class="headerlink" href="#microphone-kit" title="Permanent link">¶</a></h3>
+<p><strong>A microphone kit</strong> pairs a microphone module with a Pico, wiring, and starter code, and reports a single, continuously changing number representing the loudness of whatever sound the microphone currently picks up — nothing about which frequencies make up that sound, only how loud the air pressure changes are moment to moment. This is the simplest sound kit in the bin, and it is the one most other sound projects, including the sound spectrum kit below, build on top of.</p>
+<p>A worked example shows the kit at its most basic: a student wires the microphone kit to a Pico and watches a raw loudness number climb sharply the instant someone claps nearby, then decay back toward a quiet baseline over the next second or two. A simple threshold check — "if the loudness number exceeds 500, do something" — turns that raw number into a clap-triggered event, the exact same threshold-and-react pattern the Motion Kit section used for shake detection, now applied to sound instead of acceleration.</p>
+<h3 id="sound-spectrum-kit">Sound Spectrum Kit<a class="headerlink" href="#sound-spectrum-kit" title="Permanent link">¶</a></h3>
+<p><strong>A sound spectrum kit</strong> extends a microphone kit with additional processing that breaks a captured sound into separate frequency bands — roughly, how much of the sound is low-pitched bass versus high-pitched treble — rather than reporting a single overall loudness number the way a plain microphone kit does. Where a microphone kit answers "how loud is it right now," a sound spectrum kit answers the more detailed question "which pitches make up that sound right now."</p>
+<p>A worked example shows the practical difference a student can hear and see at the same time: humming a low note into a sound spectrum kit lights up bars on the left side of its display, representing low-frequency bands, while whistling a high note lights up bars toward the right side, representing high-frequency bands — a plain microphone kit would report a similarly large loudness number for both sounds and show no difference between them at all. This book does not teach the signal-processing math that turns a raw audio signal into those frequency bands — that is exactly the specialized territory of the companion Signal Processing on a $5 MicroController textbook — but a mentor running a club still needs to recognize what the resulting display means well enough to explain it to a curious student.</p>
+<h3 id="frequency-spectrum-display">Frequency Spectrum Display<a class="headerlink" href="#frequency-spectrum-display" title="Permanent link">¶</a></h3>
+<p><strong>A frequency spectrum display</strong> is the visual output of a sound spectrum kit: a row of bars, each one representing a fixed band of frequencies, with each bar's height showing how much sound energy currently falls in that band. Reading the display is a matter of position and height together — a bar's left-to-right position tells a viewer which pitch range it represents, and its height tells a viewer how strongly that pitch range is currently present in the sound the microphone is picking up.</p>
+<p>A worked example ties the display directly back to the previous section's humming-versus-whistling comparison: on a spectrum display with bars ordered from low frequency on the left to high frequency on the right, a low hum produces one or two tall bars near the left edge with the rest of the display mostly flat, while a high whistle produces a tall bar (or two) near the right edge instead — the same physical sound difference a listener's ear already picks up on, now made visible as a shape rather than left as an unlabeled number. A room full of general background chatter, by contrast, tends to light up bars across most of the display at once, rather than concentrating energy in one narrow band — a pattern worth a mentor pointing out explicitly when explaining why the classroom noise challenge above affects a spectrum kit even more visibly than it affects a plain microphone kit.</p>
+<h4 id="diagram-frequency-spectrum-display-explorer">Diagram: Frequency Spectrum Display Explorer<a class="headerlink" href="#diagram-frequency-spectrum-display-explorer" title="Permanent link">¶</a></h4>
+<iframe src="../../sims/frequency-spectrum-display-explorer/main.html" width="100%" height="500px" scrolling="no"></iframe>
+
+<p><a class="md-button" href="../../sims/frequency-spectrum-display-explorer/main.html">Run the Frequency Spectrum Display Explorer MicroSim fullscreen</a></p>
+<details>
+<summary>Frequency Spectrum Display Explorer</summary>
+<p>Type: chart
+<strong>sim-id:</strong> frequency-spectrum-display-explorer<br>
+<strong>Library:</strong> p5.js<br>
+<strong>Status:</strong> Specified<br>
+<strong>Template:</strong> https://github.com/dmccreary/fft-benchmarking/tree/main/docs/sims/live-spectrum-display-bin-averaging</p>
+<p>Purpose: Let a learner select a sound type (low hum, high whistle, or general chatter) and see the resulting bar pattern on a simplified frequency spectrum display, before reading one from a physical sound spectrum kit.</p>
+<p>Bloom Taxonomy: Understand (L2)
+Bloom Taxonomy Verb: interpret</p>
+<p>Learning objective: Given a frequency spectrum display showing a bar pattern, the learner interprets which sound type (a low hum, a high whistle, or general chatter) most likely produced it.</p>
+<p>Visual elements: A row of 12 vertical bars labeled low-to-high left to right; a dropdown or button set to pick a sample sound type; a caption describing the currently shown sound.</p>
+<p>Interactive controls: Buttons for "Low Hum," "High Whistle," and "Room Chatter"; hovering any bar shows its approximate frequency band and current height as a tooltip.</p>
+<p>Default parameters: Starts with all bars at a low, flat baseline height, no sound selected.</p>
+<p>Behavior: Clicking a sound-type button animates the bars into that sound's representative pattern (concentrated left, concentrated right, or spread across most bars) and updates the caption; hovering a bar always shows its band label and value regardless of which pattern is active.</p>
+<p>Implementation notes: p5.js canvas with a fixed array of 12 rectangle objects; three preset height arrays swapped in on button click with a short easing animation between states.</p>
+</details>
+<p>Now that every sound kit has been introduced individually, the table below compares the three sound-family kits directly.</p>
+<table>
+<thead>
+<tr>
+<th>Kit</th>
+<th>Core Component</th>
+<th>What It Reports</th>
+<th>Classroom Noise Sensitivity</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Microphone Kit</td>
+<td>Microphone</td>
+<td>One loudness number</td>
+<td>High — reacts to any nearby sound</td>
+</tr>
+<tr>
+<td>Sound Spectrum Kit</td>
+<td>Microphone + frequency processing</td>
+<td>A bar per frequency band</td>
+<td>High — same room-noise issue, more visibly</td>
+</tr>
+<tr>
+<td>Robot Sounds Kit</td>
+<td>Speaker or buzzer</td>
+<td>Plays tones or sounds (output, not input)</td>
+<td>None — it produces sound rather than capturing it</td>
+</tr>
+</tbody>
+</table>
+<h2 id="giving-robots-a-voice-and-a-face">Giving Robots a Voice and a Face<a class="headerlink" href="#giving-robots-a-voice-and-a-face" title="Permanent link">¶</a></h2>
+<h3 id="robot-sounds-kit">Robot Sounds Kit<a class="headerlink" href="#robot-sounds-kit" title="Permanent link">¶</a></h3>
+<p><strong>A robot sounds kit</strong> pairs a small speaker or piezo buzzer with a Pico and a robot chassis, and plays back short tones or sound effects tied to specific events in a robot's code — the audio equivalent of the Robot Emotion Display pattern introduced earlier in this chapter, using sound instead of a facial expression to signal a robot's internal state. Unlike the microphone and sound spectrum kits above, a robot sounds kit is entirely an output device: it produces sound rather than capturing it, which is exactly why the noise-sensitivity comparison in the table above marks it as unaffected by the classroom noise challenge.</p>
+<p>A worked example shows the kit doing its simplest and most common job: a robot's autonomous obstacle-avoidance code from Chapter 19 already checks a distance sensor and reverses when an obstacle is close; adding a robot sounds kit means adding one line that plays a short beep the instant that same distance check triggers, giving a bystander an audible cue exactly when the robot is reacting, without that person needing to be looking at the robot at all. A slightly more advanced version plays a rising three-note chime on a successful maneuver and a low buzz on a stall, turning the robot's internal state into a small, recognizable sound vocabulary the same way an emotion display turns state into a recognizable face.</p>
+<h3 id="robot-display-kit">Robot Display Kit<a class="headerlink" href="#robot-display-kit" title="Permanent link">¶</a></h3>
+<p><strong>A robot display kit</strong> pairs a display kit — the general OLED bundle defined earlier in this chapter — specifically with a robot chassis and mounting hardware, making it the concrete piece of hardware that turns the general robot emotion display pattern into something a student can actually build and mount. Where "robot emotion display" describes the idea of mapping state to a visible expression, a robot display kit is the physical screen, bracket, and wiring that makes showing that expression on a moving robot possible in the first place.</p>
+<p>A worked example ties every earlier concept in this section together into one finished project: a robot's code continuously reads its distance sensor, exactly as it did in Chapter 19's autonomous behavior section, and now drives two outputs from that same one reading — a robot display kit shows a calm, wide-eyed face while the path ahead is clear, switches to a narrow, alert-looking face the instant an obstacle is detected within range, and a robot sounds kit plays a short beep at that same instant. Nothing about the sensor code changes between having one output and having three; only the number of things reacting to the same reading changes, which is the exact idea the diagram below lets a learner operate directly before wiring a physical kit.</p>
+<h4 id="diagram-robot-emotion-display-control-panel">Diagram: Robot Emotion Display Control Panel<a class="headerlink" href="#diagram-robot-emotion-display-control-panel" title="Permanent link">¶</a></h4>
+<iframe src="../../sims/robot-emotion-display-control-panel/main.html" width="100%" height="560px" scrolling="no"></iframe>
+
+<p><a class="md-button" href="../../sims/robot-emotion-display-control-panel/main.html">Run the Robot Emotion Display Control Panel MicroSim fullscreen</a></p>
+<details>
+<summary>Robot Emotion Display Control Panel</summary>
+<p>Type: microsim
+<strong>sim-id:</strong> robot-emotion-display-control-panel<br>
+<strong>Library:</strong> p5.js<br>
+<strong>Status:</strong> Specified<br>
+<strong>Template:</strong> https://github.com/dmccreary/robot-faces/tree/main/docs/sims/expression-menu-live-simulator</p>
+<p>Purpose: Let a learner operate a simulated distance-sensor slider and buzzer toggle to see how one sensor reading can drive both a robot display kit's face and a robot sounds kit's beep at the same time.</p>
+<p>Bloom Taxonomy: Apply (L3)
+Bloom Taxonomy Verb: demonstrate</p>
+<p>Learning objective: Given a simulated distance reading, the learner demonstrates how a single sensor value can drive both a robot display kit's expression and a robot sounds kit's audio cue simultaneously.</p>
+<p>Visual elements: A drawn robot face on an OLED-style panel; a speaker icon that visibly pulses when "sound" plays; a slider labeled "Distance to Obstacle (cm)."</p>
+<p>Interactive controls: The distance slider (0-50 cm); a threshold marker on the slider showing the 10 cm trigger point; a mute toggle for the speaker icon.</p>
+<p>Default parameters: Slider starts at 50 cm (clear path), calm face shown, speaker silent.</p>
+<p>Behavior: Dragging the slider below the 10 cm threshold switches the face to an alert expression and pulses the speaker icon once; dragging back above the threshold returns the face to calm; the mute toggle disables only the speaker pulse, leaving the face logic unaffected.</p>
+<p>Implementation notes: p5.js canvas with two simple face states (calm, alert) drawn from parameterized eye/mouth shapes; threshold comparison against the slider's current value on every frame.</p>
+</details>
+<div class="admonition mascot-encourage">
+<p class="admonition-title">Combining kits feels harder than it is — the sensor code never changes</p>
+<p><img alt="Circuit encouraging" class="mascot-admonition-img" src="../../img/mascot/encouraging.png">
+If wiring a display kit and a sounds kit onto the same robot feels like doubling the difficulty, that's a normal first reaction — but it isn't true here. The distance-reading code you already trust stays exactly the same; you're only adding a second and third thing that reacts to it.</p>
+</div>
+<h2 id="iot-kits-for-monitoring-the-world">IoT Kits for Monitoring the World<a class="headerlink" href="#iot-kits-for-monitoring-the-world" title="Permanent link">¶</a></h2>
+<h3 id="iot-project-kit">IoT Project Kit<a class="headerlink" href="#iot-project-kit" title="Permanent link">¶</a></h3>
+<p><strong>An IoT project kit</strong> ("Internet of Things") bundles one or more environmental sensors with a Pico and, in this book's projects, keeps its readings local to the device rather than requiring a network connection — the club-friendly version of a category more often associated with sensors that report to a cloud service. An IoT project kit's defining trait is what it measures, not where the data ends up: conditions in a room over time, rather than a single momentary reading a student checks once and moves on from.</p>
+<p>A worked example shows why IoT project kits behave differently in a session from every other kit in this chapter: a gyroscope or motion kit's reading is interesting the instant a student tilts or shakes it, but a light, temperature, or humidity reading barely changes over a five-minute demonstration, so an IoT project kit's real payoff usually shows up only after it has been left running for an hour, a class period, or an overnight stretch, logging a value every few minutes rather than reacting to something the moment it happens.</p>
+<h3 id="light-temp-humidity-monitor">Light Temp Humidity Monitor<a class="headerlink" href="#light-temp-humidity-monitor" title="Permanent link">¶</a></h3>
+<p><strong>A light, temperature, and humidity monitor</strong> is the most common IoT project kit built for this book's clubs, combining a photoresistor for ambient light, a temperature sensor, and a humidity sensor into one small board that a program can read together on a shared schedule, typically once every minute or few minutes rather than continuously.</p>
+<p>A worked example walks through a full session's use of the kit: a student sets the monitor on a windowsill at the start of a two-hour club meeting, and a short program appends one line — timestamp, light level, temperature, and humidity — to a simple list every sixty seconds. By the end of the session, that list has grown to roughly 120 rows, and displaying it as a simple line chart afterward shows the light level climbing as the afternoon sun moves onto that side of the building, while temperature and humidity stay comparatively flat — a clear, visual result from a kit that produced nothing dramatic to look at moment to moment, only a pattern once enough readings accumulated.</p>
+<h3 id="nightlight-project">NightLight Project<a class="headerlink" href="#nightlight-project" title="Permanent link">¶</a></h3>
+<p><strong>The NightLight project</strong> applies a light, temperature, and humidity monitor's photoresistor reading to a single practical output: automatically switching on an LED, or a short strip of NeoPixels from Chapter 19, once the ambient light level drops below a chosen threshold, and switching it back off once light returns above that same threshold.</p>
+<p>A worked example shows the entire project as one threshold check layered on top of a reading a student has already seen: reading the monitor's light-level value once a second and comparing it against a threshold of, say, 200 out of a possible 1000 turns on an LED the moment a room goes dark and turns it back off the moment a light switch flips on again — the identical threshold-and-react pattern the Motion Kit section used for shake detection and the Microphone Kit section used for clap detection, now applied to light instead of acceleration or sound. A student who has already built a shake-detecting or clap-detecting program typically needs only a few minutes to adapt it into a working NightLight, which is worth a mentor pointing out directly: threshold checks are one pattern reused across nearly every sensor kit in this book, not a separate skill per kit.</p>
+<div class="admonition mascot-thinking">
+<p class="admonition-title">Every threshold project in this chapter is the same three-step idea</p>
+<p><img alt="Circuit thinking" class="mascot-admonition-img" src="../../img/mascot/thinking.png">
+Notice the pattern repeating across this whole chapter: read a number, compare it to a fixed threshold, react. A gyroscope, a microphone, and a light sensor all plug into that exact same three-step shape — once a student has built one threshold project, they have effectively built the skeleton for all of them.</p>
+</div>
+<h2 id="getting-any-kit-running">Getting Any Kit Running<a class="headerlink" href="#getting-any-kit-running" title="Permanent link">¶</a></h2>
+<h3 id="kit-assembly-instructions">Kit Assembly Instructions<a class="headerlink" href="#kit-assembly-instructions" title="Permanent link">¶</a></h3>
+<p><strong>Kit assembly instructions</strong> are the ordered, written steps that accompany every kit in the club's bins, specifying which wires connect to which pins, in what order, and what a correctly wired kit should do the moment it is powered on — the same role Chapter 19's Robot Kit Assembly sequence played for the robot kit, generalized here to every sensor, sound, and IoT kit this chapter has covered.</p>
+<p>A worked example shows why generic, kit-independent instructions fail in practice: a gyroscope kit and a motion kit share the same four-pin I2C wiring pattern used by the display kit earlier in this chapter, but a written instruction sheet that only says "connect the data pins" leaves a student unable to tell which of the module's several pins is which without a labeled diagram specific to that exact board. Good kit assembly instructions name the physical pin labels printed on the module itself — SDA, SCL, VCC, GND — rather than only abstract role names, since a student matching a printed label to a printed label makes far fewer mistakes than a student trying to infer which unlabeled pin plays which electrical role.</p>
+<h3 id="kit-component-checklist">Kit Component Checklist<a class="headerlink" href="#kit-component-checklist" title="Permanent link">¶</a></h3>
+<p><strong>A kit component checklist</strong> is the itemized list of every part a specific kit should contain, used before and after a session to confirm nothing is missing or has migrated into the wrong bin — the same discipline a mentor already applies informally when blink-testing a Moving Rainbow kit in Chapter 19, made explicit and written down for kits with more small, easily separated parts.</p>
+<p>A worked example shows the checklist catching a problem before it becomes a session-time crisis: a mentor opens a sound spectrum kit bin the morning of a session and checks it against a printed list — Pico, microphone module, four jumper wires, small breadboard, USB cable — and discovers only three jumper wires present, one having ended up in a different kit's bin during the previous week's cleanup. Discovering that gap during a five-minute morning check costs nothing; discovering it after a student has already wired three of the four needed connections and is waiting on a mentor to find a fourth wire costs real session time and a student's patience.</p>
+<h3 id="kit-difficulty-rating">Kit Difficulty Rating<a class="headerlink" href="#kit-difficulty-rating" title="Permanent link">¶</a></h3>
+<p><strong>A kit difficulty rating</strong> is a simple label — commonly beginner, intermediate, or advanced — assigned to each kit in the bin based on how many wiring connections it needs, how much code a working project requires, and how easily a small mistake produces a confusing, hard-to-diagnose result rather than an obvious one. A gyroscope kit that reports three separate axis numbers a student must interpret together rates higher than a microphone kit that reports one obvious loudness value, even though both wire up in a similar number of steps.</p>
+<p>A worked example shows a difficulty rating changing a real scheduling decision: a mentor planning a club's very first session for three brand-new students chooses microphone kits, rated beginner, over sound spectrum kits, rated intermediate, specifically because a beginner student's first successful project should confirm one clear cause and effect — clap, number jumps — rather than asking that same student to also interpret a twelve-bar frequency display on day one. The sound spectrum kit is not a worse kit; it is simply the wrong kit for a first session, which is exactly the judgment a difficulty rating exists to support.</p>
+<div class="admonition mascot-tip">
+<p class="admonition-title">Match difficulty rating to session number, not to the loudest student request</p>
+<p><img alt="Circuit giving a tip" class="mascot-admonition-img" src="../../img/mascot/tip.png">
+Here's a shortcut for planning: save advanced-rated kits — sound spectrum, gyroscope orientation projects — for a club's third or fourth session, once beginner-rated kits have built confidence, even when an eager student asks for the fancier kit on day one.</p>
+</div>
+<p>Now that assembly, checklists, and difficulty ratings have all been defined, the table below gathers every kit family from this chapter into one reference a mentor can scan before planning a session.</p>
+<table>
+<thead>
+<tr>
+<th>Kit</th>
+<th>Sensor/Component Type</th>
+<th>Typical Difficulty Rating</th>
+<th>Classroom Noise Level</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Display Kit</td>
+<td>OLED screen (output only)</td>
+<td>Beginner</td>
+<td>Silent</td>
+</tr>
+<tr>
+<td>Gyroscope Kit</td>
+<td>Gyroscope</td>
+<td>Intermediate</td>
+<td>Silent</td>
+</tr>
+<tr>
+<td>Motion Kit</td>
+<td>Accelerometer</td>
+<td>Beginner</td>
+<td>Silent</td>
+</tr>
+<tr>
+<td>Microphone Kit</td>
+<td>Microphone</td>
+<td>Beginner</td>
+<td>High (picks up whole room)</td>
+</tr>
+<tr>
+<td>Sound Spectrum Kit</td>
+<td>Microphone + frequency processing</td>
+<td>Advanced</td>
+<td>High (picks up whole room)</td>
+</tr>
+<tr>
+<td>Robot Sounds Kit</td>
+<td>Speaker/buzzer (output only)</td>
+<td>Beginner</td>
+<td>Low (adds sound, doesn't capture it)</td>
+</tr>
+<tr>
+<td>Robot Display Kit</td>
+<td>OLED + robot chassis (output only)</td>
+<td>Intermediate</td>
+<td>Silent</td>
+</tr>
+<tr>
+<td>IoT Project Kit (light/temp/humidity)</td>
+<td>Photoresistor + temperature + humidity</td>
+<td>Beginner</td>
+<td>Silent</td>
+</tr>
+</tbody>
+</table>
+<h2 id="chapter-summary">Chapter Summary<a class="headerlink" href="#chapter-summary" title="Permanent link">¶</a></h2>
+<p>This chapter filled out the rest of the club's kit bin: gyroscope and motion kits for orientation and movement, a family of sound kits that runs from a single loudness number up to a full frequency spectrum display, IoT kits that quietly log light, temperature, and humidity over a whole session, and the robot sounds and display kits that turn any of those readings into a face or a chime a bystander can read without touching a keyboard. Underneath nearly every kit sits the same read-compare-react pattern this book has used since Chapter 16, and every kit now comes with the assembly instructions, component checklist, and difficulty rating that keep a mentor from discovering a missing wire or an over-ambitious lesson plan in front of a room full of waiting students.</p>
+<div class="admonition mascot-celebration">
+<p class="admonition-title">You can now match any sensor, sound, or IoT kit to the right lesson</p>
+<p><img alt="Circuit celebrating" class="mascot-admonition-img" src="../../img/mascot/celebration.png">
+You just worked through an entire shelf of specialized kits — gyroscope, motion, sound, spectrum, and IoT — and you know how to read a difficulty rating, run a component checklist, and pick the right kit for the session in front of you. That's a mentor's real toolkit, not just a student's.</p>
+</div>
 
 
 
@@ -1629,7 +2729,12 @@
 
 
 
+  
+  
 
+
+
+  
 
 
 
@@ -1644,7 +2749,7 @@
         
           <button type="button" class="md-top md-icon" data-md-component="top" hidden>
   
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"></path></svg>
   Back to top
 </button>
         
@@ -1654,13 +2759,13 @@
   
     
       
-      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+      <nav class="md-footer__inner md-grid" aria-label="Footer">
         
           
           <a href="../19-pico-micropython-moving-rainbow/" class="md-footer__link md-footer__link--prev" aria-label="Previous: 19. Raspberry Pi Pico, MicroPython, and the Moving Rainbow Kit">
             <div class="md-footer__button md-icon">
               
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
             </div>
             <div class="md-footer__title">
               <span class="md-footer__direction">
@@ -1685,7 +2790,7 @@
             </div>
             <div class="md-footer__button md-icon">
               
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"></path></svg>
             </div>
           </a>
         
@@ -1697,7 +2802,7 @@
       <div class="md-copyright">
   
     <div class="md-copyright__highlight">
-      Copyright &copy; 2026 Dan McCreary. Licensed under <a href="license/">CC BY-NC-SA 4.0</a> for non-commercial use.
+      Copyright © 2026 Dan McCreary. Licensed under <a href="license/">CC BY-NC-SA 4.0</a> for non-commercial use.
     </div>
   
   
@@ -1718,6 +2823,10 @@
     
       <script src="../../assets/javascripts/bundle.83f73b43.min.js"></script>
       
+        <script src="../../js/extra.js"></script>
+      
     
-  </body>
-</html>
+  
+<script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(()=>{ lightbox.reload(); });
+</script></body></html>

@@ -1,0 +1,15 @@
+{
+  "sim_id": "survey-sentiment-dashboard",
+  "diagram_name": "Survey Themes and Sentiment Dashboard",
+  "chapter_number": 32,
+  "chapter_title": "AI Agents for Registration, Scheduling, and Communication",
+  "chapter_dir": "32-ai-agents-registration-scheduling",
+  "chapter_rel_dir": "chapters/32-ai-agents-registration-scheduling",
+  "library": "Chart.js",
+  "bloom_level": "Analyze (L4)",
+  "bloom_verb": "examine",
+  "learning_objective": "Given a themed, sentiment-scored summary of survey responses, the learner examines it to identify which theme most needs the club's attention.",
+  "completion_status": "specified",
+  "extracted_date": "2026-09-01",
+  "specification": "Type: chart\n**sim-id:** survey-sentiment-dashboard<br/>\n**Library:** Chart.js<br/>\n**Status:** Specified\n**Template:** https://github.com/dmccreary/ir-textbook/tree/main/docs/sims/sentiment-scoring-engine\n\nPurpose: Let a learner examine how AI survey analysis groups free-text responses into themes while AI sentiment analysis scores each theme's emotional tone, to see how the two tools together reveal a pattern a single average rating would hide.\n\nBloom Taxonomy: Analyze (L4)\nBloom Taxonomy Verb: examine\n\nLearning objective: Given a themed, sentiment-scored summary of survey responses, the learner examines it to identify which theme most needs the club's attention.\n\nChart type: Horizontal bar chart with a color-coded sentiment overlay\n\nX-axis: Number of responses mentioning the theme\nY-axis (categories): Start Time Concerns, Mentor Praise, Request for Advanced Cards\n\nData series:\n1. Response Count (bar length): Start Time Concerns: 11, Mentor Praise: 6, Request for Advanced Cards: 4\n2. Sentiment Color (bar fill color, not a separate axis): Start Time Concerns: red (negative), Mentor Praise: green (positive), Request for Advanced Cards: blue (neutral)\n\nTitle: \"What Families Said -- Themes and Sentiment\"\nLegend: Color key mapping red/green/blue to negative/positive/neutral sentiment\n\nInteractive features:\n- Hover any bar to see the exact response count, the sentiment label, and one anonymized sample phrase from that theme\n- Click a bar to open a detail panel listing all sample phrases grouped under that theme, still with no names attached\n- Toggle button: \"Sort by Response Count\" / \"Sort by Sentiment Severity\" -- re-orders the bars\n\nAnnotation: A callout on the Start Time Concerns bar reading \"Highest volume and most negative tone -- the pattern the numeric 4.2/5 average alone did not show.\"\n\nImplementation: Chart.js horizontal bar chart with per-bar background color mapped to sentiment category and a custom tooltip callback showing the sample phrase."
+}

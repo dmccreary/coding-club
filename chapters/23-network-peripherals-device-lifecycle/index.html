@@ -1,12 +1,9 @@
-
-<!doctype html>
-<html lang="en" class="no-js">
-  <head>
+<!DOCTYPE html><html lang="en" class="no-js"><head>
     
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="An interactive intelligent textbook on how to create, organize, promote and run a sustainable coding club.">
+        <meta name="description" content="Covers club network capacity planning and firewall basics, software and app governance, browser bookmark organization, offline and backup resilience, the full device lifecycle from donation through refurbishment to retirement, peripheral and storage management, and closing operational checklists.">
       
       
         <meta name="author" content="Dan McCreary">
@@ -21,12 +18,12 @@
         <link rel="next" href="../24-student-data-and-communication/">
       
       
-      <link rel="icon" href="../../assets/images/favicon.png">
+      <link rel="icon" href="../../img/favicon.ico">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.43">
     
     
       
-        <title>23. Network, Peripherals, and the Device Lifecycle - Coding Club</title>
+        <title>Network, Peripherals, and the Device Lifecycle - Coding Club</title>
       
     
     
@@ -47,7 +44,7 @@
         
         
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback">
         <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
       
     
@@ -59,11 +56,57 @@
     <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
+  
+
+
+  
+  
+
+<script id="__analytics">function __md_analytics(){function e(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],e("js",new Date),e("config","G-JDH8L7VM28"),document.addEventListener("DOMContentLoaded",(function(){document.forms.search&&document.forms.search.query.addEventListener("blur",(function(){this.value&&e("event","search",{search_term:this.value})}));document$.subscribe((function(){var t=document.forms.feedback;if(void 0!==t)for(var a of t.querySelectorAll("[type=submit]"))a.addEventListener("click",(function(a){a.preventDefault();var n=document.location.pathname,d=this.getAttribute("data-md-value");e("event","feedback",{page:n,data:d}),t.firstElementChild.disabled=!0;var r=t.querySelector(".md-feedback__note [data-md-value='"+d+"']");r&&(r.hidden=!1)})),t.hidden=!1})),location$.subscribe((function(t){e("config","G-JDH8L7VM28",{page_path:t.pathname})}))}));var t=document.createElement("script");t.async=!0,t.src="https://www.googletagmanager.com/gtag/js?id=G-JDH8L7VM28",document.getElementById("__analytics").insertAdjacentElement("afterEnd",t)}</script>
+  
+    <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
+  
 
     
     
+      
+        <meta property="og:type" content="website">
+      
+        <meta property="og:title" content="Network, Peripherals, and the Device Lifecycle - Coding Club">
+      
+        <meta property="og:description" content="Covers club network capacity planning and firewall basics, software and app governance, browser bookmark organization, offline and backup resilience, the full device lifecycle from donation through refurbishment to retirement, peripheral and storage management, and closing operational checklists.">
+      
+        <meta property="og:image" content="https://dmccreary.github.io/coding-club/assets/images/social/chapters/23-network-peripherals-device-lifecycle/index.png">
+      
+        <meta property="og:image:type" content="image/png">
+      
+        <meta property="og:image:width" content="1200">
+      
+        <meta property="og:image:height" content="630">
+      
+        <meta property="og:url" content="https://dmccreary.github.io/coding-club/chapters/23-network-peripherals-device-lifecycle/">
+      
+        <meta name="twitter:card" content="summary_large_image">
+      
+        <meta name="twitter:title" content="Network, Peripherals, and the Device Lifecycle - Coding Club">
+      
+        <meta name="twitter:description" content="Covers club network capacity planning and firewall basics, software and app governance, browser bookmark organization, offline and backup resilience, the full device lifecycle from donation through refurbishment to retirement, peripheral and storage management, and closing operational checklists.">
+      
+        <meta name="twitter:image" content="https://dmccreary.github.io/coding-club/assets/images/social/chapters/23-network-peripherals-device-lifecycle/index.png">
+      
     
-  </head>
+    
+  <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"><script src="../../assets/javascripts/glightbox.min.js"></script><style id="glightbox-style">
+            html.glightbox-open { overflow: initial; height: 100%; }
+            .gslide-title { margin-top: 0px; user-select: text; }
+            .gslide-desc { color: #666; user-select: text; }
+            .gslide-image img { background: white; }
+            .gscrollbar-fixer { padding-right: 15px; }
+            .gdesc-inner { font-size: 0.75rem; }
+            body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color); }
+            body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color); }
+            body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color); }
+        </style></head>
   
   
     
@@ -98,13 +141,12 @@
   <nav class="md-header__inner md-grid" aria-label="Header">
     <a href="../.." title="Coding Club" class="md-header__button md-logo" aria-label="Coding Club" data-md-component="logo">
       
-  
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+  <img src="../../img/mascot/welcome.png" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
       
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"></path></svg>
     </label>
     <div class="md-header__title" data-md-component="header-title">
       <div class="md-header__ellipsis">
@@ -116,7 +158,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              23. Network, Peripherals, and the Device Lifecycle
+              Network, Peripherals, and the Device Lifecycle
             
           </span>
         </div>
@@ -130,7 +172,7 @@
     
       <label class="md-header__button md-icon" for="__search">
         
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
       </label>
       <div class="md-search" data-md-component="search" role="dialog">
   <label class="md-search__overlay" for="__search"></label>
@@ -139,20 +181,20 @@
       <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
       <label class="md-search__icon md-icon" for="__search">
         
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
         
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
       </label>
       <nav class="md-search__options" aria-label="Search">
         
           <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
             
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"></path></svg>
           </a>
         
         <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
           
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg>
         </button>
       </nav>
       
@@ -177,7 +219,7 @@
         <a href="https://github.com/dmccreary/coding-club" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"></path></svg>
   </div>
   <div class="md-source__repository">
     GitHub Repo
@@ -201,7 +243,7 @@
           
             
               
-              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
@@ -212,8 +254,7 @@
   <label class="md-nav__title" for="__drawer">
     <a href="../.." title="Coding Club" class="md-nav__button md-logo" aria-label="Coding Club" data-md-component="logo">
       
-  
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+  <img src="../../img/mascot/welcome.png" alt="logo">
 
     </a>
     Coding Club
@@ -223,7 +264,7 @@
       <a href="https://github.com/dmccreary/coding-club" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"></path></svg>
   </div>
   <div class="md-source__repository">
     GitHub Repo
@@ -1029,6 +1070,312 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#building-a-network-that-can-handle-the-whole-room" class="md-nav__link">
+    <span class="md-ellipsis">
+      Building a Network That Can Handle the Whole Room
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Building a Network That Can Handle the Whole Room">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#network-bandwidth-planning" class="md-nav__link">
+    <span class="md-ellipsis">
+      Network Bandwidth Planning
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#firewall-basics-for-clubs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Firewall Basics For Clubs
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#keeping-club-software-current-and-controlled" class="md-nav__link">
+    <span class="md-ellipsis">
+      Keeping Club Software Current and Controlled
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Keeping Club Software Current and Controlled">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#device-software-updates" class="md-nav__link">
+    <span class="md-ellipsis">
+      Device Software Updates
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#app-installation-policy" class="md-nav__link">
+    <span class="md-ellipsis">
+      App Installation Policy
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#organizing-bookmarks-so-every-student-can-find-their-work" class="md-nav__link">
+    <span class="md-ellipsis">
+      Organizing Bookmarks So Every Student Can Find Their Work
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Organizing Bookmarks So Every Student Can Find Their Work">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#browser-bookmark-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      Browser Bookmark Management
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#class-bookmark-folder" class="md-nav__link">
+    <span class="md-ellipsis">
+      Class Bookmark Folder
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#student-bookmark-folder" class="md-nav__link">
+    <span class="md-ellipsis">
+      Student Bookmark Folder
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Student Bookmark Folder">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-bookmark-folder-structure" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Bookmark Folder Structure
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#planning-for-when-things-go-wrong" class="md-nav__link">
+    <span class="md-ellipsis">
+      Planning for When Things Go Wrong
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Planning for When Things Go Wrong">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#offline-mode-preparation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Offline Mode Preparation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#backup-device-plan" class="md-nav__link">
+    <span class="md-ellipsis">
+      Backup Device Plan
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-full-device-lifecycle-donation-refurbishment-and-retirement" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Full Device Lifecycle: Donation, Refurbishment, and Retirement
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The Full Device Lifecycle: Donation, Refurbishment, and Retirement">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#device-donation-program" class="md-nav__link">
+    <span class="md-ellipsis">
+      Device Donation Program
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#refurbished-device-sourcing" class="md-nav__link">
+    <span class="md-ellipsis">
+      Refurbished Device Sourcing
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#device-end-of-life-plan" class="md-nav__link">
+    <span class="md-ellipsis">
+      Device End Of Life Plan
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Device End Of Life Plan">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-device-end-of-life-decision-workflow" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Device End-of-Life Decision Workflow
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#managing-peripherals-and-everyday-storage" class="md-nav__link">
+    <span class="md-ellipsis">
+      Managing Peripherals and Everyday Storage
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Managing Peripherals and Everyday Storage">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#peripheral-device-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      Peripheral Device Management
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#headphone-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      Headphone Management
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mouse-and-keyboard-setup" class="md-nav__link">
+    <span class="md-ellipsis">
+      Mouse And Keyboard Setup
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#external-storage-device" class="md-nav__link">
+    <span class="md-ellipsis">
+      External Storage Device
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cloud-storage-for-devices" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cloud Storage For Devices
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Cloud Storage For Devices">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-peripheral-and-storage-management-layers" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Peripheral and Storage Management Layers
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#closing-operational-checklists" class="md-nav__link">
+    <span class="md-ellipsis">
+      Closing Operational Checklists
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chapter-summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      Chapter Summary
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1322,6 +1669,16 @@
       
         
       
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
     
     
     
@@ -1409,6 +1766,91 @@
   
   
   
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../cards/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Challenge Cards
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../faq/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    FAQ
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../glossary/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Glossary
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
     <li class="md-nav__item">
       <a href="../../license/" class="md-nav__link">
         
@@ -1451,7 +1893,7 @@
             
             
               
-              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
@@ -1496,6 +1938,312 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#building-a-network-that-can-handle-the-whole-room" class="md-nav__link">
+    <span class="md-ellipsis">
+      Building a Network That Can Handle the Whole Room
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Building a Network That Can Handle the Whole Room">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#network-bandwidth-planning" class="md-nav__link">
+    <span class="md-ellipsis">
+      Network Bandwidth Planning
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#firewall-basics-for-clubs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Firewall Basics For Clubs
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#keeping-club-software-current-and-controlled" class="md-nav__link">
+    <span class="md-ellipsis">
+      Keeping Club Software Current and Controlled
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Keeping Club Software Current and Controlled">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#device-software-updates" class="md-nav__link">
+    <span class="md-ellipsis">
+      Device Software Updates
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#app-installation-policy" class="md-nav__link">
+    <span class="md-ellipsis">
+      App Installation Policy
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#organizing-bookmarks-so-every-student-can-find-their-work" class="md-nav__link">
+    <span class="md-ellipsis">
+      Organizing Bookmarks So Every Student Can Find Their Work
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Organizing Bookmarks So Every Student Can Find Their Work">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#browser-bookmark-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      Browser Bookmark Management
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#class-bookmark-folder" class="md-nav__link">
+    <span class="md-ellipsis">
+      Class Bookmark Folder
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#student-bookmark-folder" class="md-nav__link">
+    <span class="md-ellipsis">
+      Student Bookmark Folder
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Student Bookmark Folder">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-bookmark-folder-structure" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Bookmark Folder Structure
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#planning-for-when-things-go-wrong" class="md-nav__link">
+    <span class="md-ellipsis">
+      Planning for When Things Go Wrong
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Planning for When Things Go Wrong">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#offline-mode-preparation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Offline Mode Preparation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#backup-device-plan" class="md-nav__link">
+    <span class="md-ellipsis">
+      Backup Device Plan
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-full-device-lifecycle-donation-refurbishment-and-retirement" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Full Device Lifecycle: Donation, Refurbishment, and Retirement
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The Full Device Lifecycle: Donation, Refurbishment, and Retirement">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#device-donation-program" class="md-nav__link">
+    <span class="md-ellipsis">
+      Device Donation Program
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#refurbished-device-sourcing" class="md-nav__link">
+    <span class="md-ellipsis">
+      Refurbished Device Sourcing
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#device-end-of-life-plan" class="md-nav__link">
+    <span class="md-ellipsis">
+      Device End Of Life Plan
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Device End Of Life Plan">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-device-end-of-life-decision-workflow" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Device End-of-Life Decision Workflow
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#managing-peripherals-and-everyday-storage" class="md-nav__link">
+    <span class="md-ellipsis">
+      Managing Peripherals and Everyday Storage
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Managing Peripherals and Everyday Storage">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#peripheral-device-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      Peripheral Device Management
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#headphone-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      Headphone Management
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mouse-and-keyboard-setup" class="md-nav__link">
+    <span class="md-ellipsis">
+      Mouse And Keyboard Setup
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#external-storage-device" class="md-nav__link">
+    <span class="md-ellipsis">
+      External Storage Device
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cloud-storage-for-devices" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cloud Storage For Devices
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Cloud Storage For Devices">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-peripheral-and-storage-management-layers" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Peripheral and Storage Management Layers
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#closing-operational-checklists" class="md-nav__link">
+    <span class="md-ellipsis">
+      Closing Operational Checklists
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chapter-summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      Chapter Summary
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1513,16 +2261,16 @@
   
     <a href="https://github.com/dmccreary/coding-club/blob/main/docs/chapters/23-network-peripherals-device-lifecycle/index.md" title="Edit this page" class="md-content__button md-icon">
       
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"></path></svg>
     </a>
   
   
 
 
-<h1 id="network-peripherals-and-the-device-lifecycle">Network, Peripherals, and the Device Lifecycle<a class="headerlink" href="#network-peripherals-and-the-device-lifecycle" title="Permanent link">&para;</a></h1>
-<h2 id="summary">Summary<a class="headerlink" href="#summary" title="Permanent link">&para;</a></h2>
+<h1 id="network-peripherals-and-the-device-lifecycle">Network, Peripherals, and the Device Lifecycle<a class="headerlink" href="#network-peripherals-and-the-device-lifecycle" title="Permanent link">¶</a></h1>
+<h2 id="summary">Summary<a class="headerlink" href="#summary" title="Permanent link">¶</a></h2>
 <p>This chapter covers the club's network setup -- Wi-Fi, guest access, and bandwidth planning -- along with managing bookmarks, headphones, and other peripherals. It closes with the full device lifecycle, from donation and refurbishment through end-of-life retirement. You will be able to set up a club network and manage devices through their full lifecycle.</p>
-<h2 id="concepts-covered">Concepts Covered<a class="headerlink" href="#concepts-covered" title="Permanent link">&para;</a></h2>
+<h2 id="concepts-covered">Concepts Covered<a class="headerlink" href="#concepts-covered" title="Permanent link">¶</a></h2>
 <p>This chapter covers the following 22 concepts from the learning graph:</p>
 <table>
 <thead>
@@ -1622,13 +2370,257 @@
 </tr>
 </tbody>
 </table>
-<h2 id="prerequisites">Prerequisites<a class="headerlink" href="#prerequisites" title="Permanent link">&para;</a></h2>
+<h2 id="prerequisites">Prerequisites<a class="headerlink" href="#prerequisites" title="Permanent link">¶</a></h2>
 <p>This chapter builds on concepts from:</p>
 <ul>
 <li><a href="../22-purchasing-configuring-devices/">22. Purchasing and Configuring Club Devices</a></li>
 </ul>
-<hr />
-<p>TODO: Generate Chapter Content</p>
+<hr>
+<p>Chapter 22 got every laptop purchased, configured, labeled, and connected to the club's own Wi-Fi network. This chapter continues from exactly that point: whether the network can actually carry a full room at once, how student browsers stay organized instead of cluttered, what a session does when the internet itself disappears, and what happens to a laptop at the far end of its life -- donated onward, sourced refurbished, or responsibly retired. It closes with the everyday accessories that plug into every laptop this book has already covered, and the compact operational checklists that keep the whole system running without depending on any one person's memory.</p>
+<div class="admonition mascot-welcome">
+<p class="admonition-title">The network, the accessories, and the long life of a laptop</p>
+<p><img alt="Circuit waving welcome" class="mascot-admonition-img" src="../../img/mascot/welcome.png">
+Let's build something great -- a connected, current, well-cared-for fleet is what turns Chapter 22's pile of configured laptops into a club that runs smoothly week after week. By the end of this chapter, you'll be able to size your club's network for a full room, keep bookmarks and backups organized, and carry a device all the way from donation to retirement without losing track of it.</p>
+</div>
+<h2 id="building-a-network-that-can-handle-the-whole-room">Building a Network That Can Handle the Whole Room<a class="headerlink" href="#building-a-network-that-can-handle-the-whole-room" title="Permanent link">¶</a></h2>
+<p>Chapter 22's Wi-Fi network setup worked example ended with a warning: a network that handles three test laptops smoothly can slow to a crawl the first night all eighteen club laptops try to update at once. The next two concepts turn that warning into an actual plan.</p>
+<h3 id="network-bandwidth-planning">Network Bandwidth Planning<a class="headerlink" href="#network-bandwidth-planning" title="Permanent link">¶</a></h3>
+<p><strong>Network bandwidth planning</strong> is estimating, in advance, how much total data a club's internet connection must carry at the busiest moment of a session -- every managed laptop browsing, streaming a tutorial video, or pulling a software update at the same time -- so the connection is sized for that peak instead of for the quiet moment when only a few devices were tested. A connection sized for five test laptops checking email is a very different number than one sized for eighteen laptops downloading the same operating-system update simultaneously, and only the second number matters once real sessions begin.</p>
+<p>The comparison is a lot like sizing a water pipe for a building: a pipe that comfortably supplies one bathroom will sputter the moment every fixture in a twenty-unit building runs at once, even though it worked fine during the single-fixture test. A worked example shows the arithmetic a club leader can actually run: light web browsing needs roughly 1-2 Mbps per device, but a shared video tutorial playing on every laptop at once needs closer to 5 Mbps per device. A club with eighteen laptops doing light browsing needs only about 25 Mbps of bandwidth, but the same eighteen laptops all streaming a video tutorial together need closer to 90 Mbps -- a gap wide enough to turn a smooth session into a buffering one if nobody planned for it.</p>
+<p>Here is a quick reference a club leader can use when comparing internet plans against a session's actual activities:</p>
+<table>
+<thead>
+<tr>
+<th>Activity</th>
+<th>Approximate Bandwidth per Device</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Light web browsing or text editing</td>
+<td>1-2 Mbps</td>
+</tr>
+<tr>
+<td>Streaming a shared video tutorial</td>
+<td>5 Mbps</td>
+</tr>
+<tr>
+<td>Downloading a large software update</td>
+<td>10-20 Mbps (briefly)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="firewall-basics-for-clubs">Firewall Basics For Clubs<a class="headerlink" href="#firewall-basics-for-clubs" title="Permanent link">¶</a></h3>
+<p><strong>Firewall basics for clubs</strong> cover a simple, default-deny rule for the club's network: block all outbound and inbound traffic except the specific destinations a club's software actually needs -- the platform's update servers, the coding tools' websites, and the club's own management console -- rather than trying to individually block every distracting or unsafe site the way content filtering software does. Where Chapter 22's content filtering software blocks specific website categories, a firewall works one level lower, deciding which network connections are allowed to exist at all, which is why the two are complementary rather than substitutes for one another.</p>
+<p>A worked example shows the default-deny approach catching something content filtering alone would miss: a club initially leaves all outbound network ports open, and a student discovers a game that tunnels its traffic through an unusual port to slip past the category-based content filter. Switching the firewall to default-deny -- blocking every port except the handful the club's own software actually uses -- closes that path immediately, without needing to identify and add every possible game site to a block list by hand.</p>
+<div class="admonition mascot-tip">
+<p class="admonition-title">Default deny, then add exceptions one at a time</p>
+<p><img alt="Circuit giving a tip" class="mascot-admonition-img" src="../../img/mascot/tip.png">
+Here's a shortcut: start a new club firewall by blocking everything, then turn on only the specific connections your actual software breaks without -- the coding platform, the update servers, the management console. It's slower on day one, but it means nothing gets through by accident later.</p>
+</div>
+<h2 id="keeping-club-software-current-and-controlled">Keeping Club Software Current and Controlled<a class="headerlink" href="#keeping-club-software-current-and-controlled" title="Permanent link">¶</a></h2>
+<p>With the network itself sized and secured, the next question is what is allowed to run on top of it -- and how it stays current without interrupting a live session.</p>
+<h3 id="device-software-updates">Device Software Updates<a class="headerlink" href="#device-software-updates" title="Permanent link">¶</a></h3>
+<p><strong>Device software updates</strong> are the operating-system and application patches a laptop needs on an ongoing basis after Chapter 22's initial configuration step, scheduled deliberately -- overnight, in the charging cart, on the club's own network -- rather than left to install themselves in the middle of a session. An update that starts downloading while a student is mid-project can freeze the machine, restart it, or eat exactly the bandwidth Network Bandwidth Planning just accounted for at the worst possible moment.</p>
+<p>A worked example shows the scheduling working as intended: a club sets every laptop's update window to 2:00 a.m., while it sits charging overnight in Chapter 22's charging cart, connected to the club's own Wi-Fi rather than a student's home network. By the time students arrive for the next session, every laptop is already current, and no update notification interrupts a single minute of class time.</p>
+<h3 id="app-installation-policy">App Installation Policy<a class="headerlink" href="#app-installation-policy" title="Permanent link">¶</a></h3>
+<p><strong>An app installation policy</strong> is the club's written rule for who may install new software or browser extensions on a managed laptop, and how a new request gets approved before it happens -- extending Chapter 22's parental control software, which blocks unapproved installs technically, with the human process of deciding what belongs on the approved list in the first place. A technical block without a written approval process just tells a student "no" with no path to "yes, once we've checked it."</p>
+<p>A worked example shows the process in action: a student asks to install a browser extension needed for an upcoming robotics kit's firmware tool. Rather than a flat refusal, the mentor checks the request against the club's approval criteria -- the tool's publisher, its permissions, and whether other clubs report using it safely -- approves it, and adds it to the approved list so the next mentor who gets the same request doesn't have to research it from scratch.</p>
+<p>A typical approval pass, run once per new request, checks:</p>
+<ol>
+<li>Does the software come from a known, reputable publisher?</li>
+<li>Does it request only the permissions it actually needs to function?</li>
+<li>Has the club, or a related club in this book's network, used it safely before?</li>
+<li>Is it added to the approved list once cleared, so the check never has to repeat?</li>
+</ol>
+<h2 id="organizing-bookmarks-so-every-student-can-find-their-work">Organizing Bookmarks So Every Student Can Find Their Work<a class="headerlink" href="#organizing-bookmarks-so-every-student-can-find-their-work" title="Permanent link">¶</a></h2>
+<p>A club laptop's browser accumulates links fast -- the coding platform, the club's learning graph, a robot kit's documentation, a student's own in-progress project -- and without a deliberate structure, that accumulation turns into clutter within a few sessions.</p>
+<h3 id="browser-bookmark-management">Browser Bookmark Management<a class="headerlink" href="#browser-bookmark-management" title="Permanent link">¶</a></h3>
+<p><strong>Browser bookmark management</strong> is the practice of keeping every club laptop's set of saved website links consistent, curated, and organized into folders, rather than letting each browser accumulate its own random, growing list of one-off links over time. Consistency matters here for the same reason Chapter 22's imaging process matters for software: a student who sits down at any laptop in the fleet should find the same bookmarks in the same place, not a different, half-organized set on every machine.</p>
+<p>A worked example shows what happens without it: a club that never establishes a bookmark structure ends up with eighteen laptops each carrying a different, sprawling list a previous student happened to save, several pointing to dead or outdated project links. Establishing one consistent structure -- the two folder types described next -- turns that sprawl back into something a new student can navigate on their first day.</p>
+<h3 id="class-bookmark-folder">Class Bookmark Folder<a class="headerlink" href="#class-bookmark-folder" title="Permanent link">¶</a></h3>
+<p><strong>A class bookmark folder</strong> is a single, shared bookmark folder -- identical across every laptop in the fleet -- holding the links every student in the club needs: the coding platform, the club's glossary, and whatever project documentation the current unit requires. Because it lives inside Chapter 22's Chromebook management console (or an equivalent push for Windows and macOS fleets), a mentor updates the folder once and it propagates to every laptop, rather than requiring eighteen separate manual edits.</p>
+<p>A worked example shows that propagation saving real time: partway through a unit, a mentor needs to add a link to a new robot kit's documentation site. Pushing the updated class bookmark folder through the management console takes effect on all eighteen laptops within minutes -- the same centralized pattern Chapter 22 used to block a distracting website across an entire Chromebook fleet in one step.</p>
+<h3 id="student-bookmark-folder">Student Bookmark Folder<a class="headerlink" href="#student-bookmark-folder" title="Permanent link">¶</a></h3>
+<p><strong>A student bookmark folder</strong> is a personal folder inside a student's own bookmark bar, separate from the shared class folder, where that student saves links specific to their own in-progress project -- distinct from the class folder because it belongs to one student rather than the whole club. This only works reliably on an individual device account from Chapter 22, since a shared device account's bookmarks reset along with everything else once the next student logs in.</p>
+<p>A worked example shows the two folders working side by side without conflict: a student bookmarks the specific GitHub page for their in-progress Scratch remix in their own student folder, while the shared class folder above it still points to the general Scratch editor every student uses. When the mentor updates the class folder mid-unit, the student's personal bookmark is untouched, because the two folders are structurally separate rather than one long shared list.</p>
+<iframe src="../../sims/bookmark-folder-structure/main.html" width="100%" height="500px" scrolling="no"></iframe>
+
+<h4 id="diagram-bookmark-folder-structure">Diagram: Bookmark Folder Structure<a class="headerlink" href="#diagram-bookmark-folder-structure" title="Permanent link">¶</a></h4>
+<details>
+<summary>Bookmark Folder Structure</summary>
+<p>Type: diagram
+<strong>sim-id:</strong> bookmark-folder-structure<br>
+<strong>Library:</strong> Mermaid<br>
+<strong>Status:</strong> Specified</p>
+<p>Purpose: Show how a club laptop's bookmark bar splits into a shared class folder and a student's own personal folder, so a mentor or student can see exactly where a new bookmark belongs.</p>
+<p>Bloom Taxonomy: Understand (L2)
+Bloom Taxonomy Verb: classify</p>
+<p>Learning objective: Given a new bookmark a student wants to save, the learner classifies whether it belongs in the shared class folder, a personal student folder, or the browser's general bookmark bar.</p>
+<p>Steps (tree diagram, top to bottom):
+1. Root: "Browser Bookmark Bar" -- click reveals the Browser Bookmark Management definition above.
+2. Branch: "Class Bookmark Folder" -- click reveals the Class Bookmark Folder definition above.
+3a. Leaf under Class Bookmark Folder: "Coding Platform Link" -- click reveals "A link every student needs, such as the club's coding platform, belongs in the shared class folder so a mentor's one update reaches every laptop."
+3b. Leaf under Class Bookmark Folder: "Club Glossary Link" -- click reveals "Reference material used by the whole club, like the glossary, is shared through the class folder rather than duplicated in each student's personal space."
+4. Branch: "Student Bookmark Folder" -- click reveals the Student Bookmark Folder definition above.
+5a. Leaf under Student Bookmark Folder: "My In-Progress Project" -- click reveals "A link specific to one student's own work belongs in that student's personal folder, where it survives independent of what the class folder changes to."</p>
+<p>Interactivity requirement (satisfied): every node has a Mermaid <code>click</code> directive tied to an infobox showing its revealed text, matching the definition already given in this chapter's prose.</p>
+<p>Color coding: Gray for the root bookmark bar, blue for the class folder and its shared leaves, green for the student folder and its personal leaf.</p>
+<p>Implementation: Mermaid flowchart (<code>graph TD</code>) rendered in main.html with <code>click NodeId call showInfo("NodeId")</code> directives for every node, opening a side-panel infobox; a "Reset View" button re-centers the diagram after any zoom or pan.</p>
+</details>
+<h2 id="planning-for-when-things-go-wrong">Planning for When Things Go Wrong<a class="headerlink" href="#planning-for-when-things-go-wrong" title="Permanent link">¶</a></h2>
+<p>Every plan so far has assumed the network stays up and every laptop keeps working. The next two concepts cover what a club does the moment either assumption fails.</p>
+<h3 id="offline-mode-preparation">Offline Mode Preparation<a class="headerlink" href="#offline-mode-preparation" title="Permanent link">¶</a></h3>
+<p><strong>Offline mode preparation</strong> is installing and testing the offline-capable version of a club's coding tools -- a desktop app instead of a browser tab, a downloaded copy of a lesson instead of a live web page -- before a session, so that a Wi-Fi outage interrupts nothing a student is actively doing. This is a preparation step, done in advance during Chapter 22's configuration pass, not something a mentor can improvise once the network is already down mid-session.</p>
+<div class="admonition mascot-warning">
+<p class="admonition-title">A network outage without an offline fallback stops the session cold</p>
+<p><img alt="Circuit warning" class="mascot-admonition-img" src="../../img/mascot/warning.png">
+Watch out for this common trap: a club that runs entirely through browser-based tools has no fallback the moment Wi-Fi drops, and a live session simply stops. The fix is installing an offline-capable desktop version of the main coding tool ahead of time, during setup, so a dropped connection becomes a minor inconvenience instead of an ended session.</p>
+</div>
+<p>A worked example shows the difference play out in real time: mid-session, the club's internet connection drops for twenty minutes. A club running the offline Scratch desktop application continues working uninterrupted, since the tool never depended on the network in the first place. A different club running only the browser-based Scratch editor loses access entirely until the connection returns, turning twenty minutes of the session into an unplanned pause.</p>
+<h3 id="backup-device-plan">Backup Device Plan<a class="headerlink" href="#backup-device-plan" title="Permanent link">¶</a></h3>
+<p><strong>A backup device plan</strong> keeps a small pool of spare, fully imaged, fully charged laptops set aside specifically to swap in when a device fails mid-session -- distinct from Chapter 22's device loaner agreement, which governs a laptop leaving the building overnight, not an in-session substitution. Chapter 22's charging cart, sized with a few extra slots beyond the current fleet count, is exactly where this spare pool lives.</p>
+<p>A worked example shows the swap happening without losing session time: a laptop crashes and won't restart fifteen minutes into a session. Instead of that student losing the rest of the session, the mentor pulls a pre-imaged spare from the charging cart's reserved slots, logs the student in, and the student is back to coding within a minute -- the failed laptop goes into Chapter 22's device repair workflow later, after the session ends.</p>
+<div class="admonition mascot-tip">
+<p class="admonition-title">One spare for every ten laptops is a safe starting ratio</p>
+<p><img alt="Circuit giving a tip" class="mascot-admonition-img" src="../../img/mascot/tip.png">
+Want to save yourself a scramble mid-session? Keep at least one fully charged, fully imaged spare ready for every ten laptops in active use. It costs a little extra charging-cart space, but it turns a hardware failure into a thirty-second swap instead of a lost session for one student.</p>
+</div>
+<h2 id="the-full-device-lifecycle-donation-refurbishment-and-retirement">The Full Device Lifecycle: Donation, Refurbishment, and Retirement<a class="headerlink" href="#the-full-device-lifecycle-donation-refurbishment-and-retirement" title="Permanent link">¶</a></h2>
+<p>A laptop's life doesn't end the moment Chapter 22's repair workflow flags it as beyond a mentor's safe repair boundary -- that moment is a fork in the road, not a dead end.</p>
+<div class="admonition mascot-thinking">
+<p class="admonition-title">The lifecycle is a loop, not a dead end</p>
+<p><img alt="Circuit thinking" class="mascot-admonition-img" src="../../img/mascot/thinking.png">
+Notice how these next three concepts connect: a device one club retires can become another club's refurbished laptop, and a club that needs to grow its fleet can look for exactly that kind of device instead of only buying new. Think of it less like a laptop's obituary and more like a relay race, where the baton just passes to whichever hand needs it next.</p>
+</div>
+<h3 id="device-donation-program">Device Donation Program<a class="headerlink" href="#device-donation-program" title="Permanent link">¶</a></h3>
+<p><strong>A device donation program</strong> is a club's practice of accepting still-functional donated laptops from companies, families, or other organizations, and of donating its own retired-but-working devices onward instead of discarding them -- a two-way flow that extends Chapter 22's device imaging and inventory tracking to devices that entered the fleet by gift rather than purchase. A donated laptop still has to pass through Chapter 22's full configuration and labeling pipeline before it ever meets a student; a donation skips the purchase decision, not the setup work.</p>
+<p>A worked example shows the incoming side of that flow: a local company donates ten decommissioned business laptops to the club. Before any of them reach a student, a mentor runs each one through the same imaging, labeling, and inventory-entry process Chapter 22 established for newly purchased devices, so a donated laptop looks and behaves exactly like one the club bought itself.</p>
+<h3 id="refurbished-device-sourcing">Refurbished Device Sourcing<a class="headerlink" href="#refurbished-device-sourcing" title="Permanent link">¶</a></h3>
+<p><strong>Refurbished device sourcing</strong> is deliberately buying previously used, professionally reconditioned laptops from a vendor instead of new ones, trading a shorter expected lifespan and a shorter warranty for a substantially lower price -- extending Chapter 22's laptop purchasing decision with a second axis beyond "which platform" to "new or refurbished." A refurbished laptop needs closer scrutiny of battery health and warranty length than a new one, since those are exactly the parts most likely to have already seen wear.</p>
+<p>A worked example runs the same grant arithmetic Chapter 22 introduced: a club with a $2,200 budget can buy roughly five new Windows laptops at $450 each, or ten refurbished Windows laptops at $220 each with a 90-day warranty -- doubling the fleet size for the same grant, at the cost of a shorter expected service life and a warranty that runs out well before a new laptop's would.</p>
+<h3 id="device-end-of-life-plan">Device End Of Life Plan<a class="headerlink" href="#device-end-of-life-plan" title="Permanent link">¶</a></h3>
+<p><strong>A device end-of-life plan</strong> is the club's written procedure for what happens to a laptop once it is no longer safe, repairable, or worth continuing to update -- wiping all student data first, per Chapter 22's device security policy, then either recycling it through a certified e-waste program or donating any still-working parts, rather than letting it sit indefinitely in a closet. A laptop flagged "beyond basic repair" in Chapter 22's repair workflow needs somewhere specific to go next; an end-of-life plan is that destination.</p>
+<p>A worked example shows the plan closing the loop cleanly: a four-year-old laptop with a cracked screen and a failing battery is flagged for retirement. A mentor wipes its stored data following the device security policy, removes its inventory-tracking label, and drops it off with a local certified e-waste recycler -- closing out its inventory record instead of letting it linger as an unaccounted-for entry on the spreadsheet.</p>
+<iframe src="../../sims/device-end-of-life-decision-workflow/main.html" width="100%" height="550px" scrolling="no"></iframe>
+
+<h4 id="diagram-device-end-of-life-decision-workflow">Diagram: Device End-of-Life Decision Workflow<a class="headerlink" href="#diagram-device-end-of-life-decision-workflow" title="Permanent link">¶</a></h4>
+<details>
+<summary>Device End-of-Life Decision Workflow</summary>
+<p>Type: workflow
+<strong>sim-id:</strong> device-end-of-life-decision-workflow<br>
+<strong>Library:</strong> Mermaid<br>
+<strong>Status:</strong> Specified</p>
+<p>Purpose: Show how a laptop reaching the end of its useful service life is routed to donation or responsible retirement, and how that same flow can bring a refurbished device into a different club's fleet.</p>
+<p>Bloom Taxonomy: Analyze (L4)
+Bloom Taxonomy Verb: differentiate</p>
+<p>Learning objective: Given a retiring laptop's condition, the learner differentiates whether it should be routed to a donation program or to the club's end-of-life plan.</p>
+<p>Steps (flowchart with decision diamonds):
+1. Start: "Laptop Flagged for Retirement" -- click reveals "Arrives either from Chapter 22's repair workflow (beyond basic repair) or from simply reaching the end of its expected service life."
+2. Decision: "Still Functional?" -- click reveals "A working-but-outdated laptop has more options than a laptop that no longer powers on or holds a charge."
+3a. Branch "Yes" leads to "Evaluate for Donation" -- click reveals the Device Donation Program definition above.
+4. Decision: "Another Program Can Use It?" -- click reveals "Some still-working laptops fit another club or family's needs even after this club retires them."
+4a. Branch "Yes" leads to End: "Donated Outward" -- click reveals "Data is wiped per the device security policy, then the laptop is donated to another program through the club's donation program."
+4b. Branch "No" leads to End: "Device End-of-Life Plan" -- click reveals the Device End Of Life Plan definition above.
+3b. Branch "No" (not functional) leads directly to the same End: "Device End-of-Life Plan" node.
+5. Side node (dashed connector): "Refurbished Device Sourcing" -- click reveals the Refurbished Device Sourcing definition above; connects back into Chapter 22's "New Laptop Arrives" step, showing how one club's donated-outward laptop can become another club's refurbished purchase.</p>
+<p>Interactivity requirement (satisfied): every node has a Mermaid <code>click</code> directive tied to an infobox showing its revealed text, matching the definition already given in this chapter's prose.</p>
+<p>Color coding: Gray for the start node, purple for the two decision diamonds, green for the donated-outward end state, amber for the device end-of-life end state, blue dashed for the refurbished-sourcing side node and its connector.</p>
+<p>Implementation: Mermaid flowchart (<code>graph TD</code>) rendered in main.html with <code>click NodeId call showInfo("NodeId")</code> directives for every node, opening a side-panel infobox; a "Reset View" button re-centers the diagram after any zoom or pan.</p>
+</details>
+<h2 id="managing-peripherals-and-everyday-storage">Managing Peripherals and Everyday Storage<a class="headerlink" href="#managing-peripherals-and-everyday-storage" title="Permanent link">¶</a></h2>
+<p>Every laptop this book has covered so far also depends on a handful of smaller accessories -- headphones, a mouse, a USB drive -- that are easy to lose precisely because they're so much smaller than the laptop itself.</p>
+<h3 id="peripheral-device-management">Peripheral Device Management<a class="headerlink" href="#peripheral-device-management" title="Permanent link">¶</a></h3>
+<p><strong>Peripheral device management</strong> applies Chapter 22's inventory and labeling principles to the smaller accessories that plug into a laptop -- headphones, mice, keyboards, storage drives -- but tracked by count in labeled bins rather than by an individual ID sticker on each one, since a bin of twenty identical earbuds doesn't need twenty separate inventory rows the way twenty distinct laptops do.</p>
+<p>A worked example shows the adaptation in practice: a club adds a "Peripherals" section to its Chapter 22 inventory spreadsheet, with one row per bin -- "Headphones: 24 of 24 in bin," "USB Drives: 8 of 10 in bin, 2 checked out" -- instead of the per-unit ID tracking used for laptops, since counting a bin takes seconds while individually labeling two dozen earbuds would take an afternoon.</p>
+<h3 id="headphone-management">Headphone Management<a class="headerlink" href="#headphone-management" title="Permanent link">¶</a></h3>
+<p><strong>Headphone management</strong> covers keeping a shared set of headphones sanitized between students, stored in a labeled bin, and replaced when broken -- extending Chapter 22's device cleaning routine to an accessory that touches a different student's ears every session. Disposable or wipeable ear-cushion covers, swapped between uses, address a hygiene concern a laptop's screen and keyboard don't carry in the same way.</p>
+<p>A worked example shows the routine in action: before a sound-kit session, a mentor hands out headphones with a fresh foam ear-cushion cover already in place, and collects the used covers for disposal at the end, rather than reusing the same cushion surface directly against a different student's skin the following week.</p>
+<h3 id="mouse-and-keyboard-setup">Mouse And Keyboard Setup<a class="headerlink" href="#mouse-and-keyboard-setup" title="Permanent link">¶</a></h3>
+<p><strong>Mouse and keyboard setup</strong> covers pairing an external mouse or keyboard to a laptop when the built-in trackpad or keyboard is impractical for a specific project -- most often when a laptop sits flat on a table next to a breadboard or robot kit, and the laptop's own keyboard would sit awkwardly close to exposed wiring. This is a project-specific setup step, applied when a particular activity calls for it, not a default configuration every laptop needs.</p>
+<p>A worked example shows the need surfacing during a physical-computing session: a club running a MicroPython breadboard project finds students' hands cramped between the laptop's built-in keyboard and the breadboard sitting right next to it. Connecting an external USB keyboard, positioned to one side, gives students room to type and work with the breadboard without one interfering with the other.</p>
+<h3 id="external-storage-device">External Storage Device<a class="headerlink" href="#external-storage-device" title="Permanent link">¶</a></h3>
+<p><strong>An external storage device</strong> is a USB flash drive or portable hard drive used to move files between a laptop and a piece of hardware that doesn't share the club's cloud account -- most often a robot kit's firmware-flashing tool, which expects a file on a local drive rather than a cloud link. A Chromebook's limited local storage makes this an occasional necessity even for a club that otherwise keeps everything in the cloud.</p>
+<p>A worked example shows the transfer working as intended: a student's finished MicroPython project needs to reach a robot kit's flashing tool that only reads from a local USB drive. The student copies the file from their Chromebook onto a labeled external drive, then plugs that drive directly into the flashing station to complete the transfer.</p>
+<h3 id="cloud-storage-for-devices">Cloud Storage For Devices<a class="headerlink" href="#cloud-storage-for-devices" title="Permanent link">¶</a></h3>
+<p><strong>Cloud storage for devices</strong> is using a shared, club-managed cloud drive account as the default save location for student files, so work survives independently of which specific laptop or account a student happened to use that day. This matters most on Chapter 22's shared device accounts, where a local file saved directly to the laptop disappears the moment the next student's session resets that account.</p>
+<p>A worked example shows cloud storage solving exactly that problem: instead of saving a project file locally to the "Station 3" shared account -- where it would vanish once the next student logs in -- a student saves directly to the club's shared cloud drive folder. The following week, at any available laptop, the same student opens that same file exactly where they left off.</p>
+<iframe src="../../sims/peripheral-management-layers/main.html" width="100%" height="600px" scrolling="no"></iframe>
+
+<h4 id="diagram-peripheral-and-storage-management-layers">Diagram: Peripheral and Storage Management Layers<a class="headerlink" href="#diagram-peripheral-and-storage-management-layers" title="Permanent link">¶</a></h4>
+<details>
+<summary>Peripheral and Storage Management Layers</summary>
+<p>Type: infographic-overlay (grid)
+<strong>sim-id:</strong> peripheral-management-layers<br>
+<strong>Library:</strong> Interactive Infographic Overlay Guide (grid-diagram.js, annotation-free comparison poster + rectangular hover zones)<br>
+<strong>Status:</strong> Specified</p>
+<p>Purpose: Let a mentor see all five categories of peripheral and storage management stacked in one place, from the umbrella inventory practice down to the two storage options, and quickly find which category to check for a specific accessory question.</p>
+<p>Bloom Taxonomy: Understand (L2)
+Bloom Taxonomy Verb: classify</p>
+<p>Learning objective: Given a specific accessory or storage question, the learner classifies which of the five peripheral-management categories addresses it.</p>
+<p>Image style: Flat stacked-band poster, five full-width horizontal bands from top to bottom, each with a bold printed band label baked into the image since grid overlays hide chip labels by default</p>
+<p>Image dimensions: 1000x800 (portrait, to accommodate five stacked bands)</p>
+<p>Zones (5 horizontal bands, each with id, label, color, approximate x1/y1/x2/y2 percentage boundaries, one-line summary, and 3-4 bullet facts), ordered top to bottom from umbrella practice to specific accessory types:
+1. <code>peripheral-device-management</code> -- color #4A90D9 -- boundaries approximately x1:3,y1:4,x2:97,y2:20 -- Summary: "The umbrella practice: tracking accessories by bin count, not individual ID." Facts: applies Chapter 22's inventory and labeling principles at bin scale; one spreadsheet row per bin rather than per item; covers headphones, mice, keyboards, and storage drives together
+2. <code>headphone-management</code> -- color #50C878 -- boundaries approximately x1:3,y1:22,x2:97,y2:38 -- Summary: "Shared headphones, sanitized between students." Facts: extends Chapter 22's device cleaning routine to an accessory touching a different student's ears each session; disposable or wipeable ear-cushion covers swapped between uses; stored in a labeled bin
+3. <code>mouse-keyboard-setup</code> -- color #F5A623 -- boundaries approximately x1:3,y1:40,x2:97,y2:56 -- Summary: "External input devices for projects where the built-in keyboard is awkward." Facts: used when a laptop sits next to a breadboard or robot kit; a project-specific setup step, not a default; connected only when the activity calls for it
+4. <code>external-storage-device</code> -- color #E85D75 -- boundaries approximately x1:3,y1:58,x2:97,y2:74 -- Summary: "USB drives for moving files to hardware that doesn't read the cloud." Facts: needed for robot-kit firmware-flashing tools that expect a local file; especially useful on Chromebooks with limited local storage; labeled the same way laptops are
+5. <code>cloud-storage-for-devices</code> -- color #9B6BC7 -- boundaries approximately x1:3,y1:76,x2:97,y2:96 -- Summary: "A shared cloud drive so files survive a shared-account reset." Facts: the default save location on shared device accounts; work follows the student to any laptop, not just one machine; distinct from a local external drive, which is for hardware that can't reach the cloud at all</p>
+<p>showLabels: false (band titles are printed in the generated image)</p>
+<p>Interactive features: Click or hover any band to highlight its hover zone and reveal its full fact list in a detail panel; explore mode only.</p>
+<p>Implementation: Interactive Infographic Overlay Guide (grid engine) -- <code>grid-diagram.js</code> + <code>grid-overlay.css</code> render the five rectangular hover zones over the generated poster image; <code>data.json</code> holds the 5 zones per the overlay-grid-data-json-schema.</p>
+</details>
+<h2 id="closing-operational-checklists">Closing Operational Checklists<a class="headerlink" href="#closing-operational-checklists" title="Permanent link">¶</a></h2>
+<p>The last five concepts in this chapter are compact, everyday tools rather than full policies -- short enough to tape inside a supply cabinet, but each one closing a small gap the rest of this chapter and Chapter 22 would otherwise leave open.</p>
+<p><strong>A device troubleshooting checklist</strong> is a short, ordered list of quick checks -- restart the laptop, confirm it's charged, toggle Wi-Fi off and back on, confirm the correct account is logged in -- that any mentor runs before escalating a misbehaving device to Chapter 22's repair workflow or this chapter's backup device plan. Most in-session problems resolve at this first, cheapest step, without ever needing a spare laptop or a repair ticket.</p>
+<p><strong>The IT volunteer role</strong> is a mentor position focused specifically on this chapter's and Chapter 22's technical upkeep -- network, updates, peripherals, inventory -- distinct from the instructional mentors who work directly with students on coding and kits. A club large enough to need one benefits from naming it explicitly, so technical upkeep has a clear owner instead of becoming everyone's unstated responsibility and, in practice, no one's.</p>
+<p><strong>A device setup time budget</strong> is the number of minutes reserved at the start of a session specifically for booting laptops, logging in, and confirming network connectivity, before any instructional content begins -- an extension of Chapter 22's screen-time session breakdown, which assumed devices were already ready to go. Reserving five to ten minutes for this explicitly, rather than absorbing it invisibly into instructional time, keeps a slow laptop boot from eating into a mentor's planned lesson.</p>
+<p><strong>A device return checklist</strong> is a short list a mentor runs when a laptop physically comes back -- from an overnight loan, from storage, or at the end of a session -- checking charge level, confirming no personal file was left behind, and noting any new physical damage, distinct from Chapter 22's loaner agreement, which is the signed form governing the loan itself rather than the check performed at return.</p>
+<p><strong>Shared drive organization</strong> is the folder-naming convention used inside this chapter's cloud storage for devices, so that student and class files land in a predictable structure -- one folder per class session, or one folder per student -- instead of accumulating as one large, unsorted pile that gets harder to search every week it goes unmanaged.</p>
+<p>The table below lines up all five for quick reference:</p>
+<table>
+<thead>
+<tr>
+<th>Checklist or Role</th>
+<th>Used When</th>
+<th>Who Uses It</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Device Troubleshooting Checklist</td>
+<td>A laptop misbehaves mid-session</td>
+<td>Any mentor</td>
+</tr>
+<tr>
+<td>Device Return Checklist</td>
+<td>A laptop comes back from loan, storage, or a session</td>
+<td>IT volunteer or mentor</td>
+</tr>
+<tr>
+<td>Device Setup Time Budget</td>
+<td>Planning how a session's first minutes are spent</td>
+<td>Session lead</td>
+</tr>
+<tr>
+<td>IT Volunteer Role</td>
+<td>Deciding who owns technical upkeep</td>
+<td>Club leader</td>
+</tr>
+<tr>
+<td>Shared Drive Organization</td>
+<td>Filing any saved student or class file</td>
+<td>Any mentor or student</td>
+</tr>
+</tbody>
+</table>
+<h2 id="chapter-summary">Chapter Summary<a class="headerlink" href="#chapter-summary" title="Permanent link">¶</a></h2>
+<p>This chapter carried Chapter 22's configured fleet the rest of the way: sizing and securing the network those laptops connect to, governing what software runs on them, organizing bookmarks so students can find their own work, preparing for outages and hardware failures, tracing a laptop's full life from donation or refurbishment through responsible retirement, keeping the smaller peripherals and storage options in order, and closing with five compact checklists that keep day-to-day operations from depending on any single person's memory.</p>
+<div class="admonition mascot-celebration">
+<p class="admonition-title">You can now run a device fleet through its entire life</p>
+<p><img alt="Circuit celebrating" class="mascot-admonition-img" src="../../img/mascot/celebration.png">
+You just built the network, software governance, and lifecycle system that keeps every laptop from Chapter 22 connected, current, and accounted for -- from the day it's donated or purchased all the way through to responsible retirement. That's the last piece of shared infrastructure standing between a pile of hardware and a coding club that runs itself.</p>
+</div>
 
 
 
@@ -1636,7 +2628,12 @@
 
 
 
+  
+  
 
+
+
+  
 
 
 
@@ -1651,7 +2648,7 @@
         
           <button type="button" class="md-top md-icon" data-md-component="top" hidden>
   
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"></path></svg>
   Back to top
 </button>
         
@@ -1661,13 +2658,13 @@
   
     
       
-      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+      <nav class="md-footer__inner md-grid" aria-label="Footer">
         
           
           <a href="../22-purchasing-configuring-devices/" class="md-footer__link md-footer__link--prev" aria-label="Previous: 22. Purchasing and Configuring Club Devices">
             <div class="md-footer__button md-icon">
               
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
             </div>
             <div class="md-footer__title">
               <span class="md-footer__direction">
@@ -1692,7 +2689,7 @@
             </div>
             <div class="md-footer__button md-icon">
               
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"></path></svg>
             </div>
           </a>
         
@@ -1704,7 +2701,7 @@
       <div class="md-copyright">
   
     <div class="md-copyright__highlight">
-      Copyright &copy; 2026 Dan McCreary. Licensed under <a href="license/">CC BY-NC-SA 4.0</a> for non-commercial use.
+      Copyright © 2026 Dan McCreary. Licensed under <a href="license/">CC BY-NC-SA 4.0</a> for non-commercial use.
     </div>
   
   
@@ -1725,6 +2722,10 @@
     
       <script src="../../assets/javascripts/bundle.83f73b43.min.js"></script>
       
+        <script src="../../js/extra.js"></script>
+      
     
-  </body>
-</html>
+  
+<script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(()=>{ lightbox.reload(); });
+</script></body></html>

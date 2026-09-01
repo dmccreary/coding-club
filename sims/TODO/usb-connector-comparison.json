@@ -1,0 +1,15 @@
+{
+  "sim_id": "usb-connector-comparison",
+  "diagram_name": "USB-A vs USB-C Connector Comparison",
+  "chapter_number": 18,
+  "chapter_title": "Robots, USB Basics, and Electronics Workshop Skills",
+  "chapter_dir": "18-robots-usb-electronics-workshop",
+  "chapter_rel_dir": "chapters/18-robots-usb-electronics-workshop",
+  "library": "p5.js",
+  "bloom_level": "Analyze (L4)",
+  "bloom_verb": "differentiate",
+  "learning_objective": "Given a USB-A and a USB-C connector drawn side by side, the learner differentiates the two by shape, orientation, and typical power/data capability.",
+  "completion_status": "specified",
+  "extracted_date": "2026-09-01",
+  "specification": "Type: infographic\n**sim-id:** usb-connector-comparison<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\nPurpose: Let a learner compare the two connector shapes side by side and click each labeled feature to see why it matters for a club's day-to-day cable choices.\n\nBloom Taxonomy: Analyze (L4)\nBloom Taxonomy Verb: differentiate\n\nLearning objective: Given a USB-A and a USB-C connector drawn side by side, the learner differentiates the two by shape, orientation, and typical power/data capability.\n\nVisual elements: Two large scale drawings side by side — a rectangular USB-A plug on the left, an oval USB-C plug on the right — each with 3 labeled callout points (shape/orientation, typical host device, typical power delivery).\n\nInteractive controls: Click any callout point on either connector to open an infobox with that feature's explanation; a \"Flip It\" button under each drawing that visually rotates the plug 180 degrees to show whether it still fits.\n\nDefault parameters: Both connectors shown unselected, right-side up.\n\nBehavior: Clicking a callout (e.g., \"Reversible\") opens an infobox pulling its definition from the chapter glossary; clicking \"Flip It\" animates the rotation and displays a green checkmark (USB-C, always fits) or a red X (USB-A, only fits one way).\n\nImplementation notes: p5.js canvas with two vector-drawn connector shapes; click-region detection for callouts; a simple rotation animation triggered by the Flip It buttons; canvas resizes responsively to container width."
+}

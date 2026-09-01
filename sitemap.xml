@@ -2,226 +2,310 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://dmccreary.github.io/coding-club/</loc>
-         <lastmod>2026-08-31</lastmod>
+         <lastmod>2026-09-01</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/coding-club/about/</loc>
-         <lastmod>2026-08-31</lastmod>
+         <lastmod>2026-09-01</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/coding-club/contact/</loc>
-         <lastmod>2026-08-31</lastmod>
+         <lastmod>2026-09-01</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/coding-club/course-description/</loc>
-         <lastmod>2026-08-31</lastmod>
+         <lastmod>2026-09-01</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/coding-club/faq/</loc>
+         <lastmod>2026-09-01</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/coding-club/glossary/</loc>
+         <lastmod>2026-09-01</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/coding-club/license/</loc>
-         <lastmod>2026-08-31</lastmod>
+         <lastmod>2026-09-01</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/coding-club/appendices/</loc>
+         <lastmod>2026-09-01</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/coding-club/appendices/list-of-ai-agent-skills/</loc>
+         <lastmod>2026-09-01</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/coding-club/appendices/list-of-forms/</loc>
+         <lastmod>2026-09-01</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/coding-club/appendices/releated-textbooks/</loc>
+         <lastmod>2026-09-01</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/coding-club/cards/</loc>
+         <lastmod>2026-09-01</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/coding-club/chapters/</loc>
-         <lastmod>2026-08-31</lastmod>
+         <lastmod>2026-09-01</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/coding-club/chapters/01-what-is-a-coding-club/</loc>
-         <lastmod>2026-08-31</lastmod>
+         <lastmod>2026-09-01</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/coding-club/chapters/01-what-is-a-coding-club/quiz/</loc>
+         <lastmod>2026-09-01</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/coding-club/chapters/02-ai-and-intelligent-textbooks/</loc>
-         <lastmod>2026-08-31</lastmod>
+         <lastmod>2026-09-01</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/coding-club/chapters/02-ai-and-intelligent-textbooks/quiz/</loc>
+         <lastmod>2026-09-01</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/coding-club/chapters/03-club-charter-and-safety/</loc>
-         <lastmod>2026-08-31</lastmod>
+         <lastmod>2026-09-01</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/coding-club/chapters/03-club-charter-and-safety/quiz/</loc>
+         <lastmod>2026-09-01</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/coding-club/chapters/04-roles-governance-branding/</loc>
-         <lastmod>2026-08-31</lastmod>
+         <lastmod>2026-09-01</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/coding-club/chapters/04-roles-governance-branding/quiz/</loc>
+         <lastmod>2026-09-01</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/coding-club/chapters/05-gauging-interest-first-meeting/</loc>
-         <lastmod>2026-08-31</lastmod>
+         <lastmod>2026-09-01</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/coding-club/chapters/05-gauging-interest-first-meeting/quiz/</loc>
+         <lastmod>2026-09-01</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/coding-club/chapters/06-growing-and-promoting-club/</loc>
-         <lastmod>2026-08-31</lastmod>
+         <lastmod>2026-09-01</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/coding-club/chapters/06-growing-and-promoting-club/quiz/</loc>
+         <lastmod>2026-09-01</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/coding-club/chapters/07-club-story-and-classroom-design/</loc>
-         <lastmod>2026-08-31</lastmod>
+         <lastmod>2026-09-01</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/coding-club/chapters/07-club-story-and-classroom-design/quiz/</loc>
+         <lastmod>2026-09-01</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/coding-club/chapters/08-running-a-session/</loc>
-         <lastmod>2026-08-31</lastmod>
+         <lastmod>2026-09-01</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/coding-club/chapters/08-running-a-session/quiz/</loc>
+         <lastmod>2026-09-01</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/coding-club/chapters/09-mentors-students-ratio/</loc>
-         <lastmod>2026-08-31</lastmod>
+         <lastmod>2026-09-01</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/coding-club/chapters/10-mentor-student-relationships/</loc>
-         <lastmod>2026-08-31</lastmod>
+         <lastmod>2026-09-01</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/coding-club/chapters/11-schedule-and-registration/</loc>
-         <lastmod>2026-08-31</lastmod>
+         <lastmod>2026-09-01</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/coding-club/chapters/12-events-and-retrospectives/</loc>
-         <lastmod>2026-08-31</lastmod>
+         <lastmod>2026-09-01</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/coding-club/chapters/13-special-events-and-payments/</loc>
-         <lastmod>2026-08-31</lastmod>
+         <lastmod>2026-09-01</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/coding-club/chapters/14-computational-thinking-scratch-python/</loc>
-         <lastmod>2026-08-31</lastmod>
+         <lastmod>2026-09-01</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/coding-club/chapters/15-curriculum-challenge-cards/</loc>
-         <lastmod>2026-08-31</lastmod>
+         <lastmod>2026-09-01</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/coding-club/chapters/16-physical-computing-safety/</loc>
-         <lastmod>2026-08-31</lastmod>
+         <lastmod>2026-09-01</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/coding-club/chapters/17-sensors-displays-motors/</loc>
-         <lastmod>2026-08-31</lastmod>
+         <lastmod>2026-09-01</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/coding-club/chapters/18-robots-usb-electronics-workshop/</loc>
-         <lastmod>2026-08-31</lastmod>
+         <lastmod>2026-09-01</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/coding-club/chapters/19-pico-micropython-moving-rainbow/</loc>
-         <lastmod>2026-08-31</lastmod>
+         <lastmod>2026-09-01</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/coding-club/chapters/20-sensor-sound-iot-kits/</loc>
-         <lastmod>2026-08-31</lastmod>
+         <lastmod>2026-09-01</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/coding-club/chapters/21-kit-inventory-signal-processing/</loc>
-         <lastmod>2026-08-31</lastmod>
+         <lastmod>2026-09-01</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/coding-club/chapters/22-purchasing-configuring-devices/</loc>
-         <lastmod>2026-08-31</lastmod>
+         <lastmod>2026-09-01</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/coding-club/chapters/23-network-peripherals-device-lifecycle/</loc>
-         <lastmod>2026-08-31</lastmod>
+         <lastmod>2026-09-01</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/coding-club/chapters/24-student-data-and-communication/</loc>
-         <lastmod>2026-08-31</lastmod>
+         <lastmod>2026-09-01</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/coding-club/chapters/25-analyzing-club-data-and-tools/</loc>
-         <lastmod>2026-08-31</lastmod>
+         <lastmod>2026-09-01</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/coding-club/chapters/26-motivation-badges-growth-mindset/</loc>
-         <lastmod>2026-08-31</lastmod>
+         <lastmod>2026-09-01</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/coding-club/chapters/27-persistence-and-student-voice/</loc>
-         <lastmod>2026-08-31</lastmod>
+         <lastmod>2026-09-01</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/coding-club/chapters/28-underserved-communities-barriers/</loc>
-         <lastmod>2026-08-31</lastmod>
+         <lastmod>2026-09-01</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/coding-club/chapters/29-trust-and-representation/</loc>
-         <lastmod>2026-08-31</lastmod>
+         <lastmod>2026-09-01</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/coding-club/chapters/30-budgeting-fundraising-grants/</loc>
-         <lastmod>2026-08-31</lastmod>
+         <lastmod>2026-09-01</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/coding-club/chapters/31-expenses-and-funding-partnerships/</loc>
-         <lastmod>2026-08-31</lastmod>
+         <lastmod>2026-09-01</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/coding-club/chapters/32-ai-agents-registration-scheduling/</loc>
-         <lastmod>2026-08-31</lastmod>
+         <lastmod>2026-09-01</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/coding-club/chapters/33-ai-customized-curriculum-rollout/</loc>
-         <lastmod>2026-08-31</lastmod>
+         <lastmod>2026-09-01</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/coding-club/chapters/34-oversight-board-and-inventory/</loc>
-         <lastmod>2026-08-31</lastmod>
+         <lastmod>2026-09-01</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/coding-club/chapters/35-training-mentors-and-succession/</loc>
-         <lastmod>2026-08-31</lastmod>
+         <lastmod>2026-09-01</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/coding-club/img/cover-image-prompt/</loc>
+         <lastmod>2026-09-01</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/coding-club/img/mascot/character-sheet/</loc>
-         <lastmod>2026-08-31</lastmod>
+         <lastmod>2026-09-01</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/coding-club/learning-graph/</loc>
-         <lastmod>2026-08-31</lastmod>
+         <lastmod>2026-09-01</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/coding-club/learning-graph/book-metrics/</loc>
+         <lastmod>2026-09-01</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/coding-club/learning-graph/chapter-metrics/</loc>
+         <lastmod>2026-09-01</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/coding-club/learning-graph/concept-list/</loc>
-         <lastmod>2026-08-31</lastmod>
+         <lastmod>2026-09-01</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/coding-club/learning-graph/concept-taxonomy/</loc>
-         <lastmod>2026-08-31</lastmod>
+         <lastmod>2026-09-01</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/coding-club/learning-graph/course-description-assessment/</loc>
-         <lastmod>2026-08-31</lastmod>
+         <lastmod>2026-09-01</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/coding-club/learning-graph/faq-coverage-gaps/</loc>
+         <lastmod>2026-09-01</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/coding-club/learning-graph/faq-quality-report/</loc>
+         <lastmod>2026-09-01</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/coding-club/learning-graph/glossary-quality-report/</loc>
+         <lastmod>2026-09-01</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/coding-club/learning-graph/mascot-test/</loc>
-         <lastmod>2026-08-31</lastmod>
+         <lastmod>2026-09-01</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/coding-club/learning-graph/quality-metrics/</loc>
-         <lastmod>2026-08-31</lastmod>
+         <lastmod>2026-09-01</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/coding-club/learning-graph/taxonomy-distribution/</loc>
-         <lastmod>2026-08-31</lastmod>
+         <lastmod>2026-09-01</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/coding-club/learning-graph/logs/learning-graph-generator-1.07-2026-08-31/</loc>
-         <lastmod>2026-08-31</lastmod>
+         <lastmod>2026-09-01</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/coding-club/sims/</loc>
-         <lastmod>2026-08-31</lastmod>
+         <lastmod>2026-09-01</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/coding-club/sims/graph-viewer/</loc>
-         <lastmod>2026-08-31</lastmod>
+         <lastmod>2026-09-01</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/coding-club/stories/</loc>
-         <lastmod>2026-08-31</lastmod>
+         <lastmod>2026-09-01</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/coding-club/stories/story-ideas/</loc>
-         <lastmod>2026-08-31</lastmod>
+         <lastmod>2026-09-01</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/coding-club/stories/broken-wires/</loc>
-         <lastmod>2026-08-31</lastmod>
+         <lastmod>2026-09-01</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/coding-club/stories/concept-cards/</loc>
-         <lastmod>2026-08-31</lastmod>
+         <lastmod>2026-09-01</lastmod>
     </url>
 </urlset>

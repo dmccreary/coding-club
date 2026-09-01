@@ -1,0 +1,15 @@
+{
+  "sim_id": "color-wheel-hue-explorer",
+  "diagram_name": "Color Wheel Hue Explorer",
+  "chapter_number": 19,
+  "chapter_title": "Raspberry Pi Pico, MicroPython, and the Moving Rainbow Kit",
+  "chapter_dir": "19-pico-micropython-moving-rainbow",
+  "chapter_rel_dir": "chapters/19-pico-micropython-moving-rainbow",
+  "library": "p5.js",
+  "bloom_level": "Apply (L3)",
+  "bloom_verb": "calculate",
+  "learning_objective": "Given a position on a 0-255 color wheel, the learner calculates the resulting RGB color a wheel() function would return.",
+  "completion_status": "specified",
+  "extracted_date": "2026-09-01",
+  "specification": "Type: microsim\n**sim-id:** color-wheel-hue-explorer<br/>\n**Library:** p5.js<br/>\n**Status:** Specified<br/>\n**Template:** https://github.com/dmccreary/moving-rainbow/tree/main/docs/sims/hsv-color-explorer\n\nPurpose: Let a learner drag a position around a 0-255 color wheel and see the matching RGB values a wheel() function would return, before writing or reading that function in code.\n\nBloom Taxonomy: Apply (L3)\nBloom Taxonomy Verb: calculate\n\nLearning objective: Given a position on a 0-255 color wheel, the learner calculates the resulting RGB color a wheel() function would return.\n\nVisual elements: A circular color wheel with a draggable position marker; a swatch showing the resulting color; a readout of the R, G, B values.\n\nInteractive controls: Draggable marker around the wheel; numeric input as an alternative to dragging; a \"Show three sample positions\" button highlighting 0, 85, and 170.\n\nDefault parameters: Marker starts at position 0 (red).\n\nBehavior: Dragging the marker updates the RGB readout and swatch continuously; the sample-positions button steps through the three reference colors from the worked example.\n\nImplementation notes: p5.js canvas with an HSV-to-RGB conversion function driven by the marker's angle; draggable marker using mouse-drag detection along the wheel's circumference."
+}

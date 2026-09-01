@@ -1,12 +1,9 @@
-
-<!doctype html>
-<html lang="en" class="no-js">
-  <head>
+<!DOCTYPE html><html lang="en" class="no-js"><head>
     
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="An interactive intelligent textbook on how to create, organize, promote and run a sustainable coding club.">
+        <meta name="description" content="Introduces the Raspberry Pi Pico and MicroPython, then applies both to wiring and programming the club's Moving Rainbow LED kit, including seasonal patterns and an overview of robot and robot-face kits.">
       
       
         <meta name="author" content="Dan McCreary">
@@ -21,12 +18,12 @@
         <link rel="next" href="../20-sensor-sound-iot-kits/">
       
       
-      <link rel="icon" href="../../assets/images/favicon.png">
+      <link rel="icon" href="../../img/favicon.ico">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.43">
     
     
       
-        <title>19. Raspberry Pi Pico, MicroPython, and the Moving Rainbow Kit - Coding Club</title>
+        <title>Raspberry Pi Pico, MicroPython, and the Moving Rainbow Kit - Coding Club</title>
       
     
     
@@ -47,7 +44,7 @@
         
         
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback">
         <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
       
     
@@ -59,11 +56,57 @@
     <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
+  
+
+
+  
+  
+
+<script id="__analytics">function __md_analytics(){function e(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],e("js",new Date),e("config","G-JDH8L7VM28"),document.addEventListener("DOMContentLoaded",(function(){document.forms.search&&document.forms.search.query.addEventListener("blur",(function(){this.value&&e("event","search",{search_term:this.value})}));document$.subscribe((function(){var t=document.forms.feedback;if(void 0!==t)for(var a of t.querySelectorAll("[type=submit]"))a.addEventListener("click",(function(a){a.preventDefault();var n=document.location.pathname,d=this.getAttribute("data-md-value");e("event","feedback",{page:n,data:d}),t.firstElementChild.disabled=!0;var r=t.querySelector(".md-feedback__note [data-md-value='"+d+"']");r&&(r.hidden=!1)})),t.hidden=!1})),location$.subscribe((function(t){e("config","G-JDH8L7VM28",{page_path:t.pathname})}))}));var t=document.createElement("script");t.async=!0,t.src="https://www.googletagmanager.com/gtag/js?id=G-JDH8L7VM28",document.getElementById("__analytics").insertAdjacentElement("afterEnd",t)}</script>
+  
+    <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
+  
 
     
     
+      
+        <meta property="og:type" content="website">
+      
+        <meta property="og:title" content="Raspberry Pi Pico, MicroPython, and the Moving Rainbow Kit - Coding Club">
+      
+        <meta property="og:description" content="Introduces the Raspberry Pi Pico and MicroPython, then applies both to wiring and programming the club's Moving Rainbow LED kit, including seasonal patterns and an overview of robot and robot-face kits.">
+      
+        <meta property="og:image" content="https://dmccreary.github.io/coding-club/assets/images/social/chapters/19-pico-micropython-moving-rainbow/index.png">
+      
+        <meta property="og:image:type" content="image/png">
+      
+        <meta property="og:image:width" content="1200">
+      
+        <meta property="og:image:height" content="630">
+      
+        <meta property="og:url" content="https://dmccreary.github.io/coding-club/chapters/19-pico-micropython-moving-rainbow/">
+      
+        <meta name="twitter:card" content="summary_large_image">
+      
+        <meta name="twitter:title" content="Raspberry Pi Pico, MicroPython, and the Moving Rainbow Kit - Coding Club">
+      
+        <meta name="twitter:description" content="Introduces the Raspberry Pi Pico and MicroPython, then applies both to wiring and programming the club's Moving Rainbow LED kit, including seasonal patterns and an overview of robot and robot-face kits.">
+      
+        <meta name="twitter:image" content="https://dmccreary.github.io/coding-club/assets/images/social/chapters/19-pico-micropython-moving-rainbow/index.png">
+      
     
-  </head>
+    
+  <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"><script src="../../assets/javascripts/glightbox.min.js"></script><style id="glightbox-style">
+            html.glightbox-open { overflow: initial; height: 100%; }
+            .gslide-title { margin-top: 0px; user-select: text; }
+            .gslide-desc { color: #666; user-select: text; }
+            .gslide-image img { background: white; }
+            .gscrollbar-fixer { padding-right: 15px; }
+            .gdesc-inner { font-size: 0.75rem; }
+            body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color); }
+            body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color); }
+            body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color); }
+        </style></head>
   
   
     
@@ -98,13 +141,12 @@
   <nav class="md-header__inner md-grid" aria-label="Header">
     <a href="../.." title="Coding Club" class="md-header__button md-logo" aria-label="Coding Club" data-md-component="logo">
       
-  
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+  <img src="../../img/mascot/welcome.png" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
       
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"></path></svg>
     </label>
     <div class="md-header__title" data-md-component="header-title">
       <div class="md-header__ellipsis">
@@ -116,7 +158,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              19. Raspberry Pi Pico, MicroPython, and the Moving Rainbow Kit
+              Raspberry Pi Pico, MicroPython, and the Moving Rainbow Kit
             
           </span>
         </div>
@@ -130,7 +172,7 @@
     
       <label class="md-header__button md-icon" for="__search">
         
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
       </label>
       <div class="md-search" data-md-component="search" role="dialog">
   <label class="md-search__overlay" for="__search"></label>
@@ -139,20 +181,20 @@
       <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
       <label class="md-search__icon md-icon" for="__search">
         
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
         
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
       </label>
       <nav class="md-search__options" aria-label="Search">
         
           <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
             
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"></path></svg>
           </a>
         
         <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
           
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg>
         </button>
       </nav>
       
@@ -177,7 +219,7 @@
         <a href="https://github.com/dmccreary/coding-club" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"></path></svg>
   </div>
   <div class="md-source__repository">
     GitHub Repo
@@ -201,7 +243,7 @@
           
             
               
-              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
@@ -212,8 +254,7 @@
   <label class="md-nav__title" for="__drawer">
     <a href="../.." title="Coding Club" class="md-nav__button md-logo" aria-label="Coding Club" data-md-component="logo">
       
-  
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+  <img src="../../img/mascot/welcome.png" alt="logo">
 
     </a>
     Coding Club
@@ -223,7 +264,7 @@
       <a href="https://github.com/dmccreary/coding-club" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"></path></svg>
   </div>
   <div class="md-source__repository">
     GitHub Repo
@@ -945,6 +986,405 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#meet-the-raspberry-pi-pico" class="md-nav__link">
+    <span class="md-ellipsis">
+      Meet the Raspberry Pi Pico
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Meet the Raspberry Pi Pico">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#raspberry-pi-pico" class="md-nav__link">
+    <span class="md-ellipsis">
+      Raspberry Pi Pico
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Raspberry Pi Pico">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-raspberry-pi-pico-pinout-explorer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Raspberry Pi Pico Pinout Explorer
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#programming-the-pico-with-micropython" class="md-nav__link">
+    <span class="md-ellipsis">
+      Programming the Pico with MicroPython
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Programming the Pico with MicroPython">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#micropython-basics" class="md-nav__link">
+    <span class="md-ellipsis">
+      MicroPython Basics
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="MicroPython Basics">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-repl-vs-saved-script-workflow" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: REPL vs. Saved Script Workflow
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#micropython-syntax" class="md-nav__link">
+    <span class="md-ellipsis">
+      MicroPython Syntax
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="MicroPython Syntax">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-micropython-syntax-checker" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: MicroPython Syntax Checker
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#micropython-loop" class="md-nav__link">
+    <span class="md-ellipsis">
+      MicroPython Loop
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="MicroPython Loop">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-micropython-loop-pixel-stepper" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: MicroPython Loop Pixel Stepper
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wiring-the-moving-rainbow-kit" class="md-nav__link">
+    <span class="md-ellipsis">
+      Wiring the Moving Rainbow Kit
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Wiring the Moving Rainbow Kit">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#neopixel-led-strip" class="md-nav__link">
+    <span class="md-ellipsis">
+      NeoPixel LED Strip
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#led-strip-wiring" class="md-nav__link">
+    <span class="md-ellipsis">
+      LED Strip Wiring
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="LED Strip Wiring">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-moving-rainbow-wiring-diagram" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Moving Rainbow Wiring Diagram
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#moving-rainbow-kit" class="md-nav__link">
+    <span class="md-ellipsis">
+      Moving Rainbow Kit
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#seasonal-patterns-for-the-moving-rainbow-kit" class="md-nav__link">
+    <span class="md-ellipsis">
+      Seasonal Patterns for the Moving Rainbow Kit
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Seasonal Patterns for the Moving Rainbow Kit">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#moving-rainbow-pattern" class="md-nav__link">
+    <span class="md-ellipsis">
+      Moving Rainbow Pattern
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Moving Rainbow Pattern">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-seasonal-led-pattern-gallery" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Seasonal LED Pattern Gallery
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#led-noodle-project" class="md-nav__link">
+    <span class="md-ellipsis">
+      LED Noodle Project
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#halloween-costume-lighting" class="md-nav__link">
+    <span class="md-ellipsis">
+      Halloween Costume Lighting
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#holiday-light-pattern" class="md-nav__link">
+    <span class="md-ellipsis">
+      Holiday Light Pattern
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fourth-of-july-pattern" class="md-nav__link">
+    <span class="md-ellipsis">
+      Fourth Of July Pattern
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#controlling-color-brightness-and-timing" class="md-nav__link">
+    <span class="md-ellipsis">
+      Controlling Color, Brightness, and Timing
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Controlling Color, Brightness, and Timing">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#color-wheel-programming" class="md-nav__link">
+    <span class="md-ellipsis">
+      Color Wheel Programming
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Color Wheel Programming">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-color-wheel-hue-explorer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Color Wheel Hue Explorer
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#brightness-control-code" class="md-nav__link">
+    <span class="md-ellipsis">
+      Brightness Control Code
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#animation-timing-code" class="md-nav__link">
+    <span class="md-ellipsis">
+      Animation Timing Code
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#robot-kits-and-behavior" class="md-nav__link">
+    <span class="md-ellipsis">
+      Robot Kits and Behavior
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Robot Kits and Behavior">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#robot-kit" class="md-nav__link">
+    <span class="md-ellipsis">
+      Robot Kit
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#robot-kit-assembly" class="md-nav__link">
+    <span class="md-ellipsis">
+      Robot Kit Assembly
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Robot Kit Assembly">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-robot-kit-assembly-sequence" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Robot Kit Assembly Sequence
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#remote-control-distraction-risk" class="md-nav__link">
+    <span class="md-ellipsis">
+      Remote Control Distraction Risk
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#autonomous-robot-behavior" class="md-nav__link">
+    <span class="md-ellipsis">
+      Autonomous Robot Behavior
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#robot-face-kit" class="md-nav__link">
+    <span class="md-ellipsis">
+      Robot Face Kit
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chapter-summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      Chapter Summary
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1322,6 +1762,16 @@
       
         
       
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
     
     
     
@@ -1409,6 +1859,91 @@
   
   
   
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../cards/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Challenge Cards
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../faq/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    FAQ
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../glossary/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Glossary
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
     <li class="md-nav__item">
       <a href="../../license/" class="md-nav__link">
         
@@ -1451,7 +1986,7 @@
             
             
               
-              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
@@ -1496,6 +2031,405 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#meet-the-raspberry-pi-pico" class="md-nav__link">
+    <span class="md-ellipsis">
+      Meet the Raspberry Pi Pico
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Meet the Raspberry Pi Pico">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#raspberry-pi-pico" class="md-nav__link">
+    <span class="md-ellipsis">
+      Raspberry Pi Pico
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Raspberry Pi Pico">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-raspberry-pi-pico-pinout-explorer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Raspberry Pi Pico Pinout Explorer
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#programming-the-pico-with-micropython" class="md-nav__link">
+    <span class="md-ellipsis">
+      Programming the Pico with MicroPython
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Programming the Pico with MicroPython">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#micropython-basics" class="md-nav__link">
+    <span class="md-ellipsis">
+      MicroPython Basics
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="MicroPython Basics">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-repl-vs-saved-script-workflow" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: REPL vs. Saved Script Workflow
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#micropython-syntax" class="md-nav__link">
+    <span class="md-ellipsis">
+      MicroPython Syntax
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="MicroPython Syntax">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-micropython-syntax-checker" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: MicroPython Syntax Checker
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#micropython-loop" class="md-nav__link">
+    <span class="md-ellipsis">
+      MicroPython Loop
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="MicroPython Loop">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-micropython-loop-pixel-stepper" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: MicroPython Loop Pixel Stepper
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wiring-the-moving-rainbow-kit" class="md-nav__link">
+    <span class="md-ellipsis">
+      Wiring the Moving Rainbow Kit
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Wiring the Moving Rainbow Kit">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#neopixel-led-strip" class="md-nav__link">
+    <span class="md-ellipsis">
+      NeoPixel LED Strip
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#led-strip-wiring" class="md-nav__link">
+    <span class="md-ellipsis">
+      LED Strip Wiring
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="LED Strip Wiring">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-moving-rainbow-wiring-diagram" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Moving Rainbow Wiring Diagram
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#moving-rainbow-kit" class="md-nav__link">
+    <span class="md-ellipsis">
+      Moving Rainbow Kit
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#seasonal-patterns-for-the-moving-rainbow-kit" class="md-nav__link">
+    <span class="md-ellipsis">
+      Seasonal Patterns for the Moving Rainbow Kit
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Seasonal Patterns for the Moving Rainbow Kit">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#moving-rainbow-pattern" class="md-nav__link">
+    <span class="md-ellipsis">
+      Moving Rainbow Pattern
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Moving Rainbow Pattern">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-seasonal-led-pattern-gallery" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Seasonal LED Pattern Gallery
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#led-noodle-project" class="md-nav__link">
+    <span class="md-ellipsis">
+      LED Noodle Project
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#halloween-costume-lighting" class="md-nav__link">
+    <span class="md-ellipsis">
+      Halloween Costume Lighting
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#holiday-light-pattern" class="md-nav__link">
+    <span class="md-ellipsis">
+      Holiday Light Pattern
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fourth-of-july-pattern" class="md-nav__link">
+    <span class="md-ellipsis">
+      Fourth Of July Pattern
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#controlling-color-brightness-and-timing" class="md-nav__link">
+    <span class="md-ellipsis">
+      Controlling Color, Brightness, and Timing
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Controlling Color, Brightness, and Timing">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#color-wheel-programming" class="md-nav__link">
+    <span class="md-ellipsis">
+      Color Wheel Programming
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Color Wheel Programming">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-color-wheel-hue-explorer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Color Wheel Hue Explorer
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#brightness-control-code" class="md-nav__link">
+    <span class="md-ellipsis">
+      Brightness Control Code
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#animation-timing-code" class="md-nav__link">
+    <span class="md-ellipsis">
+      Animation Timing Code
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#robot-kits-and-behavior" class="md-nav__link">
+    <span class="md-ellipsis">
+      Robot Kits and Behavior
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Robot Kits and Behavior">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#robot-kit" class="md-nav__link">
+    <span class="md-ellipsis">
+      Robot Kit
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#robot-kit-assembly" class="md-nav__link">
+    <span class="md-ellipsis">
+      Robot Kit Assembly
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Robot Kit Assembly">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-robot-kit-assembly-sequence" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Robot Kit Assembly Sequence
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#remote-control-distraction-risk" class="md-nav__link">
+    <span class="md-ellipsis">
+      Remote Control Distraction Risk
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#autonomous-robot-behavior" class="md-nav__link">
+    <span class="md-ellipsis">
+      Autonomous Robot Behavior
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#robot-face-kit" class="md-nav__link">
+    <span class="md-ellipsis">
+      Robot Face Kit
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chapter-summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      Chapter Summary
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1513,16 +2447,16 @@
   
     <a href="https://github.com/dmccreary/coding-club/blob/main/docs/chapters/19-pico-micropython-moving-rainbow/index.md" title="Edit this page" class="md-content__button md-icon">
       
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"></path></svg>
     </a>
   
   
 
 
-<h1 id="raspberry-pi-pico-micropython-and-the-moving-rainbow-kit">Raspberry Pi Pico, MicroPython, and the Moving Rainbow Kit<a class="headerlink" href="#raspberry-pi-pico-micropython-and-the-moving-rainbow-kit" title="Permanent link">&para;</a></h1>
-<h2 id="summary">Summary<a class="headerlink" href="#summary" title="Permanent link">&para;</a></h2>
+<h1 id="raspberry-pi-pico-micropython-and-the-moving-rainbow-kit">Raspberry Pi Pico, MicroPython, and the Moving Rainbow Kit<a class="headerlink" href="#raspberry-pi-pico-micropython-and-the-moving-rainbow-kit" title="Permanent link">¶</a></h1>
+<h2 id="summary">Summary<a class="headerlink" href="#summary" title="Permanent link">¶</a></h2>
 <p>This chapter introduces the Raspberry Pi Pico and MicroPython programming, then applies both to the club's most popular hardware project: the Moving Rainbow LED kit. It covers wiring the NeoPixel strip and programming color, brightness, and animation patterns, including seasonal projects like Halloween costumes and holiday lights. You will be able to wire and program a Moving Rainbow kit.</p>
-<h2 id="concepts-covered">Concepts Covered<a class="headerlink" href="#concepts-covered" title="Permanent link">&para;</a></h2>
+<h2 id="concepts-covered">Concepts Covered<a class="headerlink" href="#concepts-covered" title="Permanent link">¶</a></h2>
 <p>This chapter covers the following 20 concepts from the learning graph:</p>
 <table>
 <thead>
@@ -1614,15 +2548,443 @@
 </tr>
 </tbody>
 </table>
-<h2 id="prerequisites">Prerequisites<a class="headerlink" href="#prerequisites" title="Permanent link">&para;</a></h2>
+<h2 id="prerequisites">Prerequisites<a class="headerlink" href="#prerequisites" title="Permanent link">¶</a></h2>
 <p>This chapter builds on concepts from:</p>
 <ul>
 <li><a href="../14-computational-thinking-scratch-python/">14. Computational Thinking, Scratch, and Python Basics</a></li>
 <li><a href="../16-physical-computing-safety/">16. Physical Computing and Electrical Safety Basics</a></li>
 <li><a href="../17-sensors-displays-motors/">17. Sensors, Displays, Motors, and Robot Chassis</a></li>
 </ul>
-<hr />
-<p>TODO: Generate Chapter Content</p>
+<hr>
+<p>Chapter 17 filled the club's kit bins with sensors, displays, and motors. This chapter introduces the board that ties every one of those parts together: the Raspberry Pi Pico, a tiny, inexpensive microcontroller that runs the MicroPython code a student writes. Once you can wire a Pico and read simple MicroPython, the chapter's second half puts both skills to work on the club's single most popular hands-on project — the Moving Rainbow kit, a NeoPixel LED strip that turns a page of code into a strip of moving color a student can wear, hang, or carry. The same Pico and MicroPython skills carry straight into robot kits, the chapter's closing topic, where a chassis, motors, and a battery turn code into motion instead of light.</p>
+<div class="admonition mascot-welcome">
+<p class="admonition-title">From kit bins to a working, blinking, moving rainbow</p>
+<p><img alt="Circuit waving welcome" class="mascot-admonition-img" src="../../img/mascot/welcome.png">
+Let's build something great — this is the chapter where a $4 board and a few lines of MicroPython turn into a strip of color a student designed themselves! By the end, you'll be able to wire and program a complete Moving Rainbow kit, adapt it for Halloween, the holidays, or the Fourth of July, and know exactly which robot kit to reach for next.</p>
+</div>
+<h2 id="meet-the-raspberry-pi-pico">Meet the Raspberry Pi Pico<a class="headerlink" href="#meet-the-raspberry-pi-pico" title="Permanent link">¶</a></h2>
+<h3 id="raspberry-pi-pico">Raspberry Pi Pico<a class="headerlink" href="#raspberry-pi-pico" title="Permanent link">¶</a></h3>
+<p>A <strong>Raspberry Pi Pico</strong> is a small, low-cost microcontroller board — about the size of a stick of gum — that runs a single MicroPython program continuously, reading its own pins and driving connected components without needing a keyboard, monitor, or operating system of its own. At roughly $4, it is inexpensive enough that a club can hand one to every student without a fundraising conversation, and durable enough to survive a season of being plugged in, unplugged, and occasionally dropped.</p>
+<p>The easiest way to introduce a Pico to a nine-year-old — or to a nervous new mentor — is a comparison, not a spec sheet. A Pico is a tiny, always-on brain with none of the distractions of a full computer: it has no web browser, no files to lose, no operating system to freeze, and nothing to click on by accident. Plug it in, and the one program stored on it starts running immediately and keeps running until the power is removed; unplug it, and it simply stops, with nothing to save and nothing to corrupt.</p>
+<div class="admonition mascot-thinking">
+<p class="admonition-title">A Pico's whole personality is 'one job, running forever'</p>
+<p><img alt="Circuit thinking" class="mascot-admonition-img" src="../../img/mascot/thinking.png">
+Notice that a Pico never multitasks the way a laptop does — it has exactly one program loaded, and it runs that program from the moment power arrives until the moment it doesn't. Once that clicks, every wiring diagram and every line of MicroPython in this book makes a lot more sense: you're deciding what a tiny, single-minded machine does with its one job, not configuring an app.</p>
+</div>
+<p>A club still needs both a Pico and a Chromebook, and the two are not competing for the same job. A worked comparison shows why: writing and testing a MicroPython program happens on the Chromebook, using its keyboard, screen, and a code editor, and that finished program is then copied onto the Pico over a USB cable, where it takes over and runs on its own — the Chromebook can be closed, unplugged, or handed to the next student, and the Pico keeps blinking, sensing, or lighting up its NeoPixel strip regardless. A Chromebook is the workshop where code gets written; a Pico is the tiny finished machine that goes home in a backpack, on a costume, or inside a robot, carrying only the one program it was given.</p>
+<p>Picture a mentor introducing a Pico for the first time to three new students clustered around one table. Rather than opening with "this is a microcontroller," the mentor holds the board up and says, "This board can only do one job at a time, and right now its job is nothing — let's give it something to do." The mentor plugs it into a Chromebook, opens a three-line program that blinks the Pico's built-in LED, and clicks Run. The LED blinks. One student asks, "What if I unplug it and plug it into a battery instead?" The mentor does exactly that, and the LED keeps blinking — no Chromebook attached at all. That two-minute demonstration answers the question every new student silently has — does this thing need a computer to work? — better than any explanation would. It also sets up the physical layout every remaining section of this chapter builds on: which pins are power, which are ground, and which are general-purpose input/output (GPIO) pins free for a project to use, all explorable in the reused pinout diagram below.</p>
+<h4 id="diagram-raspberry-pi-pico-pinout-explorer">Diagram: Raspberry Pi Pico Pinout Explorer<a class="headerlink" href="#diagram-raspberry-pi-pico-pinout-explorer" title="Permanent link">¶</a></h4>
+<iframe src="https://dmccreary.github.io/learning-micropython/sims/pico-pinout-explorer/main.html" width="100%" height="500px" scrolling="no"></iframe>
+
+<p><a class="md-button" href="https://dmccreary.github.io/learning-micropython/sims/pico-pinout-explorer/main.html">Run the Raspberry Pi Pico Pinout Explorer MicroSim fullscreen</a></p>
+<details>
+<summary>Raspberry Pi Pico Pinout Explorer (reused MicroSim)</summary>
+<p>Type: microsim
+<strong>sim-id:</strong> pico-pinout-explorer<br>
+<strong>Library:</strong> p5.js<br>
+<strong>Status:</strong> Reused<br>
+<strong>Source:</strong> https://dmccreary.github.io/learning-micropython/sims/pico-pinout-explorer/<br>
+<strong>Source Repo:</strong> https://github.com/dmccreary/learning-micropython/tree/main/docs/sims/pico-pinout-explorer</p>
+<p>Reused from the MicroSim catalog (WHAT match score 0.83). Learning objective: Given the Raspberry Pi Pico board, the learner identifies the function of each labeled pin — power, ground, and GPIO — by name and number (Remember).</p>
+</details>
+<h2 id="programming-the-pico-with-micropython">Programming the Pico with MicroPython<a class="headerlink" href="#programming-the-pico-with-micropython" title="Permanent link">¶</a></h2>
+<h3 id="micropython-basics">MicroPython Basics<a class="headerlink" href="#micropython-basics" title="Permanent link">¶</a></h3>
+<p><strong>MicroPython</strong> is a compact reimplementation of the Python language, trimmed down to run directly on a microcontroller like the Pico instead of on a full computer with an operating system, hard drive, and gigabytes of memory. Most of the Python syntax a mentor may already know from Chapter 14 carries over unchanged — variables, if-statements, and functions all look the same — but MicroPython trades away Python's larger libraries in exchange for fitting inside a few hundred kilobytes of memory.</p>
+<p>A worked example shows the practical difference that matters most in a club: a MicroPython program is saved directly onto the Pico's own tiny flash storage under one of two special filenames. A file named <code>main.py</code> runs automatically every time the Pico powers on, with no computer attached — exactly how a finished Moving Rainbow kit keeps running after the Chromebook that wrote it is put away. A file saved under any other name only runs when a mentor or student explicitly tells the connected editor to run it, which is the normal mode for testing a new idea before committing to it as the strip's permanent program.</p>
+<p>Between those two saved-file modes sits a third, even faster way to try code: the REPL (Read-Evaluate-Print Loop), a live prompt where a mentor can type a single line and see it take effect immediately, without saving anything at all. A worked comparison ties the three modes together: typing a command at the REPL flips an LED once, right now, and is gone the moment power is lost; saving that same idea to a file named <code>test.py</code> lets a student re-run the exact experiment on demand while still connected to the Chromebook; and finally copying the finished, working version into <code>main.py</code> is what makes the Pico carry the program home on its own. Most mentors walk a new student through exactly that progression — REPL to test one idea, a named file to develop it, <code>main.py</code> to ship it — rather than jumping straight to writing a finished program from a blank file. The diagram below (adapted from a REPL-versus-script workflow template) lets a mentor click through all three modes and see which one is running at each step.</p>
+<h4 id="diagram-repl-vs-saved-script-workflow">Diagram: REPL vs. Saved Script Workflow<a class="headerlink" href="#diagram-repl-vs-saved-script-workflow" title="Permanent link">¶</a></h4>
+<iframe src="../../sims/pico-repl-vs-script-workflow/main.html" width="100%" height="500px" scrolling="no"></iframe>
+
+<details>
+<summary>REPL vs. Saved Script Workflow</summary>
+<p>Type: workflow
+<strong>sim-id:</strong> pico-repl-vs-script-workflow<br>
+<strong>Library:</strong> p5.js<br>
+<strong>Status:</strong> Specified<br>
+<strong>Template:</strong> https://github.com/dmccreary/learning-micropython/tree/main/docs/sims/repl-workflow</p>
+<p>Purpose: Let a mentor click through the REPL, a saved test file, and a saved main.py file to see which one is running at each stage and what happens to it when power is removed.</p>
+<p>Bloom Taxonomy: Understand (L2)
+Bloom Taxonomy Verb: explain</p>
+<p>Learning objective: Given the Pico's REPL prompt, a saved test file, and a saved main.py file, the learner explains the difference between typing a command interactively and running a script automatically at power-up.</p>
+<p>Visual elements: Three labeled panels left to right — "REPL," "test.py (run manually)," "main.py (runs at power-up)" — each showing a small Pico icon and a status light that turns on only when that mode is actively running code.</p>
+<p>Interactive controls: Three clickable panel buttons; a "Power Cycle" button that shows which panel's code survives a simulated unplug-and-replug.</p>
+<p>Default parameters: No panel selected; all status lights off.</p>
+<p>Behavior: Clicking a panel highlights it and shows a one-line description of what happens in that mode; clicking "Power Cycle" turns off the REPL and test.py status lights but leaves the main.py light on, reinforcing which mode survives a power loss.</p>
+<p>Implementation notes: p5.js canvas with three static panel objects and a power-cycle animation that dims two of the three status lights.</p>
+</details>
+<div class="admonition mascot-tip">
+<p class="admonition-title">Keep a folder of proven scripts, not just the current one</p>
+<p><img alt="Circuit giving a tip" class="mascot-admonition-img" src="../../img/mascot/tip.png">
+Here's a shortcut: save every working <code>test.py</code> version to a dated folder on the Chromebook before overwriting it with the next experiment. When a new change breaks something, you can hand a student back the last known-good file in seconds instead of debugging from scratch.</p>
+</div>
+<h3 id="micropython-syntax">MicroPython Syntax<a class="headerlink" href="#micropython-syntax" title="Permanent link">¶</a></h3>
+<p><strong>MicroPython syntax</strong> refers to the small set of punctuation and formatting rules — colons, indentation, and parentheses — that MicroPython inherits directly from Python and that determine whether a program runs at all or fails with an error before doing anything. This book does not teach programming syntax as its own subject — that is exactly what the companion Learning Python and Learning MicroPython textbooks are for — but a mentor running a club still needs to recognize syntax at a glance well enough to spot the handful of mistakes that show up in nearly every beginner's first script.</p>
+<p>Two mistakes account for the overwhelming majority of syntax errors a mentor will see across a season. The first is a missing colon at the end of a line that starts a new block — an <code>if</code> statement, a <code>for</code> loop, or a function definition — since MicroPython uses that colon, not a keyword, to mark where a block begins. The second is inconsistent indentation: MicroPython uses the amount of blank space at the start of a line, not curly braces, to decide which lines belong inside a loop or an <code>if</code> block, so a line indented one space differently from its neighbors is a real error, not just a style complaint.</p>
+<p>A worked example makes both mistakes concrete. This short snippet is meant only to show what a correctly formed block looks like, not to teach loops from scratch:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">):</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    <span class="n">led</span><span class="o">.</span><span class="n">toggle</span><span class="p">()</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>    <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mf">0.5</span><span class="p">)</span>
+</span></code></pre></div>
+<p>Every line inside the loop is indented by the same four spaces, and the <code>for</code> line ends with a colon. A student who forgets that colon sees a <code>SyntaxError</code> before the program runs at all; a student who indents the <code>time.sleep(0.5)</code> line by one space less than <code>led.toggle()</code> sees an <code>IndentationError</code> naming the exact offending line. Both messages point directly at the mistake, which is worth telling students up front — a MicroPython error almost always names the exact line and the exact kind of problem, rather than failing silently.</p>
+<p>The diagram below (adapted from a code-indentation checking template) lets a mentor click through several short snippets, some correctly indented and some not, and see which lines an interpreter would flag before ever running them.</p>
+<h4 id="diagram-micropython-syntax-checker">Diagram: MicroPython Syntax Checker<a class="headerlink" href="#diagram-micropython-syntax-checker" title="Permanent link">¶</a></h4>
+<iframe src="../../sims/micropython-syntax-checker/main.html" width="100%" height="480px" scrolling="no"></iframe>
+
+<details>
+<summary>MicroPython Syntax Checker</summary>
+<p>Type: microsim
+<strong>sim-id:</strong> micropython-syntax-checker<br>
+<strong>Library:</strong> p5.js<br>
+<strong>Status:</strong> Specified<br>
+<strong>Template:</strong> https://github.com/dmccreary/moving-rainbow/tree/main/docs/sims/code-indentation-explorer</p>
+<p>Purpose: Let a mentor practice spotting the two most common beginner syntax mistakes — a missing colon and inconsistent indentation — before a live session.</p>
+<p>Bloom Taxonomy: Remember (L1)
+Bloom Taxonomy Verb: identify</p>
+<p>Learning objective: Given a short MicroPython snippet, the learner identifies which lines are correctly formed and which would raise a SyntaxError or IndentationError.</p>
+<p>Visual elements: A code panel showing one short snippet at a time, line numbers on the left, with a "Check" button and a result area below.</p>
+<p>Interactive controls: "Next Snippet" button cycling through 6 short examples (3 correct, 3 with a missing colon or bad indentation); "Check" button that highlights the offending line in red with the matching error name, or a green checkmark if the snippet is valid.</p>
+<p>Default parameters: Starts on the first snippet, unchecked.</p>
+<p>Behavior: Clicking "Check" evaluates the current snippet against its stored correct/incorrect answer and highlights the specific line responsible when incorrect.</p>
+<p>Implementation notes: p5.js canvas rendering monospaced text lines from a string array per snippet; simple lookup table mapping each snippet to its correct/incorrect status and offending line index.</p>
+</details>
+<h3 id="micropython-loop">MicroPython Loop<a class="headerlink" href="#micropython-loop" title="Permanent link">¶</a></h3>
+<p>A <strong>MicroPython loop</strong> repeats a block of code a fixed number of times or until a condition changes, and it is the single most-used structure in every Moving Rainbow and robot program this book covers — nearly nothing interesting happens in one pass through a script. Chapter 14 introduced loops in Python on a Chromebook; the mechanics are identical in MicroPython, but the loop is now driving a physical LED strip or motor instead of printing text to a screen.</p>
+<p>A worked example shows why a loop matters specifically for the NeoPixel strip covered in the next section. A strip of 30 LEDs needs each one of its 30 pixels set individually — there is no single command that colors an entire strip at once with different colors per pixel. A <code>for</code> loop solves this by repeating one line of code once for every pixel index:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">30</span><span class="p">):</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>    <span class="n">strip</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="mi">255</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="n">strip</span><span class="o">.</span><span class="n">write</span><span class="p">()</span>
+</span></code></pre></div>
+<p>This loop runs the line <code>strip[i] = (255, 0, 0)</code> thirty times, once for each value of <code>i</code> from 0 through 29, coloring every pixel red; changing <code>range(30)</code> to <code>range(60)</code> is the one edit needed to reuse the exact same code on a longer 60-pixel strip. The final <code>strip.write()</code> line, outside the loop, is what actually sends all thirty color values to the physical strip at once — without it, the colors exist only in the Pico's memory and the strip stays dark.</p>
+<p>A loop's range is also where most students introduce their first bug: writing <code>range(1, 30)</code> instead of <code>range(30)</code> skips pixel index 0 entirely, since MicroPython counts pixel positions starting at zero, not one. Reading the loop out loud — "i takes every value starting at zero, up to but not including 30" — catches this mistake faster than staring at the number itself, and it is worth a mentor modeling that reading habit the first few times a new student writes a loop over an LED strip.</p>
+<p>A second, equally common loop pattern repeats forever rather than a fixed number of times, using <code>while True:</code> instead of a <code>for</code> loop with a range — this is the pattern behind every Moving Rainbow animation that keeps cycling colors indefinitely once power is applied, since a finished kit has no keyboard attached to press a key and stop it. The diagram below (adapted from a pixel-indexing template) lets a mentor step through a loop one iteration at a time and watch which physical pixel index changes color on each pass.</p>
+<h4 id="diagram-micropython-loop-pixel-stepper">Diagram: MicroPython Loop Pixel Stepper<a class="headerlink" href="#diagram-micropython-loop-pixel-stepper" title="Permanent link">¶</a></h4>
+<iframe src="../../sims/neopixel-loop-pixel-stepper/main.html" width="100%" height="500px" scrolling="no"></iframe>
+
+<details>
+<summary>MicroPython Loop Pixel Stepper</summary>
+<p>Type: microsim
+<strong>sim-id:</strong> neopixel-loop-pixel-stepper<br>
+<strong>Library:</strong> p5.js<br>
+<strong>Status:</strong> Specified<br>
+<strong>Template:</strong> https://github.com/dmccreary/moving-rainbow/tree/main/docs/sims/pixel-indexing-explorer</p>
+<p>Purpose: Let a learner step through a for loop over a NeoPixel strip one iteration at a time and see exactly which physical pixel index changes on each pass.</p>
+<p>Bloom Taxonomy: Apply (L3)
+Bloom Taxonomy Verb: demonstrate</p>
+<p>Learning objective: Given a for loop iterating over a NeoPixel strip's pixel indices, the learner demonstrates which physical pixel changes color on each pass through the loop.</p>
+<p>Visual elements: A drawn strip of 30 pixel squares above a code panel showing the loop; the current loop variable <code>i</code> displayed prominently.</p>
+<p>Interactive controls: "Step" button advancing one iteration at a time; "Run" button animating all iterations automatically; "Reset" button; a toggle to start the range at 0 or 1 to demonstrate the off-by-one mistake.</p>
+<p>Default parameters: <code>i</code> starts unset, range 0-29, all pixels dark.</p>
+<p>Behavior: Each "Step" click highlights the current code line, updates the <code>i</code> value shown, and colors the matching pixel on the strip; the off-by-one toggle visibly leaves pixel 0 dark for the whole run when enabled.</p>
+<p>Implementation notes: p5.js canvas with an array of 30 rectangle objects for pixels; a state machine advancing one index per step or on a timer during "Run."</p>
+</details>
+<h2 id="wiring-the-moving-rainbow-kit">Wiring the Moving Rainbow Kit<a class="headerlink" href="#wiring-the-moving-rainbow-kit" title="Permanent link">¶</a></h2>
+<h3 id="neopixel-led-strip">NeoPixel LED Strip<a class="headerlink" href="#neopixel-led-strip" title="Permanent link">¶</a></h3>
+<p>A <strong>NeoPixel LED strip</strong> is a length of flexible circuit board holding a row of individually addressable RGB LEDs, each one capable of showing its own separate color under program control, all driven from a single data wire connected to one Pico pin. This is a meaningfully different technology from a regular string of holiday lights, where every bulb receives the exact same power and shows the exact same color — a NeoPixel strip instead gives every pixel its own tiny controller chip built directly into the LED package, so pixel 5 can glow blue while its immediate neighbor, pixel 6, stays off or glows a completely different color.</p>
+<p>A worked example shows how that per-pixel addressing looks in code, building directly on the loop from the previous section: the line <code>strip[i] = (255, 0, 0)</code> sets pixel index <code>i</code> to full red, and <code>strip[i] = (0, 0, 255)</code> sets a different index to blue — each of the strip's pixels is simply an entry in an indexed list, the same indexing concept a student already used with Python lists back in Chapter 14, just now each entry lights up a physical LED instead of holding a number or a word.</p>
+<div class="admonition mascot-thinking">
+<p class="admonition-title">Every pixel is its own tiny, independently addressable light</p>
+<p><img alt="Circuit thinking" class="mascot-admonition-img" src="../../img/mascot/thinking.png">
+Notice the shift from earlier chapters: an LED in Chapter 16 was either fully on or fully off for the whole circuit, but a NeoPixel strip lets every single pixel run its own independent color decision at once. That's the one idea underneath every Moving Rainbow pattern in this chapter — thirty independent decisions, not one.</p>
+</div>
+<p>Club kits typically use a strip of 30 pixels, a size chosen deliberately: long enough to look genuinely impressive wrapped around a hat brim or hung along a shelf, but short enough that the whole strip can draw its power from the Pico's own 5-volt USB supply without needing a separate battery pack — a tradeoff the Brightness Control Code section later in this chapter revisits. This single-data-wire design is also why a NeoPixel strip is realistic for a Pico with only a couple dozen available pins in the first place: lighting sixty individually colored, non-addressable LEDs the traditional way would need sixty separate output pins, which no beginner-friendly microcontroller has to spare.</p>
+<p>Now that the addressing idea is concrete, the table below contrasts a NeoPixel strip against the plain, non-addressable LED strips a student may have seen on a string of patio lights.</p>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Plain LED String</th>
+<th>NeoPixel (Addressable) Strip</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Color per bulb</td>
+<td>Same color, all bulbs at once</td>
+<td>Any color, independently, per pixel</td>
+</tr>
+<tr>
+<td>Wiring</td>
+<td>Power and ground only</td>
+<td>Power, ground, plus one data wire</td>
+</tr>
+<tr>
+<td>Controlled by</td>
+<td>A single on/off switch or dimmer</td>
+<td>Code, one pixel index at a time</td>
+</tr>
+<tr>
+<td>Typical club use</td>
+<td>Decoration only</td>
+<td>Moving Rainbow kit, costumes, IoT projects</td>
+</tr>
+</tbody>
+</table>
+<h3 id="led-strip-wiring">LED Strip Wiring<a class="headerlink" href="#led-strip-wiring" title="Permanent link">¶</a></h3>
+<p><strong>LED strip wiring</strong> covers the three physical connections a NeoPixel strip needs from a Pico: a 5-volt power wire, a ground wire, and a single data wire carrying the pixel-by-pixel color information from the loop code above. Getting the data wire's direction right matters more here than with most other components: a NeoPixel strip's data input is usually marked with an arrow or the letters "DI" (data in) on one end and "DO" (data out) on the other, and the strip only receives commands correctly when the Pico's data pin connects to the DI end, not DO.</p>
+<p>A worked example ties the wiring directly to the code: connect the Pico's 5V pin to the strip's power wire, a ground pin to the strip's ground wire, and a chosen GPIO pin — commonly GPIO 0 or GPIO 28 in this book's kit layout — to the strip's data-in wire. That same GPIO pin number then has to match the number written into the MicroPython setup code, since the code has no way to detect which physical pin a wire happens to be plugged into; a mismatch between the wiring and the number in code is the most common reason a freshly wired Moving Rainbow kit produces no light at all, even though every wire is correctly connected to something.</p>
+<p>Club kits typically add one small safety habit borrowed directly from Chapter 16's electrical safety rules: connecting a strip's power and ground before the data wire, and disconnecting them in the reverse order, reduces the chance of a stray, unintended connection during the fiddly process of pushing several jumper wires into a breadboard one at a time. A strip longer than the roughly 30-to-60-pixel range a club kit ships with needs a change to this wiring, not just longer code: pulling power for many dozens of fully-lit pixels through the Pico's own 5-volt pin can draw more current than that pin is rated to supply, so longer strips are wired to a separate external power supply instead, with only the data wire and a shared ground still running to the Pico. A club sticking to its stock kit size never needs to make this change, but it is worth a mentor knowing before a student proposes wrapping a strip around an entire classroom doorway.</p>
+<p>The diagram below (adapted from a NeoPixel wiring template) lets a mentor click each of the three wires and see exactly which strip terminal and which Pico pin it connects.</p>
+<h4 id="diagram-moving-rainbow-wiring-diagram">Diagram: Moving Rainbow Wiring Diagram<a class="headerlink" href="#diagram-moving-rainbow-wiring-diagram" title="Permanent link">¶</a></h4>
+<iframe src="../../sims/moving-rainbow-wiring-diagram/main.html" width="100%" height="500px" scrolling="no"></iframe>
+
+<details>
+<summary>Moving Rainbow Wiring Diagram</summary>
+<p>Type: diagram
+<strong>sim-id:</strong> moving-rainbow-wiring-diagram<br>
+<strong>Library:</strong> p5.js<br>
+<strong>Status:</strong> Specified<br>
+<strong>Template:</strong> https://github.com/dmccreary/moving-rainbow/tree/main/docs/sims/neopixel-wiring-diagram</p>
+<p>Purpose: Let a mentor click each of the three Pico-to-strip wires and confirm the correct pin and terminal before powering a kit for the first time.</p>
+<p>Bloom Taxonomy: Apply (L3)
+Bloom Taxonomy Verb: demonstrate</p>
+<p>Learning objective: Given a Pico and a NeoPixel strip, the learner demonstrates how to wire the power, ground, and data connections between them, including which end of the strip is the data-in end.</p>
+<p>Visual elements: A drawn Pico board and a drawn NeoPixel strip with three labeled wires (power, ground, data) running between them; the strip's DI and DO ends clearly marked.</p>
+<p>Interactive controls: Click any wire to highlight its two endpoints and show a labeled tooltip ("5V to Power," "GND to Ground," "GPIO 0 to Data In"); a "Check My Wiring" quiz mode that hides the labels and asks the learner to identify each wire.</p>
+<p>Default parameters: All three wires shown and labeled; quiz mode off.</p>
+<p>Behavior: Clicking a wire highlights it in a distinct color and shows its tooltip; enabling quiz mode removes the labels and scores the learner's clicks against the correct wire-to-terminal mapping.</p>
+<p>Implementation notes: p5.js canvas with fixed coordinate endpoints for the Pico and strip graphics; click-detection based on distance to each wire's path.</p>
+</details>
+<h3 id="moving-rainbow-kit">Moving Rainbow Kit<a class="headerlink" href="#moving-rainbow-kit" title="Permanent link">¶</a></h3>
+<p><strong>The Moving Rainbow kit</strong> is the complete, ready-to-assemble parts bundle this book's course description points to directly: a Raspberry Pi Pico, a NeoPixel LED strip, a small breadboard, jumper wires, and a USB cable, sold together for around $15 — cheap enough that a club can outfit an entire table of students without treating the kit as precious or irreplaceable.</p>
+<p>A worked example walks through what "assembled" actually means for this specific kit, tying together every concept from this chapter so far: the Pico sits across the center gap of the breadboard; three jumper wires run from the Pico's 5V, ground, and a chosen GPIO pin to the NeoPixel strip's power, ground, and data-in wires exactly as described in LED Strip Wiring above; and a <code>main.py</code> file — written using the loop and pixel-indexing ideas from the MicroPython Basics and Loop sections — is copied onto the Pico so the strip starts animating the instant a USB cable supplies power, with no Chromebook required afterward.</p>
+<p>This kit earns its status as the club's most popular hardware project precisely because it completes an arc a student can feel: Chapter 16 wired a single LED that could only blink, Chapter 17 added sensors and motors that reacted to the world, and this kit finally lets a student both build something and personalize it — the same thirty pixels can become a slow rainbow fade, a Halloween strobe, or a Fourth of July sparkle purely by changing a few lines of code, without touching a single wire again. That reusability is exactly why the rest of this chapter treats color and animation as a family of small code changes on one already-wired kit, rather than as separate hardware projects.</p>
+<p>Now that every part and connection has been introduced individually, the table below lists everything a fully stocked kit bin needs for one student station.</p>
+<table>
+<thead>
+<tr>
+<th>Part</th>
+<th>Approximate Cost</th>
+<th>Role in the Kit</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Raspberry Pi Pico</td>
+<td>$4</td>
+<td>Runs the MicroPython program</td>
+</tr>
+<tr>
+<td>NeoPixel LED strip (30 pixels)</td>
+<td>$6</td>
+<td>Displays the color pattern</td>
+</tr>
+<tr>
+<td>Small breadboard</td>
+<td>$2</td>
+<td>Holds connections without soldering</td>
+</tr>
+<tr>
+<td>Jumper wires (3-5)</td>
+<td>$1</td>
+<td>Carry power, ground, and data</td>
+</tr>
+<tr>
+<td>USB cable</td>
+<td>$2</td>
+<td>Powers the Pico and loads code</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition mascot-tip">
+<p class="admonition-title">Test every kit with the same three-line blink program before a session</p>
+<p><img alt="Circuit giving a tip" class="mascot-admonition-img" src="../../img/mascot/tip.png">
+Here's a shortcut: load one tiny, known-good blink script onto every kit as you prep for a session, rather than trusting that a kit that worked last month still does. A thirty-second check per kit is far cheaper than diagnosing a wiring mismatch in front of a waiting student.</p>
+</div>
+<h2 id="seasonal-patterns-for-the-moving-rainbow-kit">Seasonal Patterns for the Moving Rainbow Kit<a class="headerlink" href="#seasonal-patterns-for-the-moving-rainbow-kit" title="Permanent link">¶</a></h2>
+<h3 id="moving-rainbow-pattern">Moving Rainbow Pattern<a class="headerlink" href="#moving-rainbow-pattern" title="Permanent link">¶</a></h3>
+<p><strong>A Moving Rainbow pattern</strong> is the specific animation the kit is named for: a rainbow of color that appears to travel smoothly along the strip over time, produced not by physically moving anything but by shifting which color each pixel shows on every pass through the main loop. The "motion" a viewer sees is an illusion built entirely from arithmetic — each pixel's color is calculated from its own position plus a single number that increases a little on every loop iteration.</p>
+<p>A worked example shows the core idea in miniature: if pixel <code>i</code>'s color depends on <code>(i + offset) % 255</code>, then incrementing <code>offset</code> by 1 every time through the <code>while True:</code> loop from the MicroPython Loop section shifts every pixel's color by exactly one step, and repeating that shift dozens of times per second is what the eye reads as a rainbow flowing down the strip. The <code>% 255</code> (modulo) keeps the number wrapping back to 0 once it passes 255, rather than growing forever — the same wraparound idea a student may recognize from an odometer rolling from 999999 back to 000000.</p>
+<p>This one pattern — position plus a changing offset — is also the template every seasonal pattern in the rest of this section customizes, usually by changing nothing more than the color values or the timing, not the loop structure itself. The gallery below lets a mentor compare several running patterns side by side before choosing one to build toward with a group.</p>
+<h4 id="diagram-seasonal-led-pattern-gallery">Diagram: Seasonal LED Pattern Gallery<a class="headerlink" href="#diagram-seasonal-led-pattern-gallery" title="Permanent link">¶</a></h4>
+<iframe src="../../sims/seasonal-led-pattern-gallery/main.html" width="100%" height="500px" scrolling="no"></iframe>
+
+<details>
+<summary>Seasonal LED Pattern Gallery</summary>
+<p>Type: microsim
+<strong>sim-id:</strong> seasonal-led-pattern-gallery<br>
+<strong>Library:</strong> p5.js<br>
+<strong>Status:</strong> Specified<br>
+<strong>Template:</strong> https://github.com/dmccreary/moving-rainbow/tree/main/docs/sims/animation-pattern-comparison</p>
+<p>Purpose: Let a mentor compare the base Moving Rainbow pattern against its Halloween, holiday, and Fourth of July variants side by side, before choosing one for a session.</p>
+<p>Bloom Taxonomy: Analyze (L4)
+Bloom Taxonomy Verb: differentiate</p>
+<p>Learning objective: Given a running LED pattern, the learner differentiates which seasonal theme produced it and identifies the code parameter that changed to create it.</p>
+<p>Visual elements: Four small animated strip previews running simultaneously, labeled "Rainbow," "Halloween," "Holiday," and "Fourth of July," each 30 pixels wide.</p>
+<p>Interactive controls: Click any strip preview to enlarge it and show the two or three code values (palette and timing) that distinguish it from the base rainbow pattern; a shared speed slider affecting all four previews at once.</p>
+<p>Default parameters: All four previews running at a moderate default speed.</p>
+<p>Behavior: Clicking a preview pauses the others and displays its distinguishing parameters in a side panel; the speed slider updates all four animations' timing together in real time.</p>
+<p>Implementation notes: p5.js canvas with four independent pixel-array objects animated on a shared frame counter; each pattern implemented as a small function returning a color per pixel per frame.</p>
+</details>
+<h3 id="led-noodle-project">LED Noodle Project<a class="headerlink" href="#led-noodle-project" title="Permanent link">¶</a></h3>
+<p>An <strong>LED Noodle project</strong> takes the same NeoPixel strip concept and threads it through a length of translucent plastic or fabric tubing — the "noodle" — which diffuses each pixel's sharp point of light into a soft glow, making the strip comfortable to wear draped around a shoulder or wound around a hat brim rather than sitting as a rigid, exposed circuit board.</p>
+<p>A worked example shows the one code change this project usually needs beyond a standard Moving Rainbow pattern: because a noodle is viewed up close, against skin or fabric, brightness that looks perfect on a strip mounted three feet away can feel uncomfortably intense worn directly on a body, so most LED Noodle programs lower the brightness scaling factor from the Brightness Control Code section later in this chapter before anything else changes.</p>
+<p>The wiring and looping code stay identical to the Moving Rainbow Kit and Moving Rainbow Pattern sections above — the noodle is a physical diffuser change, not a programming change, which makes it a natural second-session project once a kit's core pattern is already working. A mentor introducing this project for the first time often demonstrates both versions side by side — the bare strip and the noodle-wrapped strip running the identical code — so students see directly that the diffuser, not the program, is what changed the strip's whole visual character.</p>
+<h3 id="halloween-costume-lighting">Halloween Costume Lighting<a class="headerlink" href="#halloween-costume-lighting" title="Permanent link">¶</a></h3>
+<p><strong>Halloween costume lighting</strong> applies the Moving Rainbow kit to a wearable costume, most often swapping the rainbow's full color range for a narrower palette of orange and purple, or adding a strobe-style flicker instead of a smooth fade, to match a pumpkin, ghost, or monster theme.</p>
+<p>A worked example shows how small this change really is in code: instead of cycling through the full <code>(i + offset) % 255</code> rainbow range, a Halloween version alternates between two fixed colors chosen by whether a pixel's index is even or odd, producing a flickering jack-o'-lantern effect rather than a flowing rainbow.</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="k">if</span> <span class="n">i</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>    <span class="n">strip</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="mi">255</span><span class="p">,</span> <span class="mi">90</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>   <span class="c1"># orange</span>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="k">else</span><span class="p">:</span>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>    <span class="n">strip</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="mi">100</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">200</span><span class="p">)</span>  <span class="c1"># purple</span>
+</span></code></pre></div>
+<p>Costume lighting introduces one safety consideration worth a mentor raising explicitly: a battery pack worn on a costume needs to sit somewhere it cannot be crushed, bent, or soaked, and any wiring running across a moving joint like an elbow needs enough slack that normal movement does not repeatedly flex a jumper wire loose or snap it — a real risk across a full evening of trick-or-treating that a strip sitting still on a desk never faces. This is also the club's highest-visibility seasonal project, which makes it worth budgeting an extra session purely for battery-mounting and wire-routing practice rather than assuming the electronics alone are the hard part.</p>
+<h3 id="holiday-light-pattern">Holiday Light Pattern<a class="headerlink" href="#holiday-light-pattern" title="Permanent link">¶</a></h3>
+<p>A <strong>holiday light pattern</strong> adapts the same strip to a winter-holiday palette — most commonly alternating red and green — and often borrows a "chase" effect where only a handful of lit pixels appear to travel down an otherwise dark strip, echoing the look of traditional string lights rather than a continuous rainbow.</p>
+<p>A worked example shows the chase effect's core trick: rather than every pixel showing a color at once, the loop lights only a short run of pixels starting at <code>offset</code> and turns every other pixel off, then increments <code>offset</code> each pass so the lit stretch appears to slide down the strip.</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">30</span><span class="p">):</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>    <span class="k">if</span> <span class="n">offset</span> <span class="o">&lt;=</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">offset</span> <span class="o">+</span> <span class="mi">5</span><span class="p">:</span>
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>        <span class="n">strip</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="mi">255</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span> <span class="k">if</span> <span class="n">i</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span> <span class="k">else</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">255</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>    <span class="k">else</span><span class="p">:</span>
+</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>        <span class="n">strip</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+</span></code></pre></div>
+<p>Because both Halloween and holiday patterns reuse the same <code>offset</code> variable and the same even/odd color trick, a student who understands one already understands roughly ninety percent of the other — a mentor short on session time can present the holiday version as a two-line change to the Halloween code rather than an unrelated, from-scratch pattern. Many clubs run their final session before winter break on this pattern, making it a natural candidate for a small in-class showcase where every student's strip runs simultaneously along one shared table.</p>
+<h3 id="fourth-of-july-pattern">Fourth Of July Pattern<a class="headerlink" href="#fourth-of-july-pattern" title="Permanent link">¶</a></h3>
+<p>A <strong>Fourth of July pattern</strong> swaps the palette again, this time to red, white, and blue, and frequently adds a brief random sparkle layered on top of a slower base pattern — a single pixel flashing bright white for one loop pass before returning to the base sequence, mimicking the look of fireworks against a night sky.</p>
+<p>A worked example shows how the sparkle is added without disturbing the base pattern underneath: after setting every pixel's base color for the current pass, the code picks one random pixel index and briefly overwrites just that pixel to white before calling <code>strip.write()</code>.</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="n">strip</span><span class="p">[</span><span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">29</span><span class="p">)]</span> <span class="o">=</span> <span class="p">(</span><span class="mi">255</span><span class="p">,</span> <span class="mi">255</span><span class="p">,</span> <span class="mi">255</span><span class="p">)</span>
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="n">strip</span><span class="o">.</span><span class="n">write</span><span class="p">()</span>
+</span></code></pre></div>
+<p>Picking a new random index on every single pass, rather than the same one repeatedly, is what makes the sparkle look like scattered fireworks instead of one pixel blinking predictably in place. This pattern is a natural bridge into the next section, since "pick one pixel, briefly change it, then restore the base pattern" is the same isolate-one-element logic a color wheel function uses to calculate any single pixel's color independently of its neighbors. Clubs running a summer session often pair this pattern with the same battery-mounting safety habits introduced under Halloween Costume Lighting, since a Fourth of July strip is just as likely to end up worn or carried outdoors as displayed on a shelf.</p>
+<h2 id="controlling-color-brightness-and-timing">Controlling Color, Brightness, and Timing<a class="headerlink" href="#controlling-color-brightness-and-timing" title="Permanent link">¶</a></h2>
+<h3 id="color-wheel-programming">Color Wheel Programming<a class="headerlink" href="#color-wheel-programming" title="Permanent link">¶</a></h3>
+<p><strong>Color wheel programming</strong> is the technique behind every smooth color transition in this chapter: a function that takes a single number — a position on a 0-to-255 color wheel — and returns the matching red, green, and blue values needed to display that color on a NeoPixel pixel. Rather than hand-picking RGB values for every color a pattern might need, a mentor or student writes, or reuses, one <code>wheel(position)</code> function once, and every pattern in this chapter calls it as needed.</p>
+<p>A worked example shows the function doing real work: calling <code>wheel(0)</code> returns full red, <code>wheel(85)</code> returns full green, and <code>wheel(170)</code> returns full blue, with every value in between blending smoothly across the spectrum — exactly the values the <code>(i + offset) % 255</code> expression from the Moving Rainbow Pattern section feeds into it, one call per pixel, per loop pass. A student who wants to shift the whole rainbow's starting color changes exactly one number — the starting <code>offset</code> — rather than editing any RGB value directly, which is the one line a student typically customizes to make a pattern their own.</p>
+<p>The diagram below (adapted from an HSV color-space template) lets a learner drag a position around a color wheel and see the matching RGB values a <code>wheel()</code> function would return.</p>
+<h4 id="diagram-color-wheel-hue-explorer">Diagram: Color Wheel Hue Explorer<a class="headerlink" href="#diagram-color-wheel-hue-explorer" title="Permanent link">¶</a></h4>
+<iframe src="../../sims/color-wheel-hue-explorer/main.html" width="100%" height="480px" scrolling="no"></iframe>
+
+<details>
+<summary>Color Wheel Hue Explorer</summary>
+<p>Type: microsim
+<strong>sim-id:</strong> color-wheel-hue-explorer<br>
+<strong>Library:</strong> p5.js<br>
+<strong>Status:</strong> Specified<br>
+<strong>Template:</strong> https://github.com/dmccreary/moving-rainbow/tree/main/docs/sims/hsv-color-explorer</p>
+<p>Purpose: Let a learner drag a position around a 0-255 color wheel and see the matching RGB values a wheel() function would return, before writing or reading that function in code.</p>
+<p>Bloom Taxonomy: Apply (L3)
+Bloom Taxonomy Verb: calculate</p>
+<p>Learning objective: Given a position on a 0-255 color wheel, the learner calculates the resulting RGB color a wheel() function would return.</p>
+<p>Visual elements: A circular color wheel with a draggable position marker; a swatch showing the resulting color; a readout of the R, G, B values.</p>
+<p>Interactive controls: Draggable marker around the wheel; numeric input as an alternative to dragging; a "Show three sample positions" button highlighting 0, 85, and 170.</p>
+<p>Default parameters: Marker starts at position 0 (red).</p>
+<p>Behavior: Dragging the marker updates the RGB readout and swatch continuously; the sample-positions button steps through the three reference colors from the worked example.</p>
+<p>Implementation notes: p5.js canvas with an HSV-to-RGB conversion function driven by the marker's angle; draggable marker using mouse-drag detection along the wheel's circumference.</p>
+</details>
+<div class="admonition mascot-tip">
+<p class="admonition-title">One function, reused everywhere</p>
+<p><img alt="Circuit giving a tip" class="mascot-admonition-img" src="../../img/mascot/tip.png">
+Here's a shortcut worth teaching early: once a working <code>wheel()</code> function exists in one script, copying that exact function into every new pattern script — Halloween, holiday, Fourth of July — saves far more time than reinventing color math from scratch each season.</p>
+</div>
+<h3 id="brightness-control-code">Brightness Control Code<a class="headerlink" href="#brightness-control-code" title="Permanent link">¶</a></h3>
+<p><strong>Brightness control code</strong> scales down the intensity of every pixel's color by a single multiplying factor, letting a program dim an entire NeoPixel strip uniformly without changing any of the hue values a pattern calculates. Full-brightness color and dim color use the exact same <code>wheel()</code> output — brightness is a separate multiplication step applied afterward, not a different color calculation.</p>
+<p>A worked example shows the calculation directly: multiplying a full-brightness color value of 255 by a brightness factor of 0.3 gives 255 × 0.3 = 76.5, rounded to 76 — noticeably dimmer than full brightness but still clearly lit, applied identically to the red, green, and blue components of every pixel's color before <code>strip.write()</code> sends the final values to the strip.</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="n">brightness</span> <span class="o">=</span> <span class="mf">0.3</span>
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="n">r</span><span class="p">,</span> <span class="n">g</span><span class="p">,</span> <span class="n">b</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="mi">255</span> <span class="o">*</span> <span class="n">brightness</span><span class="p">),</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span>
+</span></code></pre></div>
+<p>Brightness control matters for more than aesthetics. Running thirty NeoPixel pixels at full white — the single most power-hungry color and brightness combination possible — can draw more current than a Pico's own USB power pin comfortably supplies, so most Moving Rainbow programs cap brightness well below 100 percent by default specifically to keep the whole kit running safely from USB power alone, tying directly back to the power-budget tradeoff introduced in the NeoPixel LED Strip section. A mentor troubleshooting a kit that dims unexpectedly or resets when a bright pattern starts should check this brightness factor before suspecting a wiring fault — a factor left too high from a previous lesson is a far more common cause than a loose connection.</p>
+<h3 id="animation-timing-code">Animation Timing Code<a class="headerlink" href="#animation-timing-code" title="Permanent link">¶</a></h3>
+<p><strong>Animation timing code</strong> controls how fast a pattern appears to move by inserting a short pause inside the main loop between one frame of color and the next, the same way a flip-book's page-turning speed, not the drawings themselves, determines whether the animation looks smooth or jerky.</p>
+<p>A worked example shows the tradeoff directly:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mf">0.05</span><span class="p">)</span>
+</span></code></pre></div>
+<p>A pause of <code>0.05</code> seconds runs the loop about twenty times per second, fast enough that a rainbow appears to flow smoothly; stretching that same pause to <code>0.5</code> seconds runs the loop only twice per second, and the identical color code now looks like a slideshow of distinct steps rather than motion at all. Nothing about the color math changes between these two versions — only the single number inside <code>time.sleep()</code> changes, making animation speed one of the easiest, safest parameters for a student to experiment with independently. If a finished pattern looks visibly jerky, the sleep value is the first place to look — it is far more often the cause than a mistake in the color-calculating loop itself.</p>
+<div class="admonition mascot-encourage">
+<p class="admonition-title">There's no 'correct' sleep value — only one that feels right</p>
+<p><img alt="Circuit encouraging" class="mascot-admonition-img" src="../../img/mascot/encouraging.png">
+If tuning animation speed feels like guesswork rather than a real skill, that's because it partly is — even experienced mentors nudge a sleep value up and down by feel before a pattern looks right. Trust your eyes here more than any formula, and expect to try three or four values before one clicks.</p>
+</div>
+<h2 id="robot-kits-and-behavior">Robot Kits and Behavior<a class="headerlink" href="#robot-kits-and-behavior" title="Permanent link">¶</a></h2>
+<h3 id="robot-kit">Robot Kit<a class="headerlink" href="#robot-kit" title="Permanent link">¶</a></h3>
+<p><strong>A robot kit</strong> bundles a chassis, one or two DC motors from Chapter 17, wheels, a battery holder, and a Pico-compatible motor driver board into a single beginner-friendly package, playing the same "everything you need, nothing extra" role for robotics that the Moving Rainbow kit plays for LED projects. A typical club kit includes:</p>
+<ul>
+<li>A robot chassis (Chapter 17's Robot Chassis concept)</li>
+<li>One or two DC motors with wheels</li>
+<li>A battery holder</li>
+<li>A motor driver board that sits between the Pico and the motors</li>
+<li>Mounting hardware — standoffs, screws, and a Pico mounting plate</li>
+</ul>
+<p>A worked example shows how the pieces map onto ideas from earlier chapters: the code driving the motors uses the exact same digital-output and PWM ideas from Chapter 16, and the driver board plays the same role an H-bridge did in Chapter 17's DC Motor section — a robot kit does not introduce new electrical concepts so much as it assembles concepts a mentor has already taught into one physical object a student can drive across a table or a floor.</p>
+<p>Club kits in this price range typically run <span class="arithmatex">\(18-\)</span>25, in line with the low-cost collision-avoidance robot base referenced in this book's companion STEM Robots textbook, keeping a full robotics project within the same per-student budget as a Moving Rainbow kit. A mentor unboxing a new robot kit for the first time benefits from a full dry-run assembly alone, before students arrive, for the same reason kits get blink-tested in the Moving Rainbow Kit section — finding a missing screw or an unclear instruction sheet is far cheaper to discover in an empty room than in front of six waiting students.</p>
+<h3 id="robot-kit-assembly">Robot Kit Assembly<a class="headerlink" href="#robot-kit-assembly" title="Permanent link">¶</a></h3>
+<p><strong>Robot kit assembly</strong> is the ordered sequence of physical steps — mounting the chassis, attaching motors and wheels, wiring the motor driver board, and securing the battery holder — that turns a box of loose robot-kit parts into one working machine ready for code. Order matters more than it first appears: several later steps are physically difficult or impossible if an earlier step was skipped or done out of sequence.</p>
+<p>A worked example makes the ordering concrete: standoffs that hold the chassis's two layers apart have to go on before the Pico and driver board are mounted between them, since there is no way to slide a standoff into place once a board is already screwed down on top of it; similarly, motor wires need to be connected to the driver board before the chassis's second layer is closed up over them, since that layer blocks direct access to the connection points afterward. A mentor who has already assembled the kit once, following the dry-run habit from the Robot Kit section, can catch a student about to skip an order-dependent step before it becomes a frustrating disassembly.</p>
+<p>The diagram below (adapted from a robot-assembly-workflow template) lets a mentor click through the assembly sequence and see the mechanical reason each step has to precede the next.</p>
+<h4 id="diagram-robot-kit-assembly-sequence">Diagram: Robot Kit Assembly Sequence<a class="headerlink" href="#diagram-robot-kit-assembly-sequence" title="Permanent link">¶</a></h4>
+<iframe src="../../sims/robot-kit-assembly-sequence/main.html" width="100%" height="500px" scrolling="no"></iframe>
+
+<details>
+<summary>Robot Kit Assembly Sequence</summary>
+<p>Type: workflow
+<strong>sim-id:</strong> robot-kit-assembly-sequence<br>
+<strong>Library:</strong> p5.js<br>
+<strong>Status:</strong> Specified<br>
+<strong>Template:</strong> https://github.com/dmccreary/stem-robots/tree/main/docs/sims/robot-assembly-workflow</p>
+<p>Purpose: Let a mentor rehearse the correct assembly order and see the mechanical reason each step must precede the next before running a live build session.</p>
+<p>Bloom Taxonomy: Apply (L3)
+Bloom Taxonomy Verb: sequence</p>
+<p>Learning objective: Given a robot kit's loose parts, the learner sequences the assembly steps in the order that avoids blocking a later step, and explains why each step precedes the next.</p>
+<p>Visual elements: A row of six numbered step cards (standoffs, chassis mount, motor wiring, driver board, battery holder, final closure), each with a small icon.</p>
+<p>Interactive controls: Drag-to-reorder step cards; a "Check Order" button; a "Why This Order?" toggle revealing the mechanical reason for each correct step.</p>
+<p>Default parameters: Cards start in a shuffled order.</p>
+<p>Behavior: "Check Order" compares the current arrangement to the correct sequence and marks each card green or red; the "Why This Order?" toggle shows a one-sentence mechanical explanation beneath each card in the correct sequence.</p>
+<p>Implementation notes: p5.js canvas with draggable card objects and array-index-based order checking.</p>
+</details>
+<h3 id="remote-control-distraction-risk">Remote Control Distraction Risk<a class="headerlink" href="#remote-control-distraction-risk" title="Permanent link">¶</a></h3>
+<p><strong>Remote control distraction risk</strong> describes a specific classroom-management pattern this book's course description names directly: when a robot is driven by a handheld remote or a phone app rather than running its own code, students naturally shift into racing, crashing, and showing off rather than engaging with the programming task a session was actually built around.</p>
+<p>A worked example makes the risk concrete rather than abstract: a mentor hands two students remote-control robots during a session meant to practice sensor code, intending the remotes only for a quick five-minute test drive. Twenty minutes later, both students are still racing the robots down a hallway, the sensor code sits untouched, and redirecting the group back to the actual lesson now takes real effort and cuts noticeably into the time left. The remote control itself did nothing wrong — it is simply far more immediately rewarding than watching a sensor value print to a screen, and a mentor who doesn't plan around that reward gap loses session time to it by default, not by any single bad decision.</p>
+<p>The practical fix is scheduling, not prohibition: treat remote-control driving as its own timed, bounded activity — a five-minute reward at the very end of a session — rather than as a tool available at any point during coding time, so the distraction has a defined start and end instead of an open invitation. Autonomous Robot Behavior, covered next, is often the better default mode for a coding session specifically because it keeps a robot's behavior tied to the code being taught, rather than to whoever is currently holding a controller.</p>
+<div class="admonition mascot-warning">
+<p class="admonition-title">A remote control is a reward, not a coding tool — schedule it as one</p>
+<p><img alt="Circuit warning" class="mascot-admonition-img" src="../../img/mascot/warning.png">
+Watch out for this: handing out remote controls mid-lesson almost always costs more session time than planned, since racing is simply more fun than debugging code. Save remote-control driving for a scheduled five-minute block at the end of a session instead of leaving it available throughout.</p>
+</div>
+<h3 id="autonomous-robot-behavior">Autonomous Robot Behavior<a class="headerlink" href="#autonomous-robot-behavior" title="Permanent link">¶</a></h3>
+<p><strong>Autonomous robot behavior</strong> is movement and decision-making a robot performs entirely from its own code and sensor readings, with no human operator directing it moment to moment — the robot senses its surroundings, its code decides what that sensor reading means, and its motors act on that decision, the same sense-process-act loop Chapter 16 introduced for a single blinking LED, now scaled up to an entire moving robot.</p>
+<p>A worked example contrasts directly with the previous section's remote-control scenario: instead of a student steering with a controller, an autonomous robot's code continuously reads its distance sensor from Chapter 17 and reverses and turns whenever that reading drops below roughly 10 centimeters, without any person touching a control the whole time. The robot's actual path across the floor is not scripted in advance — it emerges from that same simple sense-decide-act rule reacting to whatever obstacles happen to be in its way that day.</p>
+<p>Now that both behavior modes are defined, the table below contrasts them directly on the dimensions that matter most for planning a session.</p>
+<table>
+<thead>
+<tr>
+<th>Dimension</th>
+<th>Remote-Controlled</th>
+<th>Autonomous</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Who decides each move</td>
+<td>A student, moment to moment</td>
+<td>The robot's own code and sensors</td>
+</tr>
+<tr>
+<td>Coding focus during use</td>
+<td>None — driving only</td>
+<td>Direct — behavior comes from the code taught</td>
+</tr>
+<tr>
+<td>Distraction risk</td>
+<td>High (see previous section)</td>
+<td>Low — runs the same regardless of who watches</td>
+</tr>
+<tr>
+<td>Best scheduled as</td>
+<td>A short, bounded reward</td>
+<td>The main coding activity</td>
+</tr>
+</tbody>
+</table>
+<p>A mentor planning a session's balance between the two modes has a simple rule of thumb worth passing on: teach and code in autonomous mode, and save remote control, if it is used at all, for the reward slot the previous section described.</p>
+<h3 id="robot-face-kit">Robot Face Kit<a class="headerlink" href="#robot-face-kit" title="Permanent link">¶</a></h3>
+<p><strong>A robot face kit</strong> pairs a small OLED display — the same technology from Chapter 17's Display Basics section — with a simple robot chassis or standalone mount, letting a student draw eyes, a mouth, and simple expressions on the display instead of, or in addition to, driving motors.</p>
+<p>A worked example shows how little code a first expression actually needs: drawing two filled circles for eyes and a single curved line beneath them for a smile reuses the exact same (x, y) pixel-coordinate approach Chapter 17's OLED Coordinate System diagram covered, just aimed at a face shape instead of a sensor readout. Moving the two eye circles a few pixels closer together, or changing the mouth's curve from smiling to a flat line, is often the entire code change between a "happy" and a "neutral" expression — small, readable edits a student can make and immediately see reflected on the physical display.</p>
+<p>This kit closes out the chapter's hardware roster by returning to a familiar building block — an OLED display already covered in depth — applied to a new, expressive purpose. A club with both robot kits and robot face kits in its bins can even combine them: mounting a small face display on a robot chassis lets an autonomous robot's code show a simple "searching" expression while its distance sensor looks for a path forward, and a "happy" expression once it finds one — a useful closing example that nearly every advanced kit in this book's later chapters recombines a small set of parts already introduced, rather than introducing entirely new hardware every time.</p>
+<h2 id="chapter-summary">Chapter Summary<a class="headerlink" href="#chapter-summary" title="Permanent link">¶</a></h2>
+<p>This chapter started with the Raspberry Pi Pico — a tiny, single-purpose board a mentor can hand to a student without a laptop's usual risks — and built up through MicroPython's basics, syntax, and loops to wire and program the club's most popular hardware project, the Moving Rainbow kit. Color wheel, brightness, and timing code turned one wired kit into a whole season of seasonal patterns, from Halloween to the Fourth of July, without a single wire changing. Robot kits closed the chapter by applying the same Pico and code skills to motion instead of light, with autonomous, sense-and-act behavior recommended as the default over the distraction risk of open-ended remote control.</p>
+<div class="admonition mascot-celebration">
+<p class="admonition-title">You can now wire, program, and customize a Moving Rainbow kit</p>
+<p><img alt="Circuit celebrating" class="mascot-admonition-img" src="../../img/mascot/celebration.png">
+You just connected a Pico, MicroPython, and a NeoPixel strip into one working, customizable project — and you know how to steer a robot kit toward autonomous behavior instead of remote-control chaos. That's this book's signature hands-on project fully in your hands, ready for whichever season comes next.</p>
+</div>
 
 
 
@@ -1630,7 +2992,12 @@
 
 
 
+  
+  
 
+
+
+  
 
 
 
@@ -1645,7 +3012,7 @@
         
           <button type="button" class="md-top md-icon" data-md-component="top" hidden>
   
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"></path></svg>
   Back to top
 </button>
         
@@ -1655,13 +3022,13 @@
   
     
       
-      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+      <nav class="md-footer__inner md-grid" aria-label="Footer">
         
           
           <a href="../18-robots-usb-electronics-workshop/" class="md-footer__link md-footer__link--prev" aria-label="Previous: 18. Robots, USB Basics, and Electronics Workshop Skills">
             <div class="md-footer__button md-icon">
               
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
             </div>
             <div class="md-footer__title">
               <span class="md-footer__direction">
@@ -1686,7 +3053,7 @@
             </div>
             <div class="md-footer__button md-icon">
               
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"></path></svg>
             </div>
           </a>
         
@@ -1698,7 +3065,7 @@
       <div class="md-copyright">
   
     <div class="md-copyright__highlight">
-      Copyright &copy; 2026 Dan McCreary. Licensed under <a href="license/">CC BY-NC-SA 4.0</a> for non-commercial use.
+      Copyright © 2026 Dan McCreary. Licensed under <a href="license/">CC BY-NC-SA 4.0</a> for non-commercial use.
     </div>
   
   
@@ -1719,6 +3086,10 @@
     
       <script src="../../assets/javascripts/bundle.83f73b43.min.js"></script>
       
+        <script src="../../js/extra.js"></script>
+      
     
-  </body>
-</html>
+  
+<script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(()=>{ lightbox.reload(); });
+</script></body></html>

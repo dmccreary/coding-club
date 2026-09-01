@@ -1,0 +1,15 @@
+{
+  "sim_id": "data-backup-routine-timeline",
+  "diagram_name": "Data Backup Routine Timeline",
+  "chapter_number": 24,
+  "chapter_title": "Tracking Student Data and Managing Club Communication",
+  "chapter_dir": "24-student-data-and-communication",
+  "chapter_rel_dir": "chapters/24-student-data-and-communication",
+  "library": "vis-timeline",
+  "bloom_level": "Apply (L3)",
+  "bloom_verb": "schedule",
+  "learning_objective": "Given a semester calendar, the learner schedules backup and restore-verification checkpoints at appropriate intervals.",
+  "completion_status": "specified",
+  "extracted_date": "2026-09-01",
+  "specification": "Type: timeline\n**sim-id:** data-backup-routine-timeline<br/>\n**Library:** vis-timeline<br/>\n**Status:** Specified\n\nPurpose: Show a recommended backup and restore-verification cadence across a semester, so a club leader can see when backups happen and when they should actually be tested.\n\nBloom Taxonomy: Apply (L3)\nBloom Taxonomy Verb: schedule\n\nLearning objective: Given a semester calendar, the learner schedules backup and restore-verification checkpoints at appropriate intervals.\n\nTime period: One 16-week semester\n\nOrientation: Horizontal\n\nEvents:\n- Week 1: \"Confirm Cloud Sync Is Active\" -- automatic backup enabled on the tracking spreadsheet and consent-form folder\n- Week 4: \"Automatic Backup Running\" -- ongoing, no action needed\n- Week 8: \"Mid-Semester Restore Test\" -- restore one file from backup to confirm it isn't silently broken\n- Week 12: \"Automatic Backup Running\" -- ongoing, no action needed\n- Week 16: \"End-of-Semester Restore Test and Archive\" -- verify backups again and archive the semester's records per the retention policy\n\nVisual style: Horizontal timeline with alternating above/below event placement\n\nColor coding: Blue for ongoing automatic backup events, amber for the two manual restore-test checkpoints\n\nInteractive features:\n- Click any event to see what it involves and roughly how long it takes\n- Hover to preview the event title before clicking\n\nImplementation: vis-timeline library rendered in main.html with a `select` event handler opening a detail panel for the clicked item."
+}

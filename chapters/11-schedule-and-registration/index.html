@@ -1,7 +1,4 @@
-
-<!doctype html>
-<html lang="en" class="no-js">
-  <head>
+<!DOCTYPE html><html lang="en" class="no-js"><head>
     
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -21,7 +18,7 @@
         <link rel="next" href="../12-events-and-retrospectives/">
       
       
-      <link rel="icon" href="../../assets/images/favicon.png">
+      <link rel="icon" href="../../img/favicon.ico">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.43">
     
     
@@ -47,7 +44,7 @@
         
         
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback">
         <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
       
     
@@ -59,11 +56,57 @@
     <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
+  
+
+
+  
+  
+
+<script id="__analytics">function __md_analytics(){function e(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],e("js",new Date),e("config","G-JDH8L7VM28"),document.addEventListener("DOMContentLoaded",(function(){document.forms.search&&document.forms.search.query.addEventListener("blur",(function(){this.value&&e("event","search",{search_term:this.value})}));document$.subscribe((function(){var t=document.forms.feedback;if(void 0!==t)for(var a of t.querySelectorAll("[type=submit]"))a.addEventListener("click",(function(a){a.preventDefault();var n=document.location.pathname,d=this.getAttribute("data-md-value");e("event","feedback",{page:n,data:d}),t.firstElementChild.disabled=!0;var r=t.querySelector(".md-feedback__note [data-md-value='"+d+"']");r&&(r.hidden=!1)})),t.hidden=!1})),location$.subscribe((function(t){e("config","G-JDH8L7VM28",{page_path:t.pathname})}))}));var t=document.createElement("script");t.async=!0,t.src="https://www.googletagmanager.com/gtag/js?id=G-JDH8L7VM28",document.getElementById("__analytics").insertAdjacentElement("afterEnd",t)}</script>
+  
+    <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
+  
 
     
     
+      
+        <meta property="og:type" content="website">
+      
+        <meta property="og:title" content="Choosing a Schedule and Building Registration - Coding Club">
+      
+        <meta property="og:description" content="Compares major coding club scheduling models and covers building a mentor-gated registration system that caps enrollment responsibly.">
+      
+        <meta property="og:image" content="https://dmccreary.github.io/coding-club/assets/images/social/chapters/11-schedule-and-registration/index.png">
+      
+        <meta property="og:image:type" content="image/png">
+      
+        <meta property="og:image:width" content="1200">
+      
+        <meta property="og:image:height" content="630">
+      
+        <meta property="og:url" content="https://dmccreary.github.io/coding-club/chapters/11-schedule-and-registration/">
+      
+        <meta name="twitter:card" content="summary_large_image">
+      
+        <meta name="twitter:title" content="Choosing a Schedule and Building Registration - Coding Club">
+      
+        <meta name="twitter:description" content="Compares major coding club scheduling models and covers building a mentor-gated registration system that caps enrollment responsibly.">
+      
+        <meta name="twitter:image" content="https://dmccreary.github.io/coding-club/assets/images/social/chapters/11-schedule-and-registration/index.png">
+      
     
-  </head>
+    
+  <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"><script src="../../assets/javascripts/glightbox.min.js"></script><style id="glightbox-style">
+            html.glightbox-open { overflow: initial; height: 100%; }
+            .gslide-title { margin-top: 0px; user-select: text; }
+            .gslide-desc { color: #666; user-select: text; }
+            .gslide-image img { background: white; }
+            .gscrollbar-fixer { padding-right: 15px; }
+            .gdesc-inner { font-size: 0.75rem; }
+            body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color); }
+            body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color); }
+            body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color); }
+        </style></head>
   
   
     
@@ -98,13 +141,12 @@
   <nav class="md-header__inner md-grid" aria-label="Header">
     <a href="../.." title="Coding Club" class="md-header__button md-logo" aria-label="Coding Club" data-md-component="logo">
       
-  
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+  <img src="../../img/mascot/welcome.png" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
       
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"></path></svg>
     </label>
     <div class="md-header__title" data-md-component="header-title">
       <div class="md-header__ellipsis">
@@ -130,7 +172,7 @@
     
       <label class="md-header__button md-icon" for="__search">
         
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
       </label>
       <div class="md-search" data-md-component="search" role="dialog">
   <label class="md-search__overlay" for="__search"></label>
@@ -139,20 +181,20 @@
       <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
       <label class="md-search__icon md-icon" for="__search">
         
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
         
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
       </label>
       <nav class="md-search__options" aria-label="Search">
         
           <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
             
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"></path></svg>
           </a>
         
         <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
           
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg>
         </button>
       </nav>
       
@@ -177,7 +219,7 @@
         <a href="https://github.com/dmccreary/coding-club" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"></path></svg>
   </div>
   <div class="md-source__repository">
     GitHub Repo
@@ -201,7 +243,7 @@
           
             
               
-              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
@@ -212,8 +254,7 @@
   <label class="md-nav__title" for="__drawer">
     <a href="../.." title="Coding Club" class="md-nav__button md-logo" aria-label="Coding Club" data-md-component="logo">
       
-  
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+  <img src="../../img/mascot/welcome.png" alt="logo">
 
     </a>
     Coding Club
@@ -223,7 +264,7 @@
       <a href="https://github.com/dmccreary/coding-club" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"></path></svg>
   </div>
   <div class="md-source__repository">
     GitHub Repo
@@ -1397,6 +1438,16 @@
       
         
       
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
     
     
     
@@ -1484,6 +1535,91 @@
   
   
   
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../cards/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Challenge Cards
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../faq/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    FAQ
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../glossary/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Glossary
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
     <li class="md-nav__item">
       <a href="../../license/" class="md-nav__link">
         
@@ -1526,7 +1662,7 @@
             
             
               
-              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
@@ -1663,16 +1799,16 @@
   
     <a href="https://github.com/dmccreary/coding-club/blob/main/docs/chapters/11-schedule-and-registration/index.md" title="Edit this page" class="md-content__button md-icon">
       
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"></path></svg>
     </a>
   
   
 
 
-<h1 id="choosing-a-schedule-and-building-registration">Choosing a Schedule and Building Registration<a class="headerlink" href="#choosing-a-schedule-and-building-registration" title="Permanent link">&para;</a></h1>
-<h2 id="summary">Summary<a class="headerlink" href="#summary" title="Permanent link">&para;</a></h2>
+<h1 id="choosing-a-schedule-and-building-registration">Choosing a Schedule and Building Registration<a class="headerlink" href="#choosing-a-schedule-and-building-registration" title="Permanent link">¶</a></h1>
+<h2 id="summary">Summary<a class="headerlink" href="#summary" title="Permanent link">¶</a></h2>
 <p>This chapter compares the major scheduling models for a coding club -- alternating Saturdays, weekday after-school, semester-based, and drop-in -- and helps you choose one. It then covers building a registration system, including the club's signature practice of registering mentors before students to cap enrollment responsibly. You will be able to choose a schedule model and set up a mentor-gated registration system.</p>
-<h2 id="concepts-covered">Concepts Covered<a class="headerlink" href="#concepts-covered" title="Permanent link">&para;</a></h2>
+<h2 id="concepts-covered">Concepts Covered<a class="headerlink" href="#concepts-covered" title="Permanent link">¶</a></h2>
 <p>This chapter covers the following 18 concepts from the learning graph:</p>
 <table>
 <thead>
@@ -1756,30 +1892,30 @@
 </tr>
 </tbody>
 </table>
-<h2 id="prerequisites">Prerequisites<a class="headerlink" href="#prerequisites" title="Permanent link">&para;</a></h2>
+<h2 id="prerequisites">Prerequisites<a class="headerlink" href="#prerequisites" title="Permanent link">¶</a></h2>
 <p>This chapter builds on concepts from:</p>
 <ul>
 <li><a href="../05-gauging-interest-first-meeting/">5. Gauging Interest and Holding Your First Meeting</a></li>
 <li><a href="../09-mentors-students-ratio/">9. Mentors, Students, and the 3:1 Ratio</a></li>
 </ul>
-<hr />
+<hr>
 <p>Every relationship Chapter 10 described needs a predictable rhythm to grow in, and every ratio Chapter 9 described needs a system that actually enforces it at sign-up time, not just on paper. This chapter covers both: choosing when your club meets, and building a registration process that keeps enrollment honest.</p>
 <div class="admonition mascot-welcome">
 <p class="admonition-title">When, and for how many?</p>
-<p><img alt="Circuit waving welcome" class="mascot-admonition-img" src="../../img/mascot/welcome.png" />
+<p><img alt="Circuit waving welcome" class="mascot-admonition-img" src="../../img/mascot/welcome.png">
 Let's build something great -- on a schedule families can actually plan around! This chapter compares four scheduling models and then walks through registering mentors first, so your 3:1 ratio holds from the very first sign-up.</p>
 </div>
-<h2 id="choosing-a-scheduling-model">Choosing a Scheduling Model<a class="headerlink" href="#choosing-a-scheduling-model" title="Permanent link">&para;</a></h2>
+<h2 id="choosing-a-scheduling-model">Choosing a Scheduling Model<a class="headerlink" href="#choosing-a-scheduling-model" title="Permanent link">¶</a></h2>
 <p><strong>Session scheduling</strong> is the overall discipline of deciding when and how often a club meets -- the single concept this chapter's learning graph treats as more consequential than almost any other in the book, because every family's ability to attend depends on it. <strong>Selecting a date and time</strong> means weighing three constraints at once: when your venue is actually available, when your mentor pool can realistically commit, and when families in your target audience (Chapter 2) are free -- a Tuesday-afternoon slot might satisfy the first two and fail the third if most of your target families have after-school sports at that hour.</p>
 <p>Four scheduling models cover the large majority of coding clubs, each fitting a different combination of those constraints. The comparison poster below lays them out side by side.</p>
-<h4 id="diagram-four-coding-club-scheduling-models">Diagram: Four Coding Club Scheduling Models<a class="headerlink" href="#diagram-four-coding-club-scheduling-models" title="Permanent link">&para;</a></h4>
+<h4 id="diagram-four-coding-club-scheduling-models">Diagram: Four Coding Club Scheduling Models<a class="headerlink" href="#diagram-four-coding-club-scheduling-models" title="Permanent link">¶</a></h4>
 <iframe src="../../sims/four-scheduling-models/main.html" width="100%" height="600px" scrolling="no"></iframe>
 
 <details>
 <summary>Four Coding Club Scheduling Models</summary>
 <p>Type: infographic-overlay (grid)
-<strong>sim-id:</strong> four-scheduling-models<br/>
-<strong>Library:</strong> Interactive Infographic Overlay (grid-diagram.js, annotation-free comparison poster + rectangular hover zones)<br/>
+<strong>sim-id:</strong> four-scheduling-models<br>
+<strong>Library:</strong> Interactive Infographic Overlay (grid-diagram.js, annotation-free comparison poster + rectangular hover zones)<br>
 <strong>Status:</strong> Specified</p>
 <p>Purpose: Let a founder compare the four dominant scheduling models on the same dimensions before committing, since the right choice depends heavily on venue, mentor, and family constraints that are easy to evaluate one at a time but hard to compare side by side from memory.</p>
 <p>Bloom Taxonomy: Evaluate (L5)
@@ -1798,31 +1934,31 @@ Bloom Taxonomy Verb: recommend</p>
 </details>
 <div class="admonition mascot-thinking">
 <p class="admonition-title">The best model is the one your constraints actually allow</p>
-<p><img alt="Circuit thinking" class="mascot-admonition-img" src="../../img/mascot/thinking.png" />
+<p><img alt="Circuit thinking" class="mascot-admonition-img" src="../../img/mascot/thinking.png">
 Notice that none of these four models is objectively best -- each one trades a strength for a weakness. A school-based club with weekday mentor access and a captive student population is a natural fit for the weekday after-school model; the same model would struggle badly at a bookstore with no fixed student roster at all.</p>
 </div>
-<h2 id="keeping-the-schedule-running">Keeping the Schedule Running<a class="headerlink" href="#keeping-the-schedule-running" title="Permanent link">&para;</a></h2>
+<h2 id="keeping-the-schedule-running">Keeping the Schedule Running<a class="headerlink" href="#keeping-the-schedule-running" title="Permanent link">¶</a></h2>
 <p>Whichever model you choose, it needs to keep running predictably. A <strong>recurring session series</strong> is the practical mechanism for that: a defined, repeating calendar entry (every other Saturday, every Tuesday) rather than re-deciding the date fresh each time, which both reduces planning overhead and gives families a rhythm they can build other commitments around. <strong>Holiday schedule planning</strong> decides, well in advance, which sessions get skipped for holidays and school breaks, published as early as possible so families aren't caught off guard by a canceled session they expected to attend.</p>
 <p><strong>Working around holidays</strong> goes a step further than simply skipping a session -- it means proactively checking a full year's holiday calendar against your scheduling model before the term starts, since an alternating-Saturday club can lose several sessions in a row around late November and December without anyone noticing until it happens. For a weekday after-school or semester-based club, <strong>school calendar alignment</strong> means syncing directly with the host school's or district's academic calendar -- half-days, teacher in-service days, and the actual first and last day of the school year all quietly shift a session schedule if not checked directly against the school's own calendar rather than assumed.</p>
 <div class="admonition mascot-tip">
 <p class="admonition-title">Publish a full year of dates at once, not session by session</p>
-<p><img alt="Circuit giving a tip" class="mascot-admonition-img" src="../../img/mascot/tip.png" />
+<p><img alt="Circuit giving a tip" class="mascot-admonition-img" src="../../img/mascot/tip.png">
 Here's a shortcut: once you've checked holidays and school calendar alignment, publish every session date for the full year (or term) in one document, rather than announcing each session a week ahead. Families plan around dates they can see in advance far more reliably than dates they have to keep checking for.</p>
 </div>
-<h2 id="building-a-registration-system">Building a Registration System<a class="headerlink" href="#building-a-registration-system" title="Permanent link">&para;</a></h2>
+<h2 id="building-a-registration-system">Building a Registration System<a class="headerlink" href="#building-a-registration-system" title="Permanent link">¶</a></h2>
 <p>A <strong>registration system</strong> is however families actually sign up for a session or term -- ranging from a paper sign-up sheet at the venue to a full online platform, and it needs to match a club's actual size rather than being over-engineered for a three-student pilot cohort. An <strong>online registration form</strong> collects the essentials in one place: student name and age, parent contact information, and a link or reference to the parental consent and photo release forms from Chapter 3, ideally without duplicating information already on file for a returning student.</p>
 <p>Many clubs solve this with an existing platform rather than building one from scratch. The <strong>Eventbrite case study</strong> Chapter 2's course description points to is a common real-world example: a library club used Eventbrite's free tier to publish each session as a ticketed "event" with a fixed capacity, giving it registration, a waitlist, and automatic reminder emails without writing any custom software. A <strong>registration capacity limit</strong> is simply the maximum number of student sign-ups the system allows per session -- set, as the next section covers, by mentor availability rather than by room size alone.</p>
-<h2 id="mentor-gated-enrollment">Mentor-Gated Enrollment<a class="headerlink" href="#mentor-gated-enrollment" title="Permanent link">&para;</a></h2>
+<h2 id="mentor-gated-enrollment">Mentor-Gated Enrollment<a class="headerlink" href="#mentor-gated-enrollment" title="Permanent link">¶</a></h2>
 <p>This book's signature registration practice ties directly back to the 3:1 ratio from Chapter 9. <strong>Registering mentors first</strong> means opening mentor sign-up for a term or session before student registration opens at all, so the club knows its actual mentor capacity before a single family can enroll. <strong>Mentor-gated enrollment</strong> is the system-level rule that enforces this: student registration capacity is calculated directly from confirmed mentor sign-ups, not set as an arbitrary fixed number decided months in advance. <strong>Limiting students by mentors</strong> is the resulting math made explicit -- eight confirmed mentors means a hard cap of twenty-four students at 3:1, and the registration system should refuse the twenty-fifth sign-up rather than relying on a mentor to notice the club has gotten too full.</p>
 <p>Families who arrive after that cap is reached join a <strong>waiting list signup</strong> -- the same waiting list management concept from Chapter 9, applied at the registration-system level, moving families in order as either more mentor capacity opens up or an enrolled family drops out. The workflow below shows how mentor-gated enrollment plays out step by step.</p>
-<h4 id="diagram-mentor-gated-registration-flow">Diagram: Mentor-Gated Registration Flow<a class="headerlink" href="#diagram-mentor-gated-registration-flow" title="Permanent link">&para;</a></h4>
+<h4 id="diagram-mentor-gated-registration-flow">Diagram: Mentor-Gated Registration Flow<a class="headerlink" href="#diagram-mentor-gated-registration-flow" title="Permanent link">¶</a></h4>
 <iframe src="../../sims/mentor-gated-registration-flow/main.html" width="100%" height="500px" scrolling="no"></iframe>
 
 <details>
 <summary>Mentor-Gated Registration Flow</summary>
 <p>Type: workflow
-<strong>sim-id:</strong> mentor-gated-registration-flow<br/>
-<strong>Library:</strong> Mermaid<br/>
+<strong>sim-id:</strong> mentor-gated-registration-flow<br>
+<strong>Library:</strong> Mermaid<br>
 <strong>Status:</strong> Specified</p>
 <p>Purpose: Show, step by step, how registering mentors first turns into a hard, enforced student capacity limit rather than an aspirational guideline mentors are expected to police manually.</p>
 <p>Bloom Taxonomy: Apply (L3)
@@ -1843,14 +1979,14 @@ Bloom Taxonomy Verb: implement</p>
 </details>
 <div class="admonition mascot-warning">
 <p class="admonition-title">Don't open student registration before mentors are actually confirmed</p>
-<p><img alt="Circuit warning" class="mascot-admonition-img" src="../../img/mascot/warning.png" />
+<p><img alt="Circuit warning" class="mascot-admonition-img" src="../../img/mascot/warning.png">
 Watch out for this: opening student sign-ups based on how many mentors you <em>expect</em> to confirm, rather than how many actually have, is how a club ends up over-enrolled before the first session. Wait for confirmed mentor sign-ups, not optimistic estimates, before calculating your capacity.</p>
 </div>
-<h2 id="chapter-summary">Chapter Summary<a class="headerlink" href="#chapter-summary" title="Permanent link">&para;</a></h2>
+<h2 id="chapter-summary">Chapter Summary<a class="headerlink" href="#chapter-summary" title="Permanent link">¶</a></h2>
 <p>Choosing among alternating-Saturday, weekday after-school, semester-based, and drop-in scheduling models means matching the model to your venue, mentor availability, and target audience rather than picking the most popular option. Holiday schedule planning and school calendar alignment keep a recurring session series from silently drifting out of sync with the families it serves. A registration system built on mentor-gated enrollment -- registering mentors first, then capping student sign-ups at exactly three times the confirmed mentor count -- is what keeps the 3:1 ratio real at sign-up time, not just an aspiration mentors try to honor once the room is already full.</p>
 <div class="admonition mascot-celebration">
 <p class="admonition-title">Your schedule and your registration system are locked in</p>
-<p><img alt="Circuit celebrating" class="mascot-admonition-img" src="../../img/mascot/celebration.png" />
+<p><img alt="Circuit celebrating" class="mascot-admonition-img" src="../../img/mascot/celebration.png">
 You can now choose a scheduling model that fits your real constraints and build a registration system that enforces your ratio automatically. Next up: running the actual events on that calendar, and learning from every single one through a retrospective.</p>
 </div>
 
@@ -1865,6 +2001,8 @@ You can now choose a scheduling model that fits your real constraints and build 
 
 
 
+  
+
 
 
 
@@ -1878,7 +2016,7 @@ You can now choose a scheduling model that fits your real constraints and build 
         
           <button type="button" class="md-top md-icon" data-md-component="top" hidden>
   
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"></path></svg>
   Back to top
 </button>
         
@@ -1888,13 +2026,13 @@ You can now choose a scheduling model that fits your real constraints and build 
   
     
       
-      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+      <nav class="md-footer__inner md-grid" aria-label="Footer">
         
           
           <a href="../10-mentor-student-relationships/" class="md-footer__link md-footer__link--prev" aria-label="Previous: 10. Building Mentor-Student Relationships That Last">
             <div class="md-footer__button md-icon">
               
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
             </div>
             <div class="md-footer__title">
               <span class="md-footer__direction">
@@ -1919,7 +2057,7 @@ You can now choose a scheduling model that fits your real constraints and build 
             </div>
             <div class="md-footer__button md-icon">
               
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"></path></svg>
             </div>
           </a>
         
@@ -1931,7 +2069,7 @@ You can now choose a scheduling model that fits your real constraints and build 
       <div class="md-copyright">
   
     <div class="md-copyright__highlight">
-      Copyright &copy; 2026 Dan McCreary. Licensed under <a href="license/">CC BY-NC-SA 4.0</a> for non-commercial use.
+      Copyright © 2026 Dan McCreary. Licensed under <a href="license/">CC BY-NC-SA 4.0</a> for non-commercial use.
     </div>
   
   
@@ -1952,6 +2090,10 @@ You can now choose a scheduling model that fits your real constraints and build 
     
       <script src="../../assets/javascripts/bundle.83f73b43.min.js"></script>
       
+        <script src="../../js/extra.js"></script>
+      
     
-  </body>
-</html>
+  
+<script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(()=>{ lightbox.reload(); });
+</script></body></html>

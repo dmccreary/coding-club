@@ -1,12 +1,9 @@
-
-<!doctype html>
-<html lang="en" class="no-js">
-  <head>
+<!DOCTYPE html><html lang="en" class="no-js"><head>
     
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="An interactive intelligent textbook on how to create, organize, promote and run a sustainable coding club.">
+        <meta name="description" content="Introduces physical computing and the breadboard, resistor, LED, and switch vocabulary a mentor needs, with electrical safety rules taught as a prerequisite to every hands-on activity.">
       
       
         <meta name="author" content="Dan McCreary">
@@ -21,12 +18,12 @@
         <link rel="next" href="../17-sensors-displays-motors/">
       
       
-      <link rel="icon" href="../../assets/images/favicon.png">
+      <link rel="icon" href="../../img/favicon.ico">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.43">
     
     
       
-        <title>16. Physical Computing and Electrical Safety Basics - Coding Club</title>
+        <title>Physical Computing and Electrical Safety Basics - Coding Club</title>
       
     
     
@@ -47,7 +44,7 @@
         
         
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback">
         <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
       
     
@@ -59,11 +56,57 @@
     <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
+  
+
+
+  
+  
+
+<script id="__analytics">function __md_analytics(){function e(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],e("js",new Date),e("config","G-JDH8L7VM28"),document.addEventListener("DOMContentLoaded",(function(){document.forms.search&&document.forms.search.query.addEventListener("blur",(function(){this.value&&e("event","search",{search_term:this.value})}));document$.subscribe((function(){var t=document.forms.feedback;if(void 0!==t)for(var a of t.querySelectorAll("[type=submit]"))a.addEventListener("click",(function(a){a.preventDefault();var n=document.location.pathname,d=this.getAttribute("data-md-value");e("event","feedback",{page:n,data:d}),t.firstElementChild.disabled=!0;var r=t.querySelector(".md-feedback__note [data-md-value='"+d+"']");r&&(r.hidden=!1)})),t.hidden=!1})),location$.subscribe((function(t){e("config","G-JDH8L7VM28",{page_path:t.pathname})}))}));var t=document.createElement("script");t.async=!0,t.src="https://www.googletagmanager.com/gtag/js?id=G-JDH8L7VM28",document.getElementById("__analytics").insertAdjacentElement("afterEnd",t)}</script>
+  
+    <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
+  
 
     
     
+      
+        <meta property="og:type" content="website">
+      
+        <meta property="og:title" content="Physical Computing and Electrical Safety Basics - Coding Club">
+      
+        <meta property="og:description" content="Introduces physical computing and the breadboard, resistor, LED, and switch vocabulary a mentor needs, with electrical safety rules taught as a prerequisite to every hands-on activity.">
+      
+        <meta property="og:image" content="https://dmccreary.github.io/coding-club/assets/images/social/chapters/16-physical-computing-safety/index.png">
+      
+        <meta property="og:image:type" content="image/png">
+      
+        <meta property="og:image:width" content="1200">
+      
+        <meta property="og:image:height" content="630">
+      
+        <meta property="og:url" content="https://dmccreary.github.io/coding-club/chapters/16-physical-computing-safety/">
+      
+        <meta name="twitter:card" content="summary_large_image">
+      
+        <meta name="twitter:title" content="Physical Computing and Electrical Safety Basics - Coding Club">
+      
+        <meta name="twitter:description" content="Introduces physical computing and the breadboard, resistor, LED, and switch vocabulary a mentor needs, with electrical safety rules taught as a prerequisite to every hands-on activity.">
+      
+        <meta name="twitter:image" content="https://dmccreary.github.io/coding-club/assets/images/social/chapters/16-physical-computing-safety/index.png">
+      
     
-  </head>
+    
+  <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"><script src="../../assets/javascripts/glightbox.min.js"></script><style id="glightbox-style">
+            html.glightbox-open { overflow: initial; height: 100%; }
+            .gslide-title { margin-top: 0px; user-select: text; }
+            .gslide-desc { color: #666; user-select: text; }
+            .gslide-image img { background: white; }
+            .gscrollbar-fixer { padding-right: 15px; }
+            .gdesc-inner { font-size: 0.75rem; }
+            body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color); }
+            body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color); }
+            body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color); }
+        </style></head>
   
   
     
@@ -98,13 +141,12 @@
   <nav class="md-header__inner md-grid" aria-label="Header">
     <a href="../.." title="Coding Club" class="md-header__button md-logo" aria-label="Coding Club" data-md-component="logo">
       
-  
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+  <img src="../../img/mascot/welcome.png" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
       
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"></path></svg>
     </label>
     <div class="md-header__title" data-md-component="header-title">
       <div class="md-header__ellipsis">
@@ -116,7 +158,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              16. Physical Computing and Electrical Safety Basics
+              Physical Computing and Electrical Safety Basics
             
           </span>
         </div>
@@ -130,7 +172,7 @@
     
       <label class="md-header__button md-icon" for="__search">
         
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
       </label>
       <div class="md-search" data-md-component="search" role="dialog">
   <label class="md-search__overlay" for="__search"></label>
@@ -139,20 +181,20 @@
       <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
       <label class="md-search__icon md-icon" for="__search">
         
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
         
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
       </label>
       <nav class="md-search__options" aria-label="Search">
         
           <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
             
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"></path></svg>
           </a>
         
         <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
           
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg>
         </button>
       </nav>
       
@@ -177,7 +219,7 @@
         <a href="https://github.com/dmccreary/coding-club" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"></path></svg>
   </div>
   <div class="md-source__repository">
     GitHub Repo
@@ -201,7 +243,7 @@
           
             
               
-              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
@@ -212,8 +254,7 @@
   <label class="md-nav__title" for="__drawer">
     <a href="../.." title="Coding Club" class="md-nav__button md-logo" aria-label="Coding Club" data-md-component="logo">
       
-  
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+  <img src="../../img/mascot/welcome.png" alt="logo">
 
     </a>
     Coding Club
@@ -223,7 +264,7 @@
       <a href="https://github.com/dmccreary/coding-club" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"></path></svg>
   </div>
   <div class="md-source__repository">
     GitHub Repo
@@ -882,6 +923,480 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#what-is-physical-computing" class="md-nav__link">
+    <span class="md-ellipsis">
+      What Is Physical Computing?
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="What Is Physical Computing?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-the-physical-computing-loop" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: The Physical Computing Loop
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#electrical-safety-rules" class="md-nav__link">
+    <span class="md-ellipsis">
+      Electrical Safety Rules
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Electrical Safety Rules">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-electrical-safety-rules-poster" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Electrical Safety Rules Poster
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#short-circuit-hazard" class="md-nav__link">
+    <span class="md-ellipsis">
+      Short Circuit Hazard
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Short Circuit Hazard">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-normal-circuit-vs-short-circuit" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Normal Circuit vs. Short Circuit
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#static-electricity-precaution" class="md-nav__link">
+    <span class="md-ellipsis">
+      Static Electricity Precaution
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Static Electricity Precaution">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-static-electricity-precaution-checklist" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Static Electricity Precaution Checklist
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#battery-safety" class="md-nav__link">
+    <span class="md-ellipsis">
+      Battery Safety
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#soldering-safety-basics" class="md-nav__link">
+    <span class="md-ellipsis">
+      Soldering Safety Basics
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Soldering Safety Basics">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-soldering-safety-workflow" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Soldering Safety Workflow
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#electrical-fundamentals-voltage-and-current" class="md-nav__link">
+    <span class="md-ellipsis">
+      Electrical Fundamentals: Voltage and Current
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Electrical Fundamentals: Voltage and Current">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#voltage-basics" class="md-nav__link">
+    <span class="md-ellipsis">
+      Voltage Basics
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#current-basics" class="md-nav__link">
+    <span class="md-ellipsis">
+      Current Basics
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Current Basics">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ohms-law" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ohm's Law
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#diagram-ohms-law-current-calculator" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Ohm's Law Current Calculator
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#building-your-first-circuit" class="md-nav__link">
+    <span class="md-ellipsis">
+      Building Your First Circuit
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Building Your First Circuit">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#breadboard-basics" class="md-nav__link">
+    <span class="md-ellipsis">
+      Breadboard Basics
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Breadboard Basics">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-breadboard-tie-point-explorer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Breadboard Tie-Point Explorer
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#jumper-wire" class="md-nav__link">
+    <span class="md-ellipsis">
+      Jumper Wire
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resistor-basics" class="md-nav__link">
+    <span class="md-ellipsis">
+      Resistor Basics
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Resistor Basics">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-resistor-color-code-calculator" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Resistor Color Code Calculator
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#led-basics" class="md-nav__link">
+    <span class="md-ellipsis">
+      LED Basics
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="LED Basics">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-led-anatomy" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: LED Anatomy
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#blinking-light-circuit" class="md-nav__link">
+    <span class="md-ellipsis">
+      Blinking Light Circuit
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Blinking Light Circuit">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-blinking-led-breadboard-circuit" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Blinking LED Breadboard Circuit
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reading-input-and-producing-output" class="md-nav__link">
+    <span class="md-ellipsis">
+      Reading Input and Producing Output
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Reading Input and Producing Output">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#push-button-switch" class="md-nav__link">
+    <span class="md-ellipsis">
+      Push Button Switch
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Push Button Switch">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-push-button-digital-input-circuit" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Push Button Digital Input Circuit
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#digital-input" class="md-nav__link">
+    <span class="md-ellipsis">
+      Digital Input
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Digital Input">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-digital-signal-highlow-chart" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Digital Signal HIGH/LOW Chart
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#digital-output" class="md-nav__link">
+    <span class="md-ellipsis">
+      Digital Output
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#analog-input" class="md-nav__link">
+    <span class="md-ellipsis">
+      Analog Input
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Analog Input">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-potentiometer-analog-input-explorer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Potentiometer Analog Input Explorer
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#analog-output" class="md-nav__link">
+    <span class="md-ellipsis">
+      Analog Output
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Analog Output">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-pwm-analog-output-brightness-explorer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: PWM Analog Output Brightness Explorer
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#measuring-what-you-built" class="md-nav__link">
+    <span class="md-ellipsis">
+      Measuring What You Built
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Measuring What You Built">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#multimeter-usage" class="md-nav__link">
+    <span class="md-ellipsis">
+      Multimeter Usage
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Multimeter Usage">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-multimeter-usage-simulator" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Multimeter Usage Simulator
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chapter-summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      Chapter Summary
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1322,6 +1837,16 @@
       
         
       
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
     
     
     
@@ -1409,6 +1934,91 @@
   
   
   
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../cards/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Challenge Cards
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../faq/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    FAQ
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../glossary/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Glossary
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
     <li class="md-nav__item">
       <a href="../../license/" class="md-nav__link">
         
@@ -1451,7 +2061,7 @@
             
             
               
-              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
@@ -1496,6 +2106,480 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#what-is-physical-computing" class="md-nav__link">
+    <span class="md-ellipsis">
+      What Is Physical Computing?
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="What Is Physical Computing?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-the-physical-computing-loop" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: The Physical Computing Loop
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#electrical-safety-rules" class="md-nav__link">
+    <span class="md-ellipsis">
+      Electrical Safety Rules
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Electrical Safety Rules">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-electrical-safety-rules-poster" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Electrical Safety Rules Poster
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#short-circuit-hazard" class="md-nav__link">
+    <span class="md-ellipsis">
+      Short Circuit Hazard
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Short Circuit Hazard">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-normal-circuit-vs-short-circuit" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Normal Circuit vs. Short Circuit
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#static-electricity-precaution" class="md-nav__link">
+    <span class="md-ellipsis">
+      Static Electricity Precaution
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Static Electricity Precaution">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-static-electricity-precaution-checklist" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Static Electricity Precaution Checklist
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#battery-safety" class="md-nav__link">
+    <span class="md-ellipsis">
+      Battery Safety
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#soldering-safety-basics" class="md-nav__link">
+    <span class="md-ellipsis">
+      Soldering Safety Basics
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Soldering Safety Basics">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-soldering-safety-workflow" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Soldering Safety Workflow
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#electrical-fundamentals-voltage-and-current" class="md-nav__link">
+    <span class="md-ellipsis">
+      Electrical Fundamentals: Voltage and Current
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Electrical Fundamentals: Voltage and Current">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#voltage-basics" class="md-nav__link">
+    <span class="md-ellipsis">
+      Voltage Basics
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#current-basics" class="md-nav__link">
+    <span class="md-ellipsis">
+      Current Basics
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Current Basics">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ohms-law" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ohm's Law
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#diagram-ohms-law-current-calculator" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Ohm's Law Current Calculator
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#building-your-first-circuit" class="md-nav__link">
+    <span class="md-ellipsis">
+      Building Your First Circuit
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Building Your First Circuit">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#breadboard-basics" class="md-nav__link">
+    <span class="md-ellipsis">
+      Breadboard Basics
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Breadboard Basics">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-breadboard-tie-point-explorer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Breadboard Tie-Point Explorer
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#jumper-wire" class="md-nav__link">
+    <span class="md-ellipsis">
+      Jumper Wire
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resistor-basics" class="md-nav__link">
+    <span class="md-ellipsis">
+      Resistor Basics
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Resistor Basics">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-resistor-color-code-calculator" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Resistor Color Code Calculator
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#led-basics" class="md-nav__link">
+    <span class="md-ellipsis">
+      LED Basics
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="LED Basics">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-led-anatomy" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: LED Anatomy
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#blinking-light-circuit" class="md-nav__link">
+    <span class="md-ellipsis">
+      Blinking Light Circuit
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Blinking Light Circuit">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-blinking-led-breadboard-circuit" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Blinking LED Breadboard Circuit
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reading-input-and-producing-output" class="md-nav__link">
+    <span class="md-ellipsis">
+      Reading Input and Producing Output
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Reading Input and Producing Output">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#push-button-switch" class="md-nav__link">
+    <span class="md-ellipsis">
+      Push Button Switch
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Push Button Switch">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-push-button-digital-input-circuit" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Push Button Digital Input Circuit
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#digital-input" class="md-nav__link">
+    <span class="md-ellipsis">
+      Digital Input
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Digital Input">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-digital-signal-highlow-chart" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Digital Signal HIGH/LOW Chart
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#digital-output" class="md-nav__link">
+    <span class="md-ellipsis">
+      Digital Output
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#analog-input" class="md-nav__link">
+    <span class="md-ellipsis">
+      Analog Input
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Analog Input">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-potentiometer-analog-input-explorer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Potentiometer Analog Input Explorer
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#analog-output" class="md-nav__link">
+    <span class="md-ellipsis">
+      Analog Output
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Analog Output">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-pwm-analog-output-brightness-explorer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: PWM Analog Output Brightness Explorer
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#measuring-what-you-built" class="md-nav__link">
+    <span class="md-ellipsis">
+      Measuring What You Built
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Measuring What You Built">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#multimeter-usage" class="md-nav__link">
+    <span class="md-ellipsis">
+      Multimeter Usage
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Multimeter Usage">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-multimeter-usage-simulator" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Multimeter Usage Simulator
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chapter-summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      Chapter Summary
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1513,16 +2597,16 @@
   
     <a href="https://github.com/dmccreary/coding-club/blob/main/docs/chapters/16-physical-computing-safety/index.md" title="Edit this page" class="md-content__button md-icon">
       
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"></path></svg>
     </a>
   
   
 
 
-<h1 id="physical-computing-and-electrical-safety-basics">Physical Computing and Electrical Safety Basics<a class="headerlink" href="#physical-computing-and-electrical-safety-basics" title="Permanent link">&para;</a></h1>
-<h2 id="summary">Summary<a class="headerlink" href="#summary" title="Permanent link">&para;</a></h2>
+<h1 id="physical-computing-and-electrical-safety-basics">Physical Computing and Electrical Safety Basics<a class="headerlink" href="#physical-computing-and-electrical-safety-basics" title="Permanent link">¶</a></h1>
+<h2 id="summary">Summary<a class="headerlink" href="#summary" title="Permanent link">¶</a></h2>
 <p>This chapter opens the book's physical computing track with breadboards, resistors, LEDs, and the basic circuit vocabulary every mentor needs. Electrical safety rules come first and are treated as a prerequisite to every hands-on activity that follows. You will be able to explain core electronics vocabulary and lead a blinking-LED activity safely.</p>
-<h2 id="concepts-covered">Concepts Covered<a class="headerlink" href="#concepts-covered" title="Permanent link">&para;</a></h2>
+<h2 id="concepts-covered">Concepts Covered<a class="headerlink" href="#concepts-covered" title="Permanent link">¶</a></h2>
 <p>This chapter covers the following 19 concepts from the learning graph:</p>
 <table>
 <thead>
@@ -1610,10 +2694,556 @@
 </tr>
 </tbody>
 </table>
-<h2 id="prerequisites">Prerequisites<a class="headerlink" href="#prerequisites" title="Permanent link">&para;</a></h2>
+<h2 id="prerequisites">Prerequisites<a class="headerlink" href="#prerequisites" title="Permanent link">¶</a></h2>
 <p>This chapter assumes only the prerequisites listed in the <a href="../../course-description/">course description</a>.</p>
-<hr />
-<p>TODO: Generate Chapter Content</p>
+<hr>
+<p>Every chapter so far has lived entirely on a screen — Scratch blocks, Python text, a browser tab. This chapter starts down a different path. Physical computing lets the code your students write reach out and touch the real world: light an LED, read a button press, spin a motor. That reach is exciting, and it also introduces a genuinely new category of risk that Scratch and Python never did — a risk this chapter treats as a prerequisite to everything hands-on that follows, not an afterthought bolted onto the end.</p>
+<div class="admonition mascot-welcome">
+<p class="admonition-title">Welcome to the physical computing track</p>
+<p><img alt="Circuit waving welcome" class="mascot-admonition-img" src="../../img/mascot/welcome.png">
+Let's build something great — this time with real components you can hold in your hand! This chapter gives you the breadboard, resistor, LED, and safety vocabulary you need to run a hands-on session with confidence, starting with the rules that keep every builder safe.</p>
+</div>
+<h2 id="what-is-physical-computing">What Is Physical Computing?<a class="headerlink" href="#what-is-physical-computing" title="Permanent link">¶</a></h2>
+<p><strong>Physical computing</strong> is the practice of building systems that sense or act on the physical world through electronic hardware controlled by code, rather than systems that only display information on a screen. A traditional Python program takes keyboard input and prints text; a physical computing project takes input from a button, sensor, or dial and produces output as light, sound, or motion.</p>
+<p>A useful mental shortcut is to compare a physical computing system to a human body. Your senses — eyes, ears, fingertips — gather information from the world, exactly like a sensor or button gathers a reading in a circuit. Your brain decides what that information means and what to do about it, exactly like the code running on a microcontroller. Your muscles then act on that decision, exactly like an LED, motor, or speaker acts on a command. This input-process-output loop is the single mental model underneath every physical computing project in this book, from a blinking light to a full robot.</p>
+<p>Picture a mentor introducing this idea to a new student for the first time. The mentor holds up a breadboard with one LED and one push button already wired, and says: "When you press this button, that's the input — just like touching something hot. The microcontroller processes that signal the instant it happens, the same way your brain reacts. And this LED lighting up is the output — the physical response you can actually see." The student presses the button once, watches the LED flash, and immediately understands the loop without needing a single line of code explained first. That demonstration is itself a worked example of the concept: a physical action producing a physical, visible reaction.</p>
+<p>Every remaining concept in this chapter is a piece of that loop. Breadboards, jumper wires, resistors, and LEDs are the physical materials. Digital and analog input and output describe the two flavors of signal a circuit can sense or produce. Electrical safety rules govern how a mentor supervises the whole process responsibly. The diagram below lets you click through each stage of the loop and see which upcoming concepts belong to it.</p>
+<h4 id="diagram-the-physical-computing-loop">Diagram: The Physical Computing Loop<a class="headerlink" href="#diagram-the-physical-computing-loop" title="Permanent link">¶</a></h4>
+<iframe src="../../sims/physical-computing-loop/main.html" width="100%" height="500px" scrolling="no"></iframe>
+
+<details>
+<summary>The Physical Computing Loop</summary>
+<p>Type: infographic
+<strong>sim-id:</strong> physical-computing-loop<br>
+<strong>Library:</strong> p5.js<br>
+<strong>Status:</strong> Specified<br>
+<strong>Template:</strong> https://github.com/dmccreary/stem-robots/tree/main/docs/sims/physical-computing-explorer</p>
+<p>Purpose: Give a mentor a single mental model — sense, process, act — that organizes every concept in this chapter.</p>
+<p>Bloom Taxonomy: Understand (L2)
+Bloom Taxonomy Verb: explain</p>
+<p>Learning objective: Given a physical computing project description, the learner explains which part of the input-process-output loop each component belongs to.</p>
+<p>Visual elements: Three large circular stages arranged left to right — "Input" (icon: button/sensor), "Process" (icon: microchip), "Output" (icon: LED/motor) — connected by arrows that animate a single pulse of light moving through the loop when the learner clicks "Run Example."</p>
+<p>Interactive controls: Three clickable stage circles; a dropdown listing example projects ("Blinking LED," "Button-Triggered Buzzer," "Dimmable Light"); a "Run Example" button that animates the pulse and highlights the matching component list beneath each stage.</p>
+<p>Data Visibility Requirements: Stage 1 shows the raw input event (e.g., "Button pressed"); Stage 2 shows the plain-language rule being applied (e.g., "If pressed, turn LED on"); Stage 3 shows the resulting physical output (e.g., "LED lights up").</p>
+<p>Instructional Rationale: A step-through, clickable model suits an Understand-level objective better than continuous animation, since a mentor needs to trace which real component maps to which stage, not just watch motion.</p>
+<p>Implementation: p5.js canvas with three clickable circular nodes and a text panel below that updates on click or during the animated run.</p>
+</details>
+<h2 id="electrical-safety-rules">Electrical Safety Rules<a class="headerlink" href="#electrical-safety-rules" title="Permanent link">¶</a></h2>
+<p><strong>Electrical safety rules</strong> are the set of practices that keep low-voltage hobby electronics work free of shock, burn, fire, and component-damage risk during a supervised club session. Before any breadboard, battery, or soldering iron comes out of a kit, every mentor running the session needs to know these rules well enough to enforce them without a printed reference in hand.</p>
+<p>Think of these rules the same way you already think about kitchen safety with a group of students: you would never let a student near a stovetop without first covering "don't touch the hot burner" and "turn pot handles inward." Hobby electronics safety works the same way — a short list of concrete, memorable rules, repeated at the start of every session until students recite them without prompting. Most club projects run on 3 to 6 volts from AA batteries or a USB port, far below the roughly 50 volts where shock becomes a real bodily hazard, so the practical risks are burns, fires, and ruined components rather than electrocution — which is exactly why a direct, matter-of-fact tone works better here than an alarming one.</p>
+<p>Picture a mentor briefing three new volunteers five minutes before the club's first electronics night. Rather than a lecture, the mentor hands each volunteer a laminated card and walks the group through it once, out loud, component in hand: "Never connect a battery directly across two wires with nothing in between — that's a short circuit, and it gets hot fast. Always check polarity on an LED before powering it. If a soldering iron is on the table, its stand is the only place it ever rests." That two-minute briefing, repeated verbatim at the start of every session, is the practical form this rule set takes in an actual club — a scenario the rest of this chapter's safety concepts unpack rule by rule.</p>
+<p>Before you look at the full rule set, note that "short circuit," "static electricity," "battery safety," and "soldering safety" below are each one specific category of electrical safety rule — this section is the umbrella, and the next four sections give each category its own concrete detail and worked example.</p>
+<h4 id="diagram-electrical-safety-rules-poster">Diagram: Electrical Safety Rules Poster<a class="headerlink" href="#diagram-electrical-safety-rules-poster" title="Permanent link">¶</a></h4>
+<iframe src="../../sims/electrical-safety-rules-poster/main.html" width="100%" height="560px" scrolling="no"></iframe>
+
+<details>
+<summary>Electrical Safety Rules Poster</summary>
+<p>Type: infographic
+<strong>sim-id:</strong> electrical-safety-rules-poster<br>
+<strong>Library:</strong> Interactive Infographic Overlay (grid-diagram.js, four-panel comparison poster + rectangular hover zones)<br>
+<strong>Status:</strong> Specified</p>
+<p>Purpose: Give a mentor a single, memorable checklist poster to display or hand out at the start of every hands-on session.</p>
+<p>Bloom Taxonomy: Remember (L1)
+Bloom Taxonomy Verb: identify</p>
+<p>Learning objective: Given a hands-on session about to begin, the learner identifies which safety rule applies to the materials on the table.</p>
+<p>Image style: Flat poster, four panels in a 2x2 grid, each with a bold printed panel header baked into the image ("Circuits," "Batteries," "Static," "Soldering")</p>
+<p>Image dimensions: 1000x800 (landscape)</p>
+<p>Zones (4 panels, each with id, label, color, one-line summary, 3 bullet rules):
+1. <code>circuits</code> — color #4A90D9 — "Build the circuit before you power it." Rules: never bridge the two battery terminals with a bare wire; check LED polarity before connecting power; disconnect power before changing any wire
+2. <code>batteries</code> — color #F5A623 — "Treat batteries as small chemical devices, not toys." Rules: never puncture, crush, or short a battery pack; stop using a swollen or hot pack immediately; store loose batteries so terminals cannot touch metal
+3. <code>static</code> — color #7ED6A5 — "Ground yourself before you touch a board." Rules: touch a grounded metal object before handling a microcontroller; avoid handling boards on carpet in dry weather; keep boards in anti-static bags when not in use
+4. <code>soldering</code> — color #E67E22 — "The iron is always hot until proven otherwise." Rules: the iron only ever rests in its stand; never touch the tip or the joint right after soldering; work in a ventilated area</p>
+<p>Interactive features: Click or hover any panel to enlarge it and reveal its full rule list in a detail overlay; explore mode only</p>
+<p>Implementation: Interactive Infographic Overlay Guide (grid engine) — <code>grid-diagram.js</code> + <code>grid-overlay.css</code> render the four rectangular hover zones over the generated poster image; <code>data.json</code> holds the 4 zones per the overlay-grid-data-json-schema</p>
+</details>
+<h3 id="short-circuit-hazard">Short Circuit Hazard<a class="headerlink" href="#short-circuit-hazard" title="Permanent link">¶</a></h3>
+<p>A <strong>short circuit</strong> happens when electric current finds a path of very low resistance that bypasses the intended load — the resistor, LED, or motor a circuit is built to power — and flows almost unopposed between a power source's two terminals. Ohm's law explains why this matters: current equals voltage divided by resistance, so when resistance drops toward zero, the calculated current climbs toward levels a battery or wire was never designed to carry.</p>
+<p>Consider a concrete worked example. A fresh AA battery pack supplies about 6 volts and can briefly deliver several amps if nothing limits the current. A normal LED circuit includes a resistor of around 220 ohms, which by Ohm's law limits current to roughly 6 volts / 220 ohms, or about 27 milliamps — a safe, LED-friendly amount. If a stray jumper wire instead connects the two battery terminals directly, the only resistance left is the wire's own tiny internal resistance, often under 1 ohm. The same 6 volts divided by 1 ohm predicts 6 amps — over 200 times the current the LED circuit was drawing. That excess current shows up as heat: wires warm quickly, battery packs can become uncomfortably hot, and in a worst case a fire hazard develops.</p>
+<p>This is exactly the scenario the Electrical Safety Rules "Circuits" panel above warns against, and it is the single most common wiring mistake in a beginner club — usually caused by an extra jumper wire left connected across the power rails while another wire is moved.</p>
+<h4 id="diagram-normal-circuit-vs-short-circuit">Diagram: Normal Circuit vs. Short Circuit<a class="headerlink" href="#diagram-normal-circuit-vs-short-circuit" title="Permanent link">¶</a></h4>
+<iframe src="../../sims/normal-circuit-vs-short-circuit/main.html" width="100%" height="500px" scrolling="no"></iframe>
+
+<details>
+<summary>Normal Circuit vs. Short Circuit</summary>
+<p>Type: infographic
+<strong>sim-id:</strong> normal-circuit-vs-short-circuit<br>
+<strong>Library:</strong> Interactive Infographic Overlay (diagram.js, side-by-side comparison + numbered callouts)<br>
+<strong>Status:</strong> Specified</p>
+<p>Purpose: Show why removing the resistor and LED from a circuit's current path causes a dangerous current spike, using the same numbers worked through in the prose above.</p>
+<p>Bloom Taxonomy: Understand (L2)
+Bloom Taxonomy Verb: explain</p>
+<p>Learning objective: Given a circuit diagram, the learner explains why a low-resistance path produces a current spike compared to a normal, resistor-limited path.</p>
+<p>Image style: Two side-by-side breadboard circuit illustrations — left labeled "Normal Circuit" (battery, resistor, LED, wire loop), right labeled "Short Circuit" (battery, bare wire loop, no resistor)</p>
+<p>Image dimensions: 1200x600 (landscape)</p>
+<p>Callouts (4 total): 1. "6V battery pack" on both illustrations; 2. "220-ohm resistor" on the normal circuit only, color #4A90D9; 3. "~27 mA (safe)" current readout on the normal circuit, color #2ECC71; 4. "~6 A (dangerous, gets hot)" current readout on the short circuit, color #E74C3C</p>
+<p>Interactive features: Hover either current readout to reveal the Ohm's law calculation behind it; click either full illustration to toggle a heat-glow effect on the wire showing where the energy is being dissipated</p>
+<p>Implementation: Interactive Infographic Overlay Guide (callout engine) — <code>diagram.js</code> + <code>style.css</code> render the two illustrations with hover-revealed calculation tooltips</p>
+</details>
+<h3 id="static-electricity-precaution">Static Electricity Precaution<a class="headerlink" href="#static-electricity-precaution" title="Permanent link">¶</a></h3>
+<p><strong>Static electricity precaution</strong> refers to the habits that prevent an invisible buildup of electric charge on your body from damaging a sensitive electronic component when you touch it. Walking across a carpet, especially in dry weather, can build up thousands of volts of static charge on your skin — harmless to you, but easily strong enough to destroy the microscopic circuitry inside a microcontroller chip the instant you touch one of its pins.</p>
+<p>The habit that prevents this is simple and worth demonstrating rather than just describing: before picking up a microcontroller board, touch a grounded metal object — a laptop's metal chassis, an unpainted metal table leg, or a dedicated grounding strap — for a second or two. That contact drains away any static charge safely before it can jump into the board. A mentor running a session in a dry, carpeted classroom in winter should make this touch-first habit part of every kit hand-out, the same way handing someone scissors point-first is simply how it's done, without needing to re-explain the reasoning every time.</p>
+<p>Boards that are not actively in use should stay in the anti-static bags they shipped in, which are made from a slightly conductive plastic that spreads out any charge instead of letting it concentrate at one point.</p>
+<p>Static electricity is easy for students to underestimate precisely because they cannot see it — the same small shock everyone has felt touching a metal doorknob after walking across a carpeted room in winter is more than enough charge to damage a chip, even though it barely registers to a person. Pointing out that familiar doorknob-shock feeling during a safety briefing tends to land better than describing volts and charge in the abstract, since every student in the room has already experienced the exact phenomenon being discussed.</p>
+<h4 id="diagram-static-electricity-precaution-checklist">Diagram: Static Electricity Precaution Checklist<a class="headerlink" href="#diagram-static-electricity-precaution-checklist" title="Permanent link">¶</a></h4>
+<iframe src="../../sims/static-electricity-precaution-checklist/main.html" width="100%" height="480px" scrolling="no"></iframe>
+
+<details>
+<summary>Static Electricity Precaution Checklist</summary>
+<p>Type: infographic
+<strong>sim-id:</strong> static-electricity-precaution-checklist<br>
+<strong>Library:</strong> Interactive Infographic Overlay (checklist overlay, illustrated classroom scene + clickable hotspots)<br>
+<strong>Status:</strong> Specified</p>
+<p>Purpose: Let a mentor mentally rehearse the touch-first habit against a realistic classroom scene before the first session.</p>
+<p>Bloom Taxonomy: Remember (L1)
+Bloom Taxonomy Verb: identify</p>
+<p>Learning objective: Given an illustrated classroom scene, the learner identifies which surfaces are safe to touch before handling a board and which increase static risk.</p>
+<p>Image style: Flat illustration of a classroom table scene: a carpeted floor, a student's hand, a microcontroller board in an anti-static bag, a metal table leg, and a plastic chair</p>
+<p>Image dimensions: 1000x650 (landscape)</p>
+<p>Hotspots (5 total, each with label, color, correct/incorrect status): 1. "Metal table leg" — green — safe to touch first; 2. "Anti-static bag" — green — correct storage; 3. "Carpeted floor" — amber — increases static buildup, not dangerous itself; 4. "Plastic chair after sliding" — amber — a common charge-building action; 5. "Bare board out of its bag" — red — should be avoided when not in use</p>
+<p>Interactive features: Click each hotspot to reveal a one-sentence explanation and a green-check or amber-caution icon; a running "safety score" updates as the learner clicks all five</p>
+<p>Implementation: Interactive Infographic Overlay Guide (callout engine) — <code>diagram.js</code> renders clickable hotspots with color-coded feedback over the generated illustration</p>
+</details>
+<h3 id="battery-safety">Battery Safety<a class="headerlink" href="#battery-safety" title="Permanent link">¶</a></h3>
+<p><strong>Battery safety</strong> covers the handling, storage, and inspection practices that keep the batteries powering a club's kits from becoming a fire or chemical hazard. The AA and coin-cell batteries used in most beginner kits are low-risk when handled normally, but rechargeable lithium batteries found in some robot kits carry real fire risk if damaged, and every battery type carries some risk if short-circuited or physically abused.</p>
+<p>A concrete worked example makes this concrete: before handing out a robot kit, a mentor should pick up its battery pack and check it the way you would check a piece of fruit before eating it — look for a swollen, warm, or misshapen pack, any smell of chemicals, or a punctured casing. A pack that fails any of those checks gets set aside immediately and never plugged in, because a damaged lithium battery can heat up rapidly and, in rare cases, ignite once it is put under load. Loose AA batteries in a supply bin should never touch each other terminal-to-terminal, since even ordinary alkaline cells can heat up if their positive and negative ends are bridged by another battery or a metal object — the same short-circuit principle from earlier in this chapter, just happening inside a bin instead of on a breadboard.</p>
+<p>Rechargeable lithium packs deserve one further habit beyond storage and inspection: charging. A pack should only ever be charged with the specific charger sold for it, set on a hard, fireproof surface such as a metal tray or concrete floor rather than a carpet or wooden desk, and never left charging unattended overnight in a locked, empty room. None of this is meant to make rechargeable packs sound unusually dangerous in normal use — it is the same category of "small, sensible habit" as the touch-first rule for static electricity — but it is worth a mentor stating out loud the first time a club uses battery-powered robot kits rather than assuming it is obvious.</p>
+<p>The table below compares the battery types a club is most likely to see and the one habit that matters most for each.</p>
+<p>Now that the basic types are described, here is a quick-reference table your mentors can use during kit setup.</p>
+<table>
+<thead>
+<tr>
+<th>Battery Type</th>
+<th>Typical Voltage</th>
+<th>Key Safety Habit</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>AA / AAA Alkaline</td>
+<td>1.5V each</td>
+<td>Store so terminals cannot touch other batteries or metal</td>
+</tr>
+<tr>
+<td>Coin Cell (CR2032)</td>
+<td>3V</td>
+<td>Keep away from young children; never swallow risk</td>
+</tr>
+<tr>
+<td>Rechargeable LiPo Pack</td>
+<td>3.7V per cell</td>
+<td>Never charge unattended; discard if swollen or punctured</td>
+</tr>
+<tr>
+<td>USB Power Bank</td>
+<td>5V output</td>
+<td>Unplug before opening or modifying any connected device</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition mascot-warning">
+<p class="admonition-title">A swollen battery pack is a stop-work sign, not a maybe</p>
+<p><img alt="Circuit warning" class="mascot-admonition-img" src="../../img/mascot/warning.png">
+Watch out for this: a battery pack that looks even slightly puffy or feels warm to the touch should be set aside immediately and never plugged back in. This is one of the few club situations where the right response is to simply stop, not to troubleshoot further.</p>
+</div>
+<h3 id="soldering-safety-basics">Soldering Safety Basics<a class="headerlink" href="#soldering-safety-basics" title="Permanent link">¶</a></h3>
+<p><strong>Soldering safety basics</strong> are the sequence of habits that make it possible to join wires with melted metal solder — using a soldering iron that reaches roughly 315 to 370 degrees Celsius — without a burn. Many beginner clubs skip soldering entirely and use breadboards instead, but clubs that do introduce it need a clear, repeatable safety sequence, since the iron itself is the only genuinely hot object most students will ever handle in this book.</p>
+<p>Picture the correct sequence as three phases a mentor narrates out loud the first time: before, the iron warms up in a stand with its tip pointed away from anyone, and the work area has a window cracked or a fan running, since solder produces a thin smoke best not breathed directly. During, the iron only ever touches the joint being soldered — never a hand, never a table, never set down anywhere except its stand, even for a few seconds. After, a freshly soldered joint stays untouched for at least ten seconds to cool, since solder holds heat far longer than it looks like it does. That before-during-after structure is the whole rule set condensed into something even a first-time volunteer mentor can hold in memory.</p>
+<p>Many clubs choose to skip soldering entirely in a student's early sessions and reserve it for older students working one-on-one with a mentor standing close by, precisely because it is the one activity in this chapter involving a genuinely hot tool rather than a low-voltage, cool-to-the-touch component. If skin ever does brush a hot tip or a freshly soldered joint, the correct first response is simple and immediate: cool the area under cool running water right away, and have a supervising adult assess whether further care is needed, rather than continuing the session as if nothing happened.</p>
+<h4 id="diagram-soldering-safety-workflow">Diagram: Soldering Safety Workflow<a class="headerlink" href="#diagram-soldering-safety-workflow" title="Permanent link">¶</a></h4>
+<iframe src="../../sims/soldering-safety-workflow/main.html" width="100%" height="520px" scrolling="no"></iframe>
+
+<details>
+<summary>Soldering Safety Workflow</summary>
+<p>Type: workflow
+<strong>sim-id:</strong> soldering-safety-workflow<br>
+<strong>Library:</strong> Mermaid<br>
+<strong>Status:</strong> Specified</p>
+<p>Purpose: Sequence the before/during/after habits so a first-time mentor can rehearse the order, not just the individual rules.</p>
+<p>Bloom Taxonomy: Apply (L3)
+Bloom Taxonomy Verb: demonstrate</p>
+<p>Learning objective: Given a soldering task about to start, the learner sequences the correct safety steps before, during, and after making a joint.</p>
+<p>Steps: 1. "Warm up iron in stand, ventilate area" (Before); 2. "Iron touches only the joint" (During); 3. "Return iron to stand immediately" (During); 4. "Wait 10 seconds before touching joint" (After); 5. "Iron off and cooled before storage" (After)</p>
+<p>Interactivity requirement: Every node MUST carry a <code>click</code> directive opening an infobox with that step's full explanation, e.g. <code>click step2 call showInfo("during-iron-touches-joint")</code>.</p>
+<p>Visual style: Top-to-bottom Mermaid flowchart with three color-coded swimlane bands (Before/During/After) behind the step boxes</p>
+<p>Implementation: Mermaid flowchart rendered inside a small wrapper page at the sim-id path, with a JavaScript <code>showInfo()</code> callback that populates an infobox beneath the diagram on any node click</p>
+</details>
+<h2 id="electrical-fundamentals-voltage-and-current">Electrical Fundamentals: Voltage and Current<a class="headerlink" href="#electrical-fundamentals-voltage-and-current" title="Permanent link">¶</a></h2>
+<p>Before building an actual circuit, a mentor needs two measurement vocabulary words that show up in every wiring diagram and every kit's instructions: voltage and current.</p>
+<h3 id="voltage-basics">Voltage Basics<a class="headerlink" href="#voltage-basics" title="Permanent link">¶</a></h3>
+<p><strong>Voltage</strong> is the electrical "push" that drives current through a circuit, measured in volts and created by a power source such as a battery or a USB port. A helpful comparison is water pressure in a hose: voltage is the pressure pushing water along, while the actual flow of water is closer to what electricians call current. A higher-voltage source pushes harder, but voltage alone says nothing about how much current will actually flow — that depends on what the voltage is pushing through, which is where resistance enters the picture later in this chapter.</p>
+<p>A worked comparison makes the scale concrete. A single AA battery supplies 1.5 volts; four AA batteries wired end to end in a robot kit's battery holder add up to 6 volts; a USB port supplies a steady 5 volts; and a coin-cell watch battery supplies 3 volts. Most beginner-friendly microcontrollers, including the Raspberry Pi Pico used elsewhere in this book's project kits, expect logic-level voltages of either 3.3 or 5 volts — which is exactly why kit instructions are specific about battery count and never treat "more voltage" as automatically better.</p>
+<p>"More voltage" is not automatically better because a microcontroller board is built to expect one specific range and can be permanently damaged the moment that range is exceeded — feeding a 5-volt-only board straight from a 9-volt battery, for example, is a common beginner mistake that ends a board's working life on its very first use. This is exactly why most kits either include a battery holder sized for the correct voltage or build in a small voltage regulator chip that quietly converts a higher incoming voltage down to a safe level before it ever reaches the microcontroller — a detail worth mentioning to curious students without turning it into its own lesson.</p>
+<p>Now that voltage has concrete reference points, the table below organizes them for quick lookup during kit setup.</p>
+<table>
+<thead>
+<tr>
+<th>Power Source</th>
+<th>Voltage</th>
+<th>Common Use in a Club</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1 AA battery</td>
+<td>1.5V</td>
+<td>Rarely used alone; too low for most boards</td>
+</tr>
+<tr>
+<td>4 AA batteries in series</td>
+<td>6V</td>
+<td>Robot kits, motor-driven projects</td>
+</tr>
+<tr>
+<td>USB port or power bank</td>
+<td>5V</td>
+<td>Most microcontroller boards</td>
+</tr>
+<tr>
+<td>Coin cell (CR2032)</td>
+<td>3V</td>
+<td>Small wearable or badge projects</td>
+</tr>
+</tbody>
+</table>
+<h3 id="current-basics">Current Basics<a class="headerlink" href="#current-basics" title="Permanent link">¶</a></h3>
+<p><strong>Current</strong> is the actual rate of flow of electric charge through a circuit, measured in amps, and it is current — not voltage — that does the work of lighting an LED, spinning a motor, or, when uncontrolled, overheating a wire. Continuing the water analogy, current is the amount of water actually moving through the hose per second, which depends on both the pressure (voltage) pushing it and how open or restricted the hose is (resistance).</p>
+<p>Those three quantities relate through one of the most useful equations in electronics.</p>
+<h4 id="ohms-law">Ohm's Law<a class="headerlink" href="#ohms-law" title="Permanent link">¶</a></h4>
+<div class="arithmatex">\[ V = I \times R \]</div>
+<p>where:</p>
+<ul>
+<li><span class="arithmatex">\(V\)</span> is voltage, measured in volts</li>
+<li><span class="arithmatex">\(I\)</span> is current, measured in amps</li>
+<li><span class="arithmatex">\(R\)</span> is resistance, measured in ohms</li>
+</ul>
+<p>A worked example: a mentor wants to safely light an LED from a 5-volt USB source. The LED itself uses up about 2 volts of that supply once it is lit, leaving 3 volts that a resistor must absorb. If the mentor wants the current limited to a safe 20 milliamps (0.02 amps) for the LED, rearranging Ohm's law gives resistance equal to voltage divided by current: 3 volts / 0.02 amps = 150 ohms. That calculation — not guesswork — is exactly how the resistor value in the Blinking Light Circuit worked example later in this chapter gets chosen.</p>
+<div class="admonition mascot-encourage">
+<p class="admonition-title">The math gets easier with real numbers in front of you</p>
+<p><img alt="Circuit encouraging" class="mascot-admonition-img" src="../../img/mascot/encouraging.png">
+If Ohm's law feels like a formula from a textbook rather than something you'd reach for naturally, that's completely normal — most mentors need to run the calculator MicroSim below on two or three real circuits before it clicks. You've already handled harder unknowns than this one.</p>
+</div>
+<h4 id="diagram-ohms-law-current-calculator">Diagram: Ohm's Law Current Calculator<a class="headerlink" href="#diagram-ohms-law-current-calculator" title="Permanent link">¶</a></h4>
+<iframe src="../../sims/ohms-law-current-calculator/main.html" width="100%" height="480px" scrolling="no"></iframe>
+
+<details>
+<summary>Ohm's Law Current Calculator</summary>
+<p>Type: microsim
+<strong>sim-id:</strong> ohms-law-current-calculator<br>
+<strong>Library:</strong> p5.js<br>
+<strong>Status:</strong> Specified<br>
+<strong>Template:</strong> https://github.com/dmccreary/learning-micropython/tree/main/docs/sims/ohms-law-calculator</p>
+<p>Purpose: Let a mentor plug in real supply-voltage and resistor values from a kit and see the resulting current before powering an actual circuit.</p>
+<p>Bloom Taxonomy: Apply (L3)
+Bloom Taxonomy Verb: calculate</p>
+<p>Learning objective: Given a supply voltage and a resistor value, the learner calculates the resulting current and judges whether it is safe for the connected LED.</p>
+<p>Canvas layout: Left (60%) shows a simple circuit diagram (battery, resistor, LED) that visually brightens or dims as current changes; right (40%) holds sliders and the numeric readout</p>
+<p>Interactive controls: Slider for supply voltage (1.5V-9V); slider for resistor value (10 ohms-1000 ohms); numeric display of calculated current in milliamps; color-coded safety readout (green under 20mA, amber 20-30mA, red above 30mA)</p>
+<p>Default parameters: Supply voltage 5V, resistor 220 ohms (yields ~14mA, shown in green)</p>
+<p>Behavior: Moving either slider instantly recalculates current using <span class="arithmatex">\(I = V / R\)</span> and updates both the numeric readout and the LED brightness/safety color in the diagram</p>
+<p>Implementation notes: p5.js canvas with two <code>createSlider()</code> controls; recompute on every <code>draw()</code> frame from current slider values</p>
+</details>
+<h2 id="building-your-first-circuit">Building Your First Circuit<a class="headerlink" href="#building-your-first-circuit" title="Permanent link">¶</a></h2>
+<p>With safety rules and the voltage/current vocabulary in place, the next five concepts are the physical parts and skills needed to build an actual circuit.</p>
+<h3 id="breadboard-basics">Breadboard Basics<a class="headerlink" href="#breadboard-basics" title="Permanent link">¶</a></h3>
+<p>A <strong>breadboard</strong> is a reusable plastic board full of small spring-loaded holes, called tie points, that let you connect electronic components without soldering. Breadboard basics means understanding which holes are electrically connected to which, since that hidden wiring pattern — not the visible grid of holes — determines whether a circuit actually works.</p>
+<p>Most breadboards share the same internal layout: two long power rail rows run along each edge, usually marked with a red plus line and a blue or black minus line, and every hole along a red line is connected to every other hole on that same line, all the way down the board. The wide middle section is organized into short columns of five holes each, split by a center gap; every hole within one five-hole column is electrically connected to the others in that same column, but not to the column next to it. A worked example: to power an LED, a mentor places the LED's two legs into two different five-hole columns, then uses a resistor to bridge one of those columns to the power rail — the resistor and the LED end up in the same current path even though they never touch each other directly, because the breadboard's internal metal strips do the connecting.</p>
+<p>Full-size breadboards add one detail worth calling out before a student's first build: the center gap that splits the middle columns also splits each side's power rails into two separate, disconnected halves, so a wire run down the top rail on the left side does not automatically reach the right side of that same rail. A student who wires half a circuit and finds "nothing works" on the far side of the board has often simply forgotten this gap, which is exactly why the Jumper Wire concept later in this section includes bridging the two halves of a rail as one of its standard first moves. Smaller half-size breadboards, common in compact kits, skip this middle gap entirely and run each rail as one unbroken line.</p>
+<h4 id="diagram-breadboard-tie-point-explorer">Diagram: Breadboard Tie-Point Explorer<a class="headerlink" href="#diagram-breadboard-tie-point-explorer" title="Permanent link">¶</a></h4>
+<iframe src="../../sims/breadboard-tie-point-explorer/main.html" width="100%" height="520px" scrolling="no"></iframe>
+
+<details>
+<summary>Breadboard Tie-Point Explorer</summary>
+<p>Type: microsim
+<strong>sim-id:</strong> breadboard-tie-point-explorer<br>
+<strong>Library:</strong> p5.js<br>
+<strong>Status:</strong> Specified<br>
+<strong>Template:</strong> https://github.com/dmccreary/stem-robots/tree/main/docs/sims/breadboard-layout-explorer</p>
+<p>Purpose: Let a mentor click any hole on a drawn breadboard and instantly see every other hole it is electrically connected to.</p>
+<p>Bloom Taxonomy: Remember (L1)
+Bloom Taxonomy Verb: identify</p>
+<p>Learning objective: Given a labeled breadboard diagram, the learner identifies which holes are electrically connected to a clicked hole.</p>
+<p>Visual elements: A full-size breadboard drawing with two power rails (top and bottom) and the central five-hole columns, rendered at real proportions</p>
+<p>Interactive controls: Click any hole to highlight, in one color, every hole tied to it; a "Show all rails" toggle that highlights both power rails at once in a second color</p>
+<p>Default parameters: No hole selected on load; clicking any hole triggers the highlight</p>
+<p>Behavior: On click, redraw the board with the clicked hole's full connected group highlighted and a text label reading either "Power rail" or "Column {n}"</p>
+<p>Implementation notes: p5.js grid rendered from a 2D array encoding each hole's connection-group id; click detection maps mouse coordinates to the nearest hole</p>
+</details>
+<h3 id="jumper-wire">Jumper Wire<a class="headerlink" href="#jumper-wire" title="Permanent link">¶</a></h3>
+<p>A <strong>jumper wire</strong> is a short, flexible wire with a connector on each end, used to carry a connection between two breadboard holes, or between a breadboard and a component like a microcontroller pin. Jumper wires come with two connector styles: a male end is a solid pin that plugs into a breadboard hole, while a female end is a small socket that plugs onto a pin sticking out of a board or component.</p>
+<p>A worked example: connecting a breadboard's bottom power rail to its top power rail — necessary because the two rails are not connected to each other by default — takes one male-to-male jumper wire, plugged into any hole on each rail. Connecting that same breadboard to a microcontroller's labeled output pin, which is a protruding pin rather than a hole, takes a male-to-female wire instead, with the female end pushed onto the pin and the male end pushed into a breadboard hole.</p>
+<p>Most experienced mentors also settle on a simple color convention early and stick to it across every kit in the club — red wires for the positive power rail, black or blue for ground, and any other color for signal wires such as a button or sensor connection. That convention costs nothing to adopt but saves real time later, since a student trying to find a wiring mistake can scan for "the one wire that isn't the right color" instead of tracing every connection from scratch. Keeping wire length reasonably close to the actual distance between two points also matters more than it seems: a long wire looped loosely across a crowded breadboard is far more likely to get snagged and pulled loose mid-session than a short one run directly between its two holes.</p>
+<p>Now that both connector styles are defined, the table below compares them directly.</p>
+<table>
+<thead>
+<tr>
+<th>Wire Type</th>
+<th>Connects To</th>
+<th>Common Use</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Male-to-Male</td>
+<td>Breadboard hole to breadboard hole</td>
+<td>Linking two points on the same or different breadboards</td>
+</tr>
+<tr>
+<td>Male-to-Female</td>
+<td>Breadboard hole to a protruding pin</td>
+<td>Connecting a microcontroller pin to a breadboard</td>
+</tr>
+<tr>
+<td>Female-to-Female</td>
+<td>Pin to pin</td>
+<td>Connecting two microcontroller boards directly, no breadboard</td>
+</tr>
+</tbody>
+</table>
+<h3 id="resistor-basics">Resistor Basics<a class="headerlink" href="#resistor-basics" title="Permanent link">¶</a></h3>
+<p>A <strong>resistor</strong> is a component that limits the amount of current flowing through a circuit by a fixed, known amount, measured in ohms — the same quantity from Ohm's law earlier in this chapter. Rather than printing the resistance value in text, most resistors use a sequence of four or five colored bands to encode it, since printed numbers would be too small to read reliably on a component only a few millimeters long.</p>
+<p>A worked example: a resistor with bands colored brown, black, red, then gold reads as 1,000 ohms (1 kilohm), where brown and black give the first two digits (1 and 0), red gives the number of zeros to add (two zeros), and gold indicates the value is accurate within 5 percent. Rather than memorizing all ten color-to-digit mappings before your first session, most mentors get faster results by decoding one resistor with the calculator below, then confirming the answer with the multimeter skill covered later in this chapter — trust the tool first, build the memorized skill over a few sessions.</p>
+<p>A resistor's job is not limited to protecting a single LED. The same current-limiting principle also protects a microcontroller's input pins, which is why the pull-down resistor described later in this chapter's Push Button Switch section is a resistor doing exactly the same job in a different role — keeping current, and therefore voltage, at a safe and predictable level. Club kits typically stock only a handful of common values, most often 220 ohms and 1 kilohm, since those two values cover the large majority of beginner LED and pull-down circuits without needing a full parts drawer of every possible resistance.</p>
+<div class="admonition mascot-tip">
+<p class="admonition-title">Verify a color code with a measurement, especially on older stock</p>
+<p><img alt="Circuit giving a tip" class="mascot-admonition-img" src="../../img/mascot/tip.png">
+Here's a shortcut: resistor bands can look faded or hard to distinguish under classroom lighting, especially brown versus red. When a value matters — like the 150-ohm resistor from the Ohm's law example — measure it directly with a multimeter instead of trusting your eyes on the color bands alone.</p>
+</div>
+<h4 id="diagram-resistor-color-code-calculator">Diagram: Resistor Color Code Calculator<a class="headerlink" href="#diagram-resistor-color-code-calculator" title="Permanent link">¶</a></h4>
+<iframe src="https://dmccreary.github.io/learning-micropython/sims/resistor-color-code-calculator/main.html" width="100%" height="500px" scrolling="no"></iframe>
+
+<p><a class="md-button" href="https://dmccreary.github.io/learning-micropython/sims/resistor-color-code-calculator/main.html">Run the Resistor Color Code Calculator MicroSim fullscreen</a></p>
+<details>
+<summary>Resistor Color Code Calculator (reused MicroSim)</summary>
+<p>Type: microsim
+<strong>sim-id:</strong> resistor-color-code-calculator<br>
+<strong>Library:</strong> p5.js<br>
+<strong>Status:</strong> Reused<br>
+<strong>Source:</strong> https://dmccreary.github.io/learning-micropython/sims/resistor-color-code-calculator/<br>
+<strong>Source Repo:</strong> https://github.com/dmccreary/learning-micropython/tree/main/docs/sims/resistor-color-code-calculator</p>
+<p>Reused from the MicroSim catalog (WHAT match score 0.81). Learning objective: Given a resistor's colored bands, the learner calculates its resistance value using the standard color-code table (Apply).</p>
+</details>
+<h3 id="led-basics">LED Basics<a class="headerlink" href="#led-basics" title="Permanent link">¶</a></h3>
+<p>An <strong>LED</strong>, short for light-emitting diode, is a component that produces light when current flows through it in one direction only, and is damaged or simply stays dark if connected backward. Because direction matters, every LED has two visibly different legs: the longer leg is the anode, which connects toward the positive side of a circuit, and the shorter leg is the cathode, which connects toward the negative side; a small flat edge on the LED's plastic dome also marks the cathode side for identification once the legs have been trimmed or bent.</p>
+<p>A worked example: a student holding an LED with legs of clearly different lengths orients the longer leg toward the resistor-fed positive column of the breadboard and the shorter leg toward the negative power rail. Powering the circuit lights the LED; reversing the two legs simply leaves it dark, which is a safe and reversible mistake as long as the current-limiting resistor from earlier is still in the circuit.</p>
+<p>Not every LED needs the exact same resistor value, because different LED colors have different forward voltages — the voltage the LED itself uses up once lit. A red LED typically has a forward voltage near 2 volts, matching the 150-ohm calculation worked out earlier in Current Basics, while a blue or white LED can have a forward voltage closer to 3 volts, which leaves less voltage for the resistor to absorb and calls for a smaller resistance to hit the same safe current. This is a good moment for a mentor to re-run the Ohm's Law Current Calculator MicroSim with a different LED color in mind, rather than assuming one resistor value works for every LED in the kit box.</p>
+<h4 id="diagram-led-anatomy">Diagram: LED Anatomy<a class="headerlink" href="#diagram-led-anatomy" title="Permanent link">¶</a></h4>
+<iframe src="../../sims/led-anatomy/main.html" width="100%" height="480px" scrolling="no"></iframe>
+
+<details>
+<summary>LED Anatomy</summary>
+<p>Type: infographic
+<strong>sim-id:</strong> led-anatomy<br>
+<strong>Library:</strong> Interactive Infographic Overlay (diagram.js, callout engine)<br>
+<strong>Status:</strong> Specified</p>
+<p>Purpose: Let a learner identify anode, cathode, and the flat-edge marking on a zoomed illustration of a real LED before handling one.</p>
+<p>Bloom Taxonomy: Remember (L1)
+Bloom Taxonomy Verb: identify</p>
+<p>Learning objective: Given a zoomed illustration of an LED, the learner identifies the anode, cathode, and flat-edge marking used to orient it correctly.</p>
+<p>Image style: Close-up flat illustration of a single 5mm LED, legs extended, with a visible length difference between the two legs and a flat edge on the dome</p>
+<p>Image dimensions: 800x600 (landscape)</p>
+<p>Callouts (4 total): 1. "Anode (longer leg)" color #4A90D9; 2. "Cathode (shorter leg)" color #E67E22; 3. "Flat edge" on the dome, color #9B59B6; 4. "Light-emitting dome" color #F5A623</p>
+<p>Interactive features: Hover or click each callout to reveal a one-sentence explanation; a "Flip It" button shows the same LED reversed so learners practice recognizing orientation from either side</p>
+<p>Implementation: Interactive Infographic Overlay Guide (callout engine) — <code>diagram.js</code> + <code>style.css</code> render numbered markers over the generated LED illustration</p>
+</details>
+<h3 id="blinking-light-circuit">Blinking Light Circuit<a class="headerlink" href="#blinking-light-circuit" title="Permanent link">¶</a></h3>
+<p>A <strong>blinking light circuit</strong> combines a power source, a resistor, and an LED with a microcontroller's digital output pin, switching the LED on and off in a repeating pattern under program control. This is the traditional first physical computing project in nearly every electronics course, because it exercises every concept covered so far — voltage, current, resistor selection, LED polarity, and breadboard wiring — in one small, visibly working build.</p>
+<p>Building it step by step: place the LED across two breadboard columns with its longer anode leg on the side that will receive power; place the 150-ohm resistor (calculated earlier from Ohm's law) between the anode's column and a jumper wire running to the microcontroller's output pin; connect the LED's cathode column to the board's ground rail with a second jumper wire. Once wired, code on the microcontroller turns the output pin on and off, on a timer — commonly half a second on, half a second off — producing the blink.</p>
+<div class="admonition mascot-thinking">
+<p class="admonition-title">A circuit only works when the loop is completely closed</p>
+<p><img alt="Circuit thinking" class="mascot-admonition-img" src="../../img/mascot/thinking.png">
+Notice that current has to travel in an unbroken loop — out of the power source, through the resistor, through the LED, and all the way back to the source's other terminal. Leave any single connection open anywhere in that loop, and the whole circuit goes dark, even if every other wire is perfect.</p>
+</div>
+<h4 id="diagram-blinking-led-breadboard-circuit">Diagram: Blinking LED Breadboard Circuit<a class="headerlink" href="#diagram-blinking-led-breadboard-circuit" title="Permanent link">¶</a></h4>
+<iframe src="../../sims/blinking-led-breadboard-circuit/main.html" width="100%" height="560px" scrolling="no"></iframe>
+
+<details>
+<summary>Blinking LED Breadboard Circuit</summary>
+<p>Type: microsim
+<strong>sim-id:</strong> blinking-led-breadboard-circuit<br>
+<strong>Library:</strong> p5.js<br>
+<strong>Status:</strong> Specified<br>
+<strong>Template:</strong> https://github.com/dmccreary/microsims/tree/main/docs/sims/breadboard</p>
+<p>Purpose: Show an animated, current-flow view of a complete blinking-LED circuit built on a real breadboard layout.</p>
+<p>Bloom Taxonomy: Apply (L3)
+Bloom Taxonomy Verb: demonstrate</p>
+<p>Learning objective: Given a breadboard, resistor, LED, and jumper wires, the learner demonstrates how they combine into a working blinking-light circuit.</p>
+<p>Visual elements: Realistic breadboard drawing with an LED, one resistor, two jumper wires, and animated current-flow dots moving along the completed loop whenever the circuit is closed and the simulated output pin is HIGH</p>
+<p>Interactive controls: Slider for blink interval (100ms-2000ms); toggle switch simulating "output pin HIGH/LOW"; a "break the loop" button that disconnects one jumper wire to show the LED going dark</p>
+<p>Default parameters: Blink interval 500ms, loop intact, output cycling automatically</p>
+<p>Behavior: While the loop is intact, the LED brightens and current-flow dots animate whenever the output is HIGH; clicking "break the loop" removes one wire and the LED stays dark regardless of output state, reinforcing the closed-loop requirement</p>
+<p>Implementation notes: p5.js canvas rendering breadboard geometry from a coordinate table; animated dots along a path array; <code>setInterval</code>-style timing using <code>millis()</code></p>
+</details>
+<h2 id="reading-input-and-producing-output">Reading Input and Producing Output<a class="headerlink" href="#reading-input-and-producing-output" title="Permanent link">¶</a></h2>
+<p>A blinking circuit runs on its own timer, but most physical computing projects also need to react to the outside world — a button press, a sensor reading — and produce more than one kind of output. The next five concepts describe the two signal types every input or output falls into: digital and analog.</p>
+<h3 id="push-button-switch">Push Button Switch<a class="headerlink" href="#push-button-switch" title="Permanent link">¶</a></h3>
+<p>A <strong>push button switch</strong> is a component that closes a circuit connection while pressed and opens it again when released, giving a program a simple, physical way to detect a human action. Unlike a toggle switch that stays in whichever position you leave it, a push button always returns to its resting state on its own once you let go.</p>
+<p>A worked example: wiring a push button into a breadboard circuit typically pairs it with a resistor connected to ground, called a pull-down resistor, so that the connected input pin reads a clear, defined LOW value when the button is not pressed, rather than an unpredictable "floating" value. Pressing the button connects that same pin directly to the positive power rail, pulling the reading to a clear HIGH. Without the pull-down resistor, an unpressed button's pin can drift between HIGH and LOW unpredictably, which is a common source of a beginner circuit that seems to "randomly" trigger on its own.</p>
+<p>Some kits wire the same idea in reverse, using a pull-up resistor connected to the positive rail instead, so the pin reads HIGH when the button is not pressed and LOW when it is. Either approach is correct as long as the mentor and the code agree on which one is in use, since reading the wrong logic — expecting HIGH-when-pressed on a pull-up circuit, for instance — is a frequent source of a button that seems to work backward. One more real-world quirk worth knowing before a first session: a mechanical button's metal contacts can briefly vibrate and register several rapid presses for a single physical push, an effect called switch bounce, which is why many beginner projects add a short pause in code right after detecting a press rather than treating every reading as a brand-new event.</p>
+<h4 id="diagram-push-button-digital-input-circuit">Diagram: Push Button Digital Input Circuit<a class="headerlink" href="#diagram-push-button-digital-input-circuit" title="Permanent link">¶</a></h4>
+<iframe src="../../sims/push-button-digital-input-circuit/main.html" width="100%" height="500px" scrolling="no"></iframe>
+
+<details>
+<summary>Push Button Digital Input Circuit</summary>
+<p>Type: microsim
+<strong>sim-id:</strong> push-button-digital-input-circuit<br>
+<strong>Library:</strong> p5.js<br>
+<strong>Status:</strong> Specified</p>
+<p>Purpose: Let a learner press a simulated button and watch the connected input pin's reading change in real time, including what happens without a pull-down resistor.</p>
+<p>Bloom Taxonomy: Apply (L3)
+Bloom Taxonomy Verb: demonstrate</p>
+<p>Learning objective: Given a push button wired with a pull-down resistor, the learner demonstrates how pressing and releasing it changes a digital input reading between HIGH and LOW.</p>
+<p>Visual elements: A drawn breadboard circuit with a push button, a pull-down resistor, and a labeled input-pin readout box showing "HIGH" or "LOW"</p>
+<p>Interactive controls: A large clickable button graphic the learner can press and hold; a toggle to remove the pull-down resistor and observe an unstable, flickering reading instead of a clean LOW</p>
+<p>Default parameters: Pull-down resistor present, reading starts at LOW</p>
+<p>Behavior: Pressing the button graphic changes the readout to HIGH instantly and back to LOW on release; removing the pull-down resistor causes the LOW reading to flicker randomly when not pressed</p>
+<p>Implementation notes: p5.js mouse-press detection tied to the button graphic; simple state variable for pin reading; randomized flicker effect when pull-down is toggled off</p>
+</details>
+<h3 id="digital-input">Digital Input<a class="headerlink" href="#digital-input" title="Permanent link">¶</a></h3>
+<p><strong>Digital input</strong> is a signal read by a microcontroller that has only two possible states, HIGH or LOW, corresponding to a voltage near the supply voltage or near zero volts. The push button circuit above is the most common digital input example in a beginner club, but any sensor that only reports "detected" or "not detected" — a simple tilt switch, for instance — also produces a digital input.</p>
+<p>The key idea to hold onto is the word "only": there is no in-between reading for a digital input, unlike the continuous range covered under analog input below. A worked example makes the two-state nature concrete: a program reading the push button's pin sees exactly one of two values on every check, never a partial or fractional reading — either the button is pressed (HIGH) or it is not (LOW), full stop.</p>
+<p>Underneath that clean two-value description, a microcontroller is actually still reading a real voltage and rounding it into one of the two categories using a threshold. On a board running at 3.3 volts, a reading below roughly 0.8 volts is treated as LOW and a reading above roughly 2.0 volts is treated as HIGH, with the narrow band in between simply undefined and best avoided by good wiring — exactly the voltage vocabulary from earlier in this chapter, now put to direct use in deciding what "digital" actually means at the hardware level.</p>
+<p>Now that both states are defined, the chart below shows what that two-state signal actually looks like over time as a button is pressed and released.</p>
+<h4 id="diagram-digital-signal-highlow-chart">Diagram: Digital Signal HIGH/LOW Chart<a class="headerlink" href="#diagram-digital-signal-highlow-chart" title="Permanent link">¶</a></h4>
+<iframe src="../../sims/digital-signal-high-low-chart/main.html" width="100%" height="440px" scrolling="no"></iframe>
+
+<details>
+<summary>Digital Signal HIGH/LOW Chart</summary>
+<p>Type: chart
+<strong>sim-id:</strong> digital-signal-high-low-chart<br>
+<strong>Library:</strong> Chart.js<br>
+<strong>Status:</strong> Specified</p>
+<p>Purpose: Show a digital input's voltage-over-time trace as a clean step pattern, contrasting it with the smooth curve used later for analog input.</p>
+<p>Chart type: Line chart (step-interpolation)</p>
+<p>X-axis: Time (seconds, 0-10)</p>
+<p>Y-axis: Voltage (0V to 5V)</p>
+<p>Data series: One series showing voltage jumping instantly between 0V (button released) and 5V (button pressed) at five sample press/release events across the 10-second window</p>
+<p>Title: "Digital Input Voltage Over Time"</p>
+<p>Interactive features: Hovering any point on the step line reveals the exact voltage and HIGH/LOW label in a tooltip; a "press button" simulated button beneath the chart adds a live new step event to the right edge of the chart when clicked</p>
+<p>Color scheme: Blue step line on a light background; HIGH segments shaded lightly to distinguish from LOW segments</p>
+<p>Implementation: Chart.js line chart configured with <code>stepped: true</code>; click handler appends a new data point pair to simulate a live press event</p>
+</details>
+<h3 id="digital-output">Digital Output<a class="headerlink" href="#digital-output" title="Permanent link">¶</a></h3>
+<p><strong>Digital output</strong> is a signal a microcontroller sends out that also has only two possible states, HIGH or LOW, used to turn something fully on or fully off. The blinking LED circuit earlier in this chapter is a digital output example: the microcontroller's pin alternates between HIGH, which lights the LED, and LOW, which turns it off, with nothing in between.</p>
+<p>A worked example: the same output pin used for the blinking LED could instead trigger a small buzzer or a relay switching a larger device — the code concept is identical in every case, since a digital output always answers only one question: on, or off?</p>
+<p>There is an important limit worth teaching alongside this concept: a microcontroller pin can typically source only a small amount of current directly, often no more than about 20 to 30 milliamps, which is comfortably enough to light one LED through a current-limiting resistor but nowhere near enough to run a motor or a bright display directly. Driving anything more demanding than an LED means using the digital output pin to switch a separate component — a transistor or a relay — which in turn switches the larger device's own, separately supplied power. Skipping that intermediate step and wiring a motor straight to a microcontroller pin is a common way beginners recreate the short-circuit-like overcurrent hazard described earlier in this chapter, just with a motor's demand for current standing in for a bare wire.</p>
+<p>A quick worked check shows why this limit matters even for something as ordinary as two LEDs. Two LEDs, each drawing 20 milliamps through its own resistor but both wired to the same output pin, would together ask that single pin for 40 milliamps — beyond the roughly 20 to 30 milliamp budget most beginner boards allow per pin. The practical fix is simple once the limit is understood: give each LED its own separate output pin, each with its own resistor sized the same way the Ohm's law worked example calculated earlier, rather than doubling up on one pin and quietly exceeding its rating.</p>
+<p>Now that both digital input and digital output are defined, the table below organizes the two states with a matching example of each.</p>
+<table>
+<thead>
+<tr>
+<th>Signal</th>
+<th>State</th>
+<th>LED Circuit Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Digital Output HIGH</td>
+<td>On / full power</td>
+<td>LED lit</td>
+</tr>
+<tr>
+<td>Digital Output LOW</td>
+<td>Off / no power</td>
+<td>LED dark</td>
+</tr>
+<tr>
+<td>Digital Input HIGH</td>
+<td>Detected / pressed</td>
+<td>Button pressed</td>
+</tr>
+<tr>
+<td>Digital Input LOW</td>
+<td>Not detected / released</td>
+<td>Button released</td>
+</tr>
+</tbody>
+</table>
+<h3 id="analog-input">Analog Input<a class="headerlink" href="#analog-input" title="Permanent link">¶</a></h3>
+<p><strong>Analog input</strong> is a signal read by a microcontroller that can take on a continuous range of values, not just two, typically reported as a number across a wide scale such as 0 to 1023. A potentiometer — a knob or slider that changes resistance as it turns — is the classic analog input component, since a person can rest it anywhere along its range, not just fully open or fully closed.</p>
+<div class="admonition mascot-thinking">
+<p class="admonition-title">Digital asks 'yes or no,' analog asks 'how much'</p>
+<p><img alt="Circuit thinking" class="mascot-admonition-img" src="../../img/mascot/thinking.png">
+Think of it like this: a digital input is a light switch — only on or off — while an analog input is a dimmer dial, capable of resting at any point along a smooth range. That single distinction is the mental shift this whole section is built around, and it explains why a potentiometer needs a completely different kind of reading than a push button does.</p>
+</div>
+<p>A worked example: turning a potentiometer knob a quarter of the way produces a reading of roughly 256 out of 1023; turning it halfway produces roughly 512; fully open produces the maximum 1023. Unlike the push button's clean two-value output, every position along that turn produces its own distinct number.</p>
+<p>This is exactly the kind of input this book's Moving Rainbow project, referenced in the course description, uses to let a student dial in a color or brightness by hand rather than only choosing between a fixed set of preset options. A raw 0-to-1023 reading rarely maps directly onto whatever it is controlling, so code typically rescales it first — turning that same range into, say, a 0-to-255 brightness value — using the same kind of proportional mapping the PWM section below relies on to convert a percentage into an on-off timing pattern.</p>
+<h4 id="diagram-potentiometer-analog-input-explorer">Diagram: Potentiometer Analog Input Explorer<a class="headerlink" href="#diagram-potentiometer-analog-input-explorer" title="Permanent link">¶</a></h4>
+<iframe src="../../sims/potentiometer-analog-input-explorer/main.html" width="100%" height="480px" scrolling="no"></iframe>
+
+<details>
+<summary>Potentiometer Analog Input Explorer</summary>
+<p>Type: microsim
+<strong>sim-id:</strong> potentiometer-analog-input-explorer<br>
+<strong>Library:</strong> p5.js<br>
+<strong>Status:</strong> Specified<br>
+<strong>Template:</strong> https://github.com/dmccreary/learning-micropython/tree/main/docs/sims/adc-potentiometer-explorer</p>
+<p>Purpose: Let a learner turn a simulated potentiometer knob and watch the continuous analog reading change in real time, contrasted against the two-value digital reading.</p>
+<p>Bloom Taxonomy: Apply (L3)
+Bloom Taxonomy Verb: demonstrate</p>
+<p>Learning objective: Given a potentiometer's knob position, the learner demonstrates how turning it produces a proportional analog input reading across a continuous range.</p>
+<p>Visual elements: A drawn rotary knob the learner can drag, plus a numeric readout (0-1023) and a filling bar graph that rises and falls with the reading</p>
+<p>Interactive controls: Draggable knob (or equivalent slider); numeric readout; a "compare to digital" toggle that overlays a two-state HIGH/LOW indicator for contrast</p>
+<p>Default parameters: Knob starts at center position, reading near 512</p>
+<p>Behavior: Dragging the knob updates the numeric readout and bar graph continuously and smoothly, with no snapping between fixed values</p>
+<p>Implementation notes: p5.js <code>map()</code> function converts knob angle directly to the 0-1023 reading range; draggable knob using mouse-drag detection</p>
+</details>
+<h3 id="analog-output">Analog Output<a class="headerlink" href="#analog-output" title="Permanent link">¶</a></h3>
+<p><strong>Analog output</strong> is a signal that appears to a connected device as a continuously variable level, such as a partially dimmed LED, even though most microcontrollers actually produce it by switching a digital output on and off extremely fast — a technique called pulse-width modulation, or PWM. The proportion of time the signal spends HIGH during each rapid on-off cycle, called the duty cycle, determines how bright, fast, or loud the connected output appears.</p>
+<p>A worked example: an LED driven with a 25 percent duty cycle — HIGH for one quarter of each cycle and LOW for the rest — appears noticeably dim to the human eye, because the switching happens far faster than the eye can perceive individual flickers, and the eye instead averages the brightness over time. Raising the duty cycle to 75 percent makes the same LED appear noticeably brighter, even though the pin is still only ever fully on or fully off at any single instant — the appearance of a smooth in-between brightness is really an average of speed, not a true in-between voltage.</p>
+<p>Switching speed matters as much as duty cycle does. A microcontroller's PWM output typically switches many hundreds or thousands of times per second — fast enough that the human eye perceives a smooth brightness rather than a flicker. If that same duty-cycle pattern ran only a few times per second instead, students would see the LED visibly stutter on and off rather than dim smoothly, which is a useful demonstration in its own right: it shows that the "analog" appearance depends entirely on switching faster than human perception, not on any special analog hardware inside the LED itself.</p>
+<h4 id="diagram-pwm-analog-output-brightness-explorer">Diagram: PWM Analog Output Brightness Explorer<a class="headerlink" href="#diagram-pwm-analog-output-brightness-explorer" title="Permanent link">¶</a></h4>
+<iframe src="../../sims/pwm-analog-output-brightness-explorer/main.html" width="100%" height="480px" scrolling="no"></iframe>
+
+<details>
+<summary>PWM Analog Output Brightness Explorer</summary>
+<p>Type: microsim
+<strong>sim-id:</strong> pwm-analog-output-brightness-explorer<br>
+<strong>Library:</strong> p5.js<br>
+<strong>Status:</strong> Specified<br>
+<strong>Template:</strong> https://github.com/dmccreary/microsims/tree/main/docs/sims/pwm</p>
+<p>Purpose: Show how adjusting PWM duty cycle changes perceived LED brightness, and reveal the actual fast on-off switching underneath the smooth appearance.</p>
+<p>Bloom Taxonomy: Understand (L2)
+Bloom Taxonomy Verb: explain</p>
+<p>Learning objective: Given a duty-cycle percentage, the learner explains how the underlying on-off switching pattern produces a perceived brightness level.</p>
+<p>Visual elements: A simulated LED that appears to dim or brighten smoothly; beneath it, a zoomed-in, slowed-down waveform showing the actual on-off square-wave pattern at the current duty cycle</p>
+<p>Interactive controls: Slider for duty cycle (0%-100%); a "slow motion" toggle that slows the waveform enough to see individual on/off pulses</p>
+<p>Default parameters: Duty cycle 50%, normal speed</p>
+<p>Behavior: Moving the duty-cycle slider instantly updates both the LED's perceived brightness and the waveform's on/off proportions; the slow-motion toggle reduces switching speed so learners can see the discrete pulses that produce the smooth appearance</p>
+<p>Implementation notes: p5.js canvas with the LED rendered as a circle whose fill opacity maps to duty cycle for the "perceived" view, and a literal square-wave line plot for the "actual" view</p>
+</details>
+<h2 id="measuring-what-you-built">Measuring What You Built<a class="headerlink" href="#measuring-what-you-built" title="Permanent link">¶</a></h2>
+<h3 id="multimeter-usage">Multimeter Usage<a class="headerlink" href="#multimeter-usage" title="Permanent link">¶</a></h3>
+<p>A <strong>multimeter</strong> is a handheld tool that measures electrical properties — most commonly voltage, resistance, and continuity — letting a mentor verify a circuit's behavior directly instead of guessing from a diagram. Continuity mode, specifically, tells you whether two points are electrically connected at all, by beeping when resistance between its two probes is very low.</p>
+<p>A worked example ties this chapter's safety and fundamentals concepts together in one practical habit: before powering a new circuit for the first time, set the multimeter to continuity mode and touch its two probes to the circuit's positive and negative power rail. A beep at this stage means something is short-circuited — exactly the hazard described earlier in this chapter — and the circuit should not be powered until the short is found and fixed. Once a circuit passes that check, switching the multimeter to voltage mode and measuring across the resistor confirms the actual voltage drop matches the Ohm's law prediction from earlier, and switching to resistance mode against an unpowered resistor double-checks its color-code value directly, resolving any doubt left over from hard-to-read bands.</p>
+<p>A multimeter's voltage mode also earns its place in the Battery Safety routine from earlier: touching the probes directly across a battery pack's terminals reads its actual remaining voltage, which is the most reliable way to tell a genuinely dead pack from one that merely looks fine, well before a student wires it into a circuit and wonders why nothing lights up.</p>
+<h4 id="diagram-multimeter-usage-simulator">Diagram: Multimeter Usage Simulator<a class="headerlink" href="#diagram-multimeter-usage-simulator" title="Permanent link">¶</a></h4>
+<iframe src="../../sims/multimeter-usage-simulator/main.html" width="100%" height="520px" scrolling="no"></iframe>
+
+<details>
+<summary>Multimeter Usage Simulator</summary>
+<p>Type: microsim
+<strong>sim-id:</strong> multimeter-usage-simulator<br>
+<strong>Library:</strong> p5.js<br>
+<strong>Status:</strong> Specified<br>
+<strong>Template:</strong> https://github.com/dmccreary/automating-instructional-design/tree/main/docs/sims/ohms-law-simulator</p>
+<p>Purpose: Let a learner select a multimeter mode and touch simulated probes to a simple circuit, practicing the pre-power safety check described in the worked example.</p>
+<p>Bloom Taxonomy: Apply (L3)
+Bloom Taxonomy Verb: demonstrate</p>
+<p>Learning objective: Given a simple breadboard circuit, the learner demonstrates how to use a multimeter's continuity, voltage, and resistance modes to verify the circuit before and after powering it.</p>
+<p>Visual elements: A drawn multimeter with a mode dial (Continuity/Voltage/Resistance) and two draggable probe tips; a simple breadboard circuit (battery, resistor, LED) as the measurement target, including a "hidden short" toggle for practice</p>
+<p>Interactive controls: Mode dial (click to rotate through three modes); draggable red and black probes; a "hidden short" toggle a mentor can enable to create a practice scenario</p>
+<p>Default parameters: Mode set to Continuity, probes unplaced, no hidden short</p>
+<p>Behavior: Touching both probes to the power rails in Continuity mode beeps and shows "0 ohms — SHORT" if the hidden-short toggle is on, or "open circuit" if not; Voltage mode across the resistor shows the Ohm's-law-predicted voltage drop; Resistance mode on the unpowered resistor shows its color-code value</p>
+<p>Implementation notes: p5.js canvas with draggable probe objects using distance-based "contact" detection against defined circuit-node coordinates; mode-dependent readout logic</p>
+</details>
+<h2 id="chapter-summary">Chapter Summary<a class="headerlink" href="#chapter-summary" title="Permanent link">¶</a></h2>
+<p>Physical computing turns code into something students can see, hear, and press — but it starts responsibly, with electrical safety rules for circuits, batteries, static electricity, and soldering treated as a prerequisite, not an afterthought. From there, voltage and current explain what a circuit is doing, breadboards, jumper wires, resistors, and LEDs are the physical vocabulary for building one, and digital and analog input and output describe every signal a project will sense or produce. A multimeter closes the loop, letting a mentor verify a circuit's safety and behavior directly rather than trusting a diagram alone.</p>
+<div class="admonition mascot-celebration">
+<p class="admonition-title">You can now safely build and verify a real circuit</p>
+<p><img alt="Circuit celebrating" class="mascot-admonition-img" src="../../img/mascot/celebration.png">
+You just built the foundation for every physical computing project in this book — safety rules, breadboards, resistors, LEDs, digital and analog signals, and how to check your work with a multimeter. That's a genuinely large first step, and every future project in this track builds directly on it.</p>
+</div>
 
 
 
@@ -1621,7 +3251,12 @@
 
 
 
+  
+  
 
+
+
+  
 
 
 
@@ -1636,7 +3271,7 @@
         
           <button type="button" class="md-top md-icon" data-md-component="top" hidden>
   
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"></path></svg>
   Back to top
 </button>
         
@@ -1646,13 +3281,13 @@
   
     
       
-      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+      <nav class="md-footer__inner md-grid" aria-label="Footer">
         
           
           <a href="../15-curriculum-challenge-cards/" class="md-footer__link md-footer__link--prev" aria-label="Previous: 15. Designing a Curriculum With Challenge Cards and Portfolios">
             <div class="md-footer__button md-icon">
               
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
             </div>
             <div class="md-footer__title">
               <span class="md-footer__direction">
@@ -1677,7 +3312,7 @@
             </div>
             <div class="md-footer__button md-icon">
               
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"></path></svg>
             </div>
           </a>
         
@@ -1689,7 +3324,7 @@
       <div class="md-copyright">
   
     <div class="md-copyright__highlight">
-      Copyright &copy; 2026 Dan McCreary. Licensed under <a href="license/">CC BY-NC-SA 4.0</a> for non-commercial use.
+      Copyright © 2026 Dan McCreary. Licensed under <a href="license/">CC BY-NC-SA 4.0</a> for non-commercial use.
     </div>
   
   
@@ -1710,6 +3345,10 @@
     
       <script src="../../assets/javascripts/bundle.83f73b43.min.js"></script>
       
+        <script src="../../js/extra.js"></script>
+      
     
-  </body>
-</html>
+  
+<script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(()=>{ lightbox.reload(); });
+</script></body></html>

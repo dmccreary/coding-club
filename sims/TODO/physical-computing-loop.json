@@ -1,0 +1,15 @@
+{
+  "sim_id": "physical-computing-loop",
+  "diagram_name": "The Physical Computing Loop",
+  "chapter_number": 16,
+  "chapter_title": "Physical Computing and Electrical Safety Basics",
+  "chapter_dir": "16-physical-computing-safety",
+  "chapter_rel_dir": "chapters/16-physical-computing-safety",
+  "library": "p5.js",
+  "bloom_level": "Understand (L2)",
+  "bloom_verb": "explain",
+  "learning_objective": "Given a physical computing project description, the learner explains which part of the input-process-output loop each component belongs to.",
+  "completion_status": "specified",
+  "extracted_date": "2026-09-01",
+  "specification": "Type: infographic\n**sim-id:** physical-computing-loop<br/>\n**Library:** p5.js<br/>\n**Status:** Specified<br/>\n**Template:** https://github.com/dmccreary/stem-robots/tree/main/docs/sims/physical-computing-explorer\n\nPurpose: Give a mentor a single mental model — sense, process, act — that organizes every concept in this chapter.\n\nBloom Taxonomy: Understand (L2)\nBloom Taxonomy Verb: explain\n\nLearning objective: Given a physical computing project description, the learner explains which part of the input-process-output loop each component belongs to.\n\nVisual elements: Three large circular stages arranged left to right — \"Input\" (icon: button/sensor), \"Process\" (icon: microchip), \"Output\" (icon: LED/motor) — connected by arrows that animate a single pulse of light moving through the loop when the learner clicks \"Run Example.\"\n\nInteractive controls: Three clickable stage circles; a dropdown listing example projects (\"Blinking LED,\" \"Button-Triggered Buzzer,\" \"Dimmable Light\"); a \"Run Example\" button that animates the pulse and highlights the matching component list beneath each stage.\n\nData Visibility Requirements: Stage 1 shows the raw input event (e.g., \"Button pressed\"); Stage 2 shows the plain-language rule being applied (e.g., \"If pressed, turn LED on\"); Stage 3 shows the resulting physical output (e.g., \"LED lights up\").\n\nInstructional Rationale: A step-through, clickable model suits an Understand-level objective better than continuous animation, since a mentor needs to trace which real component maps to which stage, not just watch motion.\n\nImplementation: p5.js canvas with three clickable circular nodes and a text panel below that updates on click or during the animated run."
+}

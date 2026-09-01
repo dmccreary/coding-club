@@ -1,12 +1,9 @@
-
-<!doctype html>
-<html lang="en" class="no-js">
-  <head>
+<!DOCTYPE html><html lang="en" class="no-js"><head>
     
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="An interactive intelligent textbook on how to create, organize, promote and run a sustainable coding club.">
+        <meta name="description" content="Covers analyzing attendance, retention, and enrollment trends, automating mentor and family communication, tracking student growth through skill mastery and digital portfolios, core spreadsheet mechanics, and vetting third-party tools before adopting them.">
       
       
         <meta name="author" content="Dan McCreary">
@@ -21,12 +18,12 @@
         <link rel="next" href="../26-motivation-badges-growth-mindset/">
       
       
-      <link rel="icon" href="../../assets/images/favicon.png">
+      <link rel="icon" href="../../img/favicon.ico">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.43">
     
     
       
-        <title>25. Analyzing Club Data and Choosing the Right Tools - Coding Club</title>
+        <title>Analyzing Club Data and Choosing the Right Tools - Coding Club</title>
       
     
     
@@ -47,7 +44,7 @@
         
         
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback">
         <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
       
     
@@ -59,11 +56,57 @@
     <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
+  
+
+
+  
+  
+
+<script id="__analytics">function __md_analytics(){function e(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],e("js",new Date),e("config","G-JDH8L7VM28"),document.addEventListener("DOMContentLoaded",(function(){document.forms.search&&document.forms.search.query.addEventListener("blur",(function(){this.value&&e("event","search",{search_term:this.value})}));document$.subscribe((function(){var t=document.forms.feedback;if(void 0!==t)for(var a of t.querySelectorAll("[type=submit]"))a.addEventListener("click",(function(a){a.preventDefault();var n=document.location.pathname,d=this.getAttribute("data-md-value");e("event","feedback",{page:n,data:d}),t.firstElementChild.disabled=!0;var r=t.querySelector(".md-feedback__note [data-md-value='"+d+"']");r&&(r.hidden=!1)})),t.hidden=!1})),location$.subscribe((function(t){e("config","G-JDH8L7VM28",{page_path:t.pathname})}))}));var t=document.createElement("script");t.async=!0,t.src="https://www.googletagmanager.com/gtag/js?id=G-JDH8L7VM28",document.getElementById("__analytics").insertAdjacentElement("afterEnd",t)}</script>
+  
+    <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
+  
 
     
     
+      
+        <meta property="og:type" content="website">
+      
+        <meta property="og:title" content="Analyzing Club Data and Choosing the Right Tools - Coding Club">
+      
+        <meta property="og:description" content="Covers analyzing attendance, retention, and enrollment trends, automating mentor and family communication, tracking student growth through skill mastery and digital portfolios, core spreadsheet mechanics, and vetting third-party tools before adopting them.">
+      
+        <meta property="og:image" content="https://dmccreary.github.io/coding-club/assets/images/social/chapters/25-analyzing-club-data-and-tools/index.png">
+      
+        <meta property="og:image:type" content="image/png">
+      
+        <meta property="og:image:width" content="1200">
+      
+        <meta property="og:image:height" content="630">
+      
+        <meta property="og:url" content="https://dmccreary.github.io/coding-club/chapters/25-analyzing-club-data-and-tools/">
+      
+        <meta name="twitter:card" content="summary_large_image">
+      
+        <meta name="twitter:title" content="Analyzing Club Data and Choosing the Right Tools - Coding Club">
+      
+        <meta name="twitter:description" content="Covers analyzing attendance, retention, and enrollment trends, automating mentor and family communication, tracking student growth through skill mastery and digital portfolios, core spreadsheet mechanics, and vetting third-party tools before adopting them.">
+      
+        <meta name="twitter:image" content="https://dmccreary.github.io/coding-club/assets/images/social/chapters/25-analyzing-club-data-and-tools/index.png">
+      
     
-  </head>
+    
+  <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"><script src="../../assets/javascripts/glightbox.min.js"></script><style id="glightbox-style">
+            html.glightbox-open { overflow: initial; height: 100%; }
+            .gslide-title { margin-top: 0px; user-select: text; }
+            .gslide-desc { color: #666; user-select: text; }
+            .gslide-image img { background: white; }
+            .gscrollbar-fixer { padding-right: 15px; }
+            .gdesc-inner { font-size: 0.75rem; }
+            body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color); }
+            body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color); }
+            body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color); }
+        </style></head>
   
   
     
@@ -98,13 +141,12 @@
   <nav class="md-header__inner md-grid" aria-label="Header">
     <a href="../.." title="Coding Club" class="md-header__button md-logo" aria-label="Coding Club" data-md-component="logo">
       
-  
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+  <img src="../../img/mascot/welcome.png" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
       
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"></path></svg>
     </label>
     <div class="md-header__title" data-md-component="header-title">
       <div class="md-header__ellipsis">
@@ -116,7 +158,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              25. Analyzing Club Data and Choosing the Right Tools
+              Analyzing Club Data and Choosing the Right Tools
             
           </span>
         </div>
@@ -130,7 +172,7 @@
     
       <label class="md-header__button md-icon" for="__search">
         
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
       </label>
       <div class="md-search" data-md-component="search" role="dialog">
   <label class="md-search__overlay" for="__search"></label>
@@ -139,20 +181,20 @@
       <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
       <label class="md-search__icon md-icon" for="__search">
         
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
         
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
       </label>
       <nav class="md-search__options" aria-label="Search">
         
           <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
             
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"></path></svg>
           </a>
         
         <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
           
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg>
         </button>
       </nav>
       
@@ -177,7 +219,7 @@
         <a href="https://github.com/dmccreary/coding-club" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"></path></svg>
   </div>
   <div class="md-source__repository">
     GitHub Repo
@@ -201,7 +243,7 @@
           
             
               
-              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
@@ -212,8 +254,7 @@
   <label class="md-nav__title" for="__drawer">
     <a href="../.." title="Coding Club" class="md-nav__button md-logo" aria-label="Coding Club" data-md-component="logo">
       
-  
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+  <img src="../../img/mascot/welcome.png" alt="logo">
 
     </a>
     Coding Club
@@ -223,7 +264,7 @@
       <a href="https://github.com/dmccreary/coding-club" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"></path></svg>
   </div>
   <div class="md-source__repository">
     GitHub Repo
@@ -1071,6 +1112,339 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#automating-mentor-and-family-communication" class="md-nav__link">
+    <span class="md-ellipsis">
+      Automating Mentor and Family Communication
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Automating Mentor and Family Communication">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#mentor-communication-log" class="md-nav__link">
+    <span class="md-ellipsis">
+      Mentor Communication Log
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#automated-reminder-system" class="md-nav__link">
+    <span class="md-ellipsis">
+      Automated Reminder System
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sms-notification" class="md-nav__link">
+    <span class="md-ellipsis">
+      SMS Notification
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#newsletter-automation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Newsletter Automation
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Newsletter Automation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-automated-communication-pipeline" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Automated Communication Pipeline
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reading-the-numbers-attendance-and-enrollment-analytics" class="md-nav__link">
+    <span class="md-ellipsis">
+      Reading the Numbers: Attendance and Enrollment Analytics
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Reading the Numbers: Attendance and Enrollment Analytics">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#data-visualization-basics" class="md-nav__link">
+    <span class="md-ellipsis">
+      Data Visualization Basics
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#attendance-data-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      Attendance Data Analysis
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#retention-rate-tracking" class="md-nav__link">
+    <span class="md-ellipsis">
+      Retention Rate Tracking
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#enrollment-trend-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      Enrollment Trend Analysis
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Enrollment Trend Analysis">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-attendance-and-enrollment-trend-explorer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Attendance and Enrollment Trend Explorer
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tracking-student-growth-beyond-attendance" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tracking Student Growth Beyond Attendance
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Tracking Student Growth Beyond Attendance">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#student-growth-metrics" class="md-nav__link">
+    <span class="md-ellipsis">
+      Student Growth Metrics
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#skill-mastery-tracking" class="md-nav__link">
+    <span class="md-ellipsis">
+      Skill Mastery Tracking
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#digital-portfolio-system" class="md-nav__link">
+    <span class="md-ellipsis">
+      Digital Portfolio System
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#parent-access-portal" class="md-nav__link">
+    <span class="md-ellipsis">
+      Parent Access Portal
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Parent Access Portal">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-student-growth-to-portfolio-network" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Student Growth to Portfolio Network
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#spreadsheet-mechanics-that-make-analysis-possible" class="md-nav__link">
+    <span class="md-ellipsis">
+      Spreadsheet Mechanics That Make Analysis Possible
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Spreadsheet Mechanics That Make Analysis Possible">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#data-export-process" class="md-nav__link">
+    <span class="md-ellipsis">
+      Data Export Process
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#spreadsheet-formula-basics" class="md-nav__link">
+    <span class="md-ellipsis">
+      Spreadsheet Formula Basics
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#data-entry-standardization" class="md-nav__link">
+    <span class="md-ellipsis">
+      Data Entry Standardization
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pivot-table-basics" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pivot Table Basics
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Pivot Table Basics">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-pivot-table-builder" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Pivot Table Builder
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#keeping-data-clean-and-tools-trustworthy" class="md-nav__link">
+    <span class="md-ellipsis">
+      Keeping Data Clean and Tools Trustworthy
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Keeping Data Clean and Tools Trustworthy">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#duplicate-record-cleanup" class="md-nav__link">
+    <span class="md-ellipsis">
+      Duplicate Record Cleanup
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#data-sharing-agreement" class="md-nav__link">
+    <span class="md-ellipsis">
+      Data Sharing Agreement
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#third-party-tool-vetting" class="md-nav__link">
+    <span class="md-ellipsis">
+      Third Party Tool Vetting
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cloud-document-sharing" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cloud Document Sharing
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#file-naming-convention" class="md-nav__link">
+    <span class="md-ellipsis">
+      File Naming Convention
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chapter-summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      Chapter Summary
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1322,6 +1696,16 @@
       
         
       
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
     
     
     
@@ -1409,6 +1793,91 @@
   
   
   
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../cards/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Challenge Cards
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../faq/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    FAQ
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../glossary/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Glossary
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
     <li class="md-nav__item">
       <a href="../../license/" class="md-nav__link">
         
@@ -1451,7 +1920,7 @@
             
             
               
-              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
@@ -1496,6 +1965,339 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#automating-mentor-and-family-communication" class="md-nav__link">
+    <span class="md-ellipsis">
+      Automating Mentor and Family Communication
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Automating Mentor and Family Communication">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#mentor-communication-log" class="md-nav__link">
+    <span class="md-ellipsis">
+      Mentor Communication Log
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#automated-reminder-system" class="md-nav__link">
+    <span class="md-ellipsis">
+      Automated Reminder System
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sms-notification" class="md-nav__link">
+    <span class="md-ellipsis">
+      SMS Notification
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#newsletter-automation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Newsletter Automation
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Newsletter Automation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-automated-communication-pipeline" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Automated Communication Pipeline
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reading-the-numbers-attendance-and-enrollment-analytics" class="md-nav__link">
+    <span class="md-ellipsis">
+      Reading the Numbers: Attendance and Enrollment Analytics
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Reading the Numbers: Attendance and Enrollment Analytics">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#data-visualization-basics" class="md-nav__link">
+    <span class="md-ellipsis">
+      Data Visualization Basics
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#attendance-data-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      Attendance Data Analysis
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#retention-rate-tracking" class="md-nav__link">
+    <span class="md-ellipsis">
+      Retention Rate Tracking
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#enrollment-trend-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      Enrollment Trend Analysis
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Enrollment Trend Analysis">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-attendance-and-enrollment-trend-explorer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Attendance and Enrollment Trend Explorer
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tracking-student-growth-beyond-attendance" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tracking Student Growth Beyond Attendance
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Tracking Student Growth Beyond Attendance">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#student-growth-metrics" class="md-nav__link">
+    <span class="md-ellipsis">
+      Student Growth Metrics
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#skill-mastery-tracking" class="md-nav__link">
+    <span class="md-ellipsis">
+      Skill Mastery Tracking
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#digital-portfolio-system" class="md-nav__link">
+    <span class="md-ellipsis">
+      Digital Portfolio System
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#parent-access-portal" class="md-nav__link">
+    <span class="md-ellipsis">
+      Parent Access Portal
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Parent Access Portal">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-student-growth-to-portfolio-network" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Student Growth to Portfolio Network
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#spreadsheet-mechanics-that-make-analysis-possible" class="md-nav__link">
+    <span class="md-ellipsis">
+      Spreadsheet Mechanics That Make Analysis Possible
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Spreadsheet Mechanics That Make Analysis Possible">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#data-export-process" class="md-nav__link">
+    <span class="md-ellipsis">
+      Data Export Process
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#spreadsheet-formula-basics" class="md-nav__link">
+    <span class="md-ellipsis">
+      Spreadsheet Formula Basics
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#data-entry-standardization" class="md-nav__link">
+    <span class="md-ellipsis">
+      Data Entry Standardization
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pivot-table-basics" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pivot Table Basics
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Pivot Table Basics">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-pivot-table-builder" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Pivot Table Builder
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#keeping-data-clean-and-tools-trustworthy" class="md-nav__link">
+    <span class="md-ellipsis">
+      Keeping Data Clean and Tools Trustworthy
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Keeping Data Clean and Tools Trustworthy">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#duplicate-record-cleanup" class="md-nav__link">
+    <span class="md-ellipsis">
+      Duplicate Record Cleanup
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#data-sharing-agreement" class="md-nav__link">
+    <span class="md-ellipsis">
+      Data Sharing Agreement
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#third-party-tool-vetting" class="md-nav__link">
+    <span class="md-ellipsis">
+      Third Party Tool Vetting
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cloud-document-sharing" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cloud Document Sharing
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#file-naming-convention" class="md-nav__link">
+    <span class="md-ellipsis">
+      File Naming Convention
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chapter-summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      Chapter Summary
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1513,16 +2315,16 @@
   
     <a href="https://github.com/dmccreary/coding-club/blob/main/docs/chapters/25-analyzing-club-data-and-tools/index.md" title="Edit this page" class="md-content__button md-icon">
       
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"></path></svg>
     </a>
   
   
 
 
-<h1 id="analyzing-club-data-and-choosing-the-right-tools">Analyzing Club Data and Choosing the Right Tools<a class="headerlink" href="#analyzing-club-data-and-choosing-the-right-tools" title="Permanent link">&para;</a></h1>
-<h2 id="summary">Summary<a class="headerlink" href="#summary" title="Permanent link">&para;</a></h2>
+<h1 id="analyzing-club-data-and-choosing-the-right-tools">Analyzing Club Data and Choosing the Right Tools<a class="headerlink" href="#analyzing-club-data-and-choosing-the-right-tools" title="Permanent link">¶</a></h1>
+<h2 id="summary">Summary<a class="headerlink" href="#summary" title="Permanent link">¶</a></h2>
 <p>This chapter goes deeper into club data: analyzing attendance and enrollment trends, tracking skill mastery, and building a digital portfolio system. It closes with practical spreadsheet skills and guidance on vetting third-party tools before trusting them with club or student data. You will be able to analyze basic enrollment trends and evaluate a new data tool for privacy risk.</p>
-<h2 id="concepts-covered">Concepts Covered<a class="headerlink" href="#concepts-covered" title="Permanent link">&para;</a></h2>
+<h2 id="concepts-covered">Concepts Covered<a class="headerlink" href="#concepts-covered" title="Permanent link">¶</a></h2>
 <p>This chapter covers the following 21 concepts from the learning graph:</p>
 <table>
 <thead>
@@ -1618,14 +2420,410 @@
 </tr>
 </tbody>
 </table>
-<h2 id="prerequisites">Prerequisites<a class="headerlink" href="#prerequisites" title="Permanent link">&para;</a></h2>
+<h2 id="prerequisites">Prerequisites<a class="headerlink" href="#prerequisites" title="Permanent link">¶</a></h2>
 <p>This chapter builds on concepts from:</p>
 <ul>
 <li><a href="../15-curriculum-challenge-cards/">15. Designing a Curriculum With Challenge Cards and Portfolios</a></li>
 <li><a href="../24-student-data-and-communication/">24. Tracking Student Data and Managing Club Communication</a></li>
 </ul>
-<hr />
-<p>TODO: Generate Chapter Content</p>
+<hr>
+<p>Chapter 24 built the plumbing: what student data to save, how to protect it, and how to get guardian consent before any of it is collected. This chapter puts that plumbing to work. A club that has been faithfully filling out its tracking spreadsheet and consent forms for a couple of semesters is sitting on real signal -- which nights draw the biggest crowds, whether students who join in the fall stick around into spring, and which growth patterns a family would genuinely want to see. This chapter shows how to read that signal, how to automate the routine reminders that used to eat a mentor's Tuesday evening, and how to keep the resulting spreadsheets clean and any new tool trustworthy enough to hold data chapter 24 already taught you to protect.</p>
+<div class="admonition mascot-welcome">
+<p class="admonition-title">From raw data to real decisions</p>
+<p><img alt="Circuit waving welcome" class="mascot-admonition-img" src="../../img/mascot/welcome.png">
+Let's build something great -- by the end of this chapter you'll be able to read an enrollment trend the way a mentor reads a challenge card, automate the reminder that saves the most volunteer time, and know exactly what to check before a new tool ever touches your club's data.</p>
+</div>
+<h2 id="automating-mentor-and-family-communication">Automating Mentor and Family Communication<a class="headerlink" href="#automating-mentor-and-family-communication" title="Permanent link">¶</a></h2>
+<p>Chapter 24 covered the club's core channels: a dedicated email account, a shared calendar, a group messaging app, and a parent communication log for individual family conversations. Once those channels exist, a club with a growing roster quickly notices that composing every reminder and update by hand doesn't scale past a few dozen families. The four concepts below cover the volunteer-side record that mirrors the parent log, and the automation that takes the routine sending off a mentor's plate.</p>
+<h3 id="mentor-communication-log">Mentor Communication Log<a class="headerlink" href="#mentor-communication-log" title="Permanent link">¶</a></h3>
+<p><strong>A mentor communication log</strong> is a written record of communications with and about the volunteer side of the roster -- a recruiting conversation, a training completion date, a check-in about whether a mentor is still available on Tuesdays -- kept so that mentor coordination survives a change of club leadership the same way chapter 24's parent communication log kept family conversations from living only in one person's memory. Where the parent log tracks what a family and the club discussed, the mentor log tracks the club's relationship with the volunteers who run its sessions.</p>
+<p>A worked example shows the log catching a scheduling problem early: a club leader reviewing the mentor log before building next semester's calendar notices that two of the four Tuesday mentors both logged "may need to skip several sessions this fall" during their last check-in. Because that pattern is visible in one place rather than scattered across two separate memories, the leader recruits a substitute mentor a month before the gap actually happens, instead of scrambling the week attendance drops.</p>
+<table>
+<thead>
+<tr>
+<th>Date</th>
+<th>Mentor</th>
+<th>Topic</th>
+<th>Follow-Up</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2026-01-15</td>
+<td>J. Alvarez</td>
+<td>Confirmed availability through May</td>
+<td>None needed</td>
+</tr>
+<tr>
+<td>2026-01-22</td>
+<td>T. Nguyen</td>
+<td>May miss 3 sessions this fall (new job)</td>
+<td>Recruiting a substitute for those dates</td>
+</tr>
+<tr>
+<td>2026-02-05</td>
+<td>S. Park</td>
+<td>Completed background check and training</td>
+<td>Cleared to mentor solo</td>
+</tr>
+</tbody>
+</table>
+<h3 id="automated-reminder-system">Automated Reminder System<a class="headerlink" href="#automated-reminder-system" title="Permanent link">¶</a></h3>
+<p><strong>An automated reminder system</strong> is a rule-based process that sends a session reminder automatically once a condition is met -- three days before a scheduled session, for example -- without a mentor manually composing and sending each one. It automates exactly the two-touch reminder cadence chapter 24 introduced, replacing the manual step of remembering to send each reminder with a schedule the system checks on its own.</p>
+<p>A worked example shows the payoff over a full semester: a club that sent sixteen weekly reminders by hand last year had two mentors forget on two separate weeks, leaving families without any advance notice for those sessions. After setting up a rule that fires automatically three days before every calendar event, the same sixteen reminders go out on schedule all sixteen weeks, with no mentor needing to remember to trigger a single one.</p>
+<h3 id="sms-notification">SMS Notification<a class="headerlink" href="#sms-notification" title="Permanent link">¶</a></h3>
+<p><strong>An SMS notification</strong> is a short text message sent directly to a phone number, distinct from the group messaging app chapter 24 introduced because it requires no app installation at all -- any phone that can receive a call can receive a text. That makes it the most reliable fallback channel for a message that absolutely must reach every family, even the ones who never joined the messaging app's group.</p>
+<p>A worked example shows the fallback earning its place: a club needs to tell every family that a session is canceled because of a snow closure, discovered only two hours before start time. Three families never joined the group messaging app, but all three still carry phones that receive text messages, so the club's SMS notification reaches one hundred percent of families in minutes, compared to the group chat's reach of everyone except those three households.</p>
+<h3 id="newsletter-automation">Newsletter Automation<a class="headerlink" href="#newsletter-automation" title="Permanent link">¶</a></h3>
+<p><strong>Newsletter automation</strong> is a templated digest -- upcoming dates, recent badge highlights, a reminder of the loaner-laptop policy -- generated and sent on a fixed schedule, such as the first of every month, rather than composed fresh by a mentor each time. It is the automated counterpart to chapter 24's ad hoc email communication: routine, non-urgent updates move into a predictable monthly rhythm instead of arriving whenever a mentor finds time to write one.</p>
+<p>A worked example shows the shift in practice: a club that used to send an update "whenever something felt worth sharing" sent three emails in one busy month and none in the next two. After switching to an automated newsletter template that pulls in the month's session dates and badge counts automatically, families receive one predictable, complete update every month regardless of how busy any single mentor's week has been.</p>
+<p>Choosing the right channel for a given message matters as much as automating any one of them:</p>
+<table>
+<thead>
+<tr>
+<th>Channel</th>
+<th>Speed</th>
+<th>Requires App/Number on File</th>
+<th>Best For</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>SMS Notification</td>
+<td>Minutes</td>
+<td>Just a phone number</td>
+<td>Urgent, must-reach-everyone messages</td>
+</tr>
+<tr>
+<td>Group Messaging App (Ch. 24)</td>
+<td>Minutes, for joined members</td>
+<td>App installed</td>
+<td>Quick logistics for engaged families</td>
+</tr>
+<tr>
+<td>Newsletter Automation</td>
+<td>Scheduled, monthly</td>
+<td>Email on file</td>
+<td>Routine, non-urgent updates</td>
+</tr>
+</tbody>
+</table>
+<h4 id="diagram-automated-communication-pipeline">Diagram: Automated Communication Pipeline<a class="headerlink" href="#diagram-automated-communication-pipeline" title="Permanent link">¶</a></h4>
+<iframe src="../../sims/automated-communication-pipeline/main.html" width="100%" height="500px" scrolling="no"></iframe>
+
+<details>
+<summary>Automated Communication Pipeline</summary>
+<p>Type: workflow
+<strong>sim-id:</strong> automated-communication-pipeline<br>
+<strong>Library:</strong> Mermaid<br>
+<strong>Status:</strong> Specified</p>
+<p>Purpose: Show how a single automated trigger routes to either SMS notification or newsletter automation depending on urgency, so a mentor can see why the same reminder system produces two very different-feeling messages.</p>
+<p>Bloom Taxonomy: Analyze (L4)
+Bloom Taxonomy Verb: differentiate</p>
+<p>Learning objective: Given a trigger condition, the learner differentiates whether it should route through SMS notification or newsletter automation.</p>
+<p>Steps (flowchart with a decision diamond):
+1. Start: "Trigger Event Occurs" -- click reveals "A rule fires automatically -- a session is three days away, a closure is announced, or a new month begins -- with no mentor manually deciding to send anything."
+2. Decision: "Time-Sensitive?" -- click reveals "Time-sensitive means a family needs to see the message within hours, not days, to act on it."
+3a. Branch "Yes" leads to "Send SMS Notification" -- click reveals "A short text delivered directly to a phone, typically read within minutes."
+3b. Branch "No" leads to "Queue for Newsletter Automation" -- click reveals "Added to the next scheduled digest instead of sent immediately, since it can safely wait."
+4. Process (from 3b): "Newsletter Sent on Schedule" -- click reveals "A templated digest goes out on a fixed day each month, automatically pulling in every queued item."
+5. End (both branches converge): "Family Informed" -- click reveals "Both paths end with the family seeing the information -- the only difference is how urgently it needed to arrive."</p>
+<p>Interactivity requirement (satisfied): every node has a Mermaid <code>click</code> directive tied to an infobox showing its revealed text.</p>
+<p>Color coding: Gray for the start node, purple for the decision diamond, amber for the SMS branch, blue for the newsletter branch, green for the converged end state.</p>
+<p>Implementation: Mermaid flowchart (<code>graph TD</code>) rendered in main.html with <code>click NodeId call showInfo("NodeId")</code> directives for every node, opening a side-panel infobox.</p>
+</details>
+<div class="admonition mascot-tip">
+<p class="admonition-title">If it can wait a week, it doesn't need a text message</p>
+<p><img alt="Circuit giving a tip" class="mascot-admonition-img" src="../../img/mascot/tip.png">
+Here's a shortcut for the decision diamond above: ask whether a family needs to act in the next few hours. If yes, it's an SMS notification. If the answer is "sometime this month is fine," queue it for the newsletter instead.</p>
+</div>
+<h2 id="reading-the-numbers-attendance-and-enrollment-analytics">Reading the Numbers: Attendance and Enrollment Analytics<a class="headerlink" href="#reading-the-numbers-attendance-and-enrollment-analytics" title="Permanent link">¶</a></h2>
+<p>Chapter 24's anonymized attendance chart showed that a weekly headcount can answer most funder questions without a single name attached. This section goes one layer deeper -- not just reporting the numbers, but reading them for patterns a club leader can actually act on.</p>
+<h3 id="data-visualization-basics">Data Visualization Basics<a class="headerlink" href="#data-visualization-basics" title="Permanent link">¶</a></h3>
+<p><strong>Data visualization basics</strong> means matching a chart type to the question being asked: a bar chart compares totals across categories, such as enrollment by semester; a line chart shows a trend over time, such as attendance rate week to week; a pie or donut chart shows how a whole splits into proportions, such as which badge each student is currently working toward. Picking the wrong type doesn't just look worse -- a bar chart of six semesters in a row buries the trend a line chart would show instantly.</p>
+<p>A worked example makes the mismatch concrete: a club leader building a board report first tries a pie chart to show attendance across sixteen weeks, and ends up with sixteen thin slices no one can compare. Switching to a line chart with week number on the x-axis and attendance count on the y-axis turns the same sixteen numbers into an immediately readable trend, including the dip during a school break week that the pie chart had completely hidden.</p>
+<h3 id="attendance-data-analysis">Attendance Data Analysis<a class="headerlink" href="#attendance-data-analysis" title="Permanent link">¶</a></h3>
+<p><strong>Attendance data analysis</strong> is examining session-by-session attendance counts for patterns -- which nights consistently draw fewer students, whether a specific week always dips, whether a new time slot helped or hurt turnout -- rather than looking at any single week's number in isolation. A single low week could be a coincidence; a pattern repeating across several months is a signal worth acting on.</p>
+<p>A worked example shows the difference: one Tuesday's attendance drops from fourteen to nine students, and a new mentor worries the club is failing. Looking back across the full semester, the leader finds that same week always dips because it falls during a school testing period, and attendance recovers to its normal range the following week every single time -- a predictable pattern, not a decline.</p>
+<h3 id="retention-rate-tracking">Retention Rate Tracking<a class="headerlink" href="#retention-rate-tracking" title="Permanent link">¶</a></h3>
+<p><strong>Retention rate tracking</strong> measures the percentage of students from one semester who return for the next one, calculated as returning students divided by prior-semester enrollment, times one hundred. It answers a different question than attendance data analysis: attendance asks whether currently-enrolled students show up week to week, while retention asks whether students who were enrolled last term chose to come back at all.</p>
+<p>A worked example shows the calculation in practice: a club enrolls eighteen students in the fall semester, and fourteen of those eighteen return for spring.</p>
+<table>
+<thead>
+<tr>
+<th>Metric</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Fall Enrollment</td>
+<td>18 students</td>
+</tr>
+<tr>
+<td>Returning in Spring</td>
+<td>14 students</td>
+</tr>
+<tr>
+<td>Retention Rate</td>
+<td>14 ÷ 18 × 100 = 78%</td>
+</tr>
+</tbody>
+</table>
+<p>A 78% retention rate tells the leader that roughly four out of five students found the fall semester worth coming back for -- a number worth tracking across years to see whether a curriculum or schedule change moves it up or down.</p>
+<div class="admonition mascot-thinking">
+<p class="admonition-title">Three numbers, three different questions</p>
+<p><img alt="Circuit thinking" class="mascot-admonition-img" src="../../img/mascot/thinking.png">
+Notice that attendance, retention, and enrollment aren't three ways of measuring the same thing -- attendance asks "who showed up this week," retention asks "who came back next term," and enrollment asks "is the club growing overall." A club can have great attendance and still be shrinking if retention is weak.</p>
+</div>
+<h3 id="enrollment-trend-analysis">Enrollment Trend Analysis<a class="headerlink" href="#enrollment-trend-analysis" title="Permanent link">¶</a></h3>
+<p><strong>Enrollment trend analysis</strong> is examining total headcount across several semesters or years to identify whether a club is growing, holding steady, or shrinking, and connecting that trend to a likely cause -- a new promotion effort, a scheduling change, a saturated waiting list. Unlike retention, which tracks whether the same students return, enrollment trend analysis tracks the club's total size regardless of which specific students make up that total.</p>
+<p>A worked example shows a trend the leader would have missed one semester at a time: enrollment moves from twelve, to eighteen, to twenty-four, to twenty-two students across four consecutive semesters. Viewed semester by semester, the small dip from twenty-four to twenty-two might look like a problem; viewed as a four-semester trend, it reads as healthy growth that has simply started to level off near the room's practical capacity.</p>
+<h4 id="diagram-attendance-and-enrollment-trend-explorer">Diagram: Attendance and Enrollment Trend Explorer<a class="headerlink" href="#diagram-attendance-and-enrollment-trend-explorer" title="Permanent link">¶</a></h4>
+<iframe src="../../sims/attendance-enrollment-trend-explorer/main.html" width="100%" height="520px" scrolling="no"></iframe>
+
+<details>
+<summary>Attendance and Enrollment Trend Explorer</summary>
+<p>Type: chart
+<strong>sim-id:</strong> attendance-enrollment-trend-explorer<br>
+<strong>Library:</strong> Chart.js<br>
+<strong>Status:</strong> Specified</p>
+<p>Purpose: Let a learner explore four semesters of enrollment, attendance rate, and retention rate together, to practice choosing the right series to answer a specific question and to see how the three metrics can diverge.</p>
+<p>Bloom Taxonomy: Analyze (L4)
+Bloom Taxonomy Verb: examine</p>
+<p>Learning objective: Given a multi-semester chart of enrollment, attendance, and retention, the learner examines the data to determine whether a dip reflects an attendance problem, a retention problem, or both.</p>
+<p>Chart type: Combo chart -- bars for enrollment count (left y-axis), two lines for attendance rate and retention rate as percentages (right y-axis)</p>
+<p>X-axis: Semester (Fall 2024, Spring 2025, Fall 2025, Spring 2026)
+Left Y-axis: Total students enrolled (count)
+Right Y-axis: Rate (0-100%)</p>
+<p>Data series:
+1. Enrollment (blue bars): Fall 2024: 12, Spring 2025: 18, Fall 2025: 24, Spring 2026: 22
+2. Average Weekly Attendance Rate (green line, %): Fall 2024: 88%, Spring 2025: 85%, Fall 2025: 90%, Spring 2026: 65%
+3. Retention Rate (amber line, %, undefined for the first semester shown): Spring 2025: 83%, Fall 2025: 78%, Spring 2026: 91%</p>
+<p>Title: "Enrollment, Attendance, and Retention Across Four Semesters"
+Legend: Position top-right, each series independently toggleable by clicking its legend entry</p>
+<p>Interactive features:
+- Hover any bar or point to see the exact value, the semester, and a one-line definition of that specific metric
+- Click a legend entry to toggle that series on or off, isolating one metric at a time
+- Toggle button: "Highlight Divergence" -- when Spring 2026 is visible, calls out that attendance rate dropped sharply (65%) while retention rate stayed strong (91%), prompting the learner to reason about what that combination implies (a mid-semester attendance disruption among students who nonetheless plan to return, rather than students leaving the club)</p>
+<p>Annotations:
+- A callout on the Spring 2026 attendance point: "Sharp attendance dip -- but retention stayed high. What changed mid-semester?"</p>
+<p>Implementation: Chart.js combo chart (bar + line datasets) with dual y-axes and legend-click toggling enabled.</p>
+</details>
+<h2 id="tracking-student-growth-beyond-attendance">Tracking Student Growth Beyond Attendance<a class="headerlink" href="#tracking-student-growth-beyond-attendance" title="Permanent link">¶</a></h2>
+<p>Attendance and enrollment describe the club as a whole. A mentor working with one specific student needs a narrower question answered: is this particular student actually growing, and can their family see that growth too?</p>
+<h3 id="student-growth-metrics">Student Growth Metrics<a class="headerlink" href="#student-growth-metrics" title="Permanent link">¶</a></h3>
+<p><strong>Student growth metrics</strong> are measurements of an individual student's progress over time -- the number of distinct skills attempted, the difficulty level of challenge cards completed, the complexity of a student's most recent project compared to their first -- that go beyond a simple attendance count or badge tally to describe genuine skill development. Where chapter 24's tracking spreadsheet recorded whether a badge was earned, growth metrics describe the shape of a student's progress across many badges over time.</p>
+<p>A worked example shows the distinction in practice: two students both have four badges after one semester. Looking at growth metrics, one student earned all four in their first six weeks and has attempted nothing since, while the other steadily added one badge every three to four weeks throughout the semester. The badge count alone treats them identically; the growth metric reveals very different trajectories worth a different mentoring response for each.</p>
+<h3 id="skill-mastery-tracking">Skill Mastery Tracking<a class="headerlink" href="#skill-mastery-tracking" title="Permanent link">¶</a></h3>
+<p><strong>Skill mastery tracking</strong> records a student's level on a specific skill using a small ordered scale -- typically emerging, practicing, and mastered -- rather than the simple earned-or-not-earned checkbox a badge represents. A badge tells a mentor a skill was demonstrated once; a mastery level tells a mentor how reliably a student can perform it now.</p>
+<table>
+<thead>
+<tr>
+<th>Level</th>
+<th>What It Means</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Emerging</td>
+<td>Attempted with heavy mentor guidance</td>
+<td>First LED-blink program, mentor typed most of the code</td>
+</tr>
+<tr>
+<td>Practicing</td>
+<td>Completes independently, with occasional help</td>
+<td>Writes a working LED-strip pattern, asks for a syntax reminder</td>
+</tr>
+<tr>
+<td>Mastered</td>
+<td>Completes independently and can explain it to a peer</td>
+<td>Debugs another student's LED-strip code unassisted</td>
+</tr>
+</tbody>
+</table>
+<p>A worked example shows why the distinction matters for planning: a mentor reviewing a student marked "emerging" on LED strip patterns knows to pair that student with a mentor for the next related challenge, while a student marked "mastered" on the same skill is ready to help a peer instead of repeating the same challenge card.</p>
+<h3 id="digital-portfolio-system">Digital Portfolio System<a class="headerlink" href="#digital-portfolio-system" title="Permanent link">¶</a></h3>
+<p><strong>A digital portfolio system</strong> is an online collection of a student's actual work -- a saved code file, a photo of a finished LED project, a short video of a working robot -- organized to show growth over time, distinct from the tracking spreadsheet that only records that a skill was mastered. Where the spreadsheet is a claim ("mastered: LED strip patterns"), the portfolio is the evidence a family or a future mentor can actually look at.</p>
+<p>A worked example shows the portfolio answering a question the spreadsheet cannot: a parent asks to see what their child has actually built this year. The tracking spreadsheet shows four mastered skills as dates in a grid; the digital portfolio shows the actual blinking-light video from January next to the more complex LED-strip pattern video from April, letting the family see the improvement directly rather than taking the spreadsheet's word for it.</p>
+<h3 id="parent-access-portal">Parent Access Portal<a class="headerlink" href="#parent-access-portal" title="Permanent link">¶</a></h3>
+<p><strong>A parent access portal</strong> is a controlled, view-only login through which a parent can see their own child's growth metrics and portfolio, and nothing belonging to any other student's family. It is the same minimal-exposure instinct chapter 24 applied to spreadsheet sharing links, applied here to an ongoing system rather than a one-time export: a family should be able to see everything about their own child and nothing about anyone else's.</p>
+<p>A worked example shows the scoping working as intended: a parent logs into the portal and sees their own child's badge timeline, mastery levels, and portfolio videos, laid out exactly the way the digital portfolio system organizes them. When that same parent tries to browse to another student's page by guessing a different link, the portal denies access, because view permissions are scoped to one family's own child, never to the roster as a whole.</p>
+<p>Setting up that scoping correctly the first time matters more than it might seem -- a portal that accidentally grants every logged-in parent a link to every student's page defeats the entire privacy discipline chapter 24 built, and most platforms only enforce that boundary correctly if a club configures per-family permissions during setup rather than accepting a tool's default "everyone can see everything" sharing mode.</p>
+<h4 id="diagram-student-growth-to-portfolio-network">Diagram: Student Growth to Portfolio Network<a class="headerlink" href="#diagram-student-growth-to-portfolio-network" title="Permanent link">¶</a></h4>
+<iframe src="../../sims/student-growth-portfolio-network/main.html" width="100%" height="500px" scrolling="no"></iframe>
+
+<details>
+<summary>Student Growth to Portfolio Network</summary>
+<p>Type: graph-model
+<strong>sim-id:</strong> student-growth-portfolio-network<br>
+<strong>Library:</strong> vis-network<br>
+<strong>Status:</strong> Specified
+<strong>Template:</strong> https://github.com/dmccreary/theory-of-knowledge/tree/main/docs/sims/capstone-portfolio-web</p>
+<p>Purpose: Show how raw session observations flow through growth metrics and mastery tracking into a portfolio, and finally into a scoped, view-only parent portal, so a mentor can see where each concept sits in the pipeline.</p>
+<p>Bloom Taxonomy: Understand (L2)
+Bloom Taxonomy Verb: explain</p>
+<p>Learning objective: Given a node in the growth-to-portfolio network, the learner explains what data flows into it and where that data goes next.</p>
+<p>Node types:
+1. Session Observations (small gray circle) -- a mentor's in-session notes on what a student attempted
+2. Student Growth Metrics (blue circle) -- aggregated measurements of a student's progress over time
+3. Skill Mastery Tracking (green circle) -- the emerging/practicing/mastered level for each specific skill
+4. Digital Portfolio System (amber circle) -- the actual saved work evidencing that mastery
+5. Parent Access Portal (purple circle, leaf node) -- the single family's scoped, view-only window into the above</p>
+<p>Edges:
+1. Session Observations → Student Growth Metrics: "aggregated into"
+2. Student Growth Metrics → Skill Mastery Tracking: "classified by skill level"
+3. Skill Mastery Tracking → Digital Portfolio System: "evidenced by uploaded work"
+4. Digital Portfolio System → Parent Access Portal: "exposed read-only to one family"</p>
+<p>Layout: Left-to-right hierarchical, following the data-flow order above</p>
+<p>Interactive features:
+- Hover any node to show its one-line definition
+- Click any node to highlight its direct neighbors and open a side-panel infobox with its full description
+- Click any edge to reveal what the edge label means in this pipeline
+- Zoom with the mouse wheel, pan by dragging the background</p>
+<p>Visual styling: Node size uniform; edge arrows show direction of data flow, left to right</p>
+<p>Legend: Node color meanings and an arrow explaining "data flows in this direction"</p>
+<p>Implementation: vis-network JavaScript library, hierarchical layout, canvas size 800x450px.</p>
+</details>
+<div class="admonition mascot-warning">
+<p class="admonition-title">A portal misconfigured once can leak every student's data</p>
+<p><img alt="Circuit warning" class="mascot-admonition-img" src="../../img/mascot/warning.png">
+Watch out for this trap: many portal tools default to "everyone can see everything" until a club explicitly scopes each family's access. Always test a new parent login yourself before announcing the portal, and confirm it truly cannot reach any other student's page.</p>
+</div>
+<h2 id="spreadsheet-mechanics-that-make-analysis-possible">Spreadsheet Mechanics That Make Analysis Possible<a class="headerlink" href="#spreadsheet-mechanics-that-make-analysis-possible" title="Permanent link">¶</a></h2>
+<p>Every chart, dashboard, and portal in this chapter ultimately draws from the same source: the plain spreadsheet chapter 24 introduced for simple tracking. This section covers the underlying mechanics that turn that spreadsheet's raw rows into the summaries and exports the rest of this chapter depends on.</p>
+<h3 id="data-export-process">Data Export Process<a class="headerlink" href="#data-export-process" title="Permanent link">¶</a></h3>
+<p><strong>The data export process</strong> is extracting data from one tool or spreadsheet into a portable file format -- typically CSV or PDF -- so it can be used somewhere else, such as a grant report, a backup, or a move to a different tracking tool entirely. It is the same underlying action as chapter 24's anonymized attendance export, generalized to any situation where data needs to leave its home system.</p>
+<p>A worked example shows the process end to end: a club leader preparing a grant renewal exports the semester's attendance summary as a CSV file, opens it in a spreadsheet program to build the anonymized chart chapter 24 described, and attaches the resulting chart image to the grant report -- the raw export never leaves the leader's own computer, only the final chart does.</p>
+<h3 id="spreadsheet-formula-basics">Spreadsheet Formula Basics<a class="headerlink" href="#spreadsheet-formula-basics" title="Permanent link">¶</a></h3>
+<p><strong>Spreadsheet formula basics</strong> are the small set of built-in calculations -- <code>SUM</code> to add a column, <code>AVERAGE</code> to find a mean, <code>COUNTIF</code> to count rows matching a condition -- that turn dozens of individual data rows into a single useful number without a mentor counting by hand. Learning a handful of these formulas covers the vast majority of what a club's analysis actually requires.</p>
+<table>
+<thead>
+<tr>
+<th>Formula</th>
+<th>What It Computes</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>=SUM(range)</code></td>
+<td>Total of a column of numbers</td>
+<td>Total badges earned across all students</td>
+</tr>
+<tr>
+<td><code>=AVERAGE(range)</code></td>
+<td>Mean value of a column</td>
+<td>Average session rating from a feedback form</td>
+</tr>
+<tr>
+<td><code>=COUNTIF(range, "Tuesday")</code></td>
+<td>Count of rows matching a condition</td>
+<td>Number of sessions held on a Tuesday</td>
+</tr>
+</tbody>
+</table>
+<p>A worked example shows a formula replacing manual counting: a leader who used to scroll through forty rows counting how many students had "mastered" a specific skill instead writes <code>=COUNTIF(D2:D40, "Mastered")</code>, and the spreadsheet returns the same count instantly, recalculating automatically every time a new row is added.</p>
+<div class="admonition mascot-encourage">
+<p class="admonition-title">Formulas look like a foreign language at first -- that's normal</p>
+<p><img alt="Circuit encouraging" class="mascot-admonition-img" src="../../img/mascot/encouraging.png">
+If a formula like <code>=COUNTIF(D2:D40, "Mastered")</code> looks intimidating, that reaction is completely normal for a first pass. Most volunteers only ever need three or four formulas total, and typing one wrong the first time never breaks anything -- just delete it and try again.</p>
+</div>
+<h3 id="data-entry-standardization">Data Entry Standardization<a class="headerlink" href="#data-entry-standardization" title="Permanent link">¶</a></h3>
+<p><strong>Data entry standardization</strong> is agreeing on one consistent format for every value entered into a field -- always "Tuesday Group," never "Tues" or "tuesday" or "Tu group" -- so that formulas and later analysis treat matching entries as matching, instead of silently splitting one real category into several near-identical ones. A formula or pivot table has no way to know that "Tues" and "Tuesday" mean the same thing; it simply counts them as two different values.</p>
+<p>A worked example shows the failure this prevents: a club leader runs <code>=COUNTIF(range, "Tuesday Group")</code> expecting eighteen students and gets eleven, because seven rows were entered as "Tues Group" by a different mentor. After the club agrees on a single standard spelling and corrects the seven mismatched rows, the same formula correctly returns eighteen.</p>
+<div class="admonition mascot-warning">
+<p class="admonition-title">Inconsistent entries look fine until you try to count them</p>
+<p><img alt="Circuit warning" class="mascot-admonition-img" src="../../img/mascot/warning.png">
+A common trap: a spreadsheet with "Tuesday," "Tues," and "tuesday" all scattered through one column looks perfectly readable to a person, but a formula treats each spelling as a different answer. The fix is a short list of exact, agreed-upon values every mentor uses -- pinned to the top of the sheet as a reference.</p>
+</div>
+<h3 id="pivot-table-basics">Pivot Table Basics<a class="headerlink" href="#pivot-table-basics" title="Permanent link">¶</a></h3>
+<p><strong>A pivot table</strong> is a summary view built automatically from raw spreadsheet rows -- reorganizing them into a cross-tab, such as attendance count by day-of-week and by month -- without writing a single formula. Where <code>COUNTIF</code> answers one specific question at a time, a pivot table lets a mentor reshape the same underlying rows to answer many related questions just by changing which fields sit in the rows and columns.</p>
+<p>A worked example shows the reshaping in action: a club's raw attendance log has one row per student per session, with columns for date, day of week, and student. Building a pivot table with "day of week" in the rows and "month" in the columns instantly produces a grid showing exactly how many sessions happened on each weekday in each month, a summary that would otherwise take several nested <code>COUNTIF</code> formulas to reproduce.</p>
+<h4 id="diagram-pivot-table-builder">Diagram: Pivot Table Builder<a class="headerlink" href="#diagram-pivot-table-builder" title="Permanent link">¶</a></h4>
+<iframe src="../../sims/pivot-table-builder/main.html" width="100%" height="550px" scrolling="no"></iframe>
+
+<details>
+<summary>Pivot Table Builder</summary>
+<p>Type: microsim
+<strong>sim-id:</strong> pivot-table-builder<br>
+<strong>Library:</strong> p5.js<br>
+<strong>Status:</strong> Specified</p>
+<p>Purpose: Let a learner choose which fields become pivot table rows and columns, and watch a small raw attendance dataset reorganize into the resulting summary grid.</p>
+<p>Bloom Taxonomy: Apply (L3)
+Bloom Taxonomy Verb: construct</p>
+<p>Learning objective: Given a small raw attendance dataset, the learner constructs a pivot table summarizing session counts by the row and column fields they select.</p>
+<p>Canvas layout:
+- Left (350px): scrolling list of ~20 raw sample rows (Day of Week, Month, Student Initials)
+- Right (300px): the resulting pivot grid, rebuilt live as field choices change</p>
+<p>Data Visibility Requirements:
+  Stage 1: Show the 20 raw rows exactly as they would appear in a real spreadsheet, unsorted
+  Stage 2: Show the selected Rows field and Columns field highlighted in the raw data as the learner changes the dropdowns
+  Stage 3: Show the pivot grid rebuild with updated row/column headers and recalculated counts in each cell
+  Final: Show the grand total row and column, confirming the cell counts sum correctly to the total number of raw rows</p>
+<p>Interactive controls:
+- Dropdown: "Rows field" (Day of Week / Month / Student Initials)
+- Dropdown: "Columns field" (Month / Day of Week / none)
+- Button: "Build Pivot"
+- Button: "Reset to Default"</p>
+<p>Default parameters: Rows field = "Day of Week", Columns field = "Month"; default pivot shows session counts per weekday per month across the 20-row sample dataset</p>
+<p>Implementation notes: p5.js canvas with <code>createSelect</code> for each field dropdown and <code>createButton</code> for Build/Reset; the 20 sample rows and the pivot-aggregation logic live in a small in-memory array, recomputed whenever a dropdown changes, so the grid always reflects the current field selection without a page reload.</p>
+</details>
+<h2 id="keeping-data-clean-and-tools-trustworthy">Keeping Data Clean and Tools Trustworthy<a class="headerlink" href="#keeping-data-clean-and-tools-trustworthy" title="Permanent link">¶</a></h2>
+<p>Every metric and portal in this chapter depends on two quieter habits: keeping the underlying records free of duplicates, and making sure any new tool a club adopts deserves the data chapter 24 taught you to protect in the first place.</p>
+<h3 id="duplicate-record-cleanup">Duplicate Record Cleanup<a class="headerlink" href="#duplicate-record-cleanup" title="Permanent link">¶</a></h3>
+<p><strong>Duplicate record cleanup</strong> is finding and merging rows that represent the same student or event entered more than once -- often from a slightly different spelling, like "A.K." and "AK" -- so that a count of students or sessions reflects reality instead of double-counting the same person. Left uncorrected, a duplicate quietly inflates every metric built on top of it, from attendance counts to badge totals.</p>
+<p>A worked example shows a quick catch: a leader building the pivot table above notices the student total comes out to fifteen instead of the expected fourteen, traces it to one student entered once as "A.K." and once as "A. Kim," and merges the two rows into one before the pivot table is used in a report.</p>
+<h3 id="data-sharing-agreement">Data Sharing Agreement<a class="headerlink" href="#data-sharing-agreement" title="Permanent link">¶</a></h3>
+<p><strong>A data sharing agreement</strong> is a written agreement between the club and an outside organization -- a vendor, a partner nonprofit, a school district -- spelling out exactly what data may be shared with that organization and how it may be used, distinct from guardian consent, which covers permission from a family rather than terms with another organization. A club considering a new registration platform or portfolio tool should expect this kind of agreement to exist before any student data flows to that vendor.</p>
+<h3 id="third-party-tool-vetting">Third Party Tool Vetting<a class="headerlink" href="#third-party-tool-vetting" title="Permanent link">¶</a></h3>
+<p><strong>Third-party tool vetting</strong> is evaluating a new piece of software -- a registration platform, a portfolio app, an SMS service -- before adopting it, checking how it stores data, whether it can be deleted on request, and what its free tier actually costs a club in data-handling terms rather than dollars.</p>
+<div class="admonition mascot-tip">
+<p class="admonition-title">Four questions before you sign up for anything</p>
+<p><img alt="Circuit giving a tip" class="mascot-admonition-img" src="../../img/mascot/tip.png">
+Here's a shortcut worth reusing every time: before adopting any new tool, ask where it stores data, whether you can export and delete it on request, whether a data sharing agreement is available, and what a "free" tier is really funded by.</p>
+</div>
+<p>That checklist works as a quick pass over any tool under consideration:</p>
+<ul>
+<li>Where is student data physically stored, and in which country?</li>
+<li>Can the club export all of its data and delete it entirely if it switches tools later?</li>
+<li>Will the vendor sign a data sharing agreement, or only offer a generic terms-of-service page?</li>
+<li>If the tool is free, what is the vendor's business model -- and does it involve selling or analyzing student data?</li>
+</ul>
+<h3 id="cloud-document-sharing">Cloud Document Sharing<a class="headerlink" href="#cloud-document-sharing" title="Permanent link">¶</a></h3>
+<p><strong>Cloud document sharing</strong> is storing and sharing club files -- spreadsheets, consent forms, portfolios -- through a cloud-based service scoped to the club's own account, with permissions set deliberately rather than left at a platform's default. This is the same "use club accounts, not personal ones" habit chapter 24 established for the tracking spreadsheet, applied to every other document type a club accumulates.</p>
+<h3 id="file-naming-convention">File Naming Convention<a class="headerlink" href="#file-naming-convention" title="Permanent link">¶</a></h3>
+<p><strong>A file naming convention</strong> is a consistent pattern for naming files -- such as <code>2026-02-Session-Attendance.xlsx</code> rather than <code>attendance new final.xlsx</code> -- so that a shared drive stays navigable for every mentor, including one who joins two years from now and has never seen the folder before.</p>
+<table>
+<thead>
+<tr>
+<th>Before (No Convention)</th>
+<th>After (Consistent Convention)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>attendance new final.xlsx</code></td>
+<td><code>2026-02-Session-Attendance.xlsx</code></td>
+</tr>
+<tr>
+<td><code>roster (2).xlsx</code></td>
+<td><code>2026-Spring-Roster.xlsx</code></td>
+</tr>
+<tr>
+<td><code>feedback FINAL FINAL.xlsx</code></td>
+<td><code>2026-02-Feedback-Responses.xlsx</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="chapter-summary">Chapter Summary<a class="headerlink" href="#chapter-summary" title="Permanent link">¶</a></h2>
+<p>This chapter turned chapter 24's saved and protected data into something a club can act on. Automated reminders, SMS notifications, and a newsletter template took routine communication off a mentor's weekly to-do list, while a mentor communication log kept volunteer coordination visible across a change of leadership. Attendance, retention, and enrollment analysis showed how three related metrics answer three different questions about the same club, and growth metrics, skill mastery levels, a digital portfolio, and a scoped parent portal gave individual students a way to show real progress instead of a bare badge count. Underneath all of it, formulas, pivot tables, standardized data entry, and a habit of vetting any new tool before adopting it keep the numbers trustworthy enough to build decisions on.</p>
+<div class="admonition mascot-celebration">
+<p class="admonition-title">You can now turn club data into real decisions</p>
+<p><img alt="Circuit celebrating" class="mascot-admonition-img" src="../../img/mascot/celebration.png">
+You just built the skills to read an enrollment trend, automate a reminder system, track real student growth, and vet a new tool before it ever touches your data. That's the analytical half of running a sustainable club -- and it's exactly what turns a spreadsheet full of rows into decisions your club can act on.</p>
+</div>
 
 
 
@@ -1633,7 +2831,12 @@
 
 
 
+  
+  
 
+
+
+  
 
 
 
@@ -1648,7 +2851,7 @@
         
           <button type="button" class="md-top md-icon" data-md-component="top" hidden>
   
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"></path></svg>
   Back to top
 </button>
         
@@ -1658,13 +2861,13 @@
   
     
       
-      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+      <nav class="md-footer__inner md-grid" aria-label="Footer">
         
           
           <a href="../24-student-data-and-communication/" class="md-footer__link md-footer__link--prev" aria-label="Previous: 24. Tracking Student Data and Managing Club Communication">
             <div class="md-footer__button md-icon">
               
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
             </div>
             <div class="md-footer__title">
               <span class="md-footer__direction">
@@ -1689,7 +2892,7 @@
             </div>
             <div class="md-footer__button md-icon">
               
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"></path></svg>
             </div>
           </a>
         
@@ -1701,7 +2904,7 @@
       <div class="md-copyright">
   
     <div class="md-copyright__highlight">
-      Copyright &copy; 2026 Dan McCreary. Licensed under <a href="license/">CC BY-NC-SA 4.0</a> for non-commercial use.
+      Copyright © 2026 Dan McCreary. Licensed under <a href="license/">CC BY-NC-SA 4.0</a> for non-commercial use.
     </div>
   
   
@@ -1722,6 +2925,10 @@
     
       <script src="../../assets/javascripts/bundle.83f73b43.min.js"></script>
       
+        <script src="../../js/extra.js"></script>
+      
     
-  </body>
-</html>
+  
+<script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(()=>{ lightbox.reload(); });
+</script></body></html>

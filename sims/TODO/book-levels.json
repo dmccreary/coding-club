@@ -1,0 +1,15 @@
+{
+  "sim_id": "book-levels",
+  "diagram_name": "Levels of Intelligent Textbook Sophistication",
+  "chapter_number": 2,
+  "chapter_title": "AI, Intelligent Textbooks, and Where Coding Clubs Meet",
+  "chapter_dir": "02-ai-and-intelligent-textbooks",
+  "chapter_rel_dir": "chapters/02-ai-and-intelligent-textbooks",
+  "library": "p5.js",
+  "bloom_level": null,
+  "bloom_verb": null,
+  "learning_objective": null,
+  "completion_status": "specified",
+  "extracted_date": "2026-09-01",
+  "specification": "Type: infographic\n**sim-id:** book-levels<br/>\n**Library:** p5.js<br/>\n**Status:** Reused<br/>\n**Source:** https://dmccreary.github.io/tracking-ai-course/sims/book-levels/<br/>\n**Source Repo:** https://github.com/dmccreary/tracking-ai-course/tree/main/docs/sims/book-levels\n\nReused from the MicroSim catalog (WHAT match score 0.7644). Learning objective: Understand (L2) -- explain how intelligent textbooks range from static content to fully AI-driven, adaptive learning experiences, and place this book on that spectrum."
+}

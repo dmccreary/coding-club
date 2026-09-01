@@ -1,0 +1,63 @@
+schema_version: 1
+card_id: motor-spin
+title: Make a Motor Spin
+track: beginner
+difficulty_color: green
+chapter: 16-physical-computing-safety
+concept_ids: []
+concept_labels: []
+concept_tag: Circuits
+kit_required: null
+materials:
+- 3x AA battery pack with leads
+- Small DC hobby motor
+front:
+  icon: motor
+  description: Connect a battery pack to a small DC motor and make it spin. Then figure out how to make
+    it spin in the OPPOSITE direction -- without touching the motor itself!
+  steps:
+  - Gather your 3x AA battery pack and DC motor.
+  - Find the two wire leads coming off the motor.
+  - Connect one motor lead to the battery pack's positive (+) terminal.
+  - Connect the other motor lead to the battery pack's negative (-) terminal.
+  - Watch the motor spin, and note which direction it's turning.
+  - 'Challenge: make the motor spin the OTHER way, using only the same two parts.'
+  stretch_goal: Add a switch between the battery pack and the motor so you can turn it on and off without
+    disconnecting any wires.
+back:
+  hints:
+  - Think about what actually decides which way the motor spins -- is it something inside the motor, or
+    how it's wired up?
+  - A DC motor spins based on which direction electric current flows through it.
+  - You don't need any new parts to solve this -- look again at your existing two connections.
+  solution_type: circuit
+  solution_language: null
+  solution_steps:
+  - Disconnect both wires from the battery pack terminals.
+  - 'Reverse them: connect the wire that was on positive (+) to negative (-) instead, and the wire that
+    was on negative (-) to positive (+) instead.'
+  - Reconnect the battery pack and watch the motor spin in the opposite direction.
+  solution_code: null
+  solution_circuit_description: Reversing the polarity of the two wires connecting the 3x AA battery pack
+    to the DC motor reverses the direction of current flow through the motor's internal coil, which reverses
+    the direction the motor shaft spins. No new components are needed -- only the two wire connections
+    at the battery pack terminals are swapped (+ becomes -, - becomes +). This same principle -- and what
+    happens when a motor's wire connections are damaged or reversed by accident -- is shown with real
+    photos in the club's "Broken Wires" story.
+  see_also: Broken Wires story (docs/stories/broken-wires/) -- real photos of motor wire connections,
+    heat-shrink tubing, and cable-tie strain relief
+verification:
+  status: passed
+  method: circuit_consistency
+  last_run: '2026-08-31T20:58:33.401340+00:00'
+  notes: all 2 material(s) referenced in the circuit solution (consistency check only -- manual_review
+    still required before status='final')
+status: rendered
+reading_level_target: 10
+print:
+  copies_recommended: 3
+  theme: default
+author: dan.mccreary@gmail.com
+generated_by: claude skill challenge-card
+date_created: '2026-08-31'
+date_modified: '2026-08-31'

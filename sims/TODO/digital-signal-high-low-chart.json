@@ -1,0 +1,15 @@
+{
+  "sim_id": "digital-signal-high-low-chart",
+  "diagram_name": "Digital Signal HIGH/LOW Chart",
+  "chapter_number": 16,
+  "chapter_title": "Physical Computing and Electrical Safety Basics",
+  "chapter_dir": "16-physical-computing-safety",
+  "chapter_rel_dir": "chapters/16-physical-computing-safety",
+  "library": "Chart.js",
+  "bloom_level": null,
+  "bloom_verb": null,
+  "learning_objective": null,
+  "completion_status": "specified",
+  "extracted_date": "2026-09-01",
+  "specification": "Type: chart\n**sim-id:** digital-signal-high-low-chart<br/>\n**Library:** Chart.js<br/>\n**Status:** Specified\n\nPurpose: Show a digital input's voltage-over-time trace as a clean step pattern, contrasting it with the smooth curve used later for analog input.\n\nChart type: Line chart (step-interpolation)\n\nX-axis: Time (seconds, 0-10)\n\nY-axis: Voltage (0V to 5V)\n\nData series: One series showing voltage jumping instantly between 0V (button released) and 5V (button pressed) at five sample press/release events across the 10-second window\n\nTitle: \"Digital Input Voltage Over Time\"\n\nInteractive features: Hovering any point on the step line reveals the exact voltage and HIGH/LOW label in a tooltip; a \"press button\" simulated button beneath the chart adds a live new step event to the right edge of the chart when clicked\n\nColor scheme: Blue step line on a light background; HIGH segments shaded lightly to distinguish from LOW segments\n\nImplementation: Chart.js line chart configured with `stepped: true`; click handler appends a new data point pair to simulate a live press event"
+}

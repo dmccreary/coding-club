@@ -1,12 +1,9 @@
-
-<!doctype html>
-<html lang="en" class="no-js">
-  <head>
+<!DOCTYPE html><html lang="en" class="no-js"><head>
     
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="An interactive intelligent textbook on how to create, organize, promote and run a sustainable coding club.">
+        <meta name="description" content="Covers kit vendor selection, cost comparison, storage, loaner programs, and documentation like wiring diagrams and code templates, plus brief looks at signal-processing and wearable display kits for clubs ready to go further.">
       
       
         <meta name="author" content="Dan McCreary">
@@ -21,12 +18,12 @@
         <link rel="next" href="../22-purchasing-configuring-devices/">
       
       
-      <link rel="icon" href="../../assets/images/favicon.png">
+      <link rel="icon" href="../../img/favicon.ico">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.43">
     
     
       
-        <title>21. Managing Your Kit Inventory and Signal Processing Kits - Coding Club</title>
+        <title>Managing Your Kit Inventory and Signal Processing Kits - Coding Club</title>
       
     
     
@@ -47,7 +44,7 @@
         
         
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback">
         <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
       
     
@@ -59,11 +56,57 @@
     <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
+  
+
+
+  
+  
+
+<script id="__analytics">function __md_analytics(){function e(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],e("js",new Date),e("config","G-JDH8L7VM28"),document.addEventListener("DOMContentLoaded",(function(){document.forms.search&&document.forms.search.query.addEventListener("blur",(function(){this.value&&e("event","search",{search_term:this.value})}));document$.subscribe((function(){var t=document.forms.feedback;if(void 0!==t)for(var a of t.querySelectorAll("[type=submit]"))a.addEventListener("click",(function(a){a.preventDefault();var n=document.location.pathname,d=this.getAttribute("data-md-value");e("event","feedback",{page:n,data:d}),t.firstElementChild.disabled=!0;var r=t.querySelector(".md-feedback__note [data-md-value='"+d+"']");r&&(r.hidden=!1)})),t.hidden=!1})),location$.subscribe((function(t){e("config","G-JDH8L7VM28",{page_path:t.pathname})}))}));var t=document.createElement("script");t.async=!0,t.src="https://www.googletagmanager.com/gtag/js?id=G-JDH8L7VM28",document.getElementById("__analytics").insertAdjacentElement("afterEnd",t)}</script>
+  
+    <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
+  
 
     
     
+      
+        <meta property="og:type" content="website">
+      
+        <meta property="og:title" content="Managing Your Kit Inventory and Signal Processing Kits - Coding Club">
+      
+        <meta property="og:description" content="Covers kit vendor selection, cost comparison, storage, loaner programs, and documentation like wiring diagrams and code templates, plus brief looks at signal-processing and wearable display kits for clubs ready to go further.">
+      
+        <meta property="og:image" content="https://dmccreary.github.io/coding-club/assets/images/social/chapters/21-kit-inventory-signal-processing/index.png">
+      
+        <meta property="og:image:type" content="image/png">
+      
+        <meta property="og:image:width" content="1200">
+      
+        <meta property="og:image:height" content="630">
+      
+        <meta property="og:url" content="https://dmccreary.github.io/coding-club/chapters/21-kit-inventory-signal-processing/">
+      
+        <meta name="twitter:card" content="summary_large_image">
+      
+        <meta name="twitter:title" content="Managing Your Kit Inventory and Signal Processing Kits - Coding Club">
+      
+        <meta name="twitter:description" content="Covers kit vendor selection, cost comparison, storage, loaner programs, and documentation like wiring diagrams and code templates, plus brief looks at signal-processing and wearable display kits for clubs ready to go further.">
+      
+        <meta name="twitter:image" content="https://dmccreary.github.io/coding-club/assets/images/social/chapters/21-kit-inventory-signal-processing/index.png">
+      
     
-  </head>
+    
+  <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"><script src="../../assets/javascripts/glightbox.min.js"></script><style id="glightbox-style">
+            html.glightbox-open { overflow: initial; height: 100%; }
+            .gslide-title { margin-top: 0px; user-select: text; }
+            .gslide-desc { color: #666; user-select: text; }
+            .gslide-image img { background: white; }
+            .gscrollbar-fixer { padding-right: 15px; }
+            .gdesc-inner { font-size: 0.75rem; }
+            body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color); }
+            body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color); }
+            body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color); }
+        </style></head>
   
   
     
@@ -98,13 +141,12 @@
   <nav class="md-header__inner md-grid" aria-label="Header">
     <a href="../.." title="Coding Club" class="md-header__button md-logo" aria-label="Coding Club" data-md-component="logo">
       
-  
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+  <img src="../../img/mascot/welcome.png" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
       
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"></path></svg>
     </label>
     <div class="md-header__title" data-md-component="header-title">
       <div class="md-header__ellipsis">
@@ -116,7 +158,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              21. Managing Your Kit Inventory and Signal Processing Kits
+              Managing Your Kit Inventory and Signal Processing Kits
             
           </span>
         </div>
@@ -130,7 +172,7 @@
     
       <label class="md-header__button md-icon" for="__search">
         
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
       </label>
       <div class="md-search" data-md-component="search" role="dialog">
   <label class="md-search__overlay" for="__search"></label>
@@ -139,20 +181,20 @@
       <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
       <label class="md-search__icon md-icon" for="__search">
         
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
         
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
       </label>
       <nav class="md-search__options" aria-label="Search">
         
           <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
             
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"></path></svg>
           </a>
         
         <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
           
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg>
         </button>
       </nav>
       
@@ -177,7 +219,7 @@
         <a href="https://github.com/dmccreary/coding-club" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"></path></svg>
   </div>
   <div class="md-source__repository">
     GitHub Repo
@@ -201,7 +243,7 @@
           
             
               
-              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
@@ -212,8 +254,7 @@
   <label class="md-nav__title" for="__drawer">
     <a href="../.." title="Coding Club" class="md-nav__button md-logo" aria-label="Coding Club" data-md-component="logo">
       
-  
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+  <img src="../../img/mascot/welcome.png" alt="logo">
 
     </a>
     Coding Club
@@ -223,7 +264,7 @@
       <a href="https://github.com/dmccreary/coding-club" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"></path></svg>
   </div>
   <div class="md-source__repository">
     GitHub Repo
@@ -987,6 +1028,315 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#buying-smart-vendors-cost-and-bulk-orders" class="md-nav__link">
+    <span class="md-ellipsis">
+      Buying Smart: Vendors, Cost, and Bulk Orders
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Buying Smart: Vendors, Cost, and Bulk Orders">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#kit-vendor-selection" class="md-nav__link">
+    <span class="md-ellipsis">
+      Kit Vendor Selection
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#kit-cost-comparison" class="md-nav__link">
+    <span class="md-ellipsis">
+      Kit Cost Comparison
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#kit-bulk-purchasing" class="md-nav__link">
+    <span class="md-ellipsis">
+      Kit Bulk Purchasing
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#getting-a-kit-ready-for-its-first-session" class="md-nav__link">
+    <span class="md-ellipsis">
+      Getting a Kit Ready for Its First Session
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Getting a Kit Ready for Its First Session">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#kit-unboxing-procedure" class="md-nav__link">
+    <span class="md-ellipsis">
+      Kit Unboxing Procedure
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#kit-safety-checklist" class="md-nav__link">
+    <span class="md-ellipsis">
+      Kit Safety Checklist
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#documenting-a-kit-so-anyone-can-run-it" class="md-nav__link">
+    <span class="md-ellipsis">
+      Documenting a Kit So Anyone Can Run It
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Documenting a Kit So Anyone Can Run It">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#kit-documentation-sheet" class="md-nav__link">
+    <span class="md-ellipsis">
+      Kit Documentation Sheet
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#kit-wiring-diagram" class="md-nav__link">
+    <span class="md-ellipsis">
+      Kit Wiring Diagram
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#kit-code-template" class="md-nav__link">
+    <span class="md-ellipsis">
+      Kit Code Template
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#kit-debugging-guide" class="md-nav__link">
+    <span class="md-ellipsis">
+      Kit Debugging Guide
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#storing-loaning-and-getting-kits-back" class="md-nav__link">
+    <span class="md-ellipsis">
+      Storing, Loaning, and Getting Kits Back
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Storing, Loaning, and Getting Kits Back">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#kit-storage-bin" class="md-nav__link">
+    <span class="md-ellipsis">
+      Kit Storage Bin
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#kit-loaner-program" class="md-nav__link">
+    <span class="md-ellipsis">
+      Kit Loaner Program
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#kit-return-process" class="md-nav__link">
+    <span class="md-ellipsis">
+      Kit Return Process
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#kit-damage-assessment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Kit Damage Assessment
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#deciding-what-happens-next-reuse-upgrade-or-retire" class="md-nav__link">
+    <span class="md-ellipsis">
+      Deciding What Happens Next: Reuse, Upgrade, or Retire
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Deciding What Happens Next: Reuse, Upgrade, or Retire">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#kit-reuse-strategy" class="md-nav__link">
+    <span class="md-ellipsis">
+      Kit Reuse Strategy
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#kit-upgrade-path" class="md-nav__link">
+    <span class="md-ellipsis">
+      Kit Upgrade Path
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Kit Upgrade Path">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-kit-lifecycle-workflow" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Kit Lifecycle Workflow
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#kits-ready-for-clubs-that-want-to-go-further" class="md-nav__link">
+    <span class="md-ellipsis">
+      Kits Ready for Clubs That Want to Go Further
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Kits Ready for Clubs That Want to Go Further">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#signal-processing-basics" class="md-nav__link">
+    <span class="md-ellipsis">
+      Signal Processing Basics
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#real-time-audio-processing" class="md-nav__link">
+    <span class="md-ellipsis">
+      Real Time Audio Processing
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fast-fourier-transform-basics" class="md-nav__link">
+    <span class="md-ellipsis">
+      Fast Fourier Transform Basics
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#smartwatch-display-kit" class="md-nav__link">
+    <span class="md-ellipsis">
+      Smartwatch Display Kit
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#wearable-electronics-basics" class="md-nav__link">
+    <span class="md-ellipsis">
+      Wearable Electronics Basics
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Wearable Electronics Basics">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-kits-ready-to-go-further" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Kits Ready to Go Further
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chapter-summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      Chapter Summary
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1322,6 +1672,16 @@
       
         
       
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
     
     
     
@@ -1409,6 +1769,91 @@
   
   
   
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../cards/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Challenge Cards
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../faq/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    FAQ
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../glossary/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Glossary
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
     <li class="md-nav__item">
       <a href="../../license/" class="md-nav__link">
         
@@ -1451,7 +1896,7 @@
             
             
               
-              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
@@ -1496,6 +1941,315 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#buying-smart-vendors-cost-and-bulk-orders" class="md-nav__link">
+    <span class="md-ellipsis">
+      Buying Smart: Vendors, Cost, and Bulk Orders
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Buying Smart: Vendors, Cost, and Bulk Orders">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#kit-vendor-selection" class="md-nav__link">
+    <span class="md-ellipsis">
+      Kit Vendor Selection
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#kit-cost-comparison" class="md-nav__link">
+    <span class="md-ellipsis">
+      Kit Cost Comparison
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#kit-bulk-purchasing" class="md-nav__link">
+    <span class="md-ellipsis">
+      Kit Bulk Purchasing
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#getting-a-kit-ready-for-its-first-session" class="md-nav__link">
+    <span class="md-ellipsis">
+      Getting a Kit Ready for Its First Session
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Getting a Kit Ready for Its First Session">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#kit-unboxing-procedure" class="md-nav__link">
+    <span class="md-ellipsis">
+      Kit Unboxing Procedure
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#kit-safety-checklist" class="md-nav__link">
+    <span class="md-ellipsis">
+      Kit Safety Checklist
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#documenting-a-kit-so-anyone-can-run-it" class="md-nav__link">
+    <span class="md-ellipsis">
+      Documenting a Kit So Anyone Can Run It
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Documenting a Kit So Anyone Can Run It">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#kit-documentation-sheet" class="md-nav__link">
+    <span class="md-ellipsis">
+      Kit Documentation Sheet
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#kit-wiring-diagram" class="md-nav__link">
+    <span class="md-ellipsis">
+      Kit Wiring Diagram
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#kit-code-template" class="md-nav__link">
+    <span class="md-ellipsis">
+      Kit Code Template
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#kit-debugging-guide" class="md-nav__link">
+    <span class="md-ellipsis">
+      Kit Debugging Guide
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#storing-loaning-and-getting-kits-back" class="md-nav__link">
+    <span class="md-ellipsis">
+      Storing, Loaning, and Getting Kits Back
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Storing, Loaning, and Getting Kits Back">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#kit-storage-bin" class="md-nav__link">
+    <span class="md-ellipsis">
+      Kit Storage Bin
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#kit-loaner-program" class="md-nav__link">
+    <span class="md-ellipsis">
+      Kit Loaner Program
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#kit-return-process" class="md-nav__link">
+    <span class="md-ellipsis">
+      Kit Return Process
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#kit-damage-assessment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Kit Damage Assessment
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#deciding-what-happens-next-reuse-upgrade-or-retire" class="md-nav__link">
+    <span class="md-ellipsis">
+      Deciding What Happens Next: Reuse, Upgrade, or Retire
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Deciding What Happens Next: Reuse, Upgrade, or Retire">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#kit-reuse-strategy" class="md-nav__link">
+    <span class="md-ellipsis">
+      Kit Reuse Strategy
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#kit-upgrade-path" class="md-nav__link">
+    <span class="md-ellipsis">
+      Kit Upgrade Path
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Kit Upgrade Path">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-kit-lifecycle-workflow" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Kit Lifecycle Workflow
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#kits-ready-for-clubs-that-want-to-go-further" class="md-nav__link">
+    <span class="md-ellipsis">
+      Kits Ready for Clubs That Want to Go Further
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Kits Ready for Clubs That Want to Go Further">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#signal-processing-basics" class="md-nav__link">
+    <span class="md-ellipsis">
+      Signal Processing Basics
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#real-time-audio-processing" class="md-nav__link">
+    <span class="md-ellipsis">
+      Real Time Audio Processing
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fast-fourier-transform-basics" class="md-nav__link">
+    <span class="md-ellipsis">
+      Fast Fourier Transform Basics
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#smartwatch-display-kit" class="md-nav__link">
+    <span class="md-ellipsis">
+      Smartwatch Display Kit
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#wearable-electronics-basics" class="md-nav__link">
+    <span class="md-ellipsis">
+      Wearable Electronics Basics
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Wearable Electronics Basics">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-kits-ready-to-go-further" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Kits Ready to Go Further
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chapter-summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      Chapter Summary
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1513,16 +2267,16 @@
   
     <a href="https://github.com/dmccreary/coding-club/blob/main/docs/chapters/21-kit-inventory-signal-processing/index.md" title="Edit this page" class="md-content__button md-icon">
       
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"></path></svg>
     </a>
   
   
 
 
-<h1 id="managing-your-kit-inventory-and-signal-processing-kits">Managing Your Kit Inventory and Signal Processing Kits<a class="headerlink" href="#managing-your-kit-inventory-and-signal-processing-kits" title="Permanent link">&para;</a></h1>
-<h2 id="summary">Summary<a class="headerlink" href="#summary" title="Permanent link">&para;</a></h2>
+<h1 id="managing-your-kit-inventory-and-signal-processing-kits">Managing Your Kit Inventory and Signal Processing Kits<a class="headerlink" href="#managing-your-kit-inventory-and-signal-processing-kits" title="Permanent link">¶</a></h1>
+<h2 id="summary">Summary<a class="headerlink" href="#summary" title="Permanent link">¶</a></h2>
 <p>This chapter shifts from building kits to managing them: cost comparison, storage, loaner programs, and documentation like wiring diagrams and code templates. It closes with more advanced kits -- real-time audio and Fast Fourier Transform signal processing, plus wearable and smartwatch displays -- for clubs ready to go further. You will be able to set up a kit management system and describe what a signal-processing kit does.</p>
-<h2 id="concepts-covered">Concepts Covered<a class="headerlink" href="#concepts-covered" title="Permanent link">&para;</a></h2>
+<h2 id="concepts-covered">Concepts Covered<a class="headerlink" href="#concepts-covered" title="Permanent link">¶</a></h2>
 <p>This chapter covers the following 20 concepts from the learning graph:</p>
 <table>
 <thead>
@@ -1614,15 +2368,278 @@
 </tr>
 </tbody>
 </table>
-<h2 id="prerequisites">Prerequisites<a class="headerlink" href="#prerequisites" title="Permanent link">&para;</a></h2>
+<h2 id="prerequisites">Prerequisites<a class="headerlink" href="#prerequisites" title="Permanent link">¶</a></h2>
 <p>This chapter builds on concepts from:</p>
 <ul>
 <li><a href="../17-sensors-displays-motors/">17. Sensors, Displays, Motors, and Robot Chassis</a></li>
 <li><a href="../19-pico-micropython-moving-rainbow/">19. Raspberry Pi Pico, MicroPython, and the Moving Rainbow Kit</a></li>
 <li><a href="../20-sensor-sound-iot-kits/">20. Sensor, Sound, and IoT Project Kits</a></li>
 </ul>
-<hr />
-<p>TODO: Generate Chapter Content</p>
+<hr>
+<p>Chapter 19 and Chapter 20 filled a shelf with kits -- robots, displays, gyroscopes, microphones, IoT monitors -- and gave each one an assembly sheet, a component checklist, and a difficulty rating. None of that work survives past a single semester unless someone also manages the shelf itself: deciding which vendor to buy from, where a returned kit lives between sessions, and what happens the day a gyroscope kit comes back with a bent pin. This chapter is where a coding club's kit bin turns into kit <em>inventory</em> -- the kind of unglamorous, written-down infrastructure this book keeps coming back to, because a club that only lives in one leader's head about "where the spare wires are" is a club that stalls the day that leader misses a session.</p>
+<div class="admonition mascot-welcome">
+<p class="admonition-title">From building kits to running an inventory</p>
+<p><img alt="Circuit waving welcome" class="mascot-admonition-img" src="../../img/mascot/welcome.png">
+Let's build something great -- this chapter turns your kit shelf into a system a co-mentor could run without you in the room: buying, storing, loaning, and retiring kits on paper, not just from memory. By the end, you'll also be able to describe, in plain language, what a signal-processing kit and a smartwatch display kit actually do for a club ready to go further.</p>
+</div>
+<h2 id="buying-smart-vendors-cost-and-bulk-orders">Buying Smart: Vendors, Cost, and Bulk Orders<a class="headerlink" href="#buying-smart-vendors-cost-and-bulk-orders" title="Permanent link">¶</a></h2>
+<h3 id="kit-vendor-selection">Kit Vendor Selection<a class="headerlink" href="#kit-vendor-selection" title="Permanent link">¶</a></h3>
+<p>Here are some samples of Raspberry Pi Pico Starter kits with a variety of prices.  The prices do not include shipping costs.</p>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="pico-starter-kit-30.png" data-desc-position="bottom"><img alt="Pico Started Kit" src="pico-starter-kit-30.png"></a>
+The image above is a screen image from eBay describing a value oriented $30 Raspberry Pi Pico starter kit.</p>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="sunfounder-pico-starter-kit-60.png" data-desc-position="bottom"><img alt="Sunfounder Pico Starter Kit" src="sunfounder-pico-starter-kit-60.png"></a>
+Sunfounder Pico Starter Kit screen image from eBay describing a $60 Raspberry Pi Pico kit.</p>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="52pi-starter-kit-70.png" data-desc-position="bottom"><img alt="52Pi Starter Kit" src="52pi-starter-kit-70.png"></a>
+The image above is the 52 Raspberry Pi Pico W Starter Kit sold at MicroCenter for around $70.00.</p>
+<p>This kit includes the following parts:</p>
+<ul>
+<li>1 x Raspberry Pi Pico W H</li>
+<li>1 x breadboard experiment platform (3 1/2 size 400 tie boards)</li>
+<li>1 x Ultrasonic sensor</li>
+<li>1 x 0.96-inch OLED display</li>
+<li>1 x DHT11 temperate and Humidity sensor</li>
+<li>1 x Single Channel Relay</li>
+<li>1 x PIR sensor</li>
+<li>1 x LCD1602 display module </li>
+<li>1 x Raindrop sensor </li>
+<li>1 x Potentiometer</li>
+<li>1 x Stepper motor</li>
+<li>1 x ULN2003AN driver board (drive stepper motor)</li>
+<li>1 x 9g Servo</li>
+<li>1 x PS2 Joystick Module</li>
+<li>1 x MPU6050 Gyroscope module</li>
+<li>1 x MicroUSB cable (Data Transfer)</li>
+<li>20 x Male to male jumper wire</li>
+<li>20 x Male to female jumper wire</li>
+<li>5 x Red LED</li>
+<li>5 x Green LED</li>
+<li>5 x Yellow LED</li>
+<li>5 x Blue LED</li>
+<li>20 x 220 Ohm Resistors</li>
+<li>1 x Instruction book</li>
+</ul>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="sparkfun-inventors-kit-130.png" data-desc-position="bottom"><img alt="" src="sparkfun-inventors-kit-130.png"></a>
+The image above is a screen image from the Sparkfun website describing a <a href="https://www.sparkfun.com/sparkfun-inventors-kit-for-micropython.html">$130 Inventors kit</a> that supports MicroPython with higher-end parts.</p>
+<p><strong>Kit vendor selection</strong> is the deliberate comparison of suppliers before ordering a kit's parts, weighing unit price against shipping time, part-quality consistency between orders, and how closely a vendor's actual product matches the pin layout and part list a kit's documentation already assumes. Two vendors selling what looks like the identical sensor module online can ship boards with different pin orders printed on the silkscreen, which turns a five-minute wiring job into a confusing troubleshooting session the first time a mentor assumes last time's datasheet still applies.</p>
+<p>A worked example makes the tradeoff concrete: a mentor restocking gyroscope kits finds Vendor A at $6.50 per module with three-week shipping and, based on past orders, a pin layout that has changed twice in two years, against Vendor B at $7.75 per module with four-day shipping and a stable, unchanged layout across every past order. The club chooses Vendor B, accepting a $1.25 higher unit cost to avoid rewriting the kit's wiring diagram and code template every time a shipment arrives -- a cost the cost comparison below shows is easy to underestimate.</p>
+<h3 id="kit-cost-comparison">Kit Cost Comparison<a class="headerlink" href="#kit-cost-comparison" title="Permanent link">¶</a></h3>
+<p><strong>Kit cost comparison</strong> looks past a kit's sticker price to its full cost per session actually delivered: the purchase price plus shipping and any one-time tools, divided by however many working sessions the kit survives before it is retired or needs a costly repair. A cheaper kit that reliably fails after a handful of uses can cost more per session than a pricier kit that keeps working for years, which is the opposite of what the price tags alone suggest.</p>
+<p>A worked example turns this into arithmetic a mentor can actually run: a $12 microphone kit that survives 40 sessions before retirement costs $0.30 per session, while a $9 kit from a different vendor that reliably fails after 8 sessions costs $1.13 per session -- nearly four times as much, despite listing for less. Tracking how many sessions a kit type actually survives, even informally on the documentation sheet introduced later in this chapter, turns "which kit is cheaper" from a guess into a number.</p>
+<div class="admonition mascot-thinking">
+<p class="admonition-title">True cost is price divided by sessions survived, not the sticker price</p>
+<p><img alt="Circuit thinking" class="mascot-admonition-img" src="../../img/mascot/thinking.png">
+Notice that the cheaper kit in the example above was actually the more expensive choice once you divide by how long it lasted. Once a mentor starts thinking in cost-per-session instead of price-per-kit, a lot of "which kit should we buy" decisions get a lot less subjective.</p>
+</div>
+<h3 id="kit-bulk-purchasing">Kit Bulk Purchasing<a class="headerlink" href="#kit-bulk-purchasing" title="Permanent link">¶</a></h3>
+<p><strong>Kit bulk purchasing</strong> means ordering several identical kits in a single order rather than restocking one or two at a time, which typically unlocks a lower per-unit price and -- just as valuable -- guarantees every unit in the batch shares the same hardware revision, avoiding the pin-layout drift the vendor selection section described. A club buying microphone kits three separate times across a semester risks three subtly different board revisions in the same bin; a club buying twelve at once gets twelve identical boards that all match one wiring diagram.</p>
+<p>A worked example shows both benefits landing at once: ordering three microphone kits individually over three months costs $9.50 per unit and produces two different board revisions with swapped data-pin positions; ordering twelve at once for the whole semester drops the price to $7.25 per unit, and every board matches the same single wiring diagram -- saving both money and the confusion of maintaining two versions of one kit's documentation.</p>
+<p>Now that vendor selection, cost comparison, and bulk purchasing have each been introduced, the table below gathers the buying decision into one reference a mentor can scan before placing an order.</p>
+<table>
+<thead>
+<tr>
+<th>Buying Approach</th>
+<th>Per-Unit Price</th>
+<th>Hardware Consistency</th>
+<th>Best For</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Single-unit orders, cheapest vendor</td>
+<td>Lowest listed price</td>
+<td>Risk of revision drift between orders</td>
+<td>A one-off kit, or trying a new kit type before committing</td>
+</tr>
+<tr>
+<td>Single-unit orders, consistent vendor</td>
+<td>Slightly higher</td>
+<td>Stable across orders</td>
+<td>Restocking an existing kit type in small numbers</td>
+</tr>
+<tr>
+<td>Bulk order (10+ units)</td>
+<td>Lowest total cost per unit</td>
+<td>Guaranteed identical revision</td>
+<td>Stocking a whole semester's worth of one kit type at once</td>
+</tr>
+</tbody>
+</table>
+<h2 id="getting-a-kit-ready-for-its-first-session">Getting a Kit Ready for Its First Session<a class="headerlink" href="#getting-a-kit-ready-for-its-first-session" title="Permanent link">¶</a></h2>
+<h3 id="kit-unboxing-procedure">Kit Unboxing Procedure<a class="headerlink" href="#kit-unboxing-procedure" title="Permanent link">¶</a></h3>
+<p><strong>A kit unboxing procedure</strong> is the one-time ritual a brand-new kit goes through before it ever reaches a student: confirming every part on the vendor's packing slip is actually in the box, powering on and testing the kit's core sensor or output with its code template, and assigning the kit a name and an ID before it goes into storage. This is distinct from the component checklist Chapter 20 introduced -- a component checklist runs before every session on a kit already in service, while an unboxing procedure happens exactly once, the day a kit first arrives.</p>
+<p>A worked example shows why testing at unboxing matters more than it might seem: a mentor unboxes ten new microphone kits in one sitting, plugging each into a Pico running the five-line code template described later in this chapter. Nine kits print a changing loudness number the moment someone claps; one prints a flat zero no matter what. Catching that dead microphone during a quiet unboxing session costs nothing; catching it mid-session, with a student waiting to see their first clap-triggered light, costs real trust.</p>
+<h3 id="kit-safety-checklist">Kit Safety Checklist<a class="headerlink" href="#kit-safety-checklist" title="Permanent link">¶</a></h3>
+<p><strong>A kit safety checklist</strong> is a short, printed list of electrical-safety checks -- no exposed conductor touching another wire, no reversed power polarity, every connector seated snugly rather than resting loosely against its pins -- run specifically during unboxing and again after any repair, applying Chapter 16's general safety rules to one specific kit in hand. Where the safety rules in Chapter 16 are general knowledge every mentor carries around, a kit safety checklist turns that knowledge into a specific, repeatable check for one exact board.</p>
+<p>A worked example shows the checklist earning its place: while unboxing a new batch of humidity-monitor kits, a mentor runs the safety checklist on each board and finds that one unit's power and ground pins are reversed relative to the labeled silkscreen -- a wiring mistake that would have created a short circuit the moment a student plugged it in blind. The checklist catches it during a calm unboxing session instead of during a live one.</p>
+<div class="admonition mascot-tip">
+<p class="admonition-title">Run the safety checklist during kit prep, not live in front of students</p>
+<p><img alt="Circuit giving a tip" class="mascot-admonition-img" src="../../img/mascot/tip.png">
+Here's a shortcut: treat the safety checklist as part of unboxing and post-repair prep, done at your kitchen table or a prep session, not as a step you narrate live while a room full of students waits. A calm check catches more problems than a rushed one.</p>
+</div>
+<h2 id="documenting-a-kit-so-anyone-can-run-it">Documenting a Kit So Anyone Can Run It<a class="headerlink" href="#documenting-a-kit-so-anyone-can-run-it" title="Permanent link">¶</a></h2>
+<h3 id="kit-documentation-sheet">Kit Documentation Sheet<a class="headerlink" href="#kit-documentation-sheet" title="Permanent link">¶</a></h3>
+<p><strong>A kit documentation sheet</strong> is the single page -- printed or digital -- filed with each kit that gathers everything a mentor needs to run that kit's station without the person who originally built it: its difficulty rating from Chapter 20, its wiring diagram, its code template, and a short debugging guide, all in one place rather than scattered across a mentor's memory. A kit without a documentation sheet only really "exists" for whoever assembled it -- exactly the single-leader dependency problem this book keeps returning to, now applied to hardware instead of people.</p>
+<p>A worked example shows the sheet doing its real job: the mentor who originally wired and tested the club's one gyroscope kit is out sick the morning of a session. A substitute mentor who has never touched a gyroscope kit before pulls its documentation sheet, follows the wiring diagram to connect four pins, pastes in the code template, and has the station running for students within ten minutes -- using nothing but the sheet.</p>
+<h3 id="kit-wiring-diagram">Kit Wiring Diagram<a class="headerlink" href="#kit-wiring-diagram" title="Permanent link">¶</a></h3>
+<p><strong>A kit wiring diagram</strong> is a labeled diagram showing exactly which physical pin -- named by the label actually printed on the module, such as SDA, SCL, VCC, or GND, per the naming rule Chapter 20 established -- connects to which specific Pico pin, drawn for the exact board revision that particular kit's bin contains. Because bulk purchasing guarantees every kit in one bin shares a hardware revision, one wiring diagram can serve an entire bin rather than needing to be redrawn kit by kit.</p>
+<p>A worked example shows the diagram catching a mistake before it happens: two of the club's gyroscope kits came from different vendor batches with SDA and SCL swapped on the physical board. A wiring diagram drawn specifically for each batch's board -- rather than one generic diagram assumed to fit both -- tells a mentor immediately which two wires to swap for that particular bin, instead of guessing after a blank reading.</p>
+<h3 id="kit-code-template">Kit Code Template<a class="headerlink" href="#kit-code-template" title="Permanent link">¶</a></h3>
+<p><strong>A kit code template</strong> is a short, already-working starter program -- typically five to fifteen lines -- that reads a kit's core sensor or drives its core output and prints or displays a result, meant to be copied and run exactly as written before any student customizes it. A code template's job is to prove the wiring works, separately from proving a student's own code works; mixing the two together is what turns a simple wiring mistake into a confusing debugging session.</p>
+<p>A worked example shows this separation in action: a student pastes the microphone kit's code template onto a Pico unmodified and immediately sees a loudness number scrolling on screen. That confirms the wiring is correct before the student writes a single original line -- so if their own, edited version later prints nothing, they already know the hardware isn't the problem, and can focus on their own code instead of re-checking wires.</p>
+<h3 id="kit-debugging-guide">Kit Debugging Guide<a class="headerlink" href="#kit-debugging-guide" title="Permanent link">¶</a></h3>
+<p><strong>A kit debugging guide</strong> is a short troubleshooting table, attached to a kit's documentation sheet, pairing a specific symptom with the fix most likely to solve it -- for example, "no numbers appear" paired with "reseat the data pins" -- so a stuck mentor or student has a first place to look before guessing randomly or assuming the hardware is broken.</p>
+<p>A worked example shows the guide doing exactly this job: a microphone kit reports a constant zero no matter how loud the room gets. The debugging guide's first row says "check the power light is on"; the second row says "reseat the data pin." The power light is on, so the mentor tries the second fix -- the data pin had backed halfway out of its socket -- and the kit starts reporting normally again, all without needing to guess.</p>
+<p>Now that a documentation sheet's three supporting pieces have each been introduced, the table below summarizes what each one captures and when a mentor actually reaches for it.</p>
+<table>
+<thead>
+<tr>
+<th>Documentation Piece</th>
+<th>What It Captures</th>
+<th>When a Mentor Reaches for It</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Kit Wiring Diagram</td>
+<td>Which labeled pin connects to which Pico pin, for this exact board revision</td>
+<td>Before first wiring a kit, or when a reading looks wrong</td>
+</tr>
+<tr>
+<td>Kit Code Template</td>
+<td>A short, already-working starter program</td>
+<td>The very first time a kit is powered on, to confirm wiring before writing new code</td>
+</tr>
+<tr>
+<td>Kit Debugging Guide</td>
+<td>A symptom-to-fix troubleshooting table</td>
+<td>When a kit that used to work stops behaving as expected</td>
+</tr>
+</tbody>
+</table>
+<h2 id="storing-loaning-and-getting-kits-back">Storing, Loaning, and Getting Kits Back<a class="headerlink" href="#storing-loaning-and-getting-kits-back" title="Permanent link">¶</a></h2>
+<h3 id="kit-storage-bin">Kit Storage Bin<a class="headerlink" href="#kit-storage-bin" title="Permanent link">¶</a></h3>
+<p><strong>A kit storage bin</strong> is a dedicated, labeled container -- one per kit or kit type -- that holds a kit and its documentation sheet together between sessions, sized and labeled consistently across the whole shelf so a mentor can find and identify any kit at a glance. An unlabeled box of loose parts forces a mentor to open several bins and guess; a storage bin labeled with the kit's name and difficulty rating from Chapter 20 turns that search into a two-second glance.</p>
+<p>A worked example shows the payoff during a real session: a walk-in student arrives mid-session with no assigned project, and a mentor needs a beginner-rated kit immediately. Because every bin on the shelf is labeled with both its kit name and difficulty rating printed on the outside, the mentor spots a beginner-rated microphone kit bin in seconds, rather than opening four bins to find one that matches the student in front of them.</p>
+<h3 id="kit-loaner-program">Kit Loaner Program<a class="headerlink" href="#kit-loaner-program" title="Permanent link">¶</a></h3>
+<p><strong>A kit loaner program</strong> lets a specific kit leave its regular storage bin and go home with a student, or to another location, for a defined period, with the club tracking which kit is out, who has it, and when it is due back -- the same accountability a library applies to a borrowed book, applied to a $12 microphone kit instead.</p>
+<p>A worked example shows the program running end to end: a student who wants to keep experimenting between sessions signs out a gyroscope kit; the sign-out log records the student's name, the kit's ID, the date it left, and a two-week due date. When two weeks pass without a return, the log flags it, and a mentor follows up with the student directly instead of the kit simply disappearing from the shelf unnoticed.</p>
+<h3 id="kit-return-process">Kit Return Process<a class="headerlink" href="#kit-return-process" title="Permanent link">¶</a></h3>
+<p><strong>A kit return process</strong> is the sequence a loaned or session-used kit goes through before it is cleared to go back into general circulation: its parts are physically counted against its documentation sheet's part list, its core function is quick-tested with its code template, and its loaner-log entry, if any, is closed out.</p>
+<p>A worked example runs the full sequence on a returned gyroscope kit: the mentor checks it against the documentation sheet and confirms the Pico, the gyroscope module, and all four jumper wires are present; running the code template for thirty seconds confirms it still reports rotation correctly; and the loaner log entry for that student is marked returned. Only after all three checks pass does the kit go back into its storage bin.</p>
+<h3 id="kit-damage-assessment">Kit Damage Assessment<a class="headerlink" href="#kit-damage-assessment" title="Permanent link">¶</a></h3>
+<p><strong>Kit damage assessment</strong> is the judgment call a mentor makes about a returned kit's condition: whether a problem, if one exists, is purely cosmetic, an easy fix like a loose or bent pin, or a genuine failure that requires replacing a part -- and it deliberately starts with the debugging guide's fixes rather than jumping straight to "this kit is broken."</p>
+<p>A worked example shows why that order matters: a returned gyroscope kit reads all zeros on every axis. Before writing the module off as dead, the mentor works through the debugging guide's first two fixes -- checking the power light, then reseating each jumper wire -- and discovers one wire had backed halfway out of its socket during transport. Reseating it fixes the kit completely; nothing was ever actually damaged.</p>
+<div class="admonition mascot-warning">
+<p class="admonition-title">A dead-looking reading doesn't always mean a dead kit</p>
+<p><img alt="Circuit warning" class="mascot-admonition-img" src="../../img/mascot/warning.png">
+Watch out for this: a flat-zero or no-response reading looks exactly the same whether a sensor has genuinely failed or a wire has simply worked loose. Always run the debugging guide's fixes before writing a kit off as damaged -- retiring a perfectly good kit over a loose wire wastes both money and a working part.</p>
+</div>
+<p>A damage-assessment note worth keeping with a kit's documentation sheet records just a few things:</p>
+<ul>
+<li>The exact symptom observed (for example, "reports zero on all three axes")</li>
+<li>Which debugging-guide fixes were tried, in order</li>
+<li>The final verdict: fine, fixed, or needs replacement</li>
+<li>The date, so a pattern across multiple returns is easy to spot later</li>
+</ul>
+<h2 id="deciding-what-happens-next-reuse-upgrade-or-retire">Deciding What Happens Next: Reuse, Upgrade, or Retire<a class="headerlink" href="#deciding-what-happens-next-reuse-upgrade-or-retire" title="Permanent link">¶</a></h2>
+<h3 id="kit-reuse-strategy">Kit Reuse Strategy<a class="headerlink" href="#kit-reuse-strategy" title="Permanent link">¶</a></h3>
+<p><strong>A kit reuse strategy</strong> is the default outcome for any kit that passes its return process and damage assessment cleanly: it goes straight back into its labeled storage bin, unchanged, ready for the next session -- the loop every kit in the bin is designed to complete over and over, and the cheapest possible outcome per the cost-comparison math earlier in this chapter.</p>
+<p>A worked example shows the strategy working exactly as intended: a microphone kit purchased two years ago has now completed thirty sessions, passing return and damage assessment cleanly every single time, and going back into its bin unchanged after each one. At a $12 purchase price divided across thirty sessions, that kit now costs the club $0.40 per session and shows no sign of needing anything more than continued reuse.</p>
+<h3 id="kit-upgrade-path">Kit Upgrade Path<a class="headerlink" href="#kit-upgrade-path" title="Permanent link">¶</a></h3>
+<p><strong>A kit upgrade path</strong> is a planned, deliberate revision to a kit's documentation sheet, code template, or even its hardware -- not because anything is broken, but because a better approach has become clear, such as a simpler starter program or a newer sensor module that solves a problem the original one had.</p>
+<p>A worked example shows an upgrade path triggered by confusion rather than failure: the gyroscope kit's original code template printed raw rotation values in radians, a unit most students had never encountered, and mentors noticed the same confused question every single session. A mentor rewrites the code template to convert and print degrees instead -- the hardware never changes, but the documentation sheet and code template both get replaced across every bin on the shelf, and the confusion stops.</p>
+<div class="admonition mascot-thinking">
+<p class="admonition-title">A kit's life is a loop, not a one-way trip</p>
+<p><img alt="Circuit thinking" class="mascot-admonition-img" src="../../img/mascot/thinking.png">
+Notice that reuse, upgrade, and even retirement all feed back into the same shelf rather than ending the story -- a kit goes out, comes back, gets checked, and either returns unchanged or comes back better. That's the same continuous-improvement habit this book has applied to sessions and events, now applied to hardware.</p>
+</div>
+<p>The diagram below traces one kit all the way through this entire cycle -- buying, prepping, documenting, circulating, and deciding what happens when it comes back -- so every piece introduced separately in this chapter can be seen as one connected path.</p>
+<h4 id="diagram-kit-lifecycle-workflow">Diagram: Kit Lifecycle Workflow<a class="headerlink" href="#diagram-kit-lifecycle-workflow" title="Permanent link">¶</a></h4>
+<iframe src="../../sims/kit-lifecycle-workflow/main.html" width="100%" height="600px" scrolling="no"></iframe>
+
+<details>
+<summary>Kit Lifecycle Workflow</summary>
+<p>Type: workflow
+<strong>sim-id:</strong> kit-lifecycle-workflow<br>
+<strong>Library:</strong> Mermaid<br>
+<strong>Status:</strong> Specified</p>
+<p>Purpose: Trace one kit through its entire lifecycle -- purchase, preparation, documentation, storage, circulation, and the reuse/upgrade/retire decision -- tying together every kit-management concept from this chapter into one connected path.</p>
+<p>Bloom Taxonomy: Analyze (L4)
+Bloom Taxonomy Verb: differentiate</p>
+<p>Learning objective: Given a kit's current lifecycle stage and its damage-assessment outcome, the learner differentiates whether the kit should be reused as-is, sent down an upgrade path, or retired.</p>
+<p>Steps (flowchart with decision diamonds):
+1. Start: "New Kit Type Needed" -- click reveals "A mentor identifies a gap in the shelf, such as no kit yet existing for a sensor a new lesson calls for."
+2. Process: "Select a Vendor" -- click reveals the Kit Vendor Selection definition above.
+3. Process: "Compare Total Cost" -- click reveals the Kit Cost Comparison definition above.
+4. Decision: "Order 10 or More?" -- click reveals the Kit Bulk Purchasing definition above; both the Yes and No branches continue to the next step.
+5. Process: "Unbox and Test" -- click reveals the Kit Unboxing Procedure definition above.
+6. Process: "Run Safety Checklist" -- click reveals the Kit Safety Checklist definition above.
+7. Process: "Write Documentation Sheet" -- click reveals the Kit Documentation Sheet definition above.
+7a. Process (branch of 7): "Draw Wiring Diagram" -- click reveals the Kit Wiring Diagram definition above.
+7b. Process (branch of 7): "Save Code Template" -- click reveals the Kit Code Template definition above.
+8. Process: "Store in Labeled Bin" -- click reveals the Kit Storage Bin definition above.
+9. Process: "Loan Out for a Session" -- click reveals the Kit Loaner Program definition above.
+10. Process: "In Use -- Stuck?" -- click reveals "If a kit stops behaving as expected while in use, a mentor consults its debugging guide before assuming damage."
+10a. Process (branch of 10): "Consult Debugging Guide" -- click reveals the Kit Debugging Guide definition above; loops back to step 10.
+11. Process: "Kit Returned" -- click reveals the Kit Return Process definition above.
+12. Decision: "Damage Assessment" -- click reveals the Kit Damage Assessment definition above; three branches follow.
+12a. Branch "No Damage Found" leads to "Reuse As-Is" -- click reveals the Kit Reuse Strategy definition above; loops back to step 8.
+12b. Branch "Fixable, but Outdated" leads to "Revise and Upgrade" -- click reveals the Kit Upgrade Path definition above; loops back to step 7.
+12c. Branch "Unrepairable" leads to End: "Retire and Salvage Parts" -- click reveals "A kit with unsafe or unrepairable damage is retired; any still-good parts, such as a working Pico or jumper wires, are salvaged into other kits' bins rather than thrown away."</p>
+<p>Interactivity requirement (satisfied): every node has a Mermaid <code>click</code> directive tied to an infobox showing its revealed text, matching the definition already given in this chapter's prose.</p>
+<p>Color coding: Blue for acquisition steps (vendor, cost, bulk order), amber for preparation steps (unboxing, safety, documentation), green for circulation steps (storage, loan, return), purple for the three decision diamonds, gray for the retire end state.</p>
+<p>Implementation: Mermaid flowchart (<code>graph TD</code>) rendered in main.html with <code>click NodeId call showInfo("NodeId")</code> directives for every node, opening a side-panel infobox; a "Reset View" button re-centers the diagram after any zoom or pan.</p>
+</details>
+<h2 id="kits-ready-for-clubs-that-want-to-go-further">Kits Ready for Clubs That Want to Go Further<a class="headerlink" href="#kits-ready-for-clubs-that-want-to-go-further" title="Permanent link">¶</a></h2>
+<p>Everything so far in this chapter manages kits a club already runs every week. Some clubs, once their basic kit rotation is running smoothly, are ready to add one more shelf: kits built around signal processing and wearable displays. A mentor doesn't need to understand the math behind either one to manage it -- only to recognize what it does and know which companion textbook covers the deeper material, since that material is intentionally out of scope for this book.</p>
+<h3 id="signal-processing-basics">Signal Processing Basics<a class="headerlink" href="#signal-processing-basics" title="Permanent link">¶</a></h3>
+<p><strong>Signal processing basics</strong> describes, at the level a club mentor actually needs, the general idea of taking a raw, changing signal -- most often sound picked up by a microphone -- and extracting useful information from it, such as loudness, pitch, or which frequencies are present, beyond what a plain microphone kit's single loudness number can show. What a mentor actually sees when one of these kits runs is a screen filling with moving bars or a shifting waveform in time with whatever sound the microphone picks up -- visually similar to, but more detailed than, the sound spectrum kit's display from Chapter 20. This book does not teach the mathematics behind that extraction; a mentor managing a signal-processing kit needs to recognize what it does, not derive how it does it.</p>
+<h3 id="real-time-audio-processing">Real Time Audio Processing<a class="headerlink" href="#real-time-audio-processing" title="Permanent link">¶</a></h3>
+<p><strong>Real-time audio processing</strong> means a signal-processing kit updates its display continuously, many times per second, as sound keeps changing -- rather than capturing a sound once and analyzing it afterward. The "real time" part is what makes the kit feel alive to a student: clap, and the display reacts within a fraction of a second, not after a noticeable pause.</p>
+<p>A club running one of these kits for the first time will notice the same threshold-and-react pattern from Chapter 20 reappears at a faster pace: instead of one number changing once a second, a whole row of bars updates dozens of times per second, fast enough that a student waving a hand near the microphone sees the display respond as they move, not after they stop.</p>
+<h3 id="fast-fourier-transform-basics">Fast Fourier Transform Basics<a class="headerlink" href="#fast-fourier-transform-basics" title="Permanent link">¶</a></h3>
+<p><strong>The Fast Fourier Transform</strong>, or FFT, is the specific mathematical technique most signal-processing kits use to turn a raw sound wave into the separate frequency bands a frequency spectrum display (Chapter 20) shows as bars. This book deliberately does not explain how the transform itself works -- that is the specialized territory of the companion Signal Processing on a $5 MicroController textbook, which has labs suitable for students as young as eight alongside genuinely advanced material for high-school and college readers.</p>
+<p>For a club mentor, "FFT" is simply the name behind the frequency-band display already familiar from Chapter 20's sound spectrum kit -- worth recognizing by name so a curious student's question gets an honest, brief answer rather than an uncomfortable dodge: it's the math that sorts sound into pitches, and there's a whole book about it for anyone who wants to go deeper.</p>
+<div class="admonition mascot-encourage">
+<p class="admonition-title">You don't need to understand the math to manage the kit</p>
+<p><img alt="Circuit encouraging" class="mascot-admonition-img" src="../../img/mascot/encouraging.png">
+If the name "Fast Fourier Transform" sounds intimidating, that's a completely normal reaction -- and it's also not a requirement for running this kit in your club. Knowing what it does and where to point an eager student is enough; the transform itself belongs to a different, more advanced textbook.</p>
+</div>
+<h3 id="smartwatch-display-kit">Smartwatch Display Kit<a class="headerlink" href="#smartwatch-display-kit" title="Permanent link">¶</a></h3>
+<p><strong>A smartwatch display kit</strong> pairs a small, low-power, wrist-wearable screen with a Pico and starter code, extending the display kit idea from Chapter 20 onto hardware built to be worn rather than set on a table. Where a standard display kit's OLED module assumes it will sit still on a desk or a robot chassis, a smartwatch display kit's screen and battery are sized and shaped for something that moves with a person all day.</p>
+<p>A worked example shows what a mentor actually sees when this kit runs: a student straps on the small screen, and a starter program shows the current time, updating once a minute -- the same "hello, club" starting point Chapter 20's display kit used, now worn on a wrist instead of clipped to a robot.</p>
+<h3 id="wearable-electronics-basics">Wearable Electronics Basics<a class="headerlink" href="#wearable-electronics-basics" title="Permanent link">¶</a></h3>
+<p><strong>Wearable electronics basics</strong> covers the handful of practical differences a mentor needs to know before letting a project leave the desk and go onto a person: power draw matters far more on battery-only wearables than on a Pico plugged into a wall, physical comfort and safe attachment matter in a way a stationary kit never has to consider, and a wearable's connections need to survive real movement rather than sitting still on a breadboard. The companion Clocks and Watches textbook covers an extensive set of wearable and smartwatch projects for clubs that want to go much further in this direction.</p>
+<p>The comparison below puts these two families of advanced kits side by side, for a mentor who wants a one-glance answer to "what does this kit actually do?"</p>
+<h4 id="diagram-kits-ready-to-go-further">Diagram: Kits Ready to Go Further<a class="headerlink" href="#diagram-kits-ready-to-go-further" title="Permanent link">¶</a></h4>
+<iframe src="../../sims/kits-ready-to-go-further/main.html" width="100%" height="550px" scrolling="no"></iframe>
+
+<details>
+<summary>Kits Ready to Go Further</summary>
+<p>Type: infographic-overlay (grid)
+<strong>sim-id:</strong> kits-ready-to-go-further<br>
+<strong>Library:</strong> Interactive Infographic Overlay (grid-diagram.js, annotation-free comparison poster + rectangular hover zones)<br>
+<strong>Status:</strong> Specified</p>
+<p>Purpose: Let a mentor compare a signal-processing kit and a smartwatch/wearable display kit side by side, so "what does this kit actually do" gets a one-glance answer without any signal-processing math.</p>
+<p>Bloom Taxonomy: Remember (L1)
+Bloom Taxonomy Verb: identify</p>
+<p>Learning objective: Given a signal-processing kit or a smartwatch display kit running, the learner identifies what it does and what a mentor would see, without explaining the underlying transform.</p>
+<p>Image style: Flat comparison poster, two vertical columns, each with a bold printed column header baked into the image ("Signal Processing Kit," "Smartwatch / Wearable Display Kit") since grid overlays hide chip labels by default</p>
+<p>Image dimensions: 1200x700 (landscape)</p>
+<p>Zones (2 columns, each with id, label, color, approximate x1/y1/x2/y2 percentage boundaries, one-line summary, and 3-5 bullet facts):
+1. <code>signal-processing-kit</code> -- color #4A90D9 -- boundaries approximately x1:3,y1:10,x2:48,y2:92 -- Summary: "Turns raw sound into a live, moving frequency display -- no math required to run it." Facts: builds on the microphone and sound spectrum kits from Chapter 20; updates its display many times per second (real-time audio processing); uses a technique called the Fast Fourier Transform (FFT) behind the scenes; the math itself is covered in the companion Signal Processing on a $5 MicroController textbook, not here
+2. <code>smartwatch-display-kit</code> -- color #F5A623 -- boundaries approximately x1:52,y1:10,x2:97,y2:92 -- Summary: "A display kit built to be worn, not set on a desk." Facts: extends the Chapter 20 display kit idea onto wrist-wearable hardware; battery power draw matters far more than on a stationary kit; connections must survive real movement, not just sit on a breadboard; the companion Clocks and Watches textbook covers an extensive set of wearable projects</p>
+<p>showLabels: false (column titles are printed in the generated image)</p>
+<p>Interactive features: Click or hover either column to highlight its hover zone and reveal its full fact list in a detail panel; explore mode only.</p>
+<p>Implementation: Interactive Infographic Overlay Guide (grid engine) -- <code>grid-diagram.js</code> + <code>grid-overlay.css</code> render the two rectangular hover zones over the generated poster image; <code>data.json</code> holds the 2 zones per the overlay-grid-data-json-schema.</p>
+</details>
+<h2 id="chapter-summary">Chapter Summary<a class="headerlink" href="#chapter-summary" title="Permanent link">¶</a></h2>
+<p>This chapter turned a shelf of kits into a managed inventory: comparing vendors and total cost before buying, unboxing and safety-checking a kit before it ever reaches a student, documenting it with a wiring diagram, code template, and debugging guide so a substitute mentor can run it cold, and storing, loaning, returning, and assessing it through a cycle that ends in reuse, a deliberate upgrade, or a clean retirement. It closed with a brief look at two more advanced kit families -- signal processing and wearable displays -- that a club can add once its everyday kit rotation runs smoothly, without needing to teach the math behind either one.</p>
+<div class="admonition mascot-celebration">
+<p class="admonition-title">You can now run a kit's entire lifecycle, not just its wiring</p>
+<p><img alt="Circuit celebrating" class="mascot-admonition-img" src="../../img/mascot/celebration.png">
+You just built a complete system for buying, documenting, storing, loaning, and retiring kits -- the exact kind of shared infrastructure that lets a club survive a change in leadership. That's sustainability, not just inventory.</p>
+</div>
 
 
 
@@ -1630,7 +2647,12 @@
 
 
 
+  
+  
 
+
+
+  
 
 
 
@@ -1645,7 +2667,7 @@
         
           <button type="button" class="md-top md-icon" data-md-component="top" hidden>
   
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"></path></svg>
   Back to top
 </button>
         
@@ -1655,13 +2677,13 @@
   
     
       
-      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+      <nav class="md-footer__inner md-grid" aria-label="Footer">
         
           
           <a href="../20-sensor-sound-iot-kits/" class="md-footer__link md-footer__link--prev" aria-label="Previous: 20. Sensor, Sound, and IoT Project Kits">
             <div class="md-footer__button md-icon">
               
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
             </div>
             <div class="md-footer__title">
               <span class="md-footer__direction">
@@ -1686,7 +2708,7 @@
             </div>
             <div class="md-footer__button md-icon">
               
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"></path></svg>
             </div>
           </a>
         
@@ -1698,7 +2720,7 @@
       <div class="md-copyright">
   
     <div class="md-copyright__highlight">
-      Copyright &copy; 2026 Dan McCreary. Licensed under <a href="license/">CC BY-NC-SA 4.0</a> for non-commercial use.
+      Copyright © 2026 Dan McCreary. Licensed under <a href="license/">CC BY-NC-SA 4.0</a> for non-commercial use.
     </div>
   
   
@@ -1719,6 +2741,10 @@
     
       <script src="../../assets/javascripts/bundle.83f73b43.min.js"></script>
       
+        <script src="../../js/extra.js"></script>
+      
     
-  </body>
-</html>
+  
+<script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(()=>{ lightbox.reload(); });
+</script></body></html>

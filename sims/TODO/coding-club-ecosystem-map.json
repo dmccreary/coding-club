@@ -1,0 +1,15 @@
+{
+  "sim_id": "coding-club-ecosystem-map",
+  "diagram_name": "Coding Club Ecosystem Map",
+  "chapter_number": 1,
+  "chapter_title": "What Is a Coding Club",
+  "chapter_dir": "01-what-is-a-coding-club",
+  "chapter_rel_dir": "chapters/01-what-is-a-coding-club",
+  "library": "vis-network",
+  "bloom_level": "Understand (L2)",
+  "bloom_verb": "differentiate",
+  "learning_objective": "Given a set of related program types, the learner distinguishes what makes a coding club distinct while recognizing legitimate overlap.",
+  "completion_status": "specified",
+  "extracted_date": "2026-09-01",
+  "specification": "Type: graph-model\n**sim-id:** coding-club-ecosystem-map<br/>\n**Library:** vis-network<br/>\n**Status:** Specified\n\nPurpose: Show how a coding club relates to five neighboring educational contexts, so a reader can place the term precisely instead of treating it as a synonym for \"STEM program.\"\n\nBloom Taxonomy: Understand (L2)\nBloom Taxonomy Verb: differentiate\n\nLearning objective: Given a set of related program types, the learner distinguishes what makes a coding club distinct while recognizing legitimate overlap.\n\nNode types:\n1. Center node -- \"Coding Club\" (amber circle, larger than the rest, matches Circuit's accent color #F5A623)\n2. Related-context nodes (six sky-blue circles, #4A90D9): \"Maker Space,\" \"STEM Education,\" \"Computer Science Education,\" \"Digital Literacy,\" \"After School Program,\" \"Extracurricular Learning\"\n\nEdge labels (each edge is a short phrase, not just a line):\n- Coding Club -- Maker Space: \"often shares tools with\"\n- Coding Club -- STEM Education: \"is one delivery model for\"\n- Coding Club -- Computer Science Education: \"teaches a subset of\"\n- Coding Club -- Digital Literacy: \"builds toward\"\n- Coding Club -- After School Program: \"is commonly scheduled as\"\n- Coding Club -- Extracurricular Learning: \"is a category of\"\n\nInteractive features:\n- Click any node to open a side panel with a one-sentence definition and one sentence on how it differs from a coding club specifically\n- Hovering an edge highlights it and enlarges its label\n- Click-drag to reposition nodes; scroll wheel to zoom; click empty canvas to deselect\n\nDefault state: Force-directed layout with \"Coding Club\" pinned at canvas center; all edges visible at load, no node pre-selected\n\nLayout: Force-directed (physics-based), radial tendency around the center node\n\nLegend: Node color key (amber = coding club, blue = related context) shown as a fixed corner box\n\nCanvas size: Responsive width, 500px height, minimum 320px width before controls stack vertically\n\nImplementation: vis-network with a JSON node/edge dataset; side panel is an absolutely-positioned div updated via vis-network's `selectNode` event listener"
+}

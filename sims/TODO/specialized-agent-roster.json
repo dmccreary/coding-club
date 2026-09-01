@@ -1,0 +1,15 @@
+{
+  "sim_id": "specialized-agent-roster",
+  "diagram_name": "Meet the Specialized Agent Roster",
+  "chapter_number": 33,
+  "chapter_title": "AI-Customized Curriculum and Rolling Out New Agents",
+  "chapter_dir": "33-ai-customized-curriculum-rollout",
+  "chapter_rel_dir": "chapters/33-ai-customized-curriculum-rollout",
+  "library": "vis-network",
+  "bloom_level": "Understand (L2)",
+  "bloom_verb": "classify",
+  "learning_objective": "Given a club task outside day-to-day operations, the learner classifies which of the five specialized agents is the right match for it.",
+  "completion_status": "specified",
+  "extracted_date": "2026-09-01",
+  "specification": "Type: graph-model\n**sim-id:** specialized-agent-roster<br/>\n**Library:** vis-network<br/>\n**Status:** Specified\n**Template:** https://github.com/dmccreary/ai-strategy-for-education/tree/main/docs/sims/ai-concept-hierarchy\n\nPurpose: Show the five specialized agents as a network around the idea of tasks beyond club operations, so a learner can click any agent type and see the task it handles and who reviews its output.\n\nBloom Taxonomy: Understand (L2)\nBloom Taxonomy Verb: classify\n\nLearning objective: Given a club task outside day-to-day operations, the learner classifies which of the five specialized agents is the right match for it.\n\nNode types:\n1. Center node \"Specialized Agents\" (gray hexagon) -- click reveals \"Tasks beyond registration, scheduling, and reminders -- less frequent, but still time-consuming without help.\"\n2. AI Assisted Grant Writing (blue circle) -- click reveals \"Drafts grant proposal sections from bullet-point facts. Reviewed by: the leader, for factual accuracy.\"\n3. AI Assisted Social Media (green circle) -- click reveals \"Drafts a platform-ready post and caption. Reviewed by: the leader, for un-consented student identification.\"\n4. AI Generated Website Content (amber circle) -- click reveals \"Drafts public web page copy. Reviewed by: the leader, for accuracy against the real walk-in experience.\"\n5. AI Assisted Translation (purple circle) -- click reveals \"Produces a first-pass translation of an existing document. Reviewed by: a fluent speaker, for meaning and tone.\"\n6. AI Voice Assistant Use (teal circle) -- click reveals \"Reads existing, already-approved text aloud or answers a simple spoken question. Reviewed by: nobody new -- it only reads what a person already approved.\"\n\nEdges: One edge from the center node to each of the five agent-type nodes, unlabeled.\n\nInteractive features:\n- Hover any node to preview its one-line job description\n- Click any node to highlight it and open a side-panel infobox with its full description and reviewer\n- Zoom with the mouse wheel, pan by dragging the background\n\nVisual styling: Center node larger and gray; five spoke nodes evenly sized, each a distinct accent color; uniform edge style\n\nLegend: Node color key matching the five agent types plus the center \"umbrella\" node\n\nImplementation: vis-network JavaScript library, hierarchical or force-directed hub layout, canvas size 800x450px."
+}

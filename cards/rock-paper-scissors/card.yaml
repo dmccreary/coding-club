@@ -1,0 +1,69 @@
+schema_version: 1
+card_id: rock-paper-scissors
+title: Rock, Paper, Scissors Showdown
+track: intermediate
+difficulty_color: blue
+chapter: 14-computational-thinking-scratch-python
+concept_ids:
+- 50
+- 52
+concept_labels:
+- Python Conditional
+- Python Variable
+concept_tag: Conditionals
+kit_required: null
+materials:
+- Computer with Python (online coding platform or offline coding environment)
+front:
+  icon: code
+  description: Write a Python program that lets you play Rock, Paper, Scissors against the computer.
+  steps:
+  - Ask the player to enter 1 for Rock, 2 for Paper, or 3 for Scissors.
+  - Have the computer randomly choose 1, 2, or 3 of its own.
+  - Print what the player chose and what the computer chose.
+  - 'Compare the two choices: Rock beats Scissors, Scissors beats Paper, Paper beats Rock.'
+  - Print whether the player won, lost, or tied.
+  stretch_goal: Let the player keep playing multiple rounds in a loop, and keep score across rounds.
+back:
+  hints:
+  - Python's random module can pick a random number for you -- look up random.randint().
+  - Use int() to convert the player's typed input into a number you can compare.
+  - Check for a tie first (both pick the same number) before checking who wins.
+  solution_type: code
+  solution_language: python
+  solution_steps:
+  - Import the random module.
+  - Ask for and store the player's choice as an integer.
+  - Generate the computer's choice with random.randint(1, 3).
+  - Print both choices by name so the player can see what happened.
+  - Use if/elif/else to check for a tie, then check the three ways the player can win, otherwise the computer
+    wins.
+  solution_code: "import random\n\nCHOICES = {1: \"Rock\", 2: \"Paper\", 3: \"Scissors\"}\n\nplayer =\
+    \ int(input(\"Choose 1-Rock, 2-Paper, or 3-Scissors: \"))\ncomputer = random.randint(1, 3)\n\nprint(f\"\
+    You chose {CHOICES[player]}. Computer chose {CHOICES[computer]}.\")\n\nif player == computer:\n  \
+    \  print(\"It's a tie!\")\nelif (\n    (player == 1 and computer == 3) or\n    (player == 2 and computer\
+    \ == 1) or\n    (player == 3 and computer == 2)\n):\n    print(\"You win!\")\nelse:\n    print(\"\
+    Computer wins!\")\n"
+  solution_circuit_description: null
+  see_also: null
+verification:
+  status: passed
+  method: python_sandbox
+  last_run: '2026-08-31T20:58:33.677003+00:00'
+  notes: executed cleanly for 3 sample input(s)
+  sample_inputs:
+  - '1'
+  - '2'
+  - '3'
+  expected_output_patterns:
+  - You chose (Rock|Paper|Scissors)\. Computer chose (Rock|Paper|Scissors)\.
+  - (It's a tie!|You win!|Computer wins!)
+status: rendered
+reading_level_target: 10
+print:
+  copies_recommended: 2
+  theme: default
+author: dan.mccreary@gmail.com
+generated_by: claude skill challenge-card
+date_created: '2026-08-31'
+date_modified: '2026-08-31'
