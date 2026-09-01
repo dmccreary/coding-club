@@ -82,6 +82,8 @@ nav:
       - Graph Quality Analysis: learning-graph/quality-metrics.md
       - Taxonomy Distribution: learning-graph/taxonomy-distribution.md
       - Mascot Test Page: learning-graph/mascot-test.md
+      - Book Metrics: learning-graph/book-metrics.md
+      - Chapter Metrics: learning-graph/chapter-metrics.md
 
   - MicroSims:
       - List of MicroSims: sims/index.md

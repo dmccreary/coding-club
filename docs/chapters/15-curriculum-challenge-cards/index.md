@@ -183,6 +183,18 @@ A **code-sharing platform** -- the Scratch community site from Chapter 14, or a 
 
 Not every activity needs a computer at all. An **unplugged coding activity** teaches a computational thinking concept -- sequencing, loops, conditionals -- through a physical, screen-free activity, such as giving a "robot" (another student) step-by-step verbal instructions to walk a path, and is often the very first activity a beginner-track student encounters. All of this rests on **coding vocabulary building**: consistently using the same precise terms -- loop, variable, function, debug -- from the very first unplugged activity onward, so that by the time a student reaches Python syntax, the words themselves are already familiar even if the punctuation is new.
 
+## Challenge Card AI Agent Skill
+
+Creating and maintaining Challenge Cards used to be a slow and time-consuming process.
+AI agent skills make this process much easier.  The skill allows you to simply describe
+what you want a challenge card to do and the AI agent will do the rest of the work and generate an easy-to-print card.
+
+Here are some examples:
+
+!!! prompt
+    Use the /challenge-card skill and create a new beginning skill for making a DC motor spin.
+    
+
 ## Chapter Summary
 
 A project-based curriculum, sequenced through beginner, intermediate, and advanced tracks with a self-paced path within each, gives every student a place to start and a clear direction forward. Peer code review, pair programming, code-along sessions, and live coding demonstrations turn learning into a shared, social practice. Well-designed, well-printed challenge cards make every session's goal concrete, while a learning map, badges, and a growing portfolio make a student's progress visible over time -- built on a foundation of the right tools and consistent vocabulary from the very first unplugged activity.

@@ -138,6 +138,22 @@ At some point, usually once a student has built several confident Scratch projec
 
 **Turtle graphics** is often the first Python project clubs use, because it makes text-based code visual again right when a student needs that reassurance most -- a small on-screen turtle that draws a line as it moves, controlled entirely by typed commands like `forward(100)` and `right(90)`. A **turtle graphics challenge** -- "draw a five-pointed star," "draw a spiral" -- gives students a concrete, visually verifiable goal, so they know immediately whether their code worked without needing a mentor to check line by line.
 
+![Turtle Graphics](./turtle-graphics.png)
+<!-- TODO: Turn this into an infographic overlay MicroSim with hover/click regions
+for the following regions:
+
+1. Line numbers in the left column
+2. Color syntax highlighting editor with pre-loaded program
+3. Copy icon in the upper right of the editor (not working in this image yet)
+4. Run button will execute the program
+5. Reset button will reload the original code
+6. Input field for allowing text input
+6. Turtle graphics drawing area
+
+--->
+
+[Sample Turtle Graphics Program](https://dmccreary.github.io/learning-python/python-labs/02-simple-square/#try-it-now)
+
 ## Designing the Curriculum
 
 Pulling all of this into an actual weekly plan is **curriculum design**: deciding which topics get taught, in what order, across a term or year. Good **lesson sequencing** respects the dependencies this chapter has already described -- keyboarding before Scratch, Scratch confidence before the text transition, variables before functions -- rather than jumping to an exciting topic before its prerequisites are solid. A **skill progression ladder** makes that sequencing visible to students themselves: a simple posted chart showing the path from "typing practice" through "first Scratch project" to "first Python turtle drawing," so a student can see roughly where they are and what's next.
