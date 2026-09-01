@@ -99,8 +99,8 @@ nav:
 theme:
   name: material
   # Once a logo is generated, point this at docs/img/logo.png or a mascot pose:
-  # logo: img/logo.png
-  # favicon: img/favicon.ico
+  logo: img/mascot/welcome.png
+  favicon: img/favicon.ico
   palette:
     primary: 'blue'
     accent: 'amber'
@@ -123,21 +123,21 @@ theme:
 plugins:
   - search
   # Uncomment after running `pip install "mkdocs-material[imaging]"`:
-  # - social
+  - social
   # Uncomment after running `pip install mkdocs-glightbox`:
-  # - glightbox:
-  #     touchNavigation: true
-  #     loop: false
-  #     effect: zoom
-  #     slide_effect: slide
-  #     width: 100%
-  #     height: auto
-  #     zoomable: true
-  #     draggable: true
-  #     auto_caption: false
-  #     caption_position: bottom
-  #     skip_classes:
-  #       - mascot-admonition-img   # keep mascot poses out of the lightbox gallery
+  - glightbox:
+      touchNavigation: true
+      loop: false
+      effect: zoom
+      slide_effect: slide
+      width: 100%
+      height: auto
+      zoomable: true
+      draggable: true
+      auto_caption: false
+      caption_position: bottom
+      skip_classes:
+        - mascot-admonition-img   # keep mascot poses out of the lightbox gallery
 
 # Markdown extensions
 markdown_extensions:
@@ -165,8 +165,8 @@ extra_css:
   - css/mascot.css
 
 # Custom JavaScript — uncomment once a corresponding file exists
-# extra_javascript:
-#   - js/extra.js
+extra_javascript:
+   - js/extra.js
 
 # Exclude prompt scratch files and TODOs from build/search/sitemap
 exclude_docs: |
@@ -187,7 +187,7 @@ extra:
 
   # MicroSim build-status indicators shown next to nav entries.
   # The status value is set per-page in the index.md frontmatter:
-  #   status: scaffold | built | approved
+  status: scaffold | built | approved
   # Colors are defined as CSS custom properties in docs/css/extra.css.
   # Note: `theme.icon.status` is a Material Insiders feature and is silently
   # ignored on community Material. Do not add it — the CSS-variable approach
