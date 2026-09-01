@@ -1,0 +1,23 @@
+{
+  "title": "Kit Lifecycle Workflow",
+  "height": 1042,
+  "library": "Mermaid",
+  "bloom": "Analyze (L4)",
+  "verb": "differentiate",
+  "description": "Follow one kit from a gap on the shelf through purchase, prep, circulation, and the three-way decision that decides its fate.",
+  "concepts": [
+    "Kit Vendor Selection",
+    "Kit Documentation Sheet",
+    "Kit Storage Bin",
+    "Kit Loaner Program",
+    "Kit Damage Assessment",
+    "Kit Upgrade Path"
+  ],
+  "interaction": "Hover-to-preview and click-to-pin lifecycle map with two decision points and three loops back into circulation",
+  "assessment": "Give a returned kit with a bent but reseatable pin and ask which branch it takes and where it rejoins the loop.",
+  "audience": "Club leaders and mentors managing a kit shelf",
+  "about": "Every term in this chapter is a stage in one loop, and this diagram is that loop\nwith all of them in place at once.\n\nThe shape worth noticing is that most of it is a **cycle**, not a line. A kit that\ncomes back undamaged goes straight to the storage bin and round again. A kit that\nis fixable but dated does not go back to the bin -- it goes back to the\n*documentation* step, because an upgrade means the wiring diagram and code\ntemplate have to be redrawn before the kit is trustworthy again.\n\nOnly the third branch exits the loop. Retiring a kit is not throwing it away: a\nworking Pico and a bag of jumper wires are salvaged into other bins, which is why\nthe terminal node says \"and salvage parts.\"\n\nThe other loop is smaller and easy to miss. **In Use → Consult Debugging Guide →\nIn Use** is the club's answer to \"it stopped working.\" The guide gets consulted\nbefore anyone concludes the kit is damaged, and that ordering is what keeps\nperfectly good kits out of the repair pile.",
+  "howto": "- **Hover a stage** to preview it; **click** to pin the full definition.\n- The colours group the lifecycle: blue for acquisition, amber for preparation,\n  green for circulation, purple for the two decision points.\n- Follow the arrows back from **Reuse As-Is** and **Revise and Upgrade** to see\n  where each rejoins the loop -- they do not rejoin at the same place.",
+  "lesson": "**Bloom level:** Analyze (L4) -- *differentiate*\n\n**Learning objective:** Given a kit's current lifecycle stage and its\ndamage-assessment outcome, the learner differentiates whether the kit should be\nreused as-is, sent down an upgrade path, or retired.\n\n**Before the sim (5 min).** Put a returned kit on the table with one bent pin and\nask the group what to do with it. Answers will range from \"bin it\" to \"it's\nfine.\" Both are decisions made without a process.\n\n**With the sim (15 min).** Trace the happy path first, then focus on the damage\nassessment diamond. For each of its three branches ask two questions: what\ncondition sends a kit down it, and where does the kit end up? The last question\nis the one that separates the reuse and upgrade branches.\n\n**After the sim (15 min).** Take three real kits off the shelf and walk each\nthrough the assessment. Record the outcome and the reasoning on each kit's\ndocumentation sheet.\n\n**Check for understanding.** Ask: \"A kit works perfectly but its sensor has been\ndiscontinued and the replacement has a different pin layout. Which branch?\"\nUpgrade, not retire -- and it must go back through documentation, because the\nwiring diagram is now wrong.",
+  "refs": "- [Chapter 21: Kit Inventory and Signal Processing](../../chapters/21-kit-inventory-signal-processing/index.md) -- the chapter this MicroSim supports.\n- [Device Lifecycle Workflow](../device-lifecycle-workflow/index.md) -- the same lifecycle thinking applied to laptops.\n- [Product lifecycle](https://en.wikipedia.org/wiki/Product_lifecycle) -- the general framing this borrows.\n- [Inventory management](https://en.wikipedia.org/wiki/Inventory_management) -- tracking what you own and where it is.\n- [Preventive maintenance](https://en.wikipedia.org/wiki/Preventive_maintenance) -- why the return process quick-tests before restocking."
+}

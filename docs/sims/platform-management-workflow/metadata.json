@@ -1,6 +1,6 @@
 {
   "title": "Platform Management Workflow",
-  "description": "Given a newly purchased laptop's platform, the learner differentiates the configuration and ongoing management path it will follow among Chromebook, Windows, and macOS management.",
+  "description": "See where a new laptop's operating system sends it, and what managing each of the three platforms actually involves.",
   "creator": "Coding Club",
   "author": "Dan McCreary",
   "date": "2026-09-01",
@@ -15,9 +15,28 @@
   "library": "Mermaid",
   "bloomLevel": "Analyze (L4)",
   "bloomVerb": "differentiate",
-  "completion_status": "scaffold",
+  "completion_status": "built",
+  "canvasHeight": 680,
   "chapter_number": 22,
   "chapter_title": "Purchasing and Configuring Club Devices",
   "chapter_dir": "22-purchasing-configuring-devices",
-  "chapter_rel_dir": "chapters/22-purchasing-configuring-devices"
+  "chapter_rel_dir": "chapters/22-purchasing-configuring-devices",
+  "educational": {
+    "gradeLevel": "Middle School, High School, Adult",
+    "audience": "Club leaders configuring a mixed laptop fleet",
+    "duration": "10-15 minutes",
+    "concepts": [
+      "Laptop Configuration",
+      "Chromebook Management",
+      "Windows Device Management",
+      "macOS Device Management"
+    ]
+  },
+  "pedagogical": {
+    "bloomLevel": "Analyze (L4)",
+    "bloomVerb": "differentiate",
+    "learningObjective": "Given a newly purchased laptop's platform, the learner differentiates the configuration and ongoing management path it will follow among Chromebook, Windows, and macOS management.",
+    "interactionPattern": "Hover-to-preview and click-to-pin branch diagram with three platform paths converging on one end state",
+    "assessment": "Ask which platform path a donated MacBook takes and what console the club would need."
+  }
 }

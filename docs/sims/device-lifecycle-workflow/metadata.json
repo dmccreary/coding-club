@@ -1,6 +1,6 @@
 {
   "title": "Device Lifecycle Workflow",
-  "description": "Given a returned laptop's condition, the learner differentiates whether it should be cleaned and returned to circulation, sent through basic repair, or flagged for outside repair.",
+  "description": "Follow one club laptop from imaging through circulation to the three-way condition check that decides what happens next.",
   "creator": "Coding Club",
   "author": "Dan McCreary",
   "date": "2026-09-01",
@@ -15,9 +15,29 @@
   "library": "Mermaid",
   "bloomLevel": "Analyze (L4)",
   "bloomVerb": "differentiate",
-  "completion_status": "scaffold",
+  "completion_status": "built",
+  "canvasHeight": 900,
   "chapter_number": 22,
   "chapter_title": "Purchasing and Configuring Club Devices",
   "chapter_dir": "22-purchasing-configuring-devices",
-  "chapter_rel_dir": "chapters/22-purchasing-configuring-devices"
+  "chapter_rel_dir": "chapters/22-purchasing-configuring-devices",
+  "educational": {
+    "gradeLevel": "Middle School, High School, Adult",
+    "audience": "Club leaders managing a laptop fleet",
+    "duration": "10-15 minutes",
+    "concepts": [
+      "Device Imaging",
+      "Device Labeling",
+      "Inventory Tracking",
+      "Loaner Agreement",
+      "Device Repair Boundary"
+    ]
+  },
+  "pedagogical": {
+    "bloomLevel": "Analyze (L4)",
+    "bloomVerb": "differentiate",
+    "learningObjective": "Given a returned laptop's condition, the learner differentiates whether it should be cleaned and returned to circulation, sent through basic repair, or flagged for outside repair.",
+    "interactionPattern": "Hover-to-preview and click-to-pin lifecycle map with a loan gate and a three-branch condition check",
+    "assessment": "Give a returned laptop with a sticky key and ask which branch it takes and where it rejoins."
+  }
 }

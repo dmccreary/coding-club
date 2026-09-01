@@ -1,0 +1,126 @@
+{
+  "title": "Platform Management Workflow",
+  "height": 680,
+  "direction": "TD",
+  "nodes": [
+    {
+      "id": "Arrives",
+      "shape": "round",
+      "cls": "retire",
+      "label": "New Laptop<br/>Arrives",
+      "title": "New Laptop Arrives",
+      "info": "A laptop as it arrives from a vendor, before any club-specific setup has been applied."
+    },
+    {
+      "id": "Config",
+      "shape": "box",
+      "cls": "prep",
+      "label": "Laptop<br/>Configuration",
+      "title": "Laptop Configuration",
+      "info": "The shared setup every club machine gets regardless of platform: accounts, network, the tools the curriculum needs, and the restrictions the club's policy requires."
+    },
+    {
+      "id": "Platform",
+      "shape": "diamond",
+      "cls": "wait",
+      "label": "Which<br/>Platform?",
+      "title": "Which Platform?",
+      "info": "The laptop's operating system determines which management path and console it will use for the rest of its service life."
+    },
+    {
+      "id": "Chromebook",
+      "shape": "box",
+      "cls": "doc",
+      "label": "Chromebook<br/>Management",
+      "title": "Chromebook Management",
+      "info": "Managed through the Google Admin console: enrolment ties the device to the club's domain, and policy is pushed centrally. The lowest-effort path, which is why so many clubs standardise on it."
+    },
+    {
+      "id": "Windows",
+      "shape": "box",
+      "cls": "resolve",
+      "label": "Windows Device<br/>Management",
+      "title": "Windows Device Management",
+      "info": "Managed through Windows tooling such as Intune or local group policy. More configurable than a Chromebook and correspondingly more work to keep consistent across a fleet."
+    },
+    {
+      "id": "MacOS",
+      "shape": "box",
+      "cls": "remediate",
+      "label": "macOS Device<br/>Management",
+      "title": "macOS Device Management",
+      "info": "Managed through Apple Business Manager and an MDM profile. Common in clubs that inherited donated Macs rather than choosing them."
+    },
+    {
+      "id": "Ready",
+      "shape": "round",
+      "cls": "retire",
+      "label": "Ready for<br/>Student Login",
+      "title": "Ready for Student Login",
+      "info": "Once platform-specific management is in place, the laptop is ready to receive the student account setup covered next in this chapter."
+    }
+  ],
+  "edges": [
+    {
+      "from": "Arrives",
+      "to": "Config"
+    },
+    {
+      "from": "Config",
+      "to": "Platform"
+    },
+    {
+      "from": "Platform",
+      "to": "Chromebook",
+      "label": "Chromebook"
+    },
+    {
+      "from": "Platform",
+      "to": "Windows",
+      "label": "Windows"
+    },
+    {
+      "from": "Platform",
+      "to": "MacOS",
+      "label": "macOS"
+    },
+    {
+      "from": "Chromebook",
+      "to": "Ready"
+    },
+    {
+      "from": "Windows",
+      "to": "Ready"
+    },
+    {
+      "from": "MacOS",
+      "to": "Ready"
+    }
+  ],
+  "legend": [
+    {
+      "cls": "retire",
+      "text": "Start and end"
+    },
+    {
+      "cls": "prep",
+      "text": "Shared configuration"
+    },
+    {
+      "cls": "wait",
+      "text": "Platform decision"
+    },
+    {
+      "cls": "doc",
+      "text": "Chromebook path"
+    },
+    {
+      "cls": "resolve",
+      "text": "Windows path"
+    },
+    {
+      "cls": "remediate",
+      "text": "macOS path"
+    }
+  ]
+}

@@ -1,18 +1,80 @@
 ---
 title: Kit Lifecycle Workflow
-description: Given a kit's current lifecycle stage and its damage-assessment outcome, the learner differentiates whether the kit should be reused as-is, sent down an upgrade path, or retired.
-status: scaffold
+description: Follow one kit from a gap on the shelf through purchase, prep, circulation, and the three-way decision that decides its fate.
+image: sims/kit-lifecycle-workflow/kit-lifecycle-workflow.png
+status: built
 library: Mermaid
 bloom_level: Analyze (L4)
 ---
 
 # Kit Lifecycle Workflow
 
+<iframe src="main.html" width="100%" height="1042" scrolling="no"></iframe>
 
+[Run the Kit Lifecycle Workflow MicroSim fullscreen](main.html){ .md-button .md-button--primary }
 
-<iframe src="main.html" width="100%" height="600"></iframe>
+## About This MicroSim
 
-[Run MicroSim in Fullscreen](main.html){ .md-button .md-button--primary }
+Every term in this chapter is a stage in one loop, and this diagram is that loop
+with all of them in place at once.
+
+The shape worth noticing is that most of it is a **cycle**, not a line. A kit that
+comes back undamaged goes straight to the storage bin and round again. A kit that
+is fixable but dated does not go back to the bin -- it goes back to the
+*documentation* step, because an upgrade means the wiring diagram and code
+template have to be redrawn before the kit is trustworthy again.
+
+Only the third branch exits the loop. Retiring a kit is not throwing it away: a
+working Pico and a bag of jumper wires are salvaged into other bins, which is why
+the terminal node says "and salvage parts."
+
+The other loop is smaller and easy to miss. **In Use → Consult Debugging Guide →
+In Use** is the club's answer to "it stopped working." The guide gets consulted
+before anyone concludes the kit is damaged, and that ordering is what keeps
+perfectly good kits out of the repair pile.
+
+## How to Use
+
+- **Hover a stage** to preview it; **click** to pin the full definition.
+- The colours group the lifecycle: blue for acquisition, amber for preparation,
+  green for circulation, purple for the two decision points.
+- Follow the arrows back from **Reuse As-Is** and **Revise and Upgrade** to see
+  where each rejoins the loop -- they do not rejoin at the same place.
+
+## Lesson Plan
+
+**Bloom level:** Analyze (L4) -- *differentiate*
+
+**Learning objective:** Given a kit's current lifecycle stage and its
+damage-assessment outcome, the learner differentiates whether the kit should be
+reused as-is, sent down an upgrade path, or retired.
+
+**Before the sim (5 min).** Put a returned kit on the table with one bent pin and
+ask the group what to do with it. Answers will range from "bin it" to "it's
+fine." Both are decisions made without a process.
+
+**With the sim (15 min).** Trace the happy path first, then focus on the damage
+assessment diamond. For each of its three branches ask two questions: what
+condition sends a kit down it, and where does the kit end up? The last question
+is the one that separates the reuse and upgrade branches.
+
+**After the sim (15 min).** Take three real kits off the shelf and walk each
+through the assessment. Record the outcome and the reasoning on each kit's
+documentation sheet.
+
+**Check for understanding.** Ask: "A kit works perfectly but its sensor has been
+discontinued and the replacement has a different pin layout. Which branch?"
+Upgrade, not retire -- and it must go back through documentation, because the
+wiring diagram is now wrong.
+
+## Embedding This MicroSim
+
+Paste this into any page of the book, adjusting the relative path to
+`docs/sims/` for the page's depth:
+
+```html
+<iframe src="../../sims/kit-lifecycle-workflow/main.html" width="100%" height="1042" scrolling="no"></iframe>
+```
 
 ## Specification
 
@@ -59,6 +121,10 @@ Color coding: Blue for acquisition steps (vendor, cost, bulk order), amber for p
 Implementation: Mermaid flowchart (`graph TD`) rendered in main.html with `click NodeId call showInfo("NodeId")` directives for every node, opening a side-panel infobox; a "Reset View" button re-centers the diagram after any zoom or pan.
 ```
 
-## Related Resources
+## References
 
-- [Chapter 21: Managing Your Kit Inventory and Signal Processing Kits](../../chapters/21-kit-inventory-signal-processing/index.md)
+- [Chapter 21: Kit Inventory and Signal Processing](../../chapters/21-kit-inventory-signal-processing/index.md) -- the chapter this MicroSim supports.
+- [Device Lifecycle Workflow](../device-lifecycle-workflow/index.md) -- the same lifecycle thinking applied to laptops.
+- [Product lifecycle](https://en.wikipedia.org/wiki/Product_lifecycle) -- the general framing this borrows.
+- [Inventory management](https://en.wikipedia.org/wiki/Inventory_management) -- tracking what you own and where it is.
+- [Preventive maintenance](https://en.wikipedia.org/wiki/Preventive_maintenance) -- why the return process quick-tests before restocking.

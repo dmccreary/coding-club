@@ -166,7 +166,7 @@ A worked example shows why the distinction matters: a club receives a single don
 
 Now that a new laptop's configuration step and each platform's ongoing management approach have been introduced separately, the diagram below traces one laptop from the moment it arrives through whichever management path matches its platform.
 
-<iframe src="../../sims/platform-management-workflow/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../sims/platform-management-workflow/main.html" width="100%" height="682px" scrolling="no"></iframe>
 
 #### Diagram: Platform Management Workflow
 
@@ -294,7 +294,7 @@ A worked example shows the routine catching a problem before it becomes a repair
 
 Now that a laptop's imaging, labeling, storage, loaning, return, repair, and cleaning have each been introduced, the diagram below traces one laptop through this entire physical-management cycle in order.
 
-<iframe src="../../sims/device-lifecycle-workflow/main.html" width="100%" height="600px" scrolling="no"></iframe>
+<iframe src="../../sims/device-lifecycle-workflow/main.html" width="100%" height="902px" scrolling="no"></iframe>
 
 #### Diagram: Device Lifecycle Workflow
 

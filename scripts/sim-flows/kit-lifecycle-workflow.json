@@ -1,0 +1,271 @@
+{
+  "title": "Kit Lifecycle Workflow",
+  "height": 1040,
+  "direction": "TD",
+  "nodes": [
+    {
+      "id": "NeedKit",
+      "shape": "round",
+      "cls": "retire",
+      "label": "New Kit Type<br/>Needed",
+      "title": "New Kit Type Needed",
+      "info": "A mentor identifies a gap in the shelf, such as no kit yet existing for a sensor a new lesson calls for."
+    },
+    {
+      "id": "Vendor",
+      "shape": "box",
+      "cls": "doc",
+      "label": "Select a Vendor",
+      "title": "Kit Vendor Selection",
+      "info": "Comparing suppliers before ordering, weighing unit price against shipping time, part-quality consistency between orders, and how closely the vendor's actual product matches the pin layout the kit's documentation assumes."
+    },
+    {
+      "id": "Cost",
+      "shape": "box",
+      "cls": "doc",
+      "label": "Compare Total Cost",
+      "title": "Kit Cost Comparison",
+      "info": "Looking past the sticker price to cost per session actually delivered: purchase price plus shipping and one-time tools, divided by how many working sessions the kit survives."
+    },
+    {
+      "id": "Bulk",
+      "shape": "diamond",
+      "cls": "wait",
+      "label": "Order 10<br/>or More?",
+      "title": "Kit Bulk Purchasing",
+      "info": "Ordering several identical kits at once unlocks a lower per-unit price and, just as valuable, guarantees every unit shares the same hardware revision. Either answer continues to unboxing."
+    },
+    {
+      "id": "Unbox",
+      "shape": "box",
+      "cls": "prep",
+      "label": "Unbox and Test",
+      "title": "Kit Unboxing Procedure",
+      "info": "The one-time ritual before a kit reaches a student: confirm every part on the packing slip is in the box, power on and test the core sensor or output with the code template, and assign the kit its identifier."
+    },
+    {
+      "id": "Safety",
+      "shape": "box",
+      "cls": "prep",
+      "label": "Run Safety<br/>Checklist",
+      "title": "Kit Safety Checklist",
+      "info": "A short printed list of electrical checks -- no exposed conductor touching another wire, no reversed polarity, every connector seated snugly -- run during unboxing and again after any repair."
+    },
+    {
+      "id": "DocSheet",
+      "shape": "box",
+      "cls": "prep",
+      "label": "Write Documentation<br/>Sheet",
+      "title": "Kit Documentation Sheet",
+      "info": "The single page filed with each kit that gathers everything a mentor needs to run its station without the person who built it: difficulty rating, wiring diagram, code template, and debugging guide."
+    },
+    {
+      "id": "Wiring",
+      "shape": "box",
+      "cls": "prep",
+      "label": "Draw Wiring<br/>Diagram",
+      "title": "Kit Wiring Diagram",
+      "info": "A labelled diagram showing exactly which physical pin -- named by the label printed on the module, such as SDA, SCL, VCC, or GND -- connects to which Pico pin, drawn for the exact board revision in the bin."
+    },
+    {
+      "id": "CodeTpl",
+      "shape": "box",
+      "cls": "prep",
+      "label": "Save Code<br/>Template",
+      "title": "Kit Code Template",
+      "info": "A short already-working starter program, typically five to fifteen lines, that reads the core sensor or drives the core output and prints a result. Meant to be run exactly as written before any student customises it."
+    },
+    {
+      "id": "Store",
+      "shape": "box",
+      "cls": "resolve",
+      "label": "Store in<br/>Labeled Bin",
+      "title": "Kit Storage Bin",
+      "info": "A dedicated labelled container, one per kit type, holding the kit and its documentation sheet together between sessions, labelled consistently across the shelf so any kit is identifiable at a glance."
+    },
+    {
+      "id": "Loan",
+      "shape": "box",
+      "cls": "resolve",
+      "label": "Loan Out for<br/>a Session",
+      "title": "Kit Loaner Program",
+      "info": "A kit leaves its bin for a defined period, with the club tracking which kit is out, who has it, and when it is due back -- the same accountability a library applies to a borrowed book."
+    },
+    {
+      "id": "InUse",
+      "shape": "box",
+      "cls": "resolve",
+      "label": "In Use -<br/>Stuck?",
+      "title": "In Use - Stuck?",
+      "info": "If a kit stops behaving as expected while in use, a mentor consults its debugging guide before assuming damage."
+    },
+    {
+      "id": "Debug",
+      "shape": "box",
+      "cls": "resolve",
+      "label": "Consult Debugging<br/>Guide",
+      "title": "Kit Debugging Guide",
+      "info": "A short troubleshooting table attached to the documentation sheet, pairing a symptom with its most likely fix -- 'no numbers appear' paired with 'reseat the data pins' -- so a stuck mentor has a first place to look."
+    },
+    {
+      "id": "Returned",
+      "shape": "box",
+      "cls": "resolve",
+      "label": "Kit Returned",
+      "title": "Kit Return Process",
+      "info": "Before a kit re-enters circulation its parts are counted against the documentation sheet's part list and its core function is quick-tested with the code template."
+    },
+    {
+      "id": "Damage",
+      "shape": "diamond",
+      "cls": "wait",
+      "label": "Damage<br/>Assessment",
+      "title": "Kit Damage Assessment",
+      "info": "The judgement a mentor makes about a returned kit: purely cosmetic, an easy fix like a bent pin, or a genuine failure needing a replacement part. It starts with the debugging guide's fixes rather than jumping to replacement."
+    },
+    {
+      "id": "Reuse",
+      "shape": "box",
+      "cls": "resolve",
+      "label": "Reuse As-Is",
+      "title": "Kit Reuse Strategy",
+      "info": "The default outcome for any kit that passes return and damage assessment cleanly: straight back into its labelled bin, unchanged, ready for the next session."
+    },
+    {
+      "id": "Upgrade",
+      "shape": "box",
+      "cls": "prep",
+      "label": "Revise and<br/>Upgrade",
+      "title": "Kit Upgrade Path",
+      "info": "A deliberate revision to the documentation sheet, code template, or hardware -- not because anything is broken, but because a better approach has become clear. It sends the kit back through documentation."
+    },
+    {
+      "id": "Retire",
+      "shape": "round",
+      "cls": "retire",
+      "label": "Retire and<br/>Salvage Parts",
+      "title": "Retire and Salvage Parts",
+      "info": "A kit with unsafe or unrepairable damage is retired. Still-good parts, such as a working Pico or jumper wires, are salvaged into other kits' bins rather than thrown away."
+    }
+  ],
+  "edges": [
+    {
+      "from": "NeedKit",
+      "to": "Vendor"
+    },
+    {
+      "from": "Vendor",
+      "to": "Cost"
+    },
+    {
+      "from": "Cost",
+      "to": "Bulk"
+    },
+    {
+      "from": "Bulk",
+      "to": "Unbox",
+      "label": "Yes"
+    },
+    {
+      "from": "Bulk",
+      "to": "Unbox",
+      "label": "No"
+    },
+    {
+      "from": "Unbox",
+      "to": "Safety"
+    },
+    {
+      "from": "Safety",
+      "to": "DocSheet"
+    },
+    {
+      "from": "DocSheet",
+      "to": "Wiring"
+    },
+    {
+      "from": "DocSheet",
+      "to": "CodeTpl"
+    },
+    {
+      "from": "Wiring",
+      "to": "Store"
+    },
+    {
+      "from": "CodeTpl",
+      "to": "Store"
+    },
+    {
+      "from": "Store",
+      "to": "Loan"
+    },
+    {
+      "from": "Loan",
+      "to": "InUse"
+    },
+    {
+      "from": "InUse",
+      "to": "Debug",
+      "label": "stuck"
+    },
+    {
+      "from": "Debug",
+      "to": "InUse",
+      "label": "retry"
+    },
+    {
+      "from": "InUse",
+      "to": "Returned",
+      "label": "session ends"
+    },
+    {
+      "from": "Returned",
+      "to": "Damage"
+    },
+    {
+      "from": "Damage",
+      "to": "Reuse",
+      "label": "no damage"
+    },
+    {
+      "from": "Damage",
+      "to": "Upgrade",
+      "label": "fixable but outdated"
+    },
+    {
+      "from": "Damage",
+      "to": "Retire",
+      "label": "unrepairable"
+    },
+    {
+      "from": "Reuse",
+      "to": "Store"
+    },
+    {
+      "from": "Upgrade",
+      "to": "DocSheet"
+    }
+  ],
+  "legend": [
+    {
+      "cls": "doc",
+      "text": "Acquisition"
+    },
+    {
+      "cls": "prep",
+      "text": "Preparation"
+    },
+    {
+      "cls": "resolve",
+      "text": "Circulation"
+    },
+    {
+      "cls": "wait",
+      "text": "Decision"
+    },
+    {
+      "cls": "retire",
+      "text": "Start and end states"
+    }
+  ]
+}

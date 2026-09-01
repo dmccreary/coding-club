@@ -3,127 +3,175 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- microsim-scaffold-stub -->
+    <meta name="schema" content="https://dmccreary.github.io/intelligent-textbooks/ns/microsim/v1">
     <title>Kit Lifecycle Workflow</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: #f8f9fa;
-            color: #212529;
-        }
-        #container {
-            width: 100%;
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 20px;
-            background: white;
-        }
-        h1 {
-            font-size: 22px;
-            margin-bottom: 10px;
-            color: #1a3a6c;
-        }
-        .placeholder {
-            border: 2px dashed #adb5bd;
-            border-radius: 8px;
-            padding: 40px 20px;
-            text-align: center;
-            color: #6c757d;
-            margin: 20px 0;
-            min-height: 400px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        .placeholder .badge {
-            display: inline-block;
-            background: #ffc107;
-            color: #212529;
-            padding: 4px 12px;
-            border-radius: 12px;
-            font-size: 12px;
-            font-weight: 600;
-            margin-bottom: 12px;
-        }
-        .placeholder h2 {
-            font-size: 18px;
-            color: #495057;
-            margin-bottom: 8px;
-        }
-        .placeholder p {
-            font-size: 14px;
-            max-width: 480px;
-        }
-        .meta {
-            margin-top: 20px;
-            font-size: 13px;
-            color: #6c757d;
-            border-top: 1px solid #dee2e6;
-            padding-top: 12px;
-        }
-        .meta strong { color: #495057; }
-    </style>
+    <script type="module">
+        import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+        mermaid.initialize({
+            startOnLoad: true,
+            theme: 'default',
+            flowchart: {
+                useMaxWidth: true,
+                htmlLabels: true,
+                curve: 'basis',
+                subGraphTitleMargin: { top: 10, bottom: 14 }
+            }
+        });
+    </script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="container">
-        <h1>Kit Lifecycle Workflow</h1>
-        <div class="placeholder">
-            <span class="badge">SCAFFOLD</span>
-            <h2>MicroSim Not Yet Implemented</h2>
-            <p>This MicroSim has been scaffolded from its specification but the
-            interactive content has not been built yet. See the chapter source
-            and the <code>index.md</code> in this directory for the full spec.</p>
+<main>
+    <div class="container">
+        <div class="diagram-panel">
+            <div class="mermaid">
+flowchart TD
+    NeedKit("New Kit Type<br/>Needed"):::retireNode
+    Vendor["Select a Vendor"]:::docNode
+    Cost["Compare Total Cost"]:::docNode
+    Bulk{"Order 10<br/>or More?"}:::waitNode
+    Unbox["Unbox and Test"]:::prepNode
+    Safety["Run Safety<br/>Checklist"]:::prepNode
+    DocSheet["Write Documentation<br/>Sheet"]:::prepNode
+    Wiring["Draw Wiring<br/>Diagram"]:::prepNode
+    CodeTpl["Save Code<br/>Template"]:::prepNode
+    Store["Store in<br/>Labeled Bin"]:::resolveNode
+    Loan["Loan Out for<br/>a Session"]:::resolveNode
+    InUse["In Use -<br/>Stuck?"]:::resolveNode
+    Debug["Consult Debugging<br/>Guide"]:::resolveNode
+    Returned["Kit Returned"]:::resolveNode
+    Damage{"Damage<br/>Assessment"}:::waitNode
+    Reuse["Reuse As-Is"]:::resolveNode
+    Upgrade["Revise and<br/>Upgrade"]:::prepNode
+    Retire("Retire and<br/>Salvage Parts"):::retireNode
+
+    NeedKit --> Vendor
+    Vendor --> Cost
+    Cost --> Bulk
+    Bulk -->|Yes| Unbox
+    Bulk -->|No| Unbox
+    Unbox --> Safety
+    Safety --> DocSheet
+    DocSheet --> Wiring
+    DocSheet --> CodeTpl
+    Wiring --> Store
+    CodeTpl --> Store
+    Store --> Loan
+    Loan --> InUse
+    InUse -->|stuck| Debug
+    Debug -->|retry| InUse
+    InUse -->|session ends| Returned
+    Returned --> Damage
+    Damage -->|no damage| Reuse
+    Damage -->|fixable but outdated| Upgrade
+    Damage -->|unrepairable| Retire
+    Reuse --> Store
+    Upgrade --> DocSheet
+
+    classDef retireNode fill:#5B7186,stroke:#33475B,stroke-width:2px,color:#fff,font-size:16px
+    classDef docNode fill:#4A90D9,stroke:#2E6BA8,stroke-width:2px,color:#fff,font-size:16px
+    classDef waitNode fill:#8E7CC3,stroke:#5B4B8A,stroke-width:2px,color:#fff,font-size:16px
+    classDef prepNode fill:#F5A623,stroke:#B87B12,stroke-width:2px,color:#333,font-size:16px
+    classDef resolveNode fill:#3E9E6E,stroke:#256E4A,stroke-width:2px,color:#fff,font-size:16px
+
+    linkStyle default stroke:#7A8A99,stroke-width:2px,font-size:16px
+            </div>
         </div>
-        <div class="meta">
-            <p><strong>Sim ID:</strong> kit-lifecycle-workflow</p>
-            <p><strong>Library:</strong> Mermaid</p>
-            <p><strong>Bloom Level:</strong> Analyze (L4)</p>
-            <p><strong>Learning Objective:</strong> Given a kit's current lifecycle stage and its damage-assessment outcome, the learner differentiates whether the kit should be reused as-is, sent down an upgrade path, or retired.</p>
+        <div class="info-panel">
+            <h3>Step Details</h3>
+            <div id="info-display">
+                <p class="info-placeholder">Hover a step to preview it, or click a step to pin its details here.</p>
+                <div class="legend">
+                    <div class="legend-item"><span class="swatch sw-doc"></span>Acquisition</div>
+                    <div class="legend-item"><span class="swatch sw-prep"></span>Preparation</div>
+                    <div class="legend-item"><span class="swatch sw-resolve"></span>Circulation</div>
+                    <div class="legend-item"><span class="swatch sw-wait"></span>Decision</div>
+                    <div class="legend-item"><span class="swatch sw-retire"></span>Start and end states</div>
+                </div>
+            </div>
+
         </div>
     </div>
+</main>
 
-    <!--
-    SPECIFICATION (from chapter index.md):
-
-    Type: workflow
-    **sim-id:** kit-lifecycle-workflow<br/>
-    **Library:** Mermaid<br/>
-    **Status:** Specified
-    
-    Purpose: Trace one kit through its entire lifecycle -- purchase, preparation, documentation, storage, circulation, and the reuse/upgrade/retire decision -- tying together every kit-management concept from this chapter into one connected path.
-    
-    Bloom Taxonomy: Analyze (L4)
-    Bloom Taxonomy Verb: differentiate
-    
-    Learning objective: Given a kit's current lifecycle stage and its damage-assessment outcome, the learner differentiates whether the kit should be reused as-is, sent down an upgrade path, or retired.
-    
-    Steps (flowchart with decision diamonds):
-    1. Start: "New Kit Type Needed" -- click reveals "A mentor identifies a gap in the shelf, such as no kit yet existing for a sensor a new lesson calls for."
-    2. Process: "Select a Vendor" -- click reveals the Kit Vendor Selection definition above.
-    3. Process: "Compare Total Cost" -- click reveals the Kit Cost Comparison definition above.
-    4. Decision: "Order 10 or More?" -- click reveals the Kit Bulk Purchasing definition above; both the Yes and No branches continue to the next step.
-    5. Process: "Unbox and Test" -- click reveals the Kit Unboxing Procedure definition above.
-    6. Process: "Run Safety Checklist" -- click reveals the Kit Safety Checklist definition above.
-    7. Process: "Write Documentation Sheet" -- click reveals the Kit Documentation Sheet definition above.
-    7a. Process (branch of 7): "Draw Wiring Diagram" -- click reveals the Kit Wiring Diagram definition above.
-    7b. Process (branch of 7): "Save Code Template" -- click reveals the Kit Code Template definition above.
-    8. Process: "Store in Labeled Bin" -- click reveals the Kit Storage Bin definition above.
-    9. Process: "Loan Out for a Session" -- click reveals the Kit Loaner Program definition above.
-    10. Process: "In Use -- Stuck?" -- click reveals "If a kit stops behaving as expected while in use, a mentor consults its debugging guide before assuming damage."
-    10a. Process (branch of 10): "Consult Debugging Guide" -- click reveals the Kit Debugging Guide definition above; loops back to step 10.
-    11. Process: "Kit Returned" -- click reveals the Kit Return Process definition above.
-    12. Decision: "Damage Assessment" -- click reveals the Kit Damage Assessment definition above; three branches follow.
-    12a. Branch "No Damage Found" leads to "Reuse As-Is" -- click reveals the Kit Reuse Strategy definition above; loops back to step 8.
-    12b. Branch "Fixable, but Outdated" leads to "Revise and Upgrade" -- click reveals the Kit Upgrade Path definition above; loops back to step 7.
-    12c. Branch "Unrepairable" leads to End: "Retire and Salvage Parts" -- click reveals "A kit with unsafe or unrepairable damage is retired; any still-good parts, such as a working Pico or jumper wires, are salvaged into other kits' bins rather than thrown away."
-    
-    Interactivity requirement (satisfied): every node has a Mermaid `click` directive tied to an infobox showing its revealed text, matching the definition already given in this chapter's prose.
-    
-    Color coding: Blue for acquisition steps (vendor, cost, bulk order), amber for preparation steps (unboxing, safety, documentation), green for circulation steps (storage, loan, return), purple for the three decision diamonds, gray for the retire end state.
-    
-    Implementation: Mermaid flowchart (`graph TD`) rendered in main.html with `click NodeId call showInfo("NodeId")` directives for every node, opening a side-panel infobox; a "Reset View" button re-centers the diagram after any zoom or pan.
-    -->
+    <!-- Node information data - one entry per node in the flowchart above -->
+    <script>
+        const nodeInfo = {
+            "NeedKit": {
+                title: "New Kit Type Needed",
+                description: "A mentor identifies a gap in the shelf, such as no kit yet existing for a sensor a new lesson calls for."
+            },
+            "Vendor": {
+                title: "Kit Vendor Selection",
+                description: "Comparing suppliers before ordering, weighing unit price against shipping time, part-quality consistency between orders, and how closely the vendor's actual product matches the pin layout the kit's documentation assumes."
+            },
+            "Cost": {
+                title: "Kit Cost Comparison",
+                description: "Looking past the sticker price to cost per session actually delivered: purchase price plus shipping and one-time tools, divided by how many working sessions the kit survives."
+            },
+            "Bulk": {
+                title: "Kit Bulk Purchasing",
+                description: "Ordering several identical kits at once unlocks a lower per-unit price and, just as valuable, guarantees every unit shares the same hardware revision. Either answer continues to unboxing."
+            },
+            "Unbox": {
+                title: "Kit Unboxing Procedure",
+                description: "The one-time ritual before a kit reaches a student: confirm every part on the packing slip is in the box, power on and test the core sensor or output with the code template, and assign the kit its identifier."
+            },
+            "Safety": {
+                title: "Kit Safety Checklist",
+                description: "A short printed list of electrical checks -- no exposed conductor touching another wire, no reversed polarity, every connector seated snugly -- run during unboxing and again after any repair."
+            },
+            "DocSheet": {
+                title: "Kit Documentation Sheet",
+                description: "The single page filed with each kit that gathers everything a mentor needs to run its station without the person who built it: difficulty rating, wiring diagram, code template, and debugging guide."
+            },
+            "Wiring": {
+                title: "Kit Wiring Diagram",
+                description: "A labelled diagram showing exactly which physical pin -- named by the label printed on the module, such as SDA, SCL, VCC, or GND -- connects to which Pico pin, drawn for the exact board revision in the bin."
+            },
+            "CodeTpl": {
+                title: "Kit Code Template",
+                description: "A short already-working starter program, typically five to fifteen lines, that reads the core sensor or drives the core output and prints a result. Meant to be run exactly as written before any student customises it."
+            },
+            "Store": {
+                title: "Kit Storage Bin",
+                description: "A dedicated labelled container, one per kit type, holding the kit and its documentation sheet together between sessions, labelled consistently across the shelf so any kit is identifiable at a glance."
+            },
+            "Loan": {
+                title: "Kit Loaner Program",
+                description: "A kit leaves its bin for a defined period, with the club tracking which kit is out, who has it, and when it is due back -- the same accountability a library applies to a borrowed book."
+            },
+            "InUse": {
+                title: "In Use - Stuck?",
+                description: "If a kit stops behaving as expected while in use, a mentor consults its debugging guide before assuming damage."
+            },
+            "Debug": {
+                title: "Kit Debugging Guide",
+                description: "A short troubleshooting table attached to the documentation sheet, pairing a symptom with its most likely fix -- 'no numbers appear' paired with 'reseat the data pins' -- so a stuck mentor has a first place to look."
+            },
+            "Returned": {
+                title: "Kit Return Process",
+                description: "Before a kit re-enters circulation its parts are counted against the documentation sheet's part list and its core function is quick-tested with the code template."
+            },
+            "Damage": {
+                title: "Kit Damage Assessment",
+                description: "The judgement a mentor makes about a returned kit: purely cosmetic, an easy fix like a bent pin, or a genuine failure needing a replacement part. It starts with the debugging guide's fixes rather than jumping to replacement."
+            },
+            "Reuse": {
+                title: "Kit Reuse Strategy",
+                description: "The default outcome for any kit that passes return and damage assessment cleanly: straight back into its labelled bin, unchanged, ready for the next session."
+            },
+            "Upgrade": {
+                title: "Kit Upgrade Path",
+                description: "A deliberate revision to the documentation sheet, code template, or hardware -- not because anything is broken, but because a better approach has become clear. It sends the kit back through documentation."
+            },
+            "Retire": {
+                title: "Retire and Salvage Parts",
+                description: "A kit with unsafe or unrepairable damage is retired. Still-good parts, such as a working Pico or jumper wires, are salvaged into other kits' bins rather than thrown away."
+            }
+        };
+    </script>
+    <!-- Load interaction script after nodeInfo is defined -->
+    <script src="script.js"></script>
 </body>
 </html>

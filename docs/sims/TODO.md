@@ -13,8 +13,8 @@ above are maintained by hand as sims are actually built.
 
 - Chapters scanned: 35
 - Total diagram specs found: 129
-- Already implemented: 23
-- **Unimplemented (TODO): 106**
+- Already implemented: 26
+- **Unimplemented (TODO): 103**
 
 Regenerate this list after adding or editing chapter diagram specs:
 
@@ -180,16 +180,16 @@ python3 ~/.claude/skills/microsim-utils/scripts/create-microsim-todo-json-files.
 
 | Sim ID | Diagram Name | Library | Bloom Level |
 |---|---|---|---|
-| [`kit-lifecycle-workflow`](TODO/kit-lifecycle-workflow.json) | Kit Lifecycle Workflow | Mermaid | Analyze (L4) |
+| :white_check_mark: [`kit-lifecycle-workflow`](kit-lifecycle-workflow/index.md) | Kit Lifecycle Workflow | Mermaid | Analyze (L4) |
 | [`kits-ready-to-go-further`](TODO/kits-ready-to-go-further.json) | Kits Ready to Go Further | Interactive Infographic Overlay (grid-diagram.js, annotation-free comparison poster + rectangular hover zones) | Remember (L1) |
 
 ### Chapter 22: Purchasing and Configuring Club Devices (4)
 
 | Sim ID | Diagram Name | Library | Bloom Level |
 |---|---|---|---|
-| [`device-lifecycle-workflow`](TODO/device-lifecycle-workflow.json) | Device Lifecycle Workflow | Mermaid | Analyze (L4) |
+| :white_check_mark: [`device-lifecycle-workflow`](device-lifecycle-workflow/index.md) | Device Lifecycle Workflow | Mermaid | Analyze (L4) |
 | [`grant-budget-laptop-calculator`](TODO/grant-budget-laptop-calculator.json) | Grant Budget Laptop Calculator | p5.js | Apply (L3) |
-| [`platform-management-workflow`](TODO/platform-management-workflow.json) | Platform Management Workflow | Mermaid | Analyze (L4) |
+| :white_check_mark: [`platform-management-workflow`](platform-management-workflow/index.md) | Platform Management Workflow | Mermaid | Analyze (L4) |
 | [`youth-safety-layers`](TODO/youth-safety-layers.json) | Layers of Youth Digital Safety | Interactive Infographic Overlay (grid-diagram.js, annotation-free comparison poster + rectangular hover zones) | Understand (L2) |
 
 ### Chapter 23: Network, Peripherals, and the Device Lifecycle (3)

@@ -243,7 +243,7 @@ The diagram below traces one kit all the way through this entire cycle -- buying
 
 #### Diagram: Kit Lifecycle Workflow
 
-<iframe src="../../sims/kit-lifecycle-workflow/main.html" width="100%" height="600px" scrolling="no"></iframe>
+<iframe src="../../sims/kit-lifecycle-workflow/main.html" width="100%" height="1042px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Kit Lifecycle Workflow</summary>

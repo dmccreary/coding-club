@@ -3,121 +3,137 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- microsim-scaffold-stub -->
+    <meta name="schema" content="https://dmccreary.github.io/intelligent-textbooks/ns/microsim/v1">
     <title>Device Lifecycle Workflow</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: #f8f9fa;
-            color: #212529;
-        }
-        #container {
-            width: 100%;
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 20px;
-            background: white;
-        }
-        h1 {
-            font-size: 22px;
-            margin-bottom: 10px;
-            color: #1a3a6c;
-        }
-        .placeholder {
-            border: 2px dashed #adb5bd;
-            border-radius: 8px;
-            padding: 40px 20px;
-            text-align: center;
-            color: #6c757d;
-            margin: 20px 0;
-            min-height: 400px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        .placeholder .badge {
-            display: inline-block;
-            background: #ffc107;
-            color: #212529;
-            padding: 4px 12px;
-            border-radius: 12px;
-            font-size: 12px;
-            font-weight: 600;
-            margin-bottom: 12px;
-        }
-        .placeholder h2 {
-            font-size: 18px;
-            color: #495057;
-            margin-bottom: 8px;
-        }
-        .placeholder p {
-            font-size: 14px;
-            max-width: 480px;
-        }
-        .meta {
-            margin-top: 20px;
-            font-size: 13px;
-            color: #6c757d;
-            border-top: 1px solid #dee2e6;
-            padding-top: 12px;
-        }
-        .meta strong { color: #495057; }
-    </style>
+    <script type="module">
+        import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+        mermaid.initialize({
+            startOnLoad: true,
+            theme: 'default',
+            flowchart: {
+                useMaxWidth: true,
+                htmlLabels: true,
+                curve: 'basis',
+                subGraphTitleMargin: { top: 10, bottom: 14 }
+            }
+        });
+    </script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="container">
-        <h1>Device Lifecycle Workflow</h1>
-        <div class="placeholder">
-            <span class="badge">SCAFFOLD</span>
-            <h2>MicroSim Not Yet Implemented</h2>
-            <p>This MicroSim has been scaffolded from its specification but the
-            interactive content has not been built yet. See the chapter source
-            and the <code>index.md</code> in this directory for the full spec.</p>
+<main>
+    <div class="container">
+        <div class="diagram-panel">
+            <div class="mermaid">
+flowchart TD
+    Imaged("New Laptop Imaged<br/>and Configured"):::docNode
+    Label["Apply Label"]:::docNode
+    Inventory["Add to Inventory<br/>Record"]:::docNode
+    Cart["Store in<br/>Charging Cart"]:::prepNode
+    Leaving{"Leaving the<br/>Building?"}:::waitNode
+    Loaner["Sign Loaner<br/>Agreement"]:::resolveNode
+    InSession["Used In-Session"]:::resolveNode
+    Returned["Laptop Returned"]:::resolveNode
+    Condition{"Condition Check"}:::waitNode
+    Clean["Run Cleaning<br/>Routine"]:::resolveNode
+    Repair["Attempt Basic<br/>Repair"]:::prepNode
+    Outside("Flag for<br/>Outside Repair"):::retireNode
+
+    Imaged --> Label
+    Label --> Inventory
+    Inventory --> Cart
+    Cart --> Leaving
+    Leaving -->|Yes| Loaner
+    Leaving -->|No| InSession
+    Loaner --> Returned
+    InSession --> Returned
+    Returned --> Condition
+    Condition -->|normal wear| Clean
+    Condition -->|minor issue| Repair
+    Condition -->|beyond basic repair| Outside
+    Clean --> Cart
+    Repair -->|resolved| Cart
+
+    classDef docNode fill:#4A90D9,stroke:#2E6BA8,stroke-width:2px,color:#fff,font-size:16px
+    classDef prepNode fill:#F5A623,stroke:#B87B12,stroke-width:2px,color:#333,font-size:16px
+    classDef waitNode fill:#8E7CC3,stroke:#5B4B8A,stroke-width:2px,color:#fff,font-size:16px
+    classDef resolveNode fill:#3E9E6E,stroke:#256E4A,stroke-width:2px,color:#fff,font-size:16px
+    classDef retireNode fill:#5B7186,stroke:#33475B,stroke-width:2px,color:#fff,font-size:16px
+
+    linkStyle default stroke:#7A8A99,stroke-width:2px,font-size:16px
+            </div>
         </div>
-        <div class="meta">
-            <p><strong>Sim ID:</strong> device-lifecycle-workflow</p>
-            <p><strong>Library:</strong> Mermaid</p>
-            <p><strong>Bloom Level:</strong> Analyze (L4)</p>
-            <p><strong>Learning Objective:</strong> Given a returned laptop's condition, the learner differentiates whether it should be cleaned and returned to circulation, sent through basic repair, or flagged for outside repair.</p>
+        <div class="info-panel">
+            <h3>Step Details</h3>
+            <div id="info-display">
+                <p class="info-placeholder">Hover a step to preview it, or click a step to pin its details here.</p>
+                <div class="legend">
+                    <div class="legend-item"><span class="swatch sw-doc"></span>Acquisition and setup</div>
+                    <div class="legend-item"><span class="swatch sw-prep"></span>Storage and repair</div>
+                    <div class="legend-item"><span class="swatch sw-resolve"></span>Circulation</div>
+                    <div class="legend-item"><span class="swatch sw-wait"></span>Decision</div>
+                    <div class="legend-item"><span class="swatch sw-retire"></span>Out of service</div>
+                </div>
+            </div>
+
         </div>
     </div>
+</main>
 
-    <!--
-    SPECIFICATION (from chapter index.md):
-
-    Type: workflow
-    **sim-id:** device-lifecycle-workflow<br/>
-    **Library:** Mermaid<br/>
-    **Status:** Specified
-    
-    Purpose: Trace one laptop through its full physical-management cycle -- imaging, labeling, inventory, storage, circulation, and the clean/repair decision -- tying together every physical-asset concept from this chapter into one connected path.
-    
-    Bloom Taxonomy: Analyze (L4)
-    Bloom Taxonomy Verb: differentiate
-    
-    Learning objective: Given a returned laptop's condition, the learner differentiates whether it should be cleaned and returned to circulation, sent through basic repair, or flagged for outside repair.
-    
-    Steps (flowchart with decision diamonds):
-    1. Start: "New Laptop Imaged and Configured" -- click reveals the Device Imaging Process definition above.
-    2. Process: "Apply Label" -- click reveals the Device Labeling System definition above.
-    3. Process: "Add to Inventory Record" -- click reveals the Device Inventory Tracking definition above.
-    4. Process: "Store in Charging Cart" -- click reveals the Device Charging Cart definition above.
-    5. Decision: "Leaving the Building?" -- click reveals "Whether a laptop stays on club premises for in-session use or goes home with a student determines whether a loaner agreement is required."
-    5a. Branch "Yes" leads to "Sign Loaner Agreement" -- click reveals the Device Loaner Agreement definition above; continues to step 6.
-    5b. Branch "No" leads to "Used In-Session" -- continues to step 6.
-    6. Process: "Laptop Returned" -- click reveals "The laptop comes back to the club, either at the end of a session or at the end of a loan period, and its condition is checked before it re-enters storage."
-    7. Decision: "Condition Check" -- click reveals "A mentor inspects the returned laptop for anything beyond normal wear before deciding its next step."
-    7a. Branch "Normal Wear" leads to "Run Cleaning Routine" -- click reveals the Device Cleaning Routine definition above; loops back to step 4.
-    7b. Branch "Minor Hardware Issue" leads to "Attempt Basic Repair" -- click reveals the Device Repair Basics definition above; loops back to step 4 if resolved.
-    7c. Branch "Beyond Basic Repair" leads to End: "Flag for Outside Repair" -- click reveals "Damage beyond a mentor's safe repair boundary is logged in the inventory as out of service and sent to a manufacturer or repair shop, a path Chapter 23 continues with the club's full device end-of-life planning."
-    
-    Interactivity requirement (satisfied): every node has a Mermaid `click` directive tied to an infobox showing its revealed text, matching the definition already given in this chapter's prose.
-    
-    Color coding: Blue for acquisition steps (imaging, labeling, inventory), amber for storage (charging cart), green for circulation steps (loaner agreement, return), purple for the two decision diamonds, gray for the outside-repair end state.
-    
-    Implementation: Mermaid flowchart (`graph TD`) rendered in main.html with `click NodeId call showInfo("NodeId")` directives for every node, opening a side-panel infobox; a "Reset View" button re-centers the diagram after any zoom or pan.
-    -->
+    <!-- Node information data - one entry per node in the flowchart above -->
+    <script>
+        const nodeInfo = {
+            "Imaged": {
+                title: "Device Imaging Process",
+                description: "Applying one known-good software image to every club laptop so all of them start identical, with the same accounts, tools, and restrictions, instead of being set up one at a time by hand."
+            },
+            "Label": {
+                title: "Device Labeling System",
+                description: "A durable visible identifier on each machine that matches its inventory record, so any laptop can be tied to its history without opening it."
+            },
+            "Inventory": {
+                title: "Device Inventory Tracking",
+                description: "The record for each machine: its identifier, purchase date, current condition, and who has it. Without it a fleet is a pile of laptops, not an asset."
+            },
+            "Cart": {
+                title: "Device Charging Cart",
+                description: "Laptops live in a lockable cart that charges them between sessions, so the fleet is always ready and always accounted for at the end of the night."
+            },
+            "Leaving": {
+                title: "Leaving the Building?",
+                description: "Whether a laptop stays on club premises for in-session use or goes home with a student determines whether a loaner agreement is required."
+            },
+            "Loaner": {
+                title: "Device Loaner Agreement",
+                description: "A signed agreement covering what the machine may be used for, who is responsible for damage, and when it comes back. Required before any laptop leaves the building."
+            },
+            "InSession": {
+                title: "Used In-Session",
+                description: "The laptop stays on club premises, is used during the session, and returns to the cart at the end without any paperwork beyond the inventory record."
+            },
+            "Returned": {
+                title: "Laptop Returned",
+                description: "The laptop comes back at the end of a session or a loan period, and its condition is checked before it re-enters storage."
+            },
+            "Condition": {
+                title: "Condition Check",
+                description: "A mentor inspects the returned laptop for anything beyond normal wear before deciding its next step."
+            },
+            "Clean": {
+                title: "Device Cleaning Routine",
+                description: "Wipe the screen and keyboard, clear the student's session data, confirm the charge, and return it to the cart. This is the path most laptops take, most weeks."
+            },
+            "Repair": {
+                title: "Device Repair Basics",
+                description: "Reseating a battery, replacing a key cap, clearing a stuck port -- fixes inside a mentor's safe boundary. Resolved machines rejoin the cart."
+            },
+            "Outside": {
+                title: "Flag for Outside Repair",
+                description: "Damage beyond a mentor's safe repair boundary is logged in the inventory as out of service and sent to a manufacturer or repair shop -- a path Chapter 23 continues with device end-of-life planning."
+            }
+        };
+    </script>
+    <!-- Load interaction script after nodeInfo is defined -->
+    <script src="script.js"></script>
 </body>
 </html>

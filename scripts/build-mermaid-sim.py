@@ -57,6 +57,11 @@ CLASSES = {
     "start":    ("#5B7186", "#33475B", "#fff"),   # entry point
     "wait":     ("#8E7CC3", "#5B4B8A", "#fff"),   # waiting / queued / external
     "remediate":("#E8833A", "#A85718", "#fff"),   # not ready yet: go fix this first
+    # aliases so a flow file can name the ROLE rather than the colour where the
+    # two differ: several specs colour preparation steps amber and terminal
+    # states grey, which "decision" and "start" would misdescribe.
+    "prep":     ("#F5A623", "#B87B12", "#333"),
+    "retire":   ("#5B7186", "#33475B", "#fff"),
 }
 
 SHAPES = {

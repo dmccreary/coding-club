@@ -1,0 +1,189 @@
+{
+  "title": "Device Lifecycle Workflow",
+  "height": 900,
+  "direction": "TD",
+  "nodes": [
+    {
+      "id": "Imaged",
+      "shape": "round",
+      "cls": "doc",
+      "label": "New Laptop Imaged<br/>and Configured",
+      "title": "Device Imaging Process",
+      "info": "Applying one known-good software image to every club laptop so all of them start identical, with the same accounts, tools, and restrictions, instead of being set up one at a time by hand."
+    },
+    {
+      "id": "Label",
+      "shape": "box",
+      "cls": "doc",
+      "label": "Apply Label",
+      "title": "Device Labeling System",
+      "info": "A durable visible identifier on each machine that matches its inventory record, so any laptop can be tied to its history without opening it."
+    },
+    {
+      "id": "Inventory",
+      "shape": "box",
+      "cls": "doc",
+      "label": "Add to Inventory<br/>Record",
+      "title": "Device Inventory Tracking",
+      "info": "The record for each machine: its identifier, purchase date, current condition, and who has it. Without it a fleet is a pile of laptops, not an asset."
+    },
+    {
+      "id": "Cart",
+      "shape": "box",
+      "cls": "prep",
+      "label": "Store in<br/>Charging Cart",
+      "title": "Device Charging Cart",
+      "info": "Laptops live in a lockable cart that charges them between sessions, so the fleet is always ready and always accounted for at the end of the night."
+    },
+    {
+      "id": "Leaving",
+      "shape": "diamond",
+      "cls": "wait",
+      "label": "Leaving the<br/>Building?",
+      "title": "Leaving the Building?",
+      "info": "Whether a laptop stays on club premises for in-session use or goes home with a student determines whether a loaner agreement is required."
+    },
+    {
+      "id": "Loaner",
+      "shape": "box",
+      "cls": "resolve",
+      "label": "Sign Loaner<br/>Agreement",
+      "title": "Device Loaner Agreement",
+      "info": "A signed agreement covering what the machine may be used for, who is responsible for damage, and when it comes back. Required before any laptop leaves the building."
+    },
+    {
+      "id": "InSession",
+      "shape": "box",
+      "cls": "resolve",
+      "label": "Used In-Session",
+      "title": "Used In-Session",
+      "info": "The laptop stays on club premises, is used during the session, and returns to the cart at the end without any paperwork beyond the inventory record."
+    },
+    {
+      "id": "Returned",
+      "shape": "box",
+      "cls": "resolve",
+      "label": "Laptop Returned",
+      "title": "Laptop Returned",
+      "info": "The laptop comes back at the end of a session or a loan period, and its condition is checked before it re-enters storage."
+    },
+    {
+      "id": "Condition",
+      "shape": "diamond",
+      "cls": "wait",
+      "label": "Condition Check",
+      "title": "Condition Check",
+      "info": "A mentor inspects the returned laptop for anything beyond normal wear before deciding its next step."
+    },
+    {
+      "id": "Clean",
+      "shape": "box",
+      "cls": "resolve",
+      "label": "Run Cleaning<br/>Routine",
+      "title": "Device Cleaning Routine",
+      "info": "Wipe the screen and keyboard, clear the student's session data, confirm the charge, and return it to the cart. This is the path most laptops take, most weeks."
+    },
+    {
+      "id": "Repair",
+      "shape": "box",
+      "cls": "prep",
+      "label": "Attempt Basic<br/>Repair",
+      "title": "Device Repair Basics",
+      "info": "Reseating a battery, replacing a key cap, clearing a stuck port -- fixes inside a mentor's safe boundary. Resolved machines rejoin the cart."
+    },
+    {
+      "id": "Outside",
+      "shape": "round",
+      "cls": "retire",
+      "label": "Flag for<br/>Outside Repair",
+      "title": "Flag for Outside Repair",
+      "info": "Damage beyond a mentor's safe repair boundary is logged in the inventory as out of service and sent to a manufacturer or repair shop -- a path Chapter 23 continues with device end-of-life planning."
+    }
+  ],
+  "edges": [
+    {
+      "from": "Imaged",
+      "to": "Label"
+    },
+    {
+      "from": "Label",
+      "to": "Inventory"
+    },
+    {
+      "from": "Inventory",
+      "to": "Cart"
+    },
+    {
+      "from": "Cart",
+      "to": "Leaving"
+    },
+    {
+      "from": "Leaving",
+      "to": "Loaner",
+      "label": "Yes"
+    },
+    {
+      "from": "Leaving",
+      "to": "InSession",
+      "label": "No"
+    },
+    {
+      "from": "Loaner",
+      "to": "Returned"
+    },
+    {
+      "from": "InSession",
+      "to": "Returned"
+    },
+    {
+      "from": "Returned",
+      "to": "Condition"
+    },
+    {
+      "from": "Condition",
+      "to": "Clean",
+      "label": "normal wear"
+    },
+    {
+      "from": "Condition",
+      "to": "Repair",
+      "label": "minor issue"
+    },
+    {
+      "from": "Condition",
+      "to": "Outside",
+      "label": "beyond basic repair"
+    },
+    {
+      "from": "Clean",
+      "to": "Cart"
+    },
+    {
+      "from": "Repair",
+      "to": "Cart",
+      "label": "resolved"
+    }
+  ],
+  "legend": [
+    {
+      "cls": "doc",
+      "text": "Acquisition and setup"
+    },
+    {
+      "cls": "prep",
+      "text": "Storage and repair"
+    },
+    {
+      "cls": "resolve",
+      "text": "Circulation"
+    },
+    {
+      "cls": "wait",
+      "text": "Decision"
+    },
+    {
+      "cls": "retire",
+      "text": "Out of service"
+    }
+  ]
+}
