@@ -3,7 +3,9 @@ title: 'Coding Club'
 description: 'An interactive intelligent textbook on how to create, organize, promote and run a coding club.'
 image: img/cover.png
 ---
-
+<style>
+.md-content__inner h1 {display: none !important;}
+</style>
 # Coding Club
 
 <figure markdown>
