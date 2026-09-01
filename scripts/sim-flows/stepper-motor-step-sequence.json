@@ -1,0 +1,94 @@
+{
+  "title": "Stepper Motor Step Sequence",
+  "height": 720,
+  "direction": "TD",
+  "nodes": [
+    {
+      "id": "c1",
+      "shape": "round",
+      "cls": "doc",
+      "label": "Energize Coil Pair 1<br/>rotor at 0.0°",
+      "title": "Energize Coil Pair 1 - rotor aligns to position 1",
+      "info": "Current through the first coil pair pulls the nearest rotor teeth into line with it. The rotor is now held at a known position -- this is what makes a stepper different from a plain DC motor.",
+      "advance": 0
+    },
+    {
+      "id": "c2",
+      "shape": "box",
+      "cls": "decision",
+      "label": "Energize Coil Pair 2<br/>advances 1.8°",
+      "title": "Energize Coil Pair 2 - rotor advances 1.8 degrees",
+      "info": "Switching current to the next coil pair moves the magnetic pull one tooth along, and the rotor follows by exactly 1.8 degrees. No feedback sensor is involved; the step size is a property of how the motor is built.",
+      "advance": 1.8
+    },
+    {
+      "id": "c3",
+      "shape": "box",
+      "cls": "decision",
+      "label": "Energize Coil Pair 3<br/>advances 1.8°",
+      "title": "Energize Coil Pair 3 - rotor advances another 1.8 degrees",
+      "info": "The third pair repeats the trick. Because each step is identical, a program can count steps instead of measuring angle -- which is why steppers are used for 3D printer axes.",
+      "advance": 1.8
+    },
+    {
+      "id": "c4",
+      "shape": "box",
+      "cls": "decision",
+      "label": "Energize Coil Pair 4<br/>advances 1.8°",
+      "title": "Energize Coil Pair 4 - rotor advances another 1.8 degrees",
+      "info": "The fourth pair completes the four-phase cycle. The rotor has now turned 5.4 degrees from where it started.",
+      "advance": 1.8
+    },
+    {
+      "id": "c5",
+      "shape": "box",
+      "cls": "resolve",
+      "label": "Return to Coil Pair 1<br/>cycle repeats",
+      "title": "Return to Coil Pair 1 - the cycle repeats",
+      "info": "The pattern loops. Each full four-step cycle advances the rotor 7.2 degrees, so fifty cycles -- two hundred steps -- make one complete rotation.",
+      "advance": 1.8
+    }
+  ],
+  "edges": [
+    {
+      "from": "c1",
+      "to": "c2"
+    },
+    {
+      "from": "c2",
+      "to": "c3"
+    },
+    {
+      "from": "c3",
+      "to": "c4"
+    },
+    {
+      "from": "c4",
+      "to": "c5"
+    },
+    {
+      "from": "c5",
+      "to": "c1",
+      "label": "loop"
+    }
+  ],
+  "legend": [
+    {
+      "cls": "doc",
+      "text": "Starting position"
+    },
+    {
+      "cls": "decision",
+      "text": "Coil energized, rotor advances"
+    },
+    {
+      "cls": "resolve",
+      "text": "Cycle closes"
+    }
+  ],
+  "counter": {
+    "label": "Total rotation so far",
+    "unit": "°",
+    "note": "Click the steps in order to accumulate rotation. 200 steps -- fifty cycles -- make one full turn."
+  }
+}

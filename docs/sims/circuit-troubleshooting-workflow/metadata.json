@@ -1,6 +1,6 @@
 {
-  "title": "Circuit Troubleshooting Decision Workflow",
-  "description": "Given a non-working LED circuit, the learner examines the four-step troubleshooting order (power, continuity, orientation, component) to isolate the most likely fault first.",
+  "title": "Circuit Troubleshooting Workflow",
+  "description": "Work the four checks in the order that eliminates the cheapest and most likely faults first.",
   "creator": "Coding Club",
   "author": "Dan McCreary",
   "date": "2026-09-01",
@@ -15,9 +15,29 @@
   "library": "Mermaid",
   "bloomLevel": "Analyze (L4)",
   "bloomVerb": "examine",
-  "completion_status": "scaffold",
+  "completion_status": "built",
+  "canvasHeight": 800,
   "chapter_number": 18,
   "chapter_title": "Robots, USB Basics, and Electronics Workshop Skills",
   "chapter_dir": "18-robots-usb-electronics-workshop",
-  "chapter_rel_dir": "chapters/18-robots-usb-electronics-workshop"
+  "chapter_rel_dir": "chapters/18-robots-usb-electronics-workshop",
+  "educational": {
+    "gradeLevel": "Middle School, High School, Adult",
+    "audience": "Students and mentors debugging a circuit",
+    "duration": "10-15 minutes",
+    "concepts": [
+      "Troubleshooting",
+      "Continuity",
+      "Polarity",
+      "Fault Isolation",
+      "Systematic Debugging"
+    ]
+  },
+  "pedagogical": {
+    "bloomLevel": "Analyze (L4)",
+    "bloomVerb": "examine",
+    "learningObjective": "Given a non-working LED circuit, the learner examines the four-step troubleshooting order (power, continuity, orientation, component) to isolate the most likely fault first.",
+    "interactionPattern": "Hover-to-preview and click-to-pin cascade where every check can branch straight to a found fault",
+    "assessment": "Give a dead circuit and ask which check to run first, and what finding nothing there rules out."
+  }
 }

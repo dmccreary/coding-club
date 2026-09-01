@@ -176,7 +176,7 @@ nav:
     - Breadboard Tie-Point Explorer: sims/breadboard-tie-point-explorer/index.md
     - Building and Reading an Influence Graph: sims/mentor-recruiting-influence-graph/index.md
     - Circuit Symbol Reader: sims/circuit-symbol-reader/index.md
-    - Circuit Troubleshooting Decision Workflow: sims/circuit-troubleshooting-workflow/index.md
+    - Circuit Troubleshooting Workflow: sims/circuit-troubleshooting-workflow/index.md
     - Club Calendar Setup Workflow: sims/calendar-setup-workflow/index.md
     - Club Financial Operations Cycle: sims/club-financial-operations-cycle/index.md
     - Club Governance at a Glance: sims/club-governance-map/index.md
@@ -290,6 +290,8 @@ nav:
     - Ultrasonic Ranging Explorer: sims/ultrasonic-ranging/index.md
     - USB-A vs USB-C Connector Comparison: sims/usb-connector-comparison/index.md
     - Where a Coding-Help Request Goes: sims/coding-help-agent-handoff/index.md
+
+
 
 
 

@@ -1,0 +1,94 @@
+{
+  "title": "Circuit Troubleshooting Workflow",
+  "height": 800,
+  "direction": "TD",
+  "nodes": [
+    {
+      "id": "p1",
+      "shape": "round",
+      "cls": "doc",
+      "label": "1. Check Power<br/>is voltage present at the rail?",
+      "title": "Check Power",
+      "info": "Put a meter on the power rail before anything else. A surprising share of dead circuits are dead because the battery is flat, the USB cable is charge-only, or the rail was never connected. This check costs ten seconds and rules out the most common cause."
+    },
+    {
+      "id": "p2",
+      "shape": "box",
+      "cls": "doc",
+      "label": "2. Check Continuity<br/>unbroken path, wire by wire?",
+      "title": "Check Continuity",
+      "info": "With power off, follow the path from supply to component to ground, one wire at a time. Breadboard rows that look connected often are not -- the centre channel splits every row in two, and a jumper seated one hole off is invisible from above."
+    },
+    {
+      "id": "p3",
+      "shape": "box",
+      "cls": "doc",
+      "label": "3. Check Orientation<br/>polarized parts installed correctly?",
+      "title": "Check Orientation",
+      "info": "LEDs, electrolytic capacitors, and ICs only work one way round. On an LED the long leg is positive and the flat side of the rim is negative. A backwards LED is not damaged, it is simply silent, which is why this check comes before swapping parts."
+    },
+    {
+      "id": "p4",
+      "shape": "box",
+      "cls": "doc",
+      "label": "4. Test the Component<br/>swap in a known-good part",
+      "title": "Test the Component",
+      "info": "Only now is it worth suspecting the part itself. Swap in one you know works. If the circuit springs to life the original was faulty; if it does not, the fault is upstream and you have learned something either way."
+    },
+    {
+      "id": "found",
+      "shape": "round",
+      "cls": "resolve",
+      "label": "Fault Found<br/>stop and fix it",
+      "title": "Fault Found",
+      "info": "Stop the checklist as soon as a check fails. The order exists so that the cheapest and most likely causes are eliminated first -- continuing past a found fault just adds variables."
+    }
+  ],
+  "edges": [
+    {
+      "from": "p1",
+      "to": "p2",
+      "label": "power OK"
+    },
+    {
+      "from": "p1",
+      "to": "found",
+      "label": "no power"
+    },
+    {
+      "from": "p2",
+      "to": "p3",
+      "label": "continuous"
+    },
+    {
+      "from": "p2",
+      "to": "found",
+      "label": "break found"
+    },
+    {
+      "from": "p3",
+      "to": "p4",
+      "label": "correct"
+    },
+    {
+      "from": "p3",
+      "to": "found",
+      "label": "reversed"
+    },
+    {
+      "from": "p4",
+      "to": "found",
+      "label": "part bad"
+    }
+  ],
+  "legend": [
+    {
+      "cls": "doc",
+      "text": "Check, in order"
+    },
+    {
+      "cls": "resolve",
+      "text": "Stop here once found"
+    }
+  ]
+}

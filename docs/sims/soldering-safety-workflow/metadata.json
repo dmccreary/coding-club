@@ -1,6 +1,6 @@
 {
   "title": "Soldering Safety Workflow",
-  "description": "Given a soldering task about to start, the learner sequences the correct safety steps before, during, and after making a joint.",
+  "description": "Rehearse the before, during, and after habits of soldering in the order a mentor actually performs them.",
   "creator": "Coding Club",
   "author": "Dan McCreary",
   "date": "2026-09-01",
@@ -15,9 +15,29 @@
   "library": "Mermaid",
   "bloomLevel": "Apply (L3)",
   "bloomVerb": "demonstrate",
-  "completion_status": "scaffold",
+  "completion_status": "built",
+  "canvasHeight": 760,
   "chapter_number": 16,
   "chapter_title": "Physical Computing and Electrical Safety Basics",
   "chapter_dir": "16-physical-computing-safety",
-  "chapter_rel_dir": "chapters/16-physical-computing-safety"
+  "chapter_rel_dir": "chapters/16-physical-computing-safety",
+  "educational": {
+    "gradeLevel": "Middle School, High School, Adult",
+    "audience": "Mentors supervising a soldering session",
+    "duration": "10-15 minutes",
+    "concepts": [
+      "Soldering Safety",
+      "Ventilation",
+      "Tool Discipline",
+      "Burn Prevention",
+      "Cool-Down"
+    ]
+  },
+  "pedagogical": {
+    "bloomLevel": "Apply (L3)",
+    "bloomVerb": "demonstrate",
+    "learningObjective": "Given a soldering task about to start, the learner sequences the correct safety steps before, during, and after making a joint.",
+    "interactionPattern": "Hover-to-preview and click-to-pin workflow with three colour-banded swimlanes",
+    "assessment": "Ask what happens between finishing a joint and picking up the board."
+  }
 }

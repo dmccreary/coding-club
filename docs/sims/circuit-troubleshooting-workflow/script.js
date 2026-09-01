@@ -1,4 +1,4 @@
-/* Should You Start This Club? - Mermaid MicroSim interaction script
+/* Circuit Troubleshooting Workflow - Mermaid MicroSim interaction script
    CANVAS_HEIGHT is declared in metadata.json (this sim renders from main.html).
 
    Every node in the flowchart is wired to the info panel: hovering previews a

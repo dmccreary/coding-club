@@ -626,7 +626,7 @@ A worked example traces one full step cycle on a common four-coil stepper: energ
 
 #### Diagram: Stepper Motor Step Sequence
 
-<iframe src="../../sims/stepper-motor-step-sequence/main.html" width="100%" height="480px" scrolling="no"></iframe>
+<iframe src="../../sims/stepper-motor-step-sequence/main.html" width="100%" height="722px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Stepper Motor Step Sequence</summary>

@@ -1,4 +1,4 @@
-/* Handling a Conflict or Complaint - Mermaid MicroSim stylesheet
+/* Stepper Motor Step Sequence - Mermaid MicroSim stylesheet
    Layout: 2/3 diagram panel + 1/3 info panel, zero padding for iframe embedding */
 
 * {
@@ -26,7 +26,7 @@ main {
     height: 100vh;
     /* Capped at CANVAS_HEIGHT so the layout never renders taller than the
        iframe it is embedded in. Keep this in sync with CANVAS_HEIGHT. */
-    max-height: 680px;
+    max-height: 720px;
 }
 
 /* Left 2/3: the flowchart */

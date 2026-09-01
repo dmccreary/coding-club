@@ -244,7 +244,7 @@ Many clubs choose to skip soldering entirely in a student's early sessions and r
 
 #### Diagram: Soldering Safety Workflow
 
-<iframe src="../../sims/soldering-safety-workflow/main.html" width="100%" height="520px" scrolling="no"></iframe>
+<iframe src="../../sims/soldering-safety-workflow/main.html" width="100%" height="762px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Soldering Safety Workflow</summary>

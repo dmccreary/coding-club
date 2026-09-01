@@ -20,7 +20,14 @@ Input: scripts/sim-flows/<sim-id>.json
       ],
       "edges": [ {"from":"Report","to":"Document"},
                  {"from":"Check","to":"Escalate","label":"Yes"} ],
-      "legend": [ {"cls":"doc","text":"Documentation step"} ]
+      "legend": [ {"cls":"doc","text":"Documentation step"} ],
+
+      # optional: colour-banded swimlanes wrapping subsets of the nodes
+      "groups": [ {"id":"before","title":"Before","band":"#E3F0FB","nodes":["step1"]} ],
+
+      # optional: a running total in the panel, advanced by clicking nodes that
+      # carry an "advance" value
+      "counter": {"label":"Total rotation","unit":"\u00b0","note":"..."}
     }
 
 shape: round | box | diamond | stadium      cls: any key in CLASSES below.
@@ -60,12 +67,28 @@ SHAPES = {
 }
 
 
+def node_line(n, indent="    "):
+    open_s, close_s = SHAPES[n.get("shape", "box")]
+    return f'{indent}{n["id"]}{open_s}{n["label"]}{close_s}:::{n["cls"]}Node'
+
+
 def mermaid_source(flow):
     direction = flow.get("direction", "TD")
     lines = [f"flowchart {direction}"]
+
+    groups = flow.get("groups") or []
+    grouped = {nid for g in groups for nid in g["nodes"]}
+    by_id = {n["id"]: n for n in flow["nodes"]}
+
+    # ungrouped nodes first, then each swimlane as a subgraph
     for n in flow["nodes"]:
-        open_s, close_s = SHAPES[n.get("shape", "box")]
-        lines.append(f'    {n["id"]}{open_s}{n["label"]}{close_s}:::{n["cls"]}Node')
+        if n["id"] not in grouped:
+            lines.append(node_line(n))
+    for g in groups:
+        lines.append(f'    subgraph {g["id"]}["{g["title"]}"]')
+        for nid in g["nodes"]:
+            lines.append(node_line(by_id[nid], indent="        "))
+        lines.append("    end")
     lines.append("")
     for e in flow["edges"]:
         if e.get("label"):
@@ -83,6 +106,9 @@ def mermaid_source(flow):
             f"    classDef {cls}Node fill:{bg},stroke:{border},"
             f"stroke-width:2px,color:{fg},font-size:16px"
         )
+    for g in groups:
+        band = g.get("band", "#EEF3F8")
+        lines.append(f'    style {g["id"]} fill:{band},stroke:#B7C4D0,stroke-width:1px')
     lines.append("")
     lines.append("    linkStyle default stroke:#7A8A99,stroke-width:2px,font-size:16px")
     return "\n".join(lines)
@@ -99,6 +125,28 @@ def legend_html(flow):
         return ""
     return ('                <div class="legend">\n'
             + "\n".join(rows) + "\n                </div>\n")
+
+
+def counter_html(flow):
+    c = flow.get("counter")
+    if not c:
+        return ""
+    note = f'<div class="counter-note">{c["note"]}</div>' if c.get("note") else ""
+    return ('            <div class="counter" id="counter-box">\n'
+            f'                <div class="counter-label">{c["label"]}</div>\n'
+            f'                <div class="counter-value"><span id="counter-value">0</span>'
+            f'<span class="counter-unit">{c.get("unit", "")}</span></div>\n'
+            f'                {note}\n'
+            '            </div>\n')
+
+
+def advance_js(flow):
+    """Per-node increments for the optional running total."""
+    pairs = {n["id"]: n["advance"] for n in flow["nodes"] if n.get("advance")}
+    if not pairs:
+        return ""
+    return ("\n        // clicking a node adds its advance value to the running total\n"
+            "        const nodeAdvance = " + json.dumps(pairs, indent=12)[:-1] + "        };\n")
 
 
 def node_info_js(flow):
@@ -150,6 +198,7 @@ HTML = """<!DOCTYPE html>
             <div id="info-display">
                 <p class="info-placeholder">Hover a step to preview it, or click a step to pin its details here.</p>
 {legend}            </div>
+{counter}
         </div>
     </div>
 </main>
@@ -159,7 +208,7 @@ HTML = """<!DOCTYPE html>
         const nodeInfo = {{
 {node_info}
         }};
-    </script>
+{advance}    </script>
     <!-- Load interaction script after nodeInfo is defined -->
     <script src="script.js"></script>
 </body>
@@ -180,7 +229,9 @@ def build(sim_id):
         title=flow["title"],
         mermaid=mermaid_source(flow),
         legend=legend_html(flow),
+        counter=counter_html(flow),
         node_info=node_info_js(flow),
+        advance=advance_js(flow),
     )
     with open(os.path.join(sim_dir, "main.html"), "w", encoding="utf-8") as f:
         f.write(html)

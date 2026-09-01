@@ -288,7 +288,7 @@ The interactive workflow below lets you click through that same four-step order 
 
 #### Diagram: Circuit Troubleshooting Decision Workflow
 
-<iframe src="../../sims/circuit-troubleshooting-workflow/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../sims/circuit-troubleshooting-workflow/main.html" width="100%" height="802px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Circuit Troubleshooting Decision Workflow</summary>

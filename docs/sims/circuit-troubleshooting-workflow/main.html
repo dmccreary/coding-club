@@ -3,109 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- microsim-scaffold-stub -->
-    <title>Circuit Troubleshooting Decision Workflow</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: #f8f9fa;
-            color: #212529;
-        }
-        #container {
-            width: 100%;
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 20px;
-            background: white;
-        }
-        h1 {
-            font-size: 22px;
-            margin-bottom: 10px;
-            color: #1a3a6c;
-        }
-        .placeholder {
-            border: 2px dashed #adb5bd;
-            border-radius: 8px;
-            padding: 40px 20px;
-            text-align: center;
-            color: #6c757d;
-            margin: 20px 0;
-            min-height: 400px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        .placeholder .badge {
-            display: inline-block;
-            background: #ffc107;
-            color: #212529;
-            padding: 4px 12px;
-            border-radius: 12px;
-            font-size: 12px;
-            font-weight: 600;
-            margin-bottom: 12px;
-        }
-        .placeholder h2 {
-            font-size: 18px;
-            color: #495057;
-            margin-bottom: 8px;
-        }
-        .placeholder p {
-            font-size: 14px;
-            max-width: 480px;
-        }
-        .meta {
-            margin-top: 20px;
-            font-size: 13px;
-            color: #6c757d;
-            border-top: 1px solid #dee2e6;
-            padding-top: 12px;
-        }
-        .meta strong { color: #495057; }
-    </style>
+    <meta name="schema" content="https://dmccreary.github.io/intelligent-textbooks/ns/microsim/v1">
+    <title>Circuit Troubleshooting Workflow</title>
+    <script type="module">
+        import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+        mermaid.initialize({
+            startOnLoad: true,
+            theme: 'default',
+            flowchart: {
+                useMaxWidth: true,
+                htmlLabels: true,
+                curve: 'basis',
+                subGraphTitleMargin: { top: 10, bottom: 14 }
+            }
+        });
+    </script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="container">
-        <h1>Circuit Troubleshooting Decision Workflow</h1>
-        <div class="placeholder">
-            <span class="badge">SCAFFOLD</span>
-            <h2>MicroSim Not Yet Implemented</h2>
-            <p>This MicroSim has been scaffolded from its specification but the
-            interactive content has not been built yet. See the chapter source
-            and the <code>index.md</code> in this directory for the full spec.</p>
+<main>
+    <div class="container">
+        <div class="diagram-panel">
+            <div class="mermaid">
+flowchart TD
+    p1("1. Check Power<br/>is voltage present at the rail?"):::docNode
+    p2["2. Check Continuity<br/>unbroken path, wire by wire?"]:::docNode
+    p3["3. Check Orientation<br/>polarized parts installed correctly?"]:::docNode
+    p4["4. Test the Component<br/>swap in a known-good part"]:::docNode
+    found("Fault Found<br/>stop and fix it"):::resolveNode
+
+    p1 -->|power OK| p2
+    p1 -->|no power| found
+    p2 -->|continuous| p3
+    p2 -->|break found| found
+    p3 -->|correct| p4
+    p3 -->|reversed| found
+    p4 -->|part bad| found
+
+    classDef docNode fill:#4A90D9,stroke:#2E6BA8,stroke-width:2px,color:#fff,font-size:16px
+    classDef resolveNode fill:#3E9E6E,stroke:#256E4A,stroke-width:2px,color:#fff,font-size:16px
+
+    linkStyle default stroke:#7A8A99,stroke-width:2px,font-size:16px
+            </div>
         </div>
-        <div class="meta">
-            <p><strong>Sim ID:</strong> circuit-troubleshooting-workflow</p>
-            <p><strong>Library:</strong> Mermaid</p>
-            <p><strong>Bloom Level:</strong> Analyze (L4)</p>
-            <p><strong>Learning Objective:</strong> Given a non-working LED circuit, the learner examines the four-step troubleshooting order (power, continuity, orientation, component) to isolate the most likely fault first.</p>
+        <div class="info-panel">
+            <h3>Step Details</h3>
+            <div id="info-display">
+                <p class="info-placeholder">Hover a step to preview it, or click a step to pin its details here.</p>
+                <div class="legend">
+                    <div class="legend-item"><span class="swatch sw-doc"></span>Check, in order</div>
+                    <div class="legend-item"><span class="swatch sw-resolve"></span>Stop here once found</div>
+                </div>
+            </div>
+
         </div>
     </div>
+</main>
 
-    <!--
-    SPECIFICATION (from chapter index.md):
-
-    Type: workflow
-    **sim-id:** circuit-troubleshooting-workflow<br/>
-    **Library:** Mermaid<br/>
-    **Status:** Specified
-    
-    Purpose: Let a learner click through the four-step troubleshooting order from the worked example above and see what each check actually rules out.
-    
-    Bloom Taxonomy: Analyze (L4)
-    Bloom Taxonomy Verb: examine
-    
-    Learning objective: Given a non-working LED circuit, the learner examines the four-step troubleshooting order (power, continuity, orientation, component) to isolate the most likely fault first.
-    
-    Steps: 1. "Check Power — is voltage actually present at the rail?"; 2. "Check Continuity — is there an unbroken path wire by wire?"; 3. "Check Orientation — is every polarized part installed the right way?"; 4. "Test the Component — swap in a known-good part to confirm or rule it out"
-    
-    Interactivity requirement: Every node MUST carry a `click` directive opening an infobox with that step's full explanation and a concrete example, e.g. `click step1 call showInfo("check-power")`.
-    
-    Visual style: Vertical Mermaid flowchart, steps 1 through 4 in sequence, with a "Fault Found" end node branching off each step to represent stopping the checklist early once a cause is confirmed.
-    
-    Implementation: Mermaid flowchart rendered in a wrapper page at the sim-id path, with a JavaScript `showInfo()` callback populating an infobox beneath the diagram on any node click; each infobox reuses the worked-example wording from the chapter (power check, continuity check, orientation check, component check).
-    -->
+    <!-- Node information data - one entry per node in the flowchart above -->
+    <script>
+        const nodeInfo = {
+            "p1": {
+                title: "Check Power",
+                description: "Put a meter on the power rail before anything else. A surprising share of dead circuits are dead because the battery is flat, the USB cable is charge-only, or the rail was never connected. This check costs ten seconds and rules out the most common cause."
+            },
+            "p2": {
+                title: "Check Continuity",
+                description: "With power off, follow the path from supply to component to ground, one wire at a time. Breadboard rows that look connected often are not -- the centre channel splits every row in two, and a jumper seated one hole off is invisible from above."
+            },
+            "p3": {
+                title: "Check Orientation",
+                description: "LEDs, electrolytic capacitors, and ICs only work one way round. On an LED the long leg is positive and the flat side of the rim is negative. A backwards LED is not damaged, it is simply silent, which is why this check comes before swapping parts."
+            },
+            "p4": {
+                title: "Test the Component",
+                description: "Only now is it worth suspecting the part itself. Swap in one you know works. If the circuit springs to life the original was faulty; if it does not, the fault is upstream and you have learned something either way."
+            },
+            "found": {
+                title: "Fault Found",
+                description: "Stop the checklist as soon as a check fails. The order exists so that the cheapest and most likely causes are eliminated first -- continuing past a found fault just adds variables."
+            }
+        };
+    </script>
+    <!-- Load interaction script after nodeInfo is defined -->
+    <script src="script.js"></script>
 </body>
 </html>

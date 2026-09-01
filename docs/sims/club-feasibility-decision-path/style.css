@@ -135,6 +135,38 @@ main {
 .sw-wait     { background-color: #8E7CC3; }
 .sw-remediate{ background-color: #E8833A; }
 
+/* Optional running-total counter (stepper-style sims) */
+.counter {
+    margin-top: 14px;
+    padding: 10px 12px;
+    background-color: #fff;
+    border: 2px solid #F5A623;
+    border-radius: 8px;
+}
+
+.counter-label {
+    font-size: 12px;
+    color: #555;
+}
+
+.counter-value {
+    font-size: 26px;
+    font-weight: bold;
+    color: #B87B12;
+}
+
+.counter-unit {
+    font-size: 16px;
+    margin-left: 2px;
+}
+
+.counter-note {
+    font-size: 11px;
+    color: #777;
+    margin-top: 4px;
+    line-height: 1.4;
+}
+
 /* Node hover and pinned states */
 .node {
     cursor: pointer;

@@ -13,8 +13,8 @@ above are maintained by hand as sims are actually built.
 
 - Chapters scanned: 35
 - Total diagram specs found: 129
-- Already implemented: 20
-- **Unimplemented (TODO): 109**
+- Already implemented: 23
+- **Unimplemented (TODO): 106**
 
 Regenerate this list after adding or editing chapter diagram specs:
 
@@ -124,7 +124,7 @@ python3 ~/.claude/skills/microsim-utils/scripts/create-microsim-todo-json-files.
 | [`push-button-digital-input-circuit`](TODO/push-button-digital-input-circuit.json) | Push Button Digital Input Circuit | p5.js | Apply (L3) |
 | :white_check_mark: [`pwm-analog-output-brightness-explorer`](pwm-analog-output-brightness-explorer/index.md) | PWM Analog Output Brightness Explorer | p5.js | Understand (L2) |
 | :white_check_mark: [`resistor-color-code-calculator`](resistor-color-code-calculator/index.md) | Resistor Color Code Calculator | p5.js | None |
-| [`soldering-safety-workflow`](TODO/soldering-safety-workflow.json) | Soldering Safety Workflow | Mermaid | Apply (L3) |
+| :white_check_mark: [`soldering-safety-workflow`](soldering-safety-workflow/index.md) | Soldering Safety Workflow | Mermaid | Apply (L3) |
 | [`static-electricity-precaution-checklist`](TODO/static-electricity-precaution-checklist.json) | Static Electricity Precaution Checklist | Interactive Infographic Overlay (checklist overlay, illustrated classroom scene + clickable hotspots) | Remember (L1) |
 
 ### Chapter 17: Sensors, Displays, Motors, and Robot Chassis (15)
@@ -143,7 +143,7 @@ python3 ~/.claude/skills/microsim-utils/scripts/create-microsim-todo-json-files.
 | :white_check_mark: [`servo-angle-pulse-width-explorer`](servo-angle-pulse-width-explorer/index.md) | Servo Angle Pulse-Width Explorer | p5.js | Apply (L3) |
 | :white_check_mark: [`seven-segment-display`](seven-segment-display/index.md) | Seven Segment Display Explorer (reused MicroSim) | p5.js | None |
 | [`sound-threshold-detector`](TODO/sound-threshold-detector.json) | Sound Threshold Detector | p5.js | Understand (L2) |
-| [`stepper-motor-step-sequence`](TODO/stepper-motor-step-sequence.json) | Stepper Motor Step Sequence | Mermaid | Apply (L3) |
+| :white_check_mark: [`stepper-motor-step-sequence`](stepper-motor-step-sequence/index.md) | Stepper Motor Step Sequence | Mermaid | Apply (L3) |
 | [`temperature-sensor-reading-explorer`](TODO/temperature-sensor-reading-explorer.json) | Temperature Sensor Reading Explorer | p5.js | Apply (L3) |
 | :white_check_mark: [`ultrasonic-ranging`](ultrasonic-ranging/index.md) | Ultrasonic Ranging Explorer (reused MicroSim) | p5.js | None |
 
@@ -151,7 +151,7 @@ python3 ~/.claude/skills/microsim-utils/scripts/create-microsim-todo-json-files.
 
 | Sim ID | Diagram Name | Library | Bloom Level |
 |---|---|---|---|
-| [`circuit-troubleshooting-workflow`](TODO/circuit-troubleshooting-workflow.json) | Circuit Troubleshooting Decision Workflow | Mermaid | Analyze (L4) |
+| :white_check_mark: [`circuit-troubleshooting-workflow`](circuit-troubleshooting-workflow/index.md) | Circuit Troubleshooting Decision Workflow | Mermaid | Analyze (L4) |
 | [`collision-avoidance-control-loop`](TODO/collision-avoidance-control-loop.json) | Collision Avoidance Robot Control Loop | p5.js | Apply (L3) |
 | [`usb-connector-comparison`](TODO/usb-connector-comparison.json) | USB-A vs USB-C Connector Comparison | p5.js | Analyze (L4) |
 

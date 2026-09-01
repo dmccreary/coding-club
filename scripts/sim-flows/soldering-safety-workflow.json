@@ -1,0 +1,107 @@
+{
+  "title": "Soldering Safety Workflow",
+  "height": 760,
+  "direction": "TD",
+  "nodes": [
+    {
+      "id": "s1",
+      "shape": "box",
+      "cls": "doc",
+      "label": "Warm up iron in stand,<br/>ventilate the area",
+      "title": "Warm up iron in stand, ventilate the area",
+      "info": "The iron goes into its stand before it is plugged in, never on the bench. Open a window or run a fan so solder fumes move away from the person leaning over the joint."
+    },
+    {
+      "id": "s2",
+      "shape": "box",
+      "cls": "decision",
+      "label": "Iron touches<br/>only the joint",
+      "title": "Iron touches only the joint",
+      "info": "Heat the pad and the lead together for a couple of seconds, then feed solder to the joint -- not to the iron tip. Nothing else on the bench should ever be touched with the tip."
+    },
+    {
+      "id": "s3",
+      "shape": "box",
+      "cls": "decision",
+      "label": "Return iron to the<br/>stand immediately",
+      "title": "Return iron to the stand immediately",
+      "info": "The iron goes back in the stand between every joint, without exception. A hot iron resting on the bench is how burns and scorched cables happen in a busy room."
+    },
+    {
+      "id": "s4",
+      "shape": "box",
+      "cls": "resolve",
+      "label": "Wait 10 seconds<br/>before touching the joint",
+      "title": "Wait 10 seconds before touching the joint",
+      "info": "A finished joint stays hot enough to burn for several seconds after the iron leaves it. Count to ten before handling the board or tugging the wire to test it."
+    },
+    {
+      "id": "s5",
+      "shape": "round",
+      "cls": "resolve",
+      "label": "Iron off and cooled<br/>before storage",
+      "title": "Iron off and cooled before storage",
+      "info": "Switch off at the wall, leave the iron in its stand, and let it cool fully before it goes back in the box. A hot iron packed away is a fire in a cupboard."
+    }
+  ],
+  "edges": [
+    {
+      "from": "s1",
+      "to": "s2"
+    },
+    {
+      "from": "s2",
+      "to": "s3"
+    },
+    {
+      "from": "s3",
+      "to": "s4"
+    },
+    {
+      "from": "s4",
+      "to": "s5"
+    }
+  ],
+  "groups": [
+    {
+      "id": "before",
+      "title": "Before",
+      "band": "#E3F0FB",
+      "nodes": [
+        "s1"
+      ]
+    },
+    {
+      "id": "during",
+      "title": "During",
+      "band": "#FDF1DC",
+      "nodes": [
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "id": "after",
+      "title": "After",
+      "band": "#E6F4EC",
+      "nodes": [
+        "s4",
+        "s5"
+      ]
+    }
+  ],
+  "legend": [
+    {
+      "cls": "doc",
+      "text": "Before you start"
+    },
+    {
+      "cls": "decision",
+      "text": "While soldering"
+    },
+    {
+      "cls": "resolve",
+      "text": "After the joint"
+    }
+  ]
+}
