@@ -315,7 +315,7 @@ A worked example shows how code actually reaches a specific pixel: every pixel o
 
 #### Diagram: OLED Coordinate System (reused MicroSim)
 
-<iframe src="https://dmccreary.github.io/learning-micropython/sims/oled-coordinate-system/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="https://dmccreary.github.io/learning-micropython/sims/oled-coordinate-system/main.html" width="100%" height="432px" scrolling="no"></iframe>
 
 [Run the OLED Coordinate System MicroSim fullscreen](https://dmccreary.github.io/learning-micropython/sims/oled-coordinate-system/main.html){ .md-button }
 
@@ -375,7 +375,7 @@ A worked example fixes the segment labeling in memory: segments a, b, and c are 
 
 #### Diagram: Seven Segment Display Explorer (reused MicroSim)
 
-<iframe src="https://dmccreary.github.io/microsims/sims/seven-segment-display/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="https://dmccreary.github.io/microsims/sims/seven-segment-display/main.html" width="100%" height="472px" scrolling="no"></iframe>
 
 [Run the Seven Segment Display Explorer MicroSim fullscreen](https://dmccreary.github.io/microsims/sims/seven-segment-display/main.html){ .md-button }
 
@@ -471,7 +471,7 @@ A worked example turns that elapsed time into an actual distance. Sound travels 
 
 #### Diagram: Ultrasonic Ranging Explorer (reused MicroSim)
 
-<iframe src="https://dmccreary.github.io/learning-micropython/sims/ultrasonic-ranging/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="https://dmccreary.github.io/learning-micropython/sims/ultrasonic-ranging/main.html" width="100%" height="452px" scrolling="no"></iframe>
 
 [Run the Ultrasonic Ranging Explorer MicroSim fullscreen](https://dmccreary.github.io/learning-micropython/sims/ultrasonic-ranging/main.html){ .md-button }
 

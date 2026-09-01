@@ -13,8 +13,8 @@ above are maintained by hand as sims are actually built.
 
 - Chapters scanned: 35
 - Total diagram specs found: 129
-- Already implemented: 6
-- **Unimplemented (TODO): 123**
+- Already implemented: 11
+- **Unimplemented (TODO): 118**
 
 Regenerate this list after adding or editing chapter diagram specs:
 
@@ -123,7 +123,7 @@ python3 ~/.claude/skills/microsim-utils/scripts/create-microsim-todo-json-files.
 | [`potentiometer-analog-input-explorer`](TODO/potentiometer-analog-input-explorer.json) | Potentiometer Analog Input Explorer | p5.js | Apply (L3) |
 | [`push-button-digital-input-circuit`](TODO/push-button-digital-input-circuit.json) | Push Button Digital Input Circuit | p5.js | Apply (L3) |
 | [`pwm-analog-output-brightness-explorer`](TODO/pwm-analog-output-brightness-explorer.json) | PWM Analog Output Brightness Explorer | p5.js | Understand (L2) |
-| [`resistor-color-code-calculator`](TODO/resistor-color-code-calculator.json) | Resistor Color Code Calculator | p5.js | None |
+| :white_check_mark: [`resistor-color-code-calculator`](resistor-color-code-calculator/index.md) | Resistor Color Code Calculator | p5.js | None |
 | [`soldering-safety-workflow`](TODO/soldering-safety-workflow.json) | Soldering Safety Workflow | Mermaid | Apply (L3) |
 | [`static-electricity-precaution-checklist`](TODO/static-electricity-precaution-checklist.json) | Static Electricity Precaution Checklist | Interactive Infographic Overlay (checklist overlay, illustrated classroom scene + clickable hotspots) | Remember (L1) |
 
@@ -136,16 +136,16 @@ python3 ~/.claude/skills/microsim-utils/scripts/create-microsim-todo-json-files.
 | [`h-bridge-direction-speed-control`](TODO/h-bridge-direction-speed-control.json) | H-Bridge Direction and Speed Control | p5.js | Apply (L3) |
 | [`led-matrix-pattern-designer`](TODO/led-matrix-pattern-designer.json) | LED Matrix Pattern Designer | p5.js | Create (L6) |
 | [`motor-type-comparison-explorer`](TODO/motor-type-comparison-explorer.json) | Motor Type Comparison Explorer | p5.js | Analyze (L4) |
-| [`oled-coordinate-system`](TODO/oled-coordinate-system.json) | OLED Coordinate System (reused MicroSim) | p5.js | None |
+| :white_check_mark: [`oled-coordinate-system`](oled-coordinate-system/index.md) | OLED Coordinate System (reused MicroSim) | p5.js | None |
 | [`photoresistor-voltage-divider-explorer`](TODO/photoresistor-voltage-divider-explorer.json) | Photoresistor Voltage Divider Explorer | p5.js | Apply (L3) |
 | [`pir-detection-zone-map`](TODO/pir-detection-zone-map.json) | PIR Detection Zone Map | Interactive Infographic Overlay (diagram.js, top-down room view + clickable zones) | Understand (L2) |
 | [`sensor-type-picker`](TODO/sensor-type-picker.json) | Sensor Type Picker | p5.js | Apply (L3) |
 | [`servo-angle-pulse-width-explorer`](TODO/servo-angle-pulse-width-explorer.json) | Servo Angle Pulse-Width Explorer | p5.js | Apply (L3) |
-| [`seven-segment-display`](TODO/seven-segment-display.json) | Seven Segment Display Explorer (reused MicroSim) | p5.js | None |
+| :white_check_mark: [`seven-segment-display`](seven-segment-display/index.md) | Seven Segment Display Explorer (reused MicroSim) | p5.js | None |
 | [`sound-threshold-detector`](TODO/sound-threshold-detector.json) | Sound Threshold Detector | p5.js | Understand (L2) |
 | [`stepper-motor-step-sequence`](TODO/stepper-motor-step-sequence.json) | Stepper Motor Step Sequence | Mermaid | Apply (L3) |
 | [`temperature-sensor-reading-explorer`](TODO/temperature-sensor-reading-explorer.json) | Temperature Sensor Reading Explorer | p5.js | Apply (L3) |
-| [`ultrasonic-ranging`](TODO/ultrasonic-ranging.json) | Ultrasonic Ranging Explorer (reused MicroSim) | p5.js | None |
+| :white_check_mark: [`ultrasonic-ranging`](ultrasonic-ranging/index.md) | Ultrasonic Ranging Explorer (reused MicroSim) | p5.js | None |
 
 ### Chapter 18: Robots, USB Basics, and Electronics Workshop Skills (3)
 
@@ -163,7 +163,7 @@ python3 ~/.claude/skills/microsim-utils/scripts/create-microsim-todo-json-files.
 | [`micropython-syntax-checker`](TODO/micropython-syntax-checker.json) | MicroPython Syntax Checker | p5.js | Remember (L1) |
 | [`moving-rainbow-wiring-diagram`](TODO/moving-rainbow-wiring-diagram.json) | Moving Rainbow Wiring Diagram | p5.js | Apply (L3) |
 | [`neopixel-loop-pixel-stepper`](TODO/neopixel-loop-pixel-stepper.json) | MicroPython Loop Pixel Stepper | p5.js | Apply (L3) |
-| [`pico-pinout-explorer`](TODO/pico-pinout-explorer.json) | Raspberry Pi Pico Pinout Explorer | p5.js | None |
+| :white_check_mark: [`pico-pinout-explorer`](pico-pinout-explorer/index.md) | Raspberry Pi Pico Pinout Explorer | p5.js | None |
 | [`pico-repl-vs-script-workflow`](TODO/pico-repl-vs-script-workflow.json) | REPL vs. Saved Script Workflow | p5.js | Understand (L2) |
 | [`robot-kit-assembly-sequence`](TODO/robot-kit-assembly-sequence.json) | Robot Kit Assembly Sequence | p5.js | Apply (L3) |
 | [`seasonal-led-pattern-gallery`](TODO/seasonal-led-pattern-gallery.json) | Seasonal LED Pattern Gallery | p5.js | Analyze (L4) |

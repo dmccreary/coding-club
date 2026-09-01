@@ -243,7 +243,7 @@ nav:
     - Normal Circuit vs. Short Circuit: sims/normal-circuit-vs-short-circuit/index.md
     - Notification Lead-Time Timeline: sims/notification-lead-time-timeline/index.md
     - Ohm's Law Current Calculator: sims/ohms-law-current-calculator/index.md
-    - OLED Coordinate System (reused MicroSim): sims/oled-coordinate-system/index.md
+    - OLED Coordinate System: sims/oled-coordinate-system/index.md
     - Oversight Board Org Chart: sims/oversight-board-org-chart/index.md
     - Peripheral and Storage Management Layers: sims/peripheral-management-layers/index.md
     - Photoresistor Voltage Divider Explorer: sims/photoresistor-voltage-divider-explorer/index.md
@@ -265,7 +265,7 @@ nav:
     - Sensor Type Picker: sims/sensor-type-picker/index.md
     - Servo Angle Pulse-Width Explorer: sims/servo-angle-pulse-width-explorer/index.md
     - Session Room Safety and Logistics Map: sims/session-room-safety-map/index.md
-    - Seven Segment Display Explorer (reused MicroSim): sims/seven-segment-display/index.md
+    - Seven Segment Display Explorer: sims/seven-segment-display/index.md
     - Should You Start This Club?: sims/club-feasibility-decision-path/index.md
     - Showcase Wall vs Peer Recognition Activity: sims/showcase-wall-vs-peer-recognition/index.md
     - Soldering Safety Workflow: sims/soldering-safety-workflow/index.md
@@ -287,9 +287,11 @@ nav:
     - The Tangible Reward Ladder: sims/tangible-reward-ladder/index.md
     - Three Curriculum Tracks: sims/three-curriculum-tracks/index.md
     - Three Kinds of Mentors: sims/three-kinds-of-mentors/index.md
-    - Ultrasonic Ranging Explorer (reused MicroSim): sims/ultrasonic-ranging/index.md
+    - Ultrasonic Ranging Explorer: sims/ultrasonic-ranging/index.md
     - USB-A vs USB-C Connector Comparison: sims/usb-connector-comparison/index.md
     - Where a Coding-Help Request Goes: sims/coding-help-agent-handoff/index.md
+
+
 
 
 

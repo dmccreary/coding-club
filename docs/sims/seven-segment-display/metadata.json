@@ -1,6 +1,6 @@
 {
-  "title": "Seven Segment Display Explorer (reused MicroSim)",
-  "description": "Seven Segment Display Explorer (reused MicroSim)",
+  "title": "Seven Segment Display Explorer",
+  "description": "Choose a digit and see exactly which of the seven segments switch on to draw it.",
   "creator": "Coding Club",
   "author": "Dan McCreary",
   "date": "2026-09-01",
@@ -13,11 +13,35 @@
   "rights": "CC BY-NC-SA 4.0",
   "identifier": "seven-segment-display",
   "library": "p5.js",
-  "bloomLevel": "TBD",
-  "bloomVerb": "TBD",
-  "completion_status": "scaffold",
+  "bloomLevel": "Understand (L2)",
+  "bloomVerb": "identify",
+  "completion_status": "built",
   "chapter_number": 17,
   "chapter_title": "Sensors, Displays, Motors, and Robot Chassis",
   "chapter_dir": "17-sensors-displays-motors",
-  "chapter_rel_dir": "chapters/17-sensors-displays-motors"
+  "chapter_rel_dir": "chapters/17-sensors-displays-motors",
+  "_reused_from": {
+    "repo": "microsims",
+    "sim": "seven-segment-display",
+    "url": "https://dmccreary.github.io/microsims/sims/seven-segment-display/",
+    "github": "https://github.com/dmccreary/microsims/tree/main/docs/sims/seven-segment-display"
+  },
+  "canvasHeight": 470,
+  "educational": {
+    "gradeLevel": "Middle School, High School, Adult",
+    "audience": "Coding club students and mentors",
+    "duration": "10-15 minutes",
+    "concepts": [
+      "Seven Segment Display",
+      "Segment Naming",
+      "Digital Output",
+      "LED"
+    ]
+  },
+  "pedagogical": {
+    "bloomLevel": "Understand (L2)",
+    "bloomVerb": "identify",
+    "learningObjective": "Given a digit 0-9, the learner identifies which of the seven segments must be lit to display it.",
+    "interactionPattern": "Direct manipulation with live readout of the derived value"
+  }
 }

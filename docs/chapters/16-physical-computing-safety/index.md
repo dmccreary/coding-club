@@ -414,7 +414,7 @@ A resistor's job is not limited to protecting a single LED. The same current-lim
 
 #### Diagram: Resistor Color Code Calculator
 
-<iframe src="https://dmccreary.github.io/learning-micropython/sims/resistor-color-code-calculator/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="https://dmccreary.github.io/learning-micropython/sims/resistor-color-code-calculator/main.html" width="100%" height="542px" scrolling="no"></iframe>
 
 [Run the Resistor Color Code Calculator MicroSim fullscreen](https://dmccreary.github.io/learning-micropython/sims/resistor-color-code-calculator/main.html){ .md-button }
 

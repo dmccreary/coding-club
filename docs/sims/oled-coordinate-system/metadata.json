@@ -1,6 +1,6 @@
 {
-  "title": "OLED Coordinate System (reused MicroSim)",
-  "description": "OLED Coordinate System (reused MicroSim)",
+  "title": "OLED Coordinate System",
+  "description": "Find any (x, y) pixel on a 128x64 OLED display and see the MicroPython command that lights it.",
   "creator": "Coding Club",
   "author": "Dan McCreary",
   "date": "2026-09-01",
@@ -13,11 +13,35 @@
   "rights": "CC BY-NC-SA 4.0",
   "identifier": "oled-coordinate-system",
   "library": "p5.js",
-  "bloomLevel": "TBD",
-  "bloomVerb": "TBD",
-  "completion_status": "scaffold",
+  "bloomLevel": "Understand (L2)",
+  "bloomVerb": "identify",
+  "completion_status": "built",
   "chapter_number": 17,
   "chapter_title": "Sensors, Displays, Motors, and Robot Chassis",
   "chapter_dir": "17-sensors-displays-motors",
-  "chapter_rel_dir": "chapters/17-sensors-displays-motors"
+  "chapter_rel_dir": "chapters/17-sensors-displays-motors",
+  "_reused_from": {
+    "repo": "learning-micropython",
+    "sim": "oled-coordinate-system",
+    "url": "https://dmccreary.github.io/learning-micropython/sims/oled-coordinate-system/",
+    "github": "https://github.com/dmccreary/learning-micropython/tree/main/docs/sims/oled-coordinate-system"
+  },
+  "canvasHeight": 430,
+  "educational": {
+    "gradeLevel": "Middle School, High School, Adult",
+    "audience": "Coding club students and mentors",
+    "duration": "10-15 minutes",
+    "concepts": [
+      "OLED Display",
+      "Pixel Coordinates",
+      "Display Origin",
+      "MicroPython"
+    ]
+  },
+  "pedagogical": {
+    "bloomLevel": "Understand (L2)",
+    "bloomVerb": "identify",
+    "learningObjective": "Given an (x, y) coordinate, the learner identifies which pixel on a 128x64 OLED display will be affected by a drawing command.",
+    "interactionPattern": "Direct manipulation with live readout of the derived value"
+  }
 }

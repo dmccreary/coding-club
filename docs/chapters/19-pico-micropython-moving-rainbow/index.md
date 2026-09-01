@@ -75,7 +75,7 @@ Picture a mentor introducing a Pico for the first time to three new students clu
 
 #### Diagram: Raspberry Pi Pico Pinout Explorer
 
-<iframe src="https://dmccreary.github.io/learning-micropython/sims/pico-pinout-explorer/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="https://dmccreary.github.io/learning-micropython/sims/pico-pinout-explorer/main.html" width="100%" height="657px" scrolling="no"></iframe>
 
 [Run the Raspberry Pi Pico Pinout Explorer MicroSim fullscreen](https://dmccreary.github.io/learning-micropython/sims/pico-pinout-explorer/main.html){ .md-button }
 
