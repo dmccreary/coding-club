@@ -87,6 +87,9 @@ nav:
       - List of MicroSims: sims/index.md
       - Learning Graph Viewer: sims/graph-viewer/index.md
 
+  - Challenge Cards:
+      - Card Gallery: cards/index.md
+
   - License: license.md
   - Contact: contact.md
 

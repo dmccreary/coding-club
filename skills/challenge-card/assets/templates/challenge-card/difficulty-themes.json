@@ -10,7 +10,7 @@
       "intermediate": "blue",
       "advanced": "black"
     },
-    "back_rotation_deg": 180,
+    "back_rotation_deg": 0,
     "font_family": "'Helvetica Neue', Arial, sans-serif"
   }
 }

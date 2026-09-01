@@ -69,10 +69,11 @@ def verify(card: dict) -> tuple[bool, str]:
             if not result.stdout.strip():
                 return False, f"no stdout produced for stdin={stdin_value!r}"
             if expected_patterns:
-                if not any(re.search(p, result.stdout) for p in expected_patterns):
+                missing = [p for p in expected_patterns if not re.search(p, result.stdout)]
+                if missing:
                     return False, (
-                        f"stdout for stdin={stdin_value!r} matched none of "
-                        f"expected_output_patterns={expected_patterns}\nstdout:\n{result.stdout}"
+                        f"stdout for stdin={stdin_value!r} did not match required "
+                        f"pattern(s) {missing}\nstdout:\n{result.stdout}"
                     )
 
     return True, f"executed cleanly for {len(sample_inputs)} sample input(s)"

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Rock, Paper, Scissors Showdown - Back (Solution)</title>
+<link rel="stylesheet" href="style.css">
+<style>:root { --difficulty-color: #4A90D9; --card-font: &#39;Helvetica Neue&#39;, Arial, sans-serif; }</style>
+</head>
+<body class="preview">
+<div class="panel panel--back">
+  <div class="panel__title">Solution</div>
+  <div class="panel__section-label">Hints</div>
+  <ul class="panel__hints">
+    
+    <li>Python&#39;s random module can pick a random number for you -- look up random.randint().</li>
+    
+    <li>Use int() to convert the player&#39;s typed input into a number you can compare.</li>
+    
+    <li>Check for a tie first (both pick the same number) before checking who wins.</li>
+    
+  </ul>
+  <div class="panel__section-label">Steps</div>
+  <ol class="panel__steps" start="4">
+    
+    <li>Import the random module.</li>
+    
+    <li>Ask for and store the player&#39;s choice as an integer.</li>
+    
+    <li>Generate the computer&#39;s choice with random.randint(1, 3).</li>
+    
+    <li>Print both choices by name so the player can see what happened.</li>
+    
+    <li>Use if/elif/else to check for a tie, then check the three ways the player can win, otherwise the computer wins.</li>
+    
+  </ol>
+  
+  <div class="panel__code">import random
+
+CHOICES = {1: &#34;Rock&#34;, 2: &#34;Paper&#34;, 3: &#34;Scissors&#34;}
+
+player = int(input(&#34;Choose 1-Rock, 2-Paper, or 3-Scissors: &#34;))
+computer = random.randint(1, 3)
+
+print(f&#34;You chose {CHOICES[player]}. Computer chose {CHOICES[computer]}.&#34;)
+
+if player == computer:
+    print(&#34;It&#39;s a tie!&#34;)
+elif (
+    (player == 1 and computer == 3) or
+    (player == 2 and computer == 1) or
+    (player == 3 and computer == 2)
+):
+    print(&#34;You win!&#34;)
+else:
+    print(&#34;Computer wins!&#34;)
+</div>
+  
+  
+</div>
+</body>
+</html>
