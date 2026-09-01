@@ -1,0 +1,23 @@
+{
+  "title": "The Event Retrospective Process",
+  "description": "Given a completed session, the learner follows the correct sequence from survey collection through a documented, trackable lesson.",
+  "creator": "Coding Club",
+  "author": "Dan McCreary",
+  "date": "2026-09-01",
+  "subject": [
+    "Coding Club"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "event-retrospective-process",
+  "library": "Mermaid",
+  "bloomLevel": "Apply (L3)",
+  "bloomVerb": "implement",
+  "completion_status": "scaffold",
+  "chapter_number": 12,
+  "chapter_title": "Running Events and Learning From Retrospectives",
+  "chapter_dir": "12-events-and-retrospectives",
+  "chapter_rel_dir": "chapters/12-events-and-retrospectives"
+}

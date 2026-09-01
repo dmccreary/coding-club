@@ -1,0 +1,52 @@
+---
+title: Frustration Escalation Response Flow
+description: Given a description of a student's frustration moment, the learner differentiates whether it calls for in-the-moment encouragement language, persistence coaching across sessions, or a failure-as-learning-tool reframe.
+status: scaffold
+library: Mermaid
+bloom_level: Analyze (L4)
+---
+
+# Frustration Escalation Response Flow
+
+
+
+<iframe src="main.html" width="100%" height="600"></iframe>
+
+[Run MicroSim in Fullscreen](main.html){ .md-button .md-button--primary }
+
+## Specification
+
+The full specification below is extracted from
+[Chapter 27: Encouraging Persistence and Student Voice](../../chapters/27-persistence-and-student-voice/index.md).
+
+```text
+Type: workflow
+**sim-id:** frustration-escalation-response-flow<br/>
+**Library:** Mermaid<br/>
+**Status:** Specified
+
+Purpose: Help a mentor differentiate which of three tools -- encouragement language, persistence coaching, or reframing failure as a learning tool -- fits a given frustration moment, based on how long the frustration has been building and whether a task just ended.
+
+Bloom Taxonomy: Analyze (L4)
+Bloom Taxonomy Verb: differentiate
+
+Learning objective: Given a description of a student's frustration moment, the learner differentiates whether it calls for in-the-moment encouragement language, persistence coaching across sessions, or a failure-as-learning-tool reframe.
+
+Steps (flowchart with a decision diamond):
+1. Start: "Notice a Frustration Signal" -- click reveals "Folded arms, silence, muttering, or redoing the same failed step without changing anything -- the early signs handling frustration teaches a mentor to watch for."
+2. Decision: "What Triggered It?" -- click reveals "The right tool depends on whether this is a single hard moment, a pattern building across weeks, or a task that just ended in a concrete failure."
+3a. Branch "Single Hard Moment, Task Still Open" leads to "Use Encouragement Language" -- click reveals "Name the difficulty honestly and redirect toward the specific next action, without dismissing the struggle as trivial."
+3b. Branch "Avoidance Building Across Sessions" leads to "Apply Persistence Coaching" -- click reveals "Notice the pattern out loud and reopen the abandoned task deliberately, in a low-stakes way, rather than leaving it to chance."
+3c. Branch "Task Just Ended in Failure" leads to "Reframe as a Learning Tool" -- click reveals "Treat the error or wrong result as data that narrows down the next attempt, not as a verdict on the student's ability."
+4. End (all branches converge): "Student Re-Engages With the Task" -- click reveals "Every path aims at the same outcome: the student returns to the problem instead of quietly giving up on it."
+
+Interactivity requirement (satisfied): every node has a Mermaid `click` directive tied to an infobox showing its revealed text.
+
+Color coding: Gray for the start node, purple for the decision diamond, blue for the encouragement-language branch, amber for the persistence-coaching branch, orange for the failure-reframe branch, teal for the converged end state.
+
+Implementation: Mermaid flowchart (`graph TD`) rendered in main.html with `click NodeId call showInfo("NodeId")` directives for every node, opening a side-panel infobox.
+```
+
+## Related Resources
+
+- [Chapter 27: Encouraging Persistence and Student Voice](../../chapters/27-persistence-and-student-voice/index.md)

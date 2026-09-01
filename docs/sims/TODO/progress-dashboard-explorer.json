@@ -1,0 +1,15 @@
+{
+  "sim_id": "progress-dashboard-explorer",
+  "diagram_name": "Progress Dashboard Explorer",
+  "chapter_number": 24,
+  "chapter_title": "Tracking Student Data and Managing Club Communication",
+  "chapter_dir": "24-student-data-and-communication",
+  "chapter_rel_dir": "chapters/24-student-data-and-communication",
+  "library": "Chart.js",
+  "bloom_level": "Analyze (L4)",
+  "bloom_verb": "examine",
+  "learning_objective": "Given filter controls, the learner examines a dashboard to identify which badge is currently the biggest bottleneck for a cohort.",
+  "completion_status": "specified",
+  "extracted_date": "2026-09-01",
+  "specification": "Type: microsim\n**sim-id:** progress-dashboard-explorer<br/>\n**Library:** Chart.js<br/>\n**Status:** Specified\n**Template:** https://github.com/dmccreary/infographics/tree/main/docs/sims/dashboard-builder\n\nPurpose: Let a mentor explore a filterable dashboard summarizing badge completion across a mock cohort, using only initials rather than full names, to model both the tool and the minimal-identifiability habit from earlier in this chapter.\n\nBloom Taxonomy: Analyze (L4)\nBloom Taxonomy Verb: examine\n\nLearning objective: Given filter controls, the learner examines a dashboard to identify which badge is currently the biggest bottleneck for a cohort.\n\nCanvas layout:\n- Left (500px): a bar chart of badge-completion counts across the sample cohort\n- Right (150px): filter controls and a summary readout\n\nInteractive controls:\n- Dropdown: filter by cohort (Tuesday Group, Thursday Group, All)\n- Dropdown: sort bars by completion count (highest first, lowest first)\n- Button: \"Reset Filters\"\n\nData Visibility Requirements:\n  Stage 1: Show the unfiltered bar chart -- one bar per badge, height equal to number of students (identified only by initials in the underlying mock data) who earned it\n  Stage 2: Show the same chart re-rendered after choosing a cohort filter, with bar heights updated to that cohort's numbers only\n  Final: Clicking a bar shows a small list of the initials that have earned that badge, modeling how a real dashboard would summarize without ever displaying a full name\n\nDefault parameters: Cohort = \"All\"; sample data includes 6 badges across a mock cohort of 14 students, with one badge intentionally set low (6 of 14) to illustrate a visible bottleneck\n\nImplementation notes: Chart.js bar chart rebuilt on every filter change from a small in-memory mock dataset; initials only, never full names, even in sample data, to reinforce the chapter's minimal-identifiability principle."
+}

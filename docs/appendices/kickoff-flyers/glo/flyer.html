@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Join the Coding Club — GLO Flyer</title>
+<style>
+  @page { size: 8.5in 11in; margin: 0; }
+
+  :root {
+    --glo-dark: #14507a;
+    --glo-blue: #1c6fa5;
+    --glo-cyan: #29b6d4;
+    --glo-yellow: #f5c518;
+    --glo-green: #4fbf8f;
+    --ink: #1c2b3a;
+    --paper: #ffffff;
+    --paper-soft: #f4f9fb;
+  }
+
+  * { box-sizing: border-box; }
+
+  html, body {
+    margin: 0;
+    padding: 0;
+    background: var(--paper);
+  }
+
+  body {
+    width: 8.5in;
+    height: 11in;
+    font-family: "Avenir Next", "Avenir", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: var(--ink);
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  .page {
+    width: 8.5in;
+    height: 11in;
+    padding: 0.38in 0.45in 0 0.45in;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+  }
+
+  /* Decorative top gradient bar */
+  .accent-bar {
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 0.14in;
+    background: linear-gradient(90deg, var(--glo-dark) 0%, var(--glo-cyan) 45%, var(--glo-green) 70%, var(--glo-yellow) 100%);
+  }
+
+  /* ---------- Header ---------- */
+  .header {
+    display: flex;
+    align-items: center;
+    gap: 0.3in;
+    padding-top: 0.16in;
+  }
+
+  .logo-wrap {
+    flex: 0 0 auto;
+  }
+  .logo-wrap img {
+    width: 1.85in;
+    height: auto;
+    display: block;
+  }
+
+  .headline-wrap {
+    flex: 1 1 auto;
+    text-align: right;
+  }
+
+  .headline {
+    font-weight: 800;
+    font-size: 40pt;
+    line-height: 1.02;
+    letter-spacing: -0.5pt;
+    color: var(--glo-dark);
+    margin: 0;
+  }
+  .headline .accent { color: var(--glo-cyan); }
+
+  .tagline {
+    margin: 0.06in 0 0 0;
+    font-size: 13.5pt;
+    font-weight: 600;
+    color: var(--glo-blue);
+  }
+
+  .presented-by {
+    margin-top: 0.03in;
+    font-size: 9pt;
+    font-weight: 600;
+    letter-spacing: 0.4pt;
+    text-transform: uppercase;
+    color: #6b8ba3;
+  }
+
+  hr.divider {
+    border: none;
+    border-top: 2px solid #dfeef4;
+    margin: 0.2in 0 0.22in 0;
+  }
+
+  /* ---------- What You'll Do ---------- */
+  .section-title {
+    font-size: 15.5pt;
+    font-weight: 800;
+    color: var(--glo-dark);
+    margin: 0 0 0.14in 0;
+    display: flex;
+    align-items: center;
+    gap: 0.09in;
+  }
+  .section-title .dot {
+    width: 0.13in; height: 0.13in;
+    border-radius: 50%;
+    background: var(--glo-yellow);
+    display: inline-block;
+  }
+
+  .skills-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 0.14in;
+    margin-bottom: 0.26in;
+  }
+
+  .skill-card {
+    flex: 1 1 0;
+    background: var(--paper-soft);
+    border: 1.5px solid #dcedf2;
+    border-radius: 0.14in;
+    padding: 0.16in 0.06in 0.12in 0.06in;
+    text-align: center;
+  }
+  .skill-card .emoji {
+    font-size: 24pt;
+    line-height: 1;
+    display: block;
+    margin-bottom: 0.08in;
+  }
+  .skill-card .label {
+    font-size: 10pt;
+    font-weight: 700;
+    color: var(--ink);
+    line-height: 1.15;
+  }
+
+  /* ---------- Benefits ---------- */
+  .benefits-section {
+    background: linear-gradient(135deg, var(--glo-dark) 0%, var(--glo-blue) 55%, var(--glo-cyan) 100%);
+    border-radius: 0.18in;
+    padding: 0.26in 0.32in;
+    color: #ffffff;
+    margin-bottom: 0.26in;
+  }
+  .benefits-section .section-title {
+    color: #ffffff;
+    margin-bottom: 0.16in;
+  }
+  .benefits-section .section-title .dot { background: var(--glo-yellow); }
+
+  .benefits-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 0.35in;
+    row-gap: 0.12in;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .benefits-list li {
+    font-size: 11.3pt;
+    font-weight: 500;
+    line-height: 1.3;
+    padding-left: 0.26in;
+    position: relative;
+  }
+  .benefits-list li::before {
+    content: "\2713";
+    position: absolute;
+    left: 0;
+    top: -0.005in;
+    font-weight: 800;
+    color: var(--glo-yellow);
+    font-size: 12pt;
+  }
+  .benefits-list li b { color: var(--glo-yellow); font-weight: 800; }
+
+  /* ---------- Bottom: mascot + sign-up ---------- */
+  .bottom-row {
+    flex: 1 1 auto;
+    display: flex;
+    align-items: flex-end;
+    gap: 0.28in;
+    min-height: 0;
+  }
+
+  .mascot-wrap {
+    flex: 0 0 2.35in;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    height: 100%;
+    position: relative;
+  }
+  .mascot-wrap img {
+    width: 2.35in;
+    height: auto;
+    display: block;
+  }
+  .mascot-bubble {
+    position: absolute;
+    top: 0.02in;
+    left: 50%;
+    transform: translateX(-30%);
+    background: var(--glo-yellow);
+    color: var(--glo-dark);
+    font-weight: 800;
+    font-size: 9.5pt;
+    padding: 0.06in 0.12in;
+    border-radius: 0.5in;
+    white-space: nowrap;
+    box-shadow: 0 2px 0 rgba(0,0,0,0.06);
+  }
+
+  .signup-card {
+    flex: 1 1 auto;
+    align-self: stretch;
+    border: 2px dashed var(--glo-cyan);
+    border-radius: 0.16in;
+    padding: 0.18in 0.24in;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: var(--paper-soft);
+  }
+  .signup-card .signup-title {
+    font-size: 12.5pt;
+    font-weight: 800;
+    color: var(--glo-dark);
+    margin: 0 0 0.1in 0;
+  }
+  .signup-row {
+    display: flex;
+    align-items: baseline;
+    gap: 0.08in;
+    margin-bottom: 0.09in;
+    font-size: 10.5pt;
+  }
+  .signup-row .field-label {
+    font-weight: 700;
+    color: var(--glo-blue);
+    flex: 0 0 1.0in;
+  }
+  .signup-row .fill-line {
+    flex: 1 1 auto;
+    border-bottom: 1.5px solid #a9c7d4;
+    height: 0.18in;
+  }
+  .no-experience {
+    margin-top: 0.1in;
+    font-size: 9.5pt;
+    font-weight: 700;
+    color: var(--glo-green);
+  }
+
+  /* ---------- Footer ---------- */
+  .footer {
+    margin-top: 0.16in;
+    padding: 0.1in 0 0.18in 0;
+    text-align: center;
+    font-size: 9pt;
+    font-weight: 600;
+    color: #6b8ba3;
+    border-top: 1.5px solid #dfeef4;
+  }
+  .footer b { color: var(--glo-blue); }
+</style>
+</head>
+<body>
+  <div class="page">
+    <div class="accent-bar"></div>
+
+    <div class="header">
+      <div class="logo-wrap">
+        <img src="glo-logo.jpeg" alt="Groves Learning Organization logo">
+      </div>
+      <div class="headline-wrap">
+        <p class="headline">JOIN THE<br><span class="accent">CODING CLUB!</span></p>
+        <p class="tagline">Learn it. Build it. Control it.</p>
+        <p class="presented-by">A Groves Learning Organization Program</p>
+      </div>
+    </div>
+
+    <hr class="divider">
+
+    <div class="skills-section">
+      <p class="section-title"><span class="dot"></span>What You'll Build &amp; Learn</p>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <span class="emoji">🐱</span>
+          <span class="label">Scratch</span>
+        </div>
+        <div class="skill-card">
+          <span class="emoji">🐍</span>
+          <span class="label">Python</span>
+        </div>
+        <div class="skill-card">
+          <span class="emoji">💡</span>
+          <span class="label">Control Colorful<br>LED Lights</span>
+        </div>
+        <div class="skill-card">
+          <span class="emoji">🤖</span>
+          <span class="label">Program a<br>Robot</span>
+        </div>
+        <div class="skill-card">
+          <span class="emoji">🏠</span>
+          <span class="label">Control Your<br>Home</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="benefits-section">
+      <p class="section-title"><span class="dot"></span>Why Join?</p>
+      <ul class="benefits-list">
+        <li><b>No experience needed</b> — everyone starts as a beginner</li>
+        <li>Hands-on projects with <b>real hardware</b>, not just slides</li>
+        <li>Friendly <b>mentors</b> guide you every step of the way</li>
+        <li>Learn <b>problem-solving</b> skills that carry into any subject</li>
+        <li>Earn <b>badges</b> and build a project portfolio</li>
+        <li>Make new friends who love <b>building cool stuff</b></li>
+      </ul>
+    </div>
+
+    <div class="bottom-row">
+      <div class="mascot-wrap">
+        <div class="mascot-bubble">Let's build!</div>
+        <img src="welcome-transparent.png" alt="Circuit the Robot, the Coding Club mascot, waving hello">
+      </div>
+      <div class="signup-card">
+        <p class="signup-title">Ready to join us?</p>
+        <div class="signup-row"><span class="field-label">Meets:</span><span class="fill-line"></span></div>
+        <div class="signup-row"><span class="field-label">Location:</span><span class="fill-line"></span></div>
+        <div class="signup-row"><span class="field-label">Sign up:</span><span class="fill-line"></span></div>
+        <p class="no-experience">Open to all students — come as you are!</p>
+      </div>
+    </div>
+
+    <div class="footer">
+      Learn more at <b>dmccreary.github.io/coding-club</b> &nbsp;·&nbsp; Sponsored by <b>Groves Learning Organization</b>
+    </div>
+  </div>
+</body>
+</html>

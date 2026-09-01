@@ -1,0 +1,23 @@
+{
+  "title": "Spreadsheet Template Zones",
+  "description": "Given a column from a tracking spreadsheet, the learner classifies which template zone it belongs to and why.",
+  "creator": "Coding Club",
+  "author": "Dan McCreary",
+  "date": "2026-09-01",
+  "subject": [
+    "Coding Club"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "spreadsheet-template-zones",
+  "library": "Interactive Infographic Overlay (grid-diagram.js, annotation-free poster + rectangular hover zones)",
+  "bloomLevel": "Understand (L2)",
+  "bloomVerb": "classify",
+  "completion_status": "scaffold",
+  "chapter_number": 24,
+  "chapter_title": "Tracking Student Data and Managing Club Communication",
+  "chapter_dir": "24-student-data-and-communication",
+  "chapter_rel_dir": "chapters/24-student-data-and-communication"
+}

@@ -1,0 +1,23 @@
+{
+  "title": "Anatomy of a Challenge Card",
+  "description": "Given an unlabeled illustration of a challenge card, the learner identifies each of its required parts and what purpose it serves.",
+  "creator": "Coding Club",
+  "author": "Dan McCreary",
+  "date": "2026-09-01",
+  "subject": [
+    "Coding Club"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "anatomy-of-a-challenge-card",
+  "library": "Interactive Infographic Overlay (diagram.js, annotation-free illustration + numbered callouts)",
+  "bloomLevel": "Remember (L1)",
+  "bloomVerb": "identify",
+  "completion_status": "scaffold",
+  "chapter_number": 15,
+  "chapter_title": "Designing a Curriculum With Challenge Cards and Portfolios",
+  "chapter_dir": "15-curriculum-challenge-cards",
+  "chapter_rel_dir": "chapters/15-curriculum-challenge-cards"
+}

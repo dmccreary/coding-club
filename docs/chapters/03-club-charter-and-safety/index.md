@@ -68,7 +68,7 @@ A charter is not one undifferentiated block of text. In practice it bundles five
 
 #### Diagram: Anatomy of a Club Charter
 
-<iframe src="../../sims/club-charter-anatomy/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../sims/club-charter-anatomy/main.html" width="100%" height="562px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Anatomy of a Club Charter</summary>
@@ -166,7 +166,7 @@ The **conflict resolution process** is the defined sequence of steps a club foll
 
 #### Diagram: Handling a Conflict or Complaint
 
-<iframe src="../../sims/conflict-resolution-workflow/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../sims/conflict-resolution-workflow/main.html" width="100%" height="682px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Handling a Conflict or Complaint</summary>

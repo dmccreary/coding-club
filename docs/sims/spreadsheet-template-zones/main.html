@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- microsim-scaffold-stub -->
+    <title>Spreadsheet Template Zones</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f8f9fa;
+            color: #212529;
+        }
+        #container {
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background: white;
+        }
+        h1 {
+            font-size: 22px;
+            margin-bottom: 10px;
+            color: #1a3a6c;
+        }
+        .placeholder {
+            border: 2px dashed #adb5bd;
+            border-radius: 8px;
+            padding: 40px 20px;
+            text-align: center;
+            color: #6c757d;
+            margin: 20px 0;
+            min-height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .placeholder .badge {
+            display: inline-block;
+            background: #ffc107;
+            color: #212529;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+        .placeholder h2 {
+            font-size: 18px;
+            color: #495057;
+            margin-bottom: 8px;
+        }
+        .placeholder p {
+            font-size: 14px;
+            max-width: 480px;
+        }
+        .meta {
+            margin-top: 20px;
+            font-size: 13px;
+            color: #6c757d;
+            border-top: 1px solid #dee2e6;
+            padding-top: 12px;
+        }
+        .meta strong { color: #495057; }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>Spreadsheet Template Zones</h1>
+        <div class="placeholder">
+            <span class="badge">SCAFFOLD</span>
+            <h2>MicroSim Not Yet Implemented</h2>
+            <p>This MicroSim has been scaffolded from its specification but the
+            interactive content has not been built yet. See the chapter source
+            and the <code>index.md</code> in this directory for the full spec.</p>
+        </div>
+        <div class="meta">
+            <p><strong>Sim ID:</strong> spreadsheet-template-zones</p>
+            <p><strong>Library:</strong> Interactive Infographic Overlay (grid-diagram.js, annotation-free poster + rectangular hover zones)</p>
+            <p><strong>Bloom Level:</strong> Understand (L2)</p>
+            <p><strong>Learning Objective:</strong> Given a column from a tracking spreadsheet, the learner classifies which template zone it belongs to and why.</p>
+        </div>
+    </div>
+
+    <!--
+    SPECIFICATION (from chapter index.md):
+
+    Type: infographic
+    **sim-id:** spreadsheet-template-zones<br/>
+    **Library:** Interactive Infographic Overlay (grid-diagram.js, annotation-free poster + rectangular hover zones)<br/>
+    **Status:** Specified
+    
+    Purpose: Show the three functional zones of a well-designed tracking spreadsheet template, so a new mentor can recognize why the columns are grouped the way they are.
+    
+    Bloom Taxonomy: Understand (L2)
+    Bloom Taxonomy Verb: classify
+    
+    Learning objective: Given a column from a tracking spreadsheet, the learner classifies which template zone it belongs to and why.
+    
+    Image style: Flat mock-spreadsheet poster showing a header row and a few sample rows, with three vertical column-block zones outlined
+    
+    Image dimensions: 1000x500 (landscape, to resemble an actual spreadsheet)
+    
+    Zones (3 vertical column blocks, each with id, label, color, approximate x1/y1/x2/y2 percentage boundaries, one-line summary, and 3 bullet facts):
+    
+    1. `identity-columns` -- color #4A90D9 -- boundaries approximately x1:3,y1:5,x2:30,y2:95 -- Summary: "Who the row is about." Facts: name (or initials) and join date; never reordered once set; the only columns a substitute mentor needs to find a specific student
+    2. `badge-columns` -- color #50C878 -- boundaries approximately x1:32,y1:5,x2:75,y2:95 -- Summary: "What has been mastered, and when." Facts: one column per badge or skill, in the order they're typically earned; each cell holds a completion date, not just a checkmark; grouped together so progress is scannable left to right
+    3. `notes-column` -- color #F5A623 -- boundaries approximately x1:77,y1:5,x2:97,y2:95 -- Summary: "Anything that doesn't fit a fixed column." Facts: free-text field for context a mentor wants the next mentor to see; kept to short, factual notes, not a substitute for the parent communication log; always the rightmost column so it never disrupts the badge block
+    
+    showLabels: false (zone titles are printed in the generated image)
+    
+    Interactive features: Click or hover any zone to highlight it and reveal its full fact list in a detail panel; explore mode only.
+    
+    Implementation: Interactive Infographic Overlay Guide (grid engine) -- `grid-diagram.js` + `grid-overlay.css` render the three rectangular hover zones over the generated poster image; `data.json` holds the 3 zones per the overlay-grid-data-json-schema.
+    -->
+</body>
+</html>

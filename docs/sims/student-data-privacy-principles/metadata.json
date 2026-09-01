@@ -1,0 +1,23 @@
+{
+  "title": "Student Data Privacy Principles",
+  "description": "Given one of the four student data privacy practices, the learner explains the specific risk that practice reduces.",
+  "creator": "Coding Club",
+  "author": "Dan McCreary",
+  "date": "2026-09-01",
+  "subject": [
+    "Coding Club"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "student-data-privacy-principles",
+  "library": "Mermaid",
+  "bloomLevel": "Understand (L2)",
+  "bloomVerb": "explain",
+  "completion_status": "scaffold",
+  "chapter_number": 24,
+  "chapter_title": "Tracking Student Data and Managing Club Communication",
+  "chapter_dir": "24-student-data-and-communication",
+  "chapter_rel_dir": "chapters/24-student-data-and-communication"
+}

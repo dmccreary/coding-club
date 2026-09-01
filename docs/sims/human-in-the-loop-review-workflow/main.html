@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- microsim-scaffold-stub -->
+    <title>Human-in-the-Loop Review Workflow</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f8f9fa;
+            color: #212529;
+        }
+        #container {
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background: white;
+        }
+        h1 {
+            font-size: 22px;
+            margin-bottom: 10px;
+            color: #1a3a6c;
+        }
+        .placeholder {
+            border: 2px dashed #adb5bd;
+            border-radius: 8px;
+            padding: 40px 20px;
+            text-align: center;
+            color: #6c757d;
+            margin: 20px 0;
+            min-height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .placeholder .badge {
+            display: inline-block;
+            background: #ffc107;
+            color: #212529;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+        .placeholder h2 {
+            font-size: 18px;
+            color: #495057;
+            margin-bottom: 8px;
+        }
+        .placeholder p {
+            font-size: 14px;
+            max-width: 480px;
+        }
+        .meta {
+            margin-top: 20px;
+            font-size: 13px;
+            color: #6c757d;
+            border-top: 1px solid #dee2e6;
+            padding-top: 12px;
+        }
+        .meta strong { color: #495057; }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>Human-in-the-Loop Review Workflow</h1>
+        <div class="placeholder">
+            <span class="badge">SCAFFOLD</span>
+            <h2>MicroSim Not Yet Implemented</h2>
+            <p>This MicroSim has been scaffolded from its specification but the
+            interactive content has not been built yet. See the chapter source
+            and the <code>index.md</code> in this directory for the full spec.</p>
+        </div>
+        <div class="meta">
+            <p><strong>Sim ID:</strong> human-in-the-loop-review-workflow</p>
+            <p><strong>Library:</strong> Mermaid</p>
+            <p><strong>Bloom Level:</strong> Evaluate (L5)</p>
+            <p><strong>Learning Objective:</strong> Given an AI agent's draft output, the learner determines whether it is ready to send by tracing it through the club's guardrail check, quality check, and human review steps.</p>
+        </div>
+    </div>
+
+    <!--
+    SPECIFICATION (from chapter index.md):
+
+    Type: workflow
+    **sim-id:** human-in-the-loop-review-workflow<br/>
+    **Library:** Mermaid<br/>
+    **Status:** Specified
+    **Template:** https://github.com/dmccreary/conversational-ai/tree/main/docs/sims/feedback-loop-system-architecture
+    
+    Purpose: Tie reviewing AI output, quality checks, guardrails, and oversight into one integrated workflow, so a learner sees how the practices fit together as a single system rather than four separate rules to memorize.
+    
+    Bloom Taxonomy: Evaluate (L5)
+    Bloom Taxonomy Verb: determine
+    
+    Learning objective: Given an AI agent's draft output, the learner determines whether it is ready to send by tracing it through the club's guardrail check, quality check, and human review steps.
+    
+    Steps (flowchart with decision diamonds):
+    1. Start: "Agent Produces a Draft" -- click reveals "Any of the seven agent types covered in this chapter, producing any kind of draft output."
+    2. Decision: "Passes Guardrail Check?" -- click reveals "An automated check for the club's fixed limits, such as never naming a specific student in a group message."
+    3a. Branch "No" leads to "Automatic Rewrite Required" -- click reveals "The draft never reaches a human reviewer in this form; the agent must produce a new draft."
+    3b. Branch "Yes" leads to "Human Applies Quality Check" -- click reveals "A person runs the short, repeatable checklist: accuracy, tone, no inappropriate student mentions, matches club voice."
+    4. Decision: "Quality Check Passes?" -- click reveals "The reviewer's honest judgment call, not a rubber stamp."
+    5a. Branch "No" leads back to "Automatic Rewrite Required" -- click reveals "Sent back for a new draft, same as a guardrail failure."
+    5b. Branch "Yes" leads to "Human Approves and Sends" -- click reveals "The single moment a person, not the agent, actually causes the message to reach a family."
+    6. Process (ongoing, connected to all of the above): "AI Agent Oversight" -- click reveals "A periodic, separate check -- monthly spot-checks of already-sent messages -- that catches drift the per-message steps above might miss over time."
+    7. End: "Family Receives a Human-Approved Message" -- click reveals "Every message a family sees passed through this exact workflow, regardless of which agent drafted it."
+    
+    Interactivity requirement (satisfied): every node has a Mermaid `click` directive tied to an infobox showing its revealed text.
+    
+    Color coding: Gray for start and end states, purple for decision diamonds, red for the rewrite-required outcome, green for the approved-and-sent outcome, amber for the ongoing oversight process box.
+    
+    Implementation: Mermaid flowchart (`graph TD`) rendered in main.html with `click NodeId call showInfo("NodeId")` directives for every node, opening a side-panel infobox; the oversight node is drawn with a dashed border and a separate connecting line to signal it runs alongside the per-message flow rather than as a step within it.
+    -->
+</body>
+</html>

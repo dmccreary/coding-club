@@ -8,37 +8,37 @@ The ability to focus on information that matters for a purpose while temporarily
 
 Accelerometer Data is the set of X, Y, and Z acceleration readings a motion kit reports, each one combining any deliberate motion of the board with the constant background pull of gravity.
 
-**Example:** Now that both motion-sensing kits have been introduced individually, the table below compares them directly on the choice a mentor actually has to make when picking one for a lesson.
+**Example:** A resting board reports about 1g on its downward axis, while a quick shake produces a brief spike above the chosen threshold.
 
 #### Accessibility Of Space
 
-Accessibility Of Space covers whether the room's layout, including the center table height and pathway widths from Chapter 7, works for a student using a wheelchair or other mobility aid -- worth checking before, not during, a family's first visit.
+Accessibility Of Space covers whether the room's layout, including the center table height and pathway widths, works for a student using a wheelchair or other mobility aid -- worth checking before, not during, a family's first visit.
 
 #### Accessible Session Timing
 
 Accessible Session Timing means choosing meeting days and times that fit the widest range of family schedules a community actually has, rather than defaulting to whatever slot is most convenient for the mentors.
 
-**Example:** A worked example: a club meets every Saturday morning, and attendance is solid for months until a mentor notices three students have quietly stopped coming.
+**Example:** A club meets every Saturday morning, and attendance is solid for months until a mentor notices three students have quietly stopped coming.
 
 #### Adding Mentors
 
-Adding Mentors means recruiting, background-checking (Chapter 3), and onboarding (Chapter 6) new volunteers ahead of demand, not in reaction to it.
+Adding Mentors means recruiting, background-checking, and onboarding new volunteers ahead of demand, not in reaction to it.
 
 #### Adding Students
 
-Adding Students works in the opposite direction: new enrollment should be capped by current mentor capacity, echoing the mentor-gated registration philosophy this book returns to in Chapter 11, rather than accepting every interested family and hoping enough mentors show up.
+Adding Students works in the opposite direction: new enrollment should be capped by current mentor capacity, echoing the mentor-gated registration philosophy this book returns to, rather than accepting every interested family and hoping enough mentors show up.
 
-**Example:** Before the session, the leader explains adding students to mentors, assigns responsibility, and checks afterward whether students received timely support.
+**Example:** After two new mentors complete onboarding, the club opens six additional student seats while preserving its three-to-one ratio.
 
 #### Advanced Mentor Recruiting
 
 Advanced Mentor Recruiting means running mentor recruitment as a repeatable, multi-channel process -- posting on professional networks, presenting at local engineering meetups, and asking existing mentors' employers about volunteer-time programs -- rather than relying on the founder's personal contacts.
 
-**Example:** A worked example shows the scale difference: a founder's personal network produced the club's first three mentors over its first year, one conversation at a time.
+**Example:** A founder's personal network produced the club's first three mentors over its first year, one conversation at a time.
 
 #### Advanced Track Curriculum
 
-Advanced Track Curriculum takes on multi-concept projects -- combining functions, loops, and conditionals into something like a simple game -- and is often where a professional mentor's deeper expertise (Chapter 9) matters most.
+Advanced Track Curriculum takes on multi-concept projects -- combining functions, loops, and conditionals into something like a simple game -- and is often where a professional mentor's deeper expertise matters most.
 
 #### Advisory Committee
 
@@ -64,7 +64,7 @@ AI Agent Cost Management is tracking what AI tools actually cost a club over a f
 
 AI Agent Guardrails are the specific, built-in limits a club sets on what an agent is permitted to do without ever changing them per-message -- an agent may draft a reply but may never send anything directly.
 
-**Example:** A worked example shows a guardrail doing exactly its job: a club's guardrail states that no AI agent may include a specific student's name in any message sent to more than one family at a time.
+**Example:** A club's guardrail states that no AI agent may include a specific student's name in any message sent to more than one family at a time.
 
 #### AI Agent Integration Testing
 
@@ -78,7 +78,7 @@ AI Agent Oversight is the ongoing, periodic practice of a person or small team c
 
 #### AI Agent Rollout Plan
 
-A documented approach for achieving ai agent rollout, including intended results, responsibilities, resources, timing, and review points. It guides coordinated action while allowing leaders to adapt.
+A staged schedule for introducing an AI agent through selection, limited testing, integration, training, monitoring, and review. Each stage has an owner, success measure, and stop condition.
 
 #### AI Agent Training For Leaders
 
@@ -88,17 +88,17 @@ AI Agent Training For Leaders is a short, hands-on session teaching every mentor
 
 #### AI Agent Vendor Comparison
 
-AI Agent Vendor Comparison is evaluating multiple tools against the same written selection criteria side by side, rather than adopting the first tool a leader happens to try -- the same disciplined.
+A side-by-side evaluation of AI providers using the same criteria for privacy, security, capabilities, reliability, accessibility, integration, support, contract terms, and total cost.
 
 **Example:** A side-by-side comparison also makes a switch easier later, since a club that only ever evaluated one tool has no baseline for judging whether a replacement is actually better.
 
 #### AI Agent Workflow Design
 
-AI Agent Workflow Design is mapping out, before adoption, exactly where a new agent fits into an existing club process -- which step it drafts, who reviews it, and where the human-in-the-loop checkpoint from chapter 32 sits.
+AI Agent Workflow Design is mapping out, before adoption, exactly where a new agent fits into an existing club process -- which step it drafts, who reviews it, and where the human-in-the-loop checkpoint sits.
 
 #### AI Assisted Curriculum Design
 
-AI Assisted Curriculum Design zooms out from a single lesson to the whole sequence chapter 15 introduced -- an agent proposing how to order challenge cards across the beginner, intermediate, and advanced tracks.
+AI Assisted Curriculum Design zooms out from a single lesson to the whole sequence -- an agent proposing how to order challenge cards across the beginner, intermediate, and advanced tracks.
 
 #### AI Assisted Debugging Help
 
@@ -114,7 +114,7 @@ AI Assisted Grant Writing drafts sections of a grant proposal -- a needs stateme
 
 #### AI Assisted Lesson Customization
 
-AI Assisted Lesson Customization is the specific mechanics of the practice above: telling an agent which pacing, analogy, difficulty, or example to change, and getting back a revised lesson that keeps the same underlying concept intact.
+The use of AI to revise a lesson’s pacing, analogy, difficulty, format, or examples for stated learner needs while preserving the original concept and goal.
 
 **Example:** Because the mentor specified precisely what to change, reviewing the draft took under a minute; a vague request like "make this easier" would have returned a card the mentor had to compare line by line against the original to see what actually changed.
 
@@ -122,7 +122,7 @@ AI Assisted Lesson Customization is the specific mechanics of the practice above
 
 AI Assisted Mentor Matching pairs a specific mentor with a specific student based on stated skills and interests -- a mentor who lists robotics and Python paired with a student whose challenge card history shows they gravitate toward physical computing.
 
-**Example:** A worked example shows the scale where this earns its keep: a club with nine mentors and twenty-two students would require thirty-six possible one-to-one comparisons if a leader tried to reason through every combination by hand.
+**Example:** A club with nine mentors and twenty-two students would require thirty-six possible one-to-one comparisons if a leader tried to reason through every combination by hand.
 
 #### AI Assisted Social Media
 
@@ -132,9 +132,9 @@ AI Assisted Social Media drafts a post -- caption, hashtags, and a suggested pho
 
 #### AI Assisted Translation
 
-AI Assisted Translation produces a first-pass translation of an existing club document -- the registration form, a flyer, the make-up policy chapter 32's parent chatbot already quotes -- into a family's home language.
+AI Assisted Translation produces a first-pass translation of an existing club document -- the registration form, a flyer, the make-up policy parent chatbot already quotes -- into a family's home language.
 
-**Example:** A worked example shows exactly why that check matters: a leader asks an agent to translate the club's make-up-session policy into Spanish for a family who requested it.
+**Example:** A leader asks an agent to translate the club's make-up-session policy into Spanish for a family who requested it.
 
 #### AI Bias Awareness
 
@@ -146,19 +146,19 @@ AI Bias Awareness is understanding that an AI tool can systematically favor or d
 
 A conversational tool that answers guardians’ routine club questions from approved information. It clearly identifies itself, limits personal data, and routes unusual or sensitive cases to a person.
 
-**Example:** A worked example shows both the chatbot's strength and its boundary: at eleven at night, a parent asks the chatbot what happens if their child misses a session.
+**Example:** At eleven at night, a parent asks the chatbot what happens if their child misses a session.
 
 #### AI Chatbot For Students
 
 A conversational tool that gives learners approved guidance or navigation help. Age-appropriate limits prevent unsafe topics, personal-data collection, and unsupervised high-stakes advice.
 
-**Example:** The chatbot declines to engage with the topic and suggests asking a mentor instead, exactly the kind of boundary a club's AI ethics commitments, covered later in this chapter, require of it.
+**Example:** When asked for unsafe instructions, the chatbot refuses, gives a brief safety explanation, and directs the student to a mentor.
 
 #### AI Code Review Assistant
 
 An AI tool that examines student code and suggests errors, improvements, or questions. Mentors verify advice and keep the learner responsible for understanding and changing the program.
 
-**Example:** A worked example shows the supplement working as intended: a student submits a finished project for the club's regular peer code review session.
+**Example:** A student submits a finished project for the club's regular peer code review session.
 
 #### AI Data Privacy Risk
 
@@ -170,11 +170,11 @@ AI Data Privacy Risk is the danger that using an AI tool means sending more info
 
 A newsletter assembled or written with AI from approved club updates. Human editing confirms accuracy, permissions, tone, audience fit, and the absence of private information.
 
-**Example:** A worked example shows the two concepts meeting: an agent drafts a "This Month's Highlight" paragraph describing a recent robot demonstration, but gets the specific robot kit's name wrong, calling it a "floor robot" when the session actually used a table robot.
+**Example:** An agent drafts a "This Month's Highlight" paragraph describing a recent robot demonstration, but gets the specific robot kit's name wrong, calling it a "floor robot" when the session actually used a table robot.
 
 #### AI Ethics For Clubs
 
-AI Ethics For Clubs is the small set of commitments a club makes, in writing, about how it will and will not use AI around minors: an AI agent never makes a final decision about a specific.
+Written commitments governing acceptable AI use around minors. They keep final decisions with people, limit personal data, require transparency, address bias, and provide a route for concerns.
 
 **Example:** Leaders reject facial recognition for attendance because its convenience does not justify privacy, bias, and consent risks for children.
 
@@ -182,17 +182,17 @@ AI Ethics For Clubs is the small set of commitments a club makes, in writing, ab
 
 A public notice drafted by generative AI from verified event details and audience instructions. A club leader checks every claim, date, link, image, and call to action.
 
-**Example:** A worked example shows two draft options in practice: a mentor needs to announce a last-minute room change five minutes before a session starts.
+**Example:** A mentor needs to announce a last-minute room change five minutes before a session starts.
 
 #### AI Generated Challenge Card
 
 A coding challenge draft produced by AI from specified skills, age, materials, and difficulty. An educator tests the task, hints, answer, safety, and prerequisites before publication.
 
-**Example:** A worked example shows the drafting and the catch that review is for: a mentor asks an agent to draft a green beginner-level card teaching the "repeat" block in Scratch, themed around a student's love of skateboarding tricks.
+**Example:** A mentor asks an agent to draft a green beginner-level card teaching the "repeat" block in Scratch, themed around a student's love of skateboarding tricks.
 
 #### AI Generated Website Content
 
-AI Generated Website Content drafts copy for a club's public pages -- an "About Us" section, a description of what a first visit looks like, an FAQ answer -- pulling from the same walk-in-experience details chapter 5 described.
+AI Generated Website Content drafts copy for a club's public pages -- an "About Us" section, a description of what a first visit looks like, an FAQ answer -- pulling from the same walk-in-experience details.
 
 **Example:** A leader supplies the real facts about the club; the agent turns them into welcoming, readable web copy.
 
@@ -202,7 +202,7 @@ AI In Education refers to the use of artificial intelligence tools to support te
 
 #### AI Managed Mailing List
 
-An organized record of the people, items, or details needed for ai managed mailing. It should be current, access-controlled when sensitive, and usable during normal club operations.
+A mailing list whose subscriptions, duplicates, audience segments, or delivery problems are organized with AI assistance. People approve membership changes and control every outgoing message.
 
 **Example:** The agent suggests audience segments and removes duplicate addresses, but a leader approves every subscription change and outgoing message.
 
@@ -218,19 +218,19 @@ AI Powered Club Tools are the specific software products, often built on generat
 
 #### AI Scheduling Optimization
 
-AI Scheduling Optimization goes a step further than the scheduling AI agent chapter 32 introduced: instead of ranking a handful of candidate dates against mentor availability, it searches across many possible combinations of date, time, and room assignment at once.
+The use of AI to search many combinations of dates, rooms, mentors, and capacity constraints, then rank schedules against goals set by club leaders.
 
-**Example:** A worked example shows the multi-constraint search doing real work: a leader needs a weekday schedule that satisfies three mentors' partly overlapping evening availability, avoids the district's early-release Wednesdays, and keeps every session inside the venue's 4-to-6 p.m.
+**Example:** A leader needs a weekday schedule that satisfies three mentors' partly overlapping evening availability, avoids the district's early-release Wednesdays, and keeps every session inside the venue's 4-to-6 p.m.
 
 #### AI Sentiment Analysis
 
 AI Sentiment Analysis estimates whether a batch of responses leans positive, neutral, or negative in tone, giving a quick emotional temperature check that a numeric rating scale alone can miss.
 
-**Example:** A worked example shows sentiment catching something an average score hid: the same post-event survey's 1-5 rating scale averages a healthy 4.2 out of 5, which on its own would suggest nothing needs attention.
+**Example:** The same post-event survey's 1-5 rating scale averages a healthy 4.2 out of 5, which on its own would suggest nothing needs attention.
 
 #### AI Survey Analysis
 
-AI Survey Analysis is using an AI agent to read a batch of free-text survey responses -- the optional short-text field chapter 24's feedback form introduced -- and summarize them into a handful of recurring themes.
+The use of AI to group free-text survey responses into recurring themes, questions, or concerns. A person checks the source comments before accepting the summary.
 
 #### AI Tool Selection Criteria
 
@@ -248,7 +248,7 @@ An AI system that explains concepts, asks questions, and gives practice feedback
 
 AI Voice Assistant Use is having an agent read existing club text aloud or answer a simple spoken question hands-free -- reading tomorrow's mentor confirmation list out loud while a leader is packing kits with both hands full.
 
-**Example:** Center node "Specialized Agents" (gray hexagon) -- click reveals "Tasks beyond registration, scheduling, and reminders -- less frequent, but still time-consuming without help." 2.
+**Example:** During setup, a leader asks a voice assistant for the approved checklist while keeping student names and private records out of the request.
 
 #### Algorithm Design Skill
 
@@ -272,7 +272,7 @@ Analog Output is a signal that appears to a connected device as a continuously v
 
 Animation Timing Code controls how fast a pattern appears to move by inserting a short pause inside the main loop between one frame of color and the next, the same way a flip-book's page-turning speed, not the drawings themselves.
 
-**Example:** Nothing about the color math changes between these two versions — only the single number inside time.sleep() changes, making animation speed one of the easiest, safest parameters for a student to experiment with independently.
+**Example:** Nothing about the color math changes between these two versions — only the single number inside time.sleep changes, making animation speed one of the easiest, safest parameters for a student to experiment with independently.
 
 #### Annual Budget Review
 
@@ -282,7 +282,7 @@ A scheduled examination of annual budget to compare current results with goals, 
 
 #### Annual Strategic Plan
 
-Annual Strategic Plan is a short written plan, reviewed and approved by the oversight board from Chapter 34 once a year, setting the club's priorities for the coming twelve months -- how many new mentors to recruit.
+Annual Strategic Plan is a short written plan, reviewed and approved by the oversight board once a year, setting the club's priorities for the coming twelve months -- how many new mentors to recruit.
 
 #### Anonymized Reporting
 
@@ -300,7 +300,7 @@ A documented rule that explains how the club handles anti harassment, who is res
 
 A documented rule that explains how the club handles app installation, who is responsible, and what participants can expect. It promotes consistent, fair decisions in shared devices, networks, and technical support.
 
-**Example:** A technical block without a written approval process just tells a student "no" with no path to "yes, once we've checked it." A worked example shows the process in action: a student asks to install a browser extension needed for an upcoming robotics kit's firmware tool.
+**Example:** A student asks to install a browser extension needed for an upcoming robotics kit's firmware tool.
 
 #### Asset Tagging Process
 
@@ -316,31 +316,31 @@ Assistant Leader Role exists specifically to prevent single leader dependency --
 
 An available device or software feature that helps a learner interact with club materials, such as screen reading, speech input, alternative keyboards, captions, or switch access.
 
-**Example:** A worked example: a student with limited fine-motor control struggles to double-click precisely enough to run Scratch projects using the club's standard trackpads.
+**Example:** A student with limited fine-motor control struggles to double-click precisely enough to run Scratch projects using the club's standard trackpads.
 
 #### Attendance Data Analysis
 
 Attendance Data Analysis is examining session-by-session attendance counts for patterns -- which nights consistently draw fewer students, whether a specific week always dips, whether a new time slot helped or hurt turnout.
 
-**Example:** A worked example shows the difference: one Tuesday's attendance drops from fourteen to nine students, and a new mentor worries the club is failing.
+**Example:** One Tuesday's attendance drops from fourteen to nine students, and a new mentor worries the club is failing.
 
 #### Attendance Sheet
 
-Attendance Sheet is the actual record produced -- who attended which session -- and it feeds three separate needs at once: the mentor capacity planning from Chapter 9, any grant reporting requirements, and the visitor check-in process from Chapter 8.
+Attendance Sheet is the actual record produced -- who attended which session -- and it feeds three separate needs at once: the mentor capacity planning, any grant reporting requirements, and the visitor check-in process.
 
 #### Automated Reminder System
 
 A coordinated combination of people, tools, records, and procedures used to manage automated reminder. Its parts work together to support reliable decisions in responsible club data, communication, and progress tracking.
 
-**Example:** A worked example shows the payoff over a full semester: a club that sent sixteen weekly reminders by hand last year had two mentors forget on two separate weeks, leaving families without any advance notice for those sessions.
+**Example:** A club that sent sixteen weekly reminders by hand last year had two mentors forget on two separate weeks, leaving families without any advance notice for those sessions.
 
 #### Autonomous Robot Behavior
 
-Autonomous Robot Behavior is movement and decision-making a robot performs entirely from its own code and sensor readings, with no human operator directing it moment to moment — the robot senses its surroundings, its code decides what that sensor reading means.
+Actions a robot selects from its own program and sensor readings without moment-to-moment human commands. Examples include avoiding obstacles, following lines, and seeking light.
 
 #### Backup Device Plan
 
-A documented approach for achieving backup device, including intended results, responsibilities, resources, timing, and review points. It guides coordinated action while allowing leaders to adapt.
+A prepared replacement-device arrangement for sessions when a primary computer fails. It identifies ready equipment, stored configuration, access credentials, files, and the person authorized to issue it.
 
 #### Badge And Sticker Reward
 
@@ -360,7 +360,7 @@ Battery Safety covers the handling, storage, and inspection practices that keep 
 
 #### Beginner Track Curriculum
 
-Beginner Track Curriculum starts with keyboarding and Scratch, per Chapter 14's progression. Learners practice it by creating, testing, explaining, and revising their work.
+A learning sequence for newcomers that builds keyboard confidence, block-based programming, basic debugging, and small successful projects before introducing more demanding concepts.
 
 **Example:** A mentor introduces beginner track curriculum through a short demonstration, lets learners try a related challenge, and asks them to explain what changed and why.
 
@@ -368,13 +368,13 @@ Beginner Track Curriculum starts with keyboarding and Scratch, per Chapter 14's 
 
 Bias Awareness Training helps mentors notice their own unconscious assumptions about who "looks like" a good coder, so that attention, encouragement, and opportunities to lead don't quietly flow toward students who happen to resemble a mentor's own background.
 
-**Example:** mascot-encourage "Noticing your own bias is uncomfortable, and that discomfort is normal" !Circuit encouraging{ class="mascot-admonition-img" } If sitting with your own possible blind spots feels uncomfortable, that discomfort is a normal, expected part of the process -- not a sign you're doing something wrong.
+**Example:** Mentors review two recruiting flyers, identify whose identities and interests are missing, and revise the images and wording with community feedback.
 
 #### Blinking Light Circuit
 
 Blinking Light Circuit combines a power source, a resistor, and an LED with a microcontroller's digital output pin, switching the LED on and off in a repeating pattern under program control.
 
-**Example:** mascot-thinking "A circuit only works when the loop is completely closed" !Circuit thinking{ class="mascot-admonition-img" } Notice that current has to travel in an unbroken loop — out of the power source, through the resistor, through the LED, and all the way back to the source's other terminal.
+**Example:** Current leaves the power source, passes through a resistor and LED, and returns through ground; opening any point in the path turns the light off.
 
 #### Block Based To Text Transition
 
@@ -384,7 +384,7 @@ The learning shift from arranging visual programming blocks to writing equivalen
 
 #### Board Meeting Cadence
 
-Board Meeting Cadence is the regular rhythm at which a board actually convenes -- commonly quarterly for routine business plus one annual planning retreat -- set deliberately rather than left to happen "whenever something comes up.
+The regular schedule on which an oversight board meets, such as quarterly business meetings plus an annual planning retreat. Extra meetings follow defined urgent-event rules.
 
 **Example:** A board that only meets "when needed" almost never meets at all.
 
@@ -394,7 +394,7 @@ Board Member Recruitment is the deliberate search for people to fill open board 
 
 #### Board Roles And Duties
 
-Board Roles And Duties are the specific written responsibilities assigned to each seat named above, spelled out clearly enough that a new person stepping into a seat knows exactly what is expected without having to ask the previous holder.
+The written responsibilities and authority assigned to each oversight-board seat, such as chair, secretary, treasurer, or mentor liaison. Clear duties support accountability and handoffs.
 
 **Example:** The chair sets meeting agendas, moderates discussion, and casts the tie-breaking vote when the board splits evenly.
 
@@ -428,7 +428,7 @@ Bringing Out Mentor Strengths means deliberately matching each mentor's individu
 
 Browser Bookmark Management is the practice of keeping every club laptop's set of saved website links consistent, curated, and organized into folders, rather than letting each browser accumulate its own random, growing list of one-off links over time.
 
-**Example:** Consistency matters here for the same reason Chapter 22's imaging process matters for software: a student who sits down at any laptop in the fleet should find the same bookmarks in the same place, not a different, half-organized set on every machine.
+**Example:** Consistency matters here for the same reason imaging process matters for software: a student who sits down at any laptop in the fleet should find the same bookmarks in the same place, not a different, half-organized set on every machine.
 
 #### Budget Line Item
 
@@ -440,23 +440,23 @@ One named category in a budget with an estimated or approved amount, such as lap
 
 A workbook that compares planned amounts with actual income, commitments, and spending by category. Dates, receipts, balances, and responsible people create an auditable record.
 
-**Example:** Start: "Financial Event Occurs" -- click reveals "A mentor spends money, a family donates, or a grant check arrives -- the trigger for every step that follows." 2.
+**Example:** A mentor’s $42 parts purchase is entered with its date, budget category, receipt link, approver, and remaining balance.
 
 #### Building An Influence Graph
 
-Building An Influence Graph is the process of populating that map -- listing known community organizations and leaders, asking current mentors and families "who else do you trust for recommendations like this.
+The process of listing relevant people and organizations, then drawing verified trust or communication relationships among them. The graph reveals credible paths for community outreach.
 
-**Example:** A worked example shows the process end to end: a club leader and three mentors brainstorm fifteen community nodes in twenty minutes -- congregations, youth programs, employers, meetups.
+**Example:** A club leader and three mentors brainstorm fifteen community nodes in twenty minutes -- congregations, youth programs, employers, meetups.
 
 #### Building Student Mental Models
 
 Building Student Mental Models means forming a working picture of what a specific student already understands, what they get stuck on, and what genuinely interests them -- based entirely on what a mentor observes during real sessions.
 
-**Example:** A worked example shows the practice at its simplest: over three Saturday sessions, a mentor notices that one student lights up whenever a challenge card mentions music or sound, but visibly disengages from anything framed around sports statistics.
+**Example:** Over three Saturday sessions, a mentor notices that one student lights up whenever a challenge card mentions music or sound, but visibly disengages from anything framed around sports statistics.
 
 #### Building Sustainable Clubs
 
-Building Sustainable Clubs is the practice this chapter has been assembling piece by piece: a mentor development pipeline that grows a club's own future leaders.
+The work of distributing leadership, documenting operations, developing future leaders, maintaining resources and partnerships, and using evidence to improve so a club can outlast its founders.
 
 **Example:** A club that has built all of this does not become invincible; it becomes something more useful than invincible -- it becomes replaceable, in the best possible sense, so that any one part of it can change hands without the whole thing ending.
 
@@ -482,7 +482,7 @@ Cancellation Policy states plainly what happens if the club itself cancels a ses
 
 Celebrating Small Wins is the practice of noticing and naming a small piece of real progress out loud, right when it happens, rather than saving all recognition for a big finished project.
 
-**Example:** A worked example shows a small win caught in time: five minutes into a session, a student finally gets a loop to repeat the correct number of times after three failed attempts.
+**Example:** Five minutes into a session, a student finally gets a loop to repeat the correct number of times after three failed attempts.
 
 #### Center Table Design
 
@@ -494,7 +494,7 @@ Center Table Design: a shared table, typically positioned in the middle of the r
 
 A dated document recognizing that a learner finished a defined program or set of requirements. It should state the achievement accurately rather than imply an unearned professional credential.
 
-**Example:** A worked example shows a certificate earning its formality: a student who has collected a dozen badges across a semester receives a printed certificate at the end-of-term event, signed by their mentor, naming the track they completed.
+**Example:** A student who has collected a dozen badges across a semester receives a printed certificate at the end-of-term event, signed by their mentor, naming the track they completed.
 
 #### Challenge Based Curriculum
 
@@ -522,7 +522,7 @@ Child Safety Policy sets the concrete behavioral rules that keep students physic
 
 Chromebook Management is the ongoing administration of a Chromebook fleet through a single cloud-based console, where one login lets a mentor push software policies, reset a forgotten password, or wipe a lost device to every enrolled machine at once.
 
-**Example:** A worked example shows the payoff: a club with twenty Chromebooks needs to block a distracting game website discovered mid-semester.
+**Example:** A club with twenty Chromebooks needs to block a distracting game website discovered mid-semester.
 
 #### Circuit Diagram Reading
 
@@ -540,7 +540,7 @@ Circuit Troubleshooting is a systematic process for isolating why a circuit is n
 
 A browser folder installed for every club user that contains approved shared links, such as the curriculum, coding tools, help pages, and project galleries.
 
-**Example:** Because it lives inside Chapter 22's Chromebook management console (or an equivalent push for Windows and macOS fleets), a mentor updates the folder once and it propagates to every laptop, rather than requiring eighteen separate manual edits.
+**Example:** Because it lives inside Chromebook management console (or an equivalent push for Windows and macOS fleets), a mentor updates the folder once and it propagates to every laptop, rather than requiring eighteen separate manual edits.
 
 #### Classroom Layout
 
@@ -560,7 +560,7 @@ Cloud Document Sharing is storing and sharing club files -- spreadsheets, consen
 
 Cloud Storage For Devices is using a shared, club-managed cloud drive account as the default save location for student files, so work survives independently of which specific laptop or account a student happened to use that day.
 
-**Example:** A worked example shows cloud storage solving exactly that problem: instead of saving a project file locally to the "Station 3" shared account -- where it would vanish once the next student logs in -- a student saves directly to the club's shared cloud drive folder.
+**Example:** Instead of saving a project file locally to the "Station 3" shared account -- where it would vanish once the next student logs in -- a student saves directly to the club's shared cloud drive folder.
 
 #### Club Anniversary Event
 
@@ -572,7 +572,7 @@ Club Benefits: measurable gains in problem-solving confidence, comfort with fail
 
 #### Club Branding
 
-Club Branding extends the naming and logo choices from Chapter 4 into a consistent visual and verbal identity across every flyer, newsletter, and social post -- the same colors, the same tone of voice, the same logo placement.
+Club Branding extends the naming and logo choices into a consistent visual and verbal identity across every flyer, newsletter, and social post -- the same colors, the same tone of voice, the same logo placement.
 
 #### Club Bylaws
 
@@ -580,7 +580,7 @@ Club Bylaws are the charter's operating rules -- how often the club meets, how t
 
 #### Club Charter
 
-Club Charter is the single founding document that establishes a coding club's purpose, values, rules, and decision-making structure -- the concept every other idea in this chapter attaches to.
+The founding document that states a coding club’s purpose, values, membership expectations, governance, and key rules. It gives participants a shared basis for decisions.
 
 #### Club Evolution
 
@@ -630,7 +630,7 @@ Club Milestone Tracking is the ongoing habit of recording notable moments -- a s
 
 #### Club Mission Statement
 
-Club Mission Statement is a concise, present-tense statement of what the club does and for whom, right now -- for example, "We give students in grades 3-8 hands-on experience with code and electronics in a no-pressure.
+A concise present-tense statement explaining what the club does, whom it serves, and the value it provides. It guides priorities without describing every activity.
 
 #### Club Naming Convention
 
@@ -644,7 +644,7 @@ Club Newsletter -- typically monthly or after each session -- goes to registered
 
 Club Playbook Document is the single master document, typically a shared folder or wiki with one clear table of contents.
 
-**Example:** The club playbook document is the single master document, typically a shared folder or wiki with one clear table of contents, that assembles every one of those pieces into a binder a completely new leader could pick up cold and use to run the club from day one.
+**Example:** A successor opens one shared playbook and finds the annual calendar, partner contacts, safety procedures, registration steps, equipment records, budget routine, and emergency instructions.
 
 #### Club Policies Handbook
 
@@ -652,7 +652,7 @@ A single reference that collects approved club rules, safety procedures, reporti
 
 #### Club Registration With Venue
 
-Club Registration With Venue covers everything else a venue typically requires before a club can start meeting: proof of the volunteer background checks from Chapter 3, a copy of the charter or at least its code of conduct.
+Club Registration With Venue covers everything else a venue typically requires before a club can start meeting: proof of the volunteer background checks, a copy of the charter or at least its code of conduct.
 
 **Example:** The organizing team applies club registration with venue to a small pilot, gathers participant feedback, and revises the approach before using it throughout the club.
 
@@ -668,7 +668,7 @@ Club Sustainability is the capacity of a coding club to keep running smoothly th
 
 #### Club Values
 
-Club Values are the small set of beliefs a club commits to publicly -- typically three to six short statements such as "every student's first attempt is celebrated.
+A small set of public beliefs that guide behavior and decisions, such as curiosity, respect, inclusion, persistence, and shared learning. Daily practices show whether the values are real.
 
 **Example:** A value of curiosity leads mentors to answer a student’s unexpected idea with questions and experimentation instead of dismissing it.
 
@@ -680,15 +680,15 @@ Club Vision looks further out: an aspirational statement of the change the club 
 
 #### Club Website
 
-Club Website functions as the permanent home for that same content: a simple page with the mission and vision from Chapter 2, the current schedule.
+Club Website functions as the permanent home for that same content: a simple page with the mission and vision, the current schedule.
 
 **Example:** The organizing team applies club website to a small pilot, gathers participant feedback, and revises the approach before using it throughout the club.
 
 #### Coaching Leaders With AI
 
-Coaching Leaders With AI closes the loop the mentor coaching AI agent from chapter 32 started: an agent can also draft suggestions for the club's own leadership -- a founder or a rotating co-leader.
+Coaching Leaders With AI closes the loop the mentor coaching AI agent started: an agent can also draft suggestions for the club's own leadership -- a founder or a rotating co-leader.
 
-**Example:** Start: "Tool Selected (per Selection Criteria)" -- click reveals "The vendor comparison and selection criteria from earlier in this chapter already happened by this point." 2.
+**Example:** A new leader asks the tool for options after two mentors resign, then reviews the suggestions with the oversight board before acting.
 
 #### Code Along Session
 
@@ -728,7 +728,7 @@ Collaborative Challenge Design replaces competition entirely with a single share
 
 College Mentor Recruitment reaches computer science or education students at a nearby college, frequently through a professor willing to announce the opportunity or a campus volunteering office, and tends to bring enthusiastic.
 
-**Example:** Before the session, the leader explains college mentor recruitment to mentors, assigns responsibility, and checks afterward whether students received timely support.
+**Example:** A computer-science department shares a role description with students seeking service hours, and candidates attend an orientation and supervised trial session.
 
 #### Collision Avoidance Robot
 
@@ -738,15 +738,15 @@ Collision Avoidance Robot is a mobile robot that continuously checks a distance 
 
 #### Color Wheel Programming
 
-Color Wheel Programming is the technique behind every smooth color transition in this chapter: a function that takes a single number — a position on a 0-to-255 color wheel — and returns the matching red, green.
+A technique that maps one numeric position around a color wheel to red, green, and blue values. Advancing the position produces smooth rainbow animations without storing every color.
 
-**Example:** Rather than hand-picking RGB values for every color a pattern might need, a mentor or student writes, or reuses, one wheel(position) function once, and every pattern in this chapter calls it as needed.
+**Example:** A loop advances the wheel position by one each frame, producing a smooth rainbow that travels along the LED strip.
 
 #### Communication AI Agent
 
 An AI tool configured to draft, adapt, or organize messages for defined club audiences. A person checks facts, tone, recipients, privacy, and timing before sending.
 
-**Example:** The communication agent drafts a reply pulling the exact make-up policy language from the club's charter (chapter 3), phrased warmly rather than as a copy-pasted policy excerpt.
+**Example:** The communication agent drafts a reply pulling the exact make-up policy language from the club's charter, phrased warmly rather than as a copy-pasted policy excerpt.
 
 #### Community Center Club
 
@@ -758,7 +758,7 @@ A coding club based in a neighborhood center that already provides local program
 
 Funding awarded by a place-based charitable foundation for local benefit. Applications usually connect a documented community need with outcomes, budget, timeline, and reporting.
 
-**Example:** Compared to the smaller, one-time microgrants in Chapter 30, a community foundation grant is more likely to renew automatically if a club meets its reporting requirements.
+**Example:** Compared to the smaller, one-time microgrants, a community foundation grant is more likely to renew automatically if a club meets its reporting requirements.
 
 #### Community Outreach
 
@@ -770,7 +770,7 @@ Community Outreach means the club proactively reaching beyond its existing famil
 
 A coordinated request to local residents and organizations for specified money, equipment, volunteer time, space, or services needed by the club.
 
-**Example:** A worked example: a club sets up a donation table at a back-to-school night, with a sign stating the specific goal -- "$300 helps us buy ten Moving Rainbow kits" -- rather than a generic "please support our club" message.
+**Example:** A club sets up a donation table at a back-to-school night, with a sign stating the specific goal -- "$300 helps us buy ten Moving Rainbow kits" -- rather than a generic "please support our club" message.
 
 #### Community Trust Building
 
@@ -798,7 +798,7 @@ Component Storage System is a deliberate scheme for sorting and labeling a club'
 
 Component Testing Procedure is a focused check that confirms whether one specific, isolated component is working correctly — the step a circuit troubleshooting checklist reaches for only after ruling out power, continuity, and orientation as causes.
 
-**Example:** A worked example: a student's LED circuit stays dark even after confirming power, continuity, and correct orientation, so a mentor removes the LED alone and tests it with a multimeter's diode-test mode.
+**Example:** A student's LED circuit stays dark even after confirming power, continuity, and correct orientation, so a mentor removes the LED alone and tests it with a multimeter's diode-test mode.
 
 #### Computational Thinking Skills
 
@@ -824,7 +824,7 @@ Conflict Resolution Process is the defined sequence of steps a club follows once
 
 Consent For Data Collection is a guardian's informed, advance agreement to a club collecting and using specific pieces of their child's data, obtained before that data is collected rather than disclosed afterward as a policy buried in fine print.
 
-**Example:** For minors, this is not optional politeness -- it is the practical foundation everything else in this chapter sits on, since a club that skips it has no standing to call its data handling responsible, no matter how careful its backup routine or retention policy might be.
+**Example:** Before collecting progress records, the form tells guardians which fields are stored, why they are needed, who can view them, and when they are deleted.
 
 #### Content Filtering Software
 
@@ -840,7 +840,7 @@ Continuous Improvement: the practice of making small, deliberate adjustments aft
 
 Corporate Sponsorship is an ongoing or annual financial or in-kind commitment from a local business, given in exchange for public acknowledgment -- a logo on the club's flyer, a mention on its website, or a sign at events.
 
-**Example:** A worked example: a local hardware store agrees to sponsor a club at $500 per year in cash, plus a standing offer of a 10% discount on any tools or supplies the club buys there.
+**Example:** A local hardware store agrees to sponsor a club at $500 per year in cash, plus a standing offer of a 10% discount on any tools or supplies the club buys there.
 
 #### Cost Benefit Analysis
 
@@ -852,7 +852,7 @@ The structured examination of information about cost benefit to identify pattern
 
 The expected club cost divided by the number of students served during a defined period. Leaders state which shared, one-time, and recurring expenses are included.
 
-**Example:** Returning to the worked example from earlier in this chapter: the first year's $2,660 total budget, divided across 12 students, comes to $221.67 per student.
+**Example:** A first-year budget of $2,660 divided across twelve students produces an estimated cost of $221.67 per student.
 
 #### Course Reading Level
 
@@ -862,7 +862,7 @@ Course Reading Level: the grade-level complexity a club's written materials, cha
 
 A time-limited online appeal that gathers many small contributions for a specific club goal. The page explains costs, intended beneficiaries, updates, and what happens if the target changes.
 
-**Example:** A worked example: a club posts a DonorsChoose campaign titled "10 Raspberry Pi Pico Kits for Our After-School Coding Club," listing the exact $150 cost and a photo of a sample kit.
+**Example:** A club posts a DonorsChoose campaign titled "10 Raspberry Pi Pico Kits for Our After-School Coding Club," listing the exact $150 cost and a photo of a sample kit.
 
 #### Culturally Responsive Teaching
 
@@ -878,7 +878,7 @@ Introductory understanding of the flow of electric charge, measured in amperes. 
 
 #### Curriculum Design
 
-Curriculum Design: deciding which topics get taught, in what order, across a term or year. Learners practice it by creating, testing, explaining, and revising their work.
+The deliberate selection and ordering of learning goals, activities, projects, and evidence across a course or club term. The sequence reflects learner needs and prerequisites.
 
 #### Curriculum Pacing Guide
 
@@ -888,19 +888,19 @@ Curriculum Pacing Guide lays out roughly how many sessions each part of that cur
 
 Customizing Lessons With AI is the umbrella practice this section builds toward: a mentor, drawing on the mental model they have built of a specific student, asks an AI agent to draft a lesson variant suited to that student.
 
-**Example:** A worked example shows the practice end to end: a mentor has two students starting the same loops-and-conditionals concept card on the same afternoon.
+**Example:** A mentor has two students starting the same loops-and-conditionals concept card on the same afternoon.
 
 #### Data Backup Routine
 
 A short, repeated set of actions used to handle data backup consistently. A predictable routine reduces confusion and preserves time for responsible club data, communication, and progress tracking.
 
-**Example:** A worked example shows the routine catching exactly the failure it exists to prevent: a club's laptop used for attendance tracking is accidentally left on a bus after a session.
+**Example:** A club's laptop used for attendance tracking is accidentally left on a bus after a session.
 
 #### Data Entry Standardization
 
 Data Entry Standardization is agreeing on one consistent format for every value entered into a field -- always "Tuesday Group," never "Tues" or "tuesday" or "Tu group" -- so that formulas and later analysis treat matching entries as matching.
 
-**Example:** A worked example shows the failure this prevents: a club leader runs =COUNTIF(range, "Tuesday Group") expecting eighteen students and gets eleven, because seven rows were entered as "Tues Group" by a different mentor.
+**Example:** A club leader runs =COUNTIF(range, "Tuesday Group") expecting eighteen students and gets eleven, because seven rows were entered as "Tues Group" by a different mentor.
 
 #### Data Export Process
 
@@ -914,7 +914,7 @@ Data Privacy Policy governs how the club stores and protects any student informa
 
 A documented rule that explains how the club handles data retention, who is responsible, and what participants can expect. It promotes consistent, fair decisions in responsible club data, communication, and progress tracking.
 
-**Example:** A worked example shows the policy doing its job at a specific moment: a family that left the club four years ago asks what happened to their child's records.
+**Example:** A family that left the club four years ago asks what happened to their child's records.
 
 #### Data Sharing Agreement
 
@@ -926,7 +926,7 @@ A documented understanding about data sharing that identifies the parties, respo
 
 Data Visualization Basics means matching a chart type to the question being asked: a bar chart compares totals across categories, such as enrollment by semester; a line chart shows a trend over time.
 
-**Example:** A worked example makes the mismatch concrete: a club leader building a board report first tries a pie chart to show attendance across sixteen weeks, and ends up with sixteen thin slices no one can compare.
+**Example:** A club leader building a board report first tries a pie chart to show attendance across sixteen weeks, and ends up with sixteen thin slices no one can compare.
 
 #### Datasheet Reading
 
@@ -962,23 +962,23 @@ Designing Challenge Cards well means writing clear, numbered steps at the right 
 
 A secure mobile cabinet that stores and charges multiple laptops or tablets. Numbered slots, cable routing, ventilation, and a charging schedule simplify shared-device care.
 
-**Example:** A worked example shows the sizing decision in practice: a club currently owns twelve laptops and buys a 16-slot charging cart instead of the exact-fit 12-slot model, anticipating the four additional laptops a pending grant application would add.
+**Example:** A club currently owns twelve laptops and buys a 16-slot charging cart instead of the exact-fit 12-slot model, anticipating the four additional laptops a pending grant application would add.
 
 #### Device Cleaning Routine
 
 A short, repeated set of actions used to handle device cleaning consistently. A predictable routine reduces confusion and preserves time for shared devices, networks, and technical support.
 
-**Example:** A worked example shows the routine catching a problem before it becomes a repair: a mentor's monthly cleaning pass notices one laptop's fan vent is nearly blocked with dust and running unusually hot to the touch.
+**Example:** A mentor's monthly cleaning pass notices one laptop's fan vent is nearly blocked with dust and running unusually hot to the touch.
 
 #### Device Donation Program
 
 A structured process for accepting computers from donors, checking ownership and condition, securely erasing old data, refurbishing suitable machines, and responsibly recycling rejected equipment.
 
-**Example:** A donated laptop still has to pass through Chapter 22's full configuration and labeling pipeline before it ever meets a student; a donation skips the purchase decision, not the setup work.
+**Example:** A donated laptop still has to pass through full configuration and labeling pipeline before it ever meets a student; a donation skips the purchase decision, not the setup work.
 
 #### Device End Of Life Plan
 
-A documented approach for achieving device end of life, including intended results, responsibilities, resources, timing, and review points. It guides coordinated action while allowing leaders to adapt.
+A documented method for retiring equipment that is unsafe, unsupported, uneconomical to repair, or too old for club software. It covers data erasure, inventory updates, reuse, donation, and recycling.
 
 **Example:** A mentor wipes its stored data following the device security policy, removes its inventory-tracking label, and drops it off with a local certified e-waste recycler -- closing out its inventory record instead of letting it linger as an unaccounted-for entry on the spreadsheet.
 
@@ -1002,7 +1002,7 @@ A coordinated combination of people, tools, records, and procedures used to mana
 
 A documented understanding about device loaner that identifies the parties, responsibilities, limits, duration, and review conditions. It reduces ambiguity before resources or access are shared.
 
-**Example:** A worked example shows the form doing its job: a student wants to keep practicing MicroPython over a two-week school break.
+**Example:** A student wants to keep practicing MicroPython over a two-week school break.
 
 #### Device Repair Basics
 
@@ -1018,7 +1018,7 @@ A concise list of items or actions used to verify device return before work is c
 
 A documented rule that explains how the club handles device security, who is responsible, and what participants can expect. It promotes consistent, fair decisions in shared devices, networks, and technical support.
 
-**Example:** Where Chapter 3's policies are broad commitments a club makes on paper, a device security policy translates those commitments into specific, checkable settings on an actual laptop.
+**Example:** Where policies are broad commitments a club makes on paper, a device security policy translates those commitments into specific, checkable settings on an actual laptop.
 
 #### Device Setup Time Budget
 
@@ -1028,7 +1028,7 @@ The staff time reserved to unpack, update, configure, label, test, and document 
 
 #### Device Software Updates
 
-Device Software Updates are the operating-system and application patches a laptop needs on an ongoing basis after Chapter 22's initial configuration step, scheduled deliberately -- overnight, in the charging cart, on the club's own network.
+Device Software Updates are the operating-system and application patches a laptop needs on an ongoing basis after initial configuration step, scheduled deliberately -- overnight, in the charging cart, on the club's own network.
 
 **Example:** An update that starts downloading while a student is mid-project can freeze the machine, restart it, or eat exactly the bandwidth Network Bandwidth Planning just accounted for at the worst possible moment.
 
@@ -1040,7 +1040,7 @@ A concise list of items or actions used to verify device troubleshooting before 
 
 Digital Input is a signal read by a microcontroller that has only two possible states, HIGH or LOW, corresponding to a voltage near the supply voltage or near zero volts.
 
-**Example:** The push button circuit above is the most common digital input example in a beginner club, but any sensor that only reports "detected" or "not detected" — a simple tilt switch, for instance — also produces a digital input.
+**Example:** A button releases a clear LOW value and reports HIGH only while pressed, giving the program two dependable states to test.
 
 #### Digital Literacy
 
@@ -1072,7 +1072,7 @@ The introductory facts, vocabulary, and safe practices needed to begin working w
 
 A project set containing a controller, screen, cables, and sample code for showing text, numbers, icons, or graphics from a program.
 
-**Example:** Where a Robot Display Kit later in this chapter pairs a screen specifically with a robot chassis, a plain display kit is the screen and its wiring on their own, ready to attach to whatever project a student is already building.
+**Example:** A student connects an OLED to a controller and writes three lines of code that show the sensor value and a warning icon.
 
 #### Distance Sensor
 
@@ -1098,9 +1098,9 @@ A simplified representation or operating approach for drop in that makes importa
 
 #### Duplicate Record Cleanup
 
-Duplicate Record Cleanup is finding and merging rows that represent the same student or event entered more than once -- often from a slightly different spelling, like "A.K." and "AK".
+The process of identifying and merging records that represent the same student, mentor, event, or item. Matching uses multiple fields so similar people are not combined incorrectly.
 
-**Example:** A worked example shows a quick catch: a leader building the pivot table above notices the student total comes out to fifteen instead of the expected fourteen, traces it to one student entered once as "A.K." and once as "A.
+**Example:** A report shows fifteen students instead of fourteen; staff confirm that “A.K.” and “AK” share the same registration identifier and merge the two rows.
 
 #### Electrical Safety Rules
 
@@ -1152,7 +1152,7 @@ Encouragement Language is the specific wording a mentor chooses in the moment of
 
 #### End Of Term Celebration
 
-End Of Term Celebration -- which might be the showcase event described earlier, or a simpler, lower-key gathering -- giving students a clear sense of accomplishment and giving the club a natural.
+A closing event that recognizes specific student learning and brings a scheduled program period to a satisfying finish. It may include demonstrations, families, certificates, and reflection.
 
 #### Enrollment Trend Analysis
 
@@ -1168,13 +1168,13 @@ A coordinated combination of people, tools, records, and procedures used to mana
 
 #### Equipment Depreciation Planning
 
-Equipment Depreciation Planning extends the one-time-cost thinking from Chapter 30 into a standing schedule across every piece of equipment a club owns, not just the laptops -- tracking each item's purchase cost, expected useful life.
+Equipment Depreciation Planning extends the one-time-cost thinking into a standing schedule across every piece of equipment a club owns, not just the laptops -- tracking each item's purchase cost, expected useful life.
 
 #### Equipment Return Tracking
 
 Equipment Return Tracking closes the loop the checkout system opens: scanning a returned item's QR code flips its status back to "in storage," time-stamps the return.
 
-**Example:** A worked example shows the flag doing its job: three days after a workshop's two-day due date passes with no return scan, the system automatically flags all three items as overdue on the mentor's dashboard.
+**Example:** Three days after a workshop's two-day due date passes with no return scan, the system automatically flags all three items as overdue on the mentor's dashboard.
 
 #### Equity Audit Of Club
 
@@ -1202,7 +1202,7 @@ Event Retrospective Checklist: a short, standing list of questions the meeting a
 
 #### Eventbrite Case Study
 
-Eventbrite Case Study Chapter 2's course description points to is a common real-world example: a library club used Eventbrite's free tier to publish each session as a ticketed "event" with a fixed capacity, giving it registration, a waitlist.
+An applied example of using Eventbrite tickets, capacity limits, confirmations, cancellations, and a waiting list to manage coding-club registration. Platform features must be rechecked before adoption.
 
 #### Expense Reporting Process
 
@@ -1224,7 +1224,7 @@ Extracurricular Learning: any learning activity a student pursues outside requir
 
 A coordinated combination of people, tools, records, and procedures used to manage extrinsic reward. Its parts work together to support reliable decisions in student motivation, persistence, and recognition.
 
-**Example:** intrinsic-column -- color #4A90D9 -- boundaries approximately x1:2,y1:10,x2:32,y2:92 -- Summary: "Driven by the activity itself." Facts: curiosity about how something works; pride in a working robot; the pleasure of finally fixing a stubborn bug; enjoyment of building alongside a friend 2.
+**Example:** A student earns a sticker after demonstrating a working loop, but mentors also ask what the learner discovered so the prize does not replace curiosity.
 
 #### Failure As Learning Tool
 
@@ -1248,7 +1248,7 @@ Family Night Event invites parents and siblings to build alongside students for 
 
 Introductory understanding of an efficient algorithm that converts sampled signals from a time-based representation into frequency components. It can reveal which pitches dominate recorded sound.
 
-**Example:** mascot-encourage "You don't need to understand the math to manage the kit" !Circuit encouraging{ class="mascot-admonition-img" } If the name "Fast Fourier Transform" sounds intimidating, that's a completely normal reaction -- and it's also not a requirement for running this kit in your club.
+**Example:** A microphone hears a whistle, and the spectrum display shows one dominant frequency band even though the raw waveform changes too quickly to interpret by eye.
 
 #### Feedback Loop Design
 
@@ -1258,13 +1258,13 @@ Feedback Loop Design is making sure that feedback a club collects actually leads
 
 #### Female Mentor Recruitment
 
-Female Mentor Recruitment is the deliberate effort to bring women into a club's mentor team specifically, as distinct from recruiting girls as students, which Chapter 28 already covered.
+Female Mentor Recruitment is the deliberate effort to bring women into a club's mentor team specifically, as distinct from recruiting girls as students, which already covered.
 
 **Example:** A club can succeed completely at recruiting girl students and still send the unintended message that computing is something girls learn but men lead, if every adult running a session is male.
 
 #### Field Trip Coordination
 
-Field Trip Coordination takes students off-site entirely, to a local tech company or a robotics competition, and requires its own consent paperwork layered on top of the standard parental consent form from Chapter 3.
+Field Trip Coordination takes students off-site entirely, to a local tech company or a robotics competition, and requires its own consent paperwork layered on top of the standard parental consent form.
 
 **Example:** The organizer applies field trip coordination to the next event, communicates the details to families and mentors, and records issues for the retrospective.
 
@@ -1276,7 +1276,7 @@ A shared rule for constructing filenames from useful fields such as date, projec
 
 #### Finding Qualified Mentors
 
-Finding Qualified Mentors is the evaluation step that follows recruiting: judging each candidate not just on the background-check clearance Chapter 10 already requires, but on technical comfort with the club's actual kits.
+Finding Qualified Mentors is the evaluation step that follows recruiting: judging each candidate not just on the background-check clearance already requires, but on technical comfort with the club's actual kits.
 
 **Example:** One has deep professional experience but grows visibly frustrated when a student's LED strip needs the same wiring fix explained three times; the other has less technical depth but stays calm and patient through the same repeated question.
 
@@ -1284,7 +1284,7 @@ Finding Qualified Mentors is the evaluation step that follows recruiting: judgin
 
 Firewall Basics For Clubs cover a simple, default-deny rule for the club's network: block all outbound and inbound traffic except the specific destinations a club's software actually needs -- the platform's update servers, the coding tools' websites.
 
-**Example:** A worked example shows the default-deny approach catching something content filtering alone would miss: a club initially leaves all outbound network ports open, and a student discovers a game that tunnels its traffic through an unusual port to slip past the category-based content filter.
+**Example:** A club initially leaves all outbound network ports open, and a student discovers a game that tunnels its traffic through an unusual port to slip past the category-based content filter.
 
 #### First Aid Kit Location
 
@@ -1302,7 +1302,7 @@ First Impression Design -- a clearly visible sign-in table, a mentor greeting fa
 
 #### First Three Students
 
-First Three Students -- Chapter 1's own opening example -- or a slightly larger pilot cohort of perhaps six to ten students for the first several sessions.
+A deliberately tiny opening cohort that lets one mentor and one leader test the club experience, equipment, timing, and support routines before accepting wider enrollment.
 
 #### Floor Robot
 
@@ -1318,11 +1318,11 @@ Flyer Design produces a simple, high-contrast printed or digital flyer -- date, 
 
 Forms And Feedback Tools are the online forms a club uses to collect structured input from families and mentors -- a post-event survey, a badge self-assessment, an incident report -- built from a small set of question types.
 
-**Example:** A worked example shows why structure matters: a club that asks "How was tonight's session?" by email gets thirty different reply formats, some one word, some three paragraphs, that take real time to compare.
+**Example:** A club that asks "How was tonight's session?" by email gets thirty different reply formats, some one word, some three paragraphs, that take real time to compare.
 
 #### Founding Team
 
-Founding Team is the small group -- typically two to four people -- who share the initial workload of establishing the club: one person securing the venue, another handling the background-check and consent-form paperwork from Chapter 3.
+Founding Team is the small group -- typically two to four people -- who share the initial workload of establishing the club: one person securing the venue, another handling the background-check and consent-form paperwork.
 
 #### Fourth Of July Pattern
 
@@ -1338,7 +1338,7 @@ Franchise Model goes further still: packaging the club's charter, curriculum, an
 
 A no-cost system that lends configured computers to learners who lack suitable equipment. Agreements cover care, support, privacy, return dates, and damage without punitive barriers.
 
-**Example:** A worked example: a club purchases five Chromebooks specifically for loan rather than in-room use, using the configuration steps from Chapter 22 -- a student login, a saved-work folder, and a class bookmark folder already set up before the laptop ever leaves the building.
+**Example:** A club purchases five Chromebooks specifically for loan rather than in-room use, using the configuration steps -- a student login, a saved-work folder, and a class bookmark folder already set up before the laptop ever leaves the building.
 
 #### Frequency Spectrum Display
 
@@ -1350,19 +1350,19 @@ An electronic output device used to present frequency spectrum through text, num
 
 Friendly Competition Design builds a competitive activity to be low-stakes and short-lived on purpose -- time-boxed to one session, scored by team rather than by individual, and framed with humor.
 
-**Example:** A worked example shows the format working well: a mentor runs a fifteen-minute "fastest working LED blink" contest, split into pairs rather than solo entrants, with the losing pairs from round one immediately re-paired into new teams for round two.
+**Example:** A mentor runs a fifteen-minute "fastest working LED blink" contest, split into pairs rather than solo entrants, with the losing pairs from round one immediately re-paired into new teams for round two.
 
 #### Fundraising Event Planning
 
 Fundraising Event Planning means organizing a single scheduled event -- a trivia night, a bake sale, a small coding showcase with an admission suggestion -- specifically to raise money, which requires its own small budget for venue, supplies.
 
-**Example:** A worked example: a club runs a trivia night at a community center, spending $80 on room rental, snacks, and small prizes.
+**Example:** A club runs a trivia night at a community center, spending $80 on room rental, snacks, and small prizes.
 
 #### Gamification Elements
 
 Gamification Elements are small, optional game-like touches added to a session -- a point, a level, a streak counter -- that make progress feel a little more like play without becoming the club's primary motivation system.
 
-**Example:** A student who has a five-session streak feels a small pull to keep it going, but because the streak is personal and private, it never turns into the kind of public ranking Chapter 26 warned against with leaderboards.
+**Example:** A student who has a five-session streak feels a small pull to keep it going, but because the streak is personal and private, it never turns into the kind of public ranking warned against with leaderboards.
 
 #### Gauging Interest Survey
 
@@ -1398,7 +1398,7 @@ Grant Proposal Structure is the set of standard sections nearly every grant appl
 
 Grant Writing Basics cover what a grant actually is -- money awarded by a foundation, government agency, or company based on a written application that the funder evaluates against its own stated priorities.
 
-**Example:** mascot-encourage "Your first grant application is not supposed to feel easy" !Circuit encouraging{ class="mascot-admonition-img" } If staring at a blank grant application feels intimidating, that is completely normal -- most first-time club leaders feel exactly the same way.
+**Example:** A first application links a documented need for loaner laptops to an itemized budget, delivery timeline, student access goal, and reporting method.
 
 #### Group Messaging App
 
@@ -1410,7 +1410,7 @@ A software application used to support group messaging on phones, tablets, or co
 
 Growth Mindset Coaching is the practice of responding to a student's struggle or failure with language that frames ability as something that grows with effort and practice, rather than as a fixed trait a student either has or doesn't.
 
-**Example:** Instead of reassuring the student that it's easy, the mentor responds, "You can't do it yet -- last month you couldn't get the LED strip to blink at all, and now you can program five different patterns.
+**Example:** After a robot fails to turn, the mentor says, “Your test ruled out the sensor. What could you test next?” instead of calling the task easy.
 
 #### Guest Speaker Scheduling
 
@@ -1420,7 +1420,7 @@ Guest Speaker Scheduling brings in an outside professional for a single session 
 
 Guest Wifi Access is a separate wireless network, distinct from the club's own managed-device network, offered to visiting parents, siblings, and any personal phone or tablet that isn't part of the club's inventory.
 
-**Example:** The table below puts the two networks side by side for a mentor setting up a club space for the first time.
+**Example:** A visiting parent connects a phone to the isolated guest network without receiving access to club laptops, printers, or shared drives.
 
 #### Gyroscope Kit
 
@@ -1430,7 +1430,7 @@ A project set built around a gyroscope that measures rotation about three axes. 
 
 Gyroscope Orientation Data refers to the pitch, roll, and yaw values a program calculates from a gyroscope kit's raw rotation readings — pitch describing a tip forward or backward, roll describing a tip left or right.
 
-**Example:** A student who tilts the board and watches all three numbers on a connected display quickly learns to associate each axis with a specific hand motion, which is exactly the skill the diagram below is built to practice before a student ever wires a physical kit.
+**Example:** A student tilts and turns the board while watching three axis readings, then identifies which value changes for each motion.
 
 #### Halloween Costume Lighting
 
@@ -1448,7 +1448,7 @@ Learning through direct action, such as writing code, wiring a circuit, or testi
 
 #### Headphone Management
 
-Headphone Management covers keeping a shared set of headphones sanitized between students, stored in a labeled bin, and replaced when broken -- extending Chapter 22's device cleaning routine to an accessory that touches a different student's ears every session.
+Headphone Management covers keeping a shared set of headphones sanitized between students, stored in a labeled bin, and replaced when broken -- extending device cleaning routine to an accessory that touches a different student's ears every session.
 
 #### Holiday Light Pattern
 
@@ -1464,7 +1464,7 @@ Holiday Schedule Planning decides, well in advance, which sessions get skipped f
 
 Human In The Loop Review is the specific workflow requirement that no AI-drafted output reaches its destination without passing through an actual person's approval step first.
 
-**Example:** Start: "Agent Produces a Draft" -- click reveals "Any of the seven agent types covered in this chapter, producing any kind of draft output." 2.
+**Example:** An agent drafts a cancellation notice, but the event leader verifies the closure, edits the message, and approves the recipient list before sending.
 
 #### Humidity Sensor
 
@@ -1480,7 +1480,7 @@ Hybrid Club Model increasingly practical: a club structure that blends in-person
 
 #### Immigrant Family Outreach
 
-Immigrant Family Outreach goes beyond the translated materials and language accessibility covered in Chapter 28 -- it means building an ongoing relationship with the specific organizations an immigrant community already relies on, such as a resettlement agency, an ESL program.
+Immigrant Family Outreach goes beyond the translated materials and language accessibility covered -- it means building an ongoing relationship with the specific organizations an immigrant community already relies on, such as a resettlement agency, an ESL program.
 
 **Example:** A caseworker or association leader who vouches for a club in person, even briefly, often does more than any printed material translated into a family's home language.
 
@@ -1492,19 +1492,19 @@ A noncash contribution of goods or services, such as laptops, meeting space, pri
 
 #### Incident Reporting Process
 
-Incident Reporting Process is the specific procedure for documenting a physical injury or safety incident -- distinct from the conflict resolution process in Chapter 3, which handles interpersonal disputes rather than injuries.
+Incident Reporting Process is the specific procedure for documenting a physical injury or safety incident -- distinct from the conflict resolution process, which handles interpersonal disputes rather than injuries.
 
 #### Inclusive Marketing Materials
 
-Inclusive Marketing Materials are a club's flyers, web pages, and sign-up forms designed and checked against the same representation criteria the promotional-materials rubric in Chapter 28 applied to recruiting girls, women, and minority students -- diverse imagery.
+Flyers, web pages, images, and registration forms that welcome varied genders, cultures, languages, abilities, and income levels. They avoid stereotypes and clearly show available access support.
 
 **Example:** A marketing piece is inclusive when someone outside the existing mentor team, ideally from a community the club wants to reach, reviews it before it goes out, not only when it looks diverse to the person who made it.
 
 #### Individual Device Account
 
-A digital identity and permission set created for individual device to access approved devices or services. It should use only the access needed and follow privacy and security practices.
+A personal login assigned to one learner on a specific or shared device. Separate credentials, files, settings, and permissions protect work from other users.
 
-**Example:** The table below puts both account types side by side for a club leader deciding between them.
+**Example:** Maya signs in with her own account and finds her Python files unchanged even though three students used the laptop that day.
 
 #### Influence Graph Concept
 
@@ -1520,7 +1520,7 @@ Informal Learning -- learning that happens outside a structured curriculum, driv
 
 #### Insurance Considerations
 
-Insurance Considerations, introduced briefly as a liability topic in Chapter 3, become concrete once a club formalizes its venue agreement: the written agreement with a school, library, bookstore, or community center specifying meeting times, any fees.
+Questions about which policies cover the club, venue, volunteers, participants, equipment, and activities. Leaders confirm coverage, exclusions, limits, certificates, and reporting duties with qualified advisers.
 
 #### Intelligent Textbook
 
@@ -1538,13 +1538,13 @@ Interest Survey Analysis is the process of turning raw responses into a decision
 
 #### Intermediate Track Curriculum
 
-Intermediate Track Curriculum builds toward the block-to-text transition and core Python constructs. Learners practice it by creating, testing, explaining, and revising their work.
+A learning sequence for students ready to move from block-based projects into text programming, combining variables, loops, conditionals, functions, and structured debugging.
 
 #### Intrinsic Motivation
 
 Intrinsic Motivation is the drive to do something because the activity itself is satisfying -- curiosity, the pleasure of solving a puzzle, or pride in making something work -- with no external reward required.
 
-**Example:** A worked example shows intrinsic motivation in its purest form: a student's robot keeps veering left instead of driving straight, and pickup time arrives before the bug is fixed.
+**Example:** A student's robot keeps veering left instead of driving straight, and pickup time arrives before the bug is fixed.
 
 #### Inventory Audit Process
 
@@ -1610,9 +1610,9 @@ Kit Damage Assessment is the judgment call a mentor makes about a returned kit's
 
 #### Kit Debugging Guide
 
-A practical reference that explains how to handle kit debugging through ordered steps, checks, and common fixes. It helps different volunteers deliver consistent support.
+A troubleshooting reference organized by symptoms, likely causes, safe tests, and verified fixes for one project kit. It begins with power, wiring, and known-good code checks.
 
-**Example:** Now that a documentation sheet's three supporting pieces have each been introduced, the table below summarizes what each one captures and when a mentor actually reaches for it.
+**Example:** When a display stays blank, the guide directs the learner to verify power, check the cable order, run known-good code, and then swap the display.
 
 #### Kit Difficulty Rating
 
@@ -1624,13 +1624,13 @@ A consistent estimate of the knowledge, assembly, coding, debugging, and supervi
 
 A one-page record kept with a kit that lists its contents, purpose, setup steps, known issues, and links to current instructions or code.
 
-**Example:** A worked example shows the sheet doing its real job: the mentor who originally wired and tested the club's one gyroscope kit is out sick the morning of a session.
+**Example:** The mentor who originally wired and tested the club's one gyroscope kit is out sick the morning of a session.
 
 #### Kit Loaner Program
 
 A controlled way for students or mentors to borrow project kits outside sessions. Checkout records, due dates, care instructions, and replacement rules protect access.
 
-**Example:** A worked example shows the program running end to end: a student who wants to keep experimenting between sessions signs out a gyroscope kit; the sign-out log records the student's name, the kit's ID, the date it left, and a two-week due date.
+**Example:** A student who wants to keep experimenting between sessions signs out a gyroscope kit; the sign-out log records the student's name, the kit's ID, the date it left, and a two-week due date.
 
 #### Kit Return Process
 
@@ -1652,13 +1652,13 @@ A concise list of items or actions used to verify kit safety before work is cons
 
 A labeled container assigned to one kit or kit type, with compartments for small parts and a checklist showing what belongs inside.
 
-**Example:** An unlabeled box of loose parts forces a mentor to open several bins and guess; a storage bin labeled with the kit's name and difficulty rating from Chapter 20 turns that search into a two-second glance.
+**Example:** An unlabeled box of loose parts forces a mentor to open several bins and guess; a storage bin labeled with the kit's name and difficulty rating turns that search into a two-second glance.
 
 #### Kit Unboxing Procedure
 
-A documented series of steps for carrying out kit unboxing safely and consistently. It tells club workers what to do, in what order, and how to confirm completion.
+A repeatable intake process for opening a new kit, matching parts to the packing list, inspecting damage, recording identifiers, labeling storage, and testing a basic build.
 
-**Example:** A worked example shows why testing at unboxing matters more than it might seem: a mentor unboxes ten new microphone kits in one sitting, plugging each into a Pico running the five-line code template described later in this chapter.
+**Example:** A mentor opens ten microphone kits, checks every part against the list, records missing cables, labels the bins, and runs one test program per kit.
 
 #### Kit Upgrade Path
 
@@ -1676,7 +1676,7 @@ Kit Vendor Selection is the deliberate comparison of suppliers before ordering a
 
 A visual reference showing exactly how a kit’s controller, power, sensors, and outputs connect. Labels and wire colors help learners reproduce a known-safe circuit.
 
-**Example:** A worked example shows the diagram catching a mistake before it happens: two of the club's gyroscope kits came from different vendor batches with SDA and SCL swapped on the physical board.
+**Example:** Two of the club's gyroscope kits came from different vendor batches with SDA and SCL swapped on the physical board.
 
 #### Knowledge Transfer Process
 
@@ -1686,13 +1686,13 @@ Knowledge Transfer Process is the deliberate set of techniques -- shadowing, co-
 
 Language Accessibility means making sure a family who speaks a language other than English at home can understand what the club is, when it meets, what it costs, and how to sign up.
 
-**Example:** A worked example: a club's registration confirmation arrives only in English, and a parent who reads Vietnamese comfortably but not English cannot confirm the meeting time without asking a bilingual neighbor each week.
+**Example:** A club's registration confirmation arrives only in English, and a parent who reads Vietnamese comfortably but not English cannot confirm the meeting time without asking a bilingual neighbor each week.
 
 #### Laptop Configuration
 
 Laptop Configuration is the one-time setup every laptop goes through after purchase and before its first student session: installing required software, connecting the machine to the club's management console.
 
-**Example:** A worked example shows the cost of skipping it: a club leader hands out six brand-new Windows laptops on day one without configuring them first, only to discover mid-session that none of them have the Arduino IDE installed and three still have factory-default admin accounts logged in.
+**Example:** A club leader hands out six brand-new Windows laptops on day one without configuring them first, only to discover mid-session that none of them have the Arduino IDE installed and three still have factory-default admin accounts logged in.
 
 #### Laptop Purchasing
 
@@ -1720,7 +1720,7 @@ Learning Graph: a directed graph where each concept is a node and each edge reco
 
 #### Learning Map
 
-Learning Map is a visual chart showing every challenge card or skill a club offers, arranged to show which builds on which -- a student-facing version of the skill progression ladder from Chapter 14.
+Learning Map is a visual chart showing every challenge card or skill a club offers, arranged to show which builds on which -- a student-facing version of the skill progression ladder.
 
 #### Learning Map Display
 
@@ -1732,7 +1732,7 @@ An electronic output device used to present learning map through text, numbers, 
 
 The introductory facts, vocabulary, and safe practices needed to begin working with led. This foundation supports supervised practice before learners attempt more complex tasks.
 
-**Example:** A worked example: a student holding an LED with legs of clearly different lengths orients the longer leg toward the resistor-fed positive column of the breadboard and the shorter leg toward the negative power rail.
+**Example:** A student holding an LED with legs of clearly different lengths orients the longer leg toward the resistor-fed positive column of the breadboard and the shorter leg toward the negative power rail.
 
 #### LED Matrix Display
 
@@ -1748,7 +1748,7 @@ LED Noodle Project takes the same NeoPixel strip concept and threads it through 
 
 #### LED Strip Wiring
 
-LED Strip Wiring covers the three physical connections a NeoPixel strip needs from a Pico: a 5-volt power wire, a ground wire, and a single data wire carrying the pixel-by-pixel color information from the loop code above.
+The power, ground, and data connections required between an addressable LED strip and its controller. Correct voltage, shared ground, connector direction, and pin assignment prevent damage and errors.
 
 **Example:** A club sticking to its stock kit size never needs to make this change, but it is worth a mentor knowing before a student proposes wrapping a strip around an entire classroom doorway.
 
@@ -1758,7 +1758,7 @@ Legal Compliance Basics cover the handful of legal questions worth a quick check
 
 #### Lesson Sequencing
 
-Lesson Sequencing respects the dependencies this chapter has already described -- keyboarding before Scratch, Scratch confidence before the text transition, variables before functions -- rather than jumping to an exciting topic before its prerequisites are solid.
+The ordering of lessons so each activity uses knowledge learners have already developed. Keyboarding can precede Scratch, while variables and loops can precede functions and larger Python projects.
 
 #### Lessons Learned Log
 
@@ -1774,7 +1774,7 @@ A coordinated combination of people, tools, records, and procedures used to mana
 
 Leveraging AI Agents means matching a specific club task to the specific kind of agent built for it, rather than expecting one general-purpose tool to handle everything from drafting an email to building next semester's calendar equally well.
 
-**Example:** The six agent types introduced below are not six different products a club has to buy -- they are six different jobs an AI agent can be asked to do.
+**Example:** One agent drafts reminders, another checks registration capacity, and a third proposes schedules; leaders review each output under task-specific rules.
 
 #### Liability Considerations
 
@@ -1790,7 +1790,7 @@ A coding club hosted by a public or school library, usually using the library’
 
 A cooperative relationship formed to support library funding through shared resources, expertise, access, or credibility. A useful partnership has mutual benefit and documented expectations.
 
-**Example:** The map below shows how each institutional partnership addresses a different piece of a club's ongoing funding need, since a club rarely relies on just one.
+**Example:** A library provides the room and staff time while the club raises money for kits, giving both partners clear responsibilities and reducing duplicated costs.
 
 #### Library Partnership Outreach
 
@@ -1806,7 +1806,7 @@ Light Sensor, most commonly a photoresistor or light-dependent resistor (LDR), i
 
 An environmental project that periodically reads light, temperature, and humidity sensors and displays or stores the results. Comparing readings over time reveals patterns in a room.
 
-**Example:** A worked example walks through a full session's use of the kit: a student sets the monitor on a windowsill at the start of a two-hour club meeting, and a short program appends one line — timestamp, light level, temperature, and humidity — to a simple list every sixty seconds.
+**Example:** A student sets the monitor on a windowsill at the start of a two-hour club meeting, and a short program appends one line — timestamp, light level, temperature, and humidity — to a simple list every sixty seconds.
 
 #### Lighting Considerations
 
@@ -1842,13 +1842,13 @@ A documented rule that explains how the club handles lost item, who is responsib
 
 Low Income Family Support covers the specific accommodations a club makes so that a family's income never determines whether their student can participate -- not just waiving a registration fee.
 
-**Example:** A worked example: a club charges no registration fee but asks each family to bring a $15 supply kit for the first project.
+**Example:** A club charges no registration fee but asks each family to bring a $15 supply kit for the first project.
 
 #### MacOS Device Management
 
 MacOS Device Management administers a fleet of Apple laptops individually or through a paid mobile-device-management (MDM) tool, applying the same kinds of software installation and security settings as Windows management but through Apple's own configuration tools.
 
-**Example:** A worked example shows why the distinction matters: a club receives a single donated MacBook alongside its usual Chromebook fleet.
+**Example:** A club receives a single donated MacBook alongside its usual Chromebook fleet.
 
 #### Maker Space
 
@@ -1872,15 +1872,15 @@ Meeting Agenda Design breaks that first session into short, clearly bounded bloc
 
 A simplified representation or operating approach for membership fee that makes important relationships easier to understand and apply. Its assumptions and limits should remain visible.
 
-**Example:** A club sets a flat $10-per-month membership due, collected from 10 participating families across a nine-month school year, bringing in $900 -- comfortably covering the $830 recurring budget from Chapter 30 with a small cushion left over.
+**Example:** A club sets a flat $10-per-month membership due, collected from 10 participating families across a nine-month school year, bringing in $900 -- comfortably covering the $830 recurring budget with a small cushion left over.
 
 #### Mentor
 
-Mentor is any screened adult volunteer who guides students directly during a session -- the role Chapter 4 first named, and the single concept every other idea in this book's learning graph connects back to more than any other.
+Mentor is any screened adult volunteer who guides students directly during a session -- the role, and the single concept every other idea in this book's learning graph connects back to more than any other.
 
 #### Mentor Appreciation
 
-Mentor Appreciation is the deliberate, regular practice of thanking mentors specifically and publicly -- a shoutout in the newsletter from Chapter 7, a small end-of-term gift, or simply the club leader personally naming what a mentor did well that session.
+Mentor Appreciation is the deliberate, regular practice of thanking mentors specifically and publicly -- a shoutout in the newsletter, a small end-of-term gift, or simply the club leader personally naming what a mentor did well that session.
 
 #### Mentor Attendance Tracking
 
@@ -1912,7 +1912,7 @@ A short, repeated set of actions used to handle mentor check in consistently. A 
 
 An AI tool that suggests questions, feedback, or teaching strategies to help mentors support learners. Its guidance supplements training and never replaces safeguarding or human judgment.
 
-**Example:** Center node "Leveraging AI Agents" (gray hexagon) -- click reveals "Matching a task to the agent type built for it, rather than one tool trying to do everything." 2.
+**Example:** A mentor describes a learner stuck on loops, and the agent suggests three guiding questions instead of supplying finished code.
 
 #### Mentor Communication Log
 
@@ -1922,9 +1922,9 @@ A dated record of assignments, availability, feedback, and follow-up messages fo
 
 #### Mentor Feedback Collection
 
-Mentor Feedback Collection is a short, periodic check-in -- a quarterly survey or a casual conversation -- asking mentors what's working and what's frustrating them, feeding directly into the lessons learned log from Chapter 1.
+Mentor Feedback Collection is a short, periodic check-in -- a quarterly survey or a casual conversation -- asking mentors what's working and what's frustrating them, feeding directly into the lessons learned log.
 
-**Example:** Before the session, the leader explains mentor feedback collection to mentors, assigns responsibility, and checks afterward whether students received timely support.
+**Example:** A quarterly survey asks mentors which activities need better instructions, what training they want, and whether the schedule remains manageable.
 
 #### Mentor Gated Enrollment
 
@@ -1968,11 +1968,11 @@ A trusting working relationship in which a learner feels safe asking questions a
 
 #### Mentor To Student Introduction
 
-Mentor To Student Introduction: a deliberate, name-based greeting from the mentor who will be working with them that session, directly reinforcing the walk-in experience and first impression design from Chapter 5.
+Mentor To Student Introduction: a deliberate, name-based greeting from the mentor who will be working with them that session, directly reinforcing the walk-in experience and first impression design.
 
 #### Mentor Training Curriculum
 
-Mentor Training Curriculum is the fixed sequence of topics every new mentor works through before running any part of a session unsupervised -- electrical safety rules, the specific kits they'll support, the club's optional-attendance philosophy from Chapter 1.
+Mentor Training Curriculum is the fixed sequence of topics every new mentor works through before running any part of a session unsupervised -- electrical safety rules, the specific kits they'll support, the club's optional-attendance philosophy.
 
 **Example:** Week 2 covers the club's philosophy and communication techniques, including a role-play where the trainee explains a wiring mistake to a "student" played by a veteran mentor.
 
@@ -1980,13 +1980,13 @@ Mentor Training Curriculum is the fixed sequence of topics every new mentor work
 
 A project set containing a microphone module and controller code for measuring sound level or sampling audio. Recording speech requires clear privacy rules and consent.
 
-**Example:** A worked example shows the kit at its most basic: a student wires the microphone kit to a Pico and watches a raw loudness number climb sharply the instant someone claps nearby, then decay back toward a quiet baseline over the next second or two.
+**Example:** A student wires the microphone kit to a Pico and watches a raw loudness number climb sharply the instant someone claps nearby, then decay back toward a quiet baseline over the next second or two.
 
 #### MicroPython Basics
 
 Introductory knowledge for using the Python-based MicroPython language on microcontrollers, including running scripts and controlling hardware pins with limited memory and processing power.
 
-**Example:** Most of the Python syntax a mentor may already know from Chapter 14 carries over unchanged — variables, if-statements, and functions all look the same — but MicroPython trades away Python's larger libraries in exchange for fitting inside a few hundred kilobytes of memory.
+**Example:** Most of the Python syntax a mentor may already know carries over unchanged — variables, if-statements, and functions all look the same — but MicroPython trades away Python's larger libraries in exchange for fitting inside a few hundred kilobytes of memory.
 
 #### MicroPython Loop
 
@@ -2020,7 +2020,7 @@ A project set using an accelerometer, gyroscope, or both to detect movement and 
 
 Motion Sensor, most commonly a PIR (passive infrared) sensor, detects movement by sensing changes in infrared radiation — the heat naturally given off by a warm body — passing across its field of view.
 
-**Example:** A worked example matters for a club setting specifically: most PIR modules include a cooldown period, typically 2 to 5 seconds, during which the sensor ignores further motion after it fires once.
+**Example:** Most PIR modules include a cooldown period, typically 2 to 5 seconds, during which the sensor ignores further motion after it fires once.
 
 #### Motivating Students
 
@@ -2038,7 +2038,7 @@ The introductory facts, vocabulary, and safe practices needed to begin working w
 
 Mouse And Keyboard Setup covers pairing an external mouse or keyboard to a laptop when the built-in trackpad or keyboard is impractical for a specific project.
 
-**Example:** A worked example shows the need surfacing during a physical-computing session: a club running a MicroPython breadboard project finds students' hands cramped between the laptop's built-in keyboard and the breadboard sitting right next to it.
+**Example:** A club running a MicroPython breadboard project finds students' hands cramped between the laptop's built-in keyboard and the breadboard sitting right next to it.
 
 #### Moving Rainbow Kit
 
@@ -2074,19 +2074,19 @@ The safe use of a meter to measure voltage, resistance, continuity, or current. 
 
 NeoPixel LED Strip is a length of flexible circuit board holding a row of individually addressable RGB LEDs, each one capable of showing its own separate color under program control.
 
-**Example:** Now that the addressing idea is concrete, the table below contrasts a NeoPixel strip against the plain, non-addressable LED strips a student may have seen on a string of patio lights.
+**Example:** A program sets the first pixel red, the second green, and the third blue, then calls show to update the entire strip.
 
 #### Network Bandwidth Planning
 
 Network Bandwidth Planning is estimating, in advance, how much total data a club's internet connection must carry at the busiest moment of a session -- every managed laptop browsing, streaming a tutorial video.
 
-**Example:** A worked example shows the arithmetic a club leader can actually run: light web browsing needs roughly 1-2 Mbps per device, but a shared video tutorial playing on every laptop at once needs closer to 5 Mbps per device.
+**Example:** Light web browsing needs roughly 1-2 Mbps per device, but a shared video tutorial playing on every laptop at once needs closer to 5 Mbps per device.
 
 #### New Leader Onboarding
 
-New Leader Onboarding is the structured sequence a designated successor works through before fully taking over -- reviewing every written procedure and SOP, shadowing and then co-leading sessions as the knowledge transfer process above describes.
+A structured handoff in which a successor studies procedures, observes operations, co-leads sessions, practices decisions, meets partners, and demonstrates readiness before assuming full authority.
 
-**Example:** Onboarding differs from the mentor training curriculum earlier in this chapter, which prepares someone to lead one session; onboarding prepares someone to run the whole club, including the parts that never happen during a normal Saturday.
+**Example:** A successor first observes check-in, then co-leads a session, handles a simulated cancellation, meets the venue manager, and finally runs a supervised event.
 
 #### New Student Placement
 
@@ -2096,7 +2096,7 @@ New Student Placement is the deliberate decision of where a first-time student s
 
 Newsletter Automation is a templated digest -- upcoming dates, recent badge highlights, a reminder of the loaner-laptop policy -- generated and sent on a fixed schedule, such as the first of every month.
 
-**Example:** A worked example shows the shift in practice: a club that used to send an update "whenever something felt worth sharing" sent three emails in one busy month and none in the next two.
+**Example:** A club that used to send an update "whenever something felt worth sharing" sent three emails in one busy month and none in the next two.
 
 #### NightLight Project
 
@@ -2128,7 +2128,7 @@ Nonprofit Fiscal Sponsorship is an arrangement in which an established 501(c)(3)
 
 A coordinated combination of people, tools, records, and procedures used to manage notification. Its parts work together to support reliable decisions in responsible club data, communication, and progress tracking.
 
-**Example:** A worked example shows a two-touch pattern working well: a club sends one reminder email two weeks before a special weekend event, giving families time to plan around it, and a second, shorter reminder the day before, as a same-day-relevant nudge.
+**Example:** A club sends one reminder email two weeks before a special weekend event, giving families time to plan around it, and a second, shorter reminder the day before, as a same-day-relevant nudge.
 
 #### Offline Coding Environment
 
@@ -2138,21 +2138,21 @@ Offline Coding Environment -- a downloaded editor -- works better for a club wit
 
 Offline Mode Preparation is installing and testing the offline-capable version of a club's coding tools -- a desktop app instead of a browser tab, a downloaded copy of a lesson instead of a live web page -- before a session.
 
-**Example:** mascot-warning "A network outage without an offline fallback stops the session cold" !Circuit warning{ class="mascot-admonition-img" } Watch out for this common trap: a club that runs entirely through browser-based tools has no fallback the moment Wi-Fi drops, and a live session simply stops.
+**Example:** Before a session, staff download instructions, install local editors, copy starter files, and test a project with Wi-Fi disabled.
 
 #### OLED Display
 
 OLED Display — organic light-emitting diode display — produces its image from an array of individually lit pixels that each generate their own light directly, without needing a separate backlight the way older LCD screens do.
 
-**Example:** A worked example shows how code actually reaches a specific pixel: every pixel on a 128x64 OLED has an (x, y) coordinate, with (0, 0) at the top-left corner and (127, 63) at the bottom-right.
+**Example:** Every pixel on a 128x64 OLED has an (x, y) coordinate, with (0, 0) at the top-left corner and (127, 63) at the bottom-right.
 
 #### Onboarding New Mentors
 
-Onboarding New Mentors is the parallel process for adult volunteers -- walking a new mentor through the code of conduct and child safety policy (Chapter 3), pairing them with an experienced mentor for their first two sessions.
+Onboarding New Mentors is the parallel process for adult volunteers -- walking a new mentor through the code of conduct and child safety policy, pairing them with an experienced mentor for their first two sessions.
 
 #### Onboarding New Students
 
-Onboarding New Students extends that welcome into the first few sessions specifically: pairing a brand-new student with a returning student for peer support (Chapter 1).
+Onboarding New Students extends that welcome into the first few sessions specifically: pairing a brand-new student with a returning student for peer support.
 
 #### One On One Mentoring
 
@@ -2172,13 +2172,13 @@ Online Coding Platform runs entirely in a browser with nothing to install, lower
 
 #### Online Registration Form
 
-Online Registration Form collects the essentials in one place: student name and age, parent contact information, and a link or reference to the parental consent and photo release forms from Chapter 3.
+Online Registration Form collects the essentials in one place: student name and age, parent contact information, and a link or reference to the parental consent and photo release forms.
 
 **Example:** The organizer applies online registration form to the next event, communicates the details to families and mentors, and records issues for the retrospective.
 
 #### Open House Event
 
-Open House Event invites the broader public in to see what the club does, often timed alongside a grand opening or anniversary event from Chapter 6.
+Open House Event invites the broader public in to see what the club does, often timed alongside a grand opening or anniversary event.
 
 #### Oversight Board
 
@@ -2188,7 +2188,7 @@ A group responsible for reviewing a club’s direction, risks, finances, policie
 
 #### Pair Programming
 
-Pair Programming puts two students at one computer, one actively typing while the other watches and suggests, then switching roles -- a structured, formalized version of the peer learning Chapter 1 described generally.
+Pair Programming puts two students at one computer, one actively typing while the other watches and suggests, then switching roles -- a structured, formalized version of the peer learning generally.
 
 #### Parent Access Portal
 
@@ -2220,7 +2220,7 @@ Parental Consent Form is the signed document a parent completes before their chi
 
 #### Parental Control Software
 
-Parental Control Software provides broader, operating-system-level restrictions than content filtering alone -- limiting which applications can be installed, generating usage reports, and enforcing daily time limits -- configured by the club (or, for a loaned device.
+Operating-system or device software that limits applications, features, content, schedules, or account actions for young users. Settings must match club policy and avoid unnecessary surveillance.
 
 **Example:** The organizing team pilots a parental control software with one session, checks accessibility and privacy, and expands its use only after volunteers can operate it reliably.
 
@@ -2260,17 +2260,17 @@ Peer Learning happens when students teach and troubleshoot with each other rathe
 
 Peer Mentor is an older student, typically a teenager, who mentors younger students -- less technically experienced than an adult mentor, but often better at explaining a concept the way another kid would actually understand it.
 
-**Example:** Before the session, the leader explains peer mentor to mentors, assigns responsibility, and checks afterward whether students received timely support.
+**Example:** A returning teenager helps a beginner find a Scratch timing bug while an adult mentor remains available and responsible for the group.
 
 #### Peer Recognition Activity
 
 A planned learner task centered on peer recognition with a clear purpose, time limit, materials, and expected participation. It should produce observable practice or reflection.
 
-**Example:** A worked example shows the format in action: in the last five minutes of a session, a mentor asks each student to turn to a neighbor and name one specific thing about their project they thought was clever.
+**Example:** In the last five minutes of a session, a mentor asks each student to turn to a neighbor and name one specific thing about their project they thought was clever.
 
 #### Peripheral Device Management
 
-Peripheral Device Management applies Chapter 22's inventory and labeling principles to the smaller accessories that plug into a laptop -- headphones, mice, keyboards, storage drives.
+Peripheral Device Management applies inventory and labeling principles to the smaller accessories that plug into a laptop -- headphones, mice, keyboards, storage drives.
 
 **Example:** The IT volunteer tests peripheral device management on one device, documents the working configuration, and then repeats the verified steps on the remaining equipment.
 
@@ -2292,7 +2292,7 @@ Photo Release Form is a related but distinct document specifically authorizing, 
 
 #### Photography During Session
 
-Photography During Session follows directly from the photo release forms in Chapter 3: only students whose families signed a photo release appear in any photo taken for the newsletter or social media described in Chapter 7.
+The controlled taking and use of session photos under the club’s consent rules. Photographers check permissions, avoid sensitive information, and store or publish images only as approved.
 
 #### Physical Computing
 
@@ -2342,7 +2342,7 @@ Power Strip Placement should keep every strip along a wall, never running across
 
 Power Supply Selection is the practice of matching a project's voltage and current needs to a power source rated to supply them safely, rather than grabbing whichever wall adapter or battery pack is closest at hand.
 
-**Example:** A worked example: a robot kit's motors and microcontroller are both rated for 5 volts, and the kit draws up to 1.5 amps total when both motors run at full speed under load.
+**Example:** A robot kit's motors and microcontroller are both rated for 5 volts, and the kit draws up to 1.5 amps total when both motors run at full speed under load.
 
 #### Press Release Writing
 
@@ -2352,13 +2352,13 @@ Press Release Writing is the practical tool for that outreach: a short, factual 
 
 #### Printing Challenge Cards
 
-Printing Challenge Cards turns a digital design into the physical object students actually handle. Learners practice it by creating, testing, explaining, and revising their work.
+The production of durable physical challenge cards from approved digital designs. Readable type, accurate trimming, consistent levels, and protective stock make them usable across sessions.
 
 **Example:** A mentor introduces printing challenge cards through a short demonstration, lets learners try a related challenge, and asks them to explain what changed and why.
 
 #### Proactive Mentor Engagement
 
-Proactive Mentor Engagement comes from: a club leader who reviews the log regularly can reach out to a mentor about a recurring pattern -- "I noticed the Tuesday group has been running short on time three sessions in a row.
+Regular outreach to mentors before problems become resignations. Leaders review attendance and feedback, ask about workload, address recurring barriers, and offer training or schedule adjustments.
 
 #### Professional Mentor
 
@@ -2368,7 +2368,7 @@ Professional Mentor is someone whose day job involves software, electronics, or 
 
 A visual summary of attendance, completed challenges, skill evidence, or other selected measures. Access should match the audience, and indicators should not oversimplify student growth.
 
-**Example:** A worked example shows the difference in practice: at the end of a session, a club leader wants to know whether the LED-strip-patterns badge is turning into a bottleneck before planning next week.
+**Example:** At the end of a session, a club leader wants to know whether the LED-strip-patterns badge is turning into a bottleneck before planning next week.
 
 #### Progress Tracker Poster
 
@@ -2396,9 +2396,9 @@ Prompt Engineering Basics means writing a clear, specific instruction to an AI a
 
 #### Prototyping Board
 
-Prototyping Board is any board used to build and test a circuit's wiring before making it permanent — most often the solderless breadboard already familiar from Chapter 16.
+Prototyping Board is any board used to build and test a circuit's wiring before making it permanent — most often the solderless breadboard already familiar.
 
-**Example:** A worked example shows when a mentor reaches for each: a student actively experimenting with a new sensor, still moving wires around and testing different resistor values, belongs on a solderless breadboard, since nothing there requires solder and mistakes cost only a few seconds of rewiring.
+**Example:** A student actively experimenting with a new sensor, still moving wires around and testing different resistor values, belongs on a solderless breadboard, since nothing there requires solder and mistakes cost only a few seconds of rewiring.
 
 #### PTA Partnership Funding
 
@@ -2408,17 +2408,17 @@ PTA Partnership Funding is money a school's Parent-Teacher Association -- or an 
 
 A time-limited club gathering organized around public recognition for learners, families, mentors, or partners. Planning covers purpose, access, staffing, safety, communication, and review.
 
-**Example:** mascot-encourage "That reaction is completely normal -- most builders hit this wall" !Circuit encouraging{ class="mascot-admonition-img" } If a student says "I'm just not a coding person" after a bug won't budge, that reaction is completely normal -- most builders hit this wall at least once.
+**Example:** At a family showcase, the host names each student’s specific project achievement without ranking learners against one another.
 
 #### Push Button Switch
 
 Push Button Switch is a component that closes a circuit connection while pressed and opens it again when released, giving a program a simple, physical way to detect a human action.
 
-**Example:** A worked example: wiring a push button into a breadboard circuit typically pairs it with a resistor connected to ground, called a pull-down resistor, so that the connected input pin reads a clear, defined LOW value when the button is not pressed, rather than an unpredictable "floating" value.
+**Example:** Wiring a push button into a breadboard circuit typically pairs it with a resistor connected to ground, called a pull-down resistor, so that the connected input pin reads a clear, defined LOW value when the button is not pressed, rather than an unpredictable "floating" value.
 
 #### Python Conditional
 
-Python Conditional runs code only if a condition is true, mirroring Scratch's "if-then" block. Learners practice it by creating, testing, explaining, and revising their work.
+A Python statement that runs one code branch when a Boolean condition is true and can select alternative branches when it is false.
 
 #### Python Function
 
@@ -2426,13 +2426,13 @@ Python Function groups a reusable sequence of steps under one name -- the text e
 
 #### Python Loop
 
-Python Loop repeats a block of code, directly parallel to Scratch's "repeat" block. Learners practice it by creating, testing, explaining, and revising their work.
+A Python statement that repeats a block of code for each item, a set number of times, or while a condition remains true.
 
 **Example:** A mentor introduces python loop through a short demonstration, lets learners try a related challenge, and asks them to explain what changed and why.
 
 #### Python Programming
 
-Python Programming is usually the text-based language clubs choose next, valued for its relatively readable, English-like syntax. Learners practice it by creating, testing, explaining, and revising their work.
+The use of the readable, text-based Python language to express algorithms and build programs. Learners type statements, run code, inspect results, and correct errors.
 
 #### Python Syntax Basics
 
@@ -2450,11 +2450,11 @@ An attendance method in which staff scan a participant’s code to retrieve a re
 
 A machine-readable label attached to a project kit that opens its inventory record, instructions, or checkout page when scanned. The linked destination should remain stable and avoid exposing personal information.
 
-**Example:** The scan opens the kit's wiring diagram directly on the mentor's phone in under five seconds -- the same file Chapter 21 already built, just reachable instantly instead of by memory.
+**Example:** The scan opens the kit's wiring diagram directly on the mentor's phone in under five seconds -- the same file already built, just reachable instantly instead of by memory.
 
 #### Raising Funds
 
-Raising Funds is the general practice of securing money and in-kind resources from outside a club's own pockets to cover its budget -- an umbrella term for the specific channels the rest of this chapter details.
+The work of obtaining money or donated resources to cover approved club needs. Common methods include grants, sponsorships, community drives, crowdfunding, and fundraising events.
 
 **Example:** To cover its $2,660 first-year budget, a club leader combines a $1,600 startup microgrant (60% of the total), a $665 corporate sponsorship from a local business (25%), and $395 raised through a community support drive at a school open house (15%).
 
@@ -2474,7 +2474,7 @@ The continuous analysis or transformation of audio samples quickly enough for a 
 
 Recruiting Girls And Women addresses a specific and well-documented gap: computing clubs that promote themselves with images of boys building robots, or that frame the activity as competitive and combative.
 
-**Example:** A worked example: a club's flyer shows a single photo of two boys pointing at a robot, captioned "Build.
+**Example:** A flyer replaces a boys-only robot photo with varied students collaborating on art, games, sensors, and robots, then invites girls through trusted school groups.
 
 #### Recruiting Minorities
 
@@ -2494,7 +2494,7 @@ Recurring Session Series is the practical mechanism for that: a defined, repeati
 
 #### Refund Policy
 
-Refund Policy applies specifically to any club that charges fees (Chapter 30 covers the no-fee-by-default philosophy this book generally recommends): stating clearly whether a missed or canceled session is refunded, credited toward a future session, or neither.
+Refund Policy applies specifically to any club that charges fees: stating clearly whether a missed or canceled session is refunded, credited toward a future session, or neither.
 
 #### Refurbished Device Sourcing
 
@@ -2508,7 +2508,7 @@ Registering Mentors First means opening mentor sign-up for a term or session bef
 
 An AI tool that assists with registration questions, record checks, waiting lists, or capacity calculations under fixed rules. Humans handle exceptions and approve consequential changes.
 
-**Example:** A worked example shows the ratio check working as designed: a new sign-up arrives for a Tuesday group already at its 3:1 cap.
+**Example:** A new sign-up arrives for a Tuesday group already at its 3:1 cap.
 
 #### Registration Capacity Limit
 
@@ -2520,13 +2520,13 @@ Registration Confirmation Email goes out immediately after sign-up, restating th
 
 #### Registration Reminder Email
 
-Registration Reminder Email, sent a day or two before the session, catches the family who registered weeks ago and genuinely forgot; most registration systems, including the Eventbrite setup from Chapter 11, can automate both without a mentor lifting a finger.
+Registration Reminder Email, sent a day or two before the session, catches the family who registered weeks ago and genuinely forgot; most registration systems, including the Eventbrite setup, can automate both without a mentor lifting a finger.
 
 **Example:** The organizer applies registration reminder email to the next event, communicates the details to families and mentors, and records issues for the retrospective.
 
 #### Registration Software Comparison
 
-Registration Software Comparison weighs platforms like Eventbrite (Chapter 11) against alternatives on cost, ease of setup, and whether it natively supports mentor-gated capacity limits.
+Registration Software Comparison weighs platforms like Eventbrite against alternatives on cost, ease of setup, and whether it natively supports mentor-gated capacity limits.
 
 #### Registration System
 
@@ -2544,15 +2544,15 @@ An AI tool that prepares or queues timely reminders from approved event and regi
 
 #### Remote Control Distraction Risk
 
-Remote Control Distraction Risk describes a specific classroom-management pattern this book's course description names directly: when a robot is driven by a handheld remote or a phone app rather than running its own code, students naturally shift into racing, crashing.
+The likelihood that handheld control turns a robot lesson into racing or crashing instead of programming and sensing. Limited test time and autonomous goals protect the intended learning.
 
-**Example:** A worked example makes the risk concrete rather than abstract: a mentor hands two students remote-control robots during a session meant to practice sensor code, intending the remotes only for a quick five-minute test drive.
+**Example:** A mentor hands two students remote-control robots during a session meant to practice sensor code, intending the remotes only for a quick five-minute test drive.
 
 #### Representation In Curriculum
 
 Representation In Curriculum is about whose faces, names, and stories actually appear inside a club's own material -- the computing pioneers highlighted in a slide, the sample photos on a challenge card.
 
-**Example:** A worked example: a club's standard slide deck on "computing history" names only two people -- both well-known male tech founders -- across an entire semester.
+**Example:** A club's standard slide deck on "computing history" names only two people -- both well-known male tech founders -- across an entire semester.
 
 #### Resistor Basics
 
@@ -2562,13 +2562,13 @@ The introductory facts, vocabulary, and safe practices needed to begin working w
 
 #### Restroom Break Policy
 
-Restroom Break Policy states plainly that students may use the restroom whenever needed without asking special permission, paired with the child safety policy's supervision rules from Chapter 3 about how a student is escorted if the venue requires it.
+Restroom Break Policy states plainly that students may use the restroom whenever needed without asking special permission, paired with the child safety policy's supervision rules about how a student is escorted if the venue requires it.
 
 #### Retention Rate Tracking
 
 Retention Rate Tracking measures the percentage of students from one semester who return for the next one, calculated as returning students divided by prior-semester enrollment, times one hundred.
 
-**Example:** A worked example shows the calculation in practice: a club enrolls eighteen students in the fall semester, and fourteen of those eighteen return for spring.
+**Example:** A club enrolls eighteen students in the fall semester, and fourteen of those eighteen return for spring.
 
 #### Retired Professional Mentor
 
@@ -2576,7 +2576,7 @@ Retired Professional Mentor brings decades of technical or teaching experience a
 
 #### Returning Student
 
-Returning Student already knows the room, the routines, and often several mentors by name -- exactly the kind of peer-learning resource Chapter 1 described, and worth deliberately pairing with newcomers rather than only with other returning students.
+Returning Student already knows the room, the routines, and often several mentors by name -- exactly the kind of peer-learning resource, and worth deliberately pairing with newcomers rather than only with other returning students.
 
 #### Reviewing AI Output
 
@@ -2592,11 +2592,11 @@ Robot Chassis is the physical frame or platform that holds a robot's motors, whe
 
 A project set that adds a screen or LED matrix to a robot for status, sensor readings, icons, or animated expressions.
 
-**Example:** mascot-encourage "Combining kits feels harder than it is — the sensor code never changes" !Circuit encouraging{ class="mascot-admonition-img" } If wiring a display kit and a sounds kit onto the same robot feels like doubling the difficulty, that's a normal first reaction — but it isn't true here.
+**Example:** A distance sensor changes a robot face from calm to alert when an obstacle moves within fifteen centimeters.
 
 #### Robot Emotion Display
 
-Robot Emotion Display is the design pattern behind Chapter 19's Robot Face Kit, generalized to any kit in this chapter that gives a robot a visible "state": mapping something a program knows internally — an obstacle is close.
+A screen or LED pattern that maps an internal robot state, such as blocked, searching, or successful, to a recognizable face or visual expression.
 
 **Example:** A robot that only blinks an LED when it detects an obstacle is technically communicating, but a robot that switches from a calm, wide-eyed face to a narrow, alert one communicates the same fact in a way a five-year-old sibling in the room immediately understands.
 
@@ -2620,13 +2620,13 @@ Robot Kit Assembly is the ordered sequence of physical steps — mounting the ch
 
 Robot Motor Control is the code layer that turns a decision — "turn right," "back up," "stop" — into the actual speed and direction values sent to each drive motor, closing the loop that robot sensor integration opens.
 
-**Example:** A worked example: a mentor helping a student build a reusable drive(leftspeed, rightspeed) function, where each argument ranges from -100 (full reverse) to 100 (full forward), turns every future robot behavior into a one-line call.
+**Example:** A mentor helping a student build a reusable drive(leftspeed, rightspeed) function, where each argument ranges from -100 (full reverse) to 100 (full forward), turns every future robot behavior into a one-line call.
 
 #### Robot Sensor Integration
 
 Robot Sensor Integration is the step where a robot's code actually reacts to a sensor's reading, rather than simply printing that reading to a screen for a human to read.
 
-**Example:** A worked example distinguishes the two: a student who wires up a distance sensor and writes only print(distance) has successfully wired the sensor, but has not integrated it, since nothing in the robot's behavior changes based on that number.
+**Example:** A student who wires up a distance sensor and writes only print(distance) has successfully wired the sensor, but has not integrated it, since nothing in the robot's behavior changes based on that number.
 
 #### Robot Sounds Kit
 
@@ -2646,7 +2646,7 @@ Role Model Visibility is the aggregate, lived effect of representation and mento
 
 #### Roles And Responsibilities
 
-Roles And Responsibilities is the section that names every position in the club and what each one is accountable for -- covered in detail in the next section, since who holds these roles matters enough to warrant its own discussion.
+A written assignment of each club position’s duties, authority, limits, and accountability. Clear assignments prevent essential work from being ignored or duplicated.
 
 #### Room Temperature Comfort
 
@@ -2656,7 +2656,7 @@ Room Temperature Comfort is easy to overlook until eight laptops and eight bodie
 
 Rural Community Outreach addresses the specific mix of challenges and existing strengths in a rural area: long driving distances between families, fewer standalone STEM organizations to partner with, but often stronger, longstanding community hubs than a dense city offers.
 
-**Example:** A worked example: a club forming in a farming county struggles to get sign-ups through the usual school-newsletter channel, since several families homeschool or attend schools outside the county entirely.
+**Example:** A club forming in a farming county struggles to get sign-ups through the usual school-newsletter channel, since several families homeschool or attend schools outside the county entirely.
 
 #### Safe Disposal Of Electronics
 
@@ -2694,7 +2694,7 @@ Scholarship Application Process ensures fees never become the reason a student c
 
 Money reserved to cover participation fees, transportation, supplies, or other approved costs for learners who would otherwise face a financial barrier.
 
-**Example:** A worked example: a club is entirely free to attend, but an advanced robotics elective requires a $40 sensor kit per student that the base budget doesn't cover.
+**Example:** A club is entirely free to attend, but an advanced robotics elective requires a $40 sensor kit per student that the base budget doesn't cover.
 
 #### School Based Club
 
@@ -2714,7 +2714,7 @@ School Partnership Outreach means building a relationship with a school's admini
 
 #### Scratch Block Coding
 
-Scratch Block Coding is the actual mechanism: dragging blocks like "move," "repeat," and "if-then" into a stack, where the shape of each block (an event block is rounded on top.
+Programming by snapping visual command blocks into valid sequences in Scratch. Block shapes reveal which commands, values, events, loops, and conditions can connect.
 
 #### Scratch Programming
 
@@ -2736,11 +2736,11 @@ Screen Time Management is a club's session-level practice of limiting how long s
 
 #### Seating Arrangement
 
-Seating Arrangement typically clusters students in small groups of three to four rather than rows facing a single front, since clustered seating supports the peer learning Chapter 1 described far better than a lecture-style layout does.
+Seating Arrangement typically clusters students in small groups of three to four rather than rows facing a single front, since clustered seating supports the peer learning far better than a lecture-style layout does.
 
 #### Selecting A Date And Time
 
-Selecting A Date And Time means weighing three constraints at once: when your venue is actually available, when your mentor pool can realistically commit, and when families in your target audience (Chapter 2) are free.
+Selecting A Date And Time means weighing three constraints at once: when your venue is actually available, when your mentor pool can realistically commit, and when families in your target audience are free.
 
 #### Self Paced Learning Path
 
@@ -2756,23 +2756,23 @@ A recurring club calendar that begins and ends with a school or college term. En
 
 The introductory facts, vocabulary, and safe practices needed to begin working with sensor. This foundation supports supervised practice before learners attempt more complex tasks.
 
-**Example:** None of these translators speak the microcontroller's native language directly — code always has to interpret the raw reading and convert it into something meaningful, exactly the way the Analog Input concept from Chapter 16 required rescaling a raw 0-to-1023 potentiometer reading into a usable range.
+**Example:** None of these translators speak the microcontroller's native language directly — code always has to interpret the raw reading and convert it into something meaningful, exactly the way the Analog Input concept required rescaling a raw 0-to-1023 potentiometer reading into a usable range.
 
 #### Sensor Kit
 
 A collection of input components that measure conditions such as light, temperature, distance, or motion. Shared connectors and sample code let learners compare sensor behavior.
 
-**Example:** Every specific kit named later in this chapter (gyroscope, motion, microphone, sound spectrum, light/temperature/humidity) is a sensor kit; "sensor kit" itself is the category a mentor reaches for when talking about the whole family rather than any one member of it.
+**Example:** Students compare a light sensor and distance sensor, then choose the input that best supports an automatic nightlight project.
 
 #### Servo Motor
 
 Servo Motor adds internal gearing and a feedback mechanism that lets it hold a specific angle, typically somewhere within a 0-to-180-degree range, rather than spinning continuously.
 
-**Example:** A worked example makes the pulse-to-angle relationship concrete: a standard hobby servo expects a pulse repeated roughly every 20 milliseconds (a 50-hertz rate), with the pulse's own width ranging from about 1,000 to 2,000 microseconds mapping onto the servo's full 0-to-180-degree range.
+**Example:** A standard hobby servo expects a pulse repeated roughly every 20 milliseconds (a 50-hertz rate), with the pulse's own width ranging from about 1,000 to 2,000 microseconds mapping onto the servo's full 0-to-180-degree range.
 
 #### Session Capacity Planning
 
-Session Capacity Planning revisits the mentor-gated math from Chapter 11 for each specific upcoming session, accounting for any mentors who've indicated they can't attend.
+Session Capacity Planning revisits the mentor-gated math for each specific upcoming session, accounting for any mentors who've indicated they can't attend.
 
 #### Session Check In System
 
@@ -2782,7 +2782,7 @@ A coordinated combination of people, tools, records, and procedures used to mana
 
 #### Session Cleanup Routine
 
-Session Cleanup Routine closes every session the same way: kits returned to their labeled storage bins from Chapter 4, cables coiled and stored, chairs returned to their default arrangement, and the whiteboard wiped -- ideally with students themselves participating.
+Session Cleanup Routine closes every session the same way: kits returned to their labeled storage bins, cables coiled and stored, chairs returned to their default arrangement, and the whiteboard wiped -- ideally with students themselves participating.
 
 #### Session Reminder Notification
 
@@ -2790,13 +2790,13 @@ Session Reminder Notification -- typically a text or push notification the morni
 
 #### Session Scheduling
 
-Session Scheduling is the overall discipline of deciding when and how often a club meets -- the single concept this chapter's learning graph treats as more consequential than almost any other in the book.
+Session Scheduling is the overall discipline of deciding when and how often a club meets -- the single concept the club's learning graph treats as more consequential than almost any other in the book.
 
 **Example:** The organizer applies session scheduling to the next event, communicates the details to families and mentors, and records issues for the retrospective.
 
 #### Session Time Block
 
-Session Time Block structure -- distinct chunks of time, each with a clear purpose, similar to the first-meeting agenda from Chapter 5 but repeated every week rather than just once.
+Session Time Block structure -- distinct chunks of time, each with a clear purpose, similar to the first-meeting agenda but repeated every week rather than just once.
 
 #### Session Warm Up Activity
 
@@ -2812,7 +2812,7 @@ A planned learner task centered on session wrap up with a clear purpose, time li
 
 Setting Up A Calendar is the one-time task of creating the club's shared calendar -- naming it clearly, choosing who can see it, and adding the semester's recurring session dates.
 
-**Example:** "Create New Calendar" -- click reveals "A calendar distinct from any mentor's personal calendar." 2.
+**Example:** The leader creates a club-owned calendar, enters recurring sessions, adds the venue and time zone, and grants edit rights to two successors.
 
 #### Seven Segment Display
 
@@ -2824,7 +2824,7 @@ Seven Segment Display shows a single digit using seven individually controllable
 
 Shared Calendar Access is the set of permission levels a club grants to different people viewing or editing that calendar -- typically view-only for parents and students.
 
-**Example:** A worked example shows a permission mismatch causing a real problem, and the fix: a club initially gives every mentor edit access, and one mentor accidentally deletes a recurring session while trying to change its time.
+**Example:** A club initially gives every mentor edit access, and one mentor accidentally deletes a recurring session while trying to change its time.
 
 #### Shared Device Account
 
@@ -2834,7 +2834,7 @@ A digital identity and permission set created for shared device to access approv
 
 #### Shared Drive Organization
 
-Shared Drive Organization is the folder-naming convention used inside this chapter's cloud storage for devices, so that student and class files land in a predictable structure -- one folder per class session, or one folder per student.
+Shared Drive Organization is the folder-naming convention used inside the club's cloud storage for devices, so that student and class files land in a predictable structure -- one folder per class session, or one folder per student.
 
 #### Shared Resource Agreement
 
@@ -2856,21 +2856,21 @@ The process of setting goals and arranging people, time, resources, and continge
 
 #### Sibling Pairing
 
-Sibling Pairing is the opposite instinct many parents request: seating siblings together for comfort, which works well for a nervous first-time visitor but can backfire if one sibling is consistently more skilled and ends up doing the other's work rather.
+The deliberate placement of siblings in the same working group for comfort or collaboration. Mentors watch for one sibling taking over and assign separate roles when needed.
 
-**Example:** Before the session, the leader explains sibling pairing to mentors, assigns responsibility, and checks afterward whether students received timely support.
+**Example:** Two siblings who collaborate well share a robot station, while mentors assign separate roles so each person writes and tests code.
 
 #### Signal Processing Basics
 
 Signal Processing Basics describes, at the level a club mentor actually needs, the general idea of taking a raw, changing signal -- most often sound picked up by a microphone -- and extracting useful information from it, such as loudness.
 
-**Example:** What a mentor actually sees when one of these kits runs is a screen filling with moving bars or a shifting waveform in time with whatever sound the microphone picks up -- visually similar to, but more detailed than, the sound spectrum kit's display from Chapter 20.
+**Example:** What a mentor actually sees when one of these kits runs is a screen filling with moving bars or a shifting waveform in time with whatever sound the microphone picks up -- visually similar to, but more detailed than, the sound spectrum kit's display.
 
 #### Simple Spreadsheet Tracking
 
-Simple Spreadsheet Tracking is the practice of keeping the raw progress data described above in an ordinary spreadsheet -- one row per student, one column per badge or skill -- rather than a purpose-built student information system.
+The use of an ordinary table with one row per learner or event and consistent columns for attendance, projects, badges, or skills. It suits clubs with modest reporting needs.
 
-**Example:** A later chapter on analyzing club data revisits when a club has genuinely outgrown a spreadsheet; for the vast majority of clubs this book serves, it never does.
+**Example:** One row records a student, while columns record attendance, completed cards, current project, and the date of the latest mentor note.
 
 #### Single Leader Dependency
 
@@ -2892,7 +2892,7 @@ Skill Mastery Tracking records a student's level on a specific skill using a sma
 
 #### Skill Progression Ladder
 
-Skill Progression Ladder makes that sequencing visible to students themselves: a simple posted chart showing the path from "typing practice" through "first Scratch project" to "first Python turtle drawing.
+A visible sequence of increasingly demanding skills or projects that shows learners what they can try next and which earlier abilities support each step.
 
 **Example:** A mentor introduces skill progression ladder through a short demonstration, lets learners try a related challenge, and asks them to explain what changed and why.
 
@@ -2900,11 +2900,11 @@ Skill Progression Ladder makes that sequencing visible to students themselves: a
 
 A simplified representation or operating approach for sliding scale fee that makes important relationships easier to understand and apply. Its assumptions and limits should remain visible.
 
-**Example:** mascot-warning "Never ask a family to prove they can't pay" !Circuit warning{ class="mascot-admonition-img" } Watch out for this trap: requiring income verification or paperwork to unlock the $0 tier defeats the entire purpose of a sliding scale, recreating the exact stigma Chapter 28 warned a fee creates.
+**Example:** Families choose among $0, $10, or $25 monthly tiers without proving income, and every student receives the same projects and support.
 
 #### Small Group Mentoring
 
-Small Group Mentoring -- the 3:1 default from Chapter 9 -- balances personal attention against mentor capacity.
+Small Group Mentoring -- the 3:1 default -- balances personal attention against mentor capacity.
 
 #### Small Group Rotation
 
@@ -2920,11 +2920,11 @@ A wearable project set with a compact screen, microcontroller, buttons or sensor
 
 A brief text message sent to a phone for urgent or time-sensitive club information, such as a same-day reminder or weather cancellation.
 
-**Example:** A worked example shows the fallback earning its place: a club needs to tell every family that a session is canceled because of a snow closure, discovered only two hours before start time.
+**Example:** A club needs to tell every family that a session is canceled because of a snow closure, discovered only two hours before start time.
 
 #### Snack And Water Policy
 
-Snack And Water Policy clarifies whether the club provides snacks, whether students may bring their own, and how any food allergies noted on parental consent forms (Chapter 3) are handled around shared snack tables.
+Snack And Water Policy clarifies whether the club provides snacks, whether students may bring their own, and how any food allergies noted on parental consent forms are handled around shared snack tables.
 
 #### Social Media Promotion
 
@@ -2934,7 +2934,7 @@ Social Media Promotion extends that same message to a venue's or founding team's
 
 Soldering Safety Basics are the sequence of habits that make it possible to join wires with melted metal solder — using a soldering iron that reaches roughly 315 to 370 degrees Celsius — without a burn.
 
-**Example:** Many clubs choose to skip soldering entirely in a student's early sessions and reserve it for older students working one-on-one with a mentor standing close by, precisely because it is the one activity in this chapter involving a genuinely hot tool rather than a low-voltage, cool-to-the-touch component.
+**Example:** An older student solders under close mentor supervision with eye protection, a stable iron stand, ventilation, and a clear hot-tool zone.
 
 #### Sound Kit
 
@@ -2954,7 +2954,7 @@ A microphone-and-display project that separates captured sound into frequency ba
 
 #### Sponsor Recognition Plan
 
-A documented approach for achieving sponsor recognition, including intended results, responsibilities, resources, timing, and review points. It guides coordinated action while allowing leaders to adapt.
+A written schedule for acknowledging sponsors through agreed channels such as websites, events, newsletters, or signs. Recognition matches the contribution and never gives sponsors control over learners.
 
 #### Spreadsheet Formula Basics
 
@@ -3002,13 +3002,13 @@ STEM Education is instruction spanning science, technology, engineering, and mat
 
 Stepper Motor moves in small, fixed-size steps rather than a smooth continuous rotation, and can report its position indirectly simply by counting how many steps it has been told to take — well suited to a project needing precise, repeatable positioning.
 
-**Example:** A worked example traces one full step cycle on a common four-coil stepper: energizing coil pair 1, then coil pair 2, then coil pair 3, then coil pair 4, then back to coil pair 1, advances the rotor by one step with each transition in that four-step sequence.
+**Example:** Energizing coil pair 1, then coil pair 2, then coil pair 3, then coil pair 4, then back to coil pair 1, advances the rotor by one step with each transition in that four-step sequence.
 
 #### Sticker Reward System
 
 A coordinated combination of people, tools, records, and procedures used to manage sticker reward. Its parts work together to support reliable decisions in student motivation, persistence, and recognition.
 
-**Example:** A worked example shows the frequency trade-off this system depends on: a club initially gives a sticker for every single line of code a student writes, and within two sessions the stickers stop meaning anything -- students collect them without looking at them.
+**Example:** A club initially gives a sticker for every single line of code a student writes, and within two sessions the stickers stop meaning anything -- students collect them without looking at them.
 
 #### Storage For Kits
 
@@ -3020,13 +3020,13 @@ Storage For Kits -- a lockable cabinet or set of labeled bins near the room's en
 
 Strategic Partnership Building is the broader skill of identifying organizations whose own goals overlap with a club's, beyond the obvious category of funders -- a university computer science club, a regional robotics league, a local maker space.
 
-**Example:** A worked example: a club leader notices a nearby university's computer science student club runs an annual community-service requirement its members need to fulfill.
+**Example:** A club leader notices a nearby university's computer science student club runs an annual community-service requirement its members need to fulfill.
 
 #### Student
 
-Student is the club's core participant -- Chapter 4 defined the role formally, and this chapter is about making sure every student has enough mentor attention to actually benefit from being there.
+A young participant who develops computing knowledge and confidence through projects, practice, feedback, and collaboration. Students make meaningful choices while following safety and conduct expectations.
 
-**Example:** Before the session, the leader explains student to mentors, assigns responsibility, and checks afterward whether students received timely support.
+**Example:** A student selects a challenge, follows safety rules, tries two debugging steps before asking for help, and returns the complete kit at cleanup.
 
 #### Student Age Range
 
@@ -3034,7 +3034,7 @@ Student Age Range affects both project complexity and how much independent focus
 
 #### Student Attendance Tracking
 
-Student Attendance Tracking records who showed up to each session, feeding both the mentor capacity planning from Chapter 9 and any grant-reporting requirements Chapter 30 will cover.
+Student Attendance Tracking records who showed up to each session, feeding both the mentor capacity planning and any grant-reporting requirements will cover.
 
 **Example:** Leaders review a small set of relevant records each month and use the findings about student attendance tracking to choose one measurable improvement.
 
@@ -3042,7 +3042,7 @@ Student Attendance Tracking records who showed up to each session, feeding both 
 
 A personal browser folder where a learner saves project-specific sites without changing the standard class links. Account and sync choices determine whether it follows the student.
 
-**Example:** A worked example shows the two folders working side by side without conflict: a student bookmarks the specific GitHub page for their in-progress Scratch remix in their own student folder, while the shared class folder above it still points to the general Scratch editor every student uses.
+**Example:** A student bookmarks the specific GitHub page for their in-progress Scratch remix in their own student folder, while the shared class folder above it still points to the general Scratch editor every student uses.
 
 #### Student Check In Routine
 
@@ -3076,7 +3076,7 @@ Student Grouping Strategy decides how to combine these two factors into actual s
 
 Student Growth Metrics are measurements of an individual student's progress over time -- the number of distinct skills attempted, the difficulty level of challenge cards completed, the complexity of a student's most recent project compared to their first.
 
-**Example:** Where chapter 24's tracking spreadsheet recorded whether a badge was earned, growth metrics describe the shape of a student's progress across many badges over time.
+**Example:** Where tracking spreadsheet recorded whether a badge was earned, growth metrics describe the shape of a student's progress across many badges over time.
 
 #### Student Interest Survey
 
@@ -3106,13 +3106,13 @@ A physical or digital display of learner-selected projects, images, and reflecti
 
 #### Student Skill Level
 
-Student Skill Level -- roughly beginner, intermediate, or advanced, echoing the curriculum tracks Chapter 15 covers in depth -- determines what project a student is ready for.
+A practical estimate of what a learner can currently do with support or independently. It helps mentors choose suitable challenges without treating ability as fixed.
 
-**Example:** Before the session, the leader explains student skill level to mentors, assigns responsibility, and checks afterward whether students received timely support.
+**Example:** A learner who independently uses loops but has not used functions starts with an intermediate loop challenge and receives a function demonstration later.
 
 #### Student To Mentor Ratio
 
-Student To Mentor Ratio is simply the number of students each mentor is responsible for during a session, and this book recommends a specific target: why three to one works comes down to a balance point observed across many clubs.
+The number of students assigned to each available mentor during a session. The ratio sets safe enrollment capacity and indicates how quickly learners can receive help.
 
 #### Student Voice And Choice
 
@@ -3122,13 +3122,13 @@ Student Voice And Choice is the umbrella practice of giving students real influe
 
 #### Substitute Mentor Plan
 
-Substitute Mentor Plan names, in advance, who covers for a mentor who cancels last-minute, so a single absence never drops the session below a safe ratio -- exactly the redundancy leadership succession (Chapter 3) is built to provide.
+Substitute Mentor Plan names, in advance, who covers for a mentor who cancels last-minute, so a single absence never drops the session below a safe ratio -- exactly the redundancy leadership succession is built to provide.
 
 **Example:** Before the next session, leaders document the substitute mentor plan, assign an owner, and review it with the volunteers who will use it.
 
 #### Success Story Sharing
 
-Success Story Sharing once they're written up as a short, specific narrative -- not "our club is going well," but "Maya, who joined unable to write a single line of code.
+The communication of a specific participant achievement through a short narrative describing the starting challenge, support provided, result, and learner voice. Publication requires permission.
 
 **Example:** The organizing team applies success story sharing to a small pilot, gathers participant feedback, and revises the approach before using it throughout the club.
 
@@ -3152,7 +3152,7 @@ Survey Question Design keeps it short, three to five questions, and specific: "w
 
 #### Survey Response Analysis
 
-Survey Response Analysis turns those responses into action the same way interest survey analysis did in Chapter 5 -- looking for a pattern repeated across multiple respondents rather than reacting to any single comment.
+Survey Response Analysis turns those responses into action the same way interest survey analysis did -- looking for a pattern repeated across multiple respondents rather than reacting to any single comment.
 
 #### Survey Tool Selection
 
@@ -3162,15 +3162,15 @@ Survey Tool Selection is choosing which specific form-building service a club st
 
 #### Sustainability Checklist
 
-Sustainability Checklist is a short, board-reviewed list of yes-or-no questions run once a year specifically to catch single leader dependency -- the very failure mode Chapter 1 opened this book with -- before it becomes a crisis rather than after.
+Sustainability Checklist is a short, board-reviewed list of yes-or-no questions run once a year specifically to catch single leader dependency -- the very failure mode opened this book with -- before it becomes a crisis rather than after.
 
 **Example:** - Is the club playbook document up to date within the last twelve months?
 
 #### Table Robot
 
-Table Robot is a small robot chassis built to operate entirely within the boundary of a desk or table, matching the footprint distinction Chapter 17 introduced between floor robots and table robots.
+Table Robot is a small robot chassis built to operate entirely within the boundary of a desk or table, matching the footprint distinction between floor robots and table robots.
 
-**Example:** A worked example shows why that matters: picture a club running six simultaneous robot-building stations on a single long table, one student per station.
+**Example:** Picture a club running six simultaneous robot-building stations on a single long table, one student per station.
 
 #### Target Audience
 
@@ -3180,7 +3180,7 @@ Target Audience is the specific group of students and families a club is designe
 
 Targeting Mentor Populations is using an influence graph specifically to find untapped groups of potential mentors -- a local engineering employer's volunteer program, a Women Who Code meetup, a retired-teachers association.
 
-**Example:** A worked example shows the leverage in action: the club's influence graph shows a Women Who Code meetup node with dozens of potential connections but zero current edges to the club.
+**Example:** The club's influence graph shows a Women Who Code meetup node with dozens of potential connections but zero current edges to the club.
 
 #### Teen Mentor Program
 
@@ -3190,7 +3190,7 @@ Teen Mentor Program formalizes peer mentoring by recruiting local high schoolers
 
 Temperature Sensor reports the surrounding air or surface temperature, either as an analog voltage that code must convert to degrees or as a ready-made digital reading.
 
-**Example:** A worked example shows the analog conversion in action: a TMP36 reading 0.75 volts converts to temperature using the sensor's own formula, temperature = (voltage − 0.5) × 100, giving (0.75 − 0.5) × 100 = 25°C — a comfortable room temperature.
+**Example:** A TMP36 reading 0.75 volts converts to temperature using the sensor's own formula, temperature = (voltage − 0.5) × 100, giving (0.75 − 0.5) × 100 = 25°C — a comfortable room temperature.
 
 #### Testimonial Collection
 
@@ -3210,11 +3210,11 @@ The need to state which local clock governs a virtual event, deadline, or remind
 
 Tracking Student Progress is the ongoing practice of recording which skills, badges, or challenge cards a specific student has completed.
 
-**Example:** A worked example shows the payoff for a substitute mentor: a regular mentor is out sick, and a substitute steps in for a student they have never met.
+**Example:** A regular mentor is out sick, and a substitute steps in for a student they have never met.
 
 #### Tracking What Was Learned
 
-Tracking What Was Learned is the step that actually closes the loop -- writing debrief conclusions into the lessons learned log from Chapter 1, not just discussing them out loud and letting them evaporate by the next session.
+Tracking What Was Learned is the step that actually closes the loop -- writing debrief conclusions into the lessons learned log, not just discussing them out loud and letting them evaporate by the next session.
 
 **Example:** The organizer applies tracking what was learned to the next event, communicates the details to families and mentors, and records issues for the retrospective.
 
@@ -3256,7 +3256,7 @@ Typing Practice Tool -- a simple browser-based typing game, not necessarily anyt
 
 Underserved Community Outreach is the broader practice of identifying which populations near a specific club location are least likely to hear about it at all -- often families with limited English, families without steady internet access.
 
-**Example:** A worked example: a club forming inside a community center serves a neighborhood with a large refugee resettlement population, most of whom rely on a resettlement agency's caseworkers for information about local programs rather than a school newsletter.
+**Example:** A club forming inside a community center serves a neighborhood with a large refugee resettlement population, most of whom rely on a resettlement agency's caseworkers for information about local programs rather than a school newsletter.
 
 #### Unplugged Coding Activity
 
@@ -3288,13 +3288,13 @@ The introductory facts, vocabulary, and safe practices needed to begin working w
 
 #### Value Proposition Statement
 
-Value Proposition Statement: a one-to-two sentence articulation of the specific benefit a family gets by joining, distinct from a mission statement (Chapter 2) because it's written to persuade an outside audience rather than to guide internal decisions.
+Value Proposition Statement: a one-to-two sentence articulation of the specific benefit a family gets by joining, distinct from a mission statement because it's written to persuade an outside audience rather than to guide internal decisions.
 
 #### Vendor Discount Negotiation
 
 Vendor Discount Negotiation means directly asking a supplier for an educational or nonprofit discount on recurring purchases -- electronic components, craft supplies, printing -- before paying full retail.
 
-**Example:** A worked example: a club spends roughly $400 a year on electronic components at full retail price.
+**Example:** A club spends roughly $400 a year on electronic components at full retail price.
 
 #### Venue Agreement
 
@@ -3330,13 +3330,13 @@ Volunteer Mentor is an unpaid adult who joins primarily out of interest in the m
 
 #### Waiting List Management
 
-Waiting List Management keeps track of interested families in order, and moves them in as new mentor capacity comes online -- transparent waiting list communication (a simple "you're number 4.
+The fair handling of registration requests after capacity is reached. It preserves order, communicates status, sets response deadlines, and fills openings promptly when seats become available.
 
-**Example:** Before the session, the leader explains waiting list management to mentors, assigns responsibility, and checks afterward whether students received timely support.
+**Example:** When a family cancels, the system offers the seat to the first waiting family and gives them twenty-four hours to respond.
 
 #### Waiting List Signup
 
-Waiting List Signup -- the same waiting list management concept from Chapter 9, applied at the registration-system level, moving families in order as either more mentor capacity opens up or an enrolled family drops out.
+Waiting List Signup -- the same waiting list management concept, applied at the registration-system level, moving families in order as either more mentor capacity opens up or an enrolled family drops out.
 
 #### Walk In Experience
 
@@ -3346,7 +3346,7 @@ The way a participant encounters or interprets walk in experience through the cl
 
 #### Wearable Electronics Basics
 
-Wearable Electronics Basics covers the handful of practical differences a mentor needs to know before letting a project leave the desk and go onto a person: power draw matters far more on battery-only wearables than on a Pico plugged into.
+The introductory design and safety practices for electronics worn on the body, including low weight, insulated connections, flexible wiring, secured batteries, low power use, and comfortable placement.
 
 **Example:** Implementation: Interactive Infographic Overlay Guide (grid engine) -- grid-diagram.js + grid-overlay.css render the two rectangular hover zones over the generated poster image; data.json holds the 2 zones per the overlay-grid-data-json-schema.
 
@@ -3362,7 +3362,7 @@ A simplified representation or operating approach for weekday after school that 
 
 #### Weeklong Intensive Format
 
-Weeklong Intensive Format compresses a term's worth of a single topic into consecutive daily sessions, similar in structure to the summer camp format from Chapter 12 but usable any time school is out.
+Weeklong Intensive Format compresses a term's worth of a single topic into consecutive daily sessions, similar in structure to the summer camp format but usable any time school is out.
 
 #### Welcome Statement Design
 
@@ -3372,13 +3372,13 @@ Welcome Statement Design: the short, warm message every new family receives, whe
 
 #### Whiteboard Usage
 
-Whiteboard Usage turns a simple whiteboard into the session's visible anchor -- the day's agenda, the challenge card's key steps, or a running list of "cool bugs we found.
+The planned use of a shared writing surface for the agenda, key instructions, diagrams, questions, timing, and discoveries. Visible information reduces repetition and supports discussion.
 
 #### Whole Class Instruction
 
 Whole Class Instruction, where one mentor briefly addresses every student at once (introducing a new challenge card, for instance), is efficient for delivering the same information to everyone but should stay brief, since it's the format furthest from the hands-on.
 
-**Example:** Before the session, the leader explains whole class instruction to mentors, assigns responsibility, and checks afterward whether students received timely support.
+**Example:** A mentor pauses all stations for a seven-minute demonstration of safe motor wiring, then students return to their groups to apply it.
 
 #### Why No Fees Matters
 
@@ -3392,7 +3392,7 @@ Why Three To One Works comes down to a balance point observed across many clubs.
 
 Wifi Network Setup is the process of configuring the club's own wireless network -- choosing a network name, setting a password, and placing the access point where its signal reliably reaches every seat in the room.
 
-**Example:** A worked example shows the sizing issue surfacing early instead of late: a club tests its new access point with three laptops and gets a strong, fast connection.
+**Example:** A club tests its new access point with three laptops and gets a strong, fast connection.
 
 #### Windows Device Management
 

@@ -73,9 +73,9 @@ The textbook you are reading is itself a product of this shift. An **intelligent
 
 #### Diagram: Levels of Intelligent Textbook Sophistication
 
-<iframe src="https://dmccreary.github.io/tracking-ai-course/sims/book-levels/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../sims/book-levels/main.html" width="100%" height="517px" scrolling="no"></iframe>
 
-[Run the Book Levels MicroSim fullscreen](https://dmccreary.github.io/tracking-ai-course/sims/book-levels/main.html){ .md-button }
+[Run the Book Levels MicroSim fullscreen](../../sims/book-levels/main.html){ .md-button }
 
 <details markdown="1">
 <summary>Levels of Intelligent Textbook Sophistication (reused MicroSim)</summary>

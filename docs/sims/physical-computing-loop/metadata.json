@@ -1,0 +1,23 @@
+{
+  "title": "The Physical Computing Loop",
+  "description": "Given a physical computing project description, the learner explains which part of the input-process-output loop each component belongs to.",
+  "creator": "Coding Club",
+  "author": "Dan McCreary",
+  "date": "2026-09-01",
+  "subject": [
+    "Coding Club"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "physical-computing-loop",
+  "library": "p5.js",
+  "bloomLevel": "Understand (L2)",
+  "bloomVerb": "explain",
+  "completion_status": "scaffold",
+  "chapter_number": 16,
+  "chapter_title": "Physical Computing and Electrical Safety Basics",
+  "chapter_dir": "16-physical-computing-safety",
+  "chapter_rel_dir": "chapters/16-physical-computing-safety"
+}

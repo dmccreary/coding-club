@@ -1,0 +1,15 @@
+{
+  "sim_id": "ohms-law-current-calculator",
+  "diagram_name": "Ohm's Law Current Calculator",
+  "chapter_number": 16,
+  "chapter_title": "Physical Computing and Electrical Safety Basics",
+  "chapter_dir": "16-physical-computing-safety",
+  "chapter_rel_dir": "chapters/16-physical-computing-safety",
+  "library": "p5.js",
+  "bloom_level": "Apply (L3)",
+  "bloom_verb": "calculate",
+  "learning_objective": "Given a supply voltage and a resistor value, the learner calculates the resulting current and judges whether it is safe for the connected LED.",
+  "completion_status": "specified",
+  "extracted_date": "2026-09-01",
+  "specification": "Type: microsim\n**sim-id:** ohms-law-current-calculator<br/>\n**Library:** p5.js<br/>\n**Status:** Specified<br/>\n**Template:** https://github.com/dmccreary/learning-micropython/tree/main/docs/sims/ohms-law-calculator\n\nPurpose: Let a mentor plug in real supply-voltage and resistor values from a kit and see the resulting current before powering an actual circuit.\n\nBloom Taxonomy: Apply (L3)\nBloom Taxonomy Verb: calculate\n\nLearning objective: Given a supply voltage and a resistor value, the learner calculates the resulting current and judges whether it is safe for the connected LED.\n\nCanvas layout: Left (60%) shows a simple circuit diagram (battery, resistor, LED) that visually brightens or dims as current changes; right (40%) holds sliders and the numeric readout\n\nInteractive controls: Slider for supply voltage (1.5V-9V); slider for resistor value (10 ohms-1000 ohms); numeric display of calculated current in milliamps; color-coded safety readout (green under 20mA, amber 20-30mA, red above 30mA)\n\nDefault parameters: Supply voltage 5V, resistor 220 ohms (yields ~14mA, shown in green)\n\nBehavior: Moving either slider instantly recalculates current using \\(I = V / R\\) and updates both the numeric readout and the LED brightness/safety color in the diagram\n\nImplementation notes: p5.js canvas with two `createSlider()` controls; recompute on every `draw()` frame from current slider values"
+}

@@ -1,0 +1,23 @@
+{
+  "title": "Session Room Safety and Logistics Map",
+  "description": "Given an unlabeled session-room illustration, the learner identifies the location and purpose of each safety and logistics feature.",
+  "creator": "Coding Club",
+  "author": "Dan McCreary",
+  "date": "2026-09-01",
+  "subject": [
+    "Coding Club"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "session-room-safety-map",
+  "library": "Interactive Infographic Overlay (diagram.js, annotation-free illustration + numbered callouts)",
+  "bloomLevel": "Remember (L1)",
+  "bloomVerb": "identify",
+  "completion_status": "scaffold",
+  "chapter_number": 8,
+  "chapter_title": "\"Running a Session: Room Layout to Cleanup\"",
+  "chapter_dir": "08-running-a-session",
+  "chapter_rel_dir": "chapters/08-running-a-session"
+}

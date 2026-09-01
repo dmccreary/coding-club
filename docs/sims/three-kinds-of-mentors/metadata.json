@@ -1,0 +1,23 @@
+{
+  "title": "Three Kinds of Mentors",
+  "description": "Given a recruiting scenario, the learner selects the mentor type whose strengths best fit the club's current need.",
+  "creator": "Coding Club",
+  "author": "Dan McCreary",
+  "date": "2026-09-01",
+  "subject": [
+    "Coding Club"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "three-kinds-of-mentors",
+  "library": "Interactive Infographic Overlay (grid-diagram.js, annotation-free comparison poster + rectangular hover zones)",
+  "bloomLevel": "Understand (L2)",
+  "bloomVerb": "compare",
+  "completion_status": "scaffold",
+  "chapter_number": 9,
+  "chapter_title": "\"Mentors, Students, and the 3:1 Ratio\"",
+  "chapter_dir": "09-mentors-students-ratio",
+  "chapter_rel_dir": "chapters/09-mentors-students-ratio"
+}

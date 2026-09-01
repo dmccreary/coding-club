@@ -1,0 +1,23 @@
+{
+  "title": "Coding Club Room Layout",
+  "description": "Given a blank room outline, the learner identifies where each layout element belongs and explains why its placement supports mentor supervision or safety.",
+  "creator": "Coding Club",
+  "author": "Dan McCreary",
+  "date": "2026-09-01",
+  "subject": [
+    "Coding Club"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "coding-club-room-layout",
+  "library": "p5.js",
+  "bloomLevel": "Apply (L3)",
+  "bloomVerb": "apply",
+  "completion_status": "scaffold",
+  "chapter_number": 7,
+  "chapter_title": "Telling Your Club's Story and Designing the Classroom",
+  "chapter_dir": "07-club-story-and-classroom-design",
+  "chapter_rel_dir": "chapters/07-club-story-and-classroom-design"
+}

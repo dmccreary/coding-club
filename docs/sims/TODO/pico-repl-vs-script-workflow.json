@@ -1,0 +1,15 @@
+{
+  "sim_id": "pico-repl-vs-script-workflow",
+  "diagram_name": "REPL vs. Saved Script Workflow",
+  "chapter_number": 19,
+  "chapter_title": "Raspberry Pi Pico, MicroPython, and the Moving Rainbow Kit",
+  "chapter_dir": "19-pico-micropython-moving-rainbow",
+  "chapter_rel_dir": "chapters/19-pico-micropython-moving-rainbow",
+  "library": "p5.js",
+  "bloom_level": "Understand (L2)",
+  "bloom_verb": "explain",
+  "learning_objective": "Given the Pico's REPL prompt, a saved test file, and a saved main.py file, the learner explains the difference between typing a command interactively and running a script automatically at power-up.",
+  "completion_status": "specified",
+  "extracted_date": "2026-09-01",
+  "specification": "Type: workflow\n**sim-id:** pico-repl-vs-script-workflow<br/>\n**Library:** p5.js<br/>\n**Status:** Specified<br/>\n**Template:** https://github.com/dmccreary/learning-micropython/tree/main/docs/sims/repl-workflow\n\nPurpose: Let a mentor click through the REPL, a saved test file, and a saved main.py file to see which one is running at each stage and what happens to it when power is removed.\n\nBloom Taxonomy: Understand (L2)\nBloom Taxonomy Verb: explain\n\nLearning objective: Given the Pico's REPL prompt, a saved test file, and a saved main.py file, the learner explains the difference between typing a command interactively and running a script automatically at power-up.\n\nVisual elements: Three labeled panels left to right — \"REPL,\" \"test.py (run manually),\" \"main.py (runs at power-up)\" — each showing a small Pico icon and a status light that turns on only when that mode is actively running code.\n\nInteractive controls: Three clickable panel buttons; a \"Power Cycle\" button that shows which panel's code survives a simulated unplug-and-replug.\n\nDefault parameters: No panel selected; all status lights off.\n\nBehavior: Clicking a panel highlights it and shows a one-line description of what happens in that mode; clicking \"Power Cycle\" turns off the REPL and test.py status lights but leaves the main.py light on, reinforcing which mode survives a power loss.\n\nImplementation notes: p5.js canvas with three static panel objects and a power-cycle animation that dims two of the three status lights."
+}

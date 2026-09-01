@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- microsim-scaffold-stub -->
+    <title>Feedback Loop Cycle</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f8f9fa;
+            color: #212529;
+        }
+        #container {
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background: white;
+        }
+        h1 {
+            font-size: 22px;
+            margin-bottom: 10px;
+            color: #1a3a6c;
+        }
+        .placeholder {
+            border: 2px dashed #adb5bd;
+            border-radius: 8px;
+            padding: 40px 20px;
+            text-align: center;
+            color: #6c757d;
+            margin: 20px 0;
+            min-height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .placeholder .badge {
+            display: inline-block;
+            background: #ffc107;
+            color: #212529;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+        .placeholder h2 {
+            font-size: 18px;
+            color: #495057;
+            margin-bottom: 8px;
+        }
+        .placeholder p {
+            font-size: 14px;
+            max-width: 480px;
+        }
+        .meta {
+            margin-top: 20px;
+            font-size: 13px;
+            color: #6c757d;
+            border-top: 1px solid #dee2e6;
+            padding-top: 12px;
+        }
+        .meta strong { color: #495057; }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>Feedback Loop Cycle</h1>
+        <div class="placeholder">
+            <span class="badge">SCAFFOLD</span>
+            <h2>MicroSim Not Yet Implemented</h2>
+            <p>This MicroSim has been scaffolded from its specification but the
+            interactive content has not been built yet. See the chapter source
+            and the <code>index.md</code> in this directory for the full spec.</p>
+        </div>
+        <div class="meta">
+            <p><strong>Sim ID:</strong> feedback-loop-cycle</p>
+            <p><strong>Library:</strong> Mermaid</p>
+            <p><strong>Bloom Level:</strong> Understand (L2)</p>
+            <p><strong>Learning Objective:</strong> The learner explains what happens at each stage of a closed feedback loop, and why skipping the last stage undermines the whole cycle.</p>
+        </div>
+    </div>
+
+    <!--
+    SPECIFICATION (from chapter index.md):
+
+    Type: workflow
+    **sim-id:** feedback-loop-cycle<br/>
+    **Library:** Mermaid<br/>
+    **Status:** Specified
+    **Template:** https://github.com/dmccreary/xapi-course/tree/main/docs/sims/instructional-design-feedback-loop
+    
+    Purpose: Show the four-stage cycle that keeps feedback from disappearing into an unread inbox, using the start-time worked example to make each stage concrete.
+    
+    Bloom Taxonomy: Understand (L2)
+    Bloom Taxonomy Verb: explain
+    
+    Learning objective: The learner explains what happens at each stage of a closed feedback loop, and why skipping the last stage undermines the whole cycle.
+    
+    Steps (circular flowchart):
+    1. "Collect" -- click reveals "A post-event survey gathers responses, such as families noting the start time is too early."
+    2. "Analyze" -- click reveals "The club reviews responses for a pattern, such as several families raising the same start-time concern."
+    3. "Act" -- click reveals "The club makes a real change, such as shifting the start time by fifteen minutes."
+    4. "Report Back" -- click reveals "A follow-up message tells families what changed and credits the survey, then the cycle repeats at 'Collect.'"
+    
+    Interactivity requirement (satisfied): every node has a Mermaid `click` directive tied to an infobox showing its revealed text.
+    
+    Color coding: Four evenly spaced colors around the cycle, with an arrow from "Report Back" back to "Collect" to make the repeating nature visible.
+    
+    Implementation: Mermaid flowchart (`graph LR` arranged to suggest a loop, with an explicit arrow from the last node back to the first) rendered in main.html with `click NodeId call showInfo("NodeId")` directives for every node.
+    -->
+</body>
+</html>

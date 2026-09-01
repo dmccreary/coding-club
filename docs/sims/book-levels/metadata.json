@@ -1,0 +1,47 @@
+{
+  "title": "Levels of Intelligent Textbook Sophistication",
+  "description": "Levels of Intelligent Textbook Sophistication",
+  "creator": "Coding Club",
+  "author": "Dan McCreary",
+  "date": "2026-09-01",
+  "subject": [
+    "Coding Club"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "book-levels",
+  "library": "p5.js",
+  "bloomLevel": "TBD",
+  "bloomVerb": "TBD",
+  "completion_status": "built",
+  "chapter_number": 2,
+  "chapter_title": "AI, Intelligent Textbooks, and Where Coding Clubs Meet",
+  "chapter_dir": "02-ai-and-intelligent-textbooks",
+  "chapter_rel_dir": "chapters/02-ai-and-intelligent-textbooks",
+  "canvasHeight": 515,
+  "educational": {
+    "gradeLevel": "High School, Undergraduate, Adult",
+    "audience": "Readers of this textbook, club leaders evaluating learning materials",
+    "duration": "10 minutes",
+    "prerequisites": [
+      "Intelligent Textbook",
+      "Learning Graph"
+    ],
+    "concepts": [
+      "Intelligent Textbook",
+      "MicroSim",
+      "Learning Graph",
+      "Adaptive Learning",
+      "AI Tutor"
+    ]
+  },
+  "pedagogical": {
+    "bloomLevel": "Understand (L2)",
+    "bloomVerb": "explain",
+    "learningObjective": "Explain how intelligent textbooks range from static content to fully AI-driven, adaptive learning experiences, and place this book on that spectrum.",
+    "interactionPattern": "Click-to-explore level ladder with a fixed marker on the level this book occupies",
+    "assessment": "Ask why a book with AI-generated chapters is Level 4 rather than Level 6."
+  }
+}

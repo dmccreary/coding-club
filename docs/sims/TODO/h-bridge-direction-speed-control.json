@@ -1,0 +1,15 @@
+{
+  "sim_id": "h-bridge-direction-speed-control",
+  "diagram_name": "H-Bridge Direction and Speed Control",
+  "chapter_number": 17,
+  "chapter_title": "Sensors, Displays, Motors, and Robot Chassis",
+  "chapter_dir": "17-sensors-displays-motors",
+  "chapter_rel_dir": "chapters/17-sensors-displays-motors",
+  "library": "p5.js",
+  "bloom_level": "Apply (L3)",
+  "bloom_verb": "demonstrate",
+  "learning_objective": "Given a set of H-bridge control inputs and a PWM duty cycle, the learner demonstrates how DC motor direction and speed are controlled without routing motor current through the microcontroller.",
+  "completion_status": "specified",
+  "extracted_date": "2026-09-01",
+  "specification": "Type: microsim\n**sim-id:** h-bridge-direction-speed-control<br/>\n**Library:** p5.js<br/>\n**Status:** Specified<br/>\n**Template:** https://github.com/dmccreary/microsims/tree/main/docs/sims/h-bridge\n\nPurpose: Let a learner toggle H-bridge control inputs and a PWM speed slider and see a simulated DC motor respond with the correct direction and speed.\n\nBloom Taxonomy: Apply (L3)\nBloom Taxonomy Verb: demonstrate\n\nLearning objective: Given a set of H-bridge control inputs and a PWM duty cycle, the learner demonstrates how DC motor direction and speed are controlled without routing motor current through the microcontroller.\n\nVisual elements: A simplified H-bridge diagram (four switch symbols in an H shape) with a motor symbol in the middle, plus a spinning wheel icon reflecting current direction and speed.\n\nInteractive controls: Two toggle switches representing the H-bridge control inputs; a PWM duty-cycle slider (0%-100%); a \"swap direction\" preset button.\n\nDefault parameters: Both control inputs LOW (motor stopped), duty cycle 0%.\n\nBehavior: Setting one control input HIGH and the other LOW spins the wheel icon in one direction; swapping the pattern reverses it; raising the duty-cycle slider speeds up the spin animation proportionally.\n\nImplementation notes: p5.js canvas with switch-state variables mapped to a rotation-direction sign and duty-cycle mapped to rotation speed via `map()`."
+}

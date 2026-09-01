@@ -1,0 +1,15 @@
+{
+  "sim_id": "led-anatomy",
+  "diagram_name": "LED Anatomy",
+  "chapter_number": 16,
+  "chapter_title": "Physical Computing and Electrical Safety Basics",
+  "chapter_dir": "16-physical-computing-safety",
+  "chapter_rel_dir": "chapters/16-physical-computing-safety",
+  "library": "Interactive Infographic Overlay (diagram.js, callout engine)",
+  "bloom_level": "Remember (L1)",
+  "bloom_verb": "identify",
+  "learning_objective": "Given a zoomed illustration of an LED, the learner identifies the anode, cathode, and flat-edge marking used to orient it correctly.",
+  "completion_status": "specified",
+  "extracted_date": "2026-09-01",
+  "specification": "Type: infographic\n**sim-id:** led-anatomy<br/>\n**Library:** Interactive Infographic Overlay (diagram.js, callout engine)<br/>\n**Status:** Specified\n\nPurpose: Let a learner identify anode, cathode, and the flat-edge marking on a zoomed illustration of a real LED before handling one.\n\nBloom Taxonomy: Remember (L1)\nBloom Taxonomy Verb: identify\n\nLearning objective: Given a zoomed illustration of an LED, the learner identifies the anode, cathode, and flat-edge marking used to orient it correctly.\n\nImage style: Close-up flat illustration of a single 5mm LED, legs extended, with a visible length difference between the two legs and a flat edge on the dome\n\nImage dimensions: 800x600 (landscape)\n\nCallouts (4 total): 1. \"Anode (longer leg)\" color #4A90D9; 2. \"Cathode (shorter leg)\" color #E67E22; 3. \"Flat edge\" on the dome, color #9B59B6; 4. \"Light-emitting dome\" color #F5A623\n\nInteractive features: Hover or click each callout to reveal a one-sentence explanation; a \"Flip It\" button shows the same LED reversed so learners practice recognizing orientation from either side\n\nImplementation: Interactive Infographic Overlay Guide (callout engine) — `diagram.js` + `style.css` render numbered markers over the generated LED illustration"
+}

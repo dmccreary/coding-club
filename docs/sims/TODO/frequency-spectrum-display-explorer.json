@@ -1,0 +1,15 @@
+{
+  "sim_id": "frequency-spectrum-display-explorer",
+  "diagram_name": "Frequency Spectrum Display Explorer",
+  "chapter_number": 20,
+  "chapter_title": "Sensor, Sound, and IoT Project Kits",
+  "chapter_dir": "20-sensor-sound-iot-kits",
+  "chapter_rel_dir": "chapters/20-sensor-sound-iot-kits",
+  "library": "p5.js",
+  "bloom_level": "Understand (L2)",
+  "bloom_verb": "interpret",
+  "learning_objective": "Given a frequency spectrum display showing a bar pattern, the learner interprets which sound type (a low hum, a high whistle, or general chatter) most likely produced it.",
+  "completion_status": "specified",
+  "extracted_date": "2026-09-01",
+  "specification": "Type: chart\n**sim-id:** frequency-spectrum-display-explorer<br/>\n**Library:** p5.js<br/>\n**Status:** Specified<br/>\n**Template:** https://github.com/dmccreary/fft-benchmarking/tree/main/docs/sims/live-spectrum-display-bin-averaging\n\nPurpose: Let a learner select a sound type (low hum, high whistle, or general chatter) and see the resulting bar pattern on a simplified frequency spectrum display, before reading one from a physical sound spectrum kit.\n\nBloom Taxonomy: Understand (L2)\nBloom Taxonomy Verb: interpret\n\nLearning objective: Given a frequency spectrum display showing a bar pattern, the learner interprets which sound type (a low hum, a high whistle, or general chatter) most likely produced it.\n\nVisual elements: A row of 12 vertical bars labeled low-to-high left to right; a dropdown or button set to pick a sample sound type; a caption describing the currently shown sound.\n\nInteractive controls: Buttons for \"Low Hum,\" \"High Whistle,\" and \"Room Chatter\"; hovering any bar shows its approximate frequency band and current height as a tooltip.\n\nDefault parameters: Starts with all bars at a low, flat baseline height, no sound selected.\n\nBehavior: Clicking a sound-type button animates the bars into that sound's representative pattern (concentrated left, concentrated right, or spread across most bars) and updates the caption; hovering a bar always shows its band label and value regardless of which pattern is active.\n\nImplementation notes: p5.js canvas with a fixed array of 12 rectangle objects; three preset height arrays swapped in on button click with a short easing animation between states."
+}

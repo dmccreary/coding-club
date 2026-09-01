@@ -1,0 +1,23 @@
+{
+  "title": "Pivot Table Builder",
+  "description": "Given a small raw attendance dataset, the learner constructs a pivot table summarizing session counts by the row and column fields they select.",
+  "creator": "Coding Club",
+  "author": "Dan McCreary",
+  "date": "2026-09-01",
+  "subject": [
+    "Coding Club"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "pivot-table-builder",
+  "library": "p5.js",
+  "bloomLevel": "Apply (L3)",
+  "bloomVerb": "construct",
+  "completion_status": "scaffold",
+  "chapter_number": 25,
+  "chapter_title": "Analyzing Club Data and Choosing the Right Tools",
+  "chapter_dir": "25-analyzing-club-data-and-tools",
+  "chapter_rel_dir": "chapters/25-analyzing-club-data-and-tools"
+}

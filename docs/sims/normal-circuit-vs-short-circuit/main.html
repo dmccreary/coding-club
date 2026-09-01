@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- microsim-scaffold-stub -->
+    <title>Normal Circuit vs. Short Circuit</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f8f9fa;
+            color: #212529;
+        }
+        #container {
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background: white;
+        }
+        h1 {
+            font-size: 22px;
+            margin-bottom: 10px;
+            color: #1a3a6c;
+        }
+        .placeholder {
+            border: 2px dashed #adb5bd;
+            border-radius: 8px;
+            padding: 40px 20px;
+            text-align: center;
+            color: #6c757d;
+            margin: 20px 0;
+            min-height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .placeholder .badge {
+            display: inline-block;
+            background: #ffc107;
+            color: #212529;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+        .placeholder h2 {
+            font-size: 18px;
+            color: #495057;
+            margin-bottom: 8px;
+        }
+        .placeholder p {
+            font-size: 14px;
+            max-width: 480px;
+        }
+        .meta {
+            margin-top: 20px;
+            font-size: 13px;
+            color: #6c757d;
+            border-top: 1px solid #dee2e6;
+            padding-top: 12px;
+        }
+        .meta strong { color: #495057; }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>Normal Circuit vs. Short Circuit</h1>
+        <div class="placeholder">
+            <span class="badge">SCAFFOLD</span>
+            <h2>MicroSim Not Yet Implemented</h2>
+            <p>This MicroSim has been scaffolded from its specification but the
+            interactive content has not been built yet. See the chapter source
+            and the <code>index.md</code> in this directory for the full spec.</p>
+        </div>
+        <div class="meta">
+            <p><strong>Sim ID:</strong> normal-circuit-vs-short-circuit</p>
+            <p><strong>Library:</strong> Interactive Infographic Overlay (diagram.js, side-by-side comparison + numbered callouts)</p>
+            <p><strong>Bloom Level:</strong> Understand (L2)</p>
+            <p><strong>Learning Objective:</strong> Given a circuit diagram, the learner explains why a low-resistance path produces a current spike compared to a normal, resistor-limited path.</p>
+        </div>
+    </div>
+
+    <!--
+    SPECIFICATION (from chapter index.md):
+
+    Type: infographic
+    **sim-id:** normal-circuit-vs-short-circuit<br/>
+    **Library:** Interactive Infographic Overlay (diagram.js, side-by-side comparison + numbered callouts)<br/>
+    **Status:** Specified
+    
+    Purpose: Show why removing the resistor and LED from a circuit's current path causes a dangerous current spike, using the same numbers worked through in the prose above.
+    
+    Bloom Taxonomy: Understand (L2)
+    Bloom Taxonomy Verb: explain
+    
+    Learning objective: Given a circuit diagram, the learner explains why a low-resistance path produces a current spike compared to a normal, resistor-limited path.
+    
+    Image style: Two side-by-side breadboard circuit illustrations — left labeled "Normal Circuit" (battery, resistor, LED, wire loop), right labeled "Short Circuit" (battery, bare wire loop, no resistor)
+    
+    Image dimensions: 1200x600 (landscape)
+    
+    Callouts (4 total): 1. "6V battery pack" on both illustrations; 2. "220-ohm resistor" on the normal circuit only, color #4A90D9; 3. "~27 mA (safe)" current readout on the normal circuit, color #2ECC71; 4. "~6 A (dangerous, gets hot)" current readout on the short circuit, color #E74C3C
+    
+    Interactive features: Hover either current readout to reveal the Ohm's law calculation behind it; click either full illustration to toggle a heat-glow effect on the wire showing where the energy is being dissipated
+    
+    Implementation: Interactive Infographic Overlay Guide (callout engine) — `diagram.js` + `style.css` render the two illustrations with hover-revealed calculation tooltips
+    -->
+</body>
+</html>

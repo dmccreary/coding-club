@@ -1,0 +1,23 @@
+{
+  "title": "Kit Lifecycle Workflow",
+  "description": "Given a kit's current lifecycle stage and its damage-assessment outcome, the learner differentiates whether the kit should be reused as-is, sent down an upgrade path, or retired.",
+  "creator": "Coding Club",
+  "author": "Dan McCreary",
+  "date": "2026-09-01",
+  "subject": [
+    "Coding Club"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "kit-lifecycle-workflow",
+  "library": "Mermaid",
+  "bloomLevel": "Analyze (L4)",
+  "bloomVerb": "differentiate",
+  "completion_status": "scaffold",
+  "chapter_number": 21,
+  "chapter_title": "Managing Your Kit Inventory and Signal Processing Kits",
+  "chapter_dir": "21-kit-inventory-signal-processing",
+  "chapter_rel_dir": "chapters/21-kit-inventory-signal-processing"
+}

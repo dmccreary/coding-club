@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- microsim-scaffold-stub -->
+    <title>Meet the Specialized Agent Roster</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f8f9fa;
+            color: #212529;
+        }
+        #container {
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background: white;
+        }
+        h1 {
+            font-size: 22px;
+            margin-bottom: 10px;
+            color: #1a3a6c;
+        }
+        .placeholder {
+            border: 2px dashed #adb5bd;
+            border-radius: 8px;
+            padding: 40px 20px;
+            text-align: center;
+            color: #6c757d;
+            margin: 20px 0;
+            min-height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .placeholder .badge {
+            display: inline-block;
+            background: #ffc107;
+            color: #212529;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+        .placeholder h2 {
+            font-size: 18px;
+            color: #495057;
+            margin-bottom: 8px;
+        }
+        .placeholder p {
+            font-size: 14px;
+            max-width: 480px;
+        }
+        .meta {
+            margin-top: 20px;
+            font-size: 13px;
+            color: #6c757d;
+            border-top: 1px solid #dee2e6;
+            padding-top: 12px;
+        }
+        .meta strong { color: #495057; }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>Meet the Specialized Agent Roster</h1>
+        <div class="placeholder">
+            <span class="badge">SCAFFOLD</span>
+            <h2>MicroSim Not Yet Implemented</h2>
+            <p>This MicroSim has been scaffolded from its specification but the
+            interactive content has not been built yet. See the chapter source
+            and the <code>index.md</code> in this directory for the full spec.</p>
+        </div>
+        <div class="meta">
+            <p><strong>Sim ID:</strong> specialized-agent-roster</p>
+            <p><strong>Library:</strong> vis-network</p>
+            <p><strong>Bloom Level:</strong> Understand (L2)</p>
+            <p><strong>Learning Objective:</strong> Given a club task outside day-to-day operations, the learner classifies which of the five specialized agents is the right match for it.</p>
+        </div>
+    </div>
+
+    <!--
+    SPECIFICATION (from chapter index.md):
+
+    Type: graph-model
+    **sim-id:** specialized-agent-roster<br/>
+    **Library:** vis-network<br/>
+    **Status:** Specified
+    **Template:** https://github.com/dmccreary/ai-strategy-for-education/tree/main/docs/sims/ai-concept-hierarchy
+    
+    Purpose: Show the five specialized agents as a network around the idea of tasks beyond club operations, so a learner can click any agent type and see the task it handles and who reviews its output.
+    
+    Bloom Taxonomy: Understand (L2)
+    Bloom Taxonomy Verb: classify
+    
+    Learning objective: Given a club task outside day-to-day operations, the learner classifies which of the five specialized agents is the right match for it.
+    
+    Node types:
+    1. Center node "Specialized Agents" (gray hexagon) -- click reveals "Tasks beyond registration, scheduling, and reminders -- less frequent, but still time-consuming without help."
+    2. AI Assisted Grant Writing (blue circle) -- click reveals "Drafts grant proposal sections from bullet-point facts. Reviewed by: the leader, for factual accuracy."
+    3. AI Assisted Social Media (green circle) -- click reveals "Drafts a platform-ready post and caption. Reviewed by: the leader, for un-consented student identification."
+    4. AI Generated Website Content (amber circle) -- click reveals "Drafts public web page copy. Reviewed by: the leader, for accuracy against the real walk-in experience."
+    5. AI Assisted Translation (purple circle) -- click reveals "Produces a first-pass translation of an existing document. Reviewed by: a fluent speaker, for meaning and tone."
+    6. AI Voice Assistant Use (teal circle) -- click reveals "Reads existing, already-approved text aloud or answers a simple spoken question. Reviewed by: nobody new -- it only reads what a person already approved."
+    
+    Edges: One edge from the center node to each of the five agent-type nodes, unlabeled.
+    
+    Interactive features:
+    - Hover any node to preview its one-line job description
+    - Click any node to highlight it and open a side-panel infobox with its full description and reviewer
+    - Zoom with the mouse wheel, pan by dragging the background
+    
+    Visual styling: Center node larger and gray; five spoke nodes evenly sized, each a distinct accent color; uniform edge style
+    
+    Legend: Node color key matching the five agent types plus the center "umbrella" node
+    
+    Implementation: vis-network JavaScript library, hierarchical or force-directed hub layout, canvas size 800x450px.
+    -->
+</body>
+</html>

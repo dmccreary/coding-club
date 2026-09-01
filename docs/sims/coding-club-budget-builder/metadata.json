@@ -1,0 +1,23 @@
+{
+  "title": "Coding Club Budget Builder",
+  "description": "Given a set of named recurring and one-time cost line items and a student count, the learner calculates the total annual budget, the recurring-versus-one-time split, and the cost per student.",
+  "creator": "Coding Club",
+  "author": "Dan McCreary",
+  "date": "2026-09-01",
+  "subject": [
+    "Coding Club"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "coding-club-budget-builder",
+  "library": "p5.js",
+  "bloomLevel": "Apply (L3)",
+  "bloomVerb": "calculate",
+  "completion_status": "scaffold",
+  "chapter_number": 30,
+  "chapter_title": "Budgeting, Fundraising, and Grant Writing",
+  "chapter_dir": "30-budgeting-fundraising-grants",
+  "chapter_rel_dir": "chapters/30-budgeting-fundraising-grants"
+}

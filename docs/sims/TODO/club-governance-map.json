@@ -1,0 +1,15 @@
+{
+  "sim_id": "club-governance-map",
+  "diagram_name": "Club Governance at a Glance",
+  "chapter_number": 4,
+  "chapter_title": "Club Roles, Governance Structure, and Branding",
+  "chapter_dir": "04-roles-governance-branding",
+  "chapter_rel_dir": "chapters/04-roles-governance-branding",
+  "library": "vis-network",
+  "bloom_level": "Understand (L2)",
+  "bloom_verb": "explain",
+  "learning_objective": "Given a club's list of roles, the learner explains who reports to whom and who provides outside oversight.",
+  "completion_status": "specified",
+  "extracted_date": "2026-09-01",
+  "specification": "Type: graph-model\n**sim-id:** club-governance-map<br/>\n**Library:** vis-network<br/>\n**Status:** Specified\n\nPurpose: Show how club roles connect through reporting and oversight lines, making the abstract term \"governance structure\" concrete.\n\nBloom Taxonomy: Understand (L2)\nBloom Taxonomy Verb: explain\n\nLearning objective: Given a club's list of roles, the learner explains who reports to whom and who provides outside oversight.\n\nNode types:\n1. Top tier -- \"Advisory Committee\" (gray diamond, oversight, optional -- see note below)\n2. Second tier -- \"Club Leader\" and \"Assistant Leader\" (amber circles, #F5A623)\n3. Third tier -- \"Volunteer Coordinator Role\" and \"Mentor Role\" (sky-blue circles, #4A90D9)\n4. Fourth tier -- \"Student Role\" and \"Parent Role\" (light-green circles, #7ED6A5)\n\nEdges (hierarchical, directional):\n- Advisory Committee -- Club Leader: \"provides oversight and guidance to\"\n- Club Leader -- Assistant Leader: \"delegates to and trains\"\n- Club Leader -- Volunteer Coordinator Role: \"oversees\"\n- Volunteer Coordinator Role -- Mentor Role: \"recruits, screens, and schedules\"\n- Mentor Role -- Student Role: \"guides directly during sessions\"\n- Mentor Role -- Parent Role: \"communicates session updates to\"\n\nInteractive features:\n- Click any node to open a side panel with a one-sentence definition and one sentence on that role's single most important responsibility\n- Note displayed near the Advisory Committee node: \"Not every club has one -- see the Governance Structure discussion for when to add this tier\"\n- Click-drag to reposition nodes; scroll wheel to zoom\n\nDefault state: Hierarchical top-down layout, Advisory Committee at top, no node pre-selected\n\nLayout: Hierarchical (vis-network hierarchical layout option), fixed top-to-bottom tiers\n\nLegend: Fixed corner box explaining node color by tier (gray = oversight, amber = leadership, blue = volunteer/mentor, green = participants and families)\n\nCanvas size: Responsive width, 500px height, minimum 320px width before controls stack vertically\n\nImplementation: vis-network with hierarchical layout enabled; side panel is an absolutely-positioned div updated via vis-network's `selectNode` event listener"
+}

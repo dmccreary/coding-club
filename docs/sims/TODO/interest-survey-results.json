@@ -1,0 +1,15 @@
+{
+  "sim_id": "interest-survey-results",
+  "diagram_name": "Interest Survey Results",
+  "chapter_number": 5,
+  "chapter_title": "Gauging Interest and Holding Your First Meeting",
+  "chapter_dir": "05-gauging-interest-first-meeting",
+  "chapter_rel_dir": "chapters/05-gauging-interest-first-meeting",
+  "library": "Chart.js",
+  "bloom_level": "Analyze (L4)",
+  "bloom_verb": "interpret",
+  "learning_objective": "Given a set of grouped survey results, the learner interprets whether there is enough concentrated interest, in which age range, to justify starting a club.",
+  "completion_status": "specified",
+  "extracted_date": "2026-09-01",
+  "specification": "Type: chart\n**sim-id:** interest-survey-results<br/>\n**Library:** Chart.js<br/>\n**Status:** Specified\n\nPurpose: Show how raw survey responses get grouped by age range and interest level, turning a stack of paper forms into a decision-ready picture.\n\nBloom Taxonomy: Analyze (L4)\nBloom Taxonomy Verb: interpret\n\nLearning objective: Given a set of grouped survey results, the learner interprets whether there is enough concentrated interest, in which age range, to justify starting a club.\n\nChart type: Stacked bar chart\n\nX-axis: Age range (6-8, 9-11, 12-14, 15-18)\nY-axis: Number of survey responses\n\nData series (stacked within each age-range bar):\n- \"Definitely would attend\" (dark amber, #F5A623): 6-8: 4, 9-11: 14, 12-14: 9, 15-18: 2\n- \"Might attend\" (light blue, #4A90D9): 6-8: 3, 9-11: 6, 12-14: 5, 15-18: 4\n- \"Not interested\" (gray, #B0B0B0): 6-8: 2, 9-11: 3, 12-14: 4, 15-18: 3\n\nInteractivity requirement (satisfied): hovering any bar segment shows the exact count and percentage of that age range's total responses; clicking a legend entry toggles that series on/off across all bars\n\nTitle: \"47 Survey Responses by Age Range and Interest Level\"\nLegend: Position top-right, matches the three series colors above\n\nAnnotations: A callout arrow pointing at the 9-11 age-range bar reading \"Clearest concentration of definite interest -- 14 of 23 total 9-11 responses\"\n\nKey insight the learner should be able to state after interacting: the 9-11 age range has both the most responses and the highest proportion of \"definitely would attend,\" making it the strongest starting cohort even though every age range shows some interest.\n\nImplementation: Chart.js stacked bar chart with a custom tooltip callback showing count and percentage"
+}

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- microsim-scaffold-stub -->
+    <title>Club Inventory Lifecycle Workflow</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f8f9fa;
+            color: #212529;
+        }
+        #container {
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background: white;
+        }
+        h1 {
+            font-size: 22px;
+            margin-bottom: 10px;
+            color: #1a3a6c;
+        }
+        .placeholder {
+            border: 2px dashed #adb5bd;
+            border-radius: 8px;
+            padding: 40px 20px;
+            text-align: center;
+            color: #6c757d;
+            margin: 20px 0;
+            min-height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .placeholder .badge {
+            display: inline-block;
+            background: #ffc107;
+            color: #212529;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+        .placeholder h2 {
+            font-size: 18px;
+            color: #495057;
+            margin-bottom: 8px;
+        }
+        .placeholder p {
+            font-size: 14px;
+            max-width: 480px;
+        }
+        .meta {
+            margin-top: 20px;
+            font-size: 13px;
+            color: #6c757d;
+            border-top: 1px solid #dee2e6;
+            padding-top: 12px;
+        }
+        .meta strong { color: #495057; }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>Club Inventory Lifecycle Workflow</h1>
+        <div class="placeholder">
+            <span class="badge">SCAFFOLD</span>
+            <h2>MicroSim Not Yet Implemented</h2>
+            <p>This MicroSim has been scaffolded from its specification but the
+            interactive content has not been built yet. See the chapter source
+            and the <code>index.md</code> in this directory for the full spec.</p>
+        </div>
+        <div class="meta">
+            <p><strong>Sim ID:</strong> club-inventory-lifecycle-workflow</p>
+            <p><strong>Library:</strong> Mermaid</p>
+            <p><strong>Bloom Level:</strong> Analyze (L4)</p>
+            <p><strong>Learning Objective:</strong> Given an item's current inventory stage and an audit outcome, the learner differentiates whether the item should return to storage, be flagged overdue, or enter the lost item policy.</p>
+        </div>
+    </div>
+
+    <!--
+    SPECIFICATION (from chapter index.md):
+
+    Type: workflow
+    **sim-id:** club-inventory-lifecycle-workflow<br/>
+    **Library:** Mermaid<br/>
+    **Status:** Specified
+    
+    Purpose: Trace one tagged item through its entire inventory lifecycle -- tagging, storage, checkout, return, periodic audit, and the branch into the lost item policy -- tying together every inventory concept from this chapter into one connected path.
+    
+    Bloom Taxonomy: Analyze (L4)
+    Bloom Taxonomy Verb: differentiate
+    
+    Learning objective: Given an item's current inventory stage and an audit outcome, the learner differentiates whether the item should return to storage, be flagged overdue, or enter the lost item policy.
+    
+    Steps (flowchart with decision diamonds):
+    1. Start: "New Item Arrives" -- click reveals the Club Inventory System definition above.
+    2. Process: "Print Sticker" -- click reveals the Inventory Sticker Printing definition above.
+    3. Process: "Generate QR Code" -- click reveals the QR Code On Kits definition above.
+    4. Process: "Log via Asset Tagging Process" -- click reveals the Asset Tagging Process definition above.
+    5. Process: "Store on Shelf" -- click reveals "The item sits in general circulation, available for the next checkout."
+    6. Process: "Scan Out (Checkout System)" -- click reveals the Equipment Checkout System definition above.
+    7. Decision: "Returned by Due Date?" -- click reveals "The system compares today's date against the due date recorded at checkout."
+    7a. Branch "Yes" leads to Process: "Scan In (Return Tracking)" -- click reveals the Equipment Return Tracking definition above; loops back to step 5.
+    7b. Branch "No" leads to Process: "Flag as Overdue" -- click reveals "The mentor dashboard surfaces the overdue item automatically, prompting a follow-up before it becomes an audit surprise."; loops back to step 7a once resolved.
+    8. Process (periodic, separate branch from step 5): "Semester Audit" -- click reveals the Inventory Audit Process definition above.
+    9. Decision: "Item Found During Audit?" -- click reveals "Every logged item not currently checked out should be physically present; anything missing moves to the next step."
+    9a. Branch "Yes" loops back to step 5.
+    9b. Branch "No" leads to End: "Lost Item Policy" -- click reveals the Lost Item Policy definition above.
+    
+    Interactivity requirement (satisfied): every node has a Mermaid `click` directive tied to an infobox showing its revealed text, matching the definition already given in this chapter's prose.
+    
+    Color coding: Blue for tagging steps (sticker, QR, asset tagging), green for circulation steps (storage, checkout, return), purple for the decision diamonds, red for the overdue-flag and lost-item-policy end states.
+    
+    Implementation: Mermaid flowchart (`graph TD`) rendered in main.html with `click NodeId call showInfo("NodeId")` directives for every node, opening a side-panel infobox; a "Reset View" button re-centers the diagram after any zoom or pan; layout reflows responsively on narrow screens.
+    -->
+</body>
+</html>

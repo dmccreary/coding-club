@@ -1,0 +1,23 @@
+{
+  "title": "Robot Emotion Display Control Panel",
+  "description": "Given a simulated distance reading, the learner demonstrates how a single sensor value can drive both a robot display kit's expression and a robot sounds kit's audio cue simultaneously.",
+  "creator": "Coding Club",
+  "author": "Dan McCreary",
+  "date": "2026-09-01",
+  "subject": [
+    "Coding Club"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "robot-emotion-display-control-panel",
+  "library": "p5.js",
+  "bloomLevel": "Apply (L3)",
+  "bloomVerb": "demonstrate",
+  "completion_status": "scaffold",
+  "chapter_number": 20,
+  "chapter_title": "Sensor, Sound, and IoT Project Kits",
+  "chapter_dir": "20-sensor-sound-iot-kits",
+  "chapter_rel_dir": "chapters/20-sensor-sound-iot-kits"
+}

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- microsim-scaffold-stub -->
+    <title>REPL vs. Saved Script Workflow</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f8f9fa;
+            color: #212529;
+        }
+        #container {
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background: white;
+        }
+        h1 {
+            font-size: 22px;
+            margin-bottom: 10px;
+            color: #1a3a6c;
+        }
+        .placeholder {
+            border: 2px dashed #adb5bd;
+            border-radius: 8px;
+            padding: 40px 20px;
+            text-align: center;
+            color: #6c757d;
+            margin: 20px 0;
+            min-height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .placeholder .badge {
+            display: inline-block;
+            background: #ffc107;
+            color: #212529;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+        .placeholder h2 {
+            font-size: 18px;
+            color: #495057;
+            margin-bottom: 8px;
+        }
+        .placeholder p {
+            font-size: 14px;
+            max-width: 480px;
+        }
+        .meta {
+            margin-top: 20px;
+            font-size: 13px;
+            color: #6c757d;
+            border-top: 1px solid #dee2e6;
+            padding-top: 12px;
+        }
+        .meta strong { color: #495057; }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>REPL vs. Saved Script Workflow</h1>
+        <div class="placeholder">
+            <span class="badge">SCAFFOLD</span>
+            <h2>MicroSim Not Yet Implemented</h2>
+            <p>This MicroSim has been scaffolded from its specification but the
+            interactive content has not been built yet. See the chapter source
+            and the <code>index.md</code> in this directory for the full spec.</p>
+        </div>
+        <div class="meta">
+            <p><strong>Sim ID:</strong> pico-repl-vs-script-workflow</p>
+            <p><strong>Library:</strong> p5.js</p>
+            <p><strong>Bloom Level:</strong> Understand (L2)</p>
+            <p><strong>Learning Objective:</strong> Given the Pico's REPL prompt, a saved test file, and a saved main.py file, the learner explains the difference between typing a command interactively and running a script automatically at power-up.</p>
+        </div>
+    </div>
+
+    <!--
+    SPECIFICATION (from chapter index.md):
+
+    Type: workflow
+    **sim-id:** pico-repl-vs-script-workflow<br/>
+    **Library:** p5.js<br/>
+    **Status:** Specified<br/>
+    **Template:** https://github.com/dmccreary/learning-micropython/tree/main/docs/sims/repl-workflow
+    
+    Purpose: Let a mentor click through the REPL, a saved test file, and a saved main.py file to see which one is running at each stage and what happens to it when power is removed.
+    
+    Bloom Taxonomy: Understand (L2)
+    Bloom Taxonomy Verb: explain
+    
+    Learning objective: Given the Pico's REPL prompt, a saved test file, and a saved main.py file, the learner explains the difference between typing a command interactively and running a script automatically at power-up.
+    
+    Visual elements: Three labeled panels left to right — "REPL," "test.py (run manually)," "main.py (runs at power-up)" — each showing a small Pico icon and a status light that turns on only when that mode is actively running code.
+    
+    Interactive controls: Three clickable panel buttons; a "Power Cycle" button that shows which panel's code survives a simulated unplug-and-replug.
+    
+    Default parameters: No panel selected; all status lights off.
+    
+    Behavior: Clicking a panel highlights it and shows a one-line description of what happens in that mode; clicking "Power Cycle" turns off the REPL and test.py status lights but leaves the main.py light on, reinforcing which mode survives a power loss.
+    
+    Implementation notes: p5.js canvas with three static panel objects and a power-cycle animation that dims two of the three status lights.
+    -->
+</body>
+</html>

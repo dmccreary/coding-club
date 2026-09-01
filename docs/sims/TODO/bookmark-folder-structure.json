@@ -1,0 +1,15 @@
+{
+  "sim_id": "bookmark-folder-structure",
+  "diagram_name": "Bookmark Folder Structure",
+  "chapter_number": 23,
+  "chapter_title": "Network, Peripherals, and the Device Lifecycle",
+  "chapter_dir": "23-network-peripherals-device-lifecycle",
+  "chapter_rel_dir": "chapters/23-network-peripherals-device-lifecycle",
+  "library": "Mermaid",
+  "bloom_level": "Understand (L2)",
+  "bloom_verb": "classify",
+  "learning_objective": "Given a new bookmark a student wants to save, the learner classifies whether it belongs in the shared class folder, a personal student folder, or the browser's general bookmark bar.",
+  "completion_status": "specified",
+  "extracted_date": "2026-09-01",
+  "specification": "Type: diagram\n**sim-id:** bookmark-folder-structure<br/>\n**Library:** Mermaid<br/>\n**Status:** Specified\n\nPurpose: Show how a club laptop's bookmark bar splits into a shared class folder and a student's own personal folder, so a mentor or student can see exactly where a new bookmark belongs.\n\nBloom Taxonomy: Understand (L2)\nBloom Taxonomy Verb: classify\n\nLearning objective: Given a new bookmark a student wants to save, the learner classifies whether it belongs in the shared class folder, a personal student folder, or the browser's general bookmark bar.\n\nSteps (tree diagram, top to bottom):\n1. Root: \"Browser Bookmark Bar\" -- click reveals the Browser Bookmark Management definition above.\n2. Branch: \"Class Bookmark Folder\" -- click reveals the Class Bookmark Folder definition above.\n3a. Leaf under Class Bookmark Folder: \"Coding Platform Link\" -- click reveals \"A link every student needs, such as the club's coding platform, belongs in the shared class folder so a mentor's one update reaches every laptop.\"\n3b. Leaf under Class Bookmark Folder: \"Club Glossary Link\" -- click reveals \"Reference material used by the whole club, like the glossary, is shared through the class folder rather than duplicated in each student's personal space.\"\n4. Branch: \"Student Bookmark Folder\" -- click reveals the Student Bookmark Folder definition above.\n5a. Leaf under Student Bookmark Folder: \"My In-Progress Project\" -- click reveals \"A link specific to one student's own work belongs in that student's personal folder, where it survives independent of what the class folder changes to.\"\n\nInteractivity requirement (satisfied): every node has a Mermaid `click` directive tied to an infobox showing its revealed text, matching the definition already given in this chapter's prose.\n\nColor coding: Gray for the root bookmark bar, blue for the class folder and its shared leaves, green for the student folder and its personal leaf.\n\nImplementation: Mermaid flowchart (`graph TD`) rendered in main.html with `click NodeId call showInfo(\"NodeId\")` directives for every node, opening a side-panel infobox; a \"Reset View\" button re-centers the diagram after any zoom or pan."
+}

@@ -1,0 +1,23 @@
+{
+  "title": "Club Financial Operations Cycle",
+  "description": "Given a financial event (an expense, a reimbursement request, or a donation), the learner correctly identifies which operational step handles it next.",
+  "creator": "Coding Club",
+  "author": "Dan McCreary",
+  "date": "2026-09-01",
+  "subject": [
+    "Coding Club"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "club-financial-operations-cycle",
+  "library": "Mermaid",
+  "bloomLevel": "Apply (L3)",
+  "bloomVerb": "implement",
+  "completion_status": "scaffold",
+  "chapter_number": 31,
+  "chapter_title": "Tracking Expenses and Building Funding Partnerships",
+  "chapter_dir": "31-expenses-and-funding-partnerships",
+  "chapter_rel_dir": "chapters/31-expenses-and-funding-partnerships"
+}

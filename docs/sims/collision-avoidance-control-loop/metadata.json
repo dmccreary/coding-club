@@ -1,0 +1,23 @@
+{
+  "title": "Collision Avoidance Robot Control Loop",
+  "description": "Given an adjustable stop-distance threshold and an approaching obstacle, the learner demonstrates how a collision-avoidance robot's sensor reading, motor decision, and turning behavior work together as one loop.",
+  "creator": "Coding Club",
+  "author": "Dan McCreary",
+  "date": "2026-09-01",
+  "subject": [
+    "Coding Club"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "collision-avoidance-control-loop",
+  "library": "p5.js",
+  "bloomLevel": "Apply (L3)",
+  "bloomVerb": "demonstrate",
+  "completion_status": "scaffold",
+  "chapter_number": 18,
+  "chapter_title": "Robots, USB Basics, and Electronics Workshop Skills",
+  "chapter_dir": "18-robots-usb-electronics-workshop",
+  "chapter_rel_dir": "chapters/18-robots-usb-electronics-workshop"
+}

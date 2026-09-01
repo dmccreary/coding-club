@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- microsim-scaffold-stub -->
+    <title>Message Channel Decision Tree</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f8f9fa;
+            color: #212529;
+        }
+        #container {
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background: white;
+        }
+        h1 {
+            font-size: 22px;
+            margin-bottom: 10px;
+            color: #1a3a6c;
+        }
+        .placeholder {
+            border: 2px dashed #adb5bd;
+            border-radius: 8px;
+            padding: 40px 20px;
+            text-align: center;
+            color: #6c757d;
+            margin: 20px 0;
+            min-height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .placeholder .badge {
+            display: inline-block;
+            background: #ffc107;
+            color: #212529;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+        .placeholder h2 {
+            font-size: 18px;
+            color: #495057;
+            margin-bottom: 8px;
+        }
+        .placeholder p {
+            font-size: 14px;
+            max-width: 480px;
+        }
+        .meta {
+            margin-top: 20px;
+            font-size: 13px;
+            color: #6c757d;
+            border-top: 1px solid #dee2e6;
+            padding-top: 12px;
+        }
+        .meta strong { color: #495057; }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>Message Channel Decision Tree</h1>
+        <div class="placeholder">
+            <span class="badge">SCAFFOLD</span>
+            <h2>MicroSim Not Yet Implemented</h2>
+            <p>This MicroSim has been scaffolded from its specification but the
+            interactive content has not been built yet. See the chapter source
+            and the <code>index.md</code> in this directory for the full spec.</p>
+        </div>
+        <div class="meta">
+            <p><strong>Sim ID:</strong> message-channel-decision-tree</p>
+            <p><strong>Library:</strong> Mermaid</p>
+            <p><strong>Bloom Level:</strong> Evaluate (L5)</p>
+            <p><strong>Learning Objective:</strong> Given a message's urgency and audience, the learner determines which communication channel is appropriate.</p>
+        </div>
+    </div>
+
+    <!--
+    SPECIFICATION (from chapter index.md):
+
+    Type: workflow
+    **sim-id:** message-channel-decision-tree<br/>
+    **Library:** Mermaid<br/>
+    **Status:** Specified
+    **Template:** https://github.com/dmccreary/token-efficiency/tree/main/docs/sims/conversation-message-structure
+    
+    Purpose: Help a mentor decide, for a specific message, whether email or the group messaging app is the right channel.
+    
+    Bloom Taxonomy: Evaluate (L5)
+    Bloom Taxonomy Verb: determine
+    
+    Learning objective: Given a message's urgency and audience, the learner determines which communication channel is appropriate.
+    
+    Steps (decision tree):
+    1. Start: "New Message to Send" -- click reveals "Any outgoing message a mentor needs to send to families or mentors."
+    2. Decision: "Needs Action Within the Hour?" -- click reveals "A same-day room change or a running-late notice both count as urgent."
+    3a. Branch "Yes" leads to "Send via Group Messaging App" -- click reveals "Reaches families checking their phones in real time; not meant to be a permanent record."
+    3b. Branch "No" leads to Decision: "Needs a Searchable Written Record?" -- click reveals "A schedule change, a newsletter, or anything a family might need to reference weeks later."
+    4a. Branch "Yes" leads to "Send via Email" -- click reveals "Easily searched later; appropriate for anything semi-official."
+    4b. Branch "No" leads to "Either Channel Works" -- click reveals "For a low-stakes, non-urgent note, mentor judgment and family preference can decide."
+    
+    Interactivity requirement (satisfied): every node has a Mermaid `click` directive tied to an infobox showing its revealed text.
+    
+    Color coding: Purple for decision diamonds, green for the group-messaging-app outcome, blue for the email outcome, gray for the "either channel" outcome.
+    
+    Implementation: Mermaid flowchart (`graph TD`) rendered in main.html with `click NodeId call showInfo("NodeId")` directives for every node.
+    -->
+</body>
+</html>

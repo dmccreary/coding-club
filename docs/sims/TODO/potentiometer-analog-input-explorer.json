@@ -1,0 +1,15 @@
+{
+  "sim_id": "potentiometer-analog-input-explorer",
+  "diagram_name": "Potentiometer Analog Input Explorer",
+  "chapter_number": 16,
+  "chapter_title": "Physical Computing and Electrical Safety Basics",
+  "chapter_dir": "16-physical-computing-safety",
+  "chapter_rel_dir": "chapters/16-physical-computing-safety",
+  "library": "p5.js",
+  "bloom_level": "Apply (L3)",
+  "bloom_verb": "demonstrate",
+  "learning_objective": "Given a potentiometer's knob position, the learner demonstrates how turning it produces a proportional analog input reading across a continuous range.",
+  "completion_status": "specified",
+  "extracted_date": "2026-09-01",
+  "specification": "Type: microsim\n**sim-id:** potentiometer-analog-input-explorer<br/>\n**Library:** p5.js<br/>\n**Status:** Specified<br/>\n**Template:** https://github.com/dmccreary/learning-micropython/tree/main/docs/sims/adc-potentiometer-explorer\n\nPurpose: Let a learner turn a simulated potentiometer knob and watch the continuous analog reading change in real time, contrasted against the two-value digital reading.\n\nBloom Taxonomy: Apply (L3)\nBloom Taxonomy Verb: demonstrate\n\nLearning objective: Given a potentiometer's knob position, the learner demonstrates how turning it produces a proportional analog input reading across a continuous range.\n\nVisual elements: A drawn rotary knob the learner can drag, plus a numeric readout (0-1023) and a filling bar graph that rises and falls with the reading\n\nInteractive controls: Draggable knob (or equivalent slider); numeric readout; a \"compare to digital\" toggle that overlays a two-state HIGH/LOW indicator for contrast\n\nDefault parameters: Knob starts at center position, reading near 512\n\nBehavior: Dragging the knob updates the numeric readout and bar graph continuously and smoothly, with no snapping between fixed values\n\nImplementation notes: p5.js `map()` function converts knob angle directly to the 0-1023 reading range; draggable knob using mouse-drag detection"
+}

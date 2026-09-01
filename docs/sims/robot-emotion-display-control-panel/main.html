@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- microsim-scaffold-stub -->
+    <title>Robot Emotion Display Control Panel</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f8f9fa;
+            color: #212529;
+        }
+        #container {
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background: white;
+        }
+        h1 {
+            font-size: 22px;
+            margin-bottom: 10px;
+            color: #1a3a6c;
+        }
+        .placeholder {
+            border: 2px dashed #adb5bd;
+            border-radius: 8px;
+            padding: 40px 20px;
+            text-align: center;
+            color: #6c757d;
+            margin: 20px 0;
+            min-height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .placeholder .badge {
+            display: inline-block;
+            background: #ffc107;
+            color: #212529;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+        .placeholder h2 {
+            font-size: 18px;
+            color: #495057;
+            margin-bottom: 8px;
+        }
+        .placeholder p {
+            font-size: 14px;
+            max-width: 480px;
+        }
+        .meta {
+            margin-top: 20px;
+            font-size: 13px;
+            color: #6c757d;
+            border-top: 1px solid #dee2e6;
+            padding-top: 12px;
+        }
+        .meta strong { color: #495057; }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>Robot Emotion Display Control Panel</h1>
+        <div class="placeholder">
+            <span class="badge">SCAFFOLD</span>
+            <h2>MicroSim Not Yet Implemented</h2>
+            <p>This MicroSim has been scaffolded from its specification but the
+            interactive content has not been built yet. See the chapter source
+            and the <code>index.md</code> in this directory for the full spec.</p>
+        </div>
+        <div class="meta">
+            <p><strong>Sim ID:</strong> robot-emotion-display-control-panel</p>
+            <p><strong>Library:</strong> p5.js</p>
+            <p><strong>Bloom Level:</strong> Apply (L3)</p>
+            <p><strong>Learning Objective:</strong> Given a simulated distance reading, the learner demonstrates how a single sensor value can drive both a robot display kit's expression and a robot sounds kit's audio cue simultaneously.</p>
+        </div>
+    </div>
+
+    <!--
+    SPECIFICATION (from chapter index.md):
+
+    Type: microsim
+    **sim-id:** robot-emotion-display-control-panel<br/>
+    **Library:** p5.js<br/>
+    **Status:** Specified<br/>
+    **Template:** https://github.com/dmccreary/robot-faces/tree/main/docs/sims/expression-menu-live-simulator
+    
+    Purpose: Let a learner operate a simulated distance-sensor slider and buzzer toggle to see how one sensor reading can drive both a robot display kit's face and a robot sounds kit's beep at the same time.
+    
+    Bloom Taxonomy: Apply (L3)
+    Bloom Taxonomy Verb: demonstrate
+    
+    Learning objective: Given a simulated distance reading, the learner demonstrates how a single sensor value can drive both a robot display kit's expression and a robot sounds kit's audio cue simultaneously.
+    
+    Visual elements: A drawn robot face on an OLED-style panel; a speaker icon that visibly pulses when "sound" plays; a slider labeled "Distance to Obstacle (cm)."
+    
+    Interactive controls: The distance slider (0-50 cm); a threshold marker on the slider showing the 10 cm trigger point; a mute toggle for the speaker icon.
+    
+    Default parameters: Slider starts at 50 cm (clear path), calm face shown, speaker silent.
+    
+    Behavior: Dragging the slider below the 10 cm threshold switches the face to an alert expression and pulses the speaker icon once; dragging back above the threshold returns the face to calm; the mute toggle disables only the speaker pulse, leaving the face logic unaffected.
+    
+    Implementation notes: p5.js canvas with two simple face states (calm, alert) drawn from parameterized eye/mouth shapes; threshold comparison against the slider's current value on every frame.
+    -->
+</body>
+</html>

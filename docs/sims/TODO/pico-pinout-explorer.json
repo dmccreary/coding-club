@@ -1,0 +1,15 @@
+{
+  "sim_id": "pico-pinout-explorer",
+  "diagram_name": "Raspberry Pi Pico Pinout Explorer",
+  "chapter_number": 19,
+  "chapter_title": "Raspberry Pi Pico, MicroPython, and the Moving Rainbow Kit",
+  "chapter_dir": "19-pico-micropython-moving-rainbow",
+  "chapter_rel_dir": "chapters/19-pico-micropython-moving-rainbow",
+  "library": "p5.js",
+  "bloom_level": null,
+  "bloom_verb": null,
+  "learning_objective": null,
+  "completion_status": "specified",
+  "extracted_date": "2026-09-01",
+  "specification": "Type: microsim\n**sim-id:** pico-pinout-explorer<br/>\n**Library:** p5.js<br/>\n**Status:** Reused<br/>\n**Source:** https://dmccreary.github.io/learning-micropython/sims/pico-pinout-explorer/<br/>\n**Source Repo:** https://github.com/dmccreary/learning-micropython/tree/main/docs/sims/pico-pinout-explorer\n\nReused from the MicroSim catalog (WHAT match score 0.83). Learning objective: Given the Raspberry Pi Pico board, the learner identifies the function of each labeled pin — power, ground, and GPIO — by name and number (Remember)."
+}

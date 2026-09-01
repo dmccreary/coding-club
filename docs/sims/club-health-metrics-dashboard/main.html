@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- microsim-scaffold-stub -->
+    <title>Club Health Metrics Dashboard</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f8f9fa;
+            color: #212529;
+        }
+        #container {
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background: white;
+        }
+        h1 {
+            font-size: 22px;
+            margin-bottom: 10px;
+            color: #1a3a6c;
+        }
+        .placeholder {
+            border: 2px dashed #adb5bd;
+            border-radius: 8px;
+            padding: 40px 20px;
+            text-align: center;
+            color: #6c757d;
+            margin: 20px 0;
+            min-height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .placeholder .badge {
+            display: inline-block;
+            background: #ffc107;
+            color: #212529;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+        .placeholder h2 {
+            font-size: 18px;
+            color: #495057;
+            margin-bottom: 8px;
+        }
+        .placeholder p {
+            font-size: 14px;
+            max-width: 480px;
+        }
+        .meta {
+            margin-top: 20px;
+            font-size: 13px;
+            color: #6c757d;
+            border-top: 1px solid #dee2e6;
+            padding-top: 12px;
+        }
+        .meta strong { color: #495057; }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>Club Health Metrics Dashboard</h1>
+        <div class="placeholder">
+            <span class="badge">SCAFFOLD</span>
+            <h2>MicroSim Not Yet Implemented</h2>
+            <p>This MicroSim has been scaffolded from its specification but the
+            interactive content has not been built yet. See the chapter source
+            and the <code>index.md</code> in this directory for the full spec.</p>
+        </div>
+        <div class="meta">
+            <p><strong>Sim ID:</strong> club-health-metrics-dashboard</p>
+            <p><strong>Library:</strong> Chart.js</p>
+            <p><strong>Bloom Level:</strong> Evaluate (L5)</p>
+            <p><strong>Learning Objective:</strong> Given three years of club health metrics, the learner assesses whether the club's overall trajectory is sustainable or shows an early warning sign.</p>
+        </div>
+    </div>
+
+    <!--
+    SPECIFICATION (from chapter index.md):
+
+    Type: chart
+    **sim-id:** club-health-metrics-dashboard<br/>
+    **Library:** Chart.js<br/>
+    **Status:** Specified
+    
+    Purpose: Let a founder or board see four club health metrics plotted across three years at once, so a genuine decline in one metric is visible immediately instead of being masked by growth in the others.
+    
+    Bloom Taxonomy: Evaluate (L5)
+    Bloom Taxonomy Verb: assess
+    
+    Learning objective: Given three years of club health metrics, the learner assesses whether the club's overall trajectory is sustainable or shows an early warning sign.
+    
+    Chart type: Multi-line chart, one line per metric, each toggleable independently
+    
+    X-axis: Year (Year 1, Year 2, Year 3)
+    Y-axis: Value, normalized to a 0-100 index so four different units can share one axis
+    
+    Data series:
+    
+    1. Enrollment (blue line, students indexed to 0-100): Year 1: 30, Year 2: 55, Year 3: 85
+    2. Mentor Retention Rate (gold line, percent): Year 1: 60, Year 2: 70, Year 3: 55
+    3. Waitlist Length (green line, students indexed to 0-100): Year 1: 0, Year 2: 25, Year 3: 70
+    4. Average Session Attendance (purple line, percent of registered): Year 1: 90, Year 2: 88, Year 3: 91
+    
+    Title: "Three Years of Club Health Metrics"
+    Legend: Top-right, one toggle checkbox per series
+    
+    Interactive features:
+    
+    - Hover any point to see its exact underlying value and one sentence of context pulled from this chapter
+    - Click a legend entry to show or hide that line
+    - A fixed callout appears near the Year 3 point on the Mentor Retention line: "Enrollment keeps climbing, but retention just dropped 15 points -- growth is masking a mentor problem."
+    
+    Instructional Rationale: This is an Evaluate-level objective, so the chart deliberately includes one metric moving the opposite direction from the others, forcing the learner to look past the headline growth number and assess the full picture before judging the club healthy.
+    
+    Implementation: Chart.js multi-line chart with a dataset array (one object per metric), legend toggling handled through Chart.js's built-in legend click callback, and a fixed annotation or manually positioned callout marking the Year 3 retention drop.
+    -->
+</body>
+</html>

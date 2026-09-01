@@ -1,0 +1,23 @@
+{
+  "title": "Funding Partnership Fit Map",
+  "description": "Given a specific club funding need, the learner examines which partnership or negotiation approach from this chapter best addresses it.",
+  "creator": "Coding Club",
+  "author": "Dan McCreary",
+  "date": "2026-09-01",
+  "subject": [
+    "Coding Club"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "funding-partnership-fit-map",
+  "library": "vis-network",
+  "bloomLevel": "Analyze (L4)",
+  "bloomVerb": "examine",
+  "completion_status": "scaffold",
+  "chapter_number": 30,
+  "chapter_title": "Budgeting, Fundraising, and Grant Writing",
+  "chapter_dir": "30-budgeting-fundraising-grants",
+  "chapter_rel_dir": "chapters/30-budgeting-fundraising-grants"
+}

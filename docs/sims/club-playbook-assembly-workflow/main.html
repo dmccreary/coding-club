@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- microsim-scaffold-stub -->
+    <title>From Scattered Knowledge to a Club Playbook</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f8f9fa;
+            color: #212529;
+        }
+        #container {
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background: white;
+        }
+        h1 {
+            font-size: 22px;
+            margin-bottom: 10px;
+            color: #1a3a6c;
+        }
+        .placeholder {
+            border: 2px dashed #adb5bd;
+            border-radius: 8px;
+            padding: 40px 20px;
+            text-align: center;
+            color: #6c757d;
+            margin: 20px 0;
+            min-height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .placeholder .badge {
+            display: inline-block;
+            background: #ffc107;
+            color: #212529;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+        .placeholder h2 {
+            font-size: 18px;
+            color: #495057;
+            margin-bottom: 8px;
+        }
+        .placeholder p {
+            font-size: 14px;
+            max-width: 480px;
+        }
+        .meta {
+            margin-top: 20px;
+            font-size: 13px;
+            color: #6c757d;
+            border-top: 1px solid #dee2e6;
+            padding-top: 12px;
+        }
+        .meta strong { color: #495057; }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>From Scattered Knowledge to a Club Playbook</h1>
+        <div class="placeholder">
+            <span class="badge">SCAFFOLD</span>
+            <h2>MicroSim Not Yet Implemented</h2>
+            <p>This MicroSim has been scaffolded from its specification but the
+            interactive content has not been built yet. See the chapter source
+            and the <code>index.md</code> in this directory for the full spec.</p>
+        </div>
+        <div class="meta">
+            <p><strong>Sim ID:</strong> club-playbook-assembly-workflow</p>
+            <p><strong>Library:</strong> Mermaid</p>
+            <p><strong>Bloom Level:</strong> Analyze (L4)</p>
+            <p><strong>Learning Objective:</strong> Given a specific piece of club know-how, the learner differentiates whether it belongs in a written SOP, requires direct knowledge transfer, or has already been captured in the club playbook.</p>
+        </div>
+    </div>
+
+    <!--
+    SPECIFICATION (from chapter index.md):
+
+    Type: workflow
+    **sim-id:** club-playbook-assembly-workflow<br/>
+    **Library:** Mermaid<br/>
+    **Status:** Specified
+    
+    Purpose: Trace how a single piece of undocumented know-how becomes a written procedure, transfers to a successor, and finally takes its place inside the club playbook -- tying together this chapter's five documentation and knowledge-transfer concepts into one connected path.
+    
+    Bloom Taxonomy: Analyze (L4)
+    Bloom Taxonomy Verb: differentiate
+    
+    Learning objective: Given a specific piece of club know-how, the learner differentiates whether it belongs in a written SOP, requires direct knowledge transfer, or has already been captured in the club playbook.
+    
+    Steps (flowchart with a decision diamond and a loop-back arrow):
+    
+    1. Start: "Undocumented Know-How Exists" -- click reveals the Documenting Club Procedures definition above.
+    2. Decision: "Reducible to Steps?" -- click reveals "Some know-how is a fixed sequence; other know-how is a judgment call that resists being written as steps."
+    3a. Branch "Yes" leads to Process: "Write as an SOP" -- click reveals the Standard Operating Procedure definition above.
+    3b. Branch "No" leads to Process: "Transfer Through Shadowing and Co-Leading" -- click reveals the Knowledge Transfer Process definition above.
+    4. Process (from both branches): "Incoming Leader Completes Onboarding" -- click reveals the New Leader Onboarding definition above.
+    5. End: "Filed in the Club Playbook Document" -- click reveals the Club Playbook Document definition above.
+    6. Loop-back arrow from End to Start, drawn dashed and labeled "New know-how still gets documented as it's discovered" -- click reveals "The playbook is never finished; it grows the same way the lessons learned log from Chapter 1 does."
+    
+    Interactivity requirement (satisfied): every node has a Mermaid `click` directive tied to an infobox, matching the definitions given in this chapter's prose.
+    
+    Color coding: Blue for the SOP branch, orange for the knowledge-transfer branch, green for onboarding and the final playbook state, with the loop-back arrow dashed to show it is ongoing rather than a one-time path.
+    
+    Implementation: Mermaid flowchart (`graph TD`) rendered in main.html with `click NodeId call showInfo("NodeId")` directives for every node, opening a side-panel infobox; a "Reset View" button re-centers the diagram after any zoom or pan; layout reflows responsively on narrow screens.
+    -->
+</body>
+</html>

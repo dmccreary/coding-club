@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- microsim-scaffold-stub -->
+    <title>Student Growth to Portfolio Network</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f8f9fa;
+            color: #212529;
+        }
+        #container {
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background: white;
+        }
+        h1 {
+            font-size: 22px;
+            margin-bottom: 10px;
+            color: #1a3a6c;
+        }
+        .placeholder {
+            border: 2px dashed #adb5bd;
+            border-radius: 8px;
+            padding: 40px 20px;
+            text-align: center;
+            color: #6c757d;
+            margin: 20px 0;
+            min-height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .placeholder .badge {
+            display: inline-block;
+            background: #ffc107;
+            color: #212529;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+        .placeholder h2 {
+            font-size: 18px;
+            color: #495057;
+            margin-bottom: 8px;
+        }
+        .placeholder p {
+            font-size: 14px;
+            max-width: 480px;
+        }
+        .meta {
+            margin-top: 20px;
+            font-size: 13px;
+            color: #6c757d;
+            border-top: 1px solid #dee2e6;
+            padding-top: 12px;
+        }
+        .meta strong { color: #495057; }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>Student Growth to Portfolio Network</h1>
+        <div class="placeholder">
+            <span class="badge">SCAFFOLD</span>
+            <h2>MicroSim Not Yet Implemented</h2>
+            <p>This MicroSim has been scaffolded from its specification but the
+            interactive content has not been built yet. See the chapter source
+            and the <code>index.md</code> in this directory for the full spec.</p>
+        </div>
+        <div class="meta">
+            <p><strong>Sim ID:</strong> student-growth-portfolio-network</p>
+            <p><strong>Library:</strong> vis-network</p>
+            <p><strong>Bloom Level:</strong> Understand (L2)</p>
+            <p><strong>Learning Objective:</strong> Given a node in the growth-to-portfolio network, the learner explains what data flows into it and where that data goes next.</p>
+        </div>
+    </div>
+
+    <!--
+    SPECIFICATION (from chapter index.md):
+
+    Type: graph-model
+    **sim-id:** student-growth-portfolio-network<br/>
+    **Library:** vis-network<br/>
+    **Status:** Specified
+    **Template:** https://github.com/dmccreary/theory-of-knowledge/tree/main/docs/sims/capstone-portfolio-web
+    
+    Purpose: Show how raw session observations flow through growth metrics and mastery tracking into a portfolio, and finally into a scoped, view-only parent portal, so a mentor can see where each concept sits in the pipeline.
+    
+    Bloom Taxonomy: Understand (L2)
+    Bloom Taxonomy Verb: explain
+    
+    Learning objective: Given a node in the growth-to-portfolio network, the learner explains what data flows into it and where that data goes next.
+    
+    Node types:
+    1. Session Observations (small gray circle) -- a mentor's in-session notes on what a student attempted
+    2. Student Growth Metrics (blue circle) -- aggregated measurements of a student's progress over time
+    3. Skill Mastery Tracking (green circle) -- the emerging/practicing/mastered level for each specific skill
+    4. Digital Portfolio System (amber circle) -- the actual saved work evidencing that mastery
+    5. Parent Access Portal (purple circle, leaf node) -- the single family's scoped, view-only window into the above
+    
+    Edges:
+    1. Session Observations → Student Growth Metrics: "aggregated into"
+    2. Student Growth Metrics → Skill Mastery Tracking: "classified by skill level"
+    3. Skill Mastery Tracking → Digital Portfolio System: "evidenced by uploaded work"
+    4. Digital Portfolio System → Parent Access Portal: "exposed read-only to one family"
+    
+    Layout: Left-to-right hierarchical, following the data-flow order above
+    
+    Interactive features:
+    - Hover any node to show its one-line definition
+    - Click any node to highlight its direct neighbors and open a side-panel infobox with its full description
+    - Click any edge to reveal what the edge label means in this pipeline
+    - Zoom with the mouse wheel, pan by dragging the background
+    
+    Visual styling: Node size uniform; edge arrows show direction of data flow, left to right
+    
+    Legend: Node color meanings and an arrow explaining "data flows in this direction"
+    
+    Implementation: vis-network JavaScript library, hierarchical layout, canvas size 800x450px.
+    -->
+</body>
+</html>

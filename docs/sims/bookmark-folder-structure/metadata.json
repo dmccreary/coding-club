@@ -1,0 +1,23 @@
+{
+  "title": "Bookmark Folder Structure",
+  "description": "Given a new bookmark a student wants to save, the learner classifies whether it belongs in the shared class folder, a personal student folder, or the browser's general bookmark bar.",
+  "creator": "Coding Club",
+  "author": "Dan McCreary",
+  "date": "2026-09-01",
+  "subject": [
+    "Coding Club"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "bookmark-folder-structure",
+  "library": "Mermaid",
+  "bloomLevel": "Understand (L2)",
+  "bloomVerb": "classify",
+  "completion_status": "scaffold",
+  "chapter_number": 23,
+  "chapter_title": "Network, Peripherals, and the Device Lifecycle",
+  "chapter_dir": "23-network-peripherals-device-lifecycle",
+  "chapter_rel_dir": "chapters/23-network-peripherals-device-lifecycle"
+}

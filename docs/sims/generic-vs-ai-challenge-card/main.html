@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- microsim-scaffold-stub -->
+    <title>Template Card vs. AI-Customized Card</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f8f9fa;
+            color: #212529;
+        }
+        #container {
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background: white;
+        }
+        h1 {
+            font-size: 22px;
+            margin-bottom: 10px;
+            color: #1a3a6c;
+        }
+        .placeholder {
+            border: 2px dashed #adb5bd;
+            border-radius: 8px;
+            padding: 40px 20px;
+            text-align: center;
+            color: #6c757d;
+            margin: 20px 0;
+            min-height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .placeholder .badge {
+            display: inline-block;
+            background: #ffc107;
+            color: #212529;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+        .placeholder h2 {
+            font-size: 18px;
+            color: #495057;
+            margin-bottom: 8px;
+        }
+        .placeholder p {
+            font-size: 14px;
+            max-width: 480px;
+        }
+        .meta {
+            margin-top: 20px;
+            font-size: 13px;
+            color: #6c757d;
+            border-top: 1px solid #dee2e6;
+            padding-top: 12px;
+        }
+        .meta strong { color: #495057; }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>Template Card vs. AI-Customized Card</h1>
+        <div class="placeholder">
+            <span class="badge">SCAFFOLD</span>
+            <h2>MicroSim Not Yet Implemented</h2>
+            <p>This MicroSim has been scaffolded from its specification but the
+            interactive content has not been built yet. See the chapter source
+            and the <code>index.md</code> in this directory for the full spec.</p>
+        </div>
+        <div class="meta">
+            <p><strong>Sim ID:</strong> generic-vs-ai-challenge-card</p>
+            <p><strong>Library:</strong> p5.js</p>
+            <p><strong>Bloom Level:</strong> Analyze (L4)</p>
+            <p><strong>Learning Objective:</strong> Given a generic and an AI-customized challenge card teaching the same concept, the learner compares them to identify what customization changed and what the required format kept constant.</p>
+        </div>
+    </div>
+
+    <!--
+    SPECIFICATION (from chapter index.md):
+
+    Type: microsim
+    **sim-id:** generic-vs-ai-challenge-card<br/>
+    **Library:** p5.js<br/>
+    **Status:** Specified
+    
+    Purpose: Let a learner compare a generic template challenge card against an AI-customized version of the same underlying concept, to see exactly which fields changed and which stayed fixed by chapter 15's format.
+    
+    Bloom Taxonomy: Analyze (L4)
+    Bloom Taxonomy Verb: compare
+    
+    Learning objective: Given a generic and an AI-customized challenge card teaching the same concept, the learner compares them to identify what customization changed and what the required format kept constant.
+    
+    Instructional Rationale: This is an Analyze-level compare objective, so the sim shows both full card texts side by side with the differing fields visually highlighted, rather than animating a generation process the learner cannot meaningfully inspect.
+    
+    Canvas layout:
+    - Left (300px): Generic template card -- "Loop Practice," sports-themed example, standard stretch goal
+    - Right (300px): AI-customized card -- "Trick Combo Machine," skateboarding-themed example, same underlying "repeat" block concept
+    - Bottom (100px): toggle controls and a highlight-differences button
+    
+    Visual elements:
+    - Both cards rendered in the same 5x7 layout from chapter 15's anatomy diagram: title, green border, materials list, numbered steps, stretch goal, concept tag
+    - Differing text (title, example theme, stretch-goal wording) shown in the customized card with a highlighted background; identical structural fields (border color, concept tag, step count) shown with a matching outline on both cards
+    
+    Interactive controls:
+    - Button: "Highlight What Changed" -- highlights the differing fields on both cards simultaneously
+    - Button: "Highlight What Stayed Fixed" -- highlights the border, concept tag, and format that chapter 15 requires regardless of customization
+    - Dropdown: switch the customization theme (Skateboarding, Music, Basketball) to regenerate the right-hand card with a different but equally valid customization
+    
+    Default parameters: No highlight active; theme = Skateboarding
+    
+    Implementation notes: p5.js canvas with createButton for the two highlight toggles and createSelect for the theme dropdown; each theme's customized card text lives in a small lookup object so switching themes updates the right card's text without altering the left template card.
+    -->
+</body>
+</html>

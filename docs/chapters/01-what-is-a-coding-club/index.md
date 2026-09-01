@@ -70,7 +70,7 @@ Before we look at how a coding club relates to nearby ideas like maker spaces an
 
 #### Diagram: Coding Club Ecosystem Map
 
-<iframe src="../../sims/coding-club-ecosystem-map/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../sims/coding-club-ecosystem-map/main.html" width="100%" height="562px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Coding Club Ecosystem Map</summary>
@@ -174,7 +174,7 @@ That accumulated evidence is what drives **club evolution**: the gradual, observ
 
 #### Diagram: The Club Improvement Cycle
 
-<iframe src="../../sims/club-improvement-cycle/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../sims/club-improvement-cycle/main.html" width="100%" height="612px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>The Club Improvement Cycle</summary>

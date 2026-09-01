@@ -1,0 +1,23 @@
+{
+  "title": "Electrical Safety Rules Poster",
+  "description": "Given a hands-on session about to begin, the learner identifies which safety rule applies to the materials on the table.",
+  "creator": "Coding Club",
+  "author": "Dan McCreary",
+  "date": "2026-09-01",
+  "subject": [
+    "Coding Club"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "electrical-safety-rules-poster",
+  "library": "Interactive Infographic Overlay (grid-diagram.js, four-panel comparison poster + rectangular hover zones)",
+  "bloomLevel": "Remember (L1)",
+  "bloomVerb": "identify",
+  "completion_status": "scaffold",
+  "chapter_number": 16,
+  "chapter_title": "Physical Computing and Electrical Safety Basics",
+  "chapter_dir": "16-physical-computing-safety",
+  "chapter_rel_dir": "chapters/16-physical-computing-safety"
+}

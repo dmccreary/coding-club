@@ -1,0 +1,23 @@
+{
+  "title": "Peripheral and Storage Management Layers",
+  "description": "Given a specific accessory or storage question, the learner classifies which of the five peripheral-management categories addresses it.",
+  "creator": "Coding Club",
+  "author": "Dan McCreary",
+  "date": "2026-09-01",
+  "subject": [
+    "Coding Club"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "peripheral-management-layers",
+  "library": "Interactive Infographic Overlay Guide (grid-diagram.js, annotation-free comparison poster + rectangular hover zones)",
+  "bloomLevel": "Understand (L2)",
+  "bloomVerb": "classify",
+  "completion_status": "scaffold",
+  "chapter_number": 23,
+  "chapter_title": "Network, Peripherals, and the Device Lifecycle",
+  "chapter_dir": "23-network-peripherals-device-lifecycle",
+  "chapter_rel_dir": "chapters/23-network-peripherals-device-lifecycle"
+}

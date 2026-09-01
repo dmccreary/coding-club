@@ -1,0 +1,23 @@
+{
+  "title": "Promotional Materials Recruiting Rubric",
+  "description": "Given a description of a sample club flyer or web page, the learner scores it against five recruiting-equity criteria and identifies the single lowest-scoring criterion to fix first.",
+  "creator": "Coding Club",
+  "author": "Dan McCreary",
+  "date": "2026-09-01",
+  "subject": [
+    "Coding Club"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "promotional-materials-recruiting-rubric",
+  "library": "p5.js",
+  "bloomLevel": "Evaluate (L5)",
+  "bloomVerb": "critique",
+  "completion_status": "scaffold",
+  "chapter_number": 28,
+  "chapter_title": "Reaching Underserved Communities and Removing Barriers",
+  "chapter_dir": "28-underserved-communities-barriers",
+  "chapter_rel_dir": "chapters/28-underserved-communities-barriers"
+}

@@ -1,0 +1,47 @@
+{
+  "title": "Coding Club Ecosystem Map",
+  "description": "Given a set of related program types, the learner distinguishes what makes a coding club distinct while recognizing legitimate overlap.",
+  "creator": "Coding Club",
+  "author": "Dan McCreary",
+  "date": "2026-09-01",
+  "subject": [
+    "Coding Club"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "coding-club-ecosystem-map",
+  "library": "vis-network",
+  "bloomLevel": "Understand (L2)",
+  "bloomVerb": "differentiate",
+  "completion_status": "built",
+  "chapter_number": 1,
+  "chapter_title": "What Is a Coding Club",
+  "chapter_dir": "01-what-is-a-coding-club",
+  "chapter_rel_dir": "chapters/01-what-is-a-coding-club",
+  "canvasHeight": 560,
+  "educational": {
+    "gradeLevel": "High School, Undergraduate, Adult",
+    "audience": "Coding club leaders, mentors, and prospective sponsors",
+    "duration": "10 minutes",
+    "prerequisites": [
+      "Coding Club"
+    ],
+    "concepts": [
+      "Maker Space",
+      "STEM Education",
+      "Computer Science Education",
+      "Digital Literacy",
+      "After School Program",
+      "Extracurricular Learning"
+    ]
+  },
+  "pedagogical": {
+    "bloomLevel": "Understand (L2)",
+    "bloomVerb": "differentiate",
+    "learningObjective": "Given a set of related program types, the learner distinguishes what makes a coding club distinct while recognizing legitimate overlap.",
+    "interactionPattern": "Click-to-explore concept map with labelled relationships and a per-node difference statement",
+    "assessment": "Name a real local program and ask the learner to place it on the map and defend the placement using the edge phrasing."
+  }
+}

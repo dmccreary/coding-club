@@ -1,0 +1,23 @@
+{
+  "title": "From Draft to Delivered — AI Content Pipeline",
+  "description": "Given one of three AI content-drafting scenarios, the learner differentiates its path through the pipeline and identifies the review step common to all three.",
+  "creator": "Coding Club",
+  "author": "Dan McCreary",
+  "date": "2026-09-01",
+  "subject": [
+    "Coding Club"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "ai-content-drafting-pipeline",
+  "library": "Mermaid",
+  "bloomLevel": "Analyze (L4)",
+  "bloomVerb": "differentiate",
+  "completion_status": "scaffold",
+  "chapter_number": 32,
+  "chapter_title": "AI Agents for Registration, Scheduling, and Communication",
+  "chapter_dir": "32-ai-agents-registration-scheduling",
+  "chapter_rel_dir": "chapters/32-ai-agents-registration-scheduling"
+}

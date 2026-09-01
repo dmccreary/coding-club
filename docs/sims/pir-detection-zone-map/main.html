@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- microsim-scaffold-stub -->
+    <title>PIR Detection Zone Map</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f8f9fa;
+            color: #212529;
+        }
+        #container {
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background: white;
+        }
+        h1 {
+            font-size: 22px;
+            margin-bottom: 10px;
+            color: #1a3a6c;
+        }
+        .placeholder {
+            border: 2px dashed #adb5bd;
+            border-radius: 8px;
+            padding: 40px 20px;
+            text-align: center;
+            color: #6c757d;
+            margin: 20px 0;
+            min-height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .placeholder .badge {
+            display: inline-block;
+            background: #ffc107;
+            color: #212529;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+        .placeholder h2 {
+            font-size: 18px;
+            color: #495057;
+            margin-bottom: 8px;
+        }
+        .placeholder p {
+            font-size: 14px;
+            max-width: 480px;
+        }
+        .meta {
+            margin-top: 20px;
+            font-size: 13px;
+            color: #6c757d;
+            border-top: 1px solid #dee2e6;
+            padding-top: 12px;
+        }
+        .meta strong { color: #495057; }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>PIR Detection Zone Map</h1>
+        <div class="placeholder">
+            <span class="badge">SCAFFOLD</span>
+            <h2>MicroSim Not Yet Implemented</h2>
+            <p>This MicroSim has been scaffolded from its specification but the
+            interactive content has not been built yet. See the chapter source
+            and the <code>index.md</code> in this directory for the full spec.</p>
+        </div>
+        <div class="meta">
+            <p><strong>Sim ID:</strong> pir-detection-zone-map</p>
+            <p><strong>Library:</strong> Interactive Infographic Overlay (diagram.js, top-down room view + clickable zones)</p>
+            <p><strong>Bloom Level:</strong> Understand (L2)</p>
+            <p><strong>Learning Objective:</strong> Given a PIR sensor's detection zones and a person's walking path, the learner explains why crossing zone boundaries triggers detection while standing still within one zone does not.</p>
+        </div>
+    </div>
+
+    <!--
+    SPECIFICATION (from chapter index.md):
+
+    Type: infographic
+    **sim-id:** pir-detection-zone-map<br/>
+    **Library:** Interactive Infographic Overlay (diagram.js, top-down room view + clickable zones)<br/>
+    **Status:** Specified
+    
+    Purpose: Let a learner see the fan-shaped detection zones a PIR sensor's Fresnel lens creates, and identify where a walking path will and will not trigger a reading.
+    
+    Bloom Taxonomy: Understand (L2)
+    Bloom Taxonomy Verb: explain
+    
+    Learning objective: Given a PIR sensor's detection zones and a person's walking path, the learner explains why crossing zone boundaries triggers detection while standing still within one zone does not.
+    
+    Image style: Top-down illustrated floor plan showing a PIR sensor mounted on a wall, its field of view divided into 5 narrow fan-shaped zones extending into the room
+    
+    Image dimensions: 900x600 (landscape)
+    
+    Zones (5 detection fans, each clickable, plus 2 walking-path overlays): each fan zone shows a color gradient from near (closer to sensor) to far; two path overlays — "Path A: crosses zones" (triggers repeatedly) and "Path B: stands still in one zone" (never triggers after the initial crossing)
+    
+    Interactive features: Click any zone to highlight it and show its approximate distance range; toggle between Path A and Path B to animate a walking dot and see a live "Motion Detected" / "No Change" indicator update as it moves
+    
+    Implementation: Interactive Infographic Overlay Guide (callout engine) — `diagram.js` renders the zone fans and two selectable animated path overlays with a live detection-state readout
+    -->
+</body>
+</html>

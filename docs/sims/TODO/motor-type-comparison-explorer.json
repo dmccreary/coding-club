@@ -1,0 +1,15 @@
+{
+  "sim_id": "motor-type-comparison-explorer",
+  "diagram_name": "Motor Type Comparison Explorer",
+  "chapter_number": 17,
+  "chapter_title": "Sensors, Displays, Motors, and Robot Chassis",
+  "chapter_dir": "17-sensors-displays-motors",
+  "chapter_rel_dir": "chapters/17-sensors-displays-motors",
+  "library": "p5.js",
+  "bloom_level": "Analyze (L4)",
+  "bloom_verb": "differentiate",
+  "learning_objective": "Given a project's motion requirement, the learner differentiates which of the three motor types — DC, servo, or stepper — is the best fit and explains why.",
+  "completion_status": "specified",
+  "extracted_date": "2026-09-01",
+  "specification": "Type: microsim\n**sim-id:** motor-type-comparison-explorer<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\nPurpose: Let a learner test the same reasoning from the worked scenario above against new project prompts, matching each one to the correct motor family.\n\nBloom Taxonomy: Analyze (L4)\nBloom Taxonomy Verb: differentiate\n\nLearning objective: Given a project's motion requirement, the learner differentiates which of the three motor types — DC, servo, or stepper — is the best fit and explains why.\n\nVisual elements: Three animated motor icons (a spinning wheel for DC, a pointer sweeping to an angle for servo, a dial advancing in discrete clicks for stepper) alongside a project-prompt card.\n\nInteractive controls: \"New Project\" button cycling through six prompts (drive wheels, robot arm joint, camera pan mount, plotter pen arm, conveyor belt, door latch); three clickable motor icons.\n\nDefault parameters: Opens on the \"drive wheels\" prompt with no motor selected.\n\nBehavior: Clicking a motor icon reveals feedback explaining whether that motor's motion style and feedback match the prompt's requirement, referencing the comparison table's three criteria.\n\nImplementation notes: p5.js canvas with three animated icon functions (continuous rotation, angle sweep, stepped rotation); array of prompt objects each carrying a correct-answer key and explanation text."
+}

@@ -1,0 +1,15 @@
+{
+  "sim_id": "normal-circuit-vs-short-circuit",
+  "diagram_name": "Normal Circuit vs. Short Circuit",
+  "chapter_number": 16,
+  "chapter_title": "Physical Computing and Electrical Safety Basics",
+  "chapter_dir": "16-physical-computing-safety",
+  "chapter_rel_dir": "chapters/16-physical-computing-safety",
+  "library": "Interactive Infographic Overlay (diagram.js, side-by-side comparison + numbered callouts)",
+  "bloom_level": "Understand (L2)",
+  "bloom_verb": "explain",
+  "learning_objective": "Given a circuit diagram, the learner explains why a low-resistance path produces a current spike compared to a normal, resistor-limited path.",
+  "completion_status": "specified",
+  "extracted_date": "2026-09-01",
+  "specification": "Type: infographic\n**sim-id:** normal-circuit-vs-short-circuit<br/>\n**Library:** Interactive Infographic Overlay (diagram.js, side-by-side comparison + numbered callouts)<br/>\n**Status:** Specified\n\nPurpose: Show why removing the resistor and LED from a circuit's current path causes a dangerous current spike, using the same numbers worked through in the prose above.\n\nBloom Taxonomy: Understand (L2)\nBloom Taxonomy Verb: explain\n\nLearning objective: Given a circuit diagram, the learner explains why a low-resistance path produces a current spike compared to a normal, resistor-limited path.\n\nImage style: Two side-by-side breadboard circuit illustrations — left labeled \"Normal Circuit\" (battery, resistor, LED, wire loop), right labeled \"Short Circuit\" (battery, bare wire loop, no resistor)\n\nImage dimensions: 1200x600 (landscape)\n\nCallouts (4 total): 1. \"6V battery pack\" on both illustrations; 2. \"220-ohm resistor\" on the normal circuit only, color #4A90D9; 3. \"~27 mA (safe)\" current readout on the normal circuit, color #2ECC71; 4. \"~6 A (dangerous, gets hot)\" current readout on the short circuit, color #E74C3C\n\nInteractive features: Hover either current readout to reveal the Ohm's law calculation behind it; click either full illustration to toggle a heat-glow effect on the wire showing where the energy is being dissipated\n\nImplementation: Interactive Infographic Overlay Guide (callout engine) — `diagram.js` + `style.css` render the two illustrations with hover-revealed calculation tooltips"
+}

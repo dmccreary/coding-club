@@ -1,0 +1,15 @@
+{
+  "sim_id": "moving-rainbow-wiring-diagram",
+  "diagram_name": "Moving Rainbow Wiring Diagram",
+  "chapter_number": 19,
+  "chapter_title": "Raspberry Pi Pico, MicroPython, and the Moving Rainbow Kit",
+  "chapter_dir": "19-pico-micropython-moving-rainbow",
+  "chapter_rel_dir": "chapters/19-pico-micropython-moving-rainbow",
+  "library": "p5.js",
+  "bloom_level": "Apply (L3)",
+  "bloom_verb": "demonstrate",
+  "learning_objective": "Given a Pico and a NeoPixel strip, the learner demonstrates how to wire the power, ground, and data connections between them, including which end of the strip is the data-in end.",
+  "completion_status": "specified",
+  "extracted_date": "2026-09-01",
+  "specification": "Type: diagram\n**sim-id:** moving-rainbow-wiring-diagram<br/>\n**Library:** p5.js<br/>\n**Status:** Specified<br/>\n**Template:** https://github.com/dmccreary/moving-rainbow/tree/main/docs/sims/neopixel-wiring-diagram\n\nPurpose: Let a mentor click each of the three Pico-to-strip wires and confirm the correct pin and terminal before powering a kit for the first time.\n\nBloom Taxonomy: Apply (L3)\nBloom Taxonomy Verb: demonstrate\n\nLearning objective: Given a Pico and a NeoPixel strip, the learner demonstrates how to wire the power, ground, and data connections between them, including which end of the strip is the data-in end.\n\nVisual elements: A drawn Pico board and a drawn NeoPixel strip with three labeled wires (power, ground, data) running between them; the strip's DI and DO ends clearly marked.\n\nInteractive controls: Click any wire to highlight its two endpoints and show a labeled tooltip (\"5V to Power,\" \"GND to Ground,\" \"GPIO 0 to Data In\"); a \"Check My Wiring\" quiz mode that hides the labels and asks the learner to identify each wire.\n\nDefault parameters: All three wires shown and labeled; quiz mode off.\n\nBehavior: Clicking a wire highlights it in a distinct color and shows its tooltip; enabling quiz mode removes the labels and scores the learner's clicks against the correct wire-to-terminal mapping.\n\nImplementation notes: p5.js canvas with fixed coordinate endpoints for the Pico and strip graphics; click-detection based on distance to each wire's path."
+}

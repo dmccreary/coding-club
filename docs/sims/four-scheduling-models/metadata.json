@@ -1,0 +1,23 @@
+{
+  "title": "Four Coding Club Scheduling Models",
+  "description": "Given a club's venue, mentor availability, and target audience, the learner recommends the scheduling model that best fits.",
+  "creator": "Coding Club",
+  "author": "Dan McCreary",
+  "date": "2026-09-01",
+  "subject": [
+    "Coding Club"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "four-scheduling-models",
+  "library": "Interactive Infographic Overlay (grid-diagram.js, annotation-free comparison poster + rectangular hover zones)",
+  "bloomLevel": "Evaluate (L5)",
+  "bloomVerb": "recommend",
+  "completion_status": "scaffold",
+  "chapter_number": 11,
+  "chapter_title": "Choosing a Schedule and Building Registration",
+  "chapter_dir": "11-schedule-and-registration",
+  "chapter_rel_dir": "chapters/11-schedule-and-registration"
+}

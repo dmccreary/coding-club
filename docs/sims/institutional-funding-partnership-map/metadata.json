@@ -1,0 +1,23 @@
+{
+  "title": "Institutional Funding Partnership Map",
+  "description": "Given a specific ongoing club funding need, the learner examines which institutional partnership from this chapter best addresses it.",
+  "creator": "Coding Club",
+  "author": "Dan McCreary",
+  "date": "2026-09-01",
+  "subject": [
+    "Coding Club"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "institutional-funding-partnership-map",
+  "library": "vis-network",
+  "bloomLevel": "Analyze (L4)",
+  "bloomVerb": "examine",
+  "completion_status": "scaffold",
+  "chapter_number": 31,
+  "chapter_title": "Tracking Expenses and Building Funding Partnerships",
+  "chapter_dir": "31-expenses-and-funding-partnerships",
+  "chapter_rel_dir": "chapters/31-expenses-and-funding-partnerships"
+}

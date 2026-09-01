@@ -1,0 +1,23 @@
+{
+  "title": "USB-A vs USB-C Connector Comparison",
+  "description": "Given a USB-A and a USB-C connector drawn side by side, the learner differentiates the two by shape, orientation, and typical power/data capability.",
+  "creator": "Coding Club",
+  "author": "Dan McCreary",
+  "date": "2026-09-01",
+  "subject": [
+    "Coding Club"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "usb-connector-comparison",
+  "library": "p5.js",
+  "bloomLevel": "Analyze (L4)",
+  "bloomVerb": "differentiate",
+  "completion_status": "scaffold",
+  "chapter_number": 18,
+  "chapter_title": "Robots, USB Basics, and Electronics Workshop Skills",
+  "chapter_dir": "18-robots-usb-electronics-workshop",
+  "chapter_rel_dir": "chapters/18-robots-usb-electronics-workshop"
+}

@@ -1,0 +1,23 @@
+{
+  "title": "Layers of Youth Digital Safety",
+  "description": "Given one of the five youth-safety layers a club configures, the learner classifies what risk it addresses and whether the club or a family manages it.",
+  "creator": "Coding Club",
+  "author": "Dan McCreary",
+  "date": "2026-09-01",
+  "subject": [
+    "Coding Club"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "youth-safety-layers",
+  "library": "Interactive Infographic Overlay (grid-diagram.js, annotation-free comparison poster + rectangular hover zones)",
+  "bloomLevel": "Understand (L2)",
+  "bloomVerb": "classify",
+  "completion_status": "scaffold",
+  "chapter_number": 22,
+  "chapter_title": "Purchasing and Configuring Club Devices",
+  "chapter_dir": "22-purchasing-configuring-devices",
+  "chapter_rel_dir": "chapters/22-purchasing-configuring-devices"
+}

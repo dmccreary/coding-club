@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- microsim-scaffold-stub -->
+    <title>The Physical Computing Loop</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f8f9fa;
+            color: #212529;
+        }
+        #container {
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background: white;
+        }
+        h1 {
+            font-size: 22px;
+            margin-bottom: 10px;
+            color: #1a3a6c;
+        }
+        .placeholder {
+            border: 2px dashed #adb5bd;
+            border-radius: 8px;
+            padding: 40px 20px;
+            text-align: center;
+            color: #6c757d;
+            margin: 20px 0;
+            min-height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .placeholder .badge {
+            display: inline-block;
+            background: #ffc107;
+            color: #212529;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+        .placeholder h2 {
+            font-size: 18px;
+            color: #495057;
+            margin-bottom: 8px;
+        }
+        .placeholder p {
+            font-size: 14px;
+            max-width: 480px;
+        }
+        .meta {
+            margin-top: 20px;
+            font-size: 13px;
+            color: #6c757d;
+            border-top: 1px solid #dee2e6;
+            padding-top: 12px;
+        }
+        .meta strong { color: #495057; }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>The Physical Computing Loop</h1>
+        <div class="placeholder">
+            <span class="badge">SCAFFOLD</span>
+            <h2>MicroSim Not Yet Implemented</h2>
+            <p>This MicroSim has been scaffolded from its specification but the
+            interactive content has not been built yet. See the chapter source
+            and the <code>index.md</code> in this directory for the full spec.</p>
+        </div>
+        <div class="meta">
+            <p><strong>Sim ID:</strong> physical-computing-loop</p>
+            <p><strong>Library:</strong> p5.js</p>
+            <p><strong>Bloom Level:</strong> Understand (L2)</p>
+            <p><strong>Learning Objective:</strong> Given a physical computing project description, the learner explains which part of the input-process-output loop each component belongs to.</p>
+        </div>
+    </div>
+
+    <!--
+    SPECIFICATION (from chapter index.md):
+
+    Type: infographic
+    **sim-id:** physical-computing-loop<br/>
+    **Library:** p5.js<br/>
+    **Status:** Specified<br/>
+    **Template:** https://github.com/dmccreary/stem-robots/tree/main/docs/sims/physical-computing-explorer
+    
+    Purpose: Give a mentor a single mental model — sense, process, act — that organizes every concept in this chapter.
+    
+    Bloom Taxonomy: Understand (L2)
+    Bloom Taxonomy Verb: explain
+    
+    Learning objective: Given a physical computing project description, the learner explains which part of the input-process-output loop each component belongs to.
+    
+    Visual elements: Three large circular stages arranged left to right — "Input" (icon: button/sensor), "Process" (icon: microchip), "Output" (icon: LED/motor) — connected by arrows that animate a single pulse of light moving through the loop when the learner clicks "Run Example."
+    
+    Interactive controls: Three clickable stage circles; a dropdown listing example projects ("Blinking LED," "Button-Triggered Buzzer," "Dimmable Light"); a "Run Example" button that animates the pulse and highlights the matching component list beneath each stage.
+    
+    Data Visibility Requirements: Stage 1 shows the raw input event (e.g., "Button pressed"); Stage 2 shows the plain-language rule being applied (e.g., "If pressed, turn LED on"); Stage 3 shows the resulting physical output (e.g., "LED lights up").
+    
+    Instructional Rationale: A step-through, clickable model suits an Understand-level objective better than continuous animation, since a mentor needs to trace which real component maps to which stage, not just watch motion.
+    
+    Implementation: p5.js canvas with three clickable circular nodes and a text panel below that updates on click or during the animated run.
+    -->
+</body>
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- microsim-scaffold-stub -->
+    <title>Guardian Consent Collection Workflow</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f8f9fa;
+            color: #212529;
+        }
+        #container {
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background: white;
+        }
+        h1 {
+            font-size: 22px;
+            margin-bottom: 10px;
+            color: #1a3a6c;
+        }
+        .placeholder {
+            border: 2px dashed #adb5bd;
+            border-radius: 8px;
+            padding: 40px 20px;
+            text-align: center;
+            color: #6c757d;
+            margin: 20px 0;
+            min-height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .placeholder .badge {
+            display: inline-block;
+            background: #ffc107;
+            color: #212529;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+        .placeholder h2 {
+            font-size: 18px;
+            color: #495057;
+            margin-bottom: 8px;
+        }
+        .placeholder p {
+            font-size: 14px;
+            max-width: 480px;
+        }
+        .meta {
+            margin-top: 20px;
+            font-size: 13px;
+            color: #6c757d;
+            border-top: 1px solid #dee2e6;
+            padding-top: 12px;
+        }
+        .meta strong { color: #495057; }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>Guardian Consent Collection Workflow</h1>
+        <div class="placeholder">
+            <span class="badge">SCAFFOLD</span>
+            <h2>MicroSim Not Yet Implemented</h2>
+            <p>This MicroSim has been scaffolded from its specification but the
+            interactive content has not been built yet. See the chapter source
+            and the <code>index.md</code> in this directory for the full spec.</p>
+        </div>
+        <div class="meta">
+            <p><strong>Sim ID:</strong> consent-collection-workflow</p>
+            <p><strong>Library:</strong> Mermaid</p>
+            <p><strong>Bloom Level:</strong> Analyze (L4)</p>
+            <p><strong>Learning Objective:</strong> Given the steps of a club's consent process, the learner sequences them correctly and identifies which step must precede any data collection.</p>
+        </div>
+    </div>
+
+    <!--
+    SPECIFICATION (from chapter index.md):
+
+    Type: workflow
+    **sim-id:** consent-collection-workflow<br/>
+    **Library:** Mermaid<br/>
+    **Status:** Specified
+    **Template:** https://github.com/dmccreary/health-education/tree/main/docs/sims/consent-requirements-explorer
+    
+    Purpose: Trace the sequence from drafting a data-collection notice through filing a signed consent form, so a mentor can see exactly where "collection begins" sits relative to "consent obtained."
+    
+    Bloom Taxonomy: Analyze (L4)
+    Bloom Taxonomy Verb: sequence
+    
+    Learning objective: Given the steps of a club's consent process, the learner sequences them correctly and identifies which step must precede any data collection.
+    
+    Steps (flowchart with a decision diamond):
+    1. Start: "Draft Data-Collection Notice" -- click reveals "Lists exactly what will be collected and exactly what will not, in plain language."
+    2. Process: "Guardian Reviews Notice" -- click reveals "Sent before the student's first session, giving the family time to ask questions."
+    3. Decision: "Guardian Signs?" -- click reveals "A club may only collect data for a student whose guardian has signed; declining is always an option."
+    4a. Branch "Yes" leads to "Data Collection Begins" -- click reveals "Only the fields listed in the notice are collected, starting from this point forward."
+    4b. Branch "No" leads to "No Data Collected" -- click reveals "The student may still participate in sessions; the club simply keeps no data-collection-dependent records for them."
+    5. Both branches converge on End: "Signed or Declined Form Filed" -- click reveals "The form itself is kept on file for as long as the data it covers is retained, per the club's retention policy."
+    
+    Interactivity requirement (satisfied): every node has a Mermaid `click` directive tied to an infobox showing its revealed text.
+    
+    Color coding: Gray for the start and process nodes, purple for the decision diamond, green for the "Yes" branch, amber for the "No" branch, gray for the converged end state.
+    
+    Implementation: Mermaid flowchart (`graph TD`) rendered in main.html with `click NodeId call showInfo("NodeId")` directives for every node, opening a side-panel infobox.
+    -->
+</body>
+</html>

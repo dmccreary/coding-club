@@ -1,0 +1,23 @@
+{
+  "title": "Circuit Troubleshooting Decision Workflow",
+  "description": "Given a non-working LED circuit, the learner examines the four-step troubleshooting order (power, continuity, orientation, component) to isolate the most likely fault first.",
+  "creator": "Coding Club",
+  "author": "Dan McCreary",
+  "date": "2026-09-01",
+  "subject": [
+    "Coding Club"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "circuit-troubleshooting-workflow",
+  "library": "Mermaid",
+  "bloomLevel": "Analyze (L4)",
+  "bloomVerb": "examine",
+  "completion_status": "scaffold",
+  "chapter_number": 18,
+  "chapter_title": "Robots, USB Basics, and Electronics Workshop Skills",
+  "chapter_dir": "18-robots-usb-electronics-workshop",
+  "chapter_rel_dir": "chapters/18-robots-usb-electronics-workshop"
+}

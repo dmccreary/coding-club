@@ -1,0 +1,15 @@
+{
+  "sim_id": "circuit-symbol-reader",
+  "diagram_name": "Circuit Symbol Reader",
+  "chapter_number": 17,
+  "chapter_title": "Sensors, Displays, Motors, and Robot Chassis",
+  "chapter_dir": "17-sensors-displays-motors",
+  "chapter_rel_dir": "chapters/17-sensors-displays-motors",
+  "library": "p5.js",
+  "bloom_level": "Remember (L1)",
+  "bloom_verb": "identify",
+  "learning_objective": "Given a schematic symbol, the learner identifies its component name and its role in a circuit.",
+  "completion_status": "specified",
+  "extracted_date": "2026-09-01",
+  "specification": "Type: microsim\n**sim-id:** circuit-symbol-reader<br/>\n**Library:** p5.js<br/>\n**Status:** Specified<br/>\n**Template:** https://github.com/dmccreary/circuits/tree/main/docs/sims/circuit-symbol-flashcards\n\nPurpose: Let a mentor practice recognizing the five schematic symbols used throughout this book's kit diagrams before relying on them during a live session.\n\nBloom Taxonomy: Remember (L1)\nBloom Taxonomy Verb: identify\n\nLearning objective: Given a schematic symbol, the learner identifies its component name and its role in a circuit.\n\nVisual elements: A flashcard-style panel showing one large schematic symbol at a time (battery, resistor, LED, switch, ground), drawn in a clean black-on-white style matching standard schematic conventions.\n\nInteractive controls: \"Flip\" button revealing the symbol's name and one-sentence function; \"Next\" and \"Previous\" buttons to cycle through all five symbols; a \"Quiz Me\" toggle that hides the name and asks the learner to type or select it before flipping.\n\nDefault parameters: Starts on the battery symbol, unflipped.\n\nBehavior: Clicking \"Flip\" reveals the answer with a short animation; \"Quiz Me\" mode tracks a running score of correct identifications across a full pass through all five symbols.\n\nImplementation notes: p5.js canvas rendering each symbol from vector line-drawing functions (no external images); simple state machine for flipped/unflipped and quiz-mode scoring."
+}

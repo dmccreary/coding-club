@@ -1,0 +1,23 @@
+{
+  "title": "Grant Budget Laptop Calculator",
+  "description": "Given a grant amount and a chosen device platform, the learner calculates how many laptops the grant can purchase, how much budget remains, and how many students the resulting fleet can serve one-to-one.",
+  "creator": "Coding Club",
+  "author": "Dan McCreary",
+  "date": "2026-09-01",
+  "subject": [
+    "Coding Club"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "grant-budget-laptop-calculator",
+  "library": "p5.js",
+  "bloomLevel": "Apply (L3)",
+  "bloomVerb": "calculate",
+  "completion_status": "scaffold",
+  "chapter_number": 22,
+  "chapter_title": "Purchasing and Configuring Club Devices",
+  "chapter_dir": "22-purchasing-configuring-devices",
+  "chapter_rel_dir": "chapters/22-purchasing-configuring-devices"
+}

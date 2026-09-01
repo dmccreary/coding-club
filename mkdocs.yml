@@ -154,6 +154,9 @@ nav:
       - Mascot Test Page: learning-graph/mascot-test.md
       - Book Metrics: learning-graph/book-metrics.md
       - Chapter Metrics: learning-graph/chapter-metrics.md
+      - Glossary Quality Report: learning-graph/glossary-quality-report.md
+      - FAQ Quality Report: learning-graph/faq-quality-report.md
+      - FAQ Coverage Gaps: learning-graph/faq-coverage-gaps.md
       - Quiz Generation Report: learning-graph/quiz-generation-report.md
 
   - MicroSims:
@@ -163,6 +166,8 @@ nav:
   - Challenge Cards:
       - Card Gallery: cards/index.md
 
+  - FAQ: faq.md
+  - Glossary: glossary.md
   - License: license.md
   - Contact: contact.md
 
@@ -274,7 +279,7 @@ extra:
   textbook_name: 'Coding Club'
   textbook_version: '0.1'
 
-  # Google Analytics — uncomment once a property ID exists:
-  # analytics:
-  #   provider: google
-  #   property: G-XXXXXXXXXX
+  # Google Analytics ID: G-JDH8L7VM28 passed
+  analytics:
+     provider: google
+     property: G-JDH8L7VM28

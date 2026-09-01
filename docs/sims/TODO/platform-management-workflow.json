@@ -1,0 +1,15 @@
+{
+  "sim_id": "platform-management-workflow",
+  "diagram_name": "Platform Management Workflow",
+  "chapter_number": 22,
+  "chapter_title": "Purchasing and Configuring Club Devices",
+  "chapter_dir": "22-purchasing-configuring-devices",
+  "chapter_rel_dir": "chapters/22-purchasing-configuring-devices",
+  "library": "Mermaid",
+  "bloom_level": "Analyze (L4)",
+  "bloom_verb": "differentiate",
+  "learning_objective": "Given a newly purchased laptop's platform, the learner differentiates the configuration and ongoing management path it will follow among Chromebook, Windows, and macOS management.",
+  "completion_status": "specified",
+  "extracted_date": "2026-09-01",
+  "specification": "Type: workflow\n**sim-id:** platform-management-workflow<br/>\n**Library:** Mermaid<br/>\n**Status:** Specified\n\nPurpose: Show how one newly arrived laptop moves through initial configuration and then splits into one of three platform-specific management paths, so a mentor can see where their own fleet's laptops fit.\n\nBloom Taxonomy: Analyze (L4)\nBloom Taxonomy Verb: differentiate\n\nLearning objective: Given a newly purchased laptop's platform, the learner differentiates the configuration and ongoing management path it will follow among Chromebook, Windows, and macOS management.\n\nSteps (flowchart with a decision diamond):\n1. Start: \"New Laptop Arrives\" -- click reveals \"A laptop as it arrives from a vendor, before any club-specific setup has been applied.\"\n2. Process: \"Laptop Configuration\" -- click reveals the Laptop Configuration definition above.\n3. Decision: \"Which Platform?\" -- click reveals \"The laptop's operating system determines which management path and console it will use for the rest of its service life.\"\n4a. Branch \"Chromebook\" leads to \"Chromebook Management\" -- click reveals the Chromebook Management definition above.\n4b. Branch \"Windows\" leads to \"Windows Device Management\" -- click reveals the Windows Device Management definition above.\n4c. Branch \"macOS\" leads to \"MacOS Device Management\" -- click reveals the MacOS Device Management definition above.\n5. All three branches converge on End: \"Ready for Student Login\" -- click reveals \"Once its platform-specific management is in place, the laptop is ready to receive the student account setup covered next in this chapter.\"\n\nInteractivity requirement (satisfied): every node has a Mermaid `click` directive tied to an infobox showing its revealed text, matching the definition already given in this chapter's prose.\n\nColor coding: Gray for the start node, amber for the shared configuration step, purple for the decision diamond, blue/green/orange for the Chromebook/Windows/macOS branches respectively, gray for the converged end state.\n\nImplementation: Mermaid flowchart (`graph TD`) rendered in main.html with `click NodeId call showInfo(\"NodeId\")` directives for every node, opening a side-panel infobox; a \"Reset View\" button re-centers the diagram after any zoom or pan."
+}

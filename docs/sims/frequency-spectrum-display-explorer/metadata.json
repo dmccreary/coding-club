@@ -1,0 +1,23 @@
+{
+  "title": "Frequency Spectrum Display Explorer",
+  "description": "Given a frequency spectrum display showing a bar pattern, the learner interprets which sound type (a low hum, a high whistle, or general chatter) most likely produced it.",
+  "creator": "Coding Club",
+  "author": "Dan McCreary",
+  "date": "2026-09-01",
+  "subject": [
+    "Coding Club"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "frequency-spectrum-display-explorer",
+  "library": "p5.js",
+  "bloomLevel": "Understand (L2)",
+  "bloomVerb": "interpret",
+  "completion_status": "scaffold",
+  "chapter_number": 20,
+  "chapter_title": "Sensor, Sound, and IoT Project Kits",
+  "chapter_dir": "20-sensor-sound-iot-kits",
+  "chapter_rel_dir": "chapters/20-sensor-sound-iot-kits"
+}

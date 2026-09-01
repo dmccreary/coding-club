@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- microsim-scaffold-stub -->
+    <title>Board Governance Cycle</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f8f9fa;
+            color: #212529;
+        }
+        #container {
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background: white;
+        }
+        h1 {
+            font-size: 22px;
+            margin-bottom: 10px;
+            color: #1a3a6c;
+        }
+        .placeholder {
+            border: 2px dashed #adb5bd;
+            border-radius: 8px;
+            padding: 40px 20px;
+            text-align: center;
+            color: #6c757d;
+            margin: 20px 0;
+            min-height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .placeholder .badge {
+            display: inline-block;
+            background: #ffc107;
+            color: #212529;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+        .placeholder h2 {
+            font-size: 18px;
+            color: #495057;
+            margin-bottom: 8px;
+        }
+        .placeholder p {
+            font-size: 14px;
+            max-width: 480px;
+        }
+        .meta {
+            margin-top: 20px;
+            font-size: 13px;
+            color: #6c757d;
+            border-top: 1px solid #dee2e6;
+            padding-top: 12px;
+        }
+        .meta strong { color: #495057; }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>Board Governance Cycle</h1>
+        <div class="placeholder">
+            <span class="badge">SCAFFOLD</span>
+            <h2>MicroSim Not Yet Implemented</h2>
+            <p>This MicroSim has been scaffolded from its specification but the
+            interactive content has not been built yet. See the chapter source
+            and the <code>index.md</code> in this directory for the full spec.</p>
+        </div>
+        <div class="meta">
+            <p><strong>Sim ID:</strong> board-governance-cycle</p>
+            <p><strong>Library:</strong> Mermaid</p>
+            <p><strong>Bloom Level:</strong> Analyze (L4)</p>
+            <p><strong>Learning Objective:</strong> Given a board's current state, the learner differentiates the routine seat-rotation cycle from the one-time succession-plan trigger that a founder's departure activates.</p>
+        </div>
+    </div>
+
+    <!--
+    SPECIFICATION (from chapter index.md):
+
+    Type: workflow
+    **sim-id:** board-governance-cycle<br/>
+    **Library:** Mermaid<br/>
+    **Status:** Specified
+    
+    Purpose: Trace how recruitment, roles, meeting cadence, and term limits run as one continuous cycle for a board seat, and show succession planning as the separate event that fires the moment a founder or lead mentor actually departs.
+    
+    Bloom Taxonomy: Analyze (L4)
+    Bloom Taxonomy Verb: differentiate
+    
+    Learning objective: Given a board's current state, the learner differentiates the routine seat-rotation cycle from the one-time succession-plan trigger that a founder's departure activates.
+    
+    Steps (flowchart with a decision diamond and a separate trigger branch):
+    1. Start: "Board Seat Vacant" -- click reveals "A seat with no current holder, either because the club is forming its first board or a term has just expired."
+    2. Process: "Recruit for the Seat" -- click reveals the Board Member Recruitment definition above.
+    3. Process: "Assign Roles and Duties" -- click reveals the Board Roles And Duties definition above.
+    4. Process: "Meet on a Fixed Cadence" -- click reveals the Board Meeting Cadence definition above.
+    5. Decision: "Term Limit Reached?" -- click reveals the Board Term Limits definition above; "No" loops back to step 4.
+    6. Process (from "Yes"): "Seat Rotates Off (Staggered)" -- click reveals "The seat vacates on its own staggered schedule, never at the same time as every other seat."; loops back to step 1 for that one seat.
+    7. Separate trigger, drawn off to the side and connected by a dashed line rather than the main cycle: "Founder or Lead Mentor Departs" -- click reveals "An unplanned or planned departure, the event succession planning exists to prepare for."
+    8. Process (from trigger): "Execute Written Succession Plan" -- click reveals the Succession Planning definition above.
+    9. End (from step 8): "Acting Lead Named, Signing Authority Transfers" -- click reveals "The board's prepared answer takes effect immediately, rather than being improvised under pressure."
+    
+    Interactivity requirement (satisfied): every node has a Mermaid `click` directive tied to an infobox showing its revealed text, matching the definitions already given in this chapter's prose.
+    
+    Color coding: Blue for the recruitment-and-assignment steps, gold for the recurring meeting-and-term-limit cycle, the dashed trigger branch and its two downstream nodes in red to visually separate a rare, high-stakes event from routine governance.
+    
+    Implementation: Mermaid flowchart (`graph TD`) rendered in main.html with `click NodeId call showInfo("NodeId")` directives for every node, opening a side-panel infobox; a "Reset View" button re-centers the diagram after any zoom or pan; layout reflows responsively on narrow screens.
+    -->
+</body>
+</html>
