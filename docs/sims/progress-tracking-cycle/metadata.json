@@ -1,6 +1,6 @@
 {
   "title": "Student Progress Tracking Cycle",
-  "description": "The learner explains what happens at each stage of the ongoing progress-tracking cycle.",
+  "description": "The four-stage habit that keeps a student's record current, and lets a different mentor pick up where the last one left off.",
   "creator": "Coding Club",
   "author": "Dan McCreary",
   "date": "2026-09-01",
@@ -15,9 +15,28 @@
   "library": "Mermaid",
   "bloomLevel": "Understand (L2)",
   "bloomVerb": "explain",
-  "completion_status": "scaffold",
+  "completion_status": "built",
+  "canvasHeight": 400,
   "chapter_number": 24,
   "chapter_title": "Tracking Student Data and Managing Club Communication",
   "chapter_dir": "24-student-data-and-communication",
-  "chapter_rel_dir": "chapters/24-student-data-and-communication"
+  "chapter_rel_dir": "chapters/24-student-data-and-communication",
+  "educational": {
+    "gradeLevel": "Middle School, High School, Adult",
+    "audience": "Mentors tracking student progress",
+    "duration": "10-15 minutes",
+    "concepts": [
+      "Progress Tracking",
+      "Skill Record",
+      "Mentor Handover",
+      "Challenge Card Selection"
+    ]
+  },
+  "pedagogical": {
+    "bloomLevel": "Understand (L2)",
+    "bloomVerb": "explain",
+    "learningObjective": "The learner explains what happens at each stage of the ongoing progress-tracking cycle.",
+    "interactionPattern": "Hover-to-preview and click-to-pin four-stage cycle with an explicit return arrow",
+    "assessment": "Ask what breaks when Record happens on the drive home instead of before the session ends."
+  }
 }

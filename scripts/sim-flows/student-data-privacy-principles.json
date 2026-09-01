@@ -1,0 +1,87 @@
+{
+  "title": "Student Data Privacy Principles",
+  "height": 520,
+  "direction": "TD",
+  "nodes": [
+    {
+      "id": "Protected",
+      "shape": "round",
+      "cls": "doc",
+      "label": "Protected<br/>Student Data",
+      "title": "Protected Student Data",
+      "info": "The smaller, already-reviewed pile of data a club decided to save, now handled so only the right people can see it."
+    },
+    {
+      "id": "Limit",
+      "shape": "box",
+      "cls": "resolve",
+      "label": "Limit Access",
+      "title": "Limit Access",
+      "info": "Only mentors and leaders who need the data get a login, not the entire volunteer roster. The risk closed: a departing volunteer who still has a working account."
+    },
+    {
+      "id": "NoLinks",
+      "shape": "box",
+      "cls": "prep",
+      "label": "No Public Links",
+      "title": "No Public Links",
+      "info": "A sharing link set to 'anyone with the link' can spread far beyond the two or three people it was meant for. The risk closed: a forwarded link that becomes a public roster."
+    },
+    {
+      "id": "ClubAccounts",
+      "shape": "box",
+      "cls": "remediate",
+      "label": "Use Club Accounts",
+      "title": "Use Club Accounts",
+      "info": "Data stored in a personal account leaves the club the moment that mentor does. The risk closed: losing the attendance history because one volunteer moved away."
+    },
+    {
+      "id": "AskFirst",
+      "shape": "box",
+      "cls": "wait",
+      "label": "Ask Before Posting",
+      "title": "Ask Before Posting",
+      "info": "A name or photo posted publicly without asking undoes every other privacy practice in one step. The risk closed: a well-meaning celebration post that identifies a child whose family did not consent."
+    }
+  ],
+  "edges": [
+    {
+      "from": "Protected",
+      "to": "Limit"
+    },
+    {
+      "from": "Protected",
+      "to": "NoLinks"
+    },
+    {
+      "from": "Protected",
+      "to": "ClubAccounts"
+    },
+    {
+      "from": "Protected",
+      "to": "AskFirst"
+    }
+  ],
+  "legend": [
+    {
+      "cls": "doc",
+      "text": "The outcome being protected"
+    },
+    {
+      "cls": "resolve",
+      "text": "Limit access"
+    },
+    {
+      "cls": "prep",
+      "text": "No public links"
+    },
+    {
+      "cls": "remediate",
+      "text": "Use club accounts"
+    },
+    {
+      "cls": "wait",
+      "text": "Ask before posting"
+    }
+  ]
+}

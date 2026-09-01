@@ -1,0 +1,21 @@
+{
+  "title": "Student Progress Tracking Cycle",
+  "height": 402,
+  "library": "Mermaid",
+  "bloom": "Understand (L2)",
+  "verb": "explain",
+  "description": "The four-stage habit that keeps a student's record current, and lets a different mentor pick up where the last one left off.",
+  "concepts": [
+    "Progress Tracking",
+    "Skill Record",
+    "Mentor Handover",
+    "Challenge Card Selection"
+  ],
+  "interaction": "Hover-to-preview and click-to-pin four-stage cycle with an explicit return arrow",
+  "assessment": "Ask what breaks when Record happens on the drive home instead of before the session ends.",
+  "audience": "Mentors tracking student progress",
+  "about": "Progress tracking fails in clubs for one reason: it is treated as a form to fill\nin rather than a habit to repeat. This cycle is the habit.\n\nThe stage that carries the most weight is **Record**, and specifically *when* it\nhappens -- before the session ends, while the mentor is still in the room. A\nskill recorded on the drive home is recorded from memory, and a skill recorded\nnext week is not recorded at all.\n\n**Review** is the stage that makes the whole thing worth doing, because it is\nusually a *different* mentor reading the row. Club volunteers rotate. A record\nthat only makes sense to the person who wrote it is a private note, not a\ntracking system.\n\n**Adjust** closes the loop by turning the record into a decision: which challenge\ncard this student gets next. Without it the sheet is an archive.",
+  "howto": "- **Hover a stage** to preview it; **click** to pin the details.\n- Follow the return arrow from **Adjust** back to **Observe** -- the cycle runs\n  once per student per session, not once per term.",
+  "lesson": "**Bloom level:** Understand (L2) -- *explain*\n\n**Learning objective:** The learner explains what happens at each stage of the\nongoing progress-tracking cycle.\n\n**Before the sim (5 min).** Ask a mentor to name, without looking, what the student\nthey sat with last week has already mastered. The hesitation is the case for the\ncycle.\n\n**With the sim (10 min).** Walk the four stages and dwell on the timing of\n**Record**. Then ask who the audience for the record is -- the answer \"a different\nmentor next week\" changes how people write.\n\n**After the sim (15 min).** Run one real cycle: observe a student, record before\nthe session ends, and have a second mentor use the row to pick the next card.\n\n**Check for understanding.** Ask: \"What is the difference between this sheet and a\ngradebook?\" A gradebook records the past; this record chooses the next task.",
+  "refs": "- [Chapter 24: Student Data and Communication](../../chapters/24-student-data-and-communication/index.md) -- the chapter this MicroSim supports.\n- [Feedback Loop Cycle](../feedback-loop-cycle/index.md) -- the club's other four-stage loop, aimed at families rather than students.\n- [Formative assessment](https://en.wikipedia.org/wiki/Formative_assessment) -- assessment that changes what happens next.\n- [Mastery learning](https://en.wikipedia.org/wiki/Mastery_learning) -- the model behind picking the next card from what is mastered."
+}

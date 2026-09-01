@@ -151,7 +151,7 @@ Because a school-affiliated coding club in the United States can fall under stud
 
 #### Diagram: Student Data Privacy Principles
 
-<iframe src="../../sims/student-data-privacy-principles/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../sims/student-data-privacy-principles/main.html" width="100%" height="522px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Student Data Privacy Principles</summary>
@@ -196,7 +196,7 @@ Consent is also not a one-time event for a student who stays with the club acros
 
 #### Diagram: Guardian Consent Collection Workflow
 
-<iframe src="../../sims/consent-collection-workflow/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../sims/consent-collection-workflow/main.html" width="100%" height="702px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Guardian Consent Collection Workflow</summary>
@@ -380,7 +380,7 @@ A worked example shows the payoff for a substitute mentor: a regular mentor is o
 
 #### Diagram: Student Progress Tracking Cycle
 
-<iframe src="../../sims/progress-tracking-cycle/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../sims/progress-tracking-cycle/main.html" width="100%" height="402px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Student Progress Tracking Cycle</summary>
@@ -688,7 +688,7 @@ A worked example shows the channel choice actually mattering: a mentor needs to 
 
 #### Diagram: Message Channel Decision Tree
 
-<iframe src="../../sims/message-channel-decision-tree/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../sims/message-channel-decision-tree/main.html" width="100%" height="662px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Message Channel Decision Tree</summary>

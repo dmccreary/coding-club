@@ -1,0 +1,101 @@
+{
+  "title": "Guardian Consent Collection Workflow",
+  "height": 700,
+  "direction": "TD",
+  "nodes": [
+    {
+      "id": "Draft",
+      "shape": "round",
+      "cls": "retire",
+      "label": "Draft Data-Collection<br/>Notice",
+      "title": "Draft Data-Collection Notice",
+      "info": "Lists exactly what will be collected and exactly what will not, in plain language."
+    },
+    {
+      "id": "Review",
+      "shape": "box",
+      "cls": "retire",
+      "label": "Guardian Reviews<br/>Notice",
+      "title": "Guardian Reviews Notice",
+      "info": "Sent before the student's first session, giving the family time to ask questions."
+    },
+    {
+      "id": "Signs",
+      "shape": "diamond",
+      "cls": "wait",
+      "label": "Guardian<br/>Signs?",
+      "title": "Guardian Signs?",
+      "info": "A club may only collect data for a student whose guardian has signed. Declining is always an option."
+    },
+    {
+      "id": "Collect",
+      "shape": "box",
+      "cls": "resolve",
+      "label": "Data Collection<br/>Begins",
+      "title": "Data Collection Begins",
+      "info": "Only the fields listed in the notice are collected, starting from this point forward."
+    },
+    {
+      "id": "NoCollect",
+      "shape": "box",
+      "cls": "remediate",
+      "label": "No Data Collected",
+      "title": "No Data Collected",
+      "info": "The student may still participate in sessions. The club simply keeps no data-collection-dependent records for them."
+    },
+    {
+      "id": "Filed",
+      "shape": "round",
+      "cls": "retire",
+      "label": "Signed or Declined<br/>Form Filed",
+      "title": "Signed or Declined Form Filed",
+      "info": "The form itself is kept on file for as long as the data it covers is retained, per the club's retention policy."
+    }
+  ],
+  "edges": [
+    {
+      "from": "Draft",
+      "to": "Review"
+    },
+    {
+      "from": "Review",
+      "to": "Signs"
+    },
+    {
+      "from": "Signs",
+      "to": "Collect",
+      "label": "Yes"
+    },
+    {
+      "from": "Signs",
+      "to": "NoCollect",
+      "label": "No"
+    },
+    {
+      "from": "Collect",
+      "to": "Filed"
+    },
+    {
+      "from": "NoCollect",
+      "to": "Filed"
+    }
+  ],
+  "legend": [
+    {
+      "cls": "retire",
+      "text": "Paperwork step"
+    },
+    {
+      "cls": "wait",
+      "text": "Consent decision"
+    },
+    {
+      "cls": "resolve",
+      "text": "Collection permitted"
+    },
+    {
+      "cls": "remediate",
+      "text": "Declined - still welcome"
+    }
+  ]
+}

@@ -1,18 +1,71 @@
 ---
 title: Guardian Consent Collection Workflow
-description: Given the steps of a club's consent process, the learner sequences them correctly and identifies which step must precede any data collection.
-status: scaffold
+description: Trace where 'collection begins' sits relative to 'consent obtained' -- and why the order is not negotiable.
+image: sims/consent-collection-workflow/consent-collection-workflow.png
+status: built
 library: Mermaid
 bloom_level: Analyze (L4)
 ---
 
 # Guardian Consent Collection Workflow
 
+<iframe src="main.html" width="100%" height="702" scrolling="no"></iframe>
 
+[Run the Guardian Consent Collection Workflow MicroSim fullscreen](main.html){ .md-button .md-button--primary }
 
-<iframe src="main.html" width="100%" height="600"></iframe>
+## About This MicroSim
 
-[Run MicroSim in Fullscreen](main.html){ .md-button .md-button--primary }
+There is exactly one ordering constraint in this diagram and everything else
+follows from it: **the signature comes before the collection.** Not the same
+evening, not retroactively at the end of term. Before.
+
+Two things about the shape are worth pointing out. First, the notice is drafted
+*before* the guardian sees it, and it lists what will **not** be collected as
+well as what will. A notice that only says what you take reads as a blank cheque.
+
+Second, both branches converge. Declining is not an exit from the process -- the
+declined form is filed exactly like a signed one, and the student attends
+sessions exactly like anyone else. The only difference is that the club keeps no
+records that depend on collected data. A club that treats "no" as an
+administrative problem has misread the whole point of asking.
+
+## How to Use
+
+- **Hover a step** to preview it; **click** to pin the details.
+- Follow both branches from the consent gate to the shared end node -- a declined
+  form is filed too.
+
+## Lesson Plan
+
+**Bloom level:** Analyze (L4) -- *sequence*
+
+**Learning objective:** Given the steps of a club's consent process, the learner
+sequences them correctly and identifies which step must precede any data
+collection.
+
+**Before the sim (5 min).** Ask when the club currently starts recording
+attendance for a new student. If the answer is "the first session," ask when the
+consent form is signed.
+
+**With the sim (10 min).** Walk the sequence and stop at the gate. Ask what
+happens on the "No" branch -- most groups assume the student cannot attend, and
+correcting that assumption is half the lesson.
+
+**After the sim (15 min).** Draft the club's own data-collection notice, including
+the list of what is *not* collected.
+
+**Check for understanding.** Ask: "A guardian declines. What can the club still
+do, and what must it not do?" The student attends; no data-dependent records are
+kept; the declined form is filed anyway.
+
+## Embedding This MicroSim
+
+Paste this into any page of the book, adjusting the relative path to
+`docs/sims/` for the page's depth:
+
+```html
+<iframe src="../../sims/consent-collection-workflow/main.html" width="100%" height="702" scrolling="no"></iframe>
+```
 
 ## Specification
 
@@ -48,6 +101,10 @@ Color coding: Gray for the start and process nodes, purple for the decision diam
 Implementation: Mermaid flowchart (`graph TD`) rendered in main.html with `click NodeId call showInfo("NodeId")` directives for every node, opening a side-panel infobox.
 ```
 
-## Related Resources
+## References
 
-- [Chapter 24: Tracking Student Data and Managing Club Communication](../../chapters/24-student-data-and-communication/index.md)
+- [Chapter 24: Student Data and Communication](../../chapters/24-student-data-and-communication/index.md) -- the chapter this MicroSim supports.
+- [Student Data Privacy Principles](../student-data-privacy-principles/index.md) -- how the collected data is then protected.
+- [Informed consent](https://en.wikipedia.org/wiki/Informed_consent) -- why the notice must be in plain language.
+- [FERPA](https://en.wikipedia.org/wiki/Family_Educational_Rights_and_Privacy_Act) -- the US student-records law this practice aligns with.
+- [Data minimization](https://en.wikipedia.org/wiki/Data_minimization) -- why the notice lists what is not collected.

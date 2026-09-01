@@ -1,0 +1,22 @@
+{
+  "title": "Student Data Privacy Principles",
+  "height": 522,
+  "library": "Mermaid",
+  "bloom": "Understand (L2)",
+  "verb": "explain",
+  "description": "Four practices, four specific risks. Click any one to see exactly which failure it prevents.",
+  "concepts": [
+    "Data Privacy",
+    "Access Control",
+    "Sharing Links",
+    "Club Accounts",
+    "Consent to Publish"
+  ],
+  "interaction": "Hover-to-preview and click-to-pin hub-and-spoke diagram naming the risk each practice closes",
+  "assessment": "Name a failure and ask which of the four practices would have prevented it.",
+  "audience": "Mentors and club leaders handling student data",
+  "about": "Privacy advice usually arrives as a list of rules with no reasons attached, which\nis why it is followed inconsistently. Each spoke here names the **specific\nfailure** it prevents, so the practice has something to hold onto.\n\n- **Limit access** stops the departing volunteer who still has a working login.\n- **No public links** stops the forwarded \"anyone with the link\" sheet that\n  becomes a public roster.\n- **Use club accounts** stops the attendance history leaving with the mentor who\n  moved away.\n- **Ask before posting** stops the well-meant celebration post that identifies a\n  child whose family never agreed to that.\n\nThe fourth is the one clubs breach most often and worry about least, because it\ndoes not feel like a data practice -- it feels like sharing good news. It undoes\nthe other three in a single tap.",
+  "howto": "- **Hover a practice** to preview it; **click** to pin the risk it closes.\n- The blue hub is the outcome; the four coloured spokes are the practices that\n  protect it.",
+  "lesson": "**Bloom level:** Understand (L2) -- *explain*\n\n**Learning objective:** Given one of the four student data privacy practices, the\nlearner explains the specific risk that practice reduces.\n\n**Before the sim (5 min).** Ask how many people currently have access to the club's\nattendance sheet. Most groups do not know, which is itself the answer.\n\n**With the sim (10 min).** Click each spoke and read the risk aloud. Then ask the\ngroup which of the four the club is weakest on. It is usually **ask before\nposting**, because nobody thinks of a photo as data.\n\n**After the sim (15 min).** Audit the club against all four: list who has access,\ncheck every sharing link, confirm the data lives in a club account, and find one\nphoto posted without a recorded permission.\n\n**Check for understanding.** Ask: \"A mentor leaves the club. Which two practices\ndetermine whether that is a problem?\" Limit access and use club accounts -- and\nexplaining why each matters separately is the objective met.",
+  "refs": "- [Chapter 24: Student Data and Communication](../../chapters/24-student-data-and-communication/index.md) -- the chapter this MicroSim supports.\n- [Guardian Consent Collection Workflow](../consent-collection-workflow/index.md) -- how the data got here in the first place.\n- [Principle of least privilege](https://en.wikipedia.org/wiki/Principle_of_least_privilege) -- the formal name for \"limit access\".\n- [Information privacy](https://en.wikipedia.org/wiki/Information_privacy) -- the broader field.\n- [Data breach](https://en.wikipedia.org/wiki/Data_breach) -- what these four practices are collectively preventing."
+}

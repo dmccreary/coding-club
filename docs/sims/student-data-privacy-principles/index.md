@@ -1,18 +1,72 @@
 ---
 title: Student Data Privacy Principles
-description: Given one of the four student data privacy practices, the learner explains the specific risk that practice reduces.
-status: scaffold
+description: Four practices, four specific risks. Click any one to see exactly which failure it prevents.
+image: sims/student-data-privacy-principles/student-data-privacy-principles.png
+status: built
 library: Mermaid
 bloom_level: Understand (L2)
 ---
 
 # Student Data Privacy Principles
 
+<iframe src="main.html" width="100%" height="522" scrolling="no"></iframe>
 
+[Run the Student Data Privacy Principles MicroSim fullscreen](main.html){ .md-button .md-button--primary }
 
-<iframe src="main.html" width="100%" height="600"></iframe>
+## About This MicroSim
 
-[Run MicroSim in Fullscreen](main.html){ .md-button .md-button--primary }
+Privacy advice usually arrives as a list of rules with no reasons attached, which
+is why it is followed inconsistently. Each spoke here names the **specific
+failure** it prevents, so the practice has something to hold onto.
+
+- **Limit access** stops the departing volunteer who still has a working login.
+- **No public links** stops the forwarded "anyone with the link" sheet that
+  becomes a public roster.
+- **Use club accounts** stops the attendance history leaving with the mentor who
+  moved away.
+- **Ask before posting** stops the well-meant celebration post that identifies a
+  child whose family never agreed to that.
+
+The fourth is the one clubs breach most often and worry about least, because it
+does not feel like a data practice -- it feels like sharing good news. It undoes
+the other three in a single tap.
+
+## How to Use
+
+- **Hover a practice** to preview it; **click** to pin the risk it closes.
+- The blue hub is the outcome; the four coloured spokes are the practices that
+  protect it.
+
+## Lesson Plan
+
+**Bloom level:** Understand (L2) -- *explain*
+
+**Learning objective:** Given one of the four student data privacy practices, the
+learner explains the specific risk that practice reduces.
+
+**Before the sim (5 min).** Ask how many people currently have access to the club's
+attendance sheet. Most groups do not know, which is itself the answer.
+
+**With the sim (10 min).** Click each spoke and read the risk aloud. Then ask the
+group which of the four the club is weakest on. It is usually **ask before
+posting**, because nobody thinks of a photo as data.
+
+**After the sim (15 min).** Audit the club against all four: list who has access,
+check every sharing link, confirm the data lives in a club account, and find one
+photo posted without a recorded permission.
+
+**Check for understanding.** Ask: "A mentor leaves the club. Which two practices
+determine whether that is a problem?" Limit access and use club accounts -- and
+explaining why each matters separately is the objective met.
+
+## Embedding This MicroSim
+
+Paste this into any page of the book, adjusting the relative path to
+`docs/sims/` for the page's depth:
+
+```html
+<iframe src="../../sims/student-data-privacy-principles/main.html" width="100%" height="522" scrolling="no"></iframe>
+```
 
 ## Specification
 
@@ -47,6 +101,10 @@ Color coding: Blue for the central "Protected Student Data" node; four distinct 
 Implementation: Mermaid flowchart (`graph TD` with the center node linked to each spoke) rendered in main.html with `click NodeId call showInfo("NodeId")` directives for every node, opening a side-panel infobox.
 ```
 
-## Related Resources
+## References
 
-- [Chapter 24: Tracking Student Data and Managing Club Communication](../../chapters/24-student-data-and-communication/index.md)
+- [Chapter 24: Student Data and Communication](../../chapters/24-student-data-and-communication/index.md) -- the chapter this MicroSim supports.
+- [Guardian Consent Collection Workflow](../consent-collection-workflow/index.md) -- how the data got here in the first place.
+- [Principle of least privilege](https://en.wikipedia.org/wiki/Principle_of_least_privilege) -- the formal name for "limit access".
+- [Information privacy](https://en.wikipedia.org/wiki/Information_privacy) -- the broader field.
+- [Data breach](https://en.wikipedia.org/wiki/Data_breach) -- what these four practices are collectively preventing.

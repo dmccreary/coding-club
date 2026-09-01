@@ -1,0 +1,99 @@
+{
+  "title": "Message Channel Decision Tree",
+  "height": 660,
+  "direction": "TD",
+  "nodes": [
+    {
+      "id": "NewMsg",
+      "shape": "round",
+      "cls": "retire",
+      "label": "New Message<br/>to Send",
+      "title": "New Message to Send",
+      "info": "Any outgoing message a mentor needs to send to families or mentors."
+    },
+    {
+      "id": "Urgent",
+      "shape": "diamond",
+      "cls": "wait",
+      "label": "Needs Action Within<br/>the Hour?",
+      "title": "Needs Action Within the Hour?",
+      "info": "A same-day room change or a running-late notice both count as urgent."
+    },
+    {
+      "id": "AppMsg",
+      "shape": "box",
+      "cls": "resolve",
+      "label": "Send via Group<br/>Messaging App",
+      "title": "Send via Group Messaging App",
+      "info": "Reaches families checking their phones in real time. Not meant to be a permanent record -- do not send anything here that someone will need to find again in three weeks."
+    },
+    {
+      "id": "Searchable",
+      "shape": "diamond",
+      "cls": "wait",
+      "label": "Needs a Searchable<br/>Written Record?",
+      "title": "Needs a Searchable Written Record?",
+      "info": "A schedule change, a newsletter, or anything a family might need to reference weeks later."
+    },
+    {
+      "id": "Email",
+      "shape": "box",
+      "cls": "doc",
+      "label": "Send via Email",
+      "title": "Send via Email",
+      "info": "Easily searched later; appropriate for anything semi-official. The slower channel, which is exactly why it is the wrong one for an urgent message."
+    },
+    {
+      "id": "Either",
+      "shape": "round",
+      "cls": "retire",
+      "label": "Either Channel<br/>Works",
+      "title": "Either Channel Works",
+      "info": "For a low-stakes, non-urgent note, mentor judgment and family preference can decide."
+    }
+  ],
+  "edges": [
+    {
+      "from": "NewMsg",
+      "to": "Urgent"
+    },
+    {
+      "from": "Urgent",
+      "to": "AppMsg",
+      "label": "Yes"
+    },
+    {
+      "from": "Urgent",
+      "to": "Searchable",
+      "label": "No"
+    },
+    {
+      "from": "Searchable",
+      "to": "Email",
+      "label": "Yes"
+    },
+    {
+      "from": "Searchable",
+      "to": "Either",
+      "label": "No"
+    }
+  ],
+  "legend": [
+    {
+      "cls": "retire",
+      "text": "Start and open choice"
+    },
+    {
+      "cls": "wait",
+      "text": "Decision"
+    },
+    {
+      "cls": "resolve",
+      "text": "Group messaging app"
+    },
+    {
+      "cls": "doc",
+      "text": "Email"
+    }
+  ]
+}

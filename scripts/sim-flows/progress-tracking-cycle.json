@@ -1,0 +1,76 @@
+{
+  "title": "Student Progress Tracking Cycle",
+  "height": 400,
+  "direction": "LR",
+  "nodes": [
+    {
+      "id": "Observe",
+      "shape": "box",
+      "cls": "doc",
+      "label": "Observe",
+      "title": "Observe",
+      "info": "A mentor watches a student work through a challenge card or kit during a session."
+    },
+    {
+      "id": "Record",
+      "shape": "box",
+      "cls": "prep",
+      "label": "Record",
+      "title": "Record",
+      "info": "The mentor marks the completed skill or badge in the tracking sheet before the session ends -- not on the drive home, when the detail is already gone."
+    },
+    {
+      "id": "ReviewStep",
+      "shape": "box",
+      "cls": "resolve",
+      "label": "Review",
+      "title": "Review",
+      "info": "Before the next session, a mentor -- often a different one -- reviews the student's row to see what is already mastered."
+    },
+    {
+      "id": "Adjust",
+      "shape": "box",
+      "cls": "remediate",
+      "label": "Adjust",
+      "title": "Adjust",
+      "info": "The mentor picks the next appropriate challenge card based on what the record shows, then the cycle repeats at Observe."
+    }
+  ],
+  "edges": [
+    {
+      "from": "Observe",
+      "to": "Record"
+    },
+    {
+      "from": "Record",
+      "to": "ReviewStep"
+    },
+    {
+      "from": "ReviewStep",
+      "to": "Adjust"
+    },
+    {
+      "from": "Adjust",
+      "to": "Observe",
+      "label": "cycle repeats"
+    }
+  ],
+  "legend": [
+    {
+      "cls": "doc",
+      "text": "Observe"
+    },
+    {
+      "cls": "prep",
+      "text": "Record"
+    },
+    {
+      "cls": "resolve",
+      "text": "Review"
+    },
+    {
+      "cls": "remediate",
+      "text": "Adjust"
+    }
+  ]
+}

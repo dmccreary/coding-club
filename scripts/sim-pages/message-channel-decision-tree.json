@@ -1,0 +1,21 @@
+{
+  "title": "Message Channel Decision Tree",
+  "height": 662,
+  "library": "Mermaid",
+  "bloom": "Evaluate (L5)",
+  "verb": "determine",
+  "description": "Two questions decide whether a message goes to the group chat, to email, or either.",
+  "concepts": [
+    "Communication Channel",
+    "Urgency",
+    "Searchable Record",
+    "Club Communication"
+  ],
+  "interaction": "Hover-to-preview and click-to-pin two-question decision tree with three outcomes",
+  "assessment": "Give three messages of differing urgency and ask which channel each takes.",
+  "audience": "Mentors and club leaders sending messages",
+  "about": "Clubs get this wrong in both directions. Urgent messages go out by email and are\nread the next morning, after the session everyone missed. Schedule changes go out\nby group chat and are unfindable three weeks later when a family needs the date.\n\nTwo questions sort it. **Does this need action within the hour?** If yes, the\ngroup messaging app, because it reaches phones now. **Does someone need to find\nthis again later?** If yes, email, because it is searchable.\n\nThe third outcome is the honest one. Plenty of club messages are neither urgent\nnor archival -- a friendly note, a photo, a thank-you. For those the tree says so\nrather than inventing a rule, and mentor judgment and family preference decide.\n\nWorth naming for the group: the two questions are independent. A message can be\nboth urgent and archival, in which case it goes to the chat *and* the email -- the\ntree gives the first channel, not the only one.",
+  "howto": "- **Hover a node** to preview it; **click** to pin the details.\n- Follow the two decision diamonds in order: urgency first, then whether a\n  searchable record is needed.",
+  "lesson": "**Bloom level:** Evaluate (L5) -- *determine*\n\n**Learning objective:** Given a message's urgency and audience, the learner\ndetermines which communication channel is appropriate.\n\n**Before the sim (5 min).** Ask how the club announced its last room change, and\nwhether everyone found out in time.\n\n**With the sim (10 min).** Walk both diamonds. Then propose messages and have the\ngroup route each one aloud: \"session cancelled, starts in two hours\", \"next\nterm's dates\", \"great work at the showcase last night.\"\n\n**After the sim (15 min).** Write the club's channel rule as two sentences and put\nit where mentors will see it.\n\n**Check for understanding.** Ask: \"The venue moved next week's session to a\ndifferent room. Which channel?\" Both -- chat because people need to know, email\nbecause they will need to look it up. Recognising that the two questions are\nindependent is the evaluation this objective asks for.",
+  "refs": "- [Chapter 24: Student Data and Communication](../../chapters/24-student-data-and-communication/index.md) -- the chapter this MicroSim supports.\n- [Club Calendar Setup Workflow](../calendar-setup-workflow/index.md) -- the third channel, for anything date-shaped.\n- [Synchronous and asynchronous communication](https://en.wikipedia.org/wiki/Asynchronous_communication) -- the distinction the first diamond is really testing.\n- [Information overload](https://en.wikipedia.org/wiki/Information_overload) -- why sending everything to every channel fails."
+}

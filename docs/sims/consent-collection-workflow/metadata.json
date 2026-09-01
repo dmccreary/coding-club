@@ -1,6 +1,6 @@
 {
   "title": "Guardian Consent Collection Workflow",
-  "description": "Given the steps of a club's consent process, the learner sequences them correctly and identifies which step must precede any data collection.",
+  "description": "Trace where 'collection begins' sits relative to 'consent obtained' -- and why the order is not negotiable.",
   "creator": "Coding Club",
   "author": "Dan McCreary",
   "date": "2026-09-01",
@@ -15,9 +15,28 @@
   "library": "Mermaid",
   "bloomLevel": "Analyze (L4)",
   "bloomVerb": "sequence",
-  "completion_status": "scaffold",
+  "completion_status": "built",
+  "canvasHeight": 700,
   "chapter_number": 24,
   "chapter_title": "Tracking Student Data and Managing Club Communication",
   "chapter_dir": "24-student-data-and-communication",
-  "chapter_rel_dir": "chapters/24-student-data-and-communication"
+  "chapter_rel_dir": "chapters/24-student-data-and-communication",
+  "educational": {
+    "gradeLevel": "Middle School, High School, Adult",
+    "audience": "Club leaders handling student data",
+    "duration": "10-15 minutes",
+    "concepts": [
+      "Guardian Consent",
+      "Data-Collection Notice",
+      "Retention Policy",
+      "Opt-Out"
+    ]
+  },
+  "pedagogical": {
+    "bloomLevel": "Analyze (L4)",
+    "bloomVerb": "sequence",
+    "learningObjective": "Given the steps of a club's consent process, the learner sequences them correctly and identifies which step must precede any data collection.",
+    "interactionPattern": "Hover-to-preview and click-to-pin sequence with a consent gate and two converging outcomes",
+    "assessment": "Ask what the club may record for a student whose guardian declined."
+  }
 }

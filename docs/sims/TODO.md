@@ -13,8 +13,8 @@ above are maintained by hand as sims are actually built.
 
 - Chapters scanned: 35
 - Total diagram specs found: 129
-- Already implemented: 30
-- **Unimplemented (TODO): 99**
+- Already implemented: 34
+- **Unimplemented (TODO): 95**
 
 Regenerate this list after adding or editing chapter diagram specs:
 
@@ -206,19 +206,19 @@ python3 ~/.claude/skills/microsim-utils/scripts/create-microsim-todo-json-files.
 |---|---|---|---|
 | [`anonymized-attendance-chart`](TODO/anonymized-attendance-chart.json) | Anonymized Attendance Chart | Chart.js | Understand (L2) |
 | :white_check_mark: [`calendar-setup-workflow`](calendar-setup-workflow/index.md) | Club Calendar Setup Workflow | Mermaid | Apply (L3) |
-| [`consent-collection-workflow`](TODO/consent-collection-workflow.json) | Guardian Consent Collection Workflow | Mermaid | Analyze (L4) |
+| :white_check_mark: [`consent-collection-workflow`](consent-collection-workflow/index.md) | Guardian Consent Collection Workflow | Mermaid | Analyze (L4) |
 | [`data-backup-routine-timeline`](TODO/data-backup-routine-timeline.json) | Data Backup Routine Timeline | vis-timeline | Apply (L3) |
 | [`data-retention-schedule`](TODO/data-retention-schedule.json) | Data Retention Schedule by Type | Interactive Infographic Overlay (grid-diagram.js, annotation-free poster + rectangular hover zones) | Understand (L2) |
 | [`email-list-segments-venn`](TODO/email-list-segments-venn.json) | Email List Segments | p5.js | Analyze (L4) |
 | [`feedback-form-annotated`](TODO/feedback-form-annotated.json) | Annotated Feedback Form | Interactive Infographic Overlay (grid-diagram.js, annotation-free poster + rectangular hover zones) | Understand (L2) |
 | :white_check_mark: [`feedback-loop-cycle`](feedback-loop-cycle/index.md) | Feedback Loop Cycle | Mermaid | Understand (L2) |
-| [`message-channel-decision-tree`](TODO/message-channel-decision-tree.json) | Message Channel Decision Tree | Mermaid | Evaluate (L5) |
+| :white_check_mark: [`message-channel-decision-tree`](message-channel-decision-tree/index.md) | Message Channel Decision Tree | Mermaid | Evaluate (L5) |
 | [`notification-lead-time-timeline`](TODO/notification-lead-time-timeline.json) | Notification Lead-Time Timeline | vis-timeline | Apply (L3) |
 | [`progress-dashboard-explorer`](TODO/progress-dashboard-explorer.json) | Progress Dashboard Explorer | Chart.js | Analyze (L4) |
-| [`progress-tracking-cycle`](TODO/progress-tracking-cycle.json) | Student Progress Tracking Cycle | Mermaid | Understand (L2) |
+| :white_check_mark: [`progress-tracking-cycle`](progress-tracking-cycle/index.md) | Student Progress Tracking Cycle | Mermaid | Understand (L2) |
 | [`saving-student-data-decision-tool`](TODO/saving-student-data-decision-tool.json) | Do You Actually Need This Data Field? | p5.js | Evaluate (L5) |
 | [`spreadsheet-template-zones`](TODO/spreadsheet-template-zones.json) | Spreadsheet Template Zones | Interactive Infographic Overlay (grid-diagram.js, annotation-free poster + rectangular hover zones) | Understand (L2) |
-| [`student-data-privacy-principles`](TODO/student-data-privacy-principles.json) | Student Data Privacy Principles | Mermaid | Understand (L2) |
+| :white_check_mark: [`student-data-privacy-principles`](student-data-privacy-principles/index.md) | Student Data Privacy Principles | Mermaid | Understand (L2) |
 
 ### Chapter 25: Analyzing Club Data and Choosing the Right Tools (4)
 
