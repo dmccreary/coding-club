@@ -3,109 +3,97 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- microsim-scaffold-stub -->
+    <meta name="schema" content="https://dmccreary.github.io/intelligent-textbooks/ns/microsim/v1">
     <title>Soldering Safety Workflow</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: #f8f9fa;
-            color: #212529;
-        }
-        #container {
-            width: 100%;
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 20px;
-            background: white;
-        }
-        h1 {
-            font-size: 22px;
-            margin-bottom: 10px;
-            color: #1a3a6c;
-        }
-        .placeholder {
-            border: 2px dashed #adb5bd;
-            border-radius: 8px;
-            padding: 40px 20px;
-            text-align: center;
-            color: #6c757d;
-            margin: 20px 0;
-            min-height: 400px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        .placeholder .badge {
-            display: inline-block;
-            background: #ffc107;
-            color: #212529;
-            padding: 4px 12px;
-            border-radius: 12px;
-            font-size: 12px;
-            font-weight: 600;
-            margin-bottom: 12px;
-        }
-        .placeholder h2 {
-            font-size: 18px;
-            color: #495057;
-            margin-bottom: 8px;
-        }
-        .placeholder p {
-            font-size: 14px;
-            max-width: 480px;
-        }
-        .meta {
-            margin-top: 20px;
-            font-size: 13px;
-            color: #6c757d;
-            border-top: 1px solid #dee2e6;
-            padding-top: 12px;
-        }
-        .meta strong { color: #495057; }
-    </style>
+    <script type="module">
+        import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+        mermaid.initialize({
+            startOnLoad: true,
+            theme: 'default',
+            flowchart: {
+                useMaxWidth: true,
+                htmlLabels: true,
+                curve: 'basis',
+                subGraphTitleMargin: { top: 10, bottom: 14 }
+            }
+        });
+    </script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="container">
-        <h1>Soldering Safety Workflow</h1>
-        <div class="placeholder">
-            <span class="badge">SCAFFOLD</span>
-            <h2>MicroSim Not Yet Implemented</h2>
-            <p>This MicroSim has been scaffolded from its specification but the
-            interactive content has not been built yet. See the chapter source
-            and the <code>index.md</code> in this directory for the full spec.</p>
+<main>
+    <div class="container">
+        <div class="diagram-panel">
+            <div class="mermaid">
+flowchart TD
+    subgraph before["Before"]
+        s1["Warm up iron in stand,<br/>ventilate the area"]:::docNode
+    end
+    subgraph during["During"]
+        s2["Iron touches<br/>only the joint"]:::decisionNode
+        s3["Return iron to the<br/>stand immediately"]:::decisionNode
+    end
+    subgraph after["After"]
+        s4["Wait 10 seconds<br/>before touching the joint"]:::resolveNode
+        s5("Iron off and cooled<br/>before storage"):::resolveNode
+    end
+
+    s1 --> s2
+    s2 --> s3
+    s3 --> s4
+    s4 --> s5
+
+    classDef docNode fill:#4A90D9,stroke:#2E6BA8,stroke-width:2px,color:#fff,font-size:16px
+    classDef decisionNode fill:#F5A623,stroke:#B87B12,stroke-width:2px,color:#333,font-size:16px
+    classDef resolveNode fill:#3E9E6E,stroke:#256E4A,stroke-width:2px,color:#fff,font-size:16px
+    style before fill:#E3F0FB,stroke:#B7C4D0,stroke-width:1px
+    style during fill:#FDF1DC,stroke:#B7C4D0,stroke-width:1px
+    style after fill:#E6F4EC,stroke:#B7C4D0,stroke-width:1px
+
+    linkStyle default stroke:#7A8A99,stroke-width:2px,font-size:16px
+            </div>
         </div>
-        <div class="meta">
-            <p><strong>Sim ID:</strong> soldering-safety-workflow</p>
-            <p><strong>Library:</strong> Mermaid</p>
-            <p><strong>Bloom Level:</strong> Apply (L3)</p>
-            <p><strong>Learning Objective:</strong> Given a soldering task about to start, the learner sequences the correct safety steps before, during, and after making a joint.</p>
+        <div class="info-panel">
+            <h3>Step Details</h3>
+            <div id="info-display">
+                <p class="info-placeholder">Hover a step to preview it, or click a step to pin its details here.</p>
+                <div class="legend">
+                    <div class="legend-item"><span class="swatch sw-doc"></span>Before you start</div>
+                    <div class="legend-item"><span class="swatch sw-decision"></span>While soldering</div>
+                    <div class="legend-item"><span class="swatch sw-resolve"></span>After the joint</div>
+                </div>
+            </div>
+
         </div>
     </div>
+</main>
 
-    <!--
-    SPECIFICATION (from chapter index.md):
-
-    Type: workflow
-    **sim-id:** soldering-safety-workflow<br/>
-    **Library:** Mermaid<br/>
-    **Status:** Specified
-    
-    Purpose: Sequence the before/during/after habits so a first-time mentor can rehearse the order, not just the individual rules.
-    
-    Bloom Taxonomy: Apply (L3)
-    Bloom Taxonomy Verb: demonstrate
-    
-    Learning objective: Given a soldering task about to start, the learner sequences the correct safety steps before, during, and after making a joint.
-    
-    Steps: 1. "Warm up iron in stand, ventilate area" (Before); 2. "Iron touches only the joint" (During); 3. "Return iron to stand immediately" (During); 4. "Wait 10 seconds before touching joint" (After); 5. "Iron off and cooled before storage" (After)
-    
-    Interactivity requirement: Every node MUST carry a `click` directive opening an infobox with that step's full explanation, e.g. `click step2 call showInfo("during-iron-touches-joint")`.
-    
-    Visual style: Top-to-bottom Mermaid flowchart with three color-coded swimlane bands (Before/During/After) behind the step boxes
-    
-    Implementation: Mermaid flowchart rendered inside a small wrapper page at the sim-id path, with a JavaScript `showInfo()` callback that populates an infobox beneath the diagram on any node click
-    -->
+    <!-- Node information data - one entry per node in the flowchart above -->
+    <script>
+        const nodeInfo = {
+            "s1": {
+                title: "Warm up iron in stand, ventilate the area",
+                description: "The iron goes into its stand before it is plugged in, never on the bench. Open a window or run a fan so solder fumes move away from the person leaning over the joint."
+            },
+            "s2": {
+                title: "Iron touches only the joint",
+                description: "Heat the pad and the lead together for a couple of seconds, then feed solder to the joint -- not to the iron tip. Nothing else on the bench should ever be touched with the tip."
+            },
+            "s3": {
+                title: "Return iron to the stand immediately",
+                description: "The iron goes back in the stand between every joint, without exception. A hot iron resting on the bench is how burns and scorched cables happen in a busy room."
+            },
+            "s4": {
+                title: "Wait 10 seconds before touching the joint",
+                description: "A finished joint stays hot enough to burn for several seconds after the iron leaves it. Count to ten before handling the board or tugging the wire to test it."
+            },
+            "s5": {
+                title: "Iron off and cooled before storage",
+                description: "Switch off at the wall, leave the iron in its stand, and let it cool fully before it goes back in the box. A hot iron packed away is a fire in a cupboard."
+            }
+        };
+    </script>
+    <!-- Load interaction script after nodeInfo is defined -->
+    <script src="script.js"></script>
 </body>
 </html>

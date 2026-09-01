@@ -47,6 +47,22 @@ function togglePin(nodeId) {
         renderNodeInfo(nodeId, true);
     }
     highlightPinnedNode();
+    advanceCounter(nodeId);
+}
+
+/* Optional running total. A sim opts in by defining nodeAdvance in main.html;
+   without it this is a no-op, so the behaviour is additive for every other
+   Mermaid sim in the book. The counter box lives outside #info-display so that
+   pinning a step does not wipe it. */
+let counterTotal = 0;
+
+function advanceCounter(nodeId) {
+    if (typeof nodeAdvance === 'undefined') return;
+    const step = nodeAdvance[nodeId];
+    if (!step) return;
+    counterTotal += step;
+    const el = document.getElementById('counter-value');
+    if (el) el.textContent = Math.round(counterTotal * 10) / 10;
 }
 
 function highlightPinnedNode() {

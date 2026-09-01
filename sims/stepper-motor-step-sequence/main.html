@@ -3,109 +3,102 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- microsim-scaffold-stub -->
+    <meta name="schema" content="https://dmccreary.github.io/intelligent-textbooks/ns/microsim/v1">
     <title>Stepper Motor Step Sequence</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: #f8f9fa;
-            color: #212529;
-        }
-        #container {
-            width: 100%;
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 20px;
-            background: white;
-        }
-        h1 {
-            font-size: 22px;
-            margin-bottom: 10px;
-            color: #1a3a6c;
-        }
-        .placeholder {
-            border: 2px dashed #adb5bd;
-            border-radius: 8px;
-            padding: 40px 20px;
-            text-align: center;
-            color: #6c757d;
-            margin: 20px 0;
-            min-height: 400px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        .placeholder .badge {
-            display: inline-block;
-            background: #ffc107;
-            color: #212529;
-            padding: 4px 12px;
-            border-radius: 12px;
-            font-size: 12px;
-            font-weight: 600;
-            margin-bottom: 12px;
-        }
-        .placeholder h2 {
-            font-size: 18px;
-            color: #495057;
-            margin-bottom: 8px;
-        }
-        .placeholder p {
-            font-size: 14px;
-            max-width: 480px;
-        }
-        .meta {
-            margin-top: 20px;
-            font-size: 13px;
-            color: #6c757d;
-            border-top: 1px solid #dee2e6;
-            padding-top: 12px;
-        }
-        .meta strong { color: #495057; }
-    </style>
+    <script type="module">
+        import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+        mermaid.initialize({
+            startOnLoad: true,
+            theme: 'default',
+            flowchart: {
+                useMaxWidth: true,
+                htmlLabels: true,
+                curve: 'basis',
+                subGraphTitleMargin: { top: 10, bottom: 14 }
+            }
+        });
+    </script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="container">
-        <h1>Stepper Motor Step Sequence</h1>
-        <div class="placeholder">
-            <span class="badge">SCAFFOLD</span>
-            <h2>MicroSim Not Yet Implemented</h2>
-            <p>This MicroSim has been scaffolded from its specification but the
-            interactive content has not been built yet. See the chapter source
-            and the <code>index.md</code> in this directory for the full spec.</p>
+<main>
+    <div class="container">
+        <div class="diagram-panel">
+            <div class="mermaid">
+flowchart TD
+    c1("Energize Coil Pair 1<br/>rotor at 0.0°"):::docNode
+    c2["Energize Coil Pair 2<br/>advances 1.8°"]:::decisionNode
+    c3["Energize Coil Pair 3<br/>advances 1.8°"]:::decisionNode
+    c4["Energize Coil Pair 4<br/>advances 1.8°"]:::decisionNode
+    c5["Return to Coil Pair 1<br/>cycle repeats"]:::resolveNode
+
+    c1 --> c2
+    c2 --> c3
+    c3 --> c4
+    c4 --> c5
+    c5 -->|loop| c1
+
+    classDef docNode fill:#4A90D9,stroke:#2E6BA8,stroke-width:2px,color:#fff,font-size:16px
+    classDef decisionNode fill:#F5A623,stroke:#B87B12,stroke-width:2px,color:#333,font-size:16px
+    classDef resolveNode fill:#3E9E6E,stroke:#256E4A,stroke-width:2px,color:#fff,font-size:16px
+
+    linkStyle default stroke:#7A8A99,stroke-width:2px,font-size:16px
+            </div>
         </div>
-        <div class="meta">
-            <p><strong>Sim ID:</strong> stepper-motor-step-sequence</p>
-            <p><strong>Library:</strong> Mermaid</p>
-            <p><strong>Bloom Level:</strong> Apply (L3)</p>
-            <p><strong>Learning Objective:</strong> Given a four-coil stepper motor, the learner sequences the coil-energizing pattern that advances the rotor by one step at a time.</p>
+        <div class="info-panel">
+            <h3>Step Details</h3>
+            <div id="info-display">
+                <p class="info-placeholder">Hover a step to preview it, or click a step to pin its details here.</p>
+                <div class="legend">
+                    <div class="legend-item"><span class="swatch sw-doc"></span>Starting position</div>
+                    <div class="legend-item"><span class="swatch sw-decision"></span>Coil energized, rotor advances</div>
+                    <div class="legend-item"><span class="swatch sw-resolve"></span>Cycle closes</div>
+                </div>
+            </div>
+            <div class="counter" id="counter-box">
+                <div class="counter-label">Total rotation so far</div>
+                <div class="counter-value"><span id="counter-value">0</span><span class="counter-unit">°</span></div>
+                <div class="counter-note">Click the steps in order to accumulate rotation. 200 steps -- fifty cycles -- make one full turn.</div>
+            </div>
+
         </div>
     </div>
+</main>
 
-    <!--
-    SPECIFICATION (from chapter index.md):
+    <!-- Node information data - one entry per node in the flowchart above -->
+    <script>
+        const nodeInfo = {
+            "c1": {
+                title: "Energize Coil Pair 1 - rotor aligns to position 1",
+                description: "Current through the first coil pair pulls the nearest rotor teeth into line with it. The rotor is now held at a known position -- this is what makes a stepper different from a plain DC motor."
+            },
+            "c2": {
+                title: "Energize Coil Pair 2 - rotor advances 1.8 degrees",
+                description: "Switching current to the next coil pair moves the magnetic pull one tooth along, and the rotor follows by exactly 1.8 degrees. No feedback sensor is involved; the step size is a property of how the motor is built."
+            },
+            "c3": {
+                title: "Energize Coil Pair 3 - rotor advances another 1.8 degrees",
+                description: "The third pair repeats the trick. Because each step is identical, a program can count steps instead of measuring angle -- which is why steppers are used for 3D printer axes."
+            },
+            "c4": {
+                title: "Energize Coil Pair 4 - rotor advances another 1.8 degrees",
+                description: "The fourth pair completes the four-phase cycle. The rotor has now turned 5.4 degrees from where it started."
+            },
+            "c5": {
+                title: "Return to Coil Pair 1 - the cycle repeats",
+                description: "The pattern loops. Each full four-step cycle advances the rotor 7.2 degrees, so fifty cycles -- two hundred steps -- make one complete rotation."
+            }
+        };
 
-    Type: workflow
-    **sim-id:** stepper-motor-step-sequence<br/>
-    **Library:** Mermaid<br/>
-    **Status:** Specified
-    
-    Purpose: Let a learner trace the four-coil energizing sequence from the worked example above, one transition at a time.
-    
-    Bloom Taxonomy: Apply (L3)
-    Bloom Taxonomy Verb: demonstrate
-    
-    Learning objective: Given a four-coil stepper motor, the learner sequences the coil-energizing pattern that advances the rotor by one step at a time.
-    
-    Steps: 1. "Energize Coil Pair 1 — rotor aligns to position 1"; 2. "Energize Coil Pair 2 — rotor advances 1.8°"; 3. "Energize Coil Pair 3 — rotor advances another 1.8°"; 4. "Energize Coil Pair 4 — rotor advances another 1.8°"; 5. "Return to Coil Pair 1 — cycle repeats, 50 cycles complete one full rotation"
-    
-    Interactivity requirement: Every node MUST carry a `click` directive opening an infobox with that step's full explanation, e.g. `click step2 call showInfo("coil-pair-2-energized")`.
-    
-    Visual style: Circular Mermaid flowchart (steps 1-4-3-2 looping back to 1) with a small rotor-angle readout embedded in each node's label.
-    
-    Implementation: Mermaid flowchart rendered inside a small wrapper page at the sim-id path, with a JavaScript `showInfo()` callback that populates an infobox beneath the diagram on any node click, and a running "total rotation" counter that increments as the learner clicks through multiple cycles.
-    -->
+        // clicking a node adds its advance value to the running total
+        const nodeAdvance = {
+            "c2": 1.8,
+            "c3": 1.8,
+            "c4": 1.8,
+            "c5": 1.8
+        };
+    </script>
+    <!-- Load interaction script after nodeInfo is defined -->
+    <script src="script.js"></script>
 </body>
 </html>

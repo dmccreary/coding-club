@@ -4132,7 +4132,7 @@ If four coil wires and a step sequence feels like more than a DC motor's two wir
 <p>A <strong>stepper motor</strong> moves in small, fixed-size increments called steps rather than rotating smoothly, by energizing a sequence of internal coils in a specific pattern that pulls a toothed rotor forward one step at a time. A common stepper motor takes 200 steps to complete one full 360-degree rotation, meaning each individual step moves the shaft exactly 1.8 degrees — a level of precision neither a DC motor nor a servo can match, since a stepper's position is always known exactly by counting how many steps it has been commanded to take.</p>
 <p>A worked example traces one full step cycle on a common four-coil stepper: energizing coil pair 1, then coil pair 2, then coil pair 3, then coil pair 4, then back to coil pair 1, advances the rotor by one step with each transition in that four-step sequence. Repeating that four-step cycle 50 times completes a full 200-step rotation. A dedicated driver chip, such as a ULN2003 or an A4988, handles the actual coil-energizing sequence so that code only needs to specify a direction and a number of steps, rather than toggling four individual pins in the correct order by hand.</p>
 <h4 id="diagram-stepper-motor-step-sequence">Diagram: Stepper Motor Step Sequence<a class="headerlink" href="#diagram-stepper-motor-step-sequence" title="Permanent link">¶</a></h4>
-<iframe src="../../sims/stepper-motor-step-sequence/main.html" width="100%" height="480px" scrolling="no"></iframe>
+<iframe src="../../sims/stepper-motor-step-sequence/main.html" width="100%" height="722px" scrolling="no"></iframe>
 
 <details>
 <summary>Stepper Motor Step Sequence</summary>
