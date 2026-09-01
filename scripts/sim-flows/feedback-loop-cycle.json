@@ -1,0 +1,76 @@
+{
+  "title": "Feedback Loop Cycle",
+  "height": 400,
+  "direction": "LR",
+  "nodes": [
+    {
+      "id": "Collect",
+      "shape": "box",
+      "cls": "doc",
+      "label": "Collect",
+      "title": "Collect",
+      "info": "A post-event survey gathers responses -- such as several families noting the start time is too early."
+    },
+    {
+      "id": "Analyze",
+      "shape": "box",
+      "cls": "prep",
+      "label": "Analyze",
+      "title": "Analyze",
+      "info": "The club reviews responses for a pattern, such as several families raising the same start-time concern. One family is an opinion; several is a signal."
+    },
+    {
+      "id": "Act",
+      "shape": "box",
+      "cls": "resolve",
+      "label": "Act",
+      "title": "Act",
+      "info": "The club makes a real change, such as shifting the start time by fifteen minutes. Without this stage the survey is just data collection."
+    },
+    {
+      "id": "Report",
+      "shape": "box",
+      "cls": "remediate",
+      "label": "Report Back",
+      "title": "Report Back",
+      "info": "A follow-up message tells families what changed and credits the survey, then the cycle repeats at Collect. Skip this and next term's survey response rate collapses, because families learn that answering changes nothing."
+    }
+  ],
+  "edges": [
+    {
+      "from": "Collect",
+      "to": "Analyze"
+    },
+    {
+      "from": "Analyze",
+      "to": "Act"
+    },
+    {
+      "from": "Act",
+      "to": "Report"
+    },
+    {
+      "from": "Report",
+      "to": "Collect",
+      "label": "cycle repeats"
+    }
+  ],
+  "legend": [
+    {
+      "cls": "doc",
+      "text": "Collect"
+    },
+    {
+      "cls": "prep",
+      "text": "Analyze"
+    },
+    {
+      "cls": "resolve",
+      "text": "Act"
+    },
+    {
+      "cls": "remediate",
+      "text": "Report back"
+    }
+  ]
+}

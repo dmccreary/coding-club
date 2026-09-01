@@ -1,0 +1,21 @@
+{
+  "title": "Bookmark Folder Structure",
+  "height": 562,
+  "library": "Mermaid",
+  "bloom": "Understand (L2)",
+  "verb": "classify",
+  "description": "Decide where a new bookmark belongs: the shared class folder, a student's personal folder, or neither.",
+  "concepts": [
+    "Browser Bookmark Management",
+    "Class Bookmark Folder",
+    "Student Bookmark Folder",
+    "Shared Configuration"
+  ],
+  "interaction": "Hover-to-preview and click-to-pin tree with two branches and their example leaves",
+  "assessment": "Give a link and ask which folder it belongs in and what breaks if it goes in the other one.",
+  "audience": "Mentors and students using club laptops",
+  "about": "A club laptop's bookmark bar goes feral within a term unless somebody decides\nwhere things go. This tree is that decision, and it only has two branches.\n\nThe **class folder** is identical on every laptop. That is its whole value: when\nthe coding platform changes its URL, a mentor updates one folder and every\nmachine follows. A link that every student needs belongs here, and duplicating it\ninto personal folders defeats the point -- now there are twenty copies to update.\n\nThe **student folder** is the opposite. It belongs to one person, holds links to\ntheir own in-progress work, and deliberately survives whatever the class folder\nchanges to. A student's half-finished project link has no business in a shared\nfolder, where the next sync would wipe it.\n\nAnything that fits neither -- a one-off link a student opened once -- belongs\nnowhere, which is the third answer the objective asks learners to be able to\ngive.",
+  "howto": "- **Hover a node** to preview it; **click** to pin the definition.\n- Blue is shared across the whole fleet; green belongs to one student.",
+  "lesson": "**Bloom level:** Understand (L2) -- *classify*\n\n**Learning objective:** Given a new bookmark a student wants to save, the learner\nclassifies whether it belongs in the shared class folder, a personal student\nfolder, or the browser's general bookmark bar.\n\n**Before the sim (5 min).** Open the bookmark bar on a club laptop that has been\nin use a while. The clutter makes the case without any argument from you.\n\n**With the sim (10 min).** Walk both branches. At each leaf ask the diagnostic\nquestion: if this link changed tomorrow, how many places would have to be edited?\nOne, for the class folder; one per student, for anything wrongly duplicated.\n\n**After the sim (10 min).** Read out six links -- the coding platform, a student's\nown repository, the glossary, a tutorial someone found once -- and have the group\nclassify each aloud.\n\n**Check for understanding.** Ask: \"A student bookmarks the tutorial they are\nfollowing this week. Where does it go?\" Personal folder -- and being able to say\nwhy it is not shared is the objective met.",
+  "refs": "- [Chapter 23: Network, Peripherals, and Device Lifecycle](../../chapters/23-network-peripherals-device-lifecycle/index.md) -- the chapter this MicroSim supports.\n- [Bookmark (digital)](https://en.wikipedia.org/wiki/Bookmark_(digital)) -- how browsers store and sync them.\n- [Configuration management](https://en.wikipedia.org/wiki/Configuration_management) -- the general principle behind one shared source of truth.\n- [Platform Management Workflow](../platform-management-workflow/index.md) -- how the shared folder gets pushed to every machine."
+}

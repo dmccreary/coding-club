@@ -575,7 +575,7 @@ A worked example shows the setup sequence: a club leader creates a new calendar 
 
 #### Diagram: Club Calendar Setup Workflow
 
-<iframe src="../../sims/calendar-setup-workflow/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../sims/calendar-setup-workflow/main.html" width="100%" height="642px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Club Calendar Setup Workflow</summary>
@@ -788,7 +788,7 @@ A worked example shows the loop closing visibly: a post-event survey reveals tha
 
 #### Diagram: Feedback Loop Cycle
 
-<iframe src="../../sims/feedback-loop-cycle/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../sims/feedback-loop-cycle/main.html" width="100%" height="402px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Feedback Loop Cycle</summary>

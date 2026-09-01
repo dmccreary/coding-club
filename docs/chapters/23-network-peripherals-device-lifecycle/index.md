@@ -130,7 +130,7 @@ A worked example shows that propagation saving real time: partway through a unit
 
 A worked example shows the two folders working side by side without conflict: a student bookmarks the specific GitHub page for their in-progress Scratch remix in their own student folder, while the shared class folder above it still points to the general Scratch editor every student uses. When the mentor updates the class folder mid-unit, the student's personal bookmark is untouched, because the two folders are structurally separate rather than one long shared list.
 
-<iframe src="../../sims/bookmark-folder-structure/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../sims/bookmark-folder-structure/main.html" width="100%" height="562px" scrolling="no"></iframe>
 
 #### Diagram: Bookmark Folder Structure
 
@@ -213,7 +213,7 @@ A worked example runs the same grant arithmetic Chapter 22 introduced: a club wi
 
 A worked example shows the plan closing the loop cleanly: a four-year-old laptop with a cracked screen and a failing battery is flagged for retirement. A mentor wipes its stored data following the device security policy, removes its inventory-tracking label, and drops it off with a local certified e-waste recycler -- closing out its inventory record instead of letting it linger as an unaccounted-for entry on the spreadsheet.
 
-<iframe src="../../sims/device-end-of-life-decision-workflow/main.html" width="100%" height="550px" scrolling="no"></iframe>
+<iframe src="../../sims/device-end-of-life-decision-workflow/main.html" width="100%" height="742px" scrolling="no"></iframe>
 
 #### Diagram: Device End-of-Life Decision Workflow
 

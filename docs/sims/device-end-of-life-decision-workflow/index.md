@@ -1,18 +1,75 @@
 ---
 title: Device End-of-Life Decision Workflow
-description: Given a retiring laptop's condition, the learner differentiates whether it should be routed to a donation program or to the club's end-of-life plan.
-status: scaffold
+description: Route a retiring laptop to donation or to responsible disposal, and see how one club's retirement becomes another's intake.
+image: sims/device-end-of-life-decision-workflow/device-end-of-life-decision-workflow.png
+status: built
 library: Mermaid
 bloom_level: Analyze (L4)
 ---
 
 # Device End-of-Life Decision Workflow
 
+<iframe src="main.html" width="100%" height="742" scrolling="no"></iframe>
 
+[Run the Device End-of-Life Decision Workflow MicroSim fullscreen](main.html){ .md-button .md-button--primary }
 
-<iframe src="main.html" width="100%" height="600"></iframe>
+## About This MicroSim
 
-[Run MicroSim in Fullscreen](main.html){ .md-button .md-button--primary }
+A retiring laptop has two possible futures, and the gate between them is simply
+whether it still works.
+
+If it does, it is worth somebody's while even if it is no longer worth this
+club's. The donation branch exists because a machine too slow for this year's
+curriculum is perfectly adequate for a club just starting out. The last node makes
+that concrete: the same flow, viewed from the receiving end, is
+**refurbished device sourcing** -- how a club on a tight budget stocks its shelf.
+
+If it does not work, or nobody can use it, the end-of-life plan takes over. Note
+what that plan starts with: **wipe the data**. Not recycle, not dispose -- wipe.
+A laptop leaving the club with student work or saved logins on it is a privacy
+incident regardless of where it ends up, and it is the single step most likely to
+be skipped when someone is clearing a cupboard in a hurry.
+
+## How to Use
+
+- **Hover a step** to preview it; **click** to pin the details.
+- Both decision diamonds can send a laptop to the same end-of-life node -- there
+  is more than one way to reach it.
+- The orange node is the same flow seen from the other side: one club's donation
+  is another club's refurbished purchase.
+
+## Lesson Plan
+
+**Bloom level:** Analyze (L4) -- *differentiate*
+
+**Learning objective:** Given a retiring laptop's condition, the learner
+differentiates whether it should be routed to a donation program or to the club's
+end-of-life plan.
+
+**Before the sim (5 min).** Ask what the club currently does with a laptop that is
+too slow to use. The honest answer in most clubs is "it is in a cupboard," which
+is neither branch.
+
+**With the sim (10 min).** Trace both gates. Point out that the end-of-life node
+has two incoming arrows: a broken laptop and a working one nobody wants both end
+up there. Then ask what has to happen before either leaves the building.
+
+**After the sim (15 min).** Draft the club's own end-of-life plan in five lines,
+starting with the wipe step and naming an actual certified recycler.
+
+**Check for understanding.** Ask: "You are donating a working laptop to another
+club. Name the step that must happen first, and why it matters even though the
+receiving club is trustworthy." Wiping the data -- because the obligation is to
+the students whose work is on it, not to the recipient.
+
+## Embedding This MicroSim
+
+Paste this into any page of the book, adjusting the relative path to
+`docs/sims/` for the page's depth:
+
+```html
+<iframe src="../../sims/device-end-of-life-decision-workflow/main.html" width="100%" height="742" scrolling="no"></iframe>
+```
 
 ## Specification
 
@@ -49,6 +106,10 @@ Color coding: Gray for the start node, purple for the two decision diamonds, gre
 Implementation: Mermaid flowchart (`graph TD`) rendered in main.html with `click NodeId call showInfo("NodeId")` directives for every node, opening a side-panel infobox; a "Reset View" button re-centers the diagram after any zoom or pan.
 ```
 
-## Related Resources
+## References
 
-- [Chapter 23: Network, Peripherals, and the Device Lifecycle](../../chapters/23-network-peripherals-device-lifecycle/index.md)
+- [Chapter 23: Network, Peripherals, and Device Lifecycle](../../chapters/23-network-peripherals-device-lifecycle/index.md) -- the chapter this MicroSim supports.
+- [Device Lifecycle Workflow](../device-lifecycle-workflow/index.md) -- the repair workflow that feeds laptops into this one.
+- [Electronic waste](https://en.wikipedia.org/wiki/Electronic_waste) -- why certified recycling matters.
+- [Data remanence](https://en.wikipedia.org/wiki/Data_remanence) -- why deleting files is not wiping a disk.
+- [Refurbishment (electronics)](https://en.wikipedia.org/wiki/Refurbishment_(electronics)) -- the receiving end of the donation flow.

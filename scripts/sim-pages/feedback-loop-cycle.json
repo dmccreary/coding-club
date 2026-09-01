@@ -1,0 +1,21 @@
+{
+  "title": "Feedback Loop Cycle",
+  "height": 402,
+  "library": "Mermaid",
+  "bloom": "Understand (L2)",
+  "verb": "explain",
+  "description": "The four stages that keep survey responses from disappearing into an unread inbox -- and why the last one is the load-bearing stage.",
+  "concepts": [
+    "Feedback Loop",
+    "Post-Event Survey",
+    "Closing the Loop",
+    "Response Rate"
+  ],
+  "interaction": "Hover-to-preview and click-to-pin four-stage cycle with an explicit return arrow",
+  "assessment": "Ask what happens to next term's response rate if the club never reports back.",
+  "audience": "Club leaders running surveys",
+  "about": "Most clubs do the first three stages of this cycle. Very few do the fourth, and\nthe fourth is what makes the other three worth doing.\n\nFollow the worked example round the loop. Families say the start time is too\nearly (**collect**). Several say it, not one (**analyze**). The club moves the\nstart by fifteen minutes (**act**). And then -- the stage that gets skipped -- a\nmessage goes out saying *we moved the start time because you told us to*\n(**report back**).\n\nSkip that message and the change still happened, so it feels like nothing was\nlost. What was lost shows up next term, when the survey response rate halves.\nFamilies stop answering surveys that appear to change nothing, and from the\ninside that looks like apathy rather than a consequence of the club's own\nsilence.\n\nThe arrow from **Report Back** to **Collect** is the whole diagram. Without it\nthis is a pipeline, not a loop.",
+  "howto": "- **Hover a stage** to preview it; **click** to pin the details.\n- Follow the return arrow from **Report Back** to **Collect** -- that edge is what\n  makes this a cycle rather than a one-way process.",
+  "lesson": "**Bloom level:** Understand (L2) -- *explain*\n\n**Learning objective:** The learner explains what happens at each stage of a\nclosed feedback loop, and why skipping the last stage undermines the whole cycle.\n\n**Before the sim (5 min).** Ask who has filled in a survey and never heard anything\nback. Every hand goes up. Ask whether they filled in the next one.\n\n**With the sim (10 min).** Walk the four stages with the start-time example. Then\ncover the **Report Back** node and ask what the cycle becomes without it: a\npipeline that ends in an inbox.\n\n**After the sim (10 min).** Draft the report-back message for a change the club has\nactually made recently but never announced.\n\n**Check for understanding.** Ask: \"The club acted on the feedback but never told\nanyone. What is the cost, and when does it show up?\" A collapsed response rate,\nnext term -- and the delay is what makes the mistake so easy to keep making.",
+  "refs": "- [Chapter 24: Student Data and Communication](../../chapters/24-student-data-and-communication/index.md) -- the chapter this MicroSim supports.\n- [The Club Improvement Cycle](../club-improvement-cycle/index.md) -- the same loop applied to mentor observations rather than family surveys.\n- [Feedback](https://en.wikipedia.org/wiki/Feedback) -- why a loop behaves differently from a chain.\n- [Survey methodology](https://en.wikipedia.org/wiki/Survey_methodology) -- including what drives response rates.\n- [The Event Retrospective Process](../event-retrospective-process/index.md) -- the club's other evidence-collection loop."
+}

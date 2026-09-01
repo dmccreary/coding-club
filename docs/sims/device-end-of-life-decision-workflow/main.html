@@ -3,117 +3,105 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- microsim-scaffold-stub -->
+    <meta name="schema" content="https://dmccreary.github.io/intelligent-textbooks/ns/microsim/v1">
     <title>Device End-of-Life Decision Workflow</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: #f8f9fa;
-            color: #212529;
-        }
-        #container {
-            width: 100%;
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 20px;
-            background: white;
-        }
-        h1 {
-            font-size: 22px;
-            margin-bottom: 10px;
-            color: #1a3a6c;
-        }
-        .placeholder {
-            border: 2px dashed #adb5bd;
-            border-radius: 8px;
-            padding: 40px 20px;
-            text-align: center;
-            color: #6c757d;
-            margin: 20px 0;
-            min-height: 400px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        .placeholder .badge {
-            display: inline-block;
-            background: #ffc107;
-            color: #212529;
-            padding: 4px 12px;
-            border-radius: 12px;
-            font-size: 12px;
-            font-weight: 600;
-            margin-bottom: 12px;
-        }
-        .placeholder h2 {
-            font-size: 18px;
-            color: #495057;
-            margin-bottom: 8px;
-        }
-        .placeholder p {
-            font-size: 14px;
-            max-width: 480px;
-        }
-        .meta {
-            margin-top: 20px;
-            font-size: 13px;
-            color: #6c757d;
-            border-top: 1px solid #dee2e6;
-            padding-top: 12px;
-        }
-        .meta strong { color: #495057; }
-    </style>
+    <script type="module">
+        import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+        mermaid.initialize({
+            startOnLoad: true,
+            theme: 'default',
+            flowchart: {
+                useMaxWidth: true,
+                htmlLabels: true,
+                curve: 'basis',
+                subGraphTitleMargin: { top: 10, bottom: 14 }
+            }
+        });
+    </script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="container">
-        <h1>Device End-of-Life Decision Workflow</h1>
-        <div class="placeholder">
-            <span class="badge">SCAFFOLD</span>
-            <h2>MicroSim Not Yet Implemented</h2>
-            <p>This MicroSim has been scaffolded from its specification but the
-            interactive content has not been built yet. See the chapter source
-            and the <code>index.md</code> in this directory for the full spec.</p>
+<main>
+    <div class="container">
+        <div class="diagram-panel">
+            <div class="mermaid">
+flowchart TD
+    Flagged("Laptop Flagged<br/>for Retirement"):::retireNode
+    Functional{"Still<br/>Functional?"}:::waitNode
+    Evaluate["Evaluate for<br/>Donation"]:::docNode
+    Another{"Another Program<br/>Can Use It?"}:::waitNode
+    Donated("Donated Outward"):::resolveNode
+    EOL("Device End-of-Life<br/>Plan"):::retireNode
+    Refurb["Refurbished Device<br/>Sourcing"]:::remediateNode
+
+    Flagged --> Functional
+    Functional -->|Yes| Evaluate
+    Functional -->|No| EOL
+    Evaluate --> Another
+    Another -->|Yes| Donated
+    Another -->|No| EOL
+    Donated -->|becomes intake elsewhere| Refurb
+
+    classDef retireNode fill:#5B7186,stroke:#33475B,stroke-width:2px,color:#fff,font-size:16px
+    classDef waitNode fill:#8E7CC3,stroke:#5B4B8A,stroke-width:2px,color:#fff,font-size:16px
+    classDef docNode fill:#4A90D9,stroke:#2E6BA8,stroke-width:2px,color:#fff,font-size:16px
+    classDef resolveNode fill:#3E9E6E,stroke:#256E4A,stroke-width:2px,color:#fff,font-size:16px
+    classDef remediateNode fill:#E8833A,stroke:#A85718,stroke-width:2px,color:#fff,font-size:16px
+
+    linkStyle default stroke:#7A8A99,stroke-width:2px,font-size:16px
+            </div>
         </div>
-        <div class="meta">
-            <p><strong>Sim ID:</strong> device-end-of-life-decision-workflow</p>
-            <p><strong>Library:</strong> Mermaid</p>
-            <p><strong>Bloom Level:</strong> Analyze (L4)</p>
-            <p><strong>Learning Objective:</strong> Given a retiring laptop's condition, the learner differentiates whether it should be routed to a donation program or to the club's end-of-life plan.</p>
+        <div class="info-panel">
+            <h3>Step Details</h3>
+            <div id="info-display">
+                <p class="info-placeholder">Hover a step to preview it, or click a step to pin its details here.</p>
+                <div class="legend">
+                    <div class="legend-item"><span class="swatch sw-retire"></span>Entry and end-of-life</div>
+                    <div class="legend-item"><span class="swatch sw-wait"></span>Decision</div>
+                    <div class="legend-item"><span class="swatch sw-doc"></span>Donation path</div>
+                    <div class="legend-item"><span class="swatch sw-resolve"></span>Donated outward</div>
+                    <div class="legend-item"><span class="swatch sw-remediate"></span>The same flow, seen from the receiving club</div>
+                </div>
+            </div>
+
         </div>
     </div>
+</main>
 
-    <!--
-    SPECIFICATION (from chapter index.md):
-
-    Type: workflow
-    **sim-id:** device-end-of-life-decision-workflow<br/>
-    **Library:** Mermaid<br/>
-    **Status:** Specified
-    
-    Purpose: Show how a laptop reaching the end of its useful service life is routed to donation or responsible retirement, and how that same flow can bring a refurbished device into a different club's fleet.
-    
-    Bloom Taxonomy: Analyze (L4)
-    Bloom Taxonomy Verb: differentiate
-    
-    Learning objective: Given a retiring laptop's condition, the learner differentiates whether it should be routed to a donation program or to the club's end-of-life plan.
-    
-    Steps (flowchart with decision diamonds):
-    1. Start: "Laptop Flagged for Retirement" -- click reveals "Arrives either from Chapter 22's repair workflow (beyond basic repair) or from simply reaching the end of its expected service life."
-    2. Decision: "Still Functional?" -- click reveals "A working-but-outdated laptop has more options than a laptop that no longer powers on or holds a charge."
-    3a. Branch "Yes" leads to "Evaluate for Donation" -- click reveals the Device Donation Program definition above.
-    4. Decision: "Another Program Can Use It?" -- click reveals "Some still-working laptops fit another club or family's needs even after this club retires them."
-    4a. Branch "Yes" leads to End: "Donated Outward" -- click reveals "Data is wiped per the device security policy, then the laptop is donated to another program through the club's donation program."
-    4b. Branch "No" leads to End: "Device End-of-Life Plan" -- click reveals the Device End Of Life Plan definition above.
-    3b. Branch "No" (not functional) leads directly to the same End: "Device End-of-Life Plan" node.
-    5. Side node (dashed connector): "Refurbished Device Sourcing" -- click reveals the Refurbished Device Sourcing definition above; connects back into Chapter 22's "New Laptop Arrives" step, showing how one club's donated-outward laptop can become another club's refurbished purchase.
-    
-    Interactivity requirement (satisfied): every node has a Mermaid `click` directive tied to an infobox showing its revealed text, matching the definition already given in this chapter's prose.
-    
-    Color coding: Gray for the start node, purple for the two decision diamonds, green for the donated-outward end state, amber for the device end-of-life end state, blue dashed for the refurbished-sourcing side node and its connector.
-    
-    Implementation: Mermaid flowchart (`graph TD`) rendered in main.html with `click NodeId call showInfo("NodeId")` directives for every node, opening a side-panel infobox; a "Reset View" button re-centers the diagram after any zoom or pan.
-    -->
+    <!-- Node information data - one entry per node in the flowchart above -->
+    <script>
+        const nodeInfo = {
+            "Flagged": {
+                title: "Laptop Flagged for Retirement",
+                description: "Arrives either from Chapter 22's repair workflow, as damage beyond basic repair, or simply from reaching the end of its expected service life."
+            },
+            "Functional": {
+                title: "Still Functional?",
+                description: "A working-but-outdated laptop has more options than a laptop that no longer powers on or holds a charge."
+            },
+            "Evaluate": {
+                title: "Device Donation Program",
+                description: "The club's practice of accepting still-functional donated laptops from companies, families, or other organisations, and of donating its own retired-but-working devices onward instead of discarding them -- a two-way flow."
+            },
+            "Another": {
+                title: "Another Program Can Use It?",
+                description: "Some still-working laptops fit another club or family's needs even after this club retires them."
+            },
+            "Donated": {
+                title: "Donated Outward",
+                description: "Data is wiped per the device security policy, then the laptop is donated to another program through the club's donation program."
+            },
+            "EOL": {
+                title: "Device End-of-Life Plan",
+                description: "The club's written procedure for a laptop no longer safe, repairable, or worth updating: wipe all student data first, per the device security policy, then recycle it through a certified recycler."
+            },
+            "Refurb": {
+                title: "Refurbished Device Sourcing",
+                description: "Deliberately buying previously used, professionally reconditioned laptops instead of new ones -- trading a shorter expected lifespan and warranty for a substantially lower price. The other end of the same flow: one club's retirement is another's intake."
+            }
+        };
+    </script>
+    <!-- Load interaction script after nodeInfo is defined -->
+    <script src="script.js"></script>
 </body>
 </html>

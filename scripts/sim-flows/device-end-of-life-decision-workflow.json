@@ -1,0 +1,120 @@
+{
+  "title": "Device End-of-Life Decision Workflow",
+  "height": 740,
+  "direction": "TD",
+  "nodes": [
+    {
+      "id": "Flagged",
+      "shape": "round",
+      "cls": "retire",
+      "label": "Laptop Flagged<br/>for Retirement",
+      "title": "Laptop Flagged for Retirement",
+      "info": "Arrives either from Chapter 22's repair workflow, as damage beyond basic repair, or simply from reaching the end of its expected service life."
+    },
+    {
+      "id": "Functional",
+      "shape": "diamond",
+      "cls": "wait",
+      "label": "Still<br/>Functional?",
+      "title": "Still Functional?",
+      "info": "A working-but-outdated laptop has more options than a laptop that no longer powers on or holds a charge."
+    },
+    {
+      "id": "Evaluate",
+      "shape": "box",
+      "cls": "doc",
+      "label": "Evaluate for<br/>Donation",
+      "title": "Device Donation Program",
+      "info": "The club's practice of accepting still-functional donated laptops from companies, families, or other organisations, and of donating its own retired-but-working devices onward instead of discarding them -- a two-way flow."
+    },
+    {
+      "id": "Another",
+      "shape": "diamond",
+      "cls": "wait",
+      "label": "Another Program<br/>Can Use It?",
+      "title": "Another Program Can Use It?",
+      "info": "Some still-working laptops fit another club or family's needs even after this club retires them."
+    },
+    {
+      "id": "Donated",
+      "shape": "round",
+      "cls": "resolve",
+      "label": "Donated Outward",
+      "title": "Donated Outward",
+      "info": "Data is wiped per the device security policy, then the laptop is donated to another program through the club's donation program."
+    },
+    {
+      "id": "EOL",
+      "shape": "round",
+      "cls": "retire",
+      "label": "Device End-of-Life<br/>Plan",
+      "title": "Device End-of-Life Plan",
+      "info": "The club's written procedure for a laptop no longer safe, repairable, or worth updating: wipe all student data first, per the device security policy, then recycle it through a certified recycler."
+    },
+    {
+      "id": "Refurb",
+      "shape": "box",
+      "cls": "remediate",
+      "label": "Refurbished Device<br/>Sourcing",
+      "title": "Refurbished Device Sourcing",
+      "info": "Deliberately buying previously used, professionally reconditioned laptops instead of new ones -- trading a shorter expected lifespan and warranty for a substantially lower price. The other end of the same flow: one club's retirement is another's intake."
+    }
+  ],
+  "edges": [
+    {
+      "from": "Flagged",
+      "to": "Functional"
+    },
+    {
+      "from": "Functional",
+      "to": "Evaluate",
+      "label": "Yes"
+    },
+    {
+      "from": "Functional",
+      "to": "EOL",
+      "label": "No"
+    },
+    {
+      "from": "Evaluate",
+      "to": "Another"
+    },
+    {
+      "from": "Another",
+      "to": "Donated",
+      "label": "Yes"
+    },
+    {
+      "from": "Another",
+      "to": "EOL",
+      "label": "No"
+    },
+    {
+      "from": "Donated",
+      "to": "Refurb",
+      "label": "becomes intake elsewhere"
+    }
+  ],
+  "legend": [
+    {
+      "cls": "retire",
+      "text": "Entry and end-of-life"
+    },
+    {
+      "cls": "wait",
+      "text": "Decision"
+    },
+    {
+      "cls": "doc",
+      "text": "Donation path"
+    },
+    {
+      "cls": "resolve",
+      "text": "Donated outward"
+    },
+    {
+      "cls": "remediate",
+      "text": "The same flow, seen from the receiving club"
+    }
+  ]
+}

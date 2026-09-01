@@ -3,114 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- microsim-scaffold-stub -->
+    <meta name="schema" content="https://dmccreary.github.io/intelligent-textbooks/ns/microsim/v1">
     <title>Club Calendar Setup Workflow</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: #f8f9fa;
-            color: #212529;
-        }
-        #container {
-            width: 100%;
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 20px;
-            background: white;
-        }
-        h1 {
-            font-size: 22px;
-            margin-bottom: 10px;
-            color: #1a3a6c;
-        }
-        .placeholder {
-            border: 2px dashed #adb5bd;
-            border-radius: 8px;
-            padding: 40px 20px;
-            text-align: center;
-            color: #6c757d;
-            margin: 20px 0;
-            min-height: 400px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        .placeholder .badge {
-            display: inline-block;
-            background: #ffc107;
-            color: #212529;
-            padding: 4px 12px;
-            border-radius: 12px;
-            font-size: 12px;
-            font-weight: 600;
-            margin-bottom: 12px;
-        }
-        .placeholder h2 {
-            font-size: 18px;
-            color: #495057;
-            margin-bottom: 8px;
-        }
-        .placeholder p {
-            font-size: 14px;
-            max-width: 480px;
-        }
-        .meta {
-            margin-top: 20px;
-            font-size: 13px;
-            color: #6c757d;
-            border-top: 1px solid #dee2e6;
-            padding-top: 12px;
-        }
-        .meta strong { color: #495057; }
-    </style>
+    <script type="module">
+        import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+        mermaid.initialize({
+            startOnLoad: true,
+            theme: 'default',
+            flowchart: {
+                useMaxWidth: true,
+                htmlLabels: true,
+                curve: 'basis',
+                subGraphTitleMargin: { top: 10, bottom: 14 }
+            }
+        });
+    </script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="container">
-        <h1>Club Calendar Setup Workflow</h1>
-        <div class="placeholder">
-            <span class="badge">SCAFFOLD</span>
-            <h2>MicroSim Not Yet Implemented</h2>
-            <p>This MicroSim has been scaffolded from its specification but the
-            interactive content has not been built yet. See the chapter source
-            and the <code>index.md</code> in this directory for the full spec.</p>
+<main>
+    <div class="container">
+        <div class="diagram-panel">
+            <div class="mermaid">
+flowchart TD
+    Create("Create New<br/>Calendar"):::docNode
+    Name["Name It Clearly"]:::docNode
+    Visibility["Set Default<br/>Visibility"]:::docNode
+    Recurring["Add Recurring<br/>Sessions"]:::docNode
+    Share("Share the Link"):::docNode
+
+    Create --> Name
+    Name --> Visibility
+    Visibility --> Recurring
+    Recurring --> Share
+
+    classDef docNode fill:#4A90D9,stroke:#2E6BA8,stroke-width:2px,color:#fff,font-size:16px
+
+    linkStyle default stroke:#7A8A99,stroke-width:2px,font-size:16px
+            </div>
         </div>
-        <div class="meta">
-            <p><strong>Sim ID:</strong> calendar-setup-workflow</p>
-            <p><strong>Library:</strong> Mermaid</p>
-            <p><strong>Bloom Level:</strong> Apply (L3)</p>
-            <p><strong>Learning Objective:</strong> The learner sequences the steps required to set up a new shared club calendar correctly the first time.</p>
+        <div class="info-panel">
+            <h3>Step Details</h3>
+            <div id="info-display">
+                <p class="info-placeholder">Hover a step to preview it, or click a step to pin its details here.</p>
+                <div class="legend">
+                    <div class="legend-item"><span class="swatch sw-doc"></span>One-time setup step</div>
+                </div>
+            </div>
+
         </div>
     </div>
+</main>
 
-    <!--
-    SPECIFICATION (from chapter index.md):
-
-    Type: workflow
-    **sim-id:** calendar-setup-workflow<br/>
-    **Library:** Mermaid<br/>
-    **Status:** Specified
-    
-    Purpose: Sequence the one-time steps of creating a club calendar, ending at the point where shared access -- covered next -- takes over.
-    
-    Bloom Taxonomy: Apply (L3)
-    Bloom Taxonomy Verb: sequence
-    
-    Learning objective: The learner sequences the steps required to set up a new shared club calendar correctly the first time.
-    
-    Steps (flowchart):
-    1. "Create New Calendar" -- click reveals "A calendar distinct from any mentor's personal calendar."
-    2. "Name It Clearly" -- click reveals "For example, 'Tuesday Coding Club 2026,' not the default 'Calendar 3.'"
-    3. "Set Default Visibility" -- click reveals "Typically view-only for anyone with the link, reserving edit access for the lead mentor."
-    4. "Add Recurring Sessions" -- click reveals "Every session date for the semester added as one recurring weekly event, not one at a time."
-    5. "Share the Link" -- click reveals "The link goes out to families and mentors, and shared calendar access rules take over from here."
-    
-    Interactivity requirement (satisfied): every node has a Mermaid `click` directive tied to an infobox showing its revealed text.
-    
-    Color coding: A single consistent color for all five steps, since this is a simple linear sequence rather than a branching decision.
-    
-    Implementation: Mermaid flowchart (`graph TD`) rendered in main.html with `click NodeId call showInfo("NodeId")` directives for every node.
-    -->
+    <!-- Node information data - one entry per node in the flowchart above -->
+    <script>
+        const nodeInfo = {
+            "Create": {
+                title: "Create New Calendar",
+                description: "A calendar distinct from any mentor's personal calendar. Putting club sessions on a personal calendar means they leave with that mentor."
+            },
+            "Name": {
+                title: "Name It Clearly",
+                description: "For example, 'Tuesday Coding Club 2026', not the default 'Calendar 3'. The name is what a parent sees when they subscribe."
+            },
+            "Visibility": {
+                title: "Set Default Visibility",
+                description: "Typically view-only for anyone with the link, reserving edit access for the lead mentor. Setting this before sharing avoids retrofitting permissions later."
+            },
+            "Recurring": {
+                title: "Add Recurring Sessions",
+                description: "Every session date for the semester added as one recurring weekly event, not one at a time. A single recurrence rule is also a single place to edit when a date moves."
+            },
+            "Share": {
+                title: "Share the Link",
+                description: "The link goes out to families and mentors, and shared calendar access rules take over from here."
+            }
+        };
+    </script>
+    <!-- Load interaction script after nodeInfo is defined -->
+    <script src="script.js"></script>
 </body>
 </html>

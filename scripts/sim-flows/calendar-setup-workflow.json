@@ -1,0 +1,71 @@
+{
+  "title": "Club Calendar Setup Workflow",
+  "height": 640,
+  "direction": "TD",
+  "nodes": [
+    {
+      "id": "Create",
+      "shape": "round",
+      "cls": "doc",
+      "label": "Create New<br/>Calendar",
+      "title": "Create New Calendar",
+      "info": "A calendar distinct from any mentor's personal calendar. Putting club sessions on a personal calendar means they leave with that mentor."
+    },
+    {
+      "id": "Name",
+      "shape": "box",
+      "cls": "doc",
+      "label": "Name It Clearly",
+      "title": "Name It Clearly",
+      "info": "For example, 'Tuesday Coding Club 2026', not the default 'Calendar 3'. The name is what a parent sees when they subscribe."
+    },
+    {
+      "id": "Visibility",
+      "shape": "box",
+      "cls": "doc",
+      "label": "Set Default<br/>Visibility",
+      "title": "Set Default Visibility",
+      "info": "Typically view-only for anyone with the link, reserving edit access for the lead mentor. Setting this before sharing avoids retrofitting permissions later."
+    },
+    {
+      "id": "Recurring",
+      "shape": "box",
+      "cls": "doc",
+      "label": "Add Recurring<br/>Sessions",
+      "title": "Add Recurring Sessions",
+      "info": "Every session date for the semester added as one recurring weekly event, not one at a time. A single recurrence rule is also a single place to edit when a date moves."
+    },
+    {
+      "id": "Share",
+      "shape": "round",
+      "cls": "doc",
+      "label": "Share the Link",
+      "title": "Share the Link",
+      "info": "The link goes out to families and mentors, and shared calendar access rules take over from here."
+    }
+  ],
+  "edges": [
+    {
+      "from": "Create",
+      "to": "Name"
+    },
+    {
+      "from": "Name",
+      "to": "Visibility"
+    },
+    {
+      "from": "Visibility",
+      "to": "Recurring"
+    },
+    {
+      "from": "Recurring",
+      "to": "Share"
+    }
+  ],
+  "legend": [
+    {
+      "cls": "doc",
+      "text": "One-time setup step"
+    }
+  ]
+}

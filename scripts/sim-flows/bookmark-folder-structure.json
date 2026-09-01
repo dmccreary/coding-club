@@ -1,0 +1,91 @@
+{
+  "title": "Bookmark Folder Structure",
+  "height": 560,
+  "direction": "TD",
+  "nodes": [
+    {
+      "id": "Bar",
+      "shape": "round",
+      "cls": "retire",
+      "label": "Browser<br/>Bookmark Bar",
+      "title": "Browser Bookmark Management",
+      "info": "Keeping every club laptop's set of saved links consistent, curated, and organised into folders, rather than letting each browser accumulate its own random growing list of one-off links."
+    },
+    {
+      "id": "ClassFolder",
+      "shape": "box",
+      "cls": "doc",
+      "label": "Class Bookmark<br/>Folder",
+      "title": "Class Bookmark Folder",
+      "info": "A single shared folder, identical across every laptop in the fleet, holding the links every student needs: the coding platform, the club glossary, and the current unit's project documentation."
+    },
+    {
+      "id": "Platform",
+      "shape": "box",
+      "cls": "doc",
+      "label": "Coding Platform<br/>Link",
+      "title": "Coding Platform Link",
+      "info": "A link every student needs belongs in the shared class folder, so a mentor's one update reaches every laptop."
+    },
+    {
+      "id": "Glossary",
+      "shape": "box",
+      "cls": "doc",
+      "label": "Club Glossary<br/>Link",
+      "title": "Club Glossary Link",
+      "info": "Reference material used by the whole club is shared through the class folder rather than duplicated in each student's personal space."
+    },
+    {
+      "id": "StudentFolder",
+      "shape": "box",
+      "cls": "resolve",
+      "label": "Student Bookmark<br/>Folder",
+      "title": "Student Bookmark Folder",
+      "info": "A personal folder inside a student's own bookmark bar, separate from the shared class folder, for links specific to that student's own in-progress project."
+    },
+    {
+      "id": "Project",
+      "shape": "box",
+      "cls": "resolve",
+      "label": "My In-Progress<br/>Project",
+      "title": "My In-Progress Project",
+      "info": "A link specific to one student's own work belongs in that student's personal folder, where it survives independent of whatever the class folder changes to."
+    }
+  ],
+  "edges": [
+    {
+      "from": "Bar",
+      "to": "ClassFolder"
+    },
+    {
+      "from": "Bar",
+      "to": "StudentFolder"
+    },
+    {
+      "from": "ClassFolder",
+      "to": "Platform"
+    },
+    {
+      "from": "ClassFolder",
+      "to": "Glossary"
+    },
+    {
+      "from": "StudentFolder",
+      "to": "Project"
+    }
+  ],
+  "legend": [
+    {
+      "cls": "retire",
+      "text": "The bookmark bar itself"
+    },
+    {
+      "cls": "doc",
+      "text": "Shared with everyone"
+    },
+    {
+      "cls": "resolve",
+      "text": "Belongs to one student"
+    }
+  ]
+}

@@ -13,8 +13,8 @@ above are maintained by hand as sims are actually built.
 
 - Chapters scanned: 35
 - Total diagram specs found: 129
-- Already implemented: 26
-- **Unimplemented (TODO): 103**
+- Already implemented: 30
+- **Unimplemented (TODO): 99**
 
 Regenerate this list after adding or editing chapter diagram specs:
 
@@ -196,8 +196,8 @@ python3 ~/.claude/skills/microsim-utils/scripts/create-microsim-todo-json-files.
 
 | Sim ID | Diagram Name | Library | Bloom Level |
 |---|---|---|---|
-| [`bookmark-folder-structure`](TODO/bookmark-folder-structure.json) | Bookmark Folder Structure | Mermaid | Understand (L2) |
-| [`device-end-of-life-decision-workflow`](TODO/device-end-of-life-decision-workflow.json) | Device End-of-Life Decision Workflow | Mermaid | Analyze (L4) |
+| :white_check_mark: [`bookmark-folder-structure`](bookmark-folder-structure/index.md) | Bookmark Folder Structure | Mermaid | Understand (L2) |
+| :white_check_mark: [`device-end-of-life-decision-workflow`](device-end-of-life-decision-workflow/index.md) | Device End-of-Life Decision Workflow | Mermaid | Analyze (L4) |
 | [`peripheral-management-layers`](TODO/peripheral-management-layers.json) | Peripheral and Storage Management Layers | Interactive Infographic Overlay Guide (grid-diagram.js, annotation-free comparison poster + rectangular hover zones) | Understand (L2) |
 
 ### Chapter 24: Tracking Student Data and Managing Club Communication (15)
@@ -205,13 +205,13 @@ python3 ~/.claude/skills/microsim-utils/scripts/create-microsim-todo-json-files.
 | Sim ID | Diagram Name | Library | Bloom Level |
 |---|---|---|---|
 | [`anonymized-attendance-chart`](TODO/anonymized-attendance-chart.json) | Anonymized Attendance Chart | Chart.js | Understand (L2) |
-| [`calendar-setup-workflow`](TODO/calendar-setup-workflow.json) | Club Calendar Setup Workflow | Mermaid | Apply (L3) |
+| :white_check_mark: [`calendar-setup-workflow`](calendar-setup-workflow/index.md) | Club Calendar Setup Workflow | Mermaid | Apply (L3) |
 | [`consent-collection-workflow`](TODO/consent-collection-workflow.json) | Guardian Consent Collection Workflow | Mermaid | Analyze (L4) |
 | [`data-backup-routine-timeline`](TODO/data-backup-routine-timeline.json) | Data Backup Routine Timeline | vis-timeline | Apply (L3) |
 | [`data-retention-schedule`](TODO/data-retention-schedule.json) | Data Retention Schedule by Type | Interactive Infographic Overlay (grid-diagram.js, annotation-free poster + rectangular hover zones) | Understand (L2) |
 | [`email-list-segments-venn`](TODO/email-list-segments-venn.json) | Email List Segments | p5.js | Analyze (L4) |
 | [`feedback-form-annotated`](TODO/feedback-form-annotated.json) | Annotated Feedback Form | Interactive Infographic Overlay (grid-diagram.js, annotation-free poster + rectangular hover zones) | Understand (L2) |
-| [`feedback-loop-cycle`](TODO/feedback-loop-cycle.json) | Feedback Loop Cycle | Mermaid | Understand (L2) |
+| :white_check_mark: [`feedback-loop-cycle`](feedback-loop-cycle/index.md) | Feedback Loop Cycle | Mermaid | Understand (L2) |
 | [`message-channel-decision-tree`](TODO/message-channel-decision-tree.json) | Message Channel Decision Tree | Mermaid | Evaluate (L5) |
 | [`notification-lead-time-timeline`](TODO/notification-lead-time-timeline.json) | Notification Lead-Time Timeline | vis-timeline | Apply (L3) |
 | [`progress-dashboard-explorer`](TODO/progress-dashboard-explorer.json) | Progress Dashboard Explorer | Chart.js | Analyze (L4) |
