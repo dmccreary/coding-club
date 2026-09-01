@@ -1,6 +1,6 @@
 {
   "title": "Where a Coding-Help Request Goes",
-  "description": "Given a student's coding question, the learner differentiates which of the three coding-help agents applies and identifies the mentor's role in that path.",
+  "description": "Three coding-help agents, three different questions they answer -- and the mentor who stays in the room for all of them.",
   "creator": "Coding Club",
   "author": "Dan McCreary",
   "date": "2026-09-01",
@@ -15,9 +15,28 @@
   "library": "Mermaid",
   "bloomLevel": "Analyze (L4)",
   "bloomVerb": "differentiate",
-  "completion_status": "scaffold",
+  "completion_status": "built",
+  "canvasHeight": 760,
   "chapter_number": 33,
   "chapter_title": "AI-Customized Curriculum and Rolling Out New Agents",
   "chapter_dir": "33-ai-customized-curriculum-rollout",
-  "chapter_rel_dir": "chapters/33-ai-customized-curriculum-rollout"
+  "chapter_rel_dir": "chapters/33-ai-customized-curriculum-rollout",
+  "educational": {
+    "gradeLevel": "Middle School, High School, Adult",
+    "audience": "Mentors deploying AI help in sessions",
+    "duration": "10-15 minutes",
+    "concepts": [
+      "AI Debugging Help",
+      "AI Tutor",
+      "AI Code Review",
+      "Mentor Supervision"
+    ]
+  },
+  "pedagogical": {
+    "bloomLevel": "Analyze (L4)",
+    "bloomVerb": "differentiate",
+    "learningObjective": "Given a student's coding question, the learner differentiates which of the three coding-help agents applies and identifies the mentor's role in that path.",
+    "interactionPattern": "Hover-to-preview and click-to-pin routing diagram where all three branches converge on a human",
+    "assessment": "Give a student question and ask which agent handles it and what the mentor is doing meanwhile."
+  }
 }

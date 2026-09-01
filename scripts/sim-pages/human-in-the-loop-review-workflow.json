@@ -1,0 +1,22 @@
+{
+  "title": "Human-in-the-Loop Review Workflow",
+  "height": 862,
+  "library": "Mermaid",
+  "bloom": "Evaluate (L5)",
+  "verb": "determine",
+  "description": "Trace an AI draft through a guardrail check, a human quality check, and the single moment a person actually sends it.",
+  "concepts": [
+    "Guardrails",
+    "Quality Check",
+    "Human Approval",
+    "AI Oversight",
+    "Drift"
+  ],
+  "interaction": "Hover-to-preview and click-to-pin workflow with two gates, a shared rewrite loop, and a periodic oversight branch",
+  "assessment": "Ask which step is the one that actually causes a family to receive a message.",
+  "audience": "Club leaders using AI agents for communication",
+  "about": "Four practices that are usually taught as four separate rules are one system, and\nthis is its shape.\n\nThe **guardrail check** is automated and runs first, before any human time is\nspent. It enforces the club's fixed limits -- never naming a specific student in\na group message, for instance. A draft that fails never reaches a reviewer.\n\nThe **quality check** is a person with a short checklist: accuracy, tone, no\ninappropriate student mentions, matches club voice. The panel text says it\nplainly -- a reviewer who never rejects anything is not reviewing.\n\nBoth failures land on the same rewrite node and loop back. That shared path is\nthe point: the agent gets another turn, and no partly-fixed draft slips forward.\n\n**Human approves and sends** is the load-bearing node. It is the single moment a\nperson, not an agent, causes a message to reach a family. And **oversight** hangs\noff it as a periodic sample, because per-message checks cannot catch drift that\nonly shows up across dozens of messages.",
+  "howto": "- **Hover a step** to preview it; **click** to pin the details.\n- Both the guardrail and quality failures route to the same rewrite node, which\n  loops back to a new draft.\n- The oversight branch is sampled monthly rather than run per message.",
+  "lesson": "**Bloom level:** Evaluate (L5) -- *determine*\n\n**Learning objective:** Given an AI agent's draft output, the learner determines\nwhether it is ready to send by tracing it through the club's guardrail check,\nquality check, and human review steps.\n\n**Before the sim (5 min).** Show an AI-drafted club message that reads well and\nnames a student. Ask whether it is ready to send. The plausible tone is exactly\nwhat makes the guardrail necessary.\n\n**With the sim (15 min).** Trace a passing draft, then a guardrail failure, then a\nquality failure. Ask what the two failures have in common -- both produce a new\ndraft, neither produces a patched one.\n\n**After the sim (15 min).** Write the club's guardrail list (fixed, automatable\nlimits) and its quality checklist (human judgement) as two separate documents,\nbecause they are two separate things.\n\n**Check for understanding.** Ask: \"Which single step in this diagram, if removed,\nmeans an unreviewed message could reach a family?\" Human approves and sends -- and\nrecognising that the automated guardrail is not a substitute for it is the\nevaluation this objective asks for.",
+  "refs": "- {{CHAPTER}} -- the chapter this MicroSim supports.\n- [Where a Coding-Help Request Goes](../coding-help-agent-handoff/index.md) -- the same principle applied to student-facing agents.\n- [Human-in-the-loop](https://en.wikipedia.org/wiki/Human-in-the-loop) -- the general control pattern.\n- [AI alignment](https://en.wikipedia.org/wiki/AI_alignment) -- why guardrails and oversight are separate mechanisms.\n- [Quality assurance](https://en.wikipedia.org/wiki/Quality_assurance) -- sampling already-shipped work to catch drift."
+}

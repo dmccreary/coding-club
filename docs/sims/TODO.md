@@ -13,8 +13,8 @@ above are maintained by hand as sims are actually built.
 
 - Chapters scanned: 35
 - Total diagram specs found: 129
-- Already implemented: 37
-- **Unimplemented (TODO): 92**
+- Already implemented: 41
+- **Unimplemented (TODO): 88**
 
 Regenerate this list after adding or editing chapter diagram specs:
 
@@ -265,13 +265,13 @@ python3 ~/.claude/skills/microsim-utils/scripts/create-microsim-todo-json-files.
 | [`coding-club-budget-builder`](TODO/coding-club-budget-builder.json) | Coding Club Budget Builder | p5.js | Apply (L3) |
 | [`funding-partnership-fit-map`](TODO/funding-partnership-fit-map.json) | Funding Partnership Fit Map | vis-network | Analyze (L4) |
 | [`fundraising-channel-yield-comparison`](TODO/fundraising-channel-yield-comparison.json) | Fundraising Channel Yield Comparison | Chart.js | Analyze (L4) |
-| [`grant-writing-tracking-workflow`](TODO/grant-writing-tracking-workflow.json) | Grant Writing and Tracking Workflow | Mermaid | Apply (L3) |
+| :white_check_mark: [`grant-writing-tracking-workflow`](grant-writing-tracking-workflow/index.md) | Grant Writing and Tracking Workflow | Mermaid | Apply (L3) |
 
 ### Chapter 31: Tracking Expenses and Building Funding Partnerships (3)
 
 | Sim ID | Diagram Name | Library | Bloom Level |
 |---|---|---|---|
-| [`club-financial-operations-cycle`](TODO/club-financial-operations-cycle.json) | Club Financial Operations Cycle | Mermaid | Apply (L3) |
+| :white_check_mark: [`club-financial-operations-cycle`](club-financial-operations-cycle/index.md) | Club Financial Operations Cycle | Mermaid | Apply (L3) |
 | [`institutional-funding-partnership-map`](TODO/institutional-funding-partnership-map.json) | Institutional Funding Partnership Map | vis-network | Analyze (L4) |
 | [`membership-fee-model-comparison`](TODO/membership-fee-model-comparison.json) | Membership Fee Model Comparison | p5.js | Apply (L3) |
 
@@ -282,7 +282,7 @@ python3 ~/.claude/skills/microsim-utils/scripts/create-microsim-todo-json-files.
 | [`ai-agent-loop-explorer`](TODO/ai-agent-loop-explorer.json) | AI Agent Loop Explorer | p5.js | Understand (L2) |
 | [`ai-agent-roster-network`](TODO/ai-agent-roster-network.json) | Meet the Club's AI Agent Roster | vis-network | Understand (L2) |
 | [`ai-content-drafting-pipeline`](TODO/ai-content-drafting-pipeline.json) | From Draft to Delivered — AI Content Pipeline | Mermaid | Analyze (L4) |
-| [`human-in-the-loop-review-workflow`](TODO/human-in-the-loop-review-workflow.json) | Human-in-the-Loop Review Workflow | Mermaid | Evaluate (L5) |
+| :white_check_mark: [`human-in-the-loop-review-workflow`](human-in-the-loop-review-workflow/index.md) | Human-in-the-Loop Review Workflow | Mermaid | Evaluate (L5) |
 | [`mentor-recruiting-influence-graph`](TODO/mentor-recruiting-influence-graph.json) | Building and Reading an Influence Graph | vis-network | Analyze (L4) |
 | [`prompt-refinement-step-through`](TODO/prompt-refinement-step-through.json) | Prompt Refinement Step-Through | p5.js | Apply (L3) |
 | [`survey-sentiment-dashboard`](TODO/survey-sentiment-dashboard.json) | Survey Themes and Sentiment Dashboard | Chart.js | Analyze (L4) |
@@ -295,7 +295,7 @@ python3 ~/.claude/skills/microsim-utils/scripts/create-microsim-todo-json-files.
 | [`ai-lesson-customization-workflow`](TODO/ai-lesson-customization-workflow.json) | From Observation to Customized Lesson | Mermaid | Understand (L2) |
 | [`ai-tool-selection-radar`](TODO/ai-tool-selection-radar.json) | Comparing AI Tools Against Selection Criteria | Chart.js | Evaluate (L5) |
 | [`bias-privacy-risk-sorter`](TODO/bias-privacy-risk-sorter.json) | Bias Risk, Privacy Risk, or Neither? | p5.js | Evaluate (L5) |
-| [`coding-help-agent-handoff`](TODO/coding-help-agent-handoff.json) | Where a Coding-Help Request Goes | Mermaid | Analyze (L4) |
+| :white_check_mark: [`coding-help-agent-handoff`](coding-help-agent-handoff/index.md) | Where a Coding-Help Request Goes | Mermaid | Analyze (L4) |
 | [`generic-vs-ai-challenge-card`](TODO/generic-vs-ai-challenge-card.json) | Template Card vs. AI-Customized Card | p5.js | Analyze (L4) |
 | [`mentor-matching-schedule-optimizer`](TODO/mentor-matching-schedule-optimizer.json) | Matching Mentors and Optimizing a Schedule | vis-network | Analyze (L4) |
 | [`specialized-agent-roster`](TODO/specialized-agent-roster.json) | Meet the Specialized Agent Roster | vis-network | Understand (L2) |

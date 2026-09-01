@@ -194,7 +194,7 @@ The workflow below traces a grant from the moment a leader spots an opportunity 
 
 #### Diagram: Grant Writing and Tracking Workflow
 
-<iframe src="../../sims/grant-writing-tracking-workflow/main.html" width="100%" height="520px" scrolling="no"></iframe>
+<iframe src="../../sims/grant-writing-tracking-workflow/main.html" width="100%" height="802px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Grant Writing and Tracking Workflow</summary>

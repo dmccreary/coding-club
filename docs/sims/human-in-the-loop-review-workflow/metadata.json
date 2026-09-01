@@ -1,6 +1,6 @@
 {
   "title": "Human-in-the-Loop Review Workflow",
-  "description": "Given an AI agent's draft output, the learner determines whether it is ready to send by tracing it through the club's guardrail check, quality check, and human review steps.",
+  "description": "Trace an AI draft through a guardrail check, a human quality check, and the single moment a person actually sends it.",
   "creator": "Coding Club",
   "author": "Dan McCreary",
   "date": "2026-09-01",
@@ -15,9 +15,29 @@
   "library": "Mermaid",
   "bloomLevel": "Evaluate (L5)",
   "bloomVerb": "determine",
-  "completion_status": "scaffold",
+  "completion_status": "built",
+  "canvasHeight": 860,
   "chapter_number": 32,
   "chapter_title": "AI Agents for Registration, Scheduling, and Communication",
   "chapter_dir": "32-ai-agents-registration-scheduling",
-  "chapter_rel_dir": "chapters/32-ai-agents-registration-scheduling"
+  "chapter_rel_dir": "chapters/32-ai-agents-registration-scheduling",
+  "educational": {
+    "gradeLevel": "Middle School, High School, Adult",
+    "audience": "Club leaders using AI agents for communication",
+    "duration": "10-15 minutes",
+    "concepts": [
+      "Guardrails",
+      "Quality Check",
+      "Human Approval",
+      "AI Oversight",
+      "Drift"
+    ]
+  },
+  "pedagogical": {
+    "bloomLevel": "Evaluate (L5)",
+    "bloomVerb": "determine",
+    "learningObjective": "Given an AI agent's draft output, the learner determines whether it is ready to send by tracing it through the club's guardrail check, quality check, and human review steps.",
+    "interactionPattern": "Hover-to-preview and click-to-pin workflow with two gates, a shared rewrite loop, and a periodic oversight branch",
+    "assessment": "Ask which step is the one that actually causes a family to receive a message."
+  }
 }

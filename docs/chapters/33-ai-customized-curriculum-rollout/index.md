@@ -354,7 +354,7 @@ A worked example shows the supplement working as intended: a student submits a f
 
 #### Diagram: Where a Coding-Help Request Goes
 
-<iframe src="../../sims/coding-help-agent-handoff/main.html" width="100%" height="540px" scrolling="no"></iframe>
+<iframe src="../../sims/coding-help-agent-handoff/main.html" width="100%" height="762px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Where a Coding-Help Request Goes</summary>

@@ -1,0 +1,141 @@
+{
+  "title": "Human-in-the-Loop Review Workflow",
+  "height": 860,
+  "direction": "TD",
+  "nodes": [
+    {
+      "id": "Draft",
+      "shape": "round",
+      "cls": "retire",
+      "label": "Agent Produces<br/>a Draft",
+      "title": "Agent Produces a Draft",
+      "info": "Any of the seven agent types covered in this chapter, producing any kind of draft output."
+    },
+    {
+      "id": "Guardrail",
+      "shape": "diamond",
+      "cls": "wait",
+      "label": "Passes Guardrail<br/>Check?",
+      "title": "Passes Guardrail Check?",
+      "info": "An automated check for the club's fixed limits, such as never naming a specific student in a group message. It runs before a human ever sees the draft."
+    },
+    {
+      "id": "Rewrite",
+      "shape": "box",
+      "cls": "danger",
+      "label": "Automatic Rewrite<br/>Required",
+      "title": "Automatic Rewrite Required",
+      "info": "The draft never reaches a human reviewer in this form; the agent must produce a new draft. Both a guardrail failure and a quality failure land here."
+    },
+    {
+      "id": "Quality",
+      "shape": "box",
+      "cls": "doc",
+      "label": "Human Applies<br/>Quality Check",
+      "title": "Human Applies Quality Check",
+      "info": "A person runs the short repeatable checklist: accuracy, tone, no inappropriate student mentions, matches club voice."
+    },
+    {
+      "id": "QPass",
+      "shape": "diamond",
+      "cls": "wait",
+      "label": "Quality Check<br/>Passes?",
+      "title": "Quality Check Passes?",
+      "info": "The reviewer's honest judgement call, not a rubber stamp. A reviewer who never rejects anything is not reviewing."
+    },
+    {
+      "id": "Approve",
+      "shape": "box",
+      "cls": "resolve",
+      "label": "Human Approves<br/>and Sends",
+      "title": "Human Approves and Sends",
+      "info": "The single moment a person, not the agent, actually causes the message to reach a family."
+    },
+    {
+      "id": "Oversight",
+      "shape": "box",
+      "cls": "prep",
+      "label": "AI Agent Oversight",
+      "title": "AI Agent Oversight",
+      "info": "A periodic separate check -- monthly spot-checks of already-sent messages -- that catches drift the per-message steps might miss over time."
+    },
+    {
+      "id": "Received",
+      "shape": "round",
+      "cls": "retire",
+      "label": "Family Receives a<br/>Human-Approved Message",
+      "title": "Family Receives a Human-Approved Message",
+      "info": "Every message a family sees passed through this exact workflow, regardless of which agent drafted it."
+    }
+  ],
+  "edges": [
+    {
+      "from": "Draft",
+      "to": "Guardrail"
+    },
+    {
+      "from": "Guardrail",
+      "to": "Rewrite",
+      "label": "No"
+    },
+    {
+      "from": "Guardrail",
+      "to": "Quality",
+      "label": "Yes"
+    },
+    {
+      "from": "Rewrite",
+      "to": "Draft",
+      "label": "new draft"
+    },
+    {
+      "from": "Quality",
+      "to": "QPass"
+    },
+    {
+      "from": "QPass",
+      "to": "Rewrite",
+      "label": "No"
+    },
+    {
+      "from": "QPass",
+      "to": "Approve",
+      "label": "Yes"
+    },
+    {
+      "from": "Approve",
+      "to": "Received"
+    },
+    {
+      "from": "Approve",
+      "to": "Oversight",
+      "label": "sampled monthly"
+    }
+  ],
+  "legend": [
+    {
+      "cls": "retire",
+      "text": "Start and end"
+    },
+    {
+      "cls": "wait",
+      "text": "Check"
+    },
+    {
+      "cls": "danger",
+      "text": "Rewrite required"
+    },
+    {
+      "cls": "doc",
+      "text": "Human quality check"
+    },
+    {
+      "cls": "resolve",
+      "text": "Human approval"
+    },
+    {
+      "cls": "prep",
+      "text": "Ongoing oversight"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "title": "Grant Writing and Tracking Workflow",
+  "height": 802,
+  "library": "Mermaid",
+  "bloom": "Apply (L3)",
+  "verb": "implement",
+  "description": "From spotting an opportunity to logging the outcome -- and why every branch ends at the tracking spreadsheet.",
+  "concepts": [
+    "Grant Writing",
+    "Funder Language",
+    "Proposal Structure",
+    "Grant Tracking",
+    "Report Deadlines"
+  ],
+  "interaction": "Hover-to-preview and click-to-pin sequence with an outcome gate and two branches that converge on tracking",
+  "assessment": "Ask what happens after an award is logged, and why that is not the end.",
+  "audience": "First-time grant writers in a club",
+  "about": "A first grant application usually fails for a boring reason: the club described\nitself in its own words rather than the funder's. The second step here is the fix\n-- not inventing new activities, but describing the real ones using the funder's\nown stated priority terms.\n\nThe shape that matters is the ending. Both branches -- awarded and declined --\nconverge on **Update Tracking Spreadsheet**, and that is deliberate. An award is\nnot the finish line; it is the start of a set of report deadlines, each of which\nneeds its own tracked row. A missed report is the most common way a club loses a\nrenewal it had already won.\n\nA decline is not the end either. Most funders will give brief feedback if asked,\nand that feedback is the single most valuable thing an unsuccessful application\nproduces. Logging the decline without asking wastes it.\n\n{{CHAPTER}} covers the proposal structure itself.",
+  "howto": "- **Hover a step** to preview it; **click** to pin the details.\n- Follow both outcome branches to the same end node -- tracking closes every\n  path, not just the successful one.",
+  "lesson": "**Bloom level:** Apply (L3) -- *implement*\n\n**Learning objective:** Given a grant opportunity at any stage, the learner\ncorrectly identifies the next step in the club's grant-writing and tracking\nprocess.\n\n**Before the sim (5 min).** Ask whether the club has ever applied for a grant, and\nif so, where that application is recorded now. \"In someone's email\" is the common\nanswer and the problem.\n\n**With the sim (10 min).** Walk the sequence. Stop at **Submit** and note that\nlogging happens immediately, not later. Then walk both outcome branches and ask\nwhy the awarded branch has *more* work after it, not less.\n\n**After the sim (15 min).** Build the tracking spreadsheet: one row per\napplication, with columns for status, funder, deadline, and every report date.\n\n**Check for understanding.** Ask: \"You were awarded 2,000 dollars in March with a\nreport due in October. How many rows does that create?\" At least two, and knowing\nwhy is the objective met.",
+  "refs": "- {{CHAPTER}} -- the chapter this MicroSim supports.\n- [Club Financial Operations Cycle](../club-financial-operations-cycle/index.md) -- where the money goes once it arrives.\n- [Grant writing](https://en.wikipedia.org/wiki/Grant_writing) -- proposal structure and common pitfalls.\n- [Logic model](https://en.wikipedia.org/wiki/Logic_model) -- the framework behind most evaluation-plan sections.\n- [Grant (money)](https://en.wikipedia.org/wiki/Grant_(money)) -- how funders think about reporting obligations."
+}

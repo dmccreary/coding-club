@@ -1,0 +1,126 @@
+{
+  "title": "Where a Coding-Help Request Goes",
+  "height": 760,
+  "direction": "TD",
+  "nodes": [
+    {
+      "id": "Question",
+      "shape": "round",
+      "cls": "retire",
+      "label": "Student Has a<br/>Coding Question",
+      "title": "Student Has a Coding Question",
+      "info": "Something is not working, is not understood, or is ready for a second look."
+    },
+    {
+      "id": "Kind",
+      "shape": "diamond",
+      "cls": "wait",
+      "label": "What Kind of<br/>Help Is Needed?",
+      "title": "What Kind of Help Is Needed?",
+      "info": "Routes to one of three coding-help agents based on the actual need."
+    },
+    {
+      "id": "Debug",
+      "shape": "box",
+      "cls": "doc",
+      "label": "AI Assisted<br/>Debugging Help",
+      "title": "AI Assisted Debugging Help",
+      "info": "Suggests where a bug might be. It never fixes the code directly -- the student still makes the change."
+    },
+    {
+      "id": "Tutor",
+      "shape": "box",
+      "cls": "prep",
+      "label": "AI Tutor for<br/>Students",
+      "title": "AI Tutor for Students",
+      "info": "Asks a guiding question back rather than stating the answer, so the student arrives at it themselves."
+    },
+    {
+      "id": "Review",
+      "shape": "box",
+      "cls": "remediate",
+      "label": "AI Code Review<br/>Assistant",
+      "title": "AI Code Review Assistant",
+      "info": "Flags style-level issues before a peer code review session begins, so human review time goes to substance rather than formatting."
+    },
+    {
+      "id": "Mentor",
+      "shape": "box",
+      "cls": "resolve",
+      "label": "Mentor Present<br/>and Available",
+      "title": "Mentor Present and Available",
+      "info": "A mentor stays in the room for all three, ready to step in if the hint, suggestion, or flag is not landing."
+    },
+    {
+      "id": "Student",
+      "shape": "round",
+      "cls": "resolve",
+      "label": "Student Does the Actual<br/>Fixing, Answering, or Revising",
+      "title": "Student Does the Actual Fixing, Answering, or Revising",
+      "info": "The agent points; the student does the work. Any path where the agent produces the finished answer has failed, however good the answer is."
+    }
+  ],
+  "edges": [
+    {
+      "from": "Question",
+      "to": "Kind"
+    },
+    {
+      "from": "Kind",
+      "to": "Debug",
+      "label": "something is broken"
+    },
+    {
+      "from": "Kind",
+      "to": "Tutor",
+      "label": "something is not understood"
+    },
+    {
+      "from": "Kind",
+      "to": "Review",
+      "label": "ready for a second look"
+    },
+    {
+      "from": "Debug",
+      "to": "Mentor"
+    },
+    {
+      "from": "Tutor",
+      "to": "Mentor"
+    },
+    {
+      "from": "Review",
+      "to": "Mentor"
+    },
+    {
+      "from": "Mentor",
+      "to": "Student"
+    }
+  ],
+  "legend": [
+    {
+      "cls": "retire",
+      "text": "The question"
+    },
+    {
+      "cls": "wait",
+      "text": "Which kind of help"
+    },
+    {
+      "cls": "doc",
+      "text": "Debugging help"
+    },
+    {
+      "cls": "prep",
+      "text": "Tutor"
+    },
+    {
+      "cls": "remediate",
+      "text": "Code review assistant"
+    },
+    {
+      "cls": "resolve",
+      "text": "Human stays in the loop"
+    }
+  ]
+}

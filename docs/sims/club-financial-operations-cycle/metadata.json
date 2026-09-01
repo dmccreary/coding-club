@@ -1,6 +1,6 @@
 {
   "title": "Club Financial Operations Cycle",
-  "description": "Given a financial event (an expense, a reimbursement request, or a donation), the learner correctly identifies which operational step handles it next.",
+  "description": "Follow one dollar from the moment it is spent or given through to the annual budget review.",
   "creator": "Coding Club",
   "author": "Dan McCreary",
   "date": "2026-09-01",
@@ -15,9 +15,29 @@
   "library": "Mermaid",
   "bloomLevel": "Apply (L3)",
   "bloomVerb": "implement",
-  "completion_status": "scaffold",
+  "completion_status": "built",
+  "canvasHeight": 800,
   "chapter_number": 31,
   "chapter_title": "Tracking Expenses and Building Funding Partnerships",
   "chapter_dir": "31-expenses-and-funding-partnerships",
-  "chapter_rel_dir": "chapters/31-expenses-and-funding-partnerships"
+  "chapter_rel_dir": "chapters/31-expenses-and-funding-partnerships",
+  "educational": {
+    "gradeLevel": "Middle School, High School, Adult",
+    "audience": "Club treasurers and leaders",
+    "duration": "10-15 minutes",
+    "concepts": [
+      "Expense Reporting",
+      "Reimbursement Policy",
+      "Donation Receipt",
+      "Budget Tracking",
+      "Annual Review"
+    ]
+  },
+  "pedagogical": {
+    "bloomLevel": "Apply (L3)",
+    "bloomVerb": "implement",
+    "learningObjective": "Given a financial event (an expense, a reimbursement request, or a donation), the learner correctly identifies which operational step handles it next.",
+    "interactionPattern": "Hover-to-preview and click-to-pin cycle with an expense/donation split converging on the annual review",
+    "assessment": "Give a financial event and ask which path handles it and what document it produces."
+  }
 }

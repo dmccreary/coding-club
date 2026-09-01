@@ -1,0 +1,133 @@
+{
+  "title": "Club Financial Operations Cycle",
+  "height": 800,
+  "direction": "TD",
+  "nodes": [
+    {
+      "id": "Event",
+      "shape": "round",
+      "cls": "retire",
+      "label": "Financial Event<br/>Occurs",
+      "title": "Financial Event Occurs",
+      "info": "A mentor spends money, a family donates, or a grant cheque arrives -- the trigger for every step that follows."
+    },
+    {
+      "id": "Which",
+      "shape": "diamond",
+      "cls": "wait",
+      "label": "Expense or<br/>Donation?",
+      "title": "Expense or Donation?",
+      "info": "The two paths differ: an expense needs reimbursement, a donation needs a receipt."
+    },
+    {
+      "id": "FileExpense",
+      "shape": "box",
+      "cls": "resolve",
+      "label": "Mentor Files<br/>Expense Report",
+      "title": "Mentor Files Expense Report",
+      "info": "Date, amount, category, and an attached receipt or photo of one. The photo is the step mentors skip and the one an approver cannot proceed without."
+    },
+    {
+      "id": "CheckPolicy",
+      "shape": "box",
+      "cls": "resolve",
+      "label": "Checked Against<br/>Reimbursement Policy",
+      "title": "Checked Against Reimbursement Policy",
+      "info": "The approver confirms the expense is reimbursable, within the submission window, and under any approval threshold."
+    },
+    {
+      "id": "Reimburse",
+      "shape": "box",
+      "cls": "resolve",
+      "label": "Reimbursement Paid",
+      "title": "Reimbursement Paid",
+      "info": "Payment issued to the mentor, and the amount logged in the budget tracking spreadsheet against its matching category."
+    },
+    {
+      "id": "Receipt",
+      "shape": "box",
+      "cls": "remediate",
+      "label": "Donation Logged<br/>and Receipted",
+      "title": "Donation Logged and Receipted",
+      "info": "Donor name, amount or item, date, and a written acknowledgment provided. The acknowledgment is not a courtesy -- for many donors it is a tax document."
+    },
+    {
+      "id": "Recorded",
+      "shape": "box",
+      "cls": "doc",
+      "label": "Recorded in Tracking<br/>Spreadsheet",
+      "title": "Recorded in Tracking Spreadsheet",
+      "info": "Income row added, categorised to match the funding source it came from."
+    },
+    {
+      "id": "Annual",
+      "shape": "round",
+      "cls": "prep",
+      "label": "Rolled Into Annual<br/>Budget Review",
+      "title": "Rolled Into Annual Budget Review",
+      "info": "Every expense and every donation recorded this way becomes the actual-spending data the annual budget review compares against the original budget."
+    }
+  ],
+  "edges": [
+    {
+      "from": "Event",
+      "to": "Which"
+    },
+    {
+      "from": "Which",
+      "to": "FileExpense",
+      "label": "expense"
+    },
+    {
+      "from": "Which",
+      "to": "Receipt",
+      "label": "donation"
+    },
+    {
+      "from": "FileExpense",
+      "to": "CheckPolicy"
+    },
+    {
+      "from": "CheckPolicy",
+      "to": "Reimburse"
+    },
+    {
+      "from": "Receipt",
+      "to": "Recorded"
+    },
+    {
+      "from": "Reimburse",
+      "to": "Annual"
+    },
+    {
+      "from": "Recorded",
+      "to": "Annual"
+    }
+  ],
+  "legend": [
+    {
+      "cls": "retire",
+      "text": "The triggering event"
+    },
+    {
+      "cls": "wait",
+      "text": "Which kind"
+    },
+    {
+      "cls": "resolve",
+      "text": "Expense and reimbursement"
+    },
+    {
+      "cls": "remediate",
+      "text": "Donation and receipt"
+    },
+    {
+      "cls": "doc",
+      "text": "Recording"
+    },
+    {
+      "cls": "prep",
+      "text": "Annual roll-up"
+    }
+  ]
+}

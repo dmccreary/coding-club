@@ -1,0 +1,22 @@
+{
+  "title": "Club Financial Operations Cycle",
+  "height": 802,
+  "library": "Mermaid",
+  "bloom": "Apply (L3)",
+  "verb": "implement",
+  "description": "Follow one dollar from the moment it is spent or given through to the annual budget review.",
+  "concepts": [
+    "Expense Reporting",
+    "Reimbursement Policy",
+    "Donation Receipt",
+    "Budget Tracking",
+    "Annual Review"
+  ],
+  "interaction": "Hover-to-preview and click-to-pin cycle with an expense/donation split converging on the annual review",
+  "assessment": "Give a financial event and ask which path handles it and what document it produces.",
+  "audience": "Club treasurers and leaders",
+  "about": "Money moves through a club in two directions and each needs a different piece of\npaper. An expense needs a **reimbursement**; a donation needs a **receipt**. That\nis the only decision in this diagram, and getting it wrong is how mentors end up\nout of pocket and donors end up without their tax documentation.\n\nTwo steps are worth calling out because they are the ones that get skipped.\n\nOn the expense side, the attached receipt photo. An approver cannot check an\nexpense against policy without it, so a report filed without one is not a report\n-- it is a request to remember.\n\nOn the donation side, the written acknowledgment. It reads like a courtesy. For\nmany donors it is a tax document, and a club that does not send one reliably will\nfind that repeat donations quietly stop.\n\nBoth paths converge on the annual review, which is the only reason any of the\nrecording matters: it is what turns a year of transactions into a comparison\nagainst the budget the club actually set.",
+  "howto": "- **Hover a step** to preview it; **click** to pin the details.\n- The green path handles money going out; the orange path handles money coming\n  in. Both end at the same annual roll-up.",
+  "lesson": "**Bloom level:** Apply (L3) -- *implement*\n\n**Learning objective:** Given a financial event (an expense, a reimbursement\nrequest, or a donation), the learner correctly identifies which operational step\nhandles it next.\n\n**Before the sim (5 min).** Ask who in the club is currently owed money for\nsomething they bought. In most clubs at least one hand goes up, and the amount\nhas been outstanding for weeks.\n\n**With the sim (10 min).** Walk both branches. Ask what document each produces and\nwho it is for. Then ask what the annual review can say if neither was recorded.\n\n**After the sim (15 min).** Process one real backlogged expense and one real\ndonation, all the way through to a spreadsheet row.\n\n**Check for understanding.** Ask: \"A family donates a used laptop worth about 200\ndollars. Which branch, and what does the club produce?\" Donation branch, written\nacknowledgment, income row categorised to its source.",
+  "refs": "- {{CHAPTER}} -- the chapter this MicroSim supports.\n- [Grant Writing and Tracking Workflow](../grant-writing-tracking-workflow/index.md) -- where grant income enters this cycle.\n- [Expense report](https://en.wikipedia.org/wiki/Expense_report) -- the standard fields and why receipts matter.\n- [Bookkeeping](https://en.wikipedia.org/wiki/Bookkeeping) -- the practice this is a small instance of.\n- [Donation](https://en.wikipedia.org/wiki/Donation) -- acknowledgment requirements for charitable giving."
+}

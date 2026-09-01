@@ -1,0 +1,133 @@
+{
+  "title": "Grant Writing and Tracking Workflow",
+  "height": 800,
+  "direction": "TD",
+  "nodes": [
+    {
+      "id": "Identified",
+      "shape": "round",
+      "cls": "retire",
+      "label": "Grant Opportunity<br/>Identified",
+      "title": "Grant Opportunity Identified",
+      "info": "A foundation, company, or government program with funding priorities that plausibly match the club's mission."
+    },
+    {
+      "id": "Match",
+      "shape": "box",
+      "cls": "doc",
+      "label": "Match Club Facts to<br/>Funder's Language",
+      "title": "Match Club Facts to Funder's Language",
+      "info": "Rewrite the club's real activities using the funder's own stated priority terms. Not inventing new activities -- describing the existing ones in the words the reader is scanning for."
+    },
+    {
+      "id": "Draft",
+      "shape": "box",
+      "cls": "doc",
+      "label": "Draft Using Standard<br/>Proposal Structure",
+      "title": "Draft Using Standard Proposal Structure",
+      "info": "Needs statement, project description, budget, evaluation plan, organisational background."
+    },
+    {
+      "id": "Submit",
+      "shape": "box",
+      "cls": "doc",
+      "label": "Submit Before<br/>Deadline",
+      "title": "Submit Before Deadline",
+      "info": "Log the submission immediately in the tracking spreadsheet with status 'Submitted'. Logging it later means not logging it."
+    },
+    {
+      "id": "Response",
+      "shape": "diamond",
+      "cls": "wait",
+      "label": "Funder<br/>Response?",
+      "title": "Funder Response?",
+      "info": "Most funders reply within 4 to 12 weeks. If no reply by the funder's stated window, a tracked follow-up email is due."
+    },
+    {
+      "id": "Awarded",
+      "shape": "box",
+      "cls": "resolve",
+      "label": "Log Award and Any<br/>Report Deadlines",
+      "title": "Log Award and Any Report Deadlines",
+      "info": "Update status to 'Awarded' and add every required report deadline as its own tracked row, not just the grant deadline itself. A missed report is how a club loses a renewal."
+    },
+    {
+      "id": "Declined",
+      "shape": "box",
+      "cls": "remediate",
+      "label": "Log Outcome and<br/>Request Feedback",
+      "title": "Log Outcome and Request Feedback",
+      "info": "Update status to 'Declined'. Many funders will share brief feedback on request, which is the most useful thing a declined application produces."
+    },
+    {
+      "id": "Tracking",
+      "shape": "round",
+      "cls": "prep",
+      "label": "Update Tracking<br/>Spreadsheet",
+      "title": "Update Tracking Spreadsheet",
+      "info": "Every branch above ends here. The tracking step is what prevents a missed report or a forgotten reapplication next cycle."
+    }
+  ],
+  "edges": [
+    {
+      "from": "Identified",
+      "to": "Match"
+    },
+    {
+      "from": "Match",
+      "to": "Draft"
+    },
+    {
+      "from": "Draft",
+      "to": "Submit"
+    },
+    {
+      "from": "Submit",
+      "to": "Response"
+    },
+    {
+      "from": "Response",
+      "to": "Awarded",
+      "label": "awarded"
+    },
+    {
+      "from": "Response",
+      "to": "Declined",
+      "label": "declined"
+    },
+    {
+      "from": "Awarded",
+      "to": "Tracking"
+    },
+    {
+      "from": "Declined",
+      "to": "Tracking"
+    }
+  ],
+  "legend": [
+    {
+      "cls": "retire",
+      "text": "Opportunity spotted"
+    },
+    {
+      "cls": "doc",
+      "text": "Drafting and submission"
+    },
+    {
+      "cls": "wait",
+      "text": "Funder decision"
+    },
+    {
+      "cls": "resolve",
+      "text": "Awarded"
+    },
+    {
+      "cls": "remediate",
+      "text": "Declined"
+    },
+    {
+      "cls": "prep",
+      "text": "Tracking closes every branch"
+    }
+  ]
+}

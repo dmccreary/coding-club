@@ -65,7 +65,7 @@ A useful tracking spreadsheet needs only a handful of columns: date, description
 
 #### Diagram: Club Financial Operations Cycle
 
-<iframe src="../../sims/club-financial-operations-cycle/main.html" width="100%" height="520px" scrolling="no"></iframe>
+<iframe src="../../sims/club-financial-operations-cycle/main.html" width="100%" height="802px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Club Financial Operations Cycle</summary>

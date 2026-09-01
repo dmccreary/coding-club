@@ -483,7 +483,7 @@ A worked example shows a guardrail doing exactly its job: a club's guardrail sta
 
 #### Diagram: Human-in-the-Loop Review Workflow
 
-<iframe src="../../sims/human-in-the-loop-review-workflow/main.html" width="100%" height="560px" scrolling="no"></iframe>
+<iframe src="../../sims/human-in-the-loop-review-workflow/main.html" width="100%" height="862px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Human-in-the-Loop Review Workflow</summary>

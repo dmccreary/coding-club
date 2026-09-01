@@ -1,18 +1,79 @@
 ---
 title: Human-in-the-Loop Review Workflow
-description: Given an AI agent's draft output, the learner determines whether it is ready to send by tracing it through the club's guardrail check, quality check, and human review steps.
-status: scaffold
+description: Trace an AI draft through a guardrail check, a human quality check, and the single moment a person actually sends it.
+image: sims/human-in-the-loop-review-workflow/human-in-the-loop-review-workflow.png
+status: built
 library: Mermaid
 bloom_level: Evaluate (L5)
 ---
 
 # Human-in-the-Loop Review Workflow
 
+<iframe src="main.html" width="100%" height="862" scrolling="no"></iframe>
 
+[Run the Human-in-the-Loop Review Workflow MicroSim fullscreen](main.html){ .md-button .md-button--primary }
 
-<iframe src="main.html" width="100%" height="600"></iframe>
+## About This MicroSim
 
-[Run MicroSim in Fullscreen](main.html){ .md-button .md-button--primary }
+Four practices that are usually taught as four separate rules are one system, and
+this is its shape.
+
+The **guardrail check** is automated and runs first, before any human time is
+spent. It enforces the club's fixed limits -- never naming a specific student in
+a group message, for instance. A draft that fails never reaches a reviewer.
+
+The **quality check** is a person with a short checklist: accuracy, tone, no
+inappropriate student mentions, matches club voice. The panel text says it
+plainly -- a reviewer who never rejects anything is not reviewing.
+
+Both failures land on the same rewrite node and loop back. That shared path is
+the point: the agent gets another turn, and no partly-fixed draft slips forward.
+
+**Human approves and sends** is the load-bearing node. It is the single moment a
+person, not an agent, causes a message to reach a family. And **oversight** hangs
+off it as a periodic sample, because per-message checks cannot catch drift that
+only shows up across dozens of messages.
+
+## How to Use
+
+- **Hover a step** to preview it; **click** to pin the details.
+- Both the guardrail and quality failures route to the same rewrite node, which
+  loops back to a new draft.
+- The oversight branch is sampled monthly rather than run per message.
+
+## Lesson Plan
+
+**Bloom level:** Evaluate (L5) -- *determine*
+
+**Learning objective:** Given an AI agent's draft output, the learner determines
+whether it is ready to send by tracing it through the club's guardrail check,
+quality check, and human review steps.
+
+**Before the sim (5 min).** Show an AI-drafted club message that reads well and
+names a student. Ask whether it is ready to send. The plausible tone is exactly
+what makes the guardrail necessary.
+
+**With the sim (15 min).** Trace a passing draft, then a guardrail failure, then a
+quality failure. Ask what the two failures have in common -- both produce a new
+draft, neither produces a patched one.
+
+**After the sim (15 min).** Write the club's guardrail list (fixed, automatable
+limits) and its quality checklist (human judgement) as two separate documents,
+because they are two separate things.
+
+**Check for understanding.** Ask: "Which single step in this diagram, if removed,
+means an unreviewed message could reach a family?" Human approves and sends -- and
+recognising that the automated guardrail is not a substitute for it is the
+evaluation this objective asks for.
+
+## Embedding This MicroSim
+
+Paste this into any page of the book, adjusting the relative path to
+`docs/sims/` for the page's depth:
+
+```html
+<iframe src="../../sims/human-in-the-loop-review-workflow/main.html" width="100%" height="862" scrolling="no"></iframe>
+```
 
 ## Specification
 
@@ -51,6 +112,10 @@ Color coding: Gray for start and end states, purple for decision diamonds, red f
 Implementation: Mermaid flowchart (`graph TD`) rendered in main.html with `click NodeId call showInfo("NodeId")` directives for every node, opening a side-panel infobox; the oversight node is drawn with a dashed border and a separate connecting line to signal it runs alongside the per-message flow rather than as a step within it.
 ```
 
-## Related Resources
+## References
 
-- [Chapter 32: AI Agents for Registration, Scheduling, and Communication](../../chapters/32-ai-agents-registration-scheduling/index.md)
+- [Chapter 32: AI Agents for Registration, Scheduling, and Communication](../../chapters/32-ai-agents-registration-scheduling/index.md) -- the chapter this MicroSim supports.
+- [Where a Coding-Help Request Goes](../coding-help-agent-handoff/index.md) -- the same principle applied to student-facing agents.
+- [Human-in-the-loop](https://en.wikipedia.org/wiki/Human-in-the-loop) -- the general control pattern.
+- [AI alignment](https://en.wikipedia.org/wiki/AI_alignment) -- why guardrails and oversight are separate mechanisms.
+- [Quality assurance](https://en.wikipedia.org/wiki/Quality_assurance) -- sampling already-shipped work to catch drift.
