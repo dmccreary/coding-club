@@ -268,6 +268,8 @@ Many of the hands-on project recommended in this textbook draw on other related 
 - [Robot Faces](../../robot-faces/) - an extensive textbook on drawing on small OLED and Smartwatch displays.  The displays are all under $20 and students learn many ideas in computational thinking by learning how to program faces with emotions.
 - [Signal Processing on a $5 MicroController](../../fft-benchmarking/) - this fun kit allows students to connect a high-quality microphone to a microcontroller that can process sound in real-time and display the frequency spectrum.  The textbook has labs that are fun for students as young as 8 years old but also has advanced signal processing content suitable for high-school and college students
 - [STEM Classroom Administration](../../stem-classroom-admin/) - a textbook on how to managed different types of classroom computers with a focus on using the USB ports on Chromebooks in the developer mode
+- [Raspberry Pi STEM](../../raspberry-pi-stem) - a textbook with an overview of projects
+for different Raspberry Pi Hardware from the $4 Pico up to the $200 Raspberry Pi 500+ keyboard.
 
 
 Note: Our textbook on Learning Scratch is under development.
