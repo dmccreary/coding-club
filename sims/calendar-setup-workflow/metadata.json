@@ -1,6 +1,6 @@
 {
   "title": "Club Calendar Setup Workflow",
-  "description": "The learner sequences the steps required to set up a new shared club calendar correctly the first time.",
+  "description": "The five one-time steps that set up a shared club calendar correctly, in the order that avoids rework.",
   "creator": "Coding Club",
   "author": "Dan McCreary",
   "date": "2026-09-01",
@@ -15,9 +15,28 @@
   "library": "Mermaid",
   "bloomLevel": "Apply (L3)",
   "bloomVerb": "sequence",
-  "completion_status": "scaffold",
+  "completion_status": "built",
+  "canvasHeight": 640,
   "chapter_number": 24,
   "chapter_title": "Tracking Student Data and Managing Club Communication",
   "chapter_dir": "24-student-data-and-communication",
-  "chapter_rel_dir": "chapters/24-student-data-and-communication"
+  "chapter_rel_dir": "chapters/24-student-data-and-communication",
+  "educational": {
+    "gradeLevel": "Middle School, High School, Adult",
+    "audience": "Club leaders setting up communications",
+    "duration": "10-15 minutes",
+    "concepts": [
+      "Shared Calendar",
+      "Recurring Event",
+      "Calendar Visibility",
+      "Club Communication"
+    ]
+  },
+  "pedagogical": {
+    "bloomLevel": "Apply (L3)",
+    "bloomVerb": "sequence",
+    "learningObjective": "The learner sequences the steps required to set up a new shared club calendar correctly the first time.",
+    "interactionPattern": "Hover-to-preview and click-to-pin linear sequence",
+    "assessment": "Ask what goes wrong if the link is shared before visibility is set."
+  }
 }

@@ -1,6 +1,6 @@
 {
   "title": "Kit Lifecycle Workflow",
-  "description": "Given a kit's current lifecycle stage and its damage-assessment outcome, the learner differentiates whether the kit should be reused as-is, sent down an upgrade path, or retired.",
+  "description": "Follow one kit from a gap on the shelf through purchase, prep, circulation, and the three-way decision that decides its fate.",
   "creator": "Coding Club",
   "author": "Dan McCreary",
   "date": "2026-09-01",
@@ -15,9 +15,30 @@
   "library": "Mermaid",
   "bloomLevel": "Analyze (L4)",
   "bloomVerb": "differentiate",
-  "completion_status": "scaffold",
+  "completion_status": "built",
+  "canvasHeight": 1040,
   "chapter_number": 21,
   "chapter_title": "Managing Your Kit Inventory and Signal Processing Kits",
   "chapter_dir": "21-kit-inventory-signal-processing",
-  "chapter_rel_dir": "chapters/21-kit-inventory-signal-processing"
+  "chapter_rel_dir": "chapters/21-kit-inventory-signal-processing",
+  "educational": {
+    "gradeLevel": "Middle School, High School, Adult",
+    "audience": "Club leaders and mentors managing a kit shelf",
+    "duration": "10-15 minutes",
+    "concepts": [
+      "Kit Vendor Selection",
+      "Kit Documentation Sheet",
+      "Kit Storage Bin",
+      "Kit Loaner Program",
+      "Kit Damage Assessment",
+      "Kit Upgrade Path"
+    ]
+  },
+  "pedagogical": {
+    "bloomLevel": "Analyze (L4)",
+    "bloomVerb": "differentiate",
+    "learningObjective": "Given a kit's current lifecycle stage and its damage-assessment outcome, the learner differentiates whether the kit should be reused as-is, sent down an upgrade path, or retired.",
+    "interactionPattern": "Hover-to-preview and click-to-pin lifecycle map with two decision points and three loops back into circulation",
+    "assessment": "Give a returned kit with a bent but reseatable pin and ask which branch it takes and where it rejoins the loop."
+  }
 }

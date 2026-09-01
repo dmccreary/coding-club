@@ -3,114 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- microsim-scaffold-stub -->
+    <meta name="schema" content="https://dmccreary.github.io/intelligent-textbooks/ns/microsim/v1">
     <title>Student Progress Tracking Cycle</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: #f8f9fa;
-            color: #212529;
-        }
-        #container {
-            width: 100%;
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 20px;
-            background: white;
-        }
-        h1 {
-            font-size: 22px;
-            margin-bottom: 10px;
-            color: #1a3a6c;
-        }
-        .placeholder {
-            border: 2px dashed #adb5bd;
-            border-radius: 8px;
-            padding: 40px 20px;
-            text-align: center;
-            color: #6c757d;
-            margin: 20px 0;
-            min-height: 400px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        .placeholder .badge {
-            display: inline-block;
-            background: #ffc107;
-            color: #212529;
-            padding: 4px 12px;
-            border-radius: 12px;
-            font-size: 12px;
-            font-weight: 600;
-            margin-bottom: 12px;
-        }
-        .placeholder h2 {
-            font-size: 18px;
-            color: #495057;
-            margin-bottom: 8px;
-        }
-        .placeholder p {
-            font-size: 14px;
-            max-width: 480px;
-        }
-        .meta {
-            margin-top: 20px;
-            font-size: 13px;
-            color: #6c757d;
-            border-top: 1px solid #dee2e6;
-            padding-top: 12px;
-        }
-        .meta strong { color: #495057; }
-    </style>
+    <script type="module">
+        import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+        mermaid.initialize({
+            startOnLoad: true,
+            theme: 'default',
+            flowchart: {
+                useMaxWidth: true,
+                htmlLabels: true,
+                curve: 'basis',
+                subGraphTitleMargin: { top: 10, bottom: 14 }
+            }
+        });
+    </script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="container">
-        <h1>Student Progress Tracking Cycle</h1>
-        <div class="placeholder">
-            <span class="badge">SCAFFOLD</span>
-            <h2>MicroSim Not Yet Implemented</h2>
-            <p>This MicroSim has been scaffolded from its specification but the
-            interactive content has not been built yet. See the chapter source
-            and the <code>index.md</code> in this directory for the full spec.</p>
+<main>
+    <div class="container">
+        <div class="diagram-panel">
+            <div class="mermaid">
+flowchart LR
+    Observe["Observe"]:::docNode
+    Record["Record"]:::prepNode
+    ReviewStep["Review"]:::resolveNode
+    Adjust["Adjust"]:::remediateNode
+
+    Observe --> Record
+    Record --> ReviewStep
+    ReviewStep --> Adjust
+    Adjust -->|cycle repeats| Observe
+
+    classDef docNode fill:#4A90D9,stroke:#2E6BA8,stroke-width:2px,color:#fff,font-size:16px
+    classDef prepNode fill:#F5A623,stroke:#B87B12,stroke-width:2px,color:#333,font-size:16px
+    classDef resolveNode fill:#3E9E6E,stroke:#256E4A,stroke-width:2px,color:#fff,font-size:16px
+    classDef remediateNode fill:#E8833A,stroke:#A85718,stroke-width:2px,color:#fff,font-size:16px
+
+    linkStyle default stroke:#7A8A99,stroke-width:2px,font-size:16px
+            </div>
         </div>
-        <div class="meta">
-            <p><strong>Sim ID:</strong> progress-tracking-cycle</p>
-            <p><strong>Library:</strong> Mermaid</p>
-            <p><strong>Bloom Level:</strong> Understand (L2)</p>
-            <p><strong>Learning Objective:</strong> The learner explains what happens at each stage of the ongoing progress-tracking cycle.</p>
+        <div class="info-panel">
+            <h3>Step Details</h3>
+            <div id="info-display">
+                <p class="info-placeholder">Hover a step to preview it, or click a step to pin its details here.</p>
+                <div class="legend">
+                    <div class="legend-item"><span class="swatch sw-doc"></span>Observe</div>
+                    <div class="legend-item"><span class="swatch sw-prep"></span>Record</div>
+                    <div class="legend-item"><span class="swatch sw-resolve"></span>Review</div>
+                    <div class="legend-item"><span class="swatch sw-remediate"></span>Adjust</div>
+                </div>
+            </div>
+
         </div>
     </div>
+</main>
 
-    <!--
-    SPECIFICATION (from chapter index.md):
-
-    Type: workflow
-    **sim-id:** progress-tracking-cycle<br/>
-    **Library:** Mermaid<br/>
-    **Status:** Specified
-    **Template:** https://github.com/dmccreary/reading-for-kindergarten/tree/main/docs/sims/reading-progress-path
-    
-    Purpose: Show the repeating cycle a mentor follows to keep a student's tracked progress current, so the practice reads as an ongoing habit rather than a one-time form to fill out.
-    
-    Bloom Taxonomy: Understand (L2)
-    Bloom Taxonomy Verb: explain
-    
-    Learning objective: The learner explains what happens at each stage of the ongoing progress-tracking cycle.
-    
-    Steps (circular flowchart):
-    1. "Observe" -- click reveals "A mentor watches a student work through a challenge card or kit during a session."
-    2. "Record" -- click reveals "The mentor marks the completed skill or badge in the tracking sheet before the session ends."
-    3. "Review" -- click reveals "Before the next session, a mentor -- often a different one -- reviews the student's row to see what's already mastered."
-    4. "Adjust" -- click reveals "The mentor picks the next appropriate challenge card based on what the record shows, then the cycle repeats at 'Observe.'"
-    
-    Interactivity requirement (satisfied): every node has a Mermaid `click` directive tied to an infobox showing its revealed text.
-    
-    Color coding: Four evenly spaced colors around the cycle, with an arrow from "Adjust" back to "Observe" to make the repeating nature visible.
-    
-    Implementation: Mermaid flowchart (`graph LR` arranged to suggest a loop, with an explicit arrow from the last node back to the first) rendered in main.html with `click NodeId call showInfo("NodeId")` directives for every node.
-    -->
+    <!-- Node information data - one entry per node in the flowchart above -->
+    <script>
+        const nodeInfo = {
+            "Observe": {
+                title: "Observe",
+                description: "A mentor watches a student work through a challenge card or kit during a session."
+            },
+            "Record": {
+                title: "Record",
+                description: "The mentor marks the completed skill or badge in the tracking sheet before the session ends -- not on the drive home, when the detail is already gone."
+            },
+            "ReviewStep": {
+                title: "Review",
+                description: "Before the next session, a mentor -- often a different one -- reviews the student's row to see what is already mastered."
+            },
+            "Adjust": {
+                title: "Adjust",
+                description: "The mentor picks the next appropriate challenge card based on what the record shows, then the cycle repeats at Observe."
+            }
+        };
+    </script>
+    <!-- Load interaction script after nodeInfo is defined -->
+    <script src="script.js"></script>
 </body>
 </html>

@@ -1,6 +1,6 @@
 {
   "title": "Message Channel Decision Tree",
-  "description": "Given a message's urgency and audience, the learner determines which communication channel is appropriate.",
+  "description": "Two questions decide whether a message goes to the group chat, to email, or either.",
   "creator": "Coding Club",
   "author": "Dan McCreary",
   "date": "2026-09-01",
@@ -15,9 +15,28 @@
   "library": "Mermaid",
   "bloomLevel": "Evaluate (L5)",
   "bloomVerb": "determine",
-  "completion_status": "scaffold",
+  "completion_status": "built",
+  "canvasHeight": 660,
   "chapter_number": 24,
   "chapter_title": "Tracking Student Data and Managing Club Communication",
   "chapter_dir": "24-student-data-and-communication",
-  "chapter_rel_dir": "chapters/24-student-data-and-communication"
+  "chapter_rel_dir": "chapters/24-student-data-and-communication",
+  "educational": {
+    "gradeLevel": "Middle School, High School, Adult",
+    "audience": "Mentors and club leaders sending messages",
+    "duration": "10-15 minutes",
+    "concepts": [
+      "Communication Channel",
+      "Urgency",
+      "Searchable Record",
+      "Club Communication"
+    ]
+  },
+  "pedagogical": {
+    "bloomLevel": "Evaluate (L5)",
+    "bloomVerb": "determine",
+    "learningObjective": "Given a message's urgency and audience, the learner determines which communication channel is appropriate.",
+    "interactionPattern": "Hover-to-preview and click-to-pin two-question decision tree with three outcomes",
+    "assessment": "Give three messages of differing urgency and ask which channel each takes."
+  }
 }

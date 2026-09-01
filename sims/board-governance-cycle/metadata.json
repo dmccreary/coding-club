@@ -1,6 +1,6 @@
 {
   "title": "Board Governance Cycle",
-  "description": "Given a board's current state, the learner differentiates the routine seat-rotation cycle from the one-time succession-plan trigger that a founder's departure activates.",
+  "description": "The routine seat-rotation cycle a board runs on, and the separate trigger a founder's departure fires.",
   "creator": "Coding Club",
   "author": "Dan McCreary",
   "date": "2026-09-01",
@@ -15,9 +15,29 @@
   "library": "Mermaid",
   "bloomLevel": "Analyze (L4)",
   "bloomVerb": "differentiate",
-  "completion_status": "scaffold",
+  "completion_status": "built",
+  "canvasHeight": 820,
   "chapter_number": 34,
   "chapter_title": "Establishing an Oversight Board and Inventory System",
   "chapter_dir": "34-oversight-board-and-inventory",
-  "chapter_rel_dir": "chapters/34-oversight-board-and-inventory"
+  "chapter_rel_dir": "chapters/34-oversight-board-and-inventory",
+  "educational": {
+    "gradeLevel": "Middle School, High School, Adult",
+    "audience": "Club board members and founders",
+    "duration": "10-15 minutes",
+    "concepts": [
+      "Board Recruitment",
+      "Board Roles",
+      "Meeting Cadence",
+      "Term Limits",
+      "Succession Planning"
+    ]
+  },
+  "pedagogical": {
+    "bloomLevel": "Analyze (L4)",
+    "bloomVerb": "differentiate",
+    "learningObjective": "Given a board's current state, the learner differentiates the routine seat-rotation cycle from the one-time succession-plan trigger that a founder's departure activates.",
+    "interactionPattern": "Hover-to-preview and click-to-pin cycle with a term-limit loop plus a separate departure trigger",
+    "assessment": "Ask which part of the diagram runs every year and which runs once, and what fires each."
+  }
 }

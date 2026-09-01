@@ -1,6 +1,6 @@
 {
   "title": "Grant Writing and Tracking Workflow",
-  "description": "Given a grant opportunity at any stage, the learner correctly identifies the next step in the club's grant-writing and tracking process.",
+  "description": "From spotting an opportunity to logging the outcome -- and why every branch ends at the tracking spreadsheet.",
   "creator": "Coding Club",
   "author": "Dan McCreary",
   "date": "2026-09-01",
@@ -15,9 +15,29 @@
   "library": "Mermaid",
   "bloomLevel": "Apply (L3)",
   "bloomVerb": "implement",
-  "completion_status": "scaffold",
+  "completion_status": "built",
+  "canvasHeight": 800,
   "chapter_number": 30,
   "chapter_title": "Budgeting, Fundraising, and Grant Writing",
   "chapter_dir": "30-budgeting-fundraising-grants",
-  "chapter_rel_dir": "chapters/30-budgeting-fundraising-grants"
+  "chapter_rel_dir": "chapters/30-budgeting-fundraising-grants",
+  "educational": {
+    "gradeLevel": "Middle School, High School, Adult",
+    "audience": "First-time grant writers in a club",
+    "duration": "10-15 minutes",
+    "concepts": [
+      "Grant Writing",
+      "Funder Language",
+      "Proposal Structure",
+      "Grant Tracking",
+      "Report Deadlines"
+    ]
+  },
+  "pedagogical": {
+    "bloomLevel": "Apply (L3)",
+    "bloomVerb": "implement",
+    "learningObjective": "Given a grant opportunity at any stage, the learner correctly identifies the next step in the club's grant-writing and tracking process.",
+    "interactionPattern": "Hover-to-preview and click-to-pin sequence with an outcome gate and two branches that converge on tracking",
+    "assessment": "Ask what happens after an award is logged, and why that is not the end."
+  }
 }

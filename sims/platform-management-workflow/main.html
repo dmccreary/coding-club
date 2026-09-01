@@ -3,116 +3,108 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- microsim-scaffold-stub -->
+    <meta name="schema" content="https://dmccreary.github.io/intelligent-textbooks/ns/microsim/v1">
     <title>Platform Management Workflow</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: #f8f9fa;
-            color: #212529;
-        }
-        #container {
-            width: 100%;
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 20px;
-            background: white;
-        }
-        h1 {
-            font-size: 22px;
-            margin-bottom: 10px;
-            color: #1a3a6c;
-        }
-        .placeholder {
-            border: 2px dashed #adb5bd;
-            border-radius: 8px;
-            padding: 40px 20px;
-            text-align: center;
-            color: #6c757d;
-            margin: 20px 0;
-            min-height: 400px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        .placeholder .badge {
-            display: inline-block;
-            background: #ffc107;
-            color: #212529;
-            padding: 4px 12px;
-            border-radius: 12px;
-            font-size: 12px;
-            font-weight: 600;
-            margin-bottom: 12px;
-        }
-        .placeholder h2 {
-            font-size: 18px;
-            color: #495057;
-            margin-bottom: 8px;
-        }
-        .placeholder p {
-            font-size: 14px;
-            max-width: 480px;
-        }
-        .meta {
-            margin-top: 20px;
-            font-size: 13px;
-            color: #6c757d;
-            border-top: 1px solid #dee2e6;
-            padding-top: 12px;
-        }
-        .meta strong { color: #495057; }
-    </style>
+    <script type="module">
+        import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+        mermaid.initialize({
+            startOnLoad: true,
+            theme: 'default',
+            flowchart: {
+                useMaxWidth: true,
+                htmlLabels: true,
+                curve: 'basis',
+                subGraphTitleMargin: { top: 10, bottom: 14 }
+            }
+        });
+    </script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="container">
-        <h1>Platform Management Workflow</h1>
-        <div class="placeholder">
-            <span class="badge">SCAFFOLD</span>
-            <h2>MicroSim Not Yet Implemented</h2>
-            <p>This MicroSim has been scaffolded from its specification but the
-            interactive content has not been built yet. See the chapter source
-            and the <code>index.md</code> in this directory for the full spec.</p>
+<main>
+    <div class="container">
+        <div class="diagram-panel">
+            <div class="mermaid">
+flowchart TD
+    Arrives("New Laptop<br/>Arrives"):::retireNode
+    Config["Laptop<br/>Configuration"]:::prepNode
+    Platform{"Which<br/>Platform?"}:::waitNode
+    Chromebook["Chromebook<br/>Management"]:::docNode
+    Windows["Windows Device<br/>Management"]:::resolveNode
+    MacOS["macOS Device<br/>Management"]:::remediateNode
+    Ready("Ready for<br/>Student Login"):::retireNode
+
+    Arrives --> Config
+    Config --> Platform
+    Platform -->|Chromebook| Chromebook
+    Platform -->|Windows| Windows
+    Platform -->|macOS| MacOS
+    Chromebook --> Ready
+    Windows --> Ready
+    MacOS --> Ready
+
+    classDef retireNode fill:#5B7186,stroke:#33475B,stroke-width:2px,color:#fff,font-size:16px
+    classDef prepNode fill:#F5A623,stroke:#B87B12,stroke-width:2px,color:#333,font-size:16px
+    classDef waitNode fill:#8E7CC3,stroke:#5B4B8A,stroke-width:2px,color:#fff,font-size:16px
+    classDef docNode fill:#4A90D9,stroke:#2E6BA8,stroke-width:2px,color:#fff,font-size:16px
+    classDef resolveNode fill:#3E9E6E,stroke:#256E4A,stroke-width:2px,color:#fff,font-size:16px
+    classDef remediateNode fill:#E8833A,stroke:#A85718,stroke-width:2px,color:#fff,font-size:16px
+
+    linkStyle default stroke:#7A8A99,stroke-width:2px,font-size:16px
+            </div>
         </div>
-        <div class="meta">
-            <p><strong>Sim ID:</strong> platform-management-workflow</p>
-            <p><strong>Library:</strong> Mermaid</p>
-            <p><strong>Bloom Level:</strong> Analyze (L4)</p>
-            <p><strong>Learning Objective:</strong> Given a newly purchased laptop's platform, the learner differentiates the configuration and ongoing management path it will follow among Chromebook, Windows, and macOS management.</p>
+        <div class="info-panel">
+            <h3>Step Details</h3>
+            <div id="info-display">
+                <p class="info-placeholder">Hover a step to preview it, or click a step to pin its details here.</p>
+                <div class="legend">
+                    <div class="legend-item"><span class="swatch sw-retire"></span>Start and end</div>
+                    <div class="legend-item"><span class="swatch sw-prep"></span>Shared configuration</div>
+                    <div class="legend-item"><span class="swatch sw-wait"></span>Platform decision</div>
+                    <div class="legend-item"><span class="swatch sw-doc"></span>Chromebook path</div>
+                    <div class="legend-item"><span class="swatch sw-resolve"></span>Windows path</div>
+                    <div class="legend-item"><span class="swatch sw-remediate"></span>macOS path</div>
+                </div>
+            </div>
+
         </div>
     </div>
+</main>
 
-    <!--
-    SPECIFICATION (from chapter index.md):
-
-    Type: workflow
-    **sim-id:** platform-management-workflow<br/>
-    **Library:** Mermaid<br/>
-    **Status:** Specified
-    
-    Purpose: Show how one newly arrived laptop moves through initial configuration and then splits into one of three platform-specific management paths, so a mentor can see where their own fleet's laptops fit.
-    
-    Bloom Taxonomy: Analyze (L4)
-    Bloom Taxonomy Verb: differentiate
-    
-    Learning objective: Given a newly purchased laptop's platform, the learner differentiates the configuration and ongoing management path it will follow among Chromebook, Windows, and macOS management.
-    
-    Steps (flowchart with a decision diamond):
-    1. Start: "New Laptop Arrives" -- click reveals "A laptop as it arrives from a vendor, before any club-specific setup has been applied."
-    2. Process: "Laptop Configuration" -- click reveals the Laptop Configuration definition above.
-    3. Decision: "Which Platform?" -- click reveals "The laptop's operating system determines which management path and console it will use for the rest of its service life."
-    4a. Branch "Chromebook" leads to "Chromebook Management" -- click reveals the Chromebook Management definition above.
-    4b. Branch "Windows" leads to "Windows Device Management" -- click reveals the Windows Device Management definition above.
-    4c. Branch "macOS" leads to "MacOS Device Management" -- click reveals the MacOS Device Management definition above.
-    5. All three branches converge on End: "Ready for Student Login" -- click reveals "Once its platform-specific management is in place, the laptop is ready to receive the student account setup covered next in this chapter."
-    
-    Interactivity requirement (satisfied): every node has a Mermaid `click` directive tied to an infobox showing its revealed text, matching the definition already given in this chapter's prose.
-    
-    Color coding: Gray for the start node, amber for the shared configuration step, purple for the decision diamond, blue/green/orange for the Chromebook/Windows/macOS branches respectively, gray for the converged end state.
-    
-    Implementation: Mermaid flowchart (`graph TD`) rendered in main.html with `click NodeId call showInfo("NodeId")` directives for every node, opening a side-panel infobox; a "Reset View" button re-centers the diagram after any zoom or pan.
-    -->
+    <!-- Node information data - one entry per node in the flowchart above -->
+    <script>
+        const nodeInfo = {
+            "Arrives": {
+                title: "New Laptop Arrives",
+                description: "A laptop as it arrives from a vendor, before any club-specific setup has been applied."
+            },
+            "Config": {
+                title: "Laptop Configuration",
+                description: "The shared setup every club machine gets regardless of platform: accounts, network, the tools the curriculum needs, and the restrictions the club's policy requires."
+            },
+            "Platform": {
+                title: "Which Platform?",
+                description: "The laptop's operating system determines which management path and console it will use for the rest of its service life."
+            },
+            "Chromebook": {
+                title: "Chromebook Management",
+                description: "Managed through the Google Admin console: enrolment ties the device to the club's domain, and policy is pushed centrally. The lowest-effort path, which is why so many clubs standardise on it."
+            },
+            "Windows": {
+                title: "Windows Device Management",
+                description: "Managed through Windows tooling such as Intune or local group policy. More configurable than a Chromebook and correspondingly more work to keep consistent across a fleet."
+            },
+            "MacOS": {
+                title: "macOS Device Management",
+                description: "Managed through Apple Business Manager and an MDM profile. Common in clubs that inherited donated Macs rather than choosing them."
+            },
+            "Ready": {
+                title: "Ready for Student Login",
+                description: "Once platform-specific management is in place, the laptop is ready to receive the student account setup covered next in this chapter."
+            }
+        };
+    </script>
+    <!-- Load interaction script after nodeInfo is defined -->
+    <script src="script.js"></script>
 </body>
 </html>

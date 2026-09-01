@@ -1,6 +1,6 @@
 {
   "title": "Feedback Loop Cycle",
-  "description": "The learner explains what happens at each stage of a closed feedback loop, and why skipping the last stage undermines the whole cycle.",
+  "description": "The four stages that keep survey responses from disappearing into an unread inbox -- and why the last one is the load-bearing stage.",
   "creator": "Coding Club",
   "author": "Dan McCreary",
   "date": "2026-09-01",
@@ -15,9 +15,28 @@
   "library": "Mermaid",
   "bloomLevel": "Understand (L2)",
   "bloomVerb": "explain",
-  "completion_status": "scaffold",
+  "completion_status": "built",
+  "canvasHeight": 400,
   "chapter_number": 24,
   "chapter_title": "Tracking Student Data and Managing Club Communication",
   "chapter_dir": "24-student-data-and-communication",
-  "chapter_rel_dir": "chapters/24-student-data-and-communication"
+  "chapter_rel_dir": "chapters/24-student-data-and-communication",
+  "educational": {
+    "gradeLevel": "Middle School, High School, Adult",
+    "audience": "Club leaders running surveys",
+    "duration": "10-15 minutes",
+    "concepts": [
+      "Feedback Loop",
+      "Post-Event Survey",
+      "Closing the Loop",
+      "Response Rate"
+    ]
+  },
+  "pedagogical": {
+    "bloomLevel": "Understand (L2)",
+    "bloomVerb": "explain",
+    "learningObjective": "The learner explains what happens at each stage of a closed feedback loop, and why skipping the last stage undermines the whole cycle.",
+    "interactionPattern": "Hover-to-preview and click-to-pin four-stage cycle with an explicit return arrow",
+    "assessment": "Ask what happens to next term's response rate if the club never reports back."
+  }
 }

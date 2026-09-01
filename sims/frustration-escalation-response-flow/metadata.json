@@ -1,6 +1,6 @@
 {
   "title": "Frustration Escalation Response Flow",
-  "description": "Given a description of a student's frustration moment, the learner differentiates whether it calls for in-the-moment encouragement language, persistence coaching across sessions, or a failure-as-learning-tool reframe.",
+  "description": "Match the tool to the trigger: a hard moment, a pattern across weeks, or a task that just failed.",
   "creator": "Coding Club",
   "author": "Dan McCreary",
   "date": "2026-09-01",
@@ -15,9 +15,28 @@
   "library": "Mermaid",
   "bloomLevel": "Analyze (L4)",
   "bloomVerb": "differentiate",
-  "completion_status": "scaffold",
+  "completion_status": "built",
+  "canvasHeight": 660,
   "chapter_number": 27,
   "chapter_title": "Encouraging Persistence and Student Voice",
   "chapter_dir": "27-persistence-and-student-voice",
-  "chapter_rel_dir": "chapters/27-persistence-and-student-voice"
+  "chapter_rel_dir": "chapters/27-persistence-and-student-voice",
+  "educational": {
+    "gradeLevel": "Middle School, High School, Adult",
+    "audience": "Mentors supporting struggling students",
+    "duration": "10-15 minutes",
+    "concepts": [
+      "Handling Frustration",
+      "Encouragement Language",
+      "Persistence Coaching",
+      "Failure as Learning"
+    ]
+  },
+  "pedagogical": {
+    "bloomLevel": "Analyze (L4)",
+    "bloomVerb": "differentiate",
+    "learningObjective": "Given a description of a student's frustration moment, the learner differentiates whether it calls for in-the-moment encouragement language, persistence coaching across sessions, or a failure-as-learning-tool reframe.",
+    "interactionPattern": "Hover-to-preview and click-to-pin three-branch response flow converging on re-engagement",
+    "assessment": "Describe a frustration moment and ask which tool fits and what makes it different from the other two."
+  }
 }

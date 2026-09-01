@@ -1,6 +1,6 @@
 {
   "title": "Automated Communication Pipeline",
-  "description": "Given a trigger condition, the learner differentiates whether it should route through SMS notification or newsletter automation.",
+  "description": "One trigger, two very different-feeling messages: see what decides whether a rule sends a text or queues a newsletter item.",
   "creator": "Coding Club",
   "author": "Dan McCreary",
   "date": "2026-09-01",
@@ -15,9 +15,28 @@
   "library": "Mermaid",
   "bloomLevel": "Analyze (L4)",
   "bloomVerb": "differentiate",
-  "completion_status": "scaffold",
+  "completion_status": "built",
+  "canvasHeight": 680,
   "chapter_number": 25,
   "chapter_title": "Analyzing Club Data and Choosing the Right Tools",
   "chapter_dir": "25-analyzing-club-data-and-tools",
-  "chapter_rel_dir": "chapters/25-analyzing-club-data-and-tools"
+  "chapter_rel_dir": "chapters/25-analyzing-club-data-and-tools",
+  "educational": {
+    "gradeLevel": "Middle School, High School, Adult",
+    "audience": "Club leaders setting up automated communications",
+    "duration": "10-15 minutes",
+    "concepts": [
+      "Automation Trigger",
+      "SMS Notification",
+      "Newsletter Automation",
+      "Message Urgency"
+    ]
+  },
+  "pedagogical": {
+    "bloomLevel": "Analyze (L4)",
+    "bloomVerb": "differentiate",
+    "learningObjective": "Given a trigger condition, the learner differentiates whether it should route through SMS notification or newsletter automation.",
+    "interactionPattern": "Hover-to-preview and click-to-pin pipeline with an urgency gate and two converging delivery paths",
+    "assessment": "Give three triggers and ask which path each takes."
+  }
 }

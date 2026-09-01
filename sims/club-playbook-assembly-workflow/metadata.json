@@ -1,6 +1,6 @@
 {
   "title": "From Scattered Knowledge to a Club Playbook",
-  "description": "Given a specific piece of club know-how, the learner differentiates whether it belongs in a written SOP, requires direct knowledge transfer, or has already been captured in the club playbook.",
+  "description": "Decide whether a piece of know-how becomes a written procedure or has to be transferred person to person.",
   "creator": "Coding Club",
   "author": "Dan McCreary",
   "date": "2026-09-01",
@@ -15,9 +15,29 @@
   "library": "Mermaid",
   "bloomLevel": "Analyze (L4)",
   "bloomVerb": "differentiate",
-  "completion_status": "scaffold",
+  "completion_status": "built",
+  "canvasHeight": 760,
   "chapter_number": 35,
   "chapter_title": "Training Mentors and Building a Club That Outlasts You",
   "chapter_dir": "35-training-mentors-and-succession",
-  "chapter_rel_dir": "chapters/35-training-mentors-and-succession"
+  "chapter_rel_dir": "chapters/35-training-mentors-and-succession",
+  "educational": {
+    "gradeLevel": "Middle School, High School, Adult",
+    "audience": "Club leaders documenting how the club runs",
+    "duration": "10-15 minutes",
+    "concepts": [
+      "Documenting Procedures",
+      "Standard Operating Procedure",
+      "Knowledge Transfer",
+      "Leader Onboarding",
+      "Club Playbook"
+    ]
+  },
+  "pedagogical": {
+    "bloomLevel": "Analyze (L4)",
+    "bloomVerb": "differentiate",
+    "learningObjective": "Given a specific piece of club know-how, the learner differentiates whether it belongs in a written SOP, requires direct knowledge transfer, or has already been captured in the club playbook.",
+    "interactionPattern": "Hover-to-preview and click-to-pin flow with an SOP/transfer split and an ongoing loop back to the start",
+    "assessment": "Give two pieces of know-how, one procedural and one judgement, and ask which branch each takes."
+  }
 }

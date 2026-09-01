@@ -1,6 +1,6 @@
 {
   "title": "Bookmark Folder Structure",
-  "description": "Given a new bookmark a student wants to save, the learner classifies whether it belongs in the shared class folder, a personal student folder, or the browser's general bookmark bar.",
+  "description": "Decide where a new bookmark belongs: the shared class folder, a student's personal folder, or neither.",
   "creator": "Coding Club",
   "author": "Dan McCreary",
   "date": "2026-09-01",
@@ -15,9 +15,28 @@
   "library": "Mermaid",
   "bloomLevel": "Understand (L2)",
   "bloomVerb": "classify",
-  "completion_status": "scaffold",
+  "completion_status": "built",
+  "canvasHeight": 560,
   "chapter_number": 23,
   "chapter_title": "Network, Peripherals, and the Device Lifecycle",
   "chapter_dir": "23-network-peripherals-device-lifecycle",
-  "chapter_rel_dir": "chapters/23-network-peripherals-device-lifecycle"
+  "chapter_rel_dir": "chapters/23-network-peripherals-device-lifecycle",
+  "educational": {
+    "gradeLevel": "Middle School, High School, Adult",
+    "audience": "Mentors and students using club laptops",
+    "duration": "10-15 minutes",
+    "concepts": [
+      "Browser Bookmark Management",
+      "Class Bookmark Folder",
+      "Student Bookmark Folder",
+      "Shared Configuration"
+    ]
+  },
+  "pedagogical": {
+    "bloomLevel": "Understand (L2)",
+    "bloomVerb": "classify",
+    "learningObjective": "Given a new bookmark a student wants to save, the learner classifies whether it belongs in the shared class folder, a personal student folder, or the browser's general bookmark bar.",
+    "interactionPattern": "Hover-to-preview and click-to-pin tree with two branches and their example leaves",
+    "assessment": "Give a link and ask which folder it belongs in and what breaks if it goes in the other one."
+  }
 }

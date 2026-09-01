@@ -3612,7 +3612,7 @@ Notice what makes this safe: the mental model above lives in a mentor's head, re
 <p><strong>AI assisted lesson customization</strong> is the specific mechanics of the practice above: telling an agent which pacing, analogy, difficulty, or example to change, and getting back a revised lesson that keeps the same underlying concept intact. It is narrower than "customizing lessons with AI" in general -- this is the actual prompt-and-draft step, the same kind of specific, detail-rich request that chapter 32's prompt engineering guidance already showed produces a far more useful first draft than a vague one.</p>
 <p>A worked example shows the specificity paying off: a mentor asks an agent to "slow down the pacing of the intermediate Python loops card and add one extra worked example before the practice problem, keeping the same final challenge." The agent returns a card with an inserted worked example and one fewer practice repetition up front -- exactly the two changes requested, nothing else altered. Because the mentor specified precisely what to change, reviewing the draft took under a minute; a vague request like "make this easier" would have returned a card the mentor had to compare line by line against the original to see what actually changed.</p>
 <h4 id="diagram-from-observation-to-customized-lesson">Diagram: From Observation to Customized Lesson<a class="headerlink" href="#diagram-from-observation-to-customized-lesson" title="Permanent link">¶</a></h4>
-<iframe src="../../sims/ai-lesson-customization-workflow/main.html" width="100%" height="540px" scrolling="no"></iframe>
+<iframe src="../../sims/ai-lesson-customization-workflow/main.html" width="100%" height="762px" scrolling="no"></iframe>
 
 <details>
 <summary>From Observation to Customized Lesson</summary>
@@ -3814,7 +3814,7 @@ Here's a quick way to judge any coding-help agent's response before passing it t
 <p><strong>An AI code review assistant</strong> gives a first-pass scan of a student's project -- flagging an unused variable, an oddly named function, or a repeated block that could become a loop -- before chapter 15's peer code review begins, so students spend their peer-review time on substantive discussion rather than the same small style nits an agent could catch instantly. It supplements peer code review; it does not replace the practice of one student explaining their thinking to another.</p>
 <p>A worked example shows the supplement working as intended: a student submits a finished project for the club's regular peer code review session. Before the peer pairing starts, a code review assistant flags that a variable named "x" is used for a score counter and suggests a clearer name like "score." The student renames it in thirty seconds, and the peer reviewer's actual session time goes toward discussing whether the game's difficulty curve makes sense -- a richer conversation than either student would have had time for if the review had started with naming nitpicks.</p>
 <h4 id="diagram-where-a-coding-help-request-goes">Diagram: Where a Coding-Help Request Goes<a class="headerlink" href="#diagram-where-a-coding-help-request-goes" title="Permanent link">¶</a></h4>
-<iframe src="../../sims/coding-help-agent-handoff/main.html" width="100%" height="540px" scrolling="no"></iframe>
+<iframe src="../../sims/coding-help-agent-handoff/main.html" width="100%" height="762px" scrolling="no"></iframe>
 
 <details>
 <summary>Where a Coding-Help Request Goes</summary>
@@ -3943,7 +3943,7 @@ If integration testing feels like a tedious extra step before you get to use you
 <h3 id="coaching-leaders-with-ai">Coaching Leaders With AI<a class="headerlink" href="#coaching-leaders-with-ai" title="Permanent link">¶</a></h3>
 <p><strong>Coaching leaders with AI</strong> closes the loop the mentor coaching AI agent from chapter 32 started: an agent can also draft suggestions for the club's own leadership -- a founder or a rotating co-leader -- based on aggregated patterns across the club's own retrospective notes chapter 12 already collects, helping a newer leader learn from a predecessor's accumulated experience even after that predecessor has moved on.</p>
 <h4 id="diagram-the-ai-agent-rollout-pipeline">Diagram: The AI Agent Rollout Pipeline<a class="headerlink" href="#diagram-the-ai-agent-rollout-pipeline" title="Permanent link">¶</a></h4>
-<iframe src="../../sims/ai-agent-rollout-pipeline/main.html" width="100%" height="540px" scrolling="no"></iframe>
+<iframe src="../../sims/ai-agent-rollout-pipeline/main.html" width="100%" height="842px" scrolling="no"></iframe>
 
 <details>
 <summary>The AI Agent Rollout Pipeline</summary>

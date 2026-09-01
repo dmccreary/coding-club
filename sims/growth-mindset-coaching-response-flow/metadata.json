@@ -1,6 +1,6 @@
 {
   "title": "Growth Mindset Coaching Response Flow",
-  "description": "Given a description of what just happened with a student, the learner differentiates whether it calls for growth-mindset coaching, celebrating a small win, or a public recognition event.",
+  "description": "Three kinds of student moment, three different right responses -- and one shared goal.",
   "creator": "Coding Club",
   "author": "Dan McCreary",
   "date": "2026-09-01",
@@ -15,9 +15,28 @@
   "library": "Mermaid",
   "bloomLevel": "Analyze (L4)",
   "bloomVerb": "differentiate",
-  "completion_status": "scaffold",
+  "completion_status": "built",
+  "canvasHeight": 660,
   "chapter_number": 26,
   "chapter_title": "Motivation, Badges, and Growth Mindset Coaching",
   "chapter_dir": "26-motivation-badges-growth-mindset",
-  "chapter_rel_dir": "chapters/26-motivation-badges-growth-mindset"
+  "chapter_rel_dir": "chapters/26-motivation-badges-growth-mindset",
+  "educational": {
+    "gradeLevel": "Middle School, High School, Adult",
+    "audience": "Mentors coaching students in the moment",
+    "duration": "10-15 minutes",
+    "concepts": [
+      "Growth Mindset",
+      "Not Yet Language",
+      "Small-Win Celebration",
+      "Public Recognition"
+    ]
+  },
+  "pedagogical": {
+    "bloomLevel": "Analyze (L4)",
+    "bloomVerb": "differentiate",
+    "learningObjective": "Given a description of what just happened with a student, the learner differentiates whether it calls for growth-mindset coaching, celebrating a small win, or a public recognition event.",
+    "interactionPattern": "Hover-to-preview and click-to-pin three-branch response flow converging on one outcome",
+    "assessment": "Describe a moment and ask which response it calls for and why the other two would misfire."
+  }
 }

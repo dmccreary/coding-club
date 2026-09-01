@@ -1,6 +1,6 @@
 {
   "title": "Student Data Privacy Principles",
-  "description": "Given one of the four student data privacy practices, the learner explains the specific risk that practice reduces.",
+  "description": "Four practices, four specific risks. Click any one to see exactly which failure it prevents.",
   "creator": "Coding Club",
   "author": "Dan McCreary",
   "date": "2026-09-01",
@@ -15,9 +15,29 @@
   "library": "Mermaid",
   "bloomLevel": "Understand (L2)",
   "bloomVerb": "explain",
-  "completion_status": "scaffold",
+  "completion_status": "built",
+  "canvasHeight": 520,
   "chapter_number": 24,
   "chapter_title": "Tracking Student Data and Managing Club Communication",
   "chapter_dir": "24-student-data-and-communication",
-  "chapter_rel_dir": "chapters/24-student-data-and-communication"
+  "chapter_rel_dir": "chapters/24-student-data-and-communication",
+  "educational": {
+    "gradeLevel": "Middle School, High School, Adult",
+    "audience": "Mentors and club leaders handling student data",
+    "duration": "10-15 minutes",
+    "concepts": [
+      "Data Privacy",
+      "Access Control",
+      "Sharing Links",
+      "Club Accounts",
+      "Consent to Publish"
+    ]
+  },
+  "pedagogical": {
+    "bloomLevel": "Understand (L2)",
+    "bloomVerb": "explain",
+    "learningObjective": "Given one of the four student data privacy practices, the learner explains the specific risk that practice reduces.",
+    "interactionPattern": "Hover-to-preview and click-to-pin hub-and-spoke diagram naming the risk each practice closes",
+    "assessment": "Name a failure and ask which of the four practices would have prevented it."
+  }
 }
