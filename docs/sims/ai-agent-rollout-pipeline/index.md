@@ -1,18 +1,75 @@
 ---
 title: The AI Agent Rollout Pipeline
-description: Given a stage of the rollout pipeline, the learner differentiates it from the stages before and after it and states what would go wrong if that stage were skipped.
-status: scaffold
+description: Five stages between choosing a tool and using it club-wide -- and what breaks if you skip each one.
+image: sims/ai-agent-rollout-pipeline/ai-agent-rollout-pipeline.png
+status: built
 library: Mermaid
 bloom_level: Understand (L2)
 ---
 
 # The AI Agent Rollout Pipeline
 
+<iframe src="main.html" width="100%" height="842" scrolling="no"></iframe>
 
+[Run the The AI Agent Rollout Pipeline MicroSim fullscreen](main.html){ .md-button .md-button--primary }
 
-<iframe src="main.html" width="100%" height="600"></iframe>
+## About This MicroSim
 
-[Run MicroSim in Fullscreen](main.html){ .md-button .md-button--primary }
+Clubs adopt tools by choosing one and then telling everyone to use it. The five
+stages between those two events are what this pipeline names, and each panel says
+what goes wrong when that stage is skipped:
+
+- Skip **workflow design** and you have a tool with no owner and no review step.
+- Skip **integration testing** and families are the test.
+- Skip the **rollout plan** and one bad assumption becomes a club-wide problem in
+  a single week.
+- Skip **leader training** and you get inconsistent output that everyone blames on
+  the tool.
+
+The arrow from **Coaching Leaders With AI** back to **Workflow Design** is the
+part clubs forget. Rollout is not one-and-done. A lesson that surfaces during
+coaching -- the agent keeps producing a tone nobody likes, the review step lands
+on the wrong person -- properly sends a leader back to redesign, not to a
+workaround.
+
+## How to Use
+
+- **Hover a stage** to preview it; **click** to pin what it does and what breaks
+  without it.
+- Follow the return arrow from coaching back to design -- the pipeline is a loop,
+  not a checklist.
+
+## Lesson Plan
+
+**Bloom level:** Understand (L2) -- *differentiate*
+
+**Learning objective:** Given a stage of the rollout pipeline, the learner
+differentiates it from the stages before and after it and states what would go
+wrong if that stage were skipped.
+
+**Before the sim (5 min).** Ask how the club introduced its last new tool. The
+answer is usually "we started using it," which is stages one through five
+collapsed into none.
+
+**With the sim (10 min).** Walk the five stages. At each, ask the skip question
+before revealing the panel text. The answers are more memorable when the group
+generates them.
+
+**After the sim (15 min).** Take one tool the club is considering and write a
+one-line plan for each of the five stages.
+
+**Check for understanding.** Ask: "You tested the agent and it worked. Why not
+give it to everyone on Monday?" Because the rollout plan exists to limit the blast
+radius of the assumption your test did not think to check.
+
+## Embedding This MicroSim
+
+Paste this into any page of the book, adjusting the relative path to
+`docs/sims/` for the page's depth:
+
+```html
+<iframe src="../../sims/ai-agent-rollout-pipeline/main.html" width="100%" height="842" scrolling="no"></iframe>
+```
 
 ## Specification
 
@@ -50,6 +107,10 @@ Color coding: Gray for start/end states, blue for the five sequential process st
 Implementation: Mermaid flowchart (`graph TD`) rendered in main.html with `click NodeId call showInfo("NodeId")` directives for every node, opening a side-panel infobox; the feedback edge drawn with a dashed style and a curved path to distinguish it from the main forward sequence.
 ```
 
-## Related Resources
+## References
 
-- [Chapter 33: AI-Customized Curriculum and Rolling Out New Agents](../../chapters/33-ai-customized-curriculum-rollout/index.md)
+- [Chapter 33: AI-Customized Curriculum and Rolling Out New Agents](../../chapters/33-ai-customized-curriculum-rollout/index.md) -- the chapter this MicroSim supports.
+- [Human-in-the-Loop Review Workflow](../human-in-the-loop-review-workflow/index.md) -- the review step the design stage has to place.
+- [Software deployment](https://en.wikipedia.org/wiki/Software_deployment) -- staged rollout as standard practice.
+- [Canary release](https://en.wikipedia.org/wiki/Feature_toggle) -- the one-mentor-first idea, formalised.
+- [Change management](https://en.wikipedia.org/wiki/Change_management) -- why training is a stage rather than an email.

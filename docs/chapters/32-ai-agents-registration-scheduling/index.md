@@ -294,7 +294,7 @@ Chapter 24 built the club's core communication channels -- a dedicated email acc
 
 #### Diagram: From Draft to Delivered — AI Content Pipeline
 
-<iframe src="../../sims/ai-content-drafting-pipeline/main.html" width="100%" height="520px" scrolling="no"></iframe>
+<iframe src="../../sims/ai-content-drafting-pipeline/main.html" width="100%" height="842px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>From Draft to Delivered -- AI Content Pipeline</summary>

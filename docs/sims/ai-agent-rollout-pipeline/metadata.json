@@ -1,6 +1,6 @@
 {
   "title": "The AI Agent Rollout Pipeline",
-  "description": "Given a stage of the rollout pipeline, the learner differentiates it from the stages before and after it and states what would go wrong if that stage were skipped.",
+  "description": "Five stages between choosing a tool and using it club-wide -- and what breaks if you skip each one.",
   "creator": "Coding Club",
   "author": "Dan McCreary",
   "date": "2026-09-01",
@@ -15,9 +15,29 @@
   "library": "Mermaid",
   "bloomLevel": "Understand (L2)",
   "bloomVerb": "differentiate",
-  "completion_status": "scaffold",
+  "completion_status": "built",
+  "canvasHeight": 840,
   "chapter_number": 33,
   "chapter_title": "AI-Customized Curriculum and Rolling Out New Agents",
   "chapter_dir": "33-ai-customized-curriculum-rollout",
-  "chapter_rel_dir": "chapters/33-ai-customized-curriculum-rollout"
+  "chapter_rel_dir": "chapters/33-ai-customized-curriculum-rollout",
+  "educational": {
+    "gradeLevel": "Middle School, High School, Adult",
+    "audience": "Club leaders adopting an AI tool",
+    "duration": "10-15 minutes",
+    "concepts": [
+      "Workflow Design",
+      "Integration Testing",
+      "Rollout Plan",
+      "Leader Training",
+      "AI-Assisted Coaching"
+    ]
+  },
+  "pedagogical": {
+    "bloomLevel": "Understand (L2)",
+    "bloomVerb": "differentiate",
+    "learningObjective": "Given a stage of the rollout pipeline, the learner differentiates it from the stages before and after it and states what would go wrong if that stage were skipped.",
+    "interactionPattern": "Hover-to-preview and click-to-pin linear pipeline with a feedback loop from coaching back to design",
+    "assessment": "Name a stage and ask what goes wrong if it is skipped."
+  }
 }

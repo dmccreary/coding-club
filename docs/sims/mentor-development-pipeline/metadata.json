@@ -1,6 +1,6 @@
 {
   "title": "Mentor Development Pipeline",
-  "description": "Given a mentor candidate's current stage, the learner sequences the remaining stages of development and differentiates what unlocks progress to the next one.",
+  "description": "One candidate's whole path: interview, trial, training, tiers, and the pipeline that produces the club's next leader.",
   "creator": "Coding Club",
   "author": "Dan McCreary",
   "date": "2026-09-01",
@@ -14,10 +14,30 @@
   "identifier": "mentor-development-pipeline",
   "library": "Mermaid",
   "bloomLevel": "Analyze (L4)",
-  "bloomVerb": "sequence, differentiate",
-  "completion_status": "scaffold",
+  "bloomVerb": "sequence",
+  "completion_status": "built",
+  "canvasHeight": 880,
   "chapter_number": 35,
   "chapter_title": "Training Mentors and Building a Club That Outlasts You",
   "chapter_dir": "35-training-mentors-and-succession",
-  "chapter_rel_dir": "chapters/35-training-mentors-and-succession"
+  "chapter_rel_dir": "chapters/35-training-mentors-and-succession",
+  "educational": {
+    "gradeLevel": "Middle School, High School, Adult",
+    "audience": "Club leaders developing mentors",
+    "duration": "10-15 minutes",
+    "concepts": [
+      "Mentor Interview",
+      "Training Curriculum",
+      "Certification Tiers",
+      "Peer Support",
+      "Leadership Pipeline"
+    ]
+  },
+  "pedagogical": {
+    "bloomLevel": "Analyze (L4)",
+    "bloomVerb": "sequence",
+    "learningObjective": "Given a mentor candidate's current stage, the learner sequences the remaining stages of development and differentiates what unlocks progress to the next one.",
+    "interactionPattern": "Hover-to-preview and click-to-pin pipeline with three certification tiers and a continuous peer-support process",
+    "assessment": "Give a mentor's current tier and ask what unlocks the next one."
+  }
 }

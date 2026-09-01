@@ -1,18 +1,77 @@
 ---
 title: Mentor Development Pipeline
-description: Given a mentor candidate's current stage, the learner sequences the remaining stages of development and differentiates what unlocks progress to the next one.
-status: scaffold
+description: One candidate's whole path: interview, trial, training, tiers, and the pipeline that produces the club's next leader.
+image: sims/mentor-development-pipeline/mentor-development-pipeline.png
+status: built
 library: Mermaid
 bloom_level: Analyze (L4)
 ---
 
 # Mentor Development Pipeline
 
+<iframe src="main.html" width="100%" height="882" scrolling="no"></iframe>
 
+[Run the Mentor Development Pipeline MicroSim fullscreen](main.html){ .md-button .md-button--primary }
 
-<iframe src="main.html" width="100%" height="600"></iframe>
+## About This MicroSim
 
-[Run MicroSim in Fullscreen](main.html){ .md-button .md-button--primary }
+Six concepts from this chapter, arranged as one path a real person walks.
+
+The **certification tiers** are the load-bearing idea, and the panel text is
+careful about why: each tier unlocks a specific new responsibility rather than
+serving as a badge. Trainee means works alongside someone at all times. Certified
+means runs a station alone. Lead Mentor means runs a session and supervises
+others. A tier that unlocks nothing is decoration.
+
+**Peer support** connects to all three tiers rather than sitting at one stage,
+because it runs continuously. A veteran paired with a newer mentor, plus a
+standing mentor-only debrief -- structural, so it does not depend on the founder
+noticing that someone is struggling.
+
+The tail matters most for clubs that intend to outlast their founder.
+**Leadership pipeline development** asks which certified mentors could run the
+whole club, and hands them incrementally larger responsibility *long before* any
+departure forces the question. Succession planned after the founder announces
+they are leaving is not planning.
+
+## How to Use
+
+- **Hover a stage** to preview it; **click** to pin the definition.
+- The three tier boxes branch from the certification diamond; all three connect
+  to peer support, which runs alongside every tier.
+- The leadership pipeline branches only from Lead Mentor.
+
+## Lesson Plan
+
+**Bloom level:** Analyze (L4) -- *sequence and differentiate*
+
+**Learning objective:** Given a mentor candidate's current stage, the learner
+sequences the remaining stages of development and differentiates what unlocks
+progress to the next one.
+
+**Before the sim (5 min).** Ask what the club's most experienced mentor is allowed
+to do that a brand-new one is not. If the answer is vague, the club has no tiers.
+
+**With the sim (15 min).** Walk the path, then focus on the tiers. For each, ask
+what specific responsibility it unlocks and what checkable criterion gates it.
+Then ask why peer support attaches to all three rather than to Trainee alone.
+
+**After the sim (15 min).** Place every current mentor on a tier and write the one
+criterion each would need to meet to advance.
+
+**Check for understanding.** Ask: "Your best Certified mentor wants more
+responsibility. What is the next stage, and what has to be true first?" Lead
+Mentor, gated by checkable criteria -- and noticing that the leadership pipeline
+comes only after that is the sequencing this objective wants.
+
+## Embedding This MicroSim
+
+Paste this into any page of the book, adjusting the relative path to
+`docs/sims/` for the page's depth:
+
+```html
+<iframe src="../../sims/mentor-development-pipeline/main.html" width="100%" height="882" scrolling="no"></iframe>
+```
 
 ## Specification
 
@@ -50,6 +109,10 @@ Color coding: Blue for the one-time onboarding stages (interview, trial, curricu
 Implementation: Mermaid flowchart (`graph TD`) rendered in main.html with `click NodeId call showInfo("NodeId")` directives for every node, opening a side-panel infobox; a "Reset View" button re-centers the diagram after any zoom or pan; layout reflows responsively on narrow screens.
 ```
 
-## Related Resources
+## References
 
-- [Chapter 35: Training Mentors and Building a Club That Outlasts You](../../chapters/35-training-mentors-and-succession/index.md)
+- [Chapter 35: Training Mentors and Building a Club That Outlasts You](../../chapters/35-training-mentors-and-succession/index.md) -- the chapter this MicroSim supports.
+- [Kit Lifecycle Workflow](../kit-lifecycle-workflow/index.md) -- the same lifecycle framing applied to equipment.
+- [Succession planning](https://en.wikipedia.org/wiki/Succession_planning) -- why it starts long before a departure.
+- [Professional certification](https://en.wikipedia.org/wiki/Professional_certification) -- tiers that gate responsibility rather than status.
+- [Mentorship](https://en.wikipedia.org/wiki/Mentorship) -- the pairing model behind peer support.

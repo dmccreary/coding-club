@@ -3,118 +3,132 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- microsim-scaffold-stub -->
+    <meta name="schema" content="https://dmccreary.github.io/intelligent-textbooks/ns/microsim/v1">
     <title>Mentor Development Pipeline</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: #f8f9fa;
-            color: #212529;
-        }
-        #container {
-            width: 100%;
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 20px;
-            background: white;
-        }
-        h1 {
-            font-size: 22px;
-            margin-bottom: 10px;
-            color: #1a3a6c;
-        }
-        .placeholder {
-            border: 2px dashed #adb5bd;
-            border-radius: 8px;
-            padding: 40px 20px;
-            text-align: center;
-            color: #6c757d;
-            margin: 20px 0;
-            min-height: 400px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        .placeholder .badge {
-            display: inline-block;
-            background: #ffc107;
-            color: #212529;
-            padding: 4px 12px;
-            border-radius: 12px;
-            font-size: 12px;
-            font-weight: 600;
-            margin-bottom: 12px;
-        }
-        .placeholder h2 {
-            font-size: 18px;
-            color: #495057;
-            margin-bottom: 8px;
-        }
-        .placeholder p {
-            font-size: 14px;
-            max-width: 480px;
-        }
-        .meta {
-            margin-top: 20px;
-            font-size: 13px;
-            color: #6c757d;
-            border-top: 1px solid #dee2e6;
-            padding-top: 12px;
-        }
-        .meta strong { color: #495057; }
-    </style>
+    <script type="module">
+        import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+        mermaid.initialize({
+            startOnLoad: true,
+            theme: 'default',
+            flowchart: {
+                useMaxWidth: true,
+                htmlLabels: true,
+                curve: 'basis',
+                subGraphTitleMargin: { top: 10, bottom: 14 }
+            }
+        });
+    </script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="container">
-        <h1>Mentor Development Pipeline</h1>
-        <div class="placeholder">
-            <span class="badge">SCAFFOLD</span>
-            <h2>MicroSim Not Yet Implemented</h2>
-            <p>This MicroSim has been scaffolded from its specification but the
-            interactive content has not been built yet. See the chapter source
-            and the <code>index.md</code> in this directory for the full spec.</p>
+<main>
+    <div class="container">
+        <div class="diagram-panel">
+            <div class="mermaid">
+flowchart TD
+    Interview("Candidate<br/>Interviewed"):::retireNode
+    Trial["Trial Session"]:::docNode
+    Training["Training<br/>Curriculum"]:::docNode
+    Matched["Matched to<br/>Strengths"]:::prepNode
+    Tier{"Certification<br/>Tier?"}:::waitNode
+    Trainee["Trainee"]:::remediateNode
+    Certified["Certified"]:::remediateNode
+    Lead["Lead Mentor"]:::resolveNode
+    Peer["Peer Support<br/>Program"]:::prepNode
+    Pipeline["Leadership<br/>Pipeline"]:::resolveNode
+    Ready("Ready to Co-Lead or<br/>Succeed the Founder"):::resolveNode
+
+    Interview --> Trial
+    Trial --> Training
+    Training --> Matched
+    Matched --> Tier
+    Tier -->|new| Trainee
+    Tier -->|criteria met| Certified
+    Tier -->|runs sessions| Lead
+    Trainee --> Peer
+    Certified --> Peer
+    Lead --> Peer
+    Lead --> Pipeline
+    Pipeline --> Ready
+
+    classDef retireNode fill:#5B7186,stroke:#33475B,stroke-width:2px,color:#fff,font-size:16px
+    classDef docNode fill:#4A90D9,stroke:#2E6BA8,stroke-width:2px,color:#fff,font-size:16px
+    classDef prepNode fill:#F5A623,stroke:#B87B12,stroke-width:2px,color:#333,font-size:16px
+    classDef waitNode fill:#8E7CC3,stroke:#5B4B8A,stroke-width:2px,color:#fff,font-size:16px
+    classDef remediateNode fill:#E8833A,stroke:#A85718,stroke-width:2px,color:#fff,font-size:16px
+    classDef resolveNode fill:#3E9E6E,stroke:#256E4A,stroke-width:2px,color:#fff,font-size:16px
+
+    linkStyle default stroke:#7A8A99,stroke-width:2px,font-size:16px
+            </div>
         </div>
-        <div class="meta">
-            <p><strong>Sim ID:</strong> mentor-development-pipeline</p>
-            <p><strong>Library:</strong> Mermaid</p>
-            <p><strong>Bloom Level:</strong> Analyze (L4)</p>
-            <p><strong>Learning Objective:</strong> Given a mentor candidate's current stage, the learner sequences the remaining stages of development and differentiates what unlocks progress to the next one.</p>
+        <div class="info-panel">
+            <h3>Step Details</h3>
+            <div id="info-display">
+                <p class="info-placeholder">Hover a step to preview it, or click a step to pin its details here.</p>
+                <div class="legend">
+                    <div class="legend-item"><span class="swatch sw-retire"></span>Entry</div>
+                    <div class="legend-item"><span class="swatch sw-doc"></span>Trial and training</div>
+                    <div class="legend-item"><span class="swatch sw-prep"></span>Matching and ongoing peer support</div>
+                    <div class="legend-item"><span class="swatch sw-wait"></span>Certification tier</div>
+                    <div class="legend-item"><span class="swatch sw-remediate"></span>Trainee and Certified tiers</div>
+                    <div class="legend-item"><span class="swatch sw-resolve"></span>Lead and leadership pipeline</div>
+                </div>
+            </div>
+
         </div>
     </div>
+</main>
 
-    <!--
-    SPECIFICATION (from chapter index.md):
-
-    Type: workflow
-    **sim-id:** mentor-development-pipeline<br/>
-    **Library:** Mermaid<br/>
-    **Status:** Specified
-    
-    Purpose: Trace one mentor candidate through every stage of development this chapter covers, from interview through certification tiers to becoming a future club leader, tying together six concepts into one connected path.
-    
-    Bloom Taxonomy: Analyze (L4)
-    Bloom Taxonomy Verb: sequence, differentiate
-    
-    Learning objective: Given a mentor candidate's current stage, the learner sequences the remaining stages of development and differentiates what unlocks progress to the next one.
-    
-    Steps (flowchart with a decision branch and one ongoing side process):
-    
-    1. Start: "Candidate Interviewed" -- click reveals the Mentor Interview Process definition above.
-    2. Process: "Trial Session (Chapter 34)" -- click reveals "A one-session hands-on trial checking technical comfort and patience with students, introduced in Chapter 34."
-    3. Process: "Training Curriculum" -- click reveals the Mentor Training Curriculum definition above.
-    4. Process: "Matched to Strengths" -- click reveals the Bringing Out Mentor Strengths definition above.
-    5. Decision: "Certification Tier?" -- click reveals the Mentor Certification Program definition above; branches to "Trainee," "Certified," and "Lead Mentor" as three small labeled sub-nodes.
-    6. Side process (connected by a dashed line to every tier, not a single sequential step): "Peer Support Program" -- click reveals the Mentor Peer Support Program definition above, noting it runs continuously rather than at one stage.
-    7. Process (from "Lead Mentor"): "Leadership Pipeline" -- click reveals the Leadership Pipeline Development definition above.
-    8. End: "Ready to Co-Lead or Succeed the Founder" -- click reveals "The mentor has practiced real decisions well before any departure, connecting directly into this chapter's documentation and playbook sections."
-    
-    Interactivity requirement (satisfied): every node has a Mermaid `click` directive tied to an infobox, matching the definitions given in this chapter's prose.
-    
-    Color coding: Blue for the one-time onboarding stages (interview, trial, curriculum, strengths), gold for the three certification tiers, green dashed lines for the continuous peer support connections, purple for the leadership pipeline and end state.
-    
-    Implementation: Mermaid flowchart (`graph TD`) rendered in main.html with `click NodeId call showInfo("NodeId")` directives for every node, opening a side-panel infobox; a "Reset View" button re-centers the diagram after any zoom or pan; layout reflows responsively on narrow screens.
-    -->
+    <!-- Node information data - one entry per node in the flowchart above -->
+    <script>
+        const nodeInfo = {
+            "Interview": {
+                title: "Mentor Interview Process",
+                description: "A short structured set of questions -- the same five or six for every candidate -- scored against a simple rubric, so two different people interviewing two candidates reach comparable judgements."
+            },
+            "Trial": {
+                title: "Trial Session (Chapter 34)",
+                description: "A one-session hands-on trial checking technical comfort and patience with students, introduced in Chapter 34."
+            },
+            "Training": {
+                title: "Mentor Training Curriculum",
+                description: "The fixed sequence of topics every new mentor works through before running any part of a session unsupervised: electrical safety, the specific kits they will support, and the club's own norms."
+            },
+            "Matched": {
+                title: "Bringing Out Mentor Strengths",
+                description: "Deliberately matching each mentor's individual talents to the role where those talents matter most, instead of rotating everyone through identical duties."
+            },
+            "Tier": {
+                title: "Mentor Certification Program",
+                description: "Every mentor holds a named tier -- Trainee, Certified, or Lead Mentor -- based on specific checkable criteria. Each tier unlocks a specific new responsibility rather than serving as a badge."
+            },
+            "Trainee": {
+                title: "Trainee",
+                description: "Works alongside a certified mentor at all times. The tier exists so that 'new' is a defined state with defined limits, not an informal impression."
+            },
+            "Certified": {
+                title: "Certified",
+                description: "Runs a station unsupervised and supports students directly. The tier most mentors stay at, and the club runs on it."
+            },
+            "Lead": {
+                title: "Lead Mentor",
+                description: "Runs a whole session and supervises other mentors. This is the tier the leadership pipeline draws from."
+            },
+            "Peer": {
+                title: "Mentor Peer Support Program",
+                description: "Pairing a newer mentor with a veteran for regular check-ins, plus a standing mentor-only debrief. It runs continuously alongside every tier rather than at one stage."
+            },
+            "Pipeline": {
+                title: "Leadership Pipeline Development",
+                description: "Which certified mentors show early signs of being able to run the entire club, and how the club hands them incrementally larger responsibility long before any actual departure."
+            },
+            "Ready": {
+                title: "Ready to Co-Lead or Succeed the Founder",
+                description: "The mentor has practised real decisions well before any departure forces the issue, which is the only version of succession planning that works."
+            }
+        };
+    </script>
+    <!-- Load interaction script after nodeInfo is defined -->
+    <script src="script.js"></script>
 </body>
 </html>

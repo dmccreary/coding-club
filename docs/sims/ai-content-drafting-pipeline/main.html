@@ -3,119 +3,123 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- microsim-scaffold-stub -->
-    <title>From Draft to Delivered — AI Content Pipeline</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: #f8f9fa;
-            color: #212529;
-        }
-        #container {
-            width: 100%;
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 20px;
-            background: white;
-        }
-        h1 {
-            font-size: 22px;
-            margin-bottom: 10px;
-            color: #1a3a6c;
-        }
-        .placeholder {
-            border: 2px dashed #adb5bd;
-            border-radius: 8px;
-            padding: 40px 20px;
-            text-align: center;
-            color: #6c757d;
-            margin: 20px 0;
-            min-height: 400px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        .placeholder .badge {
-            display: inline-block;
-            background: #ffc107;
-            color: #212529;
-            padding: 4px 12px;
-            border-radius: 12px;
-            font-size: 12px;
-            font-weight: 600;
-            margin-bottom: 12px;
-        }
-        .placeholder h2 {
-            font-size: 18px;
-            color: #495057;
-            margin-bottom: 8px;
-        }
-        .placeholder p {
-            font-size: 14px;
-            max-width: 480px;
-        }
-        .meta {
-            margin-top: 20px;
-            font-size: 13px;
-            color: #6c757d;
-            border-top: 1px solid #dee2e6;
-            padding-top: 12px;
-        }
-        .meta strong { color: #495057; }
-    </style>
+    <meta name="schema" content="https://dmccreary.github.io/intelligent-textbooks/ns/microsim/v1">
+    <title>From Draft to Delivered - AI Content Pipeline</title>
+    <script type="module">
+        import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+        mermaid.initialize({
+            startOnLoad: true,
+            theme: 'default',
+            flowchart: {
+                useMaxWidth: true,
+                htmlLabels: true,
+                curve: 'basis',
+                subGraphTitleMargin: { top: 10, bottom: 14 }
+            }
+        });
+    </script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="container">
-        <h1>From Draft to Delivered — AI Content Pipeline</h1>
-        <div class="placeholder">
-            <span class="badge">SCAFFOLD</span>
-            <h2>MicroSim Not Yet Implemented</h2>
-            <p>This MicroSim has been scaffolded from its specification but the
-            interactive content has not been built yet. See the chapter source
-            and the <code>index.md</code> in this directory for the full spec.</p>
+<main>
+    <div class="container">
+        <div class="diagram-panel">
+            <div class="mermaid">
+flowchart TD
+    Need("Content Need<br/>Identified"):::retireNode
+    Which{"Which Content<br/>Type?"}:::waitNode
+    Segment["AI Managed Mailing List<br/>Drafts Segment Update"]:::docNode
+    Announce["AI Generated Announcement<br/>Drafts Message"]:::prepNode
+    Newsletter["AI Drafted Newsletter<br/>Writes Monthly Paragraph"]:::remediateNode
+    Review["Human Reviews<br/>Draft"]:::resolveNode
+    Approved{"Approved?"}:::waitNode
+    Sent("Sent or Merged"):::resolveNode
+    Redraft["Sent Back for<br/>a New Draft"]:::dangerNode
+
+    Need --> Which
+    Which -->|mailing list| Segment
+    Which -->|announcement| Announce
+    Which -->|newsletter| Newsletter
+    Segment --> Review
+    Announce --> Review
+    Newsletter --> Review
+    Review --> Approved
+    Approved -->|Yes| Sent
+    Approved -->|No| Redraft
+    Redraft -->|new draft| Review
+
+    classDef retireNode fill:#5B7186,stroke:#33475B,stroke-width:2px,color:#fff,font-size:16px
+    classDef waitNode fill:#8E7CC3,stroke:#5B4B8A,stroke-width:2px,color:#fff,font-size:16px
+    classDef docNode fill:#4A90D9,stroke:#2E6BA8,stroke-width:2px,color:#fff,font-size:16px
+    classDef prepNode fill:#F5A623,stroke:#B87B12,stroke-width:2px,color:#333,font-size:16px
+    classDef remediateNode fill:#E8833A,stroke:#A85718,stroke-width:2px,color:#fff,font-size:16px
+    classDef resolveNode fill:#3E9E6E,stroke:#256E4A,stroke-width:2px,color:#fff,font-size:16px
+    classDef dangerNode fill:#D64545,stroke:#8F2B2B,stroke-width:2px,color:#fff,font-size:16px
+
+    linkStyle default stroke:#7A8A99,stroke-width:2px,font-size:16px
+            </div>
         </div>
-        <div class="meta">
-            <p><strong>Sim ID:</strong> ai-content-drafting-pipeline</p>
-            <p><strong>Library:</strong> Mermaid</p>
-            <p><strong>Bloom Level:</strong> Analyze (L4)</p>
-            <p><strong>Learning Objective:</strong> Given one of three AI content-drafting scenarios, the learner differentiates its path through the pipeline and identifies the review step common to all three.</p>
+        <div class="info-panel">
+            <h3>Step Details</h3>
+            <div id="info-display">
+                <p class="info-placeholder">Hover a step to preview it, or click a step to pin its details here.</p>
+                <div class="legend">
+                    <div class="legend-item"><span class="swatch sw-retire"></span>Need identified</div>
+                    <div class="legend-item"><span class="swatch sw-wait"></span>Decision</div>
+                    <div class="legend-item"><span class="swatch sw-doc"></span>Mailing list agent</div>
+                    <div class="legend-item"><span class="swatch sw-prep"></span>Announcement agent</div>
+                    <div class="legend-item"><span class="swatch sw-remediate"></span>Newsletter agent</div>
+                    <div class="legend-item"><span class="swatch sw-resolve"></span>The shared review gate</div>
+                    <div class="legend-item"><span class="swatch sw-danger"></span>Declined</div>
+                </div>
+            </div>
+
         </div>
     </div>
+</main>
 
-    <!--
-    SPECIFICATION (from chapter index.md):
-
-    Type: workflow
-    **sim-id:** ai-content-drafting-pipeline<br/>
-    **Library:** Mermaid<br/>
-    **Status:** Specified
-    **Template:** https://github.com/dmccreary/organizational-analytics/tree/main/docs/sims/ai-content-detection
-    
-    Purpose: Trace how an AI managed mailing list, an AI generated announcement, and an AI drafted newsletter each flow through a human review step before reaching a family, so a learner sees the shared review gate underneath three different content types.
-    
-    Bloom Taxonomy: Analyze (L4)
-    Bloom Taxonomy Verb: differentiate
-    
-    Learning objective: Given one of three AI content-drafting scenarios, the learner differentiates its path through the pipeline and identifies the review step common to all three.
-    
-    Steps (flowchart with a decision diamond):
-    1. Start: "Content Need Identified" -- click reveals "A segment needs updating, an urgent situation needs an announcement, or the month needs a newsletter paragraph."
-    2. Decision: "Which Content Type?" -- click reveals "Routes to one of three drafting agents based on what's needed."
-    3a. Branch to "AI Managed Mailing List Drafts Segment Update" -- click reveals "Proposes moving a contact between segments, such as Waitlist to Active Families."
-    3b. Branch to "AI Generated Announcement Drafts Message" -- click reveals "Drafts one or more versions of a one-off, situation-specific message."
-    3c. Branch to "AI Drafted Newsletter Writes Monthly Paragraph" -- click reveals "Writes fresh narrative prose highlighting the month's events."
-    4. All three branches converge on "Human Reviews Draft" -- click reveals "Every draft, regardless of type, is checked by a person before anything happens with it."
-    5. Decision: "Approved?" -- click reveals "The reviewer can approve as-is, edit and approve, or send it back for a new draft."
-    6a. Branch "Yes" leads to "Sent or Merged" -- click reveals "A segment update is applied, an announcement goes out on the channel chapter 24's decision tree selects, or a newsletter paragraph merges into chapter 25's automated template."
-    6b. Branch "No" leads back to the relevant drafting step -- click reveals "A rejected draft returns to the same agent with feedback, not to a different one."
-    
-    Interactivity requirement (satisfied): every node has a Mermaid `click` directive tied to an infobox showing its revealed text.
-    
-    Color coding: Gray for start/end states, purple for decision diamonds, three distinct accent colors for the three drafting branches, green for the converged "Sent or Merged" outcome.
-    
-    Implementation: Mermaid flowchart (`graph TD`) rendered in main.html with `click NodeId call showInfo("NodeId")` directives for every node, opening a side-panel infobox.
-    -->
+    <!-- Node information data - one entry per node in the flowchart above -->
+    <script>
+        const nodeInfo = {
+            "Need": {
+                title: "Content Need Identified",
+                description: "A segment needs updating, an urgent situation needs an announcement, or the month needs a newsletter paragraph."
+            },
+            "Which": {
+                title: "Which Content Type?",
+                description: "Routes to one of three drafting agents based on what is needed."
+            },
+            "Segment": {
+                title: "AI Managed Mailing List Drafts Segment Update",
+                description: "Proposes moving a contact between segments, such as Waitlist to Active Families."
+            },
+            "Announce": {
+                title: "AI Generated Announcement Drafts Message",
+                description: "Drafts one or more versions of a one-off, situation-specific message."
+            },
+            "Newsletter": {
+                title: "AI Drafted Newsletter Writes Monthly Paragraph",
+                description: "Writes fresh narrative prose highlighting the month's events."
+            },
+            "Review": {
+                title: "Human Reviews Draft",
+                description: "Every draft, regardless of type, is checked by a person before anything happens with it. This is the node the three branches exist to reach."
+            },
+            "Approved": {
+                title: "Approved?",
+                description: "The reviewer can approve as-is, edit and approve, or send it back for a new draft."
+            },
+            "Sent": {
+                title: "Sent or Merged",
+                description: "A segment update is applied, an announcement goes out on the channel chosen for it, or the newsletter paragraph is merged into the monthly digest."
+            },
+            "Redraft": {
+                title: "Sent Back for a New Draft",
+                description: "The agent tries again. Nothing reaches a family from a draft the reviewer declined."
+            }
+        };
+    </script>
+    <!-- Load interaction script after nodeInfo is defined -->
+    <script src="script.js"></script>
 </body>
 </html>

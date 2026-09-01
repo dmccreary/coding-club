@@ -1,6 +1,6 @@
 {
   "title": "From Observation to Customized Lesson",
-  "description": "Given a customization scenario, the learner explains which stage of the loop is mentor observation, which is the AI draft, and which is human review.",
+  "description": "Where the mentor's own observation enters an AI customization loop, and where human review still applies.",
   "creator": "Coding Club",
   "author": "Dan McCreary",
   "date": "2026-09-01",
@@ -15,9 +15,28 @@
   "library": "Mermaid",
   "bloomLevel": "Understand (L2)",
   "bloomVerb": "explain",
-  "completion_status": "scaffold",
+  "completion_status": "built",
+  "canvasHeight": 760,
   "chapter_number": 33,
   "chapter_title": "AI-Customized Curriculum and Rolling Out New Agents",
   "chapter_dir": "33-ai-customized-curriculum-rollout",
-  "chapter_rel_dir": "chapters/33-ai-customized-curriculum-rollout"
+  "chapter_rel_dir": "chapters/33-ai-customized-curriculum-rollout",
+  "educational": {
+    "gradeLevel": "Middle School, High School, Adult",
+    "audience": "Mentors customizing lessons",
+    "duration": "10-15 minutes",
+    "concepts": [
+      "Student Mental Model",
+      "Prompt Specificity",
+      "AI Lesson Customization",
+      "Human Review"
+    ]
+  },
+  "pedagogical": {
+    "bloomLevel": "Understand (L2)",
+    "bloomVerb": "explain",
+    "learningObjective": "Given a customization scenario, the learner explains which stage of the loop is mentor observation, which is the AI draft, and which is human review.",
+    "interactionPattern": "Hover-to-preview and click-to-pin linear loop distinguishing mentor stages from AI stages",
+    "assessment": "Ask which stages are the mentor's, which is the AI's, and what the AI never sees."
+  }
 }

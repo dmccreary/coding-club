@@ -1,6 +1,6 @@
 {
-  "title": "From Draft to Delivered — AI Content Pipeline",
-  "description": "Given one of three AI content-drafting scenarios, the learner differentiates its path through the pipeline and identifies the review step common to all three.",
+  "title": "From Draft to Delivered - AI Content Pipeline",
+  "description": "Three AI drafting agents, three different jobs, one review gate every draft must pass.",
   "creator": "Coding Club",
   "author": "Dan McCreary",
   "date": "2026-09-01",
@@ -15,9 +15,28 @@
   "library": "Mermaid",
   "bloomLevel": "Analyze (L4)",
   "bloomVerb": "differentiate",
-  "completion_status": "scaffold",
+  "completion_status": "built",
+  "canvasHeight": 840,
   "chapter_number": 32,
   "chapter_title": "AI Agents for Registration, Scheduling, and Communication",
   "chapter_dir": "32-ai-agents-registration-scheduling",
-  "chapter_rel_dir": "chapters/32-ai-agents-registration-scheduling"
+  "chapter_rel_dir": "chapters/32-ai-agents-registration-scheduling",
+  "educational": {
+    "gradeLevel": "Middle School, High School, Adult",
+    "audience": "Club leaders using AI for family communication",
+    "duration": "10-15 minutes",
+    "concepts": [
+      "AI Managed Mailing List",
+      "AI Generated Announcement",
+      "AI Drafted Newsletter",
+      "Human Review Gate"
+    ]
+  },
+  "pedagogical": {
+    "bloomLevel": "Analyze (L4)",
+    "bloomVerb": "differentiate",
+    "learningObjective": "Given one of three AI content-drafting scenarios, the learner differentiates its path through the pipeline and identifies the review step common to all three.",
+    "interactionPattern": "Hover-to-preview and click-to-pin pipeline where three branches converge on a shared human review",
+    "assessment": "Give a content need and ask which agent drafts it and what all three paths have in common."
+  }
 }

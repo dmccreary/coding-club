@@ -130,7 +130,7 @@ Six separate concepts -- interview, curriculum, strength-matching, certification
 
 #### Diagram: Mentor Development Pipeline
 
-<iframe src="../../sims/mentor-development-pipeline/main.html" width="100%" height="560px" scrolling="no"></iframe>
+<iframe src="../../sims/mentor-development-pipeline/main.html" width="100%" height="882px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Mentor Development Pipeline</summary>

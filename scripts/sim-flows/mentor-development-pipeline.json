@@ -1,0 +1,174 @@
+{
+  "title": "Mentor Development Pipeline",
+  "height": 880,
+  "direction": "TD",
+  "nodes": [
+    {
+      "id": "Interview",
+      "shape": "round",
+      "cls": "retire",
+      "label": "Candidate<br/>Interviewed",
+      "title": "Mentor Interview Process",
+      "info": "A short structured set of questions -- the same five or six for every candidate -- scored against a simple rubric, so two different people interviewing two candidates reach comparable judgements."
+    },
+    {
+      "id": "Trial",
+      "shape": "box",
+      "cls": "doc",
+      "label": "Trial Session",
+      "title": "Trial Session (Chapter 34)",
+      "info": "A one-session hands-on trial checking technical comfort and patience with students, introduced in Chapter 34."
+    },
+    {
+      "id": "Training",
+      "shape": "box",
+      "cls": "doc",
+      "label": "Training<br/>Curriculum",
+      "title": "Mentor Training Curriculum",
+      "info": "The fixed sequence of topics every new mentor works through before running any part of a session unsupervised: electrical safety, the specific kits they will support, and the club's own norms."
+    },
+    {
+      "id": "Matched",
+      "shape": "box",
+      "cls": "prep",
+      "label": "Matched to<br/>Strengths",
+      "title": "Bringing Out Mentor Strengths",
+      "info": "Deliberately matching each mentor's individual talents to the role where those talents matter most, instead of rotating everyone through identical duties."
+    },
+    {
+      "id": "Tier",
+      "shape": "diamond",
+      "cls": "wait",
+      "label": "Certification<br/>Tier?",
+      "title": "Mentor Certification Program",
+      "info": "Every mentor holds a named tier -- Trainee, Certified, or Lead Mentor -- based on specific checkable criteria. Each tier unlocks a specific new responsibility rather than serving as a badge."
+    },
+    {
+      "id": "Trainee",
+      "shape": "box",
+      "cls": "remediate",
+      "label": "Trainee",
+      "title": "Trainee",
+      "info": "Works alongside a certified mentor at all times. The tier exists so that 'new' is a defined state with defined limits, not an informal impression."
+    },
+    {
+      "id": "Certified",
+      "shape": "box",
+      "cls": "remediate",
+      "label": "Certified",
+      "title": "Certified",
+      "info": "Runs a station unsupervised and supports students directly. The tier most mentors stay at, and the club runs on it."
+    },
+    {
+      "id": "Lead",
+      "shape": "box",
+      "cls": "resolve",
+      "label": "Lead Mentor",
+      "title": "Lead Mentor",
+      "info": "Runs a whole session and supervises other mentors. This is the tier the leadership pipeline draws from."
+    },
+    {
+      "id": "Peer",
+      "shape": "box",
+      "cls": "prep",
+      "label": "Peer Support<br/>Program",
+      "title": "Mentor Peer Support Program",
+      "info": "Pairing a newer mentor with a veteran for regular check-ins, plus a standing mentor-only debrief. It runs continuously alongside every tier rather than at one stage."
+    },
+    {
+      "id": "Pipeline",
+      "shape": "box",
+      "cls": "resolve",
+      "label": "Leadership<br/>Pipeline",
+      "title": "Leadership Pipeline Development",
+      "info": "Which certified mentors show early signs of being able to run the entire club, and how the club hands them incrementally larger responsibility long before any actual departure."
+    },
+    {
+      "id": "Ready",
+      "shape": "round",
+      "cls": "resolve",
+      "label": "Ready to Co-Lead or<br/>Succeed the Founder",
+      "title": "Ready to Co-Lead or Succeed the Founder",
+      "info": "The mentor has practised real decisions well before any departure forces the issue, which is the only version of succession planning that works."
+    }
+  ],
+  "edges": [
+    {
+      "from": "Interview",
+      "to": "Trial"
+    },
+    {
+      "from": "Trial",
+      "to": "Training"
+    },
+    {
+      "from": "Training",
+      "to": "Matched"
+    },
+    {
+      "from": "Matched",
+      "to": "Tier"
+    },
+    {
+      "from": "Tier",
+      "to": "Trainee",
+      "label": "new"
+    },
+    {
+      "from": "Tier",
+      "to": "Certified",
+      "label": "criteria met"
+    },
+    {
+      "from": "Tier",
+      "to": "Lead",
+      "label": "runs sessions"
+    },
+    {
+      "from": "Trainee",
+      "to": "Peer"
+    },
+    {
+      "from": "Certified",
+      "to": "Peer"
+    },
+    {
+      "from": "Lead",
+      "to": "Peer"
+    },
+    {
+      "from": "Lead",
+      "to": "Pipeline"
+    },
+    {
+      "from": "Pipeline",
+      "to": "Ready"
+    }
+  ],
+  "legend": [
+    {
+      "cls": "retire",
+      "text": "Entry"
+    },
+    {
+      "cls": "doc",
+      "text": "Trial and training"
+    },
+    {
+      "cls": "prep",
+      "text": "Matching and ongoing peer support"
+    },
+    {
+      "cls": "wait",
+      "text": "Certification tier"
+    },
+    {
+      "cls": "remediate",
+      "text": "Trainee and Certified tiers"
+    },
+    {
+      "cls": "resolve",
+      "text": "Lead and leadership pipeline"
+    }
+  ]
+}

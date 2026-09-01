@@ -3,116 +3,96 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- microsim-scaffold-stub -->
+    <meta name="schema" content="https://dmccreary.github.io/intelligent-textbooks/ns/microsim/v1">
     <title>From Observation to Customized Lesson</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: #f8f9fa;
-            color: #212529;
-        }
-        #container {
-            width: 100%;
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 20px;
-            background: white;
-        }
-        h1 {
-            font-size: 22px;
-            margin-bottom: 10px;
-            color: #1a3a6c;
-        }
-        .placeholder {
-            border: 2px dashed #adb5bd;
-            border-radius: 8px;
-            padding: 40px 20px;
-            text-align: center;
-            color: #6c757d;
-            margin: 20px 0;
-            min-height: 400px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        .placeholder .badge {
-            display: inline-block;
-            background: #ffc107;
-            color: #212529;
-            padding: 4px 12px;
-            border-radius: 12px;
-            font-size: 12px;
-            font-weight: 600;
-            margin-bottom: 12px;
-        }
-        .placeholder h2 {
-            font-size: 18px;
-            color: #495057;
-            margin-bottom: 8px;
-        }
-        .placeholder p {
-            font-size: 14px;
-            max-width: 480px;
-        }
-        .meta {
-            margin-top: 20px;
-            font-size: 13px;
-            color: #6c757d;
-            border-top: 1px solid #dee2e6;
-            padding-top: 12px;
-        }
-        .meta strong { color: #495057; }
-    </style>
+    <script type="module">
+        import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+        mermaid.initialize({
+            startOnLoad: true,
+            theme: 'default',
+            flowchart: {
+                useMaxWidth: true,
+                htmlLabels: true,
+                curve: 'basis',
+                subGraphTitleMargin: { top: 10, bottom: 14 }
+            }
+        });
+    </script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="container">
-        <h1>From Observation to Customized Lesson</h1>
-        <div class="placeholder">
-            <span class="badge">SCAFFOLD</span>
-            <h2>MicroSim Not Yet Implemented</h2>
-            <p>This MicroSim has been scaffolded from its specification but the
-            interactive content has not been built yet. See the chapter source
-            and the <code>index.md</code> in this directory for the full spec.</p>
+<main>
+    <div class="container">
+        <div class="diagram-panel">
+            <div class="mermaid">
+flowchart TD
+    Observe("Mentor Observes a<br/>Student in Session"):::docNode
+    Model["Mentor Forms a<br/>Mental Model"]:::docNode
+    Request["Mentor Requests a<br/>Specific Customization"]:::prepNode
+    Draft["AI Agent Drafts the<br/>Customized Lesson"]:::remediateNode
+    Review["Mentor Reviews<br/>the Draft"]:::resolveNode
+    Used("Customized Lesson<br/>Used With the Student"):::resolveNode
+
+    Observe --> Model
+    Model --> Request
+    Request --> Draft
+    Draft --> Review
+    Review --> Used
+
+    classDef docNode fill:#4A90D9,stroke:#2E6BA8,stroke-width:2px,color:#fff,font-size:16px
+    classDef prepNode fill:#F5A623,stroke:#B87B12,stroke-width:2px,color:#333,font-size:16px
+    classDef remediateNode fill:#E8833A,stroke:#A85718,stroke-width:2px,color:#fff,font-size:16px
+    classDef resolveNode fill:#3E9E6E,stroke:#256E4A,stroke-width:2px,color:#fff,font-size:16px
+
+    linkStyle default stroke:#7A8A99,stroke-width:2px,font-size:16px
+            </div>
         </div>
-        <div class="meta">
-            <p><strong>Sim ID:</strong> ai-lesson-customization-workflow</p>
-            <p><strong>Library:</strong> Mermaid</p>
-            <p><strong>Bloom Level:</strong> Understand (L2)</p>
-            <p><strong>Learning Objective:</strong> Given a customization scenario, the learner explains which stage of the loop is mentor observation, which is the AI draft, and which is human review.</p>
+        <div class="info-panel">
+            <h3>Step Details</h3>
+            <div id="info-display">
+                <p class="info-placeholder">Hover a step to preview it, or click a step to pin its details here.</p>
+                <div class="legend">
+                    <div class="legend-item"><span class="swatch sw-doc"></span>Mentor observation</div>
+                    <div class="legend-item"><span class="swatch sw-prep"></span>Mentor's request</div>
+                    <div class="legend-item"><span class="swatch sw-remediate"></span>AI draft</div>
+                    <div class="legend-item"><span class="swatch sw-resolve"></span>Human review and use</div>
+                </div>
+            </div>
+
         </div>
     </div>
+</main>
 
-    <!--
-    SPECIFICATION (from chapter index.md):
-
-    Type: workflow
-    **sim-id:** ai-lesson-customization-workflow<br/>
-    **Library:** Mermaid<br/>
-    **Status:** Specified
-    **Template:** https://github.com/dmccreary/ai-strategy-for-education/tree/main/docs/sims/ai-concept-hierarchy
-    
-    Purpose: Tie building a student mental model, customizing lessons with AI, and AI assisted lesson customization into one traceable loop, so a learner sees where the mentor's own observation enters the process and where the human review step from chapter 32 still applies.
-    
-    Bloom Taxonomy: Understand (L2)
-    Bloom Taxonomy Verb: explain
-    
-    Learning objective: Given a customization scenario, the learner explains which stage of the loop is mentor observation, which is the AI draft, and which is human review.
-    
-    Steps (flowchart, no decision diamonds needed):
-    1. Start: "Mentor Observes a Student in Session" -- click reveals "The mentor's own week-to-week observation -- what a student enjoys, what they get stuck on -- never a stored profile."
-    2. Process: "Mentor Forms a Mental Model" -- click reveals "A working picture in the mentor's head: 'this student responds well to music-themed examples.'"
-    3. Process: "Mentor Requests a Specific Customization" -- click reveals "A detailed prompt naming exactly what should change -- pacing, analogy, difficulty -- following the specificity habit from chapter 32's prompt engineering section."
-    4. Process: "AI Agent Drafts the Customized Lesson" -- click reveals "The agent produces a revised card or lesson, keeping the underlying concept the same."
-    5. Process: "Mentor Reviews the Draft" -- click reveals "The same human-in-the-loop review chapter 32 required for every AI-drafted output, applied here to a lesson instead of a message."
-    6. End: "Customized Lesson Used With the Student" -- click reveals "The version that actually reaches the student -- always mentor-approved, never sent straight from the agent."
-    
-    Interactivity requirement (satisfied): every node has a Mermaid `click` directive tied to an infobox showing its revealed text.
-    
-    Color coding: Blue for the two mentor-observation steps, amber for the AI-drafting step, green for the human-review and final-use steps.
-    
-    Implementation: Mermaid flowchart (`graph TD`) rendered in main.html with `click NodeId call showInfo("NodeId")` directives for every node, opening a side-panel infobox.
-    -->
+    <!-- Node information data - one entry per node in the flowchart above -->
+    <script>
+        const nodeInfo = {
+            "Observe": {
+                title: "Mentor Observes a Student in Session",
+                description: "The mentor's own week-to-week observation -- what a student enjoys, what they get stuck on. Never a stored profile."
+            },
+            "Model": {
+                title: "Mentor Forms a Mental Model",
+                description: "A working picture in the mentor's head: 'this student responds well to music-themed examples.'"
+            },
+            "Request": {
+                title: "Mentor Requests a Specific Customization",
+                description: "A detailed prompt naming exactly what should change -- pacing, analogy, difficulty -- following the specificity habit from Chapter 32's prompt engineering section."
+            },
+            "Draft": {
+                title: "AI Agent Drafts the Customized Lesson",
+                description: "The agent produces a revised card or lesson, keeping the underlying concept the same."
+            },
+            "Review": {
+                title: "Mentor Reviews the Draft",
+                description: "The same human-in-the-loop review Chapter 32 required for every AI-drafted output, applied here to a lesson instead of a message."
+            },
+            "Used": {
+                title: "Customized Lesson Used With the Student",
+                description: "The version that actually reaches the student -- always mentor-approved, never sent straight from the agent."
+            }
+        };
+    </script>
+    <!-- Load interaction script after nodeInfo is defined -->
+    <script src="script.js"></script>
 </body>
 </html>

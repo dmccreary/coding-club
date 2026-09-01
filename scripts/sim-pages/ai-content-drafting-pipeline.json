@@ -1,0 +1,21 @@
+{
+  "title": "From Draft to Delivered - AI Content Pipeline",
+  "height": 842,
+  "library": "Mermaid",
+  "bloom": "Analyze (L4)",
+  "verb": "differentiate",
+  "description": "Three AI drafting agents, three different jobs, one review gate every draft must pass.",
+  "concepts": [
+    "AI Managed Mailing List",
+    "AI Generated Announcement",
+    "AI Drafted Newsletter",
+    "Human Review Gate"
+  ],
+  "interaction": "Hover-to-preview and click-to-pin pipeline where three branches converge on a shared human review",
+  "assessment": "Give a content need and ask which agent drafts it and what all three paths have in common.",
+  "audience": "Club leaders using AI for family communication",
+  "about": "Three agents, three genuinely different jobs. The mailing-list agent proposes\nmoving a contact between segments. The announcement agent drafts a one-off,\nsituation-specific message. The newsletter agent writes fresh narrative prose.\n\nThe learning objective is not really about telling them apart -- the branch labels\ndo that. It is about noticing the shape: all three converge on **Human Reviews\nDraft**, and none of them can reach a family without passing it.\n\nThat convergence is the design. It would be easy to argue that a segment update\nis too trivial to need review, and that is exactly the argument that eventually\nmoves a family to the wrong list. One gate, no exceptions, is simpler to operate\nthan three different rules about which drafts need checking.\n\nThe decline branch loops back to review rather than straight to sending, so a\nredrafted message gets checked too.",
+  "howto": "- **Hover a step** to preview it; **click** to pin the details.\n- Trace each of the three branches to the review node -- they differ before it\n  and are identical after it.",
+  "lesson": "**Bloom level:** Analyze (L4) -- *differentiate*\n\n**Learning objective:** Given one of three AI content-drafting scenarios, the\nlearner differentiates its path through the pipeline and identifies the review\nstep common to all three.\n\n**Before the sim (5 min).** Ask which of the club's outgoing messages would be\nsafe to send without anyone reading them first. The instinct is to name the small\nones.\n\n**With the sim (10 min).** Walk all three branches, then cover the review node and\nask what changes. Every branch becomes an agent talking directly to families.\n\n**After the sim (15 min).** Name who performs the review for each content type in\nthis club, by name. An unassigned gate is not a gate.\n\n**Check for understanding.** Ask: \"Which of the three paths could safely skip\nreview?\" None -- and being able to argue why the trivial-looking one is not an\nexception is the objective met.",
+  "refs": "- {{CHAPTER}} -- the chapter this MicroSim supports.\n- [Human-in-the-Loop Review Workflow](../human-in-the-loop-review-workflow/index.md) -- the review gate itself, in detail.\n- [Automated Communication Pipeline](../automated-communication-pipeline/index.md) -- how an approved message then reaches a family.\n- [Content management](https://en.wikipedia.org/wiki/Content_management) -- editorial review as a stage rather than an afterthought.\n- [Email marketing](https://en.wikipedia.org/wiki/Email_marketing) -- where list segmentation comes from."
+}

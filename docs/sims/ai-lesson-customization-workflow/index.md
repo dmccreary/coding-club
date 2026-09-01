@@ -1,18 +1,73 @@
 ---
 title: From Observation to Customized Lesson
-description: Given a customization scenario, the learner explains which stage of the loop is mentor observation, which is the AI draft, and which is human review.
-status: scaffold
+description: Where the mentor's own observation enters an AI customization loop, and where human review still applies.
+image: sims/ai-lesson-customization-workflow/ai-lesson-customization-workflow.png
+status: built
 library: Mermaid
 bloom_level: Understand (L2)
 ---
 
 # From Observation to Customized Lesson
 
+<iframe src="main.html" width="100%" height="762" scrolling="no"></iframe>
 
+[Run the From Observation to Customized Lesson MicroSim fullscreen](main.html){ .md-button .md-button--primary }
 
-<iframe src="main.html" width="100%" height="600"></iframe>
+## About This MicroSim
 
-[Run MicroSim in Fullscreen](main.html){ .md-button .md-button--primary }
+Only one stage of this loop is the AI's. The rest belong to the mentor, and that
+proportion is the point.
+
+The loop begins with **observation** -- what this student enjoys, where they got
+stuck -- and the panel text is emphatic about what that is not: a stored profile.
+The club is not building a model of the child. A mentor is noticing something,
+this week, and holding it in their head.
+
+The mentor then turns that into a **specific request**. Not "make this easier",
+but a prompt naming exactly what should change: the pacing, the analogy, the
+difficulty. Specificity is what separates a useful customization from a
+regenerated lesson that is different but not better.
+
+The agent drafts. The mentor reviews. The same human-in-the-loop gate Chapter 32
+required for messages applies to lessons, for the same reason.
+
+## How to Use
+
+- **Hover a stage** to preview it; **click** to pin the details.
+- Blue and amber stages are the mentor's; the orange stage is the AI's; green is
+  review and use.
+
+## Lesson Plan
+
+**Bloom level:** Understand (L2) -- *explain*
+
+**Learning objective:** Given a customization scenario, the learner explains which
+stage of the loop is mentor observation, which is the AI draft, and which is
+human review.
+
+**Before the sim (5 min).** Ask how the club would customize a lesson for a
+student who loves music. Listen for whether anyone proposes storing that fact
+somewhere.
+
+**With the sim (10 min).** Walk the stages and count how many belong to the mentor.
+Four of six. Then ask what the agent is given -- a request, not a student.
+
+**After the sim (15 min).** Write one real customization request for a real
+student, specific enough that two different mentors would produce similar drafts
+from it.
+
+**Check for understanding.** Ask: "What does the AI agent know about the student?"
+Only what the mentor put in the prompt -- and understanding why that is a design
+choice rather than a limitation is the objective met.
+
+## Embedding This MicroSim
+
+Paste this into any page of the book, adjusting the relative path to
+`docs/sims/` for the page's depth:
+
+```html
+<iframe src="../../sims/ai-lesson-customization-workflow/main.html" width="100%" height="762" scrolling="no"></iframe>
+```
 
 ## Specification
 
@@ -48,6 +103,10 @@ Color coding: Blue for the two mentor-observation steps, amber for the AI-drafti
 Implementation: Mermaid flowchart (`graph TD`) rendered in main.html with `click NodeId call showInfo("NodeId")` directives for every node, opening a side-panel infobox.
 ```
 
-## Related Resources
+## References
 
-- [Chapter 33: AI-Customized Curriculum and Rolling Out New Agents](../../chapters/33-ai-customized-curriculum-rollout/index.md)
+- [Chapter 33: AI-Customized Curriculum and Rolling Out New Agents](../../chapters/33-ai-customized-curriculum-rollout/index.md) -- the chapter this MicroSim supports.
+- [Human-in-the-Loop Review Workflow](../human-in-the-loop-review-workflow/index.md) -- the review step this loop reuses.
+- [Where a Coding-Help Request Goes](../coding-help-agent-handoff/index.md) -- the student-facing counterpart.
+- [Differentiated instruction](https://en.wikipedia.org/wiki/Differentiated_instruction) -- the teaching practice being assisted.
+- [Prompt engineering](https://en.wikipedia.org/wiki/Prompt_engineering) -- why specificity in the request matters so much.

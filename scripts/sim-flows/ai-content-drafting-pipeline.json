@@ -1,0 +1,161 @@
+{
+  "title": "From Draft to Delivered - AI Content Pipeline",
+  "height": 840,
+  "direction": "TD",
+  "nodes": [
+    {
+      "id": "Need",
+      "shape": "round",
+      "cls": "retire",
+      "label": "Content Need<br/>Identified",
+      "title": "Content Need Identified",
+      "info": "A segment needs updating, an urgent situation needs an announcement, or the month needs a newsletter paragraph."
+    },
+    {
+      "id": "Which",
+      "shape": "diamond",
+      "cls": "wait",
+      "label": "Which Content<br/>Type?",
+      "title": "Which Content Type?",
+      "info": "Routes to one of three drafting agents based on what is needed."
+    },
+    {
+      "id": "Segment",
+      "shape": "box",
+      "cls": "doc",
+      "label": "AI Managed Mailing List<br/>Drafts Segment Update",
+      "title": "AI Managed Mailing List Drafts Segment Update",
+      "info": "Proposes moving a contact between segments, such as Waitlist to Active Families."
+    },
+    {
+      "id": "Announce",
+      "shape": "box",
+      "cls": "prep",
+      "label": "AI Generated Announcement<br/>Drafts Message",
+      "title": "AI Generated Announcement Drafts Message",
+      "info": "Drafts one or more versions of a one-off, situation-specific message."
+    },
+    {
+      "id": "Newsletter",
+      "shape": "box",
+      "cls": "remediate",
+      "label": "AI Drafted Newsletter<br/>Writes Monthly Paragraph",
+      "title": "AI Drafted Newsletter Writes Monthly Paragraph",
+      "info": "Writes fresh narrative prose highlighting the month's events."
+    },
+    {
+      "id": "Review",
+      "shape": "box",
+      "cls": "resolve",
+      "label": "Human Reviews<br/>Draft",
+      "title": "Human Reviews Draft",
+      "info": "Every draft, regardless of type, is checked by a person before anything happens with it. This is the node the three branches exist to reach."
+    },
+    {
+      "id": "Approved",
+      "shape": "diamond",
+      "cls": "wait",
+      "label": "Approved?",
+      "title": "Approved?",
+      "info": "The reviewer can approve as-is, edit and approve, or send it back for a new draft."
+    },
+    {
+      "id": "Sent",
+      "shape": "round",
+      "cls": "resolve",
+      "label": "Sent or Merged",
+      "title": "Sent or Merged",
+      "info": "A segment update is applied, an announcement goes out on the channel chosen for it, or the newsletter paragraph is merged into the monthly digest."
+    },
+    {
+      "id": "Redraft",
+      "shape": "box",
+      "cls": "danger",
+      "label": "Sent Back for<br/>a New Draft",
+      "title": "Sent Back for a New Draft",
+      "info": "The agent tries again. Nothing reaches a family from a draft the reviewer declined."
+    }
+  ],
+  "edges": [
+    {
+      "from": "Need",
+      "to": "Which"
+    },
+    {
+      "from": "Which",
+      "to": "Segment",
+      "label": "mailing list"
+    },
+    {
+      "from": "Which",
+      "to": "Announce",
+      "label": "announcement"
+    },
+    {
+      "from": "Which",
+      "to": "Newsletter",
+      "label": "newsletter"
+    },
+    {
+      "from": "Segment",
+      "to": "Review"
+    },
+    {
+      "from": "Announce",
+      "to": "Review"
+    },
+    {
+      "from": "Newsletter",
+      "to": "Review"
+    },
+    {
+      "from": "Review",
+      "to": "Approved"
+    },
+    {
+      "from": "Approved",
+      "to": "Sent",
+      "label": "Yes"
+    },
+    {
+      "from": "Approved",
+      "to": "Redraft",
+      "label": "No"
+    },
+    {
+      "from": "Redraft",
+      "to": "Review",
+      "label": "new draft"
+    }
+  ],
+  "legend": [
+    {
+      "cls": "retire",
+      "text": "Need identified"
+    },
+    {
+      "cls": "wait",
+      "text": "Decision"
+    },
+    {
+      "cls": "doc",
+      "text": "Mailing list agent"
+    },
+    {
+      "cls": "prep",
+      "text": "Announcement agent"
+    },
+    {
+      "cls": "remediate",
+      "text": "Newsletter agent"
+    },
+    {
+      "cls": "resolve",
+      "text": "The shared review gate"
+    },
+    {
+      "cls": "danger",
+      "text": "Declined"
+    }
+  ]
+}

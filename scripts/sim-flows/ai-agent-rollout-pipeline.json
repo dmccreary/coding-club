@@ -1,0 +1,100 @@
+{
+  "title": "The AI Agent Rollout Pipeline",
+  "height": 840,
+  "direction": "TD",
+  "nodes": [
+    {
+      "id": "Selected",
+      "shape": "round",
+      "cls": "retire",
+      "label": "Tool Selected",
+      "title": "Tool Selected (per Selection Criteria)",
+      "info": "The vendor comparison and selection criteria from earlier in this chapter already happened by this point."
+    },
+    {
+      "id": "Design",
+      "shape": "box",
+      "cls": "doc",
+      "label": "AI Agent<br/>Workflow Design",
+      "title": "AI Agent Workflow Design",
+      "info": "Map exactly where the new agent fits into an existing club process and who reviews its output. Skipping this gives you a tool with no owner and no review step."
+    },
+    {
+      "id": "Testing",
+      "shape": "box",
+      "cls": "doc",
+      "label": "AI Agent<br/>Integration Testing",
+      "title": "AI Agent Integration Testing",
+      "info": "Try the agent on real but low-stakes material before any family sees its output. Skipping this means families are the test."
+    },
+    {
+      "id": "Rollout",
+      "shape": "box",
+      "cls": "prep",
+      "label": "AI Agent<br/>Rollout Plan",
+      "title": "AI Agent Rollout Plan",
+      "info": "Introduce the tested agent gradually -- one mentor first, not the whole club at once. Skipping this turns one bad assumption into a club-wide problem."
+    },
+    {
+      "id": "Training",
+      "shape": "box",
+      "cls": "prep",
+      "label": "AI Agent Training<br/>for Leaders",
+      "title": "AI Agent Training for Leaders",
+      "info": "Teach every mentor who will use it how to prompt it well and what its guardrails and quirks are. Skipping this produces inconsistent output blamed on the tool."
+    },
+    {
+      "id": "Coaching",
+      "shape": "box",
+      "cls": "resolve",
+      "label": "Coaching Leaders<br/>With AI",
+      "title": "Coaching Leaders With AI",
+      "info": "An ongoing agent-assisted coaching layer for the club's own leadership, drawing on retrospective notes over time."
+    }
+  ],
+  "edges": [
+    {
+      "from": "Selected",
+      "to": "Design"
+    },
+    {
+      "from": "Design",
+      "to": "Testing"
+    },
+    {
+      "from": "Testing",
+      "to": "Rollout"
+    },
+    {
+      "from": "Rollout",
+      "to": "Training"
+    },
+    {
+      "from": "Training",
+      "to": "Coaching"
+    },
+    {
+      "from": "Coaching",
+      "to": "Design",
+      "label": "a lesson learned sends you back to redesign"
+    }
+  ],
+  "legend": [
+    {
+      "cls": "retire",
+      "text": "Already decided"
+    },
+    {
+      "cls": "doc",
+      "text": "Design and test"
+    },
+    {
+      "cls": "prep",
+      "text": "Roll out and train"
+    },
+    {
+      "cls": "resolve",
+      "text": "Ongoing coaching"
+    }
+  ]
+}

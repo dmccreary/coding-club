@@ -202,7 +202,7 @@ nav:
     - Feedback Loop Cycle: sims/feedback-loop-cycle/index.md
     - Four Coding Club Scheduling Models: sims/four-scheduling-models/index.md
     - Frequency Spectrum Display Explorer: sims/frequency-spectrum-display-explorer/index.md
-    - From Draft to Delivered — AI Content Pipeline: sims/ai-content-drafting-pipeline/index.md
+    - From Draft to Delivered - AI Content Pipeline: sims/ai-content-drafting-pipeline/index.md
     - From Observation to Customized Lesson: sims/ai-lesson-customization-workflow/index.md
     - From Scattered Knowledge to a Club Playbook: sims/club-playbook-assembly-workflow/index.md
     - Frustration Escalation Response Flow: sims/frustration-escalation-response-flow/index.md
@@ -290,6 +290,8 @@ nav:
     - Ultrasonic Ranging Explorer: sims/ultrasonic-ranging/index.md
     - USB-A vs USB-C Connector Comparison: sims/usb-connector-comparison/index.md
     - Where a Coding-Help Request Goes: sims/coding-help-agent-handoff/index.md
+
+
 
 
 

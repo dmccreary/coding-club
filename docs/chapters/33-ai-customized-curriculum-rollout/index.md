@@ -97,7 +97,7 @@ A worked example shows the specificity paying off: a mentor asks an agent to "sl
 
 #### Diagram: From Observation to Customized Lesson
 
-<iframe src="../../sims/ai-lesson-customization-workflow/main.html" width="100%" height="540px" scrolling="no"></iframe>
+<iframe src="../../sims/ai-lesson-customization-workflow/main.html" width="100%" height="762px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>From Observation to Customized Lesson</summary>
@@ -542,7 +542,7 @@ Choosing a tool responsibly is only half the job; the five concepts below cover 
 
 #### Diagram: The AI Agent Rollout Pipeline
 
-<iframe src="../../sims/ai-agent-rollout-pipeline/main.html" width="100%" height="540px" scrolling="no"></iframe>
+<iframe src="../../sims/ai-agent-rollout-pipeline/main.html" width="100%" height="842px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>The AI Agent Rollout Pipeline</summary>

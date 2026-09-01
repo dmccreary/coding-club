@@ -13,8 +13,8 @@ above are maintained by hand as sims are actually built.
 
 - Chapters scanned: 35
 - Total diagram specs found: 129
-- Already implemented: 41
-- **Unimplemented (TODO): 88**
+- Already implemented: 45
+- **Unimplemented (TODO): 84**
 
 Regenerate this list after adding or editing chapter diagram specs:
 
@@ -281,7 +281,7 @@ python3 ~/.claude/skills/microsim-utils/scripts/create-microsim-todo-json-files.
 |---|---|---|---|
 | [`ai-agent-loop-explorer`](TODO/ai-agent-loop-explorer.json) | AI Agent Loop Explorer | p5.js | Understand (L2) |
 | [`ai-agent-roster-network`](TODO/ai-agent-roster-network.json) | Meet the Club's AI Agent Roster | vis-network | Understand (L2) |
-| [`ai-content-drafting-pipeline`](TODO/ai-content-drafting-pipeline.json) | From Draft to Delivered — AI Content Pipeline | Mermaid | Analyze (L4) |
+| :white_check_mark: [`ai-content-drafting-pipeline`](ai-content-drafting-pipeline/index.md) | From Draft to Delivered — AI Content Pipeline | Mermaid | Analyze (L4) |
 | :white_check_mark: [`human-in-the-loop-review-workflow`](human-in-the-loop-review-workflow/index.md) | Human-in-the-Loop Review Workflow | Mermaid | Evaluate (L5) |
 | [`mentor-recruiting-influence-graph`](TODO/mentor-recruiting-influence-graph.json) | Building and Reading an Influence Graph | vis-network | Analyze (L4) |
 | [`prompt-refinement-step-through`](TODO/prompt-refinement-step-through.json) | Prompt Refinement Step-Through | p5.js | Apply (L3) |
@@ -291,8 +291,8 @@ python3 ~/.claude/skills/microsim-utils/scripts/create-microsim-todo-json-files.
 
 | Sim ID | Diagram Name | Library | Bloom Level |
 |---|---|---|---|
-| [`ai-agent-rollout-pipeline`](TODO/ai-agent-rollout-pipeline.json) | The AI Agent Rollout Pipeline | Mermaid | Understand (L2) |
-| [`ai-lesson-customization-workflow`](TODO/ai-lesson-customization-workflow.json) | From Observation to Customized Lesson | Mermaid | Understand (L2) |
+| :white_check_mark: [`ai-agent-rollout-pipeline`](ai-agent-rollout-pipeline/index.md) | The AI Agent Rollout Pipeline | Mermaid | Understand (L2) |
+| :white_check_mark: [`ai-lesson-customization-workflow`](ai-lesson-customization-workflow/index.md) | From Observation to Customized Lesson | Mermaid | Understand (L2) |
 | [`ai-tool-selection-radar`](TODO/ai-tool-selection-radar.json) | Comparing AI Tools Against Selection Criteria | Chart.js | Evaluate (L5) |
 | [`bias-privacy-risk-sorter`](TODO/bias-privacy-risk-sorter.json) | Bias Risk, Privacy Risk, or Neither? | p5.js | Evaluate (L5) |
 | :white_check_mark: [`coding-help-agent-handoff`](coding-help-agent-handoff/index.md) | Where a Coding-Help Request Goes | Mermaid | Analyze (L4) |
@@ -315,5 +315,5 @@ python3 ~/.claude/skills/microsim-utils/scripts/create-microsim-todo-json-files.
 |---|---|---|---|
 | [`club-health-metrics-dashboard`](TODO/club-health-metrics-dashboard.json) | Club Health Metrics Dashboard | Chart.js | Evaluate (L5) |
 | [`club-playbook-assembly-workflow`](TODO/club-playbook-assembly-workflow.json) | From Scattered Knowledge to a Club Playbook | Mermaid | Analyze (L4) |
-| [`mentor-development-pipeline`](TODO/mentor-development-pipeline.json) | Mentor Development Pipeline | Mermaid | Analyze (L4) |
+| :white_check_mark: [`mentor-development-pipeline`](mentor-development-pipeline/index.md) | Mentor Development Pipeline | Mermaid | Analyze (L4) |
 

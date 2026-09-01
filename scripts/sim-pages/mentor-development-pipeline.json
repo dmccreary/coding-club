@@ -1,0 +1,22 @@
+{
+  "title": "Mentor Development Pipeline",
+  "height": 882,
+  "library": "Mermaid",
+  "bloom": "Analyze (L4)",
+  "verb": "sequence",
+  "description": "One candidate's whole path: interview, trial, training, tiers, and the pipeline that produces the club's next leader.",
+  "concepts": [
+    "Mentor Interview",
+    "Training Curriculum",
+    "Certification Tiers",
+    "Peer Support",
+    "Leadership Pipeline"
+  ],
+  "interaction": "Hover-to-preview and click-to-pin pipeline with three certification tiers and a continuous peer-support process",
+  "assessment": "Give a mentor's current tier and ask what unlocks the next one.",
+  "audience": "Club leaders developing mentors",
+  "about": "Six concepts from this chapter, arranged as one path a real person walks.\n\nThe **certification tiers** are the load-bearing idea, and the panel text is\ncareful about why: each tier unlocks a specific new responsibility rather than\nserving as a badge. Trainee means works alongside someone at all times. Certified\nmeans runs a station alone. Lead Mentor means runs a session and supervises\nothers. A tier that unlocks nothing is decoration.\n\n**Peer support** connects to all three tiers rather than sitting at one stage,\nbecause it runs continuously. A veteran paired with a newer mentor, plus a\nstanding mentor-only debrief -- structural, so it does not depend on the founder\nnoticing that someone is struggling.\n\nThe tail matters most for clubs that intend to outlast their founder.\n**Leadership pipeline development** asks which certified mentors could run the\nwhole club, and hands them incrementally larger responsibility *long before* any\ndeparture forces the question. Succession planned after the founder announces\nthey are leaving is not planning.",
+  "howto": "- **Hover a stage** to preview it; **click** to pin the definition.\n- The three tier boxes branch from the certification diamond; all three connect\n  to peer support, which runs alongside every tier.\n- The leadership pipeline branches only from Lead Mentor.",
+  "lesson": "**Bloom level:** Analyze (L4) -- *sequence and differentiate*\n\n**Learning objective:** Given a mentor candidate's current stage, the learner\nsequences the remaining stages of development and differentiates what unlocks\nprogress to the next one.\n\n**Before the sim (5 min).** Ask what the club's most experienced mentor is allowed\nto do that a brand-new one is not. If the answer is vague, the club has no tiers.\n\n**With the sim (15 min).** Walk the path, then focus on the tiers. For each, ask\nwhat specific responsibility it unlocks and what checkable criterion gates it.\nThen ask why peer support attaches to all three rather than to Trainee alone.\n\n**After the sim (15 min).** Place every current mentor on a tier and write the one\ncriterion each would need to meet to advance.\n\n**Check for understanding.** Ask: \"Your best Certified mentor wants more\nresponsibility. What is the next stage, and what has to be true first?\" Lead\nMentor, gated by checkable criteria -- and noticing that the leadership pipeline\ncomes only after that is the sequencing this objective wants.",
+  "refs": "- {{CHAPTER}} -- the chapter this MicroSim supports.\n- [Kit Lifecycle Workflow](../kit-lifecycle-workflow/index.md) -- the same lifecycle framing applied to equipment.\n- [Succession planning](https://en.wikipedia.org/wiki/Succession_planning) -- why it starts long before a departure.\n- [Professional certification](https://en.wikipedia.org/wiki/Professional_certification) -- tiers that gate responsibility rather than status.\n- [Mentorship](https://en.wikipedia.org/wiki/Mentorship) -- the pairing model behind peer support."
+}

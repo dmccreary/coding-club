@@ -1,0 +1,95 @@
+{
+  "title": "From Observation to Customized Lesson",
+  "height": 760,
+  "direction": "TD",
+  "nodes": [
+    {
+      "id": "Observe",
+      "shape": "round",
+      "cls": "doc",
+      "label": "Mentor Observes a<br/>Student in Session",
+      "title": "Mentor Observes a Student in Session",
+      "info": "The mentor's own week-to-week observation -- what a student enjoys, what they get stuck on. Never a stored profile."
+    },
+    {
+      "id": "Model",
+      "shape": "box",
+      "cls": "doc",
+      "label": "Mentor Forms a<br/>Mental Model",
+      "title": "Mentor Forms a Mental Model",
+      "info": "A working picture in the mentor's head: 'this student responds well to music-themed examples.'"
+    },
+    {
+      "id": "Request",
+      "shape": "box",
+      "cls": "prep",
+      "label": "Mentor Requests a<br/>Specific Customization",
+      "title": "Mentor Requests a Specific Customization",
+      "info": "A detailed prompt naming exactly what should change -- pacing, analogy, difficulty -- following the specificity habit from Chapter 32's prompt engineering section."
+    },
+    {
+      "id": "Draft",
+      "shape": "box",
+      "cls": "remediate",
+      "label": "AI Agent Drafts the<br/>Customized Lesson",
+      "title": "AI Agent Drafts the Customized Lesson",
+      "info": "The agent produces a revised card or lesson, keeping the underlying concept the same."
+    },
+    {
+      "id": "Review",
+      "shape": "box",
+      "cls": "resolve",
+      "label": "Mentor Reviews<br/>the Draft",
+      "title": "Mentor Reviews the Draft",
+      "info": "The same human-in-the-loop review Chapter 32 required for every AI-drafted output, applied here to a lesson instead of a message."
+    },
+    {
+      "id": "Used",
+      "shape": "round",
+      "cls": "resolve",
+      "label": "Customized Lesson<br/>Used With the Student",
+      "title": "Customized Lesson Used With the Student",
+      "info": "The version that actually reaches the student -- always mentor-approved, never sent straight from the agent."
+    }
+  ],
+  "edges": [
+    {
+      "from": "Observe",
+      "to": "Model"
+    },
+    {
+      "from": "Model",
+      "to": "Request"
+    },
+    {
+      "from": "Request",
+      "to": "Draft"
+    },
+    {
+      "from": "Draft",
+      "to": "Review"
+    },
+    {
+      "from": "Review",
+      "to": "Used"
+    }
+  ],
+  "legend": [
+    {
+      "cls": "doc",
+      "text": "Mentor observation"
+    },
+    {
+      "cls": "prep",
+      "text": "Mentor's request"
+    },
+    {
+      "cls": "remediate",
+      "text": "AI draft"
+    },
+    {
+      "cls": "resolve",
+      "text": "Human review and use"
+    }
+  ]
+}
