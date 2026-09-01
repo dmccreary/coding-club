@@ -118,7 +118,7 @@ The workflow below walks through how these three pieces connect into a single de
 
 #### Diagram: Should You Start This Club?
 
-<iframe src="../../sims/club-feasibility-decision-path/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../sims/club-feasibility-decision-path/main.html" width="100%" height="882px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Should You Start This Club? A Feasibility Decision Path</summary>

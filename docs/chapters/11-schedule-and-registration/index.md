@@ -123,7 +123,7 @@ Families who arrive after that cap is reached join a **waiting list signup** -- 
 
 #### Diagram: Mentor-Gated Registration Flow
 
-<iframe src="../../sims/mentor-gated-registration-flow/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../sims/mentor-gated-registration-flow/main.html" width="100%" height="762px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Mentor-Gated Registration Flow</summary>

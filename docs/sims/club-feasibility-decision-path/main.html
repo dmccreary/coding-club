@@ -3,117 +3,107 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- microsim-scaffold-stub -->
+    <meta name="schema" content="https://dmccreary.github.io/intelligent-textbooks/ns/microsim/v1">
     <title>Should You Start This Club?</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: #f8f9fa;
-            color: #212529;
-        }
-        #container {
-            width: 100%;
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 20px;
-            background: white;
-        }
-        h1 {
-            font-size: 22px;
-            margin-bottom: 10px;
-            color: #1a3a6c;
-        }
-        .placeholder {
-            border: 2px dashed #adb5bd;
-            border-radius: 8px;
-            padding: 40px 20px;
-            text-align: center;
-            color: #6c757d;
-            margin: 20px 0;
-            min-height: 400px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        .placeholder .badge {
-            display: inline-block;
-            background: #ffc107;
-            color: #212529;
-            padding: 4px 12px;
-            border-radius: 12px;
-            font-size: 12px;
-            font-weight: 600;
-            margin-bottom: 12px;
-        }
-        .placeholder h2 {
-            font-size: 18px;
-            color: #495057;
-            margin-bottom: 8px;
-        }
-        .placeholder p {
-            font-size: 14px;
-            max-width: 480px;
-        }
-        .meta {
-            margin-top: 20px;
-            font-size: 13px;
-            color: #6c757d;
-            border-top: 1px solid #dee2e6;
-            padding-top: 12px;
-        }
-        .meta strong { color: #495057; }
-    </style>
+    <script type="module">
+        import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+        mermaid.initialize({
+            startOnLoad: true,
+            theme: 'default',
+            flowchart: {
+                useMaxWidth: true,
+                htmlLabels: true,
+                curve: 'basis',
+                subGraphTitleMargin: { top: 10, bottom: 14 }
+            }
+        });
+    </script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="container">
-        <h1>Should You Start This Club?</h1>
-        <div class="placeholder">
-            <span class="badge">SCAFFOLD</span>
-            <h2>MicroSim Not Yet Implemented</h2>
-            <p>This MicroSim has been scaffolded from its specification but the
-            interactive content has not been built yet. See the chapter source
-            and the <code>index.md</code> in this directory for the full spec.</p>
+<main>
+    <div class="container">
+        <div class="diagram-panel">
+            <div class="mermaid">
+flowchart TD
+    Survey("Interest Survey<br/>Analyzed"):::docNode
+    VenueCheck{"Is a Venue<br/>Confirmed?"}:::decisionNode
+    SecureVenue["Secure a Venue<br/>Agreement First"]:::remediateNode
+    TeamCheck{"Is a Founding Team of<br/>2+ People Assembled?"}:::decisionNode
+    RecruitCoFounder["Recruit at Least One<br/>Co-Founder Before Launch"]:::remediateNode
+    MentorCheck{"Is a Background-Checked<br/>Mentor Confirmed?"}:::decisionNode
+    CompleteChecks["Complete Background Checks<br/>Before Announcing a Date"]:::remediateNode
+    Establish("Establish the Club and<br/>Set a First Meeting Date"):::resolveNode
+
+    Survey --> VenueCheck
+    VenueCheck -->|No| SecureVenue
+    VenueCheck -->|Yes| TeamCheck
+    TeamCheck -->|No| RecruitCoFounder
+    TeamCheck -->|Yes| MentorCheck
+    MentorCheck -->|No| CompleteChecks
+    MentorCheck -->|Yes| Establish
+
+    classDef docNode fill:#4A90D9,stroke:#2E6BA8,stroke-width:2px,color:#fff,font-size:16px
+    classDef decisionNode fill:#F5A623,stroke:#B87B12,stroke-width:2px,color:#333,font-size:16px
+    classDef remediateNode fill:#E8833A,stroke:#A85718,stroke-width:2px,color:#fff,font-size:16px
+    classDef resolveNode fill:#3E9E6E,stroke:#256E4A,stroke-width:2px,color:#fff,font-size:16px
+
+    linkStyle default stroke:#7A8A99,stroke-width:2px,font-size:16px
+            </div>
         </div>
-        <div class="meta">
-            <p><strong>Sim ID:</strong> club-feasibility-decision-path</p>
-            <p><strong>Library:</strong> Mermaid</p>
-            <p><strong>Bloom Level:</strong> Apply (L3)</p>
-            <p><strong>Learning Objective:</strong> Given survey results and a candidate venue and team, the learner follows the correct sequence of feasibility checks to decide whether to establish a new club.</p>
+        <div class="info-panel">
+            <h3>Step Details</h3>
+            <div id="info-display">
+                <p class="info-placeholder">Hover a step to preview it, or click a step to pin its details here.</p>
+                <div class="legend">
+                    <div class="legend-item"><span class="swatch sw-doc"></span>Evidence gathered</div>
+                    <div class="legend-item"><span class="swatch sw-decision"></span>Feasibility check</div>
+                    <div class="legend-item"><span class="swatch sw-remediate"></span>Not ready - fix this first</div>
+                    <div class="legend-item"><span class="swatch sw-resolve"></span>Go decision</div>
+                </div>
+            </div>
         </div>
     </div>
+</main>
 
-    <!--
-    SPECIFICATION (from chapter index.md):
-
-    Type: workflow
-    **sim-id:** club-feasibility-decision-path<br/>
-    **Library:** Mermaid<br/>
-    **Status:** Specified
-    
-    Purpose: Walk a prospective founder through the concrete decision sequence from survey results to a go/no-go decision to establish the club.
-    
-    Bloom Taxonomy: Apply (L3)
-    Bloom Taxonomy Verb: implement
-    
-    Learning objective: Given survey results and a candidate venue and team, the learner follows the correct sequence of feasibility checks to decide whether to establish a new club.
-    
-    Steps (flowchart with decision diamonds):
-    1. Start: "Interest Survey Analyzed" -- click reveals "Confirm at least one age range shows strong concentrated interest, as in the chart above."
-    2. Decision: "Is a Venue Confirmed?" -- click reveals "A confirmed venue means a specific room, day, and time -- not a vague 'maybe we could use the community room.'"
-    3a. Process (if no): "Secure a Venue Agreement First" -- click reveals "Return to Chapter 4's venue agreement guidance before proceeding further."
-    3b. Decision (if yes): "Is a Founding Team of 2+ People Assembled?" -- click reveals "One person can start a club, but a founding team of two to four sharply reduces single leader dependency from day one."
-    4a. Process (if no): "Recruit at Least One Co-Founder Before Launch" -- click reveals "Even a single committed co-founder splits the paperwork, background-check coordination, and first-session planning."
-    4b. Decision (if yes): "Is at Least One Background-Checked Mentor Confirmed?" -- click reveals "A club cannot legally run its first session without at least one screened adult present, per Chapter 3."
-    5a. Process (if no): "Complete Background Checks Before Announcing a Date" -- click reveals "Background checks can take one to three weeks to return -- start them early."
-    5b. End: "Establish the Club and Set a First Meeting Date" -- click reveals "All four feasibility pillars are in place: evidence of interest, a venue, a team, and a screened mentor."
-    
-    Interactivity requirement (satisfied): every node has a Mermaid `click` directive tied to an infobox showing its revealed text.
-    
-    Color coding: Blue for assessment/decision steps, yellow for the decision diamonds, orange for "not yet ready" remediation steps, green for the final go decision
-    
-    Implementation: Mermaid flowchart syntax with `click NodeId call showInfo("...")` directives for every node, rendered with a custom infobox panel beneath the diagram
-    -->
+    <!-- Node information data - one entry per node in the flowchart above -->
+    <script>
+        const nodeInfo = {
+            "Survey": {
+                title: "Interest Survey Analyzed",
+                description: "Confirm at least one age range shows strong concentrated interest, as in the chart above."
+            },
+            "VenueCheck": {
+                title: "Is a Venue Confirmed?",
+                description: "A confirmed venue means a specific room, day, and time -- not a vague 'maybe we could use the community room.'"
+            },
+            "SecureVenue": {
+                title: "Secure a Venue Agreement First",
+                description: "Return to Chapter 4's venue agreement guidance before proceeding further."
+            },
+            "TeamCheck": {
+                title: "Is a Founding Team of 2+ People Assembled?",
+                description: "One person can start a club, but a founding team of two to four sharply reduces single leader dependency from day one."
+            },
+            "RecruitCoFounder": {
+                title: "Recruit at Least One Co-Founder Before Launch",
+                description: "Even a single committed co-founder splits the paperwork, background-check coordination, and first-session planning."
+            },
+            "MentorCheck": {
+                title: "Is at Least One Background-Checked Mentor Confirmed?",
+                description: "A club cannot legally run its first session without at least one screened adult present, per Chapter 3."
+            },
+            "CompleteChecks": {
+                title: "Complete Background Checks Before Announcing a Date",
+                description: "Background checks can take one to three weeks to return -- start them early."
+            },
+            "Establish": {
+                title: "Establish the Club and Set a First Meeting Date",
+                description: "All four feasibility pillars are in place: evidence of interest, a venue, a team, and a screened mentor."
+            }
+        };
+    </script>
+    <!-- Load interaction script after nodeInfo is defined -->
+    <script src="script.js"></script>
 </body>
 </html>

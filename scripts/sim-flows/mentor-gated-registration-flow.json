@@ -1,0 +1,125 @@
+{
+  "title": "Mentor-Gated Registration Flow",
+  "height": 760,
+  "direction": "TD",
+  "nodes": [
+    {
+      "id": "MentorOpen",
+      "shape": "round",
+      "cls": "doc",
+      "label": "Mentor Registration<br/>Opens",
+      "title": "Mentor Registration Opens",
+      "info": "Mentor sign-up for the term opens first, before any student registration link is shared."
+    },
+    {
+      "id": "Confirm",
+      "shape": "box",
+      "cls": "doc",
+      "label": "Mentors Confirm<br/>Availability",
+      "title": "Mentors Confirm Availability",
+      "info": "Each mentor confirms which specific sessions they can attend, per mentor availability tracking from Chapter 9."
+    },
+    {
+      "id": "Capacity",
+      "shape": "box",
+      "cls": "resolve",
+      "label": "System Calculates Capacity<br/>(Mentors × 3)",
+      "title": "System Calculates Capacity (Mentors x 3)",
+      "info": "Confirmed mentor count is multiplied by the 3:1 ratio to set the hard student registration capacity limit."
+    },
+    {
+      "id": "StudentOpen",
+      "shape": "box",
+      "cls": "doc",
+      "label": "Student Registration<br/>Opens at That Capacity",
+      "title": "Student Registration Opens at That Capacity",
+      "info": "The online registration form now accepts sign-ups only up to the calculated limit."
+    },
+    {
+      "id": "CapCheck",
+      "shape": "diamond",
+      "cls": "decision",
+      "label": "Is Capacity<br/>Reached?",
+      "title": "Is Capacity Reached?",
+      "info": "The registration system checks this automatically on every new sign-up attempt."
+    },
+    {
+      "id": "Register",
+      "shape": "box",
+      "cls": "doc",
+      "label": "Student Registers<br/>Normally",
+      "title": "Student Registers Normally",
+      "info": "Confirmation email sent immediately, per the registration confirmation process."
+    },
+    {
+      "id": "Waitlist",
+      "shape": "box",
+      "cls": "remediate",
+      "label": "Student Joins the<br/>Waiting List",
+      "title": "Student Joins the Waiting List",
+      "info": "Added to the waiting list signup in order, notified automatically if a spot opens."
+    },
+    {
+      "id": "Recalc",
+      "shape": "round",
+      "cls": "resolve",
+      "label": "Capacity Re-Calculated Whenever<br/>Mentor Count Changes",
+      "title": "Capacity Re-Calculated Whenever Mentor Count Changes",
+      "info": "A new mentor joining, or one dropping out, immediately updates the capacity and can move waiting-list families in."
+    }
+  ],
+  "edges": [
+    {
+      "from": "MentorOpen",
+      "to": "Confirm"
+    },
+    {
+      "from": "Confirm",
+      "to": "Capacity"
+    },
+    {
+      "from": "Capacity",
+      "to": "StudentOpen"
+    },
+    {
+      "from": "StudentOpen",
+      "to": "CapCheck"
+    },
+    {
+      "from": "CapCheck",
+      "to": "Register",
+      "label": "No"
+    },
+    {
+      "from": "CapCheck",
+      "to": "Waitlist",
+      "label": "Yes"
+    },
+    {
+      "from": "Register",
+      "to": "Recalc"
+    },
+    {
+      "from": "Waitlist",
+      "to": "Recalc"
+    }
+  ],
+  "legend": [
+    {
+      "cls": "doc",
+      "text": "Mentor-side or student-side step"
+    },
+    {
+      "cls": "resolve",
+      "text": "Capacity calculation"
+    },
+    {
+      "cls": "decision",
+      "text": "Automatic check"
+    },
+    {
+      "cls": "remediate",
+      "text": "Waiting-list branch"
+    }
+  ]
+}

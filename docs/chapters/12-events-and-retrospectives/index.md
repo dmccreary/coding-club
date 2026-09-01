@@ -84,7 +84,7 @@ Everything this chapter has covered feeds into the practice this book treats as 
 
 #### Diagram: The Event Retrospective Process
 
-<iframe src="../../sims/event-retrospective-process/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../sims/event-retrospective-process/main.html" width="100%" height="702px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>The Event Retrospective Process</summary>

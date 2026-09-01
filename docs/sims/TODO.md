@@ -13,8 +13,8 @@ above are maintained by hand as sims are actually built.
 
 - Chapters scanned: 35
 - Total diagram specs found: 129
-- Already implemented: 17
-- **Unimplemented (TODO): 112**
+- Already implemented: 20
+- **Unimplemented (TODO): 109**
 
 Regenerate this list after adding or editing chapter diagram specs:
 
@@ -54,7 +54,7 @@ python3 ~/.claude/skills/microsim-utils/scripts/create-microsim-todo-json-files.
 
 | Sim ID | Diagram Name | Library | Bloom Level |
 |---|---|---|---|
-| [`club-feasibility-decision-path`](TODO/club-feasibility-decision-path.json) | Should You Start This Club? | Mermaid | Apply (L3) |
+| :white_check_mark: [`club-feasibility-decision-path`](club-feasibility-decision-path/index.md) | Should You Start This Club? | Mermaid | Apply (L3) |
 | [`interest-survey-results`](TODO/interest-survey-results.json) | Interest Survey Results | Chart.js | Analyze (L4) |
 
 ### Chapter 6: Growing, Branding, and Promoting Your Club (1)
@@ -86,13 +86,13 @@ python3 ~/.claude/skills/microsim-utils/scripts/create-microsim-todo-json-files.
 | Sim ID | Diagram Name | Library | Bloom Level |
 |---|---|---|---|
 | [`four-scheduling-models`](TODO/four-scheduling-models.json) | Four Coding Club Scheduling Models | Interactive Infographic Overlay (grid-diagram.js, annotation-free comparison poster + rectangular hover zones) | Evaluate (L5) |
-| [`mentor-gated-registration-flow`](TODO/mentor-gated-registration-flow.json) | Mentor-Gated Registration Flow | Mermaid | Apply (L3) |
+| :white_check_mark: [`mentor-gated-registration-flow`](mentor-gated-registration-flow/index.md) | Mentor-Gated Registration Flow | Mermaid | Apply (L3) |
 
 ### Chapter 12: Running Events and Learning From Retrospectives (1)
 
 | Sim ID | Diagram Name | Library | Bloom Level |
 |---|---|---|---|
-| [`event-retrospective-process`](TODO/event-retrospective-process.json) | The Event Retrospective Process | Mermaid | Apply (L3) |
+| :white_check_mark: [`event-retrospective-process`](event-retrospective-process/index.md) | The Event Retrospective Process | Mermaid | Apply (L3) |
 
 ### Chapter 14: "Computational Thinking, Scratch, and Python Basics" (1)
 

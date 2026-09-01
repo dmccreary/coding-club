@@ -55,7 +55,7 @@ def build(sim_id):
     bloom = page.get("bloom") or todo.get("bloom_level") or "Understand (L2)"
     verb = page.get("verb") or todo.get("bloom_verb") or ""
     objective = page.get("objective") or todo.get("learning_objective") or page["description"]
-    chapter_dir = page.get("chapter_dir") or todo.get("chapter_dir") or ""
+    chapter_dir = todo.get("chapter_dir") or page.get("chapter_dir") or ""
 
     meta = OrderedDict([
         ("title", page["title"]),
@@ -76,7 +76,7 @@ def build(sim_id):
         # the iframe height carries the 2px border; CANVAS_HEIGHT is the content
         ("canvasHeight", int(page["height"]) - 2),
         ("chapter_number", todo.get("chapter_number")),
-        ("chapter_title", page.get("chapter_title") or todo.get("chapter_title")),
+        ("chapter_title", todo.get("chapter_title") or page.get("chapter_title")),
         ("chapter_dir", chapter_dir),
         ("chapter_rel_dir", f"chapters/{chapter_dir}" if chapter_dir else ""),
         ("educational", OrderedDict([

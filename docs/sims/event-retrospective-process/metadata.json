@@ -1,6 +1,6 @@
 {
   "title": "The Event Retrospective Process",
-  "description": "Given a completed session, the learner follows the correct sequence from survey collection through a documented, trackable lesson.",
+  "description": "Follow one session from its final minute to a change in the next session, through the debrief, the survey, and the log.",
   "creator": "Coding Club",
   "author": "Dan McCreary",
   "date": "2026-09-01",
@@ -15,9 +15,29 @@
   "library": "Mermaid",
   "bloomLevel": "Apply (L3)",
   "bloomVerb": "implement",
-  "completion_status": "scaffold",
+  "completion_status": "built",
+  "canvasHeight": 700,
   "chapter_number": 12,
   "chapter_title": "Running Events and Learning From Retrospectives",
   "chapter_dir": "12-events-and-retrospectives",
-  "chapter_rel_dir": "chapters/12-events-and-retrospectives"
+  "chapter_rel_dir": "chapters/12-events-and-retrospectives",
+  "educational": {
+    "gradeLevel": "Middle School, High School, Adult",
+    "audience": "Club leaders and mentors",
+    "duration": "10-15 minutes",
+    "concepts": [
+      "Retrospective",
+      "Post-Event Survey",
+      "Event Debriefing",
+      "Lessons Learned Log",
+      "Continuous Improvement"
+    ]
+  },
+  "pedagogical": {
+    "bloomLevel": "Apply (L3)",
+    "bloomVerb": "implement",
+    "learningObjective": "Given a completed session, the learner follows the correct sequence from survey collection through a documented, trackable lesson.",
+    "interactionPattern": "Hover-to-preview and click-to-pin linear workflow ending in the improvement cycle",
+    "assessment": "Ask what has to happen between a mentor noticing something and the next session changing."
+  }
 }

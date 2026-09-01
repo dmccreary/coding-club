@@ -3,117 +3,108 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- microsim-scaffold-stub -->
+    <meta name="schema" content="https://dmccreary.github.io/intelligent-textbooks/ns/microsim/v1">
     <title>Mentor-Gated Registration Flow</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: #f8f9fa;
-            color: #212529;
-        }
-        #container {
-            width: 100%;
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 20px;
-            background: white;
-        }
-        h1 {
-            font-size: 22px;
-            margin-bottom: 10px;
-            color: #1a3a6c;
-        }
-        .placeholder {
-            border: 2px dashed #adb5bd;
-            border-radius: 8px;
-            padding: 40px 20px;
-            text-align: center;
-            color: #6c757d;
-            margin: 20px 0;
-            min-height: 400px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        .placeholder .badge {
-            display: inline-block;
-            background: #ffc107;
-            color: #212529;
-            padding: 4px 12px;
-            border-radius: 12px;
-            font-size: 12px;
-            font-weight: 600;
-            margin-bottom: 12px;
-        }
-        .placeholder h2 {
-            font-size: 18px;
-            color: #495057;
-            margin-bottom: 8px;
-        }
-        .placeholder p {
-            font-size: 14px;
-            max-width: 480px;
-        }
-        .meta {
-            margin-top: 20px;
-            font-size: 13px;
-            color: #6c757d;
-            border-top: 1px solid #dee2e6;
-            padding-top: 12px;
-        }
-        .meta strong { color: #495057; }
-    </style>
+    <script type="module">
+        import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+        mermaid.initialize({
+            startOnLoad: true,
+            theme: 'default',
+            flowchart: {
+                useMaxWidth: true,
+                htmlLabels: true,
+                curve: 'basis',
+                subGraphTitleMargin: { top: 10, bottom: 14 }
+            }
+        });
+    </script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="container">
-        <h1>Mentor-Gated Registration Flow</h1>
-        <div class="placeholder">
-            <span class="badge">SCAFFOLD</span>
-            <h2>MicroSim Not Yet Implemented</h2>
-            <p>This MicroSim has been scaffolded from its specification but the
-            interactive content has not been built yet. See the chapter source
-            and the <code>index.md</code> in this directory for the full spec.</p>
+<main>
+    <div class="container">
+        <div class="diagram-panel">
+            <div class="mermaid">
+flowchart TD
+    MentorOpen("Mentor Registration<br/>Opens"):::docNode
+    Confirm["Mentors Confirm<br/>Availability"]:::docNode
+    Capacity["System Calculates Capacity<br/>(Mentors × 3)"]:::resolveNode
+    StudentOpen["Student Registration<br/>Opens at That Capacity"]:::docNode
+    CapCheck{"Is Capacity<br/>Reached?"}:::decisionNode
+    Register["Student Registers<br/>Normally"]:::docNode
+    Waitlist["Student Joins the<br/>Waiting List"]:::remediateNode
+    Recalc("Capacity Re-Calculated Whenever<br/>Mentor Count Changes"):::resolveNode
+
+    MentorOpen --> Confirm
+    Confirm --> Capacity
+    Capacity --> StudentOpen
+    StudentOpen --> CapCheck
+    CapCheck -->|No| Register
+    CapCheck -->|Yes| Waitlist
+    Register --> Recalc
+    Waitlist --> Recalc
+
+    classDef docNode fill:#4A90D9,stroke:#2E6BA8,stroke-width:2px,color:#fff,font-size:16px
+    classDef resolveNode fill:#3E9E6E,stroke:#256E4A,stroke-width:2px,color:#fff,font-size:16px
+    classDef decisionNode fill:#F5A623,stroke:#B87B12,stroke-width:2px,color:#333,font-size:16px
+    classDef remediateNode fill:#E8833A,stroke:#A85718,stroke-width:2px,color:#fff,font-size:16px
+
+    linkStyle default stroke:#7A8A99,stroke-width:2px,font-size:16px
+            </div>
         </div>
-        <div class="meta">
-            <p><strong>Sim ID:</strong> mentor-gated-registration-flow</p>
-            <p><strong>Library:</strong> Mermaid</p>
-            <p><strong>Bloom Level:</strong> Apply (L3)</p>
-            <p><strong>Learning Objective:</strong> Given a mentor sign-up count, the learner correctly calculates the resulting student registration capacity and traces what happens once that capacity is reached.</p>
+        <div class="info-panel">
+            <h3>Step Details</h3>
+            <div id="info-display">
+                <p class="info-placeholder">Hover a step to preview it, or click a step to pin its details here.</p>
+                <div class="legend">
+                    <div class="legend-item"><span class="swatch sw-doc"></span>Mentor-side or student-side step</div>
+                    <div class="legend-item"><span class="swatch sw-resolve"></span>Capacity calculation</div>
+                    <div class="legend-item"><span class="swatch sw-decision"></span>Automatic check</div>
+                    <div class="legend-item"><span class="swatch sw-remediate"></span>Waiting-list branch</div>
+                </div>
+            </div>
         </div>
     </div>
+</main>
 
-    <!--
-    SPECIFICATION (from chapter index.md):
-
-    Type: workflow
-    **sim-id:** mentor-gated-registration-flow<br/>
-    **Library:** Mermaid<br/>
-    **Status:** Specified
-    
-    Purpose: Show, step by step, how registering mentors first turns into a hard, enforced student capacity limit rather than an aspirational guideline mentors are expected to police manually.
-    
-    Bloom Taxonomy: Apply (L3)
-    Bloom Taxonomy Verb: implement
-    
-    Learning objective: Given a mentor sign-up count, the learner correctly calculates the resulting student registration capacity and traces what happens once that capacity is reached.
-    
-    Steps (flowchart with decision diamond):
-    1. Start: "Mentor Registration Opens" -- click reveals "Mentor sign-up for the term opens first, before any student registration link is shared."
-    2. Process: "Mentors Confirm Availability" -- click reveals "Each mentor confirms which specific sessions they can attend, per mentor availability tracking from Chapter 9."
-    3. Process: "System Calculates Capacity (Mentors x 3)" -- click reveals "Confirmed mentor count is multiplied by the 3:1 ratio to set the hard student registration capacity limit."
-    4. Process: "Student Registration Opens at That Capacity" -- click reveals "The online registration form now accepts sign-ups only up to the calculated limit."
-    5. Decision: "Is Capacity Reached?" -- click reveals "The registration system checks this automatically on every new sign-up attempt."
-    6a. Process (if no): "Student Registers Normally" -- click reveals "Confirmation email sent immediately, per the registration confirmation process."
-    6b. Process (if yes): "Student Joins the Waiting List" -- click reveals "Added to the waiting list signup in order, notified automatically if a spot opens."
-    7. End: "Capacity Re-Calculated Whenever Mentor Count Changes" -- click reveals "A new mentor joining, or one dropping out, immediately updates the capacity and can move waiting-list families in."
-    
-    Interactivity requirement (satisfied): every node has a Mermaid `click` directive tied to an infobox showing its revealed text.
-    
-    Color coding: Blue for mentor-side steps, green for the capacity calculation, yellow for the decision diamond, orange for the waiting-list branch
-    
-    Implementation: Mermaid flowchart syntax with `click NodeId call showInfo("...")` directives for every node, rendered with a custom infobox panel beneath the diagram
-    -->
+    <!-- Node information data - one entry per node in the flowchart above -->
+    <script>
+        const nodeInfo = {
+            "MentorOpen": {
+                title: "Mentor Registration Opens",
+                description: "Mentor sign-up for the term opens first, before any student registration link is shared."
+            },
+            "Confirm": {
+                title: "Mentors Confirm Availability",
+                description: "Each mentor confirms which specific sessions they can attend, per mentor availability tracking from Chapter 9."
+            },
+            "Capacity": {
+                title: "System Calculates Capacity (Mentors x 3)",
+                description: "Confirmed mentor count is multiplied by the 3:1 ratio to set the hard student registration capacity limit."
+            },
+            "StudentOpen": {
+                title: "Student Registration Opens at That Capacity",
+                description: "The online registration form now accepts sign-ups only up to the calculated limit."
+            },
+            "CapCheck": {
+                title: "Is Capacity Reached?",
+                description: "The registration system checks this automatically on every new sign-up attempt."
+            },
+            "Register": {
+                title: "Student Registers Normally",
+                description: "Confirmation email sent immediately, per the registration confirmation process."
+            },
+            "Waitlist": {
+                title: "Student Joins the Waiting List",
+                description: "Added to the waiting list signup in order, notified automatically if a spot opens."
+            },
+            "Recalc": {
+                title: "Capacity Re-Calculated Whenever Mentor Count Changes",
+                description: "A new mentor joining, or one dropping out, immediately updates the capacity and can move waiting-list families in."
+            }
+        };
+    </script>
+    <!-- Load interaction script after nodeInfo is defined -->
+    <script src="script.js"></script>
 </body>
 </html>

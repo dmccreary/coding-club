@@ -27,9 +27,10 @@ volunteers" feel rather than a kids'-cartoon feel — approachable enough
 to invite a first-time volunteer in, but composed enough to read as a
 serious operations guide.
 
-## Title
+## Title and Subtitle
 
-Place "Coding Club" in the center of the image, in a clean, highly legible
+Place a subtitle "Start, Run and Sustain Your" above a the main title.
+Place the main title "Coding Club" in the center of the image, in a clean, highly legible
 sans-serif font. Use a light/white font color with a subtle drop shadow or
 dark scrim behind it so it stays readable against the busy montage
 background. Keep the title short enough to render at a large size — do not

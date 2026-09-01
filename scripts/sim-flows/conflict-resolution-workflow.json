@@ -1,0 +1,113 @@
+{
+  "title": "Handling a Conflict or Complaint",
+  "height": 680,
+  "direction": "TD",
+  "nodes": [
+    {
+      "id": "Report",
+      "shape": "round",
+      "cls": "doc",
+      "label": "Complaint or<br/>Conflict Reported",
+      "title": "Complaint or Conflict Reported",
+      "info": "Any mentor, student, or parent can report a concern to the club leader or assistant leader."
+    },
+    {
+      "id": "Document",
+      "shape": "box",
+      "cls": "doc",
+      "label": "Club Leader Documents<br/>the Report",
+      "title": "Club Leader Documents the Report",
+      "info": "Date, people involved, and a factual description are written down within 24 hours, before memory fades."
+    },
+    {
+      "id": "SafetyCheck",
+      "shape": "diamond",
+      "cls": "decision",
+      "label": "Does This Involve<br/>Safety or Harassment?",
+      "title": "Does This Involve Safety or Harassment?",
+      "info": "Safety and anti-harassment-policy violations always escalate immediately; ordinary disagreements do not."
+    },
+    {
+      "id": "Escalate",
+      "shape": "box",
+      "cls": "danger",
+      "label": "Escalate to Venue and,<br/>If Needed, Authorities",
+      "title": "Escalate to Venue and, If Needed, Authorities",
+      "info": "The venue's own safety contact is notified the same day; law enforcement is contacted immediately for any safety emergency."
+    },
+    {
+      "id": "Mediate",
+      "shape": "box",
+      "cls": "resolve",
+      "label": "Club Leader Mediates<br/>a Conversation",
+      "title": "Club Leader Mediates a Conversation",
+      "info": "Both parties are heard separately first, then, if appropriate, brought together with a mentor present."
+    },
+    {
+      "id": "ShareOutcome",
+      "shape": "box",
+      "cls": "resolve",
+      "label": "Outcome Is Documented and<br/>Shared With Involved Families",
+      "title": "Outcome Is Documented and Shared With Involved Families",
+      "info": "Families receive a summary of the resolution appropriate to what they need to know, respecting other students' privacy."
+    },
+    {
+      "id": "LogEntry",
+      "shape": "round",
+      "cls": "resolve",
+      "label": "Entry Added to the<br/>Lessons Learned Log",
+      "title": "Entry Added to the Lessons Learned Log",
+      "info": "Recurring conflict types get flagged so the club can adjust its code of conduct or session structure, echoing Chapter 1's continuous improvement cycle."
+    }
+  ],
+  "edges": [
+    {
+      "from": "Report",
+      "to": "Document"
+    },
+    {
+      "from": "Document",
+      "to": "SafetyCheck"
+    },
+    {
+      "from": "SafetyCheck",
+      "to": "Escalate",
+      "label": "Yes"
+    },
+    {
+      "from": "SafetyCheck",
+      "to": "Mediate",
+      "label": "No"
+    },
+    {
+      "from": "Escalate",
+      "to": "ShareOutcome"
+    },
+    {
+      "from": "Mediate",
+      "to": "ShareOutcome"
+    },
+    {
+      "from": "ShareOutcome",
+      "to": "LogEntry"
+    }
+  ],
+  "legend": [
+    {
+      "cls": "doc",
+      "text": "Documentation step"
+    },
+    {
+      "cls": "decision",
+      "text": "Decision point"
+    },
+    {
+      "cls": "danger",
+      "text": "Safety escalation"
+    },
+    {
+      "cls": "resolve",
+      "text": "Resolution and closure"
+    }
+  ]
+}

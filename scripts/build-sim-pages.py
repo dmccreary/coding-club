@@ -106,8 +106,10 @@ def render(sim_id):
         about=page["about"],
         howto=page["howto"],
         lesson=page["lesson"],
-        chapter_title=page["chapter_title"],
-        chapter_dir=page["chapter_dir"],
+        chapter_title=todo.get("chapter_title") and
+                      f'Chapter {todo["chapter_number"]}: {todo["chapter_title"]}'
+                      or page["chapter_title"],
+        chapter_dir=todo.get("chapter_dir") or page["chapter_dir"],
         spec=todo["specification"],
         refs=page["refs"],
     )

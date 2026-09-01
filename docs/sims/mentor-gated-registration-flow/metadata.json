@@ -1,6 +1,6 @@
 {
   "title": "Mentor-Gated Registration Flow",
-  "description": "Given a mentor sign-up count, the learner correctly calculates the resulting student registration capacity and traces what happens once that capacity is reached.",
+  "description": "See how registering mentors first turns a 3:1 ratio into a capacity limit the software enforces, instead of a rule mentors have to police.",
   "creator": "Coding Club",
   "author": "Dan McCreary",
   "date": "2026-09-01",
@@ -15,9 +15,28 @@
   "library": "Mermaid",
   "bloomLevel": "Apply (L3)",
   "bloomVerb": "implement",
-  "completion_status": "scaffold",
+  "completion_status": "built",
+  "canvasHeight": 760,
   "chapter_number": 11,
   "chapter_title": "Choosing a Schedule and Building Registration",
   "chapter_dir": "11-schedule-and-registration",
-  "chapter_rel_dir": "chapters/11-schedule-and-registration"
+  "chapter_rel_dir": "chapters/11-schedule-and-registration",
+  "educational": {
+    "gradeLevel": "Middle School, High School, Adult",
+    "audience": "Club leaders setting up registration",
+    "duration": "10-15 minutes",
+    "concepts": [
+      "Mentor-to-Student Ratio",
+      "Registration Capacity",
+      "Waiting List",
+      "Mentor Availability"
+    ]
+  },
+  "pedagogical": {
+    "bloomLevel": "Apply (L3)",
+    "bloomVerb": "implement",
+    "learningObjective": "Given a mentor sign-up count, the learner correctly calculates the resulting student registration capacity and traces what happens once that capacity is reached.",
+    "interactionPattern": "Hover-to-preview and click-to-pin flowchart with a capacity calculation and a waiting-list branch",
+    "assessment": "Give a mentor count and ask for the resulting capacity and what happens to the next family who signs up."
+  }
 }

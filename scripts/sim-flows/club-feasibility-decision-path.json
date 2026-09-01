@@ -1,0 +1,125 @@
+{
+  "title": "Should You Start This Club?",
+  "height": 880,
+  "direction": "TD",
+  "nodes": [
+    {
+      "id": "Survey",
+      "shape": "round",
+      "cls": "doc",
+      "label": "Interest Survey<br/>Analyzed",
+      "title": "Interest Survey Analyzed",
+      "info": "Confirm at least one age range shows strong concentrated interest, as in the chart above."
+    },
+    {
+      "id": "VenueCheck",
+      "shape": "diamond",
+      "cls": "decision",
+      "label": "Is a Venue<br/>Confirmed?",
+      "title": "Is a Venue Confirmed?",
+      "info": "A confirmed venue means a specific room, day, and time -- not a vague 'maybe we could use the community room.'"
+    },
+    {
+      "id": "SecureVenue",
+      "shape": "box",
+      "cls": "remediate",
+      "label": "Secure a Venue<br/>Agreement First",
+      "title": "Secure a Venue Agreement First",
+      "info": "Return to Chapter 4's venue agreement guidance before proceeding further."
+    },
+    {
+      "id": "TeamCheck",
+      "shape": "diamond",
+      "cls": "decision",
+      "label": "Is a Founding Team of<br/>2+ People Assembled?",
+      "title": "Is a Founding Team of 2+ People Assembled?",
+      "info": "One person can start a club, but a founding team of two to four sharply reduces single leader dependency from day one."
+    },
+    {
+      "id": "RecruitCoFounder",
+      "shape": "box",
+      "cls": "remediate",
+      "label": "Recruit at Least One<br/>Co-Founder Before Launch",
+      "title": "Recruit at Least One Co-Founder Before Launch",
+      "info": "Even a single committed co-founder splits the paperwork, background-check coordination, and first-session planning."
+    },
+    {
+      "id": "MentorCheck",
+      "shape": "diamond",
+      "cls": "decision",
+      "label": "Is a Background-Checked<br/>Mentor Confirmed?",
+      "title": "Is at Least One Background-Checked Mentor Confirmed?",
+      "info": "A club cannot legally run its first session without at least one screened adult present, per Chapter 3."
+    },
+    {
+      "id": "CompleteChecks",
+      "shape": "box",
+      "cls": "remediate",
+      "label": "Complete Background Checks<br/>Before Announcing a Date",
+      "title": "Complete Background Checks Before Announcing a Date",
+      "info": "Background checks can take one to three weeks to return -- start them early."
+    },
+    {
+      "id": "Establish",
+      "shape": "round",
+      "cls": "resolve",
+      "label": "Establish the Club and<br/>Set a First Meeting Date",
+      "title": "Establish the Club and Set a First Meeting Date",
+      "info": "All four feasibility pillars are in place: evidence of interest, a venue, a team, and a screened mentor."
+    }
+  ],
+  "edges": [
+    {
+      "from": "Survey",
+      "to": "VenueCheck"
+    },
+    {
+      "from": "VenueCheck",
+      "to": "SecureVenue",
+      "label": "No"
+    },
+    {
+      "from": "VenueCheck",
+      "to": "TeamCheck",
+      "label": "Yes"
+    },
+    {
+      "from": "TeamCheck",
+      "to": "RecruitCoFounder",
+      "label": "No"
+    },
+    {
+      "from": "TeamCheck",
+      "to": "MentorCheck",
+      "label": "Yes"
+    },
+    {
+      "from": "MentorCheck",
+      "to": "CompleteChecks",
+      "label": "No"
+    },
+    {
+      "from": "MentorCheck",
+      "to": "Establish",
+      "label": "Yes"
+    }
+  ],
+  "legend": [
+    {
+      "cls": "doc",
+      "text": "Evidence gathered"
+    },
+    {
+      "cls": "decision",
+      "text": "Feasibility check"
+    },
+    {
+      "cls": "remediate",
+      "text": "Not ready - fix this first"
+    },
+    {
+      "cls": "resolve",
+      "text": "Go decision"
+    }
+  ]
+}
