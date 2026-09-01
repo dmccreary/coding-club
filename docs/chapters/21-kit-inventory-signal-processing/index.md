@@ -61,8 +61,46 @@ Chapter 19 and Chapter 20 filled a shelf with kits -- robots, displays, gyroscop
 
 ### Kit Vendor Selection
 
+Here are some samples of Raspberry Pi Pico Starter kits with a variety of prices.  The prices do not include shipping costs.
+
 ![Pico Started Kit](./pico-starter-kit-30.png)
 The image above is a screen image from eBay describing a value oriented $30 Raspberry Pi Pico starter kit.
+
+![Sunfounder Pico Starter Kit](./sunfounder-pico-starter-kit-60.png)
+Sunfounder Pico Starter Kit screen image from eBay describing a $60 Raspberry Pi Pico kit.
+
+![52Pi Starter Kit](./52pi-starter-kit-70.png)
+The image above is the 52 Raspberry Pi Pico W Starter Kit sold at MicroCenter for around $70.00.
+
+This kit includes the following parts:
+
+- 1 x Raspberry Pi Pico W H
+- 1 x breadboard experiment platform (3 1/2 size 400 tie boards)
+- 1 x Ultrasonic sensor
+- 1 x 0.96-inch OLED display
+- 1 x DHT11 temperate and Humidity sensor
+- 1 x Single Channel Relay
+- 1 x PIR sensor
+- 1 x LCD1602 display module 
+- 1 x Raindrop sensor 
+- 1 x Potentiometer
+- 1 x Stepper motor
+- 1 x ULN2003AN driver board (drive stepper motor)
+- 1 x 9g Servo
+- 1 x PS2 Joystick Module
+- 1 x MPU6050 Gyroscope module
+- 1 x MicroUSB cable (Data Transfer)
+- 20 x Male to male jumper wire
+- 20 x Male to female jumper wire
+- 5 x Red LED
+- 5 x Green LED
+- 5 x Yellow LED
+- 5 x Blue LED
+- 20 x 220 Ohm Resistors
+- 1 x Instruction book
+
+![](./sparkfun-inventors-kit-130.png)
+The image above is a screen image from the Sparkfun website describing a [$130 Inventors kit](https://www.sparkfun.com/sparkfun-inventors-kit-for-micropython.html) that supports MicroPython with higher-end parts.
 
 **Kit vendor selection** is the deliberate comparison of suppliers before ordering a kit's parts, weighing unit price against shipping time, part-quality consistency between orders, and how closely a vendor's actual product matches the pin layout and part list a kit's documentation already assumes. Two vendors selling what looks like the identical sensor module online can ship boards with different pin orders printed on the silkscreen, which turns a five-minute wiring job into a confusing troubleshooting session the first time a mentor assumes last time's datasheet still applies.
 
@@ -70,8 +108,7 @@ A worked example makes the tradeoff concrete: a mentor restocking gyroscope kits
 
 ### Kit Cost Comparison
 
-![](./sparkfun-inventors-kit-130.png)
-The image above is a screen image from the Sparkfun website describing a [$130 Inventors kit](https://www.sparkfun.com/sparkfun-inventors-kit-for-micropython.html) that supports MicroPython with higher-end parts.
+
 
 **Kit cost comparison** looks past a kit's sticker price to its full cost per session actually delivered: the purchase price plus shipping and any one-time tools, divided by however many working sessions the kit survives before it is retired or needs a costly repair. A cheaper kit that reliably fails after a handful of uses can cost more per session than a pricier kit that keeps working for years, which is the opposite of what the price tags alone suggest.
 
