@@ -185,7 +185,7 @@ Recruitment, roles, cadence, term limits, and succession planning are five separ
 
 #### Diagram: Board Governance Cycle
 
-<iframe src="../../sims/board-governance-cycle/main.html" width="100%" height="560px" scrolling="no"></iframe>
+<iframe src="../../sims/board-governance-cycle/main.html" width="100%" height="822px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Board Governance Cycle</summary>
@@ -287,7 +287,7 @@ Eight separate pieces -- the system itself, stickers, QR codes, tagging, audits,
 
 #### Diagram: Club Inventory Lifecycle Workflow
 
-<iframe src="../../sims/club-inventory-lifecycle-workflow/main.html" width="100%" height="580px" scrolling="no"></iframe>
+<iframe src="../../sims/club-inventory-lifecycle-workflow/main.html" width="100%" height="1002px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Club Inventory Lifecycle Workflow</summary>

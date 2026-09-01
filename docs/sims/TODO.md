@@ -13,8 +13,8 @@ above are maintained by hand as sims are actually built.
 
 - Chapters scanned: 35
 - Total diagram specs found: 129
-- Already implemented: 45
-- **Unimplemented (TODO): 84**
+- Already implemented: 48
+- **Unimplemented (TODO): 81**
 
 Regenerate this list after adding or editing chapter diagram specs:
 
@@ -304,8 +304,8 @@ python3 ~/.claude/skills/microsim-utils/scripts/create-microsim-todo-json-files.
 
 | Sim ID | Diagram Name | Library | Bloom Level |
 |---|---|---|---|
-| [`board-governance-cycle`](TODO/board-governance-cycle.json) | Board Governance Cycle | Mermaid | Analyze (L4) |
-| [`club-inventory-lifecycle-workflow`](TODO/club-inventory-lifecycle-workflow.json) | Club Inventory Lifecycle Workflow | Mermaid | Analyze (L4) |
+| :white_check_mark: [`board-governance-cycle`](board-governance-cycle/index.md) | Board Governance Cycle | Mermaid | Analyze (L4) |
+| :white_check_mark: [`club-inventory-lifecycle-workflow`](club-inventory-lifecycle-workflow/index.md) | Club Inventory Lifecycle Workflow | Mermaid | Analyze (L4) |
 | [`mentor-recruiting-channel-effectiveness`](TODO/mentor-recruiting-channel-effectiveness.json) | Mentor Recruiting Channel Effectiveness | Chart.js | Analyze (L4) |
 | [`oversight-board-org-chart`](TODO/oversight-board-org-chart.json) | Oversight Board Org Chart | vis-network | Remember (L1) |
 
@@ -314,6 +314,6 @@ python3 ~/.claude/skills/microsim-utils/scripts/create-microsim-todo-json-files.
 | Sim ID | Diagram Name | Library | Bloom Level |
 |---|---|---|---|
 | [`club-health-metrics-dashboard`](TODO/club-health-metrics-dashboard.json) | Club Health Metrics Dashboard | Chart.js | Evaluate (L5) |
-| [`club-playbook-assembly-workflow`](TODO/club-playbook-assembly-workflow.json) | From Scattered Knowledge to a Club Playbook | Mermaid | Analyze (L4) |
+| :white_check_mark: [`club-playbook-assembly-workflow`](club-playbook-assembly-workflow/index.md) | From Scattered Knowledge to a Club Playbook | Mermaid | Analyze (L4) |
 | :white_check_mark: [`mentor-development-pipeline`](mentor-development-pipeline/index.md) | Mentor Development Pipeline | Mermaid | Analyze (L4) |
 

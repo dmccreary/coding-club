@@ -1,0 +1,23 @@
+{
+  "title": "Club Inventory Lifecycle Workflow",
+  "height": 1002,
+  "library": "Mermaid",
+  "bloom": "Analyze (L4)",
+  "verb": "differentiate",
+  "description": "One tagged item's whole life: sticker, shelf, checkout, return, audit, and the branch into the lost item policy.",
+  "concepts": [
+    "Asset Tagging",
+    "QR Code",
+    "Checkout System",
+    "Return Tracking",
+    "Inventory Audit",
+    "Lost Item Policy"
+  ],
+  "interaction": "Hover-to-preview and click-to-pin lifecycle with a due-date gate, an audit branch, and loops back to the shelf",
+  "assessment": "Give an item's state and an audit outcome and ask which branch it takes.",
+  "audience": "Club leaders running an inventory",
+  "about": "Everything before **Store on Shelf** happens once. Everything after it repeats,\npossibly for years.\n\nThe one-time part is tagging: a sequentially numbered sticker, a QR code that\nopens the item's record when scanned, and a log entry tying them together. Do it\nonce, properly, and every later step is a scan rather than a search.\n\nThe repeating part has two loops. The **checkout loop** runs whenever someone\nborrows an item, and its gate is simply whether it came back on time. An overdue\nitem is flagged automatically on the mentor dashboard -- the point being that\nsomebody follows up in week two rather than discovering it at the semester audit.\n\nThe **audit loop** runs each semester and asks a different question: is\neverything the log expects actually here? Anything missing enters the lost item\npolicy, which the panel text is careful to describe as *no-blame*: a grace period\nto keep searching, then a clear point at which the item is written off and the log\ncorrected. A log nobody trusts is worse than no log.",
+  "howto": "- **Hover a stage** to preview it; **click** to pin the definition.\n- Two loops return to **Store on Shelf**: a returned item, and an item confirmed\n  present at audit.\n- Only one path leaves the lifecycle -- an item the audit cannot find.",
+  "lesson": "**Bloom level:** Analyze (L4) -- *differentiate*\n\n**Learning objective:** Given an item's current inventory stage and an audit\noutcome, the learner differentiates whether the item should return to storage, be\nflagged overdue, or enter the lost item policy.\n\n**Before the sim (5 min).** Ask how many soldering irons the club owns and where\neach one is. The gap between the two answers is what the tagging steps close.\n\n**With the sim (15 min).** Separate the one-time tagging steps from the repeating\nloops explicitly -- ask the group where the boundary is. Then trace an overdue\nitem and an item missing at audit, and ask why they are different problems.\n\n**After the sim (15 min).** Tag five real items end to end, then run a spot audit\nof one shelf.\n\n**Check for understanding.** Ask: \"An item is overdue by three weeks and the\nborrower has left the club. Overdue or lost?\" It enters the lost item policy --\nand knowing that the policy is no-blame with a grace period is what makes people\nwilling to report it.",
+  "refs": "- {{CHAPTER}} -- the chapter this MicroSim supports.\n- [Kit Lifecycle Workflow](../kit-lifecycle-workflow/index.md) -- the kit-level version this generalises.\n- [Device Lifecycle Workflow](../device-lifecycle-workflow/index.md) -- the same pattern for laptops.\n- [Asset tracking](https://en.wikipedia.org/wiki/Asset_tracking) -- tags, scans, and logs in general.\n- [QR code](https://en.wikipedia.org/wiki/QR_code) -- why a phone camera is enough to run this."
+}

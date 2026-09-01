@@ -1,0 +1,146 @@
+{
+  "title": "Board Governance Cycle",
+  "height": 820,
+  "direction": "TD",
+  "nodes": [
+    {
+      "id": "Vacant",
+      "shape": "round",
+      "cls": "retire",
+      "label": "Board Seat<br/>Vacant",
+      "title": "Board Seat Vacant",
+      "info": "A seat with no current holder, either because the club is forming its first board or a term has just expired."
+    },
+    {
+      "id": "Recruit",
+      "shape": "box",
+      "cls": "doc",
+      "label": "Recruit for<br/>the Seat",
+      "title": "Board Member Recruitment",
+      "info": "The deliberate search for people to fill open board seats based on the specific skills a seat requires -- financial literacy for a treasurer, public communication for a chair."
+    },
+    {
+      "id": "Roles",
+      "shape": "box",
+      "cls": "doc",
+      "label": "Assign Roles<br/>and Duties",
+      "title": "Board Roles and Duties",
+      "info": "The specific written responsibilities assigned to each seat, spelled out clearly enough that a new person stepping into a seat knows exactly what is expected."
+    },
+    {
+      "id": "Cadence",
+      "shape": "box",
+      "cls": "prep",
+      "label": "Meet on a<br/>Fixed Cadence",
+      "title": "Board Meeting Cadence",
+      "info": "The regular rhythm at which a board actually convenes -- commonly quarterly for routine business plus one annual planning retreat -- set deliberately rather than left to chance."
+    },
+    {
+      "id": "TermLimit",
+      "shape": "diamond",
+      "cls": "wait",
+      "label": "Term Limit<br/>Reached?",
+      "title": "Board Term Limits",
+      "info": "Term limits cap how long any one person may occupy a seat before rotating off -- commonly two or three years, often renewable once -- guaranteeing new people and fresh judgement."
+    },
+    {
+      "id": "Rotate",
+      "shape": "box",
+      "cls": "prep",
+      "label": "Seat Rotates Off<br/>(Staggered)",
+      "title": "Seat Rotates Off (Staggered)",
+      "info": "The seat vacates on its own staggered schedule, never at the same time as every other seat. Staggering is what stops a board losing all its experience in one year."
+    },
+    {
+      "id": "Departs",
+      "shape": "round",
+      "cls": "danger",
+      "label": "Founder or Lead<br/>Mentor Departs",
+      "title": "Founder or Lead Mentor Departs",
+      "info": "An unplanned or planned departure -- the event succession planning exists to prepare for. This is not part of the routine cycle."
+    },
+    {
+      "id": "Execute",
+      "shape": "box",
+      "cls": "danger",
+      "label": "Execute Written<br/>Succession Plan",
+      "title": "Succession Planning",
+      "info": "The board's written answer, prepared before it is needed, to the question 'who leads this club the day the founder cannot' -- naming an acting lead mentor and listing which signing authorities transfer."
+    },
+    {
+      "id": "Acting",
+      "shape": "round",
+      "cls": "resolve",
+      "label": "Acting Lead Named,<br/>Signing Authority Transfers",
+      "title": "Acting Lead Named, Signing Authority Transfers",
+      "info": "The board's prepared answer takes effect immediately, rather than being improvised under pressure."
+    }
+  ],
+  "edges": [
+    {
+      "from": "Vacant",
+      "to": "Recruit"
+    },
+    {
+      "from": "Recruit",
+      "to": "Roles"
+    },
+    {
+      "from": "Roles",
+      "to": "Cadence"
+    },
+    {
+      "from": "Cadence",
+      "to": "TermLimit"
+    },
+    {
+      "from": "TermLimit",
+      "to": "Cadence",
+      "label": "No - keep meeting"
+    },
+    {
+      "from": "TermLimit",
+      "to": "Rotate",
+      "label": "Yes"
+    },
+    {
+      "from": "Rotate",
+      "to": "Vacant",
+      "label": "that one seat reopens"
+    },
+    {
+      "from": "Departs",
+      "to": "Execute"
+    },
+    {
+      "from": "Execute",
+      "to": "Acting"
+    }
+  ],
+  "legend": [
+    {
+      "cls": "retire",
+      "text": "Seat vacant"
+    },
+    {
+      "cls": "doc",
+      "text": "Recruit and assign"
+    },
+    {
+      "cls": "prep",
+      "text": "Meet and rotate"
+    },
+    {
+      "cls": "wait",
+      "text": "Term check"
+    },
+    {
+      "cls": "danger",
+      "text": "Succession trigger - outside the cycle"
+    },
+    {
+      "cls": "resolve",
+      "text": "Plan takes effect"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "title": "Board Governance Cycle",
+  "height": 822,
+  "library": "Mermaid",
+  "bloom": "Analyze (L4)",
+  "verb": "differentiate",
+  "description": "The routine seat-rotation cycle a board runs on, and the separate trigger a founder's departure fires.",
+  "concepts": [
+    "Board Recruitment",
+    "Board Roles",
+    "Meeting Cadence",
+    "Term Limits",
+    "Succession Planning"
+  ],
+  "interaction": "Hover-to-preview and click-to-pin cycle with a term-limit loop plus a separate departure trigger",
+  "assessment": "Ask which part of the diagram runs every year and which runs once, and what fires each.",
+  "audience": "Club board members and founders",
+  "about": "There are two things in this diagram and the objective is to stop confusing them.\n\nThe **cycle** on the left is routine. A seat is filled, duties are assigned,\nthe board meets on its cadence, and eventually a term limit is reached and the\nseat rotates off -- back to the top, for that seat only. The word *staggered*\nmatters: seats vacate on their own schedules, never all at once, so a board never\nloses all its experience in one year.\n\nThe **trigger** on the right is not part of that cycle at all. A founder or lead\nmentor departing is an event, not a stage, and it fires the written succession\nplan regardless of where any seat happens to be in its term.\n\nClubs conflate these, and the cost is specific: they treat succession planning as\nsomething the board will get to during a normal meeting, which means it does not\nexist on the day it is needed. A plan improvised under pressure is the failure\nmode the right-hand branch exists to prevent.",
+  "howto": "- **Hover a step** to preview it; **click** to pin the definition.\n- Follow the loop from **Meet on a Fixed Cadence** through the term check and back\n  -- that is the routine cycle.\n- The red nodes are the separate departure trigger; nothing in the cycle leads\n  into them.",
+  "lesson": "**Bloom level:** Analyze (L4) -- *differentiate*\n\n**Learning objective:** Given a board's current state, the learner differentiates\nthe routine seat-rotation cycle from the one-time succession-plan trigger that a\nfounder's departure activates.\n\n**Before the sim (5 min).** Ask who runs the club if the founder is unavailable\nnext Saturday. Then ask if that answer is written down anywhere.\n\n**With the sim (10 min).** Walk the cycle first, then the trigger. Ask what\nconnects them -- the answer is nothing, and that is the point. The trigger fires\non its own timing.\n\n**After the sim (15 min).** Draft the succession plan's three concrete parts: who\nacts as lead, which signing authorities transfer, and where the document lives.\n\n**Check for understanding.** Ask: \"A treasurer's term expires the same month the\nfounder steps down. Which path handles which?\" Two separate paths running at\nonce, and being able to keep them apart is the objective met.",
+  "refs": "- {{CHAPTER}} -- the chapter this MicroSim supports.\n- [Mentor Development Pipeline](../mentor-development-pipeline/index.md) -- where the successor comes from.\n- [Board of directors](https://en.wikipedia.org/wiki/Board_of_directors) -- roles, terms, and staggered boards.\n- [Succession planning](https://en.wikipedia.org/wiki/Succession_planning) -- preparing before the vacancy exists.\n- [Term limit](https://en.wikipedia.org/wiki/Term_limit) -- why rotation is built in deliberately."
+}

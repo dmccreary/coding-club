@@ -1,0 +1,22 @@
+{
+  "title": "From Scattered Knowledge to a Club Playbook",
+  "height": 762,
+  "library": "Mermaid",
+  "bloom": "Analyze (L4)",
+  "verb": "differentiate",
+  "description": "Decide whether a piece of know-how becomes a written procedure or has to be transferred person to person.",
+  "concepts": [
+    "Documenting Procedures",
+    "Standard Operating Procedure",
+    "Knowledge Transfer",
+    "Leader Onboarding",
+    "Club Playbook"
+  ],
+  "interaction": "Hover-to-preview and click-to-pin flow with an SOP/transfer split and an ongoing loop back to the start",
+  "assessment": "Give two pieces of know-how, one procedural and one judgement, and ask which branch each takes.",
+  "audience": "Club leaders documenting how the club runs",
+  "about": "Not all know-how can be written down, and pretending otherwise produces the two\nfailure modes this diagram avoids.\n\nThe gate asks whether the knowledge is **reducible to steps**. Setting up the\nroom, running registration, closing down for the night -- these are sequences, and\nthey become SOPs with a consistent template: Purpose, Materials Needed, Steps,\nTroubleshooting.\n\nJudging when a frustrated student needs space rather than help is not a sequence.\nForcing it into an SOP produces a document that is technically accurate and\nuseless. That knowledge moves the other way: shadowing, co-leading, structured\nhandoff conversations.\n\nBoth branches meet at onboarding, and both end up in the playbook -- the SOPs as\ndocuments, the transferred knowledge as the record that a successor has actually\nshadowed and co-led.\n\nThe loop back to the start is dashed for a reason. The playbook is never\nfinished; it grows exactly the way Chapter 1's lessons learned log does.",
+  "howto": "- **Hover a step** to preview it; **click** to pin the definition.\n- The blue branch is for knowledge that reduces to steps; the orange branch is for\n  judgement that does not.\n- Follow the return arrow -- new know-how keeps appearing, so the loop never\n  closes for good.",
+  "lesson": "**Bloom level:** Analyze (L4) -- *differentiate*\n\n**Learning objective:** Given a specific piece of club know-how, the learner\ndifferentiates whether it belongs in a written SOP, requires direct knowledge\ntransfer, or has already been captured in the club playbook.\n\n**Before the sim (5 min).** Ask what only one person in the club knows how to do.\nEvery club has at least three answers, and they are the reason this chapter\nexists.\n\n**With the sim (10 min).** Walk the gate. For each item from the warm-up, ask the\ngroup to route it, and push back on anything routed to SOP that is really a\njudgement call.\n\n**After the sim (20 min).** Write one real SOP using the four-part template, and\nschedule one real shadowing session for something that cannot be written.\n\n**Check for understanding.** Ask: \"Which branch for 'how we decide whether to\ncancel a session for weather'?\" It has a written threshold *and* a judgement\ncomponent -- so it is genuinely both, and recognising that is better than forcing\none branch.",
+  "refs": "- {{CHAPTER}} -- the chapter this MicroSim supports.\n- [Mentor Development Pipeline](../mentor-development-pipeline/index.md) -- who the onboarding step is preparing.\n- [The Club Improvement Cycle](../club-improvement-cycle/index.md) -- the Chapter 1 loop this one mirrors.\n- [Standard operating procedure](https://en.wikipedia.org/wiki/Standard_operating_procedure) -- the template and its purpose.\n- [Tacit knowledge](https://en.wikipedia.org/wiki/Tacit_knowledge) -- the formal name for what cannot be written as steps."
+}

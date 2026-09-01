@@ -1,0 +1,110 @@
+{
+  "title": "From Scattered Knowledge to a Club Playbook",
+  "height": 760,
+  "direction": "TD",
+  "nodes": [
+    {
+      "id": "Undoc",
+      "shape": "round",
+      "cls": "retire",
+      "label": "Undocumented<br/>Know-How Exists",
+      "title": "Documenting Club Procedures",
+      "info": "Writing down how a specific recurring task is done -- setting up the room, running registration, closing down for the night -- at the moment someone first does it."
+    },
+    {
+      "id": "Reducible",
+      "shape": "diamond",
+      "cls": "wait",
+      "label": "Reducible<br/>to Steps?",
+      "title": "Reducible to Steps?",
+      "info": "Some know-how is a fixed sequence; other know-how is a judgement call that resists being written as steps. Trying to force the second kind into an SOP produces a document nobody can follow."
+    },
+    {
+      "id": "SOP",
+      "shape": "box",
+      "cls": "doc",
+      "label": "Write as an SOP",
+      "title": "Standard Operating Procedure",
+      "info": "The specific formatted document that documenting-procedures work produces: a consistent template -- Purpose, Materials Needed, Steps, Troubleshooting -- applied every time."
+    },
+    {
+      "id": "Transfer",
+      "shape": "box",
+      "cls": "remediate",
+      "label": "Transfer Through Shadowing<br/>and Co-Leading",
+      "title": "Knowledge Transfer Process",
+      "info": "The deliberate techniques -- shadowing, co-leading, and structured handoff conversations -- used to move harder-to-write-down knowledge from one person's head into another's."
+    },
+    {
+      "id": "Onboard",
+      "shape": "box",
+      "cls": "resolve",
+      "label": "Incoming Leader<br/>Completes Onboarding",
+      "title": "New Leader Onboarding",
+      "info": "The structured sequence a designated successor works through before fully taking over: reviewing every written procedure and SOP, then shadowing and co-leading sessions."
+    },
+    {
+      "id": "Playbook",
+      "shape": "round",
+      "cls": "resolve",
+      "label": "Filed in the Club<br/>Playbook Document",
+      "title": "Club Playbook Document",
+      "info": "The single master document -- a shared folder or wiki with one clear table of contents -- assembling every piece into a binder a completely new lead could work from."
+    }
+  ],
+  "edges": [
+    {
+      "from": "Undoc",
+      "to": "Reducible"
+    },
+    {
+      "from": "Reducible",
+      "to": "SOP",
+      "label": "Yes"
+    },
+    {
+      "from": "Reducible",
+      "to": "Transfer",
+      "label": "No - it is judgement"
+    },
+    {
+      "from": "SOP",
+      "to": "Onboard"
+    },
+    {
+      "from": "Transfer",
+      "to": "Onboard"
+    },
+    {
+      "from": "Onboard",
+      "to": "Playbook"
+    },
+    {
+      "from": "Playbook",
+      "to": "Undoc",
+      "label": "new know-how is still discovered"
+    }
+  ],
+  "legend": [
+    {
+      "cls": "retire",
+      "text": "Know-how in someone's head"
+    },
+    {
+      "cls": "wait",
+      "text": "Can it be written as steps?"
+    },
+    {
+      "cls": "doc",
+      "text": "SOP branch"
+    },
+    {
+      "cls": "remediate",
+      "text": "Knowledge transfer branch"
+    },
+    {
+      "cls": "resolve",
+      "text": "Onboarding and the playbook"
+    }
+  ]
+}

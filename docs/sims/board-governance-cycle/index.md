@@ -1,18 +1,75 @@
 ---
 title: Board Governance Cycle
-description: Given a board's current state, the learner differentiates the routine seat-rotation cycle from the one-time succession-plan trigger that a founder's departure activates.
-status: scaffold
+description: The routine seat-rotation cycle a board runs on, and the separate trigger a founder's departure fires.
+image: sims/board-governance-cycle/board-governance-cycle.png
+status: built
 library: Mermaid
 bloom_level: Analyze (L4)
 ---
 
 # Board Governance Cycle
 
+<iframe src="main.html" width="100%" height="822" scrolling="no"></iframe>
 
+[Run the Board Governance Cycle MicroSim fullscreen](main.html){ .md-button .md-button--primary }
 
-<iframe src="main.html" width="100%" height="600"></iframe>
+## About This MicroSim
 
-[Run MicroSim in Fullscreen](main.html){ .md-button .md-button--primary }
+There are two things in this diagram and the objective is to stop confusing them.
+
+The **cycle** on the left is routine. A seat is filled, duties are assigned,
+the board meets on its cadence, and eventually a term limit is reached and the
+seat rotates off -- back to the top, for that seat only. The word *staggered*
+matters: seats vacate on their own schedules, never all at once, so a board never
+loses all its experience in one year.
+
+The **trigger** on the right is not part of that cycle at all. A founder or lead
+mentor departing is an event, not a stage, and it fires the written succession
+plan regardless of where any seat happens to be in its term.
+
+Clubs conflate these, and the cost is specific: they treat succession planning as
+something the board will get to during a normal meeting, which means it does not
+exist on the day it is needed. A plan improvised under pressure is the failure
+mode the right-hand branch exists to prevent.
+
+## How to Use
+
+- **Hover a step** to preview it; **click** to pin the definition.
+- Follow the loop from **Meet on a Fixed Cadence** through the term check and back
+  -- that is the routine cycle.
+- The red nodes are the separate departure trigger; nothing in the cycle leads
+  into them.
+
+## Lesson Plan
+
+**Bloom level:** Analyze (L4) -- *differentiate*
+
+**Learning objective:** Given a board's current state, the learner differentiates
+the routine seat-rotation cycle from the one-time succession-plan trigger that a
+founder's departure activates.
+
+**Before the sim (5 min).** Ask who runs the club if the founder is unavailable
+next Saturday. Then ask if that answer is written down anywhere.
+
+**With the sim (10 min).** Walk the cycle first, then the trigger. Ask what
+connects them -- the answer is nothing, and that is the point. The trigger fires
+on its own timing.
+
+**After the sim (15 min).** Draft the succession plan's three concrete parts: who
+acts as lead, which signing authorities transfer, and where the document lives.
+
+**Check for understanding.** Ask: "A treasurer's term expires the same month the
+founder steps down. Which path handles which?" Two separate paths running at
+once, and being able to keep them apart is the objective met.
+
+## Embedding This MicroSim
+
+Paste this into any page of the book, adjusting the relative path to
+`docs/sims/` for the page's depth:
+
+```html
+<iframe src="../../sims/board-governance-cycle/main.html" width="100%" height="822" scrolling="no"></iframe>
+```
 
 ## Specification
 
@@ -50,6 +107,10 @@ Color coding: Blue for the recruitment-and-assignment steps, gold for the recurr
 Implementation: Mermaid flowchart (`graph TD`) rendered in main.html with `click NodeId call showInfo("NodeId")` directives for every node, opening a side-panel infobox; a "Reset View" button re-centers the diagram after any zoom or pan; layout reflows responsively on narrow screens.
 ```
 
-## Related Resources
+## References
 
-- [Chapter 34: Establishing an Oversight Board and Inventory System](../../chapters/34-oversight-board-and-inventory/index.md)
+- [Chapter 34: Establishing an Oversight Board and Inventory System](../../chapters/34-oversight-board-and-inventory/index.md) -- the chapter this MicroSim supports.
+- [Mentor Development Pipeline](../mentor-development-pipeline/index.md) -- where the successor comes from.
+- [Board of directors](https://en.wikipedia.org/wiki/Board_of_directors) -- roles, terms, and staggered boards.
+- [Succession planning](https://en.wikipedia.org/wiki/Succession_planning) -- preparing before the vacancy exists.
+- [Term limit](https://en.wikipedia.org/wiki/Term_limit) -- why rotation is built in deliberately.

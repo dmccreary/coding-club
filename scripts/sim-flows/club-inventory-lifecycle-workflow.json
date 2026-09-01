@@ -1,0 +1,197 @@
+{
+  "title": "Club Inventory Lifecycle Workflow",
+  "height": 1000,
+  "direction": "TD",
+  "nodes": [
+    {
+      "id": "Arrives",
+      "shape": "round",
+      "cls": "retire",
+      "label": "New Item<br/>Arrives",
+      "title": "Club Inventory System",
+      "info": "A unique physical identifier on every piece of equipment, a sticker or QR code linking that identifier to a record, and a shared log tracking every item's status."
+    },
+    {
+      "id": "Sticker",
+      "shape": "box",
+      "cls": "doc",
+      "label": "Print Sticker",
+      "title": "Inventory Sticker Printing",
+      "info": "Printing a small durable sequentially numbered label -- from a sheet of adhesive labels or a dedicated label maker -- and applying it where it will survive handling."
+    },
+    {
+      "id": "QR",
+      "shape": "box",
+      "cls": "doc",
+      "label": "Generate<br/>QR Code",
+      "title": "QR Code on Kits",
+      "info": "A small square barcode, printed alongside or instead of the numbered sticker, that a smartphone camera can scan to open that item's record directly."
+    },
+    {
+      "id": "Tag",
+      "shape": "box",
+      "cls": "doc",
+      "label": "Log via Asset<br/>Tagging Process",
+      "title": "Asset Tagging Process",
+      "info": "The one-time sequence that turns a brand-new item into a tracked one: assign the next unused sticker number, generate its matching QR code, and record both alongside the item's details."
+    },
+    {
+      "id": "Shelf",
+      "shape": "box",
+      "cls": "prep",
+      "label": "Store on Shelf",
+      "title": "Store on Shelf",
+      "info": "The item sits in general circulation, available for the next checkout."
+    },
+    {
+      "id": "ScanOut",
+      "shape": "box",
+      "cls": "resolve",
+      "label": "Scan Out<br/>(Checkout System)",
+      "title": "Equipment Checkout System",
+      "info": "Scanning an item's QR code, recording who has it and an expected return date, and updating its status. This generalises Chapter 21's kit loaner program to every tagged item."
+    },
+    {
+      "id": "OnTime",
+      "shape": "diamond",
+      "cls": "wait",
+      "label": "Returned by<br/>Due Date?",
+      "title": "Returned by Due Date?",
+      "info": "The system compares today's date against the due date recorded at checkout."
+    },
+    {
+      "id": "ScanIn",
+      "shape": "box",
+      "cls": "resolve",
+      "label": "Scan In<br/>(Return Tracking)",
+      "title": "Equipment Return Tracking",
+      "info": "Scanning a returned item's QR code flips its status back to 'in storage', time-stamps the return, and flags anything still checked out."
+    },
+    {
+      "id": "Overdue",
+      "shape": "box",
+      "cls": "remediate",
+      "label": "Flag as Overdue",
+      "title": "Flag as Overdue",
+      "info": "The mentor dashboard surfaces the overdue item automatically, prompting a follow-up before it becomes an audit surprise."
+    },
+    {
+      "id": "Audit",
+      "shape": "box",
+      "cls": "prep",
+      "label": "Semester Audit",
+      "title": "Inventory Audit Process",
+      "info": "A scheduled physical count of every tagged item against the inventory log -- typically once per semester -- confirming that every sticker number the log expects is actually present."
+    },
+    {
+      "id": "Found",
+      "shape": "diamond",
+      "cls": "wait",
+      "label": "Item Found<br/>During Audit?",
+      "title": "Item Found During Audit?",
+      "info": "Every logged item not currently checked out should be physically present. Anything missing moves to the lost item policy."
+    },
+    {
+      "id": "Lost",
+      "shape": "round",
+      "cls": "danger",
+      "label": "Lost Item Policy",
+      "title": "Lost Item Policy",
+      "info": "A written no-blame procedure for a genuinely missing item: a fixed grace period to keep searching, and a clear point at which the item is written off and the log corrected."
+    }
+  ],
+  "edges": [
+    {
+      "from": "Arrives",
+      "to": "Sticker"
+    },
+    {
+      "from": "Sticker",
+      "to": "QR"
+    },
+    {
+      "from": "QR",
+      "to": "Tag"
+    },
+    {
+      "from": "Tag",
+      "to": "Shelf"
+    },
+    {
+      "from": "Shelf",
+      "to": "ScanOut"
+    },
+    {
+      "from": "ScanOut",
+      "to": "OnTime"
+    },
+    {
+      "from": "OnTime",
+      "to": "ScanIn",
+      "label": "Yes"
+    },
+    {
+      "from": "OnTime",
+      "to": "Overdue",
+      "label": "No"
+    },
+    {
+      "from": "Overdue",
+      "to": "ScanIn",
+      "label": "once returned"
+    },
+    {
+      "from": "ScanIn",
+      "to": "Shelf"
+    },
+    {
+      "from": "Shelf",
+      "to": "Audit",
+      "label": "each semester"
+    },
+    {
+      "from": "Audit",
+      "to": "Found"
+    },
+    {
+      "from": "Found",
+      "to": "Shelf",
+      "label": "Yes"
+    },
+    {
+      "from": "Found",
+      "to": "Lost",
+      "label": "No"
+    }
+  ],
+  "legend": [
+    {
+      "cls": "retire",
+      "text": "Item arrives"
+    },
+    {
+      "cls": "doc",
+      "text": "Tagging"
+    },
+    {
+      "cls": "prep",
+      "text": "Storage and audit"
+    },
+    {
+      "cls": "resolve",
+      "text": "Checkout and return"
+    },
+    {
+      "cls": "wait",
+      "text": "Decision"
+    },
+    {
+      "cls": "remediate",
+      "text": "Overdue"
+    },
+    {
+      "cls": "danger",
+      "text": "Lost item policy"
+    }
+  ]
+}
