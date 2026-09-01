@@ -1,6 +1,6 @@
 {
   "title": "Anatomy of a Club Charter",
-  "description": "Given the term \"club charter,\" the learner identifies the five sections it typically contains and states what each one governs.",
+  "description": "A club charter is one document made of five distinct sections. See what each section governs and how they differ.",
   "creator": "Coding Club",
   "author": "Dan McCreary",
   "date": "2026-09-01",
@@ -16,18 +16,15 @@
   "bloomLevel": "Understand (L2)",
   "bloomVerb": "differentiate",
   "completion_status": "built",
+  "canvasHeight": 700,
   "chapter_number": 3,
-  "chapter_title": "Writing Your Club Charter and Safety Policies",
+  "chapter_title": "Chapter 3: Writing Your Club Charter and Safety Policies",
   "chapter_dir": "03-club-charter-and-safety",
   "chapter_rel_dir": "chapters/03-club-charter-and-safety",
-  "canvasHeight": 700,
   "educational": {
-    "gradeLevel": "High School, Undergraduate, Adult",
+    "gradeLevel": "Middle School, High School, Adult",
     "audience": "Coding club leaders and student officers drafting a charter",
     "duration": "10-15 minutes",
-    "prerequisites": [
-      "Coding Club"
-    ],
     "concepts": [
       "Club Charter",
       "Club Values",

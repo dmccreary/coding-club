@@ -1,6 +1,6 @@
 {
   "title": "Potentiometer Analog Input Explorer",
-  "description": "Given a potentiometer's knob position, the learner demonstrates how turning it produces a proportional analog input reading across a continuous range.",
+  "description": "Turn a knob and watch an analog reading sweep smoothly through 1024 values, then see what a digital pin would have made of the same knob.",
   "creator": "Coding Club",
   "author": "Dan McCreary",
   "date": "2026-09-01",
@@ -15,9 +15,29 @@
   "library": "p5.js",
   "bloomLevel": "Apply (L3)",
   "bloomVerb": "demonstrate",
-  "completion_status": "scaffold",
+  "completion_status": "built",
+  "canvasHeight": 445,
   "chapter_number": 16,
-  "chapter_title": "Physical Computing and Electrical Safety Basics",
+  "chapter_title": "Chapter 16: Physical Computing and Electrical Safety Basics",
   "chapter_dir": "16-physical-computing-safety",
-  "chapter_rel_dir": "chapters/16-physical-computing-safety"
+  "chapter_rel_dir": "chapters/16-physical-computing-safety",
+  "educational": {
+    "gradeLevel": "Middle School, High School, Adult",
+    "audience": "Coding club students and mentors",
+    "duration": "10-15 minutes",
+    "concepts": [
+      "Potentiometer",
+      "Analog Input",
+      "ADC",
+      "Digital Input",
+      "Voltage Divider"
+    ]
+  },
+  "pedagogical": {
+    "bloomLevel": "Apply (L3)",
+    "bloomVerb": "demonstrate",
+    "learningObjective": "Given a potentiometer's knob position, the learner demonstrates how turning it produces a proportional analog input reading across a continuous range.",
+    "interactionPattern": "Draggable knob with a continuous readout and an optional digital-input overlay",
+    "assessment": "Ask what a reading of 700 means in volts and what a digital pin would report."
+  }
 }

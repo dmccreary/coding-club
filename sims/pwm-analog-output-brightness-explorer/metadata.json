@@ -1,6 +1,6 @@
 {
   "title": "PWM Analog Output Brightness Explorer",
-  "description": "Given a duty-cycle percentage, the learner explains how the underlying on-off switching pattern produces a perceived brightness level.",
+  "description": "See how a pin that can only be fully on or fully off produces every brightness in between.",
   "creator": "Coding Club",
   "author": "Dan McCreary",
   "date": "2026-09-01",
@@ -15,9 +15,28 @@
   "library": "p5.js",
   "bloomLevel": "Understand (L2)",
   "bloomVerb": "explain",
-  "completion_status": "scaffold",
+  "completion_status": "built",
+  "canvasHeight": 480,
   "chapter_number": 16,
-  "chapter_title": "Physical Computing and Electrical Safety Basics",
+  "chapter_title": "Chapter 16: Physical Computing and Electrical Safety Basics",
   "chapter_dir": "16-physical-computing-safety",
-  "chapter_rel_dir": "chapters/16-physical-computing-safety"
+  "chapter_rel_dir": "chapters/16-physical-computing-safety",
+  "educational": {
+    "gradeLevel": "Middle School, High School, Adult",
+    "audience": "Coding club students and mentors",
+    "duration": "10-15 minutes",
+    "concepts": [
+      "Pulse Width Modulation",
+      "Duty Cycle",
+      "Digital Output",
+      "Persistence of Vision"
+    ]
+  },
+  "pedagogical": {
+    "bloomLevel": "Understand (L2)",
+    "bloomVerb": "explain",
+    "learningObjective": "Given a duty-cycle percentage, the learner explains how the underlying on-off switching pattern produces a perceived brightness level.",
+    "interactionPattern": "Duty-cycle slider with paired perceived and actual views, plus a slow-motion toggle",
+    "assessment": "Ask whether a 50% duty cycle means half the voltage."
+  }
 }

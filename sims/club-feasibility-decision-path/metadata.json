@@ -1,6 +1,6 @@
 {
   "title": "Should You Start This Club?",
-  "description": "Given survey results and a candidate venue and team, the learner follows the correct sequence of feasibility checks to decide whether to establish a new club.",
+  "description": "Walk the four feasibility gates between an encouraging survey result and a real first meeting date.",
   "creator": "Coding Club",
   "author": "Dan McCreary",
   "date": "2026-09-01",
@@ -15,9 +15,29 @@
   "library": "Mermaid",
   "bloomLevel": "Apply (L3)",
   "bloomVerb": "implement",
-  "completion_status": "scaffold",
+  "completion_status": "built",
+  "canvasHeight": 880,
   "chapter_number": 5,
   "chapter_title": "Gauging Interest and Holding Your First Meeting",
   "chapter_dir": "05-gauging-interest-first-meeting",
-  "chapter_rel_dir": "chapters/05-gauging-interest-first-meeting"
+  "chapter_rel_dir": "chapters/05-gauging-interest-first-meeting",
+  "educational": {
+    "gradeLevel": "Middle School, High School, Adult",
+    "audience": "Prospective club founders",
+    "duration": "10-15 minutes",
+    "concepts": [
+      "Feasibility Check",
+      "Venue Agreement",
+      "Founding Team",
+      "Background Check",
+      "Go/No-Go Decision"
+    ]
+  },
+  "pedagogical": {
+    "bloomLevel": "Apply (L3)",
+    "bloomVerb": "implement",
+    "learningObjective": "Given survey results and a candidate venue and team, the learner follows the correct sequence of feasibility checks to decide whether to establish a new club.",
+    "interactionPattern": "Hover-to-preview and click-to-pin decision flowchart with three gates and their remediation branches",
+    "assessment": "Give a founder who has a survey, a venue and a co-founder but no cleared mentor, and ask what happens next."
+  }
 }

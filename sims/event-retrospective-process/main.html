@@ -3,115 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- microsim-scaffold-stub -->
+    <meta name="schema" content="https://dmccreary.github.io/intelligent-textbooks/ns/microsim/v1">
     <title>The Event Retrospective Process</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: #f8f9fa;
-            color: #212529;
-        }
-        #container {
-            width: 100%;
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 20px;
-            background: white;
-        }
-        h1 {
-            font-size: 22px;
-            margin-bottom: 10px;
-            color: #1a3a6c;
-        }
-        .placeholder {
-            border: 2px dashed #adb5bd;
-            border-radius: 8px;
-            padding: 40px 20px;
-            text-align: center;
-            color: #6c757d;
-            margin: 20px 0;
-            min-height: 400px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        .placeholder .badge {
-            display: inline-block;
-            background: #ffc107;
-            color: #212529;
-            padding: 4px 12px;
-            border-radius: 12px;
-            font-size: 12px;
-            font-weight: 600;
-            margin-bottom: 12px;
-        }
-        .placeholder h2 {
-            font-size: 18px;
-            color: #495057;
-            margin-bottom: 8px;
-        }
-        .placeholder p {
-            font-size: 14px;
-            max-width: 480px;
-        }
-        .meta {
-            margin-top: 20px;
-            font-size: 13px;
-            color: #6c757d;
-            border-top: 1px solid #dee2e6;
-            padding-top: 12px;
-        }
-        .meta strong { color: #495057; }
-    </style>
+    <script type="module">
+        import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+        mermaid.initialize({
+            startOnLoad: true,
+            theme: 'default',
+            flowchart: {
+                useMaxWidth: true,
+                htmlLabels: true,
+                curve: 'basis',
+                subGraphTitleMargin: { top: 10, bottom: 14 }
+            }
+        });
+    </script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="container">
-        <h1>The Event Retrospective Process</h1>
-        <div class="placeholder">
-            <span class="badge">SCAFFOLD</span>
-            <h2>MicroSim Not Yet Implemented</h2>
-            <p>This MicroSim has been scaffolded from its specification but the
-            interactive content has not been built yet. See the chapter source
-            and the <code>index.md</code> in this directory for the full spec.</p>
+<main>
+    <div class="container">
+        <div class="diagram-panel">
+            <div class="mermaid">
+flowchart TD
+    SessionEnds("Session Ends"):::docNode
+    Debrief["Event Debriefing Meeting<br/>(Same Day)"]:::docNode
+    Collect["Survey Responses<br/>Collected and Analyzed"]:::docNode
+    Record["Findings Recorded as<br/>Tracked Lessons"]:::resolveNode
+    Review["Club Leader Reviews<br/>the Log for Patterns"]:::resolveNode
+    Apply("Change Applied to<br/>the Next Session"):::decisionNode
+
+    SessionEnds --> Debrief
+    Debrief --> Collect
+    Collect --> Record
+    Record --> Review
+    Review --> Apply
+
+    classDef docNode fill:#4A90D9,stroke:#2E6BA8,stroke-width:2px,color:#fff,font-size:16px
+    classDef resolveNode fill:#3E9E6E,stroke:#256E4A,stroke-width:2px,color:#fff,font-size:16px
+    classDef decisionNode fill:#F5A623,stroke:#B87B12,stroke-width:2px,color:#333,font-size:16px
+
+    linkStyle default stroke:#7A8A99,stroke-width:2px,font-size:16px
+            </div>
         </div>
-        <div class="meta">
-            <p><strong>Sim ID:</strong> event-retrospective-process</p>
-            <p><strong>Library:</strong> Mermaid</p>
-            <p><strong>Bloom Level:</strong> Apply (L3)</p>
-            <p><strong>Learning Objective:</strong> Given a completed session, the learner follows the correct sequence from survey collection through a documented, trackable lesson.</p>
+        <div class="info-panel">
+            <h3>Step Details</h3>
+            <div id="info-display">
+                <p class="info-placeholder">Hover a step to preview it, or click a step to pin its details here.</p>
+                <div class="legend">
+                    <div class="legend-item"><span class="swatch sw-doc"></span>Data collection</div>
+                    <div class="legend-item"><span class="swatch sw-resolve"></span>Tracking and review</div>
+                    <div class="legend-item"><span class="swatch sw-decision"></span>Resulting change</div>
+                </div>
+            </div>
         </div>
     </div>
+</main>
 
-    <!--
-    SPECIFICATION (from chapter index.md):
-
-    Type: workflow
-    **sim-id:** event-retrospective-process<br/>
-    **Library:** Mermaid<br/>
-    **Status:** Specified
-    
-    Purpose: Show how a single post-event survey and debrief becomes tracked, actionable evidence, connecting this chapter's specific tools back to Chapter 1's continuous improvement cycle.
-    
-    Bloom Taxonomy: Apply (L3)
-    Bloom Taxonomy Verb: implement
-    
-    Learning objective: Given a completed session, the learner follows the correct sequence from survey collection through a documented, trackable lesson.
-    
-    Steps (flowchart):
-    1. Start: "Session Ends" -- click reveals "Post-event survey link goes out to families within 24 hours, while the experience is still fresh."
-    2. Process: "Event Debriefing Meeting (Same Day)" -- click reveals "Mentors spend 10-15 minutes covering the retrospective checklist before leaving the venue."
-    3. Process: "Survey Responses Collected and Analyzed" -- click reveals "Responses are reviewed for patterns repeated across multiple families, not single outliers."
-    4. Process: "Findings Recorded as Tracked Lessons" -- click reveals "Debrief notes and survey patterns both get written into the lessons learned log from Chapter 1."
-    5. Process: "Club Leader Reviews the Log for Patterns" -- click reveals "Recurring themes across several sessions trigger proactive mentor engagement or a curriculum adjustment."
-    6. End: "Change Applied to the Next Session" -- click reveals "The cycle repeats -- this is Chapter 1's continuous improvement cycle in its fully operational form."
-    
-    Interactivity requirement (satisfied): every node has a Mermaid `click` directive tied to an infobox showing its revealed text.
-    
-    Color coding: Blue for data-collection steps, green for the tracking and review steps, amber for the resulting change
-    
-    Implementation: Mermaid flowchart syntax with `click NodeId call showInfo("...")` directives for every node, rendered with a custom infobox panel beneath the diagram
-    -->
+    <!-- Node information data - one entry per node in the flowchart above -->
+    <script>
+        const nodeInfo = {
+            "SessionEnds": {
+                title: "Session Ends",
+                description: "Post-event survey link goes out to families within 24 hours, while the experience is still fresh."
+            },
+            "Debrief": {
+                title: "Event Debriefing Meeting (Same Day)",
+                description: "Mentors spend 10-15 minutes covering the retrospective checklist before leaving the venue."
+            },
+            "Collect": {
+                title: "Survey Responses Collected and Analyzed",
+                description: "Responses are reviewed for patterns repeated across multiple families, not single outliers."
+            },
+            "Record": {
+                title: "Findings Recorded as Tracked Lessons",
+                description: "Debrief notes and survey patterns both get written into the lessons learned log from Chapter 1."
+            },
+            "Review": {
+                title: "Club Leader Reviews the Log for Patterns",
+                description: "Recurring themes across several sessions trigger proactive mentor engagement or a curriculum adjustment."
+            },
+            "Apply": {
+                title: "Change Applied to the Next Session",
+                description: "The cycle repeats -- this is Chapter 1's continuous improvement cycle in its fully operational form."
+            }
+        };
+    </script>
+    <!-- Load interaction script after nodeInfo is defined -->
+    <script src="script.js"></script>
 </body>
 </html>

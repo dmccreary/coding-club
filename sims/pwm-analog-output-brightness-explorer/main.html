@@ -3,112 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- microsim-scaffold-stub -->
+    <meta name="schema" content="https://dmccreary.github.io/intelligent-textbooks/ns/microsim/v1">
     <title>PWM Analog Output Brightness Explorer</title>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.11.10/lib/p5.js"></script>
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: #f8f9fa;
-            color: #212529;
+            margin: 0px;
+            padding: 0px;
+            font-family: Arial, Helvetica, sans-serif;
         }
-        #container {
-            width: 100%;
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 20px;
-            background: white;
-        }
-        h1 {
-            font-size: 22px;
-            margin-bottom: 10px;
-            color: #1a3a6c;
-        }
-        .placeholder {
-            border: 2px dashed #adb5bd;
-            border-radius: 8px;
-            padding: 40px 20px;
-            text-align: center;
-            color: #6c757d;
-            margin: 20px 0;
-            min-height: 400px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        .placeholder .badge {
-            display: inline-block;
-            background: #ffc107;
-            color: #212529;
-            padding: 4px 12px;
-            border-radius: 12px;
-            font-size: 12px;
-            font-weight: 600;
-            margin-bottom: 12px;
-        }
-        .placeholder h2 {
-            font-size: 18px;
-            color: #495057;
-            margin-bottom: 8px;
-        }
-        .placeholder p {
-            font-size: 14px;
-            max-width: 480px;
-        }
-        .meta {
-            margin-top: 20px;
-            font-size: 13px;
-            color: #6c757d;
-            border-top: 1px solid #dee2e6;
-            padding-top: 12px;
-        }
-        .meta strong { color: #495057; }
     </style>
+    <script src="pwm-analog-output-brightness-explorer.js"></script>
 </head>
 <body>
-    <div id="container">
-        <h1>PWM Analog Output Brightness Explorer</h1>
-        <div class="placeholder">
-            <span class="badge">SCAFFOLD</span>
-            <h2>MicroSim Not Yet Implemented</h2>
-            <p>This MicroSim has been scaffolded from its specification but the
-            interactive content has not been built yet. See the chapter source
-            and the <code>index.md</code> in this directory for the full spec.</p>
-        </div>
-        <div class="meta">
-            <p><strong>Sim ID:</strong> pwm-analog-output-brightness-explorer</p>
-            <p><strong>Library:</strong> p5.js</p>
-            <p><strong>Bloom Level:</strong> Understand (L2)</p>
-            <p><strong>Learning Objective:</strong> Given a duty-cycle percentage, the learner explains how the underlying on-off switching pattern produces a perceived brightness level.</p>
-        </div>
-    </div>
-
-    <!--
-    SPECIFICATION (from chapter index.md):
-
-    Type: microsim
-    **sim-id:** pwm-analog-output-brightness-explorer<br/>
-    **Library:** p5.js<br/>
-    **Status:** Specified<br/>
-    **Template:** https://github.com/dmccreary/microsims/tree/main/docs/sims/pwm
-    
-    Purpose: Show how adjusting PWM duty cycle changes perceived LED brightness, and reveal the actual fast on-off switching underneath the smooth appearance.
-    
-    Bloom Taxonomy: Understand (L2)
-    Bloom Taxonomy Verb: explain
-    
-    Learning objective: Given a duty-cycle percentage, the learner explains how the underlying on-off switching pattern produces a perceived brightness level.
-    
-    Visual elements: A simulated LED that appears to dim or brighten smoothly; beneath it, a zoomed-in, slowed-down waveform showing the actual on-off square-wave pattern at the current duty cycle
-    
-    Interactive controls: Slider for duty cycle (0%-100%); a "slow motion" toggle that slows the waveform enough to see individual on/off pulses
-    
-    Default parameters: Duty cycle 50%, normal speed
-    
-    Behavior: Moving the duty-cycle slider instantly updates both the LED's perceived brightness and the waveform's on/off proportions; the slow-motion toggle reduces switching speed so learners can see the discrete pulses that produce the smooth appearance
-    
-    Implementation notes: p5.js canvas with the LED rendered as a circle whose fill opacity maps to duty cycle for the "perceived" view, and a literal square-wave line plot for the "actual" view
-    -->
+    <main></main>
+    <br/>
+    <a href=".">Back to the PWM Analog Output Brightness Explorer Lesson Plan</a>
 </body>
 </html>

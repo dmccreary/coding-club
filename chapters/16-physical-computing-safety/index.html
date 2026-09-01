@@ -3809,7 +3809,7 @@ Bloom Taxonomy Verb: demonstrate</p>
 If Ohm's law feels like a formula from a textbook rather than something you'd reach for naturally, that's completely normal — most mentors need to run the calculator MicroSim below on two or three real circuits before it clicks. You've already handled harder unknowns than this one.</p>
 </div>
 <h4 id="diagram-ohms-law-current-calculator">Diagram: Ohm's Law Current Calculator<a class="headerlink" href="#diagram-ohms-law-current-calculator" title="Permanent link">¶</a></h4>
-<iframe src="../../sims/ohms-law-current-calculator/main.html" width="100%" height="480px" scrolling="no"></iframe>
+<iframe src="../../sims/ohms-law-current-calculator/main.html" width="100%" height="482px" scrolling="no"></iframe>
 
 <details>
 <summary>Ohm's Law Current Calculator</summary>
@@ -3895,7 +3895,7 @@ Bloom Taxonomy Verb: identify</p>
 Here's a shortcut: resistor bands can look faded or hard to distinguish under classroom lighting, especially brown versus red. When a value matters — like the 150-ohm resistor from the Ohm's law example — measure it directly with a multimeter instead of trusting your eyes on the color bands alone.</p>
 </div>
 <h4 id="diagram-resistor-color-code-calculator">Diagram: Resistor Color Code Calculator<a class="headerlink" href="#diagram-resistor-color-code-calculator" title="Permanent link">¶</a></h4>
-<iframe src="https://dmccreary.github.io/learning-micropython/sims/resistor-color-code-calculator/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="https://dmccreary.github.io/learning-micropython/sims/resistor-color-code-calculator/main.html" width="100%" height="542px" scrolling="no"></iframe>
 
 <p><a class="md-button" href="https://dmccreary.github.io/learning-micropython/sims/resistor-color-code-calculator/main.html">Run the Resistor Color Code Calculator MicroSim fullscreen</a></p>
 <details>
@@ -4055,7 +4055,7 @@ Think of it like this: a digital input is a light switch — only on or off — 
 <p>A worked example: turning a potentiometer knob a quarter of the way produces a reading of roughly 256 out of 1023; turning it halfway produces roughly 512; fully open produces the maximum 1023. Unlike the push button's clean two-value output, every position along that turn produces its own distinct number.</p>
 <p>This is exactly the kind of input this book's Moving Rainbow project, referenced in the course description, uses to let a student dial in a color or brightness by hand rather than only choosing between a fixed set of preset options. A raw 0-to-1023 reading rarely maps directly onto whatever it is controlling, so code typically rescales it first — turning that same range into, say, a 0-to-255 brightness value — using the same kind of proportional mapping the PWM section below relies on to convert a percentage into an on-off timing pattern.</p>
 <h4 id="diagram-potentiometer-analog-input-explorer">Diagram: Potentiometer Analog Input Explorer<a class="headerlink" href="#diagram-potentiometer-analog-input-explorer" title="Permanent link">¶</a></h4>
-<iframe src="../../sims/potentiometer-analog-input-explorer/main.html" width="100%" height="480px" scrolling="no"></iframe>
+<iframe src="../../sims/potentiometer-analog-input-explorer/main.html" width="100%" height="447px" scrolling="no"></iframe>
 
 <details>
 <summary>Potentiometer Analog Input Explorer</summary>
@@ -4079,7 +4079,7 @@ Bloom Taxonomy Verb: demonstrate</p>
 <p>A worked example: an LED driven with a 25 percent duty cycle — HIGH for one quarter of each cycle and LOW for the rest — appears noticeably dim to the human eye, because the switching happens far faster than the eye can perceive individual flickers, and the eye instead averages the brightness over time. Raising the duty cycle to 75 percent makes the same LED appear noticeably brighter, even though the pin is still only ever fully on or fully off at any single instant — the appearance of a smooth in-between brightness is really an average of speed, not a true in-between voltage.</p>
 <p>Switching speed matters as much as duty cycle does. A microcontroller's PWM output typically switches many hundreds or thousands of times per second — fast enough that the human eye perceives a smooth brightness rather than a flicker. If that same duty-cycle pattern ran only a few times per second instead, students would see the LED visibly stutter on and off rather than dim smoothly, which is a useful demonstration in its own right: it shows that the "analog" appearance depends entirely on switching faster than human perception, not on any special analog hardware inside the LED itself.</p>
 <h4 id="diagram-pwm-analog-output-brightness-explorer">Diagram: PWM Analog Output Brightness Explorer<a class="headerlink" href="#diagram-pwm-analog-output-brightness-explorer" title="Permanent link">¶</a></h4>
-<iframe src="../../sims/pwm-analog-output-brightness-explorer/main.html" width="100%" height="480px" scrolling="no"></iframe>
+<iframe src="../../sims/pwm-analog-output-brightness-explorer/main.html" width="100%" height="482px" scrolling="no"></iframe>
 
 <details>
 <summary>PWM Analog Output Brightness Explorer</summary>

@@ -1,6 +1,6 @@
 {
   "title": "Resistor Color Code Calculator",
-  "description": "Resistor Color Code Calculator",
+  "description": "Set the four colored bands on a resistor and read off its value, so a mentor can check a part before it goes into a circuit.",
   "creator": "Coding Club",
   "author": "Dan McCreary",
   "date": "2026-09-01",
@@ -13,11 +13,36 @@
   "rights": "CC BY-NC-SA 4.0",
   "identifier": "resistor-color-code-calculator",
   "library": "p5.js",
-  "bloomLevel": "TBD",
-  "bloomVerb": "TBD",
-  "completion_status": "scaffold",
+  "bloomLevel": "Apply (L3)",
+  "bloomVerb": "calculate",
+  "completion_status": "built",
+  "canvasHeight": 540,
   "chapter_number": 16,
-  "chapter_title": "Physical Computing and Electrical Safety Basics",
+  "chapter_title": "Chapter 16: Physical Computing and Electrical Safety Basics",
   "chapter_dir": "16-physical-computing-safety",
-  "chapter_rel_dir": "chapters/16-physical-computing-safety"
+  "chapter_rel_dir": "chapters/16-physical-computing-safety",
+  "educational": {
+    "gradeLevel": "Middle School, High School, Adult",
+    "audience": "Coding club students and mentors",
+    "duration": "10-15 minutes",
+    "concepts": [
+      "Resistor",
+      "Color Code",
+      "Resistance",
+      "Tolerance"
+    ]
+  },
+  "pedagogical": {
+    "bloomLevel": "Apply (L3)",
+    "bloomVerb": "calculate",
+    "learningObjective": "Set the four colored bands on a resistor and read off its value, so a mentor can check a part before it goes into a circuit.",
+    "interactionPattern": "Four band selectors driving a live resistor drawing and value readout",
+    "assessment": "Give brown-black-red and ask for the value before using the sim."
+  },
+  "_reused_from": {
+    "repo": "learning-micropython",
+    "sim": "resistor-color-code-calculator",
+    "url": "https://dmccreary.github.io/learning-micropython/sims/resistor-color-code-calculator/",
+    "github": "https://github.com/dmccreary/learning-micropython/tree/main/docs/sims/resistor-color-code-calculator"
+  }
 }

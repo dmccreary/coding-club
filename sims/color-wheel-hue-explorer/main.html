@@ -3,112 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- microsim-scaffold-stub -->
+    <meta name="schema" content="https://dmccreary.github.io/intelligent-textbooks/ns/microsim/v1">
     <title>Color Wheel Hue Explorer</title>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.11.10/lib/p5.js"></script>
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: #f8f9fa;
-            color: #212529;
+            margin: 0px;
+            padding: 0px;
+            font-family: Arial, Helvetica, sans-serif;
         }
-        #container {
-            width: 100%;
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 20px;
-            background: white;
-        }
-        h1 {
-            font-size: 22px;
-            margin-bottom: 10px;
-            color: #1a3a6c;
-        }
-        .placeholder {
-            border: 2px dashed #adb5bd;
-            border-radius: 8px;
-            padding: 40px 20px;
-            text-align: center;
-            color: #6c757d;
-            margin: 20px 0;
-            min-height: 400px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        .placeholder .badge {
-            display: inline-block;
-            background: #ffc107;
-            color: #212529;
-            padding: 4px 12px;
-            border-radius: 12px;
-            font-size: 12px;
-            font-weight: 600;
-            margin-bottom: 12px;
-        }
-        .placeholder h2 {
-            font-size: 18px;
-            color: #495057;
-            margin-bottom: 8px;
-        }
-        .placeholder p {
-            font-size: 14px;
-            max-width: 480px;
-        }
-        .meta {
-            margin-top: 20px;
-            font-size: 13px;
-            color: #6c757d;
-            border-top: 1px solid #dee2e6;
-            padding-top: 12px;
-        }
-        .meta strong { color: #495057; }
     </style>
+    <script src="color-wheel-hue-explorer.js"></script>
 </head>
 <body>
-    <div id="container">
-        <h1>Color Wheel Hue Explorer</h1>
-        <div class="placeholder">
-            <span class="badge">SCAFFOLD</span>
-            <h2>MicroSim Not Yet Implemented</h2>
-            <p>This MicroSim has been scaffolded from its specification but the
-            interactive content has not been built yet. See the chapter source
-            and the <code>index.md</code> in this directory for the full spec.</p>
-        </div>
-        <div class="meta">
-            <p><strong>Sim ID:</strong> color-wheel-hue-explorer</p>
-            <p><strong>Library:</strong> p5.js</p>
-            <p><strong>Bloom Level:</strong> Apply (L3)</p>
-            <p><strong>Learning Objective:</strong> Given a position on a 0-255 color wheel, the learner calculates the resulting RGB color a wheel() function would return.</p>
-        </div>
-    </div>
-
-    <!--
-    SPECIFICATION (from chapter index.md):
-
-    Type: microsim
-    **sim-id:** color-wheel-hue-explorer<br/>
-    **Library:** p5.js<br/>
-    **Status:** Specified<br/>
-    **Template:** https://github.com/dmccreary/moving-rainbow/tree/main/docs/sims/hsv-color-explorer
-    
-    Purpose: Let a learner drag a position around a 0-255 color wheel and see the matching RGB values a wheel() function would return, before writing or reading that function in code.
-    
-    Bloom Taxonomy: Apply (L3)
-    Bloom Taxonomy Verb: calculate
-    
-    Learning objective: Given a position on a 0-255 color wheel, the learner calculates the resulting RGB color a wheel() function would return.
-    
-    Visual elements: A circular color wheel with a draggable position marker; a swatch showing the resulting color; a readout of the R, G, B values.
-    
-    Interactive controls: Draggable marker around the wheel; numeric input as an alternative to dragging; a "Show three sample positions" button highlighting 0, 85, and 170.
-    
-    Default parameters: Marker starts at position 0 (red).
-    
-    Behavior: Dragging the marker updates the RGB readout and swatch continuously; the sample-positions button steps through the three reference colors from the worked example.
-    
-    Implementation notes: p5.js canvas with an HSV-to-RGB conversion function driven by the marker's angle; draggable marker using mouse-drag detection along the wheel's circumference.
-    -->
+    <main></main>
+    <br/>
+    <a href=".">Back to the Color Wheel Hue Explorer Lesson Plan</a>
 </body>
 </html>

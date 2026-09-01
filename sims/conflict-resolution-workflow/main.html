@@ -13,7 +13,8 @@
             flowchart: {
                 useMaxWidth: true,
                 htmlLabels: true,
-                curve: 'basis'
+                curve: 'basis',
+                subGraphTitleMargin: { top: 10, bottom: 14 }
             }
         });
     </script>
@@ -28,12 +29,13 @@ flowchart TD
     Report("Complaint or<br/>Conflict Reported"):::docNode
     Document["Club Leader Documents<br/>the Report"]:::docNode
     SafetyCheck{"Does This Involve<br/>Safety or Harassment?"}:::decisionNode
-    Escalate["Escalate to Venue and,<br/>If Needed, Authorities"]:::escalateNode
+    Escalate["Escalate to Venue and,<br/>If Needed, Authorities"]:::dangerNode
     Mediate["Club Leader Mediates<br/>a Conversation"]:::resolveNode
     ShareOutcome["Outcome Is Documented and<br/>Shared With Involved Families"]:::resolveNode
     LogEntry("Entry Added to the<br/>Lessons Learned Log"):::resolveNode
 
-    Report --> Document --> SafetyCheck
+    Report --> Document
+    Document --> SafetyCheck
     SafetyCheck -->|Yes| Escalate
     SafetyCheck -->|No| Mediate
     Escalate --> ShareOutcome
@@ -42,7 +44,7 @@ flowchart TD
 
     classDef docNode fill:#4A90D9,stroke:#2E6BA8,stroke-width:2px,color:#fff,font-size:16px
     classDef decisionNode fill:#F5A623,stroke:#B87B12,stroke-width:2px,color:#333,font-size:16px
-    classDef escalateNode fill:#D64545,stroke:#8F2B2B,stroke-width:2px,color:#fff,font-size:16px
+    classDef dangerNode fill:#D64545,stroke:#8F2B2B,stroke-width:2px,color:#fff,font-size:16px
     classDef resolveNode fill:#3E9E6E,stroke:#256E4A,stroke-width:2px,color:#fff,font-size:16px
 
     linkStyle default stroke:#7A8A99,stroke-width:2px,font-size:16px
@@ -55,7 +57,7 @@ flowchart TD
                 <div class="legend">
                     <div class="legend-item"><span class="swatch sw-doc"></span>Documentation step</div>
                     <div class="legend-item"><span class="swatch sw-decision"></span>Decision point</div>
-                    <div class="legend-item"><span class="swatch sw-escalate"></span>Safety escalation</div>
+                    <div class="legend-item"><span class="swatch sw-danger"></span>Safety escalation</div>
                     <div class="legend-item"><span class="swatch sw-resolve"></span>Resolution and closure</div>
                 </div>
             </div>
@@ -66,33 +68,33 @@ flowchart TD
     <!-- Node information data - one entry per node in the flowchart above -->
     <script>
         const nodeInfo = {
-            'Report': {
-                title: 'Complaint or Conflict Reported',
-                description: 'Any mentor, student, or parent can report a concern to the club leader or assistant leader.'
+            "Report": {
+                title: "Complaint or Conflict Reported",
+                description: "Any mentor, student, or parent can report a concern to the club leader or assistant leader."
             },
-            'Document': {
-                title: 'Club Leader Documents the Report',
-                description: 'Date, people involved, and a factual description are written down within 24 hours, before memory fades.'
+            "Document": {
+                title: "Club Leader Documents the Report",
+                description: "Date, people involved, and a factual description are written down within 24 hours, before memory fades."
             },
-            'SafetyCheck': {
-                title: 'Does This Involve Safety or Harassment?',
-                description: 'Safety and anti-harassment-policy violations always escalate immediately; ordinary disagreements do not.'
+            "SafetyCheck": {
+                title: "Does This Involve Safety or Harassment?",
+                description: "Safety and anti-harassment-policy violations always escalate immediately; ordinary disagreements do not."
             },
-            'Escalate': {
-                title: 'Escalate to Venue and, If Needed, Authorities',
-                description: 'The venue\'s own safety contact is notified the same day; law enforcement is contacted immediately for any safety emergency.'
+            "Escalate": {
+                title: "Escalate to Venue and, If Needed, Authorities",
+                description: "The venue's own safety contact is notified the same day; law enforcement is contacted immediately for any safety emergency."
             },
-            'Mediate': {
-                title: 'Club Leader Mediates a Conversation',
-                description: 'Both parties are heard separately first, then, if appropriate, brought together with a mentor present.'
+            "Mediate": {
+                title: "Club Leader Mediates a Conversation",
+                description: "Both parties are heard separately first, then, if appropriate, brought together with a mentor present."
             },
-            'ShareOutcome': {
-                title: 'Outcome Is Documented and Shared With Involved Families',
-                description: 'Families receive a summary of the resolution appropriate to what they need to know, respecting other students\' privacy.'
+            "ShareOutcome": {
+                title: "Outcome Is Documented and Shared With Involved Families",
+                description: "Families receive a summary of the resolution appropriate to what they need to know, respecting other students' privacy."
             },
-            'LogEntry': {
-                title: 'Entry Added to the Lessons Learned Log',
-                description: 'Recurring conflict types get flagged so the club can adjust its code of conduct or session structure, echoing Chapter 1\'s continuous improvement cycle.'
+            "LogEntry": {
+                title: "Entry Added to the Lessons Learned Log",
+                description: "Recurring conflict types get flagged so the club can adjust its code of conduct or session structure, echoing Chapter 1's continuous improvement cycle."
             }
         };
     </script>

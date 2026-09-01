@@ -3893,7 +3893,7 @@ Here's a shortcut: reach for an analog sensor like the TMP36 with newer students
 <p>An <strong>OLED display</strong> — organic light-emitting diode display — produces its image from an array of individually lit pixels that each generate their own light directly, without needing a separate backlight the way older LCD screens do. A common beginner OLED module packs 128 pixels across and 64 pixels down into a screen not much larger than a postage stamp, addressed over I2C using just two signal wires.</p>
 <p>A worked example shows how code actually reaches a specific pixel: every pixel on a 128x64 OLED has an (x, y) coordinate, with (0, 0) at the top-left corner and (127, 63) at the bottom-right. Drawing a horizontal line across the middle of the screen means turning on every pixel where y equals 32, from x = 0 through x = 127 — a single row out of 64 possible rows. This is the same coordinate-and-pixel thinking behind the OLED faces used in this book's sibling robot-building textbooks, where a robot's "eyes" are drawn by lighting up a small cluster of pixels at chosen coordinates rather than by any special "eye" hardware.</p>
 <h4 id="diagram-oled-coordinate-system-reused-microsim">Diagram: OLED Coordinate System (reused MicroSim)<a class="headerlink" href="#diagram-oled-coordinate-system-reused-microsim" title="Permanent link">¶</a></h4>
-<iframe src="https://dmccreary.github.io/learning-micropython/sims/oled-coordinate-system/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="https://dmccreary.github.io/learning-micropython/sims/oled-coordinate-system/main.html" width="100%" height="432px" scrolling="no"></iframe>
 
 <p><a class="md-button" href="https://dmccreary.github.io/learning-micropython/sims/oled-coordinate-system/main.html">Run the OLED Coordinate System MicroSim fullscreen</a></p>
 <details>
@@ -3933,7 +3933,7 @@ Bloom Taxonomy Verb: construct</p>
 <p>A <strong>seven segment display</strong> shows a single digit using seven individually controllable LED bars arranged in a figure-eight pattern, labeled a through g by convention, plus an optional decimal point. Lighting a specific combination of those seven segments forms any digit from 0 through 9, and the same idea extends to a handful of letters used in simple digital readouts.</p>
 <p>A worked example fixes the segment labeling in memory: segments a, b, and c are the top bar and the two upper side bars; d, e, and f are the bottom bar and the two lower side bars; g is the middle bar splitting the figure-eight in half. Displaying the digit "5" lights segments a, c, d, f, and g while leaving b and e dark — worth tracing by hand once, since it is the segment pattern most often gotten backward by a student who assumes "5" looks like a mirror image of "2" rather than checking the actual segment map.</p>
 <h4 id="diagram-seven-segment-display-explorer-reused-microsim">Diagram: Seven Segment Display Explorer (reused MicroSim)<a class="headerlink" href="#diagram-seven-segment-display-explorer-reused-microsim" title="Permanent link">¶</a></h4>
-<iframe src="https://dmccreary.github.io/microsims/sims/seven-segment-display/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="https://dmccreary.github.io/microsims/sims/seven-segment-display/main.html" width="100%" height="472px" scrolling="no"></iframe>
 
 <p><a class="md-button" href="https://dmccreary.github.io/microsims/sims/seven-segment-display/main.html">Run the Seven Segment Display Explorer MicroSim fullscreen</a></p>
 <details>
@@ -3995,7 +3995,7 @@ Bloom Taxonomy Verb: explain</p>
 <p>A <strong>distance sensor</strong>, most commonly an ultrasonic sensor, measures how far away the nearest object is by emitting a burst of sound above human hearing range and timing how long the echo takes to return. A common module emits a 40-kilohertz ultrasonic pulse from one small speaker-like element and listens for the returning echo on a second element, then reports the elapsed time back to the microcontroller.</p>
 <p>A worked example turns that elapsed time into an actual distance. Sound travels through air at roughly 343 meters per second at room temperature, and because the pulse has to travel to the object and back, the total echo time covers double the actual distance. The distance formula is therefore distance = (echo time × speed of sound) / 2. An echo time of 6 milliseconds (0.006 seconds) gives distance = (0.006 × 343) / 2 ≈ 1.03 meters — a robot's typical "something is about a meter ahead" reading. A much shorter echo time of 1 millisecond gives distance = (0.001 × 343) / 2 ≈ 0.17 meters, close enough to trigger a collision-avoidance stop on a floor robot.</p>
 <h4 id="diagram-ultrasonic-ranging-explorer-reused-microsim">Diagram: Ultrasonic Ranging Explorer (reused MicroSim)<a class="headerlink" href="#diagram-ultrasonic-ranging-explorer-reused-microsim" title="Permanent link">¶</a></h4>
-<iframe src="https://dmccreary.github.io/learning-micropython/sims/ultrasonic-ranging/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="https://dmccreary.github.io/learning-micropython/sims/ultrasonic-ranging/main.html" width="100%" height="452px" scrolling="no"></iframe>
 
 <p><a class="md-button" href="https://dmccreary.github.io/learning-micropython/sims/ultrasonic-ranging/main.html">Run the Ultrasonic Ranging Explorer MicroSim fullscreen</a></p>
 <details>
@@ -4104,7 +4104,7 @@ Bloom Taxonomy Verb: demonstrate</p>
 <p>A <strong>servo motor</strong> is a motor with built-in gearing and a feedback mechanism that lets it move to and hold a specific angle, typically within a 0-to-180-degree range, rather than spinning continuously like a DC motor. A servo is controlled by sending it a repeating pulse on a single signal wire, and the width of that pulse — not its voltage or frequency — determines the angle the servo moves to.</p>
 <p>A worked example makes the pulse-to-angle relationship concrete: a standard hobby servo expects a pulse repeated roughly every 20 milliseconds (a 50-hertz rate), with the pulse's own width ranging from about 1,000 to 2,000 microseconds mapping onto the servo's full 0-to-180-degree range. A pulse width of 1,500 microseconds — exactly in the middle of that range — points the servo to its center position, 90 degrees. Using the formula angle = (pulse width − 1000) / 1000 × 180, a pulse width of 1,750 microseconds gives angle = (1750 − 1000) / 1000 × 180 = 135 degrees, turning the servo three-quarters of the way toward its maximum.</p>
 <h4 id="diagram-servo-angle-pulse-width-explorer">Diagram: Servo Angle Pulse-Width Explorer<a class="headerlink" href="#diagram-servo-angle-pulse-width-explorer" title="Permanent link">¶</a></h4>
-<iframe src="../../sims/servo-angle-pulse-width-explorer/main.html" width="100%" height="480px" scrolling="no"></iframe>
+<iframe src="../../sims/servo-angle-pulse-width-explorer/main.html" width="100%" height="482px" scrolling="no"></iframe>
 
 <details>
 <summary>Servo Angle Pulse-Width Explorer</summary>
