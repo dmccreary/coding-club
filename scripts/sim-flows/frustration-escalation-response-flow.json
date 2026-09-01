@@ -1,0 +1,114 @@
+{
+  "title": "Frustration Escalation Response Flow",
+  "height": 660,
+  "direction": "TD",
+  "nodes": [
+    {
+      "id": "Signal",
+      "shape": "round",
+      "cls": "retire",
+      "label": "Notice a Frustration<br/>Signal",
+      "title": "Notice a Frustration Signal",
+      "info": "Folded arms, silence, muttering, or redoing the same failed step without changing anything -- the early signs handling frustration teaches a mentor to watch for."
+    },
+    {
+      "id": "Trigger",
+      "shape": "diamond",
+      "cls": "wait",
+      "label": "What<br/>Triggered It?",
+      "title": "What Triggered It?",
+      "info": "The right tool depends on whether this is a single hard moment, a pattern building across weeks, or a task that just ended in a concrete failure."
+    },
+    {
+      "id": "Encourage",
+      "shape": "box",
+      "cls": "doc",
+      "label": "Use Encouragement<br/>Language",
+      "title": "Use Encouragement Language",
+      "info": "Name the difficulty honestly and redirect toward the specific next action, without dismissing the struggle as trivial."
+    },
+    {
+      "id": "Persistence",
+      "shape": "box",
+      "cls": "prep",
+      "label": "Apply Persistence<br/>Coaching",
+      "title": "Apply Persistence Coaching",
+      "info": "Notice the pattern out loud and reopen the abandoned task deliberately, in a low-stakes way, rather than leaving it to chance."
+    },
+    {
+      "id": "Reframe",
+      "shape": "box",
+      "cls": "remediate",
+      "label": "Reframe as a<br/>Learning Tool",
+      "title": "Reframe as a Learning Tool",
+      "info": "Treat the error or wrong result as data that narrows down the next attempt, not as a verdict on the student's ability."
+    },
+    {
+      "id": "Reengage",
+      "shape": "round",
+      "cls": "resolve",
+      "label": "Student Re-Engages<br/>With the Task",
+      "title": "Student Re-Engages With the Task",
+      "info": "Every path aims at the same outcome: the student returns to the problem instead of quietly giving up on it."
+    }
+  ],
+  "edges": [
+    {
+      "from": "Signal",
+      "to": "Trigger"
+    },
+    {
+      "from": "Trigger",
+      "to": "Encourage",
+      "label": "single hard moment, task still open"
+    },
+    {
+      "from": "Trigger",
+      "to": "Persistence",
+      "label": "avoidance building across sessions"
+    },
+    {
+      "from": "Trigger",
+      "to": "Reframe",
+      "label": "task just ended in failure"
+    },
+    {
+      "from": "Encourage",
+      "to": "Reengage"
+    },
+    {
+      "from": "Persistence",
+      "to": "Reengage"
+    },
+    {
+      "from": "Reframe",
+      "to": "Reengage"
+    }
+  ],
+  "legend": [
+    {
+      "cls": "retire",
+      "text": "What you noticed"
+    },
+    {
+      "cls": "wait",
+      "text": "What triggered it"
+    },
+    {
+      "cls": "doc",
+      "text": "Encouragement language"
+    },
+    {
+      "cls": "prep",
+      "text": "Persistence coaching"
+    },
+    {
+      "cls": "remediate",
+      "text": "Failure as a learning tool"
+    },
+    {
+      "cls": "resolve",
+      "text": "Shared goal"
+    }
+  ]
+}

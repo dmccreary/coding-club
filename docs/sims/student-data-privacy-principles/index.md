@@ -103,7 +103,7 @@ Implementation: Mermaid flowchart (`graph TD` with the center node linked to eac
 
 ## References
 
-- [Chapter 24: Student Data and Communication](../../chapters/24-student-data-and-communication/index.md) -- the chapter this MicroSim supports.
+- [Chapter 24: Tracking Student Data and Managing Club Communication](../../chapters/24-student-data-and-communication/index.md) -- the chapter this MicroSim supports.
 - [Guardian Consent Collection Workflow](../consent-collection-workflow/index.md) -- how the data got here in the first place.
 - [Principle of least privilege](https://en.wikipedia.org/wiki/Principle_of_least_privilege) -- the formal name for "limit access".
 - [Information privacy](https://en.wikipedia.org/wiki/Information_privacy) -- the broader field.

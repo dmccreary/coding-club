@@ -3,115 +3,102 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- microsim-scaffold-stub -->
+    <meta name="schema" content="https://dmccreary.github.io/intelligent-textbooks/ns/microsim/v1">
     <title>Growth Mindset Coaching Response Flow</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: #f8f9fa;
-            color: #212529;
-        }
-        #container {
-            width: 100%;
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 20px;
-            background: white;
-        }
-        h1 {
-            font-size: 22px;
-            margin-bottom: 10px;
-            color: #1a3a6c;
-        }
-        .placeholder {
-            border: 2px dashed #adb5bd;
-            border-radius: 8px;
-            padding: 40px 20px;
-            text-align: center;
-            color: #6c757d;
-            margin: 20px 0;
-            min-height: 400px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        .placeholder .badge {
-            display: inline-block;
-            background: #ffc107;
-            color: #212529;
-            padding: 4px 12px;
-            border-radius: 12px;
-            font-size: 12px;
-            font-weight: 600;
-            margin-bottom: 12px;
-        }
-        .placeholder h2 {
-            font-size: 18px;
-            color: #495057;
-            margin-bottom: 8px;
-        }
-        .placeholder p {
-            font-size: 14px;
-            max-width: 480px;
-        }
-        .meta {
-            margin-top: 20px;
-            font-size: 13px;
-            color: #6c757d;
-            border-top: 1px solid #dee2e6;
-            padding-top: 12px;
-        }
-        .meta strong { color: #495057; }
-    </style>
+    <script type="module">
+        import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+        mermaid.initialize({
+            startOnLoad: true,
+            theme: 'default',
+            flowchart: {
+                useMaxWidth: true,
+                htmlLabels: true,
+                curve: 'basis',
+                subGraphTitleMargin: { top: 10, bottom: 14 }
+            }
+        });
+    </script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="container">
-        <h1>Growth Mindset Coaching Response Flow</h1>
-        <div class="placeholder">
-            <span class="badge">SCAFFOLD</span>
-            <h2>MicroSim Not Yet Implemented</h2>
-            <p>This MicroSim has been scaffolded from its specification but the
-            interactive content has not been built yet. See the chapter source
-            and the <code>index.md</code> in this directory for the full spec.</p>
+<main>
+    <div class="container">
+        <div class="diagram-panel">
+            <div class="mermaid">
+flowchart TD
+    Notice("Notice a Student<br/>Moment"):::retireNode
+    Kind{"What Kind<br/>of Moment?"}:::waitNode
+    Coach["Apply Growth<br/>Mindset Coaching"]:::docNode
+    Celebrate["Celebrate Immediately,<br/>One-on-One"]:::prepNode
+    Public["Save for a Public<br/>Recognition Event"]:::remediateNode
+    Real("Student Feels<br/>Progress Is Real"):::resolveNode
+
+    Notice --> Kind
+    Kind -->|struggling| Coach
+    Kind -->|small win| Celebrate
+    Kind -->|term milestone| Public
+    Coach --> Real
+    Celebrate --> Real
+    Public --> Real
+
+    classDef retireNode fill:#5B7186,stroke:#33475B,stroke-width:2px,color:#fff,font-size:16px
+    classDef waitNode fill:#8E7CC3,stroke:#5B4B8A,stroke-width:2px,color:#fff,font-size:16px
+    classDef docNode fill:#4A90D9,stroke:#2E6BA8,stroke-width:2px,color:#fff,font-size:16px
+    classDef prepNode fill:#F5A623,stroke:#B87B12,stroke-width:2px,color:#333,font-size:16px
+    classDef remediateNode fill:#E8833A,stroke:#A85718,stroke-width:2px,color:#fff,font-size:16px
+    classDef resolveNode fill:#3E9E6E,stroke:#256E4A,stroke-width:2px,color:#fff,font-size:16px
+
+    linkStyle default stroke:#7A8A99,stroke-width:2px,font-size:16px
+            </div>
         </div>
-        <div class="meta">
-            <p><strong>Sim ID:</strong> growth-mindset-coaching-response-flow</p>
-            <p><strong>Library:</strong> Mermaid</p>
-            <p><strong>Bloom Level:</strong> Analyze (L4)</p>
-            <p><strong>Learning Objective:</strong> Given a description of what just happened with a student, the learner differentiates whether it calls for growth-mindset coaching, celebrating a small win, or a public recognition event.</p>
+        <div class="info-panel">
+            <h3>Step Details</h3>
+            <div id="info-display">
+                <p class="info-placeholder">Hover a step to preview it, or click a step to pin its details here.</p>
+                <div class="legend">
+                    <div class="legend-item"><span class="swatch sw-retire"></span>What you noticed</div>
+                    <div class="legend-item"><span class="swatch sw-wait"></span>Which kind of moment</div>
+                    <div class="legend-item"><span class="swatch sw-doc"></span>Growth mindset coaching</div>
+                    <div class="legend-item"><span class="swatch sw-prep"></span>Immediate small-win celebration</div>
+                    <div class="legend-item"><span class="swatch sw-remediate"></span>Public recognition event</div>
+                    <div class="legend-item"><span class="swatch sw-resolve"></span>Shared outcome</div>
+                </div>
+            </div>
+
         </div>
     </div>
+</main>
 
-    <!--
-    SPECIFICATION (from chapter index.md):
-
-    Type: workflow
-    **sim-id:** growth-mindset-coaching-response-flow<br/>
-    **Library:** Mermaid<br/>
-    **Status:** Specified
-    
-    Purpose: Help a mentor decide, in the moment, whether a student's situation calls for private growth-mindset coaching, an immediate small-win celebration, or escalation to a public recognition event.
-    
-    Bloom Taxonomy: Analyze (L4)
-    Bloom Taxonomy Verb: differentiate
-    
-    Learning objective: Given a description of what just happened with a student, the learner differentiates whether it calls for growth-mindset coaching, celebrating a small win, or a public recognition event.
-    
-    Steps (flowchart with a decision diamond):
-    1. Start: "Notice a Student Moment" -- click reveals "A mentor observes something happen -- a student is stuck, a student just succeeded at something small, or a student has finished a whole track."
-    2. Decision: "What Kind of Moment?" -- click reveals "The right response depends on whether the student is struggling, has a small in-session win, or has reached a large, term-scale milestone."
-    3a. Branch "Struggling" leads to "Apply Growth Mindset Coaching" -- click reveals "Respond with 'not yet' language, and point back to a skill the student has already mastered to prove ability can grow."
-    3b. Branch "Small Win" leads to "Celebrate Immediately, One-on-One" -- click reveals "Name the specific thing that just went right, out loud, within seconds -- don't wait for the end of the session."
-    3c. Branch "Term Milestone" leads to "Save for a Public Recognition Event" -- click reveals "A track completion or major project is significant enough to recognize in front of the whole club and families, not just privately."
-    4. End (all branches converge): "Student Feels Progress Is Real" -- click reveals "Every path ends the same way: the student leaves believing their effort produced a real, specific result -- whether that recognition happened in ten seconds or at a term-end event."
-    
-    Interactivity requirement (satisfied): every node has a Mermaid `click` directive tied to an infobox showing its revealed text.
-    
-    Color coding: Gray for the start node, purple for the decision diamond, blue for the coaching branch, amber for the small-win branch, green for the public-event branch, teal for the converged end state.
-    
-    Implementation: Mermaid flowchart (`graph TD`) rendered in main.html with `click NodeId call showInfo("NodeId")` directives for every node, opening a side-panel infobox.
-    -->
+    <!-- Node information data - one entry per node in the flowchart above -->
+    <script>
+        const nodeInfo = {
+            "Notice": {
+                title: "Notice a Student Moment",
+                description: "A mentor observes something happen -- a student is stuck, a student just succeeded at something small, or a student has finished a whole track."
+            },
+            "Kind": {
+                title: "What Kind of Moment?",
+                description: "The right response depends on whether the student is struggling, has a small in-session win, or has reached a large term-scale milestone."
+            },
+            "Coach": {
+                title: "Apply Growth Mindset Coaching",
+                description: "Respond with 'not yet' language, and point back to a skill the student has already mastered to prove ability can grow."
+            },
+            "Celebrate": {
+                title: "Celebrate Immediately, One-on-One",
+                description: "Name the specific thing that just went right, out loud, within seconds -- do not wait for the end of the session."
+            },
+            "Public": {
+                title: "Save for a Public Recognition Event",
+                description: "A track completion or major project is significant enough to recognise in front of the whole club and families, not just privately."
+            },
+            "Real": {
+                title: "Student Feels Progress Is Real",
+                description: "Every path ends the same way: the student leaves believing their effort produced a real, specific result -- whether that recognition happened in ten seconds or at a term-end event."
+            }
+        };
+    </script>
+    <!-- Load interaction script after nodeInfo is defined -->
+    <script src="script.js"></script>
 </body>
 </html>

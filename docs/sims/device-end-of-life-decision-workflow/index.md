@@ -108,7 +108,7 @@ Implementation: Mermaid flowchart (`graph TD`) rendered in main.html with `click
 
 ## References
 
-- [Chapter 23: Network, Peripherals, and Device Lifecycle](../../chapters/23-network-peripherals-device-lifecycle/index.md) -- the chapter this MicroSim supports.
+- [Chapter 23: Network, Peripherals, and the Device Lifecycle](../../chapters/23-network-peripherals-device-lifecycle/index.md) -- the chapter this MicroSim supports.
 - [Device Lifecycle Workflow](../device-lifecycle-workflow/index.md) -- the repair workflow that feeds laptops into this one.
 - [Electronic waste](https://en.wikipedia.org/wiki/Electronic_waste) -- why certified recycling matters.
 - [Data remanence](https://en.wikipedia.org/wiki/Data_remanence) -- why deleting files is not wiping a disk.

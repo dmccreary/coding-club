@@ -1,0 +1,21 @@
+{
+  "title": "Frustration Escalation Response Flow",
+  "height": 662,
+  "library": "Mermaid",
+  "bloom": "Analyze (L4)",
+  "verb": "differentiate",
+  "description": "Match the tool to the trigger: a hard moment, a pattern across weeks, or a task that just failed.",
+  "concepts": [
+    "Handling Frustration",
+    "Encouragement Language",
+    "Persistence Coaching",
+    "Failure as Learning"
+  ],
+  "interaction": "Hover-to-preview and click-to-pin three-branch response flow converging on re-engagement",
+  "assessment": "Describe a frustration moment and ask which tool fits and what makes it different from the other two.",
+  "audience": "Mentors supporting struggling students",
+  "about": "Frustration looks the same from across the room -- folded arms, silence, the same\nfailed step repeated without changing anything -- but it comes from three\ndifferent places, and the same response does not work for all three.\n\nThe diagnostic question is **what triggered it**, and specifically the timescale:\n\n- A **single hard moment** with the task still open calls for encouragement\n  language: name the difficulty honestly, then redirect to the specific next\n  action. Not \"you've got this\", which dismisses the struggle.\n- **Avoidance building across sessions** is a pattern, not a moment, and needs\n  persistence coaching: say the pattern out loud and deliberately reopen the\n  abandoned task in a low-stakes way.\n- **A task that just ended in failure** calls for a reframe: the wrong result is\n  data that narrows the next attempt, not a verdict on the student.\n\nAll three aim at the same thing -- the student going back to the problem rather\nthan quietly abandoning it. The quiet abandonment is the outcome the whole\ndiagram exists to prevent, because it is the one nobody notices happening.",
+  "howto": "- **Hover a step** to preview it; **click** to pin the details.\n- The branch labels describe the trigger, not the student. Read them as\n  timescales: this moment, these weeks, that failed attempt.",
+  "lesson": "**Bloom level:** Analyze (L4) -- *differentiate*\n\n**Learning objective:** Given a description of a student's frustration moment, the\nlearner differentiates whether it calls for in-the-moment encouragement language,\npersistence coaching across sessions, or a failure-as-learning-tool reframe.\n\n**Before the sim (5 min).** Ask mentors to describe the last frustrated student\nthey saw, and what they said. Most will report some version of \"keep going\",\nwhich is the generic response this diagram replaces.\n\n**With the sim (10 min).** Walk the three triggers. Stress that the middle one is\nonly visible across sessions -- it cannot be diagnosed in the moment, which is\nwhy attendance notes matter.\n\n**After the sim (15 min).** Take three real students from recent sessions and\nplace each on a branch, then script the opening sentence for each.\n\n**Check for understanding.** Ask: \"A student has skipped the same activity three\nweeks running and seems fine otherwise. Which tool?\" Persistence coaching -- and\nnoticing that nothing is visibly wrong *right now* is exactly what makes it the\nhard one to catch.",
+  "refs": "- {{CHAPTER}} -- the chapter this MicroSim supports.\n- [Growth Mindset Coaching Response Flow](../growth-mindset-coaching-response-flow/index.md) -- the companion diagram for moments that are going well.\n- [Learned helplessness](https://en.wikipedia.org/wiki/Learned_helplessness) -- what repeated unaddressed frustration produces.\n- [Zone of proximal development](https://en.wikipedia.org/wiki/Zone_of_proximal_development) -- why a task can be too hard rather than the student not trying.\n- [Grit](https://en.wikipedia.org/wiki/Grit_(personality_trait)) -- persistence as a trainable behaviour rather than a fixed one."
+}

@@ -103,7 +103,7 @@ Implementation: Mermaid flowchart (`graph TD`) rendered in main.html with `click
 
 ## References
 
-- [Chapter 24: Student Data and Communication](../../chapters/24-student-data-and-communication/index.md) -- the chapter this MicroSim supports.
+- [Chapter 24: Tracking Student Data and Managing Club Communication](../../chapters/24-student-data-and-communication/index.md) -- the chapter this MicroSim supports.
 - [Student Data Privacy Principles](../student-data-privacy-principles/index.md) -- how the collected data is then protected.
 - [Informed consent](https://en.wikipedia.org/wiki/Informed_consent) -- why the notice must be in plain language.
 - [FERPA](https://en.wikipedia.org/wiki/Family_Educational_Rights_and_Privacy_Act) -- the US student-records law this practice aligns with.

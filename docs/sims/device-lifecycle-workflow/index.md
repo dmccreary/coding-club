@@ -114,7 +114,7 @@ Implementation: Mermaid flowchart (`graph TD`) rendered in main.html with `click
 
 ## References
 
-- [Chapter 22: Purchasing and Configuring Devices](../../chapters/22-purchasing-configuring-devices/index.md) -- the chapter this MicroSim supports.
+- [Chapter 22: Purchasing and Configuring Club Devices](../../chapters/22-purchasing-configuring-devices/index.md) -- the chapter this MicroSim supports.
 - [Platform Management Workflow](../platform-management-workflow/index.md) -- what happens during the imaging step, per operating system.
 - [Kit Lifecycle Workflow](../kit-lifecycle-workflow/index.md) -- the same pattern applied to electronics kits.
 - [IT asset management](https://en.wikipedia.org/wiki/IT_asset_management) -- the professional practice this is a club-sized version of.

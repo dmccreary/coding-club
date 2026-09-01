@@ -1,18 +1,74 @@
 ---
 title: Automated Communication Pipeline
-description: Given a trigger condition, the learner differentiates whether it should route through SMS notification or newsletter automation.
-status: scaffold
+description: One trigger, two very different-feeling messages: see what decides whether a rule sends a text or queues a newsletter item.
+image: sims/automated-communication-pipeline/automated-communication-pipeline.png
+status: built
 library: Mermaid
 bloom_level: Analyze (L4)
 ---
 
 # Automated Communication Pipeline
 
+<iframe src="main.html" width="100%" height="682" scrolling="no"></iframe>
 
+[Run the Automated Communication Pipeline MicroSim fullscreen](main.html){ .md-button .md-button--primary }
 
-<iframe src="main.html" width="100%" height="600"></iframe>
+## About This MicroSim
 
-[Run MicroSim in Fullscreen](main.html){ .md-button .md-button--primary }
+Automation is what stops a volunteer writing the same reminder email fifty-two
+times a year. The risk it introduces is different: a system that can send
+messages without anyone deciding to will, if you let it, text families about
+everything.
+
+The urgency gate is the guard against that. A session three days away, a closure
+announced this morning, a new month beginning -- all of these fire the same rule
+engine, and the gate sorts them. Anything a family must act on within hours goes
+out as a text. Everything else is **queued**, not sent, and swept up by the next
+scheduled newsletter.
+
+Queuing is the design decision worth dwelling on. It is what makes the difference
+between a club that families stay subscribed to and one they mute. The two paths
+converge on the same outcome -- the family knows -- and the only thing that
+differed was how urgently it had to arrive.
+
+## How to Use
+
+- **Hover a step** to preview it; **click** to pin the details.
+- Follow both branches from the urgency gate to the shared end node.
+- Note that the newsletter path has an extra step: queued items wait for a
+  scheduled send rather than going out one at a time.
+
+## Lesson Plan
+
+**Bloom level:** Analyze (L4) -- *differentiate*
+
+**Learning objective:** Given a trigger condition, the learner differentiates
+whether it should route through SMS notification or newsletter automation.
+
+**Before the sim (5 min).** Ask how many messages a family gets from the club in a
+typical month, and how many they actually read. The gap is what this pipeline
+manages.
+
+**With the sim (10 min).** Walk both paths, then propose triggers and route them
+aloud: "session cancelled, starts in two hours", "next term's dates published",
+"a new mentor joined."
+
+**After the sim (15 min).** List every automatic message the club currently sends
+and sort each into one of the two paths. Anything that cannot be justified as
+time-sensitive belongs in the newsletter.
+
+**Check for understanding.** Ask: "Why not just text everything? It reaches people
+fastest." Because a channel used for everything gets muted, and then it reaches
+nobody when it matters.
+
+## Embedding This MicroSim
+
+Paste this into any page of the book, adjusting the relative path to
+`docs/sims/` for the page's depth:
+
+```html
+<iframe src="../../sims/automated-communication-pipeline/main.html" width="100%" height="682" scrolling="no"></iframe>
+```
 
 ## Specification
 
@@ -47,6 +103,9 @@ Color coding: Gray for the start node, purple for the decision diamond, amber fo
 Implementation: Mermaid flowchart (`graph TD`) rendered in main.html with `click NodeId call showInfo("NodeId")` directives for every node, opening a side-panel infobox.
 ```
 
-## Related Resources
+## References
 
-- [Chapter 25: Analyzing Club Data and Choosing the Right Tools](../../chapters/25-analyzing-club-data-and-tools/index.md)
+- [Chapter 25: Analyzing Club Data and Choosing the Right Tools](../../chapters/25-analyzing-club-data-and-tools/index.md) -- the chapter this MicroSim supports.
+- [Message Channel Decision Tree](../message-channel-decision-tree/index.md) -- the same urgency question, decided by a human rather than a rule.
+- [Marketing automation](https://en.wikipedia.org/wiki/Marketing_automation) -- the commercial version of trigger-based sending.
+- [Notification system](https://en.wikipedia.org/wiki/Notification_system) -- and the fatigue that follows over-notifying.

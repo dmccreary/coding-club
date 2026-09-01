@@ -1,0 +1,105 @@
+{
+  "title": "Automated Communication Pipeline",
+  "height": 680,
+  "direction": "TD",
+  "nodes": [
+    {
+      "id": "Trigger",
+      "shape": "round",
+      "cls": "retire",
+      "label": "Trigger Event<br/>Occurs",
+      "title": "Trigger Event Occurs",
+      "info": "A rule fires automatically -- a session is three days away, a closure is announced, or a new month begins -- with no mentor manually deciding to send anything."
+    },
+    {
+      "id": "TimeSensitive",
+      "shape": "diamond",
+      "cls": "wait",
+      "label": "Time-Sensitive?",
+      "title": "Time-Sensitive?",
+      "info": "Time-sensitive means a family needs to see the message within hours, not days, to act on it."
+    },
+    {
+      "id": "SMS",
+      "shape": "box",
+      "cls": "resolve",
+      "label": "Send SMS<br/>Notification",
+      "title": "Send SMS Notification",
+      "info": "A short text delivered directly to a phone, typically read within minutes. Reserve it for messages that would be useless tomorrow."
+    },
+    {
+      "id": "Queue",
+      "shape": "box",
+      "cls": "doc",
+      "label": "Queue for Newsletter<br/>Automation",
+      "title": "Queue for Newsletter Automation",
+      "info": "Added to the next scheduled digest instead of sent immediately, since it can safely wait. Queuing rather than sending is what stops families being texted about everything."
+    },
+    {
+      "id": "Newsletter",
+      "shape": "box",
+      "cls": "doc",
+      "label": "Newsletter Sent<br/>on Schedule",
+      "title": "Newsletter Sent on Schedule",
+      "info": "A templated digest goes out on a fixed day each month, automatically pulling in every queued item."
+    },
+    {
+      "id": "Informed",
+      "shape": "round",
+      "cls": "prep",
+      "label": "Family Informed",
+      "title": "Family Informed",
+      "info": "Both paths end with the family seeing the information. The only difference is how urgently it needed to arrive."
+    }
+  ],
+  "edges": [
+    {
+      "from": "Trigger",
+      "to": "TimeSensitive"
+    },
+    {
+      "from": "TimeSensitive",
+      "to": "SMS",
+      "label": "Yes"
+    },
+    {
+      "from": "TimeSensitive",
+      "to": "Queue",
+      "label": "No"
+    },
+    {
+      "from": "Queue",
+      "to": "Newsletter"
+    },
+    {
+      "from": "SMS",
+      "to": "Informed"
+    },
+    {
+      "from": "Newsletter",
+      "to": "Informed"
+    }
+  ],
+  "legend": [
+    {
+      "cls": "retire",
+      "text": "Automatic trigger"
+    },
+    {
+      "cls": "wait",
+      "text": "Urgency test"
+    },
+    {
+      "cls": "resolve",
+      "text": "SMS path"
+    },
+    {
+      "cls": "doc",
+      "text": "Newsletter path"
+    },
+    {
+      "cls": "prep",
+      "text": "Shared outcome"
+    }
+  ]
+}

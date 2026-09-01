@@ -1,0 +1,21 @@
+{
+  "title": "Automated Communication Pipeline",
+  "height": 682,
+  "library": "Mermaid",
+  "bloom": "Analyze (L4)",
+  "verb": "differentiate",
+  "description": "One trigger, two very different-feeling messages: see what decides whether a rule sends a text or queues a newsletter item.",
+  "concepts": [
+    "Automation Trigger",
+    "SMS Notification",
+    "Newsletter Automation",
+    "Message Urgency"
+  ],
+  "interaction": "Hover-to-preview and click-to-pin pipeline with an urgency gate and two converging delivery paths",
+  "assessment": "Give three triggers and ask which path each takes.",
+  "audience": "Club leaders setting up automated communications",
+  "about": "Automation is what stops a volunteer writing the same reminder email fifty-two\ntimes a year. The risk it introduces is different: a system that can send\nmessages without anyone deciding to will, if you let it, text families about\neverything.\n\nThe urgency gate is the guard against that. A session three days away, a closure\nannounced this morning, a new month beginning -- all of these fire the same rule\nengine, and the gate sorts them. Anything a family must act on within hours goes\nout as a text. Everything else is **queued**, not sent, and swept up by the next\nscheduled newsletter.\n\nQueuing is the design decision worth dwelling on. It is what makes the difference\nbetween a club that families stay subscribed to and one they mute. The two paths\nconverge on the same outcome -- the family knows -- and the only thing that\ndiffered was how urgently it had to arrive.",
+  "howto": "- **Hover a step** to preview it; **click** to pin the details.\n- Follow both branches from the urgency gate to the shared end node.\n- Note that the newsletter path has an extra step: queued items wait for a\n  scheduled send rather than going out one at a time.",
+  "lesson": "**Bloom level:** Analyze (L4) -- *differentiate*\n\n**Learning objective:** Given a trigger condition, the learner differentiates\nwhether it should route through SMS notification or newsletter automation.\n\n**Before the sim (5 min).** Ask how many messages a family gets from the club in a\ntypical month, and how many they actually read. The gap is what this pipeline\nmanages.\n\n**With the sim (10 min).** Walk both paths, then propose triggers and route them\naloud: \"session cancelled, starts in two hours\", \"next term's dates published\",\n\"a new mentor joined.\"\n\n**After the sim (15 min).** List every automatic message the club currently sends\nand sort each into one of the two paths. Anything that cannot be justified as\ntime-sensitive belongs in the newsletter.\n\n**Check for understanding.** Ask: \"Why not just text everything? It reaches people\nfastest.\" Because a channel used for everything gets muted, and then it reaches\nnobody when it matters.",
+  "refs": "- {{CHAPTER}} -- the chapter this MicroSim supports.\n- [Message Channel Decision Tree](../message-channel-decision-tree/index.md) -- the same urgency question, decided by a human rather than a rule.\n- [Marketing automation](https://en.wikipedia.org/wiki/Marketing_automation) -- the commercial version of trigger-based sending.\n- [Notification system](https://en.wikipedia.org/wiki/Notification_system) -- and the fatigue that follows over-notifying."
+}

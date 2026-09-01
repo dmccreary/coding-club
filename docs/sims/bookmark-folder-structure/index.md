@@ -104,7 +104,7 @@ Implementation: Mermaid flowchart (`graph TD`) rendered in main.html with `click
 
 ## References
 
-- [Chapter 23: Network, Peripherals, and Device Lifecycle](../../chapters/23-network-peripherals-device-lifecycle/index.md) -- the chapter this MicroSim supports.
+- [Chapter 23: Network, Peripherals, and the Device Lifecycle](../../chapters/23-network-peripherals-device-lifecycle/index.md) -- the chapter this MicroSim supports.
 - [Bookmark (digital)](https://en.wikipedia.org/wiki/Bookmark_(digital)) -- how browsers store and sync them.
 - [Configuration management](https://en.wikipedia.org/wiki/Configuration_management) -- the general principle behind one shared source of truth.
 - [Platform Management Workflow](../platform-management-workflow/index.md) -- how the shared folder gets pushed to every machine.

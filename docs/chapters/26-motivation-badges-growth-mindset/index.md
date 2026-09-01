@@ -292,7 +292,7 @@ Growth mindset coaching handles the hard moments; the habit below handles the ea
 
 #### Diagram: Growth Mindset Coaching Response Flow
 
-<iframe src="../../sims/growth-mindset-coaching-response-flow/main.html" width="100%" height="520px" scrolling="no"></iframe>
+<iframe src="../../sims/growth-mindset-coaching-response-flow/main.html" width="100%" height="662px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Growth Mindset Coaching Response Flow</summary>

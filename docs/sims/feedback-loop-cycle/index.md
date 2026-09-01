@@ -103,7 +103,7 @@ Implementation: Mermaid flowchart (`graph LR` arranged to suggest a loop, with a
 
 ## References
 
-- [Chapter 24: Student Data and Communication](../../chapters/24-student-data-and-communication/index.md) -- the chapter this MicroSim supports.
+- [Chapter 24: Tracking Student Data and Managing Club Communication](../../chapters/24-student-data-and-communication/index.md) -- the chapter this MicroSim supports.
 - [The Club Improvement Cycle](../club-improvement-cycle/index.md) -- the same loop applied to mentor observations rather than family surveys.
 - [Feedback](https://en.wikipedia.org/wiki/Feedback) -- why a loop behaves differently from a chain.
 - [Survey methodology](https://en.wikipedia.org/wiki/Survey_methodology) -- including what drives response rates.

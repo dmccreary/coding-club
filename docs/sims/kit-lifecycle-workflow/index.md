@@ -123,7 +123,7 @@ Implementation: Mermaid flowchart (`graph TD`) rendered in main.html with `click
 
 ## References
 
-- [Chapter 21: Kit Inventory and Signal Processing](../../chapters/21-kit-inventory-signal-processing/index.md) -- the chapter this MicroSim supports.
+- [Chapter 21: Managing Your Kit Inventory and Signal Processing Kits](../../chapters/21-kit-inventory-signal-processing/index.md) -- the chapter this MicroSim supports.
 - [Device Lifecycle Workflow](../device-lifecycle-workflow/index.md) -- the same lifecycle thinking applied to laptops.
 - [Product lifecycle](https://en.wikipedia.org/wiki/Product_lifecycle) -- the general framing this borrows.
 - [Inventory management](https://en.wikipedia.org/wiki/Inventory_management) -- tracking what you own and where it is.

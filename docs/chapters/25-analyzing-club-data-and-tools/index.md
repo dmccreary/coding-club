@@ -101,7 +101,7 @@ Choosing the right channel for a given message matters as much as automating any
 
 #### Diagram: Automated Communication Pipeline
 
-<iframe src="../../sims/automated-communication-pipeline/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../sims/automated-communication-pipeline/main.html" width="100%" height="682px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Automated Communication Pipeline</summary>

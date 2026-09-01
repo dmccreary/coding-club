@@ -96,6 +96,17 @@ def render(sim_id):
         return False, "no spec file"
     todo = json.load(open(todo_path, encoding="utf-8"))
 
+    # {{CHAPTER}} in any prose field expands to a correct markdown link built
+    # from the spec. Hand-typing chapter directory names into prose produced two
+    # dead links before this existed; --strict does not catch them.
+    chapter_dir = todo.get("chapter_dir") or page.get("chapter_dir", "")
+    chapter_title = (f'Chapter {todo["chapter_number"]}: {todo["chapter_title"]}'
+                     if todo.get("chapter_title") else page.get("chapter_title", ""))
+    chapter_link = f"[{chapter_title}](../../chapters/{chapter_dir}/index.md)"
+
+    def expand(text):
+        return text.replace("{{CHAPTER}}", chapter_link)
+
     body = TEMPLATE.format(
         sim_id=sim_id,
         title=page["title"],
@@ -103,15 +114,13 @@ def render(sim_id):
         library=page.get("library") or todo.get("library") or "p5.js",
         bloom=page.get("bloom") or todo.get("bloom_level") or "Understand (L2)",
         height=page["height"],
-        about=page["about"],
-        howto=page["howto"],
-        lesson=page["lesson"],
-        chapter_title=todo.get("chapter_title") and
-                      f'Chapter {todo["chapter_number"]}: {todo["chapter_title"]}'
-                      or page["chapter_title"],
-        chapter_dir=todo.get("chapter_dir") or page["chapter_dir"],
+        about=expand(page["about"]),
+        howto=expand(page["howto"]),
+        lesson=expand(page["lesson"]),
+        chapter_title=chapter_title,
+        chapter_dir=chapter_dir,
         spec=todo["specification"],
-        refs=page["refs"],
+        refs=expand(page["refs"]),
     )
 
     # Adapted sims credit their source, read from the metadata the copier wrote.

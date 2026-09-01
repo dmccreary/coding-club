@@ -1,18 +1,77 @@
 ---
 title: Frustration Escalation Response Flow
-description: Given a description of a student's frustration moment, the learner differentiates whether it calls for in-the-moment encouragement language, persistence coaching across sessions, or a failure-as-learning-tool reframe.
-status: scaffold
+description: Match the tool to the trigger: a hard moment, a pattern across weeks, or a task that just failed.
+image: sims/frustration-escalation-response-flow/frustration-escalation-response-flow.png
+status: built
 library: Mermaid
 bloom_level: Analyze (L4)
 ---
 
 # Frustration Escalation Response Flow
 
+<iframe src="main.html" width="100%" height="662" scrolling="no"></iframe>
 
+[Run the Frustration Escalation Response Flow MicroSim fullscreen](main.html){ .md-button .md-button--primary }
 
-<iframe src="main.html" width="100%" height="600"></iframe>
+## About This MicroSim
 
-[Run MicroSim in Fullscreen](main.html){ .md-button .md-button--primary }
+Frustration looks the same from across the room -- folded arms, silence, the same
+failed step repeated without changing anything -- but it comes from three
+different places, and the same response does not work for all three.
+
+The diagnostic question is **what triggered it**, and specifically the timescale:
+
+- A **single hard moment** with the task still open calls for encouragement
+  language: name the difficulty honestly, then redirect to the specific next
+  action. Not "you've got this", which dismisses the struggle.
+- **Avoidance building across sessions** is a pattern, not a moment, and needs
+  persistence coaching: say the pattern out loud and deliberately reopen the
+  abandoned task in a low-stakes way.
+- **A task that just ended in failure** calls for a reframe: the wrong result is
+  data that narrows the next attempt, not a verdict on the student.
+
+All three aim at the same thing -- the student going back to the problem rather
+than quietly abandoning it. The quiet abandonment is the outcome the whole
+diagram exists to prevent, because it is the one nobody notices happening.
+
+## How to Use
+
+- **Hover a step** to preview it; **click** to pin the details.
+- The branch labels describe the trigger, not the student. Read them as
+  timescales: this moment, these weeks, that failed attempt.
+
+## Lesson Plan
+
+**Bloom level:** Analyze (L4) -- *differentiate*
+
+**Learning objective:** Given a description of a student's frustration moment, the
+learner differentiates whether it calls for in-the-moment encouragement language,
+persistence coaching across sessions, or a failure-as-learning-tool reframe.
+
+**Before the sim (5 min).** Ask mentors to describe the last frustrated student
+they saw, and what they said. Most will report some version of "keep going",
+which is the generic response this diagram replaces.
+
+**With the sim (10 min).** Walk the three triggers. Stress that the middle one is
+only visible across sessions -- it cannot be diagnosed in the moment, which is
+why attendance notes matter.
+
+**After the sim (15 min).** Take three real students from recent sessions and
+place each on a branch, then script the opening sentence for each.
+
+**Check for understanding.** Ask: "A student has skipped the same activity three
+weeks running and seems fine otherwise. Which tool?" Persistence coaching -- and
+noticing that nothing is visibly wrong *right now* is exactly what makes it the
+hard one to catch.
+
+## Embedding This MicroSim
+
+Paste this into any page of the book, adjusting the relative path to
+`docs/sims/` for the page's depth:
+
+```html
+<iframe src="../../sims/frustration-escalation-response-flow/main.html" width="100%" height="662" scrolling="no"></iframe>
+```
 
 ## Specification
 
@@ -47,6 +106,10 @@ Color coding: Gray for the start node, purple for the decision diamond, blue for
 Implementation: Mermaid flowchart (`graph TD`) rendered in main.html with `click NodeId call showInfo("NodeId")` directives for every node, opening a side-panel infobox.
 ```
 
-## Related Resources
+## References
 
-- [Chapter 27: Encouraging Persistence and Student Voice](../../chapters/27-persistence-and-student-voice/index.md)
+- [Chapter 27: Encouraging Persistence and Student Voice](../../chapters/27-persistence-and-student-voice/index.md) -- the chapter this MicroSim supports.
+- [Growth Mindset Coaching Response Flow](../growth-mindset-coaching-response-flow/index.md) -- the companion diagram for moments that are going well.
+- [Learned helplessness](https://en.wikipedia.org/wiki/Learned_helplessness) -- what repeated unaddressed frustration produces.
+- [Zone of proximal development](https://en.wikipedia.org/wiki/Zone_of_proximal_development) -- why a task can be too hard rather than the student not trying.
+- [Grit](https://en.wikipedia.org/wiki/Grit_(personality_trait)) -- persistence as a trainable behaviour rather than a fixed one.

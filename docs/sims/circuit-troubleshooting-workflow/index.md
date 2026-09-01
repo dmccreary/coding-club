@@ -100,7 +100,7 @@ Implementation: Mermaid flowchart rendered in a wrapper page at the sim-id path,
 
 ## References
 
-- [Chapter 18: Robots, USB, and the Electronics Workshop](../../chapters/18-robots-usb-electronics-workshop/index.md) -- the chapter this MicroSim supports.
+- [Chapter 18: Robots, USB Basics, and Electronics Workshop Skills](../../chapters/18-robots-usb-electronics-workshop/index.md) -- the chapter this MicroSim supports.
 - [Troubleshooting](https://en.wikipedia.org/wiki/Troubleshooting) -- the general method of eliminating causes in order.
 - [Continuity test](https://en.wikipedia.org/wiki/Continuity_test) -- what the second check actually measures.
 - [Breadboard](https://en.wikipedia.org/wiki/Breadboard) -- why rows split at the centre channel.

@@ -105,7 +105,7 @@ Implementation: Mermaid flowchart (`graph TD`) rendered in main.html with `click
 
 ## References
 
-- [Chapter 22: Purchasing and Configuring Devices](../../chapters/22-purchasing-configuring-devices/index.md) -- the chapter this MicroSim supports.
+- [Chapter 22: Purchasing and Configuring Club Devices](../../chapters/22-purchasing-configuring-devices/index.md) -- the chapter this MicroSim supports.
 - [Device Lifecycle Workflow](../device-lifecycle-workflow/index.md) -- what happens to the laptop after this diagram ends.
 - [Mobile device management](https://en.wikipedia.org/wiki/Mobile_device_management) -- the general category all three consoles belong to.
 - [Chromebook](https://en.wikipedia.org/wiki/Chromebook) -- why the enrolment path is the simplest of the three.

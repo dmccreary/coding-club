@@ -101,7 +101,7 @@ Implementation: Mermaid flowchart (`graph LR` arranged to suggest a loop, with a
 
 ## References
 
-- [Chapter 24: Student Data and Communication](../../chapters/24-student-data-and-communication/index.md) -- the chapter this MicroSim supports.
+- [Chapter 24: Tracking Student Data and Managing Club Communication](../../chapters/24-student-data-and-communication/index.md) -- the chapter this MicroSim supports.
 - [Feedback Loop Cycle](../feedback-loop-cycle/index.md) -- the club's other four-stage loop, aimed at families rather than students.
 - [Formative assessment](https://en.wikipedia.org/wiki/Formative_assessment) -- assessment that changes what happens next.
 - [Mastery learning](https://en.wikipedia.org/wiki/Mastery_learning) -- the model behind picking the next card from what is mastered.

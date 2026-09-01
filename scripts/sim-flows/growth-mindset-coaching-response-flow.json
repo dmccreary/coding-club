@@ -1,0 +1,114 @@
+{
+  "title": "Growth Mindset Coaching Response Flow",
+  "height": 660,
+  "direction": "TD",
+  "nodes": [
+    {
+      "id": "Notice",
+      "shape": "round",
+      "cls": "retire",
+      "label": "Notice a Student<br/>Moment",
+      "title": "Notice a Student Moment",
+      "info": "A mentor observes something happen -- a student is stuck, a student just succeeded at something small, or a student has finished a whole track."
+    },
+    {
+      "id": "Kind",
+      "shape": "diamond",
+      "cls": "wait",
+      "label": "What Kind<br/>of Moment?",
+      "title": "What Kind of Moment?",
+      "info": "The right response depends on whether the student is struggling, has a small in-session win, or has reached a large term-scale milestone."
+    },
+    {
+      "id": "Coach",
+      "shape": "box",
+      "cls": "doc",
+      "label": "Apply Growth<br/>Mindset Coaching",
+      "title": "Apply Growth Mindset Coaching",
+      "info": "Respond with 'not yet' language, and point back to a skill the student has already mastered to prove ability can grow."
+    },
+    {
+      "id": "Celebrate",
+      "shape": "box",
+      "cls": "prep",
+      "label": "Celebrate Immediately,<br/>One-on-One",
+      "title": "Celebrate Immediately, One-on-One",
+      "info": "Name the specific thing that just went right, out loud, within seconds -- do not wait for the end of the session."
+    },
+    {
+      "id": "Public",
+      "shape": "box",
+      "cls": "remediate",
+      "label": "Save for a Public<br/>Recognition Event",
+      "title": "Save for a Public Recognition Event",
+      "info": "A track completion or major project is significant enough to recognise in front of the whole club and families, not just privately."
+    },
+    {
+      "id": "Real",
+      "shape": "round",
+      "cls": "resolve",
+      "label": "Student Feels<br/>Progress Is Real",
+      "title": "Student Feels Progress Is Real",
+      "info": "Every path ends the same way: the student leaves believing their effort produced a real, specific result -- whether that recognition happened in ten seconds or at a term-end event."
+    }
+  ],
+  "edges": [
+    {
+      "from": "Notice",
+      "to": "Kind"
+    },
+    {
+      "from": "Kind",
+      "to": "Coach",
+      "label": "struggling"
+    },
+    {
+      "from": "Kind",
+      "to": "Celebrate",
+      "label": "small win"
+    },
+    {
+      "from": "Kind",
+      "to": "Public",
+      "label": "term milestone"
+    },
+    {
+      "from": "Coach",
+      "to": "Real"
+    },
+    {
+      "from": "Celebrate",
+      "to": "Real"
+    },
+    {
+      "from": "Public",
+      "to": "Real"
+    }
+  ],
+  "legend": [
+    {
+      "cls": "retire",
+      "text": "What you noticed"
+    },
+    {
+      "cls": "wait",
+      "text": "Which kind of moment"
+    },
+    {
+      "cls": "doc",
+      "text": "Growth mindset coaching"
+    },
+    {
+      "cls": "prep",
+      "text": "Immediate small-win celebration"
+    },
+    {
+      "cls": "remediate",
+      "text": "Public recognition event"
+    },
+    {
+      "cls": "resolve",
+      "text": "Shared outcome"
+    }
+  ]
+}

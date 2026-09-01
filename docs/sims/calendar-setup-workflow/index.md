@@ -104,7 +104,7 @@ Implementation: Mermaid flowchart (`graph TD`) rendered in main.html with `click
 
 ## References
 
-- [Chapter 24: Student Data and Communication](../../chapters/24-student-data-and-communication/index.md) -- the chapter this MicroSim supports.
+- [Chapter 24: Tracking Student Data and Managing Club Communication](../../chapters/24-student-data-and-communication/index.md) -- the chapter this MicroSim supports.
 - [Calendaring software](https://en.wikipedia.org/wiki/Calendaring_software) -- how shared calendars and subscriptions work.
 - [iCalendar](https://en.wikipedia.org/wiki/ICalendar) -- the format behind the shareable link.
 - [Recurrence relation](https://en.wikipedia.org/wiki/Recurring_event) -- why one rule beats fifteen events.

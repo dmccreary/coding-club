@@ -104,7 +104,7 @@ Implementation: Mermaid flowchart (`graph TD`) rendered in main.html with `click
 
 ## References
 
-- [Chapter 24: Student Data and Communication](../../chapters/24-student-data-and-communication/index.md) -- the chapter this MicroSim supports.
+- [Chapter 24: Tracking Student Data and Managing Club Communication](../../chapters/24-student-data-and-communication/index.md) -- the chapter this MicroSim supports.
 - [Club Calendar Setup Workflow](../calendar-setup-workflow/index.md) -- the third channel, for anything date-shaped.
 - [Synchronous and asynchronous communication](https://en.wikipedia.org/wiki/Asynchronous_communication) -- the distinction the first diamond is really testing.
 - [Information overload](https://en.wikipedia.org/wiki/Information_overload) -- why sending everything to every channel fails.

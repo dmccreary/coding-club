@@ -13,8 +13,8 @@ above are maintained by hand as sims are actually built.
 
 - Chapters scanned: 35
 - Total diagram specs found: 129
-- Already implemented: 34
-- **Unimplemented (TODO): 95**
+- Already implemented: 37
+- **Unimplemented (TODO): 92**
 
 Regenerate this list after adding or editing chapter diagram specs:
 
@@ -225,7 +225,7 @@ python3 ~/.claude/skills/microsim-utils/scripts/create-microsim-todo-json-files.
 | Sim ID | Diagram Name | Library | Bloom Level |
 |---|---|---|---|
 | [`attendance-enrollment-trend-explorer`](TODO/attendance-enrollment-trend-explorer.json) | Attendance and Enrollment Trend Explorer | Chart.js | Analyze (L4) |
-| [`automated-communication-pipeline`](TODO/automated-communication-pipeline.json) | Automated Communication Pipeline | Mermaid | Analyze (L4) |
+| :white_check_mark: [`automated-communication-pipeline`](automated-communication-pipeline/index.md) | Automated Communication Pipeline | Mermaid | Analyze (L4) |
 | [`pivot-table-builder`](TODO/pivot-table-builder.json) | Pivot Table Builder | p5.js | Apply (L3) |
 | [`student-growth-portfolio-network`](TODO/student-growth-portfolio-network.json) | Student Growth to Portfolio Network | vis-network | Understand (L2) |
 
@@ -233,7 +233,7 @@ python3 ~/.claude/skills/microsim-utils/scripts/create-microsim-todo-json-files.
 
 | Sim ID | Diagram Name | Library | Bloom Level |
 |---|---|---|---|
-| [`growth-mindset-coaching-response-flow`](TODO/growth-mindset-coaching-response-flow.json) | Growth Mindset Coaching Response Flow | Mermaid | Analyze (L4) |
+| :white_check_mark: [`growth-mindset-coaching-response-flow`](growth-mindset-coaching-response-flow/index.md) | Growth Mindset Coaching Response Flow | Mermaid | Analyze (L4) |
 | [`intrinsic-vs-extrinsic-motivation-map`](TODO/intrinsic-vs-extrinsic-motivation-map.json) | Intrinsic vs Extrinsic Motivation Map | Interactive Infographic Overlay (grid-diagram.js, annotation-free comparison poster + rectangular hover zones) | Understand (L2) |
 | [`leaderboard-vs-collaborative-challenge`](TODO/leaderboard-vs-collaborative-challenge.json) | Leaderboard vs Collaborative Challenge | Interactive Infographic Overlay (grid-diagram.js, annotation-free comparison poster + rectangular hover zones) | Evaluate (L5) |
 | [`tangible-reward-ladder`](TODO/tangible-reward-ladder.json) | The Tangible Reward Ladder | Interactive Infographic Overlay (diagram.js, annotation-free illustration + numbered callouts) | Understand (L2) |
@@ -242,7 +242,7 @@ python3 ~/.claude/skills/microsim-utils/scripts/create-microsim-todo-json-files.
 
 | Sim ID | Diagram Name | Library | Bloom Level |
 |---|---|---|---|
-| [`frustration-escalation-response-flow`](TODO/frustration-escalation-response-flow.json) | Frustration Escalation Response Flow | Mermaid | Analyze (L4) |
+| :white_check_mark: [`frustration-escalation-response-flow`](frustration-escalation-response-flow/index.md) | Frustration Escalation Response Flow | Mermaid | Analyze (L4) |
 | [`showcase-wall-vs-peer-recognition`](TODO/showcase-wall-vs-peer-recognition.json) | Showcase Wall vs Peer Recognition Activity | Interactive Infographic Overlay (grid-diagram.js, annotation-free comparison poster + rectangular hover zones) | Evaluate (L5) |
 
 ### Chapter 28: Reaching Underserved Communities and Removing Barriers (2)

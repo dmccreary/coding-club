@@ -1,0 +1,21 @@
+{
+  "title": "Growth Mindset Coaching Response Flow",
+  "height": 662,
+  "library": "Mermaid",
+  "bloom": "Analyze (L4)",
+  "verb": "differentiate",
+  "description": "Three kinds of student moment, three different right responses -- and one shared goal.",
+  "concepts": [
+    "Growth Mindset",
+    "Not Yet Language",
+    "Small-Win Celebration",
+    "Public Recognition"
+  ],
+  "interaction": "Hover-to-preview and click-to-pin three-branch response flow converging on one outcome",
+  "assessment": "Describe a moment and ask which response it calls for and why the other two would misfire.",
+  "audience": "Mentors coaching students in the moment",
+  "about": "A mentor gets about four seconds to decide how to respond to what a student just\ndid. This diagram is those four seconds, made deliberate.\n\nThe three branches are not degrees of the same thing -- they are different tools\nfor different situations, and using the wrong one costs something real:\n\n- **Struggling** calls for growth-mindset coaching: \"not yet\" language, plus a\n  pointer back to a skill this student has already mastered. Celebrating here\n  would ring hollow.\n- **A small win** calls for immediate, specific, one-to-one recognition. Within\n  seconds, naming the exact thing that went right. Saving it for later drains it.\n- **A term milestone** is worth holding for a public recognition event, because\n  its size is part of its meaning. Mentioning it quietly in passing wastes it.\n\nEvery branch ends in the same place: the student leaves believing their effort\nproduced a real result. The paths differ only in scale and audience.",
+  "howto": "- **Hover a step** to preview it; **click** to pin the details.\n- The three branch labels describe the moment you observed; each leads to the\n  response that fits it.",
+  "lesson": "**Bloom level:** Analyze (L4) -- *differentiate*\n\n**Learning objective:** Given a description of what just happened with a student,\nthe learner differentiates whether it calls for growth-mindset coaching,\ncelebrating a small win, or a public recognition event.\n\n**Before the sim (5 min).** Describe a student who has just got an LED to blink\nafter twenty minutes of failure. Ask the room what they would say. Collect the\nanswers before showing the diagram.\n\n**With the sim (10 min).** Walk the three branches. For each, ask what would go\nwrong if a mentor used one of the *other* two responses instead. That\nmis-application question is the differentiation the objective wants.\n\n**After the sim (15 min).** Role-play all three in pairs, with one person\ndescribing a moment and the other responding in character.\n\n**Check for understanding.** Ask: \"A student finishes the whole beginner track in\nthe middle of a session. What do you do right now, and what do you do later?\"\nBoth -- a specific word now, and the public recognition at the term event.",
+  "refs": "- {{CHAPTER}} -- the chapter this MicroSim supports.\n- [Frustration Escalation Response Flow](../frustration-escalation-response-flow/index.md) -- the companion diagram for moments that are going badly.\n- [Mindset](https://en.wikipedia.org/wiki/Mindset) -- Dweck's fixed and growth mindset research.\n- [Praise](https://en.wikipedia.org/wiki/Praise) -- why specific praise outperforms general praise.\n- [Reinforcement](https://en.wikipedia.org/wiki/Reinforcement) -- why immediacy matters for small wins."
+}
