@@ -314,7 +314,7 @@ A worked example: a mentor wants to safely light an LED from a 5-volt USB source
 
 #### Diagram: Ohm's Law Current Calculator
 
-<iframe src="../../sims/ohms-law-current-calculator/main.html" width="100%" height="480px" scrolling="no"></iframe>
+<iframe src="../../sims/ohms-law-current-calculator/main.html" width="100%" height="482px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Ohm's Law Current Calculator</summary>
@@ -621,7 +621,7 @@ This is exactly the kind of input this book's Moving Rainbow project, referenced
 
 #### Diagram: Potentiometer Analog Input Explorer
 
-<iframe src="../../sims/potentiometer-analog-input-explorer/main.html" width="100%" height="480px" scrolling="no"></iframe>
+<iframe src="../../sims/potentiometer-analog-input-explorer/main.html" width="100%" height="447px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Potentiometer Analog Input Explorer</summary>
@@ -659,7 +659,7 @@ Switching speed matters as much as duty cycle does. A microcontroller's PWM outp
 
 #### Diagram: PWM Analog Output Brightness Explorer
 
-<iframe src="../../sims/pwm-analog-output-brightness-explorer/main.html" width="100%" height="480px" scrolling="no"></iframe>
+<iframe src="../../sims/pwm-analog-output-brightness-explorer/main.html" width="100%" height="482px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>PWM Analog Output Brightness Explorer</summary>

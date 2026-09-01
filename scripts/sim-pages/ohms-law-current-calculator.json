@@ -1,0 +1,23 @@
+{
+  "title": "Ohm's Law Current Calculator",
+  "height": 482,
+  "library": "p5.js",
+  "bloom": "Apply (L3)",
+  "description": "Set a supply voltage and a series resistor, and read the LED current before you power a real circuit.",
+  "chapter_title": "Chapter 16: Physical Computing and Electrical Safety Basics",
+  "chapter_dir": "16-physical-computing-safety",
+  "about": "Kits get damaged in the first ten minutes of a session, by a student who wired an\nLED straight to a battery. This calculator is the thing to run *before* that\nhappens: set the supply voltage and the resistor you actually have, and see the\ncurrent in milliamps with a plain verdict attached.\n\nOne subtlety is worth stating out loud, because it is where the arithmetic\nusually goes wrong. An LED is not a resistor. It drops a roughly fixed **forward\nvoltage** -- about 2 volts for a red one -- before any current flows at all. Only\nwhat is left over appears across the series resistor. So the current is\n\n    (supply − forward) / resistance\n\nnot supply / resistance. At the default settings that is (5 − 2) / 220, which is\n13.6 mA: comfortably inside the safe band for a standard 5 mm LED.\n\nDrop the resistor to 120 ohms and the verdict turns amber. Go to 9 volts with a\n100 ohm resistor and it turns red at 70 mA, which is roughly three times what the\npart is rated for.",
+  "howto": "- **Supply voltage** covers the range a club is likely to have on the bench, from\n  a single 1.5 V cell to a 9 V battery.\n- **Series resistor** covers 10 to 1000 ohms in 10 ohm steps.\n- The LED in the diagram brightens with the current, and the dots show current\n  flowing faster as it rises.\n- The verdict is green below 20 mA, amber up to 30 mA, and red above it.\n- Below about 2 V of supply the LED does not light at all, which the readout says\n  rather than showing a misleading negative number.",
+  "lesson": "**Bloom level:** Apply (L3) -- *calculate*\n\n**Learning objective:** Given a supply voltage and a resistor value, the learner\ncalculates the resulting current and judges whether it is safe for the connected\nLED.\n\n**Before the sim (5 min).** Ask what happens if you connect an LED directly\nacross a 9 V battery. Someone will say \"it gets brighter.\" Set the resistor to\nits minimum and show them what the readout says instead.\n\n**With the sim (10 min).** Start at the defaults and read the arithmetic aloud\nfrom the panel. Then change *only* the resistor and ask the group to predict the\ndirection of the change before releasing the slider. Halving the resistor doubles\nthe current -- that inverse relationship is the core of the objective.\n\n**After the sim (15 min).** Give each pair a real supply and a real resistor from\nthe club kit. Before they build anything, they must write down the predicted\ncurrent and the verdict, and get a mentor to initial it.\n\n**Check for understanding.** Ask: \"You have a 9 V battery and only 100 ohm\nresistors. Is that safe for an LED?\" The answer is no, and a learner who has met\nthe objective can say roughly how bad it is and what resistor would fix it.",
+  "refs": "- [Chapter 16: Physical Computing and Electrical Safety Basics](../../chapters/16-physical-computing-safety/index.md) -- the chapter this MicroSim supports.\n- [Ohm's law](https://en.wikipedia.org/wiki/Ohm%27s_law) -- the relationship the whole sim rests on.\n- [LED circuit](https://en.wikipedia.org/wiki/LED_circuit) -- why a series resistor is required and how the value is chosen.\n- [Light-emitting diode](https://en.wikipedia.org/wiki/Light-emitting_diode) -- forward voltage, and why it differs by colour.\n- [Resistor Color Code Calculator](../resistor-color-code-calculator/index.md) -- read the resistor's value before you type it in here.\n- [Ohm's Law LED Resistor Calculator](https://dmccreary.github.io/learning-micropython/sims/ohms-law-calculator/) -- the same physics run backwards, solving for the resistor instead of the current.",
+  "verb": "calculate",
+  "interaction": "Two sliders with a live circuit diagram and a colour-coded safety verdict",
+  "concepts": [
+    "Ohm's Law",
+    "Current",
+    "Series Resistor",
+    "LED Forward Voltage",
+    "Electrical Safety"
+  ],
+  "assessment": "Give a supply and resistor pair and ask for the current and whether it is safe."
+}

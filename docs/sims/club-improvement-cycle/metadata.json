@@ -1,6 +1,6 @@
 {
   "title": "The Club Improvement Cycle",
-  "description": "Given a session outcome, the learner traces how it becomes a post-event note, accumulates in a lessons-learned log, and eventually produces a club evolution decision.",
+  "description": "Step one session's observation all the way around the club improvement loop, from raw note to a change in how the club runs.",
   "creator": "Coding Club",
   "author": "Dan McCreary",
   "date": "2026-09-01",
@@ -16,19 +16,15 @@
   "bloomLevel": "Understand (L2)",
   "bloomVerb": "explain",
   "completion_status": "built",
+  "canvasHeight": 610,
   "chapter_number": 1,
-  "chapter_title": "What Is a Coding Club",
+  "chapter_title": "Chapter 1: What Is a Coding Club",
   "chapter_dir": "01-what-is-a-coding-club",
   "chapter_rel_dir": "chapters/01-what-is-a-coding-club",
-  "canvasHeight": 610,
   "educational": {
-    "gradeLevel": "High School, Undergraduate, Adult",
+    "gradeLevel": "Middle School, High School, Adult",
     "audience": "Coding club leaders, mentors, and student officers",
     "duration": "10-15 minutes",
-    "prerequisites": [
-      "Coding Club",
-      "Club Session"
-    ],
     "concepts": [
       "Continuous Improvement",
       "Post-Event Notes",
@@ -41,6 +37,6 @@
     "bloomVerb": "explain",
     "learningObjective": "Given a session outcome, the learner traces how it becomes a post-event note, accumulates in a lessons-learned log, and eventually produces a club evolution decision.",
     "interactionPattern": "Step-through worked example with concrete data visible at every stage",
-    "assessment": "Give a new Stage 1 observation and ask the learner to produce the Stage 2 note and state what must be true before it justifies a Stage 4 change."
+    "assessment": "Give a new Stage 1 observation and ask for the Stage 2 note plus what must be true before it justifies a Stage 4 change."
   }
 }

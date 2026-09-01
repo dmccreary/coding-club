@@ -16,17 +16,11 @@
   "bloomLevel": "Understand (L2)",
   "bloomVerb": "explain",
   "completion_status": "built",
+  "canvasHeight": 450,
   "chapter_number": 17,
-  "chapter_title": "Sensors, Displays, Motors, and Robot Chassis",
+  "chapter_title": "Chapter 17: Sensors, Displays, Motors, and Robot Chassis",
   "chapter_dir": "17-sensors-displays-motors",
   "chapter_rel_dir": "chapters/17-sensors-displays-motors",
-  "_reused_from": {
-    "repo": "learning-micropython",
-    "sim": "ultrasonic-ranging",
-    "url": "https://dmccreary.github.io/learning-micropython/sims/ultrasonic-ranging/",
-    "github": "https://github.com/dmccreary/learning-micropython/tree/main/docs/sims/ultrasonic-ranging"
-  },
-  "canvasHeight": 450,
   "educational": {
     "gradeLevel": "Middle School, High School, Adult",
     "audience": "Coding club students and mentors",
@@ -35,13 +29,20 @@
       "Ultrasonic Sensor",
       "Time of Flight",
       "Speed of Sound",
-      "Sensor Calibration"
+      "Calibration"
     ]
   },
   "pedagogical": {
     "bloomLevel": "Understand (L2)",
     "bloomVerb": "explain",
-    "learningObjective": "Given an ultrasonic sensor's echo return time, the learner explains how that duration converts into a distance.",
-    "interactionPattern": "Direct manipulation with live readout of the derived value"
+    "learningObjective": "Send a pulse at a wall, watch the echo come back, and see how a duration in microseconds becomes a distance in centimetres.",
+    "interactionPattern": "Draggable target with a live echo-duration and derived-distance readout",
+    "assessment": "Ask why a robot calibrated indoors reads differently in a warm gym."
+  },
+  "_reused_from": {
+    "repo": "learning-micropython",
+    "sim": "ultrasonic-ranging",
+    "url": "https://dmccreary.github.io/learning-micropython/sims/ultrasonic-ranging/",
+    "github": "https://github.com/dmccreary/learning-micropython/tree/main/docs/sims/ultrasonic-ranging"
   }
 }

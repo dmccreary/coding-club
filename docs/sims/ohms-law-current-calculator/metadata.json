@@ -1,6 +1,6 @@
 {
   "title": "Ohm's Law Current Calculator",
-  "description": "Given a supply voltage and a resistor value, the learner calculates the resulting current and judges whether it is safe for the connected LED.",
+  "description": "Set a supply voltage and a series resistor, and read the LED current before you power a real circuit.",
   "creator": "Coding Club",
   "author": "Dan McCreary",
   "date": "2026-09-01",
@@ -15,9 +15,29 @@
   "library": "p5.js",
   "bloomLevel": "Apply (L3)",
   "bloomVerb": "calculate",
-  "completion_status": "scaffold",
+  "completion_status": "built",
+  "canvasHeight": 480,
   "chapter_number": 16,
-  "chapter_title": "Physical Computing and Electrical Safety Basics",
+  "chapter_title": "Chapter 16: Physical Computing and Electrical Safety Basics",
   "chapter_dir": "16-physical-computing-safety",
-  "chapter_rel_dir": "chapters/16-physical-computing-safety"
+  "chapter_rel_dir": "chapters/16-physical-computing-safety",
+  "educational": {
+    "gradeLevel": "Middle School, High School, Adult",
+    "audience": "Coding club students and mentors",
+    "duration": "10-15 minutes",
+    "concepts": [
+      "Ohm's Law",
+      "Current",
+      "Series Resistor",
+      "LED Forward Voltage",
+      "Electrical Safety"
+    ]
+  },
+  "pedagogical": {
+    "bloomLevel": "Apply (L3)",
+    "bloomVerb": "calculate",
+    "learningObjective": "Given a supply voltage and a resistor value, the learner calculates the resulting current and judges whether it is safe for the connected LED.",
+    "interactionPattern": "Two sliders with a live circuit diagram and a colour-coded safety verdict",
+    "assessment": "Give a supply and resistor pair and ask for the current and whether it is safe."
+  }
 }

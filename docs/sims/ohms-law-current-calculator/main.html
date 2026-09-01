@@ -3,112 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- microsim-scaffold-stub -->
+    <meta name="schema" content="https://dmccreary.github.io/intelligent-textbooks/ns/microsim/v1">
     <title>Ohm's Law Current Calculator</title>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.11.10/lib/p5.js"></script>
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: #f8f9fa;
-            color: #212529;
+            margin: 0px;
+            padding: 0px;
+            font-family: Arial, Helvetica, sans-serif;
         }
-        #container {
-            width: 100%;
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 20px;
-            background: white;
-        }
-        h1 {
-            font-size: 22px;
-            margin-bottom: 10px;
-            color: #1a3a6c;
-        }
-        .placeholder {
-            border: 2px dashed #adb5bd;
-            border-radius: 8px;
-            padding: 40px 20px;
-            text-align: center;
-            color: #6c757d;
-            margin: 20px 0;
-            min-height: 400px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        .placeholder .badge {
-            display: inline-block;
-            background: #ffc107;
-            color: #212529;
-            padding: 4px 12px;
-            border-radius: 12px;
-            font-size: 12px;
-            font-weight: 600;
-            margin-bottom: 12px;
-        }
-        .placeholder h2 {
-            font-size: 18px;
-            color: #495057;
-            margin-bottom: 8px;
-        }
-        .placeholder p {
-            font-size: 14px;
-            max-width: 480px;
-        }
-        .meta {
-            margin-top: 20px;
-            font-size: 13px;
-            color: #6c757d;
-            border-top: 1px solid #dee2e6;
-            padding-top: 12px;
-        }
-        .meta strong { color: #495057; }
     </style>
+    <script src="ohms-law-current-calculator.js"></script>
 </head>
 <body>
-    <div id="container">
-        <h1>Ohm's Law Current Calculator</h1>
-        <div class="placeholder">
-            <span class="badge">SCAFFOLD</span>
-            <h2>MicroSim Not Yet Implemented</h2>
-            <p>This MicroSim has been scaffolded from its specification but the
-            interactive content has not been built yet. See the chapter source
-            and the <code>index.md</code> in this directory for the full spec.</p>
-        </div>
-        <div class="meta">
-            <p><strong>Sim ID:</strong> ohms-law-current-calculator</p>
-            <p><strong>Library:</strong> p5.js</p>
-            <p><strong>Bloom Level:</strong> Apply (L3)</p>
-            <p><strong>Learning Objective:</strong> Given a supply voltage and a resistor value, the learner calculates the resulting current and judges whether it is safe for the connected LED.</p>
-        </div>
-    </div>
-
-    <!--
-    SPECIFICATION (from chapter index.md):
-
-    Type: microsim
-    **sim-id:** ohms-law-current-calculator<br/>
-    **Library:** p5.js<br/>
-    **Status:** Specified<br/>
-    **Template:** https://github.com/dmccreary/learning-micropython/tree/main/docs/sims/ohms-law-calculator
-    
-    Purpose: Let a mentor plug in real supply-voltage and resistor values from a kit and see the resulting current before powering an actual circuit.
-    
-    Bloom Taxonomy: Apply (L3)
-    Bloom Taxonomy Verb: calculate
-    
-    Learning objective: Given a supply voltage and a resistor value, the learner calculates the resulting current and judges whether it is safe for the connected LED.
-    
-    Canvas layout: Left (60%) shows a simple circuit diagram (battery, resistor, LED) that visually brightens or dims as current changes; right (40%) holds sliders and the numeric readout
-    
-    Interactive controls: Slider for supply voltage (1.5V-9V); slider for resistor value (10 ohms-1000 ohms); numeric display of calculated current in milliamps; color-coded safety readout (green under 20mA, amber 20-30mA, red above 30mA)
-    
-    Default parameters: Supply voltage 5V, resistor 220 ohms (yields ~14mA, shown in green)
-    
-    Behavior: Moving either slider instantly recalculates current using \(I = V / R\) and updates both the numeric readout and the LED brightness/safety color in the diagram
-    
-    Implementation notes: p5.js canvas with two `createSlider()` controls; recompute on every `draw()` frame from current slider values
-    -->
+    <main></main>
+    <br/>
+    <a href=".">Back to the Ohm's Law Current Calculator Lesson Plan</a>
 </body>
 </html>

@@ -13,8 +13,8 @@ above are maintained by hand as sims are actually built.
 
 - Chapters scanned: 35
 - Total diagram specs found: 129
-- Already implemented: 11
-- **Unimplemented (TODO): 118**
+- Already implemented: 17
+- **Unimplemented (TODO): 112**
 
 Regenerate this list after adding or editing chapter diagram specs:
 
@@ -118,11 +118,11 @@ python3 ~/.claude/skills/microsim-utils/scripts/create-microsim-todo-json-files.
 | [`led-anatomy`](TODO/led-anatomy.json) | LED Anatomy | Interactive Infographic Overlay (diagram.js, callout engine) | Remember (L1) |
 | [`multimeter-usage-simulator`](TODO/multimeter-usage-simulator.json) | Multimeter Usage Simulator | p5.js | Apply (L3) |
 | [`normal-circuit-vs-short-circuit`](TODO/normal-circuit-vs-short-circuit.json) | Normal Circuit vs. Short Circuit | Interactive Infographic Overlay (diagram.js, side-by-side comparison + numbered callouts) | Understand (L2) |
-| [`ohms-law-current-calculator`](TODO/ohms-law-current-calculator.json) | Ohm's Law Current Calculator | p5.js | Apply (L3) |
+| :white_check_mark: [`ohms-law-current-calculator`](ohms-law-current-calculator/index.md) | Ohm's Law Current Calculator | p5.js | Apply (L3) |
 | [`physical-computing-loop`](TODO/physical-computing-loop.json) | The Physical Computing Loop | p5.js | Understand (L2) |
-| [`potentiometer-analog-input-explorer`](TODO/potentiometer-analog-input-explorer.json) | Potentiometer Analog Input Explorer | p5.js | Apply (L3) |
+| :white_check_mark: [`potentiometer-analog-input-explorer`](potentiometer-analog-input-explorer/index.md) | Potentiometer Analog Input Explorer | p5.js | Apply (L3) |
 | [`push-button-digital-input-circuit`](TODO/push-button-digital-input-circuit.json) | Push Button Digital Input Circuit | p5.js | Apply (L3) |
-| [`pwm-analog-output-brightness-explorer`](TODO/pwm-analog-output-brightness-explorer.json) | PWM Analog Output Brightness Explorer | p5.js | Understand (L2) |
+| :white_check_mark: [`pwm-analog-output-brightness-explorer`](pwm-analog-output-brightness-explorer/index.md) | PWM Analog Output Brightness Explorer | p5.js | Understand (L2) |
 | :white_check_mark: [`resistor-color-code-calculator`](resistor-color-code-calculator/index.md) | Resistor Color Code Calculator | p5.js | None |
 | [`soldering-safety-workflow`](TODO/soldering-safety-workflow.json) | Soldering Safety Workflow | Mermaid | Apply (L3) |
 | [`static-electricity-precaution-checklist`](TODO/static-electricity-precaution-checklist.json) | Static Electricity Precaution Checklist | Interactive Infographic Overlay (checklist overlay, illustrated classroom scene + clickable hotspots) | Remember (L1) |
@@ -140,7 +140,7 @@ python3 ~/.claude/skills/microsim-utils/scripts/create-microsim-todo-json-files.
 | [`photoresistor-voltage-divider-explorer`](TODO/photoresistor-voltage-divider-explorer.json) | Photoresistor Voltage Divider Explorer | p5.js | Apply (L3) |
 | [`pir-detection-zone-map`](TODO/pir-detection-zone-map.json) | PIR Detection Zone Map | Interactive Infographic Overlay (diagram.js, top-down room view + clickable zones) | Understand (L2) |
 | [`sensor-type-picker`](TODO/sensor-type-picker.json) | Sensor Type Picker | p5.js | Apply (L3) |
-| [`servo-angle-pulse-width-explorer`](TODO/servo-angle-pulse-width-explorer.json) | Servo Angle Pulse-Width Explorer | p5.js | Apply (L3) |
+| :white_check_mark: [`servo-angle-pulse-width-explorer`](servo-angle-pulse-width-explorer/index.md) | Servo Angle Pulse-Width Explorer | p5.js | Apply (L3) |
 | :white_check_mark: [`seven-segment-display`](seven-segment-display/index.md) | Seven Segment Display Explorer (reused MicroSim) | p5.js | None |
 | [`sound-threshold-detector`](TODO/sound-threshold-detector.json) | Sound Threshold Detector | p5.js | Understand (L2) |
 | [`stepper-motor-step-sequence`](TODO/stepper-motor-step-sequence.json) | Stepper Motor Step Sequence | Mermaid | Apply (L3) |
@@ -159,10 +159,10 @@ python3 ~/.claude/skills/microsim-utils/scripts/create-microsim-todo-json-files.
 
 | Sim ID | Diagram Name | Library | Bloom Level |
 |---|---|---|---|
-| [`color-wheel-hue-explorer`](TODO/color-wheel-hue-explorer.json) | Color Wheel Hue Explorer | p5.js | Apply (L3) |
+| :white_check_mark: [`color-wheel-hue-explorer`](color-wheel-hue-explorer/index.md) | Color Wheel Hue Explorer | p5.js | Apply (L3) |
 | [`micropython-syntax-checker`](TODO/micropython-syntax-checker.json) | MicroPython Syntax Checker | p5.js | Remember (L1) |
 | [`moving-rainbow-wiring-diagram`](TODO/moving-rainbow-wiring-diagram.json) | Moving Rainbow Wiring Diagram | p5.js | Apply (L3) |
-| [`neopixel-loop-pixel-stepper`](TODO/neopixel-loop-pixel-stepper.json) | MicroPython Loop Pixel Stepper | p5.js | Apply (L3) |
+| :white_check_mark: [`neopixel-loop-pixel-stepper`](neopixel-loop-pixel-stepper/index.md) | MicroPython Loop Pixel Stepper | p5.js | Apply (L3) |
 | :white_check_mark: [`pico-pinout-explorer`](pico-pinout-explorer/index.md) | Raspberry Pi Pico Pinout Explorer | p5.js | None |
 | [`pico-repl-vs-script-workflow`](TODO/pico-repl-vs-script-workflow.json) | REPL vs. Saved Script Workflow | p5.js | Understand (L2) |
 | [`robot-kit-assembly-sequence`](TODO/robot-kit-assembly-sequence.json) | Robot Kit Assembly Sequence | p5.js | Apply (L3) |

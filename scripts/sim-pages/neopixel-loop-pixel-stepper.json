@@ -1,0 +1,23 @@
+{
+  "title": "NeoPixel Loop Pixel Stepper",
+  "height": 467,
+  "library": "p5.js",
+  "bloom": "Apply (L3)",
+  "description": "Step a for loop over a 30-pixel strip one iteration at a time, and watch an off-by-one error leave the first pixel dark.",
+  "chapter_title": "Chapter 19: Raspberry Pi Pico, MicroPython, and the Moving Rainbow Kit",
+  "chapter_dir": "19-pico-micropython-moving-rainbow",
+  "about": "A NeoPixel strip is the first place most students meet an off-by-one error with\na consequence they can see from across the room. The loop looks right, the code\nruns without an error, and one end of the strip stays dark.\n\nStep the loop one pass at a time. Each press advances the loop variable `i` and\nlights the matching physical pixel, with the executing line highlighted in the\ncode panel. Nothing animates on its own, so there is time to predict which pixel\nis next before pressing again.\n\nThen tick **Start the range at 1**. The code still runs. The strip still lights.\nBut pixel 0 is boxed in red for the whole run and never comes on, because\n`range(1, 30)` yields 29 values rather than 30. Seeing the bug produce a\n*plausible* result is the lesson -- it is why \"it ran without an error\" is not the\nsame as \"it is correct.\" ",
+  "howto": "- **Step** advances the loop by one iteration.\n- **Run** animates the whole loop; press again to pause.\n- **Reset** clears the strip and puts the loop variable back to unset.\n- **Start the range at 1** switches to `range(1, 30)`, the classic off-by-one, and\n  marks the pixel that never lights.",
+  "lesson": "**Bloom level:** Apply (L3) -- *demonstrate*\n\n**Learning objective:** Given a for loop iterating over a NeoPixel strip's pixel\nindices, the learner demonstrates which physical pixel changes color on each pass\nthrough the loop.\n\n**Before the sim (5 min).** Write `for i in range(1, 30)` on the board next to a\n30-pixel strip and ask how many pixels will light. Collect answers before\nrevealing anything.\n\n**With the sim (10 min).** Step the correct version four or five times, asking for\na prediction before each press. Then reset, tick the off-by-one option, and run\nit. The strip looks fine unless you are watching the very first pixel.\n\n**After the sim (15 min).** Ask each pair to write the range that would light\nonly the last ten pixels, then check it by stepping.\n\n**Check for understanding.** Ask: \"`range(0, 30)` gives you how many numbers, and\nwhat is the largest?\" Thirty, and 29. A learner who answers \"30\" to the second\npart has found the exact misconception this sim exists to correct.",
+  "refs": "- [Chapter 19: Raspberry Pi Pico, MicroPython, and the Moving Rainbow Kit](../../chapters/19-pico-micropython-moving-rainbow/index.md) -- the chapter this MicroSim supports.\n- [Off-by-one error](https://en.wikipedia.org/wiki/Off-by-one_error) -- the general bug and why it is so persistent.\n- [Zero-based numbering](https://en.wikipedia.org/wiki/Zero-based_numbering) -- why the first pixel is 0 and not 1.\n- [For loop](https://en.wikipedia.org/wiki/For_loop) -- the control structure being stepped.\n- [Color Wheel Hue Explorer](../color-wheel-hue-explorer/index.md) -- the `wheel()` call inside the loop body.",
+  "verb": "demonstrate",
+  "interaction": "Step-through of a for loop with the executing line highlighted and an off-by-one toggle",
+  "concepts": [
+    "For Loop",
+    "Range",
+    "Zero-Based Indexing",
+    "Off-By-One Error",
+    "NeoPixel Strip"
+  ],
+  "assessment": "Ask how many values range(0, 30) yields and what the largest is."
+}

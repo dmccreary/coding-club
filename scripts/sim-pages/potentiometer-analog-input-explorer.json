@@ -1,0 +1,23 @@
+{
+  "title": "Potentiometer Analog Input Explorer",
+  "height": 447,
+  "library": "p5.js",
+  "bloom": "Apply (L3)",
+  "description": "Turn a knob and watch an analog reading sweep smoothly through 1024 values, then see what a digital pin would have made of the same knob.",
+  "chapter_title": "Chapter 16: Physical Computing and Electrical Safety Basics",
+  "chapter_dir": "16-physical-computing-safety",
+  "about": "A digital input answers one question: is this pin high or low? An analog input\nanswers a different and much richer one: *how much*?\n\nDrag the knob and the reading sweeps continuously from 0 to 1023 -- 1024 distinct\nvalues, with no snapping between them. That number is what a Pico's\nanalog-to-digital converter reports, and dividing it by 1023 and multiplying by\n3.3 gives the voltage actually on the pin.\n\nTick **Compare to a digital input** and the same knob position collapses to a\nsingle HIGH or LOW, flipping at one threshold near the middle. Everything else\nthe knob was telling you is thrown away. Watching those two readouts side by side\nis the fastest way to make the analog/digital distinction stick, and it is the\nreason a volume knob needs an analog pin while a push button does not.",
+  "howto": "- **Drag the knob** through its 270 degrees of travel. It stops at the end stops,\n  like a real potentiometer.\n- **Centre the knob** returns it to the middle.\n- **Compare to a digital input** overlays the HIGH/LOW reading and marks on the\n  bar exactly where a digital pin would flip.",
+  "lesson": "**Bloom level:** Apply (L3) -- *demonstrate*\n\n**Learning objective:** Given a potentiometer's knob position, the learner\ndemonstrates how turning it produces a proportional analog input reading across a\ncontinuous range.\n\n**Before the sim (5 min).** Put a push button and a volume knob on the table. Ask\nwhat makes them different as inputs. \"One is a button\" is the wrong level of\nanswer; push for \"one has two states, the other has many.\"\n\n**With the sim (10 min).** Sweep the knob slowly and have the group call out the\nreading at the quarter points: roughly 0, 256, 512, 768, 1023. Then turn on the\ndigital comparison and sweep again. Ask them to say, out loud, what information\nis being lost.\n\n**After the sim (10 min).** Ask each student to name one club project that needs\nan analog input and one that only needs a digital one, and justify each in a\nsentence.\n\n**Check for understanding.** Ask: \"The reading is 700. What is the voltage on the\npin, roughly, and what would a digital pin have reported?\" About 2.26 V, and\nHIGH -- and the second answer is the same for a reading of 513, which is the\npoint.",
+  "refs": "- [Chapter 16: Physical Computing and Electrical Safety Basics](../../chapters/16-physical-computing-safety/index.md) -- the chapter this MicroSim supports.\n- [Potentiometer](https://en.wikipedia.org/wiki/Potentiometer) -- how the component divides a voltage as it turns.\n- [Analog-to-digital converter](https://en.wikipedia.org/wiki/Analog-to-digital_converter) -- what turns the voltage into the 0-1023 number.\n- [Voltage divider](https://en.wikipedia.org/wiki/Voltage_divider) -- the circuit a potentiometer actually is.\n- [Quantization](https://en.wikipedia.org/wiki/Quantization_(signal_processing)) -- why there are 1024 steps and not infinitely many.",
+  "verb": "demonstrate",
+  "interaction": "Draggable knob with a continuous readout and an optional digital-input overlay",
+  "concepts": [
+    "Potentiometer",
+    "Analog Input",
+    "ADC",
+    "Digital Input",
+    "Voltage Divider"
+  ],
+  "assessment": "Ask what a reading of 700 means in volts and what a digital pin would report."
+}

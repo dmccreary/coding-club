@@ -586,7 +586,7 @@ A worked example makes the pulse-to-angle relationship concrete: a standard hobb
 
 #### Diagram: Servo Angle Pulse-Width Explorer
 
-<iframe src="../../sims/servo-angle-pulse-width-explorer/main.html" width="100%" height="480px" scrolling="no"></iframe>
+<iframe src="../../sims/servo-angle-pulse-width-explorer/main.html" width="100%" height="482px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Servo Angle Pulse-Width Explorer</summary>

@@ -1,6 +1,6 @@
 {
   "title": "Color Wheel Hue Explorer",
-  "description": "Given a position on a 0-255 color wheel, the learner calculates the resulting RGB color a wheel() function would return.",
+  "description": "Drag a marker round a 0-255 color wheel and see the exact RGB triple the wheel() function would return.",
   "creator": "Coding Club",
   "author": "Dan McCreary",
   "date": "2026-09-01",
@@ -15,9 +15,29 @@
   "library": "p5.js",
   "bloomLevel": "Apply (L3)",
   "bloomVerb": "calculate",
-  "completion_status": "scaffold",
+  "completion_status": "built",
+  "canvasHeight": 445,
   "chapter_number": 19,
-  "chapter_title": "Raspberry Pi Pico, MicroPython, and the Moving Rainbow Kit",
+  "chapter_title": "Chapter 19: Raspberry Pi Pico, MicroPython, and the Moving Rainbow Kit",
   "chapter_dir": "19-pico-micropython-moving-rainbow",
-  "chapter_rel_dir": "chapters/19-pico-micropython-moving-rainbow"
+  "chapter_rel_dir": "chapters/19-pico-micropython-moving-rainbow",
+  "educational": {
+    "gradeLevel": "Middle School, High School, Adult",
+    "audience": "Coding club students and mentors",
+    "duration": "10-15 minutes",
+    "concepts": [
+      "Color Wheel",
+      "RGB",
+      "Hue",
+      "wheel() Function",
+      "NeoPixel"
+    ]
+  },
+  "pedagogical": {
+    "bloomLevel": "Apply (L3)",
+    "bloomVerb": "calculate",
+    "learningObjective": "Given a position on a 0-255 color wheel, the learner calculates the resulting RGB color a wheel() function would return.",
+    "interactionPattern": "Draggable marker on a rendered colour wheel with the active code branch named",
+    "assessment": "Ask which wheel position returns white, and why none does."
+  }
 }

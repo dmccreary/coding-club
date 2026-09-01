@@ -16,17 +16,11 @@
   "bloomLevel": "Understand (L2)",
   "bloomVerb": "identify",
   "completion_status": "built",
+  "canvasHeight": 655,
   "chapter_number": 19,
-  "chapter_title": "Raspberry Pi Pico, MicroPython, and the Moving Rainbow Kit",
+  "chapter_title": "Chapter 19: Raspberry Pi Pico, MicroPython, and the Moving Rainbow Kit",
   "chapter_dir": "19-pico-micropython-moving-rainbow",
   "chapter_rel_dir": "chapters/19-pico-micropython-moving-rainbow",
-  "_reused_from": {
-    "repo": "learning-micropython",
-    "sim": "pico-pinout-explorer",
-    "url": "https://dmccreary.github.io/learning-micropython/sims/pico-pinout-explorer/",
-    "github": "https://github.com/dmccreary/learning-micropython/tree/main/docs/sims/pico-pinout-explorer"
-  },
-  "canvasHeight": 655,
   "educational": {
     "gradeLevel": "Middle School, High School, Adult",
     "audience": "Coding club students and mentors",
@@ -42,7 +36,14 @@
   "pedagogical": {
     "bloomLevel": "Understand (L2)",
     "bloomVerb": "identify",
-    "learningObjective": "Given the Raspberry Pi Pico board, the learner identifies the function of each labeled pin and states which pins are safe to connect a component to.",
-    "interactionPattern": "Direct manipulation with live readout of the derived value"
+    "learningObjective": "Click any pin on the Pico board to see what it does, what voltage it runs at, and the MicroPython line that uses it.",
+    "interactionPattern": "Clickable board diagram with category filters",
+    "assessment": "Ask the learner to name three ground pins by number."
+  },
+  "_reused_from": {
+    "repo": "learning-micropython",
+    "sim": "pico-pinout-explorer",
+    "url": "https://dmccreary.github.io/learning-micropython/sims/pico-pinout-explorer/",
+    "github": "https://github.com/dmccreary/learning-micropython/tree/main/docs/sims/pico-pinout-explorer"
   }
 }

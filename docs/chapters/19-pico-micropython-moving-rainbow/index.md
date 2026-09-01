@@ -203,7 +203,7 @@ A second, equally common loop pattern repeats forever rather than a fixed number
 
 #### Diagram: MicroPython Loop Pixel Stepper
 
-<iframe src="../../sims/neopixel-loop-pixel-stepper/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../sims/neopixel-loop-pixel-stepper/main.html" width="100%" height="467px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>MicroPython Loop Pixel Stepper</summary>
@@ -420,7 +420,7 @@ The diagram below (adapted from an HSV color-space template) lets a learner drag
 
 #### Diagram: Color Wheel Hue Explorer
 
-<iframe src="../../sims/color-wheel-hue-explorer/main.html" width="100%" height="480px" scrolling="no"></iframe>
+<iframe src="../../sims/color-wheel-hue-explorer/main.html" width="100%" height="447px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Color Wheel Hue Explorer</summary>

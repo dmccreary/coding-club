@@ -10,5 +10,15 @@
   "howto": "- **Click any pin** to see its number, functions, voltage, and a MicroPython\n  example.\n- **Show All** returns to the full board.\n- **GPIO**, **Power**, and **I2C pins** filter the board to one category, which\n  makes the ground and 3.3 volt pins easy to find at a glance.",
   "lesson": "**Bloom level:** Understand (L2) -- *identify*\n\n**Learning objective:** Given the Raspberry Pi Pico board, the learner identifies\nthe function of each labelled pin -- power, ground, and GPIO -- and states which\npins are safe to connect a component to.\n\n**Before the sim (5 min).** Pass a real Pico around. Ask: \"Which of these forty\npins is ground?\" Nobody can tell from the board alone. That is the problem this\nsim solves.\n\n**With the sim (10 min).** Click **Power** first, so the group sees the eight or\nso pins that are *not* general purpose. Emphasise that these are the pins that\ncause damage when miswired. Then click **GPIO** and note how many are left --\nthere is no shortage, so there is never a reason to guess.\n\n**After the sim (15 min).** Give each pair a component from a kit and ask them to\nname the exact pins they would use and why, before touching any hardware. Check\ntheir answers against the sim.\n\n**Check for understanding.** Ask a student to name three ground pins by number.\nBeing able to do that without looking at the board is the objective met, and it\nis the single most useful fact for avoiding a damaged kit.",
   "refs": "- [Chapter 19: Raspberry Pi Pico, MicroPython, and the Moving Rainbow Kit](../../chapters/19-pico-micropython-moving-rainbow/index.md) -- the chapter this MicroSim supports.\n- [Raspberry Pi Pico](https://en.wikipedia.org/wiki/Raspberry_Pi#Raspberry_Pi_Pico) -- board background and specifications.\n- [General-purpose input/output](https://en.wikipedia.org/wiki/General-purpose_input/output) -- what a GPIO pin is and is not.\n- [I2C](https://en.wikipedia.org/wiki/I%C2%B2C) -- the two-wire bus behind the I2C pin filter.\n- [MicroPython](https://en.wikipedia.org/wiki/MicroPython) -- the language in the code examples.",
-  "credit_note": "It is used here unchanged; the club context is supplied by the lesson plan above."
+  "credit_note": "It is used here unchanged; the club context is supplied by the lesson plan above.",
+  "verb": "identify",
+  "interaction": "Clickable board diagram with category filters",
+  "concepts": [
+    "Raspberry Pi Pico",
+    "GPIO",
+    "Ground Pin",
+    "Supply Voltage",
+    "I2C"
+  ],
+  "assessment": "Ask the learner to name three ground pins by number."
 }

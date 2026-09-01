@@ -1,6 +1,6 @@
 {
   "title": "Levels of Intelligent Textbook Sophistication",
-  "description": "Levels of Intelligent Textbook Sophistication",
+  "description": "Six rungs from a static PDF to an adaptive AI tutor, with a marker showing where this book actually sits.",
   "creator": "Coding Club",
   "author": "Dan McCreary",
   "date": "2026-09-01",
@@ -13,22 +13,18 @@
   "rights": "CC BY-NC-SA 4.0",
   "identifier": "book-levels",
   "library": "p5.js",
-  "bloomLevel": "TBD",
-  "bloomVerb": "TBD",
+  "bloomLevel": "Understand (L2)",
+  "bloomVerb": "explain",
   "completion_status": "built",
+  "canvasHeight": 515,
   "chapter_number": 2,
-  "chapter_title": "AI, Intelligent Textbooks, and Where Coding Clubs Meet",
+  "chapter_title": "Chapter 2: AI, Intelligent Textbooks, and Where Coding Clubs Meet",
   "chapter_dir": "02-ai-and-intelligent-textbooks",
   "chapter_rel_dir": "chapters/02-ai-and-intelligent-textbooks",
-  "canvasHeight": 515,
   "educational": {
-    "gradeLevel": "High School, Undergraduate, Adult",
+    "gradeLevel": "Middle School, High School, Adult",
     "audience": "Readers of this textbook, club leaders evaluating learning materials",
     "duration": "10 minutes",
-    "prerequisites": [
-      "Intelligent Textbook",
-      "Learning Graph"
-    ],
     "concepts": [
       "Intelligent Textbook",
       "MicroSim",

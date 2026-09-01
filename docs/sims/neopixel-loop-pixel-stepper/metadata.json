@@ -1,6 +1,6 @@
 {
-  "title": "MicroPython Loop Pixel Stepper",
-  "description": "Given a for loop iterating over a NeoPixel strip's pixel indices, the learner demonstrates which physical pixel changes color on each pass through the loop.",
+  "title": "NeoPixel Loop Pixel Stepper",
+  "description": "Step a for loop over a 30-pixel strip one iteration at a time, and watch an off-by-one error leave the first pixel dark.",
   "creator": "Coding Club",
   "author": "Dan McCreary",
   "date": "2026-09-01",
@@ -15,9 +15,29 @@
   "library": "p5.js",
   "bloomLevel": "Apply (L3)",
   "bloomVerb": "demonstrate",
-  "completion_status": "scaffold",
+  "completion_status": "built",
+  "canvasHeight": 465,
   "chapter_number": 19,
-  "chapter_title": "Raspberry Pi Pico, MicroPython, and the Moving Rainbow Kit",
+  "chapter_title": "Chapter 19: Raspberry Pi Pico, MicroPython, and the Moving Rainbow Kit",
   "chapter_dir": "19-pico-micropython-moving-rainbow",
-  "chapter_rel_dir": "chapters/19-pico-micropython-moving-rainbow"
+  "chapter_rel_dir": "chapters/19-pico-micropython-moving-rainbow",
+  "educational": {
+    "gradeLevel": "Middle School, High School, Adult",
+    "audience": "Coding club students and mentors",
+    "duration": "10-15 minutes",
+    "concepts": [
+      "For Loop",
+      "Range",
+      "Zero-Based Indexing",
+      "Off-By-One Error",
+      "NeoPixel Strip"
+    ]
+  },
+  "pedagogical": {
+    "bloomLevel": "Apply (L3)",
+    "bloomVerb": "demonstrate",
+    "learningObjective": "Given a for loop iterating over a NeoPixel strip's pixel indices, the learner demonstrates which physical pixel changes color on each pass through the loop.",
+    "interactionPattern": "Step-through of a for loop with the executing line highlighted and an off-by-one toggle",
+    "assessment": "Ask how many values range(0, 30) yields and what the largest is."
+  }
 }
