@@ -1,5 +1,5 @@
 // Coding Club Ecosystem Map - vis-network
-// CANVAS_HEIGHT: 560
+// CANVAS_HEIGHT: 700
 // Bloom: Understand (L2), verb "differentiate"
 // A coding club sits next to six neighbouring educational contexts. Each edge
 // carries the phrase that names the relationship, and clicking a node explains
@@ -14,8 +14,12 @@ const EDGE_GREY = '#7A8A99';
 const EDGE_HIGHLIGHT = '#B87B12';
 
 // ---------- graph data ----------
-// x/y are fixed so the radial layout is identical on every load; physics is
-// off, which keeps labels legible and stops nodes drifting under the panel.
+// x/y are fixed so the layout is identical on every load; physics is off, which
+// keeps labels legible and stops nodes drifting under the panel. The ring is
+// six contexts sit in two arcs, three above the hub and three below, with the
+// three arranged at staggered heights. Every spoke is steep, which keeps its
+// horizontal label clear of the hub; the stagger is what keeps the left and
+// right labels off each other, since level spokes put both at the same height.
 const nodeData = [
     {
         id: 'club', label: 'Coding Club', x: 0, y: 0, kind: 'center',
@@ -23,32 +27,32 @@ const nodeData = [
         difference: 'This is the centre of the map. Everything around it overlaps with a coding club without being one.'
     },
     {
-        id: 'maker', label: 'Maker Space', x: 300, y: -150, kind: 'context',
+        id: 'maker', label: 'Maker Space', x: 400, y: -280, kind: 'context',
         definition: 'A shared workshop stocked with tools -- 3D printers, soldering irons, hand tools -- where people build physical things.',
         difference: 'A maker space is defined by its tools and its room; a coding club is defined by its people and its schedule. A club can meet inside a maker space and borrow its soldering irons, but the club still exists if it moves to a library table.'
     },
     {
-        id: 'stem', label: 'STEM Education', x: 320, y: 130, kind: 'context',
+        id: 'stem', label: 'STEM Education', x: 400, y: 420, kind: 'context',
         definition: 'Teaching that integrates science, technology, engineering, and mathematics, usually as a curriculum-wide goal.',
         difference: 'STEM education is a goal a school district sets; a coding club is one concrete way to deliver part of it. A district can pursue STEM goals with no coding club at all.'
     },
     {
-        id: 'cs', label: 'Computer Science Education', x: 60, y: 250, kind: 'context',
+        id: 'cs', label: 'Computer Science Education', x: 0, y: 520, kind: 'context',
         definition: 'The formal study of computation -- algorithms, data structures, complexity, and how machines execute instructions.',
         difference: 'Computer science education covers far more than a club can. A coding club teaches a chosen subset, picked for what students can build in a two-hour session, not for exam coverage.'
     },
     {
-        id: 'literacy', label: 'Digital Literacy', x: -250, y: 220, kind: 'context',
+        id: 'literacy', label: 'Digital Literacy', x: -400, y: 300, kind: 'context',
         definition: 'The ability to find, evaluate, create, and communicate information using digital tools safely and effectively.',
         difference: 'Digital literacy is an outcome; a coding club is an activity that builds toward it. A student can become digitally literate through a club, a class, or neither.'
     },
     {
-        id: 'afterschool', label: 'After School Program', x: -330, y: -40, kind: 'context',
+        id: 'afterschool', label: 'After School Program', x: -400, y: -440, kind: 'context',
         definition: 'Any structured, supervised activity that runs in the hours between the end of the school day and the end of the working day.',
         difference: 'This names a time slot and a supervision model, not a subject. A coding club is commonly scheduled as one, but a Saturday-morning library club is still a coding club.'
     },
     {
-        id: 'extracurricular', label: 'Extracurricular Learning', x: -140, y: -230, kind: 'context',
+        id: 'extracurricular', label: 'Extracurricular Learning', x: 0, y: -520, kind: 'context',
         definition: 'Voluntary learning that happens outside the graded curriculum, driven by student interest rather than a required course.',
         difference: 'This is the broad category a coding club belongs to, alongside debate team and orchestra. The category says nothing about what is being learned.'
     }
@@ -66,7 +70,7 @@ const edgeData = [
 let nodes, edges, network;
 
 // Screen pixels the right-hand panel and the title band take out of the canvas.
-const RIGHT_PANEL_PX = 320;
+const RIGHT_PANEL_PX = 250;
 const TITLE_BAND_PX = 46;
 
 // ---------- environment detection ----------
@@ -100,13 +104,13 @@ function buildNodes() {
             },
             font: {
                 color: isCenter ? '#000000' : '#FFFFFF',
-                size: isCenter ? 20 : 16,
+                size: isCenter ? 40 : 32,
                 face: 'Arial',
-                bold: isCenter ? { color: '#000000', size: 20, face: 'Arial' } : undefined
+                bold: isCenter ? { color: '#000000', size: 40, face: 'Arial' } : undefined
             },
-            borderWidth: isCenter ? 4 : 3,
-            widthConstraint: { maximum: isCenter ? 160 : 130 },
-            margin: isCenter ? 16 : 10,
+            borderWidth: isCenter ? 3 : 2,
+            widthConstraint: { maximum: isCenter ? 320 : 260 },
+            margin: isCenter ? 32 : 20,
             fixed: { x: isCenter, y: isCenter }   // the centre node is pinned
         };
     });
@@ -119,8 +123,8 @@ function buildEdges() {
         to: e.to,
         label: e.label,
         color: { color: EDGE_GREY, highlight: EDGE_HIGHLIGHT, hover: EDGE_HIGHLIGHT },
-        width: 2,
-        font: { size: 14, face: 'Arial', color: '#333333', strokeWidth: 5, strokeColor: '#F0F8FF', align: 'horizontal' }
+        width: 3,
+        font: { size: 26, face: 'Arial', color: '#333333', strokeWidth: 8, strokeColor: '#F0F8FF', align: 'horizontal' }
     }));
 }
 
@@ -162,11 +166,11 @@ function initializeNetwork() {
 
     // Hovering an edge enlarges its label so a crowded map stays readable.
     network.on('hoverEdge', function (params) {
-        edges.update({ id: params.edge, width: 4, font: { size: 18, face: 'Arial', color: EDGE_HIGHLIGHT, strokeWidth: 6, strokeColor: '#F0F8FF' } });
+        edges.update({ id: params.edge, width: 6, font: { size: 34, face: 'Arial', color: EDGE_HIGHLIGHT, strokeWidth: 10, strokeColor: '#F0F8FF' } });
     });
 
     network.on('blurEdge', function (params) {
-        edges.update({ id: params.edge, width: 2, font: { size: 14, face: 'Arial', color: '#333333', strokeWidth: 5, strokeColor: '#F0F8FF' } });
+        edges.update({ id: params.edge, width: 3, font: { size: 26, face: 'Arial', color: '#333333', strokeWidth: 8, strokeColor: '#F0F8FF' } });
     });
 
     // vis-network runs its own fit() after the first draw, which would clobber a
@@ -182,8 +186,8 @@ function initializeNetwork() {
 // coordinates that shift with the current view, so re-running the fit compounded
 // the offset and pushed the lower nodes off the bottom edge. Authored
 // coordinates are fixed, which makes this function idempotent.
-const NODE_HALF_W = 110;
-const NODE_HALF_H = 45;
+const NODE_HALF_W = 140;
+const NODE_HALF_H = 100;
 
 function graphBounds() {
     const xs = nodeData.map(n => n.x);

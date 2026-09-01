@@ -76,7 +76,7 @@ change.""",
     "coding-club-ecosystem-map": {
         "title": "Coding Club Ecosystem Map",
         "description": "Place a coding club precisely among six neighbouring educational contexts, and see what makes it distinct from each one.",
-        "height": 562,
+        "height": 702,
         "chapter": ("Chapter 1: What Is a Coding Club", "01-what-is-a-coding-club"),
         "about": """"Coding club" gets used as a loose synonym for maker space, STEM program, or
 after-school activity. It overlaps with all of them and is identical to none.
@@ -184,7 +184,7 @@ generated *live* for one reader -- is the idea this sim exists to install.""",
     "club-charter-anatomy": {
         "title": "Anatomy of a Club Charter",
         "description": "A club charter is one document made of five distinct sections. See what each section governs and how they differ.",
-        "height": 562,
+        "height": 702,
         "chapter": ("Chapter 3: Writing Your Club Charter and Safety Policies", "03-club-charter-and-safety"),
         "about": """Charter, values, code of conduct, bylaws, decision-making process, roles and
 responsibilities. Read as a list, those six terms sound like six words for

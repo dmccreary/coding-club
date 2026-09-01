@@ -1,5 +1,5 @@
 // Anatomy of a Club Charter - vis-network
-// CANVAS_HEIGHT: 560
+// CANVAS_HEIGHT: 700
 // Bloom: Understand (L2), verb "differentiate"
 // A charter is one document made of five distinct sections. Each edge names what
 // that section governs, and clicking a node gives a definition plus a concrete
@@ -14,8 +14,11 @@ const EDGE_GREY = '#7A8A99';
 const EDGE_HIGHLIGHT = '#B87B12';
 
 // ---------- graph data ----------
-// Fixed pentagon positions around the pinned centre node; physics is off so the
-// layout is identical on every load and labels never drift under the panel.
+// Fixed positions around the pinned centre node; physics is off so the layout is
+// identical on every load. Three sections sit above the charter and two below,
+// at staggered heights, so every spoke is steep: edge labels are drawn
+// horizontally at the midpoint, and a near-horizontal spoke would lay its label
+// straight across the hub. The stagger keeps left and right labels off each other.
 const nodeData = [
     {
         id: 'charter', label: 'Club Charter', x: 0, y: 0, kind: 'center',
@@ -23,27 +26,27 @@ const nodeData = [
         example: 'A two-page charter posted on the club website and handed to every new family at sign-up.'
     },
     {
-        id: 'values', label: 'Club Values', x: 0, y: -260, kind: 'section',
+        id: 'values', label: 'Club Values', x: 0, y: -520, kind: 'section',
         definition: 'The short list of beliefs the club will not trade away, written so members can tell when a decision violates one.',
         example: '"Everyone gets keyboard time" -- which is why the club buys a second laptop instead of a nicer projector.'
     },
     {
-        id: 'conduct', label: 'Code of Conduct', x: 360, y: -80, kind: 'section',
+        id: 'conduct', label: 'Code of Conduct', x: 400, y: -280, kind: 'section',
         definition: 'The rules for how members treat each other, and the consequences when someone breaks them.',
         example: '"No laughing at anyone else\'s code." A repeat violation means a call home before the next session.'
     },
     {
-        id: 'bylaws', label: 'Club Bylaws', x: 300, y: 230, kind: 'section',
+        id: 'bylaws', label: 'Club Bylaws', x: 340, y: 460, kind: 'section',
         definition: 'The operating rules of the club as an organisation: meeting frequency, quorum, membership, dues, and how the charter itself gets amended.',
         example: '"The club meets the first and third Saturday. Changing the charter needs a two-thirds vote of active members."'
     },
     {
-        id: 'decisions', label: 'Decision-Making Process', x: -300, y: 230, kind: 'section',
+        id: 'decisions', label: 'Decision-Making Process', x: -300, y: 300, kind: 'section',
         definition: 'The stated method for reaching a decision, including who decides what and what happens in a tie.',
         example: 'Project choices go to a member vote; spending over 100 dollars is the club leader\'s call after mentors weigh in.'
     },
     {
-        id: 'roles', label: 'Roles and Responsibilities', x: -360, y: -80, kind: 'section',
+        id: 'roles', label: 'Roles and Responsibilities', x: -400, y: -440, kind: 'section',
         definition: 'The named jobs in the club and the specific duties attached to each one.',
         example: 'The Equipment Lead counts the kits at the end of every session and orders replacements before stock runs out.'
     }
@@ -60,7 +63,7 @@ const edgeData = [
 let nodes, edges, network;
 
 // Screen pixels the right-hand panel and the title band take out of the canvas.
-const RIGHT_PANEL_PX = 320;
+const RIGHT_PANEL_PX = 250;
 const TITLE_BAND_PX = 46;
 
 // ---------- environment detection ----------
@@ -93,12 +96,12 @@ function buildNodes() {
             },
             font: {
                 color: isCenter ? '#000000' : '#FFFFFF',
-                size: isCenter ? 20 : 16,
+                size: isCenter ? 40 : 32,
                 face: 'Arial'
             },
-            borderWidth: isCenter ? 4 : 3,
-            widthConstraint: { maximum: isCenter ? 150 : 125 },
-            margin: isCenter ? 16 : 10,
+            borderWidth: isCenter ? 3 : 2,
+            widthConstraint: { maximum: isCenter ? 320 : 260 },
+            margin: isCenter ? 32 : 20,
             fixed: { x: isCenter, y: isCenter }   // the charter stays at the centre
         };
     });
@@ -111,8 +114,8 @@ function buildEdges() {
         to: e.to,
         label: e.label,
         color: { color: EDGE_GREY, highlight: EDGE_HIGHLIGHT, hover: EDGE_HIGHLIGHT },
-        width: 2,
-        font: { size: 14, face: 'Arial', color: '#333333', strokeWidth: 5, strokeColor: '#F0F8FF', align: 'horizontal' }
+        width: 3,
+        font: { size: 26, face: 'Arial', color: '#333333', strokeWidth: 8, strokeColor: '#F0F8FF', align: 'horizontal' }
     }));
 }
 
@@ -153,11 +156,11 @@ function initializeNetwork() {
     network.on('deselectNode', clearNodeInfo);
 
     network.on('hoverEdge', function (params) {
-        edges.update({ id: params.edge, width: 4, font: { size: 18, face: 'Arial', color: EDGE_HIGHLIGHT, strokeWidth: 6, strokeColor: '#F0F8FF' } });
+        edges.update({ id: params.edge, width: 6, font: { size: 34, face: 'Arial', color: EDGE_HIGHLIGHT, strokeWidth: 10, strokeColor: '#F0F8FF' } });
     });
 
     network.on('blurEdge', function (params) {
-        edges.update({ id: params.edge, width: 2, font: { size: 14, face: 'Arial', color: '#333333', strokeWidth: 5, strokeColor: '#F0F8FF' } });
+        edges.update({ id: params.edge, width: 3, font: { size: 26, face: 'Arial', color: '#333333', strokeWidth: 8, strokeColor: '#F0F8FF' } });
     });
 
     // vis-network runs its own fit() after the first draw, which would clobber a
@@ -173,8 +176,8 @@ function initializeNetwork() {
 // coordinates that shift with the current view, so re-running the fit compounded
 // the offset and pushed the lower nodes off the bottom edge. Authored
 // coordinates are fixed, which makes this function idempotent.
-const NODE_HALF_W = 110;
-const NODE_HALF_H = 45;
+const NODE_HALF_W = 140;
+const NODE_HALF_H = 100;
 
 function graphBounds() {
     const xs = nodeData.map(n => n.x);

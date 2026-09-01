@@ -9,7 +9,7 @@ bloom_level: Understand (L2)
 
 # Anatomy of a Club Charter
 
-<iframe src="main.html" width="100%" height="562" scrolling="no"></iframe>
+<iframe src="main.html" width="100%" height="702" scrolling="no"></iframe>
 
 [Run the Anatomy of a Club Charter MicroSim fullscreen](main.html){ .md-button .md-button--primary }
 
@@ -71,7 +71,7 @@ Paste this into any page of the book, adjusting the relative path to
 `docs/sims/` for the page's depth:
 
 ```html
-<iframe src="../../sims/club-charter-anatomy/main.html" width="100%" height="562" scrolling="no"></iframe>
+<iframe src="../../sims/club-charter-anatomy/main.html" width="100%" height="702" scrolling="no"></iframe>
 ```
 
 ## Specification

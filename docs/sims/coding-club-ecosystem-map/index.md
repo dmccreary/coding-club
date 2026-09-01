@@ -9,7 +9,7 @@ bloom_level: Understand (L2)
 
 # Coding Club Ecosystem Map
 
-<iframe src="main.html" width="100%" height="562" scrolling="no"></iframe>
+<iframe src="main.html" width="100%" height="702" scrolling="no"></iframe>
 
 [Run the Coding Club Ecosystem Map MicroSim fullscreen](main.html){ .md-button .md-button--primary }
 
@@ -72,7 +72,7 @@ Paste this into any page of the book, adjusting the relative path to
 `docs/sims/` for the page's depth:
 
 ```html
-<iframe src="../../sims/coding-club-ecosystem-map/main.html" width="100%" height="562" scrolling="no"></iframe>
+<iframe src="../../sims/coding-club-ecosystem-map/main.html" width="100%" height="702" scrolling="no"></iframe>
 ```
 
 ## Specification

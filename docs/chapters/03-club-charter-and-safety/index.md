@@ -68,7 +68,7 @@ A charter is not one undifferentiated block of text. In practice it bundles five
 
 #### Diagram: Anatomy of a Club Charter
 
-<iframe src="../../sims/club-charter-anatomy/main.html" width="100%" height="562px" scrolling="no"></iframe>
+<iframe src="../../sims/club-charter-anatomy/main.html" width="100%" height="702px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Anatomy of a Club Charter</summary>

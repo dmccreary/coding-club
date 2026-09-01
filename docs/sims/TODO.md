@@ -3,12 +3,18 @@
 This file tracks unimplemented MicroSim and diagram specifications found in
 `docs/chapters/*/index.md`. Each entry below has a full JSON spec in
 `docs/sims/TODO/<sim-id>.json`, ready to scaffold with
-`scaffold-microsims-from-todo.py`.
+`scaffold-microsims-from-todo.py`. Rows marked :white_check_mark: are built and
+link to the finished MicroSim instead of the spec.
+
+Note: `create-microsim-todo-json-files.py` counts a sim as implemented when it
+has a `main.html`, which every scaffolded directory does. Its "already
+implemented" figure is therefore not trustworthy in this repo -- the counts
+above are maintained by hand as sims are actually built.
 
 - Chapters scanned: 35
 - Total diagram specs found: 129
-- Already implemented: 1
-- **Unimplemented (TODO): 128**
+- Already implemented: 6
+- **Unimplemented (TODO): 123**
 
 Regenerate this list after adding or editing chapter diagram specs:
 
@@ -22,21 +28,21 @@ python3 ~/.claude/skills/microsim-utils/scripts/create-microsim-todo-json-files.
 
 | Sim ID | Diagram Name | Library | Bloom Level |
 |---|---|---|---|
-| [`club-improvement-cycle`](TODO/club-improvement-cycle.json) | The Club Improvement Cycle | p5.js | Understand (L2) |
-| [`coding-club-ecosystem-map`](TODO/coding-club-ecosystem-map.json) | Coding Club Ecosystem Map | vis-network | Understand (L2) |
+| :white_check_mark: [`club-improvement-cycle`](club-improvement-cycle/index.md) | The Club Improvement Cycle | p5.js | Understand (L2) |
+| :white_check_mark: [`coding-club-ecosystem-map`](coding-club-ecosystem-map/index.md) | Coding Club Ecosystem Map | vis-network | Understand (L2) |
 
 ### Chapter 2: AI, Intelligent Textbooks, and Where Coding Clubs Meet (1)
 
 | Sim ID | Diagram Name | Library | Bloom Level |
 |---|---|---|---|
-| [`book-levels`](TODO/book-levels.json) | Levels of Intelligent Textbook Sophistication | p5.js | None |
+| :white_check_mark: [`book-levels`](book-levels/index.md) | Levels of Intelligent Textbook Sophistication | p5.js | None |
 
 ### Chapter 3: Writing Your Club Charter and Safety Policies (2)
 
 | Sim ID | Diagram Name | Library | Bloom Level |
 |---|---|---|---|
-| [`club-charter-anatomy`](TODO/club-charter-anatomy.json) | Anatomy of a Club Charter | vis-network | Understand (L2) |
-| [`conflict-resolution-workflow`](TODO/conflict-resolution-workflow.json) | Handling a Conflict or Complaint | Mermaid | Apply (L3) |
+| :white_check_mark: [`club-charter-anatomy`](club-charter-anatomy/index.md) | Anatomy of a Club Charter | vis-network | Understand (L2) |
+| :white_check_mark: [`conflict-resolution-workflow`](conflict-resolution-workflow/index.md) | Handling a Conflict or Complaint | Mermaid | Apply (L3) |
 
 ### Chapter 4: Club Roles, Governance Structure, and Branding (1)
 
