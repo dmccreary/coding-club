@@ -167,3 +167,5 @@ Decomposition, pattern recognition, abstraction, algorithm design, and debugging
 !!! mascot-celebration "You can teach the thinking, not just the syntax"
     ![Circuit celebrating](../../img/mascot/celebration.png){ class="mascot-admonition-img" }
     You can now name the five computational thinking skills in a real project and sequence a curriculum from keyboarding through Scratch to Python. Next up: turning all of this into challenge cards, tracks, and a portfolio students can actually see their progress in.
+
+[See Annotated References](./references.md)

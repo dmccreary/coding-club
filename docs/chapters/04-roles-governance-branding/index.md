@@ -158,3 +158,5 @@ A complete coding club needs six connected roles -- club leader, assistant leade
 !!! mascot-celebration "Your club now has a name, a face, and a chain of command"
     ![Circuit celebrating](../../img/mascot/celebration.png){ class="mascot-admonition-img" }
     You can now assign every role your club needs, explain its governance structure to a brand-new volunteer, and describe what belongs in a venue agreement. Next up: gauging real interest before you commit to a first meeting.
+
+[See Annotated References](./references.md)

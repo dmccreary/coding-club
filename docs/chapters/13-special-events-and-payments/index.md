@@ -107,3 +107,5 @@ Eight special event formats -- from a compact single-session workshop to a full 
 !!! mascot-celebration "You're ready for anything the calendar throws at you"
     ![Circuit celebrating](../../img/mascot/celebration.png){ class="mascot-admonition-img" }
     You can now plan special events beyond the regular session and put the payment, notification, and weather policies in place to support them. Next up: the computational thinking skills and first coding languages that make up the heart of your curriculum.
+
+[See Annotated References](./references.md)

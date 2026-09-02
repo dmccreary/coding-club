@@ -437,3 +437,5 @@ This chapter turned chapter 24's saved and protected data into something a club 
 !!! mascot-celebration "You can now turn club data into real decisions"
     ![Circuit celebrating](../../img/mascot/celebration.png){ class="mascot-admonition-img" }
     You just built the skills to read an enrollment trend, automate a reminder system, track real student growth, and vet a new tool before it ever touches your data. That's the analytical half of running a sustainable club -- and it's exactly what turns a spreadsheet full of rows into decisions your club can act on.
+
+[See Annotated References](./references.md)

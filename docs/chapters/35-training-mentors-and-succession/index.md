@@ -350,3 +350,5 @@ This book's capstone project asks for exactly that: a complete, transferable Cod
 !!! mascot-celebration "You built the club that doesn't need you"
     ![Circuit celebrating](../../img/mascot/celebration.png){ class="mascot-admonition-img" }
     From that first folding table in Chapter 1 to the mentor pipeline and the playbook you just finished, you've built exactly what this whole book set out to teach: a coding club sturdy enough to outlive its founder. Let's build something great, wherever you build it next!
+
+[See Annotated References](./references.md)

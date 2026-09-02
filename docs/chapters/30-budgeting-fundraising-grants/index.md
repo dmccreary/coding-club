@@ -399,3 +399,5 @@ Establishing a budget starts with telling recurring costs apart from one-time co
 !!! mascot-celebration "You just built a budget that can actually survive its first year"
     ![Circuit celebrating](../../img/mascot/celebration.png){ class="mascot-admonition-img" }
     You just connected budgeting, grant writing, and partnership building into one funding plan -- the exact combination that turns a hopeful no-fee promise from Chapter 28 into a club that can still pay its bills next year. That's sustainable infrastructure, in dollars and cents.
+
+[See Annotated References](./references.md)

@@ -450,3 +450,5 @@ This chapter turned "buy some laptops" into a complete system: choosing a platfo
 !!! mascot-celebration "You can now run a device fleet, not just own one"
     ![Circuit celebrating](../../img/mascot/celebration.png){ class="mascot-admonition-img" }
     You just built a complete system for purchasing, configuring, managing, and protecting a club's laptops -- from the first grant-funded purchase all the way through years of safe, tracked, reliable use. That's the shared infrastructure that keeps a club running long after any one leader moves on.
+
+[See Annotated References](./references.md)

@@ -239,3 +239,5 @@ The next chapter examines how AI is reshaping every part of that cycle, from wri
 !!! mascot-celebration "You've named the thing!"
     ![Circuit celebrating](../../img/mascot/celebration.png){ class="mascot-admonition-img" }
     You can now define a coding club precisely, place it among its neighbors like maker spaces and STEM programs, and explain why a lessons learned log is the single best defense against a club collapsing when one person leaves. That's the foundation everything else in this book builds on!
+
+[See Annotated References](./references.md)

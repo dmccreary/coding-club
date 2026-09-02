@@ -529,3 +529,5 @@ This chapter gave a club's leader a new kind of volunteer -- one that drafts a r
 !!! mascot-celebration "You can now put AI agents to work safely"
     ![Circuit celebrating](../../img/mascot/celebration.png){ class="mascot-admonition-img" }
     You just built a complete picture of what an AI agent can draft for your club -- reminders, newsletters, influence graphs, chatbot replies -- and exactly where a human review step has to sit before any of it reaches a family. That's the responsible-AI foundation the rest of this book's AI-powered chapters will build on.
+
+[See Annotated References](./references.md)

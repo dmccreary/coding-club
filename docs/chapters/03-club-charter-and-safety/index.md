@@ -211,3 +211,5 @@ A club charter bundles five sections -- values, code of conduct, bylaws, decisio
 !!! mascot-celebration "Your charter is no longer just an idea"
     ![Circuit celebrating](../../img/mascot/celebration.png){ class="mascot-admonition-img" }
     You can now draft a complete club charter and assemble the safety paperwork a new club needs before its first session. Next up: turning the roles this charter named into a full governance structure and a simple brand identity.
+
+[See Annotated References](./references.md)

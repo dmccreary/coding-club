@@ -167,3 +167,5 @@ Choosing among alternating-Saturday, weekday after-school, semester-based, and d
 !!! mascot-celebration "Your schedule and your registration system are locked in"
     ![Circuit celebrating](../../img/mascot/celebration.png){ class="mascot-admonition-img" }
     You can now choose a scheduling model that fits your real constraints and build a registration system that enforces your ratio automatically. Next up: running the actual events on that calendar, and learning from every single one through a retrospective.
+
+[See Annotated References](./references.md)

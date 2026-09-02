@@ -358,3 +358,5 @@ Keeping a budget honest after the money is raised means building habits, not jus
 !!! mascot-celebration "You just built a club that can outlast its own first budget"
     ![Circuit celebrating](../../img/mascot/celebration.png){ class="mascot-admonition-img" }
     You just connected expense tracking, annual review, and institutional partnerships into one system -- the exact combination that keeps a no-fee club funded in year five the same way it was funded in year one. That's what makes a coding club's finances sustainable, not just survivable.
+
+[See Annotated References](./references.md)

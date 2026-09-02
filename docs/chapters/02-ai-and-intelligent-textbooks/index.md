@@ -160,3 +160,5 @@ Generative AI and AI powered club tools are freeing coding club leaders from rou
 !!! mascot-celebration "You've defined your club's north star"
     ![Circuit celebrating](../../img/mascot/celebration.png){ class="mascot-admonition-img" }
     You now understand how AI supports both this textbook and your future club's day-to-day operations, and you've thought through your own mission, vision, and audience. Next up: turning that into an actual charter and safety policy.
+
+[See Annotated References](./references.md)

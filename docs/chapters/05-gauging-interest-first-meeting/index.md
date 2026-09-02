@@ -195,3 +195,5 @@ A gauging interest survey, analyzed carefully, turns a hunch into evidence stron
 !!! mascot-celebration "You're ready to open the doors"
     ![Circuit celebrating](../../img/mascot/celebration.png){ class="mascot-admonition-img" }
     You can now design a survey, assess feasibility, assemble a founding team, and plan a first meeting built around a strong walk-in experience. Next up: growing your club and building a brand people recognize.
+
+[See Annotated References](./references.md)

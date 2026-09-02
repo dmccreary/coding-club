@@ -41,108 +41,143 @@ nav:
       - "1. What Is a Coding Club":
           - Content: chapters/01-what-is-a-coding-club/index.md
           - Quiz: chapters/01-what-is-a-coding-club/quiz.md
+          - Annotated References: chapters/01-what-is-a-coding-club/references.md
       - "2. AI, Intelligent Textbooks, and Where Coding Clubs Meet":
           - Content: chapters/02-ai-and-intelligent-textbooks/index.md
           - Quiz: chapters/02-ai-and-intelligent-textbooks/quiz.md
+          - Annotated References: chapters/02-ai-and-intelligent-textbooks/references.md
       - "3. Writing Your Club Charter and Safety Policies":
           - Content: chapters/03-club-charter-and-safety/index.md
           - Quiz: chapters/03-club-charter-and-safety/quiz.md
+          - Annotated References: chapters/03-club-charter-and-safety/references.md
       - "4. Club Roles, Governance Structure, and Branding":
           - Content: chapters/04-roles-governance-branding/index.md
           - Quiz: chapters/04-roles-governance-branding/quiz.md
+          - Annotated References: chapters/04-roles-governance-branding/references.md
       - "5. Gauging Interest and Holding Your First Meeting":
           - Content: chapters/05-gauging-interest-first-meeting/index.md
           - Quiz: chapters/05-gauging-interest-first-meeting/quiz.md
+          - Annotated References: chapters/05-gauging-interest-first-meeting/references.md
       - "6. Growing, Branding, and Promoting Your Club":
           - Content: chapters/06-growing-and-promoting-club/index.md
           - Quiz: chapters/06-growing-and-promoting-club/quiz.md
+          - Annotated References: chapters/06-growing-and-promoting-club/references.md
       - "7. Telling Your Club's Story and Designing the Classroom":
           - Content: chapters/07-club-story-and-classroom-design/index.md
           - Quiz: chapters/07-club-story-and-classroom-design/quiz.md
+          - Annotated References: chapters/07-club-story-and-classroom-design/references.md
       - "8. Running a Session: Room Layout to Cleanup":
           - Content: chapters/08-running-a-session/index.md
           - Quiz: chapters/08-running-a-session/quiz.md
+          - Annotated References: chapters/08-running-a-session/references.md
       - "9. Mentors, Students, and the 3:1 Ratio":
           - Content: chapters/09-mentors-students-ratio/index.md
           - Quiz: chapters/09-mentors-students-ratio/quiz.md
+          - Annotated References: chapters/09-mentors-students-ratio/references.md
       - "10. Building Mentor-Student Relationships That Last":
           - Content: chapters/10-mentor-student-relationships/index.md
           - Quiz: chapters/10-mentor-student-relationships/quiz.md
+          - Annotated References: chapters/10-mentor-student-relationships/references.md
       - "11. Choosing a Schedule and Building Registration":
           - Content: chapters/11-schedule-and-registration/index.md
           - Quiz: chapters/11-schedule-and-registration/quiz.md
+          - Annotated References: chapters/11-schedule-and-registration/references.md
       - "12. Running Events and Learning From Retrospectives":
           - Content: chapters/12-events-and-retrospectives/index.md
           - Quiz: chapters/12-events-and-retrospectives/quiz.md
+          - Annotated References: chapters/12-events-and-retrospectives/references.md
       - "13. Special Events, Payments, and Term Wrap-Up":
           - Content: chapters/13-special-events-and-payments/index.md
           - Quiz: chapters/13-special-events-and-payments/quiz.md
+          - Annotated References: chapters/13-special-events-and-payments/references.md
       - "14. Computational Thinking, Scratch, and Python Basics":
           - Content: chapters/14-computational-thinking-scratch-python/index.md
           - Quiz: chapters/14-computational-thinking-scratch-python/quiz.md
+          - Annotated References: chapters/14-computational-thinking-scratch-python/references.md
       - "15. Designing a Curriculum With Challenge Cards and Portfolios":
           - Content: chapters/15-curriculum-challenge-cards/index.md
           - Quiz: chapters/15-curriculum-challenge-cards/quiz.md
+          - Annotated References: chapters/15-curriculum-challenge-cards/references.md
       - "16. Physical Computing and Electrical Safety Basics":
           - Content: chapters/16-physical-computing-safety/index.md
           - Quiz: chapters/16-physical-computing-safety/quiz.md
+          - Annotated References: chapters/16-physical-computing-safety/references.md
       - "17. Sensors, Displays, Motors, and Robot Chassis":
           - Content: chapters/17-sensors-displays-motors/index.md
           - Quiz: chapters/17-sensors-displays-motors/quiz.md
+          - Annotated References: chapters/17-sensors-displays-motors/references.md
       - "18. Robots, USB Basics, and Electronics Workshop Skills":
           - Content: chapters/18-robots-usb-electronics-workshop/index.md
           - Quiz: chapters/18-robots-usb-electronics-workshop/quiz.md
+          - Annotated References: chapters/18-robots-usb-electronics-workshop/references.md
       - "19. Raspberry Pi Pico, MicroPython, and the Moving Rainbow Kit":
           - Content: chapters/19-pico-micropython-moving-rainbow/index.md
           - Quiz: chapters/19-pico-micropython-moving-rainbow/quiz.md
+          - Annotated References: chapters/19-pico-micropython-moving-rainbow/references.md
       - "20. Sensor, Sound, and IoT Project Kits":
           - Content: chapters/20-sensor-sound-iot-kits/index.md
           - Quiz: chapters/20-sensor-sound-iot-kits/quiz.md
+          - Annotated References: chapters/20-sensor-sound-iot-kits/references.md
       - "21. Managing Your Kit Inventory and Signal Processing Kits":
           - Content: chapters/21-kit-inventory-signal-processing/index.md
           - Quiz: chapters/21-kit-inventory-signal-processing/quiz.md
+          - Annotated References: chapters/21-kit-inventory-signal-processing/references.md
       - "22. Purchasing and Configuring Club Devices":
           - Content: chapters/22-purchasing-configuring-devices/index.md
           - Quiz: chapters/22-purchasing-configuring-devices/quiz.md
+          - Annotated References: chapters/22-purchasing-configuring-devices/references.md
       - "23. Network, Peripherals, and the Device Lifecycle":
           - Content: chapters/23-network-peripherals-device-lifecycle/index.md
           - Quiz: chapters/23-network-peripherals-device-lifecycle/quiz.md
+          - Annotated References: chapters/23-network-peripherals-device-lifecycle/references.md
       - "24. Tracking Student Data and Managing Club Communication":
           - Content: chapters/24-student-data-and-communication/index.md
           - Quiz: chapters/24-student-data-and-communication/quiz.md
+          - Annotated References: chapters/24-student-data-and-communication/references.md
       - "25. Analyzing Club Data and Choosing the Right Tools":
           - Content: chapters/25-analyzing-club-data-and-tools/index.md
           - Quiz: chapters/25-analyzing-club-data-and-tools/quiz.md
+          - Annotated References: chapters/25-analyzing-club-data-and-tools/references.md
       - "26. Motivation, Badges, and Growth Mindset Coaching":
           - Content: chapters/26-motivation-badges-growth-mindset/index.md
           - Quiz: chapters/26-motivation-badges-growth-mindset/quiz.md
+          - Annotated References: chapters/26-motivation-badges-growth-mindset/references.md
       - "27. Encouraging Persistence and Student Voice":
           - Content: chapters/27-persistence-and-student-voice/index.md
           - Quiz: chapters/27-persistence-and-student-voice/quiz.md
+          - Annotated References: chapters/27-persistence-and-student-voice/references.md
       - "28. Reaching Underserved Communities and Removing Barriers":
           - Content: chapters/28-underserved-communities-barriers/index.md
           - Quiz: chapters/28-underserved-communities-barriers/quiz.md
+          - Annotated References: chapters/28-underserved-communities-barriers/references.md
       - "29. Building Trust and Representation in Your Club":
           - Content: chapters/29-trust-and-representation/index.md
           - Quiz: chapters/29-trust-and-representation/quiz.md
+          - Annotated References: chapters/29-trust-and-representation/references.md
       - "30. Budgeting, Fundraising, and Grant Writing":
           - Content: chapters/30-budgeting-fundraising-grants/index.md
           - Quiz: chapters/30-budgeting-fundraising-grants/quiz.md
+          - Annotated References: chapters/30-budgeting-fundraising-grants/references.md
       - "31. Tracking Expenses and Building Funding Partnerships":
           - Content: chapters/31-expenses-and-funding-partnerships/index.md
           - Quiz: chapters/31-expenses-and-funding-partnerships/quiz.md
+          - Annotated References: chapters/31-expenses-and-funding-partnerships/references.md
       - "32. AI Agents for Registration, Scheduling, and Communication":
           - Content: chapters/32-ai-agents-registration-scheduling/index.md
           - Quiz: chapters/32-ai-agents-registration-scheduling/quiz.md
+          - Annotated References: chapters/32-ai-agents-registration-scheduling/references.md
       - "33. AI-Customized Curriculum and Rolling Out New Agents":
           - Content: chapters/33-ai-customized-curriculum-rollout/index.md
           - Quiz: chapters/33-ai-customized-curriculum-rollout/quiz.md
+          - Annotated References: chapters/33-ai-customized-curriculum-rollout/references.md
       - "34. Establishing an Oversight Board and Inventory System":
           - Content: chapters/34-oversight-board-and-inventory/index.md
           - Quiz: chapters/34-oversight-board-and-inventory/quiz.md
+          - Annotated References: chapters/34-oversight-board-and-inventory/references.md
       - "35. Training Mentors and Building a Club That Outlasts You":
           - Content: chapters/35-training-mentors-and-succession/index.md
           - Quiz: chapters/35-training-mentors-and-succession/quiz.md
+          - Annotated References: chapters/35-training-mentors-and-succession/references.md
 
   - Learning Graph:
       - Introduction: learning-graph/index.md

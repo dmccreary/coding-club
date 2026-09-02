@@ -330,3 +330,5 @@ Motivating students rests on a careful balance: intrinsic motivation is the goal
 !!! mascot-celebration "You built the motivational engine behind every other system in this book"
     ![Circuit celebrating](../../img/mascot/celebration.png){ class="mascot-admonition-img" }
     You just built the toolkit for keeping students coming back: a badge and reward system that reinforces real skill, competition designs that build people up instead of ranking them down, and growth-mindset language that turns a stuck moment into a comeback. That's the motivational engine underneath every other system this book has covered.
+
+[See Annotated References](./references.md)

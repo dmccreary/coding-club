@@ -288,3 +288,5 @@ Reaching a genuinely representative club roster starts with recruiting minoritie
 !!! mascot-celebration "You just built a club that widens its own door instead of waiting by it"
     ![Circuit celebrating](../../img/mascot/celebration.png){ class="mascot-admonition-img" }
     You just connected recruiting, funding, and logistics into one picture: a club that reaches underserved families, backs its no-fee promise with real funding, and removes the transportation, timing, and accessibility barriers that quietly decide who gets to stay. That's the structural work behind a roster that actually reflects your community.
+
+[See Annotated References](./references.md)

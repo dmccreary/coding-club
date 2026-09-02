@@ -148,3 +148,5 @@ Tracking milestones as they happen turns into shareable success stories once pai
 !!! mascot-celebration "Your story is ready to tell, and your room is ready to fill"
     ![Circuit celebrating](../../img/mascot/celebration.png){ class="mascot-admonition-img" }
     You can now capture and share your club's success stories, and you can lay out a room that supports safe, effective mentoring from day one. Next up: running a complete session in that room, from warm-up to cleanup.
+
+[See Annotated References](./references.md)

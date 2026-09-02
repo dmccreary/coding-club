@@ -843,3 +843,5 @@ This chapter turned two related instincts -- collect less, and communicate more 
 !!! mascot-celebration "You can now run a club's data and communication with confidence"
     ![Circuit celebrating](../../img/mascot/celebration.png){ class="mascot-admonition-img" }
     You just built a complete, privacy-respecting system for saving only the student data your club truly needs, tracking progress simply, and keeping every family in the loop. That's the kind of infrastructure that protects students and keeps families engaged long after any one mentor moves on.
+
+[See Annotated References](./references.md)

@@ -131,3 +131,5 @@ A well-run session follows a predictable shape: a warm-up activity opens it, sma
 !!! mascot-celebration "You can run a session start to finish"
     ![Circuit celebrating](../../img/mascot/celebration.png){ class="mascot-admonition-img" }
     You now know how to structure a session, keep it safe and accessible, and close it out cleanly. Next up: getting the mentor-to-student ratio right so every student gets the attention they need.
+
+[See Annotated References](./references.md)

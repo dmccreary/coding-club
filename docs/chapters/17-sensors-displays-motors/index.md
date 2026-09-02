@@ -710,3 +710,5 @@ This chapter filled in the sense-process-act loop from Chapter 16 with real hard
 !!! mascot-celebration "You can now identify the right sensor, display, and motor for any project"
     ![Circuit celebrating](../../img/mascot/celebration.png){ class="mascot-admonition-img" }
     You just built a working mental map of six sensors, three displays, and three motors — and you can now match any project idea a student brings you to the right part in the kit bin. That's the exact skill this chapter set out to give you, and every robot-building project from here on out leans on it.
+
+[See Annotated References](./references.md)

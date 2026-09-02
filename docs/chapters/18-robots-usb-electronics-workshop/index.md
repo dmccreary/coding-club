@@ -348,3 +348,5 @@ This chapter turned Chapter 17's individual sensors, displays, and motors into a
 !!! mascot-celebration "You Can Now Build a Robot AND Run a Workshop"
     ![Circuit celebrating](../../img/mascot/celebration.png){ class="mascot-admonition-img" }
     You just went from individual sensors and motors to a complete collision-avoidance robot, and picked up the USB, storage, wiring, and troubleshooting habits that keep an entire club running smoothly. That's this chapter fully handled — and it's the kind of practical know-how that pays off in every session from here on.
+
+[See Annotated References](./references.md)

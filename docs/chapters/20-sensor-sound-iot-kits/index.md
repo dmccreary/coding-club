@@ -350,3 +350,5 @@ This chapter filled out the rest of the club's kit bin: gyroscope and motion kit
 !!! mascot-celebration "You can now match any sensor, sound, or IoT kit to the right lesson"
     ![Circuit celebrating](../../img/mascot/celebration.png){ class="mascot-admonition-img" }
     You just worked through an entire shelf of specialized kits — gyroscope, motion, sound, spectrum, and IoT — and you know how to read a difficulty rating, run a component checklist, and pick the right kit for the session in front of you. That's a mentor's real toolkit, not just a student's.
+
+[See Annotated References](./references.md)

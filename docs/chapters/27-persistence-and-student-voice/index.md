@@ -244,3 +244,5 @@ The day-to-day work of keeping a student in the room comes down to reading a fru
 !!! mascot-celebration "You just built the day-to-day coaching language behind every session"
     ![Circuit celebrating](../../img/mascot/celebration.png){ class="mascot-admonition-img" }
     You just built the in-session coaching toolkit: reading frustration early, choosing language that reframes failure as data, coaching persistence across the weeks it actually takes, and handing students real voice over their own goals and projects. That's the daily layer underneath every badge and celebration Chapter 26 covered.
+
+[See Annotated References](./references.md)

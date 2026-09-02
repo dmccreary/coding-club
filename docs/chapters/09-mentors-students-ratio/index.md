@@ -145,3 +145,5 @@ Mentors and students are the two roles every session depends on, drawn from thre
 !!! mascot-celebration "You know your people, and your numbers"
     ![Circuit celebrating](../../img/mascot/celebration.png){ class="mascot-admonition-img" }
     You can now explain why 3:1 works, recruit and add mentors and students without breaking that ratio, and group students thoughtfully by skill, age, and relationship. Next up: what happens after a mentor and student are paired -- building the rapport that keeps them both coming back.
+
+[See Annotated References](./references.md)

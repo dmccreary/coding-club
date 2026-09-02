@@ -579,3 +579,5 @@ This chapter started with the Raspberry Pi Pico — a tiny, single-purpose board
 !!! mascot-celebration "You can now wire, program, and customize a Moving Rainbow kit"
     ![Circuit celebrating](../../img/mascot/celebration.png){ class="mascot-admonition-img" }
     You just connected a Pico, MicroPython, and a NeoPixel strip into one working, customizable project — and you know how to steer a robot kit toward autonomous behavior instead of remote-control chaos. That's this book's signature hands-on project fully in your hands, ready for whichever season comes next.
+
+[See Annotated References](./references.md)

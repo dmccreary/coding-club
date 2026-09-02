@@ -137,3 +137,5 @@ The two most reliable newsworthy moments are milestone events. A **grand opening
 !!! mascot-celebration "You know how to grow, brand, and promote"
     ![Circuit celebrating](../../img/mascot/celebration.png){ class="mascot-admonition-img" }
     You can now write a pitch, decide whether your club is ready to scale, and build a promotion plan spanning word of mouth, partnerships, media, and milestone events. Next up: telling your club's story and designing the room where all of this actually happens.
+
+[See Annotated References](./references.md)

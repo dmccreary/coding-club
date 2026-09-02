@@ -734,3 +734,5 @@ Physical computing turns code into something students can see, hear, and press â
 !!! mascot-celebration "You can now safely build and verify a real circuit"
     ![Circuit celebrating](../../img/mascot/celebration.png){ class="mascot-admonition-img" }
     You just built the foundation for every physical computing project in this book â€” safety rules, breadboards, resistors, LEDs, digital and analog signals, and how to check your work with a multimeter. That's a genuinely large first step, and every future project in this track builds directly on it.
+
+[See Annotated References](./references.md)

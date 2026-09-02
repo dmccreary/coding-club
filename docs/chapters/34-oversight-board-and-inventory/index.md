@@ -395,3 +395,5 @@ An oversight board turns a club's authority from something one founder carries a
 !!! mascot-celebration "You just built the infrastructure this whole book has been pointing toward"
     ![Circuit celebrating](../../img/mascot/celebration.png){ class="mascot-admonition-img" }
     You just designed an oversight board with real seats and a succession plan, a club-wide inventory system with stickers and QR codes, and a scaled mentor-recruiting process -- the exact combination that lets a great club outlive the one person who started it. That's sustainability, fully built.
+
+[See Annotated References](./references.md)

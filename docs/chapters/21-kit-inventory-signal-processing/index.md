@@ -362,3 +362,5 @@ This chapter turned a shelf of kits into a managed inventory: comparing vendors 
 !!! mascot-celebration "You can now run a kit's entire lifecycle, not just its wiring"
     ![Circuit celebrating](../../img/mascot/celebration.png){ class="mascot-admonition-img" }
     You just built a complete system for buying, documenting, storing, loaning, and retiring kits -- the exact kind of shared infrastructure that lets a club survive a change in leadership. That's sustainability, not just inventory.
+
+[See Annotated References](./references.md)

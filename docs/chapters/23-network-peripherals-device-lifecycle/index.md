@@ -349,3 +349,5 @@ This chapter carried Chapter 22's configured fleet the rest of the way: sizing a
 !!! mascot-celebration "You can now run a device fleet through its entire life"
     ![Circuit celebrating](../../img/mascot/celebration.png){ class="mascot-admonition-img" }
     You just built the network, software governance, and lifecycle system that keeps every laptop from Chapter 22 connected, current, and accounted for -- from the day it's donated or purchased all the way through to responsible retirement. That's the last piece of shared infrastructure standing between a pile of hardware and a coding club that runs itself.
+
+[See Annotated References](./references.md)

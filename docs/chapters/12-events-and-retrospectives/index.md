@@ -130,3 +130,5 @@ Automated confirmation and reminder emails, paired with clear cancellation and r
 !!! mascot-celebration "You've closed the loop on every event"
     ![Circuit celebrating](../../img/mascot/celebration.png){ class="mascot-admonition-img" }
     You can now run a post-event survey, lead a retrospective, and make sure every lesson actually gets tracked instead of forgotten. Next up: the special events beyond a regular session -- workshops, field trips, and showcases -- plus the payment and weather policies that support them.
+
+[See Annotated References](./references.md)

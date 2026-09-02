@@ -202,3 +202,5 @@ A project-based curriculum, sequenced through beginner, intermediate, and advanc
 !!! mascot-celebration "You can design a curriculum students can see themselves growing through"
     ![Circuit celebrating](../../img/mascot/celebration.png){ class="mascot-admonition-img" }
     You can now sequence a full curriculum across three tracks, design challenge cards that actually work in a session, and give students a visible way to track their own progress. That closes out the core curriculum arc of this book -- next, we turn to the students and communities every club exists to serve.
+
+[See Annotated References](./references.md)

@@ -583,3 +583,5 @@ This chapter pointed the AI agent chapter 32 introduced at the curriculum itself
 !!! mascot-celebration "You can now customize curriculum with AI and roll out new agents safely"
     ![Circuit celebrating](../../img/mascot/celebration.png){ class="mascot-admonition-img" }
     You just built a complete picture of how AI can customize a lesson, match a mentor, draft a grant paragraph, and supervise a student's coding help -- and exactly how to choose, test, and roll out a new agent without ever losing sight of the mentor's own judgment. That's a club ready to grow its AI use thoughtfully, one tested step at a time.
+
+[See Annotated References](./references.md)

@@ -106,3 +106,5 @@ All of this exists to build **mentor-student rapport**: the accumulated trust an
 !!! mascot-celebration "You know how to make it last"
     ![Circuit celebrating](../../img/mascot/celebration.png){ class="mascot-admonition-img" }
     You can now design check-in and feedback routines, recruit mentors from four distinct sources, watch for burnout before it costs you a volunteer, and build the pairing consistency that turns a session into a real relationship. Next up: choosing a schedule and building a registration system that respects everything you've set up so far.
+
+[See Annotated References](./references.md)

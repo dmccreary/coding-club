@@ -239,3 +239,5 @@ A club that reaches a genuinely representative roster still has to convince ever
 !!! mascot-celebration "You just built a club that earns trust instead of assuming it"
     ![Circuit celebrating](../../img/mascot/celebration.png){ class="mascot-admonition-img" }
     You just connected representation, community partnership, and accessibility into one practical toolkit -- capped off with an equity audit you can run this semester. That's the difference between a club that's technically open to everyone and one that's actually earned the trust of everyone it hopes to reach.
+
+[See Annotated References](./references.md)
