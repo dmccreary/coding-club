@@ -13,8 +13,8 @@ above are maintained by hand as sims are actually built.
 
 - Chapters scanned: 35
 - Total diagram specs found: 129
-- Already implemented: 71
-- **Unimplemented (TODO): 58**
+- Already implemented: 75
+- **Unimplemented (TODO): 54**
 
 Regenerate this list after adding or editing chapter diagram specs:
 
@@ -131,20 +131,20 @@ python3 ~/.claude/skills/microsim-utils/scripts/create-microsim-todo-json-files.
 
 | Sim ID | Diagram Name | Library | Bloom Level |
 |---|---|---|---|
-| [`circuit-symbol-reader`](TODO/circuit-symbol-reader.json) | Circuit Symbol Reader | p5.js | Remember (L1) |
+| :white_check_mark: [`circuit-symbol-reader`](circuit-symbol-reader/index.md) | Circuit Symbol Reader | p5.js | Remember (L1) |
 | [`differential-drive-chassis-explorer`](TODO/differential-drive-chassis-explorer.json) | Differential Drive Chassis Explorer | p5.js | Understand (L2) |
 | [`h-bridge-direction-speed-control`](TODO/h-bridge-direction-speed-control.json) | H-Bridge Direction and Speed Control | p5.js | Apply (L3) |
 | [`led-matrix-pattern-designer`](TODO/led-matrix-pattern-designer.json) | LED Matrix Pattern Designer | p5.js | Create (L6) |
 | [`motor-type-comparison-explorer`](TODO/motor-type-comparison-explorer.json) | Motor Type Comparison Explorer | p5.js | Analyze (L4) |
 | :white_check_mark: [`oled-coordinate-system`](oled-coordinate-system/index.md) | OLED Coordinate System (reused MicroSim) | p5.js | None |
-| [`photoresistor-voltage-divider-explorer`](TODO/photoresistor-voltage-divider-explorer.json) | Photoresistor Voltage Divider Explorer | p5.js | Apply (L3) |
+| :white_check_mark: [`photoresistor-voltage-divider-explorer`](photoresistor-voltage-divider-explorer/index.md) | Photoresistor Voltage Divider Explorer | p5.js | Apply (L3) |
 | [`pir-detection-zone-map`](TODO/pir-detection-zone-map.json) | PIR Detection Zone Map | Interactive Infographic Overlay (diagram.js, top-down room view + clickable zones) | Understand (L2) |
 | [`sensor-type-picker`](TODO/sensor-type-picker.json) | Sensor Type Picker | p5.js | Apply (L3) |
 | :white_check_mark: [`servo-angle-pulse-width-explorer`](servo-angle-pulse-width-explorer/index.md) | Servo Angle Pulse-Width Explorer | p5.js | Apply (L3) |
 | :white_check_mark: [`seven-segment-display`](seven-segment-display/index.md) | Seven Segment Display Explorer (reused MicroSim) | p5.js | None |
-| [`sound-threshold-detector`](TODO/sound-threshold-detector.json) | Sound Threshold Detector | p5.js | Understand (L2) |
+| :white_check_mark: [`sound-threshold-detector`](sound-threshold-detector/index.md) | Sound Threshold Detector | p5.js | Understand (L2) |
 | :white_check_mark: [`stepper-motor-step-sequence`](stepper-motor-step-sequence/index.md) | Stepper Motor Step Sequence | Mermaid | Apply (L3) |
-| [`temperature-sensor-reading-explorer`](TODO/temperature-sensor-reading-explorer.json) | Temperature Sensor Reading Explorer | p5.js | Apply (L3) |
+| :white_check_mark: [`temperature-sensor-reading-explorer`](temperature-sensor-reading-explorer/index.md) | Temperature Sensor Reading Explorer | p5.js | Apply (L3) |
 | :white_check_mark: [`ultrasonic-ranging`](ultrasonic-ranging/index.md) | Ultrasonic Ranging Explorer (reused MicroSim) | p5.js | None |
 
 ### Chapter 18: Robots, USB Basics, and Electronics Workshop Skills (3)

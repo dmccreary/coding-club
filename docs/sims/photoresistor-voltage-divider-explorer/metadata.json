@@ -1,6 +1,6 @@
 {
   "title": "Photoresistor Voltage Divider Explorer",
-  "description": "Given a simulated light level, the learner calculates the resulting LDR resistance and voltage-divider output.",
+  "description": "Light level in, resistance and divider voltage out -- with a curve showing why the fixed resistor choice matters.",
   "creator": "Coding Club",
   "author": "Dan McCreary",
   "date": "2026-09-01",
@@ -15,9 +15,29 @@
   "library": "p5.js",
   "bloomLevel": "Apply (L3)",
   "bloomVerb": "calculate",
-  "completion_status": "scaffold",
+  "completion_status": "built",
+  "canvasHeight": 520,
   "chapter_number": 17,
   "chapter_title": "Sensors, Displays, Motors, and Robot Chassis",
   "chapter_dir": "17-sensors-displays-motors",
-  "chapter_rel_dir": "chapters/17-sensors-displays-motors"
+  "chapter_rel_dir": "chapters/17-sensors-displays-motors",
+  "educational": {
+    "gradeLevel": "Middle School, High School, Adult",
+    "audience": "Students wiring their first analog sensor",
+    "duration": "10-15 minutes",
+    "concepts": [
+      "Photoresistor",
+      "Voltage Divider",
+      "Analog Input",
+      "ADC Reading",
+      "Logarithmic Response"
+    ]
+  },
+  "pedagogical": {
+    "bloomLevel": "Apply (L3)",
+    "bloomVerb": "calculate",
+    "learningObjective": "Given a simulated light level, the learner calculates the resulting LDR resistance and voltage-divider output.",
+    "interactionPattern": "Drag the light level and swap the fixed resistor between 1k, 10k, and 100k",
+    "assessment": "Set a light level and ask for the output voltage before reading it off."
+  }
 }

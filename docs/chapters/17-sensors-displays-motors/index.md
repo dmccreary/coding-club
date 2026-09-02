@@ -88,7 +88,7 @@ The two diagram styles are not competitors; they answer different questions. A s
 
 #### Diagram: Circuit Symbol Reader
 
-<iframe src="../../sims/circuit-symbol-reader/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../sims/circuit-symbol-reader/main.html" width="100%" height="462px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Circuit Symbol Reader</summary>
@@ -209,7 +209,7 @@ Because a microcontroller's analog input pin reads voltage, not resistance direc
 
 #### Diagram: Photoresistor Voltage Divider Explorer
 
-<iframe src="../../sims/photoresistor-voltage-divider-explorer/main.html" width="100%" height="480px" scrolling="no"></iframe>
+<iframe src="../../sims/photoresistor-voltage-divider-explorer/main.html" width="100%" height="522px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Photoresistor Voltage Divider Explorer</summary>
@@ -245,7 +245,7 @@ A worked example shows the analog conversion in action: a TMP36 reading 0.75 vol
 
 #### Diagram: Temperature Sensor Reading Explorer
 
-<iframe src="../../sims/temperature-sensor-reading-explorer/main.html" width="100%" height="480px" scrolling="no"></iframe>
+<iframe src="../../sims/temperature-sensor-reading-explorer/main.html" width="100%" height="502px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Temperature Sensor Reading Explorer</summary>
@@ -436,7 +436,7 @@ A worked example shows why the threshold has to be tuned rather than left at a f
 
 #### Diagram: Sound Threshold Detector
 
-<iframe src="../../sims/sound-threshold-detector/main.html" width="100%" height="480px" scrolling="no"></iframe>
+<iframe src="../../sims/sound-threshold-detector/main.html" width="100%" height="482px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Sound Threshold Detector</summary>

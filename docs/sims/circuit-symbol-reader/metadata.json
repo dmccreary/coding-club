@@ -1,6 +1,6 @@
 {
   "title": "Circuit Symbol Reader",
-  "description": "Given a schematic symbol, the learner identifies its component name and its role in a circuit.",
+  "description": "Five schematic symbols on flashcards, with a quiz that scores a full pass.",
   "creator": "Coding Club",
   "author": "Dan McCreary",
   "date": "2026-09-01",
@@ -15,9 +15,30 @@
   "library": "p5.js",
   "bloomLevel": "Remember (L1)",
   "bloomVerb": "identify",
-  "completion_status": "scaffold",
+  "completion_status": "built",
+  "canvasHeight": 460,
   "chapter_number": 17,
   "chapter_title": "Sensors, Displays, Motors, and Robot Chassis",
   "chapter_dir": "17-sensors-displays-motors",
-  "chapter_rel_dir": "chapters/17-sensors-displays-motors"
+  "chapter_rel_dir": "chapters/17-sensors-displays-motors",
+  "educational": {
+    "gradeLevel": "Middle School, High School, Adult",
+    "audience": "Mentors preparing to read kit diagrams with students",
+    "duration": "5-10 minutes",
+    "concepts": [
+      "Schematic Symbol",
+      "Battery",
+      "Resistor",
+      "LED",
+      "Switch",
+      "Ground"
+    ]
+  },
+  "pedagogical": {
+    "bloomLevel": "Remember (L1)",
+    "bloomVerb": "identify",
+    "learningObjective": "Given a schematic symbol, the learner identifies its component name and its role in a circuit.",
+    "interactionPattern": "Flip cards to reveal the name, or turn on Quiz me and pick the answer from a list",
+    "assessment": "A full quiz pass scores 5 out of 5 with no flips."
+  }
 }
