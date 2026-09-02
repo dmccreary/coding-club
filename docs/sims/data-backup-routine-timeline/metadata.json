@@ -1,6 +1,6 @@
 {
   "title": "Data Backup Routine Timeline",
-  "description": "Given a semester calendar, the learner schedules backup and restore-verification checkpoints at appropriate intervals.",
+  "description": "A semester of backups in five checkpoints, only two of which need a person -- and the one that matters is the restore test, not the backup.",
   "creator": "Coding Club",
   "author": "Dan McCreary",
   "date": "2026-09-01",
@@ -15,9 +15,30 @@
   "library": "vis-timeline",
   "bloomLevel": "Apply (L3)",
   "bloomVerb": "schedule",
-  "completion_status": "scaffold",
+  "completion_status": "built",
+  "canvasHeight": 598,
   "chapter_number": 24,
   "chapter_title": "Tracking Student Data and Managing Club Communication",
   "chapter_dir": "24-student-data-and-communication",
-  "chapter_rel_dir": "chapters/24-student-data-and-communication"
+  "chapter_rel_dir": "chapters/24-student-data-and-communication",
+  "educational": {
+    "gradeLevel": "Middle School, High School, Adult",
+    "audience": "Club leaders responsible for student records and consent forms",
+    "duration": "10-15 minutes",
+    "concepts": [
+      "Backup Routine",
+      "Restore Test",
+      "Automatic Cloud Sync",
+      "Data Retention",
+      "Semester Checkpoint",
+      "Records Archiving"
+    ]
+  },
+  "pedagogical": {
+    "bloomLevel": "Apply (L3)",
+    "bloomVerb": "schedule",
+    "learningObjective": "Given a semester calendar, the learner schedules backup and restore-verification checkpoints at appropriate intervals.",
+    "interactionPattern": "Click-to-explore semester timeline separating automatic backups from manual verification checkpoints",
+    "assessment": "Hand the learner a blank semester calendar and ask where the manual checkpoints go and what each one does."
+  }
 }

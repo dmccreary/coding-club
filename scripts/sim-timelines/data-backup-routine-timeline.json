@@ -1,0 +1,135 @@
+{
+  "title": "Data Backup Routine Timeline",
+  "height": 600,
+  "timelineHeight": 220,
+  "axisLabel": "One 16-week semester",
+  "stats": "3 automatic · 2 manual checkpoints",
+  "panelHeading": "Checkpoint Details",
+  "placeholder": "Click any checkpoint for what it involves and roughly how long it takes. The two amber ones are the only dates anyone has to put in a calendar.",
+  "min": -2,
+  "max": 19,
+  "ticks": {
+    "1": "Week 1",
+    "4": "Week 4",
+    "8": "Week 8",
+    "12": "Week 12",
+    "16": "Week 16"
+  },
+  "items": [
+    {
+      "id": "w1",
+      "at": 1,
+      "cls": "hub",
+      "label": "Confirm sync is on",
+      "hint": "Week 1 — about 10 minutes",
+      "detail": [
+        [
+          "What it involves",
+          "Open the tracking spreadsheet and the consent-form folder, and confirm each one is actually syncing to cloud backup. Not \"should be\" — look at the sync status."
+        ],
+        [
+          "How long",
+          "About ten minutes, once per semester."
+        ],
+        [
+          "Why week 1",
+          "Everything after this assumes backups are running. If this step is skipped, the next fifteen weeks of automatic backup are backing up nothing."
+        ]
+      ]
+    },
+    {
+      "id": "w4",
+      "at": 4,
+      "cls": "node",
+      "label": "Backup running",
+      "hint": "Week 4 — no action needed",
+      "detail": [
+        [
+          "What it involves",
+          "Nothing. The backup runs on its own."
+        ],
+        [
+          "Why it is on the timeline at all",
+          "Because an automatic backup you never look at feels identical to one that stopped in week 2. Marking the quiet weeks is what makes the noisy ones meaningful."
+        ]
+      ]
+    },
+    {
+      "id": "w8",
+      "at": 8,
+      "cls": "hub",
+      "label": "Mid-semester restore test",
+      "hint": "Week 8 — about 20 minutes",
+      "detail": [
+        [
+          "What it involves",
+          "Restore one real file from the backup and open it. Not check that the backup exists — restore it, and read it."
+        ],
+        [
+          "How long",
+          "About twenty minutes."
+        ],
+        [
+          "Why this is the important one",
+          "A backup that cannot be restored is not a backup, and it fails silently. Corrupted archives, expired permissions, and a sync that quietly stopped all look exactly like a working backup until the day you need one."
+        ],
+        [
+          "The rule",
+          "A backup you have never restored from is a hypothesis, not a backup."
+        ]
+      ]
+    },
+    {
+      "id": "w12",
+      "at": 12,
+      "cls": "node",
+      "label": "Backup running",
+      "hint": "Week 12 — no action needed",
+      "detail": [
+        [
+          "What it involves",
+          "Nothing again. Four more quiet weeks."
+        ],
+        [
+          "Worth noticing",
+          "Of sixteen weeks, only two need a person. The cadence is cheap precisely because it is mostly automatic."
+        ]
+      ]
+    },
+    {
+      "id": "w16",
+      "at": 16,
+      "cls": "hub",
+      "label": "Restore test + archive",
+      "hint": "Week 16 — about 45 minutes",
+      "detail": [
+        [
+          "What it involves",
+          "Verify the backups again the same way as week 8, then archive the semester's records according to the retention schedule."
+        ],
+        [
+          "How long",
+          "About forty-five minutes, most of it the archiving rather than the test."
+        ],
+        [
+          "Why the two are joined",
+          "The end of a semester is the moment the retention clock starts on a lot of records. Doing the archive at the same time as the check means the deletion dates get set while somebody is already looking at the data."
+        ]
+      ]
+    }
+  ],
+  "legend": [
+    {
+      "cls": "node",
+      "text": "Automatic — no action needed"
+    },
+    {
+      "cls": "hub",
+      "text": "Manual checkpoint — put it in the calendar"
+    },
+    {
+      "cls": "none",
+      "text": "Two dates a semester is the whole routine"
+    }
+  ]
+}

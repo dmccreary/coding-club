@@ -1,6 +1,6 @@
 {
-  "title": "Matching Mentors and Optimizing a Schedule",
-  "description": "Given a mentor-student matching graph and a set of candidate schedule slots, the learner examines the scores to identify the strongest mentor-student pairing and the schedule slot that satisfies every stated constraint.",
+  "title": "Mentor Matching and Schedule Optimizer",
+  "description": "Five mentors, five students, seven scored pairings, and three candidate slots -- only one of which passes every constraint.",
   "creator": "Coding Club",
   "author": "Dan McCreary",
   "date": "2026-09-01",
@@ -15,9 +15,30 @@
   "library": "vis-network",
   "bloomLevel": "Analyze (L4)",
   "bloomVerb": "examine",
-  "completion_status": "scaffold",
+  "completion_status": "built",
+  "canvasHeight": 778,
   "chapter_number": 33,
   "chapter_title": "AI-Customized Curriculum and Rolling Out New Agents",
   "chapter_dir": "33-ai-customized-curriculum-rollout",
-  "chapter_rel_dir": "chapters/33-ai-customized-curriculum-rollout"
+  "chapter_rel_dir": "chapters/33-ai-customized-curriculum-rollout",
+  "educational": {
+    "gradeLevel": "Middle School, High School, Adult",
+    "audience": "Club leaders evaluating AI matching and scheduling assistance",
+    "duration": "10-15 minutes",
+    "concepts": [
+      "Mentor Matching",
+      "Shared-Interest Score",
+      "Bipartite Graph",
+      "Schedule Optimization",
+      "Constraint Checking",
+      "Human-in-the-Loop Review"
+    ]
+  },
+  "pedagogical": {
+    "bloomLevel": "Analyze (L4)",
+    "bloomVerb": "examine",
+    "learningObjective": "Given a mentor-student matching graph and a set of candidate schedule slots, the learner examines the scores to identify the strongest mentor-student pairing and the schedule slot that satisfies every stated constraint.",
+    "interactionPattern": "Click-to-explore bipartite matching graph plus constraint-checked schedule slots, with a combined best-answer reveal",
+    "assessment": "Point to two equally scored pairings and ask which to choose, and what information would be needed to decide."
+  }
 }

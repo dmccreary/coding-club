@@ -175,7 +175,6 @@ nav:
     - Board Governance Cycle: sims/board-governance-cycle/index.md
     - Bookmark Folder Structure: sims/bookmark-folder-structure/index.md
     - Breadboard Tie Point Explorer: sims/breadboard-tie-point-explorer/index.md
-    - Building and Reading an Influence Graph: sims/mentor-recruiting-influence-graph/index.md
     - Circuit Symbol Reader: sims/circuit-symbol-reader/index.md
     - Circuit Troubleshooting Workflow: sims/circuit-troubleshooting-workflow/index.md
     - Club Calendar Setup Workflow: sims/calendar-setup-workflow/index.md
@@ -227,12 +226,13 @@ nav:
     - LED Anatomy: sims/led-anatomy/index.md
     - LED Matrix Pattern Designer: sims/led-matrix-pattern-designer/index.md
     - Levels of Intelligent Textbook Sophistication: sims/book-levels/index.md
-    - Matching Mentors and Optimizing a Schedule: sims/mentor-matching-schedule-optimizer/index.md
     - Meet the Club's AI Agent Roster: sims/ai-agent-roster-network/index.md
     - Meet the Specialized Agent Roster: sims/specialized-agent-roster/index.md
     - Membership Fee Model Comparison: sims/membership-fee-model-comparison/index.md
     - Mentor Development Pipeline: sims/mentor-development-pipeline/index.md
+    - Mentor Matching and Schedule Optimizer: sims/mentor-matching-schedule-optimizer/index.md
     - Mentor Recruiting Channel Effectiveness: sims/mentor-recruiting-channel-effectiveness/index.md
+    - Mentor Recruiting Influence Graph: sims/mentor-recruiting-influence-graph/index.md
     - Mentor-Gated Registration Flow: sims/mentor-gated-registration-flow/index.md
     - Message Channel Decision Tree: sims/message-channel-decision-tree/index.md
     - MicroPython Syntax Checker: sims/micropython-syntax-checker/index.md
@@ -241,7 +241,7 @@ nav:
     - Multimeter Usage Simulator: sims/multimeter-usage-simulator/index.md
     - NeoPixel Loop Pixel Stepper: sims/neopixel-loop-pixel-stepper/index.md
     - Normal Circuit vs. Short Circuit: sims/normal-circuit-vs-short-circuit/index.md
-    - Notification Lead-Time Timeline: sims/notification-lead-time-timeline/index.md
+    - Notification Lead Time Timeline: sims/notification-lead-time-timeline/index.md
     - Ohm's Law Current Calculator: sims/ohms-law-current-calculator/index.md
     - OLED Coordinate System: sims/oled-coordinate-system/index.md
     - Oversight Board Org Chart: sims/oversight-board-org-chart/index.md
@@ -290,6 +290,10 @@ nav:
     - Ultrasonic Ranging Explorer: sims/ultrasonic-ranging/index.md
     - USB Connector Comparison: sims/usb-connector-comparison/index.md
     - Where a Coding-Help Request Goes: sims/coding-help-agent-handoff/index.md
+
+
+
+
 
 
 

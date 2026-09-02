@@ -202,7 +202,7 @@ A worked example shows the multi-constraint search doing real work: a leader nee
 
 #### Diagram: Matching Mentors and Optimizing a Schedule
 
-<iframe src="../../sims/mentor-matching-schedule-optimizer/main.html" width="100%" height="520px" scrolling="no"></iframe>
+<iframe src="../../sims/mentor-matching-schedule-optimizer/main.html" width="100%" height="782px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Matching Mentors and Optimizing a Schedule</summary>

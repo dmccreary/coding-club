@@ -161,10 +161,20 @@ const NODE_WIDTH = 190;
 // Screen pixels the right-hand panel and the title band take out of the canvas.
 const RIGHT_PANEL_PX = 250;
 const TITLE_BAND_PX = 46;
+// vis draws its navigation buttons in the bottom corners of the canvas, and
+// they are the only way to pan or zoom while the sim is inside a chapter
+// iframe. A sim whose layout puts nodes down in those corners sets
+// "navClearance": true and gets a reserved band; the rest keep the full
+// height, because reserving it unconditionally costs scale on every
+// portrait-shaped graph that never reached the corners anyway.
+const NAV_BAND_PX = 0;
 
 // Half-extents of the largest node, used to frame the camera. Measured from
 // vis-network's own rendering at the font and widthConstraint set below.
-const NODE_HALF_W = 140;
+// Framing half-extents, derived from the configured node width rather than
+// fixed: a sim that widens its nodes was previously framed as if they were
+// still 280 wide, so the outermost column ran off the edge of the view.
+const NODE_HALF_W = (NODE_WIDTH + 60) / 2 + 20;
 const NODE_HALF_H = 100;
 
 let nodes, edges, network;
@@ -183,7 +193,12 @@ function isInIframe() {
 function buildNodes() {
     return nodeData.map(n => {
         const c = CLASS_COLORS[n.cls] || CLASS_COLORS.node;
-        const isHub = n.cls === 'hub';
+        // Emphasis (bigger font, wider label box) defaults to the hub class,
+        // which is right when one node is the focus. A sim where four nodes
+        // share the class wants the colour without the size -- four emphasised
+        // nodes overlap each other and run off the canvas -- so it sets
+        // "emphasis": false on them.
+        const isHub = n.emphasis !== undefined ? n.emphasis : n.cls === 'hub';
         const pinned = PINNED.indexOf(n.id) !== -1;
         return {
             id: n.id,
@@ -213,15 +228,30 @@ const EDGE_FONT_HOVER = { size: 28, face: 'Arial', color: '#B87B12',
                           strokeWidth: 10, strokeColor: '#F0F8FF', align: 'horizontal' };
 
 function buildEdges() {
-    return edgeData.map((e, i) => ({
-        id: i,
-        from: e.from,
-        to: e.to,
-        label: e.label || undefined,
-        color: { color: '#7A8A99', highlight: '#B87B12', hover: '#B87B12' },
-        width: 3,
-        font: EDGE_FONT
-    }));
+    // A dashed edge is drawn lighter as well as broken, so "this connection does
+    // not exist yet" reads at a glance rather than only on close inspection.
+    return edgeData.map((e, i) => {
+        const o = {
+            id: i,
+            from: e.from,
+            to: e.to,
+            label: e.label || undefined,
+            dashes: e.dashes ? [8, 6] : false,
+            color: { color: e.dashes ? '#AFBDC8' : '#7A8A99',
+                     highlight: '#B87B12', hover: '#B87B12' },
+            width: e.width || (e.dashes ? 2 : 3),
+            font: EDGE_FONT
+        };
+        // Two edges that cross a symmetric grid share a midpoint, and
+        // vis draws both labels there, one on top of the other. A curve
+        // bows one of them away so both labels can be read. Positive
+        // curves clockwise, negative anticlockwise.
+        if (e.curve) {
+            o.smooth = { type: e.curve > 0 ? 'curvedCW' : 'curvedCCW',
+                         roundness: Math.abs(e.curve) };
+        }
+        return o;
+    });
 }
 
 function initializeNetwork() {
@@ -257,7 +287,10 @@ function initializeNetwork() {
     network.on('selectNode', params => showNodeInfo(params.nodes[0]));
     network.on('deselectNode', clearNodeInfo);
     network.on('hoverEdge', p => edges.update({ id: p.edge, width: 5, font: EDGE_FONT_HOVER }));
-    network.on('blurEdge', p => edges.update({ id: p.edge, width: 3, font: EDGE_FONT }));
+    network.on('blurEdge', p => edges.update(
+        { id: p.edge,
+           width: edgeData[p.edge].width || (edgeData[p.edge].dashes ? 2 : 3),
+           font: EDGE_FONT }));
 
     // vis-network runs its own fit() after the first draw, which would clobber a
     // one-shot camera call. Re-assert the view on every draw instead; applyView
@@ -286,7 +319,7 @@ function computeView() {
     const el = document.getElementById('network');
     const reserved = Math.min(RIGHT_PANEL_PX, el.clientWidth * 0.5);
     const availW = el.clientWidth - reserved;
-    const availH = el.clientHeight - TITLE_BAND_PX;
+    const availH = el.clientHeight - TITLE_BAND_PX - NAV_BAND_PX;
     const bb = graphBounds();
     if (!(bb.width > 0) || !(bb.height > 0) || availW <= 0 || availH <= 0) return null;
 
@@ -295,7 +328,7 @@ function computeView() {
         scale: scale,
         position: {
             x: bb.cx + (reserved / 2) / scale,
-            y: bb.cy - (TITLE_BAND_PX / 2) / scale
+            y: bb.cy - (TITLE_BAND_PX / 2) / scale + (NAV_BAND_PX / 2) / scale
         }
     };
 }
@@ -330,6 +363,21 @@ function clearNodeInfo() {
         '<p class="info-placeholder">Click any stage to see what flows into it and where that data goes next.</p>';
 }
 
+const SPOTLIGHT = null;
+
+// Selects a named set of nodes and prints a prepared note. Used for the "show
+// me the answer" control some of these graphs need -- the reader can find it
+// unaided, and the button is there for when they have stopped looking.
+function spotlight() {
+    if (!SPOTLIGHT) return;
+    network.selectNodes(SPOTLIGHT.nodes, false);
+    const body = (SPOTLIGHT.detail || [])
+        .map(pair => '<p><strong>' + pair[0] + ':</strong> ' + pair[1] + '</p>')
+        .join('');
+    document.getElementById('info-content').innerHTML =
+        '<div class="info-label">' + SPOTLIGHT.heading + '</div>' + body;
+}
+
 function reset() {
     network.destroy();
     initializeNetwork();
@@ -346,4 +394,6 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     document.getElementById('reset-btn').addEventListener('click', reset);
+    const sb = document.getElementById('spotlight-btn');
+    if (sb) sb.addEventListener('click', spotlight);
 });

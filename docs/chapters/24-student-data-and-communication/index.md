@@ -284,7 +284,7 @@ A worked example shows the routine catching exactly the failure it exists to pre
 
 #### Diagram: Data Backup Routine Timeline
 
-<iframe src="../../sims/data-backup-routine-timeline/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../sims/data-backup-routine-timeline/main.html" width="100%" height="602px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Data Backup Routine Timeline</summary>
@@ -625,7 +625,7 @@ A worked example shows a two-touch pattern working well: a club sends one remind
 
 #### Diagram: Notification Lead-Time Timeline
 
-<iframe src="../../sims/notification-lead-time-timeline/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../sims/notification-lead-time-timeline/main.html" width="100%" height="632px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Notification Lead-Time Timeline</summary>

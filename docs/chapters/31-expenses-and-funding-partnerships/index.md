@@ -263,7 +263,7 @@ The map below shows how each institutional partnership addresses a different pie
 
 #### Diagram: Institutional Funding Partnership Map
 
-<iframe src="../../sims/institutional-funding-partnership-map/main.html" width="100%" height="540px" scrolling="no"></iframe>
+<iframe src="../../sims/institutional-funding-partnership-map/main.html" width="100%" height="642px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Institutional Funding Partnership Map</summary>

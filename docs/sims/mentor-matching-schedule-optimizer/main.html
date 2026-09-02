@@ -3,123 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- microsim-scaffold-stub -->
-    <title>Matching Mentors and Optimizing a Schedule</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: #f8f9fa;
-            color: #212529;
-        }
-        #container {
-            width: 100%;
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 20px;
-            background: white;
-        }
-        h1 {
-            font-size: 22px;
-            margin-bottom: 10px;
-            color: #1a3a6c;
-        }
-        .placeholder {
-            border: 2px dashed #adb5bd;
-            border-radius: 8px;
-            padding: 40px 20px;
-            text-align: center;
-            color: #6c757d;
-            margin: 20px 0;
-            min-height: 400px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        .placeholder .badge {
-            display: inline-block;
-            background: #ffc107;
-            color: #212529;
-            padding: 4px 12px;
-            border-radius: 12px;
-            font-size: 12px;
-            font-weight: 600;
-            margin-bottom: 12px;
-        }
-        .placeholder h2 {
-            font-size: 18px;
-            color: #495057;
-            margin-bottom: 8px;
-        }
-        .placeholder p {
-            font-size: 14px;
-            max-width: 480px;
-        }
-        .meta {
-            margin-top: 20px;
-            font-size: 13px;
-            color: #6c757d;
-            border-top: 1px solid #dee2e6;
-            padding-top: 12px;
-        }
-        .meta strong { color: #495057; }
-    </style>
+    <meta name="schema" content="https://dmccreary.github.io/intelligent-textbooks/ns/microsim/v1">
+    <title>Mentor Matching and Schedule Optimizer</title>
+    <script src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/vis-network/styles/vis-network.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="container">
-        <h1>Matching Mentors and Optimizing a Schedule</h1>
-        <div class="placeholder">
-            <span class="badge">SCAFFOLD</span>
-            <h2>MicroSim Not Yet Implemented</h2>
-            <p>This MicroSim has been scaffolded from its specification but the
-            interactive content has not been built yet. See the chapter source
-            and the <code>index.md</code> in this directory for the full spec.</p>
-        </div>
-        <div class="meta">
-            <p><strong>Sim ID:</strong> mentor-matching-schedule-optimizer</p>
-            <p><strong>Library:</strong> vis-network</p>
-            <p><strong>Bloom Level:</strong> Analyze (L4)</p>
-            <p><strong>Learning Objective:</strong> Given a mentor-student matching graph and a set of candidate schedule slots, the learner examines the scores to identify the strongest mentor-student pairing and the schedule slot that satisfies every stated constraint.</p>
+<main>
+    <div class="container">
+        <div id="network"></div>
+
+        <div class="title">Mentor Matching and Schedule Optimizer</div>
+
+        <div class="right-panel">
+            <div class="controls">
+                <div class="stats">5 mentors · 5 students</div>
+                <button class="btn" id="spotlight-btn">Best pairing</button>
+                <button class="btn btn-secondary" id="reset-btn">Reset</button>
+            </div>
+
+            <div class="legend">
+                <div class="legend-item"><span class="legend-color" style="background-color:#4A90D9"></span>Mentor</div>
+                <div class="legend-item"><span class="legend-color" style="background-color:#3E9E6E"></span>Student</div>
+                <div class="legend-item"><span class="legend-color" style="background-color:#F5A623"></span>Slot passing every constraint</div>
+                <div class="legend-item"><span class="legend-color" style="background-color:#D64545"></span>Slot failing at least one</div>
+                <div class="legend-item"><span class="legend-color legend-note"></span>A thicker line is a higher shared-interest score</div>
+            </div>
+
+            <div class="info-panel">
+                <div class="info-heading">Pairing and Slot Details</div>
+                <div id="info-content">
+                    <p class="info-placeholder">Click a mentor, a student, or a slot. Or press the button when you want the answer.</p>
+                </div>
+            </div>
         </div>
     </div>
+</main>
 
-    <!--
-    SPECIFICATION (from chapter index.md):
-
-    Type: graph-model
-    **sim-id:** mentor-matching-schedule-optimizer<br/>
-    **Library:** vis-network<br/>
-    **Status:** Specified
-    **Template:** https://github.com/dmccreary/organizational-analytics/tree/main/docs/sims/mentor-matching-network
-    
-    Purpose: Let a learner examine a bipartite mentor-student matching graph alongside a small set of schedule-slot nodes, to see how both AI assisted mentor matching and AI scheduling optimization score multiple candidates before a person picks one.
-    
-    Bloom Taxonomy: Analyze (L4)
-    Bloom Taxonomy Verb: examine
-    
-    Learning objective: Given a mentor-student matching graph and a set of candidate schedule slots, the learner examines the scores to identify the strongest mentor-student pairing and the schedule slot that satisfies every stated constraint.
-    
-    Node types:
-    1. Mentor nodes (blue circles, left column): five mentors, each labeled with one or two interest tags (e.g., "Robotics, Python")
-    2. Student nodes (green circles, right column): five students, each labeled with one or two interest tags
-    3. Schedule slot nodes (amber squares, bottom row): three candidate slots (Mon 5pm, Tue/Thu 4:30pm, Wed 6pm), each labeled with which constraint it violates, if any
-    
-    Edges:
-    - Mentor-to-student edges weighted by shared-interest score (thicker edge = stronger match), click an edge to reveal the matching score and shared tags
-    - Dashed lines from each schedule slot to a small "constraints" icon, click to reveal which constraint (mentor availability, venue hours, holiday calendar) that slot satisfies or fails
-    
-    Interactive features:
-    - Click any mentor or student node to highlight its strongest-scoring match and dim all other edges
-    - Click any schedule slot node to reveal its full constraint checklist in a side panel, with failed constraints marked in red and satisfied ones in green
-    - Button: "Show Top-Ranked Pairing and Slot" -- highlights the single best mentor-student match and the one fully-satisfying schedule slot simultaneously
-    - Zoom with the mouse wheel, pan by dragging the background
-    
-    Visual styling: Blue for mentors, green for students, amber for schedule slots; edge thickness maps to match strength
-    
-    Legend: Node color key (mentor, student, schedule slot) and edge-thickness meaning
-    
-    Implementation: vis-network JavaScript library, bipartite layout with mentors and students in two columns and schedule slots in a row beneath, canvas size 800x480px.
-    -->
+    <script src="mentor-matching-schedule-optimizer.js"></script>
 </body>
 </html>

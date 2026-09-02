@@ -1,0 +1,227 @@
+{
+  "title": "Institutional Funding Partnership Map",
+  "height": 640,
+  "stats": "4 needs · 4 partners",
+  "panelHeading": "Need and Partner Details",
+  "placeholder": "Click any need or partner. The two nodes with more than one line are the ones worth looking at.",
+  "arrows": true,
+  "edgeFontSize": 22,
+  "nodeWidth": 300,
+  "pinned": [],
+  "nodes": [
+    {
+      "id": "recurring-cash",
+      "label": "Multi-Year\nRecurring Cash",
+      "x": -380,
+      "y": -420,
+      "cls": "hub",
+      "detail": [
+        [
+          "The need",
+          "Money the club can count on for more than one year, so a budget can be planned rather than re-fought every September."
+        ],
+        [
+          "Why it is hard",
+          "Almost every one-time channel from Chapter 30 -- a bake sale, a crowdfunder, a single grant -- funds one year and leaves the next year open."
+        ],
+        [
+          "Worked figure",
+          "The sample club's $830 of recurring costs is exactly what this need has to cover, every year, indefinitely."
+        ]
+      ],
+      "emphasis": false
+    },
+    {
+      "id": "meeting-space",
+      "label": "Free or Discounted\nMeeting Space",
+      "x": -380,
+      "y": -140,
+      "cls": "hub",
+      "detail": [
+        [
+          "The need",
+          "Somewhere to meet that does not appear as a line in the budget."
+        ],
+        [
+          "Why it matters most",
+          "Venue hire is usually the largest single recurring cost a club can eliminate outright, and the only one that can go to zero rather than merely down."
+        ],
+        [
+          "Note",
+          "The only need on this map with two partners able to address it -- see both edges leaving this node."
+        ]
+      ],
+      "emphasis": false
+    },
+    {
+      "id": "annual-allocation",
+      "label": "Renewable Annual\nCash Allocation",
+      "x": -380,
+      "y": 140,
+      "cls": "hub",
+      "detail": [
+        [
+          "The need",
+          "A sum voted each year by a body that already meets and already has a budget."
+        ],
+        [
+          "How it differs from multi-year",
+          "It is not guaranteed beyond the current year, but the decision is made by people who know the club -- so renewal is a conversation rather than an application."
+        ],
+        [
+          "Worked figure",
+          "A PTA allocation in the $300-$800 range is typical, and it usually arrives faster than any grant."
+        ]
+      ],
+      "emphasis": false
+    },
+    {
+      "id": "cross-promotion",
+      "label": "Cross-Promotion to\nLocal Families",
+      "x": -380,
+      "y": 420,
+      "cls": "hub",
+      "detail": [
+        [
+          "The need",
+          "Reaching families who would join if they knew the club existed."
+        ],
+        [
+          "Why it belongs on a funding map",
+          "It is not cash, and it changes the same numbers: more families is more fee income under a sliding scale, and a stronger case in every future grant application."
+        ],
+        [
+          "Note",
+          "The cheapest need to meet on this map, and the one clubs ask for last."
+        ]
+      ],
+      "emphasis": false
+    },
+    {
+      "id": "community-foundation",
+      "label": "Community\nFoundation Grant",
+      "x": 380,
+      "y": -420,
+      "cls": "node",
+      "detail": [
+        [
+          "What it is",
+          "A local grant-making body that exists to fund community organisations, often with multi-year programmes."
+        ],
+        [
+          "What it addresses",
+          "The only partner here that can commit money beyond a single year."
+        ],
+        [
+          "The cost",
+          "The heaviest application of the four -- a written proposal, a budget, and usually a reporting obligation afterwards."
+        ]
+      ]
+    },
+    {
+      "id": "school-district",
+      "label": "School District\nFunding",
+      "x": 380,
+      "y": 140,
+      "cls": "node",
+      "detail": [
+        [
+          "What it is",
+          "A partnership with the district that most often takes the form of space rather than cash."
+        ],
+        [
+          "What it addresses",
+          "A room, after hours, at no charge -- and sometimes the caretaking and insurance that come with it."
+        ],
+        [
+          "The catch",
+          "District space usually comes with district rules: safeguarding checks, term-time only, and a calendar you do not control."
+        ]
+      ]
+    },
+    {
+      "id": "pta",
+      "label": "PTA Partnership\nFunding",
+      "x": 380,
+      "y": 420,
+      "cls": "node",
+      "detail": [
+        [
+          "What it is",
+          "An allocation voted by the parent-teacher association, typically annually."
+        ],
+        [
+          "What it addresses",
+          "Renewable cash, decided by people who already know the club and can see the students in it."
+        ],
+        [
+          "Why it is the fastest",
+          "No formal application in most cases -- a short presentation at a meeting, and a vote."
+        ]
+      ]
+    },
+    {
+      "id": "library",
+      "label": "Library Funding\nPartnership",
+      "x": 380,
+      "y": -140,
+      "cls": "node",
+      "detail": [
+        [
+          "What it is",
+          "A relationship with a public library, which usually has meeting rooms, a mailing list, and a mandate to host community learning."
+        ],
+        [
+          "What it addresses",
+          "Space AND promotion -- the only partner on this map that meets two different needs from one relationship."
+        ],
+        [
+          "Why that matters",
+          "One conversation, two problems solved. It is the highest return per hour of any partnership here, and the one most often overlooked because it does not arrive as money."
+        ]
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "recurring-cash",
+      "to": "community-foundation",
+      "label": "addressed by"
+    },
+    {
+      "from": "meeting-space",
+      "to": "school-district",
+      "label": "addressed by"
+    },
+    {
+      "from": "meeting-space",
+      "to": "library",
+      "label": "addressed by"
+    },
+    {
+      "from": "annual-allocation",
+      "to": "pta",
+      "label": "addressed by"
+    },
+    {
+      "from": "cross-promotion",
+      "to": "library",
+      "label": "addressed by"
+    }
+  ],
+  "legend": [
+    {
+      "cls": "hub",
+      "text": "An ongoing funding need"
+    },
+    {
+      "cls": "node",
+      "text": "An institutional partner"
+    },
+    {
+      "cls": "none",
+      "text": "Every arrow reads \"need is addressed by partner\""
+    }
+  ],
+  "navClearance": true
+}

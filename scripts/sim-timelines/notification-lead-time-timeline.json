@@ -1,0 +1,109 @@
+{
+  "title": "Notification Lead Time Timeline",
+  "height": 630,
+  "timelineHeight": 200,
+  "axisLabel": "Days before the event",
+  "stats": "2 reminders · 1 event",
+  "panelHeading": "Reminder Details",
+  "placeholder": "Click either reminder for a sample message and why it goes out when it does. Click Event Day for what the two-touch pattern actually buys.",
+  "min": -17,
+  "max": 3,
+  "ticks": {
+    "-14": "14 days before",
+    "-10": "10 days",
+    "-7": "1 week",
+    "-3": "3 days",
+    "0": "Event day"
+  },
+  "items": [
+    {
+      "id": "first",
+      "at": -14,
+      "cls": "node",
+      "label": "First reminder",
+      "hint": "Day −14 — gives families time to plan",
+      "detail": [
+        [
+          "When",
+          "Fourteen days before."
+        ],
+        [
+          "Why then",
+          "This is the reminder that changes what a family does. Two weeks is long enough to move a shift, arrange a lift, or say no early enough that you can offer the place to somebody else."
+        ],
+        [
+          "Sample message",
+          "\"Coding Club showcase is on Tuesday 14 March, 4–6pm, in the library. Families welcome. Reply if you can come so we know numbers.\""
+        ],
+        [
+          "What it must contain",
+          "Date, time, place, and what is being asked of the reader. A reminder without an ask is an announcement."
+        ]
+      ]
+    },
+    {
+      "id": "second",
+      "at": -1,
+      "cls": "hub",
+      "label": "Second reminder",
+      "hint": "Day −1 — a short, same-day-relevant nudge",
+      "detail": [
+        [
+          "When",
+          "The day before."
+        ],
+        [
+          "Why then",
+          "This one does not change plans, it prevents forgetting — so it should be short and carry only what somebody needs in the next 24 hours."
+        ],
+        [
+          "Sample message",
+          "\"Reminder: showcase tomorrow, 4pm, library. Bring your project if you'd like to show it.\""
+        ],
+        [
+          "Why not the morning of",
+          "Too late to arrange anything, and it lands while people are already committed elsewhere. The day before is the last point at which a reminder is still actionable."
+        ]
+      ]
+    },
+    {
+      "id": "event",
+      "at": 0,
+      "cls": "resolve",
+      "label": "Event day",
+      "hint": "What two touches buy over one",
+      "detail": [
+        [
+          "The pattern",
+          "Two reminders, doing two different jobs. The first buys planning time; the second prevents forgetting. A single reminder can only do one of those."
+        ],
+        [
+          "Which single reminder is worse",
+          "Both, differently. Only the 14-day one and people plan to come and forget. Only the day-before one and people remember but cannot rearrange."
+        ],
+        [
+          "Why not three",
+          "A third reminder does not add a third job — it repeats one of the first two, and it is the point at which recipients start filtering the club's mail. Two touches, two purposes, stop."
+        ],
+        [
+          "The honest caveat",
+          "This cadence is a sensible default, not a measured result for your club. Track replies against reminders for a term and you will know your own numbers."
+        ]
+      ]
+    }
+  ],
+  "legend": [
+    {
+      "cls": "node",
+      "text": "First reminder — buys planning time"
+    },
+    {
+      "cls": "hub",
+      "text": "Second reminder — prevents forgetting"
+    },
+    {
+      "cls": "resolve",
+      "text": "The event"
+    }
+  ]
+}

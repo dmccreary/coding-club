@@ -348,7 +348,7 @@ The map below shows how each partnership and negotiation concept in this section
 
 #### Diagram: Funding Partnership Fit Map
 
-<iframe src="../../sims/funding-partnership-fit-map/main.html" width="100%" height="622px" scrolling="no"></iframe>
+<iframe src="../../sims/funding-partnership-fit-map/main.html" width="100%" height="642px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Funding Partnership Fit Map</summary>

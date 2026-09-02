@@ -1,6 +1,6 @@
 {
   "title": "Club Growth Path",
-  "description": "Given a club's current size and stability, the learner identifies which growth stage it occupies and what condition must be met before advancing to the next stage.",
+  "description": "Four growth stages on one timeline, each with the single condition that has to be true before a club moves on, plus a marker to bookmark where you actually are.",
   "creator": "Coding Club",
   "author": "Dan McCreary",
   "date": "2026-09-01",
@@ -15,9 +15,30 @@
   "library": "vis-timeline",
   "bloomLevel": "Understand (L2)",
   "bloomVerb": "explain",
-  "completion_status": "scaffold",
+  "completion_status": "built",
+  "canvasHeight": 618,
   "chapter_number": 6,
   "chapter_title": "Growing, Branding, and Promoting Your Club",
   "chapter_dir": "06-growing-and-promoting-club",
-  "chapter_rel_dir": "chapters/06-growing-and-promoting-club"
+  "chapter_rel_dir": "chapters/06-growing-and-promoting-club",
+  "educational": {
+    "gradeLevel": "Middle School, High School, Adult",
+    "audience": "Club founders and leaders planning beyond the first year",
+    "duration": "10-15 minutes",
+    "concepts": [
+      "Club Growth Stage",
+      "Scaling a Club",
+      "Multi-Site Expansion",
+      "Franchise Model",
+      "Leadership Transition",
+      "Mentor Pipeline"
+    ]
+  },
+  "pedagogical": {
+    "bloomLevel": "Understand (L2)",
+    "bloomVerb": "explain",
+    "learningObjective": "Given a club's current size and stability, the learner identifies which growth stage it occupies and what condition must be met before advancing to the next stage.",
+    "interactionPattern": "Click-to-explore stage timeline with a draggable self-placement marker",
+    "assessment": "Describe a club in prose and ask which stage it occupies and what must be true before it advances."
+  }
 }

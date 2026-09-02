@@ -1,0 +1,150 @@
+{
+  "title": "Club Growth Path",
+  "height": 620,
+  "timelineHeight": 230,
+  "axisLabel": "Club age — the typical order, not a required one",
+  "stats": "4 stages · 2 of them optional",
+  "panelHeading": "Stage Details",
+  "placeholder": "Click any stage for what it involves and the one condition that has to be true before you move on. Drag the amber marker to where your club actually is.",
+  "min": -0.6,
+  "max": 4.6,
+  "ticks": {
+    "0": "Founding year",
+    "1": "Year 1–2",
+    "2": "Year 2–3",
+    "3": "Year 3+",
+    "4": ""
+  },
+  "marker": {
+    "label": "You are here",
+    "at": 0
+  },
+  "items": [
+    {
+      "id": "founding",
+      "at": 0,
+      "end": 1,
+      "cls": "resolve",
+      "label": "Single site",
+      "hint": "The founding year. No growth decision needed yet.",
+      "detail": [
+        [
+          "Stage",
+          "Single Site, Starting Small"
+        ],
+        [
+          "What it is",
+          "One venue, one session, and the first three students through a pilot cohort."
+        ],
+        [
+          "What to do here",
+          "Nothing about growth. The work of this stage is proving the session is worth attending twice."
+        ],
+        [
+          "Before advancing",
+          "There is no gate on this one — clubs leave this stage by having more students want in than the current session holds."
+        ]
+      ]
+    },
+    {
+      "id": "scaling",
+      "at": 1,
+      "end": 2,
+      "cls": "node",
+      "label": "Scaling",
+      "hint": "More students, more sessions, more mentors — all at one site.",
+      "detail": [
+        [
+          "Stage",
+          "Scaling a Club"
+        ],
+        [
+          "What it is",
+          "Growth in place: more students, more sessions, more mentors, still one venue."
+        ],
+        [
+          "Why this stage lasts longest",
+          "Everything gets harder at once — the rota, the kit, the tracker — and none of it needs a second building."
+        ],
+        [
+          "Before advancing",
+          "A stable mentor pipeline. A club that is still recruiting mentors one at a time cannot staff a second site, and opening one will cost it the first."
+        ]
+      ]
+    },
+    {
+      "id": "multisite",
+      "at": 2,
+      "end": 3,
+      "cls": "hub",
+      "label": "Multi-site",
+      "hint": "A second venue, run by a trained assistant leader.",
+      "detail": [
+        [
+          "Stage",
+          "Multi-Site Expansion (optional)"
+        ],
+        [
+          "What it is",
+          "A second venue, run by somebody the club trained rather than by the founder commuting between two rooms."
+        ],
+        [
+          "Before advancing",
+          "The original site must have survived a leadership transition already. If it has never run without the founder, it will not run without the founder while the founder is at the other site."
+        ],
+        [
+          "Honestly optional",
+          "A single excellent site serving forty students is not a lesser outcome than two struggling ones."
+        ]
+      ]
+    },
+    {
+      "id": "franchise",
+      "at": 3,
+      "end": 4,
+      "cls": "neutral",
+      "label": "Franchise",
+      "hint": "Somebody else's club, using your charter and curriculum.",
+      "detail": [
+        [
+          "Stage",
+          "Franchise Model (rare, optional)"
+        ],
+        [
+          "What it is",
+          "An independently run club elsewhere, starting from this club's charter and curriculum as a template."
+        ],
+        [
+          "What you are actually giving away",
+          "Documents, not oversight. A franchise you keep control of is a second site with extra paperwork."
+        ],
+        [
+          "Why it is rare",
+          "It requires a charter and a curriculum good enough for a stranger to run from — which most clubs never write down, because they never had to."
+        ]
+      ]
+    }
+  ],
+  "legend": [
+    {
+      "cls": "resolve",
+      "text": "Founding"
+    },
+    {
+      "cls": "node",
+      "text": "Scaling"
+    },
+    {
+      "cls": "hub",
+      "text": "Multi-site (optional)"
+    },
+    {
+      "cls": "neutral",
+      "text": "Franchise (rare)"
+    },
+    {
+      "cls": "none",
+      "text": "Drag the \"You are here\" marker to bookmark your own stage"
+    }
+  ]
+}

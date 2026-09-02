@@ -1,0 +1,23 @@
+{
+  "title": "Data Backup Routine Timeline",
+  "description": "A semester of backups in five checkpoints, only two of which need a person -- and the one that matters is the restore test, not the backup.",
+  "height": 600,
+  "chapter_title": "Chapter 24: Tracking Student Data and Managing Club Communication",
+  "chapter_dir": "24-student-data-and-communication",
+  "about": "Sixteen weeks, five checkpoints, two of which need a human. That ratio is the\nargument for the routine: it is cheap precisely because it is mostly automatic.\n\nThe blue checkpoints are the quiet weeks, and they are on the timeline for a\nreason. An automatic backup you never look at feels identical to one that\nstopped in week two. Marking the weeks where nothing happens is what makes the\ntwo amber ones legible as the entire manual workload for a semester.\n\nThe week 8 checkpoint is the one worth arguing about. It is not *check that the\nbackup exists* -- it is restore a real file and open it. Corrupted archives,\nexpired permissions, and a sync that quietly stopped all look exactly like a\nworking backup right up until the day you need one. **A backup you have never\nrestored from is a hypothesis, not a backup.**\n\nWeek 16 pairs the same test with archiving, because the end of a semester is when\nthe retention clock starts on most of the club's records, and setting those\ndeletion dates while somebody is already looking at the data costs nothing extra.",
+  "howto": "- **Click any checkpoint** to read what it involves and roughly how long it\n  takes.\n- **Hover a checkpoint** to preview its title and week before clicking.\n- **Compare the colours**: blue is automatic and needs nothing; amber is a date\n  somebody has to put in a calendar.\n- **Reset** clears the selection and returns the panel to its prompt.",
+  "lesson": "**Bloom level:** Apply (L3) -- *schedule*\n\n**Learning objective:** Given a semester calendar, the learner schedules backup\nand restore-verification checkpoints at appropriate intervals.\n\n**Before the sim (5 min).** Ask who in the room has ever restored a file from a\nbackup. Then ask who has a backup. The gap between those two counts is the\nsubject of this sim.\n\n**With the sim (10 min).** Walk the five checkpoints left to right. At week 8,\nstop and ask what could be wrong with a backup that still looks healthy in the\nsync status. The panel lists three; groups usually get one.\n\n**After the sim (15 min).** Open the club's real calendar and put the two amber\ncheckpoints in it as dated entries with an owner's name. A routine with no named\nowner is a routine nobody runs.\n\n**Check for understanding.** Ask: it is week 10 and the spreadsheet has been\ncorrupted. What did the week 8 checkpoint buy you? Answering *the knowledge that\nthe backup actually opens*, rather than *a backup*, is the objective met.",
+  "refs": "- {{CHAPTER}} -- the chapter this MicroSim supports.\n- [Data Retention Schedule](../data-retention-schedule/index.md) -- what the week\n  16 archive step is following.\n- [Spreadsheet Template Zones](../spreadsheet-template-zones/index.md) -- the\n  tracking spreadsheet these backups protect.\n- [Consent Collection Workflow](../consent-collection-workflow/index.md) -- the\n  other folder in the week 1 checkpoint, and the more sensitive one.\n- [Backup](https://en.wikipedia.org/wiki/Backup) -- restore testing and the\n  3-2-1 rule in the wider practice.",
+  "verb": "schedule",
+  "concepts": [
+    "Backup Routine",
+    "Restore Test",
+    "Automatic Cloud Sync",
+    "Data Retention",
+    "Semester Checkpoint",
+    "Records Archiving"
+  ],
+  "interaction": "Click-to-explore semester timeline separating automatic backups from manual verification checkpoints",
+  "assessment": "Hand the learner a blank semester calendar and ask where the manual checkpoints go and what each one does.",
+  "audience": "Club leaders responsible for student records and consent forms"
+}

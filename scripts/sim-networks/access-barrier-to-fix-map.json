@@ -1,6 +1,6 @@
 {
   "title": "Access Barrier to Fix Map",
-  "height": 760,
+  "height": 740,
   "stats": "5 barriers · 7 fixes",
   "panelHeading": "Barrier and Fix Details",
   "placeholder": "Click any barrier or fix to see what it is and what it addresses.",
@@ -10,8 +10,8 @@
     {
       "id": "cost",
       "label": "Cost",
-      "x": -620,
-      "y": -420,
+      "x": -360,
+      "y": -460,
       "cls": "danger",
       "detail": [
         [
@@ -27,8 +27,8 @@
     {
       "id": "transport",
       "label": "Transportation",
-      "x": -620,
-      "y": -140,
+      "x": -360,
+      "y": -100,
       "cls": "danger",
       "detail": [
         [
@@ -39,8 +39,8 @@
     },
     {
       "id": "timing",
-      "label": "Inflexible Timing",
-      "x": -620,
+      "label": "Inflexible\nTiming",
+      "x": -360,
       "y": 140,
       "cls": "danger",
       "detail": [
@@ -53,8 +53,8 @@
     {
       "id": "language",
       "label": "Language",
-      "x": -620,
-      "y": 420,
+      "x": -360,
+      "y": 380,
       "cls": "danger",
       "detail": [
         [
@@ -65,9 +65,9 @@
     },
     {
       "id": "disability",
-      "label": "Disability Access",
-      "x": -620,
-      "y": 700,
+      "label": "Disability\nAccess",
+      "x": -360,
+      "y": 620,
       "cls": "danger",
       "detail": [
         [
@@ -79,8 +79,8 @@
     {
       "id": "nofee",
       "label": "No-Fee Model",
-      "x": 620,
-      "y": -600,
+      "x": 360,
+      "y": -620,
       "cls": "resolve",
       "detail": [
         [
@@ -92,8 +92,8 @@
     {
       "id": "scholarship",
       "label": "Scholarship Fund",
-      "x": 620,
-      "y": -400,
+      "x": 360,
+      "y": -460,
       "cls": "resolve",
       "detail": [
         [
@@ -104,9 +104,9 @@
     },
     {
       "id": "devices",
-      "label": "Free Device Loan Program",
-      "x": 620,
-      "y": -200,
+      "label": "Free Device\nLoan Program",
+      "x": 360,
+      "y": -300,
       "cls": "resolve",
       "detail": [
         [
@@ -117,9 +117,9 @@
     },
     {
       "id": "carpool",
-      "label": "Carpool, Transit, or Virtual Option",
-      "x": 620,
-      "y": 0,
+      "label": "Carpool, Transit,\nor Virtual Option",
+      "x": 360,
+      "y": -100,
       "cls": "resolve",
       "detail": [
         [
@@ -130,9 +130,9 @@
     },
     {
       "id": "alternating",
-      "label": "Alternating Saturday and Weekday Sessions",
-      "x": 620,
-      "y": 220,
+      "label": "Alternating Saturday\nand Weekday Sessions",
+      "x": 360,
+      "y": 140,
       "cls": "resolve",
       "detail": [
         [
@@ -143,9 +143,9 @@
     },
     {
       "id": "translated",
-      "label": "Translated Materials and Bilingual Contact",
-      "x": 620,
-      "y": 440,
+      "label": "Translated Materials\nand Bilingual Contact",
+      "x": 360,
+      "y": 380,
       "cls": "resolve",
       "detail": [
         [
@@ -156,9 +156,9 @@
     },
     {
       "id": "accommodation",
-      "label": "Direct Accommodation Request",
-      "x": 620,
-      "y": 680,
+      "label": "Direct Accommodation\nRequest",
+      "x": 360,
+      "y": 620,
       "cls": "resolve",
       "detail": [
         [
@@ -171,7 +171,8 @@
   "edges": [
     {
       "from": "cost",
-      "to": "nofee"
+      "to": "nofee",
+      "curve": -0.15
     },
     {
       "from": "cost",
@@ -179,7 +180,8 @@
     },
     {
       "from": "cost",
-      "to": "devices"
+      "to": "devices",
+      "curve": 0.15
     },
     {
       "from": "transport",
@@ -207,5 +209,7 @@
       "cls": "resolve",
       "text": "Club practice that addresses it"
     }
-  ]
+  ],
+  "nodeWidth": 360,
+  "navClearance": true
 }

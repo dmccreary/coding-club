@@ -1,0 +1,23 @@
+{
+  "title": "Club Growth Path",
+  "description": "Four growth stages on one timeline, each with the single condition that has to be true before a club moves on, plus a marker to bookmark where you actually are.",
+  "height": 620,
+  "chapter_title": "Chapter 6: Growing, Branding, and Promoting Your Club",
+  "chapter_dir": "06-growing-and-promoting-club",
+  "about": "Most clubs never leave stage two, and that is not a failure. This timeline lays\nthe four stages out in the order they usually arrive -- founding year, scaling,\noptional multi-site expansion, rare franchise -- so a founder can see which one\nthey are in rather than which one they feel behind on.\n\nThe useful part is not the sequence. It is the **one condition** attached to each\nstage that has to be true before advancing. A club that is still recruiting\nmentors one at a time cannot staff a second site, and opening one will cost it\nthe first. A club that has never survived a leadership handover has not yet\nproved the thing multi-site expansion depends on.\n\nTwo of the four stages are marked optional, and the fourth is marked rare. A\ngrowth path that ends at stage two with a full room and a stable rota is a\nsuccessful club, not a stalled one.\n\nDrag the amber **You are here** marker to where your club actually is. It snaps\nto whole stages and it is the only draggable thing on the timeline.",
+  "howto": "- **Click any coloured block** to read what the stage involves, why it lasts as\n  long as it does, and the condition that gates the next one.\n- **Drag the \"You are here\" marker** to your club's current stage. It snaps to\n  whole positions and cannot leave the range.\n- **Read the axis** as club age, not calendar dates -- \"Year 1-2\" is a typical\n  duration, not a deadline.\n- **Reset** returns the marker to the founding year and clears the panel.",
+  "lesson": "**Bloom level:** Understand (L2) -- *explain*\n\n**Learning objective:** Given a club's current size and stability, the learner\nidentifies which growth stage it occupies and what condition must be met before\nadvancing to the next stage.\n\n**Before the sim (5 min).** Ask the group to say, in one sentence each, how big\nthey want the club to be in three years. Note who says *bigger* and who says\n*better*. Both are legitimate and this timeline is mostly about the second.\n\n**With the sim (10 min).** Read the four stages in order, then drag the marker\nto where the club actually is and defend the choice. Groups routinely place\nthemselves a stage ahead of where the gating condition says they are, and the\nargument about that is the lesson.\n\n**After the sim (15 min).** Take the gating condition for the *next* stage and\nturn it into a checklist with dates. For most clubs that is the mentor pipeline:\nhow many mentors, recruited through which channel, by when.\n\n**Check for understanding.** Describe a club -- twenty students, one venue, one\nleader who has never taken a week off -- and ask which stage it is in and what\nhas to happen before it expands. Naming the leadership transition, not the\nstudent count, is the objective met.",
+  "refs": "- {{CHAPTER}} -- the chapter this MicroSim supports.\n- [Club Health Metrics Dashboard](../club-health-metrics-dashboard/index.md) --\n  the numbers that tell you a stage is stable.\n- [Mentor Development Pipeline](../mentor-development-pipeline/index.md) -- the\n  gating condition for stage three, in detail.\n- [Club Playbook Assembly Workflow](../club-playbook-assembly-workflow/index.md)\n  -- what a second site actually needs handed to it.\n- [Scalability](https://en.wikipedia.org/wiki/Scalability) -- the general idea\n  that growth in place and growth by replication are different problems.",
+  "verb": "explain",
+  "concepts": [
+    "Club Growth Stage",
+    "Scaling a Club",
+    "Multi-Site Expansion",
+    "Franchise Model",
+    "Leadership Transition",
+    "Mentor Pipeline"
+  ],
+  "interaction": "Click-to-explore stage timeline with a draggable self-placement marker",
+  "assessment": "Describe a club in prose and ask which stage it occupies and what must be true before it advances.",
+  "audience": "Club founders and leaders planning beyond the first year"
+}

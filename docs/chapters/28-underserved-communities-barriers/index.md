@@ -235,7 +235,7 @@ A worked example: a student who is hard of hearing joins a club that runs sessio
 
 #### Diagram: Access Barrier to Fix Map
 
-<iframe src="../../sims/access-barrier-to-fix-map/main.html" width="100%" height="762px" scrolling="no"></iframe>
+<iframe src="../../sims/access-barrier-to-fix-map/main.html" width="100%" height="742px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Access Barrier to Fix Map</summary>

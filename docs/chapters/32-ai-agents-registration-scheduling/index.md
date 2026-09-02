@@ -237,7 +237,7 @@ A worked example shows the leverage in action: the club's influence graph shows 
 
 #### Diagram: Building and Reading an Influence Graph
 
-<iframe src="../../sims/mentor-recruiting-influence-graph/main.html" width="100%" height="520px" scrolling="no"></iframe>
+<iframe src="../../sims/mentor-recruiting-influence-graph/main.html" width="100%" height="702px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Building and Reading an Influence Graph</summary>

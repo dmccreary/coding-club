@@ -9,7 +9,7 @@ bloom_level: Analyze (L4)
 
 # Funding Partnership Fit Map
 
-<iframe src="main.html" width="100%" height="622" scrolling="no"></iframe>
+<iframe src="main.html" width="100%" height="642px" scrolling="no"></iframe>
 
 [Run the Funding Partnership Fit Map MicroSim fullscreen](main.html){ .md-button .md-button--primary }
 
@@ -71,7 +71,7 @@ Paste this into any page of the book, adjusting the relative path to
 `docs/sims/` for the page's depth:
 
 ```html
-<iframe src="../../sims/funding-partnership-fit-map/main.html" width="100%" height="622" scrolling="no"></iframe>
+<iframe src="../../sims/funding-partnership-fit-map/main.html" width="100%" height="642px" scrolling="no"></iframe>
 ```
 
 ## Specification

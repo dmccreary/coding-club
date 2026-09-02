@@ -1,0 +1,23 @@
+{
+  "title": "Notification Lead Time Timeline",
+  "description": "Two reminders doing two different jobs: one buys planning time, one prevents forgetting, and a single reminder can only do one of them.",
+  "height": 630,
+  "chapter_title": "Chapter 24: Tracking Student Data and Managing Club Communication",
+  "chapter_dir": "24-student-data-and-communication",
+  "about": "Two reminders, fourteen days apart, counting down to an event. The pattern looks\ntrivial until you ask what each one is for.\n\nThe **day-14 reminder** is the one that changes what a family does. Two weeks is\nlong enough to move a shift, arrange a lift, or decline early enough that the\nplace can go to somebody else. It has to carry the date, the time, the place, and\nan ask -- a reminder with no ask is an announcement.\n\nThe **day-1 reminder** cannot change plans and should not try. Its job is to stop\npeople forgetting, so it is short and carries only what matters in the next\ntwenty-four hours.\n\nDrop either one and you lose a distinct thing: send only the first and people\nplan to come and then forget; send only the second and people remember but\ncannot rearrange. Add a third and you have not added a third job -- you have\nrepeated one of the first two, which is the point at which recipients start\nfiltering the club's mail.\n\nEach reminder in the sim carries a sample message, because the timing argument is\nonly half of it; the other half is what the message says.",
+  "howto": "- **Click either reminder** to read its sample message and the reasoning behind\n  its timing.\n- **Click Event day** for what the two-touch pattern buys over one reminder, and\n  what it would cost to add a third.\n- **Hover any marker** to preview its day before clicking.\n- **Read the axis** right to left as a countdown: the event sits at day zero on\n  the right.\n- **Reset** clears the selection.",
+  "lesson": "**Bloom level:** Apply (L3) -- *schedule*\n\n**Learning objective:** Given an event date, the learner schedules reminder\nnotifications at appropriate lead times before it.\n\n**Before the sim (5 min).** Ask the group to recall the last event they meant to\nattend and missed. Was the problem that they never knew, or that they forgot? The\ntwo answers need different fixes, which is the whole design of this cadence.\n\n**With the sim (10 min).** Read both sample messages aloud. Ask what would break\nif you swapped them -- sending the short one first and the detailed one the day\nbefore. Then click Event day and read the caveat about a third reminder.\n\n**After the sim (15 min).** Pick a real club event on the calendar, count back,\nand write both messages now. Put them in a drafts folder with their send dates.\nThe pattern only helps if the writing happens before the week gets busy.\n\n**Check for understanding.** Give the group an event three days away and ask what\nthe reminder schedule should be. The honest answer is that the planning reminder\nis already impossible and only the nudge is left -- recognising that is the\nobjective met.",
+  "refs": "- {{CHAPTER}} -- the chapter this MicroSim supports.\n- [Automated Communication Pipeline](../automated-communication-pipeline/index.md)\n  -- the system that sends these on schedule.\n- [Calendar Setup Workflow](../calendar-setup-workflow/index.md) -- where the\n  event date these count back from is created.\n- [Consent Collection Workflow](../consent-collection-workflow/index.md) -- the\n  other deadline families are reminded about, on a longer lead time.\n- [Reminder system](https://en.wikipedia.org/wiki/Reminder_software) -- automated\n  reminders and lead time in the wider practice.",
+  "verb": "schedule",
+  "concepts": [
+    "Notification Lead Time",
+    "Two-Touch Reminder Cadence",
+    "Planning Reminder",
+    "Same-Day Nudge",
+    "Message Content",
+    "Communication Fatigue"
+  ],
+  "interaction": "Click-to-explore countdown timeline with a sample message and a timing rationale per reminder",
+  "assessment": "Give an event date and ask when each reminder goes out and what it must contain.",
+  "audience": "Club leaders and mentors responsible for family communication"
+}

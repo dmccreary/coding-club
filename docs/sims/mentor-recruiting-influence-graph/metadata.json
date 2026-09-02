@@ -1,6 +1,6 @@
 {
-  "title": "Building and Reading an Influence Graph",
-  "description": "Given a sample influence graph of a local community, the learner examines it to identify under-reached populations of mentors and students.",
+  "title": "Mentor Recruiting Influence Graph",
+  "description": "Two outreach channels the club already uses, four it does not, and the question of which single new connection would reach the most new people.",
   "creator": "Coding Club",
   "author": "Dan McCreary",
   "date": "2026-09-01",
@@ -15,9 +15,30 @@
   "library": "vis-network",
   "bloomLevel": "Analyze (L4)",
   "bloomVerb": "examine",
-  "completion_status": "scaffold",
+  "completion_status": "built",
+  "canvasHeight": 698,
   "chapter_number": 32,
   "chapter_title": "AI Agents for Registration, Scheduling, and Communication",
   "chapter_dir": "32-ai-agents-registration-scheduling",
-  "chapter_rel_dir": "chapters/32-ai-agents-registration-scheduling"
+  "chapter_rel_dir": "chapters/32-ai-agents-registration-scheduling",
+  "educational": {
+    "gradeLevel": "Middle School, High School, Adult",
+    "audience": "Club leaders planning mentor and student recruitment beyond the school community",
+    "duration": "10-15 minutes",
+    "concepts": [
+      "Influence Graph",
+      "Outreach Channel",
+      "Under-Reached Population",
+      "Highest-Leverage Node",
+      "Mentor Recruiting",
+      "Point of Contact"
+    ]
+  },
+  "pedagogical": {
+    "bloomLevel": "Analyze (L4)",
+    "bloomVerb": "examine",
+    "learningObjective": "Given a sample influence graph of a local community, the learner examines it to identify under-reached populations of mentors and students.",
+    "interactionPattern": "Click-to-explore influence graph with population estimates and a leverage-reveal button",
+    "assessment": "Given two candidate channels of different sizes and addressability, ask which to approach first and why."
+  }
 }

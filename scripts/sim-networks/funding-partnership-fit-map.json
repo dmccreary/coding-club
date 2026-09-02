@@ -1,6 +1,6 @@
 {
   "title": "Funding Partnership Fit Map",
-  "height": 620,
+  "height": 640,
   "stats": "4 needs · 4 approaches",
   "panelHeading": "Need and Approach Details",
   "placeholder": "Click any need or approach to see what it covers.",
@@ -9,22 +9,23 @@
   "nodes": [
     {
       "id": "recurring",
-      "label": "Ongoing Recurring Support",
-      "x": -620,
-      "y": -330,
+      "label": "Ongoing Recurring\nSupport",
+      "x": -380,
+      "y": -390,
       "cls": "hub",
       "detail": [
         [
           "The need",
           "Money the club can count on term after term, rather than a one-off."
         ]
-      ]
+      ],
+      "emphasis": false
     },
     {
       "id": "onetime",
-      "label": "One-Time Equipment or Space",
-      "x": -620,
-      "y": -110,
+      "label": "One-Time Equipment\nor Space",
+      "x": -380,
+      "y": -130,
       "cls": "hub",
       "detail": [
         [
@@ -35,39 +36,42 @@
           "Note",
           "The only need here addressed by two different approaches."
         ]
-      ]
+      ],
+      "emphasis": false
     },
     {
       "id": "grant501",
-      "label": "Access to a Grant Requiring 501(c)(3) Status",
-      "x": -620,
-      "y": 110,
+      "label": "Access to a Grant\nRequiring 501(c)(3)",
+      "x": -380,
+      "y": 130,
       "cls": "hub",
       "detail": [
         [
           "The need",
           "A funder that only gives to registered nonprofits, which most young clubs are not."
         ]
-      ]
+      ],
+      "emphasis": false
     },
     {
       "id": "lowercost",
-      "label": "Lower Cost on Regular Purchases",
-      "x": -620,
-      "y": 330,
+      "label": "Lower Cost on\nRegular Purchases",
+      "x": -380,
+      "y": 390,
       "cls": "hub",
       "detail": [
         [
           "The need",
           "Not more money, but the same money going further on things bought repeatedly."
         ]
-      ]
+      ],
+      "emphasis": false
     },
     {
       "id": "company",
-      "label": "Local Company Partnership",
-      "x": 620,
-      "y": -380,
+      "label": "Local Company\nPartnership",
+      "x": 380,
+      "y": -390,
       "cls": "node",
       "detail": [
         [
@@ -78,9 +82,9 @@
     },
     {
       "id": "strategic",
-      "label": "Strategic Partnership Building",
-      "x": 620,
-      "y": -120,
+      "label": "Strategic Partnership\nBuilding",
+      "x": 380,
+      "y": -130,
       "cls": "node",
       "detail": [
         [
@@ -91,9 +95,9 @@
     },
     {
       "id": "fiscal",
-      "label": "Nonprofit Fiscal Sponsorship",
-      "x": 620,
-      "y": 120,
+      "label": "Nonprofit Fiscal\nSponsorship",
+      "x": 380,
+      "y": 130,
       "cls": "node",
       "detail": [
         [
@@ -104,9 +108,9 @@
     },
     {
       "id": "discount",
-      "label": "Vendor Discount Negotiation",
-      "x": 620,
-      "y": 360,
+      "label": "Vendor Discount\nNegotiation",
+      "x": 380,
+      "y": 390,
       "cls": "node",
       "detail": [
         [
@@ -127,7 +131,8 @@
     },
     {
       "from": "onetime",
-      "to": "company"
+      "to": "company",
+      "curve": 0.2
     },
     {
       "from": "grant501",
@@ -147,5 +152,7 @@
       "cls": "node",
       "text": "Partnership approach"
     }
-  ]
+  ],
+  "nodeWidth": 300,
+  "navClearance": true
 }

@@ -1,0 +1,258 @@
+{
+  "title": "Mentor Recruiting Influence Graph",
+  "height": 700,
+  "stats": "2 reached · 4 not reached",
+  "panelHeading": "Channel Details",
+  "placeholder": "Click any channel for its population estimate and whether the club currently reaches it.",
+  "arrows": true,
+  "edgeFontSize": 26,
+  "nodeWidth": 260,
+  "pinned": [
+    "club-outreach"
+  ],
+  "nodes": [
+    {
+      "id": "club-outreach",
+      "label": "Club Outreach",
+      "x": 0,
+      "y": 0,
+      "cls": "neutral",
+      "detail": [
+        [
+          "What it is",
+          "Everywhere the club currently announces itself. Two channels, both of which reach people who are already inside the school community."
+        ],
+        [
+          "The problem this graph shows",
+          "Both existing channels draw from the same population. Doubling the effort on either one reaches more of the people the club already reaches."
+        ],
+        [
+          "The question",
+          "Which single new edge would reach the most people the club has never spoken to?"
+        ]
+      ]
+    },
+    {
+      "id": "pta-list",
+      "label": "PTA Email\nList",
+      "x": -380,
+      "y": -300,
+      "cls": "resolve",
+      "detail": [
+        [
+          "Population",
+          "About 180 families, all with a child already at the school."
+        ],
+        [
+          "Status",
+          "Connected. This is where most current mentors came from."
+        ],
+        [
+          "The limit",
+          "Everyone here is already a school parent. It is an excellent channel and it cannot reach anybody outside that set."
+        ]
+      ]
+    },
+    {
+      "id": "library-board",
+      "label": "Library\nBulletin Board",
+      "x": 380,
+      "y": -300,
+      "cls": "resolve",
+      "detail": [
+        [
+          "Population",
+          "Perhaps 60 people a week who read the board, heavily overlapping the PTA list."
+        ],
+        [
+          "Status",
+          "Connected. Free, passive, and low effort."
+        ],
+        [
+          "The limit",
+          "A notice board reaches whoever walks past. It cannot be aimed, and it produces enquiries rather than mentors."
+        ]
+      ]
+    },
+    {
+      "id": "congregation",
+      "label": "Neighbourhood\nCongregation",
+      "x": -380,
+      "y": 290,
+      "cls": "hub",
+      "detail": [
+        [
+          "Estimated population",
+          "About 200 adults, most of them not school parents."
+        ],
+        [
+          "Status",
+          "Not reached."
+        ],
+        [
+          "What it would take",
+          "A relationship, not a poster. Attend something first -- an ask from a stranger to a congregation is the one that fails."
+        ],
+        [
+          "Fit",
+          "Broad population, few of whom have a technical background. Good for volunteer mentors, not for professionals."
+        ]
+      ],
+      "emphasis": false
+    },
+    {
+      "id": "boys-girls-club",
+      "label": "Boys & Girls\nClub Programme",
+      "x": -240,
+      "y": 590,
+      "cls": "hub",
+      "detail": [
+        [
+          "Estimated population",
+          "About 120 families, with substantial overlap into households the school outreach misses."
+        ],
+        [
+          "Status",
+          "Not reached."
+        ],
+        [
+          "What it would take",
+          "A staff contact and a conversation about whether your club serves the same students or competes with them."
+        ],
+        [
+          "Fit",
+          "This is a student channel more than a mentor channel -- worth knowing which problem you are solving before you spend the effort."
+        ]
+      ],
+      "emphasis": false
+    },
+    {
+      "id": "women-who-code",
+      "label": "Women Who\nCode Meetup",
+      "x": 380,
+      "y": 290,
+      "cls": "hub",
+      "detail": [
+        [
+          "Estimated population",
+          "About 300 members, almost none of them currently connected to the club."
+        ],
+        [
+          "Status",
+          "Not reached. The largest untapped population on this graph."
+        ],
+        [
+          "Why it is the highest-leverage node",
+          "Largest untapped population AND a single plausible point of contact -- a meetup organiser who can put one message in front of all 300. Most channels have one of those two properties. This has both."
+        ],
+        [
+          "Fit",
+          "Technical people who chose to spend evenings on it. This is where professional mentors come from, and it is the gap in most clubs' mentor mix."
+        ]
+      ],
+      "emphasis": false
+    },
+    {
+      "id": "engineering-employer",
+      "label": "Local Engineering\nEmployer",
+      "x": 240,
+      "y": 590,
+      "cls": "hub",
+      "detail": [
+        [
+          "Estimated population",
+          "About 250 staff, reachable in principle through an internal channel."
+        ],
+        [
+          "Status",
+          "Not reached."
+        ],
+        [
+          "What it would take",
+          "A named internal sponsor. Without one, an approach to a company reaches a mailbox nobody owns."
+        ],
+        [
+          "Fit",
+          "Strong technical pool, and the slowest of the four to convert -- volunteering competes with a demanding job."
+        ]
+      ],
+      "emphasis": false
+    }
+  ],
+  "edges": [
+    {
+      "from": "club-outreach",
+      "to": "pta-list",
+      "label": "reaches"
+    },
+    {
+      "from": "club-outreach",
+      "to": "library-board",
+      "label": "reaches"
+    },
+    {
+      "from": "club-outreach",
+      "to": "congregation",
+      "label": "would reach",
+      "dashes": true
+    },
+    {
+      "from": "club-outreach",
+      "to": "boys-girls-club",
+      "label": "would reach",
+      "dashes": true
+    },
+    {
+      "from": "club-outreach",
+      "to": "women-who-code",
+      "label": "would reach",
+      "dashes": true
+    },
+    {
+      "from": "club-outreach",
+      "to": "engineering-employer",
+      "label": "would reach",
+      "dashes": true
+    }
+  ],
+  "legend": [
+    {
+      "cls": "neutral",
+      "text": "The club's current outreach"
+    },
+    {
+      "cls": "resolve",
+      "text": "Channel already reached"
+    },
+    {
+      "cls": "hub",
+      "text": "Channel not reached"
+    },
+    {
+      "cls": "none",
+      "text": "A dashed edge is a connection that does not exist yet"
+    }
+  ],
+  "spotlight": {
+    "button": "Highest-leverage node",
+    "nodes": [
+      "women-who-code"
+    ],
+    "heading": "Women Who Code Meetup",
+    "detail": [
+      [
+        "Why this one",
+        "It is the only channel on the map with both properties that matter: the largest untapped population (about 300) AND a single plausible point of contact who can put one message in front of all of them."
+      ],
+      [
+        "What the others lack",
+        "The congregation and the employer need a relationship built first. The Boys & Girls Club reaches students rather than mentors. Each is worth doing; none is the first call."
+      ],
+      [
+        "The wider point",
+        "Reach is not the same as size. A channel of 300 you cannot address is worth less than a channel of 120 you can."
+      ]
+    ]
+  },
+  "navClearance": true
+}

@@ -1,0 +1,146 @@
+/* Data Backup Routine Timeline -- vis-timeline MicroSim */
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: aliceblue;
+  color: #212529;
+}
+
+main { display: block; }
+
+.container {
+  width: 100%;
+  height: 600px;
+  padding: 10px 16px 12px;
+  display: flex;
+  flex-direction: column;
+  /* The screenshot tool renders 200px taller than the target and crops, so a
+     container that sizes itself to the viewport comes out oversized. Cap it. */
+  max-height: 600px;
+}
+
+.title {
+  font-size: 22px;
+  font-weight: bold;
+  text-align: center;
+  color: #1a3a6c;
+  margin-bottom: 8px;
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+
+.stats { font-size: 13px; color: #4A5A68; font-weight: bold; }
+
+.btn {
+  margin-left: auto;
+  padding: 5px 14px;
+  font-size: 13px;
+  font-family: inherit;
+  border: none;
+  border-radius: 5px;
+  background-color: #4A90D9;
+  color: white;
+  cursor: pointer;
+}
+
+.btn-secondary { background-color: #5B7186; }
+.btn:hover { filter: brightness(1.1); }
+
+#timeline {
+  border: 1px solid #C9D6E2;
+  border-radius: 6px;
+  background: white;
+  flex: 0 0 auto;
+}
+
+.axis-label {
+  text-align: center;
+  font-size: 12px;
+  color: #8AA6BF;
+  margin: 4px 0 8px;
+}
+
+.legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 18px;
+  margin-bottom: 8px;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  color: #4A5A68;
+}
+
+.legend-color {
+  width: 13px;
+  height: 13px;
+  border-radius: 3px;
+  margin-right: 6px;
+  flex: 0 0 auto;
+}
+
+.info-panel {
+  border: 2px solid #4A90D9;
+  border-radius: 8px;
+  background: white;
+  padding: 10px 14px;
+  flex: 1 1 auto;
+  overflow-y: auto;
+}
+
+.info-heading {
+  font-size: 14px;
+  font-weight: bold;
+  color: #1a3a6c;
+  border-bottom: 1px solid #E2EAF2;
+  padding-bottom: 5px;
+  margin-bottom: 7px;
+}
+
+.info-placeholder { font-size: 13px; color: #7A8A99; font-style: italic; }
+.info-label { font-size: 16px; font-weight: bold; margin-bottom: 6px; }
+#info-content p { font-size: 13px; line-height: 1.45; margin-bottom: 6px; }
+#info-content strong { color: #2C3A45; }
+
+/* vis-timeline overrides: the defaults are tuned for calendar data and are
+   too small and too grey for a diagram that is mostly four labelled blocks. */
+.vis-item { border-width: 2px; font-size: 13px; }
+.vis-item.vis-selected { box-shadow: 0 0 0 3px rgba(245,166,35,0.55); }
+.vis-item .vis-item-content { padding: 5px 8px; font-weight: bold; }
+/* vis's own minor labels are suppressed: at one tick per ordinal it sizes
+   each label box to a single step (~36px), so "Week 12" clips to "Week",
+   and its placement is a third of a step off the gridline it names. The
+   #axis-ticks row below draws them instead, from the same linear mapping
+   the timeline uses. The axis panel still needs a height for the
+   gridlines to have something to hang from. */
+.vis-time-axis .vis-text { font-size: 12px; color: #5B7186; }
+#timeline .vis-time-axis.vis-foreground { min-height: 16px; }
+#axis-ticks { position: relative; height: 20px; margin-top: 4px; }
+#axis-ticks span {
+  position: absolute; top: 0; transform: translateX(-50%);
+  white-space: nowrap; font-size: 12px; color: #5B7186;
+}
+.vis-time-axis .vis-grid.vis-minor { border-color: #E9EFF5; }
+.vis-panel.vis-center, .vis-panel.vis-top, .vis-panel.vis-bottom {
+  border-color: #C9D6E2;
+}
+.vis-item.marker {
+  background-color: #FDF3DF;
+  border-color: #B87B12;
+  color: #7A5510;
+}
+
+@media (max-width: 520px) {
+  .title { font-size: 18px; }
+  .vis-item { font-size: 11px; }
+}

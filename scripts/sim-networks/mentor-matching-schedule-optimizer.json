@@ -1,0 +1,390 @@
+{
+  "title": "Mentor Matching and Schedule Optimizer",
+  "height": 780,
+  "stats": "5 mentors · 5 students",
+  "panelHeading": "Pairing and Slot Details",
+  "placeholder": "Click a mentor, a student, or a slot. Or press the button when you want the answer.",
+  "arrows": false,
+  "edgeFontSize": 26,
+  "nodeWidth": 220,
+  "pinned": [],
+  "nodes": [
+    {
+      "id": "m-ana",
+      "label": "Ana\nRobotics, Python",
+      "x": -300,
+      "y": -420,
+      "cls": "node",
+      "detail": [
+        [
+          "Interests",
+          "Robotics, Python."
+        ],
+        [
+          "Best match",
+          "Jo (Robotics, Python) — two shared tags, the only 2 on this graph."
+        ],
+        [
+          "Availability",
+          "Weekday evenings from 5pm; not Mondays."
+        ]
+      ]
+    },
+    {
+      "id": "m-ben",
+      "label": "Ben\nPython",
+      "x": -300,
+      "y": -210,
+      "cls": "node",
+      "detail": [
+        [
+          "Interests",
+          "Python."
+        ],
+        [
+          "Best match",
+          "Jo or Kim — one shared tag each, so the score cannot separate them."
+        ],
+        [
+          "Availability",
+          "Any evening."
+        ]
+      ]
+    },
+    {
+      "id": "m-cara",
+      "label": "Cara\nGame Design",
+      "x": -300,
+      "y": 0,
+      "cls": "node",
+      "detail": [
+        [
+          "Interests",
+          "Game design."
+        ],
+        [
+          "Best match",
+          "Lee (Game design) — one shared tag."
+        ],
+        [
+          "Availability",
+          "Tuesdays and Thursdays only."
+        ]
+      ]
+    },
+    {
+      "id": "m-dev",
+      "label": "Dev\nElectronics",
+      "x": -300,
+      "y": 210,
+      "cls": "node",
+      "detail": [
+        [
+          "Interests",
+          "Electronics."
+        ],
+        [
+          "Best match",
+          "Max (Electronics) — one shared tag."
+        ],
+        [
+          "Availability",
+          "Any evening after 6pm."
+        ]
+      ]
+    },
+    {
+      "id": "m-eve",
+      "label": "Eve\nArt, Web",
+      "x": -300,
+      "y": 420,
+      "cls": "node",
+      "detail": [
+        [
+          "Interests",
+          "Art, web."
+        ],
+        [
+          "Best match",
+          "Nia (Art) — one shared tag."
+        ],
+        [
+          "Note",
+          "Eve's second tag, web, matches nobody. A tag with no counterpart is not a failure of the matcher; it is a gap in the student roster."
+        ]
+      ]
+    },
+    {
+      "id": "s-jo",
+      "label": "Jo\nRobotics, Python",
+      "x": 300,
+      "y": -420,
+      "cls": "resolve",
+      "detail": [
+        [
+          "Interests",
+          "Robotics, Python."
+        ],
+        [
+          "Best match",
+          "Ana — two shared tags, score 2. The strongest pairing on this graph."
+        ],
+        [
+          "Also matched",
+          "Ben, on Python alone."
+        ]
+      ]
+    },
+    {
+      "id": "s-kim",
+      "label": "Kim\nPython",
+      "x": 300,
+      "y": -210,
+      "cls": "resolve",
+      "detail": [
+        [
+          "Interests",
+          "Python."
+        ],
+        [
+          "Best match",
+          "Ben or Ana — both score 1, and a tie is where a person has to choose."
+        ],
+        [
+          "What breaks the tie",
+          "Nothing on this graph. Availability, temperament, and who is already overloaded are the things the scores cannot see."
+        ]
+      ]
+    },
+    {
+      "id": "s-lee",
+      "label": "Lee\nGame Design",
+      "x": 300,
+      "y": 0,
+      "cls": "resolve",
+      "detail": [
+        [
+          "Interests",
+          "Game design."
+        ],
+        [
+          "Best match",
+          "Cara — the only game design mentor, score 1."
+        ],
+        [
+          "Risk",
+          "A single-mentor match is fragile. If Cara stops attending, Lee has nobody."
+        ]
+      ]
+    },
+    {
+      "id": "s-max",
+      "label": "Max\nElectronics",
+      "x": 300,
+      "y": 210,
+      "cls": "resolve",
+      "detail": [
+        [
+          "Interests",
+          "Electronics."
+        ],
+        [
+          "Best match",
+          "Dev — the only electronics mentor, score 1."
+        ],
+        [
+          "Risk",
+          "Same fragility as Lee. Two of five students depend on one mentor each."
+        ]
+      ]
+    },
+    {
+      "id": "s-nia",
+      "label": "Nia\nArt",
+      "x": 300,
+      "y": 420,
+      "cls": "resolve",
+      "detail": [
+        [
+          "Interests",
+          "Art."
+        ],
+        [
+          "Best match",
+          "Eve — score 1."
+        ],
+        [
+          "Note",
+          "Nia is matched on the tag Eve cares less about. A score of 1 says the tags touch, not that the pairing will work."
+        ]
+      ]
+    },
+    {
+      "id": "slot-mon",
+      "label": "Mon 5pm\n✗ fails 1",
+      "x": -330,
+      "y": 620,
+      "cls": "danger",
+      "detail": [
+        [
+          "Mentor availability",
+          "FAILS — Ana is not available on Mondays, and Ana is half of the top-scoring pairing."
+        ],
+        [
+          "Venue hours",
+          "Passes. The room is open from 4pm."
+        ],
+        [
+          "Holiday calendar",
+          "Passes. No clashes this term."
+        ],
+        [
+          "Verdict",
+          "One failed constraint is enough. A slot that excludes the strongest pairing is not a candidate."
+        ]
+      ]
+    },
+    {
+      "id": "slot-tuethu",
+      "label": "Tue / Thu 4:30pm\n✓ all 3",
+      "x": 0,
+      "y": 620,
+      "cls": "hub",
+      "detail": [
+        [
+          "Mentor availability",
+          "Passes. Every one of the five mentors can make at least one of the two days."
+        ],
+        [
+          "Venue hours",
+          "Passes. The room is open from 4pm on both days."
+        ],
+        [
+          "Holiday calendar",
+          "Passes. No term-time clashes."
+        ],
+        [
+          "Verdict",
+          "The only slot that satisfies all three constraints — and it is not the slot with the most mentors free, which is the point."
+        ]
+      ]
+    },
+    {
+      "id": "slot-wed",
+      "label": "Wed 6pm\n✗ fails 1",
+      "x": 330,
+      "y": 620,
+      "cls": "danger",
+      "detail": [
+        [
+          "Mentor availability",
+          "Passes. Everyone can do a 6pm start."
+        ],
+        [
+          "Venue hours",
+          "FAILS — the room closes at 6pm on Wednesdays."
+        ],
+        [
+          "Holiday calendar",
+          "Passes."
+        ],
+        [
+          "Verdict",
+          "The constraint that fails here has nothing to do with people. A scheduler that only models mentor availability would have recommended this slot."
+        ]
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "m-ana",
+      "to": "s-jo",
+      "label": "score 2",
+      "width": 7
+    },
+    {
+      "from": "m-ana",
+      "to": "s-kim",
+      "label": "score 1",
+      "width": 3,
+      "curve": 0.25
+    },
+    {
+      "from": "m-ben",
+      "to": "s-jo",
+      "label": "score 1",
+      "width": 3,
+      "curve": -0.25
+    },
+    {
+      "from": "m-ben",
+      "to": "s-kim",
+      "label": "score 1",
+      "width": 3
+    },
+    {
+      "from": "m-cara",
+      "to": "s-lee",
+      "label": "score 1",
+      "width": 3
+    },
+    {
+      "from": "m-dev",
+      "to": "s-max",
+      "label": "score 1",
+      "width": 3
+    },
+    {
+      "from": "m-eve",
+      "to": "s-nia",
+      "label": "score 1",
+      "width": 3
+    }
+  ],
+  "legend": [
+    {
+      "cls": "node",
+      "text": "Mentor"
+    },
+    {
+      "cls": "resolve",
+      "text": "Student"
+    },
+    {
+      "cls": "hub",
+      "text": "Slot passing every constraint"
+    },
+    {
+      "cls": "danger",
+      "text": "Slot failing at least one"
+    },
+    {
+      "cls": "none",
+      "text": "A thicker line is a higher shared-interest score"
+    }
+  ],
+  "spotlight": {
+    "button": "Best pairing",
+    "nodes": [
+      "m-ana",
+      "s-jo",
+      "slot-tuethu"
+    ],
+    "heading": "Ana ↔ Jo, on Tue / Thu 4:30pm",
+    "detail": [
+      [
+        "The pairing",
+        "Ana and Jo share two interest tags — robotics and Python — and are the only pair on this graph scoring above 1. That is why their line is the thick one."
+      ],
+      [
+        "The slot",
+        "Tue / Thu 4:30pm is the only candidate that passes mentor availability, venue hours, and the holiday calendar together. Monday excludes Ana; Wednesday hits a venue closing time that has nothing to do with people at all."
+      ],
+      [
+        "What the scores cannot decide",
+        "Three of the five students tie at score 1, and two of them depend on a single mentor each. A ranking hands a person a shortlist; it does not hand them a decision, and the pairings it is least sure about are the ones worth a human look."
+      ]
+    ]
+  },
+  "navClearance": true
+}

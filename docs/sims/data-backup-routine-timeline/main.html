@@ -3,122 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- microsim-scaffold-stub -->
+    <meta name="schema" content="https://dmccreary.github.io/intelligent-textbooks/ns/microsim/v1">
     <title>Data Backup Routine Timeline</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: #f8f9fa;
-            color: #212529;
-        }
-        #container {
-            width: 100%;
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 20px;
-            background: white;
-        }
-        h1 {
-            font-size: 22px;
-            margin-bottom: 10px;
-            color: #1a3a6c;
-        }
-        .placeholder {
-            border: 2px dashed #adb5bd;
-            border-radius: 8px;
-            padding: 40px 20px;
-            text-align: center;
-            color: #6c757d;
-            margin: 20px 0;
-            min-height: 400px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        .placeholder .badge {
-            display: inline-block;
-            background: #ffc107;
-            color: #212529;
-            padding: 4px 12px;
-            border-radius: 12px;
-            font-size: 12px;
-            font-weight: 600;
-            margin-bottom: 12px;
-        }
-        .placeholder h2 {
-            font-size: 18px;
-            color: #495057;
-            margin-bottom: 8px;
-        }
-        .placeholder p {
-            font-size: 14px;
-            max-width: 480px;
-        }
-        .meta {
-            margin-top: 20px;
-            font-size: 13px;
-            color: #6c757d;
-            border-top: 1px solid #dee2e6;
-            padding-top: 12px;
-        }
-        .meta strong { color: #495057; }
-    </style>
+    <link rel="stylesheet"
+          href="https://unpkg.com/vis-timeline@7.7.3/styles/vis-timeline-graph2d.min.css">
+    <script src="https://unpkg.com/vis-timeline@7.7.3/standalone/umd/vis-timeline-graph2d.min.js"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="container">
-        <h1>Data Backup Routine Timeline</h1>
-        <div class="placeholder">
-            <span class="badge">SCAFFOLD</span>
-            <h2>MicroSim Not Yet Implemented</h2>
-            <p>This MicroSim has been scaffolded from its specification but the
-            interactive content has not been built yet. See the chapter source
-            and the <code>index.md</code> in this directory for the full spec.</p>
+<main>
+    <div class="container">
+        <div class="title">Data Backup Routine Timeline</div>
+
+        <div class="controls">
+            <div class="stats">3 automatic · 2 manual checkpoints</div>
+            <button class="btn btn-secondary" id="reset-btn">Reset</button>
         </div>
-        <div class="meta">
-            <p><strong>Sim ID:</strong> data-backup-routine-timeline</p>
-            <p><strong>Library:</strong> vis-timeline</p>
-            <p><strong>Bloom Level:</strong> Apply (L3)</p>
-            <p><strong>Learning Objective:</strong> Given a semester calendar, the learner schedules backup and restore-verification checkpoints at appropriate intervals.</p>
+
+        <div id="timeline"></div>
+        <div id="axis-ticks"></div>
+        <div class="axis-label">One 16-week semester</div>
+
+        <div class="legend">
+            <div class="legend-item"><span class="legend-color" style="background-color:#4A90D9"></span>Automatic — no action needed</div>
+            <div class="legend-item"><span class="legend-color" style="background-color:#F5A623"></span>Manual checkpoint — put it in the calendar</div>
+            <div class="legend-item"><span class="legend-color" style="background:transparent"></span>Two dates a semester is the whole routine</div>
+        </div>
+
+        <div class="info-panel">
+            <div class="info-heading">Checkpoint Details</div>
+            <div id="info-content">
+                <p class="info-placeholder">Click any checkpoint for what it involves and roughly how long it takes. The two amber ones are the only dates anyone has to put in a calendar.</p>
+            </div>
         </div>
     </div>
+</main>
 
-    <!--
-    SPECIFICATION (from chapter index.md):
-
-    Type: timeline
-    **sim-id:** data-backup-routine-timeline<br/>
-    **Library:** vis-timeline<br/>
-    **Status:** Specified
-    
-    Purpose: Show a recommended backup and restore-verification cadence across a semester, so a club leader can see when backups happen and when they should actually be tested.
-    
-    Bloom Taxonomy: Apply (L3)
-    Bloom Taxonomy Verb: schedule
-    
-    Learning objective: Given a semester calendar, the learner schedules backup and restore-verification checkpoints at appropriate intervals.
-    
-    Time period: One 16-week semester
-    
-    Orientation: Horizontal
-    
-    Events:
-    - Week 1: "Confirm Cloud Sync Is Active" -- automatic backup enabled on the tracking spreadsheet and consent-form folder
-    - Week 4: "Automatic Backup Running" -- ongoing, no action needed
-    - Week 8: "Mid-Semester Restore Test" -- restore one file from backup to confirm it isn't silently broken
-    - Week 12: "Automatic Backup Running" -- ongoing, no action needed
-    - Week 16: "End-of-Semester Restore Test and Archive" -- verify backups again and archive the semester's records per the retention policy
-    
-    Visual style: Horizontal timeline with alternating above/below event placement
-    
-    Color coding: Blue for ongoing automatic backup events, amber for the two manual restore-test checkpoints
-    
-    Interactive features:
-    - Click any event to see what it involves and roughly how long it takes
-    - Hover to preview the event title before clicking
-    
-    Implementation: vis-timeline library rendered in main.html with a `select` event handler opening a detail panel for the clicked item.
-    -->
+    <script src="data-backup-routine-timeline.js"></script>
 </body>
 </html>

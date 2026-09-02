@@ -9,7 +9,7 @@ bloom_level: Analyze (L4)
 
 # Access Barrier to Fix Map
 
-<iframe src="main.html" width="100%" height="762" scrolling="no"></iframe>
+<iframe src="main.html" width="100%" height="742px" scrolling="no"></iframe>
 
 [Run the Access Barrier to Fix Map MicroSim fullscreen](main.html){ .md-button .md-button--primary }
 
@@ -69,7 +69,7 @@ Paste this into any page of the book, adjusting the relative path to
 `docs/sims/` for the page's depth:
 
 ```html
-<iframe src="../../sims/access-barrier-to-fix-map/main.html" width="100%" height="762" scrolling="no"></iframe>
+<iframe src="../../sims/access-barrier-to-fix-map/main.html" width="100%" height="742px" scrolling="no"></iframe>
 ```
 
 ## Specification
