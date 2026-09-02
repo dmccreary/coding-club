@@ -196,7 +196,6 @@ nav:
     - Device Lifecycle Workflow: sims/device-lifecycle-workflow/index.md
     - Differential Drive Chassis Explorer: sims/differential-drive-chassis-explorer/index.md
     - Digital Signal HIGH/LOW Chart: sims/digital-signal-high-low-chart/index.md
-    - Do You Actually Need This Data Field?: sims/saving-student-data-decision-tool/index.md
     - Electrical Safety Rules Poster: sims/electrical-safety-rules-poster/index.md
     - Email List Segments: sims/email-list-segments-venn/index.md
     - Feedback Loop Cycle: sims/feedback-loop-cycle/index.md
@@ -261,6 +260,7 @@ nav:
     - Resistor Color Code Calculator: sims/resistor-color-code-calculator/index.md
     - Robot Emotion Display Control Panel: sims/robot-emotion-display-control-panel/index.md
     - Robot Kit Assembly Sequence: sims/robot-kit-assembly-sequence/index.md
+    - Saving Student Data Decision Tool: sims/saving-student-data-decision-tool/index.md
     - Seasonal LED Pattern Gallery: sims/seasonal-led-pattern-gallery/index.md
     - Sensor Type Picker: sims/sensor-type-picker/index.md
     - Servo Angle and Pulse Width Explorer: sims/servo-angle-pulse-width-explorer/index.md
@@ -290,6 +290,8 @@ nav:
     - Ultrasonic Ranging Explorer: sims/ultrasonic-ranging/index.md
     - USB Connector Comparison: sims/usb-connector-comparison/index.md
     - Where a Coding-Help Request Goes: sims/coding-help-agent-handoff/index.md
+
+
 
 
 

@@ -184,13 +184,13 @@ A worked example shows both sides of that simplicity. A club sets a flat $10-per
     ![Circuit warning](../../img/mascot/warning.png){ class="mascot-admonition-img" }
     Watch out for this trap: requiring income verification or paperwork to unlock the $0 tier defeats the entire purpose of a sliding scale, recreating the exact stigma Chapter 28 warned a fee creates. Fix it by making the scale self-selected on the honor system -- a family picks their own tier from a simple form, no proof required, no questions asked.
 
-A worked example shows the model in practice. The same club that considered a flat $10 fee instead offers a self-selected sliding scale from $0 to $25 a month across the same 10 families. Three families select $0, four select $10, two select $15, and one selects $25 -- averaging $8.50 per family per month, or roughly $765 across the nine-month year, somewhat less than the flat fee's $900 but without excluding the three families who selected $0. The gap between $765 and the $830 recurring budget is small enough to close with the community support drive from Chapter 30, and no family had to disclose income or justify a reduced rate to participate.
+A worked example shows the model in practice. The same club that considered a flat $10 fee instead offers a self-selected sliding scale from $0 to $25 a month across the same 10 families. Three families select $0, four select $10, two select $15, and one selects $25 -- averaging $9.50 per family per month, or $855 across the nine-month year, $45 less than the flat fee's $900 but without excluding the three families who selected $0. That $855 covers the $830 recurring budget from Chapter 30 with $25 to spare, and no family had to disclose income or justify a reduced rate to participate.
 
 The MicroSim below lets you build a family mix like this one yourself and compare what a flat membership fee versus a sliding scale actually collects.
 
 #### Diagram: Membership Fee Model Comparison
 
-<iframe src="../../sims/membership-fee-model-comparison/main.html" width="100%" height="520px" scrolling="no"></iframe>
+<iframe src="../../sims/membership-fee-model-comparison/main.html" width="100%" height="562px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Membership Fee Model Comparison</summary>
@@ -225,7 +225,7 @@ Behavior:
 - Sliding Scale Revenue = sum over each tier of (tier amount x families at that tier) x Months per year
 - Both bars and the $0-tier family count recalculate immediately whenever any slider changes
 
-Default parameters: loads with the sample mix from the worked example (10 families: 3 at $0, 4 at $10, 2 at $15, 1 at $25; flat fee $10; 9 months) yielding $900 flat versus $765 sliding scale
+Default parameters: loads with the sample mix from the worked example (10 families: 3 at $0, 4 at $10, 2 at $15, 1 at $25; flat fee $10; 9 months) yielding $900 flat versus $855 sliding scale
 
 Implementation notes: p5.js canvas with createSlider and createButton controls parented to the sketch's own control div; recompute both totals every draw() call from current slider values so the bars stay perfectly in sync with the controls.
 </details>

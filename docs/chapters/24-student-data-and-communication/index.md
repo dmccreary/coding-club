@@ -82,7 +82,7 @@ A worked example makes the underlying decision concrete. A new mentor, eager to 
 
 #### Diagram: Do You Actually Need This Data Field?
 
-<iframe src="../../sims/saving-student-data-decision-tool/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../sims/saving-student-data-decision-tool/main.html" width="100%" height="522px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Do You Actually Need This Data Field?</summary>
@@ -535,7 +535,7 @@ A worked example shows the overlap in action: a club needs to announce a mentor-
 
 #### Diagram: Email List Segments
 
-<iframe src="../../sims/email-list-segments-venn/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../sims/email-list-segments-venn/main.html" width="100%" height="582px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Email List Segments</summary>

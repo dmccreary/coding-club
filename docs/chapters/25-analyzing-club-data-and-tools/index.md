@@ -350,7 +350,7 @@ A worked example shows the reshaping in action: a club's raw attendance log has 
 
 #### Diagram: Pivot Table Builder
 
-<iframe src="../../sims/pivot-table-builder/main.html" width="100%" height="550px" scrolling="no"></iframe>
+<iframe src="../../sims/pivot-table-builder/main.html" width="100%" height="562px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Pivot Table Builder</summary>

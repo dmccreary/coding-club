@@ -1,18 +1,90 @@
 ---
 title: Membership Fee Model Comparison
-description: Given a number of families and a distribution of self-selected fee tiers, the learner calculates and compares total annual revenue under a flat membership fee model versus a sliding scale fee model.
-status: scaffold
+description: Flat fee against sliding scale on the same families -- with the reach that a revenue bar alone does not show.
+image: sims/membership-fee-model-comparison/membership-fee-model-comparison.png
+status: built
 library: p5.js
 bloom_level: Apply (L3)
 ---
 
 # Membership Fee Model Comparison
 
+<iframe src="main.html" width="100%" height="562" scrolling="no"></iframe>
 
+[Run the Membership Fee Model Comparison MicroSim fullscreen](main.html){ .md-button .md-button--primary }
 
-<iframe src="main.html" width="100%" height="600"></iframe>
+## About This MicroSim
 
-[Run MicroSim in Fullscreen](main.html){ .md-button .md-button--primary }
+Two models, the same ten families, and a comparison that a revenue bar on its
+own gets wrong.
+
+With the sample mix the flat fee raises **$900** and the sliding scale raises
+**$855**. On revenue alone the flat fee wins by $45, and the sim says so.
+
+What the flat bar does not show is that three of the ten families selected the
+$0 tier. Under a flat $10 fee those three families are not in the club, so that
+$900 is $630 from seven families — the $900 figure quietly assumes ten families
+who would not all be there. That is why the sim prints the reach beside each
+bar: **7 families against 10.**
+
+So the question is not which bar is taller. It is whether $45 a year is worth
+three families, and once it is put that way most clubs answer it quickly.
+
+**The $0 tier is the whole mechanism.** A sliding scale without one is a flat
+fee with extra steps. And a sliding scale that asks a family to prove hardship
+to reach the $0 tier is worse than a flat fee, because it adds the stigma the
+fee was meant to avoid while still collecting less. Self-selected, on the
+honour system, no questions — or do not bother.
+
+Worth checking against your own budget: $855 covers the sample club's $830 of
+recurring costs, with $25 to spare. A model that reaches every family *and*
+covers the year is not a compromise.
+
+## How to Use
+
+- The sim opens on the ten-family sample mix. Compare the two bars, then read
+  the reach under each.
+- Drag the **$0 tier** slider up and watch the flat fee's revenue *and* reach
+  both fall while the sliding scale's reach holds.
+- Push the **$25 tier** up. A handful of families choosing the top tier can
+  close the gap entirely.
+- Change **Flat monthly fee** to find the flat fee that matches the sliding
+  scale's revenue — then ask how many families that fee excludes.
+- **Load sample family mix** restores the worked example.
+
+## Lesson Plan
+
+**Bloom level:** Apply (L3) -- *calculate*
+
+**Learning objective:** Given a number of families and a distribution of
+self-selected fee tiers, the learner calculates and compares total annual
+revenue under a flat membership fee model versus a sliding scale fee model.
+
+**Before the sim (5 min).** Ask which model raises more. Most people say flat,
+and most people are right — which makes the reach number land harder.
+
+**With the sim (15 min).** Run the sample, then have the group guess their own
+club's likely mix and enter it. The guess about how many families would pick $0
+is itself worth discussing.
+
+**After the sim (20 min).** Draft the actual form. One question, five options,
+no explanation required. The wording matters more than the tiers: "choose what
+works for your family" collects differently from "select your contribution
+level".
+
+**Check for understanding.** Ask: "Your sliding scale raises less than you
+need. Name two changes that do not exclude anybody." Add a higher tier, or
+make up the gap from the community support drive. Lowering the $0 tier's
+availability is not on the list.
+
+## Embedding This MicroSim
+
+Paste this into any page of the book, adjusting the relative path to
+`docs/sims/` for the page's depth:
+
+```html
+<iframe src="../../sims/membership-fee-model-comparison/main.html" width="100%" height="562" scrolling="no"></iframe>
+```
 
 ## Specification
 
@@ -51,11 +123,15 @@ Behavior:
 - Sliding Scale Revenue = sum over each tier of (tier amount x families at that tier) x Months per year
 - Both bars and the $0-tier family count recalculate immediately whenever any slider changes
 
-Default parameters: loads with the sample mix from the worked example (10 families: 3 at $0, 4 at $10, 2 at $15, 1 at $25; flat fee $10; 9 months) yielding $900 flat versus $765 sliding scale
+Default parameters: loads with the sample mix from the worked example (10 families: 3 at $0, 4 at $10, 2 at $15, 1 at $25; flat fee $10; 9 months) yielding $900 flat versus $855 sliding scale
 
 Implementation notes: p5.js canvas with createSlider and createButton controls parented to the sketch's own control div; recompute both totals every draw() call from current slider values so the bars stay perfectly in sync with the controls.
 ```
 
-## Related Resources
+## References
 
-- [Chapter 31: Tracking Expenses and Building Funding Partnerships](../../chapters/31-expenses-and-funding-partnerships/index.md)
+- [Chapter 31: Tracking Expenses and Building Funding Partnerships](../../chapters/31-expenses-and-funding-partnerships/index.md) -- the chapter this MicroSim supports.
+- [Coding Club Budget Builder](../coding-club-budget-builder/index.md) -- the recurring total this revenue has to cover.
+- [Access Barrier to Fix Map](../access-barrier-to-fix-map/index.md) -- why a fee is an access barrier at all.
+- [Sliding scale fees](https://en.wikipedia.org/wiki/Sliding_scale_fees) -- the model and where else it is used.
+- [Pay what you can](https://en.wikipedia.org/wiki/Pay_what_you_want) -- self-selection, and what actually happens when you try it.

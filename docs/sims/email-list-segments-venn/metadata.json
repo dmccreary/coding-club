@@ -1,6 +1,6 @@
 {
   "title": "Email List Segments",
-  "description": "Given a sample contact, the learner differentiates which segment or segments that contact belongs to.",
+  "description": "Four club mailing segments, drawn so the overlaps that exist are visible and the one that must not is visibly absent.",
   "creator": "Coding Club",
   "author": "Dan McCreary",
   "date": "2026-09-01",
@@ -15,9 +15,29 @@
   "library": "p5.js",
   "bloomLevel": "Analyze (L4)",
   "bloomVerb": "differentiate",
-  "completion_status": "scaffold",
+  "completion_status": "built",
+  "canvasHeight": 580,
   "chapter_number": 24,
   "chapter_title": "Tracking Student Data and Managing Club Communication",
   "chapter_dir": "24-student-data-and-communication",
-  "chapter_rel_dir": "chapters/24-student-data-and-communication"
+  "chapter_rel_dir": "chapters/24-student-data-and-communication",
+  "educational": {
+    "gradeLevel": "Middle School, High School, Adult",
+    "audience": "Mentors managing club communications",
+    "duration": "10 minutes",
+    "concepts": [
+      "Email Segment",
+      "Overlapping Membership",
+      "Waitlist",
+      "Alumni",
+      "List Hygiene"
+    ]
+  },
+  "pedagogical": {
+    "bloomLevel": "Analyze (L4)",
+    "bloomVerb": "differentiate",
+    "learningObjective": "Given a sample contact, the learner differentiates which segment or segments that contact belongs to.",
+    "interactionPattern": "Click any circle or overlap for what it is and what you would send to it",
+    "assessment": "Place a described contact into the right region or regions."
+  }
 }

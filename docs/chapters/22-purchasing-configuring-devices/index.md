@@ -79,7 +79,7 @@ That cargo difference is the whole tradeoff, and it is easiest to see side by si
 
 A worked example turns the table into arithmetic a club leader can actually run against a real grant. Suppose a new club receives a $3,000 startup grant and plans to serve twelve students at a session. An all-Chromebook fleet at $250 apiece buys twelve devices exactly -- one per student, with nothing left over. An all-Windows fleet at $450 apiece buys only six, forcing students to share two-to-a-machine even at this book's recommended 3:1 student-to-mentor ratio. A mixed fleet -- ten Chromebooks at $250 ($2,500) plus one Windows laptop at $450 ($4,950 total, over budget) shows why the arithmetic has to be checked before a plan is announced to a room full of excited volunteers; dropping to nine Chromebooks ($2,250) plus one Windows laptop ($450) fits the $3,000 budget with $300 left over for a charging cart, discussed later in this chapter.
 
-<iframe src="../../sims/grant-budget-laptop-calculator/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../sims/grant-budget-laptop-calculator/main.html" width="100%" height="502px" scrolling="no"></iframe>
 
 #### Diagram: Grant Budget Laptop Calculator
 

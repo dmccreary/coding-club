@@ -13,8 +13,8 @@ above are maintained by hand as sims are actually built.
 
 - Chapters scanned: 35
 - Total diagram specs found: 129
-- Already implemented: 90
-- **Unimplemented (TODO): 39**
+- Already implemented: 96
+- **Unimplemented (TODO): 33**
 
 Regenerate this list after adding or editing chapter diagram specs:
 
@@ -188,7 +188,7 @@ python3 ~/.claude/skills/microsim-utils/scripts/create-microsim-todo-json-files.
 | Sim ID | Diagram Name | Library | Bloom Level |
 |---|---|---|---|
 | :white_check_mark: [`device-lifecycle-workflow`](device-lifecycle-workflow/index.md) | Device Lifecycle Workflow | Mermaid | Analyze (L4) |
-| [`grant-budget-laptop-calculator`](TODO/grant-budget-laptop-calculator.json) | Grant Budget Laptop Calculator | p5.js | Apply (L3) |
+| :white_check_mark: [`grant-budget-laptop-calculator`](grant-budget-laptop-calculator/index.md) | Grant Budget Laptop Calculator | p5.js | Apply (L3) |
 | :white_check_mark: [`platform-management-workflow`](platform-management-workflow/index.md) | Platform Management Workflow | Mermaid | Analyze (L4) |
 | [`youth-safety-layers`](TODO/youth-safety-layers.json) | Layers of Youth Digital Safety | Interactive Infographic Overlay (grid-diagram.js, annotation-free comparison poster + rectangular hover zones) | Understand (L2) |
 
@@ -209,14 +209,14 @@ python3 ~/.claude/skills/microsim-utils/scripts/create-microsim-todo-json-files.
 | :white_check_mark: [`consent-collection-workflow`](consent-collection-workflow/index.md) | Guardian Consent Collection Workflow | Mermaid | Analyze (L4) |
 | [`data-backup-routine-timeline`](TODO/data-backup-routine-timeline.json) | Data Backup Routine Timeline | vis-timeline | Apply (L3) |
 | [`data-retention-schedule`](TODO/data-retention-schedule.json) | Data Retention Schedule by Type | Interactive Infographic Overlay (grid-diagram.js, annotation-free poster + rectangular hover zones) | Understand (L2) |
-| [`email-list-segments-venn`](TODO/email-list-segments-venn.json) | Email List Segments | p5.js | Analyze (L4) |
+| :white_check_mark: [`email-list-segments-venn`](email-list-segments-venn/index.md) | Email List Segments | p5.js | Analyze (L4) |
 | [`feedback-form-annotated`](TODO/feedback-form-annotated.json) | Annotated Feedback Form | Interactive Infographic Overlay (grid-diagram.js, annotation-free poster + rectangular hover zones) | Understand (L2) |
 | :white_check_mark: [`feedback-loop-cycle`](feedback-loop-cycle/index.md) | Feedback Loop Cycle | Mermaid | Understand (L2) |
 | :white_check_mark: [`message-channel-decision-tree`](message-channel-decision-tree/index.md) | Message Channel Decision Tree | Mermaid | Evaluate (L5) |
 | [`notification-lead-time-timeline`](TODO/notification-lead-time-timeline.json) | Notification Lead-Time Timeline | vis-timeline | Apply (L3) |
 | :white_check_mark: [`progress-dashboard-explorer`](progress-dashboard-explorer/index.md) | Progress Dashboard Explorer | Chart.js | Analyze (L4) |
 | :white_check_mark: [`progress-tracking-cycle`](progress-tracking-cycle/index.md) | Student Progress Tracking Cycle | Mermaid | Understand (L2) |
-| [`saving-student-data-decision-tool`](TODO/saving-student-data-decision-tool.json) | Do You Actually Need This Data Field? | p5.js | Evaluate (L5) |
+| :white_check_mark: [`saving-student-data-decision-tool`](saving-student-data-decision-tool/index.md) | Do You Actually Need This Data Field? | p5.js | Evaluate (L5) |
 | [`spreadsheet-template-zones`](TODO/spreadsheet-template-zones.json) | Spreadsheet Template Zones | Interactive Infographic Overlay (grid-diagram.js, annotation-free poster + rectangular hover zones) | Understand (L2) |
 | :white_check_mark: [`student-data-privacy-principles`](student-data-privacy-principles/index.md) | Student Data Privacy Principles | Mermaid | Understand (L2) |
 
@@ -226,7 +226,7 @@ python3 ~/.claude/skills/microsim-utils/scripts/create-microsim-todo-json-files.
 |---|---|---|---|
 | :white_check_mark: [`attendance-enrollment-trend-explorer`](attendance-enrollment-trend-explorer/index.md) | Attendance and Enrollment Trend Explorer | Chart.js | Analyze (L4) |
 | :white_check_mark: [`automated-communication-pipeline`](automated-communication-pipeline/index.md) | Automated Communication Pipeline | Mermaid | Analyze (L4) |
-| [`pivot-table-builder`](TODO/pivot-table-builder.json) | Pivot Table Builder | p5.js | Apply (L3) |
+| :white_check_mark: [`pivot-table-builder`](pivot-table-builder/index.md) | Pivot Table Builder | p5.js | Apply (L3) |
 | :white_check_mark: [`student-growth-portfolio-network`](student-growth-portfolio-network/index.md) | Student Growth to Portfolio Network | vis-network | Understand (L2) |
 
 ### Chapter 26: Motivation, Badges, and Growth Mindset Coaching (4)
@@ -262,7 +262,7 @@ python3 ~/.claude/skills/microsim-utils/scripts/create-microsim-todo-json-files.
 
 | Sim ID | Diagram Name | Library | Bloom Level |
 |---|---|---|---|
-| [`coding-club-budget-builder`](TODO/coding-club-budget-builder.json) | Coding Club Budget Builder | p5.js | Apply (L3) |
+| :white_check_mark: [`coding-club-budget-builder`](coding-club-budget-builder/index.md) | Coding Club Budget Builder | p5.js | Apply (L3) |
 | :white_check_mark: [`funding-partnership-fit-map`](funding-partnership-fit-map/index.md) | Funding Partnership Fit Map | vis-network | Analyze (L4) |
 | :white_check_mark: [`fundraising-channel-yield-comparison`](fundraising-channel-yield-comparison/index.md) | Fundraising Channel Yield Comparison | Chart.js | Analyze (L4) |
 | :white_check_mark: [`grant-writing-tracking-workflow`](grant-writing-tracking-workflow/index.md) | Grant Writing and Tracking Workflow | Mermaid | Apply (L3) |
@@ -273,7 +273,7 @@ python3 ~/.claude/skills/microsim-utils/scripts/create-microsim-todo-json-files.
 |---|---|---|---|
 | :white_check_mark: [`club-financial-operations-cycle`](club-financial-operations-cycle/index.md) | Club Financial Operations Cycle | Mermaid | Apply (L3) |
 | [`institutional-funding-partnership-map`](TODO/institutional-funding-partnership-map.json) | Institutional Funding Partnership Map | vis-network | Analyze (L4) |
-| [`membership-fee-model-comparison`](TODO/membership-fee-model-comparison.json) | Membership Fee Model Comparison | p5.js | Apply (L3) |
+| :white_check_mark: [`membership-fee-model-comparison`](membership-fee-model-comparison/index.md) | Membership Fee Model Comparison | p5.js | Apply (L3) |
 
 ### Chapter 32: AI Agents for Registration, Scheduling, and Communication (7)
 

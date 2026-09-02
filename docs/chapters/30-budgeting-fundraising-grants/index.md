@@ -76,7 +76,7 @@ The MicroSim below lets you build a budget like this one yourself, swapping in y
 
 #### Diagram: Coding Club Budget Builder
 
-<iframe src="../../sims/coding-club-budget-builder/main.html" width="100%" height="520px" scrolling="no"></iframe>
+<iframe src="../../sims/coding-club-budget-builder/main.html" width="100%" height="562px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Coding Club Budget Builder</summary>

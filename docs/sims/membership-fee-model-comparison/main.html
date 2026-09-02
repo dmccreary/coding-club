@@ -3,124 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- microsim-scaffold-stub -->
-    <title>Membership Fee Model Comparison</title>
+    <meta name="schema" content="https://dmccreary.github.io/intelligent-textbooks/ns/microsim/v1">
+    <title>Membership Fee Model Comparison MicroSim using P5.js 1.11.10</title>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.11.10/lib/p5.js"></script>
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: #f8f9fa;
-            color: #212529;
+            margin: 0px;
+            padding: 0px;
+            font-family: Arial, Helvetica, sans-serif;
         }
-        #container {
-            width: 100%;
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 20px;
-            background: white;
-        }
-        h1 {
-            font-size: 22px;
-            margin-bottom: 10px;
-            color: #1a3a6c;
-        }
-        .placeholder {
-            border: 2px dashed #adb5bd;
-            border-radius: 8px;
-            padding: 40px 20px;
-            text-align: center;
-            color: #6c757d;
-            margin: 20px 0;
-            min-height: 400px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        .placeholder .badge {
-            display: inline-block;
-            background: #ffc107;
-            color: #212529;
-            padding: 4px 12px;
-            border-radius: 12px;
-            font-size: 12px;
-            font-weight: 600;
-            margin-bottom: 12px;
-        }
-        .placeholder h2 {
-            font-size: 18px;
-            color: #495057;
-            margin-bottom: 8px;
-        }
-        .placeholder p {
-            font-size: 14px;
-            max-width: 480px;
-        }
-        .meta {
-            margin-top: 20px;
-            font-size: 13px;
-            color: #6c757d;
-            border-top: 1px solid #dee2e6;
-            padding-top: 12px;
-        }
-        .meta strong { color: #495057; }
     </style>
+    <script src="membership-fee-model-comparison.js"></script>
 </head>
 <body>
-    <div id="container">
-        <h1>Membership Fee Model Comparison</h1>
-        <div class="placeholder">
-            <span class="badge">SCAFFOLD</span>
-            <h2>MicroSim Not Yet Implemented</h2>
-            <p>This MicroSim has been scaffolded from its specification but the
-            interactive content has not been built yet. See the chapter source
-            and the <code>index.md</code> in this directory for the full spec.</p>
-        </div>
-        <div class="meta">
-            <p><strong>Sim ID:</strong> membership-fee-model-comparison</p>
-            <p><strong>Library:</strong> p5.js</p>
-            <p><strong>Bloom Level:</strong> Apply (L3)</p>
-            <p><strong>Learning Objective:</strong> Given a number of families and a distribution of self-selected fee tiers, the learner calculates and compares total annual revenue under a flat membership fee model versus a sliding scale fee model.</p>
-        </div>
-    </div>
-
-    <!--
-    SPECIFICATION (from chapter index.md):
-
-    Type: microsim
-    **sim-id:** membership-fee-model-comparison<br/>
-    **Library:** p5.js<br/>
-    **Status:** Specified
-    
-    Purpose: Let a club leader build a family mix and compare the total annual revenue and family reach of a flat membership fee against a self-selected sliding scale fee.
-    
-    Bloom Taxonomy: Apply (L3)
-    Bloom Taxonomy Verb: calculate
-    
-    Learning objective: Given a number of families and a distribution of self-selected fee tiers, the learner calculates and compares total annual revenue under a flat membership fee model versus a sliding scale fee model.
-    
-    Instructional Rationale: A parameter-exploration pattern fits this Apply-level objective because the learner needs to adjust the number of families at each fee tier and immediately see how total revenue and the number of $0-tier families shift, rather than watch one fixed scenario play out.
-    
-    Canvas layout:
-    - Left (60%): two side-by-side vertical bars -- "Flat Fee Revenue" and "Sliding Scale Revenue" -- each with a "months per year" multiplier applied, plus a small readout of how many families pay $0
-    - Right (40%): sliders for the flat fee amount and for how many families sit at each sliding-scale tier ($0, $5, $10, $15, $25), plus a total-families readout
-    
-    Interactive controls:
-    - Slider: Flat monthly fee amount ($0-$30, default $10)
-    - Slider (x5): Number of families at each sliding-scale tier ($0, $5, $10, $15, $25), each 0-15, defaulting to 3, 0, 4, 2, 1
-    - Input (number): Months per year fees are collected, default 9
-    - Button: "Load Sample Family Mix" -- prefills the exact 10-family worked example above
-    - Button: "Reset"
-    
-    Behavior:
-    - Total Families = sum of the five tier sliders
-    - Flat Fee Revenue = Flat monthly fee x Total Families x Months per year
-    - Sliding Scale Revenue = sum over each tier of (tier amount x families at that tier) x Months per year
-    - Both bars and the $0-tier family count recalculate immediately whenever any slider changes
-    
-    Default parameters: loads with the sample mix from the worked example (10 families: 3 at $0, 4 at $10, 2 at $15, 1 at $25; flat fee $10; 9 months) yielding $900 flat versus $765 sliding scale
-    
-    Implementation notes: p5.js canvas with createSlider and createButton controls parented to the sketch's own control div; recompute both totals every draw() call from current slider values so the bars stay perfectly in sync with the controls.
-    -->
+    <main></main>
+    <br/>
+    <a href=".">Back to Membership Fee Model Comparison Lesson Plan</a>
 </body>
 </html>
