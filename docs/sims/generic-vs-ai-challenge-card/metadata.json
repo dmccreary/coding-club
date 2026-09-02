@@ -1,6 +1,6 @@
 {
-  "title": "Template Card vs. AI-Customized Card",
-  "description": "Given a generic and an AI-customized challenge card teaching the same concept, the learner compares them to identify what customization changed and what the required format kept constant.",
+  "title": "Generic vs AI Challenge Card",
+  "description": "The same repeat-block lesson, twice -- and the three fields customisation is allowed to touch.",
   "creator": "Coding Club",
   "author": "Dan McCreary",
   "date": "2026-09-01",
@@ -15,9 +15,29 @@
   "library": "p5.js",
   "bloomLevel": "Analyze (L4)",
   "bloomVerb": "compare",
-  "completion_status": "scaffold",
+  "completion_status": "built",
+  "canvasHeight": 580,
   "chapter_number": 33,
   "chapter_title": "AI-Customized Curriculum and Rolling Out New Agents",
   "chapter_dir": "33-ai-customized-curriculum-rollout",
-  "chapter_rel_dir": "chapters/33-ai-customized-curriculum-rollout"
+  "chapter_rel_dir": "chapters/33-ai-customized-curriculum-rollout",
+  "educational": {
+    "gradeLevel": "Middle School, High School, Adult",
+    "audience": "Mentors considering AI-customised materials",
+    "duration": "10 minutes",
+    "concepts": [
+      "Challenge Card",
+      "Customisation",
+      "Card Format",
+      "Concept Tag",
+      "Student Interest"
+    ]
+  },
+  "pedagogical": {
+    "bloomLevel": "Analyze (L4)",
+    "bloomVerb": "compare",
+    "learningObjective": "Given a generic and an AI-customized challenge card teaching the same concept, the learner compares them to identify what customization changed and what the required format kept constant.",
+    "interactionPattern": "Highlight what the customisation changed and what the format kept fixed; switch themes",
+    "assessment": "Name which fields an AI customisation may change without breaking the set."
+  }
 }

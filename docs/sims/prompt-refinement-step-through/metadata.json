@@ -1,6 +1,6 @@
 {
   "title": "Prompt Refinement Step-Through",
-  "description": "Given a vague prompt, the learner applies the audience-tone-length-detail criteria to revise it into a specific prompt and compares the resulting drafts.",
+  "description": "Add audience, tone, length, and the must-include detail one at a time, and watch the edits left drop to zero.",
   "creator": "Coding Club",
   "author": "Dan McCreary",
   "date": "2026-09-01",
@@ -15,9 +15,29 @@
   "library": "p5.js",
   "bloomLevel": "Apply (L3)",
   "bloomVerb": "apply",
-  "completion_status": "scaffold",
+  "completion_status": "built",
+  "canvasHeight": 560,
   "chapter_number": 32,
   "chapter_title": "AI Agents for Registration, Scheduling, and Communication",
   "chapter_dir": "32-ai-agents-registration-scheduling",
-  "chapter_rel_dir": "chapters/32-ai-agents-registration-scheduling"
+  "chapter_rel_dir": "chapters/32-ai-agents-registration-scheduling",
+  "educational": {
+    "gradeLevel": "Middle School, High School, Adult",
+    "audience": "Mentors writing prompts for club admin tasks",
+    "duration": "10-15 minutes",
+    "concepts": [
+      "Prompt Specificity",
+      "Audience",
+      "Tone",
+      "Length Constraint",
+      "Must-Include Detail"
+    ]
+  },
+  "pedagogical": {
+    "bloomLevel": "Apply (L3)",
+    "bloomVerb": "apply",
+    "learningObjective": "Given a vague prompt, the learner applies the audience-tone-length-detail criteria to revise it into a specific prompt and compares the resulting drafts.",
+    "interactionPattern": "Tick criteria in any order and read the draft each combination produces",
+    "assessment": "Rewrite a vague prompt of your own using all four criteria."
+  }
 }

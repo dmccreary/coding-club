@@ -13,8 +13,8 @@ above are maintained by hand as sims are actually built.
 
 - Chapters scanned: 35
 - Total diagram specs found: 129
-- Already implemented: 96
-- **Unimplemented (TODO): 33**
+- Already implemented: 102
+- **Unimplemented (TODO): 27**
 
 Regenerate this list after adding or editing chapter diagram specs:
 
@@ -250,13 +250,13 @@ python3 ~/.claude/skills/microsim-utils/scripts/create-microsim-todo-json-files.
 | Sim ID | Diagram Name | Library | Bloom Level |
 |---|---|---|---|
 | :white_check_mark: [`access-barrier-to-fix-map`](access-barrier-to-fix-map/index.md) | Access Barrier to Fix Map | vis-network | Analyze (L4) |
-| [`promotional-materials-recruiting-rubric`](TODO/promotional-materials-recruiting-rubric.json) | Promotional Materials Recruiting Rubric | p5.js | Evaluate (L5) |
+| :white_check_mark: [`promotional-materials-recruiting-rubric`](promotional-materials-recruiting-rubric/index.md) | Promotional Materials Recruiting Rubric | p5.js | Evaluate (L5) |
 
 ### Chapter 29: Building Trust and Representation in Your Club (1)
 
 | Sim ID | Diagram Name | Library | Bloom Level |
 |---|---|---|---|
-| [`equity-audit-checklist`](TODO/equity-audit-checklist.json) | Coding Club Equity Audit Checklist | p5.js | Evaluate (L5) |
+| :white_check_mark: [`equity-audit-checklist`](equity-audit-checklist/index.md) | Coding Club Equity Audit Checklist | p5.js | Evaluate (L5) |
 
 ### Chapter 30: Budgeting, Fundraising, and Grant Writing (4)
 
@@ -279,12 +279,12 @@ python3 ~/.claude/skills/microsim-utils/scripts/create-microsim-todo-json-files.
 
 | Sim ID | Diagram Name | Library | Bloom Level |
 |---|---|---|---|
-| [`ai-agent-loop-explorer`](TODO/ai-agent-loop-explorer.json) | AI Agent Loop Explorer | p5.js | Understand (L2) |
+| :white_check_mark: [`ai-agent-loop-explorer`](ai-agent-loop-explorer/index.md) | AI Agent Loop Explorer | p5.js | Understand (L2) |
 | :white_check_mark: [`ai-agent-roster-network`](ai-agent-roster-network/index.md) | Meet the Club's AI Agent Roster | vis-network | Understand (L2) |
 | :white_check_mark: [`ai-content-drafting-pipeline`](ai-content-drafting-pipeline/index.md) | From Draft to Delivered — AI Content Pipeline | Mermaid | Analyze (L4) |
 | :white_check_mark: [`human-in-the-loop-review-workflow`](human-in-the-loop-review-workflow/index.md) | Human-in-the-Loop Review Workflow | Mermaid | Evaluate (L5) |
 | [`mentor-recruiting-influence-graph`](TODO/mentor-recruiting-influence-graph.json) | Building and Reading an Influence Graph | vis-network | Analyze (L4) |
-| [`prompt-refinement-step-through`](TODO/prompt-refinement-step-through.json) | Prompt Refinement Step-Through | p5.js | Apply (L3) |
+| :white_check_mark: [`prompt-refinement-step-through`](prompt-refinement-step-through/index.md) | Prompt Refinement Step-Through | p5.js | Apply (L3) |
 | :white_check_mark: [`survey-sentiment-dashboard`](survey-sentiment-dashboard/index.md) | Survey Themes and Sentiment Dashboard | Chart.js | Analyze (L4) |
 
 ### Chapter 33: AI-Customized Curriculum and Rolling Out New Agents (8)
@@ -294,9 +294,9 @@ python3 ~/.claude/skills/microsim-utils/scripts/create-microsim-todo-json-files.
 | :white_check_mark: [`ai-agent-rollout-pipeline`](ai-agent-rollout-pipeline/index.md) | The AI Agent Rollout Pipeline | Mermaid | Understand (L2) |
 | :white_check_mark: [`ai-lesson-customization-workflow`](ai-lesson-customization-workflow/index.md) | From Observation to Customized Lesson | Mermaid | Understand (L2) |
 | :white_check_mark: [`ai-tool-selection-radar`](ai-tool-selection-radar/index.md) | Comparing AI Tools Against Selection Criteria | Chart.js | Evaluate (L5) |
-| [`bias-privacy-risk-sorter`](TODO/bias-privacy-risk-sorter.json) | Bias Risk, Privacy Risk, or Neither? | p5.js | Evaluate (L5) |
+| :white_check_mark: [`bias-privacy-risk-sorter`](bias-privacy-risk-sorter/index.md) | Bias Risk, Privacy Risk, or Neither? | p5.js | Evaluate (L5) |
 | :white_check_mark: [`coding-help-agent-handoff`](coding-help-agent-handoff/index.md) | Where a Coding-Help Request Goes | Mermaid | Analyze (L4) |
-| [`generic-vs-ai-challenge-card`](TODO/generic-vs-ai-challenge-card.json) | Template Card vs. AI-Customized Card | p5.js | Analyze (L4) |
+| :white_check_mark: [`generic-vs-ai-challenge-card`](generic-vs-ai-challenge-card/index.md) | Template Card vs. AI-Customized Card | p5.js | Analyze (L4) |
 | [`mentor-matching-schedule-optimizer`](TODO/mentor-matching-schedule-optimizer.json) | Matching Mentors and Optimizing a Schedule | vis-network | Analyze (L4) |
 | :white_check_mark: [`specialized-agent-roster`](specialized-agent-roster/index.md) | Meet the Specialized Agent Roster | vis-network | Understand (L2) |
 

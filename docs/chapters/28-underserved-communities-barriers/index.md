@@ -100,7 +100,7 @@ A worked example: a mentor runs a permission slip through a free translation too
 
 #### Diagram: Promotional Materials Recruiting Rubric
 
-<iframe src="../../sims/promotional-materials-recruiting-rubric/main.html" width="100%" height="560px" scrolling="no"></iframe>
+<iframe src="../../sims/promotional-materials-recruiting-rubric/main.html" width="100%" height="622px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Promotional Materials Recruiting Rubric</summary>

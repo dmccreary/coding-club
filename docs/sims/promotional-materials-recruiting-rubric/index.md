@@ -1,18 +1,92 @@
 ---
 title: Promotional Materials Recruiting Rubric
-description: Given a description of a sample club flyer or web page, the learner scores it against five recruiting-equity criteria and identifies the single lowest-scoring criterion to fix first.
-status: scaffold
+description: Five criteria, ten points, three sample flyers -- and the lowest row matters more than the total.
+image: sims/promotional-materials-recruiting-rubric/promotional-materials-recruiting-rubric.png
+status: built
 library: p5.js
 bloom_level: Evaluate (L5)
 ---
 
 # Promotional Materials Recruiting Rubric
 
+<iframe src="main.html" width="100%" height="622" scrolling="no"></iframe>
 
+[Run the Promotional Materials Recruiting Rubric MicroSim fullscreen](main.html){ .md-button .md-button--primary }
 
-<iframe src="main.html" width="100%" height="600"></iframe>
+## About This MicroSim
 
-[Run MicroSim in Fullscreen](main.html){ .md-button .md-button--primary }
+Five criteria, ten points, and three flyers to practise on before you have to
+judge your own without help.
+
+The three samples are ordered worst to best, and none of them is a caricature.
+**Flyer 1 — "Build. Compete. Win."** is a real flyer that a well-meaning club
+produces and is proud of. It is exciting. It also tells a student who does not
+already see themselves as a competitor that this is not for them, shows two
+boys and a robot, never mentions cost, and offers a web form as the only way to
+make contact.
+
+**The lowest-scoring row matters more than the total.** A flyer at 7 out of 10
+with a zero in language accessibility is not "pretty good" — it is invisible to
+a section of the community, and the total is what hides that. The tool
+colour-codes the total but reveals the weakest row, in that order deliberately.
+
+The criteria that surprise people:
+
+**Low-effort contact method.** A web form is the highest-effort way to say
+hello and the easiest to abandon. A number that accepts text messages costs
+nothing and converts far better, particularly with families who do not check
+email.
+
+**States there is no cost, plainly.** Not implied, not "no fees required" in
+small print at the bottom. A family that has to work out whether they can
+afford it usually does not ask.
+
+The suggested scores are a starting point. Override any of them — but be ready
+to say why, because that is the skill this is building.
+
+## How to Use
+
+- Pick a flyer from the selector. The suggested scores load automatically.
+- **Click any criterion row** to see the full 0 / 1 / 2 scale, and the plus and
+  minus controls to change the score if you disagree.
+- Read the total's colour, then press **Reveal weakest criterion** for the one
+  concrete fix.
+- Run all three flyers. Then do the same with your club's actual flyer, which
+  is the only run that matters.
+
+## Lesson Plan
+
+**Bloom level:** Evaluate (L5) -- *critique*
+
+**Learning objective:** Given a description of a sample club flyer or web page,
+the learner scores it against five recruiting-equity criteria and identifies
+the single lowest-scoring criterion to fix first.
+
+**Before the sim (5 min).** Show flyer 1's description and ask whether it looks
+fine. It does, which is the point — nobody produces a flyer they think excludes
+people.
+
+**With the sim (15 min).** Score all three as a group, arguing about the ones
+where you disagree with the suggestion. Flyer 2 is the interesting one: it is
+genuinely well-intentioned and still scores zero on language.
+
+**After the sim (30 min).** Score the club's real flyer, fix the lowest row,
+and score it again. One fix per revision is enough; a flyer rewritten wholesale
+usually loses whatever was working.
+
+**Check for understanding.** Ask: "Two flyers both score 6. One has 2,2,2,0,0
+and the other has 1,1,1,1,2. Which is more urgent?" The first — two criteria at
+zero means two whole groups the flyer does not reach, which an even spread of
+partial scores does not.
+
+## Embedding This MicroSim
+
+Paste this into any page of the book, adjusting the relative path to
+`docs/sims/` for the page's depth:
+
+```html
+<iframe src="../../sims/promotional-materials-recruiting-rubric/main.html" width="100%" height="622" scrolling="no"></iframe>
+```
 
 ## Specification
 
@@ -62,6 +136,10 @@ Instructional rationale: This matches the Evaluate-level Rubric Rater pattern be
 Implementation: p5.js for the layout, score display, and color-coded total; criteria and sample flyers stored in a small JavaScript data array, since the fixed dataset doesn't need an external data.json.
 ```
 
-## Related Resources
+## References
 
-- [Chapter 28: Reaching Underserved Communities and Removing Barriers](../../chapters/28-underserved-communities-barriers/index.md)
+- [Chapter 28: Reaching Underserved Communities and Removing Barriers](../../chapters/28-underserved-communities-barriers/index.md) -- the chapter this MicroSim supports.
+- [Equity Audit Checklist](../equity-audit-checklist/index.md) -- the wider audit this rubric is one category of.
+- [Access Barrier to Fix Map](../access-barrier-to-fix-map/index.md) -- the barriers these criteria are trying to remove.
+- [Club Growth Path](../club-growth-path/index.md) -- what recruiting is for.
+- [Plain language](https://en.wikipedia.org/wiki/Plain_language) -- the standard behind "states there is no cost, plainly".

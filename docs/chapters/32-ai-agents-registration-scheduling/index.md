@@ -94,7 +94,7 @@ A concrete, end-to-end worked example makes the loop real. A club leader asks an
 
 #### Diagram: AI Agent Loop Explorer
 
-<iframe src="../../sims/ai-agent-loop-explorer/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../sims/ai-agent-loop-explorer/main.html" width="100%" height="562px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>AI Agent Loop Explorer</summary>
@@ -400,7 +400,7 @@ The two chatbot types below put a conversational AI agent directly in front of f
 
 #### Diagram: Prompt Refinement Step-Through
 
-<iframe src="../../sims/prompt-refinement-step-through/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../sims/prompt-refinement-step-through/main.html" width="100%" height="562px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Prompt Refinement Step-Through</summary>

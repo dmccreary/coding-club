@@ -1,6 +1,6 @@
 {
-  "title": "Coding Club Equity Audit Checklist",
-  "description": "Given the club's own current practices, the learner scores each of five equity-audit categories on a simple present/partial/absent scale and identifies the lowest-scoring category as the next priority.",
+  "title": "Equity Audit Checklist",
+  "description": "Ten items, five categories, and a callout that always names one thing to do rather than a score to feel bad about.",
   "creator": "Coding Club",
   "author": "Dan McCreary",
   "date": "2026-09-01",
@@ -15,9 +15,29 @@
   "library": "p5.js",
   "bloomLevel": "Evaluate (L5)",
   "bloomVerb": "assess",
-  "completion_status": "scaffold",
+  "completion_status": "built",
+  "canvasHeight": 620,
   "chapter_number": 29,
   "chapter_title": "Building Trust and Representation in Your Club",
   "chapter_dir": "29-trust-and-representation",
-  "chapter_rel_dir": "chapters/29-trust-and-representation"
+  "chapter_rel_dir": "chapters/29-trust-and-representation",
+  "educational": {
+    "gradeLevel": "Middle School, High School, Adult",
+    "audience": "Club leaders running an honest self-check",
+    "duration": "10-15 minutes",
+    "concepts": [
+      "Equity Audit",
+      "Curriculum Representation",
+      "Mentor Team",
+      "Accessibility",
+      "Community Partnership"
+    ]
+  },
+  "pedagogical": {
+    "bloomLevel": "Evaluate (L5)",
+    "bloomVerb": "assess",
+    "learningObjective": "Given the club's own current practices, the learner scores each of five equity-audit categories on a simple present/partial/absent scale and identifies the lowest-scoring category as the next priority.",
+    "interactionPattern": "Score each item absent, partial, or present; the weakest category and its weakest item are named live",
+    "assessment": "Run it on the real club and leave with one named action."
+  }
 }

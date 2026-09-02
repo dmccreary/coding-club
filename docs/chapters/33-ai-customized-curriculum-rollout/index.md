@@ -143,7 +143,7 @@ A worked example shows the drafting and the catch that review is for: a mentor a
 
 #### Diagram: Template Card vs. AI-Customized Card
 
-<iframe src="../../sims/generic-vs-ai-challenge-card/main.html" width="100%" height="560px" scrolling="no"></iframe>
+<iframe src="../../sims/generic-vs-ai-challenge-card/main.html" width="100%" height="582px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Template Card vs. AI-Customized Card</summary>
@@ -409,7 +409,7 @@ A worked example shows the check that catches this: before adopting a new AI cod
 
 #### Diagram: Bias Risk, Privacy Risk, or Neither?
 
-<iframe src="../../sims/bias-privacy-risk-sorter/main.html" width="100%" height="520px" scrolling="no"></iframe>
+<iframe src="../../sims/bias-privacy-risk-sorter/main.html" width="100%" height="562px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Bias Risk, Privacy Risk, or Neither?</summary>

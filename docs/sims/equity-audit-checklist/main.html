@@ -3,140 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- microsim-scaffold-stub -->
-    <title>Coding Club Equity Audit Checklist</title>
+    <meta name="schema" content="https://dmccreary.github.io/intelligent-textbooks/ns/microsim/v1">
+    <title>Equity Audit Checklist MicroSim using P5.js 1.11.10</title>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.11.10/lib/p5.js"></script>
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: #f8f9fa;
-            color: #212529;
+            margin: 0px;
+            padding: 0px;
+            font-family: Arial, Helvetica, sans-serif;
         }
-        #container {
-            width: 100%;
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 20px;
-            background: white;
-        }
-        h1 {
-            font-size: 22px;
-            margin-bottom: 10px;
-            color: #1a3a6c;
-        }
-        .placeholder {
-            border: 2px dashed #adb5bd;
-            border-radius: 8px;
-            padding: 40px 20px;
-            text-align: center;
-            color: #6c757d;
-            margin: 20px 0;
-            min-height: 400px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        .placeholder .badge {
-            display: inline-block;
-            background: #ffc107;
-            color: #212529;
-            padding: 4px 12px;
-            border-radius: 12px;
-            font-size: 12px;
-            font-weight: 600;
-            margin-bottom: 12px;
-        }
-        .placeholder h2 {
-            font-size: 18px;
-            color: #495057;
-            margin-bottom: 8px;
-        }
-        .placeholder p {
-            font-size: 14px;
-            max-width: 480px;
-        }
-        .meta {
-            margin-top: 20px;
-            font-size: 13px;
-            color: #6c757d;
-            border-top: 1px solid #dee2e6;
-            padding-top: 12px;
-        }
-        .meta strong { color: #495057; }
     </style>
+    <script src="equity-audit-checklist.js"></script>
 </head>
 <body>
-    <div id="container">
-        <h1>Coding Club Equity Audit Checklist</h1>
-        <div class="placeholder">
-            <span class="badge">SCAFFOLD</span>
-            <h2>MicroSim Not Yet Implemented</h2>
-            <p>This MicroSim has been scaffolded from its specification but the
-            interactive content has not been built yet. See the chapter source
-            and the <code>index.md</code> in this directory for the full spec.</p>
-        </div>
-        <div class="meta">
-            <p><strong>Sim ID:</strong> equity-audit-checklist</p>
-            <p><strong>Library:</strong> p5.js</p>
-            <p><strong>Bloom Level:</strong> Evaluate (L5)</p>
-            <p><strong>Learning Objective:</strong> Given the club's own current practices, the learner scores each of five equity-audit categories on a simple present/partial/absent scale and identifies the lowest-scoring category as the next priority.</p>
-        </div>
-    </div>
-
-    <!--
-    SPECIFICATION (from chapter index.md):
-
-    Type: microsim
-    **sim-id:** equity-audit-checklist<br/>
-    **Library:** p5.js<br/>
-    **Status:** Specified
-    
-    Purpose: Give a club leader a genuinely usable, run-it-today checklist that scores the club's current practices across the five areas covered in this chapter and names the single lowest-scoring area to fix first.
-    
-    Bloom Taxonomy: Evaluate (L5)
-    Bloom Taxonomy Verb: assess
-    
-    Learning objective: Given the club's own current practices, the learner scores each of five equity-audit categories on a simple present/partial/absent scale and identifies the lowest-scoring category as the next priority.
-    
-    Canvas layout:
-    - Top (60px): Title bar and "Reset Audit" button
-    - Left (65%): Five category panels, each expandable, each containing 2-3 checklist items
-    - Right (35%): Running score by category (bar per category, 0-100%) and a "Lowest Scoring Category" callout box
-    
-    Categories and checklist items (each item is a 3-state toggle: Absent = 0, Partial = 1, Present = 2):
-    
-    1. Curriculum Representation
-       - "Named pioneers in our material include more than one gender and one race."
-       - "Sample project photos and themes reflect more than one cultural background."
-    
-    2. Mentor Team
-       - "At least one mentor from an underrepresented group leads visible, front-of-room demonstrations, not only support tasks."
-       - "Our mentor recruiting reaches beyond one existing personal network."
-    
-    3. Community Partnership
-       - "We have an active partnership with at least one faith-based, rural-hub, urban-neighborhood, or immigrant-serving organization."
-       - "That partnership involved us showing up and listening before we asked for anything."
-    
-    4. Accessibility
-       - "We have at least one assistive technology option on hand (switch access, text-to-speech, magnification, captions)."
-       - "A student or family has been asked directly what accommodation would help them, in the last term."
-    
-    5. Marketing Materials
-       - "Our flyers and sign-up materials show diverse, non-stereotyped imagery."
-       - "Our promotional language has been checked by someone outside the existing mentor team."
-    
-    Interactive controls:
-    - Click any checklist item to cycle it through Absent / Partial / Present
-    - Category panels expand/collapse on click
-    - "Reset Audit" button clears all items back to Absent
-    - Automatic "Lowest Scoring Category" callout updates live as items change, naming the category and suggesting the single lowest-scoring item within it as the next concrete action
-    
-    Behavior: each category's bar fills proportionally to its items' total score out of the category maximum, color-coded red (0-33%), yellow (34-66%), green (67-100%); the callout box always names exactly one category and one item, never a generic "keep improving" message, so the leader leaves with one concrete next step rather than a vague score.
-    
-    Instructional rationale: This matches the Evaluate-level checklist pattern because the chapter's own closing outcome asks the reader to run an equity audit and identify one concrete next action; a scored, item-level checklist -- rather than a single overall club rating -- produces exactly that one prioritized action instead of an abstract sense of "doing fine" or "needs work."
-    
-    Implementation: p5.js for the panel layout, toggle states, and color-coded bars; the fifteen checklist items and category structure are stored in a small JavaScript data array, since the fixed item set doesn't need an external data.json file.
-    -->
+    <main></main>
+    <br/>
+    <a href=".">Back to Equity Audit Checklist Lesson Plan</a>
 </body>
 </html>

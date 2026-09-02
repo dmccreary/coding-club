@@ -158,7 +158,7 @@ Every concept in this chapter -- curriculum, mentors, partnerships, and assistiv
 
 #### Diagram: Coding Club Equity Audit Checklist
 
-<iframe src="../../sims/equity-audit-checklist/main.html" width="100%" height="560px" scrolling="no"></iframe>
+<iframe src="../../sims/equity-audit-checklist/main.html" width="100%" height="622px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Coding Club Equity Audit Checklist</summary>

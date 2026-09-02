@@ -1,6 +1,6 @@
 {
-  "title": "Bias Risk, Privacy Risk, or Neither?",
-  "description": "Given a short scenario describing an AI tool's behavior, the learner classifies it as an AI bias risk, an AI data privacy risk, both, or neither, and justifies the classification.",
+  "title": "Bias and Privacy Risk Sorter",
+  "description": "Eight scenarios, four bins, and one distinction that is easy to state and hard to apply.",
   "creator": "Coding Club",
   "author": "Dan McCreary",
   "date": "2026-09-01",
@@ -15,9 +15,29 @@
   "library": "p5.js",
   "bloomLevel": "Evaluate (L5)",
   "bloomVerb": "classify",
-  "completion_status": "scaffold",
+  "completion_status": "built",
+  "canvasHeight": 560,
   "chapter_number": 33,
   "chapter_title": "AI-Customized Curriculum and Rolling Out New Agents",
   "chapter_dir": "33-ai-customized-curriculum-rollout",
-  "chapter_rel_dir": "chapters/33-ai-customized-curriculum-rollout"
+  "chapter_rel_dir": "chapters/33-ai-customized-curriculum-rollout",
+  "educational": {
+    "gradeLevel": "Middle School, High School, Adult",
+    "audience": "Club leaders evaluating an AI tool",
+    "duration": "10-15 minutes",
+    "concepts": [
+      "AI Bias",
+      "Data Privacy",
+      "Risk Classification",
+      "Data Retention",
+      "Proxy Variable"
+    ]
+  },
+  "pedagogical": {
+    "bloomLevel": "Evaluate (L5)",
+    "bloomVerb": "classify",
+    "learningObjective": "Given a short scenario describing an AI tool's behavior, the learner classifies it as an AI bias risk, an AI data privacy risk, both, or neither, and justifies the classification.",
+    "interactionPattern": "Drag each scenario into bias risk, privacy risk, both, or neither, and read the justification",
+    "assessment": "A full pass of eight with the reason stated before each drop."
+  }
 }
