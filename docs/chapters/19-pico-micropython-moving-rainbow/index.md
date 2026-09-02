@@ -103,7 +103,7 @@ Between those two saved-file modes sits a third, even faster way to try code: th
 
 #### Diagram: REPL vs. Saved Script Workflow
 
-<iframe src="../../sims/pico-repl-vs-script-workflow/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../sims/pico-repl-vs-script-workflow/main.html" width="100%" height="532px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>REPL vs. Saved Script Workflow</summary>
@@ -155,7 +155,7 @@ The diagram below (adapted from a code-indentation checking template) lets a men
 
 #### Diagram: MicroPython Syntax Checker
 
-<iframe src="../../sims/micropython-syntax-checker/main.html" width="100%" height="480px" scrolling="no"></iframe>
+<iframe src="../../sims/micropython-syntax-checker/main.html" width="100%" height="462px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>MicroPython Syntax Checker</summary>

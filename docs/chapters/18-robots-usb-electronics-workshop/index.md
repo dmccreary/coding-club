@@ -83,7 +83,7 @@ Every number in that sequence — 20 centimeters, 100 milliseconds — is a tuna
 
 #### Diagram: Collision Avoidance Robot Control Loop
 
-<iframe src="../../sims/collision-avoidance-control-loop/main.html" width="100%" height="520px" scrolling="no"></iframe>
+<iframe src="../../sims/collision-avoidance-control-loop/main.html" width="100%" height="562px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Collision Avoidance Robot Control Loop</summary>
@@ -161,7 +161,7 @@ A worked example shows why "it's USB-C" does not always mean "it will work the s
 
 #### Diagram: USB-A vs USB-C Connector Comparison
 
-<iframe src="../../sims/usb-connector-comparison/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../sims/usb-connector-comparison/main.html" width="100%" height="542px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>USB-A vs USB-C Connector Comparison</summary>

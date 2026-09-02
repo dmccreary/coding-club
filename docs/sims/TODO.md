@@ -13,8 +13,8 @@ above are maintained by hand as sims are actually built.
 
 - Chapters scanned: 35
 - Total diagram specs found: 129
-- Already implemented: 80
-- **Unimplemented (TODO): 49**
+- Already implemented: 84
+- **Unimplemented (TODO): 45**
 
 Regenerate this list after adding or editing chapter diagram specs:
 
@@ -152,19 +152,19 @@ python3 ~/.claude/skills/microsim-utils/scripts/create-microsim-todo-json-files.
 | Sim ID | Diagram Name | Library | Bloom Level |
 |---|---|---|---|
 | :white_check_mark: [`circuit-troubleshooting-workflow`](circuit-troubleshooting-workflow/index.md) | Circuit Troubleshooting Decision Workflow | Mermaid | Analyze (L4) |
-| [`collision-avoidance-control-loop`](TODO/collision-avoidance-control-loop.json) | Collision Avoidance Robot Control Loop | p5.js | Apply (L3) |
-| [`usb-connector-comparison`](TODO/usb-connector-comparison.json) | USB-A vs USB-C Connector Comparison | p5.js | Analyze (L4) |
+| :white_check_mark: [`collision-avoidance-control-loop`](collision-avoidance-control-loop/index.md) | Collision Avoidance Robot Control Loop | p5.js | Apply (L3) |
+| :white_check_mark: [`usb-connector-comparison`](usb-connector-comparison/index.md) | USB-A vs USB-C Connector Comparison | p5.js | Analyze (L4) |
 
 ### Chapter 19: Raspberry Pi Pico, MicroPython, and the Moving Rainbow Kit (8)
 
 | Sim ID | Diagram Name | Library | Bloom Level |
 |---|---|---|---|
 | :white_check_mark: [`color-wheel-hue-explorer`](color-wheel-hue-explorer/index.md) | Color Wheel Hue Explorer | p5.js | Apply (L3) |
-| [`micropython-syntax-checker`](TODO/micropython-syntax-checker.json) | MicroPython Syntax Checker | p5.js | Remember (L1) |
+| :white_check_mark: [`micropython-syntax-checker`](micropython-syntax-checker/index.md) | MicroPython Syntax Checker | p5.js | Remember (L1) |
 | [`moving-rainbow-wiring-diagram`](TODO/moving-rainbow-wiring-diagram.json) | Moving Rainbow Wiring Diagram | p5.js | Apply (L3) |
 | :white_check_mark: [`neopixel-loop-pixel-stepper`](neopixel-loop-pixel-stepper/index.md) | MicroPython Loop Pixel Stepper | p5.js | Apply (L3) |
 | :white_check_mark: [`pico-pinout-explorer`](pico-pinout-explorer/index.md) | Raspberry Pi Pico Pinout Explorer | p5.js | None |
-| [`pico-repl-vs-script-workflow`](TODO/pico-repl-vs-script-workflow.json) | REPL vs. Saved Script Workflow | p5.js | Understand (L2) |
+| :white_check_mark: [`pico-repl-vs-script-workflow`](pico-repl-vs-script-workflow/index.md) | REPL vs. Saved Script Workflow | p5.js | Understand (L2) |
 | [`robot-kit-assembly-sequence`](TODO/robot-kit-assembly-sequence.json) | Robot Kit Assembly Sequence | p5.js | Apply (L3) |
 | [`seasonal-led-pattern-gallery`](TODO/seasonal-led-pattern-gallery.json) | Seasonal LED Pattern Gallery | p5.js | Analyze (L4) |
 

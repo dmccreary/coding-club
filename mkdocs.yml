@@ -188,7 +188,7 @@ nav:
     - Coding Club Ecosystem Map: sims/coding-club-ecosystem-map/index.md
     - Coding Club Equity Audit Checklist: sims/equity-audit-checklist/index.md
     - Coding Club Room Layout: sims/coding-club-room-layout/index.md
-    - Collision Avoidance Robot Control Loop: sims/collision-avoidance-control-loop/index.md
+    - Collision Avoidance Control Loop: sims/collision-avoidance-control-loop/index.md
     - Color Wheel Hue Explorer: sims/color-wheel-hue-explorer/index.md
     - Data Backup Routine Timeline: sims/data-backup-routine-timeline/index.md
     - Data Retention Schedule by Type: sims/data-retention-schedule/index.md
@@ -247,6 +247,7 @@ nav:
     - Oversight Board Org Chart: sims/oversight-board-org-chart/index.md
     - Peripheral and Storage Management Layers: sims/peripheral-management-layers/index.md
     - Photoresistor Voltage Divider Explorer: sims/photoresistor-voltage-divider-explorer/index.md
+    - Pico REPL vs Script Workflow: sims/pico-repl-vs-script-workflow/index.md
     - PIR Detection Zone Map: sims/pir-detection-zone-map/index.md
     - Pivot Table Builder: sims/pivot-table-builder/index.md
     - Platform Management Workflow: sims/platform-management-workflow/index.md
@@ -257,7 +258,6 @@ nav:
     - Push Button Digital Input Circuit: sims/push-button-digital-input-circuit/index.md
     - PWM Analog Output Brightness Explorer: sims/pwm-analog-output-brightness-explorer/index.md
     - Raspberry Pi Pico Pinout Explorer: sims/pico-pinout-explorer/index.md
-    - REPL vs. Saved Script Workflow: sims/pico-repl-vs-script-workflow/index.md
     - Resistor Color Code Calculator: sims/resistor-color-code-calculator/index.md
     - Robot Emotion Display Control Panel: sims/robot-emotion-display-control-panel/index.md
     - Robot Kit Assembly Sequence: sims/robot-kit-assembly-sequence/index.md
@@ -288,8 +288,10 @@ nav:
     - Three Curriculum Tracks: sims/three-curriculum-tracks/index.md
     - Three Kinds of Mentors: sims/three-kinds-of-mentors/index.md
     - Ultrasonic Ranging Explorer: sims/ultrasonic-ranging/index.md
-    - USB-A vs USB-C Connector Comparison: sims/usb-connector-comparison/index.md
+    - USB Connector Comparison: sims/usb-connector-comparison/index.md
     - Where a Coding-Help Request Goes: sims/coding-help-agent-handoff/index.md
+
+
 
 
 

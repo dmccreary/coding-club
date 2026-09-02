@@ -1,6 +1,6 @@
 {
   "title": "MicroPython Syntax Checker",
-  "description": "Given a short MicroPython snippet, the learner identifies which lines are correctly formed and which would raise a SyntaxError or IndentationError.",
+  "description": "Six snippets, two classic mistakes, and indentation drawn as visible guides so an off-by-one space is something you can see.",
   "creator": "Coding Club",
   "author": "Dan McCreary",
   "date": "2026-09-01",
@@ -15,9 +15,29 @@
   "library": "p5.js",
   "bloomLevel": "Remember (L1)",
   "bloomVerb": "identify",
-  "completion_status": "scaffold",
+  "completion_status": "built",
+  "canvasHeight": 460,
   "chapter_number": 19,
   "chapter_title": "Raspberry Pi Pico, MicroPython, and the Moving Rainbow Kit",
   "chapter_dir": "19-pico-micropython-moving-rainbow",
-  "chapter_rel_dir": "chapters/19-pico-micropython-moving-rainbow"
+  "chapter_rel_dir": "chapters/19-pico-micropython-moving-rainbow",
+  "educational": {
+    "gradeLevel": "Middle School, High School, Adult",
+    "audience": "Mentors preparing to debug beginner code live",
+    "duration": "5-10 minutes",
+    "concepts": [
+      "SyntaxError",
+      "IndentationError",
+      "Code Block",
+      "Colon",
+      "Whitespace"
+    ]
+  },
+  "pedagogical": {
+    "bloomLevel": "Remember (L1)",
+    "bloomVerb": "identify",
+    "learningObjective": "Given a short MicroPython snippet, the learner identifies which lines are correctly formed and which would raise a SyntaxError or IndentationError.",
+    "interactionPattern": "Read a snippet, decide whether it runs, press Check",
+    "assessment": "A pass through all six with the verdict called before pressing Check."
+  }
 }
