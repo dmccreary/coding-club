@@ -257,7 +257,7 @@ Setting up that scoping correctly the first time matters more than it might seem
 
 #### Diagram: Student Growth to Portfolio Network
 
-<iframe src="../../sims/student-growth-portfolio-network/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../sims/student-growth-portfolio-network/main.html" width="100%" height="622px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Student Growth to Portfolio Network</summary>

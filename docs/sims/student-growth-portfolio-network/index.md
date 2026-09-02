@@ -1,18 +1,75 @@
 ---
 title: Student Growth to Portfolio Network
-description: Given a node in the growth-to-portfolio network, the learner explains what data flows into it and where that data goes next.
-status: scaffold
+description: Five stages from a mentor's in-session note to a family's read-only view -- and what changes at each step.
+image: sims/student-growth-portfolio-network/student-growth-portfolio-network.png
+status: built
 library: vis-network
 bloom_level: Understand (L2)
 ---
 
 # Student Growth to Portfolio Network
 
+<iframe src="main.html" width="100%" height="622" scrolling="no"></iframe>
 
+[Run the Student Growth to Portfolio Network MicroSim fullscreen](main.html){ .md-button .md-button--primary }
 
-<iframe src="main.html" width="100%" height="600"></iframe>
+## About This MicroSim
 
-[Run MicroSim in Fullscreen](main.html){ .md-button .md-button--primary }
+One pipeline, five stages, and the data changes shape at every one.
+
+It starts as a **mentor's note** -- unstructured, specific to one session, written
+by a person who was there. It becomes **growth metrics** by being aggregated
+across sessions, which is where individual moments turn into a trend. It becomes
+**mastery tracking** by being classified into emerging, practising, or mastered
+for each named skill. It becomes a **portfolio** when actual saved work is
+attached as evidence -- the photograph, the code, the project file. And it
+becomes a **parent portal** by being scoped to one family and made read-only.
+
+Two things are worth noticing about the shape.
+
+Each arrow does real work. Nothing is simply copied forward; each step
+transforms. Ask of any stage "what was added here?" and there is an answer.
+
+And the last node is a **leaf**. The portal shows; it does not feed anything back
+into the pipeline. A family cannot edit a mastery level from it, which is
+deliberate and worth stating to parents when the portal is introduced.
+
+## How to Use
+
+- **Click any stage** to see what flows in and where it goes next.
+- Follow the arrows left to right along the top row, then down and back to the
+  left along the bottom.
+- **Reset** restores the layout.
+
+## Lesson Plan
+
+**Bloom level:** Understand (L2) -- *explain*
+
+**Learning objective:** Given a node in the growth-to-portfolio network, the
+learner explains what data flows into it and where that data goes next.
+
+**Before the sim (5 min).** Ask what a parent currently sees of their child's
+progress. In most clubs the honest answer is "whatever a mentor says at pickup".
+
+**With the sim (10 min).** Walk the chain and, at each arrow, ask what was added.
+Aggregation, classification, evidence, and scoping -- four different operations.
+
+**After the sim (15 min).** Take one real observation from last session and carry
+it by hand through all five stages, writing down what it looks like at each.
+
+**Check for understanding.** Ask: "A parent disagrees with a mastery level. Can
+they change it in the portal?" No -- it is read-only, and the change would have to
+happen upstream at mastery tracking. Being able to locate the right stage is the
+explanation this objective wants.
+
+## Embedding This MicroSim
+
+Paste this into any page of the book, adjusting the relative path to
+`docs/sims/` for the page's depth:
+
+```html
+<iframe src="../../sims/student-growth-portfolio-network/main.html" width="100%" height="622" scrolling="no"></iframe>
+```
 
 ## Specification
 
@@ -61,6 +118,10 @@ Legend: Node color meanings and an arrow explaining "data flows in this directio
 Implementation: vis-network JavaScript library, hierarchical layout, canvas size 800x450px.
 ```
 
-## Related Resources
+## References
 
-- [Chapter 25: Analyzing Club Data and Choosing the Right Tools](../../chapters/25-analyzing-club-data-and-tools/index.md)
+- [Chapter 25: Analyzing Club Data and Choosing the Right Tools](../../chapters/25-analyzing-club-data-and-tools/index.md) -- the chapter this MicroSim supports.
+- [Student Progress Tracking Cycle](../progress-tracking-cycle/index.md) -- the habit that produces the observations at stage one.
+- [Progress Dashboard Explorer](../progress-dashboard-explorer/index.md) -- the mentor-facing view of the same data.
+- [Student Data Privacy Principles](../student-data-privacy-principles/index.md) -- why the portal is scoped to one family.
+- [E-portfolio](https://en.wikipedia.org/wiki/Electronic_portfolio) -- evidence of learning as a collected artefact.

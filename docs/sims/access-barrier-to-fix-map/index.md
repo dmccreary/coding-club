@@ -1,18 +1,76 @@
 ---
 title: Access Barrier to Fix Map
-description: Given a barrier a family might face (cost, transportation, inflexible timing, language, or disability access), the learner examines which club practice from this chapter addresses it, and identifies practices that address more than one barrier.
-status: scaffold
+description: Five barriers families face, seven club practices that address them -- and the one barrier three fixes converge on.
+image: sims/access-barrier-to-fix-map/access-barrier-to-fix-map.png
+status: built
 library: vis-network
 bloom_level: Analyze (L4)
 ---
 
 # Access Barrier to Fix Map
 
+<iframe src="main.html" width="100%" height="762" scrolling="no"></iframe>
 
+[Run the Access Barrier to Fix Map MicroSim fullscreen](main.html){ .md-button .md-button--primary }
 
-<iframe src="main.html" width="100%" height="600"></iframe>
+## About This MicroSim
 
-[Run MicroSim in Fullscreen](main.html){ .md-button .md-button--primary }
+Five barriers on the left, seven practices on the right, and the shape of the
+connections carries the argument.
+
+**Cost is the only barrier with three fixes converging on it**, and the three are
+not equivalent. A **no-fee model** removes the barrier for every family at once,
+with nobody having to identify themselves. A **scholarship fund** works, but
+requires a family to ask -- which some will not do. A **device loan programme**
+closes the hidden fee that "bring a laptop" quietly creates.
+
+That difference between *removing* a barrier and *providing a route around it*
+is what this map is built to surface. A single policy decision at the top of the
+list does more than three well-run application processes lower down.
+
+The other four barriers each have one fix, and the fixes are correspondingly
+specific: two session slots rather than one, translated materials plus a named
+bilingual contact, and -- for disability access -- asking the family what they
+need rather than guessing.
+
+## How to Use
+
+- **Click any barrier** to see what it is; **click any fix** to see what it does.
+- Follow the three arrows out of **Cost** -- it is the only barrier with more than
+  one practice addressing it.
+- **Reset** restores the layout.
+
+## Lesson Plan
+
+**Bloom level:** Analyze (L4) -- *examine*
+
+**Learning objective:** Given a barrier a family might face, the learner examines
+which club practice addresses it, and identifies practices that address more than
+one barrier.
+
+**Before the sim (5 min).** Ask who is *not* in the club who might want to be. The
+honest answers are usually about cost and transport.
+
+**With the sim (15 min).** Trace each barrier to its fix. At Cost, compare the
+three: which requires a family to ask, and which does not? That question is the
+analysis.
+
+**After the sim (15 min).** Audit the club against all five barriers and mark
+which fixes are actually in place versus merely intended.
+
+**Check for understanding.** Ask: "Which single decision on this map helps the
+most families with the least ongoing effort?" Going no-fee -- and being able to
+say why it beats a scholarship fund on reach is the examination this objective
+wants.
+
+## Embedding This MicroSim
+
+Paste this into any page of the book, adjusting the relative path to
+`docs/sims/` for the page's depth:
+
+```html
+<iframe src="../../sims/access-barrier-to-fix-map/main.html" width="100%" height="762" scrolling="no"></iframe>
+```
 
 ## Specification
 
@@ -62,6 +120,10 @@ Legend: barrier color/shape versus fix color/shape, plus a note that arrow direc
 Implementation: vis-network JavaScript library rendering a small fixed dataset (5 barrier nodes, 6 fix nodes, 7 edges) defined in a data.json file; canvas width is responsive, height fixed to match the iframe.
 ```
 
-## Related Resources
+## References
 
-- [Chapter 28: Reaching Underserved Communities and Removing Barriers](../../chapters/28-underserved-communities-barriers/index.md)
+- [Chapter 28: Reaching Underserved Communities and Removing Barriers](../../chapters/28-underserved-communities-barriers/index.md) -- the chapter this MicroSim supports.
+- [Funding Partnership Fit Map](../funding-partnership-fit-map/index.md) -- how a club pays for a no-fee model.
+- [Universal design](https://en.wikipedia.org/wiki/Universal_design) -- removing barriers rather than accommodating around them.
+- [Digital divide](https://en.wikipedia.org/wiki/Digital_divide) -- the gap the device loan programme addresses.
+- [Web Content Accessibility Guidelines](https://en.wikipedia.org/wiki/Web_Content_Accessibility_Guidelines) -- accessibility standards for anything the club publishes.

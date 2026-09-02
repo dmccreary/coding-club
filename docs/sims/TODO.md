@@ -13,8 +13,8 @@ above are maintained by hand as sims are actually built.
 
 - Chapters scanned: 35
 - Total diagram specs found: 129
-- Already implemented: 61
-- **Unimplemented (TODO): 68**
+- Already implemented: 65
+- **Unimplemented (TODO): 64**
 
 Regenerate this list after adding or editing chapter diagram specs:
 
@@ -227,7 +227,7 @@ python3 ~/.claude/skills/microsim-utils/scripts/create-microsim-todo-json-files.
 | :white_check_mark: [`attendance-enrollment-trend-explorer`](attendance-enrollment-trend-explorer/index.md) | Attendance and Enrollment Trend Explorer | Chart.js | Analyze (L4) |
 | :white_check_mark: [`automated-communication-pipeline`](automated-communication-pipeline/index.md) | Automated Communication Pipeline | Mermaid | Analyze (L4) |
 | [`pivot-table-builder`](TODO/pivot-table-builder.json) | Pivot Table Builder | p5.js | Apply (L3) |
-| [`student-growth-portfolio-network`](TODO/student-growth-portfolio-network.json) | Student Growth to Portfolio Network | vis-network | Understand (L2) |
+| :white_check_mark: [`student-growth-portfolio-network`](student-growth-portfolio-network/index.md) | Student Growth to Portfolio Network | vis-network | Understand (L2) |
 
 ### Chapter 26: Motivation, Badges, and Growth Mindset Coaching (4)
 
@@ -249,7 +249,7 @@ python3 ~/.claude/skills/microsim-utils/scripts/create-microsim-todo-json-files.
 
 | Sim ID | Diagram Name | Library | Bloom Level |
 |---|---|---|---|
-| [`access-barrier-to-fix-map`](TODO/access-barrier-to-fix-map.json) | Access Barrier to Fix Map | vis-network | Analyze (L4) |
+| :white_check_mark: [`access-barrier-to-fix-map`](access-barrier-to-fix-map/index.md) | Access Barrier to Fix Map | vis-network | Analyze (L4) |
 | [`promotional-materials-recruiting-rubric`](TODO/promotional-materials-recruiting-rubric.json) | Promotional Materials Recruiting Rubric | p5.js | Evaluate (L5) |
 
 ### Chapter 29: Building Trust and Representation in Your Club (1)
@@ -263,7 +263,7 @@ python3 ~/.claude/skills/microsim-utils/scripts/create-microsim-todo-json-files.
 | Sim ID | Diagram Name | Library | Bloom Level |
 |---|---|---|---|
 | [`coding-club-budget-builder`](TODO/coding-club-budget-builder.json) | Coding Club Budget Builder | p5.js | Apply (L3) |
-| [`funding-partnership-fit-map`](TODO/funding-partnership-fit-map.json) | Funding Partnership Fit Map | vis-network | Analyze (L4) |
+| :white_check_mark: [`funding-partnership-fit-map`](funding-partnership-fit-map/index.md) | Funding Partnership Fit Map | vis-network | Analyze (L4) |
 | :white_check_mark: [`fundraising-channel-yield-comparison`](fundraising-channel-yield-comparison/index.md) | Fundraising Channel Yield Comparison | Chart.js | Analyze (L4) |
 | :white_check_mark: [`grant-writing-tracking-workflow`](grant-writing-tracking-workflow/index.md) | Grant Writing and Tracking Workflow | Mermaid | Apply (L3) |
 
@@ -298,7 +298,7 @@ python3 ~/.claude/skills/microsim-utils/scripts/create-microsim-todo-json-files.
 | :white_check_mark: [`coding-help-agent-handoff`](coding-help-agent-handoff/index.md) | Where a Coding-Help Request Goes | Mermaid | Analyze (L4) |
 | [`generic-vs-ai-challenge-card`](TODO/generic-vs-ai-challenge-card.json) | Template Card vs. AI-Customized Card | p5.js | Analyze (L4) |
 | [`mentor-matching-schedule-optimizer`](TODO/mentor-matching-schedule-optimizer.json) | Matching Mentors and Optimizing a Schedule | vis-network | Analyze (L4) |
-| [`specialized-agent-roster`](TODO/specialized-agent-roster.json) | Meet the Specialized Agent Roster | vis-network | Understand (L2) |
+| :white_check_mark: [`specialized-agent-roster`](specialized-agent-roster/index.md) | Meet the Specialized Agent Roster | vis-network | Understand (L2) |
 
 ### Chapter 34: Establishing an Oversight Board and Inventory System (4)
 

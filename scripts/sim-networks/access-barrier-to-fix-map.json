@@ -1,0 +1,211 @@
+{
+  "title": "Access Barrier to Fix Map",
+  "height": 760,
+  "stats": "5 barriers · 7 fixes",
+  "panelHeading": "Barrier and Fix Details",
+  "placeholder": "Click any barrier or fix to see what it is and what it addresses.",
+  "arrows": true,
+  "pinned": [],
+  "nodes": [
+    {
+      "id": "cost",
+      "label": "Cost",
+      "x": -620,
+      "y": -420,
+      "cls": "danger",
+      "detail": [
+        [
+          "The barrier",
+          "Fees, or the equipment a family is expected to already own."
+        ],
+        [
+          "Note",
+          "The only barrier here with three fixes converging on it -- and going no-fee removes it for every family at once."
+        ]
+      ]
+    },
+    {
+      "id": "transport",
+      "label": "Transportation",
+      "x": -620,
+      "y": -140,
+      "cls": "danger",
+      "detail": [
+        [
+          "The barrier",
+          "No way to physically reach the venue at the session time."
+        ]
+      ]
+    },
+    {
+      "id": "timing",
+      "label": "Inflexible Timing",
+      "x": -620,
+      "y": 140,
+      "cls": "danger",
+      "detail": [
+        [
+          "The barrier",
+          "One fixed slot that collides with work, worship, care duties, or another commitment."
+        ]
+      ]
+    },
+    {
+      "id": "language",
+      "label": "Language",
+      "x": -620,
+      "y": 420,
+      "cls": "danger",
+      "detail": [
+        [
+          "The barrier",
+          "Materials and contact only in a language the family does not read comfortably."
+        ]
+      ]
+    },
+    {
+      "id": "disability",
+      "label": "Disability Access",
+      "x": -620,
+      "y": 700,
+      "cls": "danger",
+      "detail": [
+        [
+          "The barrier",
+          "A venue, activity, or material a student cannot use as provided."
+        ]
+      ]
+    },
+    {
+      "id": "nofee",
+      "label": "No-Fee Model",
+      "x": 620,
+      "y": -600,
+      "cls": "resolve",
+      "detail": [
+        [
+          "The fix",
+          "Charge nothing. One policy decision that removes the cost barrier for every family without anyone having to ask."
+        ]
+      ]
+    },
+    {
+      "id": "scholarship",
+      "label": "Scholarship Fund",
+      "x": 620,
+      "y": -400,
+      "cls": "resolve",
+      "detail": [
+        [
+          "The fix",
+          "Money set aside to cover fees for families who ask. Works, but requires the family to identify themselves as needing it."
+        ]
+      ]
+    },
+    {
+      "id": "devices",
+      "label": "Free Device Loan Program",
+      "x": 620,
+      "y": -200,
+      "cls": "resolve",
+      "detail": [
+        [
+          "The fix",
+          "The club lends the hardware, so 'bring a laptop' stops being a hidden fee."
+        ]
+      ]
+    },
+    {
+      "id": "carpool",
+      "label": "Carpool, Transit, or Virtual Option",
+      "x": 620,
+      "y": 0,
+      "cls": "resolve",
+      "detail": [
+        [
+          "The fix",
+          "More than one way to be present: a shared ride, a transit pass, or attending remotely."
+        ]
+      ]
+    },
+    {
+      "id": "alternating",
+      "label": "Alternating Saturday and Weekday Sessions",
+      "x": 620,
+      "y": 220,
+      "cls": "resolve",
+      "detail": [
+        [
+          "The fix",
+          "Two slots rather than one, so a single recurring conflict does not exclude a family for the whole term."
+        ]
+      ]
+    },
+    {
+      "id": "translated",
+      "label": "Translated Materials and Bilingual Contact",
+      "x": 620,
+      "y": 440,
+      "cls": "resolve",
+      "detail": [
+        [
+          "The fix",
+          "Key documents in the languages families actually read, and a named person who can talk to them."
+        ]
+      ]
+    },
+    {
+      "id": "accommodation",
+      "label": "Direct Accommodation Request",
+      "x": 620,
+      "y": 680,
+      "cls": "resolve",
+      "detail": [
+        [
+          "The fix",
+          "Ask the family what they need rather than guessing, and then do it."
+        ]
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "cost",
+      "to": "nofee"
+    },
+    {
+      "from": "cost",
+      "to": "scholarship"
+    },
+    {
+      "from": "cost",
+      "to": "devices"
+    },
+    {
+      "from": "transport",
+      "to": "carpool"
+    },
+    {
+      "from": "timing",
+      "to": "alternating"
+    },
+    {
+      "from": "language",
+      "to": "translated"
+    },
+    {
+      "from": "disability",
+      "to": "accommodation"
+    }
+  ],
+  "legend": [
+    {
+      "cls": "danger",
+      "text": "Barrier a family faces"
+    },
+    {
+      "cls": "resolve",
+      "text": "Club practice that addresses it"
+    }
+  ]
+}

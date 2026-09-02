@@ -1,18 +1,78 @@
 ---
 title: Funding Partnership Fit Map
-description: Given a specific club funding need, the learner examines which partnership or negotiation approach from this chapter best addresses it.
-status: scaffold
+description: Four funding needs, four partnership approaches, and which one solves more than one need.
+image: sims/funding-partnership-fit-map/funding-partnership-fit-map.png
+status: built
 library: vis-network
 bloom_level: Analyze (L4)
 ---
 
 # Funding Partnership Fit Map
 
+<iframe src="main.html" width="100%" height="622" scrolling="no"></iframe>
 
+[Run the Funding Partnership Fit Map MicroSim fullscreen](main.html){ .md-button .md-button--primary }
 
-<iframe src="main.html" width="100%" height="600"></iframe>
+## About This MicroSim
 
-[Run MicroSim in Fullscreen](main.html){ .md-button .md-button--primary }
+Four needs, four approaches, and they are not interchangeable.
+
+The mapping is mostly one-to-one, which is itself informative: a fiscal sponsor
+solves a very specific problem -- a grant that requires 501(c)(3) status the club
+does not have -- and solves nothing else. Vendor discount negotiation does not
+raise money at all; it makes the money already raised go further on things the
+club buys anyway.
+
+**One-time equipment or space** is the exception, with two approaches converging
+on it. A local company and a strategic partner can both fill a one-off gap, but
+through different relationships: the company gives because supporting the
+community is part of what it does, while a university club or library trades
+because each side has something the other needs. Which route to take depends on
+what the club can offer back, and only one of the two requires having anything to
+offer.
+
+Reading the map the other way is also useful: if a club's need is **ongoing and
+recurring**, only one approach here addresses it, and grants -- covered
+separately in this chapter -- are the other place to look.
+
+## How to Use
+
+- **Click any need or approach** to see what it covers.
+- Follow the two arrows out of **One-Time Equipment or Space** -- the only need
+  with more than one approach.
+- **Reset** restores the layout.
+
+## Lesson Plan
+
+**Bloom level:** Analyze (L4) -- *examine*
+
+**Learning objective:** Given a specific club funding need, the learner examines
+which partnership or negotiation approach from this chapter best addresses it.
+
+**Before the sim (5 min).** Ask what the club needs money for right now. Push past
+"more money" to a specific need -- recurring, one-off, grant-blocked, or
+cost-of-purchases.
+
+**With the sim (10 min).** Trace each need to its approach. Then ask what a
+strategic partner would want back, which is the question that decides whether
+that route is open to this club.
+
+**After the sim (15 min).** Pick the club's most pressing need and draft the
+opening ask for the approach the map points to.
+
+**Check for understanding.** Ask: "A funder will only give to a registered
+nonprofit and the club is not one. What now?" Fiscal sponsorship -- and knowing
+that no other approach on the map unblocks that is the examination this objective
+wants.
+
+## Embedding This MicroSim
+
+Paste this into any page of the book, adjusting the relative path to
+`docs/sims/` for the page's depth:
+
+```html
+<iframe src="../../sims/funding-partnership-fit-map/main.html" width="100%" height="622" scrolling="no"></iframe>
+```
 
 ## Specification
 
@@ -60,6 +120,10 @@ Legend: need color/shape versus fix color/shape, plus a note that arrow directio
 Implementation: vis-network JavaScript library rendering a small fixed dataset (4 need nodes, 4 fix nodes, 5 edges) defined in a data.json file; canvas width is responsive, height fixed to match the iframe.
 ```
 
-## Related Resources
+## References
 
-- [Chapter 30: Budgeting, Fundraising, and Grant Writing](../../chapters/30-budgeting-fundraising-grants/index.md)
+- [Chapter 30: Budgeting, Fundraising, and Grant Writing](../../chapters/30-budgeting-fundraising-grants/index.md) -- the chapter this MicroSim supports.
+- [Fundraising Channel Yield Comparison](../fundraising-channel-yield-comparison/index.md) -- the effort each channel costs.
+- [Grant Writing and Tracking Workflow](../grant-writing-tracking-workflow/index.md) -- the route this map deliberately leaves out.
+- [Fiscal sponsorship](https://en.wikipedia.org/wiki/Fiscal_sponsorship) -- how an established nonprofit receives a grant on a club's behalf.
+- [501(c)(3) organization](https://en.wikipedia.org/wiki/501(c)(3)_organization) -- the status many funders require.

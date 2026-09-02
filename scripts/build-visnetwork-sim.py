@@ -21,6 +21,10 @@ Input: scripts/sim-networks/<sim-id>.json
       "edges": [ {"from":"leader","to":"assistant","label":"delegates to"} ],
       "legend": [ {"cls":"hub","text":"Club leader"} ],
       "arrows": false,                     # optional, directed edges
+      "edgeFontSize": 26,                  # optional; drop it on dense chains
+                                           # where wide nodes clip long labels
+      "nodeWidth": 260,                    # optional; drop it to narrow the
+                                           # ellipses and free horizontal room
       "pinned": ["leader"]                 # optional, nodes that cannot be dragged
     }
 
@@ -279,6 +283,10 @@ const edgeData = {edges};
 
 const PINNED = {pinned};
 
+// Label wrap width for a node. Narrower nodes wrap onto more lines but leave
+// more horizontal room for edge labels, which vis-network draws beneath nodes.
+const NODE_WIDTH = {node_width};
+
 // Screen pixels the right-hand panel and the title band take out of the canvas.
 const RIGHT_PANEL_PX = 250;
 const TITLE_BAND_PX = 46;
@@ -319,16 +327,18 @@ function buildNodes() {{
             }},
             font: {{ color: c[2], size: isHub ? 40 : 32, face: 'Arial' }},
             borderWidth: isHub ? 3 : 2,   // thin: the fonts are large, the borders are not
-            widthConstraint: {{ maximum: isHub ? 320 : 260 }},
+            widthConstraint: {{ maximum: isHub ? NODE_WIDTH + 60 : NODE_WIDTH }},
             margin: isHub ? 32 : 20,
             fixed: {{ x: pinned, y: pinned }}
         }};
     }});
 }}
 
-const EDGE_FONT = {{ size: 26, face: 'Arial', color: '#333333',
+// vis-network draws edge labels beneath nodes, so on a chain of wide ellipses a
+// long label gets its ends covered. Sims with that shape drop the size.
+const EDGE_FONT = {{ size: {edge_font}, face: 'Arial', color: '#333333',
                     strokeWidth: 8, strokeColor: '#F0F8FF', align: 'horizontal' }};
-const EDGE_FONT_HOVER = {{ size: 34, face: 'Arial', color: '#B87B12',
+const EDGE_FONT_HOVER = {{ size: {edge_font_hover}, face: 'Arial', color: '#B87B12',
                           strokeWidth: 10, strokeColor: '#F0F8FF', align: 'horizontal' }};
 
 function buildEdges() {{
@@ -508,6 +518,9 @@ def build(sim_id):
             edges=json.dumps(spec["edges"], indent=4, ensure_ascii=False),
             pinned=json.dumps(spec.get("pinned", [])),
             arrows="true" if spec.get("arrows") else "false",
+            node_width=spec.get("nodeWidth", 260),
+            edge_font=spec.get("edgeFontSize", 26),
+            edge_font_hover=spec.get("edgeFontSize", 26) + 8,
             placeholder=placeholder.replace("'", "\\'"),
         ))
     return True, sim_dir

@@ -1,18 +1,80 @@
 ---
 title: Meet the Specialized Agent Roster
-description: Given a club task outside day-to-day operations, the learner classifies which of the five specialized agents is the right match for it.
-status: scaffold
+description: Five agents for the occasional jobs -- grants, social media, website copy, translation, voice -- and who reviews each one's output.
+image: sims/specialized-agent-roster/specialized-agent-roster.png
+status: built
 library: vis-network
 bloom_level: Understand (L2)
 ---
 
 # Meet the Specialized Agent Roster
 
+<iframe src="main.html" width="100%" height="702" scrolling="no"></iframe>
 
+[Run the Meet the Specialized Agent Roster MicroSim fullscreen](main.html){ .md-button .md-button--primary }
 
-<iframe src="main.html" width="100%" height="600"></iframe>
+## About This MicroSim
 
-[Run MicroSim in Fullscreen](main.html){ .md-button .md-button--primary }
+These five handle the jobs that come round a few times a year rather than every
+week -- and are therefore the ones nobody has a routine for.
+
+The field worth reading on every node is **who reviews it**, because it is
+different each time and the difference is the point:
+
+- Grant writing is reviewed by the leader, for **factual accuracy**. An agent
+  will happily produce a confident sentence about a programme the club does not
+  run.
+- Social media is reviewed by the leader, for **un-consented student
+  identification** -- a different failure mode entirely, and the one with the
+  highest cost.
+- Website copy is reviewed for accuracy **against the real walk-in experience**,
+  not just internal consistency.
+- Translation is reviewed by a **fluent speaker**, not the leader, because the
+  leader cannot check what they cannot read.
+- Voice assistant use is reviewed by **nobody new**, because it only reads aloud
+  text a person already approved.
+
+That last one is not a gap in the review chain. It is what a genuinely low-risk
+use of AI looks like, and it is useful to have one on the roster for contrast.
+
+## How to Use
+
+- **Click any agent** to see the task and its reviewer.
+- The hub is the shared idea; the five spokes are the specialisations.
+- **Reset** restores the layout.
+
+## Lesson Plan
+
+**Bloom level:** Understand (L2) -- *classify*
+
+**Learning objective:** Given a club task outside day-to-day operations, the
+learner classifies which of the five specialized agents is the right match for
+it.
+
+**Before the sim (5 min).** Ask what the club did last year that it does only once
+or twice a year. Those are exactly the tasks nobody has got efficient at.
+
+**With the sim (10 min).** Click all five. Then go round again asking only "who
+reviews this, and what are they looking for?" The reviewers differ, and that is
+the harder half of the lesson.
+
+**After the sim (15 min).** Name the actual reviewer for each of the five in this
+club. If translation has no fluent speaker attached, that agent is not usable
+yet.
+
+**Check for understanding.** Ask: "Why does the voice assistant need no new
+reviewer?" Because it only speaks already-approved text -- and being able to say
+why that is different from the other four is the classification this objective
+wants.
+
+## Embedding This MicroSim
+
+Paste this into any page of the book, adjusting the relative path to
+`docs/sims/` for the page's depth:
+
+```html
+<iframe src="../../sims/specialized-agent-roster/main.html" width="100%" height="702" scrolling="no"></iframe>
+```
 
 ## Specification
 
@@ -55,6 +117,10 @@ Legend: Node color key matching the five agent types plus the center "umbrella" 
 Implementation: vis-network JavaScript library, hierarchical or force-directed hub layout, canvas size 800x450px.
 ```
 
-## Related Resources
+## References
 
-- [Chapter 33: AI-Customized Curriculum and Rolling Out New Agents](../../chapters/33-ai-customized-curriculum-rollout/index.md)
+- [Chapter 33: AI-Customized Curriculum and Rolling Out New Agents](../../chapters/33-ai-customized-curriculum-rollout/index.md) -- the chapter this MicroSim supports.
+- [Meet the Club's AI Agent Roster](../ai-agent-roster-network/index.md) -- the six everyday agents this set sits beside.
+- [Human-in-the-Loop Review Workflow](../human-in-the-loop-review-workflow/index.md) -- the review gate all of these pass through.
+- [Machine translation](https://en.wikipedia.org/wiki/Machine_translation) -- why a fluent reviewer is not optional.
+- [Grant writing](https://en.wikipedia.org/wiki/Grant_writing) -- what the first agent is drafting.

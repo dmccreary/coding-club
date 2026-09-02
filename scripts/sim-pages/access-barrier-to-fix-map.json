@@ -1,0 +1,22 @@
+{
+  "title": "Access Barrier to Fix Map",
+  "height": 762,
+  "library": "vis-network",
+  "bloom": "Analyze (L4)",
+  "verb": "examine",
+  "description": "Five barriers families face, seven club practices that address them -- and the one barrier three fixes converge on.",
+  "concepts": [
+    "Access Barriers",
+    "No-Fee Model",
+    "Device Loan",
+    "Accommodation",
+    "Equity"
+  ],
+  "interaction": "Click any barrier or fix for what it is and what it addresses",
+  "assessment": "Name a barrier and ask which fixes address it, and which fix removes it without the family asking.",
+  "audience": "Club leaders working on access",
+  "about": "Five barriers on the left, seven practices on the right, and the shape of the\nconnections carries the argument.\n\n**Cost is the only barrier with three fixes converging on it**, and the three are\nnot equivalent. A **no-fee model** removes the barrier for every family at once,\nwith nobody having to identify themselves. A **scholarship fund** works, but\nrequires a family to ask -- which some will not do. A **device loan programme**\ncloses the hidden fee that \"bring a laptop\" quietly creates.\n\nThat difference between *removing* a barrier and *providing a route around it*\nis what this map is built to surface. A single policy decision at the top of the\nlist does more than three well-run application processes lower down.\n\nThe other four barriers each have one fix, and the fixes are correspondingly\nspecific: two session slots rather than one, translated materials plus a named\nbilingual contact, and -- for disability access -- asking the family what they\nneed rather than guessing.",
+  "howto": "- **Click any barrier** to see what it is; **click any fix** to see what it does.\n- Follow the three arrows out of **Cost** -- it is the only barrier with more than\n  one practice addressing it.\n- **Reset** restores the layout.",
+  "lesson": "**Bloom level:** Analyze (L4) -- *examine*\n\n**Learning objective:** Given a barrier a family might face, the learner examines\nwhich club practice addresses it, and identifies practices that address more than\none barrier.\n\n**Before the sim (5 min).** Ask who is *not* in the club who might want to be. The\nhonest answers are usually about cost and transport.\n\n**With the sim (15 min).** Trace each barrier to its fix. At Cost, compare the\nthree: which requires a family to ask, and which does not? That question is the\nanalysis.\n\n**After the sim (15 min).** Audit the club against all five barriers and mark\nwhich fixes are actually in place versus merely intended.\n\n**Check for understanding.** Ask: \"Which single decision on this map helps the\nmost families with the least ongoing effort?\" Going no-fee -- and being able to\nsay why it beats a scholarship fund on reach is the examination this objective\nwants.",
+  "refs": "- {{CHAPTER}} -- the chapter this MicroSim supports.\n- [Funding Partnership Fit Map](../funding-partnership-fit-map/index.md) -- how a club pays for a no-fee model.\n- [Universal design](https://en.wikipedia.org/wiki/Universal_design) -- removing barriers rather than accommodating around them.\n- [Digital divide](https://en.wikipedia.org/wiki/Digital_divide) -- the gap the device loan programme addresses.\n- [Web Content Accessibility Guidelines](https://en.wikipedia.org/wiki/Web_Content_Accessibility_Guidelines) -- accessibility standards for anything the club publishes."
+}

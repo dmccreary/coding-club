@@ -202,6 +202,10 @@ const edgeData = [
 
 const PINNED = [];
 
+// Label wrap width for a node. Narrower nodes wrap onto more lines but leave
+// more horizontal room for edge labels, which vis-network draws beneath nodes.
+const NODE_WIDTH = 260;
+
 // Screen pixels the right-hand panel and the title band take out of the canvas.
 const RIGHT_PANEL_PX = 250;
 const TITLE_BAND_PX = 46;
@@ -242,13 +246,15 @@ function buildNodes() {
             },
             font: { color: c[2], size: isHub ? 40 : 32, face: 'Arial' },
             borderWidth: isHub ? 3 : 2,   // thin: the fonts are large, the borders are not
-            widthConstraint: { maximum: isHub ? 320 : 260 },
+            widthConstraint: { maximum: isHub ? NODE_WIDTH + 60 : NODE_WIDTH },
             margin: isHub ? 32 : 20,
             fixed: { x: pinned, y: pinned }
         };
     });
 }
 
+// vis-network draws edge labels beneath nodes, so on a chain of wide ellipses a
+// long label gets its ends covered. Sims with that shape drop the size.
 const EDGE_FONT = { size: 26, face: 'Arial', color: '#333333',
                     strokeWidth: 8, strokeColor: '#F0F8FF', align: 'horizontal' };
 const EDGE_FONT_HOVER = { size: 34, face: 'Arial', color: '#B87B12',

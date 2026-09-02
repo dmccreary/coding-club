@@ -1,0 +1,21 @@
+{
+  "title": "Funding Partnership Fit Map",
+  "height": 622,
+  "library": "vis-network",
+  "bloom": "Analyze (L4)",
+  "verb": "examine",
+  "description": "Four funding needs, four partnership approaches, and which one solves more than one need.",
+  "concepts": [
+    "Local Company Partnership",
+    "Strategic Partnership",
+    "Fiscal Sponsorship",
+    "Vendor Discount"
+  ],
+  "interaction": "Click any need or approach for what it covers",
+  "assessment": "Give a funding need and ask which approach fits and why the others do not.",
+  "audience": "Club leaders seeking funding",
+  "about": "Four needs, four approaches, and they are not interchangeable.\n\nThe mapping is mostly one-to-one, which is itself informative: a fiscal sponsor\nsolves a very specific problem -- a grant that requires 501(c)(3) status the club\ndoes not have -- and solves nothing else. Vendor discount negotiation does not\nraise money at all; it makes the money already raised go further on things the\nclub buys anyway.\n\n**One-time equipment or space** is the exception, with two approaches converging\non it. A local company and a strategic partner can both fill a one-off gap, but\nthrough different relationships: the company gives because supporting the\ncommunity is part of what it does, while a university club or library trades\nbecause each side has something the other needs. Which route to take depends on\nwhat the club can offer back, and only one of the two requires having anything to\noffer.\n\nReading the map the other way is also useful: if a club's need is **ongoing and\nrecurring**, only one approach here addresses it, and grants -- covered\nseparately in this chapter -- are the other place to look.",
+  "howto": "- **Click any need or approach** to see what it covers.\n- Follow the two arrows out of **One-Time Equipment or Space** -- the only need\n  with more than one approach.\n- **Reset** restores the layout.",
+  "lesson": "**Bloom level:** Analyze (L4) -- *examine*\n\n**Learning objective:** Given a specific club funding need, the learner examines\nwhich partnership or negotiation approach from this chapter best addresses it.\n\n**Before the sim (5 min).** Ask what the club needs money for right now. Push past\n\"more money\" to a specific need -- recurring, one-off, grant-blocked, or\ncost-of-purchases.\n\n**With the sim (10 min).** Trace each need to its approach. Then ask what a\nstrategic partner would want back, which is the question that decides whether\nthat route is open to this club.\n\n**After the sim (15 min).** Pick the club's most pressing need and draft the\nopening ask for the approach the map points to.\n\n**Check for understanding.** Ask: \"A funder will only give to a registered\nnonprofit and the club is not one. What now?\" Fiscal sponsorship -- and knowing\nthat no other approach on the map unblocks that is the examination this objective\nwants.",
+  "refs": "- {{CHAPTER}} -- the chapter this MicroSim supports.\n- [Fundraising Channel Yield Comparison](../fundraising-channel-yield-comparison/index.md) -- the effort each channel costs.\n- [Grant Writing and Tracking Workflow](../grant-writing-tracking-workflow/index.md) -- the route this map deliberately leaves out.\n- [Fiscal sponsorship](https://en.wikipedia.org/wiki/Fiscal_sponsorship) -- how an established nonprofit receives a grant on a club's behalf.\n- [501(c)(3) organization](https://en.wikipedia.org/wiki/501(c)(3)_organization) -- the status many funders require."
+}

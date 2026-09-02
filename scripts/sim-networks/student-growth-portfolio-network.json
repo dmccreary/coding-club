@@ -1,0 +1,142 @@
+{
+  "title": "Student Growth to Portfolio Network",
+  "height": 620,
+  "stats": "5 stages · left to right",
+  "panelHeading": "Stage Details",
+  "placeholder": "Click any stage to see what flows into it and where that data goes next.",
+  "arrows": true,
+  "pinned": [],
+  "nodes": [
+    {
+      "id": "obs",
+      "label": "Session Observations",
+      "x": -540,
+      "y": -210,
+      "cls": "neutral",
+      "detail": [
+        [
+          "What it holds",
+          "A mentor's in-session notes on what a student attempted."
+        ],
+        [
+          "Flows into",
+          "Student growth metrics, once aggregated across sessions."
+        ]
+      ]
+    },
+    {
+      "id": "metrics",
+      "label": "Student Growth Metrics",
+      "x": 0,
+      "y": -195,
+      "cls": "node",
+      "detail": [
+        [
+          "What it holds",
+          "Aggregated measurements of a student's progress over time."
+        ],
+        [
+          "Flows into",
+          "Skill mastery tracking, once classified by skill level."
+        ]
+      ]
+    },
+    {
+      "id": "mastery",
+      "label": "Skill Mastery Tracking",
+      "x": 500,
+      "y": -210,
+      "cls": "resolve",
+      "detail": [
+        [
+          "What it holds",
+          "The emerging, practising, or mastered level for each specific skill."
+        ],
+        [
+          "Flows into",
+          "The digital portfolio, once evidenced by uploaded work."
+        ]
+      ]
+    },
+    {
+      "id": "portfolio",
+      "label": "Digital Portfolio System",
+      "x": 500,
+      "y": 190,
+      "cls": "hub",
+      "detail": [
+        [
+          "What it holds",
+          "The actual saved work evidencing that mastery -- photographs, code, project files."
+        ],
+        [
+          "Flows into",
+          "The parent portal, exposed read-only to one family."
+        ]
+      ]
+    },
+    {
+      "id": "portal",
+      "label": "Parent Access Portal",
+      "x": 0,
+      "y": 175,
+      "cls": "wait",
+      "detail": [
+        [
+          "What it holds",
+          "One family's scoped, view-only window into everything to its left."
+        ],
+        [
+          "Where it goes next",
+          "Nowhere. It is a leaf: the portal shows, it does not feed anything back."
+        ]
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "obs",
+      "to": "metrics",
+      "label": "aggregates"
+    },
+    {
+      "from": "metrics",
+      "to": "mastery",
+      "label": "classified"
+    },
+    {
+      "from": "mastery",
+      "to": "portfolio",
+      "label": "evidenced by"
+    },
+    {
+      "from": "portfolio",
+      "to": "portal",
+      "label": "read-only"
+    }
+  ],
+  "legend": [
+    {
+      "cls": "neutral",
+      "text": "Raw observations"
+    },
+    {
+      "cls": "node",
+      "text": "Growth metrics"
+    },
+    {
+      "cls": "resolve",
+      "text": "Mastery levels"
+    },
+    {
+      "cls": "hub",
+      "text": "Portfolio"
+    },
+    {
+      "cls": "wait",
+      "text": "Parent portal"
+    }
+  ],
+  "edgeFontSize": 20,
+  "nodeWidth": 190
+}

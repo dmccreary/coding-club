@@ -287,7 +287,7 @@ A worked example shows the hands-free use case plainly: while loading the car wi
 
 #### Diagram: Meet the Specialized Agent Roster
 
-<iframe src="../../sims/specialized-agent-roster/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../sims/specialized-agent-roster/main.html" width="100%" height="702px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Meet the Specialized Agent Roster</summary>

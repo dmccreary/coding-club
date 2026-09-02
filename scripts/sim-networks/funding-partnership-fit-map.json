@@ -1,0 +1,151 @@
+{
+  "title": "Funding Partnership Fit Map",
+  "height": 620,
+  "stats": "4 needs · 4 approaches",
+  "panelHeading": "Need and Approach Details",
+  "placeholder": "Click any need or approach to see what it covers.",
+  "arrows": true,
+  "pinned": [],
+  "nodes": [
+    {
+      "id": "recurring",
+      "label": "Ongoing Recurring Support",
+      "x": -620,
+      "y": -330,
+      "cls": "hub",
+      "detail": [
+        [
+          "The need",
+          "Money the club can count on term after term, rather than a one-off."
+        ]
+      ]
+    },
+    {
+      "id": "onetime",
+      "label": "One-Time Equipment or Space",
+      "x": -620,
+      "y": -110,
+      "cls": "hub",
+      "detail": [
+        [
+          "The need",
+          "A specific gap: ten laptops, a room for a showcase, a set of kits."
+        ],
+        [
+          "Note",
+          "The only need here addressed by two different approaches."
+        ]
+      ]
+    },
+    {
+      "id": "grant501",
+      "label": "Access to a Grant Requiring 501(c)(3) Status",
+      "x": -620,
+      "y": 110,
+      "cls": "hub",
+      "detail": [
+        [
+          "The need",
+          "A funder that only gives to registered nonprofits, which most young clubs are not."
+        ]
+      ]
+    },
+    {
+      "id": "lowercost",
+      "label": "Lower Cost on Regular Purchases",
+      "x": -620,
+      "y": 330,
+      "cls": "hub",
+      "detail": [
+        [
+          "The need",
+          "Not more money, but the same money going further on things bought repeatedly."
+        ]
+      ]
+    },
+    {
+      "id": "company",
+      "label": "Local Company Partnership",
+      "x": 620,
+      "y": -380,
+      "cls": "node",
+      "detail": [
+        [
+          "The approach",
+          "A business that supports the club regularly -- cash, equipment, or volunteer hours -- as part of its own community commitment."
+        ]
+      ]
+    },
+    {
+      "id": "strategic",
+      "label": "Strategic Partnership Building",
+      "x": 620,
+      "y": -120,
+      "cls": "node",
+      "detail": [
+        [
+          "The approach",
+          "A relationship with another organisation, such as a university club or library, where each side has something the other needs."
+        ]
+      ]
+    },
+    {
+      "id": "fiscal",
+      "label": "Nonprofit Fiscal Sponsorship",
+      "x": 620,
+      "y": 120,
+      "cls": "node",
+      "detail": [
+        [
+          "The approach",
+          "An established nonprofit receives the grant on the club's behalf, so the club can apply without incorporating first."
+        ]
+      ]
+    },
+    {
+      "id": "discount",
+      "label": "Vendor Discount Negotiation",
+      "x": 620,
+      "y": 360,
+      "cls": "node",
+      "detail": [
+        [
+          "The approach",
+          "Asking a supplier for an education or nonprofit rate on the things the club buys anyway."
+        ]
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "recurring",
+      "to": "company"
+    },
+    {
+      "from": "onetime",
+      "to": "strategic"
+    },
+    {
+      "from": "onetime",
+      "to": "company"
+    },
+    {
+      "from": "grant501",
+      "to": "fiscal"
+    },
+    {
+      "from": "lowercost",
+      "to": "discount"
+    }
+  ],
+  "legend": [
+    {
+      "cls": "hub",
+      "text": "Funding need"
+    },
+    {
+      "cls": "node",
+      "text": "Partnership approach"
+    }
+  ]
+}

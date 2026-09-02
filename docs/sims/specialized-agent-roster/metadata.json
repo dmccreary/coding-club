@@ -1,6 +1,6 @@
 {
   "title": "Meet the Specialized Agent Roster",
-  "description": "Given a club task outside day-to-day operations, the learner classifies which of the five specialized agents is the right match for it.",
+  "description": "Five agents for the occasional jobs -- grants, social media, website copy, translation, voice -- and who reviews each one's output.",
   "creator": "Coding Club",
   "author": "Dan McCreary",
   "date": "2026-09-01",
@@ -15,9 +15,29 @@
   "library": "vis-network",
   "bloomLevel": "Understand (L2)",
   "bloomVerb": "classify",
-  "completion_status": "scaffold",
+  "completion_status": "built",
+  "canvasHeight": 700,
   "chapter_number": 33,
   "chapter_title": "AI-Customized Curriculum and Rolling Out New Agents",
   "chapter_dir": "33-ai-customized-curriculum-rollout",
-  "chapter_rel_dir": "chapters/33-ai-customized-curriculum-rollout"
+  "chapter_rel_dir": "chapters/33-ai-customized-curriculum-rollout",
+  "educational": {
+    "gradeLevel": "Middle School, High School, Adult",
+    "audience": "Club leaders using AI beyond daily operations",
+    "duration": "10-15 minutes",
+    "concepts": [
+      "Specialized Agents",
+      "Grant Writing",
+      "Translation Review",
+      "Consent to Publish",
+      "Human Review"
+    ]
+  },
+  "pedagogical": {
+    "bloomLevel": "Understand (L2)",
+    "bloomVerb": "classify",
+    "learningObjective": "Given a club task outside day-to-day operations, the learner classifies which of the five specialized agents is the right match for it.",
+    "interactionPattern": "Click any agent for the task it handles and who reviews its output",
+    "assessment": "Give an occasional club task and ask which agent fits and who checks it."
+  }
 }

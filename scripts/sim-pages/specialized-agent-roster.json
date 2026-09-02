@@ -1,0 +1,22 @@
+{
+  "title": "Meet the Specialized Agent Roster",
+  "height": 702,
+  "library": "vis-network",
+  "bloom": "Understand (L2)",
+  "verb": "classify",
+  "description": "Five agents for the occasional jobs -- grants, social media, website copy, translation, voice -- and who reviews each one's output.",
+  "concepts": [
+    "Specialized Agents",
+    "Grant Writing",
+    "Translation Review",
+    "Consent to Publish",
+    "Human Review"
+  ],
+  "interaction": "Click any agent for the task it handles and who reviews its output",
+  "assessment": "Give an occasional club task and ask which agent fits and who checks it.",
+  "audience": "Club leaders using AI beyond daily operations",
+  "about": "These five handle the jobs that come round a few times a year rather than every\nweek -- and are therefore the ones nobody has a routine for.\n\nThe field worth reading on every node is **who reviews it**, because it is\ndifferent each time and the difference is the point:\n\n- Grant writing is reviewed by the leader, for **factual accuracy**. An agent\n  will happily produce a confident sentence about a programme the club does not\n  run.\n- Social media is reviewed by the leader, for **un-consented student\n  identification** -- a different failure mode entirely, and the one with the\n  highest cost.\n- Website copy is reviewed for accuracy **against the real walk-in experience**,\n  not just internal consistency.\n- Translation is reviewed by a **fluent speaker**, not the leader, because the\n  leader cannot check what they cannot read.\n- Voice assistant use is reviewed by **nobody new**, because it only reads aloud\n  text a person already approved.\n\nThat last one is not a gap in the review chain. It is what a genuinely low-risk\nuse of AI looks like, and it is useful to have one on the roster for contrast.",
+  "howto": "- **Click any agent** to see the task and its reviewer.\n- The hub is the shared idea; the five spokes are the specialisations.\n- **Reset** restores the layout.",
+  "lesson": "**Bloom level:** Understand (L2) -- *classify*\n\n**Learning objective:** Given a club task outside day-to-day operations, the\nlearner classifies which of the five specialized agents is the right match for\nit.\n\n**Before the sim (5 min).** Ask what the club did last year that it does only once\nor twice a year. Those are exactly the tasks nobody has got efficient at.\n\n**With the sim (10 min).** Click all five. Then go round again asking only \"who\nreviews this, and what are they looking for?\" The reviewers differ, and that is\nthe harder half of the lesson.\n\n**After the sim (15 min).** Name the actual reviewer for each of the five in this\nclub. If translation has no fluent speaker attached, that agent is not usable\nyet.\n\n**Check for understanding.** Ask: \"Why does the voice assistant need no new\nreviewer?\" Because it only speaks already-approved text -- and being able to say\nwhy that is different from the other four is the classification this objective\nwants.",
+  "refs": "- {{CHAPTER}} -- the chapter this MicroSim supports.\n- [Meet the Club's AI Agent Roster](../ai-agent-roster-network/index.md) -- the six everyday agents this set sits beside.\n- [Human-in-the-Loop Review Workflow](../human-in-the-loop-review-workflow/index.md) -- the review gate all of these pass through.\n- [Machine translation](https://en.wikipedia.org/wiki/Machine_translation) -- why a fluent reviewer is not optional.\n- [Grant writing](https://en.wikipedia.org/wiki/Grant_writing) -- what the first agent is drafting."
+}

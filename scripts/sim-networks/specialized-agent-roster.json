@@ -1,0 +1,159 @@
+{
+  "title": "Meet the Specialized Agent Roster",
+  "height": 700,
+  "stats": "5 specialized agents",
+  "panelHeading": "Agent Details",
+  "placeholder": "Click any agent to see the task it handles and who reviews its output.",
+  "arrows": false,
+  "pinned": [
+    "hub"
+  ],
+  "nodes": [
+    {
+      "id": "hub",
+      "label": "Specialized Agents",
+      "x": 0,
+      "y": 0,
+      "cls": "hub",
+      "detail": [
+        [
+          "What these are",
+          "Tasks beyond registration, scheduling, and reminders -- less frequent, but still time-consuming without help."
+        ]
+      ]
+    },
+    {
+      "id": "grant",
+      "label": "AI Assisted Grant Writing",
+      "x": -460,
+      "y": -300,
+      "cls": "node",
+      "detail": [
+        [
+          "What it does",
+          "Drafts grant proposal sections from bullet-point facts."
+        ],
+        [
+          "Reviewed by",
+          "The leader, for factual accuracy."
+        ]
+      ]
+    },
+    {
+      "id": "social",
+      "label": "AI Assisted Social Media",
+      "x": 300,
+      "y": -330,
+      "cls": "resolve",
+      "detail": [
+        [
+          "What it does",
+          "Drafts a platform-ready post and caption."
+        ],
+        [
+          "Reviewed by",
+          "The leader, for un-consented student identification."
+        ]
+      ]
+    },
+    {
+      "id": "website",
+      "label": "AI Generated Website Content",
+      "x": 560,
+      "y": 0,
+      "cls": "remediate",
+      "detail": [
+        [
+          "What it does",
+          "Drafts public web page copy."
+        ],
+        [
+          "Reviewed by",
+          "The leader, for accuracy against the real walk-in experience."
+        ]
+      ]
+    },
+    {
+      "id": "translation",
+      "label": "AI Assisted Translation",
+      "x": 240,
+      "y": 330,
+      "cls": "wait",
+      "detail": [
+        [
+          "What it does",
+          "Produces a first-pass translation of an existing document."
+        ],
+        [
+          "Reviewed by",
+          "A fluent speaker, for meaning and tone."
+        ]
+      ]
+    },
+    {
+      "id": "voice",
+      "label": "AI Voice Assistant Use",
+      "x": -460,
+      "y": 300,
+      "cls": "neutral",
+      "detail": [
+        [
+          "What it does",
+          "Reads existing, already-approved text aloud, or answers a simple spoken question."
+        ],
+        [
+          "Reviewed by",
+          "Nobody new -- it only reads what a person already approved."
+        ]
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "hub",
+      "to": "grant"
+    },
+    {
+      "from": "hub",
+      "to": "social"
+    },
+    {
+      "from": "hub",
+      "to": "website"
+    },
+    {
+      "from": "hub",
+      "to": "translation"
+    },
+    {
+      "from": "hub",
+      "to": "voice"
+    }
+  ],
+  "legend": [
+    {
+      "cls": "hub",
+      "text": "The umbrella idea"
+    },
+    {
+      "cls": "node",
+      "text": "Grant writing"
+    },
+    {
+      "cls": "resolve",
+      "text": "Social media"
+    },
+    {
+      "cls": "remediate",
+      "text": "Website content"
+    },
+    {
+      "cls": "wait",
+      "text": "Translation"
+    },
+    {
+      "cls": "neutral",
+      "text": "Voice assistant"
+    }
+  ]
+}

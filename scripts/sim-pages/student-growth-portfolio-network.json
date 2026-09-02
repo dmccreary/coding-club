@@ -1,0 +1,22 @@
+{
+  "title": "Student Growth to Portfolio Network",
+  "height": 622,
+  "library": "vis-network",
+  "bloom": "Understand (L2)",
+  "verb": "explain",
+  "description": "Five stages from a mentor's in-session note to a family's read-only view -- and what changes at each step.",
+  "concepts": [
+    "Session Observations",
+    "Growth Metrics",
+    "Skill Mastery",
+    "Digital Portfolio",
+    "Parent Portal"
+  ],
+  "interaction": "Click any stage to see what flows into it and where that data goes next",
+  "assessment": "Ask what the parent portal can show and what it cannot feed back.",
+  "audience": "Mentors and leaders running progress tracking",
+  "about": "One pipeline, five stages, and the data changes shape at every one.\n\nIt starts as a **mentor's note** -- unstructured, specific to one session, written\nby a person who was there. It becomes **growth metrics** by being aggregated\nacross sessions, which is where individual moments turn into a trend. It becomes\n**mastery tracking** by being classified into emerging, practising, or mastered\nfor each named skill. It becomes a **portfolio** when actual saved work is\nattached as evidence -- the photograph, the code, the project file. And it\nbecomes a **parent portal** by being scoped to one family and made read-only.\n\nTwo things are worth noticing about the shape.\n\nEach arrow does real work. Nothing is simply copied forward; each step\ntransforms. Ask of any stage \"what was added here?\" and there is an answer.\n\nAnd the last node is a **leaf**. The portal shows; it does not feed anything back\ninto the pipeline. A family cannot edit a mastery level from it, which is\ndeliberate and worth stating to parents when the portal is introduced.",
+  "howto": "- **Click any stage** to see what flows in and where it goes next.\n- Follow the arrows left to right along the top row, then down and back to the\n  left along the bottom.\n- **Reset** restores the layout.",
+  "lesson": "**Bloom level:** Understand (L2) -- *explain*\n\n**Learning objective:** Given a node in the growth-to-portfolio network, the\nlearner explains what data flows into it and where that data goes next.\n\n**Before the sim (5 min).** Ask what a parent currently sees of their child's\nprogress. In most clubs the honest answer is \"whatever a mentor says at pickup\".\n\n**With the sim (10 min).** Walk the chain and, at each arrow, ask what was added.\nAggregation, classification, evidence, and scoping -- four different operations.\n\n**After the sim (15 min).** Take one real observation from last session and carry\nit by hand through all five stages, writing down what it looks like at each.\n\n**Check for understanding.** Ask: \"A parent disagrees with a mastery level. Can\nthey change it in the portal?\" No -- it is read-only, and the change would have to\nhappen upstream at mastery tracking. Being able to locate the right stage is the\nexplanation this objective wants.",
+  "refs": "- {{CHAPTER}} -- the chapter this MicroSim supports.\n- [Student Progress Tracking Cycle](../progress-tracking-cycle/index.md) -- the habit that produces the observations at stage one.\n- [Progress Dashboard Explorer](../progress-dashboard-explorer/index.md) -- the mentor-facing view of the same data.\n- [Student Data Privacy Principles](../student-data-privacy-principles/index.md) -- why the portal is scoped to one family.\n- [E-portfolio](https://en.wikipedia.org/wiki/Electronic_portfolio) -- evidence of learning as a collected artefact."
+}
