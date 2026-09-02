@@ -7,16 +7,6 @@
   "callouts": [
     {
       "id": 1,
-      "label": "Colored Border",
-      "x": 50,
-      "y": 4,
-      "radius": 5,
-      "color": "#2ECC71",
-      "hint": "The solid coloured band running all the way around the card's outer edge.",
-      "description": "Signals difficulty at a glance: green for a Beginner Card, blue for an Intermediate Card, black for an Advanced Card. This example shows a green Beginner Card."
-    },
-    {
-      "id": 2,
       "label": "Title",
       "x": 50,
       "y": 14,
@@ -26,7 +16,7 @@
       "description": "A short, inviting project name, like 'Rainbow Chase' rather than 'LED Strip Loop Exercise.'"
     },
     {
-      "id": 3,
+      "id": 2,
       "label": "Materials List",
       "x": 30,
       "y": 27,
@@ -34,6 +24,16 @@
       "color": "#7ED6A5",
       "hint": "A short bulleted list in the upper-middle of the card.",
       "description": "Every physical or software tool needed, checked against actual kit inventory before the session."
+    },
+    {
+      "id": 3,
+      "label": "Colored Border",
+      "x": 13.1,
+      "y": 45.0,
+      "radius": 5,
+      "color": "#2ECC71",
+      "hint": "The solid coloured band running all the way around the card's outer edge.",
+      "description": "Signals difficulty at a glance: green for a Beginner Card, blue for an Intermediate Card, black for an Advanced Card. This example shows a green Beginner Card."
     },
     {
       "id": 4,

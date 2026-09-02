@@ -47,6 +47,16 @@
     },
     {
       "id": 5,
+      "label": "First Aid Kit",
+      "x": 7.4,
+      "y": 59.6,
+      "radius": 5,
+      "color": "#F39C12",
+      "hint": "A small wall-mounted white box with a cross on it.",
+      "description": "Stocked with bandages and cold packs; location fixed and known to every mentor."
+    },
+    {
+      "id": 6,
       "label": "Accessible Pathway",
       "x": 32,
       "y": 66,
@@ -54,16 +64,6 @@
       "color": "#2ECC71",
       "hint": "A wide empty strip of floor running from a doorway to the table.",
       "description": "Kept clear for wheelchair or mobility-aid access."
-    },
-    {
-      "id": 6,
-      "label": "First Aid Kit",
-      "x": 9,
-      "y": 68,
-      "radius": 5,
-      "color": "#F39C12",
-      "hint": "A small wall-mounted white box with a cross on it.",
-      "description": "Stocked with bandages and cold packs; location fixed and known to every mentor."
     },
     {
       "id": 7,

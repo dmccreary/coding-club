@@ -38,8 +38,8 @@
     {
       "id": 4,
       "label": "~6 A (dangerous, gets hot)",
-      "x": 75,
-      "y": 50,
+      "x": 74.5,
+      "y": 76.0,
       "radius": 5,
       "color": "#E74C3C",
       "hint": "The bare wire loop on the right, glowing warm.",

@@ -74,8 +74,8 @@
     {
       "id": 5,
       "label": "First Aid Kit",
-      "x": 9,
-      "y": 68,
+      "x": 7.4,
+      "y": 59.6,
       "radius": 5,
       "color": "#F39C12",
       "hint": "A small wall-mounted white box with a cross on it.",
