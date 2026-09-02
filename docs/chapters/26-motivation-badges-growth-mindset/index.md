@@ -77,7 +77,7 @@ A worked example shows a reward system doing its intended job: a club introduces
 
 #### Diagram: Intrinsic vs Extrinsic Motivation Map
 
-<iframe src="../../sims/intrinsic-vs-extrinsic-motivation-map/main.html" width="100%" height="560px" scrolling="no"></iframe>
+<iframe src="../../sims/intrinsic-vs-extrinsic-motivation-map/main.html" width="100%" height="726px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Intrinsic vs Extrinsic Motivation Map</summary>
@@ -155,7 +155,7 @@ A worked example shows a certificate earning its formality: a student who has co
 
 #### Diagram: The Tangible Reward Ladder
 
-<iframe src="../../sims/tangible-reward-ladder/main.html" width="100%" height="640px" scrolling="no"></iframe>
+<iframe src="../../sims/tangible-reward-ladder/main.html" width="100%" height="954px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>The Tangible Reward Ladder</summary>
@@ -226,7 +226,7 @@ Choosing among these three formats depends mainly on how much public ranking a m
 
 #### Diagram: Leaderboard vs Collaborative Challenge
 
-<iframe src="../../sims/leaderboard-vs-collaborative-challenge/main.html" width="100%" height="560px" scrolling="no"></iframe>
+<iframe src="../../sims/leaderboard-vs-collaborative-challenge/main.html" width="100%" height="726px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Leaderboard vs Collaborative Challenge</summary>

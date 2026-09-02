@@ -401,7 +401,7 @@ A worked example matters for a club setting specifically: most PIR modules inclu
 
 #### Diagram: PIR Detection Zone Map
 
-<iframe src="../../sims/pir-detection-zone-map/main.html" width="100%" height="480px" scrolling="no"></iframe>
+<iframe src="../../sims/pir-detection-zone-map/main.html" width="100%" height="606px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>PIR Detection Zone Map</summary>

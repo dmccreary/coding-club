@@ -324,7 +324,7 @@ The comparison below puts these two families of advanced kits side by side, for 
 
 #### Diagram: Kits Ready to Go Further
 
-<iframe src="../../sims/kits-ready-to-go-further/main.html" width="100%" height="550px" scrolling="no"></iframe>
+<iframe src="../../sims/kits-ready-to-go-further/main.html" width="100%" height="660px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Kits Ready to Go Further</summary>

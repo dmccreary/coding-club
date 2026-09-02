@@ -1,6 +1,6 @@
 {
   "title": "Leaderboard vs Collaborative Challenge",
-  "description": "Given a description of a club's mix of skill levels and confidence, the learner recommends the safest competition format for that group.",
+  "description": "Three competition formats on a risk gradient, and the one that hurts the students who need encouragement most.",
   "creator": "Coding Club",
   "author": "Dan McCreary",
   "date": "2026-09-01",
@@ -12,12 +12,32 @@
   "language": "en",
   "rights": "CC BY-NC-SA 4.0",
   "identifier": "leaderboard-vs-collaborative-challenge",
-  "library": "Interactive Infographic Overlay (grid-diagram.js, annotation-free comparison poster + rectangular hover zones)",
+  "library": "Infographic overlay (grid-diagram.js)",
   "bloomLevel": "Evaluate (L5)",
   "bloomVerb": "recommend",
-  "completion_status": "scaffold",
+  "completion_status": "built",
+  "canvasHeight": 724,
   "chapter_number": 26,
   "chapter_title": "Motivation, Badges, and Growth Mindset Coaching",
   "chapter_dir": "26-motivation-badges-growth-mindset",
-  "chapter_rel_dir": "chapters/26-motivation-badges-growth-mindset"
+  "chapter_rel_dir": "chapters/26-motivation-badges-growth-mindset",
+  "educational": {
+    "gradeLevel": "Middle School, High School, Adult",
+    "audience": "Mentors planning a competitive activity",
+    "duration": "10 minutes",
+    "concepts": [
+      "Competition Format",
+      "Leaderboard",
+      "Team Rotation",
+      "Collaborative Challenge",
+      "Confidence"
+    ]
+  },
+  "pedagogical": {
+    "bloomLevel": "Evaluate (L5)",
+    "bloomVerb": "recommend",
+    "learningObjective": "Given a description of a club's mix of skill levels and confidence, the learner recommends the safest competition format for that group.",
+    "interactionPattern": "Click any format for who it suits and what it risks",
+    "assessment": "Recommend a format for a described mix of skill and confidence."
+  }
 }

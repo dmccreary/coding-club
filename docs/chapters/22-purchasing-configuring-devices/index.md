@@ -386,7 +386,7 @@ A worked example shows the safer pattern working: a student forgets their indivi
 
 Five distinct layers now stand between a student and an inappropriate or unsafe experience on a club device. The infographic below stacks them from the club's written policy foundation up through the day-to-day habit layer, so a mentor can see at a glance which layer handles which kind of risk.
 
-<iframe src="../../sims/youth-safety-layers/main.html" width="100%" height="600px" scrolling="no"></iframe>
+<iframe src="../../sims/youth-safety-layers/main.html" width="100%" height="832px" scrolling="no"></iframe>
 
 #### Diagram: Layers of Youth Digital Safety
 

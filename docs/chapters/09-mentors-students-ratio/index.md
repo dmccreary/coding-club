@@ -66,7 +66,7 @@ Mentors are not interchangeable, and recognizing that up front changes how a clu
 
 #### Diagram: Three Kinds of Mentors
 
-<iframe src="../../sims/three-kinds-of-mentors/main.html" width="100%" height="600px" scrolling="no"></iframe>
+<iframe src="../../sims/three-kinds-of-mentors/main.html" width="100%" height="726px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Three Kinds of Mentors</summary>

@@ -62,7 +62,7 @@ Four scheduling models cover the large majority of coding clubs, each fitting a 
 
 #### Diagram: Four Coding Club Scheduling Models
 
-<iframe src="../../sims/four-scheduling-models/main.html" width="100%" height="600px" scrolling="no"></iframe>
+<iframe src="../../sims/four-scheduling-models/main.html" width="100%" height="650px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Four Coding Club Scheduling Models</summary>

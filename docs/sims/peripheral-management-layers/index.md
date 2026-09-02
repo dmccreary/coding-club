@@ -1,18 +1,92 @@
 ---
 title: Peripheral and Storage Management Layers
-description: Given a specific accessory or storage question, the learner classifies which of the five peripheral-management categories addresses it.
-status: scaffold
-library: Interactive Infographic Overlay Guide (grid-diagram.js, annotation-free comparison poster + rectangular hover zones)
+description: Five categories covering every accessory question a club actually gets.
+image: sims/peripheral-management-layers/peripheral-management-layers.png
+status: built
+library: Infographic overlay (grid-diagram.js)
 bloom_level: Understand (L2)
 ---
 
 # Peripheral and Storage Management Layers
 
+<iframe src="main.html" width="100%" height="832" scrolling="no"></iframe>
 
+[Run the Peripheral and Storage Management Layers MicroSim fullscreen](main.html){ .md-button .md-button--primary }
 
-<iframe src="main.html" width="100%" height="600"></iframe>
+## About This MicroSim
 
-[Run MicroSim in Fullscreen](main.html){ .md-button .md-button--primary }
+Five categories, and the top one is the umbrella that makes the rest
+manageable.
+
+**Peripheral device management** is one idea: **track accessories by bin count,
+not individual ID.** A laptop gets an asset tag and a spreadsheet row. A mouse
+does not — you have a bin of twelve mice and you count them. Trying to give
+every cable a unique identifier is how inventory systems die, and the bin is
+the unit that survives contact with a real club.
+
+**Headphones** get their own layer because they touch a different student's
+ears every session. Wipeable or disposable ear-cushion covers, swapped between
+uses, stored in a labelled bin. It is the one accessory with a hygiene question
+attached, and it is worth being explicit rather than hoping.
+
+**Mice and keyboards** are a **project-specific setup step, not a default**.
+They come out when a laptop is sitting next to a breadboard and the built-in
+keyboard is awkward to reach — and they go back afterwards. A club that leaves
+them plugged in permanently has doubled its cable management problem for no
+reason.
+
+**External storage** is for hardware that cannot reach the cloud: robot-kit
+firmware flashers that expect a local file, and Chromebooks with very little
+local space. Narrow, specific, and labelled like the laptops.
+
+**Cloud storage** is the default save location on shared device accounts, and
+the reason is a specific failure: shared accounts get reset, and anything saved
+locally goes with them. Cloud storage means work follows the student to any
+laptop instead of living on one machine.
+
+The distinction between the last two is worth stating plainly: **cloud is the
+default; the USB drive is the exception for hardware that cannot use it.**
+
+## How to Use
+
+- **Click each layer** for the accessory questions it answers.
+- Start at the top. Bin-count tracking is the practice the other four sit
+  inside.
+- Note the mouse and keyboard layer: it is a *setup step*, which is a different
+  thing from a permanent arrangement.
+- Try **Quiz Me** to practise matching a question to a layer.
+
+## Lesson Plan
+
+**Bloom level:** Understand (L2) -- *classify*
+
+**Learning objective:** Given a specific accessory or storage question, the
+learner classifies which of the five peripheral-management categories addresses
+it.
+
+**Before (5 min).** Ask how many mice the club owns. If nobody knows, that is
+the bin-count layer explaining why it exists.
+
+**With the poster (10 min).** Read all five. The cloud-versus-USB distinction
+is the one worth being precise about, because getting it backwards means
+students losing work to an account reset.
+
+**After (30 min).** Count the bins and write one spreadsheet row per bin. It is
+the whole of layer one and it takes half an hour.
+
+**Check for understanding.** Ask: "A student's project vanished after the
+shared account was reset. Which layer would have prevented it?" Cloud storage
+as the default save location — a USB drive would have worked too, but only if
+somebody remembered, and defaults beat memory.
+
+## Embedding This MicroSim
+
+Paste this into any page of the book, adjusting the relative path to
+`docs/sims/` for the page's depth:
+
+```html
+<iframe src="../../sims/peripheral-management-layers/main.html" width="100%" height="832" scrolling="no"></iframe>
+```
 
 ## Specification
 
@@ -50,6 +124,10 @@ Interactive features: Click or hover any band to highlight its hover zone and re
 Implementation: Interactive Infographic Overlay Guide (grid engine) -- `grid-diagram.js` + `grid-overlay.css` render the five rectangular hover zones over the generated poster image; `data.json` holds the 5 zones per the overlay-grid-data-json-schema.
 ```
 
-## Related Resources
+## References
 
-- [Chapter 23: Network, Peripherals, and the Device Lifecycle](../../chapters/23-network-peripherals-device-lifecycle/index.md)
+- [Chapter 23: Network, Peripherals, and the Device Lifecycle](../../chapters/23-network-peripherals-device-lifecycle/index.md) -- the chapter this MicroSim supports.
+- [Layers of Youth Digital Safety](../youth-safety-layers/index.md) -- the security layers on the same shared accounts.
+- [Club Inventory Lifecycle Workflow](../club-inventory-lifecycle-workflow/index.md) -- where bin counts fit in the wider inventory.
+- [USB Connector Comparison](../usb-connector-comparison/index.md) -- sorting the cable box that goes with all this.
+- [Asset tracking](https://en.wikipedia.org/wiki/Asset_tracking) -- and why per-item IDs are the wrong granularity for consumables.

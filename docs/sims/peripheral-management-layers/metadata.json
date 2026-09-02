@@ -1,6 +1,6 @@
 {
   "title": "Peripheral and Storage Management Layers",
-  "description": "Given a specific accessory or storage question, the learner classifies which of the five peripheral-management categories addresses it.",
+  "description": "Five categories covering every accessory question a club actually gets.",
   "creator": "Coding Club",
   "author": "Dan McCreary",
   "date": "2026-09-01",
@@ -12,12 +12,32 @@
   "language": "en",
   "rights": "CC BY-NC-SA 4.0",
   "identifier": "peripheral-management-layers",
-  "library": "Interactive Infographic Overlay Guide (grid-diagram.js, annotation-free comparison poster + rectangular hover zones)",
+  "library": "Infographic overlay (grid-diagram.js)",
   "bloomLevel": "Understand (L2)",
   "bloomVerb": "classify",
-  "completion_status": "scaffold",
+  "completion_status": "built",
+  "canvasHeight": 830,
   "chapter_number": 23,
   "chapter_title": "Network, Peripherals, and the Device Lifecycle",
   "chapter_dir": "23-network-peripherals-device-lifecycle",
-  "chapter_rel_dir": "chapters/23-network-peripherals-device-lifecycle"
+  "chapter_rel_dir": "chapters/23-network-peripherals-device-lifecycle",
+  "educational": {
+    "gradeLevel": "Middle School, High School, Adult",
+    "audience": "Mentors managing club accessories",
+    "duration": "10 minutes",
+    "concepts": [
+      "Peripheral Management",
+      "Bin Tracking",
+      "Headphone Hygiene",
+      "External Storage",
+      "Cloud Storage"
+    ]
+  },
+  "pedagogical": {
+    "bloomLevel": "Understand (L2)",
+    "bloomVerb": "classify",
+    "learningObjective": "Given a specific accessory or storage question, the learner classifies which of the five peripheral-management categories addresses it.",
+    "interactionPattern": "Click any layer for which accessory questions it answers",
+    "assessment": "Given an accessory question, name the layer that covers it."
+  }
 }

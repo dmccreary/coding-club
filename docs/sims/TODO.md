@@ -13,8 +13,8 @@ above are maintained by hand as sims are actually built.
 
 - Chapters scanned: 35
 - Total diagram specs found: 129
-- Already implemented: 102
-- **Unimplemented (TODO): 27**
+- Already implemented: 123
+- **Unimplemented (TODO): 6**
 
 Regenerate this list after adding or editing chapter diagram specs:
 
@@ -73,19 +73,19 @@ python3 ~/.claude/skills/microsim-utils/scripts/create-microsim-todo-json-files.
 
 | Sim ID | Diagram Name | Library | Bloom Level |
 |---|---|---|---|
-| [`session-room-safety-map`](TODO/session-room-safety-map.json) | Session Room Safety and Logistics Map | Interactive Infographic Overlay (diagram.js, annotation-free illustration + numbered callouts) | Remember (L1) |
+| :white_check_mark: [`session-room-safety-map`](session-room-safety-map/index.md) | Session Room Safety and Logistics Map | Interactive Infographic Overlay (diagram.js, annotation-free illustration + numbered callouts) | Remember (L1) |
 
 ### Chapter 9: "Mentors, Students, and the 3:1 Ratio" (1)
 
 | Sim ID | Diagram Name | Library | Bloom Level |
 |---|---|---|---|
-| [`three-kinds-of-mentors`](TODO/three-kinds-of-mentors.json) | Three Kinds of Mentors | Interactive Infographic Overlay (grid-diagram.js, annotation-free comparison poster + rectangular hover zones) | Understand (L2) |
+| :white_check_mark: [`three-kinds-of-mentors`](three-kinds-of-mentors/index.md) | Three Kinds of Mentors | Interactive Infographic Overlay (grid-diagram.js, annotation-free comparison poster + rectangular hover zones) | Understand (L2) |
 
 ### Chapter 11: Choosing a Schedule and Building Registration (2)
 
 | Sim ID | Diagram Name | Library | Bloom Level |
 |---|---|---|---|
-| [`four-scheduling-models`](TODO/four-scheduling-models.json) | Four Coding Club Scheduling Models | Interactive Infographic Overlay (grid-diagram.js, annotation-free comparison poster + rectangular hover zones) | Evaluate (L5) |
+| :white_check_mark: [`four-scheduling-models`](four-scheduling-models/index.md) | Four Coding Club Scheduling Models | Interactive Infographic Overlay (grid-diagram.js, annotation-free comparison poster + rectangular hover zones) | Evaluate (L5) |
 | :white_check_mark: [`mentor-gated-registration-flow`](mentor-gated-registration-flow/index.md) | Mentor-Gated Registration Flow | Mermaid | Apply (L3) |
 
 ### Chapter 12: Running Events and Learning From Retrospectives (1)
@@ -98,14 +98,14 @@ python3 ~/.claude/skills/microsim-utils/scripts/create-microsim-todo-json-files.
 
 | Sim ID | Diagram Name | Library | Bloom Level |
 |---|---|---|---|
-| [`five-computational-thinking-skills`](TODO/five-computational-thinking-skills.json) | The Five Computational Thinking Skills | Interactive Infographic Overlay (grid-diagram.js, annotation-free comparison poster + rectangular hover zones) | Remember (L1) |
+| :white_check_mark: [`five-computational-thinking-skills`](five-computational-thinking-skills/index.md) | The Five Computational Thinking Skills | Interactive Infographic Overlay (grid-diagram.js, annotation-free comparison poster + rectangular hover zones) | Remember (L1) |
 
 ### Chapter 15: Designing a Curriculum With Challenge Cards and Portfolios (2)
 
 | Sim ID | Diagram Name | Library | Bloom Level |
 |---|---|---|---|
-| [`anatomy-of-a-challenge-card`](TODO/anatomy-of-a-challenge-card.json) | Anatomy of a Challenge Card | Interactive Infographic Overlay (diagram.js, annotation-free illustration + numbered callouts) | Remember (L1) |
-| [`three-curriculum-tracks`](TODO/three-curriculum-tracks.json) | Three Curriculum Tracks | Interactive Infographic Overlay (grid-diagram.js, annotation-free comparison poster + rectangular hover zones) | Understand (L2) |
+| :white_check_mark: [`anatomy-of-a-challenge-card`](anatomy-of-a-challenge-card/index.md) | Anatomy of a Challenge Card | Interactive Infographic Overlay (diagram.js, annotation-free illustration + numbered callouts) | Remember (L1) |
+| :white_check_mark: [`three-curriculum-tracks`](three-curriculum-tracks/index.md) | Three Curriculum Tracks | Interactive Infographic Overlay (grid-diagram.js, annotation-free comparison poster + rectangular hover zones) | Understand (L2) |
 
 ### Chapter 16: Physical Computing and Electrical Safety Basics (15)
 
@@ -114,10 +114,10 @@ python3 ~/.claude/skills/microsim-utils/scripts/create-microsim-todo-json-files.
 | :white_check_mark: [`blinking-led-breadboard-circuit`](blinking-led-breadboard-circuit/index.md) | Blinking LED Breadboard Circuit | p5.js | Apply (L3) |
 | :white_check_mark: [`breadboard-tie-point-explorer`](breadboard-tie-point-explorer/index.md) | Breadboard Tie-Point Explorer | p5.js | Remember (L1) |
 | :white_check_mark: [`digital-signal-high-low-chart`](digital-signal-high-low-chart/index.md) | Digital Signal HIGH/LOW Chart | Chart.js | None |
-| [`electrical-safety-rules-poster`](TODO/electrical-safety-rules-poster.json) | Electrical Safety Rules Poster | Interactive Infographic Overlay (grid-diagram.js, four-panel comparison poster + rectangular hover zones) | Remember (L1) |
-| [`led-anatomy`](TODO/led-anatomy.json) | LED Anatomy | Interactive Infographic Overlay (diagram.js, callout engine) | Remember (L1) |
+| :white_check_mark: [`electrical-safety-rules-poster`](electrical-safety-rules-poster/index.md) | Electrical Safety Rules Poster | Interactive Infographic Overlay (grid-diagram.js, four-panel comparison poster + rectangular hover zones) | Remember (L1) |
+| :white_check_mark: [`led-anatomy`](led-anatomy/index.md) | LED Anatomy | Interactive Infographic Overlay (diagram.js, callout engine) | Remember (L1) |
 | :white_check_mark: [`multimeter-usage-simulator`](multimeter-usage-simulator/index.md) | Multimeter Usage Simulator | p5.js | Apply (L3) |
-| [`normal-circuit-vs-short-circuit`](TODO/normal-circuit-vs-short-circuit.json) | Normal Circuit vs. Short Circuit | Interactive Infographic Overlay (diagram.js, side-by-side comparison + numbered callouts) | Understand (L2) |
+| :white_check_mark: [`normal-circuit-vs-short-circuit`](normal-circuit-vs-short-circuit/index.md) | Normal Circuit vs. Short Circuit | Interactive Infographic Overlay (diagram.js, side-by-side comparison + numbered callouts) | Understand (L2) |
 | :white_check_mark: [`ohms-law-current-calculator`](ohms-law-current-calculator/index.md) | Ohm's Law Current Calculator | p5.js | Apply (L3) |
 | :white_check_mark: [`physical-computing-loop`](physical-computing-loop/index.md) | The Physical Computing Loop | p5.js | Understand (L2) |
 | :white_check_mark: [`potentiometer-analog-input-explorer`](potentiometer-analog-input-explorer/index.md) | Potentiometer Analog Input Explorer | p5.js | Apply (L3) |
@@ -125,7 +125,7 @@ python3 ~/.claude/skills/microsim-utils/scripts/create-microsim-todo-json-files.
 | :white_check_mark: [`pwm-analog-output-brightness-explorer`](pwm-analog-output-brightness-explorer/index.md) | PWM Analog Output Brightness Explorer | p5.js | Understand (L2) |
 | :white_check_mark: [`resistor-color-code-calculator`](resistor-color-code-calculator/index.md) | Resistor Color Code Calculator | p5.js | None |
 | :white_check_mark: [`soldering-safety-workflow`](soldering-safety-workflow/index.md) | Soldering Safety Workflow | Mermaid | Apply (L3) |
-| [`static-electricity-precaution-checklist`](TODO/static-electricity-precaution-checklist.json) | Static Electricity Precaution Checklist | Interactive Infographic Overlay (checklist overlay, illustrated classroom scene + clickable hotspots) | Remember (L1) |
+| :white_check_mark: [`static-electricity-precaution-checklist`](static-electricity-precaution-checklist/index.md) | Static Electricity Precaution Checklist | Interactive Infographic Overlay (checklist overlay, illustrated classroom scene + clickable hotspots) | Remember (L1) |
 
 ### Chapter 17: Sensors, Displays, Motors, and Robot Chassis (15)
 
@@ -138,7 +138,7 @@ python3 ~/.claude/skills/microsim-utils/scripts/create-microsim-todo-json-files.
 | :white_check_mark: [`motor-type-comparison-explorer`](motor-type-comparison-explorer/index.md) | Motor Type Comparison Explorer | p5.js | Analyze (L4) |
 | :white_check_mark: [`oled-coordinate-system`](oled-coordinate-system/index.md) | OLED Coordinate System (reused MicroSim) | p5.js | None |
 | :white_check_mark: [`photoresistor-voltage-divider-explorer`](photoresistor-voltage-divider-explorer/index.md) | Photoresistor Voltage Divider Explorer | p5.js | Apply (L3) |
-| [`pir-detection-zone-map`](TODO/pir-detection-zone-map.json) | PIR Detection Zone Map | Interactive Infographic Overlay (diagram.js, top-down room view + clickable zones) | Understand (L2) |
+| :white_check_mark: [`pir-detection-zone-map`](pir-detection-zone-map/index.md) | PIR Detection Zone Map | Interactive Infographic Overlay (diagram.js, top-down room view + clickable zones) | Understand (L2) |
 | :white_check_mark: [`sensor-type-picker`](sensor-type-picker/index.md) | Sensor Type Picker | p5.js | Apply (L3) |
 | :white_check_mark: [`servo-angle-pulse-width-explorer`](servo-angle-pulse-width-explorer/index.md) | Servo Angle Pulse-Width Explorer | p5.js | Apply (L3) |
 | :white_check_mark: [`seven-segment-display`](seven-segment-display/index.md) | Seven Segment Display Explorer (reused MicroSim) | p5.js | None |
@@ -181,7 +181,7 @@ python3 ~/.claude/skills/microsim-utils/scripts/create-microsim-todo-json-files.
 | Sim ID | Diagram Name | Library | Bloom Level |
 |---|---|---|---|
 | :white_check_mark: [`kit-lifecycle-workflow`](kit-lifecycle-workflow/index.md) | Kit Lifecycle Workflow | Mermaid | Analyze (L4) |
-| [`kits-ready-to-go-further`](TODO/kits-ready-to-go-further.json) | Kits Ready to Go Further | Interactive Infographic Overlay (grid-diagram.js, annotation-free comparison poster + rectangular hover zones) | Remember (L1) |
+| :white_check_mark: [`kits-ready-to-go-further`](kits-ready-to-go-further/index.md) | Kits Ready to Go Further | Interactive Infographic Overlay (grid-diagram.js, annotation-free comparison poster + rectangular hover zones) | Remember (L1) |
 
 ### Chapter 22: Purchasing and Configuring Club Devices (4)
 
@@ -190,7 +190,7 @@ python3 ~/.claude/skills/microsim-utils/scripts/create-microsim-todo-json-files.
 | :white_check_mark: [`device-lifecycle-workflow`](device-lifecycle-workflow/index.md) | Device Lifecycle Workflow | Mermaid | Analyze (L4) |
 | :white_check_mark: [`grant-budget-laptop-calculator`](grant-budget-laptop-calculator/index.md) | Grant Budget Laptop Calculator | p5.js | Apply (L3) |
 | :white_check_mark: [`platform-management-workflow`](platform-management-workflow/index.md) | Platform Management Workflow | Mermaid | Analyze (L4) |
-| [`youth-safety-layers`](TODO/youth-safety-layers.json) | Layers of Youth Digital Safety | Interactive Infographic Overlay (grid-diagram.js, annotation-free comparison poster + rectangular hover zones) | Understand (L2) |
+| :white_check_mark: [`youth-safety-layers`](youth-safety-layers/index.md) | Layers of Youth Digital Safety | Interactive Infographic Overlay (grid-diagram.js, annotation-free comparison poster + rectangular hover zones) | Understand (L2) |
 
 ### Chapter 23: Network, Peripherals, and the Device Lifecycle (3)
 
@@ -198,7 +198,7 @@ python3 ~/.claude/skills/microsim-utils/scripts/create-microsim-todo-json-files.
 |---|---|---|---|
 | :white_check_mark: [`bookmark-folder-structure`](bookmark-folder-structure/index.md) | Bookmark Folder Structure | Mermaid | Understand (L2) |
 | :white_check_mark: [`device-end-of-life-decision-workflow`](device-end-of-life-decision-workflow/index.md) | Device End-of-Life Decision Workflow | Mermaid | Analyze (L4) |
-| [`peripheral-management-layers`](TODO/peripheral-management-layers.json) | Peripheral and Storage Management Layers | Interactive Infographic Overlay Guide (grid-diagram.js, annotation-free comparison poster + rectangular hover zones) | Understand (L2) |
+| :white_check_mark: [`peripheral-management-layers`](peripheral-management-layers/index.md) | Peripheral and Storage Management Layers | Interactive Infographic Overlay Guide (grid-diagram.js, annotation-free comparison poster + rectangular hover zones) | Understand (L2) |
 
 ### Chapter 24: Tracking Student Data and Managing Club Communication (15)
 
@@ -208,16 +208,16 @@ python3 ~/.claude/skills/microsim-utils/scripts/create-microsim-todo-json-files.
 | :white_check_mark: [`calendar-setup-workflow`](calendar-setup-workflow/index.md) | Club Calendar Setup Workflow | Mermaid | Apply (L3) |
 | :white_check_mark: [`consent-collection-workflow`](consent-collection-workflow/index.md) | Guardian Consent Collection Workflow | Mermaid | Analyze (L4) |
 | [`data-backup-routine-timeline`](TODO/data-backup-routine-timeline.json) | Data Backup Routine Timeline | vis-timeline | Apply (L3) |
-| [`data-retention-schedule`](TODO/data-retention-schedule.json) | Data Retention Schedule by Type | Interactive Infographic Overlay (grid-diagram.js, annotation-free poster + rectangular hover zones) | Understand (L2) |
+| :white_check_mark: [`data-retention-schedule`](data-retention-schedule/index.md) | Data Retention Schedule by Type | Interactive Infographic Overlay (grid-diagram.js, annotation-free poster + rectangular hover zones) | Understand (L2) |
 | :white_check_mark: [`email-list-segments-venn`](email-list-segments-venn/index.md) | Email List Segments | p5.js | Analyze (L4) |
-| [`feedback-form-annotated`](TODO/feedback-form-annotated.json) | Annotated Feedback Form | Interactive Infographic Overlay (grid-diagram.js, annotation-free poster + rectangular hover zones) | Understand (L2) |
+| :white_check_mark: [`feedback-form-annotated`](feedback-form-annotated/index.md) | Annotated Feedback Form | Interactive Infographic Overlay (grid-diagram.js, annotation-free poster + rectangular hover zones) | Understand (L2) |
 | :white_check_mark: [`feedback-loop-cycle`](feedback-loop-cycle/index.md) | Feedback Loop Cycle | Mermaid | Understand (L2) |
 | :white_check_mark: [`message-channel-decision-tree`](message-channel-decision-tree/index.md) | Message Channel Decision Tree | Mermaid | Evaluate (L5) |
 | [`notification-lead-time-timeline`](TODO/notification-lead-time-timeline.json) | Notification Lead-Time Timeline | vis-timeline | Apply (L3) |
 | :white_check_mark: [`progress-dashboard-explorer`](progress-dashboard-explorer/index.md) | Progress Dashboard Explorer | Chart.js | Analyze (L4) |
 | :white_check_mark: [`progress-tracking-cycle`](progress-tracking-cycle/index.md) | Student Progress Tracking Cycle | Mermaid | Understand (L2) |
 | :white_check_mark: [`saving-student-data-decision-tool`](saving-student-data-decision-tool/index.md) | Do You Actually Need This Data Field? | p5.js | Evaluate (L5) |
-| [`spreadsheet-template-zones`](TODO/spreadsheet-template-zones.json) | Spreadsheet Template Zones | Interactive Infographic Overlay (grid-diagram.js, annotation-free poster + rectangular hover zones) | Understand (L2) |
+| :white_check_mark: [`spreadsheet-template-zones`](spreadsheet-template-zones/index.md) | Spreadsheet Template Zones | Interactive Infographic Overlay (grid-diagram.js, annotation-free poster + rectangular hover zones) | Understand (L2) |
 | :white_check_mark: [`student-data-privacy-principles`](student-data-privacy-principles/index.md) | Student Data Privacy Principles | Mermaid | Understand (L2) |
 
 ### Chapter 25: Analyzing Club Data and Choosing the Right Tools (4)
@@ -234,16 +234,16 @@ python3 ~/.claude/skills/microsim-utils/scripts/create-microsim-todo-json-files.
 | Sim ID | Diagram Name | Library | Bloom Level |
 |---|---|---|---|
 | :white_check_mark: [`growth-mindset-coaching-response-flow`](growth-mindset-coaching-response-flow/index.md) | Growth Mindset Coaching Response Flow | Mermaid | Analyze (L4) |
-| [`intrinsic-vs-extrinsic-motivation-map`](TODO/intrinsic-vs-extrinsic-motivation-map.json) | Intrinsic vs Extrinsic Motivation Map | Interactive Infographic Overlay (grid-diagram.js, annotation-free comparison poster + rectangular hover zones) | Understand (L2) |
-| [`leaderboard-vs-collaborative-challenge`](TODO/leaderboard-vs-collaborative-challenge.json) | Leaderboard vs Collaborative Challenge | Interactive Infographic Overlay (grid-diagram.js, annotation-free comparison poster + rectangular hover zones) | Evaluate (L5) |
-| [`tangible-reward-ladder`](TODO/tangible-reward-ladder.json) | The Tangible Reward Ladder | Interactive Infographic Overlay (diagram.js, annotation-free illustration + numbered callouts) | Understand (L2) |
+| :white_check_mark: [`intrinsic-vs-extrinsic-motivation-map`](intrinsic-vs-extrinsic-motivation-map/index.md) | Intrinsic vs Extrinsic Motivation Map | Interactive Infographic Overlay (grid-diagram.js, annotation-free comparison poster + rectangular hover zones) | Understand (L2) |
+| :white_check_mark: [`leaderboard-vs-collaborative-challenge`](leaderboard-vs-collaborative-challenge/index.md) | Leaderboard vs Collaborative Challenge | Interactive Infographic Overlay (grid-diagram.js, annotation-free comparison poster + rectangular hover zones) | Evaluate (L5) |
+| :white_check_mark: [`tangible-reward-ladder`](tangible-reward-ladder/index.md) | The Tangible Reward Ladder | Interactive Infographic Overlay (diagram.js, annotation-free illustration + numbered callouts) | Understand (L2) |
 
 ### Chapter 27: Encouraging Persistence and Student Voice (2)
 
 | Sim ID | Diagram Name | Library | Bloom Level |
 |---|---|---|---|
 | :white_check_mark: [`frustration-escalation-response-flow`](frustration-escalation-response-flow/index.md) | Frustration Escalation Response Flow | Mermaid | Analyze (L4) |
-| [`showcase-wall-vs-peer-recognition`](TODO/showcase-wall-vs-peer-recognition.json) | Showcase Wall vs Peer Recognition Activity | Interactive Infographic Overlay (grid-diagram.js, annotation-free comparison poster + rectangular hover zones) | Evaluate (L5) |
+| :white_check_mark: [`showcase-wall-vs-peer-recognition`](showcase-wall-vs-peer-recognition/index.md) | Showcase Wall vs Peer Recognition Activity | Interactive Infographic Overlay (grid-diagram.js, annotation-free comparison poster + rectangular hover zones) | Evaluate (L5) |
 
 ### Chapter 28: Reaching Underserved Communities and Removing Barriers (2)
 

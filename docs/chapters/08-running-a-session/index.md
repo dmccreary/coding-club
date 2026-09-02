@@ -73,7 +73,7 @@ Two policies round out student comfort. A **restroom break policy** states plain
 
 #### Diagram: Session Room Safety and Logistics Map
 
-<iframe src="../../sims/session-room-safety-map/main.html" width="100%" height="640px" scrolling="no"></iframe>
+<iframe src="../../sims/session-room-safety-map/main.html" width="100%" height="650px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Session Room Safety and Logistics Map</summary>

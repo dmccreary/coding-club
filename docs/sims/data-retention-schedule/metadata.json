@@ -1,6 +1,6 @@
 {
   "title": "Data Retention Schedule by Type",
-  "description": "Given a type of club data, the learner classifies how long it is retained and what event starts the deletion clock.",
+  "description": "Four kinds of club data, four different clocks -- and what event starts each one.",
   "creator": "Coding Club",
   "author": "Dan McCreary",
   "date": "2026-09-01",
@@ -12,12 +12,32 @@
   "language": "en",
   "rights": "CC BY-NC-SA 4.0",
   "identifier": "data-retention-schedule",
-  "library": "Interactive Infographic Overlay (grid-diagram.js, annotation-free poster + rectangular hover zones)",
+  "library": "Infographic overlay (grid-diagram.js)",
   "bloomLevel": "Understand (L2)",
   "bloomVerb": "classify",
-  "completion_status": "scaffold",
+  "completion_status": "built",
+  "canvasHeight": 750,
   "chapter_number": 24,
   "chapter_title": "Tracking Student Data and Managing Club Communication",
   "chapter_dir": "24-student-data-and-communication",
-  "chapter_rel_dir": "chapters/24-student-data-and-communication"
+  "chapter_rel_dir": "chapters/24-student-data-and-communication",
+  "educational": {
+    "gradeLevel": "Middle School, High School, Adult",
+    "audience": "Club leaders writing a retention policy",
+    "duration": "10 minutes",
+    "concepts": [
+      "Data Retention",
+      "Deletion Clock",
+      "Consent Form",
+      "Anonymisation",
+      "Data Minimisation"
+    ]
+  },
+  "pedagogical": {
+    "bloomLevel": "Understand (L2)",
+    "bloomVerb": "classify",
+    "learningObjective": "Given a type of club data, the learner classifies how long it is retained and what event starts the deletion clock.",
+    "interactionPattern": "Click any band for how long that data is kept and what starts the countdown",
+    "assessment": "Given a record, say when it gets deleted and what triggers it."
+  }
 }

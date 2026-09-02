@@ -104,7 +104,7 @@ Before you look at the full rule set, note that "short circuit," "static electri
 
 #### Diagram: Electrical Safety Rules Poster
 
-<iframe src="../../sims/electrical-safety-rules-poster/main.html" width="100%" height="560px" scrolling="no"></iframe>
+<iframe src="../../sims/electrical-safety-rules-poster/main.html" width="100%" height="832px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Electrical Safety Rules Poster</summary>
@@ -145,7 +145,7 @@ This is exactly the scenario the Electrical Safety Rules "Circuits" panel above 
 
 #### Diagram: Normal Circuit vs. Short Circuit
 
-<iframe src="../../sims/normal-circuit-vs-short-circuit/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../sims/normal-circuit-vs-short-circuit/main.html" width="100%" height="520px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Normal Circuit vs. Short Circuit</summary>
@@ -184,7 +184,7 @@ Static electricity is easy for students to underestimate precisely because they 
 
 #### Diagram: Static Electricity Precaution Checklist
 
-<iframe src="../../sims/static-electricity-precaution-checklist/main.html" width="100%" height="480px" scrolling="no"></iframe>
+<iframe src="../../sims/static-electricity-precaution-checklist/main.html" width="100%" height="598px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Static Electricity Precaution Checklist</summary>
@@ -440,7 +440,7 @@ Not every LED needs the exact same resistor value, because different LED colors 
 
 #### Diagram: LED Anatomy
 
-<iframe src="../../sims/led-anatomy/main.html" width="100%" height="480px" scrolling="no"></iframe>
+<iframe src="../../sims/led-anatomy/main.html" width="100%" height="650px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>LED Anatomy</summary>

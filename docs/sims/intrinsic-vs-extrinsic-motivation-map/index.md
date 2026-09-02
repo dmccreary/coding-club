@@ -1,18 +1,90 @@
 ---
 title: Intrinsic vs Extrinsic Motivation Map
-description: Given a proposed club motivator, the learner classifies it as primarily intrinsic, primarily extrinsic, or a well-designed blend of the two.
-status: scaffold
-library: Interactive Infographic Overlay (grid-diagram.js, annotation-free comparison poster + rectangular hover zones)
+description: Three columns, and the middle one is the only place a reward belongs.
+image: sims/intrinsic-vs-extrinsic-motivation-map/intrinsic-vs-extrinsic-motivation-map.png
+status: built
+library: Infographic overlay (grid-diagram.js)
 bloom_level: Understand (L2)
 ---
 
 # Intrinsic vs Extrinsic Motivation Map
 
+<iframe src="main.html" width="100%" height="726" scrolling="no"></iframe>
 
+[Run the Intrinsic vs Extrinsic Motivation Map MicroSim fullscreen](main.html){ .md-button .md-button--primary }
 
-<iframe src="main.html" width="100%" height="600"></iframe>
+## About This MicroSim
 
-[Run MicroSim in Fullscreen](main.html){ .md-button .md-button--primary }
+Three columns, and the one that matters is the middle.
+
+**Intrinsic** motivation comes from the activity: curiosity about how something
+works, pride in a robot that finally drives straight, the specific pleasure of
+fixing a bug that has resisted you for twenty minutes. This is the fuel that
+lasts, and it is the thing a club is really trying to produce.
+
+**Extrinsic** motivation comes from an outside reward alone: a sticker for
+every card attempted, points for turning up, a prize for finishing first. These
+work — briefly — and they carry a real risk. When a reward is attached to
+something a student was already enjoying, the reward can *replace* the
+enjoyment rather than adding to it. Stop the stickers and the behaviour stops
+too, because you have quietly taught that the sticker was the point.
+
+**The middle column is the design target.** A reward tied to real, demonstrated
+skill does not compete with intrinsic motivation, it *names* it. A badge called
+after the specific skill it proves. A certificate for a track genuinely
+completed. A sticker given after a student explains what they built, not for
+showing up.
+
+The test is one question: **would this reward mean anything to somebody who did
+not get it?** "She earned the loops badge" carries information. "He got a
+sticker" does not.
+
+The practical version for a club: reward *what was demonstrated*, not what was
+attended. Attendance points are the easiest system to run and the one most
+likely to hollow out the thing it was meant to encourage.
+
+## How to Use
+
+- **Click each column** for what belongs there and club examples.
+- Read the middle column carefully — every example there has the same shape: a
+  reward attached to a specific, demonstrated thing.
+- Try **Quiz Me** to practise classifying a proposed motivator.
+- Then classify what your club already gives out. Anything landing in the right
+  column is worth redesigning rather than removing.
+
+## Lesson Plan
+
+**Bloom level:** Understand (L2) -- *classify*
+
+**Learning objective:** Given a proposed club motivator, the learner classifies
+it as primarily intrinsic, primarily extrinsic, or a well-designed blend of the
+two.
+
+**Before (5 min).** Ask what the club currently rewards. If any answer is
+"attendance", that is the worked example.
+
+**With the poster (10 min).** Classify five real club practices. The
+disagreements are about the middle column, which is exactly the conversation
+worth having.
+
+**After (30 min).** Take one purely extrinsic practice and redesign it into the
+middle column. Usually this means attaching it to a demonstration: not "you
+came", but "you showed me it working and explained how".
+
+**Check for understanding.** Ask: "What's wrong with a sticker for every
+challenge card attempted?" It rewards attempting rather than achieving, so it
+says nothing about what a student can do — and it risks replacing the
+satisfaction of finishing the card with the satisfaction of collecting the
+sticker.
+
+## Embedding This MicroSim
+
+Paste this into any page of the book, adjusting the relative path to
+`docs/sims/` for the page's depth:
+
+```html
+<iframe src="../../sims/intrinsic-vs-extrinsic-motivation-map/main.html" width="100%" height="726" scrolling="no"></iframe>
+```
 
 ## Specification
 
@@ -48,6 +120,11 @@ Interactive features: Click or hover any column to highlight its zone and reveal
 Implementation: Interactive Infographic Overlay Guide (grid engine) -- `grid-diagram.js` + `grid-overlay.css` render the three rectangular hover zones over the generated poster image; `data.json` holds the 3 zones plus a bank of quiz-mode example motivators per the overlay-grid-data-json-schema
 ```
 
-## Related Resources
+## References
 
-- [Chapter 26: Motivation, Badges, and Growth Mindset Coaching](../../chapters/26-motivation-badges-growth-mindset/index.md)
+- [Chapter 26: Motivation, Badges, and Growth Mindset Coaching](../../chapters/26-motivation-badges-growth-mindset/index.md) -- the chapter this MicroSim supports.
+- [The Tangible Reward Ladder](../tangible-reward-ladder/index.md) -- six extrinsic tools, and when each earns its place.
+- [Leaderboard vs Collaborative Challenge](../leaderboard-vs-collaborative-challenge/index.md) -- the same question applied to competition.
+- [Showcase Wall vs Peer Recognition Activity](../showcase-wall-vs-peer-recognition/index.md) -- recognition that is not a reward at all.
+- [Overjustification effect](https://en.wikipedia.org/wiki/Overjustification_effect) -- the documented way a reward can reduce the motivation it was meant to raise.
+- [Motivation](https://en.wikipedia.org/wiki/Motivation#Intrinsic_and_extrinsic) -- the distinction, in general.

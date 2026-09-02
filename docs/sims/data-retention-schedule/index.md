@@ -1,18 +1,88 @@
 ---
 title: Data Retention Schedule by Type
-description: Given a type of club data, the learner classifies how long it is retained and what event starts the deletion clock.
-status: scaffold
-library: Interactive Infographic Overlay (grid-diagram.js, annotation-free poster + rectangular hover zones)
+description: Four kinds of club data, four different clocks -- and what event starts each one.
+image: sims/data-retention-schedule/data-retention-schedule.png
+status: built
+library: Infographic overlay (grid-diagram.js)
 bloom_level: Understand (L2)
 ---
 
 # Data Retention Schedule by Type
 
+<iframe src="main.html" width="100%" height="752" scrolling="no"></iframe>
 
+[Run the Data Retention Schedule by Type MicroSim fullscreen](main.html){ .md-button .md-button--primary }
 
-<iframe src="main.html" width="100%" height="600"></iframe>
+## About This MicroSim
 
-[Run MicroSim in Fullscreen](main.html){ .md-button .md-button--primary }
+Four kinds of data, four different rules, and the thing that makes a retention
+policy work is not the durations — it is **naming the event that starts the
+clock.** "Keep for eighteen months" is not actionable. "Eighteen months from the
+day a student stops attending" is, because somebody can look at a record and
+work out the date.
+
+**Contact information** is the strictest: kept only while a family is actively
+enrolled, deleted promptly when they are not. The temptation is to keep it "in
+case they come back", and that is precisely the thing to refuse — a list of
+former families' email addresses is a liability with no current purpose.
+
+**Progress records** get eighteen months from the last session. Long enough to
+write a reference or welcome a student back, short enough that the club is not
+holding a decade of children's skill records.
+
+**Survey responses** are the interesting case, because they are handled by
+*transformation* rather than deletion. Individual free-text responses are
+summarised and the originals discarded within 90 days; the anonymised summary
+can be kept indefinitely, because it is no longer about identifiable people.
+That is how you keep year-over-year comparison without keeping the data.
+
+**Consent forms** have no clock of their own — they live exactly as long as the
+data they authorise. That is the right rule and it is easy to get backwards:
+deleting the consent form while keeping the data leaves you holding data with
+no record of permission for it.
+
+One practical note: a retention policy nobody executes is worse than none,
+because it documents an intention you are visibly not meeting. Put the deletion
+on the calendar.
+
+## How to Use
+
+- **Click each band** for the retention period and, more importantly, the event
+  that starts it.
+- Read the survey band twice. It is the only one where the answer is
+  transformation rather than deletion.
+- Try **Quiz Me** to practise placing a record.
+- Then check your own club: which of the four do you actually delete on
+  schedule?
+
+## Lesson Plan
+
+**Bloom level:** Understand (L2) -- *classify*
+
+**Learning objective:** Given a type of club data, the learner classifies how
+long it is retained and what event starts the deletion clock.
+
+**Before (5 min).** Ask what the club currently deletes and when. "We haven't
+deleted anything" is the common and honest answer.
+
+**With the poster (10 min).** Read all four bands. Then, for each, name the
+event that starts the clock — that is the part that turns a policy into a task.
+
+**After (30 min).** Put four recurring calendar entries in, one per data type.
+A retention policy is a calendar problem, not a writing problem.
+
+**Check for understanding.** Ask: "A family left two years ago. What do you
+still hold?" An anonymised survey summary, and nothing else — their contact
+details went when they left, and their progress records went six months ago.
+
+## Embedding This MicroSim
+
+Paste this into any page of the book, adjusting the relative path to
+`docs/sims/` for the page's depth:
+
+```html
+<iframe src="../../sims/data-retention-schedule/main.html" width="100%" height="752" scrolling="no"></iframe>
+```
 
 ## Specification
 
@@ -50,6 +120,11 @@ Interactive features: Click or hover any band to highlight its hover zone and re
 Implementation: Interactive Infographic Overlay Guide (grid engine) -- `grid-diagram.js` + `grid-overlay.css` render the four rectangular hover zones over the generated poster image; `data.json` holds the 4 zones per the overlay-grid-data-json-schema.
 ```
 
-## Related Resources
+## References
 
-- [Chapter 24: Tracking Student Data and Managing Club Communication](../../chapters/24-student-data-and-communication/index.md)
+- [Chapter 24: Tracking Student Data and Managing Club Communication](../../chapters/24-student-data-and-communication/index.md) -- the chapter this MicroSim supports.
+- [Saving Student Data Decision Tool](../saving-student-data-decision-tool/index.md) -- deciding whether to collect it at all.
+- [Consent Collection Workflow](../consent-collection-workflow/index.md) -- the forms in the top band.
+- [Spreadsheet Template Zones](../spreadsheet-template-zones/index.md) -- where the progress records live.
+- [Data retention](https://en.wikipedia.org/wiki/Data_retention) -- the general practice.
+- [Data anonymization](https://en.wikipedia.org/wiki/Data_anonymization) -- what makes the survey rule work.

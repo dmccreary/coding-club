@@ -1,18 +1,89 @@
 ---
 title: Three Kinds of Mentors
-description: Given a recruiting scenario, the learner selects the mentor type whose strengths best fit the club's current need.
-status: scaffold
-library: Interactive Infographic Overlay (grid-diagram.js, annotation-free comparison poster + rectangular hover zones)
+description: Volunteer, professional, peer -- three mentor types whose strengths do not overlap.
+image: sims/three-kinds-of-mentors/three-kinds-of-mentors.png
+status: built
+library: Infographic overlay (grid-diagram.js)
 bloom_level: Understand (L2)
 ---
 
 # Three Kinds of Mentors
 
+<iframe src="main.html" width="100%" height="726" scrolling="no"></iframe>
 
+[Run the Three Kinds of Mentors MicroSim fullscreen](main.html){ .md-button .md-button--primary }
 
-<iframe src="main.html" width="100%" height="600"></iframe>
+## About This MicroSim
 
-[Run MicroSim in Fullscreen](main.html){ .md-button .md-button--primary }
+Three types, and the useful framing is not "which is best" — it is that their
+strengths are almost perfectly complementary, so a club with only one type has
+a predictable gap.
+
+**Volunteer mentors** are the backbone. They join for the mission rather than
+the subject, they have the most flexible availability of the three, and they
+are the largest pool by a wide margin. What they are not is technically deep,
+which is fine — most of what a coding club needs is an adult who will sit with
+a stuck student and not solve it for them.
+
+**Professional mentors** bring the expertise the others cannot, and have the
+least time. That is the whole trade. A club that tries to build its rota out of
+professionals will be short-staffed; a club with one professional who comes
+monthly can support advanced students nobody else can.
+
+**Peer mentors** — usually teenagers, often club alumni — bring the thing
+adults cannot buy: **relatability**. A fourteen-year-old explaining a loop in
+kid-to-kid language lands differently, and the peer mentor's own confidence
+grows more than anyone's. Least experience, and it matters least.
+
+**The recruiting consequence.** Each type comes from a different place.
+Volunteers come from the community and from parents. Professionals come from
+employers and user groups. Peer mentors come from your own students, eighteen
+months after they joined — which means the peer mentor pipeline is something
+you start rather than something you find.
+
+A club that recruits only through the founder's own network gets one type,
+usually volunteers, and stays that shape.
+
+## How to Use
+
+- **Click each type** for what it brings and what recruiting it costs.
+- Compare the availability line across all three. It is the constraint that
+  decides the rota.
+- Try **Quiz Me** to practise matching a club need to a mentor type.
+- Then ask which type your club is missing, and where that type actually comes
+  from.
+
+## Lesson Plan
+
+**Bloom level:** Understand (L2) -- *compare*
+
+**Learning objective:** Given a recruiting scenario, the learner selects the
+mentor type whose strengths best fit the club's current need.
+
+**Before (5 min).** List the current mentors and label each one. Most clubs
+find they are all the same type.
+
+**With the poster (10 min).** Read all three. The question to sit with is which
+students are currently unsupported — advanced students without a professional,
+or hesitant beginners without a peer.
+
+**After (a term).** Recruit for the missing type specifically, through the
+channel that type actually comes from. A general "we need mentors" post reaches
+the type you already have.
+
+**Check for understanding.** Ask: "You need more mentors and you have three
+volunteers already. Who do you go after?" It depends what is failing — but
+"more volunteers" is only the answer if the gap is capacity rather than
+capability, and knowing which is the point.
+
+## Embedding This MicroSim
+
+Paste this into any page of the book, adjusting the relative path to
+`docs/sims/` for the page's depth:
+
+```html
+<iframe src="../../sims/three-kinds-of-mentors/main.html" width="100%" height="726" scrolling="no"></iframe>
+```
 
 ## Specification
 
@@ -48,6 +119,10 @@ Interactive features: Click or hover any column to highlight its hover zone and 
 Implementation: Interactive Infographic Overlay Guide (grid engine) -- `grid-diagram.js` + `grid-overlay.css` render the three rectangular hover zones over the generated poster image; `data.json` holds the 3 zones per the overlay-grid-data-json-schema
 ```
 
-## Related Resources
+## References
 
-- [Chapter 9: "Mentors, Students, and the 3:1 Ratio"](../../chapters/09-mentors-students-ratio/index.md)
+- [Chapter 9: "Mentors, Students, and the 3:1 Ratio"](../../chapters/09-mentors-students-ratio/index.md) -- the chapter this MicroSim supports.
+- [Mentor Recruiting Influence Graph](../mentor-recruiting-influence-graph/index.md) -- where each type is actually found.
+- [Four Coding Club Scheduling Models](../four-scheduling-models/index.md) -- which models each type can staff.
+- [Equity Audit Checklist](../equity-audit-checklist/index.md) -- the mentor-team category, and why one network is not enough.
+- [Mentorship](https://en.wikipedia.org/wiki/Mentorship#Peer_mentoring) -- peer mentoring and what it does for the mentor.

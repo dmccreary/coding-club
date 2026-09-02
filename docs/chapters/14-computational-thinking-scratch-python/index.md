@@ -66,7 +66,7 @@ Every chapter so far has been about running a club around students. This chapter
 
 #### Diagram: The Five Computational Thinking Skills
 
-<iframe src="../../sims/five-computational-thinking-skills/main.html" width="100%" height="600px" scrolling="no"></iframe>
+<iframe src="../../sims/five-computational-thinking-skills/main.html" width="100%" height="650px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>The Five Computational Thinking Skills</summary>

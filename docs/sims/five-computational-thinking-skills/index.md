@@ -1,18 +1,92 @@
 ---
 title: The Five Computational Thinking Skills
-description: Given a moment in a coding project, the learner identifies which of the five computational thinking skills is being used.
-status: scaffold
-library: Interactive Infographic Overlay (grid-diagram.js, annotation-free comparison poster + rectangular hover zones)
+description: Decomposition, pattern recognition, abstraction, algorithm design, debugging -- with a club example for each.
+image: sims/five-computational-thinking-skills/five-computational-thinking-skills.png
+status: built
+library: Infographic overlay (grid-diagram.js)
 bloom_level: Remember (L1)
 ---
 
 # The Five Computational Thinking Skills
 
+<iframe src="main.html" width="100%" height="650" scrolling="no"></iframe>
 
+[Run the The Five Computational Thinking Skills MicroSim fullscreen](main.html){ .md-button .md-button--primary }
 
-<iframe src="main.html" width="100%" height="600"></iframe>
+## About This MicroSim
 
-[Run MicroSim in Fullscreen](main.html){ .md-button .md-button--primary }
+Five skills, and the reason for a mentor to know them by name is not
+vocabulary. It is that **naming what a student is doing turns a stuck moment
+into a step.**
+
+"You're debugging" is a more useful thing to say than "keep trying", because it
+comes with a method attached: form a hypothesis about the cause, then test it.
+The alternative — changing things at random until something works — is what
+debugging looks like when nobody has named it.
+
+The five run roughly in the order a project uses them:
+
+**Decomposition** comes first, before any code. "Build a game" becomes draw,
+move, collide, score — and an intimidating project becomes four small ones.
+
+**Pattern recognition** is what makes the second project faster than the first.
+It strengthens with volume, which is the argument for finishing many small
+things rather than one large one.
+
+**Abstraction** is why a beginner can drive a robot. `forward()` hides the
+motor physics entirely, and that hiding is a feature. It is also exactly what a
+student does the first time they write their own function.
+
+**Algorithm design** is the sketch before the keyboard. Order matters — turn
+then move is a different result from move then turn — and that is usually the
+first place a student discovers that precision is not pedantry.
+
+**Debugging** is the one students find most frustrating and the one that builds
+the most confidence, because it is the only skill on the list that is about
+recovering rather than producing.
+
+These are not programming skills. They are how you approach any problem too big
+to hold in your head at once, which is why they transfer.
+
+## How to Use
+
+- **Click each skill** for what it means and a concrete club example.
+- Read them in order left to right — that is roughly the order a project uses
+  them.
+- Try **Quiz Me** to practise naming the skill from a described moment.
+- Then listen for these in a real session and say the name out loud when you
+  see one.
+
+## Lesson Plan
+
+**Bloom level:** Remember (L1) -- *identify*
+
+**Learning objective:** Given a moment in a coding project, the learner
+identifies which of the five computational thinking skills is being used.
+
+**Before (5 min).** Describe a student stuck on a game project and ask what to
+say to them. "Keep going" is the usual answer, and it is not advice.
+
+**With the poster (10 min).** Read all five, then re-run the stuck-student
+scenario. The answer is usually decomposition — the project is too big, not too
+hard.
+
+**After (a term).** Say the names out loud in sessions. Students pick the
+vocabulary up quickly and start using it on each other, which is the point.
+
+**Check for understanding.** Ask: "A student changes one line at a time until
+the sprite moves. Which skill is that?" Debugging, done without a hypothesis —
+which is the version worth catching, because naming it is what turns it into
+the version with one.
+
+## Embedding This MicroSim
+
+Paste this into any page of the book, adjusting the relative path to
+`docs/sims/` for the page's depth:
+
+```html
+<iframe src="../../sims/five-computational-thinking-skills/main.html" width="100%" height="650" scrolling="no"></iframe>
+```
 
 ## Specification
 
@@ -51,6 +125,10 @@ Interactive features: Click or hover any column to highlight its zone and reveal
 Implementation: Interactive Infographic Overlay Guide (grid engine) -- `grid-diagram.js` + `grid-overlay.css` render the five rectangular hover zones over the generated poster image; a close template already exists at the GitHub URL above (WHAT match score 0.61) and should be adapted rather than built from scratch; `data.json` holds the 5 zones per the overlay-grid-data-json-schema
 ```
 
-## Related Resources
+## References
 
-- [Chapter 14: "Computational Thinking, Scratch, and Python Basics"](../../chapters/14-computational-thinking-scratch-python/index.md)
+- [Chapter 14: "Computational Thinking, Scratch, and Python Basics"](../../chapters/14-computational-thinking-scratch-python/index.md) -- the chapter this MicroSim supports.
+- [Three Curriculum Tracks](../three-curriculum-tracks/index.md) -- where each skill gets practised.
+- [Anatomy of a Challenge Card](../anatomy-of-a-challenge-card/index.md) -- decomposition applied to writing an activity.
+- [MicroPython Syntax Checker](../micropython-syntax-checker/index.md) -- debugging at its most mechanical.
+- [Computational thinking](https://en.wikipedia.org/wiki/Computational_thinking) -- where the five come from and the argument about whether there are five.

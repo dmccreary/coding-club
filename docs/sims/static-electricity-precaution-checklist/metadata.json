@@ -1,6 +1,6 @@
 {
   "title": "Static Electricity Precaution Checklist",
-  "description": "Given an illustrated classroom scene, the learner identifies which surfaces are safe to touch before handling a board and which increase static risk.",
+  "description": "One room, five things -- two of them safe to touch, three of them ways to build a charge.",
   "creator": "Coding Club",
   "author": "Dan McCreary",
   "date": "2026-09-01",
@@ -12,12 +12,32 @@
   "language": "en",
   "rights": "CC BY-NC-SA 4.0",
   "identifier": "static-electricity-precaution-checklist",
-  "library": "Interactive Infographic Overlay (checklist overlay, illustrated classroom scene + clickable hotspots)",
+  "library": "Infographic overlay (diagram.js)",
   "bloomLevel": "Remember (L1)",
   "bloomVerb": "identify",
-  "completion_status": "scaffold",
+  "completion_status": "built",
+  "canvasHeight": 596,
   "chapter_number": 16,
   "chapter_title": "Physical Computing and Electrical Safety Basics",
   "chapter_dir": "16-physical-computing-safety",
-  "chapter_rel_dir": "chapters/16-physical-computing-safety"
+  "chapter_rel_dir": "chapters/16-physical-computing-safety",
+  "educational": {
+    "gradeLevel": "Middle School, High School, Adult",
+    "audience": "Mentors setting up a hands-on session",
+    "duration": "5 minutes",
+    "concepts": [
+      "Static Discharge",
+      "Grounding",
+      "Anti-Static Bag",
+      "ESD",
+      "Board Handling"
+    ]
+  },
+  "pedagogical": {
+    "bloomLevel": "Remember (L1)",
+    "bloomVerb": "identify",
+    "learningObjective": "Given an illustrated classroom scene, the learner identifies which surfaces are safe to touch before handling a board and which increase static risk.",
+    "interactionPattern": "Hover any marker to see whether that surface reduces static risk or creates it",
+    "assessment": "Walk the club room and name the grounded thing nearest each bench."
+  }
 }

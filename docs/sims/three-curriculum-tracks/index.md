@@ -1,18 +1,88 @@
 ---
 title: Three Curriculum Tracks
-description: Given a student's current skills, the learner classifies which curriculum track best fits them.
-status: scaffold
-library: Interactive Infographic Overlay (grid-diagram.js, annotation-free comparison poster + rectangular hover zones)
+description: Beginner, intermediate, advanced -- what each track actually contains, and where the hard transition sits.
+image: sims/three-curriculum-tracks/three-curriculum-tracks.png
+status: built
+library: Infographic overlay (grid-diagram.js)
 bloom_level: Understand (L2)
 ---
 
 # Three Curriculum Tracks
 
+<iframe src="main.html" width="100%" height="726" scrolling="no"></iframe>
 
+[Run the Three Curriculum Tracks MicroSim fullscreen](main.html){ .md-button .md-button--primary }
 
-<iframe src="main.html" width="100%" height="600"></iframe>
+## About This MicroSim
 
-[Run MicroSim in Fullscreen](main.html){ .md-button .md-button--primary }
+Three tracks, and the interesting one is the middle.
+
+**Beginner** is keyboarding and first Scratch projects, with a lot of unplugged
+activity. That last part surprises people: the vocabulary — loop, condition,
+sequence — is easier to build away from a screen, and a student who has the
+words learns the blocks faster.
+
+**Intermediate is where clubs lose students**, because it contains the
+block-to-text transition. Dragging a block always works; typing `for i in
+range(10):` fails on a missing colon, and a student who has never seen a
+SyntaxError concludes they are bad at this. That is why the track introduces
+Python one construct at a time and leans on turtle graphics — turtle gives
+immediate visual confirmation that the typed thing did what you meant, which is
+the reassurance the transition needs.
+
+**Advanced** is where projects stop being single-concept. Combining functions,
+loops, and conditionals into one working game is a different skill from knowing
+each separately. And students on this track start peer mentoring, which is not
+a side effect — explaining a loop to a beginner is the thing that consolidates
+it.
+
+**Tracks are not ages and not year groups.** A twelve-year-old who has never
+typed belongs on beginner, and a nine-year-old who has outgrown Scratch belongs
+on intermediate. Placing by age is the most common way to lose both of them.
+
+Students also move at different speeds through different parts. Somebody can be
+intermediate on Python and beginner on hardware, and a club that runs both
+should expect that rather than treat it as a problem.
+
+## How to Use
+
+- **Click each track** for what students there are actually doing.
+- Spend the time on the intermediate panel. The block-to-text transition is
+  where the attrition is.
+- Try **Quiz Me** to practise placing a described student.
+- Then place your current students. The disagreements are the useful part.
+
+## Lesson Plan
+
+**Bloom level:** Understand (L2) -- *classify*
+
+**Learning objective:** Given a student's current skills, the learner
+classifies which curriculum track best fits them.
+
+**Before (5 min).** Ask how the club currently decides what a new student
+starts on. If the answer involves their age, that is the thing to change.
+
+**With the poster (10 min).** Read all three, then place three real students as
+a group. Argue about the borderline one — that is where the criteria get
+sharp.
+
+**After (20 min).** Write the one-question placement check the club will
+actually use. "Have you written code you typed rather than dragged?" separates
+beginner from intermediate better than anything about age.
+
+**Check for understanding.** Ask: "A confident Scratch student types their
+first Python line, gets an error, and says they are rubbish at this. What is
+actually happening?" They have hit the transition, and the fix is turtle
+graphics and one construct at a time — not going back to blocks.
+
+## Embedding This MicroSim
+
+Paste this into any page of the book, adjusting the relative path to
+`docs/sims/` for the page's depth:
+
+```html
+<iframe src="../../sims/three-curriculum-tracks/main.html" width="100%" height="726" scrolling="no"></iframe>
+```
 
 ## Specification
 
@@ -32,7 +102,7 @@ Bloom Taxonomy Verb: classify
 
 Learning objective: Given a student's current skills, the learner classifies which curriculum track best fits them.
 
-Image style: Flat comparison poster, three vertical columns, each with a bold printed column header baked into the image ("Beginner Track," "Intermediate Track," "Advanced Track")
+Image style: Flat comparison poster, three vertical columns, each with a bold white printed column header baked into a dark green, blue, or black header bar ("Beginner Track," "Intermediate Track," "Advanced Track")
 
 Image dimensions: 1200x800 (landscape)
 
@@ -48,6 +118,10 @@ Interactive features: Click or hover any column to highlight its zone and reveal
 Implementation: Interactive Infographic Overlay Guide (grid engine) -- `grid-diagram.js` + `grid-overlay.css` render the three rectangular hover zones over the generated poster image; `data.json` holds the 3 zones per the overlay-grid-data-json-schema
 ```
 
-## Related Resources
+## References
 
-- [Chapter 15: Designing a Curriculum With Challenge Cards and Portfolios](../../chapters/15-curriculum-challenge-cards/index.md)
+- [Chapter 15: Designing a Curriculum With Challenge Cards and Portfolios](../../chapters/15-curriculum-challenge-cards/index.md) -- the chapter this MicroSim supports.
+- [Anatomy of a Challenge Card](../anatomy-of-a-challenge-card/index.md) -- the border colour that tells a student which track a card is for.
+- [The Five Computational Thinking Skills](../five-computational-thinking-skills/index.md) -- what all three tracks are really building.
+- [MicroPython Syntax Checker](../micropython-syntax-checker/index.md) -- the two errors that make the transition hard.
+- [Scratch (programming language)](https://en.wikipedia.org/wiki/Scratch_(programming_language)) -- and what it deliberately makes impossible to get wrong.

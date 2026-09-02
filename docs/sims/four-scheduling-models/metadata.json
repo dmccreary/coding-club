@@ -1,6 +1,6 @@
 {
   "title": "Four Coding Club Scheduling Models",
-  "description": "Given a club's venue, mentor availability, and target audience, the learner recommends the scheduling model that best fits.",
+  "description": "Alternating Saturday, weekday after-school, semester-based, drop-in -- and what each one costs you.",
   "creator": "Coding Club",
   "author": "Dan McCreary",
   "date": "2026-09-01",
@@ -12,12 +12,31 @@
   "language": "en",
   "rights": "CC BY-NC-SA 4.0",
   "identifier": "four-scheduling-models",
-  "library": "Interactive Infographic Overlay (grid-diagram.js, annotation-free comparison poster + rectangular hover zones)",
+  "library": "Infographic overlay (grid-diagram.js)",
   "bloomLevel": "Evaluate (L5)",
   "bloomVerb": "recommend",
-  "completion_status": "scaffold",
+  "completion_status": "built",
+  "canvasHeight": 648,
   "chapter_number": 11,
   "chapter_title": "Choosing a Schedule and Building Registration",
   "chapter_dir": "11-schedule-and-registration",
-  "chapter_rel_dir": "chapters/11-schedule-and-registration"
+  "chapter_rel_dir": "chapters/11-schedule-and-registration",
+  "educational": {
+    "gradeLevel": "Middle School, High School, Adult",
+    "audience": "Founders choosing when the club meets",
+    "duration": "10-15 minutes",
+    "concepts": [
+      "Scheduling Model",
+      "Attendance Consistency",
+      "Mentor Availability",
+      "Enrolment"
+    ]
+  },
+  "pedagogical": {
+    "bloomLevel": "Evaluate (L5)",
+    "bloomVerb": "recommend",
+    "learningObjective": "Given a club's venue, mentor availability, and target audience, the learner recommends the scheduling model that best fits.",
+    "interactionPattern": "Click any model for what it suits and what it makes harder",
+    "assessment": "Recommend a model for a described venue and mentor pool, and say what it costs."
+  }
 }

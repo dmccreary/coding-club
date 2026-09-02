@@ -168,7 +168,7 @@ Choosing between the showcase wall and a peer recognition activity is less an ei
 
 #### Diagram: Showcase Wall vs Peer Recognition Activity
 
-<iframe src="../../sims/showcase-wall-vs-peer-recognition/main.html" width="100%" height="540px" scrolling="no"></iframe>
+<iframe src="../../sims/showcase-wall-vs-peer-recognition/main.html" width="100%" height="832px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Showcase Wall vs Peer Recognition Activity</summary>

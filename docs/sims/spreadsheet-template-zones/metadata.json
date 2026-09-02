@@ -1,6 +1,6 @@
 {
   "title": "Spreadsheet Template Zones",
-  "description": "Given a column from a tracking spreadsheet, the learner classifies which template zone it belongs to and why.",
+  "description": "Three zones in a tracking spreadsheet, and why the order of the columns is not arbitrary.",
   "creator": "Coding Club",
   "author": "Dan McCreary",
   "date": "2026-09-01",
@@ -12,12 +12,31 @@
   "language": "en",
   "rights": "CC BY-NC-SA 4.0",
   "identifier": "spreadsheet-template-zones",
-  "library": "Interactive Infographic Overlay (grid-diagram.js, annotation-free poster + rectangular hover zones)",
+  "library": "Infographic overlay (grid-diagram.js)",
   "bloomLevel": "Understand (L2)",
   "bloomVerb": "classify",
-  "completion_status": "scaffold",
+  "completion_status": "built",
+  "canvasHeight": 590,
   "chapter_number": 24,
   "chapter_title": "Tracking Student Data and Managing Club Communication",
   "chapter_dir": "24-student-data-and-communication",
-  "chapter_rel_dir": "chapters/24-student-data-and-communication"
+  "chapter_rel_dir": "chapters/24-student-data-and-communication",
+  "educational": {
+    "gradeLevel": "Middle School, High School, Adult",
+    "audience": "Mentors maintaining the club's tracker",
+    "duration": "10 minutes",
+    "concepts": [
+      "Tracking Spreadsheet",
+      "Column Order",
+      "Badge Tracking",
+      "Free Text Notes"
+    ]
+  },
+  "pedagogical": {
+    "bloomLevel": "Understand (L2)",
+    "bloomVerb": "classify",
+    "learningObjective": "Given a column from a tracking spreadsheet, the learner classifies which template zone it belongs to and why.",
+    "interactionPattern": "Click any zone to see which columns belong to it and why",
+    "assessment": "Say which zone a new column belongs in, and where it goes."
+  }
 }

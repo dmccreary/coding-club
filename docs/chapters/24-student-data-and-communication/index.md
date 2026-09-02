@@ -238,7 +238,7 @@ Because a retention policy only works if the mentor who eventually has to act on
 
 #### Diagram: Data Retention Schedule by Type
 
-<iframe src="../../sims/data-retention-schedule/main.html" width="100%" height="600px" scrolling="no"></iframe>
+<iframe src="../../sims/data-retention-schedule/main.html" width="100%" height="752px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Data Retention Schedule by Type</summary>
@@ -476,7 +476,7 @@ A worked example shows a template design decision paying off months later: a clu
 
 #### Diagram: Spreadsheet Template Zones
 
-<iframe src="../../sims/spreadsheet-template-zones/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../sims/spreadsheet-template-zones/main.html" width="100%" height="592px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Spreadsheet Template Zones</summary>
@@ -732,7 +732,7 @@ A worked example shows why structure matters: a club that asks "How was tonight'
 
 #### Diagram: Annotated Feedback Form
 
-<iframe src="../../sims/feedback-form-annotated/main.html" width="100%" height="600px" scrolling="no"></iframe>
+<iframe src="../../sims/feedback-form-annotated/main.html" width="100%" height="672px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Annotated Feedback Form</summary>

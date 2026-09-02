@@ -1,6 +1,6 @@
 {
   "title": "Normal Circuit vs. Short Circuit",
-  "description": "Given a circuit diagram, the learner explains why a low-resistance path produces a current spike compared to a normal, resistor-limited path.",
+  "description": "The same battery, twice: once through a resistor at 27 mA, once through bare wire at about 6 A.",
   "creator": "Coding Club",
   "author": "Dan McCreary",
   "date": "2026-09-01",
@@ -12,12 +12,32 @@
   "language": "en",
   "rights": "CC BY-NC-SA 4.0",
   "identifier": "normal-circuit-vs-short-circuit",
-  "library": "Interactive Infographic Overlay (diagram.js, side-by-side comparison + numbered callouts)",
+  "library": "Infographic overlay (diagram.js)",
   "bloomLevel": "Understand (L2)",
   "bloomVerb": "explain",
-  "completion_status": "scaffold",
+  "completion_status": "built",
+  "canvasHeight": 518,
   "chapter_number": 16,
   "chapter_title": "Physical Computing and Electrical Safety Basics",
   "chapter_dir": "16-physical-computing-safety",
-  "chapter_rel_dir": "chapters/16-physical-computing-safety"
+  "chapter_rel_dir": "chapters/16-physical-computing-safety",
+  "educational": {
+    "gradeLevel": "Middle School, High School, Adult",
+    "audience": "Students and mentors before their first hands-on session",
+    "duration": "5-10 minutes",
+    "concepts": [
+      "Short Circuit",
+      "Current Limiting",
+      "Ohm's Law",
+      "Resistance",
+      "Heat"
+    ]
+  },
+  "pedagogical": {
+    "bloomLevel": "Understand (L2)",
+    "bloomVerb": "explain",
+    "learningObjective": "Given a circuit diagram, the learner explains why a low-resistance path produces a current spike compared to a normal, resistor-limited path.",
+    "interactionPattern": "Hover any marker to compare the two loops component by component",
+    "assessment": "Explain the current difference from the resistance alone."
+  }
 }

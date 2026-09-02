@@ -1,6 +1,6 @@
 {
   "title": "Session Room Safety and Logistics Map",
-  "description": "Given an unlabeled session-room illustration, the learner identifies the location and purpose of each safety and logistics feature.",
+  "description": "Eight things every session room needs, and where each one goes.",
   "creator": "Coding Club",
   "author": "Dan McCreary",
   "date": "2026-09-01",
@@ -12,12 +12,32 @@
   "language": "en",
   "rights": "CC BY-NC-SA 4.0",
   "identifier": "session-room-safety-map",
-  "library": "Interactive Infographic Overlay (diagram.js, annotation-free illustration + numbered callouts)",
+  "library": "Infographic overlay (diagram.js)",
   "bloomLevel": "Remember (L1)",
   "bloomVerb": "identify",
-  "completion_status": "scaffold",
+  "completion_status": "built",
+  "canvasHeight": 648,
   "chapter_number": 8,
   "chapter_title": "\"Running a Session: Room Layout to Cleanup\"",
   "chapter_dir": "08-running-a-session",
-  "chapter_rel_dir": "chapters/08-running-a-session"
+  "chapter_rel_dir": "chapters/08-running-a-session",
+  "educational": {
+    "gradeLevel": "Middle School, High School, Adult",
+    "audience": "Mentors setting up before a session",
+    "duration": "5-10 minutes",
+    "concepts": [
+      "Room Setup",
+      "Emergency Exit",
+      "First Aid",
+      "Accessible Pathway",
+      "Safety Zone"
+    ]
+  },
+  "pedagogical": {
+    "bloomLevel": "Remember (L1)",
+    "bloomVerb": "identify",
+    "learningObjective": "Given an unlabeled session-room illustration, the learner identifies the location and purpose of each safety and logistics feature.",
+    "interactionPattern": "Hover any marker for what that feature is and why it sits where it does",
+    "assessment": "Walk into the real room and locate all eight in under a minute."
+  }
 }

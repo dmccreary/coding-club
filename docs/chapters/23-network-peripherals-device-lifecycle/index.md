@@ -282,7 +282,7 @@ A worked example shows the transfer working as intended: a student's finished Mi
 
 A worked example shows cloud storage solving exactly that problem: instead of saving a project file locally to the "Station 3" shared account -- where it would vanish once the next student logs in -- a student saves directly to the club's shared cloud drive folder. The following week, at any available laptop, the same student opens that same file exactly where they left off.
 
-<iframe src="../../sims/peripheral-management-layers/main.html" width="100%" height="600px" scrolling="no"></iframe>
+<iframe src="../../sims/peripheral-management-layers/main.html" width="100%" height="832px" scrolling="no"></iframe>
 
 #### Diagram: Peripheral and Storage Management Layers
 

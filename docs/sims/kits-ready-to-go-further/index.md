@@ -1,18 +1,87 @@
 ---
 title: Kits Ready to Go Further
-description: Given a signal-processing kit or a smartwatch display kit running, the learner identifies what it does and what a mentor would see, without explaining the underlying transform.
-status: scaffold
-library: Interactive Infographic Overlay (grid-diagram.js, annotation-free comparison poster + rectangular hover zones)
+description: Two step-up kits, what each one does, and what a mentor would actually see running.
+image: sims/kits-ready-to-go-further/kits-ready-to-go-further.png
+status: built
+library: Infographic overlay (grid-diagram.js)
 bloom_level: Remember (L1)
 ---
 
 # Kits Ready to Go Further
 
+<iframe src="main.html" width="100%" height="660" scrolling="no"></iframe>
 
+[Run the Kits Ready to Go Further MicroSim fullscreen](main.html){ .md-button .md-button--primary }
 
-<iframe src="main.html" width="100%" height="600"></iframe>
+## About This MicroSim
 
-[Run MicroSim in Fullscreen](main.html){ .md-button .md-button--primary }
+Two kits for students who have finished what the standard set offers, and the
+point of the panel is that **you can run either one without being able to
+explain the theory underneath.**
+
+**The signal processing kit** turns live sound into a moving frequency display,
+many times a second. It builds directly on the microphone and sound spectrum
+kits, and the transform doing the work is a Fast Fourier Transform — which is
+worth *naming* and not worth explaining to a twelve-year-old. What a mentor
+needs to know is what it looks like when it is working: bars that move with
+sound, low frequencies on one side, high on the other. A student who whistles
+and watches the peak move has understood the useful part.
+
+**The smartwatch and wearable display kit** is the same display idea moved onto
+hardware that gets worn, and the two constraints that changes are worth calling
+out because they are new to students:
+
+**Battery draw suddenly matters.** A stationary kit runs off USB and nobody
+thinks about power. A wearable runs a few hours or a few days depending on
+choices the student makes, and that is a genuinely different design problem.
+
+**Connections must survive movement.** A breadboard is fine on a desk and
+useless on a wrist. Soldered or properly connectorised joints stop being
+fussiness and start being the difference between a project that works and one
+that works while you hold it still.
+
+Both kits are step-ups rather than replacements — they assume the Chapter 20
+kits have already been built.
+
+## How to Use
+
+- **Click each kit** for what it does and which earlier kit it extends.
+- Note what the description does *not* do: explain the transform. That is
+  deliberate.
+- Try **Quiz Me** to check you can say what a mentor would see running.
+
+## Lesson Plan
+
+**Bloom level:** Remember (L1) -- *identify*
+
+**Learning objective:** Given a signal-processing kit or a smartwatch display
+kit running, the learner identifies what it does and what a mentor would see,
+without explaining the underlying transform.
+
+**Before (5 min).** Ask whether a mentor needs to understand Fourier analysis
+to run a spectrum kit. The answer is no, and saying so out loud removes the
+main reason mentors avoid these kits.
+
+**With the poster (10 min).** Read both. Then practise the sentence you would
+say to a student: "it splits the sound into pitches and draws how loud each one
+is" is enough and it is true.
+
+**After (a session).** Run the signal processing kit and have students whistle
+at it. The moving peak is the demonstration; no explanation needed.
+
+**Check for understanding.** Ask: "What is the first thing that goes wrong when
+you move a working breadboard project onto a wrist?" The connections — a
+breadboard depends on friction and staying still, and neither survives being
+worn.
+
+## Embedding This MicroSim
+
+Paste this into any page of the book, adjusting the relative path to
+`docs/sims/` for the page's depth:
+
+```html
+<iframe src="../../sims/kits-ready-to-go-further/main.html" width="100%" height="660" scrolling="no"></iframe>
+```
 
 ## Specification
 
@@ -47,6 +116,11 @@ Interactive features: Click or hover either column to highlight its hover zone a
 Implementation: Interactive Infographic Overlay Guide (grid engine) -- `grid-diagram.js` + `grid-overlay.css` render the two rectangular hover zones over the generated poster image; `data.json` holds the 2 zones per the overlay-grid-data-json-schema.
 ```
 
-## Related Resources
+## References
 
-- [Chapter 21: Managing Your Kit Inventory and Signal Processing Kits](../../chapters/21-kit-inventory-signal-processing/index.md)
+- [Chapter 21: Managing Your Kit Inventory and Signal Processing Kits](../../chapters/21-kit-inventory-signal-processing/index.md) -- the chapter this MicroSim supports.
+- [Frequency Spectrum Display Explorer](../frequency-spectrum-display-explorer/index.md) -- reading the display the first kit produces.
+- [Gyroscope Orientation Data Explorer](../gyroscope-orientation-data-explorer/index.md) -- another sensor a wearable would carry.
+- [OLED Coordinate System](../oled-coordinate-system/index.md) -- drawing on the display these kits use.
+- [Fast Fourier transform](https://en.wikipedia.org/wiki/Fast_Fourier_transform) -- for the mentor who does want to know.
+- [Wearable computer](https://en.wikipedia.org/wiki/Wearable_computer) -- the constraints the second kit introduces.

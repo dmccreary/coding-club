@@ -1,6 +1,6 @@
 {
   "title": "Showcase Wall vs Peer Recognition Activity",
-  "description": "Given a description of a club's recognition goal, the learner recommends whether a student showcase wall or a peer recognition activity fits it better.",
+  "description": "A standing display of finished work, or a five-minute circle at the end of every session -- they solve different problems.",
   "creator": "Coding Club",
   "author": "Dan McCreary",
   "date": "2026-09-01",
@@ -12,12 +12,32 @@
   "language": "en",
   "rights": "CC BY-NC-SA 4.0",
   "identifier": "showcase-wall-vs-peer-recognition",
-  "library": "Interactive Infographic Overlay (grid-diagram.js, annotation-free comparison poster + rectangular hover zones)",
+  "library": "Infographic overlay (grid-diagram.js)",
   "bloomLevel": "Evaluate (L5)",
   "bloomVerb": "recommend",
-  "completion_status": "scaffold",
+  "completion_status": "built",
+  "canvasHeight": 830,
   "chapter_number": 27,
   "chapter_title": "Encouraging Persistence and Student Voice",
   "chapter_dir": "27-persistence-and-student-voice",
-  "chapter_rel_dir": "chapters/27-persistence-and-student-voice"
+  "chapter_rel_dir": "chapters/27-persistence-and-student-voice",
+  "educational": {
+    "gradeLevel": "Middle School, High School, Adult",
+    "audience": "Mentors deciding how to recognise work",
+    "duration": "10 minutes",
+    "concepts": [
+      "Recognition",
+      "Showcase",
+      "Peer Feedback",
+      "Visibility",
+      "Frequency"
+    ]
+  },
+  "pedagogical": {
+    "bloomLevel": "Evaluate (L5)",
+    "bloomVerb": "recommend",
+    "learningObjective": "Given a description of a club's recognition goal, the learner recommends whether a student showcase wall or a peer recognition activity fits it better.",
+    "interactionPattern": "Click either format for what it does and who it reaches",
+    "assessment": "Match a recognition goal to the format that serves it."
+  }
 }
