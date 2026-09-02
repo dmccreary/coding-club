@@ -64,7 +64,7 @@ Every remaining concept in this chapter is a piece of that loop. Breadboards, ju
 
 #### Diagram: The Physical Computing Loop
 
-<iframe src="../../sims/physical-computing-loop/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../sims/physical-computing-loop/main.html" width="100%" height="512px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>The Physical Computing Loop</summary>
@@ -699,7 +699,7 @@ A multimeter's voltage mode also earns its place in the Battery Safety routine f
 
 #### Diagram: Multimeter Usage Simulator
 
-<iframe src="../../sims/multimeter-usage-simulator/main.html" width="100%" height="520px" scrolling="no"></iframe>
+<iframe src="../../sims/multimeter-usage-simulator/main.html" width="100%" height="622px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Multimeter Usage Simulator</summary>

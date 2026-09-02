@@ -13,8 +13,8 @@ above are maintained by hand as sims are actually built.
 
 - Chapters scanned: 35
 - Total diagram specs found: 129
-- Already implemented: 68
-- **Unimplemented (TODO): 61**
+- Already implemented: 71
+- **Unimplemented (TODO): 58**
 
 Regenerate this list after adding or editing chapter diagram specs:
 
@@ -67,7 +67,7 @@ python3 ~/.claude/skills/microsim-utils/scripts/create-microsim-todo-json-files.
 
 | Sim ID | Diagram Name | Library | Bloom Level |
 |---|---|---|---|
-| [`coding-club-room-layout`](TODO/coding-club-room-layout.json) | Coding Club Room Layout | p5.js | Apply (L3) |
+| :white_check_mark: [`coding-club-room-layout`](coding-club-room-layout/index.md) | Coding Club Room Layout | p5.js | Apply (L3) |
 
 ### Chapter 8: "Running a Session: Room Layout to Cleanup" (1)
 
@@ -116,10 +116,10 @@ python3 ~/.claude/skills/microsim-utils/scripts/create-microsim-todo-json-files.
 | :white_check_mark: [`digital-signal-high-low-chart`](digital-signal-high-low-chart/index.md) | Digital Signal HIGH/LOW Chart | Chart.js | None |
 | [`electrical-safety-rules-poster`](TODO/electrical-safety-rules-poster.json) | Electrical Safety Rules Poster | Interactive Infographic Overlay (grid-diagram.js, four-panel comparison poster + rectangular hover zones) | Remember (L1) |
 | [`led-anatomy`](TODO/led-anatomy.json) | LED Anatomy | Interactive Infographic Overlay (diagram.js, callout engine) | Remember (L1) |
-| [`multimeter-usage-simulator`](TODO/multimeter-usage-simulator.json) | Multimeter Usage Simulator | p5.js | Apply (L3) |
+| :white_check_mark: [`multimeter-usage-simulator`](multimeter-usage-simulator/index.md) | Multimeter Usage Simulator | p5.js | Apply (L3) |
 | [`normal-circuit-vs-short-circuit`](TODO/normal-circuit-vs-short-circuit.json) | Normal Circuit vs. Short Circuit | Interactive Infographic Overlay (diagram.js, side-by-side comparison + numbered callouts) | Understand (L2) |
 | :white_check_mark: [`ohms-law-current-calculator`](ohms-law-current-calculator/index.md) | Ohm's Law Current Calculator | p5.js | Apply (L3) |
-| [`physical-computing-loop`](TODO/physical-computing-loop.json) | The Physical Computing Loop | p5.js | Understand (L2) |
+| :white_check_mark: [`physical-computing-loop`](physical-computing-loop/index.md) | The Physical Computing Loop | p5.js | Understand (L2) |
 | :white_check_mark: [`potentiometer-analog-input-explorer`](potentiometer-analog-input-explorer/index.md) | Potentiometer Analog Input Explorer | p5.js | Apply (L3) |
 | :white_check_mark: [`push-button-digital-input-circuit`](push-button-digital-input-circuit/index.md) | Push Button Digital Input Circuit | p5.js | Apply (L3) |
 | :white_check_mark: [`pwm-analog-output-brightness-explorer`](pwm-analog-output-brightness-explorer/index.md) | PWM Analog Output Brightness Explorer | p5.js | Understand (L2) |
