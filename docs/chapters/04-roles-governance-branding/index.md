@@ -63,7 +63,7 @@ These four roles, plus the club leader and assistant leader from Chapter 3, only
 
 #### Diagram: Club Governance at a Glance
 
-<iframe src="../../sims/club-governance-map/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../sims/club-governance-map/main.html" width="100%" height="762px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Club Governance at a Glance</summary>

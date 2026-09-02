@@ -13,8 +13,8 @@ above are maintained by hand as sims are actually built.
 
 - Chapters scanned: 35
 - Total diagram specs found: 129
-- Already implemented: 58
-- **Unimplemented (TODO): 71**
+- Already implemented: 61
+- **Unimplemented (TODO): 68**
 
 Regenerate this list after adding or editing chapter diagram specs:
 
@@ -48,7 +48,7 @@ python3 ~/.claude/skills/microsim-utils/scripts/create-microsim-todo-json-files.
 
 | Sim ID | Diagram Name | Library | Bloom Level |
 |---|---|---|---|
-| [`club-governance-map`](TODO/club-governance-map.json) | Club Governance at a Glance | vis-network | Understand (L2) |
+| :white_check_mark: [`club-governance-map`](club-governance-map/index.md) | Club Governance at a Glance | vis-network | Understand (L2) |
 
 ### Chapter 5: Gauging Interest and Holding Your First Meeting (2)
 
@@ -280,7 +280,7 @@ python3 ~/.claude/skills/microsim-utils/scripts/create-microsim-todo-json-files.
 | Sim ID | Diagram Name | Library | Bloom Level |
 |---|---|---|---|
 | [`ai-agent-loop-explorer`](TODO/ai-agent-loop-explorer.json) | AI Agent Loop Explorer | p5.js | Understand (L2) |
-| [`ai-agent-roster-network`](TODO/ai-agent-roster-network.json) | Meet the Club's AI Agent Roster | vis-network | Understand (L2) |
+| :white_check_mark: [`ai-agent-roster-network`](ai-agent-roster-network/index.md) | Meet the Club's AI Agent Roster | vis-network | Understand (L2) |
 | :white_check_mark: [`ai-content-drafting-pipeline`](ai-content-drafting-pipeline/index.md) | From Draft to Delivered — AI Content Pipeline | Mermaid | Analyze (L4) |
 | :white_check_mark: [`human-in-the-loop-review-workflow`](human-in-the-loop-review-workflow/index.md) | Human-in-the-Loop Review Workflow | Mermaid | Evaluate (L5) |
 | [`mentor-recruiting-influence-graph`](TODO/mentor-recruiting-influence-graph.json) | Building and Reading an Influence Graph | vis-network | Analyze (L4) |
@@ -307,7 +307,7 @@ python3 ~/.claude/skills/microsim-utils/scripts/create-microsim-todo-json-files.
 | :white_check_mark: [`board-governance-cycle`](board-governance-cycle/index.md) | Board Governance Cycle | Mermaid | Analyze (L4) |
 | :white_check_mark: [`club-inventory-lifecycle-workflow`](club-inventory-lifecycle-workflow/index.md) | Club Inventory Lifecycle Workflow | Mermaid | Analyze (L4) |
 | :white_check_mark: [`mentor-recruiting-channel-effectiveness`](mentor-recruiting-channel-effectiveness/index.md) | Mentor Recruiting Channel Effectiveness | Chart.js | Analyze (L4) |
-| [`oversight-board-org-chart`](TODO/oversight-board-org-chart.json) | Oversight Board Org Chart | vis-network | Remember (L1) |
+| :white_check_mark: [`oversight-board-org-chart`](oversight-board-org-chart/index.md) | Oversight Board Org Chart | vis-network | Remember (L1) |
 
 ### Chapter 35: Training Mentors and Building a Club That Outlasts You (3)
 

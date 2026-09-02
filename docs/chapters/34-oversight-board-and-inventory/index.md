@@ -67,7 +67,7 @@ A board earns that role by filling a small set of named seats, each carrying a s
 
 #### Diagram: Oversight Board Org Chart
 
-<iframe src="../../sims/oversight-board-org-chart/main.html" width="100%" height="520px" scrolling="no"></iframe>
+<iframe src="../../sims/oversight-board-org-chart/main.html" width="100%" height="742px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Oversight Board Org Chart</summary>

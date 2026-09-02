@@ -1,18 +1,76 @@
 ---
 title: Oversight Board Org Chart
-description: Given the five named seats on a coding club's oversight board, the learner identifies each seat's core responsibility and how the board as a whole relates to day-to-day operations.
-status: scaffold
+description: Five board seats, what each one does, and how a board sits above day-to-day sessions without running them.
+image: sims/oversight-board-org-chart/oversight-board-org-chart.png
+status: built
 library: vis-network
 bloom_level: Remember (L1)
 ---
 
 # Oversight Board Org Chart
 
+<iframe src="main.html" width="100%" height="742" scrolling="no"></iframe>
 
+[Run the Oversight Board Org Chart MicroSim fullscreen](main.html){ .md-button .md-button--primary }
 
-<iframe src="main.html" width="100%" height="600"></iframe>
+## About This MicroSim
 
-[Run MicroSim in Fullscreen](main.html){ .md-button .md-button--primary }
+The distinction this chart exists to make is between **oversight** and
+**operations**, and it is the one founders find hardest.
+
+The board holds formal authority over mission, budget, and major decisions. It
+does not run sessions. The founder runs sessions and *reports to* the board
+rather than acting with unchecked authority. The edge between them says "sets
+policy and budget for", which is the whole relationship in five words.
+
+Each seat unlocks something specific, and the value is in the specificity: the
+treasurer signs financial paperwork the founder used to sign alone, and the
+secretary writes minutes so decisions survive turnover. A seat that unlocks
+nothing is decoration.
+
+Notice there are **two routes** from the board to mentors and students. The
+ordinary one runs through the founder. The second runs through the mentor liaison,
+who attends mentor debriefs and carries concerns to the board directly. That
+second route exists precisely because the first one passes through the person a
+concern might be about.
+
+## How to Use
+
+- **Click any seat** to see its core responsibility.
+- Follow both paths from the board down to mentors and students -- one through
+  the founder, one through the mentor liaison.
+- **Drag a node** to reposition it; **Reset** restores the layout.
+
+## Lesson Plan
+
+**Bloom level:** Remember (L1) -- *identify*
+
+**Learning objective:** Given the five named seats on a coding club's oversight
+board, the learner identifies each seat's core responsibility and how the board as
+a whole relates to day-to-day operations.
+
+**Before the sim (5 min).** Ask what a board would actually *do* in this club.
+"Meet" is the common answer, and it is why many club boards achieve nothing.
+
+**With the sim (10 min).** Click all five seats. For each, name the thing that
+would go unhandled without it. Then trace the two routes to mentors and students
+and ask why the second one exists.
+
+**After the sim (15 min).** Draft the club's own five seats -- they need not match
+these -- and one sentence of responsibility each.
+
+**Check for understanding.** Ask: "A mentor is uncomfortable with a decision the
+founder made. Which route does that concern take?" The mentor liaison -- and
+recognising why the founder route will not do is the point of the second path.
+
+## Embedding This MicroSim
+
+Paste this into any page of the book, adjusting the relative path to
+`docs/sims/` for the page's depth:
+
+```html
+<iframe src="../../sims/oversight-board-org-chart/main.html" width="100%" height="742" scrolling="no"></iframe>
+```
 
 ## Specification
 
@@ -69,6 +127,10 @@ Legend: node color key (board root, board seats, operations, ground-level people
 Implementation: vis-network JavaScript library with a hierarchical layout option, node/edge data defined in a small `data.json` file, and a custom infobox panel rendered beneath the canvas on click.
 ```
 
-## Related Resources
+## References
 
-- [Chapter 34: Establishing an Oversight Board and Inventory System](../../chapters/34-oversight-board-and-inventory/index.md)
+- [Chapter 34: Establishing an Oversight Board and Inventory System](../../chapters/34-oversight-board-and-inventory/index.md) -- the chapter this MicroSim supports.
+- [Board Governance Cycle](../board-governance-cycle/index.md) -- how seats are filled and rotated over time.
+- [Club Governance Map](../club-governance-map/index.md) -- the simpler structure a club has before a board exists.
+- [Board of directors](https://en.wikipedia.org/wiki/Board_of_directors) -- roles and the oversight/management split.
+- [Separation of duties](https://en.wikipedia.org/wiki/Separation_of_duties) -- why the treasurer co-signs.

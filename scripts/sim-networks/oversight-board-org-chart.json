@@ -1,0 +1,178 @@
+{
+  "title": "Oversight Board Org Chart",
+  "height": 740,
+  "stats": "5 seats · 2 tiers below",
+  "panelHeading": "Seat Details",
+  "placeholder": "Click any seat to see its core responsibility.",
+  "arrows": true,
+  "pinned": [],
+  "nodes": [
+    {
+      "id": "board",
+      "label": "Oversight Board",
+      "x": 0,
+      "y": -560,
+      "cls": "neutral",
+      "detail": [
+        [
+          "What it is",
+          "Holds formal authority over mission, budget, and major decisions."
+        ],
+        [
+          "Why it matters",
+          "Membership changes; the seats do not. That is what makes the board outlast any individual."
+        ]
+      ]
+    },
+    {
+      "id": "chair",
+      "label": "Chair",
+      "x": -520,
+      "y": -260,
+      "cls": "node",
+      "detail": [
+        [
+          "Core responsibility",
+          "Runs board meetings, sets the agenda, represents the club publicly, and casts the tie-breaking vote."
+        ]
+      ]
+    },
+    {
+      "id": "secretary",
+      "label": "Secretary",
+      "x": 0,
+      "y": -260,
+      "cls": "node",
+      "detail": [
+        [
+          "Core responsibility",
+          "Records and distributes written minutes after every meeting, so decisions and their reasoning survive turnover."
+        ]
+      ]
+    },
+    {
+      "id": "treasurer",
+      "label": "Treasurer",
+      "x": 520,
+      "y": -260,
+      "cls": "node",
+      "detail": [
+        [
+          "Core responsibility",
+          "Reviews the budget before large purchases and signs financial paperwork the founder used to sign alone."
+        ]
+      ]
+    },
+    {
+      "id": "liaison",
+      "label": "Mentor Liaison",
+      "x": -260,
+      "y": -40,
+      "cls": "node",
+      "detail": [
+        [
+          "Core responsibility",
+          "Attends mentor debriefs and brings mentor concerns to the board directly."
+        ]
+      ]
+    },
+    {
+      "id": "atlarge",
+      "label": "At-Large Member",
+      "x": 260,
+      "y": -40,
+      "cls": "node",
+      "detail": [
+        [
+          "Core responsibility",
+          "Represents a parent, student, or venue host the board would otherwise never hear from directly."
+        ]
+      ]
+    },
+    {
+      "id": "founder",
+      "label": "Founder / Lead Mentor",
+      "x": 620,
+      "y": 250,
+      "cls": "hub",
+      "detail": [
+        [
+          "What it is",
+          "Runs weekly sessions day to day."
+        ],
+        [
+          "Relationship to the board",
+          "Reports to the board rather than acting with unchecked authority. The board sets policy; the founder runs the room."
+        ]
+      ]
+    },
+    {
+      "id": "people",
+      "label": "Mentors and Students",
+      "x": 0,
+      "y": 570,
+      "cls": "neutral",
+      "detail": [
+        [
+          "What it is",
+          "The people the whole structure exists to serve."
+        ],
+        [
+          "Two routes upward",
+          "Through the founder in the normal course of a session, and through the mentor liaison when a concern needs the board to hear it."
+        ]
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "board",
+      "to": "chair"
+    },
+    {
+      "from": "board",
+      "to": "secretary"
+    },
+    {
+      "from": "board",
+      "to": "treasurer"
+    },
+    {
+      "from": "board",
+      "to": "liaison"
+    },
+    {
+      "from": "board",
+      "to": "atlarge"
+    },
+    {
+      "from": "board",
+      "to": "founder",
+      "label": "sets policy and budget for"
+    },
+    {
+      "from": "founder",
+      "to": "people",
+      "label": "runs weekly sessions with"
+    },
+    {
+      "from": "people",
+      "to": "liaison",
+      "label": "carries concerns to"
+    }
+  ],
+  "legend": [
+    {
+      "cls": "neutral",
+      "text": "Board and the people served"
+    },
+    {
+      "cls": "node",
+      "text": "Board seat"
+    },
+    {
+      "cls": "hub",
+      "text": "Day-to-day operations"
+    }
+  ]
+}

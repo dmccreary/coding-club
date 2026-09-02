@@ -169,7 +169,7 @@ Implementation notes: p5.js canvas with createSelect for the scenario dropdown a
 
 #### Diagram: Meet the Club's AI Agent Roster
 
-<iframe src="../../sims/ai-agent-roster-network/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../sims/ai-agent-roster-network/main.html" width="100%" height="702px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Meet the Club's AI Agent Roster</summary>

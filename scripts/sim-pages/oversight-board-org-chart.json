@@ -1,0 +1,22 @@
+{
+  "title": "Oversight Board Org Chart",
+  "height": 742,
+  "library": "vis-network",
+  "bloom": "Remember (L1)",
+  "verb": "identify",
+  "description": "Five board seats, what each one does, and how a board sits above day-to-day sessions without running them.",
+  "concepts": [
+    "Oversight Board",
+    "Board Seats",
+    "Separation of Duties",
+    "Mentor Liaison",
+    "Reporting"
+  ],
+  "interaction": "Click any seat for its core responsibility; two distinct routes connect the board to the people it serves",
+  "assessment": "Name a seat and ask for its core responsibility; ask which seat hears from mentors directly.",
+  "audience": "Founders forming a board",
+  "about": "The distinction this chart exists to make is between **oversight** and\n**operations**, and it is the one founders find hardest.\n\nThe board holds formal authority over mission, budget, and major decisions. It\ndoes not run sessions. The founder runs sessions and *reports to* the board\nrather than acting with unchecked authority. The edge between them says \"sets\npolicy and budget for\", which is the whole relationship in five words.\n\nEach seat unlocks something specific, and the value is in the specificity: the\ntreasurer signs financial paperwork the founder used to sign alone, and the\nsecretary writes minutes so decisions survive turnover. A seat that unlocks\nnothing is decoration.\n\nNotice there are **two routes** from the board to mentors and students. The\nordinary one runs through the founder. The second runs through the mentor liaison,\nwho attends mentor debriefs and carries concerns to the board directly. That\nsecond route exists precisely because the first one passes through the person a\nconcern might be about.",
+  "howto": "- **Click any seat** to see its core responsibility.\n- Follow both paths from the board down to mentors and students -- one through\n  the founder, one through the mentor liaison.\n- **Drag a node** to reposition it; **Reset** restores the layout.",
+  "lesson": "**Bloom level:** Remember (L1) -- *identify*\n\n**Learning objective:** Given the five named seats on a coding club's oversight\nboard, the learner identifies each seat's core responsibility and how the board as\na whole relates to day-to-day operations.\n\n**Before the sim (5 min).** Ask what a board would actually *do* in this club.\n\"Meet\" is the common answer, and it is why many club boards achieve nothing.\n\n**With the sim (10 min).** Click all five seats. For each, name the thing that\nwould go unhandled without it. Then trace the two routes to mentors and students\nand ask why the second one exists.\n\n**After the sim (15 min).** Draft the club's own five seats -- they need not match\nthese -- and one sentence of responsibility each.\n\n**Check for understanding.** Ask: \"A mentor is uncomfortable with a decision the\nfounder made. Which route does that concern take?\" The mentor liaison -- and\nrecognising why the founder route will not do is the point of the second path.",
+  "refs": "- {{CHAPTER}} -- the chapter this MicroSim supports.\n- [Board Governance Cycle](../board-governance-cycle/index.md) -- how seats are filled and rotated over time.\n- [Club Governance Map](../club-governance-map/index.md) -- the simpler structure a club has before a board exists.\n- [Board of directors](https://en.wikipedia.org/wiki/Board_of_directors) -- roles and the oversight/management split.\n- [Separation of duties](https://en.wikipedia.org/wiki/Separation_of_duties) -- why the treasurer co-signs."
+}

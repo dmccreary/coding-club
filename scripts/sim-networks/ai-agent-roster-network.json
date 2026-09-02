@@ -1,0 +1,184 @@
+{
+  "title": "Meet the Club's AI Agent Roster",
+  "height": 700,
+  "stats": "6 agent types",
+  "panelHeading": "Agent Details",
+  "placeholder": "Click any agent to see the club task it handles and an example.",
+  "arrows": false,
+  "pinned": [
+    "hub"
+  ],
+  "nodes": [
+    {
+      "id": "hub",
+      "label": "Leveraging AI Agents",
+      "x": 0,
+      "y": 0,
+      "cls": "hub",
+      "detail": [
+        [
+          "The idea",
+          "Matching a task to the agent type built for it, rather than one tool trying to do everything."
+        ]
+      ]
+    },
+    {
+      "id": "planning",
+      "label": "Planning Agent",
+      "x": -420,
+      "y": -260,
+      "cls": "node",
+      "detail": [
+        [
+          "What it does",
+          "Drafts a sequence of dates or steps toward a goal, respecting stated constraints."
+        ],
+        [
+          "Example",
+          "A proposed semester calendar."
+        ]
+      ]
+    },
+    {
+      "id": "communication",
+      "label": "Communication Agent",
+      "x": 0,
+      "y": -330,
+      "cls": "resolve",
+      "detail": [
+        [
+          "What it does",
+          "Drafts a reply or announcement pulling from the club's own policies."
+        ],
+        [
+          "Example",
+          "A make-up-policy email reply."
+        ]
+      ]
+    },
+    {
+      "id": "registration",
+      "label": "Registration Agent",
+      "x": 420,
+      "y": -260,
+      "cls": "remediate",
+      "detail": [
+        [
+          "What it does",
+          "Processes new sign-ups against the club's ratio cap and waitlist rules."
+        ],
+        [
+          "Example",
+          "Moving a family off the waitlist."
+        ]
+      ]
+    },
+    {
+      "id": "scheduling",
+      "label": "Scheduling Agent",
+      "x": -420,
+      "y": 260,
+      "cls": "wait",
+      "detail": [
+        [
+          "What it does",
+          "Cross-references mentor availability against venue hours."
+        ],
+        [
+          "Example",
+          "Proposing which of three dates has full mentor coverage."
+        ]
+      ]
+    },
+    {
+      "id": "reminder",
+      "label": "Reminder Agent",
+      "x": 0,
+      "y": 340,
+      "cls": "danger",
+      "detail": [
+        [
+          "What it does",
+          "Drafts a reminder tailored to the specific family and moment, beyond a fixed timer."
+        ],
+        [
+          "Example",
+          "Mentioning a badge a student is one session from finishing."
+        ]
+      ]
+    },
+    {
+      "id": "coaching",
+      "label": "Mentor Coaching Agent",
+      "x": 420,
+      "y": 260,
+      "cls": "neutral",
+      "detail": [
+        [
+          "What it does",
+          "Drafts coaching suggestions from aggregated, anonymized patterns -- never from one identified student's record."
+        ],
+        [
+          "Example",
+          "Flagging a badge that has become a bottleneck for a whole cohort."
+        ]
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "hub",
+      "to": "planning"
+    },
+    {
+      "from": "hub",
+      "to": "communication"
+    },
+    {
+      "from": "hub",
+      "to": "registration"
+    },
+    {
+      "from": "hub",
+      "to": "scheduling"
+    },
+    {
+      "from": "hub",
+      "to": "reminder"
+    },
+    {
+      "from": "hub",
+      "to": "coaching"
+    }
+  ],
+  "legend": [
+    {
+      "cls": "hub",
+      "text": "The umbrella idea"
+    },
+    {
+      "cls": "node",
+      "text": "Planning"
+    },
+    {
+      "cls": "resolve",
+      "text": "Communication"
+    },
+    {
+      "cls": "remediate",
+      "text": "Registration"
+    },
+    {
+      "cls": "wait",
+      "text": "Scheduling"
+    },
+    {
+      "cls": "danger",
+      "text": "Reminder"
+    },
+    {
+      "cls": "neutral",
+      "text": "Mentor coaching"
+    }
+  ]
+}
