@@ -1,0 +1,23 @@
+{
+  "title": "Moving Rainbow Wiring Diagram",
+  "height": 502,
+  "library": "p5.js",
+  "bloom": "Apply (L3)",
+  "verb": "demonstrate",
+  "description": "Three wires between a Pico and a NeoPixel strip, with a quiz that hides the labels.",
+  "concepts": [
+    "NeoPixel",
+    "Data In",
+    "VBUS",
+    "Shared Ground",
+    "Wiring Check"
+  ],
+  "interaction": "Click each wire for its pins, then turn on quiz mode to be asked instead of told",
+  "assessment": "A clean quiz pass before any kit gets powered.",
+  "audience": "Mentors checking kits before a session",
+  "duration": "5-10 minutes",
+  "about": "Three wires. Power, ground, and data. Two minutes with this before a kit\ngets powered is worth twenty minutes of debugging afterwards.\n\n**The one that catches everybody is the data wire.** A NeoPixel strip has a\ndata-in end and a data-out end, and the little arrows printed along it show\nwhich way data travels: each pixel reads its own colour off the front of the\nmessage and passes the rest along. Wire the Pico to the **DO** end instead and\neverything is electrically fine, nothing gets warm, no error appears — and not\none pixel lights. That is a far more confusing failure than a wrong pin number.\n\n**The one that gets left out is ground.** When the strip has its own power\nsupply, the ground wire back to the Pico looks redundant. It is not. Data is a\nvoltage measured *against ground*, so without a shared ground the strip has no\nreference for what counts as a 1 or a 0, and the output is anything from\nnothing to flickering garbage.\n\n**And the power wire has a limit worth knowing.** VBUS is the USB supply passed\nstraight through, which is fine for a short strip. A NeoPixel at full white\ndraws about 60 mA, so thirty of them is nearly two amps — more than a USB port\nwill give you. Long strips need their own supply, with the grounds still tied\ntogether.",
+  "howto": "- **Click any wire** to see which Pico pin it leaves and which strip terminal\n  it lands on.\n- Look at the arrows printed along the strip. They point away from DI, which is\n  the end the data wire must go to.\n- Turn on **Check my wiring**. The labels disappear, and you are asked to click\n  the wire that carries each named connection.\n- **Reset** turns the quiz off and restores the labels.",
+  "lesson": "**Bloom level:** Apply (L3) -- *demonstrate*\n\n**Learning objective:** Given a Pico and a NeoPixel strip, the learner\ndemonstrates how to wire the power, ground, and data connections between them,\nincluding which end of the strip is the data-in end.\n\n**Before the session (5 min).** Every mentor runs one quiz pass. It takes two\nminutes and it is the difference between spotting a backwards strip immediately\nand watching four students conclude their Pico is broken.\n\n**With students (10 min).** Hand out the parts and have pairs wire it from the\ndiagram, then swap benches and check each other's before anything is plugged\nin. A wiring check by a second pair of eyes is a habit worth building early.\n\n**After (20 min).** Run the rainbow. Then deliberately move the data wire to\nthe DO end and watch nothing happen — the failure is much more memorable when\nyou caused it on purpose.\n\n**Check for understanding.** Ask: \"Your strip has its own 5 V supply, so you\nonly need two wires to the Pico. Which two?\" Data and ground — and a student\nwho says \"just data\" has missed the reference that makes data mean anything.",
+  "refs": "- {{CHAPTER}} -- the chapter this MicroSim supports.\n- [Pico REPL vs Script Workflow](../pico-repl-vs-script-workflow/index.md) -- where the code that drives this strip lives.\n- [Seasonal LED Pattern Gallery](../seasonal-led-pattern-gallery/index.md) -- what to run on it once it is wired.\n- [LED Matrix Pattern Designer](../led-matrix-pattern-designer/index.md) -- the same one-way data idea on a grid.\n- [Ohm's Law Current Calculator](../ohms-law-current-calculator/index.md) -- working out whether USB can supply your strip.\n- [Raspberry Pi Pico](https://en.wikipedia.org/wiki/Raspberry_Pi#Raspberry_Pi_Pico) -- the board and its pinout."
+}

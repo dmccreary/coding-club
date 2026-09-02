@@ -1,6 +1,6 @@
 {
   "title": "Seasonal LED Pattern Gallery",
-  "description": "Given a running LED pattern, the learner differentiates which seasonal theme produced it and identifies the code parameter that changed to create it.",
+  "description": "Four strips running the same algorithm, and the two or three numbers that make each one a different season.",
   "creator": "Coding Club",
   "author": "Dan McCreary",
   "date": "2026-09-01",
@@ -15,9 +15,29 @@
   "library": "p5.js",
   "bloomLevel": "Analyze (L4)",
   "bloomVerb": "differentiate",
-  "completion_status": "scaffold",
+  "completion_status": "built",
+  "canvasHeight": 480,
   "chapter_number": 19,
   "chapter_title": "Raspberry Pi Pico, MicroPython, and the Moving Rainbow Kit",
   "chapter_dir": "19-pico-micropython-moving-rainbow",
-  "chapter_rel_dir": "chapters/19-pico-micropython-moving-rainbow"
+  "chapter_rel_dir": "chapters/19-pico-micropython-moving-rainbow",
+  "educational": {
+    "gradeLevel": "Middle School, High School, Adult",
+    "audience": "Mentors choosing a pattern for a session",
+    "duration": "10-15 minutes",
+    "concepts": [
+      "Colour Palette",
+      "Hue",
+      "Saturation",
+      "Animation Timing",
+      "Pattern Variation"
+    ]
+  },
+  "pedagogical": {
+    "bloomLevel": "Analyze (L4)",
+    "bloomVerb": "differentiate",
+    "learningObjective": "Given a running LED pattern, the learner differentiates which seasonal theme produced it and identifies the code parameter that changed to create it.",
+    "interactionPattern": "Watch all four at once, click one to see its parameters, and change the shared speed",
+    "assessment": "Show a running strip and ask which theme it is and which parameter says so."
+  }
 }

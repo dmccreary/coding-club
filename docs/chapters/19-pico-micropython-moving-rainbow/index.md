@@ -266,7 +266,7 @@ The diagram below (adapted from a NeoPixel wiring template) lets a mentor click 
 
 #### Diagram: Moving Rainbow Wiring Diagram
 
-<iframe src="../../sims/moving-rainbow-wiring-diagram/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../sims/moving-rainbow-wiring-diagram/main.html" width="100%" height="502px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Moving Rainbow Wiring Diagram</summary>
@@ -328,7 +328,7 @@ This one pattern — position plus a changing offset — is also the template ev
 
 #### Diagram: Seasonal LED Pattern Gallery
 
-<iframe src="../../sims/seasonal-led-pattern-gallery/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../sims/seasonal-led-pattern-gallery/main.html" width="100%" height="482px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Seasonal LED Pattern Gallery</summary>
@@ -507,7 +507,7 @@ The diagram below (adapted from a robot-assembly-workflow template) lets a mento
 
 #### Diagram: Robot Kit Assembly Sequence
 
-<iframe src="../../sims/robot-kit-assembly-sequence/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../sims/robot-kit-assembly-sequence/main.html" width="100%" height="502px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Robot Kit Assembly Sequence</summary>

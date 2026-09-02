@@ -1,6 +1,6 @@
 {
   "title": "Gyroscope Orientation Data Explorer",
-  "description": "Given a tilted or rotated orientation of a gyroscope kit, the learner interprets which of the pitch, roll, and yaw values changes and by how much.",
+  "description": "Tip a sensor board three ways and watch exactly one of the three readings move each time.",
   "creator": "Coding Club",
   "author": "Dan McCreary",
   "date": "2026-09-01",
@@ -15,9 +15,29 @@
   "library": "p5.js",
   "bloomLevel": "Understand (L2)",
   "bloomVerb": "interpret",
-  "completion_status": "scaffold",
+  "completion_status": "built",
+  "canvasHeight": 520,
   "chapter_number": 20,
   "chapter_title": "Sensor, Sound, and IoT Project Kits",
   "chapter_dir": "20-sensor-sound-iot-kits",
-  "chapter_rel_dir": "chapters/20-sensor-sound-iot-kits"
+  "chapter_rel_dir": "chapters/20-sensor-sound-iot-kits",
+  "educational": {
+    "gradeLevel": "Middle School, High School, Adult",
+    "audience": "Students reading orientation data from a kit",
+    "duration": "10 minutes",
+    "concepts": [
+      "Pitch",
+      "Roll",
+      "Yaw",
+      "Orientation",
+      "Independent Axes"
+    ]
+  },
+  "pedagogical": {
+    "bloomLevel": "Understand (L2)",
+    "bloomVerb": "interpret",
+    "learningObjective": "Given a tilted or rotated orientation of a gyroscope kit, the learner interprets which of the pitch, roll, and yaw values changes and by how much.",
+    "interactionPattern": "Drag the coloured handles to tip, roll, and rotate the board",
+    "assessment": "Name which axis changed from the readouts alone, without watching the board."
+  }
 }

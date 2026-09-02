@@ -107,7 +107,7 @@ A worked example makes the pitch/roll/yaw distinction concrete rather than abstr
 
 #### Diagram: Gyroscope Orientation Data Explorer
 
-<iframe src="../../sims/gyroscope-orientation-data-explorer/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../sims/gyroscope-orientation-data-explorer/main.html" width="100%" height="522px" scrolling="no"></iframe>
 
 [Run the Gyroscope Orientation Data Explorer MicroSim fullscreen](../../sims/gyroscope-orientation-data-explorer/main.html){ .md-button }
 
@@ -194,7 +194,7 @@ A worked example ties the display directly back to the previous section's hummin
 
 #### Diagram: Frequency Spectrum Display Explorer
 
-<iframe src="../../sims/frequency-spectrum-display-explorer/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../sims/frequency-spectrum-display-explorer/main.html" width="100%" height="482px" scrolling="no"></iframe>
 
 [Run the Frequency Spectrum Display Explorer MicroSim fullscreen](../../sims/frequency-spectrum-display-explorer/main.html){ .md-button }
 
@@ -248,7 +248,7 @@ A worked example ties every earlier concept in this section together into one fi
 
 #### Diagram: Robot Emotion Display Control Panel
 
-<iframe src="../../sims/robot-emotion-display-control-panel/main.html" width="100%" height="560px" scrolling="no"></iframe>
+<iframe src="../../sims/robot-emotion-display-control-panel/main.html" width="100%" height="522px" scrolling="no"></iframe>
 
 [Run the Robot Emotion Display Control Panel MicroSim fullscreen](../../sims/robot-emotion-display-control-panel/main.html){ .md-button }
 

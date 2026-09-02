@@ -1,6 +1,6 @@
 {
   "title": "Robot Emotion Display Control Panel",
-  "description": "Given a simulated distance reading, the learner demonstrates how a single sensor value can drive both a robot display kit's expression and a robot sounds kit's audio cue simultaneously.",
+  "description": "One distance reading driving a face and a buzzer at the same time -- plus the hysteresis band that stops both flickering.",
   "creator": "Coding Club",
   "author": "Dan McCreary",
   "date": "2026-09-01",
@@ -15,9 +15,29 @@
   "library": "p5.js",
   "bloomLevel": "Apply (L3)",
   "bloomVerb": "demonstrate",
-  "completion_status": "scaffold",
+  "completion_status": "built",
+  "canvasHeight": 520,
   "chapter_number": 20,
   "chapter_title": "Sensor, Sound, and IoT Project Kits",
   "chapter_dir": "20-sensor-sound-iot-kits",
-  "chapter_rel_dir": "chapters/20-sensor-sound-iot-kits"
+  "chapter_rel_dir": "chapters/20-sensor-sound-iot-kits",
+  "educational": {
+    "gradeLevel": "Middle School, High School, Adult",
+    "audience": "Students combining a display kit and a sound kit",
+    "duration": "10-15 minutes",
+    "concepts": [
+      "Threshold",
+      "Hysteresis",
+      "Multiple Outputs",
+      "Edge Trigger",
+      "Robot Expression"
+    ]
+  },
+  "pedagogical": {
+    "bloomLevel": "Apply (L3)",
+    "bloomVerb": "demonstrate",
+    "learningObjective": "Given a simulated distance reading, the learner demonstrates how a single sensor value can drive both a robot display kit's expression and a robot sounds kit's audio cue simultaneously.",
+    "interactionPattern": "Drag the distance slider past the trigger and watch both outputs react; mute one and see the other unaffected",
+    "assessment": "Ask why muting the speaker does not change the face."
+  }
 }

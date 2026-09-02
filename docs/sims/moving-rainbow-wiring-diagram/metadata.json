@@ -1,6 +1,6 @@
 {
   "title": "Moving Rainbow Wiring Diagram",
-  "description": "Given a Pico and a NeoPixel strip, the learner demonstrates how to wire the power, ground, and data connections between them, including which end of the strip is the data-in end.",
+  "description": "Three wires between a Pico and a NeoPixel strip, with a quiz that hides the labels.",
   "creator": "Coding Club",
   "author": "Dan McCreary",
   "date": "2026-09-01",
@@ -15,9 +15,29 @@
   "library": "p5.js",
   "bloomLevel": "Apply (L3)",
   "bloomVerb": "demonstrate",
-  "completion_status": "scaffold",
+  "completion_status": "built",
+  "canvasHeight": 500,
   "chapter_number": 19,
   "chapter_title": "Raspberry Pi Pico, MicroPython, and the Moving Rainbow Kit",
   "chapter_dir": "19-pico-micropython-moving-rainbow",
-  "chapter_rel_dir": "chapters/19-pico-micropython-moving-rainbow"
+  "chapter_rel_dir": "chapters/19-pico-micropython-moving-rainbow",
+  "educational": {
+    "gradeLevel": "Middle School, High School, Adult",
+    "audience": "Mentors checking kits before a session",
+    "duration": "5-10 minutes",
+    "concepts": [
+      "NeoPixel",
+      "Data In",
+      "VBUS",
+      "Shared Ground",
+      "Wiring Check"
+    ]
+  },
+  "pedagogical": {
+    "bloomLevel": "Apply (L3)",
+    "bloomVerb": "demonstrate",
+    "learningObjective": "Given a Pico and a NeoPixel strip, the learner demonstrates how to wire the power, ground, and data connections between them, including which end of the strip is the data-in end.",
+    "interactionPattern": "Click each wire for its pins, then turn on quiz mode to be asked instead of told",
+    "assessment": "A clean quiz pass before any kit gets powered."
+  }
 }

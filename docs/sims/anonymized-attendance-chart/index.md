@@ -9,7 +9,7 @@ bloom_level: Understand (L2)
 
 # Anonymized Attendance Chart
 
-<iframe src="main.html" width="100%" height="522px" scrolling="no"></iframe>
+<iframe src="main.html" width="100%" height="522" scrolling="no"></iframe>
 
 [Run the Anonymized Attendance Chart MicroSim fullscreen](main.html){ .md-button .md-button--primary }
 
@@ -65,7 +65,7 @@ Paste this into any page of the book, adjusting the relative path to
 `docs/sims/` for the page's depth:
 
 ```html
-<iframe src="../../sims/anonymized-attendance-chart/main.html" width="100%" height="522px" scrolling="no"></iframe>
+<iframe src="../../sims/anonymized-attendance-chart/main.html" width="100%" height="522" scrolling="no"></iframe>
 ```
 
 ## Specification

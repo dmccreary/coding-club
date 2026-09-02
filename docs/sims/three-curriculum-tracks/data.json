@@ -7,7 +7,7 @@
     {
       "id": "beginner-track",
       "label": "Beginner Track",
-      "color": "#4A90D9",
+      "color": "#2E7D32",
       "x1": 2,
       "y1": 10,
       "x2": 32,
@@ -23,7 +23,7 @@
     {
       "id": "intermediate-track",
       "label": "Intermediate Track",
-      "color": "#F5A623",
+      "color": "#1565C0",
       "x1": 35,
       "y1": 10,
       "x2": 65,
@@ -39,7 +39,7 @@
     {
       "id": "advanced-track",
       "label": "Advanced Track",
-      "color": "#7ED6A5",
+      "color": "#000000",
       "x1": 68,
       "y1": 10,
       "x2": 98,

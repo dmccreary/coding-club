@@ -13,8 +13,8 @@ above are maintained by hand as sims are actually built.
 
 - Chapters scanned: 35
 - Total diagram specs found: 129
-- Already implemented: 84
-- **Unimplemented (TODO): 45**
+- Already implemented: 90
+- **Unimplemented (TODO): 39**
 
 Regenerate this list after adding or editing chapter diagram specs:
 
@@ -161,20 +161,20 @@ python3 ~/.claude/skills/microsim-utils/scripts/create-microsim-todo-json-files.
 |---|---|---|---|
 | :white_check_mark: [`color-wheel-hue-explorer`](color-wheel-hue-explorer/index.md) | Color Wheel Hue Explorer | p5.js | Apply (L3) |
 | :white_check_mark: [`micropython-syntax-checker`](micropython-syntax-checker/index.md) | MicroPython Syntax Checker | p5.js | Remember (L1) |
-| [`moving-rainbow-wiring-diagram`](TODO/moving-rainbow-wiring-diagram.json) | Moving Rainbow Wiring Diagram | p5.js | Apply (L3) |
+| :white_check_mark: [`moving-rainbow-wiring-diagram`](moving-rainbow-wiring-diagram/index.md) | Moving Rainbow Wiring Diagram | p5.js | Apply (L3) |
 | :white_check_mark: [`neopixel-loop-pixel-stepper`](neopixel-loop-pixel-stepper/index.md) | MicroPython Loop Pixel Stepper | p5.js | Apply (L3) |
 | :white_check_mark: [`pico-pinout-explorer`](pico-pinout-explorer/index.md) | Raspberry Pi Pico Pinout Explorer | p5.js | None |
 | :white_check_mark: [`pico-repl-vs-script-workflow`](pico-repl-vs-script-workflow/index.md) | REPL vs. Saved Script Workflow | p5.js | Understand (L2) |
-| [`robot-kit-assembly-sequence`](TODO/robot-kit-assembly-sequence.json) | Robot Kit Assembly Sequence | p5.js | Apply (L3) |
-| [`seasonal-led-pattern-gallery`](TODO/seasonal-led-pattern-gallery.json) | Seasonal LED Pattern Gallery | p5.js | Analyze (L4) |
+| :white_check_mark: [`robot-kit-assembly-sequence`](robot-kit-assembly-sequence/index.md) | Robot Kit Assembly Sequence | p5.js | Apply (L3) |
+| :white_check_mark: [`seasonal-led-pattern-gallery`](seasonal-led-pattern-gallery/index.md) | Seasonal LED Pattern Gallery | p5.js | Analyze (L4) |
 
 ### Chapter 20: Sensor, Sound, and IoT Project Kits (3)
 
 | Sim ID | Diagram Name | Library | Bloom Level |
 |---|---|---|---|
-| [`frequency-spectrum-display-explorer`](TODO/frequency-spectrum-display-explorer.json) | Frequency Spectrum Display Explorer | p5.js | Understand (L2) |
-| [`gyroscope-orientation-data-explorer`](TODO/gyroscope-orientation-data-explorer.json) | Gyroscope Orientation Data Explorer | p5.js | Understand (L2) |
-| [`robot-emotion-display-control-panel`](TODO/robot-emotion-display-control-panel.json) | Robot Emotion Display Control Panel | p5.js | Apply (L3) |
+| :white_check_mark: [`frequency-spectrum-display-explorer`](frequency-spectrum-display-explorer/index.md) | Frequency Spectrum Display Explorer | p5.js | Understand (L2) |
+| :white_check_mark: [`gyroscope-orientation-data-explorer`](gyroscope-orientation-data-explorer/index.md) | Gyroscope Orientation Data Explorer | p5.js | Understand (L2) |
+| :white_check_mark: [`robot-emotion-display-control-panel`](robot-emotion-display-control-panel/index.md) | Robot Emotion Display Control Panel | p5.js | Apply (L3) |
 
 ### Chapter 21: Managing Your Kit Inventory and Signal Processing Kits (2)
 

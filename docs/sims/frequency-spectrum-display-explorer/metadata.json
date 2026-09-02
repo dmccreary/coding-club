@@ -1,6 +1,6 @@
 {
   "title": "Frequency Spectrum Display Explorer",
-  "description": "Given a frequency spectrum display showing a bar pattern, the learner interprets which sound type (a low hum, a high whistle, or general chatter) most likely produced it.",
+  "description": "Three sounds, three unmistakable bar shapes -- and the habit of naming the shape before naming the sound.",
   "creator": "Coding Club",
   "author": "Dan McCreary",
   "date": "2026-09-01",
@@ -15,9 +15,28 @@
   "library": "p5.js",
   "bloomLevel": "Understand (L2)",
   "bloomVerb": "interpret",
-  "completion_status": "scaffold",
+  "completion_status": "built",
+  "canvasHeight": 480,
   "chapter_number": 20,
   "chapter_title": "Sensor, Sound, and IoT Project Kits",
   "chapter_dir": "20-sensor-sound-iot-kits",
-  "chapter_rel_dir": "chapters/20-sensor-sound-iot-kits"
+  "chapter_rel_dir": "chapters/20-sensor-sound-iot-kits",
+  "educational": {
+    "gradeLevel": "Middle School, High School, Adult",
+    "audience": "Students working with a sound spectrum kit",
+    "duration": "10 minutes",
+    "concepts": [
+      "Frequency Spectrum",
+      "Frequency Band",
+      "Loudness vs Frequency",
+      "Spectrum Shape"
+    ]
+  },
+  "pedagogical": {
+    "bloomLevel": "Understand (L2)",
+    "bloomVerb": "interpret",
+    "learningObjective": "Given a frequency spectrum display showing a bar pattern, the learner interprets which sound type (a low hum, a high whistle, or general chatter) most likely produced it.",
+    "interactionPattern": "Play a sound type and read the resulting bar pattern; hover any bar for its band",
+    "assessment": "Show a shape with the label hidden and ask which sound made it."
+  }
 }
