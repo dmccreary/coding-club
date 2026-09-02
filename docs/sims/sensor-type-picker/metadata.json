@@ -1,6 +1,6 @@
 {
   "title": "Sensor Type Picker",
-  "description": "Given a short project scenario, the learner selects the sensor type best suited to the required measurement.",
+  "description": "Eight project scenarios, six sensors, and one question that settles every one of them.",
   "creator": "Coding Club",
   "author": "Dan McCreary",
   "date": "2026-09-01",
@@ -15,9 +15,28 @@
   "library": "p5.js",
   "bloomLevel": "Apply (L3)",
   "bloomVerb": "select",
-  "completion_status": "scaffold",
+  "completion_status": "built",
+  "canvasHeight": 520,
   "chapter_number": 17,
   "chapter_title": "Sensors, Displays, Motors, and Robot Chassis",
   "chapter_dir": "17-sensors-displays-motors",
-  "chapter_rel_dir": "chapters/17-sensors-displays-motors"
+  "chapter_rel_dir": "chapters/17-sensors-displays-motors",
+  "educational": {
+    "gradeLevel": "Middle School, High School, Adult",
+    "audience": "Mentors helping students scope a project",
+    "duration": "10-15 minutes",
+    "concepts": [
+      "Sensor Selection",
+      "Measured Property",
+      "Requirements Analysis",
+      "Motion vs Distance"
+    ]
+  },
+  "pedagogical": {
+    "bloomLevel": "Apply (L3)",
+    "bloomVerb": "select",
+    "learningObjective": "Given a short project scenario, the learner selects the sensor type best suited to the required measurement.",
+    "interactionPattern": "Read a scenario, click the sensor that measures what it needs, read the feedback",
+    "assessment": "A full pass of eight with the reasoning said out loud before each click."
+  }
 }

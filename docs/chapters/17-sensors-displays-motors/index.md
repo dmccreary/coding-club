@@ -170,7 +170,7 @@ Now that a translator role is defined for every sensor, the table below compares
 
 #### Diagram: Sensor Type Picker
 
-<iframe src="../../sims/sensor-type-picker/main.html" width="100%" height="520px" scrolling="no"></iframe>
+<iframe src="../../sims/sensor-type-picker/main.html" width="100%" height="522px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Sensor Type Picker</summary>
@@ -339,7 +339,7 @@ A worked example shows how one row of the grid is represented in code: each row 
 
 #### Diagram: LED Matrix Pattern Designer
 
-<iframe src="../../sims/led-matrix-pattern-designer/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../sims/led-matrix-pattern-designer/main.html" width="100%" height="542px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>LED Matrix Pattern Designer</summary>
@@ -511,7 +511,7 @@ Now that all three motor families are defined, the table below compares them dir
 
 #### Diagram: Motor Type Comparison Explorer
 
-<iframe src="../../sims/motor-type-comparison-explorer/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../sims/motor-type-comparison-explorer/main.html" width="100%" height="582px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Motor Type Comparison Explorer</summary>
@@ -550,7 +550,7 @@ A worked example shows the standard fix: an H-bridge is a small circuit, often p
 
 #### Diagram: H-Bridge Direction and Speed Control
 
-<iframe src="../../sims/h-bridge-direction-speed-control/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../sims/h-bridge-direction-speed-control/main.html" width="100%" height="542px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>H-Bridge Direction and Speed Control</summary>
@@ -659,7 +659,7 @@ A worked example shows why no steering mechanism is needed: with differential dr
 
 #### Diagram: Differential Drive Chassis Explorer
 
-<iframe src="../../sims/differential-drive-chassis-explorer/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../sims/differential-drive-chassis-explorer/main.html" width="100%" height="562px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Differential Drive Chassis Explorer</summary>

@@ -1,6 +1,6 @@
 {
   "title": "Motor Type Comparison Explorer",
-  "description": "Given a project's motion requirement, the learner differentiates which of the three motor types — DC, servo, or stepper — is the best fit and explains why.",
+  "description": "DC, servo, stepper -- three icons that move the way their motors do, matched against six real project requirements.",
   "creator": "Coding Club",
   "author": "Dan McCreary",
   "date": "2026-09-01",
@@ -15,9 +15,29 @@
   "library": "p5.js",
   "bloomLevel": "Analyze (L4)",
   "bloomVerb": "differentiate",
-  "completion_status": "scaffold",
+  "completion_status": "built",
+  "canvasHeight": 580,
   "chapter_number": 17,
   "chapter_title": "Sensors, Displays, Motors, and Robot Chassis",
   "chapter_dir": "17-sensors-displays-motors",
-  "chapter_rel_dir": "chapters/17-sensors-displays-motors"
+  "chapter_rel_dir": "chapters/17-sensors-displays-motors",
+  "educational": {
+    "gradeLevel": "Middle School, High School, Adult",
+    "audience": "Students choosing parts for a build",
+    "duration": "10-15 minutes",
+    "concepts": [
+      "DC Motor",
+      "Servo",
+      "Stepper Motor",
+      "Holding Torque",
+      "Position Feedback"
+    ]
+  },
+  "pedagogical": {
+    "bloomLevel": "Analyze (L4)",
+    "bloomVerb": "differentiate",
+    "learningObjective": "Given a project's motion requirement, the learner differentiates which of the three motor types — DC, servo, or stepper — is the best fit and explains why.",
+    "interactionPattern": "Watch the three animated motions, then match each project requirement to a motor family",
+    "assessment": "For each project, name the requirement word that decides it before clicking."
+  }
 }
