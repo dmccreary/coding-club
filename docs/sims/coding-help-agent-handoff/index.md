@@ -1,6 +1,6 @@
 ---
-title: Where a Coding-Help Request Goes
-description: Three coding-help agents, three different questions they answer -- and the mentor who stays in the room for all of them.
+title: "Where a Coding-Help Request Goes"
+description: "Three coding-help agents, three different questions they answer -- and the mentor who stays in the room for all of them."
 image: sims/coding-help-agent-handoff/coding-help-agent-handoff.png
 status: built
 library: Mermaid

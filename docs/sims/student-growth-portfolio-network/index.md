@@ -1,6 +1,6 @@
 ---
-title: Student Growth to Portfolio Network
-description: Five stages from a mentor's in-session note to a family's read-only view -- and what changes at each step.
+title: "Student Growth to Portfolio Network"
+description: "Five stages from a mentor's in-session note to a family's read-only view -- and what changes at each step."
 image: sims/student-growth-portfolio-network/student-growth-portfolio-network.png
 status: built
 library: vis-network

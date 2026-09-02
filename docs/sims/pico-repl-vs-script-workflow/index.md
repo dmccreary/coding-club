@@ -1,6 +1,6 @@
 ---
-title: Pico REPL vs Script Workflow
-description: Three ways to run code on a Pico, separated by one question: what is still running after you pull the cable out?
+title: "Pico REPL vs Script Workflow"
+description: "Three ways to run code on a Pico, separated by one question: what is still running after you pull the cable out?"
 image: sims/pico-repl-vs-script-workflow/pico-repl-vs-script-workflow.png
 status: built
 library: p5.js

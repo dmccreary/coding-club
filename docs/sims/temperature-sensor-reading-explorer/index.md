@@ -1,6 +1,6 @@
 ---
-title: Temperature Sensor Reading Explorer
-description: A TMP36 reports volts, not degrees -- watch the conversion formula fill in with live numbers.
+title: "Temperature Sensor Reading Explorer"
+description: "A TMP36 reports volts, not degrees -- watch the conversion formula fill in with live numbers."
 image: sims/temperature-sensor-reading-explorer/temperature-sensor-reading-explorer.png
 status: built
 library: p5.js

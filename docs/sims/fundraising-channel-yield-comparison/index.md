@@ -1,6 +1,6 @@
 ---
-title: Fundraising Channel Yield Comparison
-description: Five fundraising channels compared on the two axes that actually decide the choice: dollars raised and volunteer hours spent.
+title: "Fundraising Channel Yield Comparison"
+description: "Five fundraising channels compared on the two axes that actually decide the choice: dollars raised and volunteer hours spent."
 image: sims/fundraising-channel-yield-comparison/fundraising-channel-yield-comparison.png
 status: built
 library: Chart.js

@@ -1,6 +1,6 @@
 ---
-title: Levels of Intelligent Textbook Sophistication
-description: Six rungs from a static PDF to an adaptive AI tutor, with a marker showing where this book actually sits.
+title: "Levels of Intelligent Textbook Sophistication"
+description: "Six rungs from a static PDF to an adaptive AI tutor, with a marker showing where this book actually sits."
 image: sims/book-levels/book-levels.png
 status: built
 library: p5.js

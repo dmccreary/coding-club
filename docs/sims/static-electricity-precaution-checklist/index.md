@@ -1,6 +1,6 @@
 ---
-title: Static Electricity Precaution Checklist
-description: One room, five things -- two of them safe to touch, three of them ways to build a charge.
+title: "Static Electricity Precaution Checklist"
+description: "One room, five things -- two of them safe to touch, three of them ways to build a charge."
 image: sims/static-electricity-precaution-checklist/static-electricity-precaution-checklist.png
 status: built
 library: Infographic overlay (diagram.js)

@@ -1,6 +1,6 @@
 ---
-title: The AI Agent Rollout Pipeline
-description: Five stages between choosing a tool and using it club-wide -- and what breaks if you skip each one.
+title: "The AI Agent Rollout Pipeline"
+description: "Five stages between choosing a tool and using it club-wide -- and what breaks if you skip each one."
 image: sims/ai-agent-rollout-pipeline/ai-agent-rollout-pipeline.png
 status: built
 library: Mermaid

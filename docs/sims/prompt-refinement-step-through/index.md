@@ -1,6 +1,6 @@
 ---
-title: Prompt Refinement Step-Through
-description: Add audience, tone, length, and the must-include detail one at a time, and watch the edits left drop to zero.
+title: "Prompt Refinement Step-Through"
+description: "Add audience, tone, length, and the must-include detail one at a time, and watch the edits left drop to zero."
 image: sims/prompt-refinement-step-through/prompt-refinement-step-through.png
 status: built
 library: p5.js

@@ -1,6 +1,6 @@
 ---
-title: Three Kinds of Mentors
-description: Volunteer, professional, peer -- three mentor types whose strengths do not overlap.
+title: "Three Kinds of Mentors"
+description: "Volunteer, professional, peer -- three mentor types whose strengths do not overlap."
 image: sims/three-kinds-of-mentors/three-kinds-of-mentors.png
 status: built
 library: Infographic overlay (grid-diagram.js)

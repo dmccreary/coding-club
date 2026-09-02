@@ -1,6 +1,6 @@
 ---
-title: Showcase Wall vs Peer Recognition Activity
-description: A standing display of finished work, or a five-minute circle at the end of every session -- they solve different problems.
+title: "Showcase Wall vs Peer Recognition Activity"
+description: "A standing display of finished work, or a five-minute circle at the end of every session -- they solve different problems."
 image: sims/showcase-wall-vs-peer-recognition/showcase-wall-vs-peer-recognition.png
 status: built
 library: Infographic overlay (grid-diagram.js)

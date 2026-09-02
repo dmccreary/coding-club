@@ -1,6 +1,6 @@
 ---
-title: Motor Type Comparison Explorer
-description: DC, servo, stepper -- three icons that move the way their motors do, matched against six real project requirements.
+title: "Motor Type Comparison Explorer"
+description: "DC, servo, stepper -- three icons that move the way their motors do, matched against six real project requirements."
 image: sims/motor-type-comparison-explorer/motor-type-comparison-explorer.png
 status: built
 library: p5.js

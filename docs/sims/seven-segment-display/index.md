@@ -1,6 +1,6 @@
 ---
-title: Seven Segment Display Explorer
-description: Choose a digit and see exactly which of the seven segments switch on to draw it.
+title: "Seven Segment Display Explorer"
+description: "Choose a digit and see exactly which of the seven segments switch on to draw it."
 image: sims/seven-segment-display/seven-segment-display.png
 status: built
 library: p5.js

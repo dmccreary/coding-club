@@ -1,6 +1,6 @@
 ---
-title: Soldering Safety Workflow
-description: Rehearse the before, during, and after habits of soldering in the order a mentor actually performs them.
+title: "Soldering Safety Workflow"
+description: "Rehearse the before, during, and after habits of soldering in the order a mentor actually performs them."
 image: sims/soldering-safety-workflow/soldering-safety-workflow.png
 status: built
 library: Mermaid

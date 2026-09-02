@@ -1,6 +1,6 @@
 ---
-title: Spreadsheet Template Zones
-description: Three zones in a tracking spreadsheet, and why the order of the columns is not arbitrary.
+title: "Spreadsheet Template Zones"
+description: "Three zones in a tracking spreadsheet, and why the order of the columns is not arbitrary."
 image: sims/spreadsheet-template-zones/spreadsheet-template-zones.png
 status: built
 library: Infographic overlay (grid-diagram.js)

@@ -1,6 +1,6 @@
 ---
-title: Ohm's Law Current Calculator
-description: Set a supply voltage and a series resistor, and read the LED current before you power a real circuit.
+title: "Ohm's Law Current Calculator"
+description: "Set a supply voltage and a series resistor, and read the LED current before you power a real circuit."
 image: sims/ohms-law-current-calculator/ohms-law-current-calculator.png
 status: built
 library: p5.js

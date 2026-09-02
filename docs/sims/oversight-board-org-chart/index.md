@@ -1,6 +1,6 @@
 ---
-title: Oversight Board Org Chart
-description: Five board seats, what each one does, and how a board sits above day-to-day sessions without running them.
+title: "Oversight Board Org Chart"
+description: "Five board seats, what each one does, and how a board sits above day-to-day sessions without running them."
 image: sims/oversight-board-org-chart/oversight-board-org-chart.png
 status: built
 library: vis-network

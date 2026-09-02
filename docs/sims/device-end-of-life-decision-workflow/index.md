@@ -1,6 +1,6 @@
 ---
-title: Device End-of-Life Decision Workflow
-description: Route a retiring laptop to donation or to responsible disposal, and see how one club's retirement becomes another's intake.
+title: "Device End-of-Life Decision Workflow"
+description: "Route a retiring laptop to donation or to responsible disposal, and see how one club's retirement becomes another's intake."
 image: sims/device-end-of-life-decision-workflow/device-end-of-life-decision-workflow.png
 status: built
 library: Mermaid

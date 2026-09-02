@@ -1,6 +1,6 @@
 ---
-title: NeoPixel Loop Pixel Stepper
-description: Step a for loop over a 30-pixel strip one iteration at a time, and watch an off-by-one error leave the first pixel dark.
+title: "NeoPixel Loop Pixel Stepper"
+description: "Step a for loop over a 30-pixel strip one iteration at a time, and watch an off-by-one error leave the first pixel dark."
 image: sims/neopixel-loop-pixel-stepper/neopixel-loop-pixel-stepper.png
 status: built
 library: p5.js

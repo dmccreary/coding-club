@@ -1,6 +1,6 @@
 ---
-title: Session Room Safety and Logistics Map
-description: Eight things every session room needs, and where each one goes.
+title: "Session Room Safety and Logistics Map"
+description: "Eight things every session room needs, and where each one goes."
 image: sims/session-room-safety-map/session-room-safety-map.png
 status: built
 library: Infographic overlay (diagram.js)

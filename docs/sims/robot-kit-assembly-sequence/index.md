@@ -1,6 +1,6 @@
 ---
-title: Robot Kit Assembly Sequence
-description: Six build steps to drag into order, each with the mechanical reason it has to come when it does.
+title: "Robot Kit Assembly Sequence"
+description: "Six build steps to drag into order, each with the mechanical reason it has to come when it does."
 image: sims/robot-kit-assembly-sequence/robot-kit-assembly-sequence.png
 status: built
 library: p5.js

@@ -1,6 +1,6 @@
 ---
-title: Coding Club Ecosystem Map
-description: Place a coding club precisely among six neighbouring educational contexts, and see what makes it distinct from each one.
+title: "Coding Club Ecosystem Map"
+description: "Place a coding club precisely among six neighbouring educational contexts, and see what makes it distinct from each one."
 image: sims/coding-club-ecosystem-map/coding-club-ecosystem-map.png
 status: built
 library: vis-network

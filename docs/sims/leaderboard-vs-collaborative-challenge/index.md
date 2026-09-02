@@ -1,6 +1,6 @@
 ---
-title: Leaderboard vs Collaborative Challenge
-description: Three competition formats on a risk gradient, and the one that hurts the students who need encouragement most.
+title: "Leaderboard vs Collaborative Challenge"
+description: "Three competition formats on a risk gradient, and the one that hurts the students who need encouragement most."
 image: sims/leaderboard-vs-collaborative-challenge/leaderboard-vs-collaborative-challenge.png
 status: built
 library: Infographic overlay (grid-diagram.js)

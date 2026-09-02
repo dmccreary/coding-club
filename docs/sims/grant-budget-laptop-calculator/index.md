@@ -1,6 +1,6 @@
 ---
-title: Grant Budget Laptop Calculator
-description: Grant, unit price, student count -- and the leftover nobody plans for.
+title: "Grant Budget Laptop Calculator"
+description: "Grant, unit price, student count -- and the leftover nobody plans for."
 image: sims/grant-budget-laptop-calculator/grant-budget-laptop-calculator.png
 status: built
 library: p5.js

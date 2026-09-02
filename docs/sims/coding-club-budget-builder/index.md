@@ -1,6 +1,6 @@
 ---
-title: Coding Club Budget Builder
-description: A first-year budget built line by line, split into what recurs and what does not.
+title: "Coding Club Budget Builder"
+description: "A first-year budget built line by line, split into what recurs and what does not."
 image: sims/coding-club-budget-builder/coding-club-budget-builder.png
 status: built
 library: p5.js

@@ -1,6 +1,6 @@
 ---
-title: AI Agent Loop Explorer
-description: Input, draft, human review, send -- stepped through with the real text, and one confidently wrong detail in every draft.
+title: "AI Agent Loop Explorer"
+description: "Input, draft, human review, send -- stepped through with the real text, and one confidently wrong detail in every draft."
 image: sims/ai-agent-loop-explorer/ai-agent-loop-explorer.png
 status: built
 library: p5.js

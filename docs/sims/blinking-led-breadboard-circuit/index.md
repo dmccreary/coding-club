@@ -1,6 +1,6 @@
 ---
-title: Blinking LED Breadboard Circuit
-description: A working blink circuit on a real breadboard layout -- with a button that removes one jumper wire and kills it.
+title: "Blinking LED Breadboard Circuit"
+description: "A working blink circuit on a real breadboard layout -- with a button that removes one jumper wire and kills it."
 image: sims/blinking-led-breadboard-circuit/blinking-led-breadboard-circuit.png
 status: built
 library: p5.js

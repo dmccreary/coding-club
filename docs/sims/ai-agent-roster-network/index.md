@@ -1,6 +1,6 @@
 ---
-title: Meet the Club's AI Agent Roster
-description: Six AI agent types around one umbrella idea -- click any to see the club task it handles and a real example.
+title: "Meet the Club's AI Agent Roster"
+description: "Six AI agent types around one umbrella idea -- click any to see the club task it handles and a real example."
 image: sims/ai-agent-roster-network/ai-agent-roster-network.png
 status: built
 library: vis-network

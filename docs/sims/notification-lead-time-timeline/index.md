@@ -1,6 +1,6 @@
 ---
-title: Notification Lead Time Timeline
-description: Two reminders doing two different jobs: one buys planning time, one prevents forgetting, and a single reminder can only do one of them.
+title: "Notification Lead Time Timeline"
+description: "Two reminders doing two different jobs: one buys planning time, one prevents forgetting, and a single reminder can only do one of them."
 image: sims/notification-lead-time-timeline/notification-lead-time-timeline.png
 status: built
 library: vis-timeline

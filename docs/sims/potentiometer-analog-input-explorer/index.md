@@ -1,6 +1,6 @@
 ---
-title: Potentiometer Analog Input Explorer
-description: Turn a knob and watch an analog reading sweep smoothly through 1024 values, then see what a digital pin would have made of the same knob.
+title: "Potentiometer Analog Input Explorer"
+description: "Turn a knob and watch an analog reading sweep smoothly through 1024 values, then see what a digital pin would have made of the same knob."
 image: sims/potentiometer-analog-input-explorer/potentiometer-analog-input-explorer.png
 status: built
 library: p5.js

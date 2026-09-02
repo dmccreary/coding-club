@@ -1,6 +1,6 @@
 ---
-title: Normal Circuit vs. Short Circuit
-description: The same battery, twice: once through a resistor at 27 mA, once through bare wire at about 6 A.
+title: "Normal Circuit vs. Short Circuit"
+description: "The same battery, twice: once through a resistor at 27 mA, once through bare wire at about 6 A."
 image: sims/normal-circuit-vs-short-circuit/normal-circuit-vs-short-circuit.png
 status: built
 library: Infographic overlay (diagram.js)

@@ -1,6 +1,6 @@
 ---
-title: Annotated Feedback Form
-description: Three question types on one short form, and what each one buys and costs.
+title: "Annotated Feedback Form"
+description: "Three question types on one short form, and what each one buys and costs."
 image: sims/feedback-form-annotated/feedback-form-annotated.png
 status: built
 library: Infographic overlay (grid-diagram.js)

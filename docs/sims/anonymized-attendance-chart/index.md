@@ -1,6 +1,6 @@
 ---
-title: Anonymized Attendance Chart
-description: Read a semester's attendance trend -- including the break-week dip and the year-over-year comparison -- from data holding no names at all.
+title: "Anonymized Attendance Chart"
+description: "Read a semester's attendance trend -- including the break-week dip and the year-over-year comparison -- from data holding no names at all."
 image: sims/anonymized-attendance-chart/anonymized-attendance-chart.png
 status: built
 library: Chart.js

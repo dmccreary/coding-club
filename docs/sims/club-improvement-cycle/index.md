@@ -1,6 +1,6 @@
 ---
-title: The Club Improvement Cycle
-description: Step one session's observation all the way around the club improvement loop, from raw note to a change in how the club runs.
+title: "The Club Improvement Cycle"
+description: "Step one session's observation all the way around the club improvement loop, from raw note to a change in how the club runs."
 image: sims/club-improvement-cycle/club-improvement-cycle.png
 status: built
 library: p5.js

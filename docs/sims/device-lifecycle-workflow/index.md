@@ -1,6 +1,6 @@
 ---
-title: Device Lifecycle Workflow
-description: Follow one club laptop from imaging through circulation to the three-way condition check that decides what happens next.
+title: "Device Lifecycle Workflow"
+description: "Follow one club laptop from imaging through circulation to the three-way condition check that decides what happens next."
 image: sims/device-lifecycle-workflow/device-lifecycle-workflow.png
 status: built
 library: Mermaid

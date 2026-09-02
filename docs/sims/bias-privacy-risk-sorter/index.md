@@ -1,6 +1,6 @@
 ---
-title: Bias and Privacy Risk Sorter
-description: Eight scenarios, four bins, and one distinction that is easy to state and hard to apply.
+title: "Bias and Privacy Risk Sorter"
+description: "Eight scenarios, four bins, and one distinction that is easy to state and hard to apply."
 image: sims/bias-privacy-risk-sorter/bias-privacy-risk-sorter.png
 status: built
 library: p5.js

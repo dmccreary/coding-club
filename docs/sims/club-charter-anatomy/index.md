@@ -1,6 +1,6 @@
 ---
-title: Anatomy of a Club Charter
-description: A club charter is one document made of five distinct sections. See what each section governs and how they differ.
+title: "Anatomy of a Club Charter"
+description: "A club charter is one document made of five distinct sections. See what each section governs and how they differ."
 image: sims/club-charter-anatomy/club-charter-anatomy.png
 status: built
 library: vis-network

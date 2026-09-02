@@ -1,6 +1,6 @@
 ---
-title: USB Connector Comparison
-description: Two plug shapes, six callouts, and a flip control that shows exactly why one of them fits either way up.
+title: "USB Connector Comparison"
+description: "Two plug shapes, six callouts, and a flip control that shows exactly why one of them fits either way up."
 image: sims/usb-connector-comparison/usb-connector-comparison.png
 status: built
 library: p5.js

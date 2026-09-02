@@ -1,6 +1,6 @@
 ---
-title: Progress Dashboard Explorer
-description: Filter a badge-completion dashboard by cohort and watch the bottleneck move -- with initials only, no names anywhere.
+title: "Progress Dashboard Explorer"
+description: "Filter a badge-completion dashboard by cohort and watch the bottleneck move -- with initials only, no names anywhere."
 image: sims/progress-dashboard-explorer/progress-dashboard-explorer.png
 status: built
 library: Chart.js

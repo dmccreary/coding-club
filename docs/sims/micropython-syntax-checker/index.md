@@ -1,6 +1,6 @@
 ---
-title: MicroPython Syntax Checker
-description: Six snippets, two classic mistakes, and indentation drawn as visible guides so an off-by-one space is something you can see.
+title: "MicroPython Syntax Checker"
+description: "Six snippets, two classic mistakes, and indentation drawn as visible guides so an off-by-one space is something you can see."
 image: sims/micropython-syntax-checker/micropython-syntax-checker.png
 status: built
 library: p5.js

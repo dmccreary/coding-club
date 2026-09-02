@@ -1,6 +1,6 @@
 ---
-title: Ultrasonic Ranging Explorer
-description: Send a pulse at a wall, watch the echo come back, and see how a duration in microseconds becomes a distance in centimetres.
+title: "Ultrasonic Ranging Explorer"
+description: "Send a pulse at a wall, watch the echo come back, and see how a duration in microseconds becomes a distance in centimetres."
 image: sims/ultrasonic-ranging/ultrasonic-ranging.png
 status: built
 library: p5.js

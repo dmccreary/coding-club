@@ -1,6 +1,6 @@
 ---
-title: Guardian Consent Collection Workflow
-description: Trace where 'collection begins' sits relative to 'consent obtained' -- and why the order is not negotiable.
+title: "Guardian Consent Collection Workflow"
+description: "Trace where 'collection begins' sits relative to 'consent obtained' -- and why the order is not negotiable."
 image: sims/consent-collection-workflow/consent-collection-workflow.png
 status: built
 library: Mermaid

@@ -1,6 +1,6 @@
 ---
-title: Digital Signal HIGH/LOW Chart
-description: A digital pin's voltage over time: two values, vertical transitions, nothing in between.
+title: "Digital Signal HIGH/LOW Chart"
+description: "A digital pin's voltage over time: two values, vertical transitions, nothing in between."
 image: sims/digital-signal-high-low-chart/digital-signal-high-low-chart.png
 status: built
 library: Chart.js

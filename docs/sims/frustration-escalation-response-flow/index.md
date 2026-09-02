@@ -1,6 +1,6 @@
 ---
-title: Frustration Escalation Response Flow
-description: Match the tool to the trigger: a hard moment, a pattern across weeks, or a task that just failed.
+title: "Frustration Escalation Response Flow"
+description: "Match the tool to the trigger: a hard moment, a pattern across weeks, or a task that just failed."
 image: sims/frustration-escalation-response-flow/frustration-escalation-response-flow.png
 status: built
 library: Mermaid

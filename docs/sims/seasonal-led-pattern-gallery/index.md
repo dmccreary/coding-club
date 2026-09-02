@@ -1,6 +1,6 @@
 ---
-title: Seasonal LED Pattern Gallery
-description: Four strips running the same algorithm, and the two or three numbers that make each one a different season.
+title: "Seasonal LED Pattern Gallery"
+description: "Four strips running the same algorithm, and the two or three numbers that make each one a different season."
 image: sims/seasonal-led-pattern-gallery/seasonal-led-pattern-gallery.png
 status: built
 library: p5.js

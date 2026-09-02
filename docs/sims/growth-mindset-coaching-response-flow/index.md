@@ -1,6 +1,6 @@
 ---
-title: Growth Mindset Coaching Response Flow
-description: Three kinds of student moment, three different right responses -- and one shared goal.
+title: "Growth Mindset Coaching Response Flow"
+description: "Three kinds of student moment, three different right responses -- and one shared goal."
 image: sims/growth-mindset-coaching-response-flow/growth-mindset-coaching-response-flow.png
 status: built
 library: Mermaid

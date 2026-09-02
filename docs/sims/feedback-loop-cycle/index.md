@@ -1,6 +1,6 @@
 ---
-title: Feedback Loop Cycle
-description: The four stages that keep survey responses from disappearing into an unread inbox -- and why the last one is the load-bearing stage.
+title: "Feedback Loop Cycle"
+description: "The four stages that keep survey responses from disappearing into an unread inbox -- and why the last one is the load-bearing stage."
 image: sims/feedback-loop-cycle/feedback-loop-cycle.png
 status: built
 library: Mermaid

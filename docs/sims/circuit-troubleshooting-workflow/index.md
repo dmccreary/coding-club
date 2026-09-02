@@ -1,6 +1,6 @@
 ---
-title: Circuit Troubleshooting Workflow
-description: Work the four checks in the order that eliminates the cheapest and most likely faults first.
+title: "Circuit Troubleshooting Workflow"
+description: "Work the four checks in the order that eliminates the cheapest and most likely faults first."
 image: sims/circuit-troubleshooting-workflow/circuit-troubleshooting-workflow.png
 status: built
 library: Mermaid

@@ -1,6 +1,6 @@
 ---
-title: Photoresistor Voltage Divider Explorer
-description: Light level in, resistance and divider voltage out -- with a curve showing why the fixed resistor choice matters.
+title: "Photoresistor Voltage Divider Explorer"
+description: "Light level in, resistance and divider voltage out -- with a curve showing why the fixed resistor choice matters."
 image: sims/photoresistor-voltage-divider-explorer/photoresistor-voltage-divider-explorer.png
 status: built
 library: p5.js

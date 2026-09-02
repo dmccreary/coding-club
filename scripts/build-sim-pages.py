@@ -26,9 +26,12 @@ SIMS = os.path.join(PROJECT, "docs/sims")
 TODO_DIR = os.path.join(SIMS, "TODO")
 PAGES_DIR = os.path.join(PROJECT, "scripts/sim-pages")
 
+# title and description are quoted so a colon or apostrophe in either
+# cannot break the YAML, and so regenerating a page does not undo the
+# quoting the microsim-utils index generator applies.
 TEMPLATE = """---
-title: {title}
-description: {description}
+title: "{title}"
+description: "{description}"
 image: sims/{sim_id}/{sim_id}.png
 status: built
 library: {library}

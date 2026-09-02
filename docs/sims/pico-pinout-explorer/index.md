@@ -1,6 +1,6 @@
 ---
-title: Raspberry Pi Pico Pinout Explorer
-description: Click any pin on the Pico board to see what it does, what voltage it runs at, and the MicroPython line that uses it.
+title: "Raspberry Pi Pico Pinout Explorer"
+description: "Click any pin on the Pico board to see what it does, what voltage it runs at, and the MicroPython line that uses it."
 image: sims/pico-pinout-explorer/pico-pinout-explorer.png
 status: built
 library: p5.js

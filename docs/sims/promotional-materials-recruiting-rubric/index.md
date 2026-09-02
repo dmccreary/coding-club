@@ -1,6 +1,6 @@
 ---
-title: Promotional Materials Recruiting Rubric
-description: Five criteria, ten points, three sample flyers -- and the lowest row matters more than the total.
+title: "Promotional Materials Recruiting Rubric"
+description: "Five criteria, ten points, three sample flyers -- and the lowest row matters more than the total."
 image: sims/promotional-materials-recruiting-rubric/promotional-materials-recruiting-rubric.png
 status: built
 library: p5.js

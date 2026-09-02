@@ -1,6 +1,6 @@
 ---
-title: Gyroscope Orientation Data Explorer
-description: Tip a sensor board three ways and watch exactly one of the three readings move each time.
+title: "Gyroscope Orientation Data Explorer"
+description: "Tip a sensor board three ways and watch exactly one of the three readings move each time."
 image: sims/gyroscope-orientation-data-explorer/gyroscope-orientation-data-explorer.png
 status: built
 library: p5.js

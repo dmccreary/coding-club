@@ -1,6 +1,6 @@
 ---
-title: The Tangible Reward Ladder
-description: Six recognition tools on six rungs, ordered by the size of the thing they mark.
+title: "The Tangible Reward Ladder"
+description: "Six recognition tools on six rungs, ordered by the size of the thing they mark."
 image: sims/tangible-reward-ladder/tangible-reward-ladder.png
 status: built
 library: Infographic overlay (diagram.js)

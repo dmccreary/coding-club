@@ -1,6 +1,6 @@
 ---
-title: Sound Threshold Detector
-description: Three rooms, one clap, and a threshold line you can drag until the detector works -- or stops working.
+title: "Sound Threshold Detector"
+description: "Three rooms, one clap, and a threshold line you can drag until the detector works -- or stops working."
 image: sims/sound-threshold-detector/sound-threshold-detector.png
 status: built
 library: p5.js

@@ -1,6 +1,6 @@
 ---
-title: Access Barrier to Fix Map
-description: Five barriers families face, seven club practices that address them -- and the one barrier three fixes converge on.
+title: "Access Barrier to Fix Map"
+description: "Five barriers families face, seven club practices that address them -- and the one barrier three fixes converge on."
 image: sims/access-barrier-to-fix-map/access-barrier-to-fix-map.png
 status: built
 library: vis-network

@@ -378,6 +378,8 @@ nav:
 
 
 
+
+
   - Challenge Cards:
       - Card Gallery: cards/index.md
 
@@ -465,6 +467,7 @@ exclude_docs: |
   **/image-prompts*.md
   **/cover-prompt.md
   **/TODO.md
+  **/spec-tracker.md
 
 # Rebuild on changes during `mkdocs serve`
 watch:

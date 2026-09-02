@@ -1,6 +1,6 @@
 ---
-title: Student Progress Tracking Cycle
-description: The four-stage habit that keeps a student's record current, and lets a different mentor pick up where the last one left off.
+title: "Student Progress Tracking Cycle"
+description: "The four-stage habit that keeps a student's record current, and lets a different mentor pick up where the last one left off."
 image: sims/progress-tracking-cycle/progress-tracking-cycle.png
 status: built
 library: Mermaid

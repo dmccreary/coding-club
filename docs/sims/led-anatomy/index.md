@@ -1,6 +1,6 @@
 ---
-title: LED Anatomy
-description: Four parts of an LED, and the two independent ways to tell which leg is which.
+title: "LED Anatomy"
+description: "Four parts of an LED, and the two independent ways to tell which leg is which."
 image: sims/led-anatomy/led-anatomy.png
 status: built
 library: Infographic overlay (diagram.js)

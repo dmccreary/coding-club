@@ -1,6 +1,6 @@
 ---
-title: Intrinsic vs Extrinsic Motivation Map
-description: Three columns, and the middle one is the only place a reward belongs.
+title: "Intrinsic vs Extrinsic Motivation Map"
+description: "Three columns, and the middle one is the only place a reward belongs."
 image: sims/intrinsic-vs-extrinsic-motivation-map/intrinsic-vs-extrinsic-motivation-map.png
 status: built
 library: Infographic overlay (grid-diagram.js)

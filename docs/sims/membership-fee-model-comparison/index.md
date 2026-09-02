@@ -1,6 +1,6 @@
 ---
-title: Membership Fee Model Comparison
-description: Flat fee against sliding scale on the same families -- with the reach that a revenue bar alone does not show.
+title: "Membership Fee Model Comparison"
+description: "Flat fee against sliding scale on the same families -- with the reach that a revenue bar alone does not show."
 image: sims/membership-fee-model-comparison/membership-fee-model-comparison.png
 status: built
 library: p5.js

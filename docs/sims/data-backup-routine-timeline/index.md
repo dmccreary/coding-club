@@ -1,6 +1,6 @@
 ---
-title: Data Backup Routine Timeline
-description: A semester of backups in five checkpoints, only two of which need a person -- and the one that matters is the restore test, not the backup.
+title: "Data Backup Routine Timeline"
+description: "A semester of backups in five checkpoints, only two of which need a person -- and the one that matters is the restore test, not the backup."
 image: sims/data-backup-routine-timeline/data-backup-routine-timeline.png
 status: built
 library: vis-timeline

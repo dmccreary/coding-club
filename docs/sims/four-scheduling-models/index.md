@@ -1,6 +1,6 @@
 ---
-title: Four Coding Club Scheduling Models
-description: Alternating Saturday, weekday after-school, semester-based, drop-in -- and what each one costs you.
+title: "Four Coding Club Scheduling Models"
+description: "Alternating Saturday, weekday after-school, semester-based, drop-in -- and what each one costs you."
 image: sims/four-scheduling-models/four-scheduling-models.png
 status: built
 library: Infographic overlay (grid-diagram.js)

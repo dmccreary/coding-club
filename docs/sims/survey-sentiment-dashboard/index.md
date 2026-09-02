@@ -1,6 +1,6 @@
 ---
-title: Survey Themes and Sentiment Dashboard
-description: Free-text survey answers grouped into themes and scored for tone -- revealing a pattern an average rating would bury.
+title: "Survey Themes and Sentiment Dashboard"
+description: "Free-text survey answers grouped into themes and scored for tone -- revealing a pattern an average rating would bury."
 image: sims/survey-sentiment-dashboard/survey-sentiment-dashboard.png
 status: built
 library: Chart.js

@@ -1,6 +1,6 @@
 ---
-title: Club Health Metrics Dashboard
-description: Four health metrics across three years, and the one line moving the wrong way while the others celebrate.
+title: "Club Health Metrics Dashboard"
+description: "Four health metrics across three years, and the one line moving the wrong way while the others celebrate."
 image: sims/club-health-metrics-dashboard/club-health-metrics-dashboard.png
 status: built
 library: Chart.js

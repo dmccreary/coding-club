@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
-"""Mark sims implemented in the spec archive and refresh docs/sims/TODO.md.
+"""Mark sims implemented in the spec archive and refresh docs/sims/spec-tracker.md.
 
-The counts in TODO.md are maintained here rather than by
+The counts in spec-tracker.md are maintained here rather than by
 create-microsim-todo-json-files.py, whose "implemented" test is "has a
 main.html" -- true of every scaffolded directory in this repo and therefore
 useless once scaffolding is done.
@@ -13,7 +13,10 @@ from collections import OrderedDict
 
 PROJECT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 TODO_DIR = os.path.join(PROJECT, "docs/sims/TODO")
-TODO_MD = os.path.join(PROJECT, "docs/sims/TODO.md")
+# Renamed from TODO.md: the microsim-utils index generator rewrites
+# docs/sims/TODO.md on every run as its missing-screenshot log, which
+# would silently destroy this spec tracker.
+TRACKER_MD = os.path.join(PROJECT, "docs/sims/spec-tracker.md")
 DATE = "2026-09-01"
 
 
@@ -39,14 +42,14 @@ def main():
     done += 1
     total += 1
 
-    s = open(TODO_MD, encoding="utf-8").read()
+    s = open(TRACKER_MD, encoding="utf-8").read()
     s = re.sub(r"- Already implemented: \d+", f"- Already implemented: {done}", s)
     s = re.sub(r"- \*\*Unimplemented \(TODO\): \d+\*\*",
                f"- **Unimplemented (TODO): {total - done}**", s)
     for sim in sys.argv[1:]:
         s = re.sub(r"\| \[`" + re.escape(sim) + r"`\]\(TODO/" + re.escape(sim) + r"\.json\) \|",
                    f"| :white_check_mark: [`{sim}`]({sim}/index.md) |", s)
-    open(TODO_MD, "w", encoding="utf-8").write(s)
+    open(TRACKER_MD, "w", encoding="utf-8").write(s)
     print(f"tracker: {done} built, {total - done} to go")
 
 

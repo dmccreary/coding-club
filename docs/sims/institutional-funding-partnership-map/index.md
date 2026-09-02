@@ -1,6 +1,6 @@
 ---
-title: Institutional Funding Partnership Map
-description: Four ongoing funding needs, four institutional partners, and the five connections between them. Two nodes carry more than one line, and those are the ones worth studying.
+title: "Institutional Funding Partnership Map"
+description: "Four ongoing funding needs, four institutional partners, and the five connections between them. Two nodes carry more than one line, and those are the ones worth studying."
 image: sims/institutional-funding-partnership-map/institutional-funding-partnership-map.png
 status: built
 library: vis-network

@@ -1,6 +1,6 @@
 ---
-title: Handling a Conflict or Complaint
-description: The step-by-step path a coding club follows from a reported concern to a documented outcome, including when to escalate.
+title: "Handling a Conflict or Complaint"
+description: "The step-by-step path a coding club follows from a reported concern to a documented outcome, including when to escalate."
 image: sims/conflict-resolution-workflow/conflict-resolution-workflow.png
 status: built
 library: Mermaid

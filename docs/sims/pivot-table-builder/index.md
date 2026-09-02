@@ -1,6 +1,6 @@
 ---
-title: Pivot Table Builder
-description: Twenty raw sign-in rows, two dropdowns, and a grand total that never changes.
+title: "Pivot Table Builder"
+description: "Twenty raw sign-in rows, two dropdowns, and a grand total that never changes."
 image: sims/pivot-table-builder/pivot-table-builder.png
 status: built
 library: p5.js

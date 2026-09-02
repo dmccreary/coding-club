@@ -1,6 +1,6 @@
 ---
-title: Interest Survey Results
-description: 47 survey responses grouped by age range and interest level -- enough to decide whether a club is worth starting, and for whom.
+title: "Interest Survey Results"
+description: "47 survey responses grouped by age range and interest level -- enough to decide whether a club is worth starting, and for whom."
 image: sims/interest-survey-results/interest-survey-results.png
 status: built
 library: Chart.js

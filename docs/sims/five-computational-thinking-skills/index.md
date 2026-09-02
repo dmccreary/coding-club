@@ -1,6 +1,6 @@
 ---
-title: The Five Computational Thinking Skills
-description: Decomposition, pattern recognition, abstraction, algorithm design, debugging -- with a club example for each.
+title: "The Five Computational Thinking Skills"
+description: "Decomposition, pattern recognition, abstraction, algorithm design, debugging -- with a club example for each."
 image: sims/five-computational-thinking-skills/five-computational-thinking-skills.png
 status: built
 library: Infographic overlay (grid-diagram.js)

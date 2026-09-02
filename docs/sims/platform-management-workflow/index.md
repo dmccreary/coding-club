@@ -1,6 +1,6 @@
 ---
-title: Platform Management Workflow
-description: See where a new laptop's operating system sends it, and what managing each of the three platforms actually involves.
+title: "Platform Management Workflow"
+description: "See where a new laptop's operating system sends it, and what managing each of the three platforms actually involves."
 image: sims/platform-management-workflow/platform-management-workflow.png
 status: built
 library: Mermaid

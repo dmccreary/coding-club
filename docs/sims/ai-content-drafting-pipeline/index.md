@@ -1,6 +1,6 @@
 ---
-title: From Draft to Delivered - AI Content Pipeline
-description: Three AI drafting agents, three different jobs, one review gate every draft must pass.
+title: "From Draft to Delivered - AI Content Pipeline"
+description: "Three AI drafting agents, three different jobs, one review gate every draft must pass."
 image: sims/ai-content-drafting-pipeline/ai-content-drafting-pipeline.png
 status: built
 library: Mermaid

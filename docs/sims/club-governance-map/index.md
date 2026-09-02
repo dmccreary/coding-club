@@ -1,6 +1,6 @@
 ---
-title: Club Governance Map
-description: Who reports to whom, who provides outside oversight, and where a mentor actually sits in the structure.
+title: "Club Governance Map"
+description: "Who reports to whom, who provides outside oversight, and where a mentor actually sits in the structure."
 image: sims/club-governance-map/club-governance-map.png
 status: built
 library: vis-network

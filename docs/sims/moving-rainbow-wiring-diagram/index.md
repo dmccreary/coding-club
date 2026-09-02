@@ -1,6 +1,6 @@
 ---
-title: Moving Rainbow Wiring Diagram
-description: Three wires between a Pico and a NeoPixel strip, with a quiz that hides the labels.
+title: "Moving Rainbow Wiring Diagram"
+description: "Three wires between a Pico and a NeoPixel strip, with a quiz that hides the labels."
 image: sims/moving-rainbow-wiring-diagram/moving-rainbow-wiring-diagram.png
 status: built
 library: p5.js

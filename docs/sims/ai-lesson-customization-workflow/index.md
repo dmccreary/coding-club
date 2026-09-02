@@ -1,6 +1,6 @@
 ---
-title: From Observation to Customized Lesson
-description: Where the mentor's own observation enters an AI customization loop, and where human review still applies.
+title: "From Observation to Customized Lesson"
+description: "Where the mentor's own observation enters an AI customization loop, and where human review still applies."
 image: sims/ai-lesson-customization-workflow/ai-lesson-customization-workflow.png
 status: built
 library: Mermaid

@@ -1,6 +1,6 @@
 ---
-title: Saving Student Data Decision Tool
-description: Two questions, in order, applied to any field somebody wants to collect.
+title: "Saving Student Data Decision Tool"
+description: "Two questions, in order, applied to any field somebody wants to collect."
 image: sims/saving-student-data-decision-tool/saving-student-data-decision-tool.png
 status: built
 library: p5.js

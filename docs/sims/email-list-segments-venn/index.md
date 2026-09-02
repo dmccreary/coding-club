@@ -1,6 +1,6 @@
 ---
-title: Email List Segments
-description: Four club mailing segments, drawn so the overlaps that exist are visible and the one that must not is visibly absent.
+title: "Email List Segments"
+description: "Four club mailing segments, drawn so the overlaps that exist are visible and the one that must not is visibly absent."
 image: sims/email-list-segments-venn/email-list-segments-venn.png
 status: built
 library: p5.js

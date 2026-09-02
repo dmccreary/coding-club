@@ -1,6 +1,6 @@
 ---
-title: From Scattered Knowledge to a Club Playbook
-description: Decide whether a piece of know-how becomes a written procedure or has to be transferred person to person.
+title: "From Scattered Knowledge to a Club Playbook"
+description: "Decide whether a piece of know-how becomes a written procedure or has to be transferred person to person."
 image: sims/club-playbook-assembly-workflow/club-playbook-assembly-workflow.png
 status: built
 library: Mermaid

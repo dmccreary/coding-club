@@ -1,6 +1,6 @@
 ---
-title: Differential Drive Chassis Explorer
-description: Two wheel speeds, and every path a two-wheel robot can take -- named in words before the robot moves.
+title: "Differential Drive Chassis Explorer"
+description: "Two wheel speeds, and every path a two-wheel robot can take -- named in words before the robot moves."
 image: sims/differential-drive-chassis-explorer/differential-drive-chassis-explorer.png
 status: built
 library: p5.js

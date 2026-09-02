@@ -1,6 +1,6 @@
 ---
-title: Breadboard Tie Point Explorer
-description: Click any hole on a half-size breadboard and every hole electrically tied to it lights up.
+title: "Breadboard Tie Point Explorer"
+description: "Click any hole on a half-size breadboard and every hole electrically tied to it lights up."
 image: sims/breadboard-tie-point-explorer/breadboard-tie-point-explorer.png
 status: built
 library: p5.js

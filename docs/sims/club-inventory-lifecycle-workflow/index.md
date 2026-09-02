@@ -1,6 +1,6 @@
 ---
-title: Club Inventory Lifecycle Workflow
-description: One tagged item's whole life: sticker, shelf, checkout, return, audit, and the branch into the lost item policy.
+title: "Club Inventory Lifecycle Workflow"
+description: "One tagged item's whole life: sticker, shelf, checkout, return, audit, and the branch into the lost item policy."
 image: sims/club-inventory-lifecycle-workflow/club-inventory-lifecycle-workflow.png
 status: built
 library: Mermaid

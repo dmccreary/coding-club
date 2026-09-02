@@ -1,6 +1,6 @@
 ---
-title: AI Tool Selection Radar
-description: Three vendors on four criteria at once -- and a ranking that changes depending on which criterion your club puts first.
+title: "AI Tool Selection Radar"
+description: "Three vendors on four criteria at once -- and a ranking that changes depending on which criterion your club puts first."
 image: sims/ai-tool-selection-radar/ai-tool-selection-radar.png
 status: built
 library: Chart.js

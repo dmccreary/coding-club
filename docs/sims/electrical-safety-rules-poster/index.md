@@ -1,6 +1,6 @@
 ---
-title: Electrical Safety Rules Poster
-description: Four hazard families, three rules each -- the panel you point at depends on what is on the table.
+title: "Electrical Safety Rules Poster"
+description: "Four hazard families, three rules each -- the panel you point at depends on what is on the table."
 image: sims/electrical-safety-rules-poster/electrical-safety-rules-poster.png
 status: built
 library: Infographic overlay (grid-diagram.js)

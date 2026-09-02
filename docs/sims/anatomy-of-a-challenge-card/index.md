@@ -1,6 +1,6 @@
 ---
-title: Anatomy of a Challenge Card
-description: Six required parts of a challenge card, and what each one is for.
+title: "Anatomy of a Challenge Card"
+description: "Six required parts of a challenge card, and what each one is for."
 image: sims/anatomy-of-a-challenge-card/anatomy-of-a-challenge-card.png
 status: built
 library: Infographic overlay (diagram.js)

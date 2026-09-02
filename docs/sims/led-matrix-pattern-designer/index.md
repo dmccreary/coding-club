@@ -1,6 +1,6 @@
 ---
-title: LED Matrix Pattern Designer
-description: Draw on an 8x8 grid and watch the eight bytes that would produce it appear beside the picture.
+title: "LED Matrix Pattern Designer"
+description: "Draw on an 8x8 grid and watch the eight bytes that would produce it appear beside the picture."
 image: sims/led-matrix-pattern-designer/led-matrix-pattern-designer.png
 status: built
 library: p5.js

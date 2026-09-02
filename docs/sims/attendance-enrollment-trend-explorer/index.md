@@ -1,6 +1,6 @@
 ---
-title: Attendance and Enrollment Trend Explorer
-description: Four semesters of enrollment, attendance and retention on one chart -- and the semester where they disagree.
+title: "Attendance and Enrollment Trend Explorer"
+description: "Four semesters of enrollment, attendance and retention on one chart -- and the semester where they disagree."
 image: sims/attendance-enrollment-trend-explorer/attendance-enrollment-trend-explorer.png
 status: built
 library: Chart.js

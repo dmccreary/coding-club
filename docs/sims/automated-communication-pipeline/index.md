@@ -1,6 +1,6 @@
 ---
-title: Automated Communication Pipeline
-description: One trigger, two very different-feeling messages: see what decides whether a rule sends a text or queues a newsletter item.
+title: "Automated Communication Pipeline"
+description: "One trigger, two very different-feeling messages: see what decides whether a rule sends a text or queues a newsletter item."
 image: sims/automated-communication-pipeline/automated-communication-pipeline.png
 status: built
 library: Mermaid

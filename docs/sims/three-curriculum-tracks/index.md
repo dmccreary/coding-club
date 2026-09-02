@@ -1,6 +1,6 @@
 ---
-title: Three Curriculum Tracks
-description: Beginner, intermediate, advanced -- what each track actually contains, and where the hard transition sits.
+title: "Three Curriculum Tracks"
+description: "Beginner, intermediate, advanced -- what each track actually contains, and where the hard transition sits."
 image: sims/three-curriculum-tracks/three-curriculum-tracks.png
 status: built
 library: Infographic overlay (grid-diagram.js)

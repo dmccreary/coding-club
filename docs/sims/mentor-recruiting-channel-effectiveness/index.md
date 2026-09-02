@@ -1,6 +1,6 @@
 ---
-title: Mentor Recruiting Channel Effectiveness
-description: Five recruiting channels compared on both volume and quality, because the channel that produces the most candidates produces the fewest mentors.
+title: "Mentor Recruiting Channel Effectiveness"
+description: "Five recruiting channels compared on both volume and quality, because the channel that produces the most candidates produces the fewest mentors."
 image: sims/mentor-recruiting-channel-effectiveness/mentor-recruiting-channel-effectiveness.png
 status: built
 library: Chart.js

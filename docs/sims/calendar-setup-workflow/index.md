@@ -1,6 +1,6 @@
 ---
-title: Club Calendar Setup Workflow
-description: The five one-time steps that set up a shared club calendar correctly, in the order that avoids rework.
+title: "Club Calendar Setup Workflow"
+description: "The five one-time steps that set up a shared club calendar correctly, in the order that avoids rework."
 image: sims/calendar-setup-workflow/calendar-setup-workflow.png
 status: built
 library: Mermaid

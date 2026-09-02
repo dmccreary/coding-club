@@ -1,6 +1,6 @@
 ---
-title: Mentor-Gated Registration Flow
-description: See how registering mentors first turns a 3:1 ratio into a capacity limit the software enforces, instead of a rule mentors have to police.
+title: "Mentor-Gated Registration Flow"
+description: "See how registering mentors first turns a 3:1 ratio into a capacity limit the software enforces, instead of a rule mentors have to police."
 image: sims/mentor-gated-registration-flow/mentor-gated-registration-flow.png
 status: built
 library: Mermaid

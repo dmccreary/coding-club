@@ -1,6 +1,6 @@
 ---
-title: Circuit Symbol Reader
-description: Five schematic symbols on flashcards, with a quiz that scores a full pass.
+title: "Circuit Symbol Reader"
+description: "Five schematic symbols on flashcards, with a quiz that scores a full pass."
 image: sims/circuit-symbol-reader/circuit-symbol-reader.png
 status: built
 library: p5.js

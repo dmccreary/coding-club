@@ -1,6 +1,6 @@
 ---
-title: Club Financial Operations Cycle
-description: Follow one dollar from the moment it is spent or given through to the annual budget review.
+title: "Club Financial Operations Cycle"
+description: "Follow one dollar from the moment it is spent or given through to the annual budget review."
 image: sims/club-financial-operations-cycle/club-financial-operations-cycle.png
 status: built
 library: Mermaid

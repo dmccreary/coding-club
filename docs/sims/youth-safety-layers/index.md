@@ -1,6 +1,6 @@
 ---
-title: Layers of Youth Digital Safety
-description: Five layers, bottom to top, and who manages each one.
+title: "Layers of Youth Digital Safety"
+description: "Five layers, bottom to top, and who manages each one."
 image: sims/youth-safety-layers/youth-safety-layers.png
 status: built
 library: Infographic overlay (grid-diagram.js)

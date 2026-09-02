@@ -1,6 +1,6 @@
 ---
-title: Student Data Privacy Principles
-description: Four practices, four specific risks. Click any one to see exactly which failure it prevents.
+title: "Student Data Privacy Principles"
+description: "Four practices, four specific risks. Click any one to see exactly which failure it prevents."
 image: sims/student-data-privacy-principles/student-data-privacy-principles.png
 status: built
 library: Mermaid

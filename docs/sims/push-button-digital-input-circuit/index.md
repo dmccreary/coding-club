@@ -1,6 +1,6 @@
 ---
-title: Push Button Digital Input Circuit
-description: Press a button, watch the input pin flip to HIGH -- then remove the pull-down resistor and watch LOW stop being reliable.
+title: "Push Button Digital Input Circuit"
+description: "Press a button, watch the input pin flip to HIGH -- then remove the pull-down resistor and watch LOW stop being reliable."
 image: sims/push-button-digital-input-circuit/push-button-digital-input-circuit.png
 status: built
 library: p5.js

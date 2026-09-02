@@ -1,6 +1,6 @@
 ---
-title: Robot Emotion Display Control Panel
-description: One distance reading driving a face and a buzzer at the same time -- plus the hysteresis band that stops both flickering.
+title: "Robot Emotion Display Control Panel"
+description: "One distance reading driving a face and a buzzer at the same time -- plus the hysteresis band that stops both flickering."
 image: sims/robot-emotion-display-control-panel/robot-emotion-display-control-panel.png
 status: built
 library: p5.js

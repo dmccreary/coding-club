@@ -1,6 +1,6 @@
 ---
-title: PWM Analog Output Brightness Explorer
-description: See how a pin that can only be fully on or fully off produces every brightness in between.
+title: "PWM Analog Output Brightness Explorer"
+description: "See how a pin that can only be fully on or fully off produces every brightness in between."
 image: sims/pwm-analog-output-brightness-explorer/pwm-analog-output-brightness-explorer.png
 status: built
 library: p5.js

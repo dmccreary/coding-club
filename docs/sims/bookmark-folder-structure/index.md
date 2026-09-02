@@ -1,6 +1,6 @@
 ---
-title: Bookmark Folder Structure
-description: Decide where a new bookmark belongs: the shared class folder, a student's personal folder, or neither.
+title: "Bookmark Folder Structure"
+description: "Decide where a new bookmark belongs: the shared class folder, a student's personal folder, or neither."
 image: sims/bookmark-folder-structure/bookmark-folder-structure.png
 status: built
 library: Mermaid

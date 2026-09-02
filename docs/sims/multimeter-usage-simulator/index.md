@@ -1,6 +1,6 @@
 ---
-title: Multimeter Usage Simulator
-description: Drag two probes onto a real circuit in three meter modes -- and find a short the meter can see but your eyes cannot.
+title: "Multimeter Usage Simulator"
+description: "Drag two probes onto a real circuit in three meter modes -- and find a short the meter can see but your eyes cannot."
 image: sims/multimeter-usage-simulator/multimeter-usage-simulator.png
 status: built
 library: p5.js

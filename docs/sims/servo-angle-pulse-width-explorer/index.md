@@ -1,6 +1,6 @@
 ---
-title: Servo Angle and Pulse Width Explorer
-description: Set a pulse width in microseconds and watch the servo arm swing to the angle it encodes.
+title: "Servo Angle and Pulse Width Explorer"
+description: "Set a pulse width in microseconds and watch the servo arm swing to the angle it encodes."
 image: sims/servo-angle-pulse-width-explorer/servo-angle-pulse-width-explorer.png
 status: built
 library: p5.js

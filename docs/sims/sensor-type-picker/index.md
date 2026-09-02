@@ -1,6 +1,6 @@
 ---
-title: Sensor Type Picker
-description: Eight project scenarios, six sensors, and one question that settles every one of them.
+title: "Sensor Type Picker"
+description: "Eight project scenarios, six sensors, and one question that settles every one of them."
 image: sims/sensor-type-picker/sensor-type-picker.png
 status: built
 library: p5.js

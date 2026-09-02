@@ -1,6 +1,6 @@
 ---
-title: Kits Ready to Go Further
-description: Two step-up kits, what each one does, and what a mentor would actually see running.
+title: "Kits Ready to Go Further"
+description: "Two step-up kits, what each one does, and what a mentor would actually see running."
 image: sims/kits-ready-to-go-further/kits-ready-to-go-further.png
 status: built
 library: Infographic overlay (grid-diagram.js)

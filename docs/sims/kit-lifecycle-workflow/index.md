@@ -1,6 +1,6 @@
 ---
-title: Kit Lifecycle Workflow
-description: Follow one kit from a gap on the shelf through purchase, prep, circulation, and the three-way decision that decides its fate.
+title: "Kit Lifecycle Workflow"
+description: "Follow one kit from a gap on the shelf through purchase, prep, circulation, and the three-way decision that decides its fate."
 image: sims/kit-lifecycle-workflow/kit-lifecycle-workflow.png
 status: built
 library: Mermaid

@@ -1,6 +1,6 @@
 ---
-title: OLED Coordinate System
-description: Find any (x, y) pixel on a 128x64 OLED display and see the MicroPython command that lights it.
+title: "OLED Coordinate System"
+description: "Find any (x, y) pixel on a 128x64 OLED display and see the MicroPython command that lights it."
 image: sims/oled-coordinate-system/oled-coordinate-system.png
 status: built
 library: p5.js

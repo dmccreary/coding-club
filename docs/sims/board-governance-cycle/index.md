@@ -1,6 +1,6 @@
 ---
-title: Board Governance Cycle
-description: The routine seat-rotation cycle a board runs on, and the separate trigger a founder's departure fires.
+title: "Board Governance Cycle"
+description: "The routine seat-rotation cycle a board runs on, and the separate trigger a founder's departure fires."
 image: sims/board-governance-cycle/board-governance-cycle.png
 status: built
 library: Mermaid

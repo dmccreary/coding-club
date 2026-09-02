@@ -1,6 +1,6 @@
 ---
-title: Generic vs AI Challenge Card
-description: The same repeat-block lesson, twice -- and the three fields customisation is allowed to touch.
+title: "Generic vs AI Challenge Card"
+description: "The same repeat-block lesson, twice -- and the three fields customisation is allowed to touch."
 image: sims/generic-vs-ai-challenge-card/generic-vs-ai-challenge-card.png
 status: built
 library: p5.js

@@ -1,6 +1,6 @@
 ---
-title: Mentor Matching and Schedule Optimizer
-description: Five mentors, five students, seven scored pairings, and three candidate slots -- only one of which passes every constraint.
+title: "Mentor Matching and Schedule Optimizer"
+description: "Five mentors, five students, seven scored pairings, and three candidate slots -- only one of which passes every constraint."
 image: sims/mentor-matching-schedule-optimizer/mentor-matching-schedule-optimizer.png
 status: built
 library: vis-network

@@ -1,6 +1,6 @@
 ---
-title: Mentor Recruiting Influence Graph
-description: Two outreach channels the club already uses, four it does not, and the question of which single new connection would reach the most new people.
+title: "Mentor Recruiting Influence Graph"
+description: "Two outreach channels the club already uses, four it does not, and the question of which single new connection would reach the most new people."
 image: sims/mentor-recruiting-influence-graph/mentor-recruiting-influence-graph.png
 status: built
 library: vis-network

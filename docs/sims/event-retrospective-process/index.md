@@ -1,6 +1,6 @@
 ---
-title: The Event Retrospective Process
-description: Follow one session from its final minute to a change in the next session, through the debrief, the survey, and the log.
+title: "The Event Retrospective Process"
+description: "Follow one session from its final minute to a change in the next session, through the debrief, the survey, and the log."
 image: sims/event-retrospective-process/event-retrospective-process.png
 status: built
 library: Mermaid

@@ -1,6 +1,6 @@
 ---
-title: Equity Audit Checklist
-description: Ten items, five categories, and a callout that always names one thing to do rather than a score to feel bad about.
+title: "Equity Audit Checklist"
+description: "Ten items, five categories, and a callout that always names one thing to do rather than a score to feel bad about."
 image: sims/equity-audit-checklist/equity-audit-checklist.png
 status: built
 library: p5.js

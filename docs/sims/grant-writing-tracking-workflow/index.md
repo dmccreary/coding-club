@@ -1,6 +1,6 @@
 ---
-title: Grant Writing and Tracking Workflow
-description: From spotting an opportunity to logging the outcome -- and why every branch ends at the tracking spreadsheet.
+title: "Grant Writing and Tracking Workflow"
+description: "From spotting an opportunity to logging the outcome -- and why every branch ends at the tracking spreadsheet."
 image: sims/grant-writing-tracking-workflow/grant-writing-tracking-workflow.png
 status: built
 library: Mermaid

@@ -1,6 +1,6 @@
 ---
-title: The Physical Computing Loop
-description: Input, process, output -- stepped one stage at a time, with the actual data each stage is holding.
+title: "The Physical Computing Loop"
+description: "Input, process, output -- stepped one stage at a time, with the actual data each stage is holding."
 image: sims/physical-computing-loop/physical-computing-loop.png
 status: built
 library: p5.js

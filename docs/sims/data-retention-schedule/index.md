@@ -1,6 +1,6 @@
 ---
-title: Data Retention Schedule by Type
-description: Four kinds of club data, four different clocks -- and what event starts each one.
+title: "Data Retention Schedule by Type"
+description: "Four kinds of club data, four different clocks -- and what event starts each one."
 image: sims/data-retention-schedule/data-retention-schedule.png
 status: built
 library: Infographic overlay (grid-diagram.js)

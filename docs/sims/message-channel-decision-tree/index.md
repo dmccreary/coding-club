@@ -1,6 +1,6 @@
 ---
-title: Message Channel Decision Tree
-description: Two questions decide whether a message goes to the group chat, to email, or either.
+title: "Message Channel Decision Tree"
+description: "Two questions decide whether a message goes to the group chat, to email, or either."
 image: sims/message-channel-decision-tree/message-channel-decision-tree.png
 status: built
 library: Mermaid

@@ -1,6 +1,6 @@
 ---
-title: Should You Start This Club?
-description: Walk the four feasibility gates between an encouraging survey result and a real first meeting date.
+title: "Should You Start This Club?"
+description: "Walk the four feasibility gates between an encouraging survey result and a real first meeting date."
 image: sims/club-feasibility-decision-path/club-feasibility-decision-path.png
 status: built
 library: Mermaid

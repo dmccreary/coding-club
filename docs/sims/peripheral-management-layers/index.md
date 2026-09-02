@@ -1,6 +1,6 @@
 ---
-title: Peripheral and Storage Management Layers
-description: Five categories covering every accessory question a club actually gets.
+title: "Peripheral and Storage Management Layers"
+description: "Five categories covering every accessory question a club actually gets."
 image: sims/peripheral-management-layers/peripheral-management-layers.png
 status: built
 library: Infographic overlay (grid-diagram.js)

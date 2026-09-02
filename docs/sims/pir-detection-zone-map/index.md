@@ -1,6 +1,6 @@
 ---
-title: PIR Detection Zone Map
-description: Why a PIR sensor sees someone walking across a room and misses someone standing still in front of it.
+title: "PIR Detection Zone Map"
+description: "Why a PIR sensor sees someone walking across a room and misses someone standing still in front of it."
 image: sims/pir-detection-zone-map/pir-detection-zone-map.png
 status: built
 library: Infographic overlay (diagram.js)

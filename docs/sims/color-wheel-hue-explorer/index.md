@@ -1,6 +1,6 @@
 ---
-title: Color Wheel Hue Explorer
-description: Drag a marker round a 0-255 color wheel and see the exact RGB triple the wheel() function would return.
+title: "Color Wheel Hue Explorer"
+description: "Drag a marker round a 0-255 color wheel and see the exact RGB triple the wheel() function would return."
 image: sims/color-wheel-hue-explorer/color-wheel-hue-explorer.png
 status: built
 library: p5.js

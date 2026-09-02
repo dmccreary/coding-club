@@ -1,6 +1,6 @@
 ---
-title: Meet the Specialized Agent Roster
-description: Five agents for the occasional jobs -- grants, social media, website copy, translation, voice -- and who reviews each one's output.
+title: "Meet the Specialized Agent Roster"
+description: "Five agents for the occasional jobs -- grants, social media, website copy, translation, voice -- and who reviews each one's output."
 image: sims/specialized-agent-roster/specialized-agent-roster.png
 status: built
 library: vis-network

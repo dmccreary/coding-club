@@ -1,6 +1,6 @@
 ---
-title: Funding Partnership Fit Map
-description: Four funding needs, four partnership approaches, and which one solves more than one need.
+title: "Funding Partnership Fit Map"
+description: "Four funding needs, four partnership approaches, and which one solves more than one need."
 image: sims/funding-partnership-fit-map/funding-partnership-fit-map.png
 status: built
 library: vis-network

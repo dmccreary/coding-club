@@ -1,6 +1,6 @@
 ---
-title: Collision Avoidance Control Loop
-description: Sense, decide, act -- with a polling interval you can widen until the robot drives into a wall it thinks is 40 cm away.
+title: "Collision Avoidance Control Loop"
+description: "Sense, decide, act -- with a polling interval you can widen until the robot drives into a wall it thinks is 40 cm away."
 image: sims/collision-avoidance-control-loop/collision-avoidance-control-loop.png
 status: built
 library: p5.js

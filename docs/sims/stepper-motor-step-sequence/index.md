@@ -1,6 +1,6 @@
 ---
-title: Stepper Motor Step Sequence
-description: Click through the four-coil energizing cycle and watch the rotation total climb 1.8 degrees at a time.
+title: "Stepper Motor Step Sequence"
+description: "Click through the four-coil energizing cycle and watch the rotation total climb 1.8 degrees at a time."
 image: sims/stepper-motor-step-sequence/stepper-motor-step-sequence.png
 status: built
 library: Mermaid

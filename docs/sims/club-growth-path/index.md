@@ -1,6 +1,6 @@
 ---
-title: Club Growth Path
-description: Four growth stages on one timeline, each with the single condition that has to be true before a club moves on, plus a marker to bookmark where you actually are.
+title: "Club Growth Path"
+description: "Four growth stages on one timeline, each with the single condition that has to be true before a club moves on, plus a marker to bookmark where you actually are."
 image: sims/club-growth-path/club-growth-path.png
 status: built
 library: vis-timeline

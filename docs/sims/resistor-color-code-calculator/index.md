@@ -1,6 +1,6 @@
 ---
-title: Resistor Color Code Calculator
-description: Set the four colored bands on a resistor and read off its value, so a mentor can check a part before it goes into a circuit.
+title: "Resistor Color Code Calculator"
+description: "Set the four colored bands on a resistor and read off its value, so a mentor can check a part before it goes into a circuit."
 image: sims/resistor-color-code-calculator/resistor-color-code-calculator.png
 status: built
 library: p5.js

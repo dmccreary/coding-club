@@ -1,6 +1,6 @@
 ---
-title: Human-in-the-Loop Review Workflow
-description: Trace an AI draft through a guardrail check, a human quality check, and the single moment a person actually sends it.
+title: "Human-in-the-Loop Review Workflow"
+description: "Trace an AI draft through a guardrail check, a human quality check, and the single moment a person actually sends it."
 image: sims/human-in-the-loop-review-workflow/human-in-the-loop-review-workflow.png
 status: built
 library: Mermaid

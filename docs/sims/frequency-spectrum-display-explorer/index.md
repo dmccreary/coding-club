@@ -1,6 +1,6 @@
 ---
-title: Frequency Spectrum Display Explorer
-description: Three sounds, three unmistakable bar shapes -- and the habit of naming the shape before naming the sound.
+title: "Frequency Spectrum Display Explorer"
+description: "Three sounds, three unmistakable bar shapes -- and the habit of naming the shape before naming the sound."
 image: sims/frequency-spectrum-display-explorer/frequency-spectrum-display-explorer.png
 status: built
 library: p5.js

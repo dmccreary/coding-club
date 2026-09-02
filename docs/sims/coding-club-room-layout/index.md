@@ -1,6 +1,6 @@
 ---
-title: Coding Club Room Layout
-description: A club room floor plan where every placement is clickable -- and a draggable mentor marker that shows what facing the monitors inward actually buys you.
+title: "Coding Club Room Layout"
+description: "A club room floor plan where every placement is clickable -- and a draggable mentor marker that shows what facing the monitors inward actually buys you."
 image: sims/coding-club-room-layout/coding-club-room-layout.png
 status: built
 library: p5.js

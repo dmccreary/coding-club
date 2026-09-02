@@ -1,6 +1,6 @@
 ---
-title: Mentor Development Pipeline
-description: One candidate's whole path: interview, trial, training, tiers, and the pipeline that produces the club's next leader.
+title: "Mentor Development Pipeline"
+description: "One candidate's whole path: interview, trial, training, tiers, and the pipeline that produces the club's next leader."
 image: sims/mentor-development-pipeline/mentor-development-pipeline.png
 status: built
 library: Mermaid

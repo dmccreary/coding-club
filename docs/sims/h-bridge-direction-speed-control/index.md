@@ -1,6 +1,6 @@
 ---
-title: H-Bridge Direction and Speed Control
-description: Two logic inputs pick a diagonal of switches; a PWM slider sets the speed. The microcontroller never carries motor current.
+title: "H-Bridge Direction and Speed Control"
+description: "Two logic inputs pick a diagonal of switches; a PWM slider sets the speed. The microcontroller never carries motor current."
 image: sims/h-bridge-direction-speed-control/h-bridge-direction-speed-control.png
 status: built
 library: p5.js

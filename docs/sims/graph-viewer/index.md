@@ -1,4 +1,7 @@
 ---
+title: "Learning Graph Viewer"
+description: "Explore the full concept dependency graph for the course. Search for a concept, filter by category, and see how many nodes and edges are visible as you narrow the view."
+image: sims/graph-viewer/graph-viewer.png
 status: built
 ---
 
