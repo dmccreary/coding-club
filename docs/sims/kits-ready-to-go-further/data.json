@@ -1,0 +1,50 @@
+{
+  "title": "Kits Ready to Go Further",
+  "image": "kits-ready-to-go-further.png",
+  "layout": "grid",
+  "showLabels": false,
+  "zones": [
+    {
+      "id": "signal-processing-kit",
+      "label": "Signal Processing Kit",
+      "color": "#4A90D9",
+      "x1": 3,
+      "y1": 10,
+      "x2": 48,
+      "y2": 92,
+      "summary": "Turns raw sound into a live, moving frequency display -- no math required to run it.",
+      "facts": [
+        "Builds on the microphone and sound spectrum kits from Chapter 20",
+        "Updates its display many times per second (real-time audio processing)",
+        "Uses a technique called the Fast Fourier Transform (FFT) behind the scenes",
+        "The maths itself is covered in the companion Signal Processing on a $5 MicroController textbook, not here"
+      ]
+    },
+    {
+      "id": "smartwatch-display-kit",
+      "label": "Smartwatch / Wearable Display Kit",
+      "color": "#F5A623",
+      "x1": 52,
+      "y1": 10,
+      "x2": 97,
+      "y2": 92,
+      "summary": "A display kit built to be worn, not set on a desk.",
+      "facts": [
+        "Extends the Chapter 20 display kit idea onto wrist-wearable hardware",
+        "Battery power draw matters far more than on a stationary kit",
+        "Connections must survive real movement, not just sit on a breadboard",
+        "The companion Clocks and Watches textbook covers an extensive set of wearable projects"
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "question": "Which kit turns sound into a moving frequency display?",
+      "correct_zone": "signal-processing-kit"
+    },
+    {
+      "question": "For which kit does battery power draw matter most?",
+      "correct_zone": "smartwatch-display-kit"
+    }
+  ]
+}

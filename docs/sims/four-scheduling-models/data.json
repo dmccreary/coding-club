@@ -1,0 +1,86 @@
+{
+  "title": "Four Coding Club Scheduling Models",
+  "image": "four-scheduling-models.png",
+  "layout": "grid",
+  "showLabels": false,
+  "zones": [
+    {
+      "id": "alternating-saturday",
+      "label": "Alternating Saturday",
+      "color": "#4A90D9",
+      "x1": 2,
+      "y1": 10,
+      "x2": 25,
+      "y2": 92,
+      "summary": "Meets every other Saturday, all year.",
+      "facts": [
+        "Low weekly time commitment for families and mentors",
+        "Works well for library and community-centre venues open at weekends",
+        "The two-week gap can weaken momentum for younger students",
+        "Predictable and easy to plan around long-term"
+      ]
+    },
+    {
+      "id": "weekday-after-school",
+      "label": "Weekday After-School",
+      "color": "#F5A623",
+      "x1": 27,
+      "y1": 10,
+      "x2": 50,
+      "y2": 92,
+      "summary": "Meets weekly, right after the school day.",
+      "facts": [
+        "Highest attendance consistency, since students are already at or near the venue",
+        "Competes directly with sports practices and other after-school activities",
+        "Requires mentor availability during working hours, favouring retired or flexible-schedule mentors",
+        "Best fit for school-based clubs (Chapter 2)"
+      ]
+    },
+    {
+      "id": "semester-based",
+      "label": "Semester-Based",
+      "color": "#7ED6A5",
+      "x1": 52,
+      "y1": 10,
+      "x2": 75,
+      "y2": 92,
+      "summary": "Runs for a defined term, then breaks and re-enrols.",
+      "facts": [
+        "Aligns naturally with school-calendar alignment",
+        "Gives a clean, low-pressure exit point for families and mentors each term",
+        "Requires a full onboarding process (Chapter 6) at the start of every new term",
+        "Well suited to a curriculum with defined tracks (Chapter 15)"
+      ]
+    },
+    {
+      "id": "drop-in",
+      "label": "Drop-In",
+      "color": "#E67E22",
+      "x1": 77,
+      "y1": 10,
+      "x2": 98,
+      "y2": 92,
+      "summary": "No fixed roster -- students attend whichever sessions work for them.",
+      "facts": [
+        "Lowest commitment barrier for families to try the club",
+        "Hardest model to plan mentor capacity for, since attendance is unpredictable",
+        "Poor fit for mentor pairing consistency (Chapter 10)",
+        "Works best for high-traffic venues like a bookstore or library with heavy walk-in footfall"
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "question": "Which model gives the highest attendance consistency?",
+      "correct_zone": "weekday-after-school"
+    },
+    {
+      "question": "Which model is hardest to plan mentor capacity for?",
+      "correct_zone": "drop-in"
+    },
+    {
+      "question": "Which model gives families a clean exit point each term?",
+      "correct_zone": "semester-based"
+    }
+  ]
+}

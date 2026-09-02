@@ -1,0 +1,69 @@
+{
+  "title": "The Tangible Reward Ladder",
+  "orientation": "portrait",
+  "image": "tangible-reward-ladder.png",
+  "layout": "side-panel",
+  "showNumbers": true,
+  "callouts": [
+    {
+      "id": 1,
+      "label": "Certificate Of Completion",
+      "x": 50,
+      "y": 14,
+      "radius": 5,
+      "color": "#16A085",
+      "hint": "The ribboned scroll on the top rung.",
+      "description": "Marks an entire track finished -- the largest, least frequent reward on the ladder."
+    },
+    {
+      "id": 2,
+      "label": "Progress Tracker Poster",
+      "x": 50,
+      "y": 28,
+      "radius": 5,
+      "color": "#9B59B6",
+      "hint": "The grid of squares on the fifth rung.",
+      "description": "Marks the whole club's shared momentum, one filled square at a time."
+    },
+    {
+      "id": 3,
+      "label": "Learning Map Display",
+      "x": 50,
+      "y": 42,
+      "radius": 5,
+      "color": "#7ED6A5",
+      "hint": "The folded paper with a route on it, on the fourth rung.",
+      "description": "Marks a student's growing personal path, visible to them without ranking them against peers."
+    },
+    {
+      "id": 4,
+      "label": "Sticker Reward System",
+      "x": 50,
+      "y": 56,
+      "radius": 5,
+      "color": "#E67E22",
+      "hint": "The sheet of small circles on the third rung.",
+      "description": "Marks a small, immediate moment of progress, reserved for real completions rather than every attempt."
+    },
+    {
+      "id": 5,
+      "label": "Badge Design",
+      "x": 50,
+      "y": 70,
+      "radius": 5,
+      "color": "#F5A623",
+      "hint": "The round object on the second rung.",
+      "description": "Marks one specific skill demonstrated and explained, named after exactly what it proves."
+    },
+    {
+      "id": 6,
+      "label": "Challenge Card System",
+      "x": 50,
+      "y": 84,
+      "radius": 5,
+      "color": "#4A90D9",
+      "hint": "The object on the lowest rung.",
+      "description": "Marks choosing and starting a single challenge; the entry point of the whole ladder."
+    }
+  ]
+}

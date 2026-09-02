@@ -1,0 +1,93 @@
+{
+  "engine": "grid",
+  "title": "Leaderboard vs Collaborative Challenge",
+  "height": 676,
+  "showLabels": false,
+  "panelPrompt": "Click a format to see who it suits and what it risks.",
+  "image": {
+    "file": "leaderboard-vs-collaborative-challenge.png",
+    "width": 1200,
+    "height": 800,
+    "background": "clean flat white (#FFFFFF)",
+    "textPolicy": "headers-only",
+    "style": "flat vector comparison poster, clean figure and scoreboard icons, muted textbook palette",
+    "overall": "A three-column comparison poster about competition formats in a coding club, arranged left to right from highest risk to safest. Each column is a tall rounded panel with a coloured header bar carrying its printed title, and simple flat icons below. The three printed headers, and the ONLY text in the image, are: \"Leaderboard\" (left), \"Friendly Competition\" (centre), \"Collaborative Challenge\" (right).",
+    "layoutNotes": "Divide the content area into 3 equal-width vertical columns with a clear gutter of background between each pair. Every column must have the SAME width, top edge, and bottom edge so the overlay's hover zones line up exactly. Each column has its printed header in bold dark text at the very top, on a tinted header bar in that column's accent colour, with simple flat icons below. No other text anywhere. Leave at least 4% margin at the left and right edges and 8% at top and bottom. The left column's header bar is red, the centre's amber, and the right's green, so the poster reads as a risk gradient from left to right. Do not draw any names, scores, digits, or rankings inside the scoreboard icon -- use blank rows only."
+  },
+  "zones": [
+    {
+      "id": "leaderboard-zone",
+      "label": "Leaderboard",
+      "color": "#E74C3C",
+      "x1": 2,
+      "y1": 10,
+      "x2": 32,
+      "y2": 92,
+      "summary": "Individual, public, and lasting.",
+      "facts": [
+        "Ranks every student by a running total",
+        "Strugglers see the same low rank week after week",
+        "Highest risk of discouraging the students who need encouragement most",
+        "Best reserved for confident, evenly-matched groups"
+      ],
+      "draw": {
+        "position": "The left column, roughly 2% to 32% of the image width.",
+        "visual": "Header bar tinted red. Below it: a tall scoreboard panel with blank ranked rows (no names or numbers), a single figure at the top with a small crown, and a smaller figure at the bottom drawn slumped."
+      }
+    },
+    {
+      "id": "friendly-competition-zone",
+      "label": "Friendly Competition",
+      "color": "#F5A623",
+      "x1": 35,
+      "y1": 10,
+      "x2": 65,
+      "y2": 92,
+      "summary": "Team-based and time-boxed.",
+      "facts": [
+        "Scored by team, not by individual name",
+        "Re-pairs teams between rounds so no student stays 'on the losing team' all session",
+        "Framed with humour rather than stakes",
+        "Gives a quick energy boost without a lasting scoreboard"
+      ],
+      "draw": {
+        "position": "The centre column, roughly 35% to 65% of the image width.",
+        "visual": "Header bar tinted amber. Below it: two small groups of two figures facing each other, a stopwatch, and a pair of circular arrows suggesting teams being re-paired between rounds."
+      }
+    },
+    {
+      "id": "collaborative-zone",
+      "label": "Collaborative Challenge",
+      "color": "#2ECC71",
+      "x1": 68,
+      "y1": 10,
+      "x2": 98,
+      "y2": 92,
+      "summary": "One shared goal, no ranking at all.",
+      "facts": [
+        "Requires combining multiple students' skills into one outcome",
+        "No student can finish it alone",
+        "Builds group identity instead of rivalry",
+        "Safest choice for a mixed-confidence group"
+      ],
+      "draw": {
+        "position": "The right column, roughly 68% to 98% of the image width.",
+        "visual": "Header bar tinted green. Below it: four figures arranged in a ring around one shared object, and several differently-shaped puzzle pieces interlocking into a single completed shape."
+      }
+    }
+  ],
+  "quiz": [
+    {
+      "question": "Which format carries the highest risk of discouraging strugglers?",
+      "correct_zone": "leaderboard-zone"
+    },
+    {
+      "question": "Which format is the safest choice for a mixed-confidence group?",
+      "correct_zone": "collaborative-zone"
+    },
+    {
+      "question": "Which format re-pairs teams between rounds?",
+      "correct_zone": "friendly-competition-zone"
+    }
+  ]
+}

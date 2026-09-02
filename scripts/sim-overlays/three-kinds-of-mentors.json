@@ -1,0 +1,93 @@
+{
+  "engine": "grid",
+  "title": "Three Kinds of Mentors",
+  "height": 676,
+  "showLabels": false,
+  "panelPrompt": "Click a mentor type to compare it against the others.",
+  "image": {
+    "file": "three-kinds-of-mentors.png",
+    "width": 1200,
+    "height": 800,
+    "background": "clean flat white (#FFFFFF)",
+    "textPolicy": "headers-only",
+    "style": "flat vector comparison poster, clean geometric icons, muted textbook palette, generous white space",
+    "overall": "A three-column comparison poster about kinds of coding club mentor. Each column is a tall rounded panel with a coloured header bar at the top carrying its printed title, and simple flat illustrated icons filling the space below the header. The three printed headers, and the ONLY text in the image, are: \"Volunteer Mentor\", \"Professional Mentor\", \"Peer Mentor\".",
+    "layoutNotes": "Divide the content area into 3 equal-width vertical columns with a thin pale divider line or a clear gutter of background between each pair. Every column must have the SAME width, the SAME top edge, and the SAME bottom edge, so the overlay's rectangular hover zones line up with them exactly. Each column has its printed header in bold dark text at the very top of the column, on a tinted header bar in that column's accent colour. Below the header, fill the column with simple flat ICONS and abstract shapes only -- no words, no bullet points, no sentences. Leave a clear margin of at least 4% of the image width on the left and right edges and 8% of the height at the top and bottom."
+  },
+  "zones": [
+    {
+      "id": "volunteer-mentor",
+      "label": "Volunteer Mentor",
+      "color": "#4A90D9",
+      "x1": 2,
+      "y1": 10,
+      "x2": 32,
+      "y2": 92,
+      "summary": "The backbone of most clubs -- unpaid adults who join for the mission.",
+      "facts": [
+        "Joins out of general interest, not necessarily a tech background",
+        "Most flexible availability of the three types",
+        "Typically the largest mentor pool",
+        "Needs the most initial training via onboarding (Chapter 6)"
+      ],
+      "draw": {
+        "position": "The left column, spanning roughly 2% to 32% of the image width.",
+        "visual": "Header bar tinted blue. Below it: a friendly adult figure icon, a heart or hands-helping icon, and a small group-of-three figures icon suggesting a large pool."
+      }
+    },
+    {
+      "id": "professional-mentor",
+      "label": "Professional Mentor",
+      "color": "#F5A623",
+      "x1": 35,
+      "y1": 10,
+      "x2": 65,
+      "y2": 92,
+      "summary": "Deep technical expertise, but the least available time.",
+      "facts": [
+        "Brings real-world software or electronics experience",
+        "Can mentor advanced students other mentors cannot",
+        "Volunteering competes with a demanding career",
+        "Best used for occasional guest sessions or the most advanced track (Chapter 15)"
+      ],
+      "draw": {
+        "position": "The centre column, spanning roughly 35% to 65% of the image width.",
+        "visual": "Header bar tinted amber. Below it: an adult figure with a laptop and an ID lanyard, a circuit-board icon, and a wall-clock icon with a small slice highlighted to suggest scarce time."
+      }
+    },
+    {
+      "id": "peer-mentor",
+      "label": "Peer Mentor",
+      "color": "#7ED6A5",
+      "x1": 68,
+      "y1": 10,
+      "x2": 98,
+      "y2": 92,
+      "summary": "Older students mentoring younger ones -- less experience, more relatability.",
+      "facts": [
+        "Typically a teenager, often a club alum",
+        "Explains concepts in kid-to-kid language",
+        "Builds the peer mentor's own confidence (Chapter 10 covers recruitment)",
+        "Still requires the same background check and code-of-conduct training as an adult mentor"
+      ],
+      "draw": {
+        "position": "The right column, spanning roughly 68% to 98% of the image width.",
+        "visual": "Header bar tinted mint green. Below it: a taller teenage figure beside a shorter younger figure, two speech bubbles overlapping, and a small shield-with-tick icon suggesting the same screening requirement."
+      }
+    }
+  ],
+  "quiz": [
+    {
+      "question": "Which mentor type has the most flexible availability?",
+      "correct_zone": "volunteer-mentor"
+    },
+    {
+      "question": "Which mentor type can support the most advanced students?",
+      "correct_zone": "professional-mentor"
+    },
+    {
+      "question": "Which mentor type is usually a former club student?",
+      "correct_zone": "peer-mentor"
+    }
+  ]
+}

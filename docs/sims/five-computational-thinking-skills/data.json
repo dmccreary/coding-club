@@ -1,0 +1,101 @@
+{
+  "title": "The Five Computational Thinking Skills",
+  "image": "five-computational-thinking-skills.png",
+  "layout": "grid",
+  "showLabels": false,
+  "zones": [
+    {
+      "id": "decomposition",
+      "label": "Decomposition",
+      "color": "#4A90D9",
+      "x1": 1,
+      "y1": 10,
+      "x2": 20,
+      "y2": 92,
+      "summary": "Breaking a big problem into smaller pieces.",
+      "facts": [
+        "'Build a game' becomes draw, move, collide, score",
+        "Makes an intimidating project feel achievable",
+        "The first skill applied before any code is written"
+      ]
+    },
+    {
+      "id": "pattern-recognition",
+      "label": "Pattern Recognition",
+      "color": "#F5A623",
+      "x1": 21,
+      "y1": 10,
+      "x2": 40,
+      "y2": 92,
+      "summary": "Noticing similarities to a problem already solved.",
+      "facts": [
+        "A second blinking pattern reuses the first one's loop structure",
+        "Speeds up new projects by reusing known solutions",
+        "Strengthens with more projects completed"
+      ]
+    },
+    {
+      "id": "abstraction",
+      "label": "Abstraction",
+      "color": "#7ED6A5",
+      "x1": 41,
+      "y1": 10,
+      "x2": 60,
+      "y2": 92,
+      "summary": "Focusing on essential details, ignoring the rest.",
+      "facts": [
+        "'Forward' and 'turn' hide the motor's actual physics",
+        "Lets a beginner control a robot without an engineering degree",
+        "The same skill behind using any function someone else wrote"
+      ]
+    },
+    {
+      "id": "algorithm-design",
+      "label": "Algorithm Design",
+      "color": "#E67E22",
+      "x1": 61,
+      "y1": 10,
+      "x2": 80,
+      "y2": 92,
+      "summary": "Sequencing precise, ordered steps to solve a problem.",
+      "facts": [
+        "The plan a student sketches before touching a keyboard",
+        "Order matters -- turning before moving forward gives a different result than the reverse",
+        "The direct bridge from an idea to actual code"
+      ]
+    },
+    {
+      "id": "debugging",
+      "label": "Debugging",
+      "color": "#E74C3C",
+      "x1": 81,
+      "y1": 10,
+      "x2": 99,
+      "y2": 92,
+      "summary": "Systematically finding and fixing what is wrong.",
+      "facts": [
+        "Form a hypothesis about the cause, then test it -- not random guessing",
+        "The skill Chapter 1's continuous improvement mindset applies to a single line of code",
+        "Often the most frustrating and most valuable skill to build confidence in"
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "question": "Which skill turns 'build a game' into draw, move, collide, score?",
+      "correct_zone": "decomposition"
+    },
+    {
+      "question": "Which skill lets you drive a robot without knowing motor physics?",
+      "correct_zone": "abstraction"
+    },
+    {
+      "question": "Which skill is about forming a hypothesis and testing it?",
+      "correct_zone": "debugging"
+    },
+    {
+      "question": "Which skill notices that a new problem resembles one already solved?",
+      "correct_zone": "pattern-recognition"
+    }
+  ]
+}

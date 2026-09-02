@@ -1,0 +1,92 @@
+{
+  "engine": "grid",
+  "title": "Intrinsic vs Extrinsic Motivation Map",
+  "height": 676,
+  "showLabels": false,
+  "panelPrompt": "Click a column to classify a motivator and see club examples.",
+  "image": {
+    "file": "intrinsic-vs-extrinsic-motivation-map.png",
+    "width": 1200,
+    "height": 800,
+    "background": "clean flat white (#FFFFFF)",
+    "textPolicy": "headers-only",
+    "style": "flat vector comparison poster, warm conceptual icons, muted textbook palette",
+    "overall": "A three-column comparison poster about what motivates students. Each column is a tall rounded panel with a coloured header bar carrying its printed title, and simple flat conceptual icons below. The three printed headers, and the ONLY text in the image, are: \"Intrinsic Motivators\" (left), \"Well-Designed Blend\" (centre), \"Extrinsic Motivators\" (right).",
+    "layoutNotes": "Divide the content area into 3 equal-width vertical columns with a clear gutter of background between each pair. Every column must have the SAME width, top edge, and bottom edge so the overlay's hover zones line up exactly. Each column has its printed header in bold dark text at the very top, on a tinted header bar in that column's accent colour, with simple flat icons below. No other text anywhere. Leave at least 4% margin at the left and right edges and 8% at top and bottom. Give the poster a subtle left-to-right gradient in the background band behind the three columns, shifting from a warm inward-facing tone on the left to a cooler outward-facing tone on the right, to suggest a spectrum rather than three unrelated boxes. Keep the gradient faint enough that the column dividers stay clearly visible."
+  },
+  "zones": [
+    {
+      "id": "intrinsic-column",
+      "label": "Intrinsic Motivators",
+      "color": "#4A90D9",
+      "x1": 2,
+      "y1": 10,
+      "x2": 32,
+      "y2": 92,
+      "summary": "Driven by the activity itself.",
+      "facts": [
+        "Curiosity about how something works",
+        "Pride in a working robot",
+        "The pleasure of finally fixing a stubborn bug",
+        "Enjoyment of building alongside a friend"
+      ],
+      "draw": {
+        "position": "The left column, roughly 2% to 32% of the image width.",
+        "visual": "Header bar tinted blue. Below it: a lightbulb icon with a small question mark shape inside it, a small robot with a spark of light above it, and two figures building side by side."
+      }
+    },
+    {
+      "id": "blend-column",
+      "label": "Well-Designed Blend",
+      "color": "#7ED6A5",
+      "x1": 35,
+      "y1": 10,
+      "x2": 65,
+      "y2": 92,
+      "summary": "External rewards tied to real, demonstrated skill.",
+      "facts": [
+        "A badge named after the specific skill it proves",
+        "A certificate marking a track genuinely completed",
+        "A sticker given after a student explains what they built, not just for showing up"
+      ],
+      "draw": {
+        "position": "The centre column, roughly 35% to 65% of the image width.",
+        "visual": "Header bar tinted mint green. Below it: a badge rosette with a small gear inside it, a rolled certificate with a ribbon, and a speech bubble with a sticker beside it suggesting explain-then-reward."
+      }
+    },
+    {
+      "id": "extrinsic-column",
+      "label": "Extrinsic Motivators",
+      "color": "#F5A623",
+      "x1": 68,
+      "y1": 10,
+      "x2": 98,
+      "y2": 92,
+      "summary": "Driven by an outside reward alone.",
+      "facts": [
+        "A sticker for every card attempted regardless of outcome",
+        "Points awarded purely for attendance",
+        "A prize tied to finishing first rather than finishing well",
+        "Risk of the overjustification effect when overused on already-loved tasks"
+      ],
+      "draw": {
+        "position": "The right column, roughly 68% to 98% of the image width.",
+        "visual": "Header bar tinted amber. Below it: a sheet of identical stickers, a tally-mark cluster beside a door icon suggesting attendance points, and a trophy with a small stopwatch beside it suggesting speed over quality."
+      }
+    }
+  ],
+  "quiz": [
+    {
+      "question": "Which column describes a badge named after the skill it proves?",
+      "correct_zone": "blend-column"
+    },
+    {
+      "question": "Which column carries the overjustification risk?",
+      "correct_zone": "extrinsic-column"
+    },
+    {
+      "question": "Which column describes the pleasure of fixing a stubborn bug?",
+      "correct_zone": "intrinsic-column"
+    }
+  ]
+}

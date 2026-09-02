@@ -1,0 +1,76 @@
+{
+  "engine": "callout",
+  "title": "LED Anatomy",
+  "height": 620,
+  "layout": "side-panel",
+  "image": {
+    "file": "led-anatomy.png",
+    "width": 800,
+    "height": 600,
+    "orientation": "landscape",
+    "background": "clean flat white (#FFFFFF)",
+    "textPolicy": "none",
+    "style": "clean flat vector illustration, thin dark outlines (#33475B), soft cel shading, no gradients heavier than two tones, no photorealism",
+    "overall": "A single 5 mm through-hole LED shown very large and centred, seen straight on from the side, as if lying flat on a white surface with its two metal legs pointing down toward the bottom edge of the frame. The LED should fill roughly 60% of the frame height. The dome is translucent red. The two legs are bright metallic silver-grey (#B8C2CC) with a subtle darker edge. One leg is clearly and obviously longer than the other -- the difference must be unmistakable at a glance, about a 30% length difference. The flat spot on the rim of the dome must be clearly visible on the same side as the shorter leg.",
+    "layoutNotes": "Centre the LED horizontally. Leave at least 12% clear white margin on all four sides so overlay markers and leader lines have room. Do not crop any part of either leg. Keep the background pure flat white with no shadow, no gradient, no table surface, and no decorative elements. The flat edge of the dome must be on the LEFT side of the image and the shorter leg must also be on the LEFT, so the two features visually line up."
+  },
+  "callouts": [
+    {
+      "id": 1,
+      "label": "Anode (longer leg)",
+      "x": 62,
+      "y": 84,
+      "radius": 5,
+      "color": "#4A90D9",
+      "hint": "The longer of the two metal legs, on the right-hand side.",
+      "description": "The positive leg. Current enters the LED here, and it is the longer of the two so you can tell the orientation without a meter.",
+      "draw": {
+        "position": "The lower right area of the frame, about 62% from the left and 84% from the top, on the longer right-hand leg about two thirds of the way down it.",
+        "visual": "A straight vertical metallic silver-grey leg, noticeably longer than its neighbour, extending from the bottom right of the LED body down toward the bottom edge of the frame."
+      },
+      "tip": "Mnemonic: Anode is lAnger. The long leg goes to the positive side."
+    },
+    {
+      "id": 2,
+      "label": "Cathode (shorter leg)",
+      "x": 38,
+      "y": 84,
+      "radius": 5,
+      "color": "#E67E22",
+      "hint": "The shorter of the two metal legs, on the left-hand side.",
+      "description": "The negative leg. It is deliberately made shorter at the factory so the part can be oriented correctly by sight alone.",
+      "draw": {
+        "position": "The lower left area of the frame, about 38% from the left and 84% from the top, on the shorter left-hand leg near its lower end.",
+        "visual": "A straight vertical metallic silver-grey leg, clearly shorter than its neighbour, ending noticeably higher above the bottom edge of the frame."
+      }
+    },
+    {
+      "id": 3,
+      "label": "Flat edge",
+      "x": 30,
+      "y": 55,
+      "radius": 5,
+      "color": "#9B59B6",
+      "hint": "A small flattened section on the otherwise round rim of the plastic body.",
+      "description": "The flat spot moulded into the rim on the cathode side. It is the backup marker: if the legs have been trimmed to equal length, the flat edge still tells you which side is negative.",
+      "draw": {
+        "position": "On the left edge of the round rim at the base of the dome, about 30% from the left and 55% from the top.",
+        "visual": "A short straight vertical flat section interrupting the circular outline of the wide rim at the bottom of the plastic dome, on the left-hand side, on the same side as the shorter leg."
+      }
+    },
+    {
+      "id": 4,
+      "label": "Light-emitting dome",
+      "x": 50,
+      "y": 26,
+      "radius": 5,
+      "color": "#F5A623",
+      "hint": "The rounded translucent coloured top of the component.",
+      "description": "The moulded plastic dome that both protects the semiconductor die and acts as a lens, focusing the light into a beam.",
+      "draw": {
+        "position": "The centre of the rounded top of the LED, about 50% from the left and 26% from the top.",
+        "visual": "A smooth translucent red dome, slightly glossy, with a small lighter highlight in its upper left to suggest curvature, and a faint darker shape visible inside representing the tiny semiconductor die on its metal cup."
+      }
+    }
+  ]
+}

@@ -1,0 +1,104 @@
+{
+  "engine": "callout",
+  "title": "Anatomy of a Challenge Card",
+  "height": 760,
+  "layout": "side-panel",
+  "image": {
+    "file": "anatomy-of-a-challenge-card.png",
+    "width": 900,
+    "height": 1260,
+    "orientation": "portrait",
+    "background": "a soft neutral light-grey desk surface (#ECEFF1)",
+    "textPolicy": "custom",
+    "textException": "**This image is a deliberate, narrow exception to the usual no-text rule.** The card's OWN printed content is the subject being illustrated, so the following text may appear ON THE CARD: a short project title, a few short materials-list lines, four or five numbered instruction lines, one short stretch-goal line, and one short tag word in a bottom corner. **Nothing else may contain text.** Do not add a poster title, a heading above the card, any callout numbers, any leader lines, any arrows, any annotation marks, or any labels naming the card's parts. The parts are named by an interactive overlay added afterwards, and any naming baked into the image will duplicate and collide with it. Keep the card's own printed words short and generic — they are set dressing, not content to be read.",
+    "style": "clean flat vector illustration, top-down view, soft even lighting, subtle drop shadow beneath the card only",
+    "overall": "A single 5x7 inch coding challenge card lying flat and squarely centred on a plain light-grey desk surface, seen from directly above, filling about 82% of the frame height. The card is white with a laminated sheen (a very subtle diagonal highlight across one corner). Running around the entire outer edge of the card is a solid GREEN border (#2ECC71) about a quarter of an inch wide -- this coloured border is a real structural feature of the card, not an annotation, and it must be drawn. Inside the border the card is divided into four stacked printed regions with clear white space between them: a title line at the top, a short bulleted materials list below it, a large numbered-steps block filling the middle, and a visually set-apart box near the bottom for a stretch goal. A small rounded tag sits in the bottom-right corner inside the border.",
+    "layoutNotes": "Centre the card with at least 8% clear desk visible on every side. Keep the four printed regions clearly separated by white space so overlay markers can land on each without ambiguity. The stretch-goal box must be visually distinct from the numbered steps -- give it a light tinted background (#F4F0FA) and a thin outline. Keep all printed text on the card small, short, and low-contrast grey so it reads as set dressing rather than something to be studied. Do not tilt or rotate the card. No hands, pens, or other objects in frame."
+  },
+  "callouts": [
+    {
+      "id": 1,
+      "label": "Title",
+      "x": 50,
+      "y": 14,
+      "radius": 5,
+      "color": "#4A90D9",
+      "hint": "The single largest line of print, at the very top of the card.",
+      "description": "A short, inviting project name, like 'Rainbow Chase' rather than 'LED Strip Loop Exercise.'",
+      "draw": {
+        "position": "Across the top printed region of the card, about 50% from the left and 14% from the top.",
+        "visual": "One short line of larger, bolder dark text, horizontally centred, sitting just below the green top border."
+      }
+    },
+    {
+      "id": 2,
+      "label": "Colored Border",
+      "x": 50,
+      "y": 4,
+      "radius": 5,
+      "color": "#2ECC71",
+      "hint": "The solid coloured band running all the way around the card's outer edge.",
+      "description": "Signals difficulty at a glance: green for a Beginner Card, blue for an Intermediate Card, black for an Advanced Card. This example shows a green Beginner Card.",
+      "draw": {
+        "position": "On the top edge of the green border itself, about 50% from the left and 4% from the top.",
+        "visual": "A solid green (#2ECC71) band about a quarter of an inch wide, of even thickness, running unbroken around all four edges of the white card."
+      }
+    },
+    {
+      "id": 3,
+      "label": "Materials List",
+      "x": 30,
+      "y": 27,
+      "radius": 5,
+      "color": "#7ED6A5",
+      "hint": "A short bulleted list in the upper-middle of the card.",
+      "description": "Every physical or software tool needed, checked against actual kit inventory before the session.",
+      "draw": {
+        "position": "In the upper-middle printed region, about 30% from the left and 27% from the top.",
+        "visual": "Three or four short bulleted lines of small grey text, left-aligned, each preceded by a small round bullet."
+      }
+    },
+    {
+      "id": 4,
+      "label": "Numbered Steps",
+      "x": 50,
+      "y": 50,
+      "radius": 5,
+      "color": "#E67E22",
+      "hint": "The largest block of print, filling the middle of the card.",
+      "description": "Clear, sequential instructions written at the target track's reading level.",
+      "draw": {
+        "position": "In the centre of the card, about 50% from the left and 50% from the top.",
+        "visual": "Four or five left-aligned lines of small grey text, each beginning with a number and a full stop, evenly spaced, forming the biggest single region on the card."
+      }
+    },
+    {
+      "id": 5,
+      "label": "Stretch Goal",
+      "x": 50,
+      "y": 74,
+      "radius": 5,
+      "color": "#9B59B6",
+      "hint": "A separate boxed area in the lower part of the card.",
+      "description": "An optional extra challenge for a student who finishes early, preventing idle time.",
+      "draw": {
+        "position": "In the lower printed region, about 50% from the left and 74% from the top.",
+        "visual": "A rounded rectangle with a light lavender fill (#F4F0FA) and a thin violet outline, containing one short line of small grey text, clearly set apart from the numbered steps above it."
+      }
+    },
+    {
+      "id": 6,
+      "label": "Concept Tag",
+      "x": 78,
+      "y": 88,
+      "radius": 5,
+      "color": "#16A085",
+      "hint": "A small rounded chip in the bottom corner of the card.",
+      "description": "Names the computational thinking skill or syntax concept the card reinforces, tying back to the skill progression ladder from Chapter 14.",
+      "draw": {
+        "position": "In the bottom-right area inside the green border, about 78% from the left and 88% from the top.",
+        "visual": "A small rounded-rectangle chip with a pale teal fill and one short word of small text inside it."
+      }
+    }
+  ]
+}

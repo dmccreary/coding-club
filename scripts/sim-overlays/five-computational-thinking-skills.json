@@ -1,0 +1,132 @@
+{
+  "engine": "grid",
+  "title": "The Five Computational Thinking Skills",
+  "height": 676,
+  "showLabels": false,
+  "panelPrompt": "Click a skill to see what it means and a coding club example.",
+  "image": {
+    "file": "five-computational-thinking-skills.png",
+    "width": 1400,
+    "height": 800,
+    "background": "clean flat white (#FFFFFF)",
+    "textPolicy": "headers-only",
+    "style": "flat vector reference poster, bold simple conceptual icons, muted textbook palette, generous white space",
+    "overall": "A five-column reference poster naming the five computational thinking skills. Each column is a tall rounded panel with a coloured header bar carrying its printed title, and one bold simple conceptual icon centred below the header with plenty of empty space around it. The five printed headers, and the ONLY text in the image, are: \"Decomposition\", \"Pattern Recognition\", \"Abstraction\", \"Algorithm Design\", \"Debugging\".",
+    "layoutNotes": "Divide the content area into 5 equal-width vertical columns with a thin pale divider line or a clear gutter of background between each pair. Every column must have the SAME width, the SAME top edge, and the SAME bottom edge, so the overlay's rectangular hover zones line up with them exactly. Each column has its printed header in bold dark text at the very top of the column, on a tinted header bar in that column's accent colour. Below the header, fill the column with simple flat ICONS and abstract shapes only -- no words, no bullet points, no sentences. Leave a clear margin of at least 4% of the image width on the left and right edges and 8% of the height at the top and bottom. With five columns the panels are narrow, so use ONE large icon per column rather than several small ones."
+  },
+  "zones": [
+    {
+      "id": "decomposition",
+      "label": "Decomposition",
+      "color": "#4A90D9",
+      "x1": 1,
+      "y1": 10,
+      "x2": 20,
+      "y2": 92,
+      "summary": "Breaking a big problem into smaller pieces.",
+      "facts": [
+        "'Build a game' becomes draw, move, collide, score",
+        "Makes an intimidating project feel achievable",
+        "The first skill applied before any code is written"
+      ],
+      "draw": {
+        "position": "The first column from the left, roughly 1% to 20% of the image width.",
+        "visual": "Header bar tinted blue. Below it: one large square breaking apart into four smaller squares that drift slightly outward."
+      }
+    },
+    {
+      "id": "pattern-recognition",
+      "label": "Pattern Recognition",
+      "color": "#F5A623",
+      "x1": 21,
+      "y1": 10,
+      "x2": 40,
+      "y2": 92,
+      "summary": "Noticing similarities to a problem already solved.",
+      "facts": [
+        "A second blinking pattern reuses the first one's loop structure",
+        "Speeds up new projects by reusing known solutions",
+        "Strengthens with more projects completed"
+      ],
+      "draw": {
+        "position": "The second column, roughly 21% to 40% of the image width.",
+        "visual": "Header bar tinted amber. Below it: a row of repeating shapes (circle, triangle, circle, triangle) with two of the matching shapes highlighted in a stronger colour."
+      }
+    },
+    {
+      "id": "abstraction",
+      "label": "Abstraction",
+      "color": "#7ED6A5",
+      "x1": 41,
+      "y1": 10,
+      "x2": 60,
+      "y2": 92,
+      "summary": "Focusing on essential details, ignoring the rest.",
+      "facts": [
+        "'Forward' and 'turn' hide the motor's actual physics",
+        "Lets a beginner control a robot without an engineering degree",
+        "The same skill behind using any function someone else wrote"
+      ],
+      "draw": {
+        "position": "The third column, roughly 41% to 60% of the image width.",
+        "visual": "Header bar tinted mint green. Below it: a plain rounded box in the foreground with a faded tangle of gears and wires visible behind it, suggesting complexity hidden behind a simple surface."
+      }
+    },
+    {
+      "id": "algorithm-design",
+      "label": "Algorithm Design",
+      "color": "#E67E22",
+      "x1": 61,
+      "y1": 10,
+      "x2": 80,
+      "y2": 92,
+      "summary": "Sequencing precise, ordered steps to solve a problem.",
+      "facts": [
+        "The plan a student sketches before touching a keyboard",
+        "Order matters -- turning before moving forward gives a different result than the reverse",
+        "The direct bridge from an idea to actual code"
+      ],
+      "draw": {
+        "position": "The fourth column, roughly 61% to 80% of the image width.",
+        "visual": "Header bar tinted orange. Below it: three or four stacked rounded blocks connected top to bottom by short arrows, like a simple flowchart."
+      }
+    },
+    {
+      "id": "debugging",
+      "label": "Debugging",
+      "color": "#E74C3C",
+      "x1": 81,
+      "y1": 10,
+      "x2": 99,
+      "y2": 92,
+      "summary": "Systematically finding and fixing what is wrong.",
+      "facts": [
+        "Form a hypothesis about the cause, then test it -- not random guessing",
+        "The skill Chapter 1's continuous improvement mindset applies to a single line of code",
+        "Often the most frustrating and most valuable skill to build confidence in"
+      ],
+      "draw": {
+        "position": "The fifth column from the left, roughly 81% to 99% of the image width.",
+        "visual": "Header bar tinted red. Below it: a magnifying glass held over a small stylised beetle, with the beetle clearly visible through the lens."
+      }
+    }
+  ],
+  "quiz": [
+    {
+      "question": "Which skill turns 'build a game' into draw, move, collide, score?",
+      "correct_zone": "decomposition"
+    },
+    {
+      "question": "Which skill lets you drive a robot without knowing motor physics?",
+      "correct_zone": "abstraction"
+    },
+    {
+      "question": "Which skill is about forming a hypothesis and testing it?",
+      "correct_zone": "debugging"
+    },
+    {
+      "question": "Which skill notices that a new problem resembles one already solved?",
+      "correct_zone": "pattern-recognition"
+    }
+  ]
+}

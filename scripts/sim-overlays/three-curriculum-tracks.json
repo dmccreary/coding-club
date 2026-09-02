@@ -1,0 +1,93 @@
+{
+  "engine": "grid",
+  "title": "Three Curriculum Tracks",
+  "height": 676,
+  "showLabels": false,
+  "panelPrompt": "Click a track to see what students at that level are working on.",
+  "image": {
+    "file": "three-curriculum-tracks.png",
+    "width": 1200,
+    "height": 800,
+    "background": "clean flat white (#FFFFFF)",
+    "textPolicy": "headers-only",
+    "style": "flat vector comparison poster, clean geometric icons, muted textbook palette, generous white space",
+    "overall": "A three-column comparison poster about coding club curriculum levels. Each column is a tall rounded panel with a coloured header bar carrying its printed title, and simple flat icons below. The three printed headers, and the ONLY text in the image, are: \"Beginner Track\", \"Intermediate Track\", \"Advanced Track\".",
+    "layoutNotes": "Divide the content area into 3 equal-width vertical columns with a thin pale divider line or a clear gutter of background between each pair. Every column must have the SAME width, the SAME top edge, and the SAME bottom edge, so the overlay's rectangular hover zones line up with them exactly. Each column has its printed header in bold dark text at the very top of the column, on a tinted header bar in that column's accent colour. Below the header, fill the column with simple flat ICONS and abstract shapes only -- no words, no bullet points, no sentences. Leave a clear margin of at least 4% of the image width on the left and right edges and 8% of the height at the top and bottom."
+  },
+  "zones": [
+    {
+      "id": "beginner-track",
+      "label": "Beginner Track",
+      "color": "#4A90D9",
+      "x1": 2,
+      "y1": 10,
+      "x2": 32,
+      "y2": 92,
+      "summary": "Keyboarding and first Scratch projects.",
+      "facts": [
+        "Typing practice tool sessions",
+        "First Scratch sprite and block-coding projects",
+        "Heavy use of unplugged coding activities to build vocabulary before screens",
+        "Success measured by finishing and sharing one complete project"
+      ],
+      "draw": {
+        "position": "The left column, roughly 2% to 32% of the image width.",
+        "visual": "Header bar tinted blue. Below it: a keyboard icon, two interlocking puzzle-piece code blocks, and a small cat-like sprite shape."
+      }
+    },
+    {
+      "id": "intermediate-track",
+      "label": "Intermediate Track",
+      "color": "#F5A623",
+      "x1": 35,
+      "y1": 10,
+      "x2": 65,
+      "y2": 92,
+      "summary": "The block-to-text transition and core Python.",
+      "facts": [
+        "Block-based to text transition begins",
+        "Python variables, loops, and conditionals introduced one at a time",
+        "Turtle graphics challenges provide visual verification",
+        "Peer code review starts here, as students have enough code to review"
+      ],
+      "draw": {
+        "position": "The centre column, roughly 35% to 65% of the image width.",
+        "visual": "Header bar tinted amber. Below it: a puzzle-piece block on the left with an arrow pointing right to a plain text-line icon, plus a small turtle shape trailing a simple spiral path."
+      }
+    },
+    {
+      "id": "advanced-track",
+      "label": "Advanced Track",
+      "color": "#7ED6A5",
+      "x1": 68,
+      "y1": 10,
+      "x2": 98,
+      "y2": 92,
+      "summary": "Multi-concept projects and mentoring others.",
+      "facts": [
+        "Combines functions, loops, and conditionals into a single project like a simple game",
+        "Pair programming and live coding demonstrations become regular practice",
+        "Students often begin serving as peer mentors (Chapter 9) themselves",
+        "Strongest fit for professional mentor involvement"
+      ],
+      "draw": {
+        "position": "The right column, roughly 68% to 98% of the image width.",
+        "visual": "Header bar tinted mint green. Below it: several small code-block shapes assembling into one larger rounded shape, plus two figures side by side at one screen suggesting pair programming."
+      }
+    }
+  ],
+  "quiz": [
+    {
+      "question": "Which track introduces Python variables and loops one at a time?",
+      "correct_zone": "intermediate-track"
+    },
+    {
+      "question": "Which track uses unplugged activities to build vocabulary before screens?",
+      "correct_zone": "beginner-track"
+    },
+    {
+      "question": "In which track do students often start peer mentoring?",
+      "correct_zone": "advanced-track"
+    }
+  ]
+}

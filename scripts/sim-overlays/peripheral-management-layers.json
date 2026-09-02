@@ -1,0 +1,128 @@
+{
+  "engine": "grid",
+  "title": "Peripheral and Storage Management Layers",
+  "height": 676,
+  "showLabels": false,
+  "panelPrompt": "Click a layer to see which accessory questions it answers.",
+  "image": {
+    "file": "peripheral-management-layers.png",
+    "width": 1000,
+    "height": 800,
+    "background": "clean flat white (#FFFFFF)",
+    "textPolicy": "headers-only",
+    "style": "flat vector layered poster, clean accessory pictograms, muted textbook palette",
+    "overall": "A stacked-band poster showing five categories of peripheral and storage management, drawn as five full-width horizontal bands read from the TOP of the frame downward: the top band is the umbrella practice and the four below it are specific accessory types. The five printed band titles, and the ONLY text in the image, are, from TOP to BOTTOM: \"Peripheral Device Management\", \"Headphone Management\", \"Mouse and Keyboard Setup\", \"External Storage Device\", \"Cloud Storage for Devices\".",
+    "layoutNotes": "Draw the 5 bands as full-width horizontal strips stacked with a small uniform gap of plain background between each pair. Every band must span the SAME left and right edges (about 3% to 97% of the image width), so the overlay's hover zones line up exactly. No text other than the printed titles listed above. Each band carries its printed title in bold dark text at its LEFT end on a solid block of that band's accent colour, with simple flat accessory pictograms in the space to the right. Draw the TOP band slightly taller and visually heaviest, since it is the umbrella that contains the four below it."
+  },
+  "zones": [
+    {
+      "id": "peripheral-device-management",
+      "label": "Peripheral Device Management",
+      "color": "#4A90D9",
+      "x1": 3,
+      "y1": 4,
+      "x2": 97,
+      "y2": 20,
+      "summary": "The umbrella practice: tracking accessories by bin count, not individual ID.",
+      "facts": [
+        "Applies Chapter 22's inventory and labelling principles at bin scale",
+        "One spreadsheet row per bin rather than per item",
+        "Covers headphones, mice, keyboards, and storage drives together"
+      ],
+      "draw": {
+        "position": "The top band, roughly 4% to 20% down the image.",
+        "visual": "Solid blue title block at the left end. To its right: a labelled storage bin icon with a small clipboard beside it, and a cluster of miniature accessory silhouettes inside the bin."
+      }
+    },
+    {
+      "id": "headphone-management",
+      "label": "Headphone Management",
+      "color": "#50C878",
+      "x1": 3,
+      "y1": 22,
+      "x2": 97,
+      "y2": 38,
+      "summary": "Shared headphones, sanitised between students.",
+      "facts": [
+        "Extends Chapter 22's device cleaning routine to an accessory touching a different student's ears each session",
+        "Disposable or wipeable ear-cushion covers swapped between uses",
+        "Stored in a labelled bin"
+      ],
+      "draw": {
+        "position": "The second band from the top, roughly 22% to 38% down.",
+        "visual": "Solid green title block at the left end. To its right: an over-ear headphone icon, a small detachable ear-cushion cover shape, and a wipe/cloth icon."
+      }
+    },
+    {
+      "id": "mouse-keyboard-setup",
+      "label": "Mouse and Keyboard Setup",
+      "color": "#F5A623",
+      "x1": 3,
+      "y1": 40,
+      "x2": 97,
+      "y2": 56,
+      "summary": "External input devices for projects where the built-in keyboard is awkward.",
+      "facts": [
+        "Used when a laptop sits next to a breadboard or robot kit",
+        "A project-specific setup step, not a default",
+        "Connected only when the activity calls for it"
+      ],
+      "draw": {
+        "position": "The middle band, roughly 40% to 56% down.",
+        "visual": "Solid amber title block at the left end. To its right: a mouse icon and a compact external keyboard icon, with a small breadboard shape beside them."
+      }
+    },
+    {
+      "id": "external-storage-device",
+      "label": "External Storage Device",
+      "color": "#E85D75",
+      "x1": 3,
+      "y1": 58,
+      "x2": 97,
+      "y2": 74,
+      "summary": "USB drives for moving files to hardware that does not read the cloud.",
+      "facts": [
+        "Needed for robot-kit firmware-flashing tools that expect a local file",
+        "Especially useful on Chromebooks with limited local storage",
+        "Labelled the same way laptops are"
+      ],
+      "draw": {
+        "position": "The fourth band from the top, roughly 58% to 74% down.",
+        "visual": "Solid rose-red title block at the left end. To its right: a USB flash-drive icon with a small adhesive label on its body, and a small robot-chassis silhouette."
+      }
+    },
+    {
+      "id": "cloud-storage-for-devices",
+      "label": "Cloud Storage for Devices",
+      "color": "#9B6BC7",
+      "x1": 3,
+      "y1": 76,
+      "x2": 97,
+      "y2": 96,
+      "summary": "A shared cloud drive so files survive a shared-account reset.",
+      "facts": [
+        "The default save location on shared device accounts",
+        "Work follows the student to any laptop, not just one machine",
+        "Distinct from a local external drive, which is for hardware that cannot reach the cloud at all"
+      ],
+      "draw": {
+        "position": "The bottom band, roughly 76% to 96% down.",
+        "visual": "Solid violet title block at the left end. To its right: a cloud icon with an upward arrow, and two laptop icons both connected to the same cloud by thin lines."
+      }
+    }
+  ],
+  "quiz": [
+    {
+      "question": "Which layer is the umbrella practice that covers all the others?",
+      "correct_zone": "peripheral-device-management"
+    },
+    {
+      "question": "Which layer is needed for firmware tools that expect a local file?",
+      "correct_zone": "external-storage-device"
+    },
+    {
+      "question": "Which layer lets a student's work follow them to any laptop?",
+      "correct_zone": "cloud-storage-for-devices"
+    }
+  ]
+}

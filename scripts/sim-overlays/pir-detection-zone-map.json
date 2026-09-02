@@ -1,0 +1,103 @@
+{
+  "engine": "callout",
+  "title": "PIR Detection Zone Map",
+  "height": 640,
+  "layout": "side-panel",
+  "image": {
+    "file": "pir-detection-zone-map.png",
+    "width": 900,
+    "height": 600,
+    "orientation": "landscape",
+    "background": "a plain light room floor (#F7F9FB) with a darker wall band across the top",
+    "textPolicy": "none",
+    "style": "clean flat vector floor-plan illustration, straight top-down view, flat fills with soft transparency, textbook diagram look, no photorealism",
+    "overall": "A straight top-down floor plan of a rectangular room. A solid wall band runs across the TOP edge of the frame. Mounted centrally on that wall, pointing down into the room, is a small PIR sensor drawn as a rounded rectangle with a white domed Fresnel lens on its face. Radiating downward from the sensor into the room are FIVE narrow fan-shaped detection wedges, evenly spaced, together spanning about 110 degrees. The wedges must be clearly separated from one another by thin unfilled gaps of plain floor -- the gaps between wedges are as important as the wedges themselves. Each wedge is filled with a vertical transparency gradient: more opaque near the sensor at the top, fading toward transparent at its far end near the bottom of the frame. Alternate the wedge fills between two hues so adjacent wedges are visually distinguishable: warm amber (#F5A623) and cool blue (#4A90D9), at roughly 35% opacity near the sensor. Overlaid on the floor are TWO dotted walking paths drawn as dotted lines with a small circular dot marking a person: PATH A runs horizontally left to right across the middle of the room, cutting through all five wedges. PATH B is a short path that enters one single wedge and then stays inside it, curling in a small loop entirely within that one wedge.",
+    "layoutNotes": "The five wedges must fan out symmetrically from the sensor and must not touch each other -- keep a visible gap of plain floor between every adjacent pair. Draw path A in one colour (dark teal) and path B in another (dark violet) so they are separable, but do not letter or number them. Do not draw any text, numbers, distance markings, degree markings, arrows with labels, a legend, or a title. Do not draw furniture or people; the walking paths are represented by dotted lines and a single dot each."
+  },
+  "callouts": [
+    {
+      "id": 1,
+      "label": "PIR sensor",
+      "x": 50,
+      "y": 10,
+      "radius": 5,
+      "color": "#8E44AD",
+      "hint": "A small module mounted on the wall at the top.",
+      "description": "The sensor itself. Its white plastic Fresnel lens is what splits its field of view into the separate wedges below -- the lens does the zoning, not the electronics.",
+      "draw": {
+        "position": "On the wall at the top centre of the frame, about 50% from the left and 10% from the top.",
+        "visual": "A small rounded-rectangle module mounted flush to the wall, with a domed white segmented lens on its downward-facing side."
+      }
+    },
+    {
+      "id": 2,
+      "label": "Detection zone (near)",
+      "x": 50,
+      "y": 32,
+      "radius": 5,
+      "color": "#F5A623",
+      "hint": "The wide, strongly tinted part of a wedge close to the sensor.",
+      "description": "Close to the sensor the wedges are narrow and strongly overlapping in coverage, so even a small movement crosses a boundary and registers.",
+      "draw": {
+        "position": "In the middle of the central wedge, close to the sensor, about 50% from the left and 32% from the top.",
+        "visual": "The upper portion of the central fan wedge, where the fill is at its most opaque and the wedge is at its narrowest."
+      }
+    },
+    {
+      "id": 3,
+      "label": "Detection zone (far)",
+      "x": 50,
+      "y": 76,
+      "radius": 5,
+      "color": "#4A90D9",
+      "hint": "The wide, faintly tinted far end of a wedge.",
+      "description": "Far from the sensor each wedge has spread out and become wide. A person can move a long way at this distance while staying inside a single zone, which is why distant motion is detected less reliably.",
+      "draw": {
+        "position": "At the far end of the central wedge near the bottom of the frame, about 50% from the left and 76% from the top.",
+        "visual": "The lower portion of the central fan wedge, where the fill has faded toward transparent and the wedge has spread to its widest."
+      }
+    },
+    {
+      "id": 4,
+      "label": "Gap between zones",
+      "x": 30,
+      "y": 58,
+      "radius": 5,
+      "color": "#34495E",
+      "hint": "A thin strip of plain floor separating two tinted wedges.",
+      "description": "The unlit gaps between wedges are what make the sensor work. Crossing from a wedge into a gap and back is the change in infrared level the sensor actually detects.",
+      "draw": {
+        "position": "In the plain-floor gap between two adjacent wedges, left of centre, about 30% from the left and 58% from the top.",
+        "visual": "A narrow untinted wedge-shaped strip of plain background floor running between two tinted fan wedges."
+      }
+    },
+    {
+      "id": 5,
+      "label": "Path A: crosses zones",
+      "x": 18,
+      "y": 52,
+      "radius": 5,
+      "color": "#1ABC9C",
+      "hint": "A dotted line running straight across the room.",
+      "description": "A person walking across the fan crosses wedge after wedge, so the sensor sees repeated changes and keeps triggering.",
+      "draw": {
+        "position": "On the horizontal dotted path at the left of the frame, about 18% from the left and 52% from the top.",
+        "visual": "A dark teal dotted line entering from the left edge and running horizontally across the whole room, cutting through every wedge, with one small filled circle on it marking the walker."
+      }
+    },
+    {
+      "id": 6,
+      "label": "Path B: stays in one zone",
+      "x": 70,
+      "y": 66,
+      "radius": 5,
+      "color": "#9B59B6",
+      "hint": "A short looping dotted line contained inside one wedge.",
+      "description": "A person who steps into one wedge and then stays inside it triggers the sensor once on entry and then nothing more. Standing still in a zone is invisible, which is the classic 'the light keeps going off' complaint.",
+      "draw": {
+        "position": "On the small looping path inside a single right-hand wedge, about 70% from the left and 66% from the top.",
+        "visual": "A dark violet dotted line that enters one wedge and then curls in a small closed loop entirely within that single wedge, never crossing into a neighbouring wedge, with one small filled circle marking the walker."
+      }
+    }
+  ]
+}

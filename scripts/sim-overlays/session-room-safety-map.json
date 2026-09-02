@@ -1,0 +1,131 @@
+{
+  "engine": "callout",
+  "title": "Session Room Safety and Logistics Map",
+  "height": 760,
+  "layout": "side-panel",
+  "image": {
+    "file": "session-room-safety-map.png",
+    "width": 1200,
+    "height": 900,
+    "orientation": "landscape",
+    "background": "a light neutral floor (#F2F4F6) with pale wood-tone furniture",
+    "textPolicy": "none",
+    "style": "friendly flat vector illustration, angled overhead (isometric-lite) view, soft cel shading, muted textbook palette, no photorealism, no people",
+    "overall": "An angled overhead view of a single rectangular coding club meeting room, occupying the whole frame. The room has four walls drawn as low borders so the interior is fully visible. In the CENTRE is a large rectangular worktable with six chairs around it and a few closed laptops on it. Along the TOP wall is a large whiteboard. In the TOP-LEFT corner is a wall outlet with three laptops on a low bench charging beside it. In the BOTTOM-LEFT is the room's main entrance: a doorway in the left wall. Just inside that doorway, mounted on the wall, is a small white first-aid box with a cross emblem on it. In the TOP-RIGHT corner is a small area marked off on the floor with diagonal yellow-and-black hazard tape, containing a small workbench with a soldering iron in a stand. In the BOTTOM-RIGHT is a second door with a green illuminated exit sign above it. On the RIGHT wall, mid-height, is a third door for the restroom. Along the BOTTOM wall, right of centre, is a small side table with a water jug, a stack of cups, and a snack bin. A wide, clearly unobstructed strip of open floor runs from the main entrance at the bottom-left diagonally to the central worktable.",
+    "layoutNotes": "Keep every one of the nine features visually separated with clear floor space between them so overlay markers can land on each without ambiguity. Do not place any furniture in the wide pathway from the entrance to the central table -- its emptiness is the point. Do not draw people, hands, or animals. Do not draw any exit lettering, room signage, whiteboard writing, or any other text; the exit sign should be a plain green rectangle with a running-figure pictogram only. Leave at least 5% margin inside the frame edge."
+  },
+  "callouts": [
+    {
+      "id": 1,
+      "label": "Charging Station",
+      "x": 14,
+      "y": 20,
+      "radius": 5,
+      "color": "#4A90D9",
+      "hint": "A low bench beside a wall outlet in an upper corner.",
+      "description": "Devices charge here between sessions, away from the active workspace.",
+      "draw": {
+        "position": "Top-left corner of the room, about 14% from the left and 20% from the top.",
+        "visual": "A low bench against the wall with three closed laptops on it and short cables running to a wall outlet."
+      }
+    },
+    {
+      "id": 2,
+      "label": "Whiteboard",
+      "x": 50,
+      "y": 10,
+      "radius": 5,
+      "color": "#4A90D9",
+      "hint": "A large blank white panel mounted high on a wall.",
+      "description": "Shows the day's agenda and the challenge card's key steps.",
+      "draw": {
+        "position": "Centred on the top wall, about 50% from the left and 10% from the top.",
+        "visual": "A wide blank white rectangle with a thin aluminium frame and a narrow pen tray along its bottom edge. Completely blank -- no writing."
+      }
+    },
+    {
+      "id": 3,
+      "label": "Safety Zone (Soldering / Hot Tools)",
+      "x": 84,
+      "y": 20,
+      "radius": 5,
+      "color": "#E74C3C",
+      "hint": "A floor area marked off with diagonal hazard tape.",
+      "description": "Marked boundary around any station using heat or sharp tools.",
+      "draw": {
+        "position": "Top-right corner of the room, about 84% from the left and 20% from the top.",
+        "visual": "A rectangle of floor outlined in diagonal yellow-and-black hazard tape, containing a small workbench with a soldering iron resting in its metal stand."
+      }
+    },
+    {
+      "id": 4,
+      "label": "Emergency Exit",
+      "x": 86,
+      "y": 84,
+      "radius": 5,
+      "color": "#E74C3C",
+      "hint": "A door with a green illuminated sign above it.",
+      "description": "Every mentor should know this route before students arrive.",
+      "draw": {
+        "position": "Bottom-right of the room, about 86% from the left and 84% from the top.",
+        "visual": "A closed door in the wall with a small green backlit sign mounted above it showing a white running-figure pictogram and an arrow. No lettering."
+      }
+    },
+    {
+      "id": 5,
+      "label": "First Aid Kit",
+      "x": 9,
+      "y": 68,
+      "radius": 5,
+      "color": "#F39C12",
+      "hint": "A small wall-mounted white box with a cross on it.",
+      "description": "Stocked with bandages and cold packs; location fixed and known to every mentor.",
+      "draw": {
+        "position": "On the left wall just inside the main entrance, about 9% from the left and 68% from the top.",
+        "visual": "A small white wall-mounted box with a rounded latch and a bold green or red cross emblem on its front."
+      }
+    },
+    {
+      "id": 6,
+      "label": "Accessible Pathway",
+      "x": 32,
+      "y": 66,
+      "radius": 5,
+      "color": "#2ECC71",
+      "hint": "A wide empty strip of floor running from a doorway to the table.",
+      "description": "Kept clear for wheelchair or mobility-aid access.",
+      "draw": {
+        "position": "In the open floor between the entrance and the central table, about 32% from the left and 66% from the top.",
+        "visual": "A conspicuously empty, wide strip of plain floor running diagonally from the bottom-left doorway to the central worktable, with no furniture, bags, or cables anywhere on it."
+      }
+    },
+    {
+      "id": 7,
+      "label": "Restroom",
+      "x": 95,
+      "y": 50,
+      "radius": 5,
+      "color": "#3498DB",
+      "hint": "A plain door in a side wall.",
+      "description": "Students may use it whenever needed, per the restroom break policy.",
+      "draw": {
+        "position": "In the middle of the right wall, about 95% from the left and 50% from the top.",
+        "visual": "A plain closed door set into the right wall, with a simple handle and no signage or lettering."
+      }
+    },
+    {
+      "id": 8,
+      "label": "Snack and Water Table",
+      "x": 62,
+      "y": 88,
+      "radius": 5,
+      "color": "#1ABC9C",
+      "hint": "A small side table with a jug and cups.",
+      "description": "Location for the club's snack and water policy; kept separate from electronics.",
+      "draw": {
+        "position": "Along the bottom wall right of centre, about 62% from the left and 88% from the top.",
+        "visual": "A small side table holding a clear water jug, a short stack of paper cups, and an open bin of wrapped snacks. No laptops or electronics on or near it."
+      }
+    }
+  ]
+}

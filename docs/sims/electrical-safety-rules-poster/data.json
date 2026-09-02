@@ -1,0 +1,86 @@
+{
+  "title": "Electrical Safety Rules Poster",
+  "image": "electrical-safety-rules-poster.png",
+  "layout": "grid",
+  "showLabels": false,
+  "zones": [
+    {
+      "id": "circuits",
+      "label": "Circuits",
+      "color": "#4A90D9",
+      "x1": 3,
+      "y1": 6,
+      "x2": 48,
+      "y2": 48,
+      "summary": "Build the circuit before you power it.",
+      "facts": [
+        "Never bridge the two battery terminals with a bare wire",
+        "Check LED polarity before connecting power",
+        "Disconnect power before changing any wire"
+      ]
+    },
+    {
+      "id": "batteries",
+      "label": "Batteries",
+      "color": "#F5A623",
+      "x1": 52,
+      "y1": 6,
+      "x2": 97,
+      "y2": 48,
+      "summary": "Treat batteries as small chemical devices, not toys.",
+      "facts": [
+        "Never puncture, crush, or short a battery pack",
+        "Stop using a swollen or hot pack immediately",
+        "Store loose batteries so terminals cannot touch metal"
+      ]
+    },
+    {
+      "id": "static",
+      "label": "Static",
+      "color": "#7ED6A5",
+      "x1": 3,
+      "y1": 52,
+      "x2": 48,
+      "y2": 94,
+      "summary": "Ground yourself before you touch a board.",
+      "facts": [
+        "Touch a grounded metal object before handling a microcontroller",
+        "Avoid handling boards on carpet in dry weather",
+        "Keep boards in anti-static bags when not in use"
+      ]
+    },
+    {
+      "id": "soldering",
+      "label": "Soldering",
+      "color": "#E67E22",
+      "x1": 52,
+      "y1": 52,
+      "x2": 97,
+      "y2": 94,
+      "summary": "The iron is always hot until proven otherwise.",
+      "facts": [
+        "The iron only ever rests in its stand",
+        "Never touch the tip or the joint right after soldering",
+        "Work in a ventilated area"
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "question": "Which panel covers never bridging the two battery terminals?",
+      "correct_zone": "circuits"
+    },
+    {
+      "question": "Which panel tells you to touch grounded metal first?",
+      "correct_zone": "static"
+    },
+    {
+      "question": "Where would you look for the rule about working in a ventilated area?",
+      "correct_zone": "soldering"
+    },
+    {
+      "question": "Which panel covers what to do with a swollen pack?",
+      "correct_zone": "batteries"
+    }
+  ]
+}

@@ -1,0 +1,130 @@
+{
+  "engine": "grid",
+  "title": "Layers of Youth Digital Safety",
+  "height": 676,
+  "showLabels": false,
+  "panelPrompt": "Click a layer to see what risk it addresses and who manages it.",
+  "image": {
+    "file": "youth-safety-layers.png",
+    "width": 1000,
+    "height": 800,
+    "background": "clean flat white (#FFFFFF)",
+    "textPolicy": "headers-only",
+    "style": "flat vector layered-stack poster, clean shield and lock pictograms, muted textbook palette",
+    "overall": "A stacked-band poster showing five layers of youth digital safety, drawn as five full-width horizontal bands from the bottom of the frame to the top. The bottom band is the foundation and the top band is the daily habit, so the stack reads like a wall built from the ground up. The five printed band titles, and the ONLY text in the image, are, from BOTTOM to TOP: \"Device Security Policy\", \"Password Management for Kids\", \"Parental Control Software\", \"Content Filtering Software\", \"Screen Time Management\".",
+    "layoutNotes": "Draw the 5 bands as full-width horizontal strips stacked with a small uniform gap of plain background between each pair. Every band must span the SAME left and right edges (about 3% to 97% of the image width) and have the SAME height, so the overlay's rectangular hover zones line up with them exactly. Each band carries its printed title in bold dark text at its LEFT end, on a solid block of that band's accent colour, with simple flat icons in the remaining space to the right. No other text anywhere. Because the stack is a foundation metaphor, draw the bottom band slightly thicker and visually heaviest, with the bands becoming lighter in visual weight toward the top."
+  },
+  "zones": [
+    {
+      "id": "device-security-policy",
+      "label": "Device Security Policy",
+      "color": "#4A90D9",
+      "x1": 3,
+      "y1": 80,
+      "x2": 97,
+      "y2": 96,
+      "summary": "The written foundation every other layer above builds on.",
+      "facts": [
+        "Extends Chapter 3's child safety and data privacy policies onto specific device settings",
+        "Covers auto-lock timing, no personal accounts on shared devices, and a lost-device procedure",
+        "Managed entirely by the club"
+      ],
+      "draw": {
+        "position": "The bottom band, roughly 80% to 96% down the image.",
+        "visual": "Solid blue title block at the left end. To its right: a document icon with a small padlock on it, and a laptop icon with a lock badge."
+      }
+    },
+    {
+      "id": "password-management-for-kids",
+      "label": "Password Management for Kids",
+      "color": "#50C878",
+      "x1": 3,
+      "y1": 62,
+      "x2": 97,
+      "y2": 78,
+      "summary": "Age-appropriate passwords, plus a fast club-side reset process.",
+      "facts": [
+        "Favours memorable passphrases over complex symbol strings",
+        "A club-kept password reset log replaces adult-style self-service recovery",
+        "Managed by the club"
+      ],
+      "draw": {
+        "position": "The second band from the bottom, roughly 62% to 78% down the image.",
+        "visual": "Solid green title block at the left end. To its right: a key icon, and a row of four large dots representing a masked passphrase (dots only, no letters)."
+      }
+    },
+    {
+      "id": "parental-control-software",
+      "label": "Parental Control Software",
+      "color": "#F5A623",
+      "x1": 3,
+      "y1": 44,
+      "x2": 97,
+      "y2": 60,
+      "summary": "Device-wide rules on what can run, not just which sites load.",
+      "facts": [
+        "Blocks unapproved app or extension installation",
+        "Can enforce daily device time limits",
+        "Generates usage reports",
+        "Managed by the club or, for a loaned device, a family at home"
+      ],
+      "draw": {
+        "position": "The middle band, roughly 44% to 60% down the image.",
+        "visual": "Solid amber title block at the left end. To its right: an app-grid icon with one tile crossed out, an hourglass, and a small bar-chart icon."
+      }
+    },
+    {
+      "id": "content-filtering-software",
+      "label": "Content Filtering Software",
+      "color": "#E85D75",
+      "x1": 3,
+      "y1": 26,
+      "x2": 97,
+      "y2": 42,
+      "summary": "Blocks inappropriate websites automatically, before a page loads.",
+      "facts": [
+        "The technical enforcement of Chapter 3's child safety policy",
+        "Works at the network or browser level",
+        "Requires no mentor to be watching every screen",
+        "Managed by the club"
+      ],
+      "draw": {
+        "position": "The fourth band from the bottom, roughly 26% to 42% down the image.",
+        "visual": "Solid rose-red title block at the left end. To its right: a funnel or sieve icon with shapes passing through and one blocked, plus a small router/wifi icon."
+      }
+    },
+    {
+      "id": "screen-time-management",
+      "label": "Screen Time Management",
+      "color": "#9B6BC7",
+      "x1": 3,
+      "y1": 8,
+      "x2": 97,
+      "y2": 24,
+      "summary": "The daily habit layer: alternating screen work with hands-on activity.",
+      "facts": [
+        "A session-structure practice, not a device setting",
+        "Pairs coding blocks with hands-on kit-building time from Chapters 19-20",
+        "Managed by whichever mentor is running that session"
+      ],
+      "draw": {
+        "position": "The top band, roughly 8% to 24% down the image.",
+        "visual": "Solid violet title block at the left end. To its right: a simple alternating timeline of two shapes -- a screen icon then a hands/tools icon then a screen icon -- suggesting alternation."
+      }
+    }
+  ],
+  "quiz": [
+    {
+      "question": "Which layer is a session-structure practice rather than a device setting?",
+      "correct_zone": "screen-time-management"
+    },
+    {
+      "question": "Which layer blocks a website before the page loads?",
+      "correct_zone": "content-filtering-software"
+    },
+    {
+      "question": "Which layer is the written foundation the others build on?",
+      "correct_zone": "device-security-policy"
+    }
+  ]
+}

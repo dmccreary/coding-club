@@ -1,0 +1,89 @@
+{
+  "engine": "callout",
+  "title": "Static Electricity Precaution Checklist",
+  "height": 640,
+  "layout": "side-panel",
+  "image": {
+    "file": "static-electricity-precaution-checklist.png",
+    "width": 1000,
+    "height": 650,
+    "orientation": "landscape",
+    "background": "a warm neutral classroom interior (#F5F2EE)",
+    "textPolicy": "none",
+    "style": "clean flat vector illustration, three-quarter side view at table height, soft cel shading, muted palette, no photorealism",
+    "overall": "A classroom table scene viewed from a low three-quarter angle. The floor beneath the table is visibly CARPETED -- draw a clear looped-pile carpet texture in a muted blue-grey across the bottom fifth of the frame. The table has a wooden top and visible bare METAL legs with a slight metallic sheen. On the LEFT half of the tabletop lies a silvery-grey anti-static bag, partly open, with the corner of a small green microcontroller board just visible inside it. On the RIGHT half of the tabletop lies a second small green microcontroller board completely OUT of any bag, bare on the wooden surface, with its components and header pins exposed. In the CENTRE, a single human hand and forearm reaches in from the right edge of the frame, fingers open, hovering just above the tabletop between the two boards. In the BOTTOM-RIGHT, partly cut off by the frame edge, is a moulded plastic chair with visible castors, positioned as though it has just been slid back across the carpet.",
+    "layoutNotes": "Keep the five features -- metal table leg, anti-static bag, carpet, plastic chair, bare board -- clearly separated with space between them so overlay markers land unambiguously. At least one metal table leg must be fully visible and unobstructed from tabletop to carpet. Do not draw any text, symbols, warning icons, lightning bolts, spark effects, tick marks, or crosses; all status marking is added by the overlay. Do not draw a face or any part of a person above the wrist."
+  },
+  "callouts": [
+    {
+      "id": 1,
+      "label": "Metal table leg",
+      "x": 22,
+      "y": 74,
+      "radius": 5,
+      "color": "#2ECC71",
+      "hint": "A bare metal support running from the table down to the floor.",
+      "description": "Safe to touch first. Laying a hand on grounded bare metal harmlessly drains any charge you have built up before you reach for a board.",
+      "draw": {
+        "position": "On the front-left metal leg of the table, about 22% from the left and 74% from the top.",
+        "visual": "A straight bare metal table leg with a soft brushed-steel sheen, fully visible from the underside of the tabletop down to where it meets the carpet."
+      }
+    },
+    {
+      "id": 2,
+      "label": "Anti-static bag",
+      "x": 26,
+      "y": 44,
+      "radius": 5,
+      "color": "#2ECC71",
+      "hint": "A silvery-grey pouch on the tabletop with a board inside.",
+      "description": "Correct storage. The bag's conductive layer keeps any charge on the outside, where it cannot reach the board.",
+      "draw": {
+        "position": "On the left half of the tabletop, about 26% from the left and 44% from the top.",
+        "visual": "A slightly crinkled silvery-grey semi-transparent pouch lying flat, its opening facing the viewer, with the corner of a small green circuit board visible inside."
+      }
+    },
+    {
+      "id": 3,
+      "label": "Carpeted floor",
+      "x": 50,
+      "y": 90,
+      "radius": 5,
+      "color": "#F39C12",
+      "hint": "The textured floor surface beneath the table.",
+      "description": "Increases static buildup. Carpet is not dangerous in itself, but walking or shuffling across it is where the charge comes from in the first place.",
+      "draw": {
+        "position": "Across the floor beneath the table, about 50% from the left and 90% from the top.",
+        "visual": "A clear looped-pile carpet texture in muted blue-grey, drawn with enough visible fibre detail to read unmistakably as carpet rather than a hard floor."
+      }
+    },
+    {
+      "id": 4,
+      "label": "Plastic chair after sliding",
+      "x": 86,
+      "y": 80,
+      "radius": 5,
+      "color": "#F39C12",
+      "hint": "A moulded seat on castors at the edge of the frame.",
+      "description": "A common charge-building action. Sliding a plastic chair across carpet is one of the most reliable ways to charge yourself up without noticing.",
+      "draw": {
+        "position": "Bottom-right of the frame, about 86% from the left and 80% from the top.",
+        "visual": "A moulded plastic chair seat and back on castors, partly cut off by the right frame edge, angled as though just pushed back, with faint motion lines on the carpet behind its wheels."
+      }
+    },
+    {
+      "id": 5,
+      "label": "Bare board out of its bag",
+      "x": 74,
+      "y": 42,
+      "radius": 5,
+      "color": "#E74C3C",
+      "hint": "A small green circuit board lying uncovered on the table.",
+      "description": "Should be avoided when not in use. A board left out of its bag is exposed to every charge that reaches the table, and static damage is usually invisible until the board misbehaves later.",
+      "draw": {
+        "position": "On the right half of the tabletop, about 74% from the left and 42% from the top.",
+        "visual": "A small green microcontroller board lying directly on the bare wooden tabletop, no bag anywhere near it, with its black chips, silver header pins, and copper traces clearly visible."
+      }
+    }
+  ]
+}

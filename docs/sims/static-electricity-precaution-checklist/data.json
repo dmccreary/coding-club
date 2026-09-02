@@ -1,0 +1,59 @@
+{
+  "title": "Static Electricity Precaution Checklist",
+  "orientation": "landscape",
+  "image": "static-electricity-precaution-checklist.png",
+  "layout": "side-panel",
+  "showNumbers": true,
+  "callouts": [
+    {
+      "id": 1,
+      "label": "Bare board out of its bag",
+      "x": 74,
+      "y": 42,
+      "radius": 5,
+      "color": "#E74C3C",
+      "hint": "A small green circuit board lying uncovered on the table.",
+      "description": "Should be avoided when not in use. A board left out of its bag is exposed to every charge that reaches the table, and static damage is usually invisible until the board misbehaves later."
+    },
+    {
+      "id": 2,
+      "label": "Anti-static bag",
+      "x": 26,
+      "y": 44,
+      "radius": 5,
+      "color": "#2ECC71",
+      "hint": "A silvery-grey pouch on the tabletop with a board inside.",
+      "description": "Correct storage. The bag's conductive layer keeps any charge on the outside, where it cannot reach the board."
+    },
+    {
+      "id": 3,
+      "label": "Metal table leg",
+      "x": 22,
+      "y": 74,
+      "radius": 5,
+      "color": "#2ECC71",
+      "hint": "A bare metal support running from the table down to the floor.",
+      "description": "Safe to touch first. Laying a hand on grounded bare metal harmlessly drains any charge you have built up before you reach for a board."
+    },
+    {
+      "id": 4,
+      "label": "Plastic chair after sliding",
+      "x": 86,
+      "y": 80,
+      "radius": 5,
+      "color": "#F39C12",
+      "hint": "A moulded seat on castors at the edge of the frame.",
+      "description": "A common charge-building action. Sliding a plastic chair across carpet is one of the most reliable ways to charge yourself up without noticing."
+    },
+    {
+      "id": 5,
+      "label": "Carpeted floor",
+      "x": 50,
+      "y": 90,
+      "radius": 5,
+      "color": "#F39C12",
+      "hint": "The textured floor surface beneath the table.",
+      "description": "Increases static buildup. Carpet is not dangerous in itself, but walking or shuffling across it is where the charge comes from in the first place."
+    }
+  ]
+}

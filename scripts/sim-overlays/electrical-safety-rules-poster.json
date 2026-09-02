@@ -1,0 +1,113 @@
+{
+  "engine": "grid",
+  "title": "Electrical Safety Rules Poster",
+  "height": 676,
+  "showLabels": false,
+  "panelPrompt": "Click a panel to see its three rules.",
+  "image": {
+    "file": "electrical-safety-rules-poster.png",
+    "width": 1000,
+    "height": 800,
+    "background": "clean flat white (#FFFFFF)",
+    "textPolicy": "headers-only",
+    "style": "flat vector safety poster, bold simple pictograms, high contrast, muted textbook palette",
+    "overall": "A safety poster laid out as a 2x2 grid of four equal rectangular panels with a clear cross-shaped gutter of background between them. Each panel has a coloured header bar across its top carrying its printed title, and bold simple safety pictograms filling the space below. The four printed headers, and the ONLY text in the image, are: \"Circuits\" (top-left), \"Batteries\" (top-right), \"Static\" (bottom-left), \"Soldering\" (bottom-right).",
+    "layoutNotes": "Draw the four panels as equal rectangles in a strict 2x2 grid: top-left, top-right, bottom-left, bottom-right, each occupying roughly 45% of the image width and 42% of the image height, with a clear gutter between them and a margin around the outside. All four panels must be exactly the same size so the overlay's hover zones line up. Use bold, simple, wordless pictograms only -- no rule text, no bullet points, no numbers, no warning triangles containing text."
+  },
+  "zones": [
+    {
+      "id": "circuits",
+      "label": "Circuits",
+      "color": "#4A90D9",
+      "x1": 3,
+      "y1": 6,
+      "x2": 48,
+      "y2": 48,
+      "summary": "Build the circuit before you power it.",
+      "facts": [
+        "Never bridge the two battery terminals with a bare wire",
+        "Check LED polarity before connecting power",
+        "Disconnect power before changing any wire"
+      ],
+      "draw": {
+        "position": "The top-left panel of the 2x2 grid, roughly 3% to 48% across and 6% to 48% down.",
+        "visual": "Header bar tinted blue. Below it: a simple closed circuit loop pictogram with a battery, a resistor zig-zag, and an LED triangle, plus a small disconnected-plug icon."
+      }
+    },
+    {
+      "id": "batteries",
+      "label": "Batteries",
+      "color": "#F5A623",
+      "x1": 52,
+      "y1": 6,
+      "x2": 97,
+      "y2": 48,
+      "summary": "Treat batteries as small chemical devices, not toys.",
+      "facts": [
+        "Never puncture, crush, or short a battery pack",
+        "Stop using a swollen or hot pack immediately",
+        "Store loose batteries so terminals cannot touch metal"
+      ],
+      "draw": {
+        "position": "The top-right panel, roughly 52% to 97% across and 6% to 48% down.",
+        "visual": "Header bar tinted amber. Below it: a battery pack pictogram, a second battery drawn visibly swollen and bulging, and a small heat-wave symbol."
+      }
+    },
+    {
+      "id": "static",
+      "label": "Static",
+      "color": "#7ED6A5",
+      "x1": 3,
+      "y1": 52,
+      "x2": 48,
+      "y2": 94,
+      "summary": "Ground yourself before you touch a board.",
+      "facts": [
+        "Touch a grounded metal object before handling a microcontroller",
+        "Avoid handling boards on carpet in dry weather",
+        "Keep boards in anti-static bags when not in use"
+      ],
+      "draw": {
+        "position": "The bottom-left panel, roughly 3% to 48% across and 52% to 94% down.",
+        "visual": "Header bar tinted mint green. Below it: a hand pictogram touching a metal bar, a small spark arc between a fingertip and a circuit board, and a silvery anti-static pouch shape."
+      }
+    },
+    {
+      "id": "soldering",
+      "label": "Soldering",
+      "color": "#E67E22",
+      "x1": 52,
+      "y1": 52,
+      "x2": 97,
+      "y2": 94,
+      "summary": "The iron is always hot until proven otherwise.",
+      "facts": [
+        "The iron only ever rests in its stand",
+        "Never touch the tip or the joint right after soldering",
+        "Work in a ventilated area"
+      ],
+      "draw": {
+        "position": "The bottom-right panel, roughly 52% to 97% across and 52% to 94% down.",
+        "visual": "Header bar tinted orange. Below it: a soldering iron pictogram resting in its coiled metal stand, small rising fume curls, and an open-window or fan icon."
+      }
+    }
+  ],
+  "quiz": [
+    {
+      "question": "Which panel covers never bridging the two battery terminals?",
+      "correct_zone": "circuits"
+    },
+    {
+      "question": "Which panel tells you to touch grounded metal first?",
+      "correct_zone": "static"
+    },
+    {
+      "question": "Where would you look for the rule about working in a ventilated area?",
+      "correct_zone": "soldering"
+    },
+    {
+      "question": "Which panel covers what to do with a swollen pack?",
+      "correct_zone": "batteries"
+    }
+  ]
+}

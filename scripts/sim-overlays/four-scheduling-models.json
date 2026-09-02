@@ -1,0 +1,113 @@
+{
+  "engine": "grid",
+  "title": "Four Coding Club Scheduling Models",
+  "height": 676,
+  "showLabels": false,
+  "panelPrompt": "Click a scheduling model to compare it against the others.",
+  "image": {
+    "file": "four-scheduling-models.png",
+    "width": 1400,
+    "height": 800,
+    "background": "clean flat white (#FFFFFF)",
+    "textPolicy": "headers-only",
+    "style": "flat vector comparison poster, clean geometric icons and small calendar motifs, muted textbook palette",
+    "overall": "A four-column comparison poster about how often a coding club meets. Each column is a tall rounded panel with a coloured header bar carrying its printed title, and simple flat calendar and clock icons filling the space below. The four printed headers, and the ONLY text in the image, are: \"Alternating Saturday\", \"Weekday After-School\", \"Semester-Based\", \"Drop-In\".",
+    "layoutNotes": "Divide the content area into 4 equal-width vertical columns with a thin pale divider line or a clear gutter of background between each pair. Every column must have the SAME width, the SAME top edge, and the SAME bottom edge, so the overlay's rectangular hover zones line up with them exactly. Each column has its printed header in bold dark text at the very top of the column, on a tinted header bar in that column's accent colour. Below the header, fill the column with simple flat ICONS and abstract shapes only -- no words, no bullet points, no sentences. Leave a clear margin of at least 4% of the image width on the left and right edges and 8% of the height at the top and bottom."
+  },
+  "zones": [
+    {
+      "id": "alternating-saturday",
+      "label": "Alternating Saturday",
+      "color": "#4A90D9",
+      "x1": 2,
+      "y1": 10,
+      "x2": 25,
+      "y2": 92,
+      "summary": "Meets every other Saturday, all year.",
+      "facts": [
+        "Low weekly time commitment for families and mentors",
+        "Works well for library and community-centre venues open at weekends",
+        "The two-week gap can weaken momentum for younger students",
+        "Predictable and easy to plan around long-term"
+      ],
+      "draw": {
+        "position": "The first column from the left, roughly 2% to 25% of the image width.",
+        "visual": "Header bar tinted blue. Below it: a month grid with every other Saturday square filled in, and a small library-building icon."
+      }
+    },
+    {
+      "id": "weekday-after-school",
+      "label": "Weekday After-School",
+      "color": "#F5A623",
+      "x1": 27,
+      "y1": 10,
+      "x2": 50,
+      "y2": 92,
+      "summary": "Meets weekly, right after the school day.",
+      "facts": [
+        "Highest attendance consistency, since students are already at or near the venue",
+        "Competes directly with sports practices and other after-school activities",
+        "Requires mentor availability during working hours, favouring retired or flexible-schedule mentors",
+        "Best fit for school-based clubs (Chapter 2)"
+      ],
+      "draw": {
+        "position": "The second column, roughly 27% to 50% of the image width.",
+        "visual": "Header bar tinted amber. Below it: a clock face showing late afternoon, a school-building icon, and a small crossed pair of icons (a football and a music note) suggesting competing activities."
+      }
+    },
+    {
+      "id": "semester-based",
+      "label": "Semester-Based",
+      "color": "#7ED6A5",
+      "x1": 52,
+      "y1": 10,
+      "x2": 75,
+      "y2": 92,
+      "summary": "Runs for a defined term, then breaks and re-enrols.",
+      "facts": [
+        "Aligns naturally with school-calendar alignment",
+        "Gives a clean, low-pressure exit point for families and mentors each term",
+        "Requires a full onboarding process (Chapter 6) at the start of every new term",
+        "Well suited to a curriculum with defined tracks (Chapter 15)"
+      ],
+      "draw": {
+        "position": "The third column, roughly 52% to 75% of the image width.",
+        "visual": "Header bar tinted mint green. Below it: a horizontal timeline bar divided into two filled blocks with a gap between them, and a small graduation-cap icon."
+      }
+    },
+    {
+      "id": "drop-in",
+      "label": "Drop-In",
+      "color": "#E67E22",
+      "x1": 77,
+      "y1": 10,
+      "x2": 98,
+      "y2": 92,
+      "summary": "No fixed roster -- students attend whichever sessions work for them.",
+      "facts": [
+        "Lowest commitment barrier for families to try the club",
+        "Hardest model to plan mentor capacity for, since attendance is unpredictable",
+        "Poor fit for mentor pairing consistency (Chapter 10)",
+        "Works best for high-traffic venues like a bookstore or library with heavy walk-in footfall"
+      ],
+      "draw": {
+        "position": "The fourth column from the left, roughly 77% to 98% of the image width.",
+        "visual": "Header bar tinted orange. Below it: an open door icon with figures of varying sizes walking through it, and a small question-mark-shaped cluster of dots suggesting unpredictable numbers."
+      }
+    }
+  ],
+  "quiz": [
+    {
+      "question": "Which model gives the highest attendance consistency?",
+      "correct_zone": "weekday-after-school"
+    },
+    {
+      "question": "Which model is hardest to plan mentor capacity for?",
+      "correct_zone": "drop-in"
+    },
+    {
+      "question": "Which model gives families a clean exit point each term?",
+      "correct_zone": "semester-based"
+    }
+  ]
+}

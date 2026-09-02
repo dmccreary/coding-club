@@ -1,0 +1,90 @@
+{
+  "engine": "grid",
+  "title": "Annotated Feedback Form",
+  "height": 552,
+  "showLabels": false,
+  "panelPrompt": "Click a question to see why that type was chosen.",
+  "image": {
+    "file": "feedback-form-annotated.png",
+    "width": 1000,
+    "height": 600,
+    "background": "a pale neutral grey page (#F1F3F5) with the form itself on a white card",
+    "textPolicy": "headers-only",
+    "style": "flat vector mock-form illustration, clean UI widget shapes, muted textbook palette, light card background",
+    "overall": "A mock post-event feedback form drawn as a white card on a pale background, showing three stacked question areas separated by thin divider lines. Each question area shows its printed question line and its answer widget beneath. Reading from TOP to BOTTOM the three printed question lines, which are the ONLY text in the image, are: \"Anything else you'd like us to know? (optional)\" at the top, \"Which activity did you enjoy most?\" in the middle, and \"How was tonight's session?\" at the bottom.",
+    "layoutNotes": "Draw the 3 bands as full-width horizontal strips stacked with a small uniform gap of plain background between each pair. Every band must span the SAME left and right edges (about 3% to 97% of the image width), so the overlay's hover zones line up exactly. No text other than the printed titles listed above. Draw each question's answer widget clearly: the TOP question has a wide empty multi-line text box with a faint placeholder cursor and no words in it; the MIDDLE question has four radio-button circles in a vertical list, one of them filled, each followed by a short neutral grey placeholder bar instead of an option word; the BOTTOM question has a horizontal row of five circles numbered nowhere -- draw them as five plain circles left to right, increasing slightly in size, with the fourth one filled. Do not write any option words, any digits, or any scale numbers."
+  },
+  "zones": [
+    {
+      "id": "rating-scale-question",
+      "label": "Rating scale question",
+      "color": "#4A90D9",
+      "x1": 3,
+      "y1": 70,
+      "x2": 97,
+      "y2": 96,
+      "summary": "How was tonight's session? (1-5 scale)",
+      "facts": [
+        "Fastest to answer and to average across many responses",
+        "Best for tracking a trend over time",
+        "Loses nuance a written comment would capture"
+      ],
+      "draw": {
+        "position": "The bottom third of the form card, roughly 70% to 96% down the image.",
+        "visual": "The printed question line with a horizontal row of five plain circles beneath it, the fourth filled in."
+      }
+    },
+    {
+      "id": "multiple-choice-question",
+      "label": "Multiple choice question",
+      "color": "#50C878",
+      "x1": 3,
+      "y1": 38,
+      "x2": 97,
+      "y2": 68,
+      "summary": "Which activity did you enjoy most? (pick one)",
+      "facts": [
+        "Easy to tally into a simple count per option",
+        "Best when the possible answers are already known",
+        "Forces a choice even if a respondent liked two activities equally"
+      ],
+      "draw": {
+        "position": "The middle third of the form card, roughly 38% to 68% down.",
+        "visual": "The printed question line with four radio-button circles stacked vertically beneath it, one filled, each followed by a short neutral grey placeholder bar."
+      }
+    },
+    {
+      "id": "short-text-question",
+      "label": "Short text question",
+      "color": "#F5A623",
+      "x1": 3,
+      "y1": 4,
+      "x2": 97,
+      "y2": 36,
+      "summary": "Anything else you'd like us to know? (optional)",
+      "facts": [
+        "Captures detail the fixed question types cannot anticipate",
+        "Optional, so it does not slow down a respondent in a hurry",
+        "Harder to summarise across many responses than the scale or multiple-choice questions"
+      ],
+      "draw": {
+        "position": "The top third of the form card, roughly 4% to 36% down.",
+        "visual": "The printed question line with a wide empty multi-line text input box beneath it, showing a faint cursor and no typed content."
+      }
+    }
+  ],
+  "quiz": [
+    {
+      "question": "Which question type is fastest to average across many responses?",
+      "correct_zone": "rating-scale-question"
+    },
+    {
+      "question": "Which question type captures what the others could not anticipate?",
+      "correct_zone": "short-text-question"
+    },
+    {
+      "question": "Which question type forces a single choice?",
+      "correct_zone": "multiple-choice-question"
+    }
+  ]
+}

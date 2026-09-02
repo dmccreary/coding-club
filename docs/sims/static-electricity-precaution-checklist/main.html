@@ -1,113 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- microsim-scaffold-stub -->
-    <title>Static Electricity Precaution Checklist</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: #f8f9fa;
-            color: #212529;
-        }
-        #container {
-            width: 100%;
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 20px;
-            background: white;
-        }
-        h1 {
-            font-size: 22px;
-            margin-bottom: 10px;
-            color: #1a3a6c;
-        }
-        .placeholder {
-            border: 2px dashed #adb5bd;
-            border-radius: 8px;
-            padding: 40px 20px;
-            text-align: center;
-            color: #6c757d;
-            margin: 20px 0;
-            min-height: 400px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        .placeholder .badge {
-            display: inline-block;
-            background: #ffc107;
-            color: #212529;
-            padding: 4px 12px;
-            border-radius: 12px;
-            font-size: 12px;
-            font-weight: 600;
-            margin-bottom: 12px;
-        }
-        .placeholder h2 {
-            font-size: 18px;
-            color: #495057;
-            margin-bottom: 8px;
-        }
-        .placeholder p {
-            font-size: 14px;
-            max-width: 480px;
-        }
-        .meta {
-            margin-top: 20px;
-            font-size: 13px;
-            color: #6c757d;
-            border-top: 1px solid #dee2e6;
-            padding-top: 12px;
-        }
-        .meta strong { color: #495057; }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Static Electricity Precaution Checklist — Interactive Diagram</title>
+  <meta name="schema" content="https://dmccreary.github.io/intelligent-textbooks/ns/microsim/v1">
+  <link rel="stylesheet" href="../shared-libs/style.css">
 </head>
 <body>
-    <div id="container">
-        <h1>Static Electricity Precaution Checklist</h1>
-        <div class="placeholder">
-            <span class="badge">SCAFFOLD</span>
-            <h2>MicroSim Not Yet Implemented</h2>
-            <p>This MicroSim has been scaffolded from its specification but the
-            interactive content has not been built yet. See the chapter source
-            and the <code>index.md</code> in this directory for the full spec.</p>
-        </div>
-        <div class="meta">
-            <p><strong>Sim ID:</strong> static-electricity-precaution-checklist</p>
-            <p><strong>Library:</strong> Interactive Infographic Overlay (checklist overlay, illustrated classroom scene + clickable hotspots)</p>
-            <p><strong>Bloom Level:</strong> Remember (L1)</p>
-            <p><strong>Learning Objective:</strong> Given an illustrated classroom scene, the learner identifies which surfaces are safe to touch before handling a board and which increase static risk.</p>
-        </div>
-    </div>
 
-    <!--
-    SPECIFICATION (from chapter index.md):
+<div id="layout">
+  <svg id="leaders-svg"></svg>
 
-    Type: infographic
-    **sim-id:** static-electricity-precaution-checklist<br/>
-    **Library:** Interactive Infographic Overlay (checklist overlay, illustrated classroom scene + clickable hotspots)<br/>
-    **Status:** Specified
-    
-    Purpose: Let a mentor mentally rehearse the touch-first habit against a realistic classroom scene before the first session.
-    
-    Bloom Taxonomy: Remember (L1)
-    Bloom Taxonomy Verb: identify
-    
-    Learning objective: Given an illustrated classroom scene, the learner identifies which surfaces are safe to touch before handling a board and which increase static risk.
-    
-    Image style: Flat illustration of a classroom table scene: a carpeted floor, a student's hand, a microcontroller board in an anti-static bag, a metal table leg, and a plastic chair
-    
-    Image dimensions: 1000x650 (landscape)
-    
-    Hotspots (5 total, each with label, color, correct/incorrect status): 1. "Metal table leg" — green — safe to touch first; 2. "Anti-static bag" — green — correct storage; 3. "Carpeted floor" — amber — increases static buildup, not dangerous itself; 4. "Plastic chair after sliding" — amber — a common charge-building action; 5. "Bare board out of its bag" — red — should be avoided when not in use
-    
-    Interactive features: Click each hotspot to reveal a one-sentence explanation and a green-check or amber-caution icon; a running "safety score" updates as the learner clicks all five
-    
-    Implementation: Interactive Infographic Overlay Guide (callout engine) — `diagram.js` renders clickable hotspots with color-coded feedback over the generated illustration
-    -->
+  <div id="diagram-wrapper">
+    <img id="diagram-img" src="static-electricity-precaution-checklist.png" alt="Static Electricity Precaution Checklist" draggable="false">
+    <div id="markers-layer"></div>
+  </div>
+
+  <div id="label-panel">
+    <!-- label rows injected by diagram.js -->
+  </div>
+</div>
+
+<div id="controls">
+  <button class="mode-btn active" id="btn-explore" onclick="sim.setMode('explore')">Explore</button>
+  <button class="mode-btn"        id="btn-quiz"    onclick="sim.setMode('quiz')">Quiz</button>
+  <span id="quiz-score" style="display:none">
+    Score: <strong id="score-val">0</strong> / <strong id="score-total">0</strong>
+  </span>
+</div>
+
+<div id="infobox">
+  <div id="infobox-prompt">Hover over a numbered marker or a label to learn about that structure.</div>
+  <div id="infobox-content">
+    <div id="infobox-label"></div>
+    <div id="infobox-desc"></div>
+    <div id="infobox-ap-tip"></div>
+    <button id="quiz-restart" onclick="sim.restartQuiz()">Try Again</button>
+  </div>
+</div>
+
+<div id="edit-panel">
+  <h3>Edit Mode — drag markers to calibrate positions</h3>
+  <div id="coord-display">Drag a marker to see its live coordinates.</div>
+  <textarea id="json-output" readonly spellcheck="false"></textarea>
+  <div id="edit-actions">
+    <button id="copy-json-btn" onclick="sim.copyJSON()">Copy JSON</button>
+    <span id="copy-confirm"></span>
+  </div>
+</div>
+
+<script src="../shared-libs/diagram.js"></script>
 </body>
 </html>
