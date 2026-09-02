@@ -1,0 +1,21 @@
+{
+  "title": "Club Health Metrics Dashboard",
+  "height": 542,
+  "library": "Chart.js",
+  "bloom": "Evaluate (L5)",
+  "verb": "assess",
+  "description": "Four health metrics across three years, and the one line moving the wrong way while the others celebrate.",
+  "concepts": [
+    "Club Health",
+    "Mentor Retention",
+    "Waitlist",
+    "Leading Indicator"
+  ],
+  "interaction": "Toggle each metric independently; all four are indexed to a shared 0-100 axis",
+  "assessment": "Ask whether Year 3 is the club's best year, and what the answer depends on.",
+  "audience": "Founders and boards assessing club trajectory",
+  "about": "Three lines rise. One falls. That is the entire finding, and it is easy to miss\nbecause the three that rise are the ones clubs celebrate.\n\nEnrollment nearly triples. The waitlist goes from nothing to substantial.\nAttendance holds steady around 90%. By every metric a founder would put in an\nannual report, Year 3 is the best year the club has had.\n\n**Mentor retention falls from 70% to 55% in that same year.**\n\nThe metrics are not independent, which is what makes this an early warning rather\nthan a coincidence. Rapid enrollment growth and a lengthening waitlist are exactly\nthe conditions that burn mentors out -- more students per mentor, more pressure to\nadd sessions, more people to say no to. The good news is producing the bad news.\n\nTurn off every series except mentor retention to see the trend without the\nreassurance around it. Then turn enrollment back on and notice that the steepest\nenrollment growth and the steepest retention drop are the same year.",
+  "howto": "- **Hover any point** for its value.\n- **Toggle each metric** with the checkboxes or the legend.\n- All four are indexed to 0-100 so different units share one axis -- compare each\n  line's <em>shape</em> over time, not its height against the others.",
+  "lesson": "**Bloom level:** Evaluate (L5) -- *assess*\n\n**Learning objective:** Given three years of club health metrics, the learner\nassesses whether the club's overall trajectory is sustainable or shows an early\nwarning sign.\n\n**Before the sim (5 min).** Show only the enrollment line and ask how the club is\ndoing. The answer will be enthusiastic.\n\n**With the sim (15 min).** Add the other three one at a time, saving mentor\nretention for last. Then ask the real question: is this club's Year 3 growth\nsustainable, and what would Year 4 look like if nothing changes?\n\n**After the sim (15 min).** Pick the club's own four health metrics and sketch\nthree years of them, honestly. Identify which one would be the first to bend.\n\n**Check for understanding.** Ask: \"Enrollment is up 55% and the waitlist is full.\nIs that good?\" It depends entirely on whether mentor supply kept pace -- and\nrecognising that a growth number is not self-evidently good is the assessment this\nobjective is after.",
+  "refs": "- {{CHAPTER}} -- the chapter this MicroSim supports.\n- [Attendance and Enrollment Trend Explorer](../attendance-enrollment-trend-explorer/index.md) -- the same divergence idea at semester resolution.\n- [Mentor Development Pipeline](../mentor-development-pipeline/index.md) -- what a club does about falling mentor retention.\n- [Leading and lagging indicators](https://en.wikipedia.org/wiki/Economic_indicator) -- why some metrics warn and others confirm.\n- [Burnout](https://en.wikipedia.org/wiki/Occupational_burnout) -- the mechanism connecting growth to the falling line."
+}

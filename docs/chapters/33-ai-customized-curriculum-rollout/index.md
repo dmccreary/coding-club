@@ -473,7 +473,7 @@ A worked example shows the comparison surfacing a real trade-off: comparing thre
 
 #### Diagram: Comparing AI Tools Against Selection Criteria
 
-<iframe src="../../sims/ai-tool-selection-radar/main.html" width="100%" height="520px" scrolling="no"></iframe>
+<iframe src="../../sims/ai-tool-selection-radar/main.html" width="100%" height="562px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Comparing AI Tools Against Selection Criteria</summary>

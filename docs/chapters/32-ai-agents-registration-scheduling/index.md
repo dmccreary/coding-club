@@ -343,7 +343,7 @@ Chapter 24's feedback loop design ran on four stages -- collect, analyze, act, r
 
 #### Diagram: Survey Themes and Sentiment Dashboard
 
-<iframe src="../../sims/survey-sentiment-dashboard/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../sims/survey-sentiment-dashboard/main.html" width="100%" height="482px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Survey Themes and Sentiment Dashboard</summary>

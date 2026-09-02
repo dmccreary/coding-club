@@ -1,0 +1,55 @@
+{
+  "title": "What Families Said - Themes and Sentiment",
+  "height": 480,
+  "type": "bar",
+  "labels": [
+    "Start time concerns",
+    "Mentor praise",
+    "Request for advanced cards"
+  ],
+  "datasets": [
+    {
+      "label": "Responses mentioning the theme",
+      "data": [
+        11,
+        6,
+        4
+      ],
+      "backgroundColor": [
+        "#D64545",
+        "#3E9E6E",
+        "#4A90D9"
+      ]
+    }
+  ],
+  "options": {
+    "indexAxis": "y",
+    "plugins": {
+      "legend": {
+        "display": false
+      }
+    },
+    "scales": {
+      "x": {
+        "beginAtZero": true,
+        "title": {
+          "display": true,
+          "text": "Number of responses",
+          "font": {
+            "size": 13
+          }
+        }
+      },
+      "y": {
+        "ticks": {
+          "font": {
+            "size": 13
+          }
+        }
+      }
+    }
+  },
+  "note": "Bar colour is sentiment: red negative, green positive, blue neutral.",
+  "annotation": "<strong>Start time concerns</strong> is both the largest theme (11 responses) and the only negative one. That combination is what makes it the club's next action.",
+  "insight": "A single average rating would have buried this. Six families praising mentors and eleven complaining about the start time can average out to 'satisfied'. Splitting free text into <strong>themes</strong> and scoring each one's <strong>sentiment</strong> separately is what surfaces a specific, fixable problem instead of a number."
+}

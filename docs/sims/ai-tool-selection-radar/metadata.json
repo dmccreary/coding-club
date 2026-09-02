@@ -1,6 +1,6 @@
 {
-  "title": "Comparing AI Tools Against Selection Criteria",
-  "description": "Given a radar comparison of three AI tool vendors scored against four selection criteria, the learner justifies which vendor best fits a stated club priority.",
+  "title": "AI Tool Selection Radar",
+  "description": "Three vendors on four criteria at once -- and a ranking that changes depending on which criterion your club puts first.",
   "creator": "Coding Club",
   "author": "Dan McCreary",
   "date": "2026-09-01",
@@ -15,9 +15,28 @@
   "library": "Chart.js",
   "bloomLevel": "Evaluate (L5)",
   "bloomVerb": "justify",
-  "completion_status": "scaffold",
+  "completion_status": "built",
+  "canvasHeight": 560,
   "chapter_number": 33,
   "chapter_title": "AI-Customized Curriculum and Rolling Out New Agents",
   "chapter_dir": "33-ai-customized-curriculum-rollout",
-  "chapter_rel_dir": "chapters/33-ai-customized-curriculum-rollout"
+  "chapter_rel_dir": "chapters/33-ai-customized-curriculum-rollout",
+  "educational": {
+    "gradeLevel": "Middle School, High School, Adult",
+    "audience": "Club leaders choosing an AI tool",
+    "duration": "10-15 minutes",
+    "concepts": [
+      "Vendor Comparison",
+      "Selection Criteria",
+      "Data Privacy",
+      "Trade-off Analysis"
+    ]
+  },
+  "pedagogical": {
+    "bloomLevel": "Evaluate (L5)",
+    "bloomVerb": "justify",
+    "learningObjective": "Given a radar comparison of three AI tool vendors scored against four selection criteria, the learner justifies which vendor best fits a stated club priority.",
+    "interactionPattern": "Toggle vendors on and off; choose a priority criterion and watch the ranked list re-sort",
+    "assessment": "Ask which vendor a privacy-first club should pick, and to justify it against the other two."
+  }
 }

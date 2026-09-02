@@ -1,0 +1,103 @@
+{
+  "title": "Three AI Vendors, Four Selection Criteria",
+  "height": 560,
+  "type": "radar",
+  "labels": [
+    "Cost Fit",
+    "Data Privacy",
+    "Output Quality",
+    "Language Support"
+  ],
+  "datasets": [
+    {
+      "label": "Vendor A",
+      "data": [
+        5,
+        2,
+        4,
+        3
+      ],
+      "borderColor": "#4A90D9",
+      "backgroundColor": "rgba(74,144,217,0.18)",
+      "borderWidth": 2
+    },
+    {
+      "label": "Vendor B",
+      "data": [
+        3,
+        5,
+        3,
+        4
+      ],
+      "borderColor": "#3E9E6E",
+      "backgroundColor": "rgba(62,158,110,0.18)",
+      "borderWidth": 2
+    },
+    {
+      "label": "Vendor C",
+      "data": [
+        2,
+        3,
+        5,
+        2
+      ],
+      "borderColor": "#F5A623",
+      "backgroundColor": "rgba(245,166,35,0.18)",
+      "borderWidth": 2
+    }
+  ],
+  "options": {
+    "scales": {
+      "r": {
+        "min": 0,
+        "max": 5,
+        "ticks": {
+          "stepSize": 1,
+          "font": {
+            "size": 11
+          }
+        },
+        "pointLabels": {
+          "font": {
+            "size": 13
+          }
+        }
+      }
+    }
+  },
+  "controls": [
+    {
+      "type": "toggle",
+      "dataset": 0,
+      "label": "Vendor A",
+      "checked": true
+    },
+    {
+      "type": "toggle",
+      "dataset": 1,
+      "label": "Vendor B",
+      "checked": true
+    },
+    {
+      "type": "toggle",
+      "dataset": 2,
+      "label": "Vendor C",
+      "checked": true
+    },
+    {
+      "type": "select",
+      "id": "priority",
+      "label": "Which criterion matters most?",
+      "options": [
+        "Cost Fit",
+        "Data Privacy",
+        "Output Quality",
+        "Language Support"
+      ]
+    }
+  ],
+  "annotation": "No vendor wins on every axis. <strong>Vendor A</strong> is cheapest but weakest on privacy; <strong>Vendor C</strong> has the best output and the worst cost fit.",
+  "insight": "A radar chart cannot tell you which vendor to pick, because that depends on which axis your club cares about. Choose a priority below and the ranking updates - the point being that the <em>ranking changes with the priority</em>, which is why a club has to state its priority before comparing vendors.",
+  "extraJs": "\n// The ranked list is the whole point of this sim: the winner changes with the\n// stated priority, so the ranking is recomputed rather than fixed.\nconst VENDOR_REASONS = {\n    'Cost Fit':        {'Vendor A': 'free tier covers a small club', 'Vendor B': 'moderate monthly cost', 'Vendor C': 'priced for organisations, not clubs'},\n    'Data Privacy':    {'Vendor A': 'trains on submitted data by default', 'Vendor B': 'contractual no-training guarantee', 'Vendor C': 'no-training on paid tiers only'},\n    'Output Quality':  {'Vendor A': 'good drafts, occasional tone drift', 'Vendor B': 'serviceable but generic', 'Vendor C': 'consistently strong drafts'},\n    'Language Support':{'Vendor A': 'strong in English only', 'Vendor B': 'broad multilingual coverage', 'Vendor C': 'limited beyond English'}\n};\n\nfunction renderRanking(criterion) {\n    const idx = chartData.labels.indexOf(criterion);\n    const rows = chartData.datasets\n        .map((d, i) => ({ name: d.label, score: d.data[idx], visible: chart.isDatasetVisible(i) }))\n        .filter(r => r.visible)\n        .sort((a, b) => b.score - a.score);\n    const box = document.getElementById('ranking');\n    if (!box) return;\n    box.innerHTML = '<strong>Ranked on ' + criterion + '</strong><ol>' +\n        rows.map(r => '<li>' + r.name + ' - ' + r.score + '/5 <em>(' +\n                 (VENDOR_REASONS[criterion][r.name] || '') + ')</em></li>').join('') +\n        '</ol>';\n}\n\nfunction onControl(id, value) {\n    if (id === 'priority') renderRanking(value);\n}\n\n// keep the ranking in step with the vendor checkboxes too\ndocument.querySelectorAll('[data-dataset]').forEach(el =>\n    el.addEventListener('change', () => {\n        const sel = document.querySelector('select[data-control=\"priority\"]');\n        renderRanking(sel ? sel.value : chartData.labels[0]);\n    }));\n\nrenderRanking(chartData.labels[0]);\n",
+  "rankedList": true
+}

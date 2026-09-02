@@ -1,0 +1,84 @@
+{
+  "title": "Weekly Attendance - Aggregate Count Only",
+  "height": 520,
+  "type": "bar",
+  "labels": [
+    "Week 1",
+    "Week 2",
+    "Week 3",
+    "Week 4",
+    "Week 5",
+    "Week 6",
+    "Week 7",
+    "Week 8",
+    "Week 9",
+    "Week 10",
+    "Week 11",
+    "Week 12",
+    "Week 13",
+    "Week 14",
+    "Week 15",
+    "Week 16"
+  ],
+  "datasets": [
+    {
+      "label": "Current semester",
+      "data": [
+        11,
+        13,
+        14,
+        15,
+        14,
+        16,
+        15,
+        14,
+        6,
+        12,
+        14,
+        15,
+        16,
+        15,
+        14,
+        13
+      ],
+      "backgroundColor": "#4A90D9"
+    },
+    {
+      "label": "Prior semester",
+      "data": [
+        10,
+        11,
+        12,
+        13,
+        13,
+        14,
+        13,
+        12,
+        7,
+        11,
+        12,
+        13,
+        13,
+        12,
+        12,
+        11
+      ],
+      "backgroundColor": "#C6D2DC"
+    }
+  ],
+  "axisTitles": {
+    "x": "Week of the semester",
+    "y": "Students present"
+  },
+  "note": "This chart contains no student names - only weekly totals.",
+  "controls": [
+    {
+      "type": "toggle",
+      "dataset": 1,
+      "label": "Show prior semester",
+      "checked": false
+    }
+  ],
+  "annotation": "The dip at <strong>week 9</strong> is the school break week, not a drop in engagement. Attendance recovers immediately afterwards.",
+  "insight": "Everything a club leader needs from attendance data - the trend, the dip, the recovery, the year-over-year comparison - is visible here, and <strong>none of it requires a single student's name</strong>. Aggregate reporting is not a compromise; for this question it is sufficient."
+}

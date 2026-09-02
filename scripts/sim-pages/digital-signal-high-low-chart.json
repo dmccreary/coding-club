@@ -1,0 +1,21 @@
+{
+  "title": "Digital Signal HIGH/LOW Chart",
+  "height": 502,
+  "library": "Chart.js",
+  "bloom": "Understand (L2)",
+  "verb": "interpret",
+  "description": "A digital pin's voltage over time: two values, vertical transitions, nothing in between.",
+  "concepts": [
+    "Digital Input",
+    "HIGH and LOW",
+    "Step Signal",
+    "Voltage Levels"
+  ],
+  "interaction": "Hover any point for the voltage and its HIGH/LOW label; press the button to add another event",
+  "assessment": "Ask what voltage a digital pin reads halfway through a press.",
+  "audience": "Students meeting digital input for the first time",
+  "about": "A digital input has exactly two states, and this chart is what that looks like\nplotted against time.\n\nThe shape is the lesson. The line sits at 0 V, jumps **vertically** to 5 V, sits\nthere, and drops vertically back. There is no ramp, no curve, no intermediate\nvalue. Ask a digital pin what it reads and the only possible answers are HIGH and\nLOW.\n\nPress the button below to add another event. However many times you press, the\ntrace only ever has two heights.\n\nHold this shape in mind for the analog input chart later in the chapter, which\nis a smooth curve through every value in between. That contrast -- a step function\nagainst a continuous one -- is the whole distinction between the two kinds of\ninput pin, and it is easier to remember as two pictures than as two definitions.",
+  "howto": "- **Hover any point** for its exact voltage.\n- **Press the button** to append another press-and-release event at the right\n  edge; the window scrolls once it fills.\n- Shaded regions are HIGH; the flat baseline is LOW.",
+  "lesson": "**Bloom level:** Understand (L2) -- *interpret*\n\n**Learning objective:** Given a digital input's voltage trace, the learner\ninterprets it as a two-state signal and distinguishes it from an analog one.\n\n**Before the sim (5 min).** Ask what voltage a button produces when it is half\npressed. The intuition says something in between; the hardware says no.\n\n**With the sim (10 min).** Read the trace. Press the button a few times and watch\nthe pattern extend without ever gaining a third height. Ask what the vertical\nedges mean physically.\n\n**After the sim (10 min).** Sketch, from memory, what the same button would look\nlike plotted if it were a dimmer knob instead. That sketch is the analog contrast.\n\n**Check for understanding.** Ask: \"Your program reads 2.4 V on a digital pin. What\ndoes it report?\" Either HIGH or LOW depending on the threshold -- never 2.4. The\nvalue is discarded, and that is what digital means.",
+  "refs": "- {{CHAPTER}} -- the chapter this MicroSim supports.\n- [Potentiometer Analog Input Explorer](../potentiometer-analog-input-explorer/index.md) -- the same contrast from the analog side.\n- [PWM Analog Output Brightness Explorer](../pwm-analog-output-brightness-explorer/index.md) -- how a two-state pin fakes a continuous output.\n- [Digital signal](https://en.wikipedia.org/wiki/Digital_signal) -- discrete levels and switching thresholds.\n- [Logic level](https://en.wikipedia.org/wiki/Logic_level) -- where the boundary between HIGH and LOW actually sits."
+}

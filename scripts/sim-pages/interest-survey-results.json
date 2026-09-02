@@ -1,0 +1,21 @@
+{
+  "title": "Interest Survey Results",
+  "height": 522,
+  "library": "Chart.js",
+  "bloom": "Analyze (L4)",
+  "verb": "interpret",
+  "description": "47 survey responses grouped by age range and interest level -- enough to decide whether a club is worth starting, and for whom.",
+  "concepts": [
+    "Interest Survey",
+    "Concentrated Demand",
+    "Age Banding",
+    "Stacked Bar Chart"
+  ],
+  "interaction": "Hover a segment for exact counts; click a legend entry to toggle a series across all bars",
+  "assessment": "Ask which age range the club should target and what in the chart supports it.",
+  "audience": "Prospective club founders reading survey results",
+  "about": "Forty-seven people answered. That number on its own tells a founder nothing --\nit is the same whether the interest is concentrated in one age band or smeared\nacross four.\n\nGrouping is what makes it decision-ready. The 9-11 bar carries 14 definite\nresponses out of that group's 23, which is a real cohort: enough students to fill\na session and narrow enough that one curriculum fits them. The 15-18 bar has 2\ndefinite responses, which is not a club, it is two individuals who would need\ntheir own track.\n\nClick **Not interested** in the legend to hide it. The remaining bars show only\npeople who might come, and the 9-11 concentration gets starker still.\n\nThe judgement this chart supports is not \"should we start a club\" but \"which age\nrange do we start it for\" -- and those are different questions with different\nanswers.",
+  "howto": "- **Hover any segment** for its exact count and share of that age range's total.\n- **Click a legend entry** to toggle that series off across all four bars.",
+  "lesson": "**Bloom level:** Analyze (L4) -- *interpret*\n\n**Learning objective:** Given a set of grouped survey results, the learner\ninterprets whether there is enough concentrated interest, in which age range, to\njustify starting a club.\n\n**Before the sim (5 min).** Write \"47 people said yes\" on the board and ask\nwhether that is enough to start a club. It is not answerable, which is the point.\n\n**With the sim (10 min).** Read each bar's total aloud, then its definite count.\nAsk which single age range you would build the first term around, and what you\nwould say to the 15-18 respondents.\n\n**After the sim (15 min).** Run the same grouping on a real survey the club has,\nor on a mock set, and write the one-sentence recommendation it supports.\n\n**Check for understanding.** Ask: \"Two age ranges each have 9 definite responses.\nWhat else would you want to know before choosing?\" Group total, session capacity,\nand mentor availability -- the chart informs the decision, it does not make it.",
+  "refs": "- {{CHAPTER}} -- the chapter this MicroSim supports.\n- [Should You Start This Club?](../club-feasibility-decision-path/index.md) -- the gate this chart feeds.\n- [Survey methodology](https://en.wikipedia.org/wiki/Survey_methodology) -- sampling and question design.\n- [Bar chart](https://en.wikipedia.org/wiki/Bar_chart) -- why stacking shows composition rather than just totals.\n- [Market segmentation](https://en.wikipedia.org/wiki/Market_segmentation) -- the general idea behind grouping before deciding."
+}

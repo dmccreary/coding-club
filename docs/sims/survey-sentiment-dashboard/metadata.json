@@ -1,6 +1,6 @@
 {
   "title": "Survey Themes and Sentiment Dashboard",
-  "description": "Given a themed, sentiment-scored summary of survey responses, the learner examines it to identify which theme most needs the club's attention.",
+  "description": "Free-text survey answers grouped into themes and scored for tone -- revealing a pattern an average rating would bury.",
   "creator": "Coding Club",
   "author": "Dan McCreary",
   "date": "2026-09-01",
@@ -15,9 +15,28 @@
   "library": "Chart.js",
   "bloomLevel": "Analyze (L4)",
   "bloomVerb": "examine",
-  "completion_status": "scaffold",
+  "completion_status": "built",
+  "canvasHeight": 480,
   "chapter_number": 32,
   "chapter_title": "AI Agents for Registration, Scheduling, and Communication",
   "chapter_dir": "32-ai-agents-registration-scheduling",
-  "chapter_rel_dir": "chapters/32-ai-agents-registration-scheduling"
+  "chapter_rel_dir": "chapters/32-ai-agents-registration-scheduling",
+  "educational": {
+    "gradeLevel": "Middle School, High School, Adult",
+    "audience": "Club leaders analysing survey responses",
+    "duration": "10-15 minutes",
+    "concepts": [
+      "Theme Extraction",
+      "Sentiment Analysis",
+      "Free-Text Survey",
+      "Actionable Feedback"
+    ]
+  },
+  "pedagogical": {
+    "bloomLevel": "Analyze (L4)",
+    "bloomVerb": "examine",
+    "learningObjective": "Given a themed, sentiment-scored summary of survey responses, the learner examines it to identify which theme most needs the club's attention.",
+    "interactionPattern": "Hover a bar for the exact count; bar colour carries the sentiment score",
+    "assessment": "Ask which theme needs attention first and what makes it different from the largest positive theme."
+  }
 }

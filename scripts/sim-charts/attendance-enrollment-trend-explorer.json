@@ -1,0 +1,89 @@
+{
+  "title": "Enrollment, Attendance and Retention Across Four Semesters",
+  "height": 560,
+  "type": "bar",
+  "labels": [
+    "Fall 2024",
+    "Spring 2025",
+    "Fall 2025",
+    "Spring 2026"
+  ],
+  "datasets": [
+    {
+      "type": "bar",
+      "label": "Enrollment (students)",
+      "data": [
+        12,
+        18,
+        24,
+        22
+      ],
+      "backgroundColor": "#4A90D9",
+      "yAxisID": "y",
+      "order": 2
+    },
+    {
+      "type": "line",
+      "label": "Avg weekly attendance rate (%)",
+      "data": [
+        88,
+        85,
+        90,
+        65
+      ],
+      "borderColor": "#3E9E6E",
+      "backgroundColor": "#3E9E6E",
+      "yAxisID": "y1",
+      "tension": 0.25,
+      "order": 1
+    },
+    {
+      "type": "line",
+      "label": "Retention rate (%)",
+      "data": [
+        null,
+        83,
+        78,
+        91
+      ],
+      "borderColor": "#F5A623",
+      "backgroundColor": "#F5A623",
+      "yAxisID": "y1",
+      "tension": 0.25,
+      "spanGaps": false,
+      "order": 1
+    }
+  ],
+  "options": {
+    "scales": {
+      "y": {
+        "beginAtZero": true,
+        "position": "left",
+        "title": {
+          "display": true,
+          "text": "Students enrolled",
+          "font": {
+            "size": 13
+          }
+        }
+      },
+      "y1": {
+        "beginAtZero": true,
+        "max": 100,
+        "position": "right",
+        "grid": {
+          "drawOnChartArea": false
+        },
+        "title": {
+          "display": true,
+          "text": "Rate (%)",
+          "font": {
+            "size": 13
+          }
+        }
+      }
+    }
+  },
+  "annotation": "Spring 2026 is the semester to examine: enrollment barely moved and <strong>retention rose to 91%</strong>, but attendance <strong>fell from 90% to 65%</strong>.",
+  "insight": "The three metrics can disagree, and which one dips tells you what is wrong. Students are still <em>signing up and staying signed up</em> -- retention is the best it has been -- but they are not <em>turning up</em>. That is an attendance problem, not a retention problem, and the fixes are different: a scheduling or session-quality issue rather than a recruitment one. Retention alone would have said the club was healthier than ever."
+}

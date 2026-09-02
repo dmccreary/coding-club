@@ -1,0 +1,21 @@
+{
+  "title": "Attendance and Enrollment Trend Explorer",
+  "height": 562,
+  "library": "Chart.js",
+  "bloom": "Analyze (L4)",
+  "verb": "examine",
+  "description": "Four semesters of enrollment, attendance and retention on one chart -- and the semester where they disagree.",
+  "concepts": [
+    "Enrollment",
+    "Attendance Rate",
+    "Retention Rate",
+    "Metric Divergence"
+  ],
+  "interaction": "Hover for exact values; a combo chart puts counts and rates on separate axes",
+  "assessment": "Given the Spring 2026 numbers, ask whether the club has an attendance or a retention problem.",
+  "audience": "Club leaders reading their own data",
+  "about": "Three metrics that usually move together, and one semester where they do not.\n\nThrough Fall 2025 everything rises: enrollment climbs from 12 to 24, attendance\nholds near 90%, retention hovers around 80%. Then Spring 2026 splits them.\nEnrollment is flat at 22. Retention rises to its best-ever 91%. And attendance\ncollapses from 90% to 65%.\n\nThat combination is diagnostic. Students are signing up and staying signed up --\nthat is what retention measures -- but they are not coming. So this is not a\nrecruitment problem and not a retention problem. Something about the sessions\nthemselves, or when they are held, changed.\n\nA club watching only enrollment would see a plateau. A club watching only\nretention would call Spring 2026 its best semester on record. Watching all three\nis what makes the real problem visible, and this is why the chart puts counts and\nrates on two different axes rather than picking one.",
+  "howto": "- **Hover any bar or point** for its exact value.\n- The left axis is a student count; the right axis is a percentage. Compare each\n  series against its own axis, not against the others' heights.\n- Retention has no value for Fall 2024 because there is no prior semester to\n  retain students from.",
+  "lesson": "**Bloom level:** Analyze (L4) -- *examine*\n\n**Learning objective:** Given a multi-semester chart of enrollment, attendance,\nand retention, the learner examines the data to determine whether a dip reflects\nan attendance problem, a retention problem, or both.\n\n**Before the sim (5 min).** Ask which single number best tells you whether a club\nis healthy. Whatever answer you get, this chart is about to complicate it.\n\n**With the sim (15 min).** Read the first three semesters, where everything\nagrees. Then read Spring 2026 and ask what changed. Push for the distinction:\nsigning up, staying enrolled, and turning up are three different behaviours.\n\n**After the sim (15 min).** List three possible causes of an attendance-only drop\n-- a schedule clash, a venue change, a curriculum that got too hard -- and say\nwhat evidence would distinguish them.\n\n**Check for understanding.** Ask: \"Retention hit 91%, the highest ever. Is that\ngood news?\" It is real, and it is not the story. Being able to hold both is the\nexamination this objective wants.",
+  "refs": "- {{CHAPTER}} -- the chapter this MicroSim supports.\n- [Anonymized Attendance Chart](../anonymized-attendance-chart/index.md) -- the week-level view behind the attendance rate.\n- [Club Health Metrics Dashboard](../club-health-metrics-dashboard/index.md) -- the same divergence idea over three years.\n- [Retention rate](https://en.wikipedia.org/wiki/Retention_rate) -- what it does and does not measure.\n- [Confounding](https://en.wikipedia.org/wiki/Confounding) -- why one metric alone can mislead."
+}

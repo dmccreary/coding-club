@@ -163,6 +163,7 @@ nav:
     - List of MicroSims: sims/index.md
     - Access Barrier to Fix Map: sims/access-barrier-to-fix-map/index.md
     - AI Agent Loop Explorer: sims/ai-agent-loop-explorer/index.md
+    - AI Tool Selection Radar: sims/ai-tool-selection-radar/index.md
     - Anatomy of a Challenge Card: sims/anatomy-of-a-challenge-card/index.md
     - Anatomy of a Club Charter: sims/club-charter-anatomy/index.md
     - Annotated Feedback Form: sims/feedback-form-annotated/index.md
@@ -189,7 +190,6 @@ nav:
     - Coding Club Room Layout: sims/coding-club-room-layout/index.md
     - Collision Avoidance Robot Control Loop: sims/collision-avoidance-control-loop/index.md
     - Color Wheel Hue Explorer: sims/color-wheel-hue-explorer/index.md
-    - Comparing AI Tools Against Selection Criteria: sims/ai-tool-selection-radar/index.md
     - Data Backup Routine Timeline: sims/data-backup-routine-timeline/index.md
     - Data Retention Schedule by Type: sims/data-retention-schedule/index.md
     - Device End-of-Life Decision Workflow: sims/device-end-of-life-decision-workflow/index.md
@@ -290,6 +290,8 @@ nav:
     - Ultrasonic Ranging Explorer: sims/ultrasonic-ranging/index.md
     - USB-A vs USB-C Connector Comparison: sims/usb-connector-comparison/index.md
     - Where a Coding-Help Request Goes: sims/coding-help-agent-handoff/index.md
+
+
 
 
 

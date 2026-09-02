@@ -1,0 +1,21 @@
+{
+  "title": "Survey Themes and Sentiment Dashboard",
+  "height": 482,
+  "library": "Chart.js",
+  "bloom": "Analyze (L4)",
+  "verb": "examine",
+  "description": "Free-text survey answers grouped into themes and scored for tone -- revealing a pattern an average rating would bury.",
+  "concepts": [
+    "Theme Extraction",
+    "Sentiment Analysis",
+    "Free-Text Survey",
+    "Actionable Feedback"
+  ],
+  "interaction": "Hover a bar for the exact count; bar colour carries the sentiment score",
+  "assessment": "Ask which theme needs attention first and what makes it different from the largest positive theme.",
+  "audience": "Club leaders analysing survey responses",
+  "about": "Twenty-one free-text responses, three themes, and one that needs acting on.\n\nThe chart encodes two things at once. **Bar length** is how many families raised\nthe theme. **Bar colour** is the tone of what they said. Reading either alone\nmisleads: mentor praise is a strong positive but only six responses; start-time\nconcerns are eleven responses and negative.\n\nThat combination -- largest *and* negative -- is what makes start time the club's\nnext action, and it is precisely what a single average satisfaction score would\nhave destroyed. Six enthusiastic responses and eleven unhappy ones average out to\nsomething unremarkable, and the club would have concluded that families were\nbroadly content.\n\nThe third theme is worth noting as a contrast. A request for advanced cards is\nneutral, not negative -- it is a suggestion from families who are engaged enough\nto want more. It belongs on a roadmap, not on an urgent list.",
+  "howto": "- **Hover any bar** for the exact response count.\n- Colour is sentiment, not another quantity: red negative, green positive, blue\n  neutral.",
+  "lesson": "**Bloom level:** Analyze (L4) -- *examine*\n\n**Learning objective:** Given a themed, sentiment-scored summary of survey\nresponses, the learner examines it to identify which theme most needs the club's\nattention.\n\n**Before the sim (5 min).** Show a satisfaction score -- \"families rated us 3.8\nout of 5\" -- and ask what the club should do about it. Nothing actionable follows\nfrom it, which is the gap.\n\n**With the sim (10 min).** Read length and colour separately, then together. Ask\nwhich theme to act on and why the largest positive theme is not it.\n\n**After the sim (15 min).** Take a batch of real free-text responses and group\nthem into three or four themes by hand, marking each one's tone. Doing it manually\nfirst is what makes the automated version legible.\n\n**Check for understanding.** Ask: \"A theme has 3 responses and strongly negative\nsentiment. Act on it or not?\" It depends on what the three say -- a safety concern\nfrom three families outranks a preference from eleven, and knowing that the chart\ndoes not decide for you is the objective met.",
+  "refs": "- {{CHAPTER}} -- the chapter this MicroSim supports.\n- [Feedback Loop Cycle](../feedback-loop-cycle/index.md) -- what has to happen after a theme is identified.\n- [Human-in-the-Loop Review Workflow](../human-in-the-loop-review-workflow/index.md) -- why AI-produced themes still get checked by a person.\n- [Sentiment analysis](https://en.wikipedia.org/wiki/Sentiment_analysis) -- how tone is scored and where it fails.\n- [Thematic analysis](https://en.wikipedia.org/wiki/Thematic_analysis) -- the qualitative method being automated."
+}

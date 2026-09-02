@@ -1,0 +1,21 @@
+{
+  "title": "Progress Dashboard Explorer",
+  "height": 542,
+  "library": "Chart.js",
+  "bloom": "Analyze (L4)",
+  "verb": "examine",
+  "description": "Filter a badge-completion dashboard by cohort and watch the bottleneck move -- with initials only, no names anywhere.",
+  "concepts": [
+    "Progress Dashboard",
+    "Badge Completion",
+    "Cohort Filtering",
+    "Minimal Identifiability"
+  ],
+  "interaction": "Two dropdowns filter and sort; a derived readout names the current bottleneck",
+  "assessment": "Ask why the two cohorts have different bottlenecks and what that implies about the sessions.",
+  "audience": "Mentors reviewing cohort progress",
+  "about": "A dashboard earns its place by answering a question. This one answers *where is\nthe cohort stuck*, and the interesting part is that the answer changes when you\nchange the cohort.\n\nFilter to the Tuesday group and the bottleneck is **Sensors**. Filter to Thursday\nand it is **Debugging**. The two groups have taken different routes through the\nbadge ladder, which is a signal about what each session has actually covered --\nnot about how capable the students are. A mentor seeing that knows exactly what\nto plan next, and it is different for each group.\n\nLook at the whole club and a third answer appears: **Functions**, which neither\ngroup individually flags. Aggregating can hide a cohort-specific problem, so the\nfilter is not a convenience feature -- it is the analysis.\n\nThe underlying mock data holds **initials only**. Everything above is answerable\nwithout a single student's name, which is the same minimal-identifiability habit\nthe rest of this chapter argues for.",
+  "howto": "- **Cohort** filters to one group or shows the whole club.\n- **Sort** reorders the bars by completion count, or restores the badge ladder\n  order.\n- **Reset filters** returns to the unfiltered, highest-first view.\n- The panel names the current bottleneck for whatever filter is applied.",
+  "lesson": "**Bloom level:** Analyze (L4) -- *examine*\n\n**Learning objective:** Given filter controls, the learner examines a dashboard to\nidentify which badge is currently the biggest bottleneck for a cohort.\n\n**Before the sim (5 min).** Ask a mentor which badge their group is stuck on. Most\nhave an impression; few have a number.\n\n**With the sim (15 min).** Read the unfiltered view, then switch cohorts. Ask why\nthe bottleneck moved, and steer the group away from \"Thursday students are\nweaker\" toward \"Thursday has not covered debugging yet.\"\n\n**After the sim (15 min).** Build the same table for the club's real badges -- with\ninitials only -- and identify the actual bottleneck.\n\n**Check for understanding.** Ask: \"The whole-club view says Functions, but neither\ngroup's view does. How is that possible?\" Because each group is stuck somewhere\nelse, and the aggregate averages both away. Spotting that is the examination this\nobjective wants.",
+  "refs": "- {{CHAPTER}} -- the chapter this MicroSim supports.\n- [Student Progress Tracking Cycle](../progress-tracking-cycle/index.md) -- the habit that keeps this data current.\n- [Anonymized Attendance Chart](../anonymized-attendance-chart/index.md) -- the same minimal-identifiability principle applied to attendance.\n- [Simpson's paradox](https://en.wikipedia.org/wiki/Simpson%27s_paradox) -- why an aggregate can contradict every group inside it.\n- [Dashboard (business)](https://en.wikipedia.org/wiki/Dashboard_(business)) -- what makes one useful rather than decorative."
+}

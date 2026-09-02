@@ -1,6 +1,6 @@
 {
   "title": "Anonymized Attendance Chart",
-  "description": "Given an anonymized attendance chart, the learner interprets the weekly trend without any access to individually identifiable data.",
+  "description": "Read a semester's attendance trend -- including the break-week dip and the year-over-year comparison -- from data holding no names at all.",
   "creator": "Coding Club",
   "author": "Dan McCreary",
   "date": "2026-09-01",
@@ -15,9 +15,28 @@
   "library": "Chart.js",
   "bloomLevel": "Understand (L2)",
   "bloomVerb": "interpret",
-  "completion_status": "scaffold",
+  "completion_status": "built",
+  "canvasHeight": 560,
   "chapter_number": 24,
   "chapter_title": "Tracking Student Data and Managing Club Communication",
   "chapter_dir": "24-student-data-and-communication",
-  "chapter_rel_dir": "chapters/24-student-data-and-communication"
+  "chapter_rel_dir": "chapters/24-student-data-and-communication",
+  "educational": {
+    "gradeLevel": "Middle School, High School, Adult",
+    "audience": "Club leaders reporting attendance",
+    "duration": "10-15 minutes",
+    "concepts": [
+      "Anonymized Reporting",
+      "Aggregate Data",
+      "Attendance Trend",
+      "Student Privacy"
+    ]
+  },
+  "pedagogical": {
+    "bloomLevel": "Understand (L2)",
+    "bloomVerb": "interpret",
+    "learningObjective": "Given an anonymized attendance chart, the learner interprets the weekly trend without any access to individually identifiable data.",
+    "interactionPattern": "Hover a bar for the exact weekly count; toggle the prior semester on for comparison",
+    "assessment": "Ask what question this chart cannot answer, and why that is deliberate."
+  }
 }

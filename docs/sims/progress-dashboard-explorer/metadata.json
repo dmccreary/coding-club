@@ -1,6 +1,6 @@
 {
   "title": "Progress Dashboard Explorer",
-  "description": "Given filter controls, the learner examines a dashboard to identify which badge is currently the biggest bottleneck for a cohort.",
+  "description": "Filter a badge-completion dashboard by cohort and watch the bottleneck move -- with initials only, no names anywhere.",
   "creator": "Coding Club",
   "author": "Dan McCreary",
   "date": "2026-09-01",
@@ -15,9 +15,28 @@
   "library": "Chart.js",
   "bloomLevel": "Analyze (L4)",
   "bloomVerb": "examine",
-  "completion_status": "scaffold",
+  "completion_status": "built",
+  "canvasHeight": 540,
   "chapter_number": 24,
   "chapter_title": "Tracking Student Data and Managing Club Communication",
   "chapter_dir": "24-student-data-and-communication",
-  "chapter_rel_dir": "chapters/24-student-data-and-communication"
+  "chapter_rel_dir": "chapters/24-student-data-and-communication",
+  "educational": {
+    "gradeLevel": "Middle School, High School, Adult",
+    "audience": "Mentors reviewing cohort progress",
+    "duration": "10-15 minutes",
+    "concepts": [
+      "Progress Dashboard",
+      "Badge Completion",
+      "Cohort Filtering",
+      "Minimal Identifiability"
+    ]
+  },
+  "pedagogical": {
+    "bloomLevel": "Analyze (L4)",
+    "bloomVerb": "examine",
+    "learningObjective": "Given filter controls, the learner examines a dashboard to identify which badge is currently the biggest bottleneck for a cohort.",
+    "interactionPattern": "Two dropdowns filter and sort; a derived readout names the current bottleneck",
+    "assessment": "Ask why the two cohorts have different bottlenecks and what that implies about the sessions."
+  }
 }

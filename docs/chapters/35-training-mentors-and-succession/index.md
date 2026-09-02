@@ -268,7 +268,7 @@ The dashboard below tracks four such metrics for one club across three years, le
 
 #### Diagram: Club Health Metrics Dashboard
 
-<iframe src="../../sims/club-health-metrics-dashboard/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../sims/club-health-metrics-dashboard/main.html" width="100%" height="542px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Club Health Metrics Dashboard</summary>

@@ -1,0 +1,86 @@
+{
+  "title": "Badge Completion Across the Cohort",
+  "height": 540,
+  "type": "bar",
+  "labels": [
+    "First Program",
+    "Loops",
+    "Variables",
+    "Functions",
+    "Sensors",
+    "Debugging"
+  ],
+  "datasets": [
+    {
+      "label": "Students who earned the badge",
+      "data": [
+        14,
+        12,
+        9,
+        6,
+        4,
+        3
+      ],
+      "backgroundColor": "#4A90D9"
+    }
+  ],
+  "options": {
+    "scales": {
+      "y": {
+        "beginAtZero": true,
+        "title": {
+          "display": true,
+          "text": "Students who earned it",
+          "font": {
+            "size": 13
+          }
+        }
+      },
+      "x": {
+        "ticks": {
+          "font": {
+            "size": 11
+          },
+          "maxRotation": 30
+        }
+      }
+    },
+    "plugins": {
+      "legend": {
+        "display": false
+      }
+    }
+  },
+  "controls": [
+    {
+      "type": "select",
+      "id": "cohort",
+      "label": "Cohort",
+      "options": [
+        "All",
+        "Tuesday Group",
+        "Thursday Group"
+      ]
+    },
+    {
+      "type": "select",
+      "id": "sort",
+      "label": "Sort",
+      "options": [
+        "Highest first",
+        "Lowest first",
+        "Badge order"
+      ]
+    },
+    {
+      "type": "button",
+      "id": "reset",
+      "label": "Reset filters"
+    }
+  ],
+  "note": "Mock cohort data identifies students by initials only - no names anywhere in this dashboard.",
+  "annotation": "The bottleneck is <strong>not the same badge in both groups</strong>. Tuesday is stuck on Sensors; Thursday is stuck on Debugging. Switch the cohort filter and watch it move.",
+  "insight": "A dashboard is only useful if it answers a question. This one answers 'where is the cohort stuck', and the answer <strong>depends on the group</strong> -- the two cohorts have taken different routes through the badge ladder, so they are stuck in different places. That is a signal about what each session has covered, not about the students. Note the underlying mock data holds <strong>initials only</strong>, the same minimal-identifiability habit the rest of this chapter argues for.",
+  "extraJs": "\n// Mock cohort data, initials only -- the same minimal-identifiability habit the\n// chapter argues for. Each student has an explicit set of earned badges rather\n// than a count: students genuinely do take badges out of order, and a strict\n// ladder would force the last badge to be every cohort's bottleneck, which\n// would make the cohort filter pointless.\nconst BADGES = ['First Program', 'Loops', 'Variables', 'Functions', 'Sensors', 'Debugging'];\nconst COHORTS = {\n    'Tuesday Group': {\n        'AB': ['First Program', 'Loops', 'Variables', 'Functions', 'Debugging'],\n        'CD': ['First Program', 'Loops', 'Variables', 'Debugging'],\n        'EF': ['First Program', 'Loops', 'Variables'],\n        'GH': ['First Program', 'Loops', 'Debugging'],\n        'JK': ['First Program', 'Loops'],\n        'LM': ['First Program', 'Loops', 'Variables', 'Functions', 'Debugging'],\n        'NP': ['First Program', 'Loops', 'Variables'],\n        'QR': ['First Program', 'Sensors']\n    },\n    'Thursday Group': {\n        'ST': ['First Program', 'Loops', 'Variables', 'Sensors', 'Functions'],\n        'UV': ['First Program', 'Loops', 'Sensors'],\n        'WX': ['First Program', 'Loops', 'Variables', 'Sensors', 'Functions'],\n        'YZ': ['First Program', 'Sensors', 'Debugging'],\n        'AC': ['First Program', 'Loops', 'Variables', 'Sensors'],\n        'BD': ['First Program', 'Loops', 'Sensors'],\n        'CE': ['First Program', 'Loops', 'Variables', 'Sensors']\n    }\n};\n\nfunction countsFor(cohort) {\n    const groups = cohort === 'All' ? Object.values(COHORTS) : [COHORTS[cohort]];\n    return BADGES.map(badge =>\n        groups.reduce((total, g) =>\n            total + Object.values(g).filter(list => list.includes(badge)).length, 0));\n}\n\nlet currentCohort = 'All';\nlet currentSort = 'Highest first';\n\nfunction render() {\n    const counts = countsFor(currentCohort);\n    let rows = BADGES.map((b, i) => ({ badge: b, count: counts[i] }));\n    if (currentSort === 'Highest first') rows.sort((a, b) => b.count - a.count);\n    else if (currentSort === 'Lowest first') rows.sort((a, b) => a.count - b.count);\n    chart.data.labels = rows.map(r => r.badge);\n    chart.data.datasets[0].data = rows.map(r => r.count);\n    chart.update();\n\n    const low = rows.reduce((m, r) => r.count < m.count ? r : m, rows[0]);\n    const who = currentCohort === 'All' ? 'the whole club' : currentCohort;\n    const box = document.getElementById('ranking');\n    if (box) {\n        const tally = low.count === 0 ? 'no students have'\n                    : low.count === 1 ? 'only 1 student has'\n                    : 'only ' + low.count + ' students have';\n        box.innerHTML = '<strong>Current bottleneck</strong><br>' + low.badge +\n            ' - ' + tally + ' earned it in ' + who + '.';\n    }\n}\n\nfunction onControl(id, value) {\n    if (id === 'cohort') currentCohort = value;\n    if (id === 'sort') currentSort = value;\n    render();\n}\n\nfunction onAction(id) {\n    if (id !== 'reset') return;\n    currentCohort = 'All';\n    currentSort = 'Highest first';\n    document.querySelector('select[data-control=\"cohort\"]').value = 'All';\n    document.querySelector('select[data-control=\"sort\"]').value = 'Highest first';\n    render();\n}\n\nrender();\n",
+  "rankedList": true
+}

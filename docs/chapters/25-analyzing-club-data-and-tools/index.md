@@ -178,7 +178,7 @@ A worked example shows a trend the leader would have missed one semester at a ti
 
 #### Diagram: Attendance and Enrollment Trend Explorer
 
-<iframe src="../../sims/attendance-enrollment-trend-explorer/main.html" width="100%" height="520px" scrolling="no"></iframe>
+<iframe src="../../sims/attendance-enrollment-trend-explorer/main.html" width="100%" height="562px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Attendance and Enrollment Trend Explorer</summary>

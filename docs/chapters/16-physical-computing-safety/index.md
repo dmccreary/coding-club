@@ -560,7 +560,7 @@ Now that both states are defined, the chart below shows what that two-state sign
 
 #### Diagram: Digital Signal HIGH/LOW Chart
 
-<iframe src="../../sims/digital-signal-high-low-chart/main.html" width="100%" height="440px" scrolling="no"></iframe>
+<iframe src="../../sims/digital-signal-high-low-chart/main.html" width="100%" height="502px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Digital Signal HIGH/LOW Chart</summary>

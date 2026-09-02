@@ -64,7 +64,7 @@ Collecting responses is only half the work. **Interest survey analysis** is the 
 
 #### Diagram: Interest Survey Results
 
-<iframe src="../../sims/interest-survey-results/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../sims/interest-survey-results/main.html" width="100%" height="522px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Interest Survey Results</summary>

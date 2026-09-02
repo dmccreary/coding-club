@@ -1,0 +1,21 @@
+{
+  "title": "AI Tool Selection Radar",
+  "height": 562,
+  "library": "Chart.js",
+  "bloom": "Evaluate (L5)",
+  "verb": "justify",
+  "description": "Three vendors on four criteria at once -- and a ranking that changes depending on which criterion your club puts first.",
+  "concepts": [
+    "Vendor Comparison",
+    "Selection Criteria",
+    "Data Privacy",
+    "Trade-off Analysis"
+  ],
+  "interaction": "Toggle vendors on and off; choose a priority criterion and watch the ranked list re-sort",
+  "assessment": "Ask which vendor a privacy-first club should pick, and to justify it against the other two.",
+  "audience": "Club leaders choosing an AI tool",
+  "about": "No vendor wins. That is the finding, and a radar chart is the fastest way to see\nit: three shapes, none containing the others.\n\n**Vendor A** has the best cost fit and the worst privacy -- it trains on submitted\ndata by default. **Vendor B** is the privacy choice with a contractual no-training\nguarantee, and its output is merely serviceable. **Vendor C** produces the best\ndrafts and is priced for organisations rather than clubs.\n\nThe dropdown is the part that carries the objective. Choose a priority and the\nranked list re-sorts, and a *different vendor wins each time*. That is not a flaw\nin the data; it is what a genuine trade-off looks like.\n\nWhich means the club cannot compare vendors until it has said what it cares about\nmost. A club handling student data has effectively already chosen: privacy is not\na criterion to be traded against cost. A club drafting only public newsletters has\nmuch more room.",
+  "howto": "- **Hover any point** for the exact score.\n- **Toggle a vendor** with its checkbox to compare just two.\n- **Choose a priority criterion** and the ranked list below re-sorts, with a\n  one-line reason for each vendor's score.",
+  "lesson": "**Bloom level:** Evaluate (L5) -- *justify*\n\n**Learning objective:** Given a radar comparison of three AI tool vendors scored\nagainst four selection criteria, the learner justifies which vendor best fits a\nstated club priority.\n\n**Before the sim (5 min).** Ask the group to name the best AI tool they know. Then\nask what \"best\" meant in that answer. Usually output quality, unexamined.\n\n**With the sim (15 min).** Cycle the dropdown through all four criteria and note\nthat the winner changes three times. Then ask the real question: which criterion\nshould *this* club put first, and why.\n\n**After the sim (15 min).** Score two vendors the club is actually considering on\nthe same four axes, and write a one-paragraph justification for the choice.\n\n**Check for understanding.** Ask: \"Your club will use this tool on messages that\nmention students by name. Which vendor, and why is cost not the deciding factor?\"\nVendor B -- and being able to say that privacy is a constraint rather than a\ncriterion to trade off is the justification this objective wants.",
+  "refs": "- {{CHAPTER}} -- the chapter this MicroSim supports.\n- [The AI Agent Rollout Pipeline](../ai-agent-rollout-pipeline/index.md) -- what happens after the vendor is chosen.\n- [Human-in-the-Loop Review Workflow](../human-in-the-loop-review-workflow/index.md) -- the guardrails that partly compensate for a weaker vendor.\n- [Radar chart](https://en.wikipedia.org/wiki/Radar_chart) -- what the shape does and does not show.\n- [Multiple-criteria decision analysis](https://en.wikipedia.org/wiki/Multiple-criteria_decision_analysis) -- why a weighted priority is needed to rank at all.\n- [Vendor lock-in](https://en.wikipedia.org/wiki/Vendor_lock-in) -- a fifth criterion worth adding for a real decision."
+}

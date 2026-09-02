@@ -1,0 +1,59 @@
+{
+  "title": "47 Survey Responses by Age Range and Interest Level",
+  "height": 520,
+  "type": "bar",
+  "labels": [
+    "6-8",
+    "9-11",
+    "12-14",
+    "15-18"
+  ],
+  "datasets": [
+    {
+      "label": "Definitely would attend",
+      "data": [
+        4,
+        14,
+        9,
+        2
+      ],
+      "backgroundColor": "#F5A623"
+    },
+    {
+      "label": "Might attend",
+      "data": [
+        3,
+        6,
+        5,
+        4
+      ],
+      "backgroundColor": "#4A90D9"
+    },
+    {
+      "label": "Not interested",
+      "data": [
+        2,
+        3,
+        4,
+        3
+      ],
+      "backgroundColor": "#B0B0B0"
+    }
+  ],
+  "options": {
+    "scales": {
+      "x": {
+        "stacked": true
+      },
+      "y": {
+        "stacked": true
+      }
+    }
+  },
+  "axisTitles": {
+    "x": "Age range",
+    "y": "Number of survey responses"
+  },
+  "annotation": "The 9-11 bar is the clearest concentration of definite interest: <strong>14 of that group's 23 responses</strong> say they would definitely attend.",
+  "insight": "A club needs concentrated interest in <strong>one</strong> age range, not scattered interest across four. Totalling all 47 responses hides that; grouping them reveals it. Toggle 'Not interested' off with the legend and the 9-11 concentration becomes even starker."
+}

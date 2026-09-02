@@ -13,8 +13,8 @@ above are maintained by hand as sims are actually built.
 
 - Chapters scanned: 35
 - Total diagram specs found: 129
-- Already implemented: 48
-- **Unimplemented (TODO): 81**
+- Already implemented: 58
+- **Unimplemented (TODO): 71**
 
 Regenerate this list after adding or editing chapter diagram specs:
 
@@ -55,7 +55,7 @@ python3 ~/.claude/skills/microsim-utils/scripts/create-microsim-todo-json-files.
 | Sim ID | Diagram Name | Library | Bloom Level |
 |---|---|---|---|
 | :white_check_mark: [`club-feasibility-decision-path`](club-feasibility-decision-path/index.md) | Should You Start This Club? | Mermaid | Apply (L3) |
-| [`interest-survey-results`](TODO/interest-survey-results.json) | Interest Survey Results | Chart.js | Analyze (L4) |
+| :white_check_mark: [`interest-survey-results`](interest-survey-results/index.md) | Interest Survey Results | Chart.js | Analyze (L4) |
 
 ### Chapter 6: Growing, Branding, and Promoting Your Club (1)
 
@@ -113,7 +113,7 @@ python3 ~/.claude/skills/microsim-utils/scripts/create-microsim-todo-json-files.
 |---|---|---|---|
 | [`blinking-led-breadboard-circuit`](TODO/blinking-led-breadboard-circuit.json) | Blinking LED Breadboard Circuit | p5.js | Apply (L3) |
 | [`breadboard-tie-point-explorer`](TODO/breadboard-tie-point-explorer.json) | Breadboard Tie-Point Explorer | p5.js | Remember (L1) |
-| [`digital-signal-high-low-chart`](TODO/digital-signal-high-low-chart.json) | Digital Signal HIGH/LOW Chart | Chart.js | None |
+| :white_check_mark: [`digital-signal-high-low-chart`](digital-signal-high-low-chart/index.md) | Digital Signal HIGH/LOW Chart | Chart.js | None |
 | [`electrical-safety-rules-poster`](TODO/electrical-safety-rules-poster.json) | Electrical Safety Rules Poster | Interactive Infographic Overlay (grid-diagram.js, four-panel comparison poster + rectangular hover zones) | Remember (L1) |
 | [`led-anatomy`](TODO/led-anatomy.json) | LED Anatomy | Interactive Infographic Overlay (diagram.js, callout engine) | Remember (L1) |
 | [`multimeter-usage-simulator`](TODO/multimeter-usage-simulator.json) | Multimeter Usage Simulator | p5.js | Apply (L3) |
@@ -204,7 +204,7 @@ python3 ~/.claude/skills/microsim-utils/scripts/create-microsim-todo-json-files.
 
 | Sim ID | Diagram Name | Library | Bloom Level |
 |---|---|---|---|
-| [`anonymized-attendance-chart`](TODO/anonymized-attendance-chart.json) | Anonymized Attendance Chart | Chart.js | Understand (L2) |
+| :white_check_mark: [`anonymized-attendance-chart`](anonymized-attendance-chart/index.md) | Anonymized Attendance Chart | Chart.js | Understand (L2) |
 | :white_check_mark: [`calendar-setup-workflow`](calendar-setup-workflow/index.md) | Club Calendar Setup Workflow | Mermaid | Apply (L3) |
 | :white_check_mark: [`consent-collection-workflow`](consent-collection-workflow/index.md) | Guardian Consent Collection Workflow | Mermaid | Analyze (L4) |
 | [`data-backup-routine-timeline`](TODO/data-backup-routine-timeline.json) | Data Backup Routine Timeline | vis-timeline | Apply (L3) |
@@ -214,7 +214,7 @@ python3 ~/.claude/skills/microsim-utils/scripts/create-microsim-todo-json-files.
 | :white_check_mark: [`feedback-loop-cycle`](feedback-loop-cycle/index.md) | Feedback Loop Cycle | Mermaid | Understand (L2) |
 | :white_check_mark: [`message-channel-decision-tree`](message-channel-decision-tree/index.md) | Message Channel Decision Tree | Mermaid | Evaluate (L5) |
 | [`notification-lead-time-timeline`](TODO/notification-lead-time-timeline.json) | Notification Lead-Time Timeline | vis-timeline | Apply (L3) |
-| [`progress-dashboard-explorer`](TODO/progress-dashboard-explorer.json) | Progress Dashboard Explorer | Chart.js | Analyze (L4) |
+| :white_check_mark: [`progress-dashboard-explorer`](progress-dashboard-explorer/index.md) | Progress Dashboard Explorer | Chart.js | Analyze (L4) |
 | :white_check_mark: [`progress-tracking-cycle`](progress-tracking-cycle/index.md) | Student Progress Tracking Cycle | Mermaid | Understand (L2) |
 | [`saving-student-data-decision-tool`](TODO/saving-student-data-decision-tool.json) | Do You Actually Need This Data Field? | p5.js | Evaluate (L5) |
 | [`spreadsheet-template-zones`](TODO/spreadsheet-template-zones.json) | Spreadsheet Template Zones | Interactive Infographic Overlay (grid-diagram.js, annotation-free poster + rectangular hover zones) | Understand (L2) |
@@ -224,7 +224,7 @@ python3 ~/.claude/skills/microsim-utils/scripts/create-microsim-todo-json-files.
 
 | Sim ID | Diagram Name | Library | Bloom Level |
 |---|---|---|---|
-| [`attendance-enrollment-trend-explorer`](TODO/attendance-enrollment-trend-explorer.json) | Attendance and Enrollment Trend Explorer | Chart.js | Analyze (L4) |
+| :white_check_mark: [`attendance-enrollment-trend-explorer`](attendance-enrollment-trend-explorer/index.md) | Attendance and Enrollment Trend Explorer | Chart.js | Analyze (L4) |
 | :white_check_mark: [`automated-communication-pipeline`](automated-communication-pipeline/index.md) | Automated Communication Pipeline | Mermaid | Analyze (L4) |
 | [`pivot-table-builder`](TODO/pivot-table-builder.json) | Pivot Table Builder | p5.js | Apply (L3) |
 | [`student-growth-portfolio-network`](TODO/student-growth-portfolio-network.json) | Student Growth to Portfolio Network | vis-network | Understand (L2) |
@@ -264,7 +264,7 @@ python3 ~/.claude/skills/microsim-utils/scripts/create-microsim-todo-json-files.
 |---|---|---|---|
 | [`coding-club-budget-builder`](TODO/coding-club-budget-builder.json) | Coding Club Budget Builder | p5.js | Apply (L3) |
 | [`funding-partnership-fit-map`](TODO/funding-partnership-fit-map.json) | Funding Partnership Fit Map | vis-network | Analyze (L4) |
-| [`fundraising-channel-yield-comparison`](TODO/fundraising-channel-yield-comparison.json) | Fundraising Channel Yield Comparison | Chart.js | Analyze (L4) |
+| :white_check_mark: [`fundraising-channel-yield-comparison`](fundraising-channel-yield-comparison/index.md) | Fundraising Channel Yield Comparison | Chart.js | Analyze (L4) |
 | :white_check_mark: [`grant-writing-tracking-workflow`](grant-writing-tracking-workflow/index.md) | Grant Writing and Tracking Workflow | Mermaid | Apply (L3) |
 
 ### Chapter 31: Tracking Expenses and Building Funding Partnerships (3)
@@ -285,7 +285,7 @@ python3 ~/.claude/skills/microsim-utils/scripts/create-microsim-todo-json-files.
 | :white_check_mark: [`human-in-the-loop-review-workflow`](human-in-the-loop-review-workflow/index.md) | Human-in-the-Loop Review Workflow | Mermaid | Evaluate (L5) |
 | [`mentor-recruiting-influence-graph`](TODO/mentor-recruiting-influence-graph.json) | Building and Reading an Influence Graph | vis-network | Analyze (L4) |
 | [`prompt-refinement-step-through`](TODO/prompt-refinement-step-through.json) | Prompt Refinement Step-Through | p5.js | Apply (L3) |
-| [`survey-sentiment-dashboard`](TODO/survey-sentiment-dashboard.json) | Survey Themes and Sentiment Dashboard | Chart.js | Analyze (L4) |
+| :white_check_mark: [`survey-sentiment-dashboard`](survey-sentiment-dashboard/index.md) | Survey Themes and Sentiment Dashboard | Chart.js | Analyze (L4) |
 
 ### Chapter 33: AI-Customized Curriculum and Rolling Out New Agents (8)
 
@@ -293,7 +293,7 @@ python3 ~/.claude/skills/microsim-utils/scripts/create-microsim-todo-json-files.
 |---|---|---|---|
 | :white_check_mark: [`ai-agent-rollout-pipeline`](ai-agent-rollout-pipeline/index.md) | The AI Agent Rollout Pipeline | Mermaid | Understand (L2) |
 | :white_check_mark: [`ai-lesson-customization-workflow`](ai-lesson-customization-workflow/index.md) | From Observation to Customized Lesson | Mermaid | Understand (L2) |
-| [`ai-tool-selection-radar`](TODO/ai-tool-selection-radar.json) | Comparing AI Tools Against Selection Criteria | Chart.js | Evaluate (L5) |
+| :white_check_mark: [`ai-tool-selection-radar`](ai-tool-selection-radar/index.md) | Comparing AI Tools Against Selection Criteria | Chart.js | Evaluate (L5) |
 | [`bias-privacy-risk-sorter`](TODO/bias-privacy-risk-sorter.json) | Bias Risk, Privacy Risk, or Neither? | p5.js | Evaluate (L5) |
 | :white_check_mark: [`coding-help-agent-handoff`](coding-help-agent-handoff/index.md) | Where a Coding-Help Request Goes | Mermaid | Analyze (L4) |
 | [`generic-vs-ai-challenge-card`](TODO/generic-vs-ai-challenge-card.json) | Template Card vs. AI-Customized Card | p5.js | Analyze (L4) |
@@ -306,14 +306,14 @@ python3 ~/.claude/skills/microsim-utils/scripts/create-microsim-todo-json-files.
 |---|---|---|---|
 | :white_check_mark: [`board-governance-cycle`](board-governance-cycle/index.md) | Board Governance Cycle | Mermaid | Analyze (L4) |
 | :white_check_mark: [`club-inventory-lifecycle-workflow`](club-inventory-lifecycle-workflow/index.md) | Club Inventory Lifecycle Workflow | Mermaid | Analyze (L4) |
-| [`mentor-recruiting-channel-effectiveness`](TODO/mentor-recruiting-channel-effectiveness.json) | Mentor Recruiting Channel Effectiveness | Chart.js | Analyze (L4) |
+| :white_check_mark: [`mentor-recruiting-channel-effectiveness`](mentor-recruiting-channel-effectiveness/index.md) | Mentor Recruiting Channel Effectiveness | Chart.js | Analyze (L4) |
 | [`oversight-board-org-chart`](TODO/oversight-board-org-chart.json) | Oversight Board Org Chart | vis-network | Remember (L1) |
 
 ### Chapter 35: Training Mentors and Building a Club That Outlasts You (3)
 
 | Sim ID | Diagram Name | Library | Bloom Level |
 |---|---|---|---|
-| [`club-health-metrics-dashboard`](TODO/club-health-metrics-dashboard.json) | Club Health Metrics Dashboard | Chart.js | Evaluate (L5) |
+| :white_check_mark: [`club-health-metrics-dashboard`](club-health-metrics-dashboard/index.md) | Club Health Metrics Dashboard | Chart.js | Evaluate (L5) |
 | :white_check_mark: [`club-playbook-assembly-workflow`](club-playbook-assembly-workflow/index.md) | From Scattered Knowledge to a Club Playbook | Mermaid | Analyze (L4) |
 | :white_check_mark: [`mentor-development-pipeline`](mentor-development-pipeline/index.md) | Mentor Development Pipeline | Mermaid | Analyze (L4) |
 

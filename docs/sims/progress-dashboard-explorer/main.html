@@ -3,120 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- microsim-scaffold-stub -->
-    <title>Progress Dashboard Explorer</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: #f8f9fa;
-            color: #212529;
-        }
-        #container {
-            width: 100%;
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 20px;
-            background: white;
-        }
-        h1 {
-            font-size: 22px;
-            margin-bottom: 10px;
-            color: #1a3a6c;
-        }
-        .placeholder {
-            border: 2px dashed #adb5bd;
-            border-radius: 8px;
-            padding: 40px 20px;
-            text-align: center;
-            color: #6c757d;
-            margin: 20px 0;
-            min-height: 400px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        .placeholder .badge {
-            display: inline-block;
-            background: #ffc107;
-            color: #212529;
-            padding: 4px 12px;
-            border-radius: 12px;
-            font-size: 12px;
-            font-weight: 600;
-            margin-bottom: 12px;
-        }
-        .placeholder h2 {
-            font-size: 18px;
-            color: #495057;
-            margin-bottom: 8px;
-        }
-        .placeholder p {
-            font-size: 14px;
-            max-width: 480px;
-        }
-        .meta {
-            margin-top: 20px;
-            font-size: 13px;
-            color: #6c757d;
-            border-top: 1px solid #dee2e6;
-            padding-top: 12px;
-        }
-        .meta strong { color: #495057; }
-    </style>
+    <meta name="schema" content="https://dmccreary.github.io/intelligent-textbooks/ns/microsim/v1">
+    <title>Badge Completion Across the Cohort</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="container">
-        <h1>Progress Dashboard Explorer</h1>
-        <div class="placeholder">
-            <span class="badge">SCAFFOLD</span>
-            <h2>MicroSim Not Yet Implemented</h2>
-            <p>This MicroSim has been scaffolded from its specification but the
-            interactive content has not been built yet. See the chapter source
-            and the <code>index.md</code> in this directory for the full spec.</p>
+<main>
+    <div class="container">
+        <div class="chart-panel">
+            <h2 class="chart-title">Badge Completion Across the Cohort</h2>
+            <div class="chart-holder"><canvas id="chart"></canvas></div>
+            <div class="chart-note">Mock cohort data identifies students by initials only - no names anywhere in this dashboard.</div>
+            <div class="controls">
+                <label>Cohort <select data-control="cohort"><option value="All">All</option><option value="Tuesday Group">Tuesday Group</option><option value="Thursday Group">Thursday Group</option></select></label>
+                <label>Sort <select data-control="sort"><option value="Highest first">Highest first</option><option value="Lowest first">Lowest first</option><option value="Badge order">Badge order</option></select></label>
+                <button type="button" data-action="reset">Reset filters</button>
+            </div>
         </div>
-        <div class="meta">
-            <p><strong>Sim ID:</strong> progress-dashboard-explorer</p>
-            <p><strong>Library:</strong> Chart.js</p>
-            <p><strong>Bloom Level:</strong> Analyze (L4)</p>
-            <p><strong>Learning Objective:</strong> Given filter controls, the learner examines a dashboard to identify which badge is currently the biggest bottleneck for a cohort.</p>
+        <div class="info-panel">
+            <h3>What This Shows</h3>
+            <div class="annotation">The bottleneck is <strong>not the same badge in both groups</strong>. Tuesday is stuck on Sensors; Thursday is stuck on Debugging. Switch the cohort filter and watch it move.</div>
+            <div class="insight">A dashboard is only useful if it answers a question. This one answers 'where is the cohort stuck', and the answer <strong>depends on the group</strong> -- the two cohorts have taken different routes through the badge ladder, so they are stuck in different places. That is a signal about what each session has covered, not about the students. Note the underlying mock data holds <strong>initials only</strong>, the same minimal-identifiability habit the rest of this chapter argues for.</div>
+            <div class="ranked" id="ranking"></div>
         </div>
     </div>
-
-    <!--
-    SPECIFICATION (from chapter index.md):
-
-    Type: microsim
-    **sim-id:** progress-dashboard-explorer<br/>
-    **Library:** Chart.js<br/>
-    **Status:** Specified
-    **Template:** https://github.com/dmccreary/infographics/tree/main/docs/sims/dashboard-builder
-    
-    Purpose: Let a mentor explore a filterable dashboard summarizing badge completion across a mock cohort, using only initials rather than full names, to model both the tool and the minimal-identifiability habit from earlier in this chapter.
-    
-    Bloom Taxonomy: Analyze (L4)
-    Bloom Taxonomy Verb: examine
-    
-    Learning objective: Given filter controls, the learner examines a dashboard to identify which badge is currently the biggest bottleneck for a cohort.
-    
-    Canvas layout:
-    - Left (500px): a bar chart of badge-completion counts across the sample cohort
-    - Right (150px): filter controls and a summary readout
-    
-    Interactive controls:
-    - Dropdown: filter by cohort (Tuesday Group, Thursday Group, All)
-    - Dropdown: sort bars by completion count (highest first, lowest first)
-    - Button: "Reset Filters"
-    
-    Data Visibility Requirements:
-      Stage 1: Show the unfiltered bar chart -- one bar per badge, height equal to number of students (identified only by initials in the underlying mock data) who earned it
-      Stage 2: Show the same chart re-rendered after choosing a cohort filter, with bar heights updated to that cohort's numbers only
-      Final: Clicking a bar shows a small list of the initials that have earned that badge, modeling how a real dashboard would summarize without ever displaying a full name
-    
-    Default parameters: Cohort = "All"; sample data includes 6 badges across a mock cohort of 14 students, with one badge intentionally set low (6 of 14) to illustrate a visible bottleneck
-    
-    Implementation notes: Chart.js bar chart rebuilt on every filter change from a small in-memory mock dataset; initials only, never full names, even in sample data, to reinforce the chapter's minimal-identifiability principle.
-    -->
+</main>
+    <script src="progress-dashboard-explorer.js"></script>
 </body>
 </html>

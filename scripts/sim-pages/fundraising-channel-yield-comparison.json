@@ -1,0 +1,21 @@
+{
+  "title": "Fundraising Channel Yield Comparison",
+  "height": 542,
+  "library": "Chart.js",
+  "bloom": "Analyze (L4)",
+  "verb": "compare",
+  "description": "Five fundraising channels compared on the two axes that actually decide the choice: dollars raised and volunteer hours spent.",
+  "concepts": [
+    "Fundraising Channels",
+    "Net Yield",
+    "Volunteer Hours",
+    "Opportunity Cost"
+  ],
+  "interaction": "Hover a bar for exact figures; two y-axes let dollars and hours share one chart",
+  "assessment": "Give a funding need and an hours budget and ask which channel fits.",
+  "audience": "Club leaders choosing how to raise money",
+  "about": "Every fundraising guide ranks channels by how much they raise. That ranking is\nuseless to a club with four volunteer hours a month.\n\nThe two bars here have to be read together. **In-kind donation** is the standout:\n750 dollars of value for roughly 2 hours, because it is one conversation and a\ncollection. **Corporate sponsorship** is close behind -- 500 dollars a year for\nabout 3 hours, mostly one relationship-building conversation.\n\n**Fundraising events** are the trap. They raise a respectable 420 dollars, which\nlooks fine in isolation, and cost 15 hours -- more than the other four channels\ncombined. An event can still be the right call when the club wants the community\nvisibility, or when volunteers actively want to run one. It is the wrong call when\nsomeone picked it because it felt like what fundraising means.\n\nNote the crowdfunding figure is *net*: 128 dollars on a 150 dollar goal, after\nplatform fees.",
+  "howto": "- **Hover any bar** for the exact figure.\n- The left axis is dollars and the right axis is hours -- the two bars in each\n  group are measured on different scales, so compare shapes within a channel\n  rather than heights across the two colours.",
+  "lesson": "**Bloom level:** Analyze (L4) -- *compare*\n\n**Learning objective:** Given typical yield and effort figures for five\nfundraising channels, the learner compares them to select an appropriate channel\nfor a specific funding need and time budget.\n\n**Before the sim (5 min).** Ask the group how they would raise 500 dollars. Almost\neveryone proposes an event. Note it.\n\n**With the sim (10 min).** Read the yield bars alone and rank the channels. Then\nadd the hours bars and re-rank. The ranking changes, which is the lesson.\n\n**After the sim (15 min).** Establish the club's real volunteer-hours budget for a\nterm, then pick the channel or channels that fit inside it.\n\n**Check for understanding.** Ask: \"You need 400 dollars and have 5 volunteer hours.\nWhat do you do?\" Sponsorship or an in-kind ask -- and explaining why the event is\nexcluded despite raising enough is the comparison this objective wants.",
+  "refs": "- {{CHAPTER}} -- the chapter this MicroSim supports.\n- [Grant Writing and Tracking Workflow](../grant-writing-tracking-workflow/index.md) -- the sixth channel, with its own timeline.\n- [Club Financial Operations Cycle](../club-financial-operations-cycle/index.md) -- what happens to the money once raised.\n- [Fundraising](https://en.wikipedia.org/wiki/Fundraising) -- channel types and their typical economics.\n- [Opportunity cost](https://en.wikipedia.org/wiki/Opportunity_cost) -- the reason the hours bar belongs on the chart at all.\n- [In-kind contribution](https://en.wikipedia.org/wiki/In_kind) -- why donated goods count as raised value."
+}

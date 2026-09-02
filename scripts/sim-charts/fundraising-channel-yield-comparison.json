@@ -1,0 +1,78 @@
+{
+  "title": "Typical Yield vs. Volunteer Hours by Fundraising Channel",
+  "height": 540,
+  "type": "bar",
+  "labels": [
+    "Community Support Drive",
+    "Crowdfunding Campaign",
+    "Corporate Sponsorship",
+    "In-Kind Donation",
+    "Fundraising Event"
+  ],
+  "datasets": [
+    {
+      "label": "Net yield (dollars)",
+      "data": [
+        340,
+        128,
+        500,
+        750,
+        420
+      ],
+      "backgroundColor": "#4A90D9",
+      "yAxisID": "y"
+    },
+    {
+      "label": "Volunteer hours",
+      "data": [
+        4,
+        6,
+        3,
+        2,
+        15
+      ],
+      "backgroundColor": "#F5A623",
+      "yAxisID": "y1"
+    }
+  ],
+  "options": {
+    "scales": {
+      "y": {
+        "beginAtZero": true,
+        "position": "left",
+        "title": {
+          "display": true,
+          "text": "Net yield (dollars)",
+          "font": {
+            "size": 13
+          }
+        }
+      },
+      "y1": {
+        "beginAtZero": true,
+        "position": "right",
+        "grid": {
+          "drawOnChartArea": false
+        },
+        "title": {
+          "display": true,
+          "text": "Volunteer hours",
+          "font": {
+            "size": 13
+          }
+        }
+      },
+      "x": {
+        "ticks": {
+          "font": {
+            "size": 11
+          },
+          "maxRotation": 30,
+          "minRotation": 0
+        }
+      }
+    }
+  },
+  "annotation": "<strong>In-kind donation</strong> yields the most value for the fewest hours: 750 dollars of value for about 2 hours. <strong>Fundraising events</strong> are the opposite - 420 dollars for 15 hours.",
+  "insight": "Read the two bars together, not separately. The highest-yield channel is not the best choice if the club does not have the hours. A club with 5 volunteer hours a month should be looking at sponsorship and in-kind donations; the event only makes sense when the club has people who want to run one."
+}

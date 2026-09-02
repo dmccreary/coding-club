@@ -1,6 +1,6 @@
 {
   "title": "Club Health Metrics Dashboard",
-  "description": "Given three years of club health metrics, the learner assesses whether the club's overall trajectory is sustainable or shows an early warning sign.",
+  "description": "Four health metrics across three years, and the one line moving the wrong way while the others celebrate.",
   "creator": "Coding Club",
   "author": "Dan McCreary",
   "date": "2026-09-01",
@@ -15,9 +15,28 @@
   "library": "Chart.js",
   "bloomLevel": "Evaluate (L5)",
   "bloomVerb": "assess",
-  "completion_status": "scaffold",
+  "completion_status": "built",
+  "canvasHeight": 540,
   "chapter_number": 35,
   "chapter_title": "Training Mentors and Building a Club That Outlasts You",
   "chapter_dir": "35-training-mentors-and-succession",
-  "chapter_rel_dir": "chapters/35-training-mentors-and-succession"
+  "chapter_rel_dir": "chapters/35-training-mentors-and-succession",
+  "educational": {
+    "gradeLevel": "Middle School, High School, Adult",
+    "audience": "Founders and boards assessing club trajectory",
+    "duration": "10-15 minutes",
+    "concepts": [
+      "Club Health",
+      "Mentor Retention",
+      "Waitlist",
+      "Leading Indicator"
+    ]
+  },
+  "pedagogical": {
+    "bloomLevel": "Evaluate (L5)",
+    "bloomVerb": "assess",
+    "learningObjective": "Given three years of club health metrics, the learner assesses whether the club's overall trajectory is sustainable or shows an early warning sign.",
+    "interactionPattern": "Toggle each metric independently; all four are indexed to a shared 0-100 axis",
+    "assessment": "Ask whether Year 3 is the club's best year, and what the answer depends on."
+  }
 }

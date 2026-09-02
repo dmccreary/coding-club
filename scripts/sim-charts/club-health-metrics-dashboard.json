@@ -1,0 +1,100 @@
+{
+  "title": "Three Years of Club Health Metrics",
+  "height": 540,
+  "type": "line",
+  "labels": [
+    "Year 1",
+    "Year 2",
+    "Year 3"
+  ],
+  "datasets": [
+    {
+      "label": "Enrollment (indexed)",
+      "data": [
+        30,
+        55,
+        85
+      ],
+      "borderColor": "#4A90D9",
+      "backgroundColor": "#4A90D9",
+      "tension": 0.25
+    },
+    {
+      "label": "Mentor retention rate (%)",
+      "data": [
+        60,
+        70,
+        55
+      ],
+      "borderColor": "#F5A623",
+      "backgroundColor": "#F5A623",
+      "tension": 0.25
+    },
+    {
+      "label": "Waitlist length (indexed)",
+      "data": [
+        0,
+        25,
+        70
+      ],
+      "borderColor": "#3E9E6E",
+      "backgroundColor": "#3E9E6E",
+      "tension": 0.25
+    },
+    {
+      "label": "Average session attendance (%)",
+      "data": [
+        90,
+        88,
+        91
+      ],
+      "borderColor": "#8E7CC3",
+      "backgroundColor": "#8E7CC3",
+      "tension": 0.25
+    }
+  ],
+  "options": {
+    "scales": {
+      "y": {
+        "beginAtZero": true,
+        "max": 100,
+        "title": {
+          "display": true,
+          "text": "Indexed value (0-100)",
+          "font": {
+            "size": 13
+          }
+        }
+      }
+    }
+  },
+  "controls": [
+    {
+      "type": "toggle",
+      "dataset": 0,
+      "label": "Enrollment",
+      "checked": true
+    },
+    {
+      "type": "toggle",
+      "dataset": 1,
+      "label": "Mentor retention",
+      "checked": true
+    },
+    {
+      "type": "toggle",
+      "dataset": 2,
+      "label": "Waitlist",
+      "checked": true
+    },
+    {
+      "type": "toggle",
+      "dataset": 3,
+      "label": "Attendance",
+      "checked": true
+    }
+  ],
+  "note": "Four different units share one axis by being indexed to 0-100; compare each line's shape, not its height against the others.",
+  "annotation": "Three lines rise. One does not: <strong>mentor retention falls from 70% to 55% in Year 3</strong>, in the same year enrollment and the waitlist grow fastest.",
+  "insight": "This is what an early warning sign looks like -- a single line moving against a set of encouraging ones. Growing enrollment and a growing waitlist are exactly what burns mentors out, so the metrics are not independent: the good news is <em>causing</em> the bad news. Turn off every series except mentor retention to see the trend without the reassurance around it. A club reading only enrollment would call Year 3 its best year."
+}

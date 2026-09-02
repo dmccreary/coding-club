@@ -269,7 +269,7 @@ The chart below compares typical yield and volunteer effort across these five ch
 
 #### Diagram: Fundraising Channel Yield Comparison
 
-<iframe src="../../sims/fundraising-channel-yield-comparison/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../sims/fundraising-channel-yield-comparison/main.html" width="100%" height="542px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Fundraising Channel Yield Comparison</summary>

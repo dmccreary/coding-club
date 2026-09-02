@@ -1,0 +1,21 @@
+{
+  "title": "Mentor Recruiting Channel Effectiveness",
+  "height": 542,
+  "library": "Chart.js",
+  "bloom": "Analyze (L4)",
+  "verb": "compare",
+  "description": "Five recruiting channels compared on both volume and quality, because the channel that produces the most candidates produces the fewest mentors.",
+  "concepts": [
+    "Mentor Recruiting",
+    "Qualification Trial",
+    "Channel Mix",
+    "Screening Cost"
+  ],
+  "interaction": "Hover for exact figures; candidate counts and pass rates share one chart on two axes",
+  "assessment": "Give a recruiting target and ask which channel mix reaches it.",
+  "audience": "Founders and boards recruiting mentors",
+  "about": "The channel that produces the most candidates produces the fewest mentors.\n\nAn engineering meetup post generates 7 candidates in a three-week window -- more\nthan double anything else -- and 43% of them pass the qualification trial. That\nis 3 mentors and 4 interviews that went nowhere. The founder's personal network\ngenerates 3 candidates and all 3 pass, because the founder already screened them\ninformally before they applied.\n\nNeither is better. They fail differently. Personal networks and parent referrals\nproduce almost-certain mentors and <em>do not scale</em> -- a founder's contacts\nrun out, and 3 plus 2 is not a growth strategy. The meetup post scales and costs\ninterview time.\n\nThe practical reading: a club needing two more mentors should work its referrals.\nA club needing six has to post publicly and accept the screening load that comes\nwith it. Choosing deliberately is the point; most clubs default to personal\noutreach until it silently stops working.",
+  "howto": "- **Hover any bar** for the exact figure.\n- The left axis counts candidates; the right axis is the percentage who pass.\n  Read the pair within each channel rather than comparing the two colours' heights\n  across channels.",
+  "lesson": "**Bloom level:** Analyze (L4) -- *compare*\n\n**Learning objective:** Given candidate counts and qualification rates across five\nmentor recruiting channels, the learner compares them to select an effective mix\nof channels for a specific recruiting need.\n\n**Before the sim (5 min).** Ask how the club found its current mentors. Almost\nalways the founder knew them, which is the constraint this chart exposes.\n\n**With the sim (10 min).** Rank by candidate count, then by pass rate. The\nrankings nearly invert. Ask what number actually matters -- candidates times pass\nrate, which is mentors.\n\n**After the sim (15 min).** Set a real target (\"we need four more mentors by\nMarch\") and design a channel mix that reaches it, including the interview hours\nit implies.\n\n**Check for understanding.** Ask: \"Why not use only the founder's network, since\neveryone passes?\" Because it produces three people and then stops -- and naming\nthe scaling limit rather than the pass rate is the comparison this objective\nwants.",
+  "refs": "- {{CHAPTER}} -- the chapter this MicroSim supports.\n- [Mentor Development Pipeline](../mentor-development-pipeline/index.md) -- what happens to a candidate after they pass.\n- [Mentor-Gated Registration Flow](../mentor-gated-registration-flow/index.md) -- why mentor count caps student capacity.\n- [Recruitment](https://en.wikipedia.org/wiki/Recruitment) -- sourcing channels and yield in general.\n- [Conversion funnel](https://en.wikipedia.org/wiki/Conversion_funnel) -- candidates in, qualified people out."
+}

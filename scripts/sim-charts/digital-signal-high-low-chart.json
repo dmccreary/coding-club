@@ -1,0 +1,84 @@
+{
+  "title": "Digital Input Voltage Over Time",
+  "height": 500,
+  "type": "line",
+  "labels": [
+    "0",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "10"
+  ],
+  "datasets": [
+    {
+      "label": "Voltage on the pin",
+      "data": [
+        0,
+        0,
+        5,
+        5,
+        0,
+        0,
+        5,
+        5,
+        0,
+        5,
+        0
+      ],
+      "borderColor": "#4A90D9",
+      "backgroundColor": "rgba(74,144,217,0.15)",
+      "stepped": true,
+      "fill": true,
+      "pointRadius": 4
+    }
+  ],
+  "options": {
+    "plugins": {
+      "legend": {
+        "display": false
+      }
+    },
+    "scales": {
+      "y": {
+        "beginAtZero": true,
+        "max": 5.5,
+        "ticks": {
+          "stepSize": 1
+        },
+        "title": {
+          "display": true,
+          "text": "Voltage (V)",
+          "font": {
+            "size": 13
+          }
+        }
+      },
+      "x": {
+        "title": {
+          "display": true,
+          "text": "Time (seconds)",
+          "font": {
+            "size": 13
+          }
+        }
+      }
+    }
+  },
+  "controls": [
+    {
+      "type": "button",
+      "id": "press",
+      "label": "Press the button"
+    }
+  ],
+  "note": "Shaded segments are HIGH (button pressed); flat segments at 0 V are LOW (released).",
+  "annotation": "There is no in-between. The line is at 0 V or 5 V and the transition is <strong>vertical</strong> -- that is what makes the signal digital.",
+  "insight": "Compare this shape to the smooth curve an analog input produces. A digital pin answers one question, <strong>high or low</strong>, and every reading is one of two values. Press the button below to add another event and watch the pattern extend: still only two heights, however many times you press.",
+  "extraJs": "\n// Pressing the simulated button appends one more HIGH-then-LOW event at the\n// right edge, so the reader can see the pattern extend without ever producing\n// an intermediate voltage.\nlet nextSecond = chartData.labels.length;\n\nfunction onAction(id) {\n    if (id !== 'press') return;\n    const set = chart.data.datasets[0];\n    chart.data.labels.push(String(nextSecond++), String(nextSecond++));\n    set.data.push(5, 0);\n    // keep the window readable rather than growing without bound\n    while (chart.data.labels.length > 21) {\n        chart.data.labels.shift();\n        set.data.shift();\n    }\n    chart.update();\n}\n"
+}

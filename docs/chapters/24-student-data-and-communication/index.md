@@ -330,7 +330,7 @@ A worked example shows the substitution in practice: a club leader preparing a g
 
 #### Diagram: Anonymized Attendance Chart
 
-<iframe src="../../sims/anonymized-attendance-chart/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../sims/anonymized-attendance-chart/main.html" width="100%" height="522px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Anonymized Attendance Chart</summary>
@@ -418,7 +418,7 @@ A worked example shows the difference in practice: at the end of a session, a cl
 
 #### Diagram: Progress Dashboard Explorer
 
-<iframe src="../../sims/progress-dashboard-explorer/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../sims/progress-dashboard-explorer/main.html" width="100%" height="542px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Progress Dashboard Explorer</summary>
