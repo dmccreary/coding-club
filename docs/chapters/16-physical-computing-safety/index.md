@@ -356,7 +356,7 @@ Full-size breadboards add one detail worth calling out before a student's first 
 
 #### Diagram: Breadboard Tie-Point Explorer
 
-<iframe src="../../sims/breadboard-tie-point-explorer/main.html" width="100%" height="520px" scrolling="no"></iframe>
+<iframe src="../../sims/breadboard-tie-point-explorer/main.html" width="100%" height="642px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Breadboard Tie-Point Explorer</summary>
@@ -479,7 +479,7 @@ Building it step by step: place the LED across two breadboard columns with its l
 
 #### Diagram: Blinking LED Breadboard Circuit
 
-<iframe src="../../sims/blinking-led-breadboard-circuit/main.html" width="100%" height="560px" scrolling="no"></iframe>
+<iframe src="../../sims/blinking-led-breadboard-circuit/main.html" width="100%" height="602px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Blinking LED Breadboard Circuit</summary>
@@ -521,7 +521,7 @@ Some kits wire the same idea in reverse, using a pull-up resistor connected to t
 
 #### Diagram: Push Button Digital Input Circuit
 
-<iframe src="../../sims/push-button-digital-input-circuit/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../sims/push-button-digital-input-circuit/main.html" width="100%" height="602px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Push Button Digital Input Circuit</summary>

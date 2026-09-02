@@ -1,0 +1,22 @@
+{
+  "title": "Blinking LED Breadboard Circuit",
+  "height": 602,
+  "library": "p5.js",
+  "bloom": "Apply (L3)",
+  "verb": "demonstrate",
+  "description": "A working blink circuit on a real breadboard layout -- with a button that removes one jumper wire and kills it.",
+  "concepts": [
+    "Closed Circuit",
+    "Current-Limiting Resistor",
+    "LED Polarity",
+    "Digital Output Pin",
+    "Blink Interval"
+  ],
+  "interaction": "Slider sets the blink interval; a switch drives the output pin by hand; a button removes the ground-return jumper",
+  "assessment": "Break the loop and ask the learner to predict the LED current before looking at the readout.",
+  "audience": "Students building their first physical-computing circuit",
+  "about": "This is the first circuit almost every club builds, drawn on the board it is\nactually built on. Five parts, one loop: the 5 V rail, the output pin, a\n220 ohm resistor, the LED, and the wire back to ground.\n\nThe circuit is solved rather than scripted. The **13.2 mA** you see with the\npin HIGH is what the solver computes from a 5 V supply, a 220 ohm resistor,\nand a red LED's 1.9 V forward drop -- not a number typed into the sim. Change\nthe circuit and the number changes with it.\n\nTwo things are modelled on purpose.\n\n**The output pin is a switch, not a power supply.** The `PIN` switch\nstraddling the center channel connects the LED branch to the 5 V rail (HIGH)\nor leaves it open (LOW). The rails stay energized either way, because that is\nthe truth: toggling a pin in code does not power down the board.\n\n**The loop must be closed.** The **Break the loop** button rebuilds the\ncircuit without the ground-return jumper at column 13. Everything else is\nstill there -- supply, resistor, LED, output pin cycling away on its timer --\nand the LED stays dark, drawing 0.0 mA. Current needs a path back, and a\ncircuit with one wire missing is not a circuit at all. That is the single most\ncommon reason a student's first build does nothing.\n\nThe scope on the right plots LED current and LED voltage against time, so a\nslow blink interval draws a visibly wider square wave than a fast one.",
+  "howto": "- Press **Start**. The output pin begins cycling and the LED blinks.\n- Drag **Blink interval** from 100 ms to 2000 ms and watch the square wave on\n  the scope stretch out.\n- Press **Break the loop**. Predict what the LED does *before* you look --\n  then press **Reconnect the jumper**.\n- Uncheck **Auto blink** and click the green `PIN` switch on the board to drive\n  the pin by hand.\n- **Reset** restores the intact loop, a 500 ms interval, and auto blink.",
+  "lesson": "**Bloom level:** Apply (L3) -- *demonstrate*\n\n**Learning objective:** Given a breadboard, resistor, LED, and jumper wires,\nthe learner demonstrates how they combine into a working blinking-light\ncircuit.\n\n**Before the sim (10 min).** Lay the four physical parts on the table and ask\nthe group to arrange them into a loop on paper. Do not correct the wrong\nanswers yet.\n\n**With the sim (15 min).** Compare each paper layout against the board. Then\nrun the **Break the loop** experiment as a prediction exercise -- ask for a\nshow of hands on what the LED will do before anyone presses the button.\n\n**After the sim (20 min).** Build it for real. A student who has already seen\nthe broken-loop case debugs their own dark LED far faster, because \"check that\nevery wire is seated\" is now something they have watched matter.\n\n**Check for understanding.** Ask: \"The pin is HIGH and the LED is dark. Name\ntwo things that could be wrong.\" A broken loop and a backwards LED are the two\nanswers worth having -- and the second is why\n[LED Anatomy](../led-anatomy/index.md) comes next.",
+  "refs": "- {{CHAPTER}} -- the chapter this MicroSim supports.\n- [Breadboard Tie Point Explorer](../breadboard-tie-point-explorer/index.md) -- which holes on this board are already connected.\n- [LED Anatomy](../led-anatomy/index.md) -- why the LED only works one way round.\n- [Ohm's Law Current Calculator](../ohms-law-current-calculator/index.md) -- where the 220 ohm resistor value comes from.\n- [Resistor Color Code Calculator](../resistor-color-code-calculator/index.md) -- reading the red-red-brown bands on R1.\n- [Light-emitting diode](https://en.wikipedia.org/wiki/Light-emitting_diode) -- forward voltage and why it differs by colour."
+}

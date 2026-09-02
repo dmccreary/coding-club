@@ -174,7 +174,7 @@ nav:
     - Blinking LED Breadboard Circuit: sims/blinking-led-breadboard-circuit/index.md
     - Board Governance Cycle: sims/board-governance-cycle/index.md
     - Bookmark Folder Structure: sims/bookmark-folder-structure/index.md
-    - Breadboard Tie-Point Explorer: sims/breadboard-tie-point-explorer/index.md
+    - Breadboard Tie Point Explorer: sims/breadboard-tie-point-explorer/index.md
     - Building and Reading an Influence Graph: sims/mentor-recruiting-influence-graph/index.md
     - Circuit Symbol Reader: sims/circuit-symbol-reader/index.md
     - Circuit Troubleshooting Workflow: sims/circuit-troubleshooting-workflow/index.md
@@ -290,6 +290,8 @@ nav:
     - Ultrasonic Ranging Explorer: sims/ultrasonic-ranging/index.md
     - USB-A vs USB-C Connector Comparison: sims/usb-connector-comparison/index.md
     - Where a Coding-Help Request Goes: sims/coding-help-agent-handoff/index.md
+
+
 
 
 

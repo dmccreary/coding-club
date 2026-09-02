@@ -1,0 +1,23 @@
+{
+  "title": "Breadboard Tie Point Explorer",
+  "height": 642,
+  "library": "p5.js",
+  "bloom": "Remember (L1)",
+  "verb": "identify",
+  "description": "Click any hole on a half-size breadboard and every hole electrically tied to it lights up.",
+  "concepts": [
+    "Breadboard",
+    "Tie Point",
+    "Power Rail",
+    "Center Channel",
+    "Electrical Net"
+  ],
+  "interaction": "Click a hole to highlight its connected group; toggle to light all four rails at once",
+  "assessment": "Point at a hole and ask which other holes share its connection before clicking.",
+  "audience": "Students and mentors on their first hardware night",
+  "duration": "5-10 minutes",
+  "about": "A breadboard is already wired before you touch it. Under the white plastic\nare metal clips that tie certain holes together, and almost every\nfirst-night hardware failure comes from guessing that wiring wrong.\n\nThere are only two rules, and this sim makes both visible:\n\n**A tie column is five holes, not ten.** Rows a-e of column 12 are one\nconnection. Rows f-j of column 12 are a *different* connection. The grey\nchannel down the middle is a wall, not a decoration -- it exists so a chip\ncan straddle it with its two rows of legs on separate nets.\n\n**A power rail is one connection running the whole length of the board.**\nThe holes come in groups of five with a gap between groups, which makes\nthem look like separate sections. They are not. Click any rail hole and\nwatch the entire strip light up.\n\nOne detail worth pointing out while the **Show all rails** toggle is on:\nthere are *four* rails, not two. The top pair and the bottom pair are\nelectrically separate. A circuit powered from the top rails gets nothing\nfrom the bottom rails until somebody adds a jumper wire between them --\nwhich is exactly the wire the other circuits in this chapter run at\ncolumn 19.",
+  "howto": "- **Click any hole** to highlight its whole connected group in amber.\n- Click a hole in **rows a-e**, then the hole directly below it in **rows f-j**.\n  Same column number, two different groups. That is the center channel.\n- Turn on **Show all rails** to see all four power rails at once in blue.\n- **Clear selection** removes the amber highlight.",
+  "lesson": "**Bloom level:** Remember (L1) -- *identify*\n\n**Learning objective:** Given a labeled breadboard diagram, the learner\nidentifies which holes are electrically connected to a clicked hole.\n\n**Before the sim (5 min).** Hand out real breadboards if you have them and ask\nthe group to guess which holes are connected. Collect two or three competing\nguesses on the whiteboard without saying which is right.\n\n**With the sim (10 min).** Test each guess by clicking. The productive surprise\nis the center channel: nearly everyone assumes a column runs the full height of\nthe board.\n\n**After the sim (10 min).** Give each student a component with two legs and ask\nwhere the legs must go so the component is *not* shorted out. Both legs in the\nsame column is the mistake to catch -- the sim makes it obvious why nothing\nhappens when you do that.\n\n**Check for understanding.** Point at hole `d7` and ask: \"Name every other hole\nconnected to this one.\" The answer is `a7`, `b7`, `c7`, and `e7` -- five holes,\nstopping at the channel. A student who includes `f7` has not yet got it.",
+  "refs": "- {{CHAPTER}} -- the chapter this MicroSim supports.\n- [Blinking LED Breadboard Circuit](../blinking-led-breadboard-circuit/index.md) -- the same board with a working circuit on it.\n- [Push Button Digital Input Circuit](../push-button-digital-input-circuit/index.md) -- a second circuit built on these tie points.\n- [Breadboard](https://en.wikipedia.org/wiki/Breadboard) -- how the clips underneath are actually made.\n- [Dual in-line package](https://en.wikipedia.org/wiki/Dual_in-line_package) -- the chip format the center channel exists for."
+}
