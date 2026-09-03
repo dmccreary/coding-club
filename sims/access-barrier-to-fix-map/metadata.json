@@ -1,6 +1,6 @@
 {
   "title": "Access Barrier to Fix Map",
-  "description": "Given a barrier a family might face (cost, transportation, inflexible timing, language, or disability access), the learner examines which club practice from this chapter addresses it, and identifies practices that address more than one barrier.",
+  "description": "Five barriers families face, seven club practices that address them -- and the one barrier three fixes converge on.",
   "creator": "Coding Club",
   "author": "Dan McCreary",
   "date": "2026-09-01",
@@ -15,9 +15,29 @@
   "library": "vis-network",
   "bloomLevel": "Analyze (L4)",
   "bloomVerb": "examine",
-  "completion_status": "scaffold",
+  "completion_status": "built",
+  "canvasHeight": 738,
   "chapter_number": 28,
   "chapter_title": "Reaching Underserved Communities and Removing Barriers",
   "chapter_dir": "28-underserved-communities-barriers",
-  "chapter_rel_dir": "chapters/28-underserved-communities-barriers"
+  "chapter_rel_dir": "chapters/28-underserved-communities-barriers",
+  "educational": {
+    "gradeLevel": "Middle School, High School, Adult",
+    "audience": "Club leaders working on access",
+    "duration": "10-15 minutes",
+    "concepts": [
+      "Access Barriers",
+      "No-Fee Model",
+      "Device Loan",
+      "Accommodation",
+      "Equity"
+    ]
+  },
+  "pedagogical": {
+    "bloomLevel": "Analyze (L4)",
+    "bloomVerb": "examine",
+    "learningObjective": "Given a barrier a family might face (cost, transportation, inflexible timing, language, or disability access), the learner examines which club practice from this chapter addresses it, and identifies practices that address more than one barrier.",
+    "interactionPattern": "Click any barrier or fix for what it is and what it addresses",
+    "assessment": "Name a barrier and ask which fixes address it, and which fix removes it without the family asking."
+  }
 }

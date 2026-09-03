@@ -1,0 +1,69 @@
+{
+  "title": "Anatomy of a Challenge Card",
+  "orientation": "portrait",
+  "image": "anatomy-of-a-challenge-card.png",
+  "layout": "side-panel",
+  "showNumbers": true,
+  "callouts": [
+    {
+      "id": 1,
+      "label": "Title",
+      "x": 50,
+      "y": 14,
+      "radius": 5,
+      "color": "#4A90D9",
+      "hint": "The single largest line of print, at the very top of the card.",
+      "description": "A short, inviting project name, like 'Rainbow Chase' rather than 'LED Strip Loop Exercise.'"
+    },
+    {
+      "id": 2,
+      "label": "Materials List",
+      "x": 30,
+      "y": 27,
+      "radius": 5,
+      "color": "#7ED6A5",
+      "hint": "A short bulleted list in the upper-middle of the card.",
+      "description": "Every physical or software tool needed, checked against actual kit inventory before the session."
+    },
+    {
+      "id": 3,
+      "label": "Colored Border",
+      "x": 13.1,
+      "y": 45.0,
+      "radius": 5,
+      "color": "#2ECC71",
+      "hint": "The solid coloured band running all the way around the card's outer edge.",
+      "description": "Signals difficulty at a glance: green for a Beginner Card, blue for an Intermediate Card, black for an Advanced Card. This example shows a green Beginner Card."
+    },
+    {
+      "id": 4,
+      "label": "Numbered Steps",
+      "x": 50,
+      "y": 50,
+      "radius": 5,
+      "color": "#E67E22",
+      "hint": "The largest block of print, filling the middle of the card.",
+      "description": "Clear, sequential instructions written at the target track's reading level."
+    },
+    {
+      "id": 5,
+      "label": "Stretch Goal",
+      "x": 50,
+      "y": 74,
+      "radius": 5,
+      "color": "#9B59B6",
+      "hint": "A separate boxed area in the lower part of the card.",
+      "description": "An optional extra challenge for a student who finishes early, preventing idle time."
+    },
+    {
+      "id": 6,
+      "label": "Concept Tag",
+      "x": 78,
+      "y": 88,
+      "radius": 5,
+      "color": "#16A085",
+      "hint": "A small rounded chip in the bottom corner of the card.",
+      "description": "Names the computational thinking skill or syntax concept the card reinforces, tying back to the skill progression ladder from Chapter 14."
+    }
+  ]
+}

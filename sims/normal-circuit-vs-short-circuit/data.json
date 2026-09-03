@@ -1,0 +1,49 @@
+{
+  "title": "Normal Circuit vs. Short Circuit",
+  "orientation": "landscape",
+  "image": "normal-circuit-vs-short-circuit.png",
+  "layout": "side-panel",
+  "showNumbers": true,
+  "callouts": [
+    {
+      "id": 1,
+      "label": "220-ohm resistor",
+      "x": 27,
+      "y": 23,
+      "radius": 5,
+      "color": "#4A90D9",
+      "hint": "A zig-zag symbol on the top wire of the left-hand loop only.",
+      "description": "The current-limiting resistor. It is the only thing standing between the battery and a very large current, and it is exactly what the short circuit on the right is missing."
+    },
+    {
+      "id": 2,
+      "label": "6V battery pack",
+      "x": 13,
+      "y": 50,
+      "radius": 5,
+      "color": "#F39C12",
+      "hint": "The power source on the left side of the left-hand loop.",
+      "description": "The same 6 volt supply feeds both circuits. Nothing about the battery changes between them -- only what the current has to pass through."
+    },
+    {
+      "id": 3,
+      "label": "~27 mA (safe)",
+      "x": 40,
+      "y": 50,
+      "radius": 5,
+      "color": "#2ECC71",
+      "hint": "The right side of the left-hand loop, where the light-emitting component sits.",
+      "description": "With 6 V across a 220 ohm resistor and an LED, roughly 27 milliamps flows. That is inside what a standard LED tolerates, so the parts stay cool."
+    },
+    {
+      "id": 4,
+      "label": "~6 A (dangerous, gets hot)",
+      "x": 74.5,
+      "y": 76.0,
+      "radius": 5,
+      "color": "#E74C3C",
+      "hint": "The bare wire loop on the right, glowing warm.",
+      "description": "With the resistor and LED removed, only the wire's own tiny resistance limits the current. Six volts across a fraction of an ohm is amps, not milliamps, and all of that energy becomes heat in the wire and the battery."
+    }
+  ]
+}

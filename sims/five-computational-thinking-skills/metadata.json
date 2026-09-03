@@ -1,6 +1,6 @@
 {
   "title": "The Five Computational Thinking Skills",
-  "description": "Given a moment in a coding project, the learner identifies which of the five computational thinking skills is being used.",
+  "description": "Decomposition, pattern recognition, abstraction, algorithm design, debugging -- with a club example for each.",
   "creator": "Coding Club",
   "author": "Dan McCreary",
   "date": "2026-09-01",
@@ -12,12 +12,33 @@
   "language": "en",
   "rights": "CC BY-NC-SA 4.0",
   "identifier": "five-computational-thinking-skills",
-  "library": "Interactive Infographic Overlay (grid-diagram.js, annotation-free comparison poster + rectangular hover zones)",
+  "library": "Infographic overlay (grid-diagram.js)",
   "bloomLevel": "Remember (L1)",
   "bloomVerb": "identify",
-  "completion_status": "scaffold",
+  "completion_status": "built",
+  "canvasHeight": 648,
   "chapter_number": 14,
   "chapter_title": "\"Computational Thinking, Scratch, and Python Basics\"",
   "chapter_dir": "14-computational-thinking-scratch-python",
-  "chapter_rel_dir": "chapters/14-computational-thinking-scratch-python"
+  "chapter_rel_dir": "chapters/14-computational-thinking-scratch-python",
+  "educational": {
+    "gradeLevel": "Middle School, High School, Adult",
+    "audience": "Mentors naming what students are doing",
+    "duration": "10 minutes",
+    "concepts": [
+      "Computational Thinking",
+      "Decomposition",
+      "Pattern Recognition",
+      "Abstraction",
+      "Algorithm Design",
+      "Debugging"
+    ]
+  },
+  "pedagogical": {
+    "bloomLevel": "Remember (L1)",
+    "bloomVerb": "identify",
+    "learningObjective": "Given a moment in a coding project, the learner identifies which of the five computational thinking skills is being used.",
+    "interactionPattern": "Click any skill for what it means and a coding club example",
+    "assessment": "Name the skill a student is using at a given moment in a project."
+  }
 }

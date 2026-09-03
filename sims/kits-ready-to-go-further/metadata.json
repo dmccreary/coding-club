@@ -1,6 +1,6 @@
 {
   "title": "Kits Ready to Go Further",
-  "description": "Given a signal-processing kit or a smartwatch display kit running, the learner identifies what it does and what a mentor would see, without explaining the underlying transform.",
+  "description": "Two step-up kits, what each one does, and what a mentor would actually see running.",
   "creator": "Coding Club",
   "author": "Dan McCreary",
   "date": "2026-09-01",
@@ -12,12 +12,32 @@
   "language": "en",
   "rights": "CC BY-NC-SA 4.0",
   "identifier": "kits-ready-to-go-further",
-  "library": "Interactive Infographic Overlay (grid-diagram.js, annotation-free comparison poster + rectangular hover zones)",
+  "library": "Infographic overlay (grid-diagram.js)",
   "bloomLevel": "Remember (L1)",
   "bloomVerb": "identify",
-  "completion_status": "scaffold",
+  "completion_status": "built",
+  "canvasHeight": 658,
   "chapter_number": 21,
   "chapter_title": "Managing Your Kit Inventory and Signal Processing Kits",
   "chapter_dir": "21-kit-inventory-signal-processing",
-  "chapter_rel_dir": "chapters/21-kit-inventory-signal-processing"
+  "chapter_rel_dir": "chapters/21-kit-inventory-signal-processing",
+  "educational": {
+    "gradeLevel": "Middle School, High School, Adult",
+    "audience": "Mentors choosing the next kit for advanced students",
+    "duration": "5-10 minutes",
+    "concepts": [
+      "Signal Processing Kit",
+      "Wearable Display",
+      "FFT",
+      "Battery Power",
+      "Kit Progression"
+    ]
+  },
+  "pedagogical": {
+    "bloomLevel": "Remember (L1)",
+    "bloomVerb": "identify",
+    "learningObjective": "Given a signal-processing kit or a smartwatch display kit running, the learner identifies what it does and what a mentor would see, without explaining the underlying transform.",
+    "interactionPattern": "Click either kit for what it does and what it builds on",
+    "assessment": "Describe what each kit shows without explaining the maths behind it."
+  }
 }

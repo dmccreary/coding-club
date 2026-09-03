@@ -1,0 +1,89 @@
+{
+  "title": "Session Room Safety and Logistics Map",
+  "orientation": "landscape",
+  "image": "session-room-safety-map.png",
+  "layout": "side-panel",
+  "showNumbers": true,
+  "callouts": [
+    {
+      "id": 1,
+      "label": "Whiteboard",
+      "x": 50,
+      "y": 10,
+      "radius": 5,
+      "color": "#4A90D9",
+      "hint": "A large blank white panel mounted high on a wall.",
+      "description": "Shows the day's agenda and the challenge card's key steps."
+    },
+    {
+      "id": 2,
+      "label": "Charging Station",
+      "x": 14,
+      "y": 20,
+      "radius": 5,
+      "color": "#4A90D9",
+      "hint": "A low bench beside a wall outlet in an upper corner.",
+      "description": "Devices charge here between sessions, away from the active workspace."
+    },
+    {
+      "id": 3,
+      "label": "Safety Zone (Soldering / Hot Tools)",
+      "x": 84,
+      "y": 20,
+      "radius": 5,
+      "color": "#E74C3C",
+      "hint": "A floor area marked off with diagonal hazard tape.",
+      "description": "Marked boundary around any station using heat or sharp tools."
+    },
+    {
+      "id": 4,
+      "label": "Restroom",
+      "x": 95,
+      "y": 50,
+      "radius": 5,
+      "color": "#3498DB",
+      "hint": "A plain door in a side wall.",
+      "description": "Students may use it whenever needed, per the restroom break policy."
+    },
+    {
+      "id": 5,
+      "label": "First Aid Kit",
+      "x": 7.4,
+      "y": 59.6,
+      "radius": 5,
+      "color": "#F39C12",
+      "hint": "A small wall-mounted white box with a cross on it.",
+      "description": "Stocked with bandages and cold packs; location fixed and known to every mentor."
+    },
+    {
+      "id": 6,
+      "label": "Accessible Pathway",
+      "x": 32,
+      "y": 66,
+      "radius": 5,
+      "color": "#2ECC71",
+      "hint": "A wide empty strip of floor running from a doorway to the table.",
+      "description": "Kept clear for wheelchair or mobility-aid access."
+    },
+    {
+      "id": 7,
+      "label": "Emergency Exit",
+      "x": 86,
+      "y": 84,
+      "radius": 5,
+      "color": "#E74C3C",
+      "hint": "A door with a green illuminated sign above it.",
+      "description": "Every mentor should know this route before students arrive."
+    },
+    {
+      "id": 8,
+      "label": "Snack and Water Table",
+      "x": 62,
+      "y": 88,
+      "radius": 5,
+      "color": "#1ABC9C",
+      "hint": "A small side table with a jug and cups.",
+      "description": "Location for the club's snack and water policy; kept separate from electronics."
+    }
+  ]
+}

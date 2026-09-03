@@ -1,6 +1,6 @@
 {
   "title": "Push Button Digital Input Circuit",
-  "description": "Given a push button wired with a pull-down resistor, the learner demonstrates how pressing and releasing it changes a digital input reading between HIGH and LOW.",
+  "description": "Press a button, watch the input pin flip to HIGH -- then remove the pull-down resistor and watch LOW stop being reliable.",
   "creator": "Coding Club",
   "author": "Dan McCreary",
   "date": "2026-09-01",
@@ -15,9 +15,29 @@
   "library": "p5.js",
   "bloomLevel": "Apply (L3)",
   "bloomVerb": "demonstrate",
-  "completion_status": "scaffold",
+  "completion_status": "built",
+  "canvasHeight": 600,
   "chapter_number": 16,
   "chapter_title": "Physical Computing and Electrical Safety Basics",
   "chapter_dir": "16-physical-computing-safety",
-  "chapter_rel_dir": "chapters/16-physical-computing-safety"
+  "chapter_rel_dir": "chapters/16-physical-computing-safety",
+  "educational": {
+    "gradeLevel": "Middle School, High School, Adult",
+    "audience": "Students wiring their first input device",
+    "duration": "10-15 minutes",
+    "concepts": [
+      "Digital Input",
+      "Pull-Down Resistor",
+      "Floating Pin",
+      "Logic Threshold",
+      "Momentary Switch"
+    ]
+  },
+  "pedagogical": {
+    "bloomLevel": "Apply (L3)",
+    "bloomVerb": "demonstrate",
+    "learningObjective": "Given a push button wired with a pull-down resistor, the learner demonstrates how pressing and releasing it changes a digital input reading between HIGH and LOW.",
+    "interactionPattern": "Click and hold the button on the board; toggle the pull-down resistor in and out of the circuit",
+    "assessment": "Remove the pull-down and ask what the pin reads with the button released."
+  }
 }

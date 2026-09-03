@@ -1,6 +1,6 @@
 {
-  "title": "Club Governance at a Glance",
-  "description": "Given a club's list of roles, the learner explains who reports to whom and who provides outside oversight.",
+  "title": "Club Governance Map",
+  "description": "Who reports to whom, who provides outside oversight, and where a mentor actually sits in the structure.",
   "creator": "Coding Club",
   "author": "Dan McCreary",
   "date": "2026-09-01",
@@ -15,9 +15,29 @@
   "library": "vis-network",
   "bloomLevel": "Understand (L2)",
   "bloomVerb": "explain",
-  "completion_status": "scaffold",
+  "completion_status": "built",
+  "canvasHeight": 760,
   "chapter_number": 4,
   "chapter_title": "Club Roles, Governance Structure, and Branding",
   "chapter_dir": "04-roles-governance-branding",
-  "chapter_rel_dir": "chapters/04-roles-governance-branding"
+  "chapter_rel_dir": "chapters/04-roles-governance-branding",
+  "educational": {
+    "gradeLevel": "Middle School, High School, Adult",
+    "audience": "Club leaders defining roles",
+    "duration": "10-15 minutes",
+    "concepts": [
+      "Governance Structure",
+      "Reporting Line",
+      "Advisory Committee",
+      "Volunteer Coordinator",
+      "Role Responsibility"
+    ]
+  },
+  "pedagogical": {
+    "bloomLevel": "Understand (L2)",
+    "bloomVerb": "explain",
+    "learningObjective": "Given a club's list of roles, the learner explains who reports to whom and who provides outside oversight.",
+    "interactionPattern": "Click any role for its definition and single most important responsibility; hover an edge to enlarge its label",
+    "assessment": "Ask who a new mentor reports to and who screens them."
+  }
 }

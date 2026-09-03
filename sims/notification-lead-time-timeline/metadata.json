@@ -1,6 +1,6 @@
 {
-  "title": "Notification Lead-Time Timeline",
-  "description": "Given an event date, the learner schedules reminder notifications at appropriate lead times before it.",
+  "title": "Notification Lead Time Timeline",
+  "description": "Two reminders doing two different jobs: one buys planning time, one prevents forgetting, and a single reminder can only do one of them.",
   "creator": "Coding Club",
   "author": "Dan McCreary",
   "date": "2026-09-01",
@@ -15,9 +15,30 @@
   "library": "vis-timeline",
   "bloomLevel": "Apply (L3)",
   "bloomVerb": "schedule",
-  "completion_status": "scaffold",
+  "completion_status": "built",
+  "canvasHeight": 628,
   "chapter_number": 24,
   "chapter_title": "Tracking Student Data and Managing Club Communication",
   "chapter_dir": "24-student-data-and-communication",
-  "chapter_rel_dir": "chapters/24-student-data-and-communication"
+  "chapter_rel_dir": "chapters/24-student-data-and-communication",
+  "educational": {
+    "gradeLevel": "Middle School, High School, Adult",
+    "audience": "Club leaders and mentors responsible for family communication",
+    "duration": "10-15 minutes",
+    "concepts": [
+      "Notification Lead Time",
+      "Two-Touch Reminder Cadence",
+      "Planning Reminder",
+      "Same-Day Nudge",
+      "Message Content",
+      "Communication Fatigue"
+    ]
+  },
+  "pedagogical": {
+    "bloomLevel": "Apply (L3)",
+    "bloomVerb": "schedule",
+    "learningObjective": "Given an event date, the learner schedules reminder notifications at appropriate lead times before it.",
+    "interactionPattern": "Click-to-explore countdown timeline with a sample message and a timing rationale per reminder",
+    "assessment": "Give an event date and ask when each reminder goes out and what it must contain."
+  }
 }

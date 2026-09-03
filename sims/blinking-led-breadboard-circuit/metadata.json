@@ -1,6 +1,6 @@
 {
   "title": "Blinking LED Breadboard Circuit",
-  "description": "Given a breadboard, resistor, LED, and jumper wires, the learner demonstrates how they combine into a working blinking-light circuit.",
+  "description": "A working blink circuit on a real breadboard layout -- with a button that removes one jumper wire and kills it.",
   "creator": "Coding Club",
   "author": "Dan McCreary",
   "date": "2026-09-01",
@@ -15,9 +15,29 @@
   "library": "p5.js",
   "bloomLevel": "Apply (L3)",
   "bloomVerb": "demonstrate",
-  "completion_status": "scaffold",
+  "completion_status": "built",
+  "canvasHeight": 600,
   "chapter_number": 16,
   "chapter_title": "Physical Computing and Electrical Safety Basics",
   "chapter_dir": "16-physical-computing-safety",
-  "chapter_rel_dir": "chapters/16-physical-computing-safety"
+  "chapter_rel_dir": "chapters/16-physical-computing-safety",
+  "educational": {
+    "gradeLevel": "Middle School, High School, Adult",
+    "audience": "Students building their first physical-computing circuit",
+    "duration": "10-15 minutes",
+    "concepts": [
+      "Closed Circuit",
+      "Current-Limiting Resistor",
+      "LED Polarity",
+      "Digital Output Pin",
+      "Blink Interval"
+    ]
+  },
+  "pedagogical": {
+    "bloomLevel": "Apply (L3)",
+    "bloomVerb": "demonstrate",
+    "learningObjective": "Given a breadboard, resistor, LED, and jumper wires, the learner demonstrates how they combine into a working blinking-light circuit.",
+    "interactionPattern": "Slider sets the blink interval; a switch drives the output pin by hand; a button removes the ground-return jumper",
+    "assessment": "Break the loop and ask the learner to predict the LED current before looking at the readout."
+  }
 }

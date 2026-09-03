@@ -1,6 +1,6 @@
 {
   "title": "Annotated Feedback Form",
-  "description": "Given a question on a feedback form, the learner explains why that question type was chosen over the alternatives.",
+  "description": "Three question types on one short form, and what each one buys and costs.",
   "creator": "Coding Club",
   "author": "Dan McCreary",
   "date": "2026-09-01",
@@ -12,12 +12,32 @@
   "language": "en",
   "rights": "CC BY-NC-SA 4.0",
   "identifier": "feedback-form-annotated",
-  "library": "Interactive Infographic Overlay (grid-diagram.js, annotation-free poster + rectangular hover zones)",
+  "library": "Infographic overlay (grid-diagram.js)",
   "bloomLevel": "Understand (L2)",
   "bloomVerb": "explain",
-  "completion_status": "scaffold",
+  "completion_status": "built",
+  "canvasHeight": 670,
   "chapter_number": 24,
   "chapter_title": "Tracking Student Data and Managing Club Communication",
   "chapter_dir": "24-student-data-and-communication",
-  "chapter_rel_dir": "chapters/24-student-data-and-communication"
+  "chapter_rel_dir": "chapters/24-student-data-and-communication",
+  "educational": {
+    "gradeLevel": "Middle School, High School, Adult",
+    "audience": "Mentors designing a session feedback form",
+    "duration": "10 minutes",
+    "concepts": [
+      "Feedback Form",
+      "Rating Scale",
+      "Multiple Choice",
+      "Free Text",
+      "Response Rate"
+    ]
+  },
+  "pedagogical": {
+    "bloomLevel": "Understand (L2)",
+    "bloomVerb": "explain",
+    "learningObjective": "Given a question on a feedback form, the learner explains why that question type was chosen over the alternatives.",
+    "interactionPattern": "Click any question for why that type was chosen over the alternatives",
+    "assessment": "Choose a question type for a stated purpose and defend it."
+  }
 }

@@ -1,6 +1,6 @@
 {
   "title": "Meet the Club's AI Agent Roster",
-  "description": "Given a club task, the learner classifies which of the six AI agent types is the right match for it.",
+  "description": "Six AI agent types around one umbrella idea -- click any to see the club task it handles and a real example.",
   "creator": "Coding Club",
   "author": "Dan McCreary",
   "date": "2026-09-01",
@@ -15,9 +15,29 @@
   "library": "vis-network",
   "bloomLevel": "Understand (L2)",
   "bloomVerb": "classify",
-  "completion_status": "scaffold",
+  "completion_status": "built",
+  "canvasHeight": 700,
   "chapter_number": 32,
   "chapter_title": "AI Agents for Registration, Scheduling, and Communication",
   "chapter_dir": "32-ai-agents-registration-scheduling",
-  "chapter_rel_dir": "chapters/32-ai-agents-registration-scheduling"
+  "chapter_rel_dir": "chapters/32-ai-agents-registration-scheduling",
+  "educational": {
+    "gradeLevel": "Middle School, High School, Adult",
+    "audience": "Club leaders adopting AI tools",
+    "duration": "10-15 minutes",
+    "concepts": [
+      "AI Agents",
+      "Task Matching",
+      "Planning Agent",
+      "Communication Agent",
+      "Scheduling Agent"
+    ]
+  },
+  "pedagogical": {
+    "bloomLevel": "Understand (L2)",
+    "bloomVerb": "classify",
+    "learningObjective": "Given a club task, the learner classifies which of the six AI agent types is the right match for it.",
+    "interactionPattern": "Click any agent for the task it handles and a one-line example",
+    "assessment": "Give a club task and ask which agent type fits."
+  }
 }

@@ -1,6 +1,6 @@
 {
   "title": "The Physical Computing Loop",
-  "description": "Given a physical computing project description, the learner explains which part of the input-process-output loop each component belongs to.",
+  "description": "Input, process, output -- stepped one stage at a time, with the actual data each stage is holding.",
   "creator": "Coding Club",
   "author": "Dan McCreary",
   "date": "2026-09-01",
@@ -15,9 +15,30 @@
   "library": "p5.js",
   "bloomLevel": "Understand (L2)",
   "bloomVerb": "explain",
-  "completion_status": "scaffold",
+  "completion_status": "built",
+  "canvasHeight": 510,
   "chapter_number": 16,
   "chapter_title": "Physical Computing and Electrical Safety Basics",
   "chapter_dir": "16-physical-computing-safety",
-  "chapter_rel_dir": "chapters/16-physical-computing-safety"
+  "chapter_rel_dir": "chapters/16-physical-computing-safety",
+  "educational": {
+    "gradeLevel": "Middle School, High School, Adult",
+    "audience": "Mentors and students starting physical computing",
+    "duration": "10 minutes",
+    "concepts": [
+      "Input",
+      "Process",
+      "Output",
+      "Sensor",
+      "Actuator",
+      "Control Loop"
+    ]
+  },
+  "pedagogical": {
+    "bloomLevel": "Understand (L2)",
+    "bloomVerb": "explain",
+    "learningObjective": "Given a physical computing project description, the learner explains which part of the input-process-output loop each component belongs to.",
+    "interactionPattern": "Pick a project, then click a stage or step through it and read the data that stage is handling",
+    "assessment": "Name a component from a student's project and ask which stage it belongs to."
+  }
 }

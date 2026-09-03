@@ -1,0 +1,67 @@
+{
+  "title": "Spreadsheet Template Zones",
+  "image": "spreadsheet-template-zones.png",
+  "layout": "grid",
+  "showLabels": false,
+  "zones": [
+    {
+      "id": "identity-columns",
+      "label": "Identity columns",
+      "color": "#4A90D9",
+      "x1": 1.5,
+      "y1": 5,
+      "x2": 23.0,
+      "y2": 95,
+      "summary": "Who the row is about.",
+      "facts": [
+        "Name (or initials) and join date",
+        "Never reordered once set",
+        "The only columns a substitute mentor needs to find a specific student"
+      ]
+    },
+    {
+      "id": "badge-columns",
+      "label": "Badge columns",
+      "color": "#50C878",
+      "x1": 23.5,
+      "y1": 5,
+      "x2": 81.0,
+      "y2": 95,
+      "summary": "What has been mastered, and when.",
+      "facts": [
+        "One column per badge or skill, in the order they are typically earned",
+        "Each cell holds a completion date, not just a checkmark",
+        "Grouped together so progress is scannable left to right"
+      ]
+    },
+    {
+      "id": "notes-column",
+      "label": "Notes column",
+      "color": "#F5A623",
+      "x1": 82.0,
+      "y1": 5,
+      "x2": 98.5,
+      "y2": 95,
+      "summary": "Anything that does not fit a fixed column.",
+      "facts": [
+        "Free-text field for context a mentor wants the next mentor to see",
+        "Kept to short, factual notes -- not a substitute for the parent communication log",
+        "Always the rightmost column so it never disrupts the badge block"
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "question": "Which zone holds a completion date rather than a checkmark?",
+      "correct_zone": "badge-columns"
+    },
+    {
+      "question": "Which zone is always kept rightmost so it never disrupts the others?",
+      "correct_zone": "notes-column"
+    },
+    {
+      "question": "Which zone does a substitute mentor use to find a specific student?",
+      "correct_zone": "identity-columns"
+    }
+  ]
+}

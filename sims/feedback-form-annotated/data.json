@@ -1,0 +1,67 @@
+{
+  "title": "Annotated Feedback Form",
+  "image": "feedback-form-annotated.png",
+  "layout": "grid",
+  "showLabels": false,
+  "zones": [
+    {
+      "id": "rating-scale-question",
+      "label": "Rating scale question",
+      "color": "#4A90D9",
+      "x1": 3,
+      "y1": 70,
+      "x2": 97,
+      "y2": 96,
+      "summary": "How was tonight's session? (1-5 scale)",
+      "facts": [
+        "Fastest to answer and to average across many responses",
+        "Best for tracking a trend over time",
+        "Loses nuance a written comment would capture"
+      ]
+    },
+    {
+      "id": "multiple-choice-question",
+      "label": "Multiple choice question",
+      "color": "#50C878",
+      "x1": 3,
+      "y1": 38,
+      "x2": 97,
+      "y2": 68,
+      "summary": "Which activity did you enjoy most? (pick one)",
+      "facts": [
+        "Easy to tally into a simple count per option",
+        "Best when the possible answers are already known",
+        "Forces a choice even if a respondent liked two activities equally"
+      ]
+    },
+    {
+      "id": "short-text-question",
+      "label": "Short text question",
+      "color": "#F5A623",
+      "x1": 3,
+      "y1": 4,
+      "x2": 97,
+      "y2": 36,
+      "summary": "Anything else you'd like us to know? (optional)",
+      "facts": [
+        "Captures detail the fixed question types cannot anticipate",
+        "Optional, so it does not slow down a respondent in a hurry",
+        "Harder to summarise across many responses than the scale or multiple-choice questions"
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "question": "Which question type is fastest to average across many responses?",
+      "correct_zone": "rating-scale-question"
+    },
+    {
+      "question": "Which question type captures what the others could not anticipate?",
+      "correct_zone": "short-text-question"
+    },
+    {
+      "question": "Which question type forces a single choice?",
+      "correct_zone": "multiple-choice-question"
+    }
+  ]
+}

@@ -1,120 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- microsim-scaffold-stub -->
-    <title>Annotated Feedback Form</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: #f8f9fa;
-            color: #212529;
-        }
-        #container {
-            width: 100%;
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 20px;
-            background: white;
-        }
-        h1 {
-            font-size: 22px;
-            margin-bottom: 10px;
-            color: #1a3a6c;
-        }
-        .placeholder {
-            border: 2px dashed #adb5bd;
-            border-radius: 8px;
-            padding: 40px 20px;
-            text-align: center;
-            color: #6c757d;
-            margin: 20px 0;
-            min-height: 400px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        .placeholder .badge {
-            display: inline-block;
-            background: #ffc107;
-            color: #212529;
-            padding: 4px 12px;
-            border-radius: 12px;
-            font-size: 12px;
-            font-weight: 600;
-            margin-bottom: 12px;
-        }
-        .placeholder h2 {
-            font-size: 18px;
-            color: #495057;
-            margin-bottom: 8px;
-        }
-        .placeholder p {
-            font-size: 14px;
-            max-width: 480px;
-        }
-        .meta {
-            margin-top: 20px;
-            font-size: 13px;
-            color: #6c757d;
-            border-top: 1px solid #dee2e6;
-            padding-top: 12px;
-        }
-        .meta strong { color: #495057; }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="schema" content="https://dmccreary.github.io/intelligent-textbooks/ns/microsim/v1">
+  <title>Annotated Feedback Form — Interactive Infographic</title>
+  <link rel="stylesheet" href="../shared-libs/grid-overlay.css">
 </head>
 <body>
-    <div id="container">
-        <h1>Annotated Feedback Form</h1>
-        <div class="placeholder">
-            <span class="badge">SCAFFOLD</span>
-            <h2>MicroSim Not Yet Implemented</h2>
-            <p>This MicroSim has been scaffolded from its specification but the
-            interactive content has not been built yet. See the chapter source
-            and the <code>index.md</code> in this directory for the full spec.</p>
-        </div>
-        <div class="meta">
-            <p><strong>Sim ID:</strong> feedback-form-annotated</p>
-            <p><strong>Library:</strong> Interactive Infographic Overlay (grid-diagram.js, annotation-free poster + rectangular hover zones)</p>
-            <p><strong>Bloom Level:</strong> Understand (L2)</p>
-            <p><strong>Learning Objective:</strong> Given a question on a feedback form, the learner explains why that question type was chosen over the alternatives.</p>
-        </div>
-    </div>
 
-    <!--
-    SPECIFICATION (from chapter index.md):
+<div id="image-wrapper">
+  <!-- image and zone overlay injected by grid-diagram.js -->
+</div>
 
-    Type: infographic
-    **sim-id:** feedback-form-annotated<br/>
-    **Library:** Interactive Infographic Overlay (grid-diagram.js, annotation-free poster + rectangular hover zones)<br/>
-    **Status:** Specified
-    **Template:** https://github.com/dmccreary/search-microsims/tree/main/docs/sims/feedback-loop-sim
-    
-    Purpose: Show a sample post-event feedback form with three question types, so a mentor can see why each type was chosen and what it measures well.
-    
-    Bloom Taxonomy: Understand (L2)
-    Bloom Taxonomy Verb: explain
-    
-    Learning objective: Given a question on a feedback form, the learner explains why that question type was chosen over the alternatives.
-    
-    Image style: Flat mock-form poster showing three stacked questions with their answer widgets
-    
-    Image dimensions: 1000x600 (portrait, three stacked question zones)
-    
-    Zones (3 horizontal bands, each with id, label, color, approximate x1/y1/x2/y2 percentage boundaries, one-line summary, and 3 bullet facts):
-    
-    1. `rating-scale-question` -- color #4A90D9 -- boundaries approximately x1:3,y1:70,x2:97,y2:96 -- Summary: "How was tonight's session? (1-5 scale)" Facts: fastest to answer and to average across many responses; best for tracking a trend over time; loses nuance a written comment would capture
-    2. `multiple-choice-question` -- color #50C878 -- boundaries approximately x1:3,y1:38,x2:97,y2:68 -- Summary: "Which activity did you enjoy most? (pick one)" Facts: easy to tally into a simple count per option; best when the possible answers are already known; forces a choice even if a respondent liked two activities equally
-    3. `short-text-question` -- color #F5A623 -- boundaries approximately x1:3,y1:4,x2:97,y2:36 -- Summary: "Anything else you'd like us to know? (optional)" Facts: captures detail the fixed question types can't anticipate; optional, so it doesn't slow down a respondent in a hurry; harder to summarize across many responses than the scale or multiple-choice questions above
-    
-    showLabels: false (question labels are printed in the generated image)
-    
-    Interactive features: Click or hover any question zone to highlight it and reveal its full fact list in a detail panel; explore mode only.
-    
-    Implementation: Interactive Infographic Overlay Guide (grid engine) -- `grid-diagram.js` + `grid-overlay.css` render the three rectangular hover zones over the generated poster image; `data.json` holds the 3 zones per the overlay-grid-data-json-schema.
-    -->
+<div id="controls">
+  <button class="mode-btn active" id="btn-explore">Explore</button>
+  <button class="mode-btn"        id="btn-quiz">Quiz Me</button>
+  <span id="quiz-score" style="display:none">
+    Score: <strong id="score-val">0</strong> / <strong id="score-total">0</strong>
+  </span>
+  <span id="edit-badge">EDIT MODE</span>
+</div>
+
+<div id="detail-panel">
+  <div id="panel-prompt">Click a question to see why that type was chosen.</div>
+  <div id="panel-content">
+    <div id="panel-label"></div>
+    <div id="panel-summary"></div>
+    <ul id="panel-facts"></ul>
+  </div>
+</div>
+
+<div id="quiz-question"></div>
+
+<div id="edit-panel">
+  <h3>Edit Mode — drag corner handles to calibrate zone boundaries</h3>
+  <div id="coord-display">Drag a corner handle to see live coordinates.</div>
+  <textarea id="json-output" readonly spellcheck="false"></textarea>
+  <div id="edit-actions">
+    <button id="copy-json-btn" onclick="sim.copyJSON()">Copy JSON</button>
+    <span id="copy-confirm"></span>
+  </div>
+</div>
+
+<script src="../shared-libs/grid-diagram.js"></script>
 </body>
 </html>

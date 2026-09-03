@@ -1,6 +1,6 @@
 {
   "title": "Coding Club Room Layout",
-  "description": "Given a blank room outline, the learner identifies where each layout element belongs and explains why its placement supports mentor supervision or safety.",
+  "description": "A club room floor plan where every placement is clickable -- and a draggable mentor marker that shows what facing the monitors inward actually buys you.",
   "creator": "Coding Club",
   "author": "Dan McCreary",
   "date": "2026-09-01",
@@ -15,9 +15,30 @@
   "library": "p5.js",
   "bloomLevel": "Apply (L3)",
   "bloomVerb": "apply",
-  "completion_status": "scaffold",
+  "completion_status": "built",
+  "canvasHeight": 590,
   "chapter_number": 7,
   "chapter_title": "Telling Your Club's Story and Designing the Classroom",
   "chapter_dir": "07-club-story-and-classroom-design",
-  "chapter_rel_dir": "chapters/07-club-story-and-classroom-design"
+  "chapter_rel_dir": "chapters/07-club-story-and-classroom-design",
+  "educational": {
+    "gradeLevel": "Middle School, High School, Adult",
+    "audience": "Founders and mentors setting up a room",
+    "duration": "10-15 minutes",
+    "concepts": [
+      "Room Layout",
+      "Mentor Supervision",
+      "Sightlines",
+      "Cable Management",
+      "Challenge Card Display",
+      "Kit Storage"
+    ]
+  },
+  "pedagogical": {
+    "bloomLevel": "Apply (L3)",
+    "bloomVerb": "apply",
+    "learningObjective": "Given a blank room outline, the learner identifies where each layout element belongs and explains why its placement supports mentor supervision or safety.",
+    "interactionPattern": "Click any element for its rationale; drag the mentor marker and toggle sightlines to test the supervision claim",
+    "assessment": "Drag the mentor into a corner and ask how many screens stop being readable."
+  }
 }

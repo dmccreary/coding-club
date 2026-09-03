@@ -1,6 +1,6 @@
 {
   "title": "Grant Budget Laptop Calculator",
-  "description": "Given a grant amount and a chosen device platform, the learner calculates how many laptops the grant can purchase, how much budget remains, and how many students the resulting fleet can serve one-to-one.",
+  "description": "Grant, unit price, student count -- and the leftover nobody plans for.",
   "creator": "Coding Club",
   "author": "Dan McCreary",
   "date": "2026-09-01",
@@ -15,9 +15,29 @@
   "library": "p5.js",
   "bloomLevel": "Apply (L3)",
   "bloomVerb": "calculate",
-  "completion_status": "scaffold",
+  "completion_status": "built",
+  "canvasHeight": 500,
   "chapter_number": 22,
   "chapter_title": "Purchasing and Configuring Club Devices",
   "chapter_dir": "22-purchasing-configuring-devices",
-  "chapter_rel_dir": "chapters/22-purchasing-configuring-devices"
+  "chapter_rel_dir": "chapters/22-purchasing-configuring-devices",
+  "educational": {
+    "gradeLevel": "Middle School, High School, Adult",
+    "audience": "Club leaders writing a device purchase into a grant",
+    "duration": "10 minutes",
+    "concepts": [
+      "Grant Budget",
+      "Unit Price",
+      "Device Coverage",
+      "Leftover Budget",
+      "Platform Choice"
+    ]
+  },
+  "pedagogical": {
+    "bloomLevel": "Apply (L3)",
+    "bloomVerb": "calculate",
+    "learningObjective": "Given a grant amount and a chosen device platform, the learner calculates how many laptops the grant can purchase, how much budget remains, and how many students the resulting fleet can serve one-to-one.",
+    "interactionPattern": "Set the grant, platform, and student count and read devices, leftover, and coverage",
+    "assessment": "Given a grant and a platform, predict the device count and leftover before checking."
+  }
 }

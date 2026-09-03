@@ -1,0 +1,52 @@
+{
+  "title": "Showcase Wall vs Peer Recognition Activity",
+  "image": "showcase-wall-vs-peer-recognition.png",
+  "layout": "grid",
+  "showLabels": false,
+  "zones": [
+    {
+      "id": "showcase-wall-zone",
+      "label": "Student Showcase Wall",
+      "color": "#4A90D9",
+      "x1": 4,
+      "y1": 10,
+      "x2": 47,
+      "y2": 92,
+      "summary": "A standing display of finished work.",
+      "facts": [
+        "Bulletin board, photo album, or webpage",
+        "Updated whenever a project finishes",
+        "Visible to parents and visitors, not just club members",
+        "Gives a student's work a life beyond the session it was built in",
+        "Pairs each project with the student's name and a one-sentence description"
+      ]
+    },
+    {
+      "id": "peer-recognition-zone",
+      "label": "Peer Recognition Activity",
+      "color": "#2ECC71",
+      "x1": 53,
+      "y1": 10,
+      "x2": 96,
+      "y2": 92,
+      "summary": "Student-to-student recognition, every session.",
+      "facts": [
+        "A shout-out circle or kudos card at the end of a session",
+        "Recognition comes from peers, not a mentor",
+        "Happens frequently, in minutes rather than as a standing display",
+        "Lands differently because it comes from someone facing the same challenges",
+        "Costs almost nothing to run every week"
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "question": "Which format is visible to parents and visitors?",
+      "correct_zone": "showcase-wall-zone"
+    },
+    {
+      "question": "Which format happens every session in a few minutes?",
+      "correct_zone": "peer-recognition-zone"
+    }
+  ]
+}

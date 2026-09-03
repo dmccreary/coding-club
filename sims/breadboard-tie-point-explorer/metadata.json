@@ -1,6 +1,6 @@
 {
-  "title": "Breadboard Tie-Point Explorer",
-  "description": "Given a labeled breadboard diagram, the learner identifies which holes are electrically connected to a clicked hole.",
+  "title": "Breadboard Tie Point Explorer",
+  "description": "Click any hole on a half-size breadboard and every hole electrically tied to it lights up.",
   "creator": "Coding Club",
   "author": "Dan McCreary",
   "date": "2026-09-01",
@@ -15,9 +15,29 @@
   "library": "p5.js",
   "bloomLevel": "Remember (L1)",
   "bloomVerb": "identify",
-  "completion_status": "scaffold",
+  "completion_status": "built",
+  "canvasHeight": 640,
   "chapter_number": 16,
   "chapter_title": "Physical Computing and Electrical Safety Basics",
   "chapter_dir": "16-physical-computing-safety",
-  "chapter_rel_dir": "chapters/16-physical-computing-safety"
+  "chapter_rel_dir": "chapters/16-physical-computing-safety",
+  "educational": {
+    "gradeLevel": "Middle School, High School, Adult",
+    "audience": "Students and mentors on their first hardware night",
+    "duration": "5-10 minutes",
+    "concepts": [
+      "Breadboard",
+      "Tie Point",
+      "Power Rail",
+      "Center Channel",
+      "Electrical Net"
+    ]
+  },
+  "pedagogical": {
+    "bloomLevel": "Remember (L1)",
+    "bloomVerb": "identify",
+    "learningObjective": "Given a labeled breadboard diagram, the learner identifies which holes are electrically connected to a clicked hole.",
+    "interactionPattern": "Click a hole to highlight its connected group; toggle to light all four rails at once",
+    "assessment": "Point at a hole and ask which other holes share its connection before clicking."
+  }
 }

@@ -1,6 +1,6 @@
 {
   "title": "Fundraising Channel Yield Comparison",
-  "description": "Given typical yield and effort figures for five fundraising channels, the learner compares them to select an appropriate channel for a specific funding need and time budget.",
+  "description": "Five fundraising channels compared on the two axes that actually decide the choice: dollars raised and volunteer hours spent.",
   "creator": "Coding Club",
   "author": "Dan McCreary",
   "date": "2026-09-01",
@@ -15,9 +15,28 @@
   "library": "Chart.js",
   "bloomLevel": "Analyze (L4)",
   "bloomVerb": "compare",
-  "completion_status": "scaffold",
+  "completion_status": "built",
+  "canvasHeight": 540,
   "chapter_number": 30,
   "chapter_title": "Budgeting, Fundraising, and Grant Writing",
   "chapter_dir": "30-budgeting-fundraising-grants",
-  "chapter_rel_dir": "chapters/30-budgeting-fundraising-grants"
+  "chapter_rel_dir": "chapters/30-budgeting-fundraising-grants",
+  "educational": {
+    "gradeLevel": "Middle School, High School, Adult",
+    "audience": "Club leaders choosing how to raise money",
+    "duration": "10-15 minutes",
+    "concepts": [
+      "Fundraising Channels",
+      "Net Yield",
+      "Volunteer Hours",
+      "Opportunity Cost"
+    ]
+  },
+  "pedagogical": {
+    "bloomLevel": "Analyze (L4)",
+    "bloomVerb": "compare",
+    "learningObjective": "Given typical yield and effort figures for five fundraising channels, the learner compares them to select an appropriate channel for a specific funding need and time budget.",
+    "interactionPattern": "Hover a bar for exact figures; two y-axes let dollars and hours share one chart",
+    "assessment": "Give a funding need and an hours budget and ask which channel fits."
+  }
 }

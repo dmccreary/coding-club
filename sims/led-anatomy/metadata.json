@@ -1,6 +1,6 @@
 {
   "title": "LED Anatomy",
-  "description": "Given a zoomed illustration of an LED, the learner identifies the anode, cathode, and flat-edge marking used to orient it correctly.",
+  "description": "Four parts of an LED, and the two independent ways to tell which leg is which.",
   "creator": "Coding Club",
   "author": "Dan McCreary",
   "date": "2026-09-01",
@@ -12,12 +12,32 @@
   "language": "en",
   "rights": "CC BY-NC-SA 4.0",
   "identifier": "led-anatomy",
-  "library": "Interactive Infographic Overlay (diagram.js, callout engine)",
+  "library": "Infographic overlay (diagram.js)",
   "bloomLevel": "Remember (L1)",
   "bloomVerb": "identify",
-  "completion_status": "scaffold",
+  "completion_status": "built",
+  "canvasHeight": 648,
   "chapter_number": 16,
   "chapter_title": "Physical Computing and Electrical Safety Basics",
   "chapter_dir": "16-physical-computing-safety",
-  "chapter_rel_dir": "chapters/16-physical-computing-safety"
+  "chapter_rel_dir": "chapters/16-physical-computing-safety",
+  "educational": {
+    "gradeLevel": "Middle School, High School, Adult",
+    "audience": "Students wiring their first LED",
+    "duration": "5 minutes",
+    "concepts": [
+      "LED",
+      "Anode",
+      "Cathode",
+      "Polarity",
+      "Flat Edge"
+    ]
+  },
+  "pedagogical": {
+    "bloomLevel": "Remember (L1)",
+    "bloomVerb": "identify",
+    "learningObjective": "Given a zoomed illustration of an LED, the learner identifies the anode, cathode, and flat-edge marking used to orient it correctly.",
+    "interactionPattern": "Hover any numbered marker or label; Quiz mode hides the names and asks",
+    "assessment": "Point at a real LED and name both legs without picking it up."
+  }
 }

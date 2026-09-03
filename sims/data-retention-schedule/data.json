@@ -1,0 +1,82 @@
+{
+  "title": "Data Retention Schedule by Type",
+  "image": "data-retention-schedule.png",
+  "layout": "grid",
+  "showLabels": false,
+  "zones": [
+    {
+      "id": "consent-forms",
+      "label": "Consent Forms",
+      "color": "#4A90D9",
+      "x1": 3,
+      "y1": 76.7,
+      "x2": 97,
+      "y2": 97.6,
+      "summary": "Kept as long as the data they cover is retained.",
+      "facts": [
+        "Signed or declined guardian consent forms",
+        "Retained alongside whatever data they authorise",
+        "Deleted only when the covered data is deleted"
+      ]
+    },
+    {
+      "id": "progress-records",
+      "label": "Progress Records",
+      "color": "#50C878",
+      "x1": 3,
+      "y1": 53.4,
+      "x2": 97,
+      "y2": 73.5,
+      "summary": "Retained eighteen months after a student leaves.",
+      "facts": [
+        "Badge, attendance, and skill-tracking records",
+        "Clock starts the day a student stops attending",
+        "Deleted automatically once the window passes"
+      ]
+    },
+    {
+      "id": "contact-information",
+      "label": "Contact Information",
+      "color": "#F5A623",
+      "x1": 3,
+      "y1": 28.5,
+      "x2": 97,
+      "y2": 50.2,
+      "summary": "Retained only while a family is actively enrolled.",
+      "facts": [
+        "Name and one contact email",
+        "Removed promptly once a family is no longer active",
+        "Never kept 'just in case' of future re-enrolment"
+      ]
+    },
+    {
+      "id": "survey-responses",
+      "label": "Survey Responses",
+      "color": "#9B6BC7",
+      "x1": 3,
+      "y1": 2.1,
+      "x2": 97,
+      "y2": 25.0,
+      "summary": "Kept in anonymised form only, indefinitely.",
+      "facts": [
+        "Individual free-text responses are summarised and the originals discarded within 90 days",
+        "Anonymised summaries may be kept for year-over-year comparison",
+        "No names are ever attached to a retained summary"
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "question": "Which data type is kept only while a family is actively enrolled?",
+      "correct_zone": "contact-information"
+    },
+    {
+      "question": "Which data type is kept indefinitely, but only anonymised?",
+      "correct_zone": "survey-responses"
+    },
+    {
+      "question": "Which data type's deletion clock starts when a student stops attending?",
+      "correct_zone": "progress-records"
+    }
+  ]
+}

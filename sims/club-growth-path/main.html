@@ -3,121 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- microsim-scaffold-stub -->
+    <meta name="schema" content="https://dmccreary.github.io/intelligent-textbooks/ns/microsim/v1">
     <title>Club Growth Path</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: #f8f9fa;
-            color: #212529;
-        }
-        #container {
-            width: 100%;
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 20px;
-            background: white;
-        }
-        h1 {
-            font-size: 22px;
-            margin-bottom: 10px;
-            color: #1a3a6c;
-        }
-        .placeholder {
-            border: 2px dashed #adb5bd;
-            border-radius: 8px;
-            padding: 40px 20px;
-            text-align: center;
-            color: #6c757d;
-            margin: 20px 0;
-            min-height: 400px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        .placeholder .badge {
-            display: inline-block;
-            background: #ffc107;
-            color: #212529;
-            padding: 4px 12px;
-            border-radius: 12px;
-            font-size: 12px;
-            font-weight: 600;
-            margin-bottom: 12px;
-        }
-        .placeholder h2 {
-            font-size: 18px;
-            color: #495057;
-            margin-bottom: 8px;
-        }
-        .placeholder p {
-            font-size: 14px;
-            max-width: 480px;
-        }
-        .meta {
-            margin-top: 20px;
-            font-size: 13px;
-            color: #6c757d;
-            border-top: 1px solid #dee2e6;
-            padding-top: 12px;
-        }
-        .meta strong { color: #495057; }
-    </style>
+    <link rel="stylesheet"
+          href="https://unpkg.com/vis-timeline@7.7.3/styles/vis-timeline-graph2d.min.css">
+    <script src="https://unpkg.com/vis-timeline@7.7.3/standalone/umd/vis-timeline-graph2d.min.js"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="container">
-        <h1>Club Growth Path</h1>
-        <div class="placeholder">
-            <span class="badge">SCAFFOLD</span>
-            <h2>MicroSim Not Yet Implemented</h2>
-            <p>This MicroSim has been scaffolded from its specification but the
-            interactive content has not been built yet. See the chapter source
-            and the <code>index.md</code> in this directory for the full spec.</p>
+<main>
+    <div class="container">
+        <div class="title">Club Growth Path</div>
+
+        <div class="controls">
+            <div class="stats">4 stages · 2 of them optional</div>
+            <button class="btn btn-secondary" id="reset-btn">Reset</button>
         </div>
-        <div class="meta">
-            <p><strong>Sim ID:</strong> club-growth-path</p>
-            <p><strong>Library:</strong> vis-timeline</p>
-            <p><strong>Bloom Level:</strong> Understand (L2)</p>
-            <p><strong>Learning Objective:</strong> Given a club's current size and stability, the learner identifies which growth stage it occupies and what condition must be met before advancing to the next stage.</p>
+
+        <div id="timeline"></div>
+        <div id="axis-ticks"></div>
+        <div class="axis-label">Club age — the typical order, not a required one</div>
+
+        <div class="legend">
+            <div class="legend-item"><span class="legend-color" style="background-color:#3E9E6E"></span>Founding</div>
+            <div class="legend-item"><span class="legend-color" style="background-color:#4A90D9"></span>Scaling</div>
+            <div class="legend-item"><span class="legend-color" style="background-color:#F5A623"></span>Multi-site (optional)</div>
+            <div class="legend-item"><span class="legend-color" style="background-color:#5B7186"></span>Franchise (rare)</div>
+            <div class="legend-item"><span class="legend-color" style="background:transparent"></span>Drag the "You are here" marker to bookmark your own stage</div>
+        </div>
+
+        <div class="info-panel">
+            <div class="info-heading">Stage Details</div>
+            <div id="info-content">
+                <p class="info-placeholder">Click any stage for what it involves and the one condition that has to be true before you move on. Drag the amber marker to where your club actually is.</p>
+            </div>
         </div>
     </div>
+</main>
 
-    <!--
-    SPECIFICATION (from chapter index.md):
-
-    Type: timeline
-    **sim-id:** club-growth-path<br/>
-    **Library:** vis-timeline<br/>
-    **Status:** Specified
-    
-    Purpose: Show the typical progression from a single-site club to scaling, to multi-site expansion, to an optional franchise model, so a founder can see where their club currently sits and what the next stage would actually require.
-    
-    Bloom Taxonomy: Understand (L2)
-    Bloom Taxonomy Verb: explain
-    
-    Learning objective: Given a club's current size and stability, the learner identifies which growth stage it occupies and what condition must be met before advancing to the next stage.
-    
-    Time period: Represented as club-age stages rather than calendar dates -- "Founding Year," "Year 1-2," "Year 2-3," "Year 3+"
-    
-    Orientation: Horizontal
-    
-    Stages (each a clickable event on the timeline):
-    - Founding Year: "Single Site, Starting Small" -- click reveals "First three students through a pilot cohort, per Chapter 5. No growth decision needed yet."
-    - Year 1-2: "Scaling a Club" -- click reveals "More students, more sessions, more mentors -- all at the same single site. Requires a stable mentor pipeline via the Volunteer Coordinator Role (Chapter 4)."
-    - Year 2-3: "Multi-Site Expansion (Optional)" -- click reveals "A second venue, run by a trained assistant leader. Requires the original site to have survived a leadership transition already."
-    - Year 3+: "Franchise Model (Rare, Optional)" -- click reveals "An independently run club elsewhere, using this club's charter and curriculum as a starting template."
-    
-    Interactive features:
-    - Click any stage to reveal its detail text in a panel below the timeline
-    - A "You Are Here" marker the reader can drag to any stage to bookmark their own club's current position (stored only for the duration of the page visit)
-    
-    Visual style: Horizontal timeline with connecting arrows showing the typical (not mandatory) progression order
-    
-    Color coding: Green for the founding stage, blue for scaling, amber for multi-site, gray for franchise (signaling it is optional and rare)
-    
-    Implementation: vis-timeline library with custom click handlers for the detail panel
-    -->
+    <script src="club-growth-path.js"></script>
 </body>
 </html>

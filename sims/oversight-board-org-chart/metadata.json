@@ -1,6 +1,6 @@
 {
   "title": "Oversight Board Org Chart",
-  "description": "Given the five named seats on a coding club's oversight board, the learner identifies each seat's core responsibility and how the board as a whole relates to day-to-day operations.",
+  "description": "Five board seats, what each one does, and how a board sits above day-to-day sessions without running them.",
   "creator": "Coding Club",
   "author": "Dan McCreary",
   "date": "2026-09-01",
@@ -15,9 +15,29 @@
   "library": "vis-network",
   "bloomLevel": "Remember (L1)",
   "bloomVerb": "identify",
-  "completion_status": "scaffold",
+  "completion_status": "built",
+  "canvasHeight": 740,
   "chapter_number": 34,
   "chapter_title": "Establishing an Oversight Board and Inventory System",
   "chapter_dir": "34-oversight-board-and-inventory",
-  "chapter_rel_dir": "chapters/34-oversight-board-and-inventory"
+  "chapter_rel_dir": "chapters/34-oversight-board-and-inventory",
+  "educational": {
+    "gradeLevel": "Middle School, High School, Adult",
+    "audience": "Founders forming a board",
+    "duration": "10-15 minutes",
+    "concepts": [
+      "Oversight Board",
+      "Board Seats",
+      "Separation of Duties",
+      "Mentor Liaison",
+      "Reporting"
+    ]
+  },
+  "pedagogical": {
+    "bloomLevel": "Remember (L1)",
+    "bloomVerb": "identify",
+    "learningObjective": "Given the five named seats on a coding club's oversight board, the learner identifies each seat's core responsibility and how the board as a whole relates to day-to-day operations.",
+    "interactionPattern": "Click any seat for its core responsibility; two distinct routes connect the board to the people it serves",
+    "assessment": "Name a seat and ask for its core responsibility; ask which seat hears from mentors directly."
+  }
 }

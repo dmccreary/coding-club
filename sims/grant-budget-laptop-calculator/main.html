@@ -3,125 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- microsim-scaffold-stub -->
-    <title>Grant Budget Laptop Calculator</title>
+    <meta name="schema" content="https://dmccreary.github.io/intelligent-textbooks/ns/microsim/v1">
+    <title>Grant Budget Laptop Calculator MicroSim using P5.js 1.11.10</title>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.11.10/lib/p5.js"></script>
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: #f8f9fa;
-            color: #212529;
+            margin: 0px;
+            padding: 0px;
+            font-family: Arial, Helvetica, sans-serif;
         }
-        #container {
-            width: 100%;
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 20px;
-            background: white;
-        }
-        h1 {
-            font-size: 22px;
-            margin-bottom: 10px;
-            color: #1a3a6c;
-        }
-        .placeholder {
-            border: 2px dashed #adb5bd;
-            border-radius: 8px;
-            padding: 40px 20px;
-            text-align: center;
-            color: #6c757d;
-            margin: 20px 0;
-            min-height: 400px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        .placeholder .badge {
-            display: inline-block;
-            background: #ffc107;
-            color: #212529;
-            padding: 4px 12px;
-            border-radius: 12px;
-            font-size: 12px;
-            font-weight: 600;
-            margin-bottom: 12px;
-        }
-        .placeholder h2 {
-            font-size: 18px;
-            color: #495057;
-            margin-bottom: 8px;
-        }
-        .placeholder p {
-            font-size: 14px;
-            max-width: 480px;
-        }
-        .meta {
-            margin-top: 20px;
-            font-size: 13px;
-            color: #6c757d;
-            border-top: 1px solid #dee2e6;
-            padding-top: 12px;
-        }
-        .meta strong { color: #495057; }
     </style>
+    <script src="grant-budget-laptop-calculator.js"></script>
 </head>
 <body>
-    <div id="container">
-        <h1>Grant Budget Laptop Calculator</h1>
-        <div class="placeholder">
-            <span class="badge">SCAFFOLD</span>
-            <h2>MicroSim Not Yet Implemented</h2>
-            <p>This MicroSim has been scaffolded from its specification but the
-            interactive content has not been built yet. See the chapter source
-            and the <code>index.md</code> in this directory for the full spec.</p>
-        </div>
-        <div class="meta">
-            <p><strong>Sim ID:</strong> grant-budget-laptop-calculator</p>
-            <p><strong>Library:</strong> p5.js</p>
-            <p><strong>Bloom Level:</strong> Apply (L3)</p>
-            <p><strong>Learning Objective:</strong> Given a grant amount and a chosen device platform, the learner calculates how many laptops the grant can purchase, how much budget remains, and how many students the resulting fleet can serve one-to-one.</p>
-        </div>
-    </div>
-
-    <!--
-    SPECIFICATION (from chapter index.md):
-
-    Type: microsim
-    **sim-id:** grant-budget-laptop-calculator<br/>
-    **Library:** p5.js<br/>
-    **Status:** Specified
-    **Template:** https://github.com/dmccreary/economics-course/tree/main/docs/sims/budget-builder
-    
-    Purpose: Let a club leader explore how a grant budget converts into a device count under each platform, and see the leftover-budget and per-student-coverage consequences of that choice before committing real money.
-    
-    Bloom Taxonomy: Apply (L3)
-    Bloom Taxonomy Verb: calculate
-    
-    Learning objective: Given a grant amount and a chosen device platform, the learner calculates how many laptops the grant can purchase, how much budget remains, and how many students the resulting fleet can serve one-to-one.
-    
-    Instructional Rationale: A parameter-exploration pattern fits this Apply-level objective because the learner needs to test several budget and platform combinations and immediately see the arithmetic consequences, rather than watch a single pre-computed scenario play out.
-    
-    Canvas layout:
-    - Left (450px): a simple bar showing devices purchased vs. students still needing a device
-    - Right (150px): control panel
-    
-    Interactive controls:
-    - Slider: Grant amount, $500-$10,000, step $250, default $3,000
-    - Dropdown: Platform (Chromebook $250, Windows $450, macOS $950, Custom price)
-    - Input (number): Custom per-unit price, enabled only when "Custom" is selected
-    - Input (number): Number of students in the club, default 12
-    - Button: "Reset to Defaults"
-    
-    Behavior:
-    - Devices purchasable = floor(grant amount / unit price), recalculated live as any control changes
-    - Remaining budget = grant amount - (devices purchasable x unit price), displayed in dollars
-    - Coverage = "X of Y students have their own device" compared against the student-count input
-    - Bar chart updates immediately; no animation delay, since this is a calculation tool, not a simulation
-    
-    Default parameters: $3,000 grant, Chromebook selected, 12 students -- resulting in 12 devices, $0 remaining, "12 of 12 students covered"
-    
-    Implementation notes: p5.js canvas with createSlider, createSelect, and createInput controls parented to the sketch's own control div; recompute on every draw() call rather than only on change events, since inputs may be adjusted with arrow keys.
-    -->
+    <main></main>
+    <br/>
+    <a href=".">Back to Grant Budget Laptop Calculator Lesson Plan</a>
 </body>
 </html>

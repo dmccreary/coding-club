@@ -3,123 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- microsim-scaffold-stub -->
-    <title>Building and Reading an Influence Graph</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: #f8f9fa;
-            color: #212529;
-        }
-        #container {
-            width: 100%;
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 20px;
-            background: white;
-        }
-        h1 {
-            font-size: 22px;
-            margin-bottom: 10px;
-            color: #1a3a6c;
-        }
-        .placeholder {
-            border: 2px dashed #adb5bd;
-            border-radius: 8px;
-            padding: 40px 20px;
-            text-align: center;
-            color: #6c757d;
-            margin: 20px 0;
-            min-height: 400px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        .placeholder .badge {
-            display: inline-block;
-            background: #ffc107;
-            color: #212529;
-            padding: 4px 12px;
-            border-radius: 12px;
-            font-size: 12px;
-            font-weight: 600;
-            margin-bottom: 12px;
-        }
-        .placeholder h2 {
-            font-size: 18px;
-            color: #495057;
-            margin-bottom: 8px;
-        }
-        .placeholder p {
-            font-size: 14px;
-            max-width: 480px;
-        }
-        .meta {
-            margin-top: 20px;
-            font-size: 13px;
-            color: #6c757d;
-            border-top: 1px solid #dee2e6;
-            padding-top: 12px;
-        }
-        .meta strong { color: #495057; }
-    </style>
+    <meta name="schema" content="https://dmccreary.github.io/intelligent-textbooks/ns/microsim/v1">
+    <title>Mentor Recruiting Influence Graph</title>
+    <script src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/vis-network/styles/vis-network.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="container">
-        <h1>Building and Reading an Influence Graph</h1>
-        <div class="placeholder">
-            <span class="badge">SCAFFOLD</span>
-            <h2>MicroSim Not Yet Implemented</h2>
-            <p>This MicroSim has been scaffolded from its specification but the
-            interactive content has not been built yet. See the chapter source
-            and the <code>index.md</code> in this directory for the full spec.</p>
-        </div>
-        <div class="meta">
-            <p><strong>Sim ID:</strong> mentor-recruiting-influence-graph</p>
-            <p><strong>Library:</strong> vis-network</p>
-            <p><strong>Bloom Level:</strong> Analyze (L4)</p>
-            <p><strong>Learning Objective:</strong> Given a sample influence graph of a local community, the learner examines it to identify under-reached populations of mentors and students.</p>
+<main>
+    <div class="container">
+        <div id="network"></div>
+
+        <div class="title">Mentor Recruiting Influence Graph</div>
+
+        <div class="right-panel">
+            <div class="controls">
+                <div class="stats">2 reached · 4 not reached</div>
+                <button class="btn" id="spotlight-btn">Highest-leverage node</button>
+                <button class="btn btn-secondary" id="reset-btn">Reset</button>
+            </div>
+
+            <div class="legend">
+                <div class="legend-item"><span class="legend-color" style="background-color:#5B7186"></span>The club's current outreach</div>
+                <div class="legend-item"><span class="legend-color" style="background-color:#3E9E6E"></span>Channel already reached</div>
+                <div class="legend-item"><span class="legend-color" style="background-color:#F5A623"></span>Channel not reached</div>
+                <div class="legend-item"><span class="legend-color legend-note"></span>A dashed edge is a connection that does not exist yet</div>
+            </div>
+
+            <div class="info-panel">
+                <div class="info-heading">Channel Details</div>
+                <div id="info-content">
+                    <p class="info-placeholder">Click any channel for its population estimate and whether the club currently reaches it.</p>
+                </div>
+            </div>
         </div>
     </div>
+</main>
 
-    <!--
-    SPECIFICATION (from chapter index.md):
-
-    Type: graph-model
-    **sim-id:** mentor-recruiting-influence-graph<br/>
-    **Library:** vis-network<br/>
-    **Status:** Specified
-    **Template:** https://github.com/dmccreary/organizational-analytics/tree/main/docs/sims/mentor-matching-network
-    
-    Purpose: Let a learner examine a sample community influence graph, distinguishing connected outreach channels from under-reached populations, and practice identifying the highest-leverage node for mentor recruiting.
-    
-    Bloom Taxonomy: Analyze (L4)
-    Bloom Taxonomy Verb: examine
-    
-    Learning objective: Given a sample influence graph of a local community, the learner examines it to identify under-reached populations of mentors and students.
-    
-    Node types:
-    1. Club Outreach (center, gray square) -- the club's current announcement channel
-    2. Connected nodes (green circles): PTA Email List, Library Bulletin Board -- already linked to Club Outreach
-    3. Under-reached nodes (amber circles, no current edge to Club Outreach): Neighborhood Congregation, Boys & Girls Club Program, Women Who Code Meetup, Local Engineering Employer
-    
-    Edges:
-    - Solid green edges from Club Outreach to each connected node, labeled "reaches"
-    - Dashed gray edges (present but unhighlighted by default) from each under-reached node toward the community it represents, labeled "would reach"
-    
-    Interactive features:
-    - Click any node to see its population size estimate and whether it currently has an edge to Club Outreach
-    - Button: "Highlight Under-Reached Nodes" -- turns all amber nodes and their labels bold and pulses them briefly
-    - Button: "Show Highest-Leverage Node" -- highlights the Women Who Code Meetup node specifically and reveals why it was chosen (largest untapped population with a plausible single point of contact)
-    - Zoom with the mouse wheel, pan by dragging the background
-    
-    Visual styling: Green fill for connected nodes, amber fill for under-reached nodes, gray for the central club node; edge color matches the source node's connection status
-    
-    Legend: Node color key (connected vs. under-reached) and edge label meaning
-    
-    Implementation: vis-network JavaScript library, force-directed layout with the Club Outreach node pinned near center, canvas size 800x500px.
-    -->
+    <script src="mentor-recruiting-influence-graph.js"></script>
 </body>
 </html>

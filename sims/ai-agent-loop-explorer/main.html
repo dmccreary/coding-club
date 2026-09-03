@@ -3,123 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- microsim-scaffold-stub -->
-    <title>AI Agent Loop Explorer</title>
+    <meta name="schema" content="https://dmccreary.github.io/intelligent-textbooks/ns/microsim/v1">
+    <title>AI Agent Loop Explorer MicroSim using P5.js 1.11.10</title>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.11.10/lib/p5.js"></script>
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: #f8f9fa;
-            color: #212529;
+            margin: 0px;
+            padding: 0px;
+            font-family: Arial, Helvetica, sans-serif;
         }
-        #container {
-            width: 100%;
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 20px;
-            background: white;
-        }
-        h1 {
-            font-size: 22px;
-            margin-bottom: 10px;
-            color: #1a3a6c;
-        }
-        .placeholder {
-            border: 2px dashed #adb5bd;
-            border-radius: 8px;
-            padding: 40px 20px;
-            text-align: center;
-            color: #6c757d;
-            margin: 20px 0;
-            min-height: 400px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        .placeholder .badge {
-            display: inline-block;
-            background: #ffc107;
-            color: #212529;
-            padding: 4px 12px;
-            border-radius: 12px;
-            font-size: 12px;
-            font-weight: 600;
-            margin-bottom: 12px;
-        }
-        .placeholder h2 {
-            font-size: 18px;
-            color: #495057;
-            margin-bottom: 8px;
-        }
-        .placeholder p {
-            font-size: 14px;
-            max-width: 480px;
-        }
-        .meta {
-            margin-top: 20px;
-            font-size: 13px;
-            color: #6c757d;
-            border-top: 1px solid #dee2e6;
-            padding-top: 12px;
-        }
-        .meta strong { color: #495057; }
     </style>
+    <script src="ai-agent-loop-explorer.js"></script>
 </head>
 <body>
-    <div id="container">
-        <h1>AI Agent Loop Explorer</h1>
-        <div class="placeholder">
-            <span class="badge">SCAFFOLD</span>
-            <h2>MicroSim Not Yet Implemented</h2>
-            <p>This MicroSim has been scaffolded from its specification but the
-            interactive content has not been built yet. See the chapter source
-            and the <code>index.md</code> in this directory for the full spec.</p>
-        </div>
-        <div class="meta">
-            <p><strong>Sim ID:</strong> ai-agent-loop-explorer</p>
-            <p><strong>Library:</strong> p5.js</p>
-            <p><strong>Bloom Level:</strong> Understand (L2)</p>
-            <p><strong>Learning Objective:</strong> Given a scenario, the learner explains what happens at each stage of an AI agent's loop and why the human-review stage cannot be skipped.</p>
-        </div>
-    </div>
-
-    <!--
-    SPECIFICATION (from chapter index.md):
-
-    Type: microsim
-    **sim-id:** ai-agent-loop-explorer<br/>
-    **Library:** p5.js<br/>
-    **Status:** Specified
-    **Template:** https://github.com/dmccreary/ai-strategy-for-education/tree/main/docs/sims/ai-agent-anatomy
-    
-    Purpose: Let a learner step through the four-stage loop every AI agent in this chapter follows -- input, draft, human review, and send or reject -- using the registration-reminder scenario from the worked example above as the default walkthrough.
-    
-    Bloom Taxonomy: Understand (L2)
-    Bloom Taxonomy Verb: explain
-    
-    Learning objective: Given a scenario, the learner explains what happens at each stage of an AI agent's loop and why the human-review stage cannot be skipped.
-    
-    Instructional Rationale: This is an Understand-level objective, so the sim uses a step-through with concrete data at each stage rather than a continuous animation -- a learner needs to see the actual draft text and the actual correction made, not watch a generic process play out with no real content to reason about.
-    
-    Canvas layout:
-    - Left (450px): the current stage's content -- the input goal, the agent's draft, the reviewer's markup, or the final outcome
-    - Right (150px): a four-step progress tracker (Input -> Draft -> Human Review -> Send/Reject) with the current step highlighted
-    
-    Data Visibility Requirements:
-      Stage 1 (Input): Show the plain-language goal typed in -- "Draft Tuesday's session reminder"
-      Stage 2 (Draft): Show the agent's full draft text, including the incorrect start time it carried over from an old calendar entry
-      Stage 3 (Human Review): Show the reviewer's markup -- the corrected start time circled, with a short note "fixed time, kept the welcome-back line"
-      Stage 4 (Send/Reject): Show the final, corrected message as it actually went out, side by side with the original draft so the one changed detail is visible
-    
-    Interactive controls:
-    - Dropdown: choose a scenario (Registration Reminder, Room-Change Announcement, Parent Chatbot Reply) -- each loads its own four-stage content
-    - Button pair: "Next" / "Previous" to move through the four stages
-    - Button: "What if no one reviewed this?" -- reveals a short callout showing the uncorrected draft (wrong start time) as it would have looked if sent without review
-    
-    Default parameters: Scenario = "Registration Reminder"; starts at Stage 1
-    
-    Implementation notes: p5.js canvas with createSelect for the scenario dropdown and createButton for Next/Previous and the "what if" button; each of the three scenarios' four-stage content lives in a small lookup object so switching scenarios mid-walkthrough resets cleanly to Stage 1.
-    -->
+    <main></main>
+    <br/>
+    <a href=".">Back to AI Agent Loop Explorer Lesson Plan</a>
 </body>
 </html>

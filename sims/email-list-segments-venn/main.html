@@ -3,116 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- microsim-scaffold-stub -->
-    <title>Email List Segments</title>
+    <meta name="schema" content="https://dmccreary.github.io/intelligent-textbooks/ns/microsim/v1">
+    <title>Email List Segments Venn MicroSim using P5.js 1.11.10</title>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.11.10/lib/p5.js"></script>
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: #f8f9fa;
-            color: #212529;
+            margin: 0px;
+            padding: 0px;
+            font-family: Arial, Helvetica, sans-serif;
         }
-        #container {
-            width: 100%;
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 20px;
-            background: white;
-        }
-        h1 {
-            font-size: 22px;
-            margin-bottom: 10px;
-            color: #1a3a6c;
-        }
-        .placeholder {
-            border: 2px dashed #adb5bd;
-            border-radius: 8px;
-            padding: 40px 20px;
-            text-align: center;
-            color: #6c757d;
-            margin: 20px 0;
-            min-height: 400px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        .placeholder .badge {
-            display: inline-block;
-            background: #ffc107;
-            color: #212529;
-            padding: 4px 12px;
-            border-radius: 12px;
-            font-size: 12px;
-            font-weight: 600;
-            margin-bottom: 12px;
-        }
-        .placeholder h2 {
-            font-size: 18px;
-            color: #495057;
-            margin-bottom: 8px;
-        }
-        .placeholder p {
-            font-size: 14px;
-            max-width: 480px;
-        }
-        .meta {
-            margin-top: 20px;
-            font-size: 13px;
-            color: #6c757d;
-            border-top: 1px solid #dee2e6;
-            padding-top: 12px;
-        }
-        .meta strong { color: #495057; }
     </style>
+    <script src="email-list-segments-venn.js"></script>
 </head>
 <body>
-    <div id="container">
-        <h1>Email List Segments</h1>
-        <div class="placeholder">
-            <span class="badge">SCAFFOLD</span>
-            <h2>MicroSim Not Yet Implemented</h2>
-            <p>This MicroSim has been scaffolded from its specification but the
-            interactive content has not been built yet. See the chapter source
-            and the <code>index.md</code> in this directory for the full spec.</p>
-        </div>
-        <div class="meta">
-            <p><strong>Sim ID:</strong> email-list-segments-venn</p>
-            <p><strong>Library:</strong> p5.js</p>
-            <p><strong>Bloom Level:</strong> Analyze (L4)</p>
-            <p><strong>Learning Objective:</strong> Given a sample contact, the learner differentiates which segment or segments that contact belongs to.</p>
-        </div>
-    </div>
-
-    <!--
-    SPECIFICATION (from chapter index.md):
-
-    Type: diagram
-    **sim-id:** email-list-segments-venn<br/>
-    **Library:** p5.js<br/>
-    **Status:** Specified
-    
-    Purpose: Show how a club's four common email segments overlap, so a mentor can see why one contact might belong to more than one group.
-    
-    Bloom Taxonomy: Analyze (L4)
-    Bloom Taxonomy Verb: differentiate
-    
-    Learning objective: Given a sample contact, the learner differentiates which segment or segments that contact belongs to.
-    
-    Visual style: Four overlapping circles (a Venn-style diagram): Active Families, Mentors, Waitlist, Alumni
-    
-    Overlaps of interest:
-    - Active Families and Mentors overlap (a parent who also mentors)
-    - Waitlist does not overlap with Active Families (a contact is in exactly one of the two)
-    - Alumni overlaps only slightly with Mentors (a former family member who stayed on as a mentor)
-    
-    Interactive controls:
-    - Click any region (including an overlap region) to see which segment(s) it represents and a sample message type sent to it
-    - Button: "Highlight Overlaps" -- flashes the two overlapping regions to draw attention to them
-    
-    Default parameters: All four circles visible at load; no region pre-selected
-    
-    Implementation notes: p5.js canvas drawing four semi-transparent circles positioned so the two intended overlaps are visible; a lookup table maps each region (including overlaps) to its label and example message, checked against mouse position on click.
-    -->
+    <main></main>
+    <br/>
+    <a href=".">Back to Email List Segments Venn Lesson Plan</a>
 </body>
 </html>

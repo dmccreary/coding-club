@@ -1,6 +1,6 @@
 {
   "title": "Multimeter Usage Simulator",
-  "description": "Given a simple breadboard circuit, the learner demonstrates how to use a multimeter's continuity, voltage, and resistance modes to verify the circuit before and after powering it.",
+  "description": "Drag two probes onto a real circuit in three meter modes -- and find a short the meter can see but your eyes cannot.",
   "creator": "Coding Club",
   "author": "Dan McCreary",
   "date": "2026-09-01",
@@ -15,9 +15,30 @@
   "library": "p5.js",
   "bloomLevel": "Apply (L3)",
   "bloomVerb": "demonstrate",
-  "completion_status": "scaffold",
+  "completion_status": "built",
+  "canvasHeight": 620,
   "chapter_number": 16,
   "chapter_title": "Physical Computing and Electrical Safety Basics",
   "chapter_dir": "16-physical-computing-safety",
-  "chapter_rel_dir": "chapters/16-physical-computing-safety"
+  "chapter_rel_dir": "chapters/16-physical-computing-safety",
+  "educational": {
+    "gradeLevel": "Middle School, High School, Adult",
+    "audience": "Mentors and students doing their first pre-power check",
+    "duration": "10-15 minutes",
+    "concepts": [
+      "Multimeter",
+      "Continuity Test",
+      "Voltage Measurement",
+      "Resistance Measurement",
+      "Short Circuit",
+      "Pre-Power Check"
+    ]
+  },
+  "pedagogical": {
+    "bloomLevel": "Apply (L3)",
+    "bloomVerb": "demonstrate",
+    "learningObjective": "Given a simple breadboard circuit, the learner demonstrates how to use a multimeter's continuity, voltage, and resistance modes to verify the circuit before and after powering it.",
+    "interactionPattern": "Choose a mode, drag the red and black probes to any two holes, and read the meter",
+    "assessment": "Turn on the hidden short and ask the learner to find it with the meter before the power goes on."
+  }
 }

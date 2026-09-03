@@ -1,6 +1,6 @@
 {
   "title": "The Tangible Reward Ladder",
-  "description": "Given an unlabeled illustration of a six-rung ladder, the learner identifies which reward tool sits at each rung and what scale of accomplishment it marks.",
+  "description": "Six recognition tools on six rungs, ordered by the size of the thing they mark.",
   "creator": "Coding Club",
   "author": "Dan McCreary",
   "date": "2026-09-01",
@@ -12,12 +12,32 @@
   "language": "en",
   "rights": "CC BY-NC-SA 4.0",
   "identifier": "tangible-reward-ladder",
-  "library": "Interactive Infographic Overlay (diagram.js, annotation-free illustration + numbered callouts)",
+  "library": "Infographic overlay (diagram.js)",
   "bloomLevel": "Understand (L2)",
   "bloomVerb": "summarize",
-  "completion_status": "scaffold",
+  "completion_status": "built",
+  "canvasHeight": 952,
   "chapter_number": 26,
   "chapter_title": "Motivation, Badges, and Growth Mindset Coaching",
   "chapter_dir": "26-motivation-badges-growth-mindset",
-  "chapter_rel_dir": "chapters/26-motivation-badges-growth-mindset"
+  "chapter_rel_dir": "chapters/26-motivation-badges-growth-mindset",
+  "educational": {
+    "gradeLevel": "Middle School, High School, Adult",
+    "audience": "Club leaders designing a recognition system",
+    "duration": "10 minutes",
+    "concepts": [
+      "Recognition",
+      "Badge",
+      "Certificate",
+      "Progress Tracker",
+      "Reward Frequency"
+    ]
+  },
+  "pedagogical": {
+    "bloomLevel": "Understand (L2)",
+    "bloomVerb": "summarize",
+    "learningObjective": "Given an unlabeled illustration of a six-rung ladder, the learner identifies which reward tool sits at each rung and what scale of accomplishment it marks.",
+    "interactionPattern": "Hover any rung for the tool that sits there and the scale of accomplishment it marks",
+    "assessment": "Place a described accomplishment on the right rung."
+  }
 }

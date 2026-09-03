@@ -1,6 +1,6 @@
 {
-  "title": "Collision Avoidance Robot Control Loop",
-  "description": "Given an adjustable stop-distance threshold and an approaching obstacle, the learner demonstrates how a collision-avoidance robot's sensor reading, motor decision, and turning behavior work together as one loop.",
+  "title": "Collision Avoidance Control Loop",
+  "description": "Sense, decide, act -- with a polling interval you can widen until the robot drives into a wall it thinks is 40 cm away.",
   "creator": "Coding Club",
   "author": "Dan McCreary",
   "date": "2026-09-01",
@@ -15,9 +15,29 @@
   "library": "p5.js",
   "bloomLevel": "Apply (L3)",
   "bloomVerb": "demonstrate",
-  "completion_status": "scaffold",
+  "completion_status": "built",
+  "canvasHeight": 560,
   "chapter_number": 18,
   "chapter_title": "Robots, USB Basics, and Electronics Workshop Skills",
   "chapter_dir": "18-robots-usb-electronics-workshop",
-  "chapter_rel_dir": "chapters/18-robots-usb-electronics-workshop"
+  "chapter_rel_dir": "chapters/18-robots-usb-electronics-workshop",
+  "educational": {
+    "gradeLevel": "Middle School, High School, Adult",
+    "audience": "Students programming a robot's first behaviour",
+    "duration": "10-15 minutes",
+    "concepts": [
+      "Control Loop",
+      "State Machine",
+      "Polling Interval",
+      "Stop Distance",
+      "Stale Reading"
+    ]
+  },
+  "pedagogical": {
+    "bloomLevel": "Apply (L3)",
+    "bloomVerb": "demonstrate",
+    "learningObjective": "Given an adjustable stop-distance threshold and an approaching obstacle, the learner demonstrates how a collision-avoidance robot's sensor reading, motor decision, and turning behavior work together as one loop.",
+    "interactionPattern": "Set the stop distance and polling interval, drag the obstacle, and watch the state machine react",
+    "assessment": "Set a polling interval and ask for the smallest safe stop distance before running it."
+  }
 }

@@ -3,126 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- microsim-scaffold-stub -->
-    <title>Coding Club Budget Builder</title>
+    <meta name="schema" content="https://dmccreary.github.io/intelligent-textbooks/ns/microsim/v1">
+    <title>Coding Club Budget Builder MicroSim using P5.js 1.11.10</title>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.11.10/lib/p5.js"></script>
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: #f8f9fa;
-            color: #212529;
+            margin: 0px;
+            padding: 0px;
+            font-family: Arial, Helvetica, sans-serif;
         }
-        #container {
-            width: 100%;
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 20px;
-            background: white;
-        }
-        h1 {
-            font-size: 22px;
-            margin-bottom: 10px;
-            color: #1a3a6c;
-        }
-        .placeholder {
-            border: 2px dashed #adb5bd;
-            border-radius: 8px;
-            padding: 40px 20px;
-            text-align: center;
-            color: #6c757d;
-            margin: 20px 0;
-            min-height: 400px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        .placeholder .badge {
-            display: inline-block;
-            background: #ffc107;
-            color: #212529;
-            padding: 4px 12px;
-            border-radius: 12px;
-            font-size: 12px;
-            font-weight: 600;
-            margin-bottom: 12px;
-        }
-        .placeholder h2 {
-            font-size: 18px;
-            color: #495057;
-            margin-bottom: 8px;
-        }
-        .placeholder p {
-            font-size: 14px;
-            max-width: 480px;
-        }
-        .meta {
-            margin-top: 20px;
-            font-size: 13px;
-            color: #6c757d;
-            border-top: 1px solid #dee2e6;
-            padding-top: 12px;
-        }
-        .meta strong { color: #495057; }
     </style>
+    <script src="coding-club-budget-builder.js"></script>
 </head>
 <body>
-    <div id="container">
-        <h1>Coding Club Budget Builder</h1>
-        <div class="placeholder">
-            <span class="badge">SCAFFOLD</span>
-            <h2>MicroSim Not Yet Implemented</h2>
-            <p>This MicroSim has been scaffolded from its specification but the
-            interactive content has not been built yet. See the chapter source
-            and the <code>index.md</code> in this directory for the full spec.</p>
-        </div>
-        <div class="meta">
-            <p><strong>Sim ID:</strong> coding-club-budget-builder</p>
-            <p><strong>Library:</strong> p5.js</p>
-            <p><strong>Bloom Level:</strong> Apply (L3)</p>
-            <p><strong>Learning Objective:</strong> Given a set of named recurring and one-time cost line items and a student count, the learner calculates the total annual budget, the recurring-versus-one-time split, and the cost per student.</p>
-        </div>
-    </div>
-
-    <!--
-    SPECIFICATION (from chapter index.md):
-
-    Type: microsim
-    **sim-id:** coding-club-budget-builder<br/>
-    **Library:** p5.js<br/>
-    **Status:** Specified
-    **Template:** https://github.com/dmccreary/economics-course/tree/main/docs/sims/budget-builder
-    
-    Purpose: Let a club leader build a full first-year budget out of individual line items, then see the recurring/one-time split and the resulting cost per student before committing to a real number.
-    
-    Bloom Taxonomy: Apply (L3)
-    Bloom Taxonomy Verb: calculate
-    
-    Learning objective: Given a set of named recurring and one-time cost line items and a student count, the learner calculates the total annual budget, the recurring-versus-one-time split, and the cost per student.
-    
-    Instructional Rationale: A parameter-exploration pattern fits this Apply-level objective because the learner needs to add, remove, and reclassify several line items and immediately see the arithmetic consequences, rather than watch one pre-computed scenario play out.
-    
-    Canvas layout:
-    - Left (60%): a stacked bar showing the recurring total and one-time total side by side, plus a large "Cost Per Student" readout
-    - Right (40%): a scrollable list of line items with add/remove controls, and the number-of-students input
-    
-    Interactive controls:
-    - Button row: "Add Recurring Item" and "Add One-Time Item," each opening a name field and a dollar-amount field
-    - Per-item: a small "x" remove button
-    - Input (number): Number of students, default 12
-    - Button: "Load Sample Year-1 Budget" -- prefills the exact worked example above (internet, insurance, snacks, printing as recurring; Chromebooks, Moving Rainbow kits, robot kits, storage cart as one-time)
-    - Button: "Reset"
-    
-    Behavior:
-    - Recurring Total = sum of all items marked recurring
-    - One-Time Total = sum of all items marked one-time
-    - Total Budget = Recurring Total + One-Time Total
-    - Cost Per Student = Total Budget / Number of Students, rounded to the nearest cent
-    - The stacked bar and the Cost Per Student readout recalculate immediately whenever any item, amount, or the student count changes
-    
-    Default parameters: loads with the sample Year-1 budget from the worked example (12 students, $830 recurring, $1,830 one-time, $2,660 total, $221.67 per student)
-    
-    Implementation notes: p5.js canvas with createButton and createInput controls parented to the sketch's own control div; store line items in a JavaScript array of {name, amount, type} objects so items can be added and removed without redrawing the whole layout from scratch.
-    -->
+    <main></main>
+    <br/>
+    <a href=".">Back to Coding Club Budget Builder Lesson Plan</a>
 </body>
 </html>

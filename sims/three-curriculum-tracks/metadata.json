@@ -1,6 +1,6 @@
 {
   "title": "Three Curriculum Tracks",
-  "description": "Given a student's current skills, the learner classifies which curriculum track best fits them.",
+  "description": "Beginner, intermediate, advanced -- what each track actually contains, and where the hard transition sits.",
   "creator": "Coding Club",
   "author": "Dan McCreary",
   "date": "2026-09-01",
@@ -12,12 +12,32 @@
   "language": "en",
   "rights": "CC BY-NC-SA 4.0",
   "identifier": "three-curriculum-tracks",
-  "library": "Interactive Infographic Overlay (grid-diagram.js, annotation-free comparison poster + rectangular hover zones)",
+  "library": "Infographic overlay (grid-diagram.js)",
   "bloomLevel": "Understand (L2)",
   "bloomVerb": "classify",
-  "completion_status": "scaffold",
+  "completion_status": "built",
+  "canvasHeight": 724,
   "chapter_number": 15,
   "chapter_title": "Designing a Curriculum With Challenge Cards and Portfolios",
   "chapter_dir": "15-curriculum-challenge-cards",
-  "chapter_rel_dir": "chapters/15-curriculum-challenge-cards"
+  "chapter_rel_dir": "chapters/15-curriculum-challenge-cards",
+  "educational": {
+    "gradeLevel": "Middle School, High School, Adult",
+    "audience": "Mentors placing a new student",
+    "duration": "10 minutes",
+    "concepts": [
+      "Curriculum Track",
+      "Block Coding",
+      "Text Transition",
+      "Pair Programming",
+      "Peer Mentoring"
+    ]
+  },
+  "pedagogical": {
+    "bloomLevel": "Understand (L2)",
+    "bloomVerb": "classify",
+    "learningObjective": "Given a student's current skills, the learner classifies which curriculum track best fits them.",
+    "interactionPattern": "Click any track for what students at that level are working on",
+    "assessment": "Place a described student on the right track and say why."
+  }
 }

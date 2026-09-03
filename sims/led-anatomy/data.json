@@ -1,0 +1,50 @@
+{
+  "title": "LED Anatomy",
+  "orientation": "landscape",
+  "image": "led-anatomy.png",
+  "layout": "side-panel",
+  "showNumbers": true,
+  "callouts": [
+    {
+      "id": 1,
+      "label": "Light-emitting dome",
+      "x": 49.0,
+      "y": 12.0,
+      "radius": 5,
+      "color": "#F5A623",
+      "hint": "The rounded translucent coloured top of the component.",
+      "description": "The moulded plastic dome that both protects the semiconductor die and acts as a lens, focusing the light into a beam."
+    },
+    {
+      "id": 2,
+      "label": "Flat edge",
+      "x": 38.5,
+      "y": 41.5,
+      "radius": 5,
+      "color": "#9B59B6",
+      "hint": "A small flattened section on the otherwise round rim of the plastic body.",
+      "description": "The flat spot moulded into the rim on the cathode side. It is the backup marker: if the legs have been trimmed to equal length, the flat edge still tells you which side is negative."
+    },
+    {
+      "id": 3,
+      "label": "Cathode (shorter leg)",
+      "x": 42.5,
+      "y": 68.0,
+      "radius": 5,
+      "color": "#E67E22",
+      "hint": "The shorter of the two metal legs, on the left-hand side.",
+      "description": "The negative leg. It is deliberately made shorter at the factory so the part can be oriented correctly by sight alone."
+    },
+    {
+      "id": 4,
+      "label": "Anode (longer leg)",
+      "x": 55.3,
+      "y": 88.0,
+      "radius": 5,
+      "color": "#4A90D9",
+      "hint": "The longer of the two metal legs, on the right-hand side.",
+      "description": "The positive leg. Current enters the LED here, and it is the longer of the two so you can tell the orientation without a meter.",
+      "tip": "Mnemonic: Anode is lAnger. The long leg goes to the positive side."
+    }
+  ]
+}

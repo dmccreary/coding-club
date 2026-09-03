@@ -1,6 +1,6 @@
 {
   "title": "Promotional Materials Recruiting Rubric",
-  "description": "Given a description of a sample club flyer or web page, the learner scores it against five recruiting-equity criteria and identifies the single lowest-scoring criterion to fix first.",
+  "description": "Five criteria, ten points, three sample flyers -- and the lowest row matters more than the total.",
   "creator": "Coding Club",
   "author": "Dan McCreary",
   "date": "2026-09-01",
@@ -15,9 +15,29 @@
   "library": "p5.js",
   "bloomLevel": "Evaluate (L5)",
   "bloomVerb": "critique",
-  "completion_status": "scaffold",
+  "completion_status": "built",
+  "canvasHeight": 620,
   "chapter_number": 28,
   "chapter_title": "Reaching Underserved Communities and Removing Barriers",
   "chapter_dir": "28-underserved-communities-barriers",
-  "chapter_rel_dir": "chapters/28-underserved-communities-barriers"
+  "chapter_rel_dir": "chapters/28-underserved-communities-barriers",
+  "educational": {
+    "gradeLevel": "Middle School, High School, Adult",
+    "audience": "Mentors critiquing recruiting materials",
+    "duration": "10-15 minutes",
+    "concepts": [
+      "Recruiting Equity",
+      "Inclusive Imagery",
+      "Language Access",
+      "Contact Friction",
+      "Rubric Scoring"
+    ]
+  },
+  "pedagogical": {
+    "bloomLevel": "Evaluate (L5)",
+    "bloomVerb": "critique",
+    "learningObjective": "Given a description of a sample club flyer or web page, the learner scores it against five recruiting-equity criteria and identifies the single lowest-scoring criterion to fix first.",
+    "interactionPattern": "Load a sample flyer, review or override each score, then reveal the weakest criterion",
+    "assessment": "Score the club's own flyer and name the one thing to fix."
+  }
 }

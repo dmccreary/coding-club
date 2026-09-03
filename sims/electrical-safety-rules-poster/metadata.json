@@ -1,6 +1,6 @@
 {
   "title": "Electrical Safety Rules Poster",
-  "description": "Given a hands-on session about to begin, the learner identifies which safety rule applies to the materials on the table.",
+  "description": "Four hazard families, three rules each -- the panel you point at depends on what is on the table.",
   "creator": "Coding Club",
   "author": "Dan McCreary",
   "date": "2026-09-01",
@@ -12,12 +12,31 @@
   "language": "en",
   "rights": "CC BY-NC-SA 4.0",
   "identifier": "electrical-safety-rules-poster",
-  "library": "Interactive Infographic Overlay (grid-diagram.js, four-panel comparison poster + rectangular hover zones)",
+  "library": "Infographic overlay (grid-diagram.js)",
   "bloomLevel": "Remember (L1)",
   "bloomVerb": "identify",
-  "completion_status": "scaffold",
+  "completion_status": "built",
+  "canvasHeight": 830,
   "chapter_number": 16,
   "chapter_title": "Physical Computing and Electrical Safety Basics",
   "chapter_dir": "16-physical-computing-safety",
-  "chapter_rel_dir": "chapters/16-physical-computing-safety"
+  "chapter_rel_dir": "chapters/16-physical-computing-safety",
+  "educational": {
+    "gradeLevel": "Middle School, High School, Adult",
+    "audience": "Mentors running a hands-on session",
+    "duration": "5-10 minutes",
+    "concepts": [
+      "Electrical Safety",
+      "Battery Safety",
+      "Static Discharge",
+      "Soldering Safety"
+    ]
+  },
+  "pedagogical": {
+    "bloomLevel": "Remember (L1)",
+    "bloomVerb": "identify",
+    "learningObjective": "Given a hands-on session about to begin, the learner identifies which safety rule applies to the materials on the table.",
+    "interactionPattern": "Click any panel for its three rules",
+    "assessment": "Name the panel that applies to tonight's activity before it starts."
+  }
 }

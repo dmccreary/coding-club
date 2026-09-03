@@ -1,6 +1,6 @@
 {
   "title": "Funding Partnership Fit Map",
-  "description": "Given a specific club funding need, the learner examines which partnership or negotiation approach from this chapter best addresses it.",
+  "description": "Four funding needs, four partnership approaches, and which one solves more than one need.",
   "creator": "Coding Club",
   "author": "Dan McCreary",
   "date": "2026-09-01",
@@ -15,9 +15,28 @@
   "library": "vis-network",
   "bloomLevel": "Analyze (L4)",
   "bloomVerb": "examine",
-  "completion_status": "scaffold",
+  "completion_status": "built",
+  "canvasHeight": 638,
   "chapter_number": 30,
   "chapter_title": "Budgeting, Fundraising, and Grant Writing",
   "chapter_dir": "30-budgeting-fundraising-grants",
-  "chapter_rel_dir": "chapters/30-budgeting-fundraising-grants"
+  "chapter_rel_dir": "chapters/30-budgeting-fundraising-grants",
+  "educational": {
+    "gradeLevel": "Middle School, High School, Adult",
+    "audience": "Club leaders seeking funding",
+    "duration": "10-15 minutes",
+    "concepts": [
+      "Local Company Partnership",
+      "Strategic Partnership",
+      "Fiscal Sponsorship",
+      "Vendor Discount"
+    ]
+  },
+  "pedagogical": {
+    "bloomLevel": "Analyze (L4)",
+    "bloomVerb": "examine",
+    "learningObjective": "Given a specific club funding need, the learner examines which partnership or negotiation approach from this chapter best addresses it.",
+    "interactionPattern": "Click any need or approach for what it covers",
+    "assessment": "Give a funding need and ask which approach fits and why the others do not."
+  }
 }

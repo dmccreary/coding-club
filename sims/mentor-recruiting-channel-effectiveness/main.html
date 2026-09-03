@@ -3,127 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- microsim-scaffold-stub -->
-    <title>Mentor Recruiting Channel Effectiveness</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: #f8f9fa;
-            color: #212529;
-        }
-        #container {
-            width: 100%;
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 20px;
-            background: white;
-        }
-        h1 {
-            font-size: 22px;
-            margin-bottom: 10px;
-            color: #1a3a6c;
-        }
-        .placeholder {
-            border: 2px dashed #adb5bd;
-            border-radius: 8px;
-            padding: 40px 20px;
-            text-align: center;
-            color: #6c757d;
-            margin: 20px 0;
-            min-height: 400px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        .placeholder .badge {
-            display: inline-block;
-            background: #ffc107;
-            color: #212529;
-            padding: 4px 12px;
-            border-radius: 12px;
-            font-size: 12px;
-            font-weight: 600;
-            margin-bottom: 12px;
-        }
-        .placeholder h2 {
-            font-size: 18px;
-            color: #495057;
-            margin-bottom: 8px;
-        }
-        .placeholder p {
-            font-size: 14px;
-            max-width: 480px;
-        }
-        .meta {
-            margin-top: 20px;
-            font-size: 13px;
-            color: #6c757d;
-            border-top: 1px solid #dee2e6;
-            padding-top: 12px;
-        }
-        .meta strong { color: #495057; }
-    </style>
+    <meta name="schema" content="https://dmccreary.github.io/intelligent-textbooks/ns/microsim/v1">
+    <title>Mentor Candidates and Qualification Rate by Recruiting Channel</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="container">
-        <h1>Mentor Recruiting Channel Effectiveness</h1>
-        <div class="placeholder">
-            <span class="badge">SCAFFOLD</span>
-            <h2>MicroSim Not Yet Implemented</h2>
-            <p>This MicroSim has been scaffolded from its specification but the
-            interactive content has not been built yet. See the chapter source
-            and the <code>index.md</code> in this directory for the full spec.</p>
+<main>
+    <div class="container">
+        <div class="chart-panel">
+            <h2 class="chart-title">Mentor Candidates and Qualification Rate by Recruiting Channel</h2>
+            <div class="chart-holder"><canvas id="chart"></canvas></div>
         </div>
-        <div class="meta">
-            <p><strong>Sim ID:</strong> mentor-recruiting-channel-effectiveness</p>
-            <p><strong>Library:</strong> Chart.js</p>
-            <p><strong>Bloom Level:</strong> Analyze (L4)</p>
-            <p><strong>Learning Objective:</strong> Given candidate counts and qualification rates across five mentor recruiting channels, the learner compares them to select an effective mix of channels for a specific recruiting need.</p>
+        <div class="info-panel">
+            <h3>What This Shows</h3>
+            <div class="annotation">The <strong>meetup post</strong> produces the most candidates (7) and the lowest pass rate (43%). The <strong>founder's network</strong> and <strong>parent referrals</strong> produce few candidates who almost always pass.</div>
+            <div class="insight">Volume and quality trade off, so the right answer is a <strong>mix</strong>, not a winner. Personal outreach is reliable but does not scale past the founder's contacts -- 3 and 2 candidates are not a growth strategy. The meetup post scales but costs interview time on candidates who will not pass. A club that needs two mentors runs referrals; a club that needs six has to accept the screening load.</div>
         </div>
     </div>
-
-    <!--
-    SPECIFICATION (from chapter index.md):
-
-    Type: chart
-    **sim-id:** mentor-recruiting-channel-effectiveness<br/>
-    **Library:** Chart.js<br/>
-    **Status:** Specified
-    
-    Purpose: Let a board or founder compare how many mentor candidates each recruiting channel typically produces against what share of those candidates actually pass the qualification trial, so a growing club can choose channels deliberately instead of relying on personal outreach alone.
-    
-    Bloom Taxonomy: Analyze (L4)
-    Bloom Taxonomy Verb: compare
-    
-    Learning objective: Given candidate counts and qualification rates across five mentor recruiting channels, the learner compares them to select an effective mix of channels for a specific recruiting need.
-    
-    Chart type: Grouped bar chart (two series per channel)
-    
-    X-axis: Recruiting channel (Founder's Personal Network, Engineering Meetup Post, Employer Volunteer Program, University CS Club, Parent Referral)
-    
-    Y-axis (left): Candidates generated in a typical three-week posting window
-    Y-axis (right, or second bar color): Percentage of those candidates who pass the qualification trial
-    
-    Data series:
-    1. Candidates Generated (blue bars): Founder's Personal Network 3; Engineering Meetup Post 7; Employer Volunteer Program 4; University CS Club 4; Parent Referral 2
-    
-    2. Passed Qualification Trial (gold bars, percent): Founder's Personal Network 100%; Engineering Meetup Post 43%; Employer Volunteer Program 50%; University CS Club 75%; Parent Referral 100%
-    
-    Title: "Mentor Candidates Generated vs. Qualification Rate by Channel"
-    Legend: Position top-right, labeling "Candidates Generated" and "Passed Qualification Trial (%)"
-    
-    Interactive features:
-    - Hover any bar to see its exact value and a one-sentence description of that channel pulled from this chapter
-    - Toggle buttons above the chart to show/hide each series independently
-    - Click a channel's label on the x-axis to highlight both of its bars and dim the rest
-    
-    Annotations:
-    - Small callout near the Personal Network bars: "Smallest reach, but every candidate already carries the founder's trust."
-    - Small callout near the Meetup Post bars: "Largest reach, but the lowest qualification rate -- budget time for more trial sessions."
-    
-    Implementation: Chart.js grouped bar chart with a dataset array holding both series; hover tooltips configured via Chart.js's built-in tooltip callback to include the one-sentence channel description.
-    -->
+</main>
+    <script src="mentor-recruiting-channel-effectiveness.js"></script>
 </body>
 </html>

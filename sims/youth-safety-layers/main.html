@@ -1,120 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- microsim-scaffold-stub -->
-    <title>Layers of Youth Digital Safety</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: #f8f9fa;
-            color: #212529;
-        }
-        #container {
-            width: 100%;
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 20px;
-            background: white;
-        }
-        h1 {
-            font-size: 22px;
-            margin-bottom: 10px;
-            color: #1a3a6c;
-        }
-        .placeholder {
-            border: 2px dashed #adb5bd;
-            border-radius: 8px;
-            padding: 40px 20px;
-            text-align: center;
-            color: #6c757d;
-            margin: 20px 0;
-            min-height: 400px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        .placeholder .badge {
-            display: inline-block;
-            background: #ffc107;
-            color: #212529;
-            padding: 4px 12px;
-            border-radius: 12px;
-            font-size: 12px;
-            font-weight: 600;
-            margin-bottom: 12px;
-        }
-        .placeholder h2 {
-            font-size: 18px;
-            color: #495057;
-            margin-bottom: 8px;
-        }
-        .placeholder p {
-            font-size: 14px;
-            max-width: 480px;
-        }
-        .meta {
-            margin-top: 20px;
-            font-size: 13px;
-            color: #6c757d;
-            border-top: 1px solid #dee2e6;
-            padding-top: 12px;
-        }
-        .meta strong { color: #495057; }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="schema" content="https://dmccreary.github.io/intelligent-textbooks/ns/microsim/v1">
+  <title>Layers of Youth Digital Safety — Interactive Infographic</title>
+  <link rel="stylesheet" href="../shared-libs/grid-overlay.css">
 </head>
 <body>
-    <div id="container">
-        <h1>Layers of Youth Digital Safety</h1>
-        <div class="placeholder">
-            <span class="badge">SCAFFOLD</span>
-            <h2>MicroSim Not Yet Implemented</h2>
-            <p>This MicroSim has been scaffolded from its specification but the
-            interactive content has not been built yet. See the chapter source
-            and the <code>index.md</code> in this directory for the full spec.</p>
-        </div>
-        <div class="meta">
-            <p><strong>Sim ID:</strong> youth-safety-layers</p>
-            <p><strong>Library:</strong> Interactive Infographic Overlay (grid-diagram.js, annotation-free comparison poster + rectangular hover zones)</p>
-            <p><strong>Bloom Level:</strong> Understand (L2)</p>
-            <p><strong>Learning Objective:</strong> Given one of the five youth-safety layers a club configures, the learner classifies what risk it addresses and whether the club or a family manages it.</p>
-        </div>
-    </div>
 
-    <!--
-    SPECIFICATION (from chapter index.md):
+<div id="image-wrapper">
+  <!-- image and zone overlay injected by grid-diagram.js -->
+</div>
 
-    Type: infographic-overlay (grid)
-    **sim-id:** youth-safety-layers<br/>
-    **Library:** Interactive Infographic Overlay (grid-diagram.js, annotation-free comparison poster + rectangular hover zones)<br/>
-    **Status:** Specified
-    
-    Purpose: Let a mentor see all five youth-safety layers stacked in one place, from the club's written policy foundation up through daily screen-time habits, and quickly identify which layer to check when a specific kind of problem comes up.
-    
-    Bloom Taxonomy: Understand (L2)
-    Bloom Taxonomy Verb: classify
-    
-    Learning objective: Given one of the five youth-safety layers a club configures, the learner classifies what risk it addresses and whether the club or a family manages it.
-    
-    Image style: Flat stacked-band poster, five full-width horizontal bands from bottom to top, each with a bold printed band label baked into the image since grid overlays hide chip labels by default
-    
-    Image dimensions: 1000x800 (portrait, to accommodate five stacked bands)
-    
-    Zones (5 horizontal bands, each with id, label, color, approximate x1/y1/x2/y2 percentage boundaries, one-line summary, and 3-4 bullet facts), ordered bottom to top from foundation to daily habit:
-    1. `device-security-policy` -- color #4A90D9 -- boundaries approximately x1:3,y1:80,x2:97,y2:96 -- Summary: "The written foundation every other layer above builds on." Facts: extends Chapter 3's child safety and data privacy policies onto specific device settings; covers auto-lock timing, no personal accounts on shared devices, and a lost-device procedure; managed entirely by the club
-    2. `password-management-for-kids` -- color #50C878 -- boundaries approximately x1:3,y1:62,x2:97,y2:78 -- Summary: "Age-appropriate passwords, plus a fast club-side reset process." Facts: favors memorable passphrases over complex symbol strings; a club-kept password reset log replaces adult-style self-service recovery; managed by the club
-    3. `parental-control-software` -- color #F5A623 -- boundaries approximately x1:3,y1:44,x2:97,y2:60 -- Summary: "Device-wide rules on what can run, not just which sites load." Facts: blocks unapproved app or extension installation; can enforce daily device time limits; generates usage reports; managed by the club or, for a loaned device, a family at home
-    4. `content-filtering-software` -- color #E85D75 -- boundaries approximately x1:3,y1:26,x2:97,y2:42 -- Summary: "Blocks inappropriate websites automatically, before a page loads." Facts: the technical enforcement of Chapter 3's child safety policy; works at the network or browser level; requires no mentor to be watching every screen; managed by the club
-    5. `screen-time-management` -- color #9B6BC7 -- boundaries approximately x1:3,y1:8,x2:97,y2:24 -- Summary: "The daily habit layer: alternating screen work with hands-on activity." Facts: a session-structure practice, not a device setting; pairs coding blocks with hands-on kit-building time from Chapters 19-20; managed by whichever mentor is running that session
-    
-    showLabels: false (band titles are printed in the generated image)
-    
-    Interactive features: Click or hover any band to highlight its hover zone and reveal its full fact list, including which party manages it, in a detail panel; explore mode only.
-    
-    Implementation: Interactive Infographic Overlay Guide (grid engine) -- `grid-diagram.js` + `grid-overlay.css` render the five rectangular hover zones over the generated poster image; `data.json` holds the 5 zones per the overlay-grid-data-json-schema.
-    -->
+<div id="controls">
+  <button class="mode-btn active" id="btn-explore">Explore</button>
+  <button class="mode-btn"        id="btn-quiz">Quiz Me</button>
+  <span id="quiz-score" style="display:none">
+    Score: <strong id="score-val">0</strong> / <strong id="score-total">0</strong>
+  </span>
+  <span id="edit-badge">EDIT MODE</span>
+</div>
+
+<div id="detail-panel">
+  <div id="panel-prompt">Click a layer to see what risk it addresses and who manages it.</div>
+  <div id="panel-content">
+    <div id="panel-label"></div>
+    <div id="panel-summary"></div>
+    <ul id="panel-facts"></ul>
+  </div>
+</div>
+
+<div id="quiz-question"></div>
+
+<div id="edit-panel">
+  <h3>Edit Mode — drag corner handles to calibrate zone boundaries</h3>
+  <div id="coord-display">Drag a corner handle to see live coordinates.</div>
+  <textarea id="json-output" readonly spellcheck="false"></textarea>
+  <div id="edit-actions">
+    <button id="copy-json-btn" onclick="sim.copyJSON()">Copy JSON</button>
+    <span id="copy-confirm"></span>
+  </div>
+</div>
+
+<script src="../shared-libs/grid-diagram.js"></script>
 </body>
 </html>

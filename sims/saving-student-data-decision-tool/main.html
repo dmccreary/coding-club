@@ -3,124 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- microsim-scaffold-stub -->
-    <title>Do You Actually Need This Data Field?</title>
+    <meta name="schema" content="https://dmccreary.github.io/intelligent-textbooks/ns/microsim/v1">
+    <title>Saving Student Data Decision Tool MicroSim using P5.js 1.11.10</title>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.11.10/lib/p5.js"></script>
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: #f8f9fa;
-            color: #212529;
+            margin: 0px;
+            padding: 0px;
+            font-family: Arial, Helvetica, sans-serif;
         }
-        #container {
-            width: 100%;
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 20px;
-            background: white;
-        }
-        h1 {
-            font-size: 22px;
-            margin-bottom: 10px;
-            color: #1a3a6c;
-        }
-        .placeholder {
-            border: 2px dashed #adb5bd;
-            border-radius: 8px;
-            padding: 40px 20px;
-            text-align: center;
-            color: #6c757d;
-            margin: 20px 0;
-            min-height: 400px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        .placeholder .badge {
-            display: inline-block;
-            background: #ffc107;
-            color: #212529;
-            padding: 4px 12px;
-            border-radius: 12px;
-            font-size: 12px;
-            font-weight: 600;
-            margin-bottom: 12px;
-        }
-        .placeholder h2 {
-            font-size: 18px;
-            color: #495057;
-            margin-bottom: 8px;
-        }
-        .placeholder p {
-            font-size: 14px;
-            max-width: 480px;
-        }
-        .meta {
-            margin-top: 20px;
-            font-size: 13px;
-            color: #6c757d;
-            border-top: 1px solid #dee2e6;
-            padding-top: 12px;
-        }
-        .meta strong { color: #495057; }
     </style>
+    <script src="saving-student-data-decision-tool.js"></script>
 </head>
 <body>
-    <div id="container">
-        <h1>Do You Actually Need This Data Field?</h1>
-        <div class="placeholder">
-            <span class="badge">SCAFFOLD</span>
-            <h2>MicroSim Not Yet Implemented</h2>
-            <p>This MicroSim has been scaffolded from its specification but the
-            interactive content has not been built yet. See the chapter source
-            and the <code>index.md</code> in this directory for the full spec.</p>
-        </div>
-        <div class="meta">
-            <p><strong>Sim ID:</strong> saving-student-data-decision-tool</p>
-            <p><strong>Library:</strong> p5.js</p>
-            <p><strong>Bloom Level:</strong> Evaluate (L5)</p>
-            <p><strong>Learning Objective:</strong> Given a proposed data field, the learner justifies whether the club should collect it by walking through a minimal-data-first decision path.</p>
-        </div>
-    </div>
-
-    <!--
-    SPECIFICATION (from chapter index.md):
-
-    Type: microsim
-    **sim-id:** saving-student-data-decision-tool<br/>
-    **Library:** p5.js<br/>
-    **Status:** Specified
-    **Template:** https://github.com/dmccreary/data-science-course/tree/main/docs/sims/data-selection-playground-microsim
-    
-    Purpose: Let a club leader test a proposed data field (such as "home address," "email," or "allergy") against a minimal-data-first decision path before deciding whether to collect it at all.
-    
-    Bloom Taxonomy: Evaluate (L5)
-    Bloom Taxonomy Verb: justify
-    
-    Learning objective: Given a proposed data field, the learner justifies whether the club should collect it by walking through a minimal-data-first decision path.
-    
-    Instructional Rationale: An Evaluate-level objective needs the learner to weigh a real field against explicit criteria and reach a justified decision, not watch a pre-scripted animation -- a step-through decision path with the criteria visible at each stage keeps the reasoning, not the visuals, in front of the learner.
-    
-    Canvas layout:
-    - Left (450px): the current field name plus two stacked decision questions, each answered Yes/No
-    - Right (150px): a running verdict panel reading "Collect it," "Don't collect it," or "Collect a safer substitute"
-    
-    Data Visibility Requirements:
-      Stage 1: Show the field name, typed or chosen from a dropdown of examples (name, email, home address, allergy, birthdate, photo, parent employer)
-      Stage 2: Show Question 1 -- "Does a specific, current club task need this?" -- with Yes/No buttons
-      Stage 3: If Yes, show Question 2 -- "Is there a less identifying version that would still work?" (for example, birth year instead of a full birthdate)
-      Stage 4: If a safer substitute exists, show it as the recommended field instead of the original
-      Final: Show the verdict plus a one-line reason, such as "Don't collect -- no current club task needs a home address"
-    
-    Interactive controls:
-    - Dropdown: choose an example field, or select "custom" to type one
-    - Button pair per question: "Yes" / "No"
-    - Button: "Try Another Field"
-    
-    Default parameters: Field = "Home Address"; walking the default through the two questions ends in "Don't collect it -- no current task needs it."
-    
-    Implementation notes: p5.js canvas with createSelect for the field dropdown and createButton for each Yes/No pair; store the seven example fields and their correct verdicts in a lookup table so the tool gives consistent, correct feedback regardless of the path taken; a text input allows a custom field name, in which case the tool asks both questions without a pre-loaded answer and lets the learner reason it through independently.
-    -->
+    <main></main>
+    <br/>
+    <a href=".">Back to Saving Student Data Decision Tool Lesson Plan</a>
 </body>
 </html>

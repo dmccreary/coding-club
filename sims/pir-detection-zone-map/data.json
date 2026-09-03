@@ -1,0 +1,69 @@
+{
+  "title": "PIR Detection Zone Map",
+  "orientation": "landscape",
+  "image": "pir-detection-zone-map.png",
+  "layout": "side-panel",
+  "showNumbers": true,
+  "callouts": [
+    {
+      "id": 1,
+      "label": "PIR sensor",
+      "x": 50,
+      "y": 10,
+      "radius": 5,
+      "color": "#8E44AD",
+      "hint": "A small module mounted on the wall at the top.",
+      "description": "The sensor itself. Its white plastic Fresnel lens is what splits its field of view into the separate wedges below -- the lens does the zoning, not the electronics."
+    },
+    {
+      "id": 2,
+      "label": "Detection zone (near)",
+      "x": 50,
+      "y": 32,
+      "radius": 5,
+      "color": "#F5A623",
+      "hint": "The wide, strongly tinted part of a wedge close to the sensor.",
+      "description": "Close to the sensor the wedges are narrow and strongly overlapping in coverage, so even a small movement crosses a boundary and registers."
+    },
+    {
+      "id": 3,
+      "label": "Path A: crosses zones",
+      "x": 18,
+      "y": 52,
+      "radius": 5,
+      "color": "#1ABC9C",
+      "hint": "A dotted line running straight across the room.",
+      "description": "A person walking across the fan crosses wedge after wedge, so the sensor sees repeated changes and keeps triggering."
+    },
+    {
+      "id": 4,
+      "label": "Gap between zones",
+      "x": 30,
+      "y": 58,
+      "radius": 5,
+      "color": "#34495E",
+      "hint": "A thin strip of plain floor separating two tinted wedges.",
+      "description": "The unlit gaps between wedges are what make the sensor work. Crossing from a wedge into a gap and back is the change in infrared level the sensor actually detects."
+    },
+    {
+      "id": 5,
+      "label": "Path B: stays in one zone",
+      "x": 70,
+      "y": 66,
+      "radius": 5,
+      "color": "#9B59B6",
+      "hint": "A short looping dotted line contained inside one wedge.",
+      "description": "A person who steps into one wedge and then stays inside it triggers the sensor once on entry and then nothing more. Standing still in a zone is invisible, which is the classic 'the light keeps going off' complaint."
+    },
+    {
+      "id": 6,
+      "label": "Detection zone (far)",
+      "x": 50,
+      "y": 76,
+      "radius": 5,
+      "color": "#4A90D9",
+      "hint": "The wide, faintly tinted far end of a wedge.",
+      "description": "Far from the sensor each wedge has spread out and become wide. A person can move a long way at this distance while staying inside a single zone, which is why distant motion is detected less reliably."
+    }
+  ]
+}

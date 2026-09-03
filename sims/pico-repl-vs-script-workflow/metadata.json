@@ -1,6 +1,6 @@
 {
-  "title": "REPL vs. Saved Script Workflow",
-  "description": "Given the Pico's REPL prompt, a saved test file, and a saved main.py file, the learner explains the difference between typing a command interactively and running a script automatically at power-up.",
+  "title": "Pico REPL vs Script Workflow",
+  "description": "Three ways to run code on a Pico, separated by one question: what is still running after you pull the cable out?",
   "creator": "Coding Club",
   "author": "Dan McCreary",
   "date": "2026-09-01",
@@ -15,9 +15,29 @@
   "library": "p5.js",
   "bloomLevel": "Understand (L2)",
   "bloomVerb": "explain",
-  "completion_status": "scaffold",
+  "completion_status": "built",
+  "canvasHeight": 530,
   "chapter_number": 19,
   "chapter_title": "Raspberry Pi Pico, MicroPython, and the Moving Rainbow Kit",
   "chapter_dir": "19-pico-micropython-moving-rainbow",
-  "chapter_rel_dir": "chapters/19-pico-micropython-moving-rainbow"
+  "chapter_rel_dir": "chapters/19-pico-micropython-moving-rainbow",
+  "educational": {
+    "gradeLevel": "Middle School, High School, Adult",
+    "audience": "Students moving from experiments to a finished project",
+    "duration": "10 minutes",
+    "concepts": [
+      "REPL",
+      "Script",
+      "main.py",
+      "Power Cycle",
+      "Persistence"
+    ]
+  },
+  "pedagogical": {
+    "bloomLevel": "Understand (L2)",
+    "bloomVerb": "explain",
+    "learningObjective": "Given the Pico's REPL prompt, a saved test file, and a saved main.py file, the learner explains the difference between typing a command interactively and running a script automatically at power-up.",
+    "interactionPattern": "Click each panel for what that mode is for, then power cycle and watch which light comes back",
+    "assessment": "Ask which mode a battery-powered demo needs, and why the other two fail."
+  }
 }

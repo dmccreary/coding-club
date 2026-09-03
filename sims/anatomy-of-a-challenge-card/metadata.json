@@ -1,6 +1,6 @@
 {
   "title": "Anatomy of a Challenge Card",
-  "description": "Given an unlabeled illustration of a challenge card, the learner identifies each of its required parts and what purpose it serves.",
+  "description": "Six required parts of a challenge card, and what each one is for.",
   "creator": "Coding Club",
   "author": "Dan McCreary",
   "date": "2026-09-01",
@@ -12,12 +12,32 @@
   "language": "en",
   "rights": "CC BY-NC-SA 4.0",
   "identifier": "anatomy-of-a-challenge-card",
-  "library": "Interactive Infographic Overlay (diagram.js, annotation-free illustration + numbered callouts)",
+  "library": "Infographic overlay (diagram.js)",
   "bloomLevel": "Remember (L1)",
   "bloomVerb": "identify",
-  "completion_status": "scaffold",
+  "completion_status": "built",
+  "canvasHeight": 988,
   "chapter_number": 15,
   "chapter_title": "Designing a Curriculum With Challenge Cards and Portfolios",
   "chapter_dir": "15-curriculum-challenge-cards",
-  "chapter_rel_dir": "chapters/15-curriculum-challenge-cards"
+  "chapter_rel_dir": "chapters/15-curriculum-challenge-cards",
+  "educational": {
+    "gradeLevel": "Middle School, High School, Adult",
+    "audience": "Mentors writing cards for the rack",
+    "duration": "5-10 minutes",
+    "concepts": [
+      "Challenge Card",
+      "Concept Tag",
+      "Stretch Goal",
+      "Materials List",
+      "Card Format"
+    ]
+  },
+  "pedagogical": {
+    "bloomLevel": "Remember (L1)",
+    "bloomVerb": "identify",
+    "learningObjective": "Given an unlabeled illustration of a challenge card, the learner identifies each of its required parts and what purpose it serves.",
+    "interactionPattern": "Hover any marker or label for that part and the job it does",
+    "assessment": "Name all six parts on a card with the labels covered."
+  }
 }

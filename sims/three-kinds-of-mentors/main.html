@@ -1,118 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- microsim-scaffold-stub -->
-    <title>Three Kinds of Mentors</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: #f8f9fa;
-            color: #212529;
-        }
-        #container {
-            width: 100%;
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 20px;
-            background: white;
-        }
-        h1 {
-            font-size: 22px;
-            margin-bottom: 10px;
-            color: #1a3a6c;
-        }
-        .placeholder {
-            border: 2px dashed #adb5bd;
-            border-radius: 8px;
-            padding: 40px 20px;
-            text-align: center;
-            color: #6c757d;
-            margin: 20px 0;
-            min-height: 400px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        .placeholder .badge {
-            display: inline-block;
-            background: #ffc107;
-            color: #212529;
-            padding: 4px 12px;
-            border-radius: 12px;
-            font-size: 12px;
-            font-weight: 600;
-            margin-bottom: 12px;
-        }
-        .placeholder h2 {
-            font-size: 18px;
-            color: #495057;
-            margin-bottom: 8px;
-        }
-        .placeholder p {
-            font-size: 14px;
-            max-width: 480px;
-        }
-        .meta {
-            margin-top: 20px;
-            font-size: 13px;
-            color: #6c757d;
-            border-top: 1px solid #dee2e6;
-            padding-top: 12px;
-        }
-        .meta strong { color: #495057; }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="schema" content="https://dmccreary.github.io/intelligent-textbooks/ns/microsim/v1">
+  <title>Three Kinds of Mentors — Interactive Infographic</title>
+  <link rel="stylesheet" href="../shared-libs/grid-overlay.css">
 </head>
 <body>
-    <div id="container">
-        <h1>Three Kinds of Mentors</h1>
-        <div class="placeholder">
-            <span class="badge">SCAFFOLD</span>
-            <h2>MicroSim Not Yet Implemented</h2>
-            <p>This MicroSim has been scaffolded from its specification but the
-            interactive content has not been built yet. See the chapter source
-            and the <code>index.md</code> in this directory for the full spec.</p>
-        </div>
-        <div class="meta">
-            <p><strong>Sim ID:</strong> three-kinds-of-mentors</p>
-            <p><strong>Library:</strong> Interactive Infographic Overlay (grid-diagram.js, annotation-free comparison poster + rectangular hover zones)</p>
-            <p><strong>Bloom Level:</strong> Understand (L2)</p>
-            <p><strong>Learning Objective:</strong> Given a recruiting scenario, the learner selects the mentor type whose strengths best fit the club's current need.</p>
-        </div>
-    </div>
 
-    <!--
-    SPECIFICATION (from chapter index.md):
+<div id="image-wrapper">
+  <!-- image and zone overlay injected by grid-diagram.js -->
+</div>
 
-    Type: infographic-overlay (grid)
-    **sim-id:** three-kinds-of-mentors<br/>
-    **Library:** Interactive Infographic Overlay (grid-diagram.js, annotation-free comparison poster + rectangular hover zones)<br/>
-    **Status:** Specified
-    
-    Purpose: Let a club leader compare volunteer, professional, and peer mentors side by side on the same dimensions, so recruiting decisions weigh real tradeoffs rather than treating "mentor" as one undifferentiated pool.
-    
-    Bloom Taxonomy: Understand (L2)
-    Bloom Taxonomy Verb: compare
-    
-    Learning objective: Given a recruiting scenario, the learner selects the mentor type whose strengths best fit the club's current need.
-    
-    Image style: Flat comparison poster, three vertical columns, each with a bold printed column header baked into the image ("Volunteer Mentor," "Professional Mentor," "Peer Mentor") since grid overlays hide chip labels by default
-    
-    Image dimensions: 1200x800 (landscape)
-    
-    Zones (3 columns, each with id, label, color, approximate x1/y1/x2/y2 percentage boundaries, one-line summary, and 3-6 bullet facts):
-    1. `volunteer-mentor` -- color #4A90D9 -- boundaries approximately x1:2,y1:10,x2:32,y2:92 -- Summary: "The backbone of most clubs -- unpaid adults who join for the mission." Facts: joins out of general interest, not necessarily a tech background; most flexible availability of the three types; typically the largest mentor pool; needs the most initial training via onboarding (Chapter 6)
-    2. `professional-mentor` -- color #F5A623 -- boundaries approximately x1:35,y1:10,x2:65,y2:92 -- Summary: "Deep technical expertise, but the least available time." Facts: brings real-world software or electronics experience; can mentor advanced students other mentors can't; volunteering competes with a demanding career; best used for occasional guest sessions or the most advanced track (Chapter 15)
-    3. `peer-mentor` -- color #7ED6A5 -- boundaries approximately x1:68,y1:10,x2:98,y2:92 -- Summary: "Older students mentoring younger ones -- less experience, more relatability." Facts: typically a teenager, often a club alum; explains concepts in kid-to-kid language; builds the peer mentor's own confidence (Chapter 10 covers recruitment); still requires the same background check and code-of-conduct training as an adult mentor
-    
-    showLabels: false (column titles are printed in the generated image)
-    
-    Interactive features: Click or hover any column to highlight its hover zone and reveal its full fact list in a detail panel; explore mode only (no quiz mode needed for a 3-column comparison)
-    
-    Implementation: Interactive Infographic Overlay Guide (grid engine) -- `grid-diagram.js` + `grid-overlay.css` render the three rectangular hover zones over the generated poster image; `data.json` holds the 3 zones per the overlay-grid-data-json-schema
-    -->
+<div id="controls">
+  <button class="mode-btn active" id="btn-explore">Explore</button>
+  <button class="mode-btn"        id="btn-quiz">Quiz Me</button>
+  <span id="quiz-score" style="display:none">
+    Score: <strong id="score-val">0</strong> / <strong id="score-total">0</strong>
+  </span>
+  <span id="edit-badge">EDIT MODE</span>
+</div>
+
+<div id="detail-panel">
+  <div id="panel-prompt">Click a mentor type to compare it against the others.</div>
+  <div id="panel-content">
+    <div id="panel-label"></div>
+    <div id="panel-summary"></div>
+    <ul id="panel-facts"></ul>
+  </div>
+</div>
+
+<div id="quiz-question"></div>
+
+<div id="edit-panel">
+  <h3>Edit Mode — drag corner handles to calibrate zone boundaries</h3>
+  <div id="coord-display">Drag a corner handle to see live coordinates.</div>
+  <textarea id="json-output" readonly spellcheck="false"></textarea>
+  <div id="edit-actions">
+    <button id="copy-json-btn" onclick="sim.copyJSON()">Copy JSON</button>
+    <span id="copy-confirm"></span>
+  </div>
+</div>
+
+<script src="../shared-libs/grid-diagram.js"></script>
 </body>
 </html>

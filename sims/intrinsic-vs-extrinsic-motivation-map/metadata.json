@@ -1,6 +1,6 @@
 {
   "title": "Intrinsic vs Extrinsic Motivation Map",
-  "description": "Given a proposed club motivator, the learner classifies it as primarily intrinsic, primarily extrinsic, or a well-designed blend of the two.",
+  "description": "Three columns, and the middle one is the only place a reward belongs.",
   "creator": "Coding Club",
   "author": "Dan McCreary",
   "date": "2026-09-01",
@@ -12,12 +12,31 @@
   "language": "en",
   "rights": "CC BY-NC-SA 4.0",
   "identifier": "intrinsic-vs-extrinsic-motivation-map",
-  "library": "Interactive Infographic Overlay (grid-diagram.js, annotation-free comparison poster + rectangular hover zones)",
+  "library": "Infographic overlay (grid-diagram.js)",
   "bloomLevel": "Understand (L2)",
   "bloomVerb": "classify",
-  "completion_status": "scaffold",
+  "completion_status": "built",
+  "canvasHeight": 724,
   "chapter_number": 26,
   "chapter_title": "Motivation, Badges, and Growth Mindset Coaching",
   "chapter_dir": "26-motivation-badges-growth-mindset",
-  "chapter_rel_dir": "chapters/26-motivation-badges-growth-mindset"
+  "chapter_rel_dir": "chapters/26-motivation-badges-growth-mindset",
+  "educational": {
+    "gradeLevel": "Middle School, High School, Adult",
+    "audience": "Club leaders designing badges and rewards",
+    "duration": "10 minutes",
+    "concepts": [
+      "Intrinsic Motivation",
+      "Extrinsic Motivation",
+      "Badge Design",
+      "Overjustification"
+    ]
+  },
+  "pedagogical": {
+    "bloomLevel": "Understand (L2)",
+    "bloomVerb": "classify",
+    "learningObjective": "Given a proposed club motivator, the learner classifies it as primarily intrinsic, primarily extrinsic, or a well-designed blend of the two.",
+    "interactionPattern": "Click any column to classify a motivator and see club examples",
+    "assessment": "Classify a proposed club reward and justify it."
+  }
 }

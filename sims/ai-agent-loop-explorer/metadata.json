@@ -1,6 +1,6 @@
 {
   "title": "AI Agent Loop Explorer",
-  "description": "Given a scenario, the learner explains what happens at each stage of an AI agent's loop and why the human-review stage cannot be skipped.",
+  "description": "Input, draft, human review, send -- stepped through with the real text, and one confidently wrong detail in every draft.",
   "creator": "Coding Club",
   "author": "Dan McCreary",
   "date": "2026-09-01",
@@ -15,9 +15,29 @@
   "library": "p5.js",
   "bloomLevel": "Understand (L2)",
   "bloomVerb": "explain",
-  "completion_status": "scaffold",
+  "completion_status": "built",
+  "canvasHeight": 560,
   "chapter_number": 32,
   "chapter_title": "AI Agents for Registration, Scheduling, and Communication",
   "chapter_dir": "32-ai-agents-registration-scheduling",
-  "chapter_rel_dir": "chapters/32-ai-agents-registration-scheduling"
+  "chapter_rel_dir": "chapters/32-ai-agents-registration-scheduling",
+  "educational": {
+    "gradeLevel": "Middle School, High School, Adult",
+    "audience": "Mentors introducing an AI agent to club admin",
+    "duration": "10-15 minutes",
+    "concepts": [
+      "AI Agent",
+      "Human in the Loop",
+      "Review Stage",
+      "Fluent Error",
+      "Draft and Send"
+    ]
+  },
+  "pedagogical": {
+    "bloomLevel": "Understand (L2)",
+    "bloomVerb": "explain",
+    "learningObjective": "Given a scenario, the learner explains what happens at each stage of an AI agent's loop and why the human-review stage cannot be skipped.",
+    "interactionPattern": "Step through four stages of three scenarios, and see what the unreviewed draft would have done",
+    "assessment": "Explain why stage 3 cannot be automated away."
+  }
 }

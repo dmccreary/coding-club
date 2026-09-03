@@ -1,6 +1,6 @@
 {
   "title": "Coding Club Budget Builder",
-  "description": "Given a set of named recurring and one-time cost line items and a student count, the learner calculates the total annual budget, the recurring-versus-one-time split, and the cost per student.",
+  "description": "A first-year budget built line by line, split into what recurs and what does not.",
   "creator": "Coding Club",
   "author": "Dan McCreary",
   "date": "2026-09-01",
@@ -15,9 +15,29 @@
   "library": "p5.js",
   "bloomLevel": "Apply (L3)",
   "bloomVerb": "calculate",
-  "completion_status": "scaffold",
+  "completion_status": "built",
+  "canvasHeight": 560,
   "chapter_number": 30,
   "chapter_title": "Budgeting, Fundraising, and Grant Writing",
   "chapter_dir": "30-budgeting-fundraising-grants",
-  "chapter_rel_dir": "chapters/30-budgeting-fundraising-grants"
+  "chapter_rel_dir": "chapters/30-budgeting-fundraising-grants",
+  "educational": {
+    "gradeLevel": "Middle School, High School, Adult",
+    "audience": "Club leaders preparing a funding ask",
+    "duration": "10-15 minutes",
+    "concepts": [
+      "Recurring Cost",
+      "One-Time Cost",
+      "Cost Per Student",
+      "Annual Budget",
+      "Line Item"
+    ]
+  },
+  "pedagogical": {
+    "bloomLevel": "Apply (L3)",
+    "bloomVerb": "calculate",
+    "learningObjective": "Given a set of named recurring and one-time cost line items and a student count, the learner calculates the total annual budget, the recurring-versus-one-time split, and the cost per student.",
+    "interactionPattern": "Add and remove line items, mark each recurring or one-time, and set the student count",
+    "assessment": "State both the year-one and the ongoing cost per student from the same budget."
+  }
 }

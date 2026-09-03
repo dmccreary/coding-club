@@ -3,112 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- microsim-scaffold-stub -->
-    <title>Multimeter Usage Simulator</title>
+    <meta name="schema" content="https://dmccreary.github.io/intelligent-textbooks/ns/microsim/v1">
+    <title>Multimeter Usage Simulator MicroSim using P5.js 1.11.10</title>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.11.10/lib/p5.js"></script>
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: #f8f9fa;
-            color: #212529;
+            margin: 0px;
+            padding: 0px;
+            font-family: Arial, Helvetica, sans-serif;
         }
-        #container {
-            width: 100%;
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 20px;
-            background: white;
-        }
-        h1 {
-            font-size: 22px;
-            margin-bottom: 10px;
-            color: #1a3a6c;
-        }
-        .placeholder {
-            border: 2px dashed #adb5bd;
-            border-radius: 8px;
-            padding: 40px 20px;
-            text-align: center;
-            color: #6c757d;
-            margin: 20px 0;
-            min-height: 400px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        .placeholder .badge {
-            display: inline-block;
-            background: #ffc107;
-            color: #212529;
-            padding: 4px 12px;
-            border-radius: 12px;
-            font-size: 12px;
-            font-weight: 600;
-            margin-bottom: 12px;
-        }
-        .placeholder h2 {
-            font-size: 18px;
-            color: #495057;
-            margin-bottom: 8px;
-        }
-        .placeholder p {
-            font-size: 14px;
-            max-width: 480px;
-        }
-        .meta {
-            margin-top: 20px;
-            font-size: 13px;
-            color: #6c757d;
-            border-top: 1px solid #dee2e6;
-            padding-top: 12px;
-        }
-        .meta strong { color: #495057; }
     </style>
+    <!-- The breadboard runtime library MUST load before the sim's own script -->
+    <script src="breadboard-lib.js"></script>
+    <script src="multimeter-usage-simulator.js"></script>
 </head>
 <body>
-    <div id="container">
-        <h1>Multimeter Usage Simulator</h1>
-        <div class="placeholder">
-            <span class="badge">SCAFFOLD</span>
-            <h2>MicroSim Not Yet Implemented</h2>
-            <p>This MicroSim has been scaffolded from its specification but the
-            interactive content has not been built yet. See the chapter source
-            and the <code>index.md</code> in this directory for the full spec.</p>
-        </div>
-        <div class="meta">
-            <p><strong>Sim ID:</strong> multimeter-usage-simulator</p>
-            <p><strong>Library:</strong> p5.js</p>
-            <p><strong>Bloom Level:</strong> Apply (L3)</p>
-            <p><strong>Learning Objective:</strong> Given a simple breadboard circuit, the learner demonstrates how to use a multimeter's continuity, voltage, and resistance modes to verify the circuit before and after powering it.</p>
-        </div>
-    </div>
-
-    <!--
-    SPECIFICATION (from chapter index.md):
-
-    Type: microsim
-    **sim-id:** multimeter-usage-simulator<br/>
-    **Library:** p5.js<br/>
-    **Status:** Specified<br/>
-    **Template:** https://github.com/dmccreary/automating-instructional-design/tree/main/docs/sims/ohms-law-simulator
-    
-    Purpose: Let a learner select a multimeter mode and touch simulated probes to a simple circuit, practicing the pre-power safety check described in the worked example.
-    
-    Bloom Taxonomy: Apply (L3)
-    Bloom Taxonomy Verb: demonstrate
-    
-    Learning objective: Given a simple breadboard circuit, the learner demonstrates how to use a multimeter's continuity, voltage, and resistance modes to verify the circuit before and after powering it.
-    
-    Visual elements: A drawn multimeter with a mode dial (Continuity/Voltage/Resistance) and two draggable probe tips; a simple breadboard circuit (battery, resistor, LED) as the measurement target, including a "hidden short" toggle for practice
-    
-    Interactive controls: Mode dial (click to rotate through three modes); draggable red and black probes; a "hidden short" toggle a mentor can enable to create a practice scenario
-    
-    Default parameters: Mode set to Continuity, probes unplaced, no hidden short
-    
-    Behavior: Touching both probes to the power rails in Continuity mode beeps and shows "0 ohms — SHORT" if the hidden-short toggle is on, or "open circuit" if not; Voltage mode across the resistor shows the Ohm's-law-predicted voltage drop; Resistance mode on the unpowered resistor shows its color-code value
-    
-    Implementation notes: p5.js canvas with draggable probe objects using distance-based "contact" detection against defined circuit-node coordinates; mode-dependent readout logic
-    -->
+    <main></main>
+    <br/>
+    <a href=".">Back to Multimeter Usage Simulator Lesson Plan</a>
 </body>
 </html>

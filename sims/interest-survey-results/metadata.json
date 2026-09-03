@@ -1,6 +1,6 @@
 {
   "title": "Interest Survey Results",
-  "description": "Given a set of grouped survey results, the learner interprets whether there is enough concentrated interest, in which age range, to justify starting a club.",
+  "description": "47 survey responses grouped by age range and interest level -- enough to decide whether a club is worth starting, and for whom.",
   "creator": "Coding Club",
   "author": "Dan McCreary",
   "date": "2026-09-01",
@@ -15,9 +15,28 @@
   "library": "Chart.js",
   "bloomLevel": "Analyze (L4)",
   "bloomVerb": "interpret",
-  "completion_status": "scaffold",
+  "completion_status": "built",
+  "canvasHeight": 520,
   "chapter_number": 5,
   "chapter_title": "Gauging Interest and Holding Your First Meeting",
   "chapter_dir": "05-gauging-interest-first-meeting",
-  "chapter_rel_dir": "chapters/05-gauging-interest-first-meeting"
+  "chapter_rel_dir": "chapters/05-gauging-interest-first-meeting",
+  "educational": {
+    "gradeLevel": "Middle School, High School, Adult",
+    "audience": "Prospective club founders reading survey results",
+    "duration": "10-15 minutes",
+    "concepts": [
+      "Interest Survey",
+      "Concentrated Demand",
+      "Age Banding",
+      "Stacked Bar Chart"
+    ]
+  },
+  "pedagogical": {
+    "bloomLevel": "Analyze (L4)",
+    "bloomVerb": "interpret",
+    "learningObjective": "Given a set of grouped survey results, the learner interprets whether there is enough concentrated interest, in which age range, to justify starting a club.",
+    "interactionPattern": "Hover a segment for exact counts; click a legend entry to toggle a series across all bars",
+    "assessment": "Ask which age range the club should target and what in the chart supports it."
+  }
 }
