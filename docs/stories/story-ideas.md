@@ -54,20 +54,20 @@ A mentor notices that a quiet temperature-sensor lab barely holds attention, whi
 
 ---
 
-### 3. Concept Cards Bring Focus
+### 3. Challenge Cards Bring Focus
 
 | | |
 |---|---|
 | **Setting** | A fictional coding club where students drift to phones and videos, present day, USA |
 | **Theme** | Visible structure — a tiered set of challenge cards — keeps students on task without a mentor hovering over every seat |
-| **Connection** | Challenge cards, concept challenge cards, designing and printing challenge cards, curriculum design |
+| **Connection** | Challenge cards, designing and printing challenge cards, curriculum design |
 | **Panels** | **7** — linear discovery (problem → borrowed idea → adoption → payoff) |
 
-A volunteer notices students drifting to social media between coding tasks. After learning that other clubs use color-coded "concept cards" — green for warm-ups, blue for focus work, black for team challenges — she builds and laminates her own deck, and distraction all but disappears.
+A volunteer notices students drifting to social media between coding tasks. After learning that other clubs use color-coded "challenge cards" — green for warm-ups, blue for focus work, black for team challenges — she builds and laminates her own deck, and distraction all but disappears.
 
 *Why this inspires:* It shows that a simple, visible system can out-perform constant supervision.
 
-*Already started — see [docs/stories/concept-cards/](concept-cards/index.md).*
+*Already started — see [docs/stories/challenge-cards/](challenge-cards/index.md).*
 
 ---
 

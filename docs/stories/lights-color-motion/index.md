@@ -10,7 +10,7 @@ social:
 
 # Lights, Color, Motion!
 
-<!-- ![](./cover.png) -->
+![Students gather around a glowing rainbow LED display while Peg observes](./cover.png)
 <details>
 <summary>Cover Image Prompt</summary>
 (This is the Cover Image. Do not include this label in the image.)
@@ -59,7 +59,7 @@ how hard the coding was.
 
 ## Panel 1: A Perfectly Fine Lab
 
-<!-- ![](./panel-01.png) -->
+![Two students quietly observe temperature data while Peg watches their lab](./panel-01.png)
 <details><summary>Image Prompt</summary>
 (This is Panel 01. Do not include the panel number in the image.)
 I am about to ask you to generate a series of images for a graphic
@@ -94,7 +94,7 @@ never seemed to be anyone's *favorite* lab.
 
 ## Panel 2: The Box Everyone Crosses the Room For
 
-<!-- ![](./panel-02.png) -->
+![Students cross the classroom to investigate a rainbow LED display](./panel-02.png)
 <details><summary>Image Prompt</summary>
 (This is Panel 02. Do not include the panel number in the image.)
 Please generate a 16:9 image in the same warm, contemporary
@@ -126,7 +126,7 @@ she'd ever heard about a temperature sensor.
 
 ## Panel 3: Weeks of Watching
 
-<!-- ![](./panel-03.png) -->
+![Peg compares which coding labs attract the most student attention](./panel-03.png)
 <details><summary>Image Prompt</summary>
 (This is Panel 03. Do not include the panel number in the image.)
 Please generate a 16:9 image in the same style depicting panel 3 of
@@ -155,7 +155,7 @@ of the three.
 
 ## Panel 4: Retrofitting the Boring Lab
 
-<!-- ![](./panel-04.png) -->
+![Peg adds a glowing LED strip to the temperature-sensor lab](./panel-04.png)
 <details><summary>Image Prompt</summary>
 (This is Panel 04. Do not include the panel number in the image.)
 Please generate a 16:9 image in the same style depicting panel 4 of
@@ -182,7 +182,7 @@ all — only what students could *see*.
 
 ## Panel 5: The Room Notices
 
-<!-- ![](./panel-05.png) -->
+![The redesigned temperature lab draws an excited crowd of students](./panel-05.png)
 <details><summary>Image Prompt</summary>
 (This is Panel 05. Do not include the panel number in the image.)
 Please generate a 16:9 image in the same style depicting panel 5 of
@@ -211,7 +211,7 @@ impossible to miss.
 
 ## Panel 6: A Room Full of Light
 
-<!-- ![](./panel-06.png) -->
+![Peg surveys a transformed classroom filled with light, color, and moving projects](./panel-06.png)
 <details><summary>Image Prompt</summary>
 (This is Panel 06. Do not include the panel number in the image.)
 Please generate a 16:9 image in the same style depicting panel 6 of

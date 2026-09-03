@@ -326,65 +326,41 @@ nav:
     - USB Connector Comparison: sims/usb-connector-comparison/index.md
     - Where a Coding-Help Request Goes: sims/coding-help-agent-handoff/index.md
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   - Challenge Cards:
       - Card Gallery: cards/index.md
 
+  - Stories:
+      - Overview: stories/index.md
+      - Story Ideas: stories/story-ideas.md
+      - The Broken Wires on the Motors: stories/broken-wires/index.md
+      - Lights, Color, Motion!: stories/lights-color-motion/index.md
+      - Challenge Cards Bring Focus: stories/challenge-cards/index.md
+      - Her Idea: stories/her-idea/index.md
+      - The Empty Chair: stories/empty-chair/index.md
+      - The Unfamiliar Face at the Door: stories/unfamiliar-face-at-door/index.md
+      - The Waiting List: stories/waiting-list/index.md
+      - The Sticky Notes on the Whiteboard: stories/sticky-notes-whiteboard/index.md
+      - The Bus That Never Came: stories/bus-that-never-came/index.md
+      - The Grant That Almost Wasn't: stories/grant-that-almost-wasnt/index.md
+      - The Notebook Dan Left Behind: stories/notebook-dan-left-behind/index.md
+      - The Agent That Answered at Midnight: stories/agent-answered-at-midnight/index.md
+      - First Steps Across the Threshold: stories/first-steps-across-threshold/index.md
+      - The Wall of Badges: stories/wall-of-badges/index.md
+      - Turtles All the Way Down: stories/turtles-all-the-way-down/index.md
+      - Imagine, Create, Share, Reflect: stories/imagine-create-share-reflect/index.md
+      - The Garage Where Everyone Was Welcome: stories/garage-where-everyone-was-welcome/index.md
+      - Each One Teach One: stories/each-one-teach-one/index.md
+      - Code for Every Kid: stories/code-for-every-kid/index.md
+      - The Clubhouse With No Locked Doors: stories/clubhouse-with-no-locked-doors/index.md
+
+  - Appendices:
+      - Overview: appendices/index.md
+      - Related Textbooks: appendices/releated-textbooks.md
+      - List of Forms: appendices/list-of-forms.md
+      - List of AI Agent Skills: appendices/list-of-ai-agent-skills.md
   - FAQ: faq.md
   - Glossary: glossary.md
+  - Teachers Guide: teachers-guide/index.md
   - License: license.md
   - Contact: contact.md
 

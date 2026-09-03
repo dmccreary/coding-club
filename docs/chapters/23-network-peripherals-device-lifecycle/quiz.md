@@ -152,8 +152,8 @@ Test your understanding of club network capacity planning, software and app gove
 ??? question "Show Answer"
     The correct answer is **A**. The chapter's own worked example describes exactly this problem and its fix: cloud storage for devices lets a student save to a shared cloud drive folder so the file survives a shared-account reset and can be reopened from any laptop the following week. Option B confuses offline mode, a network-resilience tool, with the actual file-persistence problem described. Option C misapplies a bookmark folder, meant for links, to a saved project file. Option D describes an unrelated troubleshooting step for a misbehaving laptop, not a file-storage solution.
 
-    **Concept Tested:** Cloud Storage For Devices
-    **See:** [Cloud Storage For Devices](../../glossary.md#cloud-storage-for-devices)
+    **Concept Tested:** Cloud Storage for Student Projects
+    **See:** [Cloud Storage for Student Projects](../../glossary.md#cloud-storage-for-student-projects)
 
 ---
 

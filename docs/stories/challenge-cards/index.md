@@ -1,16 +1,16 @@
 ---
-title: Concept Cards Bring Focus - Sally's Fix for a Distracted Room
+title: Challenge Cards Bring Focus - Sally's Fix for a Distracted Room
 description: A graphic-novel story of how one volunteer built a tiered set of green, blue, and black challenge cards to pull students back from their phones and into building.
-image: /stories/concept-cards/cover.png
-og:image: /stories/concept-cards/cover.png
-twitter:image: /stories/concept-cards/cover.png
+image: /stories/challenge-cards/cover.png
+og:image: /stories/challenge-cards/cover.png
+twitter:image: /stories/challenge-cards/cover.png
 social:
    cards: false
 ---
 
-# Concept Cards Bring Focus
+# Challenge Cards Bring Focus
 
-<!-- ![](./cover.png) -->
+![Sally guides two students through rows of green, blue, and black challenge cards spread across a classroom table](./cover.png)
 <details>
 <summary>Cover Image Prompt</summary>
 (This is the Cover Image. Do not include this label in the image.)
@@ -23,7 +23,7 @@ woman in her 30s (Sally), wearing glasses and a plain t-shirt, stands
 behind the table gesturing toward the cards while two students (a boy
 around 10, a girl around 13) lean in, reaching for cards with
 interested expressions, their phones visibly set aside on the table.
-Title text "Concept Cards Bring Focus" rendered in a bold, rounded,
+Title text "Challenge Cards Bring Focus" rendered in a bold, rounded,
 friendly sans-serif typeface. Color palette: crisp green, blue, and
 near-black card borders against a neutral classroom background, warm
 overhead lighting. Emotional tone: order emerging from distraction,
@@ -57,7 +57,7 @@ have anything pulling them back.
 
 ## Panel 1: Everyone Somewhere Else
 
-![Students drifting away from unfinished coding projects while Sally watches from the doorway](./panel-01.png)
+![Students drift into phones and videos at their computer stations while Sally watches with concern from the doorway](./panel-01.png)
 <details><summary>Image Prompt</summary>
 (This is Panel 01. Do not include the panel number in the image.)
 I am about to ask you to generate a series of images for a graphic
@@ -91,7 +91,7 @@ skills, and Sally didn't yet know how to change that.
 
 ## Panel 2: Asking Around
 
-![Sally takes notes during a video call with other coding-club volunteers](./panel-02.png)
+![Sally takes notes during an evening video call with other coding-club volunteers, one screen sharing a table of colorful cards](./panel-02.png)
 <details><summary>Image Prompt</summary>
 (This is Panel 02. Do not include the panel number in the image.)
 Please generate a 16:9 image in the same style depicting panel 2 of
@@ -110,14 +110,14 @@ Generate the image immediately without asking clarifying questions.
 </details>
 
 Sally started asking other club leaders what they did about
-distraction, and one answer kept coming up: a set of "concept cards" —
-laminated, color-coded challenge cards laid out where every student
+distraction, and one answer kept coming up: a set of "challenge
+cards" — laminated, color-coded cards laid out where every student
 could see them the moment they walked in. She'd never seen anything
 like it at her own club.
 
 ## Panel 3: Green, Blue, and Black
 
-![Green, blue, and black challenge cards arranged in three difficulty tiers](./panel-03.png)
+![Sally studies a table of green, blue, and black challenge cards arranged in three difficulty tiers, notebook in hand](./panel-03.png)
 <details><summary>Image Prompt</summary>
 (This is Panel 03. Do not include the panel number in the image.)
 Please generate a 16:9 image in the same style depicting panel 3 of
@@ -144,7 +144,7 @@ told them.
 
 ## Panel 4: Building Her Own Deck
 
-![Sally designs and prints her own challenge-card deck late at night](./panel-04.png)
+![Sally designs green, blue, and black card templates on her laptop late at night, a stack of freshly printed cards beside her](./panel-04.png)
 <details><summary>Image Prompt</summary>
 (This is Panel 04. Do not include the panel number in the image.)
 Please generate a 16:9 image in the same style depicting panel 4 of
@@ -169,7 +169,7 @@ to print.
 
 ## Panel 5: The Table Everyone Notices
 
-![Students notice the new challenge-card table as they enter the coding club](./panel-05.png)
+![Students notice a new table of green, blue, and black challenge cards as they walk into the club, one already reaching for a card](./panel-05.png)
 <details><summary>Image Prompt</summary>
 (This is Panel 05. Do not include the panel number in the image.)
 Please generate a 16:9 image in the same style depicting panel 5 of
@@ -196,7 +196,7 @@ card, and within an hour half the room had chosen one too.
 
 ## Panel 6: Phones Down, Debate Up
 
-![Two students debate a team challenge while Sally restocks the card table](./panel-06.png)
+![Two students debate a challenge over a shared tablet while Sally restocks trays of color-coded cards under a Team Challenge poster](./panel-06.png)
 <details><summary>Image Prompt</summary>
 (This is Panel 06. Do not include the panel number in the image.)
 Please generate a 16:9 image in the same style depicting panel 6 of
@@ -223,7 +223,7 @@ cards, and pitching each other ideas for cards that didn't exist yet.
 
 ## Panel 7: A Deck That Keeps Growing
 
-![Sally laminates a student-inspired card beside her growing organized collection](./panel-07.png)
+![Sally laminates a new card at her workbench beside a growing box of organized green, blue, and black cards, including one credited to a student](./panel-07.png)
 <details><summary>Image Prompt</summary>
 (This is Panel 07. Do not include the panel number in the image.)
 Please generate a 16:9 image in the same style depicting panel 7 of

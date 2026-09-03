@@ -22,8 +22,8 @@ supporting reference content.
 
 ## Front Matter
 
-- **About** — audience, prerequisites, and how to read the book
-- **Course Description** — the seed document used to generate the learning graph
+- **[About](about.md)** — audience, prerequisites, and how to read the book
+- **[Course Description](course-description.md)** — the seed document used to generate the learning graph
 
 ## Chapters
 
@@ -40,3 +40,8 @@ covered before they are used.
 
 Interactive simulations live under [MicroSims](sims/index.md). Each MicroSim
 focuses on one concept and is embeddable as an iframe inside chapter content.
+
+## Reference
+
+- **[Glossary](glossary.md)** — definitions of key terms used throughout the book
+- **[FAQ](faq.md)** — answers to common questions about coding clubs

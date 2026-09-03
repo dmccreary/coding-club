@@ -10,7 +10,7 @@ social:
 
 # Her Idea
 
-<!-- ![](./cover.png) -->
+![Laura proudly wears her glowing jellyfish costume](./cover.png)
 <details>
 <summary>Cover Image Prompt</summary>
 (This is the Cover Image. Do not include this label in the image.)
@@ -53,7 +53,7 @@ full phone battery to prove it.
 
 ## Panel 1: Arms Crossed, Phone Out
 
-<!-- ![](./panel-01.png) -->
+![Laura sits apart from the activity at the September hackathon](./panel-01.png)
 <details><summary>Image Prompt</summary>
 (This is Panel 01. Do not include the panel number in the image.)
 I am about to ask you to generate a series of images for a graphic
@@ -90,7 +90,7 @@ clear she planned to stay exactly where she was.
 
 ## Panel 2: The Morning Nobody Convinces Her
 
-<!-- ![](./panel-02.png) -->
+![Laura remains on her phone while other students explore a robot](./panel-02.png)
 <details><summary>Image Prompt</summary>
 (This is Panel 02. Do not include the panel number in the image.)
 Please generate a 16:9 image in the same style depicting panel 2 of
@@ -117,7 +117,7 @@ time more than she checked anything happening in the room.
 
 ## Panel 3: A Lanyard That Glows
 
-<!-- ![](./panel-03.png) -->
+![A glowing LED lanyard catches Laura's attention](./panel-03.png)
 <details><summary>Image Prompt</summary>
 (This is Panel 03. Do not include the panel number in the image.)
 Please generate a 16:9 image in the same style depicting panel 3 of
@@ -145,7 +145,7 @@ all day, she actually wanted to know how something worked.
 
 ## Panel 4: The Question She Didn't Plan to Ask
 
-<!-- ![](./panel-04.png) -->
+![Laura asks a mentor how the glowing lanyard works](./panel-04.png)
 <details><summary>Image Prompt</summary>
 (This is Panel 04. Do not include the panel number in the image.)
 Please generate a 16:9 image in the same style depicting panel 4 of
@@ -171,7 +171,7 @@ all around the room that she'd been ignoring all day.
 
 ## Panel 5: The Idea Arrives
 
-<!-- ![](./panel-05.png) -->
+![Laura imagines an umbrella jellyfish costume with glowing tentacles](./panel-05.png)
 <details><summary>Image Prompt</summary>
 (This is Panel 05. Do not include the panel number in the image.)
 Please generate a 16:9 image in the same style depicting panel 5 of
@@ -199,7 +199,7 @@ finished the thought.
 
 ## Panel 6: Hands On a Kit for the First Time
 
-<!-- ![](./panel-06.png) -->
+![Laura builds and programs her first LED project with a mentor](./panel-06.png)
 <details><summary>Image Prompt</summary>
 (This is Panel 06. Do not include the panel number in the image.)
 Please generate a 16:9 image in the same style depicting panel 6 of
@@ -226,7 +226,7 @@ forgotten.
 
 ## Panel 7: Still Coding at the Very End
 
-<!-- ![](./panel-07.png) -->
+![Laura keeps coding as volunteers pack up the hackathon](./panel-07.png)
 <details><summary>Image Prompt</summary>
 (This is Panel 07. Do not include the panel number in the image.)
 Please generate a 16:9 image in the same style depicting panel 7 of
@@ -254,7 +254,7 @@ their jackets, smiling in a way he hadn't dared to that morning.
 
 ## Panel 8: The Costume, and the Friends It Brought
 
-<!-- ![](./panel-08.png) -->
+![Laura's finished glowing costume inspires three friends](./panel-08.png)
 <details><summary>Image Prompt</summary>
 (This is Panel 08. Do not include the panel number in the image.)
 Please generate a 16:9 image in the same style depicting panel 8 of
@@ -312,6 +312,8 @@ way.
 —from her father's note to the event organizer
 
 ---
+
+Note: This story is based on a real event that happened to me in hackathon event in 2014.  The name of the student and the actual costume have been changed.  What has not changed is that LED costumes are great tools for engagement of creative students.
 
 ## References
 

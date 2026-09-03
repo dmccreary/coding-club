@@ -16,8 +16,8 @@ Test your understanding of sequencing curriculum tracks, designing challenge car
 ??? question "Show Answer"
     The correct answer is **D**. The chapter defines a coding challenge card as a single card describing one hands-on project, giving a student a self-contained, concrete goal without needing a mentor to explain the whole project verbally. Option A describes a skill badge, a separate reward mechanism. Option B describes a portfolio of student work, a different record entirely. Option C describes a learning map, not an individual project card.
 
-    **Concept Tested:** Coding Challenge Card
-    **See:** [Coding Challenge Card](../../glossary.md#coding-challenge-card)
+    **Concept Tested:** Challenge Card
+    **See:** [Challenge Card](../../glossary.md#challenge-card)
 
 ---
 
