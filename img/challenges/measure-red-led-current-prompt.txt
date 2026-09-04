@@ -1,0 +1,7 @@
+Generated using the built-in image generation tool.
+
+Use case: scientific-educational.
+Create a PNG illustration for the front of a Coding Club challenge card, square 1000x1000 pixels, clean white background.
+Subject: a small simplified breadboard circuit in the lower two-thirds. A lit RED LED with a soft warm amber radial glow behind its red bulb, a tan axial resistor with color bands mounted in series beside it, and two or three simple sky-blue jumper wires suggesting a complete series loop. Keep the component connections visually clear. No power supply is shown.
+Above the wire between resistor and LED, prominently place a bold italic capital "I" beside a small arrow indicating conventional current direction toward the LED, and immediately beside the I a large bold "?" noticeably larger than the I. Both marks warm amber #F5A623. These are the ONLY text characters in the entire image. They must be readable at small printed size. No equal sign.
+Style: flat vector-style educational illustration, clean lines, bold simple shapes, friendly mascot-art aesthetic. Sky blue #4A90D9 wires and accents, amber #F5A623 glow and current marks, red LED bulb, tan resistor, simple pale breadboard with minimal dark holes. Open uncluttered space around the annotation. Flat fills except the explicitly requested soft LED radial glow. No photorealism, textures, cast shadows, battery, USB cable, multimeter, labels, numbers, component names, captions, border, or watermark.

@@ -13,6 +13,8 @@ materials:
 - Small DC hobby motor
 front:
   icon: motor
+  icon_image: motor-spin.png
+  icon_image_alt: Small DC hobby motor and a three-AA battery pack, each with separate red and black wires, all disconnected.
   description: Connect a battery pack to a small DC motor and make it spin. Then figure out how to make
     it spin in the OPPOSITE direction -- without touching the motor itself!
   steps:

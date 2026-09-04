@@ -173,7 +173,7 @@ for i, ((title, slug, short, long_), (g, cids)) in enumerate(zip(CHAPTERS, chunk
     lines = [f"# {title}", "", "## Summary", "", long_, "",
              "## Concepts Covered", "",
              f"This chapter covers the following {len(cids)} concepts from the learning graph:", "",
-             "| Concept | CIS Score |", "|---------|-----------|"]
+             "| Concept | Concept Impact Score |", "|---------|-----------------------|"]
     for cid in cids:
         lines.append(f"| {nodes[cid]['label']} | {nodes[cid].get('cis', 1)} |")
     lines += ["", "## Prerequisites", ""]

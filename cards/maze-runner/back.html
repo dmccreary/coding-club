@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Maze Runner - Back (Solution)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<style>:root { --difficulty-color: #1A1A1A; --card-font: 'Inter', 'Helvetica Neue', Arial, sans-serif; }</style>
+</head>
+<body class="preview">
+<div class="panel panel--back" style="--fit-scale: 0.8;">
+  <div class="panel__title">Solution</div>
+  <div class="panel__section-label">Hints</div>
+  <ul class="panel__hints">
+    
+    <li>A maze with exactly one solution isn&#39;t placed randomly wall-by-wall -- it&#39;s grown one passage at a time, and the grower never revisits a cell.</li>
+    
+    <li>Think about how a robot vacuum finds the shortest way across a room it has never seen before -- it checks everything one step away before it checks anything two steps away.</li>
+    
+    <li>A &#34;Start&#34; button&#39;s click function shouldn&#39;t move the mouse all the way to Finish in one call -- it should move one cell, then schedule itself to run again a moment later.</li>
+    
+  </ul>
+  <div class="panel__section-label">Steps</div>
+  <ol class="panel__steps">
+    
+    <li>Grid model: a Cell class (or a dictionary keyed by (row, col)) stores each of the 32x32 grid&#39;s cells and which of its four walls -- north, south, east, west -- are still standing.</li>
+    
+    <li>Maze generation algorithm: carve_maze(grid) uses randomized depth-first search, also called the &#34;recursive backtracker&#34; algorithm, with an explicit stack of visited cells. Removing a wall only between the current cell and an unvisited neighbor is what guarantees exactly one path between any two cells.</li>
+    
+    <li>Drawing: draw_maze(grid) and draw_cell_walls(cell) use the turtle module to draw a line for every wall still standing, plus a green square for Start and a black-and-white flag shape for Finish.</li>
+    
+    <li>Pathfinding algorithm: solve_maze(grid, start, finish) runs breadth-first search (BFS) with a queue of cells to visit next. BFS is used instead of depth-first search because BFS always finds the shortest path first on an unweighted grid like this one. It returns the path as a list of (row, col) coordinates.</li>
+    
+    <li>Animation: animate_mouse(path) moves the mouse one cell per call, then uses turtle.ontimer() to schedule its own next call -- this is what makes the mouse glide through the maze instead of jumping straight to Finish.</li>
+    
+    <li>Interaction: create_start_button() adds a clickable &#34;Start&#34; button (turtle&#39;s screen supports a tkinter Button, or a second turtle used as a clickable shape) whose on-click callback calls animate_mouse(path) exactly once.</li>
+    
+  </ol>
+  
+  
+  <div class="panel__see-also">See also: The draw-a-square-turtle card and Chapter 14&#39;s Turtle Graphics and Algorithm Design sections.</div>
+  
+</div>
+</body>
+</html>

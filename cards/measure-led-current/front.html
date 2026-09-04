@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Measure the Current of a Red LED - Front</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<style>:root { --difficulty-color: #4A90D9; --card-font: 'Inter', 'Helvetica Neue', Arial, sans-serif; }</style>
+</head>
+<body class="preview">
+<div class="panel panel--front" style="--fit-scale: 0.8;">
+  <div class="panel__title">Measure the Current of a Red LED</div>
+  
+  <div class="panel__icon panel__icon--image"><img src="measure-led-current.png" alt="A breadboard circuit with a red LED and resistor in series, with a bold &#34;I&#34; and a large question mark showing the unknown current to solve for."></div>
+  
+  <div class="panel__description">Predict how much current flows through a red LED wired in series with a 220 ohm resistor on a 5-volt supply -- then prove your prediction with a multimeter.</div>
+  <div class="panel__section-label">Steps</div>
+  <ol class="panel__steps">
+    
+    <li>Gather a 5V power source, breadboard, red LED, 220 ohm resistor, jumper wires, and multimeter.</li>
+    
+    <li>Predict the current: use Ohm&#39;s Law (I = V / R) with 3V (5V minus the LED&#39;s ~2V) and 220 ohms.</li>
+    
+    <li>Wire the power source, resistor, and LED in one series loop on the breadboard.</li>
+    
+    <li>Break the loop at one point and insert the multimeter, set to DC milliamps.</li>
+    
+    <li>Power the circuit and compare the reading to your prediction.</li>
+    
+  </ol>
+  
+  <div class="panel__stretch">
+    <span class="panel__stretch-label">Stretch Goal</span>
+    Swap in a 330 ohm resistor, recalculate the predicted current, and measure again -- is the LED noticeably dimmer?
+  </div>
+  
+  <div class="panel__meta-row">
+    <span>Intermediate Card</span>
+    <span class="panel__concept-tag">Ohm&#39;s Law</span>
+  </div>
+</div>
+</body>
+</html>
