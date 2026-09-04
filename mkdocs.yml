@@ -328,6 +328,15 @@ nav:
 
   - Challenge Cards:
       - Card Gallery: cards/index.md
+      - Idea Lists:
+          - Scratch: cards/scratch.md
+          - Python Turtle Graphics: cards/python-turtle-graphics.md
+          - Python: cards/python.md
+          - Beginning Circuits: cards/beginning-circuits.md
+          - Moving Rainbow: cards/moving-rainbow.md
+          - MicroPython: cards/micropython.md
+          - Basic Robots: cards/basic-robots.md
+          - Advanced Robots: cards/advanced-robots.md
 
   - Stories:
       - Overview: stories/index.md

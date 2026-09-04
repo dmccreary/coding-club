@@ -46,6 +46,8 @@ def build_context(card: dict, theme: dict) -> dict:
     difficulty_hex = theme["colors"][difficulty_color]
     icon_key = (card.get("front", {}) or {}).get("icon")
     icon_glyph = ICON_GLYPHS.get(icon_key, ICON_GLYPHS[None])
+    icon_image = (card.get("front", {}) or {}).get("icon_image")
+    icon_image_alt = (card.get("front", {}) or {}).get("icon_image_alt")
 
     return {
         "title": card["title"],
@@ -58,6 +60,8 @@ def build_context(card: dict, theme: dict) -> dict:
         "front": card["front"],
         "back": card["back"],
         "icon_glyph": icon_glyph,
+        "icon_image": icon_image,
+        "icon_image_alt": icon_image_alt,
         "style_href": "style.css",
     }
 
@@ -84,6 +88,7 @@ def render_pdf(card_dir: Path) -> None:
         browser = p.chromium.launch()
         page = browser.new_page()
         page.goto(f"file://{sheet_html.resolve()}")
+        page.evaluate("document.fonts.ready")
         page.emulate_media(media="print")
         page.pdf(
             path=str(pdf_out),

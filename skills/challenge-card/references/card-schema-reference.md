@@ -16,7 +16,9 @@ companion.
 | `concept_tag` | string | no | short badge printed bottom-right of the front panel |
 | `kit_required` | string\|null | no | name of a physical kit, if any |
 | `materials` | string[] | no | everything the front-side steps need; cross-checked by `verify_circuit_solution.py` for circuit cards |
-| `front.icon` | string\|null | no | key into `ICON_GLYPHS` in `render_card_pdf.py` (currently: `motor`, `code`, `led`, `circuit`, or `null` for a default star) |
+| `front.icon` | string\|null | no | key into `ICON_GLYPHS` in `render_card_pdf.py` (currently: `motor`, `code`, `led`, `circuit`, or `null` for a default star); ignored when `front.icon_image` is set |
+| `front.icon_image` | string\|null | no | filename of a generated illustration in the card's own directory (e.g. `measure-led-current.png`), rendered in place of the emoji glyph at a larger size |
+| `front.icon_image_alt` | string\|null | no | alt text for `front.icon_image`; recommended whenever `icon_image` is set |
 | `front.description` | string | yes | 1-2 sentences |
 | `front.steps` | string[] | yes | numbered front-side steps |
 | `front.stretch_goal` | string\|null | no | always include one in practice, even though schema allows null |

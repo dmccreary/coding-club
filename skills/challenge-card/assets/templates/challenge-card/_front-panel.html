@@ -1,6 +1,10 @@
 <div class="panel panel--front">
   <div class="panel__title">{{ title }}</div>
+  {% if icon_image %}
+  <div class="panel__icon panel__icon--image"><img src="{{ icon_image }}" alt="{{ icon_image_alt | default('', true) }}"></div>
+  {% else %}
   <div class="panel__icon">{{ icon_glyph }}</div>
+  {% endif %}
   <div class="panel__description">{{ front.description }}</div>
   <div class="panel__section-label">Steps</div>
   <ol class="panel__steps">

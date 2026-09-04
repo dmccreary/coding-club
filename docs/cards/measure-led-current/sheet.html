@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Measure the Current of a Red LED - Print Sheet</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<style>
+  :root {
+    --difficulty-color: #4A90D9;
+    --card-font: 'Inter', 'Helvetica Neue', Arial, sans-serif;
+    --back-rotation-deg: 0deg;
+  }
+</style>
+</head>
+<body class="sheet-preview">
+  <div class="sheet">
+    <div class="panel panel--front">
+  <div class="panel__title">Measure the Current of a Red LED</div>
+  
+  <div class="panel__icon panel__icon--image"><img src="measure-led-current.png" alt="A breadboard circuit with a red LED and resistor in series, with a bold &#34;I&#34; and a large question mark showing the unknown current to solve for."></div>
+  
+  <div class="panel__description">Predict how much current flows through a red LED wired in series with a 220 ohm resistor on a 5-volt supply -- then prove your prediction with a multimeter.</div>
+  <div class="panel__section-label">Steps</div>
+  <ol class="panel__steps">
+    
+    <li>Gather a 5V power source, breadboard, red LED, 220 ohm resistor, jumper wires, and multimeter.</li>
+    
+    <li>Predict the current: use Ohm&#39;s Law (I = V / R) with 3V (5V minus the LED&#39;s ~2V) and 220 ohms.</li>
+    
+    <li>Wire the power source, resistor, and LED in one series loop on the breadboard.</li>
+    
+    <li>Break the loop at one point and insert the multimeter, set to DC milliamps.</li>
+    
+    <li>Power the circuit and compare the reading to your prediction.</li>
+    
+  </ol>
+  
+  <div class="panel__stretch">
+    <span class="panel__stretch-label">Stretch Goal</span>
+    Swap in a 330 ohm resistor, recalculate the predicted current, and measure again -- is the LED noticeably dimmer?
+  </div>
+  
+  <div class="panel__meta-row">
+    <span>Intermediate Card</span>
+    <span class="panel__concept-tag">Ohm&#39;s Law</span>
+  </div>
+</div>
+    <div class="panel panel--back">
+  <div class="panel__title">Solution</div>
+  <div class="panel__section-label">Hints</div>
+  <ul class="panel__hints">
+    
+    <li>Voltage is the push (volts); current is the flow it produces (amps). Ohm&#39;s Law connects them -- V = I x R.</li>
+    
+    <li>A lit LED eats a fairly fixed chunk of the supply voltage no matter what, about 2 volts for a red LED.</li>
+    
+    <li>A multimeter measuring current sits in series (inline), not in parallel like a voltage measurement.</li>
+    
+  </ul>
+  <div class="panel__section-label">Steps</div>
+  <ol class="panel__steps" start="4">
+    
+    <li>5V - 2V (the LED&#39;s share) = 3V left over for the resistor.</li>
+    
+    <li>I = V / R = 3V / 220 ohms = about 0.0136 amps, or 13.6 milliamps.</li>
+    
+    <li>Break the loop, insert the multimeter in series with jumper wires, set it to DC milliamps, and power the circuit.</li>
+    
+    <li>A reading near 13.6 mA confirms the prediction.</li>
+    
+  </ol>
+  
+  <div class="panel__section-label">Circuit</div>
+  <div class="panel__description" style="text-align:left;">A red LED in series with a 220 ohm resistor on a 5V supply drops about 2V across the LED, leaving 3V across the resistor. Ohm&#39;s Law (I = V / R) then predicts about 13.6 mA -- a safe, typical LED current, well under this chapter&#39;s 20 mA safety line. Measuring it for real means breaking the breadboard loop and routing current through the multimeter&#39;s DC milliamp range, in series rather than in parallel like a voltage reading. A result close to but not exactly 13.6 mA is expected, since a real LED&#39;s forward voltage varies slightly by part and brightness.</div>
+  
+  
+  <div class="panel__see-also">See also: Ohm&#39;s Law Current Calculator diagram (Chapter 16) -- this scenario matches the diagram&#39;s own 5V/220-ohm default settings.</div>
+  
+</div>
+  </div>
+</body>
+</html>

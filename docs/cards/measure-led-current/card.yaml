@@ -1,0 +1,77 @@
+schema_version: 1
+card_id: measure-led-current
+title: Measure the Current of a Red LED
+track: intermediate
+difficulty_color: blue
+chapter: 16-physical-computing-safety
+concept_ids:
+- 296
+- 295
+- 301
+concept_labels:
+- Current Basics
+- Voltage Basics
+- Multimeter Usage
+concept_tag: Ohm's Law
+kit_required: null
+materials:
+- 5V USB power source (power bank or USB wall adapter)
+- Small breadboard
+- Red LED
+- 220 ohm resistor
+- Jumper wires
+- Multimeter (set to measure DC milliamps)
+front:
+  icon: led
+  icon_image: measure-led-current.png
+  icon_image_alt: A breadboard circuit with a red LED and resistor in series, with a bold "I" and
+    a large question mark showing the unknown current to solve for.
+  description: Predict how much current flows through a red LED wired in series with a 220 ohm resistor
+    on a 5-volt supply -- then prove your prediction with a multimeter.
+  steps:
+  - Gather a 5V power source, breadboard, red LED, 220 ohm resistor, jumper wires, and multimeter.
+  - 'Predict the current: use Ohm''s Law (I = V / R) with 3V (5V minus the LED''s ~2V) and 220 ohms.'
+  - Wire the power source, resistor, and LED in one series loop on the breadboard.
+  - Break the loop at one point and insert the multimeter, set to DC milliamps.
+  - Power the circuit and compare the reading to your prediction.
+  stretch_goal: Swap in a 330 ohm resistor, recalculate the predicted current, and measure again -- is
+    the LED noticeably dimmer?
+back:
+  hints:
+  - Voltage is the push (volts); current is the flow it produces (amps). Ohm's Law connects them -- V
+    = I x R.
+  - A lit LED eats a fairly fixed chunk of the supply voltage no matter what, about 2 volts for a red
+    LED.
+  - A multimeter measuring current sits in series (inline), not in parallel like a voltage measurement.
+  solution_type: circuit
+  solution_language: null
+  solution_steps:
+  - 5V - 2V (the LED's share) = 3V left over for the resistor.
+  - I = V / R = 3V / 220 ohms = about 0.0136 amps, or 13.6 milliamps.
+  - Break the loop, insert the multimeter in series with jumper wires, set it to DC milliamps, and power
+    the circuit.
+  - A reading near 13.6 mA confirms the prediction.
+  solution_code: null
+  solution_circuit_description: A red LED in series with a 220 ohm resistor on a 5V supply drops about
+    2V across the LED, leaving 3V across the resistor. Ohm's Law (I = V / R) then predicts about 13.6
+    mA -- a safe, typical LED current, well under this chapter's 20 mA safety line. Measuring it for real
+    means breaking the breadboard loop and routing current through the multimeter's DC milliamp range,
+    in series rather than in parallel like a voltage reading. A result close to but not exactly 13.6 mA
+    is expected, since a real LED's forward voltage varies slightly by part and brightness.
+  see_also: Ohm's Law Current Calculator diagram (Chapter 16) -- this scenario matches the diagram's own
+    5V/220-ohm default settings.
+verification:
+  status: passed
+  method: circuit_consistency
+  last_run: '2026-09-03T23:04:15.538210+00:00'
+  notes: all 6 material(s) referenced in the circuit solution (consistency check only -- manual_review
+    still required before status='final')
+status: rendered
+reading_level_target: 10
+print:
+  copies_recommended: 2
+  theme: default
+author: dan.mccreary@gmail.com
+generated_by: claude skill challenge-card
+date_created: '2026-09-03'
+date_modified: '2026-09-03'

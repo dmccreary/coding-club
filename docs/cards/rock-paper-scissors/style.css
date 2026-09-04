@@ -51,6 +51,20 @@ body {
   font-size: 48pt;
 }
 
+/* A generated illustration in place of the emoji glyph -- bigger box,
+   since these carry real content (labels, marks) that the tiny 1.1in
+   emoji box would render illegibly small. */
+.panel__icon--image {
+  width: 2.6in;
+  height: 2.6in;
+}
+
+.panel__icon--image img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
 .panel__description {
   font-size: 13pt;
   line-height: 1.35;

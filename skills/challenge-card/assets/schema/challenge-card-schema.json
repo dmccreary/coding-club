@@ -20,6 +20,8 @@
       "required": ["description", "steps"],
       "properties": {
         "icon": { "type": ["string", "null"] },
+        "icon_image": { "type": ["string", "null"] },
+        "icon_image_alt": { "type": ["string", "null"] },
         "description": { "type": "string", "maxLength": 400 },
         "steps": { "type": "array", "items": { "type": "string" }, "minItems": 1 },
         "stretch_goal": { "type": ["string", "null"] }

@@ -16,6 +16,8 @@ materials:
 - Computer with Python (online coding platform or offline coding environment)
 front:
   icon: code
+  icon_image: rock-paper-scissors.png
+  icon_image_alt: A purple rock, yellow sheet of paper, and orange-handled scissors on white.
   description: Write a Python program that lets you play Rock, Paper, Scissors against the computer.
   steps:
   - Ask the player to enter 1 for Rock, 2 for Paper, or 3 for Scissors.
@@ -66,4 +68,4 @@ print:
 author: dan.mccreary@gmail.com
 generated_by: claude skill challenge-card
 date_created: '2026-08-31'
-date_modified: '2026-08-31'
+date_modified: '2026-09-04'
