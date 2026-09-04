@@ -18,8 +18,8 @@ This chapter pairs two practical topics: capturing and sharing your club's succe
 
 This chapter covers the following 17 concepts from the learning graph:
 
-| Concept | CIS Score |
-|---------|-----------|
+| Concept | Concept Impact Score |
+|---------|-----------------------|
 | Club Milestone Tracking | 45 |
 | Success Story Sharing | 44 |
 | Testimonial Collection | 43 |

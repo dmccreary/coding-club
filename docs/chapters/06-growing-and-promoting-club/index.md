@@ -18,8 +18,8 @@ Once a club exists, this chapter covers how it grows: crafting an elevator pitch
 
 This chapter covers the following 18 concepts from the learning graph:
 
-| Concept | CIS Score |
-|---------|-----------|
+| Concept | Concept Impact Score |
+|---------|-----------------------|
 | Elevator Pitch | 63 |
 | Value Proposition Statement | 62 |
 | Club Growth Strategy | 61 |

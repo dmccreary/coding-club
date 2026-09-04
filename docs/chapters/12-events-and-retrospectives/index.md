@@ -18,8 +18,8 @@ This chapter covers the operational side of running events: check-in systems, at
 
 This chapter covers the following 17 concepts from the learning graph:
 
-| Concept | CIS Score |
-|---------|-----------|
+| Concept | Concept Impact Score |
+|---------|-----------------------|
 | Registration Confirmation Email | 106 |
 | Registration Reminder Email | 105 |
 | Cancellation Policy | 104 |

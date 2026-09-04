@@ -18,8 +18,8 @@ This opening chapter defines what a coding club is and where it typically operat
 
 This chapter covers the following 18 concepts from the learning graph:
 
-| Concept | CIS Score |
-|---------|-----------|
+| Concept | Concept Impact Score |
+|---------|-----------------------|
 | Coding Club | 8883 |
 | Maker Space | 85 |
 | STEM Education | 84 |

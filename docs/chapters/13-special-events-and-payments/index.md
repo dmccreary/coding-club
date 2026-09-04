@@ -18,8 +18,8 @@ This chapter covers the event formats beyond a regular session: workshops, weekl
 
 This chapter covers the following 17 concepts from the learning graph:
 
-| Concept | CIS Score |
-|---------|-----------|
+| Concept | Concept Impact Score |
+|---------|-----------------------|
 | Weeklong Intensive Format | 17 |
 | Single Session Workshop | 16 |
 | Field Trip Coordination | 15 |

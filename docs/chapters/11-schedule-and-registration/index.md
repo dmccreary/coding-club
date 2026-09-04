@@ -18,8 +18,8 @@ This chapter compares the major scheduling models for a coding club -- alternati
 
 This chapter covers the following 18 concepts from the learning graph:
 
-| Concept | CIS Score |
-|---------|-----------|
+| Concept | Concept Impact Score |
+|---------|-----------------------|
 | Session Scheduling | 1781 |
 | Selecting A Date And Time | 169 |
 | Alternating Saturday Model | 168 |

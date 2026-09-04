@@ -18,8 +18,8 @@ This chapter covers using AI to customize curriculum and lessons to individual s
 
 This chapter covers the following 25 concepts from the learning graph:
 
-| Concept | CIS Score |
-|---------|-----------|
+| Concept | Concept Impact Score |
+|---------|-----------------------|
 | AI Bias Awareness | 25 |
 | AI Data Privacy Risk | 24 |
 | AI Tool Selection Criteria | 23 |

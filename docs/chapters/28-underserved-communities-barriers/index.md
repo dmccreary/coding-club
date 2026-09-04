@@ -18,8 +18,8 @@ This chapter covers recruiting a genuinely diverse club membership -- reaching g
 
 This chapter covers the following 13 concepts from the learning graph:
 
-| Concept | CIS Score |
-|---------|-----------|
+| Concept | Concept Impact Score |
+|---------|-----------------------|
 | Recruiting Minorities | 80 |
 | Recruiting Girls And Women | 35 |
 | Underserved Community Outreach | 34 |

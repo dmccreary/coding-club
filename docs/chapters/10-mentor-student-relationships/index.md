@@ -18,8 +18,8 @@ Building on the previous chapter, this one covers what happens after a mentor an
 
 This chapter covers the following 21 concepts from the learning graph:
 
-| Concept | CIS Score |
-|---------|-----------|
+| Concept | Concept Impact Score |
+|---------|-----------------------|
 | Mentor Check In Routine | 79 |
 | Student Check In Routine | 78 |
 | Mentor Feedback Collection | 77 |

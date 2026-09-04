@@ -18,8 +18,8 @@ This chapter covers a family of specialized project kits: gyroscope and motion k
 
 This chapter covers the following 20 concepts from the learning graph:
 
-| Concept | CIS Score |
-|---------|-----------|
+| Concept | Concept Impact Score |
+|---------|-----------------------|
 | Robot Emotion Display | 66 |
 | Display Kit | 65 |
 | Sensor Kit | 64 |

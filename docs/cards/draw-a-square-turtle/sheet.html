@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Draw a Square with Turtle Graphics - Print Sheet</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<style>
+  :root {
+    --difficulty-color: #2ECC71;
+    --card-font: 'Inter', 'Helvetica Neue', Arial, sans-serif;
+    --back-rotation-deg: 0deg;
+  }
+</style>
+</head>
+<body class="sheet-preview">
+  <div class="sheet">
+    <div class="panel panel--front">
+  <div class="panel__title">Draw a Square with Turtle Graphics</div>
+  
+  <div class="panel__icon panel__icon--image"><img src="draw-a-square-turtle.png" alt="Blue turtle facing right on an amber square path, with a clockwise arrow showing a downward right turn."></div>
+  
+  <div class="panel__description">Draw a square by repeating forward(100) and right(90) four times.</div>
+  <div class="panel__section-label">Steps</div>
+  <ol class="panel__steps">
+    
+    <li>Open the lab (see Materials): &#34;Try It Now&#34;.</li>
+    
+    <li>Create monty with monty = turtle.Turtle().</li>
+    
+    <li>Type monty.forward(100), then on a new line: monty.right(90).</li>
+    
+    <li>Repeat three more times. Run to check the square.</li>
+    
+  </ol>
+  
+  <div class="panel__stretch">
+    <span class="panel__stretch-label">Stretch Goal</span>
+    Use forward(50) to draw a smaller square inside.
+  </div>
+  
+  <div class="panel__meta-row">
+    <span>Beginner Card</span>
+    <span class="panel__concept-tag">Turtle Graphics</span>
+  </div>
+</div>
+    <div class="panel panel--back">
+  <div class="panel__title">Solution</div>
+  <div class="panel__section-label">Hints</div>
+  <ul class="panel__hints">
+    
+    <li>A turtle always turns relative to the direction it is currently facing, not relative to the screen -- right(90) is always a quarter turn from wherever it is already pointing.</li>
+    
+    <li>Four equal sides and four equal 90-degree turns is exactly what makes a shape a square; the same forward/right pair just repeats.</li>
+    
+    <li>If the last corner does not line up with the first, check that every right(90) actually ran -- a skipped or extra turn is the most common bug.</li>
+    
+  </ul>
+  <div class="panel__section-label">Steps</div>
+  <ol class="panel__steps" start="4">
+    
+    <li>Import turtle and create one Turtle instance.</li>
+    
+    <li>Call forward(100) then right(90) four separate times, one after another -- no loop needed for a shape this small.</li>
+    
+    <li>After the fourth turn, the turtle faces its original direction again and the four corners meet, closing the square.</li>
+    
+    <li>For the stretch goal, repeat the same four-step pattern with a shorter forward distance (e.g. 50) to draw a smaller square, starting from wherever the turtle currently sits.</li>
+    
+  </ol>
+  
+  <div class="panel__code">import turtle
+monty = turtle.Turtle()
+monty.shape(&#39;turtle&#39;)
+
+monty.forward(100)
+monty.right(90)
+
+monty.forward(100)
+monty.right(90)
+
+monty.forward(100)
+monty.right(90)
+
+monty.forward(100)
+monty.right(90)
+</div>
+  
+  
+  <div class="panel__see-also">See also: Sample Turtle Graphics Program (Chapter 14, Computational Thinking, Scratch &amp; Python): https://dmccreary.github.io/learning-python/python-labs/02-simple-square/ -- this card&#39;s solution matches that lab&#39;s own reference code exactly.</div>
+  
+</div>
+  </div>
+</body>
+</html>

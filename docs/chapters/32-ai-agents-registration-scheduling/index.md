@@ -18,8 +18,8 @@ This chapter introduces AI agents as tools for the club's operational work: regi
 
 This chapter covers the following 25 concepts from the learning graph:
 
-| Concept | CIS Score |
-|---------|-----------|
+| Concept | Concept Impact Score |
+|---------|-----------------------|
 | AI Agent Basics | 280 |
 | Leveraging AI Agents | 49 |
 | Planning AI Agent | 48 |

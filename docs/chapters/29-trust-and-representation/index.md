@@ -18,8 +18,8 @@ This chapter covers building trust with communities a club has not yet reached, 
 
 This chapter covers the following 13 concepts from the learning graph:
 
-| Concept | CIS Score |
-|---------|-----------|
+| Concept | Concept Impact Score |
+|---------|-----------------------|
 | Assistive Technology Option | 13 |
 | Culturally Responsive Teaching | 12 |
 | Representation In Curriculum | 11 |

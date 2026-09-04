@@ -18,8 +18,8 @@ This chapter covers saving and protecting student data, then tracking student pr
 
 This chapter covers the following 21 concepts from the learning graph:
 
-| Concept | CIS Score |
-|---------|-----------|
+| Concept | Concept Impact Score |
+|---------|-----------------------|
 | Saving Student Data | 1016 |
 | Student Data Privacy | 196 |
 | Tracking Student Progress | 195 |

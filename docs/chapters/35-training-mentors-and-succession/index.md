@@ -18,8 +18,8 @@ This capstone chapter covers advanced mentor recruiting, training curricula, and
 
 This chapter covers the following 16 concepts from the learning graph:
 
-| Concept | CIS Score |
-|---------|-----------|
+| Concept | Concept Impact Score |
+|---------|-----------------------|
 | Mentor Interview Process | 16 |
 | Mentor Training Curriculum | 15 |
 | Bringing Out Mentor Strengths | 14 |

@@ -18,8 +18,8 @@ This chapter explains how generative AI and AI agents are changing what a coding
 
 This chapter covers the following 18 concepts from the learning graph:
 
-| Concept | CIS Score |
-|---------|-----------|
+| Concept | Concept Impact Score |
+|---------|-----------------------|
 | Hybrid Club Model | 59 |
 | AI In Education | 58 |
 | Generative AI | 57 |

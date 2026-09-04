@@ -4,7 +4,7 @@ description: Authors and renders print-ready "Challenge Card" activities for thi
 license: Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)
 metadata:
   ibook:
-    version: "0.1"
+    version: "0.2.0"
     preferred-model: "sonnet"
     status: "project-local prototype -- not yet promoted to ibook-skills"
 ---
@@ -65,6 +65,31 @@ auto-verified; MicroPython/Scratch require manual review, see
 `references/solution-verification-guide.md`), `circuit` (a text
 description, checked for materials-list consistency), or `other`.
 
+### Step 1b: Author the image prompt and log the TODO
+
+**Every card needs a real illustration, not just a single emoji.**
+`front.icon` is a fallback glyph that renders until the illustration
+exists -- it is never the finished front side.
+
+1. Write `docs/cards/<card-id>/image-prompt.md`: a highly detailed,
+   paste-ready prompt describing the illustration to generate, matching
+   the depth of `docs/cards/motor-spin/image-prompt.md` and
+   `docs/cards/rock-paper-scissors/image-prompt.md`. Follow
+   `references/image-prompt-guide.md` for the required section structure
+   and level of detail -- vague prompts ("a colorful circuit") produce
+   unusable art.
+2. Run `python3 scripts/update_image_todo.py --cards-dir docs/cards`.
+   This regenerates `docs/cards/TODO.md`, the queue another agent (one
+   with image-generation tools) works from -- it lists every card that
+   has a prompt but no illustration yet, with the exact steps to close
+   the loop (generate the PNG, set `front.icon_image` /
+   `front.icon_image_alt` in `card.yaml`, re-render).
+
+Do NOT try to generate the PNG yourself as part of this skill --
+authoring the prompt and logging the TODO is the full extent of this
+step. Continue to Step 2 with the card still on its emoji fallback; it
+prints and validates fine either way.
+
 ### Step 2: Verify the solution
 
 **Never trust an authored solution without running this step.**
@@ -105,12 +130,16 @@ card) the full solution code is visible, not cut off.
 ```bash
 python3 scripts/validate_card_schema.py --card-dir docs/cards/<card-id>
 python3 scripts/generate_card_index.py --cards-dir docs/cards
+python3 scripts/update_image_todo.py --cards-dir docs/cards
 ```
 
 The first confirms schema conformance and that every `concept_ids` entry
 is a real node in the learning graph. The second regenerates
 `docs/cards/index.md`, the gallery page (already wired into this book's
-`mkdocs.yml` nav under "Challenge Cards").
+`mkdocs.yml` nav under "Challenge Cards"). The third re-syncs
+`docs/cards/TODO.md` against every card's actual `front.icon_image`
+status -- safe and cheap to re-run any time, including here even though
+Step 1b already ran it once for this card.
 
 ### Step 5 (optional): Batch print run
 

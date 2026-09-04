@@ -18,8 +18,8 @@ This chapter walks through a single session end to end: warm-up and wrap-up acti
 
 This chapter covers the following 17 concepts from the learning graph:
 
-| Concept | CIS Score |
-|---------|-----------|
+| Concept | Concept Impact Score |
+|---------|-----------------------|
 | Charging Station Setup | 17 |
 | Whiteboard Usage | 16 |
 | Session Time Block | 15 |

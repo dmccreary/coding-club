@@ -18,8 +18,8 @@ Building on basic circuits, this chapter covers the sensor types (light, tempera
 
 This chapter covers the following 18 concepts from the learning graph:
 
-| Concept | CIS Score |
-|---------|-----------|
+| Concept | Concept Impact Score |
+|---------|-----------------------|
 | Circuit Diagram Reading | 466 |
 | Sensor Basics | 465 |
 | Light Sensor | 448 |

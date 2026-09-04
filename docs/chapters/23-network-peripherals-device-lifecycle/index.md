@@ -18,8 +18,8 @@ This chapter covers the club's network setup -- Wi-Fi, guest access, and bandwid
 
 This chapter covers the following 22 concepts from the learning graph:
 
-| Concept | CIS Score |
-|---------|-----------|
+| Concept | Concept Impact Score |
+|---------|-----------------------|
 | Network Bandwidth Planning | 22 |
 | Firewall Basics For Clubs | 21 |
 | Device Software Updates | 20 |

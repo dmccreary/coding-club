@@ -18,8 +18,8 @@ This chapter opens the book's physical computing track with breadboards, resisto
 
 This chapter covers the following 19 concepts from the learning graph:
 
-| Concept | CIS Score |
-|---------|-----------|
+| Concept | Concept Impact Score |
+|---------|-----------------------|
 | Physical Computing | 3917 |
 | Electrical Safety Rules | 1256 |
 | Breadboard Basics | 491 |

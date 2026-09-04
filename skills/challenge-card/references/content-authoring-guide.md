@@ -32,6 +32,12 @@ green/blue/black mapping.
 - **`materials`**: every physical part or software tool actually needed.
   This list feeds `verify_circuit_solution.py`'s consistency check for
   circuit cards -- keep it accurate.
+- **Icon illustration**: `front.icon` alone (a single emoji) is a
+  placeholder, not a finished front side. Every card also needs a
+  detailed `image-prompt.md` and a `docs/cards/TODO.md` entry -- see
+  Step 1b in `SKILL.md` and `references/image-prompt-guide.md`. Leave
+  `front.icon_image` unset until an image-generation agent has actually
+  produced the PNG and picked it off the TODO list.
 
 ## Back side ("Solution")
 

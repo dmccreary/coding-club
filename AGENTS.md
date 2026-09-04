@@ -121,6 +121,21 @@ chapter or a sim, verify it rather than declaring success:
 3. Run any validation scripts the book provides under `scripts/`.
 4. Report honestly. If a check fails or you skipped a step, say so plainly.
 
+### Challenge card layout checks
+
+The author explicitly values checking the entire rendered card after image
+or content changes. Make this part of every similar challenge card task:
+
+1. Re-render the card HTML and printable PDF after updating its source.
+2. Inspect a screenshot of each changed card face at its intended dimensions,
+   including the title, illustration, all instructions, stretch goal, and footer.
+3. Check for overflow as well as visual fit; hidden overflow can silently clip
+   content. Compare the panel's scroll dimensions with its client dimensions.
+4. Fix clipping, overlap, or unreadable sizing while preserving the learning
+   objective. Keep changes in the source so re-rendering preserves the fix.
+5. Re-render and recheck the final version before reporting completion. Report
+   any layout checks that could not be performed.
+
 ## Content pipeline
 
 This book is built by the intelligent-textbook skill chain, roughly in order:

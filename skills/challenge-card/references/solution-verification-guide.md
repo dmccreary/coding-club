@@ -24,6 +24,38 @@ the card and the lighter-weight `sample_inputs`/`expected_output_patterns`
 check wired in for ongoing re-verification (e.g., if the card is edited
 later).
 
+## `solution_language: python`, using a GUI module (e.g. `turtle`)
+
+**Cannot run through the subprocess sandbox either, for a different
+reason than MicroPython.** `turtle` code is real, valid CPython -- it
+would execute fine on a machine with a display -- but it opens a live
+GUI window and, unlike every other card so far, produces no meaningful
+stdout to check. Running it as-is through the sandbox would either hang
+until `TIMEOUT_SECONDS` kills it (nothing ever closes the window
+headlessly) or briefly flash a real window on whatever display the
+sandbox process can reach -- neither is acceptable for an unattended
+check. This book also teaches its turtle labs through the in-browser
+**Skulpt** interpreter, not local desktop Python (see e.g.
+`https://dmccreary.github.io/learning-python/python-labs/02-simple-square/`),
+so even a headless-capable local CPython subprocess wouldn't be
+exercising the runtime students actually use.
+
+`scripts/verify_code_solution.py` detects an `import turtle` (via
+`ast.parse`, not a text search) and automatically skips execution,
+falling back to a syntax-only check (does the code parse as valid
+Python?) with `verification.method: syntax_check_manual_review`. A
+`status: passed` from that path only means "compiles" -- it is not proof
+the drawing is correct. Before trusting a turtle-based solution, verify
+the actual geometry independently: simulate the `forward`/`right` calls
+with plain trigonometry (heading -= turn angle per `right()` call,
+position += `distance * (cos(heading), sin(heading))` per `forward()`
+call) and confirm the turtle's final position and heading match what the
+shape requires (e.g. a closed square returns to its start position and
+original heading after four `forward`/`right(90)` pairs). Record that
+independent check in `verification.notes`, and require an actual human
+run (in the book's Skulpt lab or real desktop Python) before
+`status: final`, same as the MicroPython and circuit paths below.
+
 ## `solution_language: micropython`
 
 **Cannot be executed against real hardware in this pipeline.** No

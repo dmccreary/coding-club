@@ -18,8 +18,8 @@ This chapter defines the roles every coding club needs -- leader, mentor, studen
 
 This chapter covers the following 16 concepts from the learning graph:
 
-| Concept | CIS Score |
-|---------|-----------|
+| Concept | Concept Impact Score |
+|---------|-----------------------|
 | Mentor Role | 16 |
 | Student Role | 15 |
 | Parent Role | 14 |

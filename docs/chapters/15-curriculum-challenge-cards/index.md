@@ -18,8 +18,8 @@ This chapter covers how to sequence a curriculum across beginner, intermediate, 
 
 This chapter covers the following 25 concepts from the learning graph:
 
-| Concept | CIS Score |
-|---------|-----------|
+| Concept | Concept Impact Score |
+|---------|-----------------------|
 | Project Based Curriculum | 42 |
 | Curriculum Pacing Guide | 41 |
 | Beginner Track Curriculum | 40 |

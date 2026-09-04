@@ -18,8 +18,8 @@ This chapter covers purchasing decisions for club laptops and Chromebooks, then 
 
 This chapter covers the following 22 concepts from the learning graph:
 
-| Concept | CIS Score |
-|---------|-----------|
+| Concept | Concept Impact Score |
+|---------|-----------------------|
 | Laptop Purchasing | 1241 |
 | Laptop Configuration | 43 |
 | Chromebook Management | 42 |

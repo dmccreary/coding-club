@@ -18,8 +18,8 @@ This chapter covers what keeps students coming back: the balance between intrins
 
 This chapter covers the following 15 concepts from the learning graph:
 
-| Concept | CIS Score |
-|---------|-----------|
+| Concept | Concept Impact Score |
+|---------|-----------------------|
 | Motivating Students | 90 |
 | Intrinsic Motivation | 29 |
 | Extrinsic Reward System | 28 |

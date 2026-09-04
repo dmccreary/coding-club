@@ -18,8 +18,8 @@ This chapter covers the ongoing financial operations of a club: expense tracking
 
 This chapter covers the following 18 concepts from the learning graph:
 
-| Concept | CIS Score |
-|---------|-----------|
+| Concept | Concept Impact Score |
+|---------|-----------------------|
 | Budget Tracking Spreadsheet | 18 |
 | Expense Reporting Process | 17 |
 | Reimbursement Policy | 16 |

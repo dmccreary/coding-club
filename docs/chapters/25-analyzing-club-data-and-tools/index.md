@@ -18,8 +18,8 @@ This chapter goes deeper into club data: analyzing attendance and enrollment tre
 
 This chapter covers the following 21 concepts from the learning graph:
 
-| Concept | CIS Score |
-|---------|-----------|
+| Concept | Concept Impact Score |
+|---------|-----------------------|
 | Mentor Communication Log | 65 |
 | Automated Reminder System | 64 |
 | SMS Notification | 19 |

@@ -18,8 +18,8 @@ This chapter covers building a club budget from recurring and one-time costs, th
 
 This chapter covers the following 18 concepts from the learning graph:
 
-| Concept | CIS Score |
-|---------|-----------|
+| Concept | Concept Impact Score |
+|---------|-----------------------|
 | Establishing A Budget | 254 |
 | Budget Line Item | 48 |
 | Recurring Cost Planning | 47 |

@@ -18,8 +18,8 @@ This chapter covers assembling and controlling floor and table robots, including
 
 This chapter covers the following 18 concepts from the learning graph:
 
-| Concept | CIS Score |
-|---------|-----------|
+| Concept | Concept Impact Score |
+|---------|-----------------------|
 | Table Robot | 18 |
 | Collision Avoidance Robot | 17 |
 | Robot Sensor Integration | 16 |

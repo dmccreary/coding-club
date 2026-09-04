@@ -18,8 +18,8 @@ This chapter shifts from building kits to managing them: cost comparison, storag
 
 This chapter covers the following 20 concepts from the learning graph:
 
-| Concept | CIS Score |
-|---------|-----------|
+| Concept | Concept Impact Score |
+|---------|-----------------------|
 | Kit Cost Comparison | 46 |
 | Kit Reuse Strategy | 45 |
 | Kit Storage Bin | 44 |

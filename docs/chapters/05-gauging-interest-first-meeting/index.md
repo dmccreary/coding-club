@@ -18,8 +18,8 @@ Before a club exists, you need to know whether anyone wants it -- this chapter s
 
 This chapter covers the following 18 concepts from the learning graph:
 
-| Concept | CIS Score |
-|---------|-----------|
+| Concept | Concept Impact Score |
+|---------|-----------------------|
 | Gauging Interest Survey | 2434 |
 | Interest Survey Analysis | 120 |
 | Establishing A New Club | 119 |

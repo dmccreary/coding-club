@@ -18,8 +18,8 @@ This chapter covers the day-to-day encouragement work of mentoring: handling fru
 
 This chapter covers the following 15 concepts from the learning graph:
 
-| Concept | CIS Score |
-|---------|-----------|
+| Concept | Concept Impact Score |
+|---------|-----------------------|
 | Student Showcase Wall | 15 |
 | Peer Recognition Activity | 14 |
 | Encouragement Language | 13 |

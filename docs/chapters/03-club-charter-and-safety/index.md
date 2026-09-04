@@ -18,8 +18,8 @@ A club charter and a clear set of values give a coding club its backbone, and th
 
 This chapter covers the following 16 concepts from the learning graph:
 
-| Concept | CIS Score |
-|---------|-----------|
+| Concept | Concept Impact Score |
+|---------|-----------------------|
 | Club Charter | 3340 |
 | Club Values | 255 |
 | Code Of Conduct | 254 |

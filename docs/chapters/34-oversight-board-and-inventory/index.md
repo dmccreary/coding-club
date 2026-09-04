@@ -18,8 +18,8 @@ This chapter covers forming an oversight board -- its roles, meeting cadence, an
 
 This chapter covers the following 16 concepts from the learning graph:
 
-| Concept | CIS Score |
-|---------|-----------|
+| Concept | Concept Impact Score |
+|---------|-----------------------|
 | Oversight Board | 102 |
 | Board Roles And Duties | 31 |
 | Board Meeting Cadence | 30 |

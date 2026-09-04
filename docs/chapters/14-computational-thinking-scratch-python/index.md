@@ -18,8 +18,8 @@ This chapter introduces computational thinking -- decomposition, pattern recogni
 
 This chapter covers the following 25 concepts from the learning graph:
 
-| Concept | CIS Score |
-|---------|-----------|
+| Concept | Concept Impact Score |
+|---------|-----------------------|
 | Computational Thinking Skills | 1102 |
 | Decomposition Skill | 284 |
 | Pattern Recognition Skill | 283 |

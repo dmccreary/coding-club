@@ -18,8 +18,8 @@ This chapter introduces the Raspberry Pi Pico and MicroPython programming, then 
 
 This chapter covers the following 20 concepts from the learning graph:
 
-| Concept | CIS Score |
-|---------|-----------|
+| Concept | Concept Impact Score |
+|---------|-----------------------|
 | Raspberry Pi Pico | 694 |
 | MicroPython Basics | 163 |
 | MicroPython Syntax | 162 |

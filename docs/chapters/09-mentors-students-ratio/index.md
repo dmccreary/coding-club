@@ -18,8 +18,8 @@ This chapter introduces the two core people in every coding club -- mentors and 
 
 This chapter covers the following 21 concepts from the learning graph:
 
-| Concept | CIS Score |
-|---------|-----------|
+| Concept | Concept Impact Score |
+|---------|-----------------------|
 | Mentor | 2472 |
 | Student | 257 |
 | Volunteer Mentor | 133 |

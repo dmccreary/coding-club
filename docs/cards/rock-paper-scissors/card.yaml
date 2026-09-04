@@ -5,8 +5,8 @@ track: intermediate
 difficulty_color: blue
 chapter: 14-computational-thinking-scratch-python
 concept_ids:
-- 50
-- 52
+- 250
+- 248
 concept_labels:
 - Python Conditional
 - Python Variable
