@@ -74,3 +74,52 @@ partials so on-screen previews and the print sheet never drift out of
 sync with each other), then calls Playwright's `page.pdf()` against
 `sheet.html` with `emulate_media(media="print")` so the `@media print`
 CSS rules apply.
+
+## Content-fit autofit
+
+Card content (steps, hints, solution code, `see_also`) is
+author-supplied and unbounded in length -- there is no word-count cap.
+`.panel` is a fixed 8.5in-tall flex column with `overflow: hidden`, so
+before the autofit pass existed, a panel with enough content would
+silently clip text at the very bottom edge with zero warning (this is
+exactly what happened to `draw-a-square-turtle`'s back panel: the
+`see_also` URL got cut off mid-word, flush against the border, and
+looked fine in a casual glance at the HTML preview).
+
+`autofit_fit_scales()` in `render_card_pdf.py` fixes this per panel,
+independently for front and back, before the real render happens:
+
+1. Render the panel at `--fit-scale: 1` (no shrink).
+2. Measure its TRUE natural height in a headless Chromium page by
+   temporarily setting `height: auto; overflow: visible` on the
+   `.panel` element and reading `getBoundingClientRect().height` --
+   this bypasses the `overflow: hidden` clip so a too-tall panel
+   reports its real size instead of the clipped 8.5in.
+3. If that natural height leaves less than `MIN_BOTTOM_GAP_IN` (0.125in
+   -- 1/8in) of clearance before the border, shrink `--fit-scale` and
+   re-measure, up to `MAX_FIT_ATTEMPTS` (4) times or down to
+   `MIN_FIT_SCALE` (0.8 -- a 20% shrink floor chosen so body copy stays
+   readable when laminated).
+4. If even the floor scale doesn't reach the 1/8in target, print a
+   loud `WARNING` distinguishing two severities: text that will
+   actually cross the border ("TEXT WILL BE CLIPPED") vs. text that
+   fits but leaves less than 1/8in of margin. Either way the fix is to
+   shorten that panel's content in `card.yaml`, not to keep shrinking
+   fonts -- there is no floor below 0.8 because illegible-but-technically-
+   fitting text is not an acceptable outcome for a printed, laminated card.
+
+`--fit-scale` is a CSS custom property, set inline per panel
+(`_front-panel.html` / `_back-panel.html`) and consumed via
+`calc(<value> * var(--fit-scale))` on every font-size/margin/padding in
+`style.css` that scales body copy -- including the `.panel__icon` /
+`.panel__icon--image` box, since a generated illustration is often the
+single biggest reclaimable block on the front panel. `.panel__title`
+and `.panel__meta-row` are deliberately NOT scaled (title stays
+prominent; the footer row is small and fixed).
+
+This check requires Playwright (already a hard dependency of the PDF
+step). If Playwright isn't installed, `autofit_fit_scales()` prints a
+warning and leaves `--fit-scale: 1` -- content-fit is unverified in
+that case, so **Critical Gotcha #3 (read the rendered PDF) still
+applies**; the autofit pass narrows how often that manual check catches
+something, it doesn't replace it.

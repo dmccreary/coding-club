@@ -1,4 +1,4 @@
-<div class="panel panel--back">
+<div class="panel panel--back" style="--fit-scale: {{ back_fit_scale | default(1) }};">
   <div class="panel__title">Solution</div>
   <div class="panel__section-label">Hints</div>
   <ul class="panel__hints">
@@ -7,7 +7,7 @@
     {% endfor %}
   </ul>
   <div class="panel__section-label">Steps</div>
-  <ol class="panel__steps" start="{{ back.hints | length + 1 }}">
+  <ol class="panel__steps">
     {% for step in back.solution_steps %}
     <li>{{ step }}</li>
     {% endfor %}

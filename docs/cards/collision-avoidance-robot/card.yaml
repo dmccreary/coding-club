@@ -1,0 +1,88 @@
+schema_version: 1
+card_id: collision-avoidance-robot
+title: Collision-Avoidance Robot
+track: advanced
+difficulty_color: black
+chapter: 18-robots-usb-electronics-workshop
+concept_ids:
+- 321
+- 322
+- 323
+- 309
+concept_labels:
+- Collision Avoidance Robot
+- Robot Sensor Integration
+- Robot Motor Control
+- Distance Sensor
+concept_tag: Robotics
+kit_required: SmartCar chassis + Cytron board robot kit
+materials:
+- SmartCar two-wheel-drive robot chassis with two DC gear motors and wheels
+- Cytron robot control board (e.g. Maker Pi RP2040)
+- Distance sensor (ultrasonic or time-of-flight) with its mounting bracket
+- Data-capable USB cable
+- Battery pack so the robot can drive untethered
+- Computer with Thonny or another MicroPython editor
+- An open floor area to drive in, clear of anything you don't want hit
+front:
+  icon: motor
+  icon_image: collision-avoidance-robot.png
+  icon_image_alt: Two-wheeled robot with a purple control board sensing an amber obstacle with a translucent
+    blue detection cone.
+  description: Build a robot that senses obstacles, stops, backs away, and turns before a collision.
+  steps:
+  - Mount motors, wheels, and board on the chassis.
+  - Wire a forward-facing distance sensor and connect the battery pack.
+  - 'Write drive(left_speed, right_speed): -100 is full reverse; 100 is full forward.'
+  - 'Loop: drive forward while the distance exceeds your chosen stop threshold.'
+  - At the threshold, stop, back up, turn about 90 degrees, then drive forward.
+  - Test on a clear floor. Retune for reliable avoidance.
+  stretch_goal: Try a smaller space. Retune stop distance, speed, backup time, and turn angle.
+back:
+  hints:
+  - 'Four things happen in order once an obstacle gets close: stop, reverse, turn, then drive forward
+    again -- one small function per step keeps the loop readable.'
+  - A sensor reading that looks perfect on a desk can lie once it's mounted at an angle -- keep it level
+    and pointed straight ahead.
+  - '"About 90 degrees" with no encoder really means timing: how many milliseconds you leave the wheels
+    spinning in opposite directions.'
+  solution_type: code
+  solution_language: micropython
+  solution_steps:
+  - Confirm your Cytron board's motor pins and your sensor's pins (or bus) from its pinout guide.
+  - Write drive(left, right) so a -100-to-100 speed value becomes the right PWM signal on each motor pin.
+  - Write get_distance_cm() to return the sensor's live reading in centimeters.
+  - 'Loop forever: drive forward while the reading is above STOP_CM; otherwise reverse, turn, then check
+    the distance again.'
+  - Start from the chapter's numbers (20 cm, 100 ms) and retune every constant while test-driving in the
+    real room.
+  solution_code: "from machine import Pin, PWM\nfrom time import sleep_ms\nLEFT_FWD, LEFT_REV = PWM(Pin(11)),\
+    \ PWM(Pin(10))\nRIGHT_FWD, RIGHT_REV = PWM(Pin(8)), PWM(Pin(9))\nFULL = 65025\nSTOP_CM, POLL_MS, REV_MS,\
+    \ TURN_MS = 20, 100, 400, 350\n\ndef pwm(speed):\n    return int(abs(speed) / 100 * FULL)\ndef drive(left,\
+    \ right):\n    LEFT_FWD.duty_u16(pwm(left) if left > 0 else 0)\n    LEFT_REV.duty_u16(pwm(left) if\
+    \ left < 0 else 0)\n    RIGHT_FWD.duty_u16(pwm(right) if right > 0 else 0)\n    RIGHT_REV.duty_u16(pwm(right)\
+    \ if right < 0 else 0)\ndef get_distance_cm():\n    pass  # read your sensor here\n\nwhile True:\n\
+    \    if get_distance_cm() > STOP_CM:\n        drive(70, 70)\n    else:\n        drive(-60, -60)\n\
+    \        sleep_ms(REV_MS)\n        drive(60, -60)\n        sleep_ms(TURN_MS)\n    sleep_ms(POLL_MS)\n"
+  solution_circuit_description: null
+  see_also: Chapter 18's Collision Avoidance Robot section and Control Loop diagram.
+verification:
+  status: unverified
+  method: manual_review
+  last_run: null
+  notes: solution_language is micropython, which has no automated execution path in this pipeline (see
+    solution-verification-guide.md) -- verify_code_solution.py refuses to run non-python code, so it was
+    not invoked here rather than record a misleading "failed" result. The control loop was hand-traced
+    against the chapter's worked example (20 cm stop distance, 100 ms poll interval, stop -reverse-turn
+    sequence) and the drive() PWM scaling was checked against the book's -100-to-100 convention. Motor
+    pin numbers match the Maker Pi RP2040 board layout documented at https://dmccreary.github.io/stem-robots/kits/base-bot/.
+    A real hardware test-drive by a human is still required before status:final.
+status: rendered
+reading_level_target: 10
+print:
+  copies_recommended: 1
+  theme: default
+author: dan.mccreary@gmail.com
+generated_by: claude skill challenge-card
+date_created: '2026-09-04'
+date_modified: '2026-09-04'

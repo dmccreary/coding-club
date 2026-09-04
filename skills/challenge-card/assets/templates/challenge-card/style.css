@@ -30,33 +30,40 @@ body {
   display: flex;
   flex-direction: column;
   overflow: hidden;
+  /* Set per-panel via inline style by render_card_pdf.py's autofit pass --
+     shrinks body-copy font sizes/spacing just enough that content never
+     overflows into (or past) the border. 1 = no shrink. See
+     references/print-layout-guide.md "Content-fit autofit". */
+  --fit-scale: 1;
 }
 
 .panel__title {
   font-size: 28pt;
   font-weight: 700;
   text-align: center;
-  margin: 0 0 0.15in 0;
+  margin: 0 0 calc(0.15in * var(--fit-scale)) 0;
   line-height: 1.15;
 }
 
 .panel__icon {
   align-self: center;
-  width: 1.1in;
-  height: 1.1in;
-  margin-bottom: 0.15in;
+  width: calc(1.1in * var(--fit-scale));
+  height: calc(1.1in * var(--fit-scale));
+  margin-bottom: calc(0.15in * var(--fit-scale));
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 48pt;
+  font-size: calc(48pt * var(--fit-scale));
 }
 
 /* A generated illustration in place of the emoji glyph -- bigger box,
    since these carry real content (labels, marks) that the tiny 1.1in
-   emoji box would render illegibly small. */
+   emoji box would render illegibly small. This is also the single
+   biggest reclaimable block when a panel needs to shrink to fit, so it
+   scales with --fit-scale like everything else. */
 .panel__icon--image {
-  width: 2.6in;
-  height: 2.6in;
+  width: calc(2.6in * var(--fit-scale));
+  height: calc(2.6in * var(--fit-scale));
 }
 
 .panel__icon--image img {
@@ -66,49 +73,49 @@ body {
 }
 
 .panel__description {
-  font-size: 13pt;
+  font-size: calc(13pt * var(--fit-scale));
   line-height: 1.35;
-  margin: 0 0 0.2in 0;
+  margin: 0 0 calc(0.2in * var(--fit-scale)) 0;
   text-align: center;
 }
 
 .panel__section-label {
-  font-size: 11pt;
+  font-size: calc(11pt * var(--fit-scale));
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.03em;
   color: #555;
-  margin: 0.12in 0 0.06in 0;
+  margin: calc(0.12in * var(--fit-scale)) 0 calc(0.06in * var(--fit-scale)) 0;
 }
 
 .panel__steps {
-  font-size: 12.5pt;
+  font-size: calc(12.5pt * var(--fit-scale));
   line-height: 1.32;
-  margin: 0 0 0.08in 0;
+  margin: 0 0 calc(0.08in * var(--fit-scale)) 0;
   padding-left: 0.28in;
 }
 
-.panel--back .panel__steps { font-size: 11pt; line-height: 1.22; }
+.panel--back .panel__steps { font-size: calc(11pt * var(--fit-scale)); line-height: 1.22; }
 
-.panel__steps li { margin-bottom: 0.06in; }
-.panel--back .panel__steps li { margin-bottom: 0.03in; }
+.panel__steps li { margin-bottom: calc(0.06in * var(--fit-scale)); }
+.panel--back .panel__steps li { margin-bottom: calc(0.03in * var(--fit-scale)); }
 
 .panel__hints {
-  font-size: 11pt;
+  font-size: calc(11pt * var(--fit-scale));
   line-height: 1.22;
   font-style: italic;
   color: #444;
-  margin: 0 0 0.08in 0;
+  margin: 0 0 calc(0.08in * var(--fit-scale)) 0;
   padding-left: 0.28in;
 }
 
-.panel__hints li { margin-bottom: 0.03in; }
+.panel__hints li { margin-bottom: calc(0.03in * var(--fit-scale)); }
 
 .panel__stretch {
   margin-top: auto;
-  padding-top: 0.15in;
+  padding-top: calc(0.15in * var(--fit-scale));
   border-top: 1px dashed #999;
-  font-size: 11pt;
+  font-size: calc(11pt * var(--fit-scale));
   font-style: italic;
 }
 
@@ -116,24 +123,24 @@ body {
   font-weight: 700;
   font-style: normal;
   text-transform: uppercase;
-  font-size: 9.5pt;
+  font-size: calc(9.5pt * var(--fit-scale));
   letter-spacing: 0.03em;
   color: var(--difficulty-color, #4A90D9);
   display: block;
-  margin-bottom: 0.04in;
+  margin-bottom: calc(0.04in * var(--fit-scale));
 }
 
 .panel__code {
   background: #f4f4f4;
   border: 1px solid #ccc;
   border-radius: 4px;
-  padding: 0.08in;
+  padding: calc(0.08in * var(--fit-scale));
   font-family: 'SF Mono', Menlo, Consolas, monospace;
-  font-size: 7.3pt;
+  font-size: calc(7.3pt * var(--fit-scale));
   line-height: 1.22;
   white-space: pre-wrap;
   word-break: break-word;
-  margin: 0 0 0.08in 0;
+  margin: 0 0 calc(0.08in * var(--fit-scale)) 0;
 }
 
 .panel__meta-row {
@@ -156,9 +163,9 @@ body {
 }
 
 .panel__see-also {
-  font-size: 9pt;
+  font-size: calc(9pt * var(--fit-scale));
   color: #666;
-  margin-top: 0.08in;
+  margin-top: calc(0.08in * var(--fit-scale));
 }
 
 /* Standalone preview page centering (front.html / back.html only) */

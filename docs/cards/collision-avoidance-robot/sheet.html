@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Collision-Avoidance Robot - Print Sheet</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<style>
+  :root {
+    --difficulty-color: #1A1A1A;
+    --card-font: 'Inter', 'Helvetica Neue', Arial, sans-serif;
+    --back-rotation-deg: 0deg;
+  }
+</style>
+</head>
+<body class="sheet-preview">
+  <div class="sheet">
+    <div class="panel panel--front" style="--fit-scale: 0.807;">
+  <div class="panel__title">Collision-Avoidance Robot</div>
+  
+  <div class="panel__icon panel__icon--image"><img src="collision-avoidance-robot.png" alt="Two-wheeled robot with a purple control board sensing an amber obstacle with a translucent blue detection cone."></div>
+  
+  <div class="panel__description">Build a robot that senses obstacles, stops, backs away, and turns before a collision.</div>
+  <div class="panel__section-label">Steps</div>
+  <ol class="panel__steps">
+    
+    <li>Mount motors, wheels, and board on the chassis.</li>
+    
+    <li>Wire a forward-facing distance sensor and connect the battery pack.</li>
+    
+    <li>Write drive(left_speed, right_speed): -100 is full reverse; 100 is full forward.</li>
+    
+    <li>Loop: drive forward while the distance exceeds your chosen stop threshold.</li>
+    
+    <li>At the threshold, stop, back up, turn about 90 degrees, then drive forward.</li>
+    
+    <li>Test on a clear floor. Retune for reliable avoidance.</li>
+    
+  </ol>
+  
+  <div class="panel__stretch">
+    <span class="panel__stretch-label">Stretch Goal</span>
+    Try a smaller space. Retune stop distance, speed, backup time, and turn angle.
+  </div>
+  
+  <div class="panel__meta-row">
+    <span>Advanced Card</span>
+    <span class="panel__concept-tag">Robotics</span>
+  </div>
+</div>
+    <div class="panel panel--back" style="--fit-scale: 0.8;">
+  <div class="panel__title">Solution</div>
+  <div class="panel__section-label">Hints</div>
+  <ul class="panel__hints">
+    
+    <li>Four things happen in order once an obstacle gets close: stop, reverse, turn, then drive forward again -- one small function per step keeps the loop readable.</li>
+    
+    <li>A sensor reading that looks perfect on a desk can lie once it&#39;s mounted at an angle -- keep it level and pointed straight ahead.</li>
+    
+    <li>&#34;About 90 degrees&#34; with no encoder really means timing: how many milliseconds you leave the wheels spinning in opposite directions.</li>
+    
+  </ul>
+  <div class="panel__section-label">Steps</div>
+  <ol class="panel__steps">
+    
+    <li>Confirm your Cytron board&#39;s motor pins and your sensor&#39;s pins (or bus) from its pinout guide.</li>
+    
+    <li>Write drive(left, right) so a -100-to-100 speed value becomes the right PWM signal on each motor pin.</li>
+    
+    <li>Write get_distance_cm() to return the sensor&#39;s live reading in centimeters.</li>
+    
+    <li>Loop forever: drive forward while the reading is above STOP_CM; otherwise reverse, turn, then check the distance again.</li>
+    
+    <li>Start from the chapter&#39;s numbers (20 cm, 100 ms) and retune every constant while test-driving in the real room.</li>
+    
+  </ol>
+  
+  <div class="panel__code">from machine import Pin, PWM
+from time import sleep_ms
+LEFT_FWD, LEFT_REV = PWM(Pin(11)), PWM(Pin(10))
+RIGHT_FWD, RIGHT_REV = PWM(Pin(8)), PWM(Pin(9))
+FULL = 65025
+STOP_CM, POLL_MS, REV_MS, TURN_MS = 20, 100, 400, 350
+
+def pwm(speed):
+    return int(abs(speed) / 100 * FULL)
+def drive(left, right):
+    LEFT_FWD.duty_u16(pwm(left) if left &gt; 0 else 0)
+    LEFT_REV.duty_u16(pwm(left) if left &lt; 0 else 0)
+    RIGHT_FWD.duty_u16(pwm(right) if right &gt; 0 else 0)
+    RIGHT_REV.duty_u16(pwm(right) if right &lt; 0 else 0)
+def get_distance_cm():
+    pass  # read your sensor here
+
+while True:
+    if get_distance_cm() &gt; STOP_CM:
+        drive(70, 70)
+    else:
+        drive(-60, -60)
+        sleep_ms(REV_MS)
+        drive(60, -60)
+        sleep_ms(TURN_MS)
+    sleep_ms(POLL_MS)
+</div>
+  
+  
+  <div class="panel__see-also">See also: Chapter 18&#39;s Collision Avoidance Robot section and Control Loop diagram.</div>
+  
+</div>
+  </div>
+</body>
+</html>

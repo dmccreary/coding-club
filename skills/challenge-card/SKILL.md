@@ -176,3 +176,10 @@ this task is different.
    overflow at the physical page boundary; a too-long code block or step
    list will silently get cut off in the PDF even though the on-screen
    preview might scroll and look fine. There is no scroll bar on paper.
+   `render_card_pdf.py` now runs an autofit pass (see "Content-fit
+   autofit" in `references/print-layout-guide.md`) that shrinks each
+   panel's body copy just enough to keep at least 1/8in of clearance
+   before the border, and prints a `WARNING` when even its shrink floor
+   can't get there -- but that warning is only as good as the check, so
+   still open `sheet.pdf` and confirm no text sits flush against the
+   border on either face before calling a card done.

@@ -337,6 +337,7 @@ nav:
           - MicroPython: cards/micropython.md
           - Basic Robots: cards/basic-robots.md
           - Advanced Robots: cards/advanced-robots.md
+      - Printing Cards for Retail Sale: cards/printing-cards.md
 
   - Stories:
       - Overview: stories/index.md

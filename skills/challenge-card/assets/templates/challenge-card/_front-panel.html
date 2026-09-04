@@ -1,4 +1,4 @@
-<div class="panel panel--front">
+<div class="panel panel--front" style="--fit-scale: {{ front_fit_scale | default(1) }};">
   <div class="panel__title">{{ title }}</div>
   {% if icon_image %}
   <div class="panel__icon panel__icon--image"><img src="{{ icon_image }}" alt="{{ icon_image_alt | default('', true) }}"></div>
