@@ -1,0 +1,85 @@
+schema_version: 1
+card_id: maze-runner
+title: Maze Runner
+track: advanced
+difficulty_color: black
+chapter: 14-computational-thinking-scratch-python
+concept_ids:
+- 237
+- 253
+- 252
+- 251
+concept_labels:
+- Algorithm Design Skill
+- Turtle Graphics Challenge
+- Turtle Graphics
+- Python Function
+concept_tag: Algorithms
+kit_required: null
+materials:
+- Computer with Python 3 installed (the turtle and tkinter modules are built in)
+front:
+  icon: code
+  icon_image: maze-runner.png
+  icon_image_alt: A gray mouse beside a green start marker in a navy maze with a checkered finish flag.
+  description: Write a Python program that builds a 32x32 maze with exactly one guaranteed path, then
+    makes a mouse icon solve it on screen.
+  steps:
+  - Set up a 32x32 grid of cells. Give every cell all four walls closed.
+  - Carve a random maze by knocking down the wall to an unvisited neighbor, then backing up when a cell
+    has none left.
+  - Mark the top-left cell as a green "Start" square and the bottom-right cell as a checkered "Finish"
+    flag.
+  - Draw every cell's remaining walls as lines so the maze is visible.
+  - Find the one guaranteed path from Start to Finish and save it as a list of moves.
+  - Draw a small mouse icon standing on the Start cell.
+  - Add a "Start" button. When clicked, it should move the mouse one cell at a time along the saved path.
+  stretch_goal: Show a live counter of how many cells the maze generator visited while carving the maze,
+    and another counter for how many steps the mouse takes to solve it.
+back:
+  hints:
+  - A maze with exactly one solution isn't placed randomly wall-by-wall -- it's grown one passage at a
+    time, and the grower never revisits a cell.
+  - Think about how a robot vacuum finds the shortest way across a room it has never seen before -- it
+    checks everything one step away before it checks anything two steps away.
+  - A "Start" button's click function shouldn't move the mouse all the way to Finish in one call -- it
+    should move one cell, then schedule itself to run again a moment later.
+  solution_type: other
+  solution_language: null
+  solution_steps:
+  - 'Grid model: a Cell class (or a dictionary keyed by (row, col)) stores each of the 32x32 grid''s cells
+    and which of its four walls -- north, south, east, west -- are still standing.'
+  - 'Maze generation algorithm: carve_maze(grid) uses randomized depth-first search, also called the "recursive
+    backtracker" algorithm, with an explicit stack of visited cells. Removing a wall only between the
+    current cell and an unvisited neighbor is what guarantees exactly one path between any two cells.'
+  - 'Drawing: draw_maze(grid) and draw_cell_walls(cell) use the turtle module to draw a line for every
+    wall still standing, plus a green square for Start and a black-and-white flag shape for Finish.'
+  - 'Pathfinding algorithm: solve_maze(grid, start, finish) runs breadth-first search (BFS) with a queue
+    of cells to visit next. BFS is used instead of depth-first search because BFS always finds the shortest
+    path first on an unweighted grid like this one. It returns the path as a list of (row, col) coordinates.'
+  - 'Animation: animate_mouse(path) moves the mouse one cell per call, then uses turtle.ontimer() to schedule
+    its own next call -- this is what makes the mouse glide through the maze instead of jumping straight
+    to Finish.'
+  - 'Interaction: create_start_button() adds a clickable "Start" button (turtle''s screen supports a tkinter
+    Button, or a second turtle used as a clickable shape) whose on-click callback calls animate_mouse(path)
+    exactly once.'
+  solution_code: null
+  solution_circuit_description: null
+  see_also: The draw-a-square-turtle card and Chapter 14's Turtle Graphics and Algorithm Design sections.
+verification:
+  status: not_applicable
+  method: manual_review
+  last_run: null
+  notes: solution_type is "other" by design -- the back lists the functions and algorithms used (recursive-backtracker
+    maze generation, BFS pathfinding, timer-based animation) rather than full working code, so neither
+    verify_code_solution.py nor verify_circuit_solution.py applies. A human should implement the described
+    functions and run the program before status advances past proofed.
+status: rendered
+reading_level_target: 10
+print:
+  copies_recommended: 1
+  theme: default
+author: dan.mccreary@gmail.com
+generated_by: claude skill challenge-card
+date_created: '2026-09-04'
+date_modified: '2026-09-04'

@@ -328,6 +328,35 @@ Researchers at MIT's Media Lab partner with Boston's Computer Museum to open an 
 
 ---
 
+### 21. AI Racing League
+
+| | |
+|---|---|
+| **Setting** | A fictional suburban home and public high school, present day, USA |
+| **Theme** | Coding clubs often find their best resource in a local retired engineer looking for purpose |
+| **Connection** | Leveraging retired-engineer mentors; Recruiting Minorities and Women; Working with Under Served Communities; Writing Grants; a club's growth into a multi-school league |
+| **Panels** | **13** — linear discovery with a real struggle arc (retirement → restlessness → challenge → discovery → skeptical pitch → demo → grant → weak sign-up → dead batteries → buggy software → race day → spread → payoff) |
+
+Charlie, a gray-haired, Hawaiian-shirted retired engineer, drives his
+wife Joan crazy puttering around a house with nothing left to fix
+until she tells him to "get a hobby." A midnight video about
+"Donkey Car" — a Raspberry Pi and camera mounted on a 1/16-scale RC
+car, trained with machine learning to drive itself — sends him to a
+skeptical principal at his local high school with a pitch built
+around reaching underserved youth and girls. A working demo wins her
+over, a $2,000 grant buys a GPU and three car kits, and
+the club he starts takes over the school gym for races (first to
+finish training and complete ten laps wins) before spreading to
+other schools entirely.
+
+*Why this inspires:* It shows mentors that the resource they need
+most may already be retired and two blocks away, just waiting to be
+asked.
+
+*Already started — see [docs/stories/ai-racing-league/](ai-racing-league/index.md).*
+
+---
+
 ## How to Generate a Story
 
 To turn any of these ideas into a full graphic novel with generated

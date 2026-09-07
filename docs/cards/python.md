@@ -119,3 +119,11 @@ new grade and compute the average, then create several `Student` objects and loo
 over them to print a class-wide report. A genuine first encounter with
 object-oriented Python, often attempted with a partner. Stretch goal: add a method
 that returns a letter grade based on the computed average.
+
+### Maze Runner
+
+Create a new Python program that builds a 2-D maze on a 32x32 grid.  The program
+first designs the maze so there and green "Start" in the upper left and
+a "Finish" checkered flag in the lower right.  There is one guaranteed solution to the maze.
+When the maze is done, draw a small mouse icon that moves through the maze.  A button
+labeled "Start" will start the mouse movement through the maze.

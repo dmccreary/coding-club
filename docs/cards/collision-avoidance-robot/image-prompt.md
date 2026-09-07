@@ -31,6 +31,13 @@ all sides.
 
 ## The robot
 
+Both drive wheels must sit near the front of the chassis, the end carrying
+the distance sensor. Their hub centers align along a transverse axle line
+in perspective, at the same distance behind the front edge. The far-side
+wheel must not drift toward the rear behind the control board. Keep the
+small caster at the rear. This wheel placement was corrected with the
+built-in image generation tool after author review.
+
 The chassis is a flat, rounded-rectangle clear or light-gray acrylic
 platform, seen at a three-quarter angle, with two large black rubber
 wheels with visible tire tread, one mounted near the front-left and one

@@ -356,6 +356,7 @@ nav:
       - The Agent That Answered at Midnight: stories/agent-answered-at-midnight/index.md
       - First Steps Across the Threshold: stories/first-steps-across-threshold/index.md
       - The Wall of Badges: stories/wall-of-badges/index.md
+      - AI Racing League: stories/ai-racing-league/index.md
       - Turtles All the Way Down: stories/turtles-all-the-way-down/index.md
       - Imagine, Create, Share, Reflect: stories/imagine-create-share-reflect/index.md
       - The Garage Where Everyone Was Welcome: stories/garage-where-everyone-was-welcome/index.md
@@ -454,6 +455,8 @@ exclude_docs: |
   **/cover-prompt.md
   **/TODO.md
   **/spec-tracker.md
+  img/cover-image-prompt.md
+  img/mascot/character-sheet.md
 
 # Rebuild on changes during `mkdocs serve`
 watch:

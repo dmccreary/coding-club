@@ -183,3 +183,29 @@ this task is different.
    can't get there -- but that warning is only as good as the check, so
    still open `sheet.pdf` and confirm no text sits flush against the
    border on either face before calling a card done.
+4. **The icon box sizes to the image's real aspect ratio -- do not
+   re-introduce a fixed square box.** `.panel__icon--image` in
+   `assets/templates/challenge-card/style.css` sets `width: 2.6in;
+   height: auto;` and its `img` is `width: 100%; height: auto;` (no
+   `object-fit`). This was a real bug, not a style preference: an earlier
+   version fixed the box at `2.6in` x `2.6in` with `object-fit: contain`,
+   which is correct for a square illustration but silently wastes about
+   half the box's height on a 2:1 landscape illustration (this book's
+   other recommended aspect ratio, per `references/image-prompt-guide.md`)
+   -- confirmed by rendering `collision-avoidance-robot`'s 1774x887 image
+   and seeing a large empty gap above and below it in `front.html`/
+   `sheet.pdf`. If you ever need to cap an illustration's height (e.g. an
+   unusually tall canvas), constrain `height` with `max-height` on the box
+   rather than going back to a fixed square -- and re-render + read the
+   PDF for both a square and a landscape card to confirm neither
+   regresses.
+5. **The back panel's solution-steps numbering must start at 1, not
+   `hints.length + 1`.** `_back-panel.html`'s `<ol class="panel__steps">`
+   used to carry `start="{{ back.hints | length + 1 }}"`, which made a
+   card with 3 hints render its solution steps as "4. Import the random
+   module." instead of "1." -- hints are a bulleted `<ul>`, not part of
+   the same numbered sequence, so there was never a real reason to offset
+   the count. Confirmed by rendering `rock-paper-scissors/sheet.pdf`
+   before and after removing the `start` attribute. If a future template
+   change reintroduces any `start=` on that `<ol>`, re-render an existing
+   code-type card and read the PDF to confirm the steps still begin at 1.

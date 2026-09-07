@@ -39,13 +39,17 @@ AI) could follow with no follow-up questions is the bar.
    three AA batteries").
 
 3. **`## Composition`** -- canvas shape and roughly where things sit.
-   This card style displays the image inside a `2.6in` square icon box
-   with `object-fit: contain`, so both a square canvas (`measure-led-current`,
-   1000x1000) and a wide landscape canvas (`motor-spin`, `rock-paper-scissors`,
-   ~1774x887, 2:1) work fine -- pick whichever suits the subject. State
-   the aspect ratio and pixel dimensions explicitly. Call out a clean
-   white (or transparent) background, no horizon/tabletop/room, and that
-   every element must stay fully inside the frame.
+   This card style displays the image inside an icon box that is `2.6in`
+   wide with its height set by the image's own aspect ratio (`width: 2.6in;
+   height: auto;` -- see the "Icon box sizes to the image's real aspect
+   ratio" gotcha below), so both a square canvas (`measure-led-current`,
+   1000x1000, renders at 2.6in x 2.6in) and a wide landscape canvas
+   (`motor-spin`, `rock-paper-scissors`, `collision-avoidance-robot`,
+   ~1774x887, 2:1, renders at 2.6in x 1.3in) work fine with no wasted
+   padding -- pick whichever suits the subject. State the aspect ratio and
+   pixel dimensions explicitly. Call out a clean white (or transparent)
+   background, no horizon/tabletop/room, and that every element must stay
+   fully inside the frame.
 
 4. **One subsection per key object/element** -- for anything with more
    than one or two visual parts, give each its own `##` or `###`

@@ -32,6 +32,8 @@ for this book.
 
 -   **[Challenge Cards Bring Focus](./challenge-cards/index.md)**
 
+    ![Challenge Cards Bring Focus](./challenge-cards/cover.png)
+
     Distracted students, phones out, nothing pulling them back -- until a tiered set of green, blue, and black challenge cards gives every student an obvious next move.
 
 -   **[Her Idea](./her-idea/index.md)**
@@ -99,6 +101,12 @@ for this book.
     ![The Wall of Badges](./wall-of-badges/cover.png)
 
     A student who quietly believes coding "isn't for people like her" earns one small badge -- and starts choosing harder challenges on purpose.
+
+-   **[AI Racing League](./ai-racing-league/index.md)**
+
+    <!-- ![AI Racing League](./ai-racing-league/cover.png) -->
+
+    A restless retired engineer in a loud Hawaiian shirt discovers self-driving RC cars, wins a $2,000 grant, and turns his high school gym into an AI racetrack that spreads to schools across town.
 
 -   **[Turtles All the Way Down](./turtles-all-the-way-down/index.md)**
 

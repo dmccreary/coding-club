@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Maze Runner - Front</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<style>:root { --difficulty-color: #1A1A1A; --card-font: 'Inter', 'Helvetica Neue', Arial, sans-serif; }</style>
+</head>
+<body class="preview">
+<div class="panel panel--front" style="--fit-scale: 0.818;">
+  <div class="panel__title">Maze Runner</div>
+  
+  <div class="panel__icon panel__icon--image"><img src="maze-runner.png" alt="A gray mouse beside a green start marker in a navy maze with a checkered finish flag."></div>
+  
+  <div class="panel__description">Write a Python program that builds a 32x32 maze with exactly one guaranteed path, then makes a mouse icon solve it on screen.</div>
+  <div class="panel__section-label">Steps</div>
+  <ol class="panel__steps">
+    
+    <li>Set up a 32x32 grid of cells. Give every cell all four walls closed.</li>
+    
+    <li>Carve a random maze by knocking down the wall to an unvisited neighbor, then backing up when a cell has none left.</li>
+    
+    <li>Mark the top-left cell as a green &#34;Start&#34; square and the bottom-right cell as a checkered &#34;Finish&#34; flag.</li>
+    
+    <li>Draw every cell&#39;s remaining walls as lines so the maze is visible.</li>
+    
+    <li>Find the one guaranteed path from Start to Finish and save it as a list of moves.</li>
+    
+    <li>Draw a small mouse icon standing on the Start cell.</li>
+    
+    <li>Add a &#34;Start&#34; button. When clicked, it should move the mouse one cell at a time along the saved path.</li>
+    
+  </ol>
+  
+  <div class="panel__stretch">
+    <span class="panel__stretch-label">Stretch Goal</span>
+    Show a live counter of how many cells the maze generator visited while carving the maze, and another counter for how many steps the mouse takes to solve it.
+  </div>
+  
+  <div class="panel__meta-row">
+    <span>Advanced Card</span>
+    <span class="panel__concept-tag">Algorithms</span>
+  </div>
+</div>
+</body>
+</html>
