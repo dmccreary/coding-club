@@ -369,9 +369,11 @@ nav:
       - Related Textbooks: appendices/releated-textbooks.md
       - List of Forms: appendices/list-of-forms.md
       - List of AI Agent Skills: appendices/list-of-ai-agent-skills.md
+      - Automating Volunteer Background Checks: appendices/automated-background-checks/index.md
   - FAQ: faq.md
   - Glossary: glossary.md
   - Teachers Guide: teachers-guide/index.md
+
   - License: license.md
   - Contact: contact.md
 
