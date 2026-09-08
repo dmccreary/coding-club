@@ -18,8 +18,11 @@
         <link rel="next" href="quiz/">
       
       
+        
+      
+      
       <link rel="icon" href="../../img/favicon.ico">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.43">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.0">
     
     
       
@@ -27,10 +30,10 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.0253249f.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.618322db.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
       
       
 
@@ -69,34 +72,20 @@
 
     
     
-      
-        <meta property="og:type" content="website">
-      
-        <meta property="og:title" content="Raspberry Pi Pico, MicroPython, and the Moving Rainbow Kit - Coding Club">
-      
-        <meta property="og:description" content="Introduces the Raspberry Pi Pico and MicroPython, then applies both to wiring and programming the club's Moving Rainbow LED kit, including seasonal patterns and an overview of robot and robot-face kits.">
-      
-        <meta property="og:image" content="https://dmccreary.github.io/coding-club/assets/images/social/chapters/19-pico-micropython-moving-rainbow/index.png">
-      
-        <meta property="og:image:type" content="image/png">
-      
-        <meta property="og:image:width" content="1200">
-      
-        <meta property="og:image:height" content="630">
-      
-        <meta property="og:url" content="https://dmccreary.github.io/coding-club/chapters/19-pico-micropython-moving-rainbow/">
-      
-        <meta name="twitter:card" content="summary_large_image">
-      
-        <meta name="twitter:title" content="Raspberry Pi Pico, MicroPython, and the Moving Rainbow Kit - Coding Club">
-      
-        <meta name="twitter:description" content="Introduces the Raspberry Pi Pico and MicroPython, then applies both to wiring and programming the club's Moving Rainbow LED kit, including seasonal patterns and an overview of robot and robot-face kits.">
-      
-        <meta name="twitter:image" content="https://dmccreary.github.io/coding-club/assets/images/social/chapters/19-pico-micropython-moving-rainbow/index.png">
-      
-    
-    
-  <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"><script src="../../assets/javascripts/glightbox.min.js"></script><style id="glightbox-style">
+  
+<meta property="og:type" content="website">
+<meta property="og:title" content="Raspberry Pi Pico, MicroPython, and the Moving Rainbow Kit - Coding Club">
+<meta property="og:description" content="Introduces the Raspberry Pi Pico and MicroPython, then applies both to wiring and programming the club's Moving Rainbow LED kit, including seasonal patterns and an overview of robot and robot-face kits.">
+<meta property="og:image" content="https://dmccreary.github.io/coding-club/assets/images/social/chapters/19-pico-micropython-moving-rainbow/index.png">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:url" content="https://dmccreary.github.io/coding-club/chapters/19-pico-micropython-moving-rainbow/">
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:title" content="Raspberry Pi Pico, MicroPython, and the Moving Rainbow Kit - Coding Club">
+<meta property="twitter:description" content="Introduces the Raspberry Pi Pico and MicroPython, then applies both to wiring and programming the club's Moving Rainbow LED kit, including seasonal patterns and an overview of robot and robot-face kits.">
+<meta property="twitter:image" content="https://dmccreary.github.io/coding-club/assets/images/social/chapters/19-pico-micropython-moving-rainbow/index.png">
+<link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"><script src="../../assets/javascripts/glightbox.min.js"></script><style id="glightbox-style">
             html.glightbox-open { overflow: initial; height: 100%; }
             .gslide-title { margin-top: 0px; user-select: text; }
             .gslide-desc { color: #666; user-select: text; }
@@ -170,11 +159,13 @@
     
     
     
-      <label class="md-header__button md-icon" for="__search">
-        
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
-      </label>
-      <div class="md-search" data-md-component="search" role="dialog">
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
     <form class="md-search__form" name="search">
@@ -213,13 +204,14 @@
     </div>
   </div>
 </div>
+      
     
     
       <div class="md-header__source">
         <a href="https://github.com/dmccreary/coding-club" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"></path></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"></path></svg>
   </div>
   <div class="md-source__repository">
     GitHub Repo
@@ -264,7 +256,7 @@
       <a href="https://github.com/dmccreary/coding-club" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"></path></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"></path></svg>
   </div>
   <div class="md-source__repository">
     GitHub Repo
@@ -284,9 +276,16 @@
       <a href="../.." class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Home
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -304,9 +303,16 @@
       <a href="../../about/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     About
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -324,9 +330,16 @@
       <a href="../../course-description/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Course Description
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -422,6 +435,7 @@
     
     
     
+    
       
     
     <li class="md-nav__item md-nav__item--active md-nav__item--nested">
@@ -431,14 +445,20 @@
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
         
           
-          
           <div class="md-nav__link md-nav__container">
             <a href="../" class="md-nav__link ">
               
   
+  
   <span class="md-ellipsis">
+    
+  
     Chapters
+  
+
+    
   </span>
+  
   
 
             </a>
@@ -453,7 +473,11 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
-            Chapters
+            
+  
+    Chapters
+  
+
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -479,6 +503,7 @@
     
     
     
+    
       
         
         
@@ -487,14 +512,22 @@
     <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
       
         
+  
   
   
     <a href="../01-what-is-a-coding-club/" class="md-nav__link">
       
   
+  
   <span class="md-ellipsis">
+    
+  
     1. What Is a Coding Club
+  
+
+    
   </span>
+  
   
 
       
@@ -529,6 +562,7 @@
     
     
     
+    
       
         
         
@@ -537,14 +571,22 @@
     <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
       
         
+  
   
   
     <a href="../02-ai-and-intelligent-textbooks/" class="md-nav__link">
       
   
+  
   <span class="md-ellipsis">
+    
+  
     2. AI, Intelligent Textbooks, and Where Coding Clubs Meet
+  
+
+    
   </span>
+  
   
 
       
@@ -579,6 +621,7 @@
     
     
     
+    
       
         
         
@@ -587,14 +630,22 @@
     <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
       
         
+  
   
   
     <a href="../03-club-charter-and-safety/" class="md-nav__link">
       
   
+  
   <span class="md-ellipsis">
+    
+  
     3. Writing Your Club Charter and Safety Policies
+  
+
+    
   </span>
+  
   
 
       
@@ -629,6 +680,7 @@
     
     
     
+    
       
         
         
@@ -637,14 +689,22 @@
     <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
       
         
+  
   
   
     <a href="../04-roles-governance-branding/" class="md-nav__link">
       
   
+  
   <span class="md-ellipsis">
+    
+  
     4. Club Roles, Governance Structure, and Branding
+  
+
+    
   </span>
+  
   
 
       
@@ -679,6 +739,7 @@
     
     
     
+    
       
         
         
@@ -687,14 +748,22 @@
     <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
       
         
+  
   
   
     <a href="../05-gauging-interest-first-meeting/" class="md-nav__link">
       
   
+  
   <span class="md-ellipsis">
+    
+  
     5. Gauging Interest and Holding Your First Meeting
+  
+
+    
   </span>
+  
   
 
       
@@ -729,6 +798,7 @@
     
     
     
+    
       
         
         
@@ -737,14 +807,22 @@
     <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
       
         
+  
   
   
     <a href="../06-growing-and-promoting-club/" class="md-nav__link">
       
   
+  
   <span class="md-ellipsis">
+    
+  
     6. Growing, Branding, and Promoting Your Club
+  
+
+    
   </span>
+  
   
 
       
@@ -779,6 +857,7 @@
     
     
     
+    
       
         
         
@@ -787,14 +866,22 @@
     <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
       
         
+  
   
   
     <a href="../07-club-story-and-classroom-design/" class="md-nav__link">
       
   
+  
   <span class="md-ellipsis">
+    
+  
     7. Telling Your Club's Story and Designing the Classroom
+  
+
+    
   </span>
+  
   
 
       
@@ -829,6 +916,7 @@
     
     
     
+    
       
         
         
@@ -837,14 +925,22 @@
     <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
       
         
+  
   
   
     <a href="../08-running-a-session/" class="md-nav__link">
       
   
+  
   <span class="md-ellipsis">
+    
+  
     8. Running a Session: Room Layout to Cleanup
+  
+
+    
   </span>
+  
   
 
       
@@ -879,6 +975,7 @@
     
     
     
+    
       
         
         
@@ -887,14 +984,22 @@
     <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
       
         
+  
   
   
     <a href="../09-mentors-students-ratio/" class="md-nav__link">
       
   
+  
   <span class="md-ellipsis">
+    
+  
     9. Mentors, Students, and the 3:1 Ratio
+  
+
+    
   </span>
+  
   
 
       
@@ -929,6 +1034,7 @@
     
     
     
+    
       
         
         
@@ -937,14 +1043,22 @@
     <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
       
         
+  
   
   
     <a href="../10-mentor-student-relationships/" class="md-nav__link">
       
   
+  
   <span class="md-ellipsis">
+    
+  
     10. Building Mentor-Student Relationships That Last
+  
+
+    
   </span>
+  
   
 
       
@@ -979,6 +1093,7 @@
     
     
     
+    
       
         
         
@@ -987,14 +1102,22 @@
     <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
       
         
+  
   
   
     <a href="../11-schedule-and-registration/" class="md-nav__link">
       
   
+  
   <span class="md-ellipsis">
+    
+  
     11. Choosing a Schedule and Building Registration
+  
+
+    
   </span>
+  
   
 
       
@@ -1029,6 +1152,7 @@
     
     
     
+    
       
         
         
@@ -1037,14 +1161,22 @@
     <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
       
         
+  
   
   
     <a href="../12-events-and-retrospectives/" class="md-nav__link">
       
   
+  
   <span class="md-ellipsis">
+    
+  
     12. Running Events and Learning From Retrospectives
+  
+
+    
   </span>
+  
   
 
       
@@ -1079,6 +1211,7 @@
     
     
     
+    
       
         
         
@@ -1087,14 +1220,22 @@
     <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
       
         
+  
   
   
     <a href="../13-special-events-and-payments/" class="md-nav__link">
       
   
+  
   <span class="md-ellipsis">
+    
+  
     13. Special Events, Payments, and Term Wrap-Up
+  
+
+    
   </span>
+  
   
 
       
@@ -1129,6 +1270,7 @@
     
     
     
+    
       
         
         
@@ -1137,14 +1279,22 @@
     <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
       
         
+  
   
   
     <a href="../14-computational-thinking-scratch-python/" class="md-nav__link">
       
   
+  
   <span class="md-ellipsis">
+    
+  
     14. Computational Thinking, Scratch, and Python Basics
+  
+
+    
   </span>
+  
   
 
       
@@ -1179,6 +1329,7 @@
     
     
     
+    
       
         
         
@@ -1187,14 +1338,22 @@
     <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
       
         
+  
   
   
     <a href="../15-curriculum-challenge-cards/" class="md-nav__link">
       
   
+  
   <span class="md-ellipsis">
+    
+  
     15. Designing a Curriculum With Challenge Cards and Portfolios
+  
+
+    
   </span>
+  
   
 
       
@@ -1229,6 +1388,7 @@
     
     
     
+    
       
         
         
@@ -1237,14 +1397,22 @@
     <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
       
         
+  
   
   
     <a href="../16-physical-computing-safety/" class="md-nav__link">
       
   
+  
   <span class="md-ellipsis">
+    
+  
     16. Physical Computing and Electrical Safety Basics
+  
+
+    
   </span>
+  
   
 
       
@@ -1279,6 +1447,7 @@
     
     
     
+    
       
         
         
@@ -1287,14 +1456,22 @@
     <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
       
         
+  
   
   
     <a href="../17-sensors-displays-motors/" class="md-nav__link">
       
   
+  
   <span class="md-ellipsis">
+    
+  
     17. Sensors, Displays, Motors, and Robot Chassis
+  
+
+    
   </span>
+  
   
 
       
@@ -1326,6 +1503,7 @@
       
         
       
+    
     
     
     
@@ -1339,12 +1517,20 @@
         
   
   
+  
     <a href="../18-robots-usb-electronics-workshop/" class="md-nav__link">
       
   
+  
   <span class="md-ellipsis">
+    
+  
     18. Robots, USB Basics, and Electronics Workshop Skills
+  
+
+    
   </span>
+  
   
 
       
@@ -1378,6 +1564,7 @@
       
         
       
+    
     
     
     
@@ -1390,14 +1577,20 @@
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_20" checked>
         
           
-          
           <div class="md-nav__link md-nav__container">
             <a href="./" class="md-nav__link md-nav__link--active">
               
   
+  
   <span class="md-ellipsis">
+    
+  
     19. Raspberry Pi Pico, MicroPython, and the Moving Rainbow Kit
+  
+
+    
   </span>
+  
   
 
             </a>
@@ -1412,7 +1605,11 @@
         <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_20_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_4_20">
             <span class="md-nav__icon md-icon"></span>
-            19. Raspberry Pi Pico, MicroPython, and the Moving Rainbow Kit
+            
+  
+    19. Raspberry Pi Pico, MicroPython, and the Moving Rainbow Kit
+  
+
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -1428,9 +1625,16 @@
       <a href="quiz/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Quiz
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -1449,9 +1653,16 @@
       <a href="references/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Annotated References
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -1488,6 +1699,7 @@
     
     
     
+    
       
         
         
@@ -1496,14 +1708,22 @@
     <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
       
         
+  
   
   
     <a href="../20-sensor-sound-iot-kits/" class="md-nav__link">
       
   
+  
   <span class="md-ellipsis">
+    
+  
     20. Sensor, Sound, and IoT Project Kits
+  
+
+    
   </span>
+  
   
 
       
@@ -1538,6 +1758,7 @@
     
     
     
+    
       
         
         
@@ -1546,14 +1767,22 @@
     <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
       
         
+  
   
   
     <a href="../21-kit-inventory-signal-processing/" class="md-nav__link">
       
   
+  
   <span class="md-ellipsis">
+    
+  
     21. Managing Your Kit Inventory and Signal Processing Kits
+  
+
+    
   </span>
+  
   
 
       
@@ -1588,6 +1817,7 @@
     
     
     
+    
       
         
         
@@ -1596,14 +1826,22 @@
     <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
       
         
+  
   
   
     <a href="../22-purchasing-configuring-devices/" class="md-nav__link">
       
   
+  
   <span class="md-ellipsis">
+    
+  
     22. Purchasing and Configuring Club Devices
+  
+
+    
   </span>
+  
   
 
       
@@ -1638,6 +1876,7 @@
     
     
     
+    
       
         
         
@@ -1646,14 +1885,22 @@
     <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
       
         
+  
   
   
     <a href="../23-network-peripherals-device-lifecycle/" class="md-nav__link">
       
   
+  
   <span class="md-ellipsis">
+    
+  
     23. Network, Peripherals, and the Device Lifecycle
+  
+
+    
   </span>
+  
   
 
       
@@ -1688,6 +1935,7 @@
     
     
     
+    
       
         
         
@@ -1696,14 +1944,22 @@
     <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
       
         
+  
   
   
     <a href="../24-student-data-and-communication/" class="md-nav__link">
       
   
+  
   <span class="md-ellipsis">
+    
+  
     24. Tracking Student Data and Managing Club Communication
+  
+
+    
   </span>
+  
   
 
       
@@ -1738,6 +1994,7 @@
     
     
     
+    
       
         
         
@@ -1746,14 +2003,22 @@
     <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
       
         
+  
   
   
     <a href="../25-analyzing-club-data-and-tools/" class="md-nav__link">
       
   
+  
   <span class="md-ellipsis">
+    
+  
     25. Analyzing Club Data and Choosing the Right Tools
+  
+
+    
   </span>
+  
   
 
       
@@ -1788,6 +2053,7 @@
     
     
     
+    
       
         
         
@@ -1796,14 +2062,22 @@
     <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
       
         
+  
   
   
     <a href="../26-motivation-badges-growth-mindset/" class="md-nav__link">
       
   
+  
   <span class="md-ellipsis">
+    
+  
     26. Motivation, Badges, and Growth Mindset Coaching
+  
+
+    
   </span>
+  
   
 
       
@@ -1838,6 +2112,7 @@
     
     
     
+    
       
         
         
@@ -1846,14 +2121,22 @@
     <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
       
         
+  
   
   
     <a href="../27-persistence-and-student-voice/" class="md-nav__link">
       
   
+  
   <span class="md-ellipsis">
+    
+  
     27. Encouraging Persistence and Student Voice
+  
+
+    
   </span>
+  
   
 
       
@@ -1888,6 +2171,7 @@
     
     
     
+    
       
         
         
@@ -1896,14 +2180,22 @@
     <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
       
         
+  
   
   
     <a href="../28-underserved-communities-barriers/" class="md-nav__link">
       
   
+  
   <span class="md-ellipsis">
+    
+  
     28. Reaching Underserved Communities and Removing Barriers
+  
+
+    
   </span>
+  
   
 
       
@@ -1938,6 +2230,7 @@
     
     
     
+    
       
         
         
@@ -1946,14 +2239,22 @@
     <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
       
         
+  
   
   
     <a href="../29-trust-and-representation/" class="md-nav__link">
       
   
+  
   <span class="md-ellipsis">
+    
+  
     29. Building Trust and Representation in Your Club
+  
+
+    
   </span>
+  
   
 
       
@@ -1988,6 +2289,7 @@
     
     
     
+    
       
         
         
@@ -1996,14 +2298,22 @@
     <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
       
         
+  
   
   
     <a href="../30-budgeting-fundraising-grants/" class="md-nav__link">
       
   
+  
   <span class="md-ellipsis">
+    
+  
     30. Budgeting, Fundraising, and Grant Writing
+  
+
+    
   </span>
+  
   
 
       
@@ -2038,6 +2348,7 @@
     
     
     
+    
       
         
         
@@ -2046,14 +2357,22 @@
     <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
       
         
+  
   
   
     <a href="../31-expenses-and-funding-partnerships/" class="md-nav__link">
       
   
+  
   <span class="md-ellipsis">
+    
+  
     31. Tracking Expenses and Building Funding Partnerships
+  
+
+    
   </span>
+  
   
 
       
@@ -2088,6 +2407,7 @@
     
     
     
+    
       
         
         
@@ -2096,14 +2416,22 @@
     <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
       
         
+  
   
   
     <a href="../32-ai-agents-registration-scheduling/" class="md-nav__link">
       
   
+  
   <span class="md-ellipsis">
+    
+  
     32. AI Agents for Registration, Scheduling, and Communication
+  
+
+    
   </span>
+  
   
 
       
@@ -2138,6 +2466,7 @@
     
     
     
+    
       
         
         
@@ -2146,14 +2475,22 @@
     <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
       
         
+  
   
   
     <a href="../33-ai-customized-curriculum-rollout/" class="md-nav__link">
       
   
+  
   <span class="md-ellipsis">
+    
+  
     33. AI-Customized Curriculum and Rolling Out New Agents
+  
+
+    
   </span>
+  
   
 
       
@@ -2188,6 +2525,7 @@
     
     
     
+    
       
         
         
@@ -2196,14 +2534,22 @@
     <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
       
         
+  
   
   
     <a href="../34-oversight-board-and-inventory/" class="md-nav__link">
       
   
+  
   <span class="md-ellipsis">
+    
+  
     34. Establishing an Oversight Board and Inventory System
+  
+
+    
   </span>
+  
   
 
       
@@ -2238,6 +2584,7 @@
     
     
     
+    
       
         
         
@@ -2248,12 +2595,20 @@
         
   
   
+  
     <a href="../35-training-mentors-and-succession/" class="md-nav__link">
       
   
+  
   <span class="md-ellipsis">
+    
+  
     35. Training Mentors and Building a Club That Outlasts You
+  
+
+    
   </span>
+  
   
 
       
@@ -2315,6 +2670,7 @@
     
     
     
+    
       
         
         
@@ -2323,14 +2679,22 @@
     <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
       
         
+  
   
   
     <a href="../../learning-graph/" class="md-nav__link">
       
   
+  
   <span class="md-ellipsis">
+    
+  
     Learning Graph
+  
+
+    
   </span>
+  
   
 
       
@@ -2358,521 +2722,264 @@
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
         
-          
-        
       
-        
-          
         
       
+    
     
     
     
@@ -2884,14 +2991,22 @@
     <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
       
         
+  
   
   
     <a href="../../sims/" class="md-nav__link">
       
   
+  
   <span class="md-ellipsis">
+    
+  
     MicroSims
+  
+
+    
   </span>
+  
   
 
       
@@ -2925,6 +3040,7 @@
     
     
     
+    
       
         
         
@@ -2933,14 +3049,22 @@
     <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
       
         
+  
   
   
     <a href="../../cards/" class="md-nav__link">
       
   
+  
   <span class="md-ellipsis">
+    
+  
     Challenge Cards
+  
+
+    
   </span>
+  
   
 
       
@@ -2970,89 +3094,48 @@
         
       
         
-          
+      
         
       
         
-          
+      
         
       
         
-          
+      
         
       
         
-          
+      
         
       
         
-          
+      
         
       
         
-          
+      
         
       
         
-          
+      
         
       
         
-          
+      
         
       
         
-          
+      
         
       
         
-          
+      
         
       
         
-          
-        
       
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
+    
     
     
     
@@ -3064,14 +3147,22 @@
     <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
       
         
+  
   
   
     <a href="../../stories/" class="md-nav__link">
       
   
+  
   <span class="md-ellipsis">
+    
+  
     Stories
+  
+
+    
   </span>
+  
   
 
       
@@ -3104,6 +3195,9 @@
       
         
       
+        
+      
+    
     
     
     
@@ -3117,12 +3211,20 @@
         
   
   
+  
     <a href="../../appendices/" class="md-nav__link">
       
   
+  
   <span class="md-ellipsis">
+    
+  
     Appendices
+  
+
+    
   </span>
+  
   
 
       
@@ -3146,9 +3248,16 @@
       <a href="../../faq/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     FAQ
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -3166,9 +3275,16 @@
       <a href="../../glossary/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Glossary
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -3186,9 +3302,16 @@
       <a href="../../teachers-guide/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Teachers Guide
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -3206,9 +3329,16 @@
       <a href="../../license/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     License
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -3226,9 +3356,16 @@
       <a href="../../contact/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Contact
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -3265,7 +3402,9 @@
         <li class="md-nav__item">
   <a href="#summary" class="md-nav__link">
     <span class="md-ellipsis">
-      Summary
+      
+        Summary
+      
     </span>
   </a>
   
@@ -3274,7 +3413,9 @@
         <li class="md-nav__item">
   <a href="#concepts-covered" class="md-nav__link">
     <span class="md-ellipsis">
-      Concepts Covered
+      
+        Concepts Covered
+      
     </span>
   </a>
   
@@ -3283,7 +3424,9 @@
         <li class="md-nav__item">
   <a href="#prerequisites" class="md-nav__link">
     <span class="md-ellipsis">
-      Prerequisites
+      
+        Prerequisites
+      
     </span>
   </a>
   
@@ -3292,7 +3435,9 @@
         <li class="md-nav__item">
   <a href="#meet-the-raspberry-pi-pico" class="md-nav__link">
     <span class="md-ellipsis">
-      Meet the Raspberry Pi Pico
+      
+        Meet the Raspberry Pi Pico
+      
     </span>
   </a>
   
@@ -3302,7 +3447,9 @@
           <li class="md-nav__item">
   <a href="#raspberry-pi-pico" class="md-nav__link">
     <span class="md-ellipsis">
-      Raspberry Pi Pico
+      
+        Raspberry Pi Pico
+      
     </span>
   </a>
   
@@ -3312,7 +3459,9 @@
           <li class="md-nav__item">
   <a href="#diagram-raspberry-pi-pico-pinout-explorer" class="md-nav__link">
     <span class="md-ellipsis">
-      Diagram: Raspberry Pi Pico Pinout Explorer
+      
+        Diagram: Raspberry Pi Pico Pinout Explorer
+      
     </span>
   </a>
   
@@ -3331,7 +3480,9 @@
         <li class="md-nav__item">
   <a href="#programming-the-pico-with-micropython" class="md-nav__link">
     <span class="md-ellipsis">
-      Programming the Pico with MicroPython
+      
+        Programming the Pico with MicroPython
+      
     </span>
   </a>
   
@@ -3341,7 +3492,9 @@
           <li class="md-nav__item">
   <a href="#micropython-basics" class="md-nav__link">
     <span class="md-ellipsis">
-      MicroPython Basics
+      
+        MicroPython Basics
+      
     </span>
   </a>
   
@@ -3351,7 +3504,9 @@
           <li class="md-nav__item">
   <a href="#diagram-repl-vs-saved-script-workflow" class="md-nav__link">
     <span class="md-ellipsis">
-      Diagram: REPL vs. Saved Script Workflow
+      
+        Diagram: REPL vs. Saved Script Workflow
+      
     </span>
   </a>
   
@@ -3365,7 +3520,9 @@
           <li class="md-nav__item">
   <a href="#micropython-syntax" class="md-nav__link">
     <span class="md-ellipsis">
-      MicroPython Syntax
+      
+        MicroPython Syntax
+      
     </span>
   </a>
   
@@ -3375,7 +3532,9 @@
           <li class="md-nav__item">
   <a href="#diagram-micropython-syntax-checker" class="md-nav__link">
     <span class="md-ellipsis">
-      Diagram: MicroPython Syntax Checker
+      
+        Diagram: MicroPython Syntax Checker
+      
     </span>
   </a>
   
@@ -3389,7 +3548,9 @@
           <li class="md-nav__item">
   <a href="#micropython-loop" class="md-nav__link">
     <span class="md-ellipsis">
-      MicroPython Loop
+      
+        MicroPython Loop
+      
     </span>
   </a>
   
@@ -3399,7 +3560,9 @@
           <li class="md-nav__item">
   <a href="#diagram-micropython-loop-pixel-stepper" class="md-nav__link">
     <span class="md-ellipsis">
-      Diagram: MicroPython Loop Pixel Stepper
+      
+        Diagram: MicroPython Loop Pixel Stepper
+      
     </span>
   </a>
   
@@ -3418,7 +3581,9 @@
         <li class="md-nav__item">
   <a href="#wiring-the-moving-rainbow-kit" class="md-nav__link">
     <span class="md-ellipsis">
-      Wiring the Moving Rainbow Kit
+      
+        Wiring the Moving Rainbow Kit
+      
     </span>
   </a>
   
@@ -3428,7 +3593,9 @@
           <li class="md-nav__item">
   <a href="#neopixel-led-strip" class="md-nav__link">
     <span class="md-ellipsis">
-      NeoPixel LED Strip
+      
+        NeoPixel LED Strip
+      
     </span>
   </a>
   
@@ -3437,7 +3604,9 @@
           <li class="md-nav__item">
   <a href="#led-strip-wiring" class="md-nav__link">
     <span class="md-ellipsis">
-      LED Strip Wiring
+      
+        LED Strip Wiring
+      
     </span>
   </a>
   
@@ -3447,7 +3616,9 @@
           <li class="md-nav__item">
   <a href="#diagram-moving-rainbow-wiring-diagram" class="md-nav__link">
     <span class="md-ellipsis">
-      Diagram: Moving Rainbow Wiring Diagram
+      
+        Diagram: Moving Rainbow Wiring Diagram
+      
     </span>
   </a>
   
@@ -3461,7 +3632,9 @@
           <li class="md-nav__item">
   <a href="#moving-rainbow-kit" class="md-nav__link">
     <span class="md-ellipsis">
-      Moving Rainbow Kit
+      
+        Moving Rainbow Kit
+      
     </span>
   </a>
   
@@ -3475,7 +3648,9 @@
         <li class="md-nav__item">
   <a href="#seasonal-patterns-for-the-moving-rainbow-kit" class="md-nav__link">
     <span class="md-ellipsis">
-      Seasonal Patterns for the Moving Rainbow Kit
+      
+        Seasonal Patterns for the Moving Rainbow Kit
+      
     </span>
   </a>
   
@@ -3485,7 +3660,9 @@
           <li class="md-nav__item">
   <a href="#moving-rainbow-pattern" class="md-nav__link">
     <span class="md-ellipsis">
-      Moving Rainbow Pattern
+      
+        Moving Rainbow Pattern
+      
     </span>
   </a>
   
@@ -3495,7 +3672,9 @@
           <li class="md-nav__item">
   <a href="#diagram-seasonal-led-pattern-gallery" class="md-nav__link">
     <span class="md-ellipsis">
-      Diagram: Seasonal LED Pattern Gallery
+      
+        Diagram: Seasonal LED Pattern Gallery
+      
     </span>
   </a>
   
@@ -3509,7 +3688,9 @@
           <li class="md-nav__item">
   <a href="#led-noodle-project" class="md-nav__link">
     <span class="md-ellipsis">
-      LED Noodle Project
+      
+        LED Noodle Project
+      
     </span>
   </a>
   
@@ -3518,7 +3699,9 @@
           <li class="md-nav__item">
   <a href="#halloween-costume-lighting" class="md-nav__link">
     <span class="md-ellipsis">
-      Halloween Costume Lighting
+      
+        Halloween Costume Lighting
+      
     </span>
   </a>
   
@@ -3527,7 +3710,9 @@
           <li class="md-nav__item">
   <a href="#holiday-light-pattern" class="md-nav__link">
     <span class="md-ellipsis">
-      Holiday Light Pattern
+      
+        Holiday Light Pattern
+      
     </span>
   </a>
   
@@ -3536,7 +3721,9 @@
           <li class="md-nav__item">
   <a href="#fourth-of-july-pattern" class="md-nav__link">
     <span class="md-ellipsis">
-      Fourth Of July Pattern
+      
+        Fourth Of July Pattern
+      
     </span>
   </a>
   
@@ -3550,7 +3737,9 @@
         <li class="md-nav__item">
   <a href="#controlling-color-brightness-and-timing" class="md-nav__link">
     <span class="md-ellipsis">
-      Controlling Color, Brightness, and Timing
+      
+        Controlling Color, Brightness, and Timing
+      
     </span>
   </a>
   
@@ -3560,7 +3749,9 @@
           <li class="md-nav__item">
   <a href="#color-wheel-programming" class="md-nav__link">
     <span class="md-ellipsis">
-      Color Wheel Programming
+      
+        Color Wheel Programming
+      
     </span>
   </a>
   
@@ -3570,7 +3761,9 @@
           <li class="md-nav__item">
   <a href="#diagram-color-wheel-hue-explorer" class="md-nav__link">
     <span class="md-ellipsis">
-      Diagram: Color Wheel Hue Explorer
+      
+        Diagram: Color Wheel Hue Explorer
+      
     </span>
   </a>
   
@@ -3584,7 +3777,9 @@
           <li class="md-nav__item">
   <a href="#brightness-control-code" class="md-nav__link">
     <span class="md-ellipsis">
-      Brightness Control Code
+      
+        Brightness Control Code
+      
     </span>
   </a>
   
@@ -3593,7 +3788,9 @@
           <li class="md-nav__item">
   <a href="#animation-timing-code" class="md-nav__link">
     <span class="md-ellipsis">
-      Animation Timing Code
+      
+        Animation Timing Code
+      
     </span>
   </a>
   
@@ -3607,7 +3804,9 @@
         <li class="md-nav__item">
   <a href="#robot-kits-and-behavior" class="md-nav__link">
     <span class="md-ellipsis">
-      Robot Kits and Behavior
+      
+        Robot Kits and Behavior
+      
     </span>
   </a>
   
@@ -3617,7 +3816,9 @@
           <li class="md-nav__item">
   <a href="#robot-kit" class="md-nav__link">
     <span class="md-ellipsis">
-      Robot Kit
+      
+        Robot Kit
+      
     </span>
   </a>
   
@@ -3626,7 +3827,9 @@
           <li class="md-nav__item">
   <a href="#robot-kit-assembly" class="md-nav__link">
     <span class="md-ellipsis">
-      Robot Kit Assembly
+      
+        Robot Kit Assembly
+      
     </span>
   </a>
   
@@ -3636,7 +3839,9 @@
           <li class="md-nav__item">
   <a href="#diagram-robot-kit-assembly-sequence" class="md-nav__link">
     <span class="md-ellipsis">
-      Diagram: Robot Kit Assembly Sequence
+      
+        Diagram: Robot Kit Assembly Sequence
+      
     </span>
   </a>
   
@@ -3650,7 +3855,9 @@
           <li class="md-nav__item">
   <a href="#remote-control-distraction-risk" class="md-nav__link">
     <span class="md-ellipsis">
-      Remote Control Distraction Risk
+      
+        Remote Control Distraction Risk
+      
     </span>
   </a>
   
@@ -3659,7 +3866,9 @@
           <li class="md-nav__item">
   <a href="#autonomous-robot-behavior" class="md-nav__link">
     <span class="md-ellipsis">
-      Autonomous Robot Behavior
+      
+        Autonomous Robot Behavior
+      
     </span>
   </a>
   
@@ -3668,7 +3877,9 @@
           <li class="md-nav__item">
   <a href="#robot-face-kit" class="md-nav__link">
     <span class="md-ellipsis">
-      Robot Face Kit
+      
+        Robot Face Kit
+      
     </span>
   </a>
   
@@ -3682,7 +3893,9 @@
         <li class="md-nav__item">
   <a href="#chapter-summary" class="md-nav__link">
     <span class="md-ellipsis">
-      Chapter Summary
+      
+        Chapter Summary
+      
     </span>
   </a>
   
@@ -3698,12 +3911,80 @@
           
           
             <div class="md-content" data-md-component="content">
+              
+                
+
+
+
+  
+
+
+  <nav class="md-path" aria-label="Navigation">
+    <ol class="md-path__list">
+      
+        
+  
+  
+    <li class="md-path__item">
+      <a href="../.." class="md-path__link">
+        
+  <span class="md-ellipsis">
+    Home
+  </span>
+
+      </a>
+    </li>
+  
+
+      
+      
+        
+  
+  
+    
+    
+      <li class="md-path__item">
+        <a href="../" class="md-path__link">
+          
+  <span class="md-ellipsis">
+    Chapters
+  </span>
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+    
+    
+      <li class="md-path__item">
+        <a href="./" class="md-path__link">
+          
+  <span class="md-ellipsis">
+    19. Raspberry Pi Pico, MicroPython, and the Moving Rainbow Kit
+  </span>
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ol>
+  </nav>
+
+              
               <article class="md-content__inner md-typeset">
                 
                   
 
+
   
-    <a href="https://github.com/dmccreary/coding-club/blob/main/docs/chapters/19-pico-micropython-moving-rainbow/index.md" title="Edit this page" class="md-content__button md-icon">
+    <a href="https://github.com/dmccreary/coding-club/blob/main/docs/chapters/19-pico-micropython-moving-rainbow/index.md" title="Edit this page" class="md-content__button md-icon" rel="edit">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"></path></svg>
     </a>
@@ -4340,10 +4621,13 @@ You just connected a Pico, MicroPython, and a NeoPixel strip into one working, c
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.copy", "content.action.edit", "navigation.expand", "navigation.path", "navigation.prune", "navigation.indexes", "navigation.top", "navigation.footer", "toc.follow", "search.suggest", "search.highlight", "search.share"], "search": "../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["content.code.copy", "content.action.edit", "navigation.expand", "navigation.path", "navigation.prune", "navigation.indexes", "navigation.top", "navigation.footer", "toc.follow", "search.suggest", "search.highlight", "search.share"], "search": "../../assets/javascripts/workers/search.7a47a382.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.83f73b43.min.js"></script>
+      <script src="../../assets/javascripts/bundle.e71a0d61.min.js"></script>
       
         <script src="../../js/extra.js"></script>
       
