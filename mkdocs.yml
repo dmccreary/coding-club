@@ -339,6 +339,10 @@ nav:
           - Advanced Robots: cards/advanced-robots.md
       - Printing Cards for Retail Sale: cards/printing-cards.md
 
+  - Forms:
+      - List of Forms: forms/index.md
+      - Volunteer Background Check: forms/background-check/index.md
+  
   - Stories:
       - Overview: stories/index.md
       - Story Ideas: stories/story-ideas.md
@@ -431,7 +435,14 @@ markdown_extensions:
   - toc:
       permalink: true
   - pymdownx.details
-  - pymdownx.superfences
+  # Native inline Mermaid diagrams: a ```mermaid fence is handed to the
+  # Mermaid.js runtime that Material for MkDocs bundles, instead of being
+  # rendered as a highlighted code block. No extra JS include is needed.
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
   - pymdownx.highlight:
       anchor_linenums: true
       line_spans: __span
