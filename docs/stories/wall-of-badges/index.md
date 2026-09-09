@@ -18,7 +18,7 @@ Please generate a wide-landscape 16:9 cover image for this story in a warm,
 contemporary educational-graphic-novel illustration style. A girl of about
 twelve, Zora, with dark curly hair in two puffed buns, round purple glasses,
 a gold star earring, a yellow t-shirt under an open denim jacket, reaches up
-on her toes to press a glowing purple "</>" hexagon badge onto a large wall
+on her toes to press a glowing purple "&lt;/&gt;" hexagon badge onto a large wall
 mounted with a wooden frame. The wall is already dense with dozens of
 colorful hexagon badges arranged in tidy rows — CSS, HTML, JS, laptop,
 lightbulb, and robot icons in blue, green, purple, orange, and teal — with
@@ -146,19 +146,19 @@ week that had actually worked.
 Please generate a 16:9 image in the same style depicting panel 3 of 6. Make
 Zora consistent with prior panels, and introduce Malik, the club's bearded
 lead mentor, wearing glasses and a green sweater. The scene shows Malik
-holding up a glowing purple "</>" hexagon badge toward Zora, who presses
+holding up a glowing purple "&lt;/&gt;" hexagon badge toward Zora, who presses
 both hands to her chest with an open-mouthed, joyfully surprised
 expression, small sparkles and light motes glittering around her hands.
 Two classmates on her left clap enthusiastically, and a boy on her right
 smiles. A laptop on the table between them shows the completed challenge
-with a matching "</>" hexagon sticker on its lid. Rows of badges already
+with a matching "&lt;/&gt;" hexagon sticker on its lid. Rows of badges already
 cover part of the wall behind them. Setting: the same present-day coding
 club room, warm afternoon light. Color palette: warm gold light radiating
 from the badge, contrasting with the cooler purples and greens of the
 room. Emotional tone: disbelief turning into joy, public celebration. Six
-visual details: the glowing "</>" badge in Malik's hand, Zora's hands
+visual details: the glowing "&lt;/&gt;" badge in Malik's hand, Zora's hands
 clasped to her chest, the sparkle effects, the clapping classmates, the
-"</>" sticker on her laptop lid, the partially filled badge wall behind
+"&lt;/&gt;" sticker on her laptop lid, the partially filled badge wall behind
 them. Generate the image immediately without asking clarifying questions.
 </details>
 
@@ -177,7 +177,7 @@ first time in months, the sentence she'd been repeating to herself —
 (This is Panel 04. Do not include the panel number in the image.)
 Please generate a 16:9 image in the same style depicting panel 4 of 6. Make
 Zora and Malik consistent with prior panels. The scene shows Zora reaching
-up with a warm, focused smile to press a glowing purple "</>" hexagon badge
+up with a warm, focused smile to press a glowing purple "&lt;/&gt;" hexagon badge
 onto the wall herself, while Malik stands a few feet back with his arms
 loosely crossed, watching with quiet, proud approval. Only a modest cluster
 of badges — hers among them — occupies one corner of the otherwise mostly
