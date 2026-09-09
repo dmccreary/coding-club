@@ -1,0 +1,1151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Volunteer Background Check Authorization — Sample Form</title>
+<style>
+  :root {
+    --ink: #1f2933;
+    --muted: #5b6b7c;
+    --line: #d3dce6;
+    --bg: #f4f6f8;
+    --card: #ffffff;
+    --brand: #1c4e80;
+    --brand-dark: #14395e;
+    --ok: #2e7d32;
+    --ok-bg: #e8f5e9;
+    --err: #c0392b;
+    --err-bg: #fdecea;
+    --warn: #c9962c;
+    --warn-bg: #fdf6e3;
+    --radius: 8px;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    padding: 24px 16px 64px;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+                 "Helvetica Neue", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  .wrap { max-width: 780px; margin: 0 auto; }
+
+  /* ---------- Header ---------- */
+  header.masthead {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: var(--radius) var(--radius) 0 0;
+    border-bottom: 4px solid var(--brand);
+    padding: 20px 24px;
+  }
+
+  /* Placeholder for the school logo. Drop school-logo.png next to this
+     file and the <img> will replace the dashed placeholder box. */
+  .logo {
+    width: 84px;
+    height: 84px;
+    flex: 0 0 84px;
+    object-fit: contain;
+    border-radius: 6px;
+  }
+  .logo-placeholder {
+    width: 84px;
+    height: 84px;
+    flex: 0 0 84px;
+    border: 2px dashed var(--line);
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 11px;
+    line-height: 1.25;
+    color: var(--muted);
+    background: #fafbfc;
+    padding: 4px;
+  }
+
+  .masthead h1 { font-size: 21px; margin: 0 0 4px; line-height: 1.25; }
+  .masthead p  { margin: 0; color: var(--muted); font-size: 14px; }
+
+  .demo-banner {
+    background: var(--warn-bg);
+    border: 1px solid #e8d5a0;
+    border-top: none;
+    padding: 12px 24px;
+    font-size: 13.5px;
+    color: #6b5510;
+  }
+  .demo-banner strong { color: #4a3a08; }
+
+  /* ---------- Progress ---------- */
+  .progress {
+    display: flex;
+    gap: 8px;
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-top: none;
+    padding: 14px 24px;
+  }
+  .progress .step {
+    flex: 1;
+    font-size: 12.5px;
+    color: var(--muted);
+    padding-top: 8px;
+    border-top: 4px solid var(--line);
+  }
+  .progress .step.active { color: var(--brand); font-weight: 600; border-top-color: var(--brand); }
+  .progress .step.done   { color: var(--ok);    border-top-color: var(--ok); }
+
+  /* ---------- Cards ---------- */
+  main.card {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-top: none;
+    border-radius: 0 0 var(--radius) var(--radius);
+    padding: 24px;
+  }
+
+  fieldset {
+    border: none;
+    border-top: 1px solid var(--line);
+    margin: 0 0 4px;
+    padding: 20px 0 4px;
+  }
+  fieldset:first-of-type { border-top: none; padding-top: 0; }
+  legend {
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--brand-dark);
+    text-transform: uppercase;
+    letter-spacing: .04em;
+    padding: 0;
+    margin-bottom: 2px;
+  }
+  .legend-note { color: var(--muted); font-size: 13.5px; margin: 0 0 16px; }
+
+  .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 4px 18px; }
+  .col-span-2 { grid-column: 1 / -1; }
+  @media (max-width: 620px) {
+    .grid { grid-template-columns: 1fr; }
+    .col-span-2 { grid-column: auto; }
+  }
+
+  .field { margin-bottom: 16px; }
+  .field label {
+    display: block;
+    font-size: 13.5px;
+    font-weight: 600;
+    margin-bottom: 5px;
+  }
+  .req { color: var(--err); }
+
+  input[type=text], input[type=email], input[type=tel],
+  input[type=date], input[type=password], select {
+    width: 100%;
+    padding: 9px 10px;
+    font-size: 15px;
+    font-family: inherit;
+    color: var(--ink);
+    border: 1px solid var(--line);
+    border-radius: 5px;
+    background: #fff;
+  }
+  input:focus, select:focus {
+    outline: 2px solid rgba(28, 78, 128, .35);
+    outline-offset: 1px;
+    border-color: var(--brand);
+  }
+  input[readonly] { background: #eef1f4; color: var(--muted); cursor: not-allowed; }
+
+  .field.invalid input, .field.invalid select { border-color: var(--err); background: var(--err-bg); }
+  .field.valid   input, .field.valid   select { border-color: var(--ok); }
+
+  .hint { font-size: 12.5px; color: var(--muted); margin-top: 4px; }
+  .msg  { font-size: 12.5px; margin-top: 4px; min-height: 1em; }
+  .field.invalid .msg { color: var(--err); font-weight: 600; }
+  .field.valid   .msg { color: var(--ok); }
+
+  .autofilled {
+    display: inline-block;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .04em;
+    color: var(--ok);
+    background: var(--ok-bg);
+    border: 1px solid #bfe0c2;
+    border-radius: 20px;
+    padding: 1px 8px;
+    margin-left: 6px;
+    vertical-align: 1px;
+  }
+
+  .secure-note {
+    background: var(--ok-bg);
+    border-left: 4px solid var(--ok);
+    border-radius: 0 5px 5px 0;
+    padding: 10px 14px;
+    font-size: 13px;
+    color: #1f5c23;
+    margin-bottom: 18px;
+  }
+
+  .checkline { display: flex; gap: 10px; align-items: flex-start; margin-bottom: 14px; }
+  .checkline input[type=checkbox] { margin-top: 3px; width: 17px; height: 17px; flex: 0 0 17px; }
+  .checkline label { font-size: 14px; font-weight: 400; margin: 0; }
+
+  .sig-preview {
+    font-family: "Snell Roundhand", "Brush Script MT", cursive;
+    font-size: 30px;
+    color: var(--brand-dark);
+    border-bottom: 1px solid var(--ink);
+    padding: 6px 4px 2px;
+    min-height: 46px;
+    margin-top: 6px;
+  }
+  .sig-stamp { font-size: 12px; color: var(--muted); margin-top: 6px; }
+
+  /* ---------- Validation summary + actions ---------- */
+  .summary-box {
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    padding: 14px 18px;
+    margin: 20px 0;
+    background: #fafbfc;
+    font-size: 14px;
+  }
+  .summary-box.blocked { border-color: #e8c4bf; background: var(--err-bg); }
+  .summary-box.ready   { border-color: #bfe0c2; background: var(--ok-bg); }
+  .summary-box h3 { margin: 0 0 8px; font-size: 14px; }
+  .summary-box ul { margin: 6px 0 0; padding-left: 20px; }
+  .summary-box li { margin-bottom: 3px; }
+  .summary-box a { color: var(--brand); }
+
+  .actions { display: flex; gap: 12px; align-items: center; flex-wrap: wrap; }
+  button {
+    font: inherit;
+    font-weight: 600;
+    padding: 11px 22px;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    cursor: pointer;
+  }
+  button.primary { background: var(--brand); color: #fff; }
+  button.primary:hover:not(:disabled) { background: var(--brand-dark); }
+  button.primary:disabled { background: #b6c1cc; cursor: not-allowed; }
+  button.secondary { background: #fff; color: var(--brand); border-color: var(--brand); }
+
+  /* ---------- Review + receipt ---------- */
+  .review-table { width: 100%; border-collapse: collapse; font-size: 14px; }
+  .review-table th, .review-table td {
+    text-align: left;
+    padding: 8px 10px;
+    border-bottom: 1px solid var(--line);
+    vertical-align: top;
+  }
+  .review-table th { width: 42%; color: var(--muted); font-weight: 600; }
+  .review-table caption {
+    text-align: left;
+    font-weight: 700;
+    color: var(--brand-dark);
+    padding-bottom: 8px;
+  }
+
+  .receipt { text-align: center; padding: 20px 0 8px; }
+  .receipt .check {
+    font-size: 44px;
+    color: var(--ok);
+    line-height: 1;
+  }
+  .receipt h2 { margin: 10px 0 6px; }
+  .receipt .ref {
+    display: inline-block;
+    font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    background: var(--bg);
+    border: 1px solid var(--line);
+    border-radius: 5px;
+    padding: 6px 12px;
+    margin-top: 6px;
+  }
+  .pipeline { text-align: left; max-width: 460px; margin: 22px auto 0; font-size: 14px; }
+  .pipeline li { margin-bottom: 8px; color: var(--muted); }
+  .pipeline li strong { color: var(--ink); }
+
+  footer.foot {
+    max-width: 780px;
+    margin: 18px auto 0;
+    font-size: 12.5px;
+    color: var(--muted);
+    text-align: center;
+  }
+
+  [hidden] { display: none !important; }
+  .sr-only {
+    position: absolute; width: 1px; height: 1px;
+    padding: 0; margin: -1px; overflow: hidden;
+    clip: rect(0 0 0 0); white-space: nowrap; border: 0;
+  }
+</style>
+</head>
+<body>
+
+<div class="wrap">
+
+  <header class="masthead">
+    <!-- Replace this placeholder with: <img class="logo" src="school-logo.png" alt="School logo"> -->
+    <div class="logo-placeholder" id="logoPlaceholder">school-logo.png</div>
+    <img class="logo" id="logoImg" src="school-logo.png" alt="School logo" hidden>
+    <div>
+      <h1>Volunteer Background Check Authorization</h1>
+      <p>Coding Club &middot; Volunteer Screening Request</p>
+    </div>
+  </header>
+
+  <div class="demo-banner">
+    <strong>Sample form.</strong> This is a non-functional demonstration of the
+    validated web form described in the
+    <em>Automating Volunteer Background Checks</em> appendix. Nothing is
+    transmitted, stored, or submitted to any background-check service.
+    <strong>Do not enter a real Social Security Number or driver's license
+    number.</strong>
+  </div>
+
+  <div class="progress" id="progress">
+    <div class="step active" data-step="1">1. Complete form</div>
+    <div class="step" data-step="2">2. Review &amp; e-sign</div>
+    <div class="step" data-step="3">3. Submitted</div>
+  </div>
+
+  <main class="card">
+
+    <!-- ============ STEP 1: THE FORM ============ -->
+    <form id="bgForm" novalidate>
+
+      <!-- ---- Auto-filled from the volunteer database ---- -->
+      <fieldset>
+        <legend>Request information</legend>
+        <p class="legend-note">
+          These fields were filled in automatically from the volunteer
+          registration database when you opened your secure link. If anything
+          here is wrong, contact your activity leader before continuing.
+        </p>
+        <div class="grid">
+          <div class="field">
+            <label for="afName">Volunteer name <span class="autofilled">Auto-filled</span></label>
+            <input type="text" id="afName" value="Jordan A. Rivera" readonly>
+          </div>
+          <div class="field">
+            <label for="afEmail">Email <span class="autofilled">Auto-filled</span></label>
+            <input type="email" id="afEmail" value="jrivera@example.org" readonly>
+          </div>
+          <div class="field">
+            <label for="afPhone">Phone <span class="autofilled">Auto-filled</span></label>
+            <input type="tel" id="afPhone" value="(612) 555-0148" readonly>
+          </div>
+          <div class="field">
+            <label for="afClub">Club <span class="autofilled">Auto-filled</span></label>
+            <input type="text" id="afClub" value="Coding Club" readonly>
+          </div>
+          <div class="field">
+            <label for="afRole">Requested role <span class="autofilled">Auto-filled</span></label>
+            <input type="text" id="afRole" value="Weekly session mentor" readonly>
+          </div>
+          <div class="field">
+            <label for="afLeader">Requesting activity leader <span class="autofilled">Auto-filled</span></label>
+            <input type="text" id="afLeader" value="M. Okafor" readonly>
+          </div>
+        </div>
+      </fieldset>
+
+      <!-- ---- Legal identity ---- -->
+      <fieldset>
+        <legend>Legal identity</legend>
+        <p class="legend-note">
+          Enter your name exactly as it appears on your government-issued ID.
+          A mismatch here is the most common cause of a "record not found"
+          result.
+        </p>
+        <div class="grid">
+          <div class="field" data-validate="legalFirst">
+            <label for="legalFirst">Legal first name <span class="req">*</span></label>
+            <input type="text" id="legalFirst" name="legalFirst" autocomplete="given-name">
+            <div class="msg" data-msg></div>
+          </div>
+          <div class="field" data-validate="legalLast">
+            <label for="legalLast">Legal last name <span class="req">*</span></label>
+            <input type="text" id="legalLast" name="legalLast" autocomplete="family-name">
+            <div class="msg" data-msg></div>
+          </div>
+          <div class="field" data-validate="legalMiddle">
+            <label for="legalMiddle">Middle name</label>
+            <input type="text" id="legalMiddle" name="legalMiddle" autocomplete="additional-name">
+            <div class="hint">Optional. Leave blank if you have none.</div>
+            <div class="msg" data-msg></div>
+          </div>
+          <div class="field" data-validate="dob">
+            <label for="dob">Date of birth <span class="req">*</span></label>
+            <input type="date" id="dob" name="dob" autocomplete="bday">
+            <div class="hint">Volunteers must be 18 or older.</div>
+            <div class="msg" data-msg></div>
+          </div>
+        </div>
+      </fieldset>
+
+      <!-- ---- Address ---- -->
+      <fieldset>
+        <legend>Mailing address</legend>
+        <p class="legend-note">Your current residential address.</p>
+        <div class="grid">
+          <div class="field col-span-2" data-validate="street">
+            <label for="street">Street address <span class="req">*</span></label>
+            <input type="text" id="street" name="street" autocomplete="address-line1"
+                   placeholder="123 Main Street Apt 4">
+            <div class="msg" data-msg></div>
+          </div>
+          <div class="field" data-validate="city">
+            <label for="city">City <span class="req">*</span></label>
+            <input type="text" id="city" name="city" autocomplete="address-level2">
+            <div class="msg" data-msg></div>
+          </div>
+          <div class="field" data-validate="state">
+            <label for="state">State <span class="req">*</span></label>
+            <select id="state" name="state" autocomplete="address-level1">
+              <option value="">Select a state…</option>
+            </select>
+            <div class="msg" data-msg></div>
+          </div>
+          <div class="field" data-validate="zip">
+            <label for="zip">ZIP code <span class="req">*</span></label>
+            <input type="text" id="zip" name="zip" inputmode="numeric"
+                   maxlength="10" placeholder="55401" autocomplete="postal-code">
+            <div class="msg" data-msg></div>
+          </div>
+        </div>
+      </fieldset>
+
+      <!-- ---- Sensitive identifiers ---- -->
+      <fieldset>
+        <legend>Identification numbers</legend>
+        <div class="secure-note">
+          <strong>Entered directly, never emailed.</strong> These values are
+          validated in your browser and, in the production system, are sent
+          over an encrypted channel straight to the state background-check
+          service. They are never photographed, emailed, stored in plaintext,
+          or re-typed by staff.
+        </div>
+        <div class="grid">
+          <div class="field" data-validate="ssn">
+            <label for="ssn">Social Security Number <span class="req">*</span></label>
+            <input type="password" id="ssn" name="ssn" inputmode="numeric"
+                   maxlength="11" placeholder="•••-••-••••" autocomplete="off">
+            <div class="checkline" style="margin:6px 0 0">
+              <input type="checkbox" id="showSsn">
+              <label for="showSsn">Show number while I type</label>
+            </div>
+            <div class="msg" data-msg></div>
+          </div>
+          <div class="field" data-validate="dlState">
+            <label for="dlState">Driver's license issuing state <span class="req">*</span></label>
+            <select id="dlState" name="dlState">
+              <option value="">Select a state…</option>
+            </select>
+            <div class="hint">Selecting a state applies that state's license number format.</div>
+            <div class="msg" data-msg></div>
+          </div>
+          <div class="field" data-validate="dlNumber">
+            <label for="dlNumber">Driver's license number <span class="req">*</span></label>
+            <input type="text" id="dlNumber" name="dlNumber" autocomplete="off"
+                   placeholder="Select an issuing state first" disabled>
+            <div class="hint" id="dlHint">Choose an issuing state to see the expected format.</div>
+            <div class="msg" data-msg></div>
+          </div>
+        </div>
+      </fieldset>
+
+      <!-- ---- Consent and signature ---- -->
+      <fieldset>
+        <legend>Consent and electronic signature</legend>
+        <p class="legend-note">
+          Read each statement, then type your full legal name to sign.
+        </p>
+
+        <div class="field" data-validate="consentCheck">
+          <div class="checkline">
+            <input type="checkbox" id="consentAuthorize" data-consent>
+            <label for="consentAuthorize">
+              I authorize the school and its designated screening partner to
+              request a criminal history and predatory-offender records check
+              on me for the purpose of volunteer service.
+            </label>
+          </div>
+          <div class="checkline">
+            <input type="checkbox" id="consentAccurate" data-consent>
+            <label for="consentAccurate">
+              I certify that the information I have entered is true, complete,
+              and accurate to the best of my knowledge.
+            </label>
+          </div>
+          <div class="checkline">
+            <input type="checkbox" id="consentResults" data-consent>
+            <label for="consentResults">
+              I understand results are returned to authorized school staff, that
+              a flagged result is reviewed by a person rather than decided
+              automatically, and that I may request a copy of any report.
+            </label>
+          </div>
+          <div class="msg" data-msg></div>
+        </div>
+
+        <div class="field col-span-2" data-validate="signature">
+          <label for="signature">Type your full legal name to sign <span class="req">*</span></label>
+          <input type="text" id="signature" name="signature" autocomplete="off"
+                 placeholder="First Middle Last">
+          <div class="hint">
+            Must match the legal first and last name you entered above.
+          </div>
+          <div class="sig-preview" id="sigPreview" aria-hidden="true"></div>
+          <div class="sig-stamp" id="sigStamp"></div>
+          <div class="msg" data-msg></div>
+        </div>
+      </fieldset>
+
+      <!-- ---- Live validation summary ---- -->
+      <div class="summary-box blocked" id="statusBox" role="status" aria-live="polite">
+        <h3 id="statusTitle">Form incomplete</h3>
+        <div id="statusBody">Fill in the required fields to continue.</div>
+      </div>
+
+      <div class="actions">
+        <button type="submit" class="primary" id="continueBtn" disabled>
+          Review and submit
+        </button>
+        <button type="button" class="secondary" id="demoFillBtn">
+          Fill with sample data
+        </button>
+      </div>
+    </form>
+
+    <!-- ============ STEP 2: REVIEW ============ -->
+    <section id="reviewPane" hidden>
+      <h2 style="margin-top:0">Review your information</h2>
+      <p class="legend-note">
+        Check every line. Once submitted, corrections require contacting your
+        activity leader.
+      </p>
+      <table class="review-table">
+        <caption>Submission summary</caption>
+        <tbody id="reviewBody"></tbody>
+      </table>
+      <div class="summary-box ready">
+        <h3>Ready to submit</h3>
+        Every field passed validation. In the production system, submitting
+        sends this record directly to the state background-check service's API
+        — no staff member re-types any of it.
+      </div>
+      <div class="actions">
+        <button type="button" class="primary" id="submitBtn">Submit background check request</button>
+        <button type="button" class="secondary" id="backBtn">Go back and edit</button>
+      </div>
+    </section>
+
+    <!-- ============ STEP 3: RECEIPT ============ -->
+    <section id="receiptPane" hidden>
+      <div class="receipt">
+        <div class="check" aria-hidden="true">&#10003;</div>
+        <h2>Request submitted</h2>
+        <p class="legend-note">
+          Nothing was actually transmitted — this is a demonstration of the
+          confirmation the volunteer would see.
+        </p>
+        <div class="ref" id="refNumber"></div>
+      </div>
+      <ol class="pipeline">
+        <li><strong>Submitted to the screening service</strong> over an encrypted API call, with no manual re-entry.</li>
+        <li><strong>Service processes the request</strong>, typically returning a result within one business day.</li>
+        <li><strong>Result routed automatically</strong> to the requesting activity leader — no dependency on one clerk's availability.</li>
+        <li><strong>Flagged results go to a human reviewer.</strong> The system never auto-approves a flagged record.</li>
+        <li><strong>On a clear result</strong>, you are added to the active-volunteer roster and event notification list.</li>
+      </ol>
+      <div class="actions" style="justify-content:center;margin-top:24px">
+        <button type="button" class="secondary" id="restartBtn">Start over</button>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="foot">
+    Sample form for the Coding Club intelligent textbook &middot;
+    Appendix: Automating Volunteer Background Checks
+  </footer>
+
+</div>
+
+<script>
+(function () {
+  'use strict';
+
+  /* ------------------------------------------------------------------
+     Reference data
+     ------------------------------------------------------------------ */
+
+  var STATES = [
+    ['AL','Alabama'],['AK','Alaska'],['AZ','Arizona'],['AR','Arkansas'],
+    ['CA','California'],['CO','Colorado'],['CT','Connecticut'],['DE','Delaware'],
+    ['DC','District of Columbia'],['FL','Florida'],['GA','Georgia'],['HI','Hawaii'],
+    ['ID','Idaho'],['IL','Illinois'],['IN','Indiana'],['IA','Iowa'],
+    ['KS','Kansas'],['KY','Kentucky'],['LA','Louisiana'],['ME','Maine'],
+    ['MD','Maryland'],['MA','Massachusetts'],['MI','Michigan'],['MN','Minnesota'],
+    ['MS','Mississippi'],['MO','Missouri'],['MT','Montana'],['NE','Nebraska'],
+    ['NV','Nevada'],['NH','New Hampshire'],['NJ','New Jersey'],['NM','New Mexico'],
+    ['NY','New York'],['NC','North Carolina'],['ND','North Dakota'],['OH','Ohio'],
+    ['OK','Oklahoma'],['OR','Oregon'],['PA','Pennsylvania'],['RI','Rhode Island'],
+    ['SC','South Carolina'],['SD','South Dakota'],['TN','Tennessee'],['TX','Texas'],
+    ['UT','Utah'],['VT','Vermont'],['VA','Virginia'],['WA','Washington'],
+    ['WV','West Virginia'],['WI','Wisconsin'],['WY','Wyoming']
+  ];
+
+  // State-specific driver's license patterns. Only the states this club
+  // actually sees are spelled out; everything else falls back to a
+  // permissive generic rule so an out-of-region volunteer is never blocked.
+  var DL_RULES = {
+    MN: { re: /^[A-Z]\d{12}$/,                 desc: '1 letter followed by 12 digits (e.g. A123456789012)' },
+    WI: { re: /^[A-Z]\d{13}$/,                 desc: '1 letter followed by 13 digits' },
+    IA: { re: /^(\d{9}|\d{3}[A-Z]{2}\d{4})$/,  desc: '9 digits, or 3 digits + 2 letters + 4 digits' },
+    ND: { re: /^([A-Z]{3}\d{6}|\d{9})$/,       desc: '3 letters + 6 digits, or 9 digits' },
+    SD: { re: /^\d{6,10}$/,                    desc: '6 to 10 digits' },
+    IL: { re: /^[A-Z]\d{11,12}$/,              desc: '1 letter followed by 11 or 12 digits' },
+    MI: { re: /^[A-Z]\d{12}$/,                 desc: '1 letter followed by 12 digits' },
+    CA: { re: /^[A-Z]\d{7}$/,                  desc: '1 letter followed by 7 digits' },
+    NY: { re: /^(\d{9}|[A-Z]\d{7}|\d{16})$/,   desc: '9 digits, 1 letter + 7 digits, or 16 digits' },
+    TX: { re: /^\d{7,8}$/,                     desc: '7 or 8 digits' },
+    FL: { re: /^[A-Z]\d{12}$/,                 desc: '1 letter followed by 12 digits' },
+    OH: { re: /^([A-Z]{2}\d{6}|\d{8})$/,       desc: '2 letters + 6 digits, or 8 digits' }
+  };
+  var DL_GENERIC = {
+    re: /^[A-Z0-9]{4,20}$/,
+    desc: '4 to 20 letters or digits, no spaces or dashes'
+  };
+
+  function dlRule(code) { return DL_RULES[code] || DL_GENERIC; }
+
+  /* ------------------------------------------------------------------
+     Small helpers
+     ------------------------------------------------------------------ */
+
+  var $ = function (id) { return document.getElementById(id); };
+
+  function fillStateSelect(sel) {
+    STATES.forEach(function (s) {
+      var o = document.createElement('option');
+      o.value = s[0];
+      o.textContent = s[1] + ' (' + s[0] + ')';
+      sel.appendChild(o);
+    });
+  }
+  fillStateSelect($('state'));
+  fillStateSelect($('dlState'));
+
+  // If school-logo.png is present next to this file, swap in the real logo.
+  var logoImg = $('logoImg');
+  logoImg.addEventListener('load', function () {
+    logoImg.hidden = false;
+    $('logoPlaceholder').hidden = true;
+  });
+  logoImg.addEventListener('error', function () { logoImg.hidden = true; });
+
+  function digitsOnly(s) { return (s || '').replace(/\D/g, ''); }
+  function titleish(s)   { return (s || '').trim().replace(/\s+/g, ' '); }
+
+  /* ------------------------------------------------------------------
+     Field-level validators.
+
+     Each returns { ok: bool, msg: string }. `ok` false with an empty
+     message means "not filled in yet" — we show nothing until the user
+     has actually touched the field, so the form does not scold someone
+     for fields they have not reached.
+     ------------------------------------------------------------------ */
+
+  var NAME_RE = /^[A-Za-z][A-Za-z' .-]{0,48}$/; // ID-style character set
+
+  function vName(label) {
+    return function (v) {
+      v = titleish(v);
+      if (!v) return { ok: false, msg: label + ' is required.' };
+      if (v.length < 2) return { ok: false, msg: label + ' must be at least 2 characters.' };
+      if (!NAME_RE.test(v)) {
+        return { ok: false, msg: 'Use only letters, spaces, hyphens, periods, or apostrophes.' };
+      }
+      return { ok: true, msg: 'Looks good.' };
+    };
+  }
+
+  var VALIDATORS = {
+
+    legalFirst: vName('Legal first name'),
+    legalLast:  vName('Legal last name'),
+
+    // Optional: blank is valid, but if present it must look like a name.
+    legalMiddle: function (v) {
+      v = titleish(v);
+      if (!v) return { ok: true, msg: '' };
+      if (!NAME_RE.test(v)) {
+        return { ok: false, msg: 'Use only letters, spaces, hyphens, periods, or apostrophes.' };
+      }
+      return { ok: true, msg: 'Looks good.' };
+    },
+
+    dob: function (v) {
+      if (!v) return { ok: false, msg: 'Date of birth is required.' };
+      var d = new Date(v + 'T00:00:00');
+      if (isNaN(d.getTime())) return { ok: false, msg: 'Enter a valid date.' };
+      var now = new Date();
+      if (d > now) return { ok: false, msg: 'Date of birth cannot be in the future.' };
+      var age = now.getFullYear() - d.getFullYear();
+      var m = now.getMonth() - d.getMonth();
+      if (m < 0 || (m === 0 && now.getDate() < d.getDate())) age--;
+      if (age < 18)  return { ok: false, msg: 'Volunteers must be at least 18 years old.' };
+      if (age > 110) return { ok: false, msg: 'Check this date — the age it implies is not plausible.' };
+      return { ok: true, msg: 'Age ' + age + '. Eligible.' };
+    },
+
+    street: function (v) {
+      v = titleish(v);
+      if (!v) return { ok: false, msg: 'Street address is required.' };
+      if (v.length < 5) return { ok: false, msg: 'Enter the full street address.' };
+      if (!/\d/.test(v)) return { ok: false, msg: 'Include the street or building number.' };
+      if (!/[A-Za-z]/.test(v)) return { ok: false, msg: 'Include the street name.' };
+      return { ok: true, msg: 'Looks good.' };
+    },
+
+    city: function (v) {
+      v = titleish(v);
+      if (!v) return { ok: false, msg: 'City is required.' };
+      if (!/^[A-Za-z][A-Za-z' .-]{1,48}$/.test(v)) {
+        return { ok: false, msg: 'Enter a valid city name.' };
+      }
+      return { ok: true, msg: 'Looks good.' };
+    },
+
+    state: function (v) {
+      if (!v) return { ok: false, msg: 'Select your state.' };
+      return { ok: true, msg: '' };
+    },
+
+    zip: function (v) {
+      v = (v || '').trim();
+      if (!v) return { ok: false, msg: 'ZIP code is required.' };
+      if (!/^\d{5}(-\d{4})?$/.test(v)) {
+        return { ok: false, msg: 'Use 5 digits, or ZIP+4 as 55401-1234.' };
+      }
+      return { ok: true, msg: 'Looks good.' };
+    },
+
+    // SSN: 9 digits plus the Social Security Administration's structural
+    // rules. This catches the placeholder/typo values that produce a
+    // "record not found" result at the screening service.
+    ssn: function (v) {
+      var d = digitsOnly(v);
+      if (!d) return { ok: false, msg: 'Social Security Number is required.' };
+      if (d.length !== 9) {
+        return { ok: false, msg: 'Enter all 9 digits (' + d.length + ' so far).' };
+      }
+      var area   = d.slice(0, 3),
+          group  = d.slice(3, 5),
+          serial = d.slice(5);
+      if (area === '000' || area === '666' || area[0] === '9') {
+        return { ok: false, msg: 'The first three digits are not a valid area number.' };
+      }
+      if (group === '00')   return { ok: false, msg: 'The middle two digits cannot be 00.' };
+      if (serial === '0000') return { ok: false, msg: 'The last four digits cannot be 0000.' };
+      if (/^(\d)\1{8}$/.test(d)) {
+        return { ok: false, msg: 'That looks like a placeholder, not a real number.' };
+      }
+      if (d === '123456789') {
+        return { ok: false, msg: 'That looks like a placeholder, not a real number.' };
+      }
+      return { ok: true, msg: 'Valid format. Masked and never emailed.' };
+    },
+
+    dlState: function (v) {
+      if (!v) return { ok: false, msg: 'Select the state that issued your license.' };
+      return { ok: true, msg: '' };
+    },
+
+    dlNumber: function (v) {
+      var st = $('dlState').value;
+      if (!st) return { ok: false, msg: 'Select the issuing state first.' };
+      v = (v || '').trim().toUpperCase();
+      if (!v) return { ok: false, msg: "Driver's license number is required." };
+      var rule = dlRule(st);
+      if (!rule.re.test(v)) {
+        return { ok: false, msg: 'Does not match the ' + st + ' format: ' + rule.desc + '.' };
+      }
+      return { ok: true, msg: 'Matches the ' + st + ' license format.' };
+    },
+
+    consentCheck: function () {
+      var boxes = document.querySelectorAll('[data-consent]');
+      var missing = 0;
+      for (var i = 0; i < boxes.length; i++) { if (!boxes[i].checked) missing++; }
+      if (missing) {
+        return {
+          ok: false,
+          msg: missing + ' of ' + boxes.length + ' statement' +
+               (boxes.length === 1 ? '' : 's') + ' still ' +
+               (missing === 1 ? 'needs' : 'need') + ' your agreement.'
+        };
+      }
+      return { ok: true, msg: 'All statements agreed.' };
+    },
+
+    // The typed signature is only meaningful if it matches the legal name
+    // entered above — this is what makes it an attestation rather than
+    // just another text box.
+    signature: function (v) {
+      v = titleish(v);
+      if (!v) return { ok: false, msg: 'Type your full legal name to sign.' };
+      var first = titleish($('legalFirst').value).toLowerCase();
+      var last  = titleish($('legalLast').value).toLowerCase();
+      if (!first || !last) {
+        return { ok: false, msg: 'Enter your legal first and last name above first.' };
+      }
+      var typed = v.toLowerCase();
+      if (typed.indexOf(first) !== 0) {
+        return { ok: false, msg: 'Your signature must begin with your legal first name.' };
+      }
+      if (typed.slice(-last.length) !== last) {
+        return { ok: false, msg: 'Your signature must end with your legal last name.' };
+      }
+      return { ok: true, msg: 'Signature matches your legal name.' };
+    }
+  };
+
+  // Human-readable labels used by the "what is still missing" summary.
+  var LABELS = {
+    legalFirst: 'Legal first name',
+    legalLast: 'Legal last name',
+    legalMiddle: 'Middle name',
+    dob: 'Date of birth',
+    street: 'Street address',
+    city: 'City',
+    state: 'State',
+    zip: 'ZIP code',
+    ssn: 'Social Security Number',
+    dlState: "Driver's license state",
+    dlNumber: "Driver's license number",
+    consentCheck: 'Consent statements',
+    signature: 'Electronic signature'
+  };
+
+  /* ------------------------------------------------------------------
+     Live validation wiring
+     ------------------------------------------------------------------ */
+
+  var fields = {};   // key -> { wrap, input, touched }
+  Array.prototype.forEach.call(
+    document.querySelectorAll('[data-validate]'),
+    function (wrap) {
+      var key = wrap.getAttribute('data-validate');
+      fields[key] = {
+        wrap: wrap,
+        input: $(key) || null,      // consentCheck has no single input
+        msgEl: wrap.querySelector('[data-msg]'),
+        touched: false
+      };
+    }
+  );
+
+  function runField(key, force) {
+    var f = fields[key];
+    var value = f.input ? f.input.value : '';
+    var res = VALIDATORS[key](value);
+    var show = force || f.touched;
+
+    f.wrap.classList.remove('valid', 'invalid');
+    f.msgEl.textContent = '';
+
+    if (show) {
+      if (res.ok) {
+        if (res.msg) { f.wrap.classList.add('valid'); f.msgEl.textContent = res.msg; }
+      } else {
+        f.wrap.classList.add('invalid');
+        f.msgEl.textContent = res.msg;
+      }
+    }
+    return res.ok;
+  }
+
+  function validateAll(force) {
+    var failing = [];
+    Object.keys(fields).forEach(function (key) {
+      if (!runField(key, force)) failing.push(key);
+    });
+    updateStatus(failing);
+    return failing;
+  }
+
+  function updateStatus(failing) {
+    var box = $('statusBox'), title = $('statusTitle'), body = $('statusBody');
+    var btn = $('continueBtn');
+
+    if (failing.length === 0) {
+      box.className = 'summary-box ready';
+      title.textContent = 'All fields valid';
+      body.textContent =
+        'Every field passed its check. Continue to review and submit.';
+      btn.disabled = false;
+      return;
+    }
+
+    box.className = 'summary-box blocked';
+    title.textContent = failing.length + ' item' +
+      (failing.length === 1 ? '' : 's') + ' still needed';
+
+    var ul = document.createElement('ul');
+    failing.forEach(function (key) {
+      var li = document.createElement('li');
+      var a = document.createElement('a');
+      a.href = '#';
+      a.textContent = LABELS[key] || key;
+      a.addEventListener('click', function (e) {
+        e.preventDefault();
+        var f = fields[key];
+        var target = f.input || f.wrap.querySelector('input');
+        f.touched = true;
+        runField(key);
+        if (target) { target.focus(); }
+        f.wrap.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      });
+      li.appendChild(a);
+      ul.appendChild(li);
+    });
+
+    body.textContent = 'The Submit button stays disabled until each of these passes:';
+    body.appendChild(ul);
+    btn.disabled = true;
+  }
+
+  // Validate as the user types (live), and mark "touched" on blur so the
+  // first keystroke in an empty field does not immediately turn red.
+  Object.keys(fields).forEach(function (key) {
+    var f = fields[key];
+    var inputs = f.input ? [f.input] : [];
+    if (key === 'consentCheck') {
+      inputs = Array.prototype.slice.call(document.querySelectorAll('[data-consent]'));
+    }
+    inputs.forEach(function (el) {
+      var ev = (el.type === 'checkbox' || el.tagName === 'SELECT') ? 'change' : 'input';
+      el.addEventListener(ev, function () {
+        if (el.type === 'checkbox' || el.tagName === 'SELECT') f.touched = true;
+        validateAll(false);
+      });
+      el.addEventListener('blur', function () {
+        f.touched = true;
+        validateAll(false);
+      });
+    });
+  });
+
+  /* ------------------------------------------------------------------
+     Field-specific behavior: SSN masking, DL state coupling, signature
+     ------------------------------------------------------------------ */
+
+  var ssnEl = $('ssn');
+  ssnEl.addEventListener('input', function () {
+    var d = digitsOnly(ssnEl.value).slice(0, 9);
+    var out = d;
+    if (d.length > 5)      out = d.slice(0,3) + '-' + d.slice(3,5) + '-' + d.slice(5);
+    else if (d.length > 3) out = d.slice(0,3) + '-' + d.slice(3);
+    ssnEl.value = out;
+  });
+
+  $('showSsn').addEventListener('change', function () {
+    ssnEl.type = this.checked ? 'text' : 'password';
+  });
+
+  var dlStateEl = $('dlState'), dlNumEl = $('dlNumber'), dlHint = $('dlHint');
+  dlStateEl.addEventListener('change', function () {
+    var st = dlStateEl.value;
+    if (!st) {
+      dlNumEl.disabled = true;
+      dlNumEl.value = '';
+      dlNumEl.placeholder = 'Select an issuing state first';
+      dlHint.textContent = 'Choose an issuing state to see the expected format.';
+    } else {
+      var rule = dlRule(st);
+      dlNumEl.disabled = false;
+      dlNumEl.placeholder = st + ' format';
+      dlHint.textContent = 'Expected ' + st + ' format: ' + rule.desc +
+        (DL_RULES[st] ? '.' : ' (generic rule — this state has no specific pattern on file).');
+    }
+    fields.dlNumber.touched = false;
+    validateAll(false);
+  });
+
+  dlNumEl.addEventListener('input', function () {
+    var pos = dlNumEl.selectionStart;
+    dlNumEl.value = dlNumEl.value.toUpperCase().replace(/[^A-Z0-9]/g, '');
+    dlNumEl.setSelectionRange(pos, pos);
+  });
+
+  var sigEl = $('signature'), sigPreview = $('sigPreview'), sigStamp = $('sigStamp');
+  var signedAt = null;
+
+  function refreshSignature() {
+    var v = titleish(sigEl.value);
+    sigPreview.textContent = v;
+    if (v && VALIDATORS.signature(v).ok) {
+      signedAt = new Date();
+      sigStamp.textContent = 'Signed electronically ' + signedAt.toLocaleString() +
+        ' · timestamped and logged for audit.';
+    } else {
+      signedAt = null;
+      sigStamp.textContent = '';
+    }
+  }
+  sigEl.addEventListener('input', refreshSignature);
+  ['legalFirst','legalLast'].forEach(function (k) {
+    $(k).addEventListener('input', refreshSignature);
+  });
+
+  /* ------------------------------------------------------------------
+     Step navigation
+     ------------------------------------------------------------------ */
+
+  function setStep(n) {
+    Array.prototype.forEach.call($('progress').children, function (el) {
+      var s = Number(el.getAttribute('data-step'));
+      el.classList.toggle('active', s === n);
+      el.classList.toggle('done', s < n);
+    });
+    $('bgForm').hidden      = (n !== 1);
+    $('reviewPane').hidden  = (n !== 2);
+    $('receiptPane').hidden = (n !== 3);
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
+  function maskedSsn() {
+    var d = digitsOnly(ssnEl.value);
+    return '•••-••-' + d.slice(5);
+  }
+
+  function stateName(code) {
+    for (var i = 0; i < STATES.length; i++) {
+      if (STATES[i][0] === code) return STATES[i][1];
+    }
+    return code;
+  }
+
+  function buildReview() {
+    var mid = titleish($('legalMiddle').value);
+    var rows = [
+      ['Volunteer of record', $('afName').value],
+      ['Club / role', $('afClub').value + ' — ' + $('afRole').value],
+      ['Requesting activity leader', $('afLeader').value],
+      ['Legal name', titleish($('legalFirst').value) + (mid ? ' ' + mid : '') +
+                     ' ' + titleish($('legalLast').value)],
+      ['Date of birth', $('dob').value],
+      ['Address', titleish($('street').value) + ', ' + titleish($('city').value) +
+                  ', ' + $('state').value + ' ' + $('zip').value.trim()],
+      ['Social Security Number', maskedSsn() + '  (masked; transmitted encrypted, never stored in plaintext)'],
+      ["Driver's license", $('dlNumber').value + '  (' + stateName($('dlState').value) + ')'],
+      ['Consent', 'All three statements agreed'],
+      ['Electronic signature', titleish(sigEl.value)],
+      ['Signed at', signedAt ? signedAt.toLocaleString() : '—']
+    ];
+    var tb = $('reviewBody');
+    tb.textContent = '';
+    rows.forEach(function (r) {
+      var tr = document.createElement('tr');
+      var th = document.createElement('th'); th.textContent = r[0];
+      var td = document.createElement('td'); td.textContent = r[1];
+      tr.appendChild(th); tr.appendChild(td); tb.appendChild(tr);
+    });
+  }
+
+  $('bgForm').addEventListener('submit', function (e) {
+    e.preventDefault();
+    var failing = validateAll(true);
+    if (failing.length) {
+      fields[failing[0]].wrap.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      return;
+    }
+    buildReview();
+    setStep(2);
+  });
+
+  $('backBtn').addEventListener('click', function () { setStep(1); });
+
+  $('submitBtn').addEventListener('click', function () {
+    // Demonstration only: nothing leaves the browser. The production
+    // system would POST the structured record to the screening service's
+    // API here and store the returned request id.
+    var ref = 'BGC-' + new Date().getFullYear() + '-' +
+              String(Math.floor(Math.random() * 900000) + 100000);
+    $('refNumber').textContent = 'Reference: ' + ref + '  (sample — not a real request)';
+    setStep(3);
+  });
+
+  $('restartBtn').addEventListener('click', function () {
+    $('bgForm').reset();
+    Object.keys(fields).forEach(function (k) { fields[k].touched = false; });
+    dlNumEl.disabled = true;
+    dlNumEl.placeholder = 'Select an issuing state first';
+    dlHint.textContent = 'Choose an issuing state to see the expected format.';
+    ssnEl.type = 'password';
+    sigPreview.textContent = '';
+    sigStamp.textContent = '';
+    signedAt = null;
+    validateAll(false);
+    setStep(1);
+  });
+
+  /* ------------------------------------------------------------------
+     Sample data, so a reader can exercise the form without inventing
+     plausible-looking identifiers of their own.
+     ------------------------------------------------------------------ */
+
+  $('demoFillBtn').addEventListener('click', function () {
+    $('legalFirst').value  = 'Jordan';
+    $('legalMiddle').value = 'Avery';
+    $('legalLast').value   = 'Rivera';
+    $('dob').value         = '1988-04-17';
+    $('street').value      = '4412 Elmwood Avenue';
+    $('city').value        = 'Minneapolis';
+    $('state').value       = 'MN';
+    $('zip').value         = '55407';
+    ssnEl.value            = '412-77-3806';
+    dlStateEl.value        = 'MN';
+    dlStateEl.dispatchEvent(new Event('change'));
+    dlNumEl.value          = 'R400718652093';
+    Array.prototype.forEach.call(
+      document.querySelectorAll('[data-consent]'),
+      function (b) { b.checked = true; }
+    );
+    sigEl.value = 'Jordan Avery Rivera';
+    refreshSignature();
+    Object.keys(fields).forEach(function (k) { fields[k].touched = true; });
+    validateAll(true);
+  });
+
+  /* ------------------------------------------------------------------ */
+
+  validateAll(false);
+  setStep(1);
+
+})();
+</script>
+
+</body>
+</html>
