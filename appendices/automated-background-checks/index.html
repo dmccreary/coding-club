@@ -1648,41 +1648,40 @@ content-generation formatting rules.</p>
 <h2 id="current-manual-workflow">Current (manual) workflow<a class="headerlink" href="#current-manual-workflow" title="Permanent link">¶</a></h2>
 <p>The existing process depends on a single staff member re-keying handwritten
 data, which is the main source of delay and error.</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>flowchart TD
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    A[Club requests a new volunteer] --&gt; B[Staff emails blank PDF form]
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>    B --&gt; C[Volunteer prints form at home]
-</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>    C --&gt; D["Volunteer hand-writes name, address,\nSSN, driver's license, signature"]
-</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>    D --&gt; E[Volunteer scans or photographs pages]
-</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>    E --&gt; F[Images emailed to clerk]
-</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>    F --&gt; G{Clerk backlog?}
-</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>    G --&gt;|Yes, waits days| H[Sits in inbox]
-</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>    G --&gt;|No| I[Clerk reads handwriting]
-</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>    H --&gt; I
-</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>    I --&gt; J{Legible and complete?}
-</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>    J --&gt;|No| K[Clerk emails volunteer with questions]
-</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>    K --&gt; D
-</span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a>    J --&gt;|Yes| L[Clerk re-types data into background-check portal]
-</span><span id="__span-0-15"><a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a>    L --&gt; M{Typo-free match?}
-</span><span id="__span-0-16"><a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a>    M --&gt;|No, record not found| N[Clerk investigates / re-contacts volunteer]
-</span><span id="__span-0-17"><a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a>    N --&gt; L
-</span><span id="__span-0-18"><a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a>    M --&gt;|Yes| O[Background-check service processes overnight]
-</span><span id="__span-0-19"><a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a>    O --&gt; P{Clerk available next day?\nnot sick / not on vacation}
-</span><span id="__span-0-20"><a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a>    P --&gt;|No| Q[Result waits for clerk's return]
-</span><span id="__span-0-21"><a id="__codelineno-0-21" name="__codelineno-0-21" href="#__codelineno-0-21"></a>    Q --&gt; P
-</span><span id="__span-0-22"><a id="__codelineno-0-22" name="__codelineno-0-22" href="#__codelineno-0-22"></a>    P --&gt;|Yes| R[Clerk emails result to requesting club]
-</span><span id="__span-0-23"><a id="__codelineno-0-23" name="__codelineno-0-23" href="#__codelineno-0-23"></a>    R --&gt; S{Activity leader checks email\nand is available?}
-</span><span id="__span-0-24"><a id="__codelineno-0-24" name="__codelineno-0-24" href="#__codelineno-0-24"></a>    S --&gt;|No| T[Volunteer status unknown, waits]
-</span><span id="__span-0-25"><a id="__codelineno-0-25" name="__codelineno-0-25" href="#__codelineno-0-25"></a>    S --&gt;|Yes| U[Volunteer told they passed]
-</span><span id="__span-0-26"><a id="__codelineno-0-26" name="__codelineno-0-26" href="#__codelineno-0-26"></a>    U --&gt; V[Volunteer added to contact list\nfor next event]
-</span><span id="__span-0-27"><a id="__codelineno-0-27" name="__codelineno-0-27" href="#__codelineno-0-27"></a>
-</span><span id="__span-0-28"><a id="__codelineno-0-28" name="__codelineno-0-28" href="#__codelineno-0-28"></a>    style D fill:#f8d7da,stroke:#c0392b
-</span><span id="__span-0-29"><a id="__codelineno-0-29" name="__codelineno-0-29" href="#__codelineno-0-29"></a>    style I fill:#f8d7da,stroke:#c0392b
-</span><span id="__span-0-30"><a id="__codelineno-0-30" name="__codelineno-0-30" href="#__codelineno-0-30"></a>    style L fill:#f8d7da,stroke:#c0392b
-</span><span id="__span-0-31"><a id="__codelineno-0-31" name="__codelineno-0-31" href="#__codelineno-0-31"></a>    style K fill:#fde8b0,stroke:#c9962c
-</span><span id="__span-0-32"><a id="__codelineno-0-32" name="__codelineno-0-32" href="#__codelineno-0-32"></a>    style N fill:#fde8b0,stroke:#c9962c
-</span><span id="__span-0-33"><a id="__codelineno-0-33" name="__codelineno-0-33" href="#__codelineno-0-33"></a>    style Q fill:#fde8b0,stroke:#c9962c
-</span><span id="__span-0-34"><a id="__codelineno-0-34" name="__codelineno-0-34" href="#__codelineno-0-34"></a>    style T fill:#fde8b0,stroke:#c9962c
-</span></code></pre></div>
+<pre class="mermaid"><code>flowchart TD
+    A[Club requests a new volunteer] --&gt; B[Staff emails blank PDF form]
+    B --&gt; C[Volunteer prints form at home]
+    C --&gt; D["Volunteer hand-writes name, address,\nSSN, driver's license, signature"]
+    D --&gt; E[Volunteer scans or photographs pages]
+    E --&gt; F[Images emailed to clerk]
+    F --&gt; G{Clerk backlog?}
+    G --&gt;|Yes, waits days| H[Sits in inbox]
+    G --&gt;|No| I[Clerk reads handwriting]
+    H --&gt; I
+    I --&gt; J{Legible and complete?}
+    J --&gt;|No| K[Clerk emails volunteer with questions]
+    K --&gt; D
+    J --&gt;|Yes| L[Clerk re-types data into background-check portal]
+    L --&gt; M{Typo-free match?}
+    M --&gt;|No, record not found| N[Clerk investigates / re-contacts volunteer]
+    N --&gt; L
+    M --&gt;|Yes| O[Background-check service processes overnight]
+    O --&gt; P{Clerk available next day?\nnot sick / not on vacation}
+    P --&gt;|No| Q[Result waits for clerk's return]
+    Q --&gt; P
+    P --&gt;|Yes| R[Clerk emails result to requesting club]
+    R --&gt; S{Activity leader checks email\nand is available?}
+    S --&gt;|No| T[Volunteer status unknown, waits]
+    S --&gt;|Yes| U[Volunteer told they passed]
+    U --&gt; V[Volunteer added to contact list\nfor next event]
+
+    style D fill:#f8d7da,stroke:#c0392b
+    style I fill:#f8d7da,stroke:#c0392b
+    style L fill:#f8d7da,stroke:#c0392b
+    style K fill:#fde8b0,stroke:#c9962c
+    style N fill:#fde8b0,stroke:#c9962c
+    style Q fill:#fde8b0,stroke:#c9962c
+    style T fill:#fde8b0,stroke:#c9962c</code></pre>
 <p><strong>Failure points</strong> (red = manual re-entry / transcription risk, orange = a
 single point of failure that can stall the whole process):</p>
 <ol>
@@ -1701,31 +1700,30 @@ single point of failure that can stall the whole process):</p>
 removes manual re-keying entirely by submitting structured data directly to
 the background-check service's API, and routes the result automatically to
 the correct activity leader.</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>flowchart TD
-</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>    A[Club requests a new volunteer] --&gt; B[System sends volunteer\na unique secure form link]
-</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>    B --&gt; C[Volunteer opens real-time web form]
-</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>    C --&gt; D["Form auto-fills known fields\n(name, email, club, role)\nfrom the volunteer/registration database"]
-</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>    D --&gt; E["Volunteer enters remaining fields:\naddress, SSN, driver's license\n(entered directly, never emailed or photographed)"]
-</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>    E --&gt; F[Inline field validation runs live:\nformat, checksum, required-field checks]
-</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a>    F --&gt; G{All fields valid?}
-</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>    G --&gt;|No| H[Form highlights the exact field\nand explains the fix, in real time]
-</span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a>    H --&gt; E
-</span><span id="__span-1-10"><a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a>    G --&gt;|Yes| I[Volunteer reviews summary\nand e-signs consent]
-</span><span id="__span-1-11"><a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a>    I --&gt; J[Form submits directly via API\nto state background-check service\ne.g. MN BCA predatory offender /\ncriminal history search]
-</span><span id="__span-1-12"><a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a>    J --&gt; K[Service processes request]
-</span><span id="__span-1-13"><a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a>    K --&gt; L[Result returned via API/webhook\nno manual portal re-entry]
-</span><span id="__span-1-14"><a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a>    L --&gt; M{Result}
-</span><span id="__span-1-15"><a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a>    M --&gt;|Clear| N[System automatically notifies\nthe requesting club's activity leader]
-</span><span id="__span-1-16"><a id="__codelineno-1-16" name="__codelineno-1-16" href="#__codelineno-1-16"></a>    M --&gt;|Flagged / needs review| O[Routed to a human staff reviewer\nfor manual judgment — never auto-approved]
-</span><span id="__span-1-17"><a id="__codelineno-1-17" name="__codelineno-1-17" href="#__codelineno-1-17"></a>    N --&gt; P[Volunteer automatically added\nto the active-volunteer roster\nand event notification list]
-</span><span id="__span-1-18"><a id="__codelineno-1-18" name="__codelineno-1-18" href="#__codelineno-1-18"></a>    O --&gt; Q[Staff reviewer makes the final call\nand records the decision]
-</span><span id="__span-1-19"><a id="__codelineno-1-19" name="__codelineno-1-19" href="#__codelineno-1-19"></a>
-</span><span id="__span-1-20"><a id="__codelineno-1-20" name="__codelineno-1-20" href="#__codelineno-1-20"></a>    style D fill:#d4edda,stroke:#2e7d32
-</span><span id="__span-1-21"><a id="__codelineno-1-21" name="__codelineno-1-21" href="#__codelineno-1-21"></a>    style F fill:#d4edda,stroke:#2e7d32
-</span><span id="__span-1-22"><a id="__codelineno-1-22" name="__codelineno-1-22" href="#__codelineno-1-22"></a>    style J fill:#d4edda,stroke:#2e7d32
-</span><span id="__span-1-23"><a id="__codelineno-1-23" name="__codelineno-1-23" href="#__codelineno-1-23"></a>    style N fill:#d4edda,stroke:#2e7d32
-</span><span id="__span-1-24"><a id="__codelineno-1-24" name="__codelineno-1-24" href="#__codelineno-1-24"></a>    style O fill:#fde8b0,stroke:#c9962c
-</span></code></pre></div>
+<pre class="mermaid"><code>flowchart TD
+    A[Club requests a new volunteer] --&gt; B[System sends volunteer\na unique secure form link]
+    B --&gt; C[Volunteer opens real-time web form]
+    C --&gt; D["Form auto-fills known fields\n(name, email, club, role)\nfrom the volunteer/registration database"]
+    D --&gt; E["Volunteer enters remaining fields:\naddress, SSN, driver's license\n(entered directly, never emailed or photographed)"]
+    E --&gt; F[Inline field validation runs live:\nformat, checksum, required-field checks]
+    F --&gt; G{All fields valid?}
+    G --&gt;|No| H[Form highlights the exact field\nand explains the fix, in real time]
+    H --&gt; E
+    G --&gt;|Yes| I[Volunteer reviews summary\nand e-signs consent]
+    I --&gt; J[Form submits directly via API\nto state background-check service\ne.g. MN BCA predatory offender /\ncriminal history search]
+    J --&gt; K[Service processes request]
+    K --&gt; L[Result returned via API/webhook\nno manual portal re-entry]
+    L --&gt; M{Result}
+    M --&gt;|Clear| N[System automatically notifies\nthe requesting club's activity leader]
+    M --&gt;|Flagged / needs review| O[Routed to a human staff reviewer\nfor manual judgment — never auto-approved]
+    N --&gt; P[Volunteer automatically added\nto the active-volunteer roster\nand event notification list]
+    O --&gt; Q[Staff reviewer makes the final call\nand records the decision]
+
+    style D fill:#d4edda,stroke:#2e7d32
+    style F fill:#d4edda,stroke:#2e7d32
+    style J fill:#d4edda,stroke:#2e7d32
+    style N fill:#d4edda,stroke:#2e7d32
+    style O fill:#fde8b0,stroke:#c9962c</code></pre>
 <h3 id="design-details">Design details<a class="headerlink" href="#design-details" title="Permanent link">¶</a></h3>
 <p><strong>Auto-filled fields (no re-typing required):</strong>
 Name, email, phone, mailing address on file, club name, requested role/event,
