@@ -1,19 +1,25 @@
-# List of AI Agent Skills
+# List of AI Agent Skills for Coding Clubs
 
 An AI agent skill is a folder with a `SKILL.md` file that teaches a coding agent, such as
-Claude Code, how to do one job well and the same way every time. The skills below
-came from this book and from the related textbooks listed in the
+Claude Code, OpenAI ChatGPT or Google AntiGravity how to do one job well and the same way every time.
+AI agent skills are the primary tool we use to keep consistently high quality in all
+the content we create for our coding clubs.
+
+The skills listed below came from this book and from the related textbooks listed in the
 [course description](../course-description.md). Each one turns a task that would take
 a club leader an afternoon into a single request: "make a challenge card for the
 motor lab" or "draw the wiring diagram for the Moving Rainbow kit."
 
 To use a skill, copy or link its folder into your agent's skills directory. For Claude
-Code that is `~/.claude/skills/`. Each entry below links to the skill's folder on
-GitHub, where you can read the full instructions before you install it.
+Code that is `~/.claude/skills/`. For OpenAI that is `~/codex/skills`.  For Google the
+directory is `~/.gemini/antigravity/skills`. Each entry below links to the skill's folder on
+GitHub, where you can read the full instructions before you install it.  You can usually
+just tell your generative where the skill is tell it to add the skill.  You will
+usually have to restart your generative AI tool after new skills are installed.
 
 ## Challenge Card Creator
 
-Writes and prints the challenge cards students pick up from the center table. Each card
+Writes and prints the [challenge cards](../glossary.md#challenge-card) students pick up from the center table. Each card
 has a front side with a title, an icon, a short description and numbered steps, and a
 back side with hints followed by a working solution in code or in circuit-building steps.
 Cards are color-coded by difficulty: green for beginner, blue for intermediate and black
@@ -25,6 +31,22 @@ solutions actually run.
 - **Skill name:** `challenge-card`
 - **Source textbook:** Coding Club (this book)
 - **Link:** [skills/challenge-card on GitHub](https://github.com/dmccreary/coding-club/tree/main/skills/challenge-card)
+
+## Club Operations
+
+The club leader's assistant for the recurring paperwork of running a club. One skill covers
+four jobs: drafting mailing-list messages, announcements, newsletters, reminders and waitlist
+notices; onboarding mentors and tracking the status of their background checks; sizing
+student capacity from the number of cleared mentors and running the waiting list; and
+producing attendance, grant and diversity reports. It drafts and proposes, and a person
+approves everything. It never sends a message, never touches a Social Security or license number,
+never decides whether a volunteer or child is accepted, and reports gender and race only as
+counts with small groups hidden so no child can be identified. This is an early prototype.
+It ships with a tested reporting script, message templates and evaluation prompts.
+
+- **Skill name:** `club-operations`
+- **Source textbook:** Coding Club (this book)
+- **Link:** [skills/club-operations on GitHub](https://github.com/dmccreary/coding-club/tree/main/skills/club-operations)
 
 ## Scratch Lab Generator
 
@@ -55,10 +77,10 @@ index page.
 ## Project Kit Generator
 
 Turns a dull single-sensor MicroPython lab into a complete, classroom-ready project kit.
-A low-cost color display (about $5) acts as a "window" on the sensor so students watch
+A low-cost color smartwatch display (about $5) acts as a "window" on the sensor so students watch
 it react to their breath and fingertips. The skill builds a ladder of small numbered
-labs that each print `TEST PASS` or `TEST FAIL`, and it verifies every lab in a desktop
-simulator before any hardware exists. It also writes the student lesson, the README, and
+labs that gradually introduce more complex concept to the student, and they verifies every lab in a desktop
+simulator before any hardware exists. The skill also writes the student lesson, the README, and
 a printable box cover with a fun name, a photo and a QR code.
 
 - **Skill name:** `project-kit-generator`
@@ -67,9 +89,9 @@ a printable box cover with a fun name, a photo and a QR code.
 
 ## Circuit Diagram Generator
 
-Creates clear wiring diagrams for microcontroller projects in the Moving Rainbow house
+Creates clear wiring diagrams for microcontroller projects in a consistent standard
 style: a red power rail across the top, a black ground rail across the bottom, amber
-signal wires, light component blocks and a white background. It covers Raspberry Pi Pico
+signal wires, light component blocks and a white background. The skill covers Raspberry Pi Pico
 projects with NeoPixels, push buttons, rotary encoders, sensors, switches and
 batteries. Each diagram is a small Python program built on the schemdraw library, so
 it is easy to tweak and re-render, and it produces both PNG and SVG files.
@@ -91,17 +113,6 @@ patterns.
 - **Source textbook:** [Moving Rainbow](https://dmccreary.github.io/moving-rainbow/)
 - **Link:** [skills/led-strip-pattern-generator on GitHub](https://github.com/dmccreary/moving-rainbow/tree/master/skills/led-strip-pattern-generator)
 
-## Pi Keys Generator
-
-Generates Python and shell scripts that control the RGB lights under the keys of the
-Raspberry Pi 500+ keyboard. Ask for "turn F1-F12 blue," a typing-speed indicator or an
-email notification flash and it writes the script using the `RPiKeyboardConfig` library
-and the `rpi-keyboard-config` command-line tool. It is a fun way to show students that
-code can change something physical on the desk in front of them.
-
-- **Skill name:** `pi-keys-generator`
-- **Source textbook:** [Moving Rainbow](https://dmccreary.github.io/moving-rainbow/)
-- **Link:** [skills/pi-keys-generator on GitHub](https://github.com/dmccreary/moving-rainbow/tree/master/skills/pi-keys-generator)
 
 ## Purchasing Guide Generator
 
@@ -212,3 +223,15 @@ several frames and combine them into a GIF.
 The related textbooks Clocks and Watches, Signal Processing on a $5 MicroController,
 STEM Classroom Administration, Raspberry Pi STEM and Learning Linux did not have any skills
 when this list was compiled.
+
+## Pi Keys Generator
+
+Generates Python and shell scripts that control the RGB lights under the keys of the
+Raspberry Pi 500+ keyboard. Ask for "turn F1-F12 blue," a typing-speed indicator or an
+email notification flash and it writes the script using the `RPiKeyboardConfig` library
+and the `rpi-keyboard-config` command-line tool. It is a fun way to show students that
+code can change something physical on the desk in front of them.
+
+- **Skill name:** `pi-keys-generator`
+- **Source textbook:** [Moving Rainbow](https://dmccreary.github.io/moving-rainbow/)
+- **Link:** [skills/pi-keys-generator on GitHub](https://github.com/dmccreary/moving-rainbow/tree/master/skills/pi-keys-generator)

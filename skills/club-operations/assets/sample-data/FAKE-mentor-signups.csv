@@ -1,0 +1,6 @@
+mentor_id,name,email,status,notes,ssn
+M001,Ada Sample,ada@example.org,registered,Available Saturdays,
+M002,Dave Sample,dave@example.org,registered,"Driver's license number is D400-123-456-789. Happy to help with robots.",123-45-6789
+M003,Priya Sample,priya@example.org,registered,Python and Scratch,
+M004,Sam Sample,sam@example.org,registered,"Paid the kit deposit with card 4111 1111 1111 1111",000-12-3456
+M005,Lee Sample,lee@example.org,registered,Weekday evenings only,

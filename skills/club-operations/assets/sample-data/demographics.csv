@@ -1,0 +1,28 @@
+person_id,person_type,gender,race_ethnicity,source,collected_date,consent_date
+S001,student,Boy,Category A,guardian,2026-09-05,2026-09-05
+S002,student,Girl,Category D,guardian,2026-09-05,2026-09-05
+S003,student,Non-binary,Category A,guardian,2026-09-05,2026-09-05
+S004,student,Girl,Category A,guardian,2026-09-05,2026-09-05
+S005,student,Girl,Category B,guardian,2026-09-05,2026-09-05
+S006,student,Prefer not to say,Category A,guardian,2026-09-05,2026-09-05
+S007,student,Boy,Prefer not to say,guardian,2026-09-05,2026-09-05
+S008,student,Boy,Category A,guardian,2026-09-05,2026-09-05
+S009,student,Prefer not to say,Category B,guardian,2026-09-05,2026-09-05
+S010,student,Boy,Category A,guardian,2026-09-05,2026-09-05
+S011,student,Boy,Category B,guardian,2026-09-05,2026-09-05
+S012,student,Prefer not to say,Category B,guardian,2026-09-05,2026-09-05
+S013,student,Boy,Category C,guardian,2026-09-05,2026-09-05
+S014,student,Boy,Category C,guardian,2026-09-05,2026-09-05
+S015,student,Girl,Category A,guardian,2026-09-05,2026-09-05
+S016,student,Girl,Prefer not to say,guardian,2026-09-05,2026-09-05
+S017,student,Non-binary,Category B,guardian,2026-09-05,2026-09-05
+S018,student,Boy,Category A,guardian,2026-09-05,2026-09-05
+S019,student,Girl,Category A,guardian,2026-09-05,2026-09-05
+S020,student,Boy,Category B,guardian,2026-09-05,2026-09-05
+S021,student,Girl,Category D,guardian,2026-09-05,2026-09-05
+S022,student,Girl,Category A,guardian,2026-09-05,2026-09-05
+S023,student,Boy,Category A,guardian,2026-09-05,2026-09-05
+S024,student,Boy,Category B,guardian,2026-09-05,2026-09-05
+S025,student,Girl,Prefer not to say,guardian,2026-09-05,2026-09-05
+S026,student,Boy,Category C,guardian,2026-09-05,2026-09-05
+S099,student,Girl,Category A,guardian,2026-09-05,

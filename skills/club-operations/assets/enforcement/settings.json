@@ -1,0 +1,22 @@
+{
+  "permissions": {
+    "deny": [
+      "mcp__*__*send*",
+      "mcp__*__reply*",
+      "mcp__*__forward*"
+    ]
+  },
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Bash|mcp__.*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 \"${CLAUDE_PROJECT_DIR}/.claude/hooks/block_send.py\" --log \"${CLAUDE_PROJECT_DIR}/.claude/blocked-sends.log\""
+          }
+        ]
+      }
+    ]
+  }
+}
