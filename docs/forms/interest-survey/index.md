@@ -59,7 +59,8 @@ For example, the **$20 SmartClock kit** lets a student build their own clock. It
 shows the time and weather, and has a stopwatch and a timer. It can even show
 notifications about upcoming school events.
 
-[See the SmartClock kit](https://dmccreary.github.io/clocks-and-watches/kits/sw-gc9b72/)
+[See the SmartClock kit](https://dmccreary.github.io/clocks-and-watches/kits/sw-gc9b72/)<br/>
+[See the Full List of STEM Kits](../../appendices/list-of-stem-kits/index.md)
 
 Families who want to take a kit home can purchase it. Kits cost **$20 to $50**,
 depending on the cost of the parts.

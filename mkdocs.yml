@@ -373,6 +373,8 @@ nav:
       - Overview: appendices/index.md
       - Related Textbooks: appendices/releated-textbooks.md
       - List of Forms: appendices/list-of-forms.md
+      - Employer Interest Survey: forms/interest-survey/index.md
+      - List of STEM Kits: appendices/list-of-stem-kits/index.md
       - List of AI Agent Skills: appendices/list-of-ai-agent-skills.md
       - Automating Volunteer Background Checks: appendices/automated-background-checks/index.md
   - FAQ: faq.md
