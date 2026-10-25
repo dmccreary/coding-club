@@ -375,6 +375,102 @@ nav:
       - List of Forms: appendices/list-of-forms.md
       - Employer Interest Survey: forms/interest-survey/index.md
       - List of STEM Kits: appendices/list-of-stem-kits/index.md
+      - STEM Kit Catalog:
+          - Overview: kits/index.md
+          - "Learning MicroPython":
+              - "Collision Avoidance Robot": kits/maker-pi-rp2040-robot/index.md
+              - "Cytron Maker Nano RP2040": kits/maker-nano-rp2040/index.md
+              - "Cytron Maker Pi Pico": kits/maker-pi-pico/index.md
+              - "Distance Sensor Box": kits/distance-sensor/index.md
+              - "FFT on Pico 2": kits/10-fft-on-pico2/index.md
+              - "Frequency Analyzer": kits/frequency-analyzer/index.md
+              - "General MicroPython Kits": kits/01-general-kits/index.md
+              - "Larson Scanner Pumpkin": kits/larson-scanner/index.md
+              - "Maker Pi RP2040 Robotics Kit": kits/maker-pi-rp2040/index.md
+              - "MAX4466 Microphone Kit": kits/microphone-max4466/index.md
+              - "Mood Ring Thermometer": kits/sht40-temp-display/index.md
+              - "NeoPixel Kit": kits/learning-micropython-neopixel/index.md
+              - "NeoPixel Two Button Kit": kits/03-neopixel-strip-two-buttons/index.md
+              - "Pulse Width Modulation Kit": kits/pwm/index.md
+              - "Raspberry Pi RGB Box": kits/rgb-box/index.md
+              - "RC522 RFID Kit": kits/rfid-rc522/index.md
+              - "Rotary NeoPixel": kits/03-rotary-neopixel/index.md
+              - "SHT40 Temperature and Humidity": kits/sht40-temp/index.md
+              - "Spectrum Analyzer Kit": kits/spectrum-analyzer/index.md
+              - "SSD1322 OLED Kit": kits/oled-ssd1322/index.md
+              - "Tone Generator": kits/tone-generator/index.md
+          - "Clocks and Watches":
+              - "74HC595 Shift Register Clock": kits/shift-register-clock/index.md
+              - "Alarm Clocks": kits/alarm-clock/index.md
+              - "Character LCD Clock": kits/char-lcd-clock/index.md
+              - "Chrono Smart Clock Kit": kits/clocks-and-watches-sw-gc9b72/index.md
+              - "E-Ink Displays": kits/e-paper/index.md
+              - "GC9A01 Display Kit": kits/gc9a01/index.md
+              - "ILI9341 Display Kit": kits/ili9341/index.md
+              - "Knob Clock Kit": kits/rect-tft-display/index.md
+              - "Large OLED Kit": kits/oled-large/index.md
+              - "LED Display Clock": kits/led-displays/index.md
+              - "LILYGO T-Display RP2040 Kit": kits/lilygo/index.md
+              - "MAX7219 Clocks": kits/max7219/index.md
+              - "NeoPixel LED Strip Clock Kits": kits/clocks-and-watches-neopixel/index.md
+              - "OLED Wireless Weather Kit": kits/oled-wireless/index.md
+              - "Portable Smartwatch Kits": kits/portable-watch-kits/index.md
+              - "SH1106 OLED Driver Kit": kits/sh1106/index.md
+              - "ST7735 Digital Clock": kits/st7735/index.md
+              - "Stopwatch": kits/stopwatch/index.md
+              - "Study Buddy Kit": kits/study-buddy/index.md
+              - "Tiny SSD1306 I2C OLED Clock": kits/ssd1306-i2c/index.md
+              - "TM1637 LED Display": kits/tm1637/index.md
+              - "TM1650 LED Clock": kits/tm1650-led-clock/index.md
+              - "Waveshare E-Paper Display": kits/waveshare-e-paper/index.md
+              - "Waveshare RP2040": kits/waveshare-lcd/index.md
+          - "Robot Faces":
+              - "1.2\" Smartwatch Kit": kits/smartwatch/index.md
+              - "2.1\" Smartwatch Kit": kits/robot-faces-sw-gc9b72/index.md
+              - "OLED Faces Kit": kits/oled/index.md
+          - "STEM Robots":
+              - "9-DOF IMU Kit": kits/9-dof-imu/index.md
+              - "Adjustabot": kits/adjusta-bot/index.md
+              - "Base STEM Robot": kits/base-bot/index.md
+              - "Bump Switch Bot": kits/bump-switch-bot/index.md
+              - "Compass Lab": kits/compass-hmc5883l/index.md
+              - "Display Bot": kits/display-bot/index.md
+              - "Line Follower Bot": kits/line-follower-bot/index.md
+              - "MAX98357A I2S Amplifier Kit": kits/max98357a-amp/index.md
+              - "Motion Detection Explorer Kit": kits/imu-mpu6050/index.md
+              - "Rainbow Bot": kits/rainbow-bot/index.md
+              - "Smartwatch Compass Kit": kits/smartwatch-compass-hmc5883l/index.md
+              - "Swarm Robot": kits/swarm-bot/index.md
+              - "Synthesizing Robot Sounds": kits/synth-sounds/index.md
+              - "Ultrasonic Bot": kits/ultrasonic-bot/index.md
+              - "WiFi Display Bot": kits/wifi-display-bot/index.md
+              - "Wireless STEM Robot": kits/wifi-bot/index.md
+          - "Moving Rainbow":
+              - "8x8 NeoPixel Matrix Project": kits/8x8-neopixel-matrix/index.md
+              - "Analog Nightlight": kits/analog-nightlight/index.md
+              - "BookStore Sign": kits/bookstore-sign/index.md
+              - "Cylon Pumpkin": kits/cylon-pumpkin/index.md
+              - "Digital Nightlight": kits/digital-nightlight/index.md
+              - "Halloween NeoPixel Patterns": kits/halloween/index.md
+              - "Holiday Hats": kits/holiday-hats/index.md
+              - "Jake's Fire": kits/jakes-fire/index.md
+              - "LED Candle Kit": kits/led-candle/index.md
+              - "LED Dimmer": kits/led-dimmer/index.md
+              - "LED Noodle Nightlight": kits/led-noodle-nightlight/index.md
+              - "Moving Rainbow Base Kit": kits/moving-rainbow-base/index.md
+              - "Moving Rainbow Extras": kits/moving-rainbow-extras/index.md
+              - "Name Sign Night Light": kits/name-sign-night-light/index.md
+              - "Nightlight Circuit Design": kits/nightlight/index.md
+              - "Rotary Spinner Box": kits/rotary-spinner-box/index.md
+              - "Solar-Powered Nightlight": kits/solar-powered-led-nightlight/index.md
+              - "Tiki Bar Sign": kits/tiki-bar-sign/index.md
+              - "Tilt-a-Rainbow Kit": kits/16x16-matrix-accel/index.md
+              - "Tilt-a-Rainbow Mini Kit": kits/8x8-matrix-accel/index.md
+          - "Commercial Starter Kits":
+              - "52Pi Raspberry Pi Pico W Starter Kit": kits/52pi-raspberry-pi-pico-w-starter-kit/index.md
+              - "SparkFun Inventor's Kit for MicroPython": kits/sparkfun-inventors-kit-for-micropython/index.md
+              - "SunFounder Raspberry Pi Pico Starter Kit": kits/sunfounder-raspberry-pi-pico-starter-kit/index.md
+              - "Value Raspberry Pi Pico Starter Kit (eBay)": kits/value-raspberry-pi-pico-starter-kit-ebay/index.md
       - List of AI Agent Skills: appendices/list-of-ai-agent-skills.md
       - Automating Volunteer Background Checks: appendices/automated-background-checks/index.md
   - FAQ: faq.md
